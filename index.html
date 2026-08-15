@@ -11,7 +11,7 @@
 </head>
 <body>
   <header class="topbar">
-    <div>
+    <div class="brand">
       <p class="eyebrow">VANCOUVER WESTSIDE</p>
       <h1>Rental Radar</h1>
       <p class="subtitle">Kitsilano · Arbutus Ridge · Point Grey</p>
@@ -20,7 +20,15 @@
   </header>
 
   <main>
-    <section class="toolbar" aria-label="Rental filters">
+    <div class="mobile-controls">
+      <button id="filtersToggle" class="mobile-pill" type="button" aria-expanded="false">Filters <span id="filterCount"></span></button>
+      <div class="view-switch" role="group" aria-label="View mode">
+        <button id="listView" class="view-btn active" type="button">List</button>
+        <button id="mapView" class="view-btn" type="button">Map</button>
+      </div>
+    </div>
+
+    <section id="toolbar" class="toolbar" aria-label="Rental filters">
       <div class="filter-row primary-filters">
         <label><span>Min sqft</span><input id="minSqft" type="number" value="800" min="0" step="50" /></label>
         <label><span>Bedrooms</span><select id="beds"><option value="0">Any</option><option value="1">1+</option><option value="2" selected>2+</option><option value="3">3+</option></select></label>
