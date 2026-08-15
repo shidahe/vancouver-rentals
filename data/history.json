@@ -2,7 +2,10 @@
   "tribeca-type-2d-2111-w11": [{"date":"2026-08-14","rent":3600,"note":"First tracked"}],
   "arbutus-residences-2den-900": [{"date":"2026-08-14","rent":4110,"note":"First tracked; incentive eligibility not yet confirmed"}],
   "arbutus-terrace-unit6-2den": [{"date":"2026-08-14","rent":3795,"note":"First tracked"}],
-  "raphael-301-3668-w10": [{"date":"2026-08-14","rent":4500,"note":"First tracked"}],
+  "raphael-301-3668-w10": [
+    {"date":"2026-08-14","rent":4500,"note":"First tracked"},
+    {"date":"2026-08-14","rent":4500,"note":"Removed / unavailable; REW listing now returns Gone too soon / 410 Gone"}
+  ],
   "raven-410-3709-wbroadway": [{"date":"2026-08-14","rent":3650,"note":"First tracked"}],
   "kits-walk-2br-flex-616": [{"date":"2026-08-14","rent":3425,"note":"First tracked from official availability"}],
   "solo-2228-marstrand": [{"date":"2026-08-14","rent":3500,"note":"First tracked"}]
