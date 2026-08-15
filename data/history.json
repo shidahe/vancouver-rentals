@@ -1,12 +1,33 @@
 {
-  "tribeca-type-2d-2111-w11": [{"date":"2026-08-14","rent":3600,"note":"First tracked"}],
-  "arbutus-residences-2den-900": [{"date":"2026-08-14","rent":4110,"note":"First tracked; incentive eligibility not yet confirmed"}],
-  "arbutus-terrace-unit6-2den": [{"date":"2026-08-14","rent":3795,"note":"First tracked"}],
+  "tribeca-type-2d-2111-w11": [
+    {"date":"2026-08-14","rent":3600,"note":"First tracked"},
+    {"date":"2026-08-14","rent":3600,"note":"Direct detail page re-verified: Available Now; identity and rent match"}
+  ],
+  "arbutus-residences-2den-900": [
+    {"date":"2026-08-14","rent":4110,"note":"First tracked; incentive eligibility not yet confirmed"},
+    {"date":"2026-08-14","rent":4110,"note":"Direct detail page re-verified: Available Now; 2BR/2BA, 900 sqft"}
+  ],
+  "arbutus-terrace-unit6-2den": [
+    {"date":"2026-08-14","rent":3795,"note":"Initial cached observation claimed 816 sqft"},
+    {"date":"2026-08-14","rent":3500,"note":"Fresh direct page shows Unit 6 at 737 sqft, available now. Treated as source-data correction, not price drop"}
+  ],
   "raphael-301-3668-w10": [
     {"date":"2026-08-14","rent":4500,"note":"First tracked"},
-    {"date":"2026-08-14","rent":4500,"note":"Removed / unavailable; REW listing now returns Gone too soon / 410 Gone"}
+    {"date":"2026-08-14","rent":4500,"note":"Removed / unavailable; direct REW page shows Gone too soon"}
   ],
-  "raven-410-3709-wbroadway": [{"date":"2026-08-14","rent":3650,"note":"First tracked"}],
-  "kits-walk-2br-flex-616": [{"date":"2026-08-14","rent":3425,"note":"First tracked from official availability"}],
-  "solo-2228-marstrand": [{"date":"2026-08-14","rent":3500,"note":"First tracked"}]
+  "raven-410-3709-wbroadway": [
+    {"date":"2026-08-14","rent":3650,"note":"First tracked as Unit 410, 721 sqft"},
+    {"date":"2026-08-14","rent":3650,"note":"Quarantined: same source URL now renders Unit 705, so Unit 410 availability is no longer verified"}
+  ],
+  "raven-705-3709-wbroadway": [
+    {"date":"2026-08-14","rent":4195,"note":"First verified: direct page shows Unit 705, 802 sqft, Available Now"}
+  ],
+  "kits-walk-2br-flex-616": [
+    {"date":"2026-08-14","rent":3425,"note":"Initially discovered from official availability result"},
+    {"date":"2026-08-14","rent":3425,"note":"Quarantined: official floor-plan evidence conflicts on whether an apartment is currently available"}
+  ],
+  "solo-2228-marstrand": [
+    {"date":"2026-08-14","rent":3500,"note":"First tracked"},
+    {"date":"2026-08-14","rent":3500,"note":"Direct property-manager page re-verified: FOR RENT and Available Now"}
+  ]
 }
