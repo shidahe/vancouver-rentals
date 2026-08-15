@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="color-scheme" content="light" />
+  <title>Vancouver Westside Rentals</title>
+  <link rel="preconnect" href="https://unpkg.com" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div>
+      <p class="eyebrow">VANCOUVER WESTSIDE</p>
+      <h1>Rental Radar</h1>
+      <p class="subtitle">Kitsilano · Arbutus Ridge · Point Grey</p>
+    </div>
+    <div id="stats" class="stats"></div>
+  </header>
+
+  <main>
+    <section class="toolbar" aria-label="Rental filters">
+      <div class="filter-row primary-filters">
+        <label><span>Min sqft</span><input id="minSqft" type="number" value="800" min="0" step="50" /></label>
+        <label><span>Bedrooms</span><select id="beds"><option value="0">Any</option><option value="1">1+</option><option value="2" selected>2+</option><option value="3">3+</option></select></label>
+        <label><span>Bathrooms</span><select id="baths"><option value="0">Any</option><option value="1">1+</option><option value="2">2+</option></select></label>
+        <label><span>Min rent</span><input id="minPrice" type="number" placeholder="$0" min="0" step="100" /></label>
+        <label><span>Max rent</span><input id="maxPrice" type="number" placeholder="No max" min="0" step="100" /></label>
+        <label><span>Building year ≥</span><input id="minYear" type="number" placeholder="Any" min="1900" max="2030" /></label>
+      </div>
+      <div class="filter-row toggles">
+        <label class="check"><input id="acOnly" type="checkbox" /> AC</label>
+        <label class="check"><input id="parkingOnly" type="checkbox" /> Parking</label>
+        <label class="check"><input id="hideNorth" type="checkbox" checked /> Avoid north-facing</label>
+        <label class="check"><input id="purposeOnly" type="checkbox" /> Purpose-built only</label>
+        <label class="check"><input id="favoritesOnly" type="checkbox" /> Favorites</label>
+        <label class="check"><input id="showHidden" type="checkbox" /> Show hidden</label>
+        <button id="resetFilters" class="ghost">Reset</button>
+      </div>
+    </section>
+
+    <section class="layout">
+      <aside class="results-panel">
+        <div class="results-head">
+          <div><strong id="resultCount">0</strong> matches</div>
+          <label>Sort <select id="sortBy"><option value="score">Best match</option><option value="priceAsc">Rent: low → high</option><option value="priceDesc">Rent: high → low</option><option value="sqftDesc">Largest</option><option value="newest">Newest</option></select></label>
+        </div>
+        <div id="listings" class="listing-list"></div>
+      </aside>
+      <section class="map-panel">
+        <div id="map" aria-label="Map of rental listings"></div>
+        <div class="map-legend"><span><i class="dot purpose"></i> Purpose-built</span><span><i class="dot condo"></i> Condo/private</span></div>
+      </section>
+    </section>
+  </main>
+
+  <template id="listingTemplate">
+    <article class="listing-card">
+      <div class="card-top">
+        <div class="badges"></div>
+        <div class="score"></div>
+      </div>
+      <h2 class="title"></h2>
+      <p class="address"></p>
+      <div class="price-line"><strong class="rent"></strong><span class="effective"></span></div>
+      <div class="facts"></div>
+      <div class="chips"></div>
+      <p class="why"></p>
+      <details class="history"><summary>Price history</summary><div class="history-body"></div></details>
+      <div class="actions">
+        <button data-action="favorite" title="Favorite">♡ Favorite</button>
+        <button data-action="contacted">Contacted</button>
+        <button data-action="hidden">Hide</button>
+        <a class="source-link" target="_blank" rel="noopener noreferrer">Original ↗</a>
+      </div>
+      <textarea class="notes" rows="2" placeholder="Notes (saved only in this browser)"></textarea>
+      <div class="meta"></div>
+    </article>
+  </template>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+  <script src="app.js"></script>
+</body>
+</html>
