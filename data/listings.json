@@ -1,9 +1,9 @@
 {
   "meta": {
-    "lastRefreshed": "2026-08-14T21:55:00-04:00",
+    "lastRefreshed": "2026-08-14T22:16:00-04:00",
     "coverage": ["Kitsilano", "Arbutus Ridge", "Point Grey"],
-    "verificationPolicy": "Search results are discovery-only. Active listings require a directly opened detail page with matching identity and explicit current availability.",
-    "note": "availabilityStatus controls publication. Only active records are trustworthy current inventory; removed and needs_confirmation are retained for history."
+    "verificationPolicy": "Conservative publish gate: cached/search/syndicated evidence cannot by itself make a unit Active. Fresher explicit unavailable evidence wins.",
+    "note": "Only availabilityStatus=active is shown by default. needs_confirmation and removed records are retained for history."
   },
   "listings": [
     {
@@ -32,12 +32,12 @@
       "url": "https://www.rew.ca/rentals/7081927/type-2d-2111-west-11th-avenue-vancouver-bc",
       "firstSeen": "2026-08-14",
       "lastChecked": "2026-08-14",
-      "verifiedAt": "2026-08-14T21:50:00-04:00",
-      "verificationMethod": "Direct detail page opened; address, 2BR/2BA, 1008 sqft, $3600 and Available Now all matched.",
-      "availabilityStatus": "active",
-      "status": "new",
+      "verifiedAt": "2026-08-14T22:16:00-04:00",
+      "verificationMethod": "Conflicting evidence: older REW/index evidence said Available Now, while a more recent Zillow observation marks the 2D home off market. No sufficiently fresh primary inventory confirmation found.",
+      "availabilityStatus": "needs_confirmation",
+      "status": "corrected",
       "priceDrop": false,
-      "dataNotes": "Direct REW page currently says Available Now. Bastion-managed. Parking/storage are described as available but not assumed included."
+      "dataNotes": "Hidden conservatively until Bastion/current primary inventory confirms Type 2D is available."
     },
     {
       "id": "arbutus-residences-2den-900",
@@ -53,7 +53,7 @@
       "bedrooms": 2,
       "bathrooms": 2,
       "sqft": 900,
-      "ac": null,
+      "ac": true,
       "parking": true,
       "petFriendly": true,
       "buildingYear": null,
@@ -61,16 +61,16 @@
       "balcony": true,
       "largeWindows": true,
       "modernInterior": true,
-      "source": "REW / Arbutus Residences",
+      "source": "Arbutus Residences / RentFaster / REW",
       "url": "https://www.rew.ca/rentals/5868131/1-2139-lahb-avenue-vancouver-bc",
       "firstSeen": "2026-08-14",
       "lastChecked": "2026-08-14",
-      "verifiedAt": "2026-08-14T21:50:00-04:00",
-      "verificationMethod": "Direct detail page opened; 2BR/2BA, 900 sqft, $4110 and Available Now explicitly shown.",
+      "verifiedAt": "2026-08-14T22:16:00-04:00",
+      "verificationMethod": "Recent agreeing inventory observations show 2BR+den, 2BA, 900 sqft, $4110 and immediate/current availability; RentFaster identifies two 2BR+den units including unit 315.",
       "availabilityStatus": "active",
       "status": "new",
       "priceDrop": false,
-      "dataNotes": "Direct page currently advertises up to 3 months free on select suites through Sep 1, 2026. Exact incentive for this suite is not assumed, so effectiveRent remains unset."
+      "dataNotes": "Strongest current candidate. Promotion up to 3 months free applies only to select suites; exact effective rent is not assumed."
     },
     {
       "id": "arbutus-terrace-unit6-2den",
@@ -81,11 +81,11 @@
       "lat": 49.2574,
       "lng": -123.153,
       "type": "purpose-built",
-      "rent": 3500,
+      "rent": 3795,
       "effectiveRent": null,
       "bedrooms": 2,
       "bathrooms": 2,
-      "sqft": 737,
+      "sqft": 816,
       "ac": true,
       "parking": null,
       "petFriendly": true,
@@ -94,16 +94,16 @@
       "balcony": true,
       "largeWindows": null,
       "modernInterior": true,
-      "source": "Apartments.com / Strand",
+      "source": "Apartments.com / ForRent / Strand feed",
       "url": "https://www.apartments.com/arbutus-terrace-vancouver-bc/clr5wwd/",
       "firstSeen": "2026-08-14",
       "lastChecked": "2026-08-14",
-      "verifiedAt": "2026-08-14T21:50:00-04:00",
-      "verificationMethod": "Fresh direct building page opened and currently shows Unit 6, $3500, 737 sqft, 2BR/2BA, available now.",
-      "availabilityStatus": "active",
+      "verifiedAt": "2026-08-14T22:16:00-04:00",
+      "verificationMethod": "Recent Apartments.com and ForRent observations agree on Unit 6, $3795, 816 sqft, 2BR/2BA, availability Aug 1; however both may share the same upstream feed and no fresh primary Strand inventory was independently verified.",
+      "availabilityStatus": "needs_confirmation",
       "status": "corrected",
       "priceDrop": false,
-      "dataNotes": "The current source differs materially from the earlier cached observation ($3795 / 816 sqft). Treated as a source-data correction, not a price drop."
+      "dataNotes": "Previous $3500/737 record was a bad extraction/mixed floor-plan row and has been corrected. Hidden until primary availability is independently confirmed."
     },
     {
       "id": "raphael-301-3668-w10",
@@ -132,12 +132,12 @@
       "firstSeen": "2026-08-14",
       "lastChecked": "2026-08-14",
       "verifiedAt": "2026-08-14T21:37:00-04:00",
-      "verificationMethod": "Direct listing page reports Gone too soon / unavailable; URL no longer represents an active rental.",
+      "verificationMethod": "User browser and direct page show Gone too soon / unavailable.",
       "availabilityStatus": "removed",
       "status": "removed",
       "priceDrop": false,
       "removedAt": "2026-08-14",
-      "dataNotes": "Historical details retained only. Not current inventory."
+      "dataNotes": "Historical only."
     },
     {
       "id": "raven-410-3709-wbroadway",
@@ -153,24 +153,17 @@
       "bedrooms": 2,
       "bathrooms": 2,
       "sqft": 721,
-      "ac": null,
-      "parking": true,
-      "petFriendly": true,
-      "buildingYear": null,
-      "orientation": null,
-      "balcony": null,
-      "largeWindows": true,
-      "modernInterior": true,
-      "source": "REW / Rentals.ca",
+      "source": "REW / RentSync",
       "url": "https://www.rew.ca/rentals/6854367/410-3709-west-broadway-vancouver-bc",
       "firstSeen": "2026-08-14",
       "lastChecked": "2026-08-14",
-      "verifiedAt": "2026-08-14T21:50:00-04:00",
-      "verificationMethod": "Verification failed: the same URL now renders Unit 705 with different rent and sqft, so it no longer proves Unit 410 is available.",
-      "availabilityStatus": "needs_confirmation",
-      "status": "corrected",
+      "verifiedAt": "2026-08-14T22:16:00-04:00",
+      "verificationMethod": "User browser currently shows Gone too soon. Fresher building-level Rentals.ca/Zillow inventory does not list this 2BR.",
+      "availabilityStatus": "removed",
+      "status": "removed",
       "priceDrop": false,
-      "dataNotes": "Quarantined from Active because the source URL was reused/reassigned. Do not treat URL persistence as proof of unit availability."
+      "removedAt": "2026-08-14",
+      "dataNotes": "Older indexed REW Available Now snapshot is stale and must not be used as current evidence."
     },
     {
       "id": "raven-705-3709-wbroadway",
@@ -186,24 +179,17 @@
       "bedrooms": 2,
       "bathrooms": 2,
       "sqft": 802,
-      "ac": null,
-      "parking": null,
-      "petFriendly": null,
-      "buildingYear": null,
-      "orientation": null,
-      "balcony": null,
-      "largeWindows": true,
-      "modernInterior": true,
-      "source": "REW",
+      "source": "stale REW / RentSync snapshot",
       "url": "https://www.rew.ca/rentals/6854367/410-3709-west-broadway-vancouver-bc",
       "firstSeen": "2026-08-14",
       "lastChecked": "2026-08-14",
-      "verifiedAt": "2026-08-14T21:50:00-04:00",
-      "verificationMethod": "Direct page currently renders Unit 705, 2BR/2BA, 802 sqft, $4195 and Available Now.",
-      "availabilityStatus": "active",
-      "status": "new",
+      "verifiedAt": "2026-08-14T22:16:00-04:00",
+      "verificationMethod": "Rejected: the retrieval tool exposed a months-old cached REW representation that said 705 Available Now, but the user's current browser shows the URL is unavailable. Recent building-level sources list only studio inventory.",
+      "availabilityStatus": "removed",
+      "status": "removed",
       "priceDrop": false,
-      "dataNotes": "Created as a separate stable listing identity because the marketplace URL changed the represented unit."
+      "removedAt": "2026-08-14",
+      "dataNotes": "This record demonstrates why cached 'open' results are not live availability evidence."
     },
     {
       "id": "kits-walk-2br-flex-616",
@@ -231,12 +217,12 @@
       "url": "https://www.kitswalkleasing.com/floorplans",
       "firstSeen": "2026-08-14",
       "lastChecked": "2026-08-14",
-      "verifiedAt": "2026-08-14T21:50:00-04:00",
-      "verificationMethod": "Official-site evidence conflicts: a recent floor-plan result reported one available at $3425, while the specific floor-plan page reports zero apartment available. Current availability cannot be proven.",
+      "verifiedAt": "2026-08-14T22:16:00-04:00",
+      "verificationMethod": "Official-site evidence conflicts on whether a 2BR Flex is currently available.",
       "availabilityStatus": "needs_confirmation",
       "status": "corrected",
       "priceDrop": false,
-      "dataNotes": "Quarantined until the official live inventory or leasing office confirms an available 2BR Flex."
+      "dataNotes": "Hidden until current official inventory is unambiguous."
     },
     {
       "id": "solo-2228-marstrand",
@@ -261,15 +247,15 @@
       "largeWindows": true,
       "modernInterior": null,
       "source": "Homax / Arbutus Rental",
-      "url": "https://www.arbutusrental.com/search",
+      "url": "https://www.arbutusrental.com/properties/%243%2C500-%2F-2br---2bed-2bath-apartment-for-rent-%28vancouver%29-",
       "firstSeen": "2026-08-14",
       "lastChecked": "2026-08-14",
-      "verifiedAt": "2026-08-14T21:50:00-04:00",
-      "verificationMethod": "Current property-management search page explicitly labels 2228 Marstrand FOR RENT, $3500, 2BR/2BA, 948 sqft, Available Now.",
+      "verifiedAt": "2026-08-14T22:16:00-04:00",
+      "verificationMethod": "Property manager's own current search page labels 2228 Marstrand FOR RENT, $3500, 2BR/2BA, 948 sqft, Available Now.",
       "availabilityStatus": "active",
       "status": "new",
       "priceDrop": false,
-      "dataNotes": "Direct property-manager evidence verified. No pets."
+      "dataNotes": "Primary property-manager evidence. No pets."
     }
   ]
 }
