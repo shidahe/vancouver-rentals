@@ -1,8 +1,9 @@
 {
   "meta": {
-    "lastRefreshed": "2026-08-14T21:37:00-04:00",
+    "lastRefreshed": "2026-08-14T21:55:00-04:00",
     "coverage": ["Kitsilano", "Arbutus Ridge", "Point Grey"],
-    "note": "Fields are null when not verified from a current public source. Listings should be rechecked at every refresh."
+    "verificationPolicy": "Search results are discovery-only. Active listings require a directly opened detail page with matching identity and explicit current availability.",
+    "note": "availabilityStatus controls publication. Only active records are trustworthy current inventory; removed and needs_confirmation are retained for history."
   },
   "listings": [
     {
@@ -24,23 +25,26 @@
       "petFriendly": null,
       "buildingYear": null,
       "orientation": null,
-      "balcony": null,
+      "balcony": true,
       "largeWindows": null,
       "modernInterior": null,
       "source": "REW / Bastion",
       "url": "https://www.rew.ca/rentals/7081927/type-2d-2111-west-11th-avenue-vancouver-bc",
       "firstSeen": "2026-08-14",
       "lastChecked": "2026-08-14",
+      "verifiedAt": "2026-08-14T21:50:00-04:00",
+      "verificationMethod": "Direct detail page opened; address, 2BR/2BA, 1008 sqft, $3600 and Available Now all matched.",
+      "availabilityStatus": "active",
       "status": "new",
       "priceDrop": false,
-      "dataNotes": "Current REW listing says available now; professionally managed by Bastion."
+      "dataNotes": "Direct REW page currently says Available Now. Bastion-managed. Parking/storage are described as available but not assumed included."
     },
     {
       "id": "arbutus-residences-2den-900",
       "buildingName": "Arbutus Residences",
       "unit": "2 Bedroom + Den",
-      "address": "4188 Yew St / 2139 Lahb Ave, Vancouver, BC",
-      "neighborhood": "Arbutus Ridge",
+      "address": "2139 Lahb Ave, Vancouver, BC",
+      "neighborhood": "Arbutus Ridge / Quilchena",
       "lat": 49.2488,
       "lng": -123.1553,
       "type": "purpose-built",
@@ -61,9 +65,12 @@
       "url": "https://www.rew.ca/rentals/5868131/1-2139-lahb-avenue-vancouver-bc",
       "firstSeen": "2026-08-14",
       "lastChecked": "2026-08-14",
+      "verifiedAt": "2026-08-14T21:50:00-04:00",
+      "verificationMethod": "Direct detail page opened; 2BR/2BA, 900 sqft, $4110 and Available Now explicitly shown.",
+      "availabilityStatus": "active",
       "status": "new",
       "priceDrop": false,
-      "dataNotes": "Official site advertises up to 3 months free on select suites through Sep 1; this unit's exact incentive must be confirmed, so effective rent is intentionally unset."
+      "dataNotes": "Direct page currently advertises up to 3 months free on select suites through Sep 1, 2026. Exact incentive for this suite is not assumed, so effectiveRent remains unset."
     },
     {
       "id": "arbutus-terrace-unit6-2den",
@@ -74,11 +81,11 @@
       "lat": 49.2574,
       "lng": -123.153,
       "type": "purpose-built",
-      "rent": 3795,
+      "rent": 3500,
       "effectiveRent": null,
       "bedrooms": 2,
       "bathrooms": 2,
-      "sqft": 816,
+      "sqft": 737,
       "ac": true,
       "parking": null,
       "petFriendly": true,
@@ -91,9 +98,12 @@
       "url": "https://www.apartments.com/arbutus-terrace-vancouver-bc/clr5wwd/",
       "firstSeen": "2026-08-14",
       "lastChecked": "2026-08-14",
-      "status": "new",
+      "verifiedAt": "2026-08-14T21:50:00-04:00",
+      "verificationMethod": "Fresh direct building page opened and currently shows Unit 6, $3500, 737 sqft, 2BR/2BA, available now.",
+      "availabilityStatus": "active",
+      "status": "corrected",
       "priceDrop": false,
-      "dataNotes": "816 sqft 2BR+den / 2BA; source showed Unit 6 available Aug 1 and building AC."
+      "dataNotes": "The current source differs materially from the earlier cached observation ($3795 / 816 sqft). Treated as a source-data correction, not a price drop."
     },
     {
       "id": "raphael-301-3668-w10",
@@ -121,10 +131,13 @@
       "url": "https://www.rew.ca/rentals/6433470/301-3668-w-10th-avenue-vancouver-bc",
       "firstSeen": "2026-08-14",
       "lastChecked": "2026-08-14",
+      "verifiedAt": "2026-08-14T21:37:00-04:00",
+      "verificationMethod": "Direct listing page reports Gone too soon / unavailable; URL no longer represents an active rental.",
+      "availabilityStatus": "removed",
       "status": "removed",
       "priceDrop": false,
       "removedAt": "2026-08-14",
-      "dataNotes": "REMOVED / unavailable. REW now shows Gone too soon and the listing URL returns 410 Gone. Historical details retained for comparison."
+      "dataNotes": "Historical details retained only. Not current inventory."
     },
     {
       "id": "raven-410-3709-wbroadway",
@@ -152,9 +165,45 @@
       "url": "https://www.rew.ca/rentals/6854367/410-3709-west-broadway-vancouver-bc",
       "firstSeen": "2026-08-14",
       "lastChecked": "2026-08-14",
+      "verifiedAt": "2026-08-14T21:50:00-04:00",
+      "verificationMethod": "Verification failed: the same URL now renders Unit 705 with different rent and sqft, so it no longer proves Unit 410 is available.",
+      "availabilityStatus": "needs_confirmation",
+      "status": "corrected",
+      "priceDrop": false,
+      "dataNotes": "Quarantined from Active because the source URL was reused/reassigned. Do not treat URL persistence as proof of unit availability."
+    },
+    {
+      "id": "raven-705-3709-wbroadway",
+      "buildingName": "The Raven",
+      "unit": "705",
+      "address": "3709 W Broadway, Vancouver, BC",
+      "neighborhood": "Point Grey",
+      "lat": 49.2642,
+      "lng": -123.1862,
+      "type": "purpose-built",
+      "rent": 4195,
+      "effectiveRent": null,
+      "bedrooms": 2,
+      "bathrooms": 2,
+      "sqft": 802,
+      "ac": null,
+      "parking": null,
+      "petFriendly": null,
+      "buildingYear": null,
+      "orientation": null,
+      "balcony": null,
+      "largeWindows": true,
+      "modernInterior": true,
+      "source": "REW",
+      "url": "https://www.rew.ca/rentals/6854367/410-3709-west-broadway-vancouver-bc",
+      "firstSeen": "2026-08-14",
+      "lastChecked": "2026-08-14",
+      "verifiedAt": "2026-08-14T21:50:00-04:00",
+      "verificationMethod": "Direct page currently renders Unit 705, 2BR/2BA, 802 sqft, $4195 and Available Now.",
+      "availabilityStatus": "active",
       "status": "new",
       "priceDrop": false,
-      "dataNotes": "Below the 800 sqft preference but retained as a priority-building watch item. Rentals.ca currently advertises free WiFi / move-in discount; applicability to this unit should be confirmed."
+      "dataNotes": "Created as a separate stable listing identity because the marketplace URL changed the represented unit."
     },
     {
       "id": "kits-walk-2br-flex-616",
@@ -182,9 +231,12 @@
       "url": "https://www.kitswalkleasing.com/floorplans",
       "firstSeen": "2026-08-14",
       "lastChecked": "2026-08-14",
-      "status": "new",
+      "verifiedAt": "2026-08-14T21:50:00-04:00",
+      "verificationMethod": "Official-site evidence conflicts: a recent floor-plan result reported one available at $3425, while the specific floor-plan page reports zero apartment available. Current availability cannot be proven.",
+      "availabilityStatus": "needs_confirmation",
+      "status": "corrected",
       "priceDrop": false,
-      "dataNotes": "Official floor-plan page showed one 2BR Flex available at $3,425; small for preference, retained for priority-building monitoring."
+      "dataNotes": "Quarantined until the official live inventory or leasing office confirms an available 2BR Flex."
     },
     {
       "id": "solo-2228-marstrand",
@@ -212,9 +264,12 @@
       "url": "https://www.arbutusrental.com/search",
       "firstSeen": "2026-08-14",
       "lastChecked": "2026-08-14",
+      "verifiedAt": "2026-08-14T21:50:00-04:00",
+      "verificationMethod": "Current property-management search page explicitly labels 2228 Marstrand FOR RENT, $3500, 2BR/2BA, 948 sqft, Available Now.",
+      "availabilityStatus": "active",
       "status": "new",
       "priceDrop": false,
-      "dataNotes": "Current property-management listing: 948 sqft, 2BR/2BA, available now, no pets."
+      "dataNotes": "Direct property-manager evidence verified. No pets."
     }
   ]
 }
