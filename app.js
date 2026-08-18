@@ -1,5 +1,33 @@
 const USER_STATE_KEY='vancouver-rentals:user-state:v1';
 const VERIFIED_IMAGES={
+  'arbutus-residences-315-2den-900':[
+    'https://rf-images-prod-bcdn.rentfaster.ca/454186/17802679.v.c07ac6fe3caaac1790c1a84fecc9fdb5.jpg',
+    'https://rf-images-prod-bcdn.rentfaster.ca/454186/slide_13677345.v.1af4d567e873b5f269da1b72896b5d8e.jpg',
+    'https://rf-images-prod-bcdn.rentfaster.ca/454186/slide_15043243.v.eaa24c66594e0084c7d13305525c4add.jpg'
+  ],
+  'arbutus-terrace-unit6-2den':[
+    'https://cms.stranddev.com/uploads/_1200x800_crop_center-center_100_line/Arbutus-Dusk.png',
+    'https://cms.stranddev.com/uploads/_1800x1012_crop_center-center_100_line/7-web-or-mls-007_2026-04-13-185215_hhvb.jpg',
+    'https://assets.rentsync.com/strand/images/gallery/1152/1783029799015_ChatGPT_Image_Jun_29__2026__03_05_33_PM.png'
+  ],
+  'treo-2688-vine-r3142696':[
+    'https://photos.zolo.ca/2688-vine-vancouver-R3142696-1-p480.jpg?2026-07-08+22%3A50%3A09=',
+    'https://photos.zolo.ca/2688-vine-vancouver-R3142696-2-p480.jpg?2026-07-08+22%3A50%3A10='
+  ],
+  'blenheim-terrace-204-r3149612':[
+    'https://photos.zolo.ca/204-3333-west-4th-avenue-vancouver-R3149612-1-p480.jpg?2026-08-05+19%3A25%3A02=',
+    'https://photos.zolo.ca/204-3333-west-4th-avenue-vancouver-R3149612-2-p480.jpg?2026-08-05+19%3A25%3A03='
+  ],
+  'york-103-2535-r3137446':[
+    'https://iss-cdn.myrealpage.com/JJoTxvFUAtG7KxCK79uD8Mze_I1Rh9gZkPhlOY9SkAM/rs%3Aauto%3A0%3A0%3A0/g%3Asm/aHR0cDovL3MzLmFtYXpvbmF3cy5jb20vbXJwLWxpc3RpbmdzLzcvOS8yLzEwOTA5NDI5Ny8zYjFkYTdiZjk1NDljYWFlNWU4OTA5ZjE2MmM2MGYzOS5qcGVn',
+    'https://iss-cdn.myrealpage.com/Da5OArdZ0YlHgEGM04vZcBR03s9IhTbcWuQoUwHJFKU/rs%3Aauto%3A320%3A0%3A0/g%3Asm/aHR0cDovL3MzLmFtYXpvbmF3cy5jb20vbXJwLWxpc3RpbmdzLzcvOS8yLzEwOTA5NDI5Ny8zYjFkYTdiZjk1NDljYWFlNWU4OTA5ZjE2MmM2MGYzOS5qcGVn',
+    'https://iss-cdn.myrealpage.com/7mdxK8SGlhQCNpIRqP8KB5vHL5qdkBpnd2yeb2l_Z_M/rs%3Aauto%3A320%3A0%3A0/g%3Asm/aHR0cDovL3MzLmFtYXpvbmF3cy5jb20vbXJwLWxpc3RpbmdzLzcvOS8yLzEwOTA5NDI5Ny81Y2E1OWRhYmI1MjdjMzUzNWJhZDY1ZDVkYWU3ZDY5MC5qcGVn'
+  ],
+  'solo-2228-marstrand':[
+    'https://static.wixstatic.com/media/cd8db0_40239115f34843c5877c2624bc2d34d7~mv2.jpg/v1/fill/w_938%2Ch_635%2Cq_90%2Cenc_avif%2Cquality_auto/cd8db0_40239115f34843c5877c2624bc2d34d7~mv2.jpg',
+    'https://static.wixstatic.com/media/cd8db0_76521ec1095a4332a06c933b84ba93f7~mv2.jpg/v1/fill/w_675%2Ch_635%2Cq_90%2Cenc_avif%2Cquality_auto/cd8db0_76521ec1095a4332a06c933b84ba93f7~mv2.jpg',
+    'https://static.wixstatic.com/media/cd8db0_6ef0a5c58ff04abd843038e89b22999b~mv2.jpg/v1/fill/w_675%2Ch_635%2Cq_90%2Cenc_avif%2Cquality_auto/cd8db0_6ef0a5c58ff04abd843038e89b22999b~mv2.jpg'
+  ],
   'tribeca-type-2d-2111-w11':['https://img.zumpercdn.com/397424442/1280x960?auto=format'],
   'raphael-301-3668-w10':['https://s.realtyninja.com/static/images/buildings/hd/9711_d9a57435_3668_W_10th_Ave.JPG','https://www.uniqueaccommodations.com/img/building/1417/z04.jpg']
 };
