@@ -1,8 +1,8 @@
 {
   "meta": {
-    "lastRefreshed": "2026-08-17T20:52:00-07:00",
+    "lastRefreshed": "2026-08-18T06:45:00-04:00",
     "coverage": ["Kitsilano", "Arbutus Ridge", "Point Grey"],
-    "verificationPolicy": "Precision-first. Primary property-manager inventory and fresh MLS status are publishable; search/cached/syndicated evidence alone is not.",
+    "verificationPolicy": "Precision-first. Primary property-manager inventory and fresh MLS status are publishable; search/cached/syndicated evidence alone is not. User-browser current status overrides stale indexed availability.",
     "note": "Only availabilityStatus=active is shown by default. needs_confirmation and removed records are retained for history."
   },
   "listings": [
@@ -37,7 +37,7 @@
       "availabilityStatus": "active",
       "status": "unchanged",
       "priceDrop": false,
-      "dataNotes": "Strong purpose-built match. AC is listed. Underground parking is $150/month subject to availability. Up to 3 months free on select suites through Sep 1; exact Unit 315 incentive still requires leasing confirmation."
+      "dataNotes": "Strong purpose-built match. AC is listed. Underground parking is $150/month subject to availability."
     },
     {
       "id": "arbutus-terrace-unit6-2den",
@@ -66,11 +66,11 @@
       "firstSeen": "2026-08-14",
       "lastChecked": "2026-08-17",
       "verifiedAt": "2026-08-17T20:52:00-07:00",
-      "verificationMethod": "Strand's current official page says Arbutus Terrace is Now Renting and lists Two Bed + Den starting at $3795; current syndicated inventory independently shows Unit 6, 816 sqft, 2BR/2BA at $3795.",
+      "verificationMethod": "Strand official page says Now Renting and Two Bed + Den starting at $3795; current syndicated inventory shows Unit 6 at 816 sqft.",
       "availabilityStatus": "active",
       "status": "corrected",
       "priceDrop": false,
-      "dataNotes": "Promoted back to Active because primary Strand evidence is now available. Exact orientation remains unverified; Strand notes some residences are north-facing, so confirm Unit 6 exposure before viewing."
+      "dataNotes": "Exact orientation remains unverified."
     },
     {
       "id": "treo-2688-vine-r3142696",
@@ -99,11 +99,11 @@
       "firstSeen": "2026-08-16",
       "lastChecked": "2026-08-17",
       "verifiedAt": "2026-08-17T20:52:00-07:00",
-      "verificationMethod": "Fresh MLS-backed sources show R3142696 active at $3800, 2BR/2BA, 1063 sqft, 1 parking; Zillow shows updated/current rental status.",
+      "verificationMethod": "Fresh MLS-backed sources show R3142696 active at $3800, 2BR/2BA, 1063 sqft, 1 parking.",
       "availabilityStatus": "active",
       "status": "price_drop",
       "priceDrop": true,
-      "dataNotes": "PRICE DROP from $3900 to $3800. Excellent space/value ratio; AC and orientation remain unverified."
+      "dataNotes": "PRICE DROP from $3900 to $3800. AC and orientation remain unverified."
     },
     {
       "id": "blenheim-terrace-204-r3149612",
@@ -132,11 +132,11 @@
       "firstSeen": "2026-08-16",
       "lastChecked": "2026-08-17",
       "verifiedAt": "2026-08-17T20:52:00-07:00",
-      "verificationMethod": "MLS R3149612 remains Active/For Rent at $4495, 2BR/2BA, 940 sqft, 1 parking; recent status checks remain current.",
+      "verificationMethod": "MLS R3149612 remains Active/For Rent at $4495, 2BR/2BA, 940 sqft, 1 parking.",
       "availabilityStatus": "active",
       "status": "unchanged",
       "priceDrop": false,
-      "dataNotes": "Furnished and described as sun-filled. A separate MLS R3149267 also advertises Unit 204 at $4295/905 sqft; kept separate rather than merging because the listing identity/terms conflict."
+      "dataNotes": "Furnished and described as sun-filled."
     },
     {
       "id": "cypress-1070-r3129917",
@@ -160,16 +160,17 @@
       "balcony": true,
       "largeWindows": true,
       "modernInterior": true,
-      "source": "MLS / Zolo / Condos.ca",
+      "source": "MLS / stale syndicated copies",
       "url": "https://www.zolo.ca/vancouver-real-estate/1070-cypress-street",
       "firstSeen": "2026-08-17",
-      "lastChecked": "2026-08-17",
-      "verifiedAt": "2026-08-17T20:52:00-07:00",
-      "verificationMethod": "Current MLS R3129917 remains For Rent; multiple MLS-backed sources agree on $5700, 2BR/2BA, 1056 sqft. Listing explicitly describes the home as west-facing and completely renovated.",
-      "availabilityStatus": "active",
-      "status": "new",
+      "lastChecked": "2026-08-18",
+      "verifiedAt": "2026-08-18T06:45:00-04:00",
+      "verificationMethod": "User's current browser reports the listing as inactive. Older Zolo/Point2Homes/Condos.ca/REW indexed pages still show For Rent/Active, but these are stale or syndicated evidence and do not override the fresher browser result.",
+      "availabilityStatus": "removed",
+      "status": "removed",
+      "removedAt": "2026-08-18",
       "priceDrop": false,
-      "dataNotes": "NEW strong-quality candidate. West-facing, renovated, 175 sqft patio plus balcony, cats/small dogs allowed. Parking/storage are available at additional monthly cost rather than necessarily included in base rent."
+      "dataNotes": "Removed from current inventory. Do not reactivate from MLS/search-index copies unless a fresh primary or genuinely current listing page proves it is available again."
     },
     {
       "id": "york-103-2535-r3137446",
@@ -202,7 +203,7 @@
       "availabilityStatus": "active",
       "status": "unchanged",
       "priceDrop": false,
-      "dataNotes": "Very large 2BR near the beach with views; expensive but unusually spacious. AC/orientation remain unverified."
+      "dataNotes": "Very large 2BR near the beach."
     },
     {
       "id": "solo-2228-marstrand",
@@ -231,11 +232,11 @@
       "firstSeen": "2026-08-14",
       "lastChecked": "2026-08-17",
       "verifiedAt": "2026-08-17T20:52:00-07:00",
-      "verificationMethod": "Homax's current property-manager search page still explicitly labels 2228 Marstrand FOR RENT, $3500, 2BR/2BA, 948 sqft, Available Now.",
+      "verificationMethod": "Homax current property-manager page still shows FOR RENT / Available Now.",
       "availabilityStatus": "active",
       "status": "unchanged",
       "priceDrop": false,
-      "dataNotes": "Primary property-manager evidence remains active. No pets."
+      "dataNotes": "No pets."
     },
     {
       "id": "tribeca-type-2d-2111-w11",
@@ -258,7 +259,7 @@
       "availabilityStatus": "needs_confirmation",
       "status": "unchanged",
       "priceDrop": false,
-      "dataNotes": "Still hidden: no sufficiently fresh primary Bastion inventory confirmation found."
+      "dataNotes": "Hidden: no sufficiently fresh primary Bastion inventory confirmation found."
     },
     {
       "id": "kits-walk-2br-flex-616",
@@ -285,7 +286,7 @@
       "availabilityStatus": "needs_confirmation",
       "status": "unchanged",
       "priceDrop": false,
-      "dataNotes": "Official current floor-plan search returns No matches; specific 2 Bedroom Flex page shows 0 apartments available. Not current inventory."
+      "dataNotes": "Official floor-plan search returns No matches."
     },
     {
       "id": "raphael-301-3668-w10",
@@ -331,7 +332,7 @@
       "status": "removed",
       "removedAt": "2026-08-14",
       "priceDrop": false,
-      "dataNotes": "Historical only. Current Raven inventory shows only a studio at $2495; no current 2BR inventory verified."
+      "dataNotes": "Historical only."
     },
     {
       "id": "raven-705-3709-wbroadway",
