@@ -1,0 +1,130 @@
+name: Cache listing photos
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'data/listings.json'
+      - 'data/image-sources.json'
+      - '.github/workflows/cache-listing-images.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: listing-image-cache
+  cancel-in-progress: true
+
+jobs:
+  cache-images:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Download verified image candidates
+        run: |
+          python3 - <<'PY'
+          import json
+          import mimetypes
+          import os
+          import pathlib
+          import shutil
+          import tempfile
+          import urllib.request
+
+          root = pathlib.Path('.')
+          source_path = root / 'data' / 'image-sources.json'
+          manifest_path = root / 'data' / 'images.json'
+          assets_root = root / 'assets' / 'listings'
+          assets_root.mkdir(parents=True, exist_ok=True)
+
+          sources = json.loads(source_path.read_text())
+          try:
+              previous = json.loads(manifest_path.read_text())
+          except Exception:
+              previous = {}
+
+          manifest = {}
+          headers_base = {
+              'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/126 Safari/537.36',
+              'Accept': 'image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8',
+          }
+
+          ext_by_type = {
+              'image/jpeg': '.jpg',
+              'image/jpg': '.jpg',
+              'image/png': '.png',
+              'image/webp': '.webp',
+              'image/avif': '.avif',
+              'image/gif': '.gif',
+          }
+
+          for listing_id, spec in sources.items():
+              candidates = spec.get('candidates') or []
+              if not candidates:
+                  continue
+
+              tmp = pathlib.Path(tempfile.mkdtemp(prefix='listing-photo-'))
+              saved = []
+              for idx, url in enumerate(candidates[:8], start=1):
+                  headers = dict(headers_base)
+                  if spec.get('referer'):
+                      headers['Referer'] = spec['referer']
+                  req = urllib.request.Request(url, headers=headers)
+                  try:
+                      with urllib.request.urlopen(req, timeout=20) as response:
+                          content_type = (response.headers.get_content_type() or '').lower()
+                          if not content_type.startswith('image/'):
+                              print(f'SKIP {listing_id} {idx}: content-type {content_type}')
+                              continue
+                          data = response.read(8 * 1024 * 1024 + 1)
+                          if len(data) < 4096 or len(data) > 8 * 1024 * 1024:
+                              print(f'SKIP {listing_id} {idx}: invalid size {len(data)}')
+                              continue
+                          ext = ext_by_type.get(content_type) or pathlib.Path(urllib.request.urlparse(url).path).suffix.lower() or '.jpg'
+                          if ext not in {'.jpg','.jpeg','.png','.webp','.avif','.gif'}:
+                              ext = '.jpg'
+                          dest = tmp / f'{len(saved)+1}{ext}'
+                          dest.write_bytes(data)
+                          saved.append(dest)
+                          print(f'OK {listing_id}: {url} -> {dest.name} ({len(data)} bytes)')
+                  except Exception as exc:
+                      print(f'FAIL {listing_id} {idx}: {exc}')
+
+              final_dir = assets_root / listing_id
+              if saved:
+                  shutil.rmtree(final_dir, ignore_errors=True)
+                  final_dir.mkdir(parents=True, exist_ok=True)
+                  paths = []
+                  for src in saved:
+                      dst = final_dir / src.name
+                      shutil.move(str(src), str(dst))
+                      paths.append(dst.as_posix())
+                  manifest[listing_id] = paths
+              else:
+                  old = previous.get(listing_id, [])
+                  existing = [p for p in old if (root / p).exists()]
+                  if existing:
+                      manifest[listing_id] = existing
+                      print(f'KEEP {listing_id}: previous cached images')
+                  else:
+                      print(f'NO CACHE {listing_id}: source photos remain external-only')
+              shutil.rmtree(tmp, ignore_errors=True)
+
+          manifest_path.write_text(json.dumps(manifest, indent=2) + '\n')
+          PY
+
+      - name: Commit cached photos
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add assets/listings data/images.json
+          if git diff --cached --quiet; then
+            echo 'No image cache changes.'
+            exit 0
+          fi
+          git commit -m 'Cache listing photos for GitHub Pages'
+          git push
