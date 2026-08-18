@@ -63,6 +63,8 @@ A unit may be `active` only when one of these is true:
 
 Additionally, every Active listing must have valid map coordinates (`lat` and `lng`) before publication. Coordinate lookup is part of ingestion, not an optional UI enhancement. If an otherwise verified listing has no coordinates yet, geocode the verified street address before committing it as Active.
 
+Every Active listing should also carry usable photos before publication whenever the source exposes them. Prefer photos of the exact unit. If exact-unit photos are unavailable, official building/floor-plan photos may be used, but never substitute interior photos from a different unit without clearly treating them as building-level imagery. Broken or unrelated image URLs must not be published.
+
 If neither availability condition is met, use `needs_confirmation`.
 
 Any fresher explicit Gone/Rented/Unavailable/404/410 evidence immediately wins over an older Available snapshot and changes the record to `removed`.
@@ -96,13 +98,16 @@ Compare current unit list, rent, sqft and availability across sources. Detect sh
 ### 7. Geocode Active inventory
 Resolve the verified street address to latitude/longitude. Confirm the point is in the expected Vancouver neighbourhood and is not a same-number address in another city or on another street. No Active record may have null coordinates.
 
-### 8. Compare history
+### 8. Collect and validate photos
+For each Active record, collect a small set of stable image URLs as part of the same refresh. Priority: exact-unit photos > official floor-plan/unit photos > official building/gallery photos. Confirm the photos correspond to the listing/building and load successfully. Do not use search-result thumbnails or photos from a different unit as if they were the subject unit.
+
+### 9. Compare history
 Only compare prices after stable identity is established. Identity/sqft/unit drift is a correction or a different listing, never a price drop.
 
-### 9. Publish
-Only `availabilityStatus: active` appears by default and counts toward Active. Historical/uncertain units require `Show hidden`.
+### 10. Publish
+Only `availabilityStatus: active` appears by default and counts toward Active. Historical/uncertain units require `Show hidden`. Active cards should normally include photos gathered in step 8.
 
-### 10. Cache bypass
+### 11. Cache bypass
 The static app fetches JSON with `cache: no-store` plus a timestamp query so browser cache cannot resurrect a removed listing after deployment.
 
 ## Priority buildings
