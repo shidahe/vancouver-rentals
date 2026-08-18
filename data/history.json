@@ -1,38 +1,50 @@
 {
   "arbutus-residences-315-2den-900": [
     {"date":"2026-08-14","rent":4110,"note":"First tracked as generic 2BR+den availability"},
-    {"date":"2026-08-16","rent":4110,"note":"Re-verified as Unit 315: 2BR+den, 2BA, 900 sqft, Immediate; AC listed; building year 2021"}
-  ],
-  "treo-2688-vine-r3142696": [
-    {"date":"2026-08-16","rent":3900,"note":"NEW: MLS R3142696, 2BR/2BA, 1063 sqft, 1 parking; current MLS-backed inventory"}
-  ],
-  "blenheim-terrace-204-r3149612": [
-    {"date":"2026-08-16","rent":4495,"note":"NEW: MLS R3149612, Unit 204, 2BR/2BA, 940 sqft, 1 parking. Kept separate from conflicting R3149267 record."}
-  ],
-  "york-103-2535-r3137446": [
-    {"date":"2026-08-16","rent":5850,"note":"NEW: MLS R3137446, 2BR/2BA, 1499 sqft, 1 parking, pets allowed"}
-  ],
-  "solo-2228-marstrand": [
-    {"date":"2026-08-14","rent":3500,"note":"First tracked"},
-    {"date":"2026-08-16","rent":3500,"note":"Primary property-manager page still shows FOR RENT / Available Now, 2BR/2BA, 948 sqft"}
-  ],
-  "tribeca-type-2d-2111-w11": [
-    {"date":"2026-08-14","rent":3600,"note":"First tracked"},
-    {"date":"2026-08-16","rent":3600,"note":"Still needs confirmation; no fresh primary Bastion inventory confirmation found"}
+    {"date":"2026-08-16","rent":4110,"note":"Re-verified as Unit 315: 2BR+den, 2BA, 900 sqft, Immediate; AC listed; building year 2021"},
+    {"date":"2026-08-17","rent":4110,"note":"Still active in verified landlord inventory; Unit 315 remains Immediate"}
   ],
   "arbutus-terrace-unit6-2den": [
     {"date":"2026-08-14","rent":3795,"note":"Tracked at 816 sqft from syndicated Strand feed"},
-    {"date":"2026-08-16","rent":3795,"note":"Still needs confirmation; no fresh independent primary Strand inventory found"}
+    {"date":"2026-08-16","rent":3795,"note":"Still needs confirmation; no fresh independent primary Strand inventory found"},
+    {"date":"2026-08-17","rent":3795,"note":"Promoted to Active: Strand official page now says Now Renting and Two Bed + Den starting at $3795; current syndicated inventory shows Unit 6 at 816 sqft"}
+  ],
+  "treo-2688-vine-r3142696": [
+    {"date":"2026-08-16","rent":3900,"note":"NEW: MLS R3142696, 2BR/2BA, 1063 sqft, 1 parking; current MLS-backed inventory"},
+    {"date":"2026-08-17","rent":3800,"note":"PRICE DROP: current MLS-backed Zolo/Zillow listing is $3800; identity unchanged"}
+  ],
+  "blenheim-terrace-204-r3149612": [
+    {"date":"2026-08-16","rent":4495,"note":"NEW: MLS R3149612, Unit 204, 2BR/2BA, 940 sqft, 1 parking. Kept separate from conflicting R3149267 record."},
+    {"date":"2026-08-17","rent":4495,"note":"Still Active/For Rent under MLS R3149612"}
+  ],
+  "cypress-1070-r3129917": [
+    {"date":"2026-08-17","rent":5700,"note":"NEW: MLS R3129917, renovated west-facing 2BR/2BA townhouse, 1056 sqft; patio/balcony, pets allowed; parking/storage extra"}
+  ],
+  "york-103-2535-r3137446": [
+    {"date":"2026-08-16","rent":5850,"note":"NEW: MLS R3137446, 2BR/2BA, 1499 sqft, 1 parking, pets allowed"},
+    {"date":"2026-08-17","rent":5850,"note":"Still listed For Rent"}
+  ],
+  "solo-2228-marstrand": [
+    {"date":"2026-08-14","rent":3500,"note":"First tracked"},
+    {"date":"2026-08-16","rent":3500,"note":"Primary property-manager page still shows FOR RENT / Available Now, 2BR/2BA, 948 sqft"},
+    {"date":"2026-08-17","rent":3500,"note":"Homax current search page still shows FOR RENT / Available Now"}
+  ],
+  "tribeca-type-2d-2111-w11": [
+    {"date":"2026-08-14","rent":3600,"note":"First tracked"},
+    {"date":"2026-08-16","rent":3600,"note":"Still needs confirmation; no fresh primary Bastion inventory confirmation found"},
+    {"date":"2026-08-17","rent":3600,"note":"Still needs confirmation; no fresh primary Bastion inventory confirmation found"}
   ],
   "kits-walk-2br-flex-616": [
     {"date":"2026-08-14","rent":3425,"note":"Initially discovered from official availability result"},
-    {"date":"2026-08-16","rent":3425,"note":"Still needs confirmation; current 2BR availability not unambiguous"}
+    {"date":"2026-08-16","rent":3425,"note":"Still needs confirmation; current 2BR availability not unambiguous"},
+    {"date":"2026-08-17","rent":3425,"note":"Official floor-plan search currently returns No matches; 2 Bedroom Flex page shows 0 apartments available"}
   ],
   "raphael-301-3668-w10": [
     {"date":"2026-08-14","rent":4500,"note":"Removed; user browser confirmed Gone too soon"}
   ],
   "raven-410-3709-wbroadway": [
-    {"date":"2026-08-14","rent":3650,"note":"Removed after live browser showed unavailable"}
+    {"date":"2026-08-14","rent":3650,"note":"Removed after live browser showed unavailable"},
+    {"date":"2026-08-17","rent":3650,"note":"Remains removed; current building inventory shows only studio availability"}
   ],
   "raven-705-3709-wbroadway": [
     {"date":"2026-08-14","rent":4195,"note":"Rejected stale cached availability and removed"}
