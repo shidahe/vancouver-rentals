@@ -61,7 +61,9 @@ A unit may be `active` only when one of these is true:
 1. A Tier A primary source explicitly shows that exact unit/floorplan as currently available; or
 2. There are at least two sufficiently recent, genuinely independent sources agreeing on identity and availability, with no fresher contradictory evidence.
 
-If neither condition is met, use `needs_confirmation`.
+Additionally, every Active listing must have valid map coordinates (`lat` and `lng`) before publication. Coordinate lookup is part of ingestion, not an optional UI enhancement. If an otherwise verified listing has no coordinates yet, geocode the verified street address before committing it as Active.
+
+If neither availability condition is met, use `needs_confirmation`.
 
 Any fresher explicit Gone/Rented/Unavailable/404/410 evidence immediately wins over an older Available snapshot and changes the record to `removed`.
 
@@ -91,13 +93,16 @@ Compare current unit list, rent, sqft and availability across sources. Detect sh
 - plausible listing but freshness/independence insufficient -> `needs_confirmation`
 - explicit unavailable or fresher evidence removes the unit -> `removed`
 
-### 7. Compare history
+### 7. Geocode Active inventory
+Resolve the verified street address to latitude/longitude. Confirm the point is in the expected Vancouver neighbourhood and is not a same-number address in another city or on another street. No Active record may have null coordinates.
+
+### 8. Compare history
 Only compare prices after stable identity is established. Identity/sqft/unit drift is a correction or a different listing, never a price drop.
 
-### 8. Publish
+### 9. Publish
 Only `availabilityStatus: active` appears by default and counts toward Active. Historical/uncertain units require `Show hidden`.
 
-### 9. Cache bypass
+### 10. Cache bypass
 The static app fetches JSON with `cache: no-store` plus a timestamp query so browser cache cannot resurrect a removed listing after deployment.
 
 ## Priority buildings
