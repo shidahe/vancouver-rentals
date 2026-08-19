@@ -11,7 +11,7 @@ const today = iso.slice(0, 10);
 const readJson = async (p, fallback) => { try { return JSON.parse(await fs.readFile(p, 'utf8')); } catch { return fallback; } };
 const writeJson = async (p, v) => { await fs.mkdir(path.dirname(p), { recursive: true }); await fs.writeFile(p, JSON.stringify(v, null, 2) + '\n'); };
 const norm = s => (s || '').toLowerCase().replace(/[^a-z0-9]+/g, ' ').trim();
-const moneyMatches = text => [...text.matchAll(/\$\s?([2-9][0-9]{3})(?:\.00)?\b/g)].map(m => Number(m[1]));
+const moneyMatches = text => [...text.matchAll(/\$\s?([2-9][0-9](?:,[0-9]{3}|[0-9]{2}))(?:\.00)?\b/g)].map(m => Number(m[1].replace(',', '')));
 const firstLikelyRent = text => {
   const vals = moneyMatches(text).filter(v => v >= 2500 && v <= 12000);
   return vals.length ? vals[0] : null;
