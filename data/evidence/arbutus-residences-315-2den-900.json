@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-08-19T20:21:09.243Z",
+  "checkedAt": "2026-08-19T20:24:51.763Z",
   "listingId": "arbutus-residences-315-2den-900",
   "sourceUrl": "https://www.rentfaster.ca/properties/2139-lahb-ave-vancouver-454186",
   "ok": true,
@@ -409,11 +409,383 @@
       "text": ""
     }
   ],
-  "elapsedMs": 3497,
+  "jsonLd": [
+    {
+      "@context": "https://schema.org",
+      "@type": "ItemPage",
+      "mainEntity": {
+        "@context": "https://schema.org",
+        "@type": [
+          "LocalBusiness",
+          "ApartmentComplex"
+        ],
+        "@id": "https://www.rentfaster.ca/454186",
+        "url": "https://www.rentfaster.ca/properties/2139-lahb-ave-vancouver-454186",
+        "amenityFeature": [
+          {
+            "@type": "LocationFeatureSpecification",
+            "@context": "https://schema.org",
+            "name": "Elevator",
+            "value": "True"
+          },
+          {
+            "@type": "LocationFeatureSpecification",
+            "@context": "https://schema.org",
+            "name": "Storage Lockers",
+            "value": "True"
+          },
+          {
+            "@type": "LocationFeatureSpecification",
+            "@context": "https://schema.org",
+            "name": "Zero-Step Entrance",
+            "value": "True"
+          },
+          {
+            "@type": "LocationFeatureSpecification",
+            "@context": "https://schema.org",
+            "name": "Fridge",
+            "value": "True"
+          },
+          {
+            "@type": "LocationFeatureSpecification",
+            "@context": "https://schema.org",
+            "name": "Oven/Stove",
+            "value": "True"
+          },
+          {
+            "@type": "LocationFeatureSpecification",
+            "@context": "https://schema.org",
+            "name": "Laundry - In Suite",
+            "value": "True"
+          },
+          {
+            "@type": "LocationFeatureSpecification",
+            "@context": "https://schema.org",
+            "name": "Dishwasher",
+            "value": "True"
+          },
+          {
+            "@type": "LocationFeatureSpecification",
+            "@context": "https://schema.org",
+            "name": "Balcony",
+            "value": "True"
+          },
+          {
+            "@type": "LocationFeatureSpecification",
+            "@context": "https://schema.org",
+            "name": "Hardwood Floors",
+            "value": "True"
+          },
+          {
+            "@type": "LocationFeatureSpecification",
+            "@context": "https://schema.org",
+            "name": "City views",
+            "value": "True"
+          },
+          {
+            "@type": "LocationFeatureSpecification",
+            "@context": "https://schema.org",
+            "name": "Microwave",
+            "value": "True"
+          },
+          {
+            "@type": "LocationFeatureSpecification",
+            "@context": "https://schema.org",
+            "name": "Air Conditioning",
+            "value": "True"
+          },
+          {
+            "@type": "LocationFeatureSpecification",
+            "@context": "https://schema.org",
+            "name": "On-Site Management",
+            "value": "True"
+          },
+          {
+            "@type": "LocationFeatureSpecification",
+            "@context": "https://schema.org",
+            "name": "Party/Games Room",
+            "value": "True"
+          },
+          {
+            "@type": "LocationFeatureSpecification",
+            "@context": "https://schema.org",
+            "name": "Fitness Area",
+            "value": "True"
+          },
+          {
+            "@type": "LocationFeatureSpecification",
+            "@context": "https://schema.org",
+            "name": "Bike room",
+            "value": "True"
+          },
+          {
+            "@type": "LocationFeatureSpecification",
+            "@context": "https://schema.org",
+            "name": "Courtyard",
+            "value": "True"
+          },
+          {
+            "@type": "LocationFeatureSpecification",
+            "@context": "https://schema.org",
+            "name": "Bike Paths",
+            "value": "True"
+          },
+          {
+            "@type": "LocationFeatureSpecification",
+            "@context": "https://schema.org",
+            "name": "Bus",
+            "value": "True"
+          },
+          {
+            "@type": "LocationFeatureSpecification",
+            "@context": "https://schema.org",
+            "name": "Ocean",
+            "value": "True"
+          },
+          {
+            "@type": "LocationFeatureSpecification",
+            "@context": "https://schema.org",
+            "name": "Playground/Park",
+            "value": "True"
+          },
+          {
+            "@type": "LocationFeatureSpecification",
+            "@context": "https://schema.org",
+            "name": "Tennis Courts",
+            "value": "True"
+          }
+        ],
+        "additionalProperty": [],
+        "slogan": "Arbutus Residences",
+        "priceRange": "$2,435 - 5,390",
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": "49.248855100000",
+          "longitude": "-123.154510100000"
+        },
+        "telephone": "7786559223",
+        "image": "https://rf-images-prod-bcdn.rentfaster.ca/454186/17802679.v.c07ac6fe3caaac1790c1a84fecc9fdb5.jpg",
+        "name": "Arbutus Residences",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "2139 Lahb Ave",
+          "addressLocality": "Vancouver",
+          "addressRegion": "British Columbia",
+          "postalCode": "V6J4R1",
+          "addressCountry": {
+            "@type": "Country",
+            "name": "CA"
+          }
+        },
+        "containsPlace": [
+          {
+            "@context": "https://schema.org",
+            "name": "Unit  501",
+            "description": "One Bed",
+            "additionalProperty": [
+              {
+                "@type": "PropertyValue",
+                "name": "Square Feet",
+                "value": "685"
+              },
+              {
+                "@type": "PropertyValue",
+                "name": "Availability Date",
+                "value": "Immediate"
+              }
+            ],
+            "@type": "Apartment",
+            "potentialAction": {
+              "@type": "RentAction",
+              "price": "3340.00",
+              "priceCurrency": "CAD"
+            },
+            "numberOfFullBathrooms": 1,
+            "numberOfPartialBathrooms": 0,
+            "floorSize": {
+              "@type": "QuantitativeValue",
+              "value": 685,
+              "unitCode": "FTK"
+            },
+            "numberOfBedrooms": 1
+          },
+          {
+            "@context": "https://schema.org",
+            "name": "Unit  315",
+            "description": "Two-Bedroom",
+            "additionalProperty": [
+              {
+                "@type": "PropertyValue",
+                "name": "Square Feet",
+                "value": "900"
+              },
+              {
+                "@type": "PropertyValue",
+                "name": "Availability Date",
+                "value": "Immediate"
+              }
+            ],
+            "@type": "Apartment",
+            "potentialAction": {
+              "@type": "RentAction",
+              "price": "4110.00",
+              "priceCurrency": "CAD"
+            },
+            "numberOfFullBathrooms": 2,
+            "numberOfPartialBathrooms": 0,
+            "floorSize": {
+              "@type": "QuantitativeValue",
+              "value": 900,
+              "unitCode": "FTK"
+            },
+            "numberOfBedrooms": 2
+          },
+          {
+            "@context": "https://schema.org",
+            "name": "Unit  TH",
+            "description": "Two-Bedroom Townhouse",
+            "additionalProperty": [
+              {
+                "@type": "PropertyValue",
+                "name": "Square Feet",
+                "value": "1340"
+              },
+              {
+                "@type": "PropertyValue",
+                "name": "Availability Date",
+                "value": "Immediate"
+              }
+            ],
+            "@type": "Apartment",
+            "potentialAction": {
+              "@type": "RentAction",
+              "price": "5390.00",
+              "priceCurrency": "CAD"
+            },
+            "numberOfFullBathrooms": 2,
+            "numberOfPartialBathrooms": 1,
+            "floorSize": {
+              "@type": "QuantitativeValue",
+              "value": 1340,
+              "unitCode": "FTK"
+            },
+            "numberOfBedrooms": 2
+          },
+          {
+            "@context": "https://schema.org",
+            "name": "Unit  305",
+            "description": "Three-Bedroom",
+            "additionalProperty": [
+              {
+                "@type": "PropertyValue",
+                "name": "Square Feet",
+                "value": "1090"
+              },
+              {
+                "@type": "PropertyValue",
+                "name": "Availability Date",
+                "value": "Immediate"
+              }
+            ],
+            "@type": "Apartment",
+            "potentialAction": {
+              "@type": "RentAction",
+              "price": "4945.00",
+              "priceCurrency": "CAD"
+            },
+            "numberOfFullBathrooms": 2,
+            "numberOfPartialBathrooms": 0,
+            "floorSize": {
+              "@type": "QuantitativeValue",
+              "value": 1090,
+              "unitCode": "FTK"
+            },
+            "numberOfBedrooms": 3
+          },
+          {
+            "@context": "https://schema.org",
+            "name": "Unit  315",
+            "description": "Studio",
+            "additionalProperty": [
+              {
+                "@type": "PropertyValue",
+                "name": "Square Feet",
+                "value": "455"
+              },
+              {
+                "@type": "PropertyValue",
+                "name": "Availability Date",
+                "value": "Immediate"
+              }
+            ],
+            "@type": "Apartment",
+            "potentialAction": {
+              "@type": "RentAction",
+              "price": "2435.00",
+              "priceCurrency": "CAD"
+            },
+            "numberOfFullBathrooms": 1,
+            "numberOfPartialBathrooms": 0,
+            "floorSize": {
+              "@type": "QuantitativeValue",
+              "value": 455,
+              "unitCode": "FTK"
+            },
+            "numberOfBedrooms": 0
+          }
+        ],
+        "petsAllowed": "Cats &amp; dogs negotiable",
+        "description": "The 2026 Summer WelcomeUp to 3 Months Free Rent on Select Suites.Sign new lease by September 1, 2026 to unlock these savings**Limited time offer. Subject to specific terms and conditions and may change or be withdrawn without prior notice. The lease must commence on or before September 1, 2026. Contact leasing for details.Discover the ultimate in luxury living at Arbutus Residences, a premier collection of homes nestled in one of Vancouver’s most desirable and vibrant neighborhoods. Situated near the picturesque Arbutus Greenway, this exclusive residence offers a perfect blend of peaceful suburban living and convenient urban access. Just minutes away from all of life’s daily amenities, Arbutus Residences is ideally located for those seeking a modern, yet tranquil lifestyle.The architecture of Arbutus Residences reflects the perfect balance of modern luxury and timeless design. These homes boast open-concept layouts that maximize space and natural light, with floor-to-ceiling double-glazed windows offering expansive views of Vancouver’s West End, downtown, and the majestic North Shore Mountains. Thoughtfully designed with sleek, durable laminate wood flooring throughout (except bathrooms), each residence offers a spacious and contemporary living experience.Features:These residences are equipped with top-of-the-line finishes and energy-efficient features, including:Energy-Star efficient Blomberg and Samsung kitchen appliancesStainless-steel Kohler pull-down kitchen sink faucet and fixturesStainless-steel double-basin undermount kitchen sinkModern quartz countertops and tile backsplashEuropean-style soft close cabinetry with recessed under-cabinet LED lightingConvenient rotating under-cabinet tray for blind cornersFull-size front-loading Blomberg in-suite washer and dryerConvenient roller-blinds throughout for privacy and light controlOpen-concept living areas designed for maximum space and comfortEfficient heating system for year-round comfortExpansive balconies and patios perfect for outdoor relaxationBuilding and Amenities:Arbutus Residences offers a wealth of amenities designed for both convenience and enjoyment:Fully equipped indoor fitness gymnasiumChildren’s play area and a tranquil courtyard for familiesGreen roof with planters and a community garden for residents to cultivateBBQ area for social gatherings and outdoor diningGated underground parking for security and easeStunning views of Vancouver West, downtown, and the North Shore MountainsA vibrant shopping plaza featuring Safeway, BC Liquor Store, Bank of Montreal, and moreAdditionalVideo surveillanceConvenience storeOutdoor play areaEnsuite bathroomWalk-in closetsBeach nearbySchools nearbyGarage with bike rackRooftop BBQ AreaRestaurants nearbyRooftop PatioBBQ AreaRoof Top Garden\n",
+        "parentOrganization": {
+          "@type": "Organization",
+          "name": "Arbutus Residences",
+          "telephone": "778-655-9223",
+          "url": "https://arbutusresidences.com?utm_source=RentSync&utm_medium=Rentals.ca%20Infinity%20Network&utm_campaign=Arbutus%20Residences"
+        }
+      },
+      "image": "https://rf-images-prod-bcdn.rentfaster.ca/454186/17802679.v.c07ac6fe3caaac1790c1a84fecc9fdb5.jpg"
+    }
+  ],
+  "images": [
+    "https://www.rentfaster.ca/template/2021/img/rf-logo-a.png",
+    "https://rf-images-prod-bcdn.rentfaster.ca/454186/17802679.v.c07ac6fe3caaac1790c1a84fecc9fdb5.jpg",
+    "https://rf-images-prod-bcdn.rentfaster.ca/454186/slide_13677345.v.1af4d567e873b5f269da1b72896b5d8e.jpg",
+    "https://rf-images-prod-bcdn.rentfaster.ca/454186/slide_15043243.v.eaa24c66594e0084c7d13305525c4add.jpg",
+    "https://rf-images-prod-bcdn.rentfaster.ca/promotions/75697/1766170291051_ARB_3_Bedroom.jpg",
+    "https://rf-images-prod-bcdn.rentfaster.ca/454186/thumber_16909372.v.20410bc8fa621f6bb6cab5df2159ad0a.jpg",
+    "https://rf-images-prod-bcdn.rentfaster.ca/474077/slide_18139196.v.17151fd8217d5ca2f6bcacf81ec37eb0.jpg",
+    "https://rf-images-prod-bcdn.rentfaster.ca/760859/slide_18313501.v.d3fd3b660cb82bd8aaab8ea7a41d4eff.jpg",
+    "https://rf-images-prod-bcdn.rentfaster.ca/755998/slide_18102086.v.7a7f81c34ea249d085c431d076f34335.jpg",
+    "https://rf-images-prod-bcdn.rentfaster.ca/753692/slide_18171146.v.93e3f250d733d66e45ec22f10f16abee.jpg",
+    "https://rf-images-prod-bcdn.rentfaster.ca/723384/slide_17642510.v.27ca4b476496ee74514f91b1dafb0e92.jpg",
+    "https://rf-images-prod-bcdn.rentfaster.ca/393077/slide_18151295.v.6ed3922f16c54770bc5aec3fbf609336.jpg",
+    "https://rf-images-prod-bcdn.rentfaster.ca/658809/slide_14136367.v.21d5a4457e9a8161705b0b983653a4de.jpg",
+    "https://rf-images-prod-bcdn.rentfaster.ca/667379/slide_17231522.v.e43ba5692ef820b8d4cfac0b54fdf303.jpg",
+    "https://rf-images-prod-bcdn.rentfaster.ca/561277/slide_18393639.v.ee443c9f78baa3e88d95dd3930062497.jpg",
+    "https://rf-images-prod-bcdn.rentfaster.ca/527025/slide_9370281.v.d60e4f1344e68ee50e49c57fa1fb6eae.jpg",
+    "https://rf-images-prod-bcdn.rentfaster.ca/720945/slide_16640117.v.80718540a2c34b1c79e28420d59081e5.jpg",
+    "https://rf-images-prod-bcdn.rentfaster.ca/624230/slide_18224633.v.f4e66a35586634f1f9ea9a2892cdc2a5.jpg",
+    "https://rf-images-prod-bcdn.rentfaster.ca/646181/slide_16731427.v.1aca99d25cbaa70344315053be9a5a13.jpg",
+    "https://rf-images-prod-bcdn.rentfaster.ca/653640/slide_13949517.v.0c5fa1bef07401f1a022482ec0d859e7.jpg"
+  ],
+  "elapsedMs": 4260,
   "identityMatch": true,
   "explicitNegative": false,
   "negativePhrase": null,
   "explicitPositive": true,
   "positivePhrase": "/available\\s+(?:immediately|[a-z]{3,9}\\s+\\d{1,2})/i",
-  "extractedRent": 2695
+  "extractedRent": 3340,
+  "facts": {
+    "bedrooms": 1,
+    "bathrooms": 1,
+    "sqft": null,
+    "buildingYear": 2021,
+    "ac": true,
+    "parking": null,
+    "petFriendly": true,
+    "orientation": null,
+    "balcony": true,
+    "largeWindows": null,
+    "modernInterior": true
+  }
 }

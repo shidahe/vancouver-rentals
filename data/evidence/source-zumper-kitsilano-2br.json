@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-08-19T20:21:09.243Z",
+  "checkedAt": "2026-08-19T20:24:51.763Z",
   "source": {
     "id": "zumper-kitsilano-2br",
     "name": "Zumper Kitsilano 2BR",
@@ -218,5 +218,1386 @@
       "text": ""
     }
   ],
-  "elapsedMs": 3359
+  "jsonLd": [
+    {
+      "@context": "https://schema.org",
+      "@type": "SearchResultsPage",
+      "dateModified": "2026-08-19T08:10:00.000Z",
+      "datePublished": "2026-08-19T08:10:00.000Z",
+      "contentLocation": {
+        "containedIn": {
+          "@type": "State",
+          "name": "BC"
+        },
+        "@type": "City",
+        "name": "Kitsilano"
+      },
+      "primaryImageOfPage": {
+        "@context": "https://schema.org",
+        "@type": "ImageObject",
+        "contentLocation": {
+          "containedIn": {
+            "@type": "State",
+            "name": "BC"
+          },
+          "@type": "City",
+          "name": "Kitsilano"
+        },
+        "contentUrl": "https://img.zumpercdn.com/889124636/1280x960",
+        "description": "Apartments in Kitsilano",
+        "name": "Apartments in Kitsilano"
+      },
+      "mainEntityOfPage": "https://www.zumper.com/apartments-for-rent/vancouver-bc/kitsilano/2-beds",
+      "mainEntity": {
+        "@context": "https://schema.org",
+        "@type": "ItemList",
+        "name": "2 Bedroom Apartments for Rent in Kitsilano, Vancouver, BC - 25 Rentals | Zumper",
+        "numberOfItems": 25,
+        "itemListOrder": "https://schema.org/ItemListOrderAscending",
+        "itemListElement": [
+          {
+            "@context": "https://schema.org",
+            "@type": "ListItem",
+            "position": 1,
+            "item": {
+              "@type": "RealEstateListing",
+              "@id": "https://www.zumper.com/apartment-buildings/p502698/the-reginald-kitsilano-vancouver-bc",
+              "url": "https://www.zumper.com/apartment-buildings/p502698/the-reginald-kitsilano-vancouver-bc",
+              "name": "The Reginald",
+              "datePosted": "2026-08-18",
+              "about": {
+                "@type": "ApartmentComplex",
+                "name": "The Reginald",
+                "image": "https://img.zumpercdn.com/889124636/1280x960",
+                "amenityFeature": [
+                  {
+                    "@type": "LocationFeatureSpecification",
+                    "name": "On-Site Laundry",
+                    "value": true
+                  },
+                  {
+                    "@type": "LocationFeatureSpecification",
+                    "name": "Dishwasher",
+                    "value": true
+                  },
+                  {
+                    "@type": "LocationFeatureSpecification",
+                    "name": "Balcony",
+                    "value": true
+                  },
+                  {
+                    "@type": "LocationFeatureSpecification",
+                    "name": "Central Heat",
+                    "value": true
+                  },
+                  {
+                    "@type": "LocationFeatureSpecification",
+                    "name": "Walk-In Closets",
+                    "value": true
+                  },
+                  {
+                    "@type": "LocationFeatureSpecification",
+                    "name": "In-Unit Laundry",
+                    "value": true
+                  },
+                  {
+                    "@type": "LocationFeatureSpecification",
+                    "name": "Elevator",
+                    "value": true
+                  },
+                  {
+                    "@type": "LocationFeatureSpecification",
+                    "name": "Wheelchair Accessible",
+                    "value": true
+                  },
+                  {
+                    "@type": "LocationFeatureSpecification",
+                    "name": "Storage",
+                    "value": true
+                  },
+                  {
+                    "@type": "LocationFeatureSpecification",
+                    "name": "Controlled Access",
+                    "value": true
+                  },
+                  {
+                    "@type": "LocationFeatureSpecification",
+                    "name": "Garage Parking",
+                    "value": true
+                  },
+                  {
+                    "@type": "LocationFeatureSpecification",
+                    "name": "Outdoor Space",
+                    "value": true
+                  },
+                  {
+                    "@type": "LocationFeatureSpecification",
+                    "name": "Bathrooms per unit",
+                    "value": "1"
+                  }
+                ],
+                "numberOfBedrooms": 2,
+                "petsAllowed": "Yes",
+                "address": {
+                  "@type": "PostalAddress",
+                  "streetAddress": "3639 Broadway W",
+                  "addressLocality": "Vancouver",
+                  "addressRegion": "BC",
+                  "postalCode": "V6R 2B8",
+                  "addressCountry": "CAN"
+                }
+              }
+            }
+          },
+          {
+            "@context": "https://schema.org",
+            "@type": "ListItem",
+            "position": 2,
+            "item": {
+              "@type": "RealEstateListing",
+              "@id": "https://www.zumper.com/listings/65121450/2-bedroom-kitsilano-vancouver-bc",
+              "url": "https://www.zumper.com/listings/65121450/2-bedroom-kitsilano-vancouver-bc",
+              "name": "2119 Trafalgar Street",
+              "datePosted": "2026-08-16",
+              "offers": {
+                "@type": "Offer",
+                "availability": "https://schema.org/InStock",
+                "businessFunction": "http://purl.org/goodrelations/v1#LeaseOut",
+                "price": 2150,
+                "priceCurrency": "CAD",
+                "priceSpecification": {
+                  "@type": "UnitPriceSpecification",
+                  "price": 2150,
+                  "priceCurrency": "CAD",
+                  "referenceQuantity": {
+                    "@type": "QuantitativeValue",
+                    "value": 1,
+                    "unitCode": "MON"
+                  }
+                }
+              },
+              "about": {
+                "@type": "Apartment",
+                "name": "2119 Trafalgar Street",
+                "telephone": "(844) 326-6969 ext. 1498",
+                "image": "https://img.zumpercdn.com/918947785/1280x960",
+                "amenityFeature": [
+                  {
+                    "@type": "LocationFeatureSpecification",
+                    "name": "On-Site Laundry",
+                    "value": true
+                  },
+                  {
+                    "@type": "LocationFeatureSpecification",
+                    "name": "Dishwasher",
+                    "value": true
+                  },
+                  {
+                    "@type": "LocationFeatureSpecification",
+                    "name": "Balcony",
+                    "value": true
+                  },
+                  {
+                    "@type": "LocationFeatureSpecification",
+                    "name": "Garden",
+                    "value": true
+                  },
+                  {
+                    "@type": "LocationFeatureSpecification",
+                    "name": "Hardwood Floor",
+                    "value": true
+                  },
+                  {
+                    "@type": "LocationFeatureSpecification",
+                    "name": "Central Heat",
+                    "value": true
+                  },
+                  {
+                    "@type": "LocationFeatureSpecification",
+                    "name": "Bathrooms per unit",
+                    "value": "1"
+                  }
+                ],
+                "numberOfBedrooms": 2,
+                "numberOfBathroomsTotal": 1,
+                "floorSize": {
+                  "@type": "QuantitativeValue",
+                  "value": 800,
+                  "unitCode": "SQFT"
+                },
+                "petsAllowed": "Yes",
+                "address": {
+                  "@type": "PostalAddress",
+                  "streetAddress": "2119 Trafalgar Street",
+                  "addressLocality": "Vancouver",
+                  "addressRegion": "BC",
+                  "postalCode": "V6K 3S7",
+                  "addressCountry": "CAN"
+                }
+              }
+            }
+          },
+          {
+            "@context": "https://schema.org",
+            "@type": "ListItem",
+            "position": 3,
+            "item": {
+              "@type": "RealEstateListing",
+              "@id": "https://www.zumper.com/apartment-buildings/p589984/kitsilano-low-rise-building-kitsilano-vancouver-bc",
+              "url": "https://www.zumper.com/apartment-buildings/p589984/kitsilano-low-rise-building-kitsilano-vancouver-bc",
+              "name": "Kitsilano Low rise Apartment",
+              "datePosted": "2026-08-13",
+              "about": {
+                "@type": "ApartmentComplex",
+                "name": "Kitsilano Low rise Apartment",
+                "image": "https://img.zumpercdn.com/918346530/1280x960",
+                "amenityFeature": [
+                  {
+                    "@type": "LocationFeatureSpecification",
+                    "name": "Balcony",
+                    "value": true
+                  },
+                  {
+                    "@type": "LocationFeatureSpecification",
+                    "name": "Hardwood Floor",
+                    "value": true
+                  },
+                  {
+                    "@type": "LocationFeatureSpecification",
+                    "name": "Storage",
+                    "value": true
+                  },
+                  {
+                    "@type": "LocationFeatureSpecification",
+                    "name": "Garage Parking",
+                    "value": true
+                  },
+                  {
+                    "@type": "LocationFeatureSpecification",
+                    "name": "Elevator",
+                    "value": true
+                  },
+                  {
+                    "@type": "LocationFeatureSpecification",
+                    "name": "On-Site Management",
+                    "value": true
+                  },
+                  {
+                    "@type": "LocationFeatureSpecification",
+                    "name": "Bathrooms per unit",
+                    "value": "1"
+                  }
+                ],
+                "numberOfBedrooms": 2,
+                "petsAllowed": "No",
+                "address": {
+                  "@type": "PostalAddress",
+                  "streetAddress": "1750 Vine St",
+                  "addressLocality": "Vancouver",
+                  "addressRegion": "BC",
+                  "postalCode": "V6K 3J5",
+                  "addressCountry": "CAN"
+                }
+              }
+            }
+          },
+          {
+            "@context": "https://schema.org",
+            "@type": "ListItem",
+            "position": 4,
+            "item": {
+              "@type": "RealEstateListing",
+              "@id": "https://www.zumper.com/listings/29259086p/2-bedroom-kitsilano-vancouver-bc",
+              "url": "https://www.zumper.com/listings/29259086p/2-bedroom-kitsilano-vancouver-bc",
+              "name": "2268 West Broadway #312",
+              "datePosted": "2026-08-09",
+              "offers": {
+                "@type": "Offer",
+                "availability": "https://schema.org/InStock",
+                "businessFunction": "http://purl.org/goodrelations/v1#LeaseOut",
+                "price": 3600,
+                "priceCurrency": "CAD",
+                "priceSpecification": {
+                  "@type": "UnitPriceSpecification",
+                  "price": 3600,
+                  "priceCurrency": "CAD",
+                  "referenceQuantity": {
+                    "@type": "QuantitativeValue",
+                    "value": 1,
+                    "unitCode": "MON"
+                  }
+                }
+              },
+              "about": {
+                "@type": "Apartment",
+                "name": "2268 West Broadway #312",
+                "telephone": "(844) 243-9694 ext. 7761",
+                "image": "https://img.zumpercdn.com/917476817/1280x960",
+                "amenityFeature": [
+                  {
+                    "@type": "LocationFeatureSpecification",
+                    "name": "In-Unit Laundry",
+                    "value": true
+                  },
+                  {
+                    "@type": "LocationFeatureSpecification",
+                    "name": "Balcony",
+                    "value": true
+                  },
+                  {
+                    "@type": "LocationFeatureSpecification",
+                    "name": "Hardwood Floor",
+                    "value": true
+                  },
+                  {
+                    "@type": "LocationFeatureSpecification",
+                    "name": "Assigned Parking",
+                    "value": true
+                  },
+                  {
+                    "@type": "LocationFeatureSpecification",
+                    "name": "Elevator",
+                    "value": true
+                  },
+                  {
+                    "@type": "LocationFeatureSpecification",
+                    "name": "Bathrooms per unit",
+                    "value": "2"
+                  }
+                ],
+                "numberOfBedrooms": 2,
+                "numberOfBathroomsTotal": 2,
+                "floorSize": {
+                  "@type": "QuantitativeValue",
+                  "value": 820,
+                  "unitCode": "SQFT"
+                },
+                "petsAllowed": "Yes",
+                "address": {
+                  "@type": "PostalAddress",
+                  "streetAddress": "2268 West Broadway #312",
+                  "addressLocality": "Vancouver",
+                  "addressRegion": "BC",
+                  "postalCode": "V6K 0B1",
+                  "addressCountry": "CAN"
+                }
+              }
+            }
+          },
+          {
+            "@context": "https://schema.org",
+            "@type": "ListItem",
+            "position": 5,
+            "item": {
+              "@type": "RealEstateListing",
+              "@id": "https://www.zumper.com/listings/11398146p/2-bedroom-kitsilano-vancouver-bc",
+              "url": "https://www.zumper.com/listings/11398146p/2-bedroom-kitsilano-vancouver-bc",
+              "name": "2932 W 13th Ave",
+              "datePosted": "2026-08-18",
+              "offers": {
+                "@type": "Offer",
+                "availability": "https://schema.org/InStock",
+                "businessFunction": "http://purl.org/goodrelations/v1#LeaseOut",
+                "price": 2800,
+                "priceCurrency": "CAD",
+                "priceSpecification": {
+                  "@type": "UnitPriceSpecification",
+                  "price": 2800,
+                  "priceCurrency": "CAD",
+                  "referenceQuantity": {
+                    "@type": "QuantitativeValue",
+                    "value": 1,
+                    "unitCode": "MON"
+                  }
+                }
+              },
+              "about": {
+                "@type": "Apartment",
+                "name": "2932 W 13th Ave",
+                "telephone": "(844) 325-9286 ext. 4661",
+                "image": "https://img.zumpercdn.com/450608777/1280x960",
+                "amenityFeature": [
+                  {
+                    "@type": "LocationFeatureSpecification",
+                    "name": "Air Conditioning",
+                    "value": true
+                  },
+                  {
+                    "@type": "LocationFeatureSpecification",
+                    "name": "Dishwasher",
+                    "value": true
+                  },
+                  {
+                    "@type": "LocationFeatureSpecification",
+                    "name": "Balcony",
+                    "value": true
+                  },
+                  {
+                    "@type": "LocationFeatureSpecification",
+                    "name": "Garden",
+                    "value": true
+                  },
+                  {
+                    "@type": "LocationFeatureSpecification",
+                    "name": "Deck",
+                    "value": true
+                  },
+                  {
+                    "@type": "LocationFeatureSpecification",
+                    "name": "Hardwood Floor",
+                    "value": true
+                  },
+                  {
+                    "@type": "LocationFeatureSpecification",
+                    "name": "Central Heat",
+                    "value": true
+                  },
+                  {
+                    "@type": "LocationFeatureSpecification",
+                    "name": "In-Unit Laundry",
+                    "value": true
+                  },
+                  {
+                    "@type": "LocationFeatureSpecification",
+                    "name": "Bathrooms per unit",
+                    "value": "2"
+                  }
+                ],
+                "numberOfBedrooms": 2,
+                "numberOfBathroomsTotal": 2,
+                "petsAllowed": "No",
+                "address": {
+                  "@type": "PostalAddress",
+                  "streetAddress": "2932 W 13th Ave",
+                  "addressLocality": "Vancouver",
+                  "addressRegion": "BC",
+                  "postalCode": "V6K 2T9",
+                  "addressCountry": "CAN"
+                }
+              }
+            }
+          },
+          {
+            "@context": "https://schema.org",
+            "@type": "ListItem",
+            "position": 6,
+            "item": {
+              "@type": "RealEstateListing",
+              "@id": "https://www.zumper.com/listings/292284p/2-bedroom-west-point-grey-vancouver-bc",
+              "url": "https://www.zumper.com/listings/292284p/2-bedroom-west-point-grey-vancouver-bc",
+              "name": "W Broadway & Alma St",
+              "datePosted": "2026-08-14",
+              "offers": {
+                "@type": "Offer",
+                "availability": "https://schema.org/InStock",
+                "businessFunction": "http://purl.org/goodrelations/v1#LeaseOut",
+                "price": 3300,
+                "priceCurrency": "CAD",
+                "priceSpecification": {
+                  "@type": "UnitPriceSpecification",
+                  "price": 3300,
+                  "priceCurrency": "CAD",
+                  "referenceQuantity": {
+                    "@type": "QuantitativeValue",
+                    "value": 1,
+                    "unitCode": "MON"
+                  }
+                }
+              },
+              "about": {
+                "@type": "Apartment",
+                "name": "W Broadway & Alma St",
+                "telephone": "(844) 326-7293 ext. 6168",
+                "image": "https://img.zumpercdn.com/230006040/1280x960",
+                "amenityFeature": [
+                  {
+                    "@type": "LocationFeatureSpecification",
+                    "name": "Assigned Parking",
+                    "value": true
+                  },
+                  {
+                    "@type": "LocationFeatureSpecification",
+                    "name": "Fireplace",
+                    "value": true
+                  },
+                  {
+                    "@type": "LocationFeatureSpecification",
+                    "name": "Dishwasher",
+                    "value": true
+                  },
+                  {
+                    "@type": "LocationFeatureSpecification",
+                    "name": "Balcony",
+                    "value": true
+                  },
+                  {
+                    "@type": "LocationFeatureSpecification",
+                    "name": "Hardwood Floor",
+                    "value": true
+                  },
+                  {
+                    "@type": "LocationFeatureSpecification",
+                    "name": "Furnished",
+                    "value": true
+                  },
+                  {
+                    "@type": "LocationFeatureSpecification",
+                    "name": "In-Unit Laundry",
+                    "value": true
+                  },
+                  {
+                    "@type": "LocationFeatureSpecification",
+                    "name": "Controlled Access",
+                    "value": true
+                  },
+                  {
+                    "@type": "LocationFeatureSpecification",
+                    "name": "Wheelchair Accessible",
+                    "value": true
+                  },
+                  {
+                    "@type": "LocationFeatureSpecification",
+                    "name": "Storage",
+                    "value": true
+                  },
+                  {
+                    "@type": "LocationFeatureSpecification",
+                    "name": "Roof Deck",
+                    "value": true
+                  },
+                  {
+                    "@type": "LocationFeatureSpecification",
+                    "name": "Garage Parking",
+                    "value": true
+                  },
+                  {
+                    "@type": "LocationFeatureSpecification",
+                    "name": "Elevator",
+                    "value": true
+                  },
+                  {
+                    "@type": "LocationFeatureSpecification",
+                    "name": "Bathrooms per unit",
+                    "value": "2"
+                  }
+                ],
+                "numberOfBedrooms": 2,
+                "numberOfBathroomsTotal": 2,
+                "floorSize": {
+                  "@type": "QuantitativeValue",
+                  "value": 900,
+                  "unitCode": "SQFT"
+                },
+                "petsAllowed": "No",
+                "address": {
+                  "@type": "PostalAddress",
+                  "streetAddress": "W Broadway & Alma St",
+                  "addressLocality": "Vancouver",
+                  "addressRegion": "BC",
+                  "postalCode": "V6R 2B7",
+                  "addressCountry": "CAN"
+                }
+              }
+            }
+          },
+          {
+            "@context": "https://schema.org",
+            "@type": "ListItem",
+            "position": 7,
+            "item": {
+              "@type": "RealEstateListing",
+              "@id": "https://www.zumper.com/listings/22720770p/2-bedroom-kitsilano-vancouver-bc",
+              "url": "https://www.zumper.com/listings/22720770p/2-bedroom-kitsilano-vancouver-bc",
+              "name": "W Broadway & Trafalgar St",
+              "datePosted": "2026-08-14",
+              "offers": {
+                "@type": "Offer",
+                "availability": "https://schema.org/InStock",
+                "businessFunction": "http://purl.org/goodrelations/v1#LeaseOut",
+                "price": 3600,
+                "priceCurrency": "CAD",
+                "priceSpecification": {
+                  "@type": "UnitPriceSpecification",
+                  "price": 3600,
+                  "priceCurrency": "CAD",
+                  "referenceQuantity": {
+                    "@type": "QuantitativeValue",
+                    "value": 1,
+                    "unitCode": "MON"
+                  }
+                }
+              },
+              "about": {
+                "@type": "Apartment",
+                "name": "W Broadway & Trafalgar St",
+                "telephone": "(844) 462-9072 ext. 5375",
+                "image": "https://img.zumpercdn.com/728033980/1280x960",
+                "amenityFeature": [
+                  {
+                    "@type": "LocationFeatureSpecification",
+                    "name": "Assigned Parking",
+                    "value": true
+                  },
+                  {
+                    "@type": "LocationFeatureSpecification",
+                    "name": "Fireplace",
+                    "value": true
+                  },
+                  {
+                    "@type": "LocationFeatureSpecification",
+                    "name": "Dishwasher",
+                    "value": true
+                  },
+                  {
+                    "@type": "LocationFeatureSpecification",
+                    "name": "Hardwood Floor",
+                    "value": true
+                  },
+                  {
+                    "@type": "LocationFeatureSpecification",
+                    "name": "In-Unit Laundry",
+                    "value": true
+                  },
+                  {
+                    "@type": "LocationFeatureSpecification",
+                    "name": "Garage Parking",
+                    "value": true
+                  },
+                  {
+                    "@type": "LocationFeatureSpecification",
+                    "name": "Storage",
+                    "value": true
+                  },
+                  {
+                    "@type": "LocationFeatureSpecification",
+                    "name": "Elevator",
+                    "value": true
+                  },
+                  {
+                    "@type": "LocationFeatureSpecification",
+                    "name": "Bathrooms per unit",
+                    "value": "2"
+                  }
+                ],
+                "numberOfBedrooms": 2,
+                "numberOfBathroomsTotal": 2,
+                "floorSize": {
+                  "@type": "QuantitativeValue",
+                  "value": 1000,
+                  "unitCode": "SQFT"
+                },
+                "petsAllowed": "Yes",
+                "address": {
+                  "@type": "PostalAddress",
+                  "streetAddress": "W Broadway & Trafalgar St",
+                  "addressLocality": "Vancouver",
+                  "addressRegion": "BC",
+                  "postalCode": "V6K 2E9",
+                  "addressCountry": "CAN"
+                }
+              }
+            }
+          },
+          {
+            "@context": "https://schema.org",
+            "@type": "ListItem",
+            "position": 8,
+            "item": {
+              "@type": "RealEstateListing",
+              "@id": "https://www.zumper.com/listings/13374057p/2-bedroom-kitsilano-vancouver-bc",
+              "url": "https://www.zumper.com/listings/13374057p/2-bedroom-kitsilano-vancouver-bc",
+              "name": "2477 Waterloo Street",
+              "datePosted": "2026-08-12",
+              "offers": {
+                "@type": "Offer",
+                "availability": "https://schema.org/InStock",
+                "businessFunction": "http://purl.org/goodrelations/v1#LeaseOut",
+                "price": 4950,
+                "priceCurrency": "CAD",
+                "priceSpecification": {
+                  "@type": "UnitPriceSpecification",
+                  "price": 4950,
+                  "priceCurrency": "CAD",
+                  "referenceQuantity": {
+                    "@type": "QuantitativeValue",
+                    "value": 1,
+                    "unitCode": "MON"
+                  }
+                }
+              },
+              "about": {
+                "@type": "SingleFamilyResidence",
+                "name": "2477 Waterloo Street",
+                "telephone": "(844) 310-9827 ext. 3101",
+                "image": "https://img.zumpercdn.com/906540940/1280x960",
+                "amenityFeature": [
+                  {
+                    "@type": "LocationFeatureSpecification",
+                    "name": "In-Unit Laundry",
+                    "value": true
+                  },
+                  {
+                    "@type": "LocationFeatureSpecification",
+                    "name": "Air Conditioning",
+                    "value": true
+                  },
+                  {
+                    "@type": "LocationFeatureSpecification",
+                    "name": "Assigned Parking",
+                    "value": true
+                  },
+                  {
+                    "@type": "LocationFeatureSpecification",
+                    "name": "Walk-In Closets",
+                    "value": true
+                  },
+                  {
+                    "@type": "LocationFeatureSpecification",
+                    "name": "Bathrooms per unit",
+                    "value": "3"
+                  }
+                ],
+                "numberOfBedrooms": 2,
+                "numberOfBathroomsTotal": 3,
+                "floorSize": {
+                  "@type": "QuantitativeValue",
+                  "value": 1100,
+                  "unitCode": "SQFT"
+                },
+                "petsAllowed": "Yes",
+                "address": {
+                  "@type": "PostalAddress",
+                  "streetAddress": "2477 Waterloo Street",
+                  "addressLocality": "Vancouver",
+                  "addressRegion": "BC",
+                  "postalCode": "V6R 3H4",
+                  "addressCountry": "CAN"
+                }
+              }
+            }
+          },
+          {
+            "@context": "https://schema.org",
+            "@type": "ListItem",
+            "position": 9,
+            "item": {
+              "@type": "RealEstateListing",
+              "@id": "https://www.zumper.com/listings/18224457p/2-bedroom-kitsilano-vancouver-bc",
+              "url": "https://www.zumper.com/listings/18224457p/2-bedroom-kitsilano-vancouver-bc",
+              "name": "2630 Arbutus #201",
+              "datePosted": "2026-08-05",
+              "offers": {
+                "@type": "Offer",
+                "availability": "https://schema.org/InStock",
+                "businessFunction": "http://purl.org/goodrelations/v1#LeaseOut",
+                "price": 2950,
+                "priceCurrency": "CAD",
+                "priceSpecification": {
+                  "@type": "UnitPriceSpecification",
+                  "price": 2950,
+                  "priceCurrency": "CAD",
+                  "referenceQuantity": {
+                    "@type": "QuantitativeValue",
+                    "value": 1,
+                    "unitCode": "MON"
+                  }
+                }
+              },
+              "about": {
+                "@type": "Apartment",
+                "name": "2630 Arbutus #201",
+                "image": "https://img.zumpercdn.com/310163273/1280x960",
+                "amenityFeature": [
+                  {
+                    "@type": "LocationFeatureSpecification",
+                    "name": "Assigned Parking",
+                    "value": true
+                  },
+                  {
+                    "@type": "LocationFeatureSpecification",
+                    "name": "Fireplace",
+                    "value": true
+                  },
+                  {
+                    "@type": "LocationFeatureSpecification",
+                    "name": "Dishwasher",
+                    "value": true
+                  },
+                  {
+                    "@type": "LocationFeatureSpecification",
+                    "name": "Balcony",
+                    "value": true
+                  },
+                  {
+                    "@type": "LocationFeatureSpecification",
+                    "name": "Hardwood Floor",
+                    "value": true
+                  },
+                  {
+                    "@type": "LocationFeatureSpecification",
+                    "name": "In-Unit Laundry",
+                    "value": true
+                  },
+                  {
+                    "@type": "LocationFeatureSpecification",
+                    "name": "Elevator",
+                    "value": true
+                  },
+                  {
+                    "@type": "LocationFeatureSpecification",
+                    "name": "Storage",
+                    "value": true
+                  },
+                  {
+                    "@type": "LocationFeatureSpecification",
+                    "name": "Controlled Access",
+                    "value": true
+                  },
+                  {
+                    "@type": "LocationFeatureSpecification",
+                    "name": "Bathrooms per unit",
+                    "value": "1"
+                  }
+                ],
+                "numberOfBedrooms": 2,
+                "numberOfBathroomsTotal": 1,
+                "floorSize": {
+                  "@type": "QuantitativeValue",
+                  "value": 815,
+                  "unitCode": "SQFT"
+                },
+                "petsAllowed": "No",
+                "address": {
+                  "@type": "PostalAddress",
+                  "streetAddress": "2630 Arbutus #201",
+                  "addressLocality": "Vancouver",
+                  "addressRegion": "BC",
+                  "postalCode": "V6J 5L8",
+                  "addressCountry": "CAN"
+                }
+              }
+            }
+          },
+          {
+            "@context": "https://schema.org",
+            "@type": "ListItem",
+            "position": 10,
+            "item": {
+              "@type": "RealEstateListing",
+              "@id": "https://www.zumper.com/listings/20181793p/2-bedroom-kitsilano-vancouver-bc",
+              "url": "https://www.zumper.com/listings/20181793p/2-bedroom-kitsilano-vancouver-bc",
+              "name": "2406 8th Ave W",
+              "datePosted": "2026-08-01",
+              "offers": {
+                "@type": "Offer",
+                "availability": "https://schema.org/InStock",
+                "businessFunction": "http://purl.org/goodrelations/v1#LeaseOut",
+                "price": 3800,
+                "priceCurrency": "CAD",
+                "priceSpecification": {
+                  "@type": "UnitPriceSpecification",
+                  "price": 3800,
+                  "priceCurrency": "CAD",
+                  "referenceQuantity": {
+                    "@type": "QuantitativeValue",
+                    "value": 1,
+                    "unitCode": "MON"
+                  }
+                }
+              },
+              "about": {
+                "@type": "Apartment",
+                "name": "2406 8th Ave W",
+                "image": "https://img.zumpercdn.com/879765622/1280x960",
+                "amenityFeature": [
+                  {
+                    "@type": "LocationFeatureSpecification",
+                    "name": "Outdoor Space",
+                    "value": true
+                  },
+                  {
+                    "@type": "LocationFeatureSpecification",
+                    "name": "On-Site Laundry",
+                    "value": true
+                  },
+                  {
+                    "@type": "LocationFeatureSpecification",
+                    "name": "Dishwasher",
+                    "value": true
+                  },
+                  {
+                    "@type": "LocationFeatureSpecification",
+                    "name": "Balcony",
+                    "value": true
+                  },
+                  {
+                    "@type": "LocationFeatureSpecification",
+                    "name": "Hardwood Floor",
+                    "value": true
+                  },
+                  {
+                    "@type": "LocationFeatureSpecification",
+                    "name": "In-Unit Laundry",
+                    "value": true
+                  },
+                  {
+                    "@type": "LocationFeatureSpecification",
+                    "name": "Storage",
+                    "value": true
+                  },
+                  {
+                    "@type": "LocationFeatureSpecification",
+                    "name": "Bathrooms per unit",
+                    "value": "1"
+                  }
+                ],
+                "numberOfBedrooms": 2,
+                "numberOfBathroomsTotal": 1,
+                "floorSize": {
+                  "@type": "QuantitativeValue",
+                  "value": 1350,
+                  "unitCode": "SQFT"
+                },
+                "petsAllowed": "No",
+                "address": {
+                  "@type": "PostalAddress",
+                  "streetAddress": "2406 8th Ave W",
+                  "addressLocality": "Vancouver",
+                  "addressRegion": "BC",
+                  "postalCode": "V6K 2B1",
+                  "addressCountry": "CAN"
+                }
+              }
+            }
+          },
+          {
+            "@context": "https://schema.org",
+            "@type": "ListItem",
+            "position": 11,
+            "item": {
+              "@type": "RealEstateListing",
+              "@id": "https://www.zumper.com/listings/16707098p/2-bedroom-kitsilano-vancouver-bc",
+              "url": "https://www.zumper.com/listings/16707098p/2-bedroom-kitsilano-vancouver-bc",
+              "name": "1541 Maple Street",
+              "datePosted": "2026-07-28",
+              "offers": {
+                "@type": "Offer",
+                "availability": "https://schema.org/InStock",
+                "businessFunction": "http://purl.org/goodrelations/v1#LeaseOut",
+                "price": 3500,
+                "priceCurrency": "CAD",
+                "priceSpecification": {
+                  "@type": "UnitPriceSpecification",
+                  "price": 3500,
+                  "priceCurrency": "CAD",
+                  "referenceQuantity": {
+                    "@type": "QuantitativeValue",
+                    "value": 1,
+                    "unitCode": "MON"
+                  }
+                }
+              },
+              "about": {
+                "@type": "Apartment",
+                "name": "1541 Maple Street",
+                "telephone": "(844) 335-9816 ext. 6126",
+                "image": "https://img.zumpercdn.com/565335275/1280x960",
+                "amenityFeature": [
+                  {
+                    "@type": "LocationFeatureSpecification",
+                    "name": "On-Site Laundry",
+                    "value": true
+                  },
+                  {
+                    "@type": "LocationFeatureSpecification",
+                    "name": "Ceiling Fan",
+                    "value": true
+                  },
+                  {
+                    "@type": "LocationFeatureSpecification",
+                    "name": "Hardwood Floor",
+                    "value": true
+                  },
+                  {
+                    "@type": "LocationFeatureSpecification",
+                    "name": "Furnished",
+                    "value": true
+                  },
+                  {
+                    "@type": "LocationFeatureSpecification",
+                    "name": "Central Heat",
+                    "value": true
+                  },
+                  {
+                    "@type": "LocationFeatureSpecification",
+                    "name": "In-Unit Laundry",
+                    "value": true
+                  },
+                  {
+                    "@type": "LocationFeatureSpecification",
+                    "name": "Bathrooms per unit",
+                    "value": "1"
+                  }
+                ],
+                "numberOfBedrooms": 2,
+                "numberOfBathroomsTotal": 1,
+                "floorSize": {
+                  "@type": "QuantitativeValue",
+                  "value": 900,
+                  "unitCode": "SQFT"
+                },
+                "petsAllowed": "Yes",
+                "address": {
+                  "@type": "PostalAddress",
+                  "streetAddress": "1541 Maple Street",
+                  "addressLocality": "Vancouver",
+                  "addressRegion": "BC",
+                  "postalCode": "V6J 3S2",
+                  "addressCountry": "CAN"
+                }
+              }
+            }
+          },
+          {
+            "@context": "https://schema.org",
+            "@type": "ListItem",
+            "position": 12,
+            "item": {
+              "@type": "RealEstateListing",
+              "@id": "https://www.zumper.com/listings/16707056p/2-bedroom-kitsilano-vancouver-bc",
+              "url": "https://www.zumper.com/listings/16707056p/2-bedroom-kitsilano-vancouver-bc",
+              "name": "1541 Maple Street",
+              "datePosted": "2026-07-28",
+              "offers": {
+                "@type": "Offer",
+                "availability": "https://schema.org/InStock",
+                "businessFunction": "http://purl.org/goodrelations/v1#LeaseOut",
+                "price": 6000,
+                "priceCurrency": "CAD",
+                "priceSpecification": {
+                  "@type": "UnitPriceSpecification",
+                  "price": 6000,
+                  "priceCurrency": "CAD",
+                  "referenceQuantity": {
+                    "@type": "QuantitativeValue",
+                    "value": 1,
+                    "unitCode": "MON"
+                  }
+                }
+              },
+              "about": {
+                "@type": "Apartment",
+                "name": "1541 Maple Street",
+                "telephone": "(844) 262-6982 ext. 9615",
+                "image": "https://img.zumpercdn.com/565333393/1280x960",
+                "amenityFeature": [
+                  {
+                    "@type": "LocationFeatureSpecification",
+                    "name": "Air Conditioning",
+                    "value": true
+                  },
+                  {
+                    "@type": "LocationFeatureSpecification",
+                    "name": "High Ceilings",
+                    "value": true
+                  },
+                  {
+                    "@type": "LocationFeatureSpecification",
+                    "name": "Assigned Parking",
+                    "value": true
+                  },
+                  {
+                    "@type": "LocationFeatureSpecification",
+                    "name": "Dishwasher",
+                    "value": true
+                  },
+                  {
+                    "@type": "LocationFeatureSpecification",
+                    "name": "Balcony",
+                    "value": true
+                  },
+                  {
+                    "@type": "LocationFeatureSpecification",
+                    "name": "Hardwood Floor",
+                    "value": true
+                  },
+                  {
+                    "@type": "LocationFeatureSpecification",
+                    "name": "Carpet",
+                    "value": true
+                  },
+                  {
+                    "@type": "LocationFeatureSpecification",
+                    "name": "Furnished",
+                    "value": true
+                  },
+                  {
+                    "@type": "LocationFeatureSpecification",
+                    "name": "Central Heat",
+                    "value": true
+                  },
+                  {
+                    "@type": "LocationFeatureSpecification",
+                    "name": "Walk-In Closets",
+                    "value": true
+                  },
+                  {
+                    "@type": "LocationFeatureSpecification",
+                    "name": "In-Unit Laundry",
+                    "value": true
+                  },
+                  {
+                    "@type": "LocationFeatureSpecification",
+                    "name": "Storage",
+                    "value": true
+                  },
+                  {
+                    "@type": "LocationFeatureSpecification",
+                    "name": "Bathrooms per unit",
+                    "value": "2"
+                  }
+                ],
+                "numberOfBedrooms": 2,
+                "numberOfBathroomsTotal": 2,
+                "petsAllowed": "Yes",
+                "address": {
+                  "@type": "PostalAddress",
+                  "streetAddress": "1541 Maple Street",
+                  "addressLocality": "Vancouver",
+                  "addressRegion": "BC",
+                  "postalCode": "V6J 3S2",
+                  "addressCountry": "CAN"
+                }
+              }
+            }
+          },
+          {
+            "@context": "https://schema.org",
+            "@type": "ListItem",
+            "position": 13,
+            "item": {
+              "@type": "RealEstateListing",
+              "@id": "https://www.zumper.com/listings/17669666p/2-bedroom-kitsilano-vancouver-bc",
+              "url": "https://www.zumper.com/listings/17669666p/2-bedroom-kitsilano-vancouver-bc",
+              "name": "1533 Maple St",
+              "datePosted": "2026-07-21",
+              "offers": {
+                "@type": "Offer",
+                "availability": "https://schema.org/InStock",
+                "businessFunction": "http://purl.org/goodrelations/v1#LeaseOut",
+                "price": 4500,
+                "priceCurrency": "CAD",
+                "priceSpecification": {
+                  "@type": "UnitPriceSpecification",
+                  "price": 4500,
+                  "priceCurrency": "CAD",
+                  "referenceQuantity": {
+                    "@type": "QuantitativeValue",
+                    "value": 1,
+                    "unitCode": "MON"
+                  }
+                }
+              },
+              "about": {
+                "@type": "Apartment",
+                "name": "1533 Maple St",
+                "telephone": "(844) 334-7496 ext. 8304",
+                "image": "https://img.zumpercdn.com/592900277/1280x960",
+                "amenityFeature": [
+                  {
+                    "@type": "LocationFeatureSpecification",
+                    "name": "High Ceilings",
+                    "value": true
+                  },
+                  {
+                    "@type": "LocationFeatureSpecification",
+                    "name": "Hardwood Floor",
+                    "value": true
+                  },
+                  {
+                    "@type": "LocationFeatureSpecification",
+                    "name": "Carpet",
+                    "value": true
+                  },
+                  {
+                    "@type": "LocationFeatureSpecification",
+                    "name": "Furnished",
+                    "value": true
+                  },
+                  {
+                    "@type": "LocationFeatureSpecification",
+                    "name": "Central Heat",
+                    "value": true
+                  },
+                  {
+                    "@type": "LocationFeatureSpecification",
+                    "name": "Bathrooms per unit",
+                    "value": "1"
+                  }
+                ],
+                "numberOfBedrooms": 2,
+                "numberOfBathroomsTotal": 1,
+                "petsAllowed": "Yes",
+                "address": {
+                  "@type": "PostalAddress",
+                  "streetAddress": "1533 Maple St",
+                  "addressLocality": "Vancouver",
+                  "addressRegion": "BC",
+                  "postalCode": "V6J 3S2",
+                  "addressCountry": "CAN"
+                }
+              }
+            }
+          },
+          {
+            "@context": "https://schema.org",
+            "@type": "ListItem",
+            "position": 14,
+            "item": {
+              "@type": "RealEstateListing",
+              "@id": "https://www.zumper.com/listings/28362204p/2-bedroom-kitsilano-vancouver-bc",
+              "url": "https://www.zumper.com/listings/28362204p/2-bedroom-kitsilano-vancouver-bc",
+              "name": "1328 Maple Street",
+              "datePosted": "2026-07-08",
+              "offers": {
+                "@type": "Offer",
+                "availability": "https://schema.org/InStock",
+                "businessFunction": "http://purl.org/goodrelations/v1#LeaseOut",
+                "price": 2750,
+                "priceCurrency": "CAD",
+                "priceSpecification": {
+                  "@type": "UnitPriceSpecification",
+                  "price": 2750,
+                  "priceCurrency": "CAD",
+                  "referenceQuantity": {
+                    "@type": "QuantitativeValue",
+                    "value": 1,
+                    "unitCode": "MON"
+                  }
+                }
+              },
+              "about": {
+                "@type": "Apartment",
+                "name": "1328 Maple Street",
+                "telephone": "(844) 325-4840 ext. 7425",
+                "image": "https://img.zumpercdn.com/894457390/1280x960",
+                "amenityFeature": [
+                  {
+                    "@type": "LocationFeatureSpecification",
+                    "name": "In-Unit Laundry",
+                    "value": true
+                  },
+                  {
+                    "@type": "LocationFeatureSpecification",
+                    "name": "Garden",
+                    "value": true
+                  },
+                  {
+                    "@type": "LocationFeatureSpecification",
+                    "name": "Assigned Parking",
+                    "value": true
+                  },
+                  {
+                    "@type": "LocationFeatureSpecification",
+                    "name": "Dishwasher",
+                    "value": true
+                  },
+                  {
+                    "@type": "LocationFeatureSpecification",
+                    "name": "Bathrooms per unit",
+                    "value": "1"
+                  }
+                ],
+                "numberOfBedrooms": 2,
+                "numberOfBathroomsTotal": 1,
+                "floorSize": {
+                  "@type": "QuantitativeValue",
+                  "value": 717,
+                  "unitCode": "SQFT"
+                },
+                "petsAllowed": "No",
+                "address": {
+                  "@type": "PostalAddress",
+                  "streetAddress": "1328 Maple Street",
+                  "addressLocality": "Vancouver",
+                  "addressRegion": "BC",
+                  "postalCode": "V6J 3R9",
+                  "addressCountry": "CAN"
+                }
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "Place",
+      "name": "Apartments for rent in Kitsilano",
+      "geo": {
+        "@type": "GeoCircle",
+        "geoMidpoint": {
+          "@type": "GeoCoordinates",
+          "latitude": "49.266353",
+          "longitude": "-123.163098"
+        },
+        "geoRadius": "2100"
+      }
+    },
+    [
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "item": {
+              "@id": "https://www.zumper.com/",
+              "name": "Homepage"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "item": {
+              "@id": "https://www.zumper.com/apartments-for-rent/vancouver-bc",
+              "name": "Apartments in Vancouver"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "item": {
+              "@id": "https://www.zumper.com/apartments-for-rent/vancouver-bc/kitsilano",
+              "name": "Kitsilano"
+            }
+          }
+        ]
+      }
+    ]
+  ],
+  "images": [
+    "https://d214hhm15p4t1d.cloudfront.net/web-zumper/315c1ced4a83fd46ce8c170f53b4aab85f4a165f/img/zumperDarkText.664a5ef8.svg",
+    "https://d214hhm15p4t1d.cloudfront.net/web-zumper/315c1ced4a83fd46ce8c170f53b4aab85f4a165f/img/search.272ccae9.svg",
+    "https://d214hhm15p4t1d.cloudfront.net/web-zumper/315c1ced4a83fd46ce8c170f53b4aab85f4a165f/img/locationAutocomplete.81057160.svg",
+    "https://d214hhm15p4t1d.cloudfront.net/web-zumper/315c1ced4a83fd46ce8c170f53b4aab85f4a165f/img/Zipcode.08d98c96.svg",
+    "https://d214hhm15p4t1d.cloudfront.net/web-zumper/315c1ced4a83fd46ce8c170f53b4aab85f4a165f/img/medalGray600.4c96e97e.svg",
+    "https://d214hhm15p4t1d.cloudfront.net/web-zumper/315c1ced4a83fd46ce8c170f53b4aab85f4a165f/img/arrowRight.e6d37782.svg",
+    "https://img.zumpercdn.com/889124636/1280x960?fit=crop&h=208&w=329&dpr=1&q=76",
+    "https://img.zumpercdn.com/889124637/1280x960?fit=crop&h=208&w=329&dpr=1&q=76",
+    "https://img.zumpercdn.com/889124638/1280x960?fit=crop&h=208&w=329&dpr=1&q=76",
+    "https://img.zumpercdn.com/889124639/1280x960?fit=crop&h=208&w=329&dpr=1&q=76",
+    "https://img.zumpercdn.com/918947785/1280x960?fit=crop&h=208&w=329&dpr=1&q=76",
+    "https://img.zumpercdn.com/918948460/1280x960?fit=crop&h=208&w=329&dpr=1&q=76",
+    "https://img.zumpercdn.com/918948461/1280x960?fit=crop&h=208&w=329&dpr=1&q=76",
+    "https://img.zumpercdn.com/918948462/1280x960?fit=crop&h=208&w=329&dpr=1&q=76",
+    "https://img.zumpercdn.com/918346530/1280x960?fit=crop&h=208&w=329&dpr=1&q=76",
+    "https://img.zumpercdn.com/918346531/1280x960?fit=crop&h=208&w=329&dpr=1&q=76",
+    "https://img.zumpercdn.com/918346529/1280x960?fit=crop&h=208&w=329&dpr=1&q=76",
+    "https://img.zumpercdn.com/918346524/1280x960?fit=crop&h=208&w=329&dpr=1&q=76",
+    "https://img.zumpercdn.com/917476817/1280x960?fit=crop&h=208&w=329&dpr=1&q=76",
+    "https://img.zumpercdn.com/917476819/1280x960?fit=crop&h=208&w=329&dpr=1&q=76"
+  ],
+  "elapsedMs": 3848
 }
