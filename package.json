@@ -1,0 +1,11 @@
+{
+  "name": "vancouver-rentals",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "refresh": "node scripts/refresh-listings.mjs"
+  },
+  "dependencies": {
+    "playwright": "^1.55.0"
+  }
+}
