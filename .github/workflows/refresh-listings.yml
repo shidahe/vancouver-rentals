@@ -8,7 +8,10 @@ on:
     branches: [main]
     paths:
       - 'scripts/refresh-listings.mjs'
+      - 'scripts/refresh-safe.mjs'
       - 'data/live-sources.json'
+      - 'data/automation-policy.json'
+      - 'package.json'
       - '.github/workflows/refresh-listings.yml'
 
 permissions:
@@ -37,7 +40,7 @@ jobs:
       - name: Install Chromium
         run: npx playwright install --with-deps chromium
 
-      - name: Run live verifier and discovery collector
+      - name: Run live verifier and safety pass
         run: npm run refresh
 
       - name: Commit refreshed rental data
