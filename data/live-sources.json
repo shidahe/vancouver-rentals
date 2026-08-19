@@ -1,0 +1,70 @@
+{
+  "discovery": [
+    {
+      "id": "zumper-kitsilano-2br",
+      "name": "Zumper Kitsilano 2BR",
+      "url": "https://www.zumper.com/apartments-for-rent/vancouver-bc/kitsilano/2-beds",
+      "kind": "marketplace",
+      "adapter": "zumper-search"
+    },
+    {
+      "id": "zumper-point-grey-2br",
+      "name": "Zumper West Point Grey 2BR",
+      "url": "https://www.zumper.com/apartments-for-rent/vancouver-bc/west-point-grey/2-beds",
+      "kind": "marketplace",
+      "adapter": "zumper-search"
+    },
+    {
+      "id": "rentfaster-vancouver",
+      "name": "RentFaster Vancouver",
+      "url": "https://www.rentfaster.ca/bc/vancouver/rentals/",
+      "kind": "marketplace",
+      "adapter": "generic-search"
+    },
+    {
+      "id": "kits-walk-official",
+      "name": "Kits Walk official availability",
+      "url": "https://www.kitswalkleasing.com/floorplans",
+      "kind": "official",
+      "adapter": "official-floorplans"
+    },
+    {
+      "id": "arbutus-terrace-official",
+      "name": "Arbutus Terrace official",
+      "url": "https://stranddev.com/portfolio/arbutusterrace-rental",
+      "kind": "official",
+      "adapter": "official-floorplans"
+    },
+    {
+      "id": "arbutus-residences-rentfaster",
+      "name": "Arbutus Residences inventory",
+      "url": "https://www.rentfaster.ca/properties/2139-lahb-ave-vancouver-454186",
+      "kind": "property_manager",
+      "adapter": "rentfaster-detail"
+    },
+    {
+      "id": "homax-arbutus",
+      "name": "Homax / Arbutus Rental",
+      "url": "https://www.arbutusrental.com/search",
+      "kind": "property_manager",
+      "adapter": "generic-search"
+    },
+    {
+      "id": "19-greenway-official",
+      "name": "19 on the Greenway official",
+      "url": "https://www.19otgreenway.com/floorplans",
+      "kind": "official",
+      "adapter": "official-floorplans"
+    }
+  ],
+  "seedCandidates": [
+    {
+      "id": "zumper-2477-waterloo",
+      "source": "Zumper",
+      "url": "https://www.zumper.com/address/2477-waterloo-st-vancouver-bc-v6r-3h4-can",
+      "address": "2477 Waterloo St, Vancouver, BC",
+      "expectedBeds": 2,
+      "userObservedPrice": 4950
+    }
+  ]
+}
