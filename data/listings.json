@@ -446,13 +446,13 @@
       "unit": null,
       "address": "2477 Waterloo St, Vancouver, BC V6R 3H4",
       "neighborhood": "Kitsilano",
-      "lat": 49.2657607,
-      "lng": -123.1798096,
+      "lat": 49.2645683,
+      "lng": -123.1800646,
       "type": "condo",
       "rent": 4950,
       "effectiveRent": null,
       "bedrooms": 2,
-      "bathrooms": 2,
+      "bathrooms": 2.5,
       "sqft": 1100,
       "ac": true,
       "parking": true,
@@ -472,7 +472,7 @@
       "availabilityStatus": "active",
       "status": "new",
       "priceDrop": false,
-      "dataNotes": "Live automation confirmed user-observed price $4950."
+      "dataNotes": "Live automation confirmed $4,950. Static fields and exact coordinates are locked from Zumper JSON-LD/description."
     }
   ]
 }
