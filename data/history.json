@@ -22,11 +22,6 @@
     },
     {
       "date": "2026-08-19",
-      "rent": 2695,
-      "note": "AUTO price update from 4110 to 2695 after direct live detail-page verification."
-    },
-    {
-      "date": "2026-08-19",
       "rent": 4110,
       "note": "AUTOMATION CORRECTION: restored canonical rent after parser mixed prices from a multi-unit page. Unit 315 was incorrectly overwritten by a different floorplan price from the same multi-unit RentFaster page during the first automation run."
     }
