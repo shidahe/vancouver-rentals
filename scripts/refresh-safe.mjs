@@ -12,7 +12,7 @@ const writeJson = async (p, v) => fs.writeFile(p, JSON.stringify(v, null, 2) + '
 
 const beforePayload = await readJson(listingsPath, { listings: [] });
 const beforeById = new Map(beforePayload.listings.map(x => [x.id, structuredClone(x)]));
-const policy = await readJson(policyPath, { autoPriceListingIds: [], canonicalRentRepairs: {} });
+const policy = await readJson(policyPath, { autoPriceListingIds: [], canonicalRentRepairs: {}, canonicalFieldRepairs: {} });
 
 await import('./refresh-listings.mjs');
 
@@ -28,7 +28,6 @@ for (const listing of afterPayload.listings) {
 
   const check = state.listings?.[listing.id];
   if (check && check.status >= 400 && ![404, 410].includes(check.status)) {
-    // 401/403/429/5xx are blocked/error pages, not rental evidence.
     Object.assign(listing, before);
     check.ok = false;
     check.usableEvidence = false;
@@ -67,10 +66,16 @@ for (const [id, repair] of Object.entries(policy.canonicalRentRepairs || {})) {
   if (!already) afterHistory[id].push({ date: today, rent: repair.rent, note: `AUTOMATION CORRECTION: restored canonical rent after parser mixed prices from a multi-unit page. ${repair.reason || ''}`.trim() });
 }
 
+for (const [id, fields] of Object.entries(policy.canonicalFieldRepairs || {})) {
+  const listing = afterPayload.listings.find(x => x.id === id);
+  if (!listing) continue;
+  for (const [key, value] of Object.entries(fields)) listing[key] = value;
+}
+
 afterPayload.meta ||= {};
-afterPayload.meta.automationSafety = 'Prices auto-update only for allowlisted exact single-unit pages. HTTP 401/403/429/5xx responses are unusable evidence.';
+afterPayload.meta.automationSafety = 'Live price changes are allowlisted per exact single-unit page. Verified static fields are locked. HTTP 401/403/429/5xx responses are unusable evidence.';
 
 await writeJson(listingsPath, afterPayload);
 await writeJson(historyPath, afterHistory);
 await writeJson(statePath, state);
-console.log('Safety pass complete: blocked pages ignored, non-allowlisted automated price changes restored, canonical repairs applied.');
+console.log('Safety pass complete: blocked pages ignored, price changes constrained, canonical rents repaired, verified static fields restored.');
