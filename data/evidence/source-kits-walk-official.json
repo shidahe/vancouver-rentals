@@ -1,0 +1,26 @@
+{
+  "checkedAt": "2026-08-19T20:21:09.243Z",
+  "source": {
+    "id": "kits-walk-official",
+    "name": "Kits Walk official availability",
+    "url": "https://www.kitswalkleasing.com/floorplans",
+    "kind": "official",
+    "adapter": "official-floorplans"
+  },
+  "ok": true,
+  "status": 403,
+  "finalUrl": "https://www.kitswalkleasing.com/floorplans",
+  "title": "Just a moment...",
+  "bodyText": "www.kitswalkleasing.com\nPerforming security verification\n\nThis website uses a security service to protect against malicious bots. This page is displayed while the website verifies you are not a bot.\n\nRay ID: a2dbde32983ba1bf\nPerformance and Security by Cloudflare\nPrivacy",
+  "links": [
+    {
+      "href": "https://www.cloudflare.com/?utm_source=challenge&utm_campaign=m",
+      "text": "Cloudflare"
+    },
+    {
+      "href": "https://www.cloudflare.com/privacypolicy/",
+      "text": "Privacy"
+    }
+  ],
+  "elapsedMs": 2625
+}
