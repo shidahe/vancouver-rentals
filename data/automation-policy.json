@@ -1,5 +1,5 @@
 {
-  "version": 2,
+  "version": 3,
   "autoPriceListingIds": [
     "waterloo-2477-zumper"
   ],
@@ -7,6 +7,21 @@
     "arbutus-residences-315-2den-900": {
       "rent": 4110,
       "reason": "Unit 315 was incorrectly overwritten by a different floorplan price from the same multi-unit RentFaster page during the first automation run."
+    }
+  },
+  "canonicalFieldRepairs": {
+    "waterloo-2477-zumper": {
+      "bedrooms": 2,
+      "bathrooms": 2.5,
+      "sqft": 1100,
+      "ac": true,
+      "parking": true,
+      "petFriendly": true,
+      "orientation": "E",
+      "buildingYear": 2010,
+      "balcony": true,
+      "largeWindows": true,
+      "modernInterior": true
     }
   }
 }
