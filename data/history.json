@@ -27,8 +27,8 @@
     },
     {
       "date": "2026-08-19",
-      "rent": 3340,
-      "note": "AUTO price update from 2695 to 3340 after direct live detail-page verification."
+      "rent": 4110,
+      "note": "AUTOMATION CORRECTION: restored canonical rent after parser mixed prices from a multi-unit page. Unit 315 was incorrectly overwritten by a different floorplan price from the same multi-unit RentFaster page during the first automation run."
     }
   ],
   "arbutus-terrace-unit6-2den": [
