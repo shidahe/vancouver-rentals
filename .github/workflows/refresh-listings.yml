@@ -1,0 +1,49 @@
+name: Refresh rental inventory
+
+on:
+  schedule:
+    - cron: '17 */6 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: rental-refresh
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm install --no-audit --no-fund
+
+      - name: Install Chromium
+        run: npx playwright install --with-deps chromium
+
+      - name: Run live verifier and discovery collector
+        run: npm run refresh
+
+      - name: Commit refreshed rental data
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add data/listings.json data/history.json data/candidates.json data/refresh-state.json data/evidence
+          if git diff --cached --quiet; then
+            echo 'No rental data changes.'
+            exit 0
+          fi
+          git commit -m 'Automated live rental refresh'
+          git pull --rebase origin main
+          git push
