@@ -15,6 +15,13 @@
       "adapter": "zumper-search"
     },
     {
+      "id": "zumper-dunbar-2br",
+      "name": "Zumper Dunbar 2BR",
+      "url": "https://www.zumper.com/apartments-for-rent/vancouver-bc/dunbar/2-beds",
+      "kind": "marketplace",
+      "adapter": "zumper-search"
+    },
+    {
       "id": "rentfaster-vancouver",
       "name": "RentFaster Vancouver",
       "url": "https://www.rentfaster.ca/bc/vancouver/rentals/",
@@ -60,11 +67,28 @@
   "seedCandidates": [
     {
       "id": "zumper-2477-waterloo",
+      "listingId": "waterloo-2477-zumper",
       "source": "Zumper",
       "url": "https://www.zumper.com/address/2477-waterloo-st-vancouver-bc-v6r-3h4-can",
-      "address": "2477 Waterloo St, Vancouver, BC",
+      "address": "2477 Waterloo St, Vancouver, BC V6R 3H4",
+      "neighborhood": "Kitsilano",
+      "type": "condo",
       "expectedBeds": 2,
-      "userObservedPrice": 4950
+      "userObservedPrice": 4950,
+      "autoPublish": true,
+      "hints": {
+        "bedrooms": 2,
+        "bathrooms": 2.5,
+        "sqft": 1100,
+        "ac": true,
+        "parking": true,
+        "petFriendly": true,
+        "orientation": "E",
+        "balcony": true,
+        "buildingYear": 2010,
+        "largeWindows": true,
+        "modernInterior": true
+      }
     }
   ]
 }
