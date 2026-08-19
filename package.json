@@ -3,7 +3,7 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "refresh": "node scripts/refresh-listings.mjs"
+    "refresh": "node scripts/refresh-safe.mjs"
   },
   "dependencies": {
     "playwright": "^1.55.0"
