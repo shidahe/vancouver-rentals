@@ -1,5 +1,5 @@
 {
-  "version": 3,
+  "version": 4,
   "autoPriceListingIds": [
     "waterloo-2477-zumper"
   ],
@@ -11,6 +11,8 @@
   },
   "canonicalFieldRepairs": {
     "waterloo-2477-zumper": {
+      "lat": 49.2645683,
+      "lng": -123.1800646,
       "bedrooms": 2,
       "bathrooms": 2.5,
       "sqft": 1100,
