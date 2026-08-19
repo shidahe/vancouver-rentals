@@ -11,7 +11,6 @@ const readJson = async (p, fallback) => { try { return JSON.parse(await fs.readF
 const writeJson = async (p, v) => fs.writeFile(p, JSON.stringify(v, null, 2) + '\n');
 
 const beforePayload = await readJson(listingsPath, { listings: [] });
-const beforeHistory = await readJson(historyPath, {});
 const beforeById = new Map(beforePayload.listings.map(x => [x.id, structuredClone(x)]));
 const policy = await readJson(policyPath, { autoPriceListingIds: [], canonicalRentRepairs: {} });
 
@@ -19,7 +18,7 @@ await import('./refresh-listings.mjs');
 
 const afterPayload = await readJson(listingsPath, { listings: [] });
 const afterHistory = await readJson(historyPath, {});
-const state = await readJson(statePath, { listings: {} });
+const state = await readJson(statePath, { listings: {}, sources: {} });
 const allowPrice = new Set(policy.autoPriceListingIds || []);
 const today = new Date().toISOString().slice(0, 10);
 
@@ -29,10 +28,11 @@ for (const listing of afterPayload.listings) {
 
   const check = state.listings?.[listing.id];
   if (check && check.status >= 400 && ![404, 410].includes(check.status)) {
-    // A blocked/forbidden page is not evidence. Restore all mutable verification fields.
-    const keep = { availabilityStatus: listing.availabilityStatus, status: listing.status, removedAt: listing.removedAt };
+    // 401/403/429/5xx are blocked/error pages, not rental evidence.
     Object.assign(listing, before);
-    if (keep.availabilityStatus === 'removed' && [404, 410].includes(check.status)) Object.assign(listing, keep);
+    check.ok = false;
+    check.usableEvidence = false;
+    check.blockedReason = `HTTP ${check.status}`;
   }
 
   if (!allowPrice.has(listing.id) && before.rent != null && listing.rent !== before.rent) {
@@ -41,6 +41,16 @@ for (const listing of afterPayload.listings) {
     listing.priceDrop = before.priceDrop;
     const hist = afterHistory[listing.id] || [];
     afterHistory[listing.id] = hist.filter(h => !(h.date === today && /^AUTO price update/i.test(h.note || '')));
+  }
+}
+
+for (const source of Object.values(state.sources || {})) {
+  if (source.status >= 400) {
+    source.ok = false;
+    source.usableEvidence = false;
+    source.blockedReason = `HTTP ${source.status}`;
+  } else if (source.ok) {
+    source.usableEvidence = true;
   }
 }
 
@@ -53,9 +63,14 @@ for (const [id, repair] of Object.entries(policy.canonicalRentRepairs || {})) {
   listing.priceDrop = false;
   afterHistory[id] ||= [];
   afterHistory[id] = afterHistory[id].filter(h => !(h.rent === badRent && /AUTO price update/i.test(h.note || '')));
-  afterHistory[id].push({ date: today, rent: repair.rent, note: `AUTOMATION CORRECTION: restored canonical rent after parser mixed prices from a multi-unit page. ${repair.reason || ''}`.trim() });
+  const already = afterHistory[id].some(h => h.date === today && /AUTOMATION CORRECTION/.test(h.note || ''));
+  if (!already) afterHistory[id].push({ date: today, rent: repair.rent, note: `AUTOMATION CORRECTION: restored canonical rent after parser mixed prices from a multi-unit page. ${repair.reason || ''}`.trim() });
 }
+
+afterPayload.meta ||= {};
+afterPayload.meta.automationSafety = 'Prices auto-update only for allowlisted exact single-unit pages. HTTP 401/403/429/5xx responses are unusable evidence.';
 
 await writeJson(listingsPath, afterPayload);
 await writeJson(historyPath, afterHistory);
+await writeJson(statePath, state);
 console.log('Safety pass complete: blocked pages ignored, non-allowlisted automated price changes restored, canonical repairs applied.');
