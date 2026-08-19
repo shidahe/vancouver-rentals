@@ -1,53 +1,16 @@
 {
-  "arbutus-residences-315-2den-900": [
-    {"date":"2026-08-14","rent":4110,"note":"First tracked as generic 2BR+den availability"},
-    {"date":"2026-08-16","rent":4110,"note":"Re-verified as Unit 315: 2BR+den, 2BA, 900 sqft, Immediate; AC listed; building year 2021"},
-    {"date":"2026-08-17","rent":4110,"note":"Still active in verified landlord inventory; Unit 315 remains Immediate"}
-  ],
-  "arbutus-terrace-unit6-2den": [
-    {"date":"2026-08-14","rent":3795,"note":"Tracked at 816 sqft from syndicated Strand feed"},
-    {"date":"2026-08-16","rent":3795,"note":"Still needs confirmation; no fresh independent primary Strand inventory found"},
-    {"date":"2026-08-17","rent":3795,"note":"Promoted to Active: Strand official page now says Now Renting and Two Bed + Den starting at $3795; current syndicated inventory shows Unit 6 at 816 sqft"}
-  ],
-  "treo-2688-vine-r3142696": [
-    {"date":"2026-08-16","rent":3900,"note":"NEW: MLS R3142696, 2BR/2BA, 1063 sqft, 1 parking; current MLS-backed inventory"},
-    {"date":"2026-08-17","rent":3800,"note":"PRICE DROP: current MLS-backed Zolo/Zillow listing is $3800; identity unchanged"}
-  ],
-  "blenheim-terrace-204-r3149612": [
-    {"date":"2026-08-16","rent":4495,"note":"NEW: MLS R3149612, Unit 204, 2BR/2BA, 940 sqft, 1 parking. Kept separate from conflicting R3149267 record."},
-    {"date":"2026-08-17","rent":4495,"note":"Still Active/For Rent under MLS R3149612"}
-  ],
-  "cypress-1070-r3129917": [
-    {"date":"2026-08-17","rent":5700,"note":"Initially published from MLS-backed syndicated sources as a renovated west-facing 2BR/2BA townhouse, 1056 sqft"},
-    {"date":"2026-08-18","rent":5700,"note":"REMOVED: user's current browser shows the listing inactive. Older Zolo/Point2Homes/Condos.ca/REW copies still show Active/For Rent but are stale/syndicated and no longer count as current availability evidence."}
-  ],
-  "york-103-2535-r3137446": [
-    {"date":"2026-08-16","rent":5850,"note":"NEW: MLS R3137446, 2BR/2BA, 1499 sqft, 1 parking, pets allowed"},
-    {"date":"2026-08-17","rent":5850,"note":"Still listed For Rent"}
-  ],
-  "solo-2228-marstrand": [
-    {"date":"2026-08-14","rent":3500,"note":"First tracked"},
-    {"date":"2026-08-16","rent":3500,"note":"Primary property-manager page still shows FOR RENT / Available Now, 2BR/2BA, 948 sqft"},
-    {"date":"2026-08-17","rent":3500,"note":"Homax current search page still shows FOR RENT / Available Now"}
-  ],
-  "tribeca-type-2d-2111-w11": [
-    {"date":"2026-08-14","rent":3600,"note":"First tracked"},
-    {"date":"2026-08-16","rent":3600,"note":"Still needs confirmation; no fresh primary Bastion inventory confirmation found"},
-    {"date":"2026-08-17","rent":3600,"note":"Still needs confirmation; no fresh primary Bastion inventory confirmation found"}
-  ],
-  "kits-walk-2br-flex-616": [
-    {"date":"2026-08-14","rent":3425,"note":"Initially discovered from official availability result"},
-    {"date":"2026-08-16","rent":3425,"note":"Still needs confirmation; current 2BR availability not unambiguous"},
-    {"date":"2026-08-17","rent":3425,"note":"Official floor-plan search currently returns No matches; 2 Bedroom Flex page shows 0 apartments available"}
-  ],
-  "raphael-301-3668-w10": [
-    {"date":"2026-08-14","rent":4500,"note":"Removed; user browser confirmed Gone too soon"}
-  ],
-  "raven-410-3709-wbroadway": [
-    {"date":"2026-08-14","rent":3650,"note":"Removed after live browser showed unavailable"},
-    {"date":"2026-08-17","rent":3650,"note":"Remains removed; current building inventory shows only studio availability"}
-  ],
-  "raven-705-3709-wbroadway": [
-    {"date":"2026-08-14","rent":4195,"note":"Rejected stale cached availability and removed"}
-  ]
+  "arbutus-residences-315-2den-900":[{"date":"2026-08-14","rent":4110,"note":"First tracked as generic 2BR+den availability"},{"date":"2026-08-16","rent":4110,"note":"Re-verified as Unit 315: 2BR+den, 2BA, 900 sqft, Immediate; AC listed"},{"date":"2026-08-17","rent":4110,"note":"Still active in verified landlord inventory"},{"date":"2026-08-19","rent":4110,"note":"Fresh RentFaster landlord inventory still explicitly lists Unit 315 Immediate at $4110"}],
+  "arbutus-terrace-unit6-2den":[{"date":"2026-08-14","rent":3795,"note":"Tracked at 816 sqft from syndicated Strand feed"},{"date":"2026-08-17","rent":3795,"note":"Promoted Active after Strand official site confirmed Now Renting / 2 Bed + Den from $3795"},{"date":"2026-08-19","rent":3795,"note":"Strand still Now Renting. Corrected AC from true to unknown because current description says A/C-ready ports, not installed AC."}],
+  "treo-2688-vine-r3142696":[{"date":"2026-08-16","rent":3900,"note":"NEW: MLS R3142696, 2BR/2BA, 1063 sqft, 1 parking"},{"date":"2026-08-17","rent":3800,"note":"PRICE DROP to $3800"},{"date":"2026-08-19","rent":3800,"note":"Re-verified via listing agent Vikki Dong active RE/MAX Heights inventory and current rental mirrors"}],
+  "blenheim-terrace-204-r3149612":[{"date":"2026-08-16","rent":4495,"note":"NEW: MLS R3149612, Unit 204, 2BR/2BA, 940 sqft, 1 parking"},{"date":"2026-08-17","rent":4495,"note":"Still shown Active/For Rent"},{"date":"2026-08-19","rent":4495,"note":"DOWNGRADED TO NEEDS_CONFIRMATION: duplicate Unit 204 MLS records conflict at $4495/940 sqft vs $4295/905 sqft. Do not classify as price drop until agent confirms identity."}],
+  "19-greenway-c1-405-3619":[{"date":"2026-08-19","rent":4050,"note":"NEW VERIFIED: official 2 Bedroom Flex C1, 840 sqft, 2BA, available Aug 31; ForRent/CoStar identifies Unit 405-3619 at same price/size/date. AC, balcony, pet friendly; parking available."}],
+  "2268-w-broadway-312-r3153999":[{"date":"2026-08-19","rent":3600,"note":"NEW CANDIDATE: MLS R3153999, 2BR+den/2BA, 820 sqft, parking, Sep 1. Hidden pending direct Hello Rent/brokerage confirmation."}],
+  "cypress-1070-r3129917":[{"date":"2026-08-17","rent":5700,"note":"Initially published from MLS-backed syndicated sources"},{"date":"2026-08-18","rent":5700,"note":"REMOVED: user current browser showed inactive"},{"date":"2026-08-19","rent":5700,"note":"Remains removed; stale MLS copies are not allowed to reactivate it"}],
+  "york-103-2535-r3137446":[{"date":"2026-08-16","rent":5850,"note":"NEW: MLS R3137446, 2BR/2BA, 1499 sqft, 1 parking"},{"date":"2026-08-17","rent":5850,"note":"Still listed For Rent"},{"date":"2026-08-19","rent":5850,"note":"Multiple brokerage/IDX pages still show R3137446 Active under Vancouver Luxury Realty"}],
+  "solo-2228-marstrand":[{"date":"2026-08-14","rent":3500,"note":"First tracked"},{"date":"2026-08-17","rent":3500,"note":"Homax page still FOR RENT / Available Now"},{"date":"2026-08-19","rent":3500,"note":"Primary Homax property-manager page still explicitly FOR RENT / Available Now"}],
+  "tribeca-type-2d-2111-w11":[{"date":"2026-08-14","rent":3600,"note":"First tracked"},{"date":"2026-08-17","rent":3600,"note":"Still needs confirmation"},{"date":"2026-08-19","rent":3600,"note":"Still hidden: no sufficiently fresh primary Bastion inventory confirmation"}],
+  "kits-walk-2br-flex-616":[{"date":"2026-08-14","rent":3425,"note":"Initially discovered"},{"date":"2026-08-17","rent":3425,"note":"Official floor-plan search had no matching availability"},{"date":"2026-08-19","rent":3425,"note":"Still hidden; no current qualifying 800+ sqft 2BR inventory verified"}],
+  "raphael-301-3668-w10":[{"date":"2026-08-14","rent":4500,"note":"Removed; user browser confirmed Gone too soon"}],
+  "raven-410-3709-wbroadway":[{"date":"2026-08-14","rent":3650,"note":"Removed after live browser showed unavailable"},{"date":"2026-08-19","rent":3650,"note":"Remains removed; stale REW snapshot ignored"}],
+  "raven-705-3709-wbroadway":[{"date":"2026-08-14","rent":4195,"note":"Rejected stale cached availability and removed"},{"date":"2026-08-19","rent":4195,"note":"Remains removed"}]
 }
