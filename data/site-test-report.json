@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-08-20T02:13:30.817Z",
+  "checkedAt": "2026-08-20T02:14:57.076Z",
   "ok": false,
   "checkpoints": {
     "render": {
@@ -25,8 +25,35 @@
       "html": "<div class=\"stat\"><strong>25</strong><span>Active</span></div><div class=\"stat\"><strong>20</strong><span>New</span></div><div class=\"stat\"><strong>0</strong><span>Price drops</span></div><div class=\"stat\"><strong>2</strong><span>To verify</span></div><div class=\"stat\"><strong>2026-08-20 01:54:00</strong><span>Last refreshed</span></div>"
     },
     "map": {
-      "markers": 19
+      "markers": 19,
+      "desktopMapVisible": true
+    },
+    "filters": "ok",
+    "localStorage": {
+      "favorite": true,
+      "notes": true,
+      "firstId": "arbutus-residences-315-2den-900"
+    },
+    "sourceLink": "https://www.rentfaster.ca/properties/2139-lahb-ave-vancouver-454186",
+    "photos": {
+      "total": 19,
+      "loaded": 5,
+      "fallbacks": 12,
+      "bad": [
+        {
+          "id": "treo-2688-vine-r3142696",
+          "hasImg": true,
+          "imgOk": false,
+          "fallback": null
+        },
+        {
+          "id": "solo-2228-marstrand",
+          "hasImg": true,
+          "imgOk": false,
+          "fallback": null
+        }
+      ]
     }
   },
-  "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n  - waiting for locator('#mapView')\n    - locator resolved to <button id=\"mapView\" type=\"button\" class=\"view-btn\">Map</button>\n  - attempting click action\n    2 × waiting for element to be visible, enabled and stable\n      - element is not visible\n    - retrying click action\n    - waiting 20ms\n    2 × waiting for element to be visible, enabled and stable\n      - element is not visible\n    - retrying click action\n      - waiting 100ms\n    58 × waiting for element to be visible, enabled and stable\n       - element is not visible\n     - retrying click action\n       - waiting 500ms\n\n    at /home/runner/work/vancouver-rentals/vancouver-rentals/scripts/test-site.mjs:53:34"
+  "error": "Error: Listings with neither working image nor source fallback: [{\"id\":\"treo-2688-vine-r3142696\",\"hasImg\":true,\"imgOk\":false,\"fallback\":null},{\"id\":\"solo-2228-marstrand\",\"hasImg\":true,\"imgOk\":false,\"fallback\":null}]\n    at assert (file:///home/runner/work/vancouver-rentals/vancouver-rentals/scripts/test-site.mjs:10:50)\n    at file:///home/runner/work/vancouver-rentals/vancouver-rentals/scripts/test-site.mjs:91:3\n    at runNextTicks (node:internal/process/task_queues:64:5)\n    at process.processImmediate (node:internal/timers:452:9)\n    at process.callbackTrampoline (node:internal/async_hooks:130:17)"
 }
