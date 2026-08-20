@@ -18,7 +18,7 @@ async function waitForServer() {
 }
 
 let browser;
-let report = { checkedAt: new Date().toISOString(), ok: false };
+let report = { checkedAt: new Date().toISOString(), ok: false, checkpoints: {} };
 let failure = null;
 try {
   await waitForServer();
@@ -37,18 +37,24 @@ try {
 
   const cards = await page.locator('.listing-card').count();
   const shown = Number(await page.locator('#resultCount').innerText());
+  report.checkpoints.render = { title, cards, shown };
   assert(cards === shown, `Card count ${cards} != resultCount ${shown}`);
   assert(cards > 0, 'No listings rendered with default filters');
-  const statText = await page.locator('#stats').innerText();
-  assert(/Active/.test(statText) && /New/.test(statText), 'Stats header did not render');
+
+  const statLabels = await page.locator('#stats .stat span').allTextContents();
+  const statValues = await page.locator('#stats .stat strong').allTextContents();
+  report.checkpoints.stats = { labels: statLabels, values: statValues, html: await page.locator('#stats').innerHTML() };
+  assert(statLabels.includes('Active') && statLabels.includes('New'), `Stats header did not render expected labels: ${JSON.stringify(statLabels)}`);
 
   const markers = await page.locator('.leaflet-marker-icon.price-marker').count();
+  report.checkpoints.map = { markers };
   assert(markers === cards, `Visible cards ${cards} != map markers ${markers}`);
 
   await page.locator('#mapView').click();
   assert(await page.locator('.layout').evaluate(el => el.classList.contains('map-mode')), 'Map view toggle failed');
   await page.locator('#listView').click();
   assert(!(await page.locator('.layout').evaluate(el => el.classList.contains('map-mode'))), 'List view toggle failed');
+  report.checkpoints.viewToggle = 'ok';
 
   await page.locator('#minSqft').fill('9999');
   await page.locator('#minSqft').dispatchEvent('change');
@@ -57,6 +63,7 @@ try {
   await page.locator('#resetFilters').click();
   await page.waitForTimeout(150);
   assert(Number(await page.locator('#resultCount').innerText()) > 0, 'Reset filters did not restore listings');
+  report.checkpoints.filters = 'ok';
 
   const firstId = await page.locator('.listing-card').first().getAttribute('data-id');
   assert(firstId, 'First listing has no stable id');
@@ -72,9 +79,11 @@ try {
   await page.reload({ waitUntil: 'networkidle' });
   await page.waitForFunction(() => document.querySelectorAll('.listing-card').length > 0);
   assert((await page.locator(`[data-id="${firstId}"] .notes`).inputValue()) === note, 'Notes did not survive reload/localStorage');
+  report.checkpoints.localStorage = { favorite: true, notes: true, firstId };
 
-  const sourceHref = await page.locator(`[data-id="${firstId}"] .source-link`).first().getAttribute('href');
+  const sourceHref = await page.locator(`[data-id="${firstId}"] .actions .source-link`).getAttribute('href');
   assert(sourceHref && /^https:\/\//.test(sourceHref), `Invalid source link: ${sourceHref}`);
+  report.checkpoints.sourceLink = sourceHref;
 
   const photoAudit = await page.locator('.listing-card').evaluateAll(cards => cards.map(card => {
     const img = card.querySelector('.listing-photo');
@@ -82,22 +91,42 @@ try {
     return { id: card.dataset.id, hasImg: !!img, imgOk: !!img && img.complete && img.naturalWidth > 0, fallback: fallback?.getAttribute('href') || null };
   }));
   const badPhotos = photoAudit.filter(x => !x.imgOk && !(x.fallback && /^https:\/\//.test(x.fallback)));
+  report.checkpoints.photos = { total: photoAudit.length, loaded: photoAudit.filter(x => x.imgOk).length, fallbacks: photoAudit.filter(x => !x.imgOk && x.fallback).length, bad: badPhotos };
   assert(badPhotos.length === 0, `Listings with neither working image nor source fallback: ${JSON.stringify(badPhotos)}`);
 
   const markerTransforms = await page.locator('.leaflet-marker-icon.price-marker').evaluateAll(ms => ms.map(m => m.style.transform));
-  assert(new Set(markerTransforms).size === markerTransforms.length, 'Two visible listing markers occupy the exact same rendered map position');
+  const uniqueMarkerPositions = new Set(markerTransforms).size;
+  report.checkpoints.markerPositions = { total: markerTransforms.length, unique: uniqueMarkerPositions };
+  assert(uniqueMarkerPositions === markerTransforms.length, 'Two visible listing markers occupy the exact same rendered map position');
 
   for (const p of ['data/listings.json', 'data/history.json', 'data/images.json']) {
     const r = await page.request.get(`${BASE}/${p}`);
     assert(r.ok(), `${p} returned HTTP ${r.status()}`);
   }
+  report.checkpoints.dataEndpoints = 'ok';
+
+  // Mobile layout behavior.
+  const mobile = await browser.newContext({ viewport: { width: 390, height: 844 }, isMobile: true });
+  const mp = await mobile.newPage();
+  await mp.goto(BASE, { waitUntil: 'networkidle', timeout: 60000 });
+  await mp.waitForFunction(() => document.querySelectorAll('.listing-card').length > 0, null, { timeout: 30000 });
+  assert(await mp.locator('.mobile-controls').isVisible(), 'Mobile controls are not visible at 390px');
+  await mp.locator('#filtersToggle').click();
+  assert(await mp.locator('#toolbar').evaluate(el => el.classList.contains('mobile-open')), 'Mobile filter drawer did not open');
+  await mp.locator('#mapView').click();
+  assert(await mp.locator('.layout').evaluate(el => el.classList.contains('map-mode')), 'Mobile map view did not activate');
+  await mp.locator('#listView').click();
+  assert(!(await mp.locator('.layout').evaluate(el => el.classList.contains('map-mode'))), 'Mobile list view did not reactivate');
+  report.checkpoints.mobile = 'ok';
+  await mobile.close();
 
   const meaningfulConsole = consoleErrors.filter(x => !/favicon/i.test(x));
   const meaningfulFailed = failedRequests.filter(x => !/favicon/i.test(x));
+  report.checkpoints.browserHealth = { consoleErrors: meaningfulConsole, failedRequests: meaningfulFailed };
   assert(meaningfulConsole.length === 0, `Browser console errors: ${meaningfulConsole.join('\n')}`);
   assert(meaningfulFailed.length === 0, `Failed browser requests: ${meaningfulFailed.join('\n')}`);
 
-  report = { checkedAt: new Date().toISOString(), ok: true, title, cards, markers, firstListingId: firstId, photoAudit, consoleErrors: meaningfulConsole, failedRequests: meaningfulFailed };
+  report = { ...report, checkedAt: new Date().toISOString(), ok: true };
 } catch (err) {
   failure = err;
   report = { ...report, checkedAt: new Date().toISOString(), ok: false, error: String(err?.stack || err) };
