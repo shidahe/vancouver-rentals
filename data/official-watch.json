@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-20T03:00:00Z",
+  "updatedAt": "2026-08-20T03:26:00Z",
   "projects": [
     {
       "id": "arbutus-terrace",
@@ -11,7 +11,45 @@
       ],
       "negativeSignals": ["fully leased", "fully rented", "no homes available"],
       "positiveSignals": ["now renting", "rent now"],
-      "manualAnnouncementRequired": true
+      "manualAnnouncementRequired": true,
+      "announcementSearchHints": ["Strand Arbutus Terrace fully leased", "Arbutus Terrace Strand Facebook", "Arbutus Terrace Strand Instagram"]
+    },
+    {
+      "id": "arbutus-residences",
+      "buildingName": "Arbutus Residences",
+      "address": "2139 Lahb Ave, Vancouver, BC",
+      "officialUrls": [
+        "https://arbutusresidences.com/contact/",
+        "https://arbutusresidences2.medianation.ca/virtual-tour/",
+        "https://www.rentfaster.ca/properties/2139-lahb-ave-vancouver-454186"
+      ],
+      "negativeSignals": ["fully leased", "no suites matching selected availability found"],
+      "positiveSignals": ["request a showing", "now renting", "immediate", "limited time incentives available"],
+      "announcementSearchHints": ["Arbutus Residences Vancouver leasing announcement", "Arbutus Residences Maple Leaf Property Management"]
+    },
+    {
+      "id": "the-raven",
+      "buildingName": "The Raven",
+      "address": "3709 W Broadway, Vancouver, BC",
+      "officialUrls": [
+        "https://living.westbankcorp.com/property/the-raven",
+        "https://living.westbankcorp.com/"
+      ],
+      "negativeSignals": ["fully leased", "no homes available", "no availability"],
+      "positiveSignals": ["homes for lease", "two bedroom homes", "now offering viewings"],
+      "announcementSearchHints": ["Westbank The Raven leasing Vancouver", "The Raven Westbank available homes"]
+    },
+    {
+      "id": "raphael",
+      "buildingName": "Raphael",
+      "address": "3668 W 10th Ave, Vancouver, BC",
+      "officialUrls": [
+        "https://www.uniqueaccommodations.com/buildings/the-raphael/"
+      ],
+      "negativeSignals": ["0 for rent", "currently rented"],
+      "positiveSignals": ["for rent", "our rentals at the raphael"],
+      "directManagerSource": true,
+      "announcementSearchHints": ["Raphael 3668 West 10th Vancouver for rent", "Unique Accommodations Raphael"]
     },
     {
       "id": "kits-walk",
@@ -19,7 +57,8 @@
       "address": "2075 W 12th Ave, Vancouver, BC",
       "officialUrls": ["https://www.kitswalkleasing.com/floorplans"],
       "negativeSignals": ["fully leased", "0 apartment available"],
-      "positiveSignals": ["available", "ready to move-in today"]
+      "positiveSignals": ["available", "ready to move-in today"],
+      "announcementSearchHints": ["Kits Walk Strand availability", "Kits Walk leasing Vancouver"]
     },
     {
       "id": "19-greenway",
@@ -27,7 +66,8 @@
       "address": "3619 Arbutus St, Vancouver, BC",
       "officialUrls": ["https://www.19otgreenway.com/floorplans"],
       "negativeSignals": ["fully leased", "0 apartment available"],
-      "positiveSignals": ["available on", "view available units"]
+      "positiveSignals": ["available on", "view available units"],
+      "announcementSearchHints": ["19 on the Greenway Vancouver availability", "Warrington 19 on the Greenway"]
     },
     {
       "id": "the-elms",
@@ -35,7 +75,8 @@
       "address": "5828 Granville St, Vancouver, BC",
       "officialUrls": ["https://stranddev.com/portfolio/theelms", "https://rentals.ca/vancouver/the-elms"],
       "negativeSignals": ["fully leased", "no homes available"],
-      "positiveSignals": ["now renting", "move in today", "floor plans"]
+      "positiveSignals": ["now renting", "move in today", "floor plans"],
+      "announcementSearchHints": ["Strand The Elms Vancouver leasing", "The Elms 5828 Granville availability"]
     },
     {
       "id": "the-dunbar",
@@ -43,7 +84,8 @@
       "address": "6019 Dunbar St, Vancouver, BC",
       "officialUrls": ["https://stranddev.com/portfolio/thedunbar", "https://rentals.ca/vancouver/the-dunbar"],
       "negativeSignals": ["fully leased", "no homes available"],
-      "positiveSignals": ["now renting", "final homes available"]
+      "positiveSignals": ["now renting", "final homes available"],
+      "announcementSearchHints": ["Strand The Dunbar leasing", "The Dunbar 6019 Dunbar availability"]
     }
   ]
 }
