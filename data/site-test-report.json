@@ -1,5 +1,32 @@
 {
-  "checkedAt": "2026-08-20T02:12:11.337Z",
+  "checkedAt": "2026-08-20T02:13:30.817Z",
   "ok": false,
-  "error": "Error: Stats header did not render\n    at assert (file:///home/runner/work/vancouver-rentals/vancouver-rentals/scripts/test-site.mjs:10:50)\n    at file:///home/runner/work/vancouver-rentals/vancouver-rentals/scripts/test-site.mjs:43:3"
+  "checkpoints": {
+    "render": {
+      "title": "Vancouver Westside Rentals",
+      "cards": 19,
+      "shown": 19
+    },
+    "stats": {
+      "labels": [
+        "Active",
+        "New",
+        "Price drops",
+        "To verify",
+        "Last refreshed"
+      ],
+      "values": [
+        "25",
+        "20",
+        "0",
+        "2",
+        "2026-08-20 01:54:00"
+      ],
+      "html": "<div class=\"stat\"><strong>25</strong><span>Active</span></div><div class=\"stat\"><strong>20</strong><span>New</span></div><div class=\"stat\"><strong>0</strong><span>Price drops</span></div><div class=\"stat\"><strong>2</strong><span>To verify</span></div><div class=\"stat\"><strong>2026-08-20 01:54:00</strong><span>Last refreshed</span></div>"
+    },
+    "map": {
+      "markers": 19
+    }
+  },
+  "error": "locator.click: Timeout 30000ms exceeded.\nCall log:\n  - waiting for locator('#mapView')\n    - locator resolved to <button id=\"mapView\" type=\"button\" class=\"view-btn\">Map</button>\n  - attempting click action\n    2 × waiting for element to be visible, enabled and stable\n      - element is not visible\n    - retrying click action\n    - waiting 20ms\n    2 × waiting for element to be visible, enabled and stable\n      - element is not visible\n    - retrying click action\n      - waiting 100ms\n    58 × waiting for element to be visible, enabled and stable\n       - element is not visible\n     - retrying click action\n       - waiting 500ms\n\n    at /home/runner/work/vancouver-rentals/vancouver-rentals/scripts/test-site.mjs:53:34"
 }
