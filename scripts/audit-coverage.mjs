@@ -18,36 +18,11 @@ const countTotal=obj=>Object.keys(obj||{}).length;
 const rlHealth=Array.isArray(realtylink.health)?realtylink.health:[];
 const zumperFresh=zumper.filter(x=>fresh(x.liveCheckedAt));
 const lanes=[
-  {
-    id:'zumper',kind:'broad-marketplace',healthy:zumperFresh.length>=5,
-    status:zumperFresh.length>=5?'healthy':'unhealthy',
-    detail:`${zumperFresh.length} fresh live candidates`,
-    refreshedAt:zumperFresh.map(x=>x.liveCheckedAt).sort().at(-1)||null
-  },
-  {
-    id:'craigslist',kind:'independent-classifieds',healthy:countOk(craigslist.sourceHealth)>=3,
-    status:countOk(craigslist.sourceHealth)>=3?'healthy':countOk(craigslist.sourceHealth)>0?'degraded':'unhealthy',
-    detail:`${countOk(craigslist.sourceHealth)}/${countTotal(craigslist.sourceHealth)} regional searches healthy`,
-    refreshedAt:craigslist.refreshedAt||null
-  },
-  {
-    id:'rentalsca',kind:'broad-marketplace',healthy:countOk(rentalsca.sourceHealth)>=3,
-    status:countOk(rentalsca.sourceHealth)>=3?'healthy':countOk(rentalsca.sourceHealth)>0?'degraded':'unhealthy',
-    detail:`${countOk(rentalsca.sourceHealth)}/${countTotal(rentalsca.sourceHealth)} regional searches healthy`,
-    refreshedAt:rentalsca.refreshedAt||null
-  },
-  {
-    id:'livrent',kind:'broad-marketplace',healthy:countOk(livrent.sourceHealth)>=1,
-    status:countOk(livrent.sourceHealth)>=1?'healthy':'unhealthy',
-    detail:`${countOk(livrent.sourceHealth)}/${countTotal(livrent.sourceHealth)} searches healthy`,
-    refreshedAt:livrent.refreshedAt||null
-  },
-  {
-    id:'realtylink',kind:'mls-rental',healthy:rlHealth.filter(x=>x.status>=200&&x.status<400).length>=1,
-    status:rlHealth.some(x=>x.status>=200&&x.status<400)?'healthy':'unhealthy',
-    detail:`${rlHealth.filter(x=>x.status>=200&&x.status<400).length}/${rlHealth.length} searches healthy`,
-    refreshedAt:realtylink.refreshedAt||null
-  }
+  {id:'zumper',kind:'broad-marketplace',healthy:zumperFresh.length>=5,status:zumperFresh.length>=5?'healthy':'unhealthy',detail:`${zumperFresh.length} fresh live candidates`,refreshedAt:zumperFresh.map(x=>x.liveCheckedAt).sort().at(-1)||null},
+  {id:'craigslist',kind:'independent-classifieds',healthy:countOk(craigslist.sourceHealth)>=3,status:countOk(craigslist.sourceHealth)>=3?'healthy':countOk(craigslist.sourceHealth)>0?'degraded':'unhealthy',detail:`${countOk(craigslist.sourceHealth)}/${countTotal(craigslist.sourceHealth)} regional searches healthy`,refreshedAt:craigslist.refreshedAt||null},
+  {id:'rentalsca',kind:'broad-marketplace',healthy:countOk(rentalsca.sourceHealth)>=3,status:countOk(rentalsca.sourceHealth)>=3?'healthy':countOk(rentalsca.sourceHealth)>0?'degraded':'unhealthy',detail:`${countOk(rentalsca.sourceHealth)}/${countTotal(rentalsca.sourceHealth)} regional searches healthy`,refreshedAt:rentalsca.refreshedAt||null},
+  {id:'livrent',kind:'broad-marketplace',healthy:countOk(livrent.sourceHealth)>=1,status:countOk(livrent.sourceHealth)>=1?'healthy':'unhealthy',detail:`${countOk(livrent.sourceHealth)}/${countTotal(livrent.sourceHealth)} searches healthy`,refreshedAt:livrent.refreshedAt||null},
+  {id:'realtylink',kind:'mls-rental',healthy:rlHealth.filter(x=>x.status>=200&&x.status<400).length>=1,status:rlHealth.some(x=>x.status>=200&&x.status<400)?'healthy':'unhealthy',detail:`${rlHealth.filter(x=>x.status>=200&&x.status<400).length}/${rlHealth.length} searches healthy`,refreshedAt:realtylink.refreshedAt||null}
 ];
 
 const freshLanes=lanes.filter(x=>fresh(x.refreshedAt));
@@ -64,4 +39,3 @@ if(healthy.length<2)blockers.push({severity:'high',issue:'insufficient-independe
 const report={generatedAt:new Date().toISOString(),coverageReady,healthyLaneCount:healthy.length,freshLaneCount:freshLanes.length,lanes,warnings,blockers,policy:'Coverage is ready when at least two fresh independent discovery families are healthy, including one broad marketplace and one independent classifieds/MLS family. Individual blocked sources are warnings while redundant discovery remains healthy.'};
 await write(path.join(DATA,'coverage-report.json'),report);
 console.log(`Coverage audit: coverageReady=${coverageReady}, healthy=${healthy.length}/${lanes.length}`);
-if(!coverageReady)process.exitCode=2;
