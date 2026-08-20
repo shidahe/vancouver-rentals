@@ -5,7 +5,11 @@
       "name": "Arbutus Residences",
       "address": "4188 Yew St, Vancouver, BC V6L 0C1",
       "neighborhood": "Quilchena",
-      "url": "https://www.rentfaster.ca/properties/2139-lahb-ave-vancouver-454186",
+      "urls": [
+        "https://www.rentfaster.ca/properties/2139-lahb-ave-vancouver-454186",
+        "https://www.apartments.com/arbutus-residences-vancouver-bc/sxw5hm4/",
+        "https://www.zumper.com/apartment-buildings/p1117150/arbutus-residences-quilchena-vancouver-bc"
+      ],
       "lat": 49.24918,
       "lng": -123.15567,
       "buildingYear": 2021,
@@ -25,7 +29,7 @@
           "rent": 4110,
           "unit": "315",
           "requiredSignals": ["4,110", "900"],
-          "availabilitySignals": ["Immediate", "Now", "Available"]
+          "availabilitySignals": ["Immediate", "Now", "Available", "1 unit available"]
         },
         {
           "key": "2-bedroom-townhouse-den-1340",
@@ -36,7 +40,7 @@
           "rent": 5390,
           "unit": null,
           "requiredSignals": ["5,390", "1,340"],
-          "availabilitySignals": ["Immediate", "Now", "Available"]
+          "availabilitySignals": ["Immediate", "Now", "Available", "1 unit available"]
         }
       ]
     }
