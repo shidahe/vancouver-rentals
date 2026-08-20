@@ -1,0 +1,49 @@
+{
+  "updatedAt": "2026-08-20T03:00:00Z",
+  "projects": [
+    {
+      "id": "arbutus-terrace",
+      "buildingName": "Arbutus Terrace",
+      "address": "3205 Arbutus St, Vancouver, BC",
+      "officialUrls": [
+        "https://stranddev.com/portfolio/arbutusterrace-rental",
+        "https://stranddev.com/the-westside-collection"
+      ],
+      "negativeSignals": ["fully leased", "fully rented", "no homes available"],
+      "positiveSignals": ["now renting", "rent now"],
+      "manualAnnouncementRequired": true
+    },
+    {
+      "id": "kits-walk",
+      "buildingName": "Kits Walk",
+      "address": "2075 W 12th Ave, Vancouver, BC",
+      "officialUrls": ["https://www.kitswalkleasing.com/floorplans"],
+      "negativeSignals": ["fully leased", "0 apartment available"],
+      "positiveSignals": ["available", "ready to move-in today"]
+    },
+    {
+      "id": "19-greenway",
+      "buildingName": "19 on the Greenway",
+      "address": "3619 Arbutus St, Vancouver, BC",
+      "officialUrls": ["https://www.19otgreenway.com/floorplans"],
+      "negativeSignals": ["fully leased", "0 apartment available"],
+      "positiveSignals": ["available on", "view available units"]
+    },
+    {
+      "id": "the-elms",
+      "buildingName": "The Elms",
+      "address": "5828 Granville St, Vancouver, BC",
+      "officialUrls": ["https://stranddev.com/portfolio/theelms", "https://rentals.ca/vancouver/the-elms"],
+      "negativeSignals": ["fully leased", "no homes available"],
+      "positiveSignals": ["now renting", "move in today", "floor plans"]
+    },
+    {
+      "id": "the-dunbar",
+      "buildingName": "The Dunbar",
+      "address": "6019 Dunbar St, Vancouver, BC",
+      "officialUrls": ["https://stranddev.com/portfolio/thedunbar", "https://rentals.ca/vancouver/the-dunbar"],
+      "negativeSignals": ["fully leased", "no homes available"],
+      "positiveSignals": ["now renting", "final homes available"]
+    }
+  ]
+}
