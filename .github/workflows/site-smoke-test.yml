@@ -7,7 +7,9 @@ on:
     paths:
       - 'index.html'
       - 'app.js'
+      - 'map-offset.js'
       - 'image-cache.js'
+      - 'site-fixes.js'
       - 'style.css'
       - 'data/listings.json'
       - 'data/history.json'
