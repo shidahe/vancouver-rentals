@@ -81,6 +81,22 @@ try {
   assert(sourceHref && /^https:\/\//.test(sourceHref), `Invalid source link: ${sourceHref}`);
   report.checkpoints.sourceLink = sourceHref;
 
+  // Force every lazy image into the viewport before deciding whether it works.
+  const allCards = page.locator('.listing-card');
+  for (let i = 0; i < await allCards.count(); i++) {
+    const card = allCards.nth(i);
+    await card.scrollIntoViewIfNeeded();
+    const img = card.locator('.listing-photo');
+    if (await img.count()) {
+      await page.waitForFunction(el => {
+        const image = el.querySelector('.listing-photo');
+        const fallback = el.querySelector('.photo-source-link');
+        return !!fallback || (!!image && image.complete);
+      }, await card.elementHandle(), { timeout: 5000 }).catch(() => {});
+    }
+  }
+  await page.waitForTimeout(300);
+
   const photoAudit = await page.locator('.listing-card').evaluateAll(cards => cards.map(card => {
     const img = card.querySelector('.listing-photo');
     const fallback = card.querySelector('.photo-source-link');
