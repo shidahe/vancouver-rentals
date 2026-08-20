@@ -1,12 +1,29 @@
 {
-  "refreshedAt": "2026-08-20T12:59:28.468Z",
+  "refreshedAt": "2026-08-20T13:18:09.477Z",
   "buildings": [
     {
       "building": "Arbutus Residences",
-      "checkedAt": "2026-08-20T12:59:28.468Z",
-      "httpStatus": null,
-      "usable": false,
-      "error": "Error: page.goto: url: expected string, got undefined",
+      "checkedAt": "2026-08-20T13:18:09.477Z",
+      "observations": [
+        {
+          "url": "https://www.rentfaster.ca/properties/2139-lahb-ave-vancouver-454186",
+          "httpStatus": 403,
+          "usable": false,
+          "error": null
+        },
+        {
+          "url": "https://www.apartments.com/arbutus-residences-vancouver-bc/sxw5hm4/",
+          "httpStatus": 403,
+          "usable": false,
+          "error": null
+        },
+        {
+          "url": "https://www.zumper.com/apartment-buildings/p1117150/arbutus-residences-quilchena-vancouver-bc",
+          "httpStatus": 200,
+          "usable": true,
+          "error": null
+        }
+      ],
       "inventories": [
         {
           "key": "2-bedroom-den-900",
@@ -27,9 +44,36 @@
             "1 unit available"
           ],
           "verified": false,
-          "requiredMatched": false,
-          "availabilityMatched": false,
-          "pageNegative": false
+          "verifiedSource": null,
+          "sourceMatches": [
+            {
+              "url": "https://www.rentfaster.ca/properties/2139-lahb-ave-vancouver-454186",
+              "httpStatus": 403,
+              "usable": false,
+              "requiredMatched": false,
+              "availabilityMatched": false,
+              "fullyLeased": false,
+              "verified": false
+            },
+            {
+              "url": "https://www.apartments.com/arbutus-residences-vancouver-bc/sxw5hm4/",
+              "httpStatus": 403,
+              "usable": false,
+              "requiredMatched": false,
+              "availabilityMatched": false,
+              "fullyLeased": false,
+              "verified": false
+            },
+            {
+              "url": "https://www.zumper.com/apartment-buildings/p1117150/arbutus-residences-quilchena-vancouver-bc",
+              "httpStatus": 200,
+              "usable": true,
+              "requiredMatched": false,
+              "availabilityMatched": true,
+              "fullyLeased": false,
+              "verified": false
+            }
+          ]
         },
         {
           "key": "2-bedroom-townhouse-den-1340",
@@ -49,10 +93,37 @@
             "Available",
             "1 unit available"
           ],
-          "verified": false,
-          "requiredMatched": false,
-          "availabilityMatched": false,
-          "pageNegative": false
+          "verified": true,
+          "verifiedSource": "https://www.zumper.com/apartment-buildings/p1117150/arbutus-residences-quilchena-vancouver-bc",
+          "sourceMatches": [
+            {
+              "url": "https://www.rentfaster.ca/properties/2139-lahb-ave-vancouver-454186",
+              "httpStatus": 403,
+              "usable": false,
+              "requiredMatched": false,
+              "availabilityMatched": false,
+              "fullyLeased": false,
+              "verified": false
+            },
+            {
+              "url": "https://www.apartments.com/arbutus-residences-vancouver-bc/sxw5hm4/",
+              "httpStatus": 403,
+              "usable": false,
+              "requiredMatched": false,
+              "availabilityMatched": false,
+              "fullyLeased": false,
+              "verified": false
+            },
+            {
+              "url": "https://www.zumper.com/apartment-buildings/p1117150/arbutus-residences-quilchena-vancouver-bc",
+              "httpStatus": 200,
+              "usable": true,
+              "requiredMatched": true,
+              "availabilityMatched": true,
+              "fullyLeased": false,
+              "verified": true
+            }
+          ]
         }
       ]
     }

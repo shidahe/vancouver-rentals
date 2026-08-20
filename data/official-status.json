@@ -1,12 +1,12 @@
 {
-  "refreshedAt": "2026-08-20T12:59:29.060Z",
+  "refreshedAt": "2026-08-20T13:18:12.987Z",
   "policy": "Fresh explicit official negative announcements override older official website leasing language and all marketplace evidence. Official positive status alone does not prove a specific unit is available.",
   "projects": [
     {
       "id": "arbutus-terrace",
       "buildingName": "Arbutus Terrace",
       "address": "3205 Arbutus St, Vancouver, BC",
-      "checkedAt": "2026-08-20T12:59:29.060Z",
+      "checkedAt": "2026-08-20T13:18:12.987Z",
       "effectiveStatus": "fully_leased",
       "authority": "official_social_post",
       "reason": "Strand official Facebook post states Arbutus Terrace is now fully leased.",
@@ -19,7 +19,7 @@
       "observations": [
         {
           "url": "https://stranddev.com/portfolio/arbutusterrace-rental",
-          "checkedAt": "2026-08-20T12:59:29.060Z",
+          "checkedAt": "2026-08-20T13:18:12.987Z",
           "httpStatus": 200,
           "usable": true,
           "negatives": [],
@@ -31,7 +31,7 @@
         },
         {
           "url": "https://stranddev.com/the-westside-collection",
-          "checkedAt": "2026-08-20T12:59:29.060Z",
+          "checkedAt": "2026-08-20T13:18:12.987Z",
           "httpStatus": 200,
           "usable": true,
           "negatives": [],
@@ -46,7 +46,7 @@
       "id": "arbutus-residences",
       "buildingName": "Arbutus Residences",
       "address": "2139 Lahb Ave, Vancouver, BC",
-      "checkedAt": "2026-08-20T12:59:29.060Z",
+      "checkedAt": "2026-08-20T13:18:12.987Z",
       "effectiveStatus": "leasing",
       "authority": "official_web",
       "reason": "Official page contains current leasing/availability language.",
@@ -54,7 +54,7 @@
       "observations": [
         {
           "url": "https://arbutusresidences.com/contact/",
-          "checkedAt": "2026-08-20T12:59:29.060Z",
+          "checkedAt": "2026-08-20T13:18:12.987Z",
           "httpStatus": 200,
           "usable": true,
           "negatives": [],
@@ -66,7 +66,7 @@
         },
         {
           "url": "https://arbutusresidences2.medianation.ca/virtual-tour/",
-          "checkedAt": "2026-08-20T12:59:29.060Z",
+          "checkedAt": "2026-08-20T13:18:12.987Z",
           "httpStatus": 200,
           "usable": true,
           "negatives": [],
@@ -77,7 +77,7 @@
         },
         {
           "url": "https://www.rentfaster.ca/properties/2139-lahb-ave-vancouver-454186",
-          "checkedAt": "2026-08-20T12:59:29.060Z",
+          "checkedAt": "2026-08-20T13:18:12.987Z",
           "httpStatus": 403,
           "usable": false
         }
@@ -87,7 +87,7 @@
       "id": "the-raven",
       "buildingName": "The Raven",
       "address": "3709 W Broadway, Vancouver, BC",
-      "checkedAt": "2026-08-20T12:59:29.060Z",
+      "checkedAt": "2026-08-20T13:18:12.987Z",
       "effectiveStatus": "leasing",
       "authority": "official_web",
       "reason": "Official page contains current leasing/availability language.",
@@ -95,7 +95,7 @@
       "observations": [
         {
           "url": "https://living.westbankcorp.com/property/the-raven",
-          "checkedAt": "2026-08-20T12:59:29.060Z",
+          "checkedAt": "2026-08-20T13:18:12.987Z",
           "httpStatus": 200,
           "usable": true,
           "negatives": [],
@@ -107,7 +107,7 @@
         },
         {
           "url": "https://living.westbankcorp.com/",
-          "checkedAt": "2026-08-20T12:59:29.060Z",
+          "checkedAt": "2026-08-20T13:18:12.987Z",
           "httpStatus": 200,
           "usable": true,
           "negatives": [],
@@ -122,7 +122,7 @@
       "id": "raphael",
       "buildingName": "Raphael",
       "address": "3668 W 10th Ave, Vancouver, BC",
-      "checkedAt": "2026-08-20T12:59:29.060Z",
+      "checkedAt": "2026-08-20T13:18:12.987Z",
       "effectiveStatus": "fully_leased",
       "authority": "official_web",
       "reason": "Official page contains a strong negative leasing signal.",
@@ -130,7 +130,7 @@
       "observations": [
         {
           "url": "https://www.uniqueaccommodations.com/buildings/the-raphael/",
-          "checkedAt": "2026-08-20T12:59:29.060Z",
+          "checkedAt": "2026-08-20T13:18:12.987Z",
           "httpStatus": 200,
           "usable": true,
           "negatives": [
@@ -148,7 +148,7 @@
       "id": "kits-walk",
       "buildingName": "Kits Walk",
       "address": "2075 W 12th Ave, Vancouver, BC",
-      "checkedAt": "2026-08-20T12:59:29.060Z",
+      "checkedAt": "2026-08-20T13:18:12.987Z",
       "effectiveStatus": "unknown",
       "authority": "none",
       "reason": "No decisive official signal.",
@@ -156,7 +156,7 @@
       "observations": [
         {
           "url": "https://www.kitswalkleasing.com/floorplans",
-          "checkedAt": "2026-08-20T12:59:29.060Z",
+          "checkedAt": "2026-08-20T13:18:12.987Z",
           "httpStatus": 403,
           "usable": false
         }
@@ -166,7 +166,7 @@
       "id": "19-greenway",
       "buildingName": "19 on the Greenway",
       "address": "3619 Arbutus St, Vancouver, BC",
-      "checkedAt": "2026-08-20T12:59:29.060Z",
+      "checkedAt": "2026-08-20T13:18:12.987Z",
       "effectiveStatus": "unknown",
       "authority": "none",
       "reason": "No decisive official signal.",
@@ -174,7 +174,7 @@
       "observations": [
         {
           "url": "https://www.19otgreenway.com/floorplans",
-          "checkedAt": "2026-08-20T12:59:29.060Z",
+          "checkedAt": "2026-08-20T13:18:12.987Z",
           "httpStatus": 403,
           "usable": false
         }
@@ -184,7 +184,7 @@
       "id": "the-elms",
       "buildingName": "The Elms",
       "address": "5828 Granville St, Vancouver, BC",
-      "checkedAt": "2026-08-20T12:59:29.060Z",
+      "checkedAt": "2026-08-20T13:18:12.987Z",
       "effectiveStatus": "leasing",
       "authority": "official_web",
       "reason": "Official page contains current leasing/availability language.",
@@ -192,7 +192,7 @@
       "observations": [
         {
           "url": "https://stranddev.com/portfolio/theelms",
-          "checkedAt": "2026-08-20T12:59:29.060Z",
+          "checkedAt": "2026-08-20T13:18:12.987Z",
           "httpStatus": 200,
           "usable": true,
           "negatives": [],
@@ -203,8 +203,8 @@
         },
         {
           "url": "https://rentals.ca/vancouver/the-elms",
-          "checkedAt": "2026-08-20T12:59:29.060Z",
-          "httpStatus": 429,
+          "checkedAt": "2026-08-20T13:18:12.987Z",
+          "httpStatus": 403,
           "usable": false
         }
       ]
@@ -213,7 +213,7 @@
       "id": "the-dunbar",
       "buildingName": "The Dunbar",
       "address": "6019 Dunbar St, Vancouver, BC",
-      "checkedAt": "2026-08-20T12:59:29.060Z",
+      "checkedAt": "2026-08-20T13:18:12.987Z",
       "effectiveStatus": "leasing",
       "authority": "official_web",
       "reason": "Official page contains current leasing/availability language.",
@@ -221,7 +221,7 @@
       "observations": [
         {
           "url": "https://stranddev.com/portfolio/thedunbar",
-          "checkedAt": "2026-08-20T12:59:29.060Z",
+          "checkedAt": "2026-08-20T13:18:12.987Z",
           "httpStatus": 200,
           "usable": true,
           "negatives": [],
@@ -232,8 +232,8 @@
         },
         {
           "url": "https://rentals.ca/vancouver/the-dunbar",
-          "checkedAt": "2026-08-20T12:59:29.060Z",
-          "httpStatus": 429,
+          "checkedAt": "2026-08-20T13:18:12.987Z",
+          "httpStatus": 403,
           "usable": false
         }
       ]
