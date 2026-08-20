@@ -15,6 +15,17 @@ function key(address,unit,url,floorplan){const a=street(address);const u=unitTok
 function candidateKey(c){return key(c.address,c.unit,c.url,c.floorplan);}
 function sourceFamily(c){return /^zumper$/i.test(c.source)?'zumper':/^rentals\.ca$/i.test(c.source)?'rentalsca':/^liv\.rent$/i.test(c.source)?'livrent':norm(c.source);}
 function usable(c){return !!c&&c.active!==false&&!c.rented&&c.targetArea!==false&&c.bedrooms===2&&Number(c.rent)>=2500&&Number(c.rent)<=12000&&!!c.address;}
+function baths(c){const n=Number(c.bathrooms??c.baths);return Number.isFinite(n)?n:null;}
+function sqft(c){const n=Number(c.sqft);return Number.isFinite(n)?n:null;}
+function fingerprintCompatible(a,b){
+  if(street(a.address)!==street(b.address))return false;
+  if(unitToken(a.unit)||unitToken(b.unit))return false;
+  if(Number(a.rent)!==Number(b.rent))return false;
+  if(Number(a.bedrooms)!==Number(b.bedrooms))return false;
+  const ab=baths(a),bb=baths(b),as=sqft(a),bs=sqft(b);
+  if(ab==null||bb==null||ab!==bb||as==null||bs==null||Math.abs(as-bs)>5)return false;
+  return sourceFamily(a)!==sourceFamily(b);
+}
 
 const lp=path.join(DATA,'listings.json'),hp=path.join(DATA,'history.json');
 const payload=await read(lp,{meta:{},listings:[]}),history=await read(hp,{});
@@ -30,7 +41,7 @@ const groups=new Map();
 for(const c of all){if(!usable(c))continue;const k=candidateKey(c);if(!groups.has(k))groups.set(k,[]);groups.get(k).push(c);}
 const listingByKey=new Map();
 for(const x of payload.listings){const k=key(x.address,listingUnit(x),x.url,null);if(!listingByKey.has(k)||listingByKey.get(k).source==='Zumper live detail')listingByKey.set(k,x);}
-const state={refreshedAt:iso,groups:[],promoted:[],crossVerified:[],negativeMatches:[]};
+const state={refreshedAt:iso,groups:[],promoted:[],crossVerified:[],fingerprintCrossVerified:[],negativeMatches:[]};
 
 for(const [k,items] of groups){
   const families=[...new Set(items.map(sourceFamily))];
@@ -47,7 +58,6 @@ for(const [k,items] of groups){
     state.crossVerified.push(listing.id);state.groups.push({...summary,result:'cross_verified_existing'});continue;
   }
 
-  // Auto-publish only exact-unit inventory confirmed by at least two independent live marketplaces.
   if(!listing&&exactUnit&&families.length>=2&&rentSpread<=300){
     const best=items.find(x=>x.geo?.lat&&x.geo?.lng)||items.find(x=>x.lat&&x.lng)||items[0];
     const lat=best.geo?.lat??best.lat??null,lng=best.geo?.lng??best.lng??null;
@@ -59,9 +69,30 @@ for(const [k,items] of groups){
   state.groups.push({...summary,result:'candidate_only'});
 }
 
-// Strong negative liv.rent evidence can demote an exact matching existing unit, but never address-only inventory.
+// Address-only private rentals cannot be keyed across sites by URL. For already-published listings,
+// allow a stricter second-source confirmation when exact street, rent, beds, baths and sqft (±5) agree.
+// This never auto-publishes a new address-only listing and never merges distinct explicit units.
+for(const x of payload.listings){
+  if(x.availabilityStatus!=='active'||listingUnit(x)||x.type==='purpose-built')continue;
+  const proxy={address:x.address,unit:null,rent:x.rent,bedrooms:x.bedrooms,bathrooms:x.bathrooms,sqft:x.sqft,source:x.source||'existing'};
+  const matches=all.filter(c=>usable(c)&&fingerprintCompatible(proxy,c));
+  const families=[...new Set(matches.map(sourceFamily))];
+  if(!families.length)continue;
+  // Require a source family different from the listing's known evidence/source; for Zumper-origin listings,
+  // Rentals.ca is sufficient to provide the independent second live observation.
+  const currentFamilies=new Set((x.evidenceSources||[]).map(norm));
+  if(/zumper/i.test(x.source||''))currentFamilies.add('zumper');
+  if(/rentals\.ca/i.test(x.source||''))currentFamilies.add('rentalsca');
+  const independent=families.filter(f=>!currentFamilies.has(f));
+  if(!independent.length)continue;
+  const merged=[...new Set([...currentFamilies,...independent])];
+  x.verificationLevel='verified';x.lastChecked=today;x.verifiedAt=iso;x.evidenceSources=merged;
+  x.verificationMethod=`Cross-verified by strict address/rent/bed/bath/sqft fingerprint across live sources: ${merged.join(', ')}.`;
+  state.fingerprintCrossVerified.push(x.id);
+}
+
 for(const c of liv.candidates||[]){if(!c.rented||!unitToken(c.unit))continue;const k=candidateKey(c),x=listingByKey.get(k);if(!x||x.availabilityStatus!=='active')continue;x.availabilityStatus='removed';x.status='removed';x.removedAt=today;x.lastChecked=today;x.verifiedAt=iso;x.verificationMethod='Removed after exact-unit liv.rent detail explicitly showed Rented / no longer accepting applications.';(history[x.id]||=[]).push({date:today,rent:x.rent,note:'AUTO-REMOVED: exact matching liv.rent unit explicitly marked Rented.'});state.negativeMatches.push(x.id);}
 
-payload.meta ||= {};payload.meta.lastCrossSourceReconciliation=iso;payload.meta.reconciliationPolicy='Exact address+unit candidates may auto-publish after two independent live source families agree; single-source candidates remain hidden. Exact-unit explicit Rented evidence may remove.';
+payload.meta ||= {};payload.meta.lastCrossSourceReconciliation=iso;payload.meta.reconciliationPolicy='Exact address+unit candidates may auto-publish after two independent live source families agree. Already-published address-only private rentals may gain second-source verification only via strict exact-address + same-rent + same-bed/bath + sqft±5 fingerprint; this fingerprint never auto-publishes a new listing. Exact-unit explicit Rented evidence may remove.';
 await write(lp,payload);await write(hp,history);await write(path.join(DATA,'reconciliation-state.json'),state);
-console.log(`Reconciliation: ${state.crossVerified.length} existing cross-verified, ${state.promoted.length} new exact units promoted, ${state.negativeMatches.length} removed by exact rented evidence.`);
+console.log(`Reconciliation: ${state.crossVerified.length} exact existing, ${state.fingerprintCrossVerified.length} strict-fingerprint existing, ${state.promoted.length} new exact units promoted, ${state.negativeMatches.length} removed.`);
