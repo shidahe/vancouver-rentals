@@ -1,117 +1,38 @@
 {
-  "refreshedAt": "2026-08-20T02:56:51.245Z",
+  "refreshedAt": "2026-08-20T03:29:05.154Z",
   "mode": "candidate-only",
   "sourceHealth": {
     "rentalsca-kitsilano-2br": {
-      "checkedAt": "2026-08-20T02:56:51.245Z",
+      "checkedAt": "2026-08-20T03:29:05.154Z",
       "status": 200,
       "ok": true,
       "finalUrl": "https://rentals.ca/vancouver/kitsilano/all-apartments-all-houses/2-bedrooms"
     },
     "rentalsca-point-grey-2br": {
-      "checkedAt": "2026-08-20T02:56:51.245Z",
+      "checkedAt": "2026-08-20T03:29:05.154Z",
       "status": 200,
       "ok": true,
       "finalUrl": "https://rentals.ca/vancouver/west-point-grey/2-bedrooms"
     },
     "rentalsca-arbutus-2br": {
-      "checkedAt": "2026-08-20T02:56:51.245Z",
+      "checkedAt": "2026-08-20T03:29:05.154Z",
       "status": 200,
       "ok": true,
       "finalUrl": "https://rentals.ca/vancouver/arbutus-ridge/2-bedrooms"
     },
     "rentalsca-dunbar-2br": {
-      "checkedAt": "2026-08-20T02:56:51.245Z",
-      "status": 200,
-      "ok": true,
-      "finalUrl": "https://rentals.ca/vancouver/dunbar-southlands/2-bedrooms"
+      "checkedAt": "2026-08-20T03:29:05.154Z",
+      "status": 429,
+      "ok": false,
+      "finalUrl": "https://rentals.ca/vancouver/dunbar-southlands/2-bedrooms?__cf_chl_rt_tk=6VjbsA76wXw8wgyLm.4Mm0NUxBAMILUA1bOBWV4Ze0I-1787196555-1.0.1.1-BWMXdOeteVa4i5MNLhooYEMH.1BByGakI.Oryn5h.aw"
     },
     "rentalsca-quilchena-2br": {
-      "checkedAt": "2026-08-20T02:56:51.245Z",
-      "status": 404,
+      "checkedAt": "2026-08-20T03:29:05.154Z",
+      "status": 429,
       "ok": false,
-      "finalUrl": "https://rentals.ca/vancouver/quilchena/2-bedrooms"
+      "finalUrl": "https://rentals.ca/vancouver/quilchena/2-bedrooms?__cf_chl_rt_tk=ViKgMB4be_uo_lmjKuhVyE0eJxudlEy54rDdH8O6SNY-1787196555-1.0.1.1-2K_O.dALcnsfKno59PFoOd_d9gRl9J7Qz03xdRSyJDU"
     }
   },
-  "pages": [
-    {
-      "source": "Rentals.ca",
-      "url": "https://rentals.ca/vancouver/2678-west-broadway",
-      "address": "2678 West Broadway, Vancouver, British Columbia None",
-      "addressUnit": null,
-      "geo": {
-        "lat": 49.2638511,
-        "lng": -123.1657831
-      },
-      "targetArea": true,
-      "active": true,
-      "floorplans": [
-        {
-          "label": "2 Bedroom Apartments In Vancouver",
-          "unit": null,
-          "beds": 2,
-          "baths": null,
-          "sqft": null,
-          "rent": 2000,
-          "available": true
-        },
-        {
-          "label": "3 Bedroom Apartments In Vancouver",
-          "unit": null,
-          "beds": 3,
-          "baths": null,
-          "sqft": null,
-          "rent": 2000,
-          "available": true
-        }
-      ],
-      "single": {
-        "rent": 3350,
-        "beds": 2,
-        "baths": 1.5,
-        "sqft": null
-      },
-      "checkedAt": "2026-08-20T02:56:51.245Z"
-    }
-  ],
-  "inventories": [
-    {
-      "source": "Rentals.ca",
-      "url": "https://rentals.ca/vancouver/2678-west-broadway",
-      "address": "2678 West Broadway, Vancouver, British Columbia None",
-      "unit": null,
-      "floorplan": "2 Bedroom Apartments In Vancouver",
-      "identityKey": "2678 w broadway::floorplan:2 bedroom apartments in vancouver",
-      "rent": 2000,
-      "bedrooms": 2,
-      "bathrooms": null,
-      "sqft": null,
-      "geo": {
-        "lat": 49.2638511,
-        "lng": -123.1657831
-      },
-      "active": true,
-      "checkedAt": "2026-08-20T02:56:51.245Z",
-      "publishable": false
-    },
-    {
-      "source": "Rentals.ca",
-      "url": "https://rentals.ca/vancouver/2678-west-broadway",
-      "address": "2678 West Broadway, Vancouver, British Columbia None",
-      "unit": null,
-      "floorplan": "3 Bedroom Apartments In Vancouver",
-      "identityKey": "2678 w broadway::floorplan:3 bedroom apartments in vancouver",
-      "rent": 2000,
-      "bedrooms": 3,
-      "bathrooms": null,
-      "sqft": null,
-      "geo": {
-        "lat": 49.2638511,
-        "lng": -123.1657831
-      },
-      "active": true,
-      "checkedAt": "2026-08-20T02:56:51.245Z",
-      "publishable": false
-    }
-  ]
+  "pages": [],
+  "inventories": []
 }
