@@ -9,7 +9,7 @@ on:
     paths:
       - 'scripts/refresh-listings.mjs'
       - 'scripts/refresh-safe.mjs'
-      - 'scripts/refresh-zumper-units.mjs'
+      - 'scripts/refresh-zumper-units-v2.mjs'
       - 'data/live-sources.json'
       - 'data/automation-policy.json'
       - 'package.json'
