@@ -9,6 +9,7 @@ on:
     paths:
       - 'scripts/refresh-listings.mjs'
       - 'scripts/refresh-safe.mjs'
+      - 'scripts/refresh-zumper-units.mjs'
       - 'data/live-sources.json'
       - 'data/automation-policy.json'
       - 'package.json'
@@ -24,7 +25,7 @@ concurrency:
 jobs:
   refresh:
     runs-on: ubuntu-latest
-    timeout-minutes: 25
+    timeout-minutes: 35
     steps:
       - uses: actions/checkout@v4
         with:
@@ -40,14 +41,14 @@ jobs:
       - name: Install Chromium
         run: npx playwright install --with-deps chromium
 
-      - name: Run live verifier and safety pass
+      - name: Run live verifier, safety pass, and per-unit discovery
         run: npm run refresh
 
       - name: Commit refreshed rental data
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add data/listings.json data/history.json data/candidates.json data/refresh-state.json data/evidence
+          git add data/listings.json data/history.json data/candidates.json data/refresh-state.json data/image-sources.json data/evidence
           if git diff --cached --quiet; then
             echo 'No rental data changes.'
             exit 0
