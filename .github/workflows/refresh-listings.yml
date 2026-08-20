@@ -13,6 +13,7 @@ on:
       - 'scripts/refresh-rentalsca.mjs'
       - 'scripts/refresh-livrent.mjs'
       - 'scripts/refresh-craigslist.mjs'
+      - 'scripts/refresh-realtylink.mjs'
       - 'scripts/reconcile-candidates.mjs'
       - 'scripts/refresh-purposebuilt.mjs'
       - 'scripts/refresh-official-status.mjs'
@@ -54,7 +55,7 @@ jobs:
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add data/listings.json data/history.json data/candidates.json data/rentalsca-candidates.json data/livrent-candidates.json data/craigslist-candidates.json data/reconciliation-state.json data/refresh-state.json data/image-sources.json data/purpose-built-status.json data/official-status.json data/official-status-actions.json data/quality-report.json data/evidence
+          git add data/listings.json data/history.json data/candidates.json data/rentalsca-candidates.json data/livrent-candidates.json data/craigslist-candidates.json data/realtylink-candidates.json data/reconciliation-state.json data/refresh-state.json data/image-sources.json data/purpose-built-status.json data/official-status.json data/official-status-actions.json data/quality-report.json data/evidence
           if git diff --cached --quiet; then
             echo 'No rental data changes.'
             exit 0
