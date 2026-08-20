@@ -19,25 +19,36 @@ const ctx=await browser.newContext({locale:'en-CA',timezoneId:'America/Vancouver
 const page=await ctx.newPage();
 
 for(const b of cfg.buildings||[]){
-  let text='',status=null,error=null;
-  try{
-    const r=await page.goto(b.url,{waitUntil:'domcontentloaded',timeout:45000}); status=r?.status()??null;
-    if(r&&status<400){await page.waitForTimeout(2500);text=await page.locator('body').innerText({timeout:12000});}
-  }catch(e){error=String(e)}
-  const usable=!!text&&status!==401&&status!==403&&status!==429&&!(status>=500);
-  const buildingEvidence={building:b.name,url:b.url,checkedAt:now,httpStatus:status,usable,error,inventories:[]};
+  const urls=(b.urls&&b.urls.length?b.urls:[b.url]).filter(Boolean);
+  const observations=[];
+  for(const url of urls){
+    let text='',status=null,error=null;
+    try{
+      const r=await page.goto(url,{waitUntil:'domcontentloaded',timeout:45000}); status=r?.status()??null;
+      if(r&&status<400){await page.waitForTimeout(2200);text=await page.locator('body').innerText({timeout:12000});}
+    }catch(e){error=String(e)}
+    const usable=!!text&&status!==401&&status!==403&&status!==429&&!(status>=500);
+    observations.push({url,checkedAt:now,httpStatus:status,usable,error,text});
+  }
+
+  const buildingEvidence={building:b.name,checkedAt:now,observations:observations.map(o=>({url:o.url,httpStatus:o.httpStatus,usable:o.usable,error:o.error})),inventories:[]};
   for(const inv of b.inventories||[]){
-    const required=(inv.requiredSignals||[]).every(x=>text.toLowerCase().includes(String(x).toLowerCase()));
-    const availability=(inv.availabilitySignals||[]).some(x=>text.toLowerCase().includes(String(x).toLowerCase()));
-    const negative=/fully leased|no suites matching selected availability|no units available/i.test(text);
-    // For multi-unit pages, exact rent + exact sqft are the identity anchors. A generic page-level negative
-    // must not override a matching row unless the building explicitly says fully leased.
-    const verified=usable&&required&&availability&&!/fully leased/i.test(text);
-    buildingEvidence.inventories.push({...inv,verified,requiredMatched:required,availabilityMatched:availability,pageNegative:negative});
+    const sourceMatches=[];
+    for(const obs of observations){
+      const lower=obs.text.toLowerCase();
+      const required=(inv.requiredSignals||[]).every(x=>lower.includes(String(x).toLowerCase()));
+      const availability=(inv.availabilitySignals||[]).some(x=>lower.includes(String(x).toLowerCase()));
+      const fullyLeased=/fully leased/i.test(obs.text);
+      const verified=obs.usable&&required&&availability&&!fullyLeased;
+      sourceMatches.push({url:obs.url,httpStatus:obs.httpStatus,usable:obs.usable,requiredMatched:required,availabilityMatched:availability,fullyLeased,verified});
+    }
+    const verifiedSource=sourceMatches.find(x=>x.verified);
+    const verified=!!verifiedSource;
+    buildingEvidence.inventories.push({...inv,verified,verifiedSource:verifiedSource?.url||null,sourceMatches});
     if(!verified)continue;
 
     let listing=db.listings.find(l=>
-      (inv.unit&&String(l.unit||'').replace(/^#/,'')===String(inv.unit)&&norm(l.buildingName||'').includes(norm(b.name))) ||
+      (inv.unit&&String(l.unit||'').replace(/^#/,'').startsWith(String(inv.unit))&&norm(l.buildingName||'').includes(norm(b.name))) ||
       (norm(l.buildingName||'')===norm(b.name)&&Number(l.rent)===Number(inv.rent)&&Math.abs(Number(l.sqft||0)-Number(inv.sqft))<=5)
     );
     if(!listing){
@@ -47,26 +58,26 @@ for(const b of cfg.buildings||[]){
         rent:inv.rent,effectiveRent:null,bedrooms:inv.bedrooms,bathrooms:inv.bathrooms,sqft:inv.sqft,
         ac:b.ac??null,parking:b.parking??null,petFriendly:b.petFriendly??null,buildingYear:b.buildingYear??null,
         orientation:null,balcony:b.balcony??null,largeWindows:b.largeWindows??null,modernInterior:b.modernInterior??null,
-        lat:b.lat,lng:b.lng,source:`${b.name} live inventory`,url:b.url,status:'new',availabilityStatus:'active',
-        firstSeen:day,lastChecked:day,verifiedAt:now,verificationLevel:'primary-live',verificationMethod:'Exact floorplan/unit row on current property-manager inventory page',
+        lat:b.lat,lng:b.lng,source:`${b.name} live inventory`,url:verifiedSource.url,status:'new',availabilityStatus:'active',
+        firstSeen:day,lastChecked:day,verifiedAt:now,verificationLevel:'primary-live',verificationMethod:`Exact floorplan/unit inventory confirmed on ${verifiedSource.url}`,
         dataNotes:inv.unit?`Live purpose-built inventory; unit ${inv.unit}.`:`Live purpose-built floorplan inventory; public unit number not exposed. Tracked independently by floorplan + rent + sqft.`
       };
       db.listings.push(listing);
-      history[id]=history[id]||[];history[id].push({date:day,rent:inv.rent,note:'First seen in live purpose-built inventory'});
+      history[id]=history[id]||[];history[id].push({date:day,rent:inv.rent,note:`First seen in live purpose-built inventory via ${verifiedSource.url}`});
     }else{
       if(Number(listing.rent)!==Number(inv.rent)){
         history[listing.id]=history[listing.id]||[];history[listing.id].push({date:day,rent:inv.rent,note:`Live purpose-built inventory price update from ${listing.rent}`});
         listing.priceDrop=Number(inv.rent)<Number(listing.rent);listing.rent=inv.rent;
       }
-      Object.assign(listing,{availabilityStatus:'active',lastChecked:day,verifiedAt:now,verificationLevel:'primary-live',verificationMethod:'Exact floorplan/unit row on current property-manager inventory page'});
+      Object.assign(listing,{availabilityStatus:'active',lastChecked:day,verifiedAt:now,verificationLevel:'primary-live',verificationMethod:`Exact floorplan/unit inventory confirmed on ${verifiedSource.url}`});
     }
   }
   evidence.push(buildingEvidence);
 }
 await browser.close();
 db.meta.lastPurposeBuiltRefresh=now;
-db.meta.purposeBuiltPolicy='Purpose-built buildings are expanded into independent unit/floorplan inventory. Exact unit is preferred; when a public unit number is absent, floorplan + rent + sqft is a temporary independent inventory identity. Building-level leasing language alone never creates a listing.';
+db.meta.purposeBuiltPolicy='Purpose-built buildings are expanded into independent unit/floorplan inventory. Exact unit is preferred; when a public unit number is absent, floorplan + rent + sqft is a temporary independent inventory identity. Multiple independent live source URLs are tried so one blocked marketplace cannot hide inventory. Building-level leasing language alone never creates a listing.';
 await write(path.join(DATA,'purpose-built-status.json'),{refreshedAt:now,buildings:evidence});
 await write(path.join(DATA,'listings.json'),db);
 await write(path.join(DATA,'history.json'),history);
-console.log(`Purpose-built verifier checked ${evidence.length} buildings.`);
+console.log(`Purpose-built verifier checked ${evidence.length} buildings across fallback sources.`);
