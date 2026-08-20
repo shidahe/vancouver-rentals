@@ -1,8 +1,8 @@
 {
-  "refreshedAt": "2026-08-19T20:35:44.519Z",
+  "refreshedAt": "2026-08-20T00:07:13.892Z",
   "listings": {
     "arbutus-residences-315-2den-900": {
-      "checkedAt": "2026-08-19T20:35:44.519Z",
+      "checkedAt": "2026-08-20T00:07:13.892Z",
       "ok": true,
       "status": 200,
       "finalUrl": "https://www.rentfaster.ca/properties/2139-lahb-ave-vancouver-454186?r=-RSYNC",
@@ -13,7 +13,7 @@
       "extractedRent": 3340
     },
     "arbutus-terrace-unit6-2den": {
-      "checkedAt": "2026-08-19T20:35:44.519Z",
+      "checkedAt": "2026-08-20T00:07:13.892Z",
       "ok": true,
       "status": 200,
       "finalUrl": "https://stranddev.com/portfolio/arbutusterrace-rental",
@@ -24,7 +24,7 @@
       "extractedRent": null
     },
     "treo-2688-vine-r3142696": {
-      "checkedAt": "2026-08-19T20:35:44.519Z",
+      "checkedAt": "2026-08-20T00:07:13.892Z",
       "ok": true,
       "status": 200,
       "finalUrl": "https://www.zolo.ca/vancouver-real-estate/2688-vine",
@@ -35,7 +35,7 @@
       "extractedRent": 3900
     },
     "blenheim-terrace-204-r3149612": {
-      "checkedAt": "2026-08-19T20:35:44.519Z",
+      "checkedAt": "2026-08-20T00:07:13.892Z",
       "ok": true,
       "status": 200,
       "finalUrl": "https://www.zolo.ca/vancouver-real-estate/3333-west-4th-avenue/204",
@@ -46,7 +46,7 @@
       "extractedRent": 4295
     },
     "york-103-2535-r3137446": {
-      "checkedAt": "2026-08-19T20:35:44.519Z",
+      "checkedAt": "2026-08-20T00:07:13.892Z",
       "ok": true,
       "status": 200,
       "finalUrl": "https://www.zolo.ca/vancouver-real-estate/2535-york-avenue/103",
@@ -57,7 +57,7 @@
       "extractedRent": 5850
     },
     "solo-2228-marstrand": {
-      "checkedAt": "2026-08-19T20:35:44.519Z",
+      "checkedAt": "2026-08-20T00:07:13.892Z",
       "ok": true,
       "status": 200,
       "finalUrl": "https://www.arbutusrental.com/properties/%243%2C500-%2F-2br---2bed-2bath-apartment-for-rent-%28vancouver%29-",
@@ -68,7 +68,7 @@
       "extractedRent": 3500
     },
     "19-greenway-c1-405-3619": {
-      "checkedAt": "2026-08-19T20:35:44.519Z",
+      "checkedAt": "2026-08-20T00:07:13.892Z",
       "ok": true,
       "status": 200,
       "finalUrl": "https://www.19otgreenway.com/floorplans",
@@ -79,7 +79,7 @@
       "extractedRent": null
     },
     "2268-w-broadway-312-r3153999": {
-      "checkedAt": "2026-08-19T20:35:44.519Z",
+      "checkedAt": "2026-08-20T00:07:13.892Z",
       "ok": true,
       "status": 200,
       "finalUrl": "https://www.zolo.ca/vancouver-real-estate/2268-west-broadway-avenue/312",
@@ -90,7 +90,7 @@
       "extractedRent": 3600
     },
     "kits-walk-2br-flex-616": {
-      "checkedAt": "2026-08-19T20:35:44.519Z",
+      "checkedAt": "2026-08-20T00:07:13.892Z",
       "ok": true,
       "status": 200,
       "finalUrl": "https://www.kitswalkleasing.com/floorplans",
@@ -101,7 +101,7 @@
       "extractedRent": null
     },
     "waterloo-2477-zumper": {
-      "checkedAt": "2026-08-19T20:35:44.519Z",
+      "checkedAt": "2026-08-20T00:07:13.892Z",
       "ok": true,
       "status": 200,
       "finalUrl": "https://www.zumper.com/address/2477-waterloo-st-vancouver-bc-v6r-3h4-can",
@@ -114,7 +114,7 @@
   },
   "sources": {
     "zumper-kitsilano-2br": {
-      "checkedAt": "2026-08-19T20:35:44.519Z",
+      "checkedAt": "2026-08-20T00:07:13.892Z",
       "ok": true,
       "status": 200,
       "finalUrl": "https://www.zumper.com/apartments-for-rent/vancouver-bc/kitsilano/2-beds",
@@ -122,7 +122,7 @@
       "usableEvidence": true
     },
     "zumper-point-grey-2br": {
-      "checkedAt": "2026-08-19T20:35:44.519Z",
+      "checkedAt": "2026-08-20T00:07:13.892Z",
       "ok": true,
       "status": 200,
       "finalUrl": "https://www.zumper.com/apartments-for-rent/vancouver-bc/west-point-grey/2-beds",
@@ -130,15 +130,31 @@
       "usableEvidence": true
     },
     "zumper-dunbar-2br": {
-      "checkedAt": "2026-08-19T20:35:44.519Z",
+      "checkedAt": "2026-08-20T00:07:13.892Z",
       "ok": true,
       "status": 200,
       "finalUrl": "https://www.zumper.com/apartments-for-rent/vancouver-bc/dunbar/2-beds",
       "error": null,
       "usableEvidence": true
     },
+    "zumper-arbutus-2br": {
+      "checkedAt": "2026-08-20T00:07:13.892Z",
+      "ok": true,
+      "status": 200,
+      "finalUrl": "https://www.zumper.com/apartments-for-rent/vancouver-bc/arbutus/2-beds",
+      "error": null,
+      "usableEvidence": true
+    },
+    "zumper-quilchena-2br": {
+      "checkedAt": "2026-08-20T00:07:13.892Z",
+      "ok": true,
+      "status": 200,
+      "finalUrl": "https://www.zumper.com/apartments-for-rent/vancouver-bc/quilchena/2-beds",
+      "error": null,
+      "usableEvidence": true
+    },
     "rentfaster-vancouver": {
-      "checkedAt": "2026-08-19T20:35:44.519Z",
+      "checkedAt": "2026-08-20T00:07:13.892Z",
       "ok": false,
       "status": 403,
       "finalUrl": "https://www.rentfaster.ca/bc/vancouver/rentals/",
@@ -147,7 +163,7 @@
       "blockedReason": "HTTP 403"
     },
     "kits-walk-official": {
-      "checkedAt": "2026-08-19T20:35:44.519Z",
+      "checkedAt": "2026-08-20T00:07:13.892Z",
       "ok": false,
       "status": 403,
       "finalUrl": "https://www.kitswalkleasing.com/floorplans",
@@ -156,7 +172,7 @@
       "blockedReason": "HTTP 403"
     },
     "arbutus-terrace-official": {
-      "checkedAt": "2026-08-19T20:35:44.519Z",
+      "checkedAt": "2026-08-20T00:07:13.892Z",
       "ok": true,
       "status": 200,
       "finalUrl": "https://stranddev.com/portfolio/arbutusterrace-rental",
@@ -164,7 +180,7 @@
       "usableEvidence": true
     },
     "arbutus-residences-rentfaster": {
-      "checkedAt": "2026-08-19T20:35:44.519Z",
+      "checkedAt": "2026-08-20T00:07:13.892Z",
       "ok": false,
       "status": 403,
       "finalUrl": "https://www.rentfaster.ca/properties/2139-lahb-ave-vancouver-454186",
@@ -173,7 +189,7 @@
       "blockedReason": "HTTP 403"
     },
     "homax-arbutus": {
-      "checkedAt": "2026-08-19T20:35:44.519Z",
+      "checkedAt": "2026-08-20T00:07:13.892Z",
       "ok": true,
       "status": 200,
       "finalUrl": "https://www.arbutusrental.com/search",
@@ -181,7 +197,7 @@
       "usableEvidence": true
     },
     "19-greenway-official": {
-      "checkedAt": "2026-08-19T20:35:44.519Z",
+      "checkedAt": "2026-08-20T00:07:13.892Z",
       "ok": false,
       "status": 403,
       "finalUrl": "https://www.19otgreenway.com/floorplans",
