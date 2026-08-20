@@ -1,38 +1,79 @@
 {
-  "refreshedAt": "2026-08-20T01:44:22.369Z",
+  "refreshedAt": "2026-08-20T01:58:13.196Z",
   "mode": "candidate-only",
   "sourceHealth": {
     "rentalsca-kitsilano-2br": {
-      "checkedAt": "2026-08-20T01:44:22.369Z",
+      "checkedAt": "2026-08-20T01:58:13.196Z",
       "status": 200,
       "ok": true,
       "finalUrl": "https://rentals.ca/vancouver/kitsilano/all-apartments-all-houses/2-bedrooms"
     },
     "rentalsca-point-grey-2br": {
-      "checkedAt": "2026-08-20T01:44:22.369Z",
+      "checkedAt": "2026-08-20T01:58:13.196Z",
       "status": 200,
       "ok": true,
       "finalUrl": "https://rentals.ca/vancouver/west-point-grey/2-bedrooms"
     },
     "rentalsca-arbutus-2br": {
-      "checkedAt": "2026-08-20T01:44:22.369Z",
-      "status": 429,
-      "ok": false,
-      "finalUrl": "https://rentals.ca/vancouver/arbutus-ridge/2-bedrooms?__cf_chl_rt_tk=4vMYZevROkc5x8PmYlO79i.AK7Bp2WFBCaALiSb6_Ss-1787190268-1.0.1.1-mwnzxvd7vgWc2Iq8oVDuO8m1lZC7n_3YbZCvieGlcec"
+      "checkedAt": "2026-08-20T01:58:13.196Z",
+      "status": 200,
+      "ok": true,
+      "finalUrl": "https://rentals.ca/vancouver/arbutus-ridge/2-bedrooms"
     },
     "rentalsca-dunbar-2br": {
-      "checkedAt": "2026-08-20T01:44:22.369Z",
-      "status": 429,
-      "ok": false,
-      "finalUrl": "https://rentals.ca/vancouver/dunbar-southlands/2-bedrooms?__cf_chl_rt_tk=xyBgft1LnUcd.ri1mGdHIIbvj2YC.ipIO7znwbsTQ7M-1787190268-1.0.1.1-lTy4KP585AeQG5n7.QO2WdmZOktdw1NflqCElN.ZXqk"
+      "checkedAt": "2026-08-20T01:58:13.196Z",
+      "status": 200,
+      "ok": true,
+      "finalUrl": "https://rentals.ca/vancouver/dunbar-southlands/2-bedrooms"
     },
     "rentalsca-quilchena-2br": {
-      "checkedAt": "2026-08-20T01:44:22.369Z",
-      "status": 429,
+      "checkedAt": "2026-08-20T01:58:13.196Z",
+      "status": 404,
       "ok": false,
-      "finalUrl": "https://rentals.ca/vancouver/quilchena/2-bedrooms?__cf_chl_rt_tk=07xswbxbvYrCn87mxHqhZocfY0Hszx5OTZfpKoIoJXA-1787190268-1.0.1.1-7Ew00dnSTnQccaRsTytpmaJaoqC09LBznb8lrf9VXY8"
+      "finalUrl": "https://rentals.ca/vancouver/quilchena/2-bedrooms"
     }
   },
-  "pages": [],
-  "inventories": []
+  "pages": [
+    {
+      "source": "Rentals.ca",
+      "url": "https://rentals.ca/vancouver/1328-maple-street",
+      "address": "1328 Maple Street, Vancouver, British Columbia V6J 3R9",
+      "addressUnit": null,
+      "geo": {
+        "lat": 49.2740149,
+        "lng": -123.1498775
+      },
+      "targetArea": true,
+      "active": true,
+      "floorplans": [],
+      "single": {
+        "rent": 2750,
+        "beds": 2,
+        "baths": 1,
+        "sqft": 850
+      },
+      "checkedAt": "2026-08-20T01:58:13.196Z"
+    }
+  ],
+  "inventories": [
+    {
+      "source": "Rentals.ca",
+      "url": "https://rentals.ca/vancouver/1328-maple-street",
+      "address": "1328 Maple Street, Vancouver, British Columbia V6J 3R9",
+      "unit": null,
+      "floorplan": null,
+      "identityKey": "1328 maple st::url:85120fb4bc8c",
+      "rent": 2750,
+      "bedrooms": 2,
+      "bathrooms": 1,
+      "sqft": 850,
+      "geo": {
+        "lat": 49.2740149,
+        "lng": -123.1498775
+      },
+      "active": true,
+      "checkedAt": "2026-08-20T01:58:13.196Z",
+      "publishable": false
+    }
+  ]
 }

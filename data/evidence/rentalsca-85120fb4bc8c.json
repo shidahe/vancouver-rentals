@@ -1,0 +1,159 @@
+{
+  "checkedAt": "2026-08-20T01:58:13.196Z",
+  "page": {
+    "source": "Rentals.ca",
+    "url": "https://rentals.ca/vancouver/1328-maple-street",
+    "address": "1328 Maple Street, Vancouver, British Columbia V6J 3R9",
+    "addressUnit": null,
+    "geo": {
+      "lat": 49.2740149,
+      "lng": -123.1498775
+    },
+    "targetArea": true,
+    "active": true,
+    "floorplans": [],
+    "single": {
+      "rent": 2750,
+      "beds": 2,
+      "baths": 1,
+      "sqft": 850
+    },
+    "checkedAt": "2026-08-20T01:58:13.196Z"
+  },
+  "jsonLd": [
+    {
+      "@context": "http://schema.org",
+      "@type": "Accommodation",
+      "url": "https://rentals.ca/vancouver/1328-maple-street",
+      "name": "1328 Maple Street",
+      "description": "Price: $2,850\nSq Ft.: 718\nBedroom: 2\nBathroom: 1\nFurnished: Unfurnished\nParking: 2 back alley parking spots included\nStorage: Not included\nUtilities: Included\nWi-Fi: Not included\nAir Conditioning: No\nPets: Not allowed\nTenancy Length Required: 1 Year Lease Cont. Month to Month\nTenancy Insurance Policy Required: Yes\nSchool District: SD39\nK-7: Henry Hudson Elementary\n8-12: Kitsilano Secondary\nDescription: Lower level suit with 2-bedroom, 1-bath located at 1328 Maple St. Food, shopping, entertainments, biking trail are all in close proximity; 5 mins walk to Kitsilano Beach, 8 mins walk to Museum of Vancouver. Ideal for small families seeking peaceful residential comfort with immediate access to outdoor recreation and city nightlife.\n**PLEASE REPLY to arrange a viewing. Let us know:\n1. How many occupants?\n2. Desired tenancy start date?\n3. Contact email + cell phone number?\n4. Some General background information about yourself!",
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 49.2740149,
+        "longitude": -123.1498775
+      },
+      "containedInPlace": {
+        "@type": "City",
+        "url": "",
+        "name": "",
+        "address": {
+          "@type": "PostalAddress",
+          "addressCountry": "CA",
+          "addressRegion": ""
+        }
+      },
+      "containsPlace": [
+        {
+          "@context": "http://schema.org",
+          "@type": "Accommodation",
+          "name": "2 Bedroom",
+          "potentialAction": {
+            "@type": "RentAction",
+            "priceSpecification": {
+              "@type": "PriceSpecification",
+              "price": 2750,
+              "priceCurrency": "CAD"
+            }
+          },
+          "floorSize": {
+            "@type": "QuantitativeValue",
+            "unitCode": "FTK",
+            "value": "718.0"
+          }
+        }
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "CA",
+        "addressLocality": "Vancouver",
+        "addressRegion": "British Columbia",
+        "postalCode": "V6J 3R9",
+        "streetAddress": "1328 Maple Street"
+      },
+      "telephone": "(604) 771-9168",
+      "photo": [
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/1210176/multi-unit-1803568824.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/1210176/multi-unit-1803568824.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/1210176/multi-unit-1803568823.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/1210176/multi-unit-1803568823.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/1210176/multi-unit-1803568825.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/1210176/multi-unit-1803568825.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/1210176/multi-unit-1803568826.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/1210176/multi-unit-1803568826.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/1210176/multi-unit-1803568828.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/1210176/multi-unit-1803568828.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/1210176/multi-unit-1803568827.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/1210176/multi-unit-1803568827.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/1210176/multi-unit-1803568830.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/1210176/multi-unit-1803568830.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/1210176/multi-unit-1803568829.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/1210176/multi-unit-1803568829.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/1210176/multi-unit-1803568831.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/1210176/multi-unit-1803568831.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/1210176/multi-unit-1803568832.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/1210176/multi-unit-1803568832.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/1210176/multi-unit-1803568833.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/1210176/multi-unit-1803568833.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/1210176/multi-unit-1803568834.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/1210176/multi-unit-1803568834.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/1210176/multi-unit-1803568836.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/1210176/multi-unit-1803568836.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/1210176/multi-unit-1803568835.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/1210176/multi-unit-1803568835.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/1210176/multi-unit-1803568837.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/1210176/multi-unit-1803568837.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/1210176/multi-unit-1803568838.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/1210176/multi-unit-1803568838.jpg"
+        }
+      ]
+    }
+  ],
+  "textSample": "Landlords\nRent Report\nBlog\nLogin\nEN\nFR\nPost a Rental\nPost a Rental\nLogin\nCreate Account\nAlerts\nFAQs\nMonthly Rent Report\nCity Rent Trends\nLandlords\nCredit Reports\nCommercial Properties\nRaising the Roof\nCareers\nAbout\nBlog\n Contact us\n Instagram\n Facebook\n Youtube\n LinkedIn\n X\n TikTok\nHome\nBC\nVancouver\nKitsilano\n1328 Maple Street\n Favourite\n Alert\n$2750\nMulti-Unit House\n1328 Maple Street — Vancouver BC (2-Bedroom)\n\n 3 hours ago\n\n 2 Bed\n 1 Bath\n 718 FT²\nParking\nGet In Touch\n Contact Property\n Request a Tour\n View Phone Number\n1 / 16\nPhotos\nStreet\nSave Alert\n\nSimilar listings in Vancouver\n\nKitsilano Multi-Unit House\n\nView on map\n\nFloor Plans\n2 Bedroom\n$2,750\n1 Bath\n718 ft²\n2 Parking\nAvailable\nParking Information\n\nParking Types\n\nDriveway parking\nOutdoor parking\n\nParking Spots\n\n2 spots per unit\n\nOther Parking Details\n\nParking fee included in rent\n\nFeatures & Amenities\n Building Features (1)\n Unit Features (10)\n Nearby (12)\nParking - Street\nUtilities Included\n Water\n Hydro / Electricity\nAbout 1328 Maple Street\nProperty Type\n\nMulti-Unit House\n\nProperty Sub-type\n\nMulti-Unit\n\nLease Term\n\n1-Year\n\nParking Spots\n\n2\n\nShort-term\n\nNo\n\nFurnished\n\nNo\n\nYear Built\n\nNo Info\n\n# of Floors\n\nNo Info\n\n# of Units\n\nNo Info\n\nListing ID\n\n1210176\n\nPrice: $2,850 Sq Ft.: 718 Bedroom: 2 Bathroom: 1 Furnished: Unfurnished Parking: 2 back alley parking spots included Storage: Not included Utilities: Included Wi-Fi: Not included Air Conditioning: No Pets: Not allowed Tenancy Length Required: 1 Year Lease Cont. ...\n\nRead More\n\nNeighbourhood Score & Commute Time\nSummary\n\nApartment It has 1 unit. Units have 2 bedrooms. Units have 1 bathroom. Water and hydro / electricity are utilities included in the rent price.\n\nKeywords\nKitchen Interior Showing White Cabinetry, Marble, Interior Kitchen With White Marble Countertop, H, Empty Kitchen With White Refrigerator Set In Wal, View Down Hallway Leading To Kitchen With Wood F, Empty Room With Light Wooden Floor, White Walls,, Empty Room With Wooden Floor, White Walls, Close, Empty Room With Light Wood Floor, White Walls, W, Empty Room With Wood Plank Flooring, White Walls, Front-Load Washing Machine In A Laundry Closet W, Front View Of A White Front-Loading Washing Mach, Bathroom View Of A Bathtub With Brown Tiled Wall, Interior View Of A Bathroom With A Toilet, Vanit, Concrete Ground Area In Front Of A White Entranc, Backyard With Grass, Concrete Path, Wooden Stair, Outdoor Gravel Parking Area Next To A Wooden Fen, Front Exterior Of Two-Story House With Visible S, Building Interior, Building Exterior, Kitchen, Common Area, Bedroom, Laundry, Bathroom, Hardwood, Dishwasher, Stove, Refrigerator, Clothes Washer, Is Modern, Ample Natural Light, Security Cameras Visible, Other, Shared Laundry, Entrance, Yard, Parking Lot, Exterior, 1, 2 and 1\n\n Report Listing\n\nExplore Similar Rentals\nNo listings match right now. You can set up a search alert below to get notified about similar listings!\nVancouver, BC\n $2,200 - $3,300\n All Houses\n 2+ Beds\nCreate Alert\nPopular Rent Searches In Vancouver\nSearch by Amenities\nPet Friendly Apartments In Vancouver\nApartments With A/C In Vancouver\nApartments With Ensuite Laundry In Vancouver\nApartments With Dishwasher In Vancouver\nSearch by Bedrooms\n1 Bedroom Apartments In Vancouver\n2 Bedroom Apartments In Vancouver\n3 Bedroom Apartments In Vancouver\n4 Bedroom Apartments In Vancouver\nSearch by Budget\nApartments Under $1000 In Vancouver\nApartments Under $1250 In Vancouver\nApartments Under $2000 In Vancouver\nApartments Under $2500 In Vancouver\nSee All Rentals in Vancouver\nBlog\nPress\nContact\nAbout\nCareers\nFAQs\nTerms\nPrivacy Policy\nSitemap\nPopular Searches\nApartments Near Me\nCondos Near Me\nHouses Near Me\nRooms Near Me\nPopular Cities\nToronto Rentals\nCalgary Rentals\nOttawa Rentals\nEdmonton Rentals\nVancouver Rentals\nHalifax Rentals\nPopular Provinces\nOntario\nBritish Columbia\nAlberta\nQuebec\nNova Scotia\nManitoba\nLandlords\nGet Listed\nMy Listings\nTenant Credit Check\nResources\nRent Report\nCity Rent Trends\nCommercial Properties\nGet the Rentals.ca app\nProud partner of\n\nCopyright © 2026 Rentals.ca Network, Inc. All rights reserved.\n\nManage Cookies\n \nThis website uses cookies to ensure you get the best experience on our website. By clicking \"Allow All\", you consent to our use of cookies. Privacy Policy ↗\nManage Cookies\nDecline\nAllow All"
+}
