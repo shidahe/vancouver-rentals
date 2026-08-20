@@ -14,9 +14,12 @@ on:
       - 'scripts/refresh-livrent.mjs'
       - 'scripts/refresh-craigslist.mjs'
       - 'scripts/reconcile-candidates.mjs'
+      - 'scripts/refresh-official-status.mjs'
+      - 'scripts/apply-official-status.mjs'
       - 'data/live-sources.json'
       - 'data/automation-policy.json'
       - 'data/manual-overrides.json'
+      - 'data/official-watch.json'
       - 'package.json'
       - '.github/workflows/refresh-listings.yml'
 
@@ -30,7 +33,7 @@ concurrency:
 jobs:
   refresh:
     runs-on: ubuntu-latest
-    timeout-minutes: 65
+    timeout-minutes: 70
     steps:
       - uses: actions/checkout@v4
         with:
@@ -46,14 +49,14 @@ jobs:
       - name: Install Chromium
         run: npx playwright install --with-deps chromium
 
-      - name: Run live verifier, per-unit discovery, candidate adapters, and reconciliation
+      - name: Run live verifier, discovery, reconciliation, and official freshness checks
         run: npm run refresh
 
       - name: Commit refreshed rental data
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add data/listings.json data/history.json data/candidates.json data/rentalsca-candidates.json data/livrent-candidates.json data/craigslist-candidates.json data/reconciliation-state.json data/refresh-state.json data/image-sources.json data/evidence
+          git add data/listings.json data/history.json data/candidates.json data/rentalsca-candidates.json data/livrent-candidates.json data/craigslist-candidates.json data/reconciliation-state.json data/refresh-state.json data/image-sources.json data/official-status.json data/official-status-actions.json data/evidence
           if git diff --cached --quiet; then
             echo 'No rental data changes.'
             exit 0
