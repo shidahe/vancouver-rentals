@@ -12,6 +12,9 @@
     {"id":"rentalsca-dunbar-2br","name":"Rentals.ca Dunbar-Southlands 2BR","url":"https://rentals.ca/vancouver/dunbar-southlands/2-bedrooms","kind":"marketplace","adapter":"rentalsca-search"},
     {"id":"rentalsca-quilchena-2br","name":"Rentals.ca Quilchena 2BR","url":"https://rentals.ca/vancouver/quilchena/2-bedrooms","kind":"marketplace","adapter":"rentalsca-search"},
 
+    {"id":"livrent-vancouver-2br","name":"liv.rent Vancouver 2BR","url":"https://liv.rent/rental-listings/city/vancouver/2-bedroom","kind":"marketplace","adapter":"livrent-search"},
+    {"id":"livrent-vancouver-2br2ba","name":"liv.rent Vancouver 2BR 2BA","url":"https://liv.rent/rental-listings/city/vancouver/2-bedroom-2-bath","kind":"marketplace","adapter":"livrent-search"},
+
     {"id":"rentfaster-vancouver","name":"RentFaster Vancouver","url":"https://www.rentfaster.ca/bc/vancouver/rentals/","kind":"marketplace","adapter":"generic-search"},
     {"id":"kits-walk-official","name":"Kits Walk official availability","url":"https://www.kitswalkleasing.com/floorplans","kind":"official","adapter":"official-floorplans"},
     {"id":"arbutus-terrace-official","name":"Arbutus Terrace official","url":"https://stranddev.com/portfolio/arbutusterrace-rental","kind":"official","adapter":"official-floorplans"},
