@@ -19,6 +19,8 @@ on:
       - 'scripts/refresh-official-status.mjs'
       - 'scripts/apply-official-status.mjs'
       - 'scripts/audit-data-quality.mjs'
+      - 'scripts/test-site.mjs'
+      - 'scripts/finalize-readiness.mjs'
       - 'data/live-sources.json'
       - 'data/purpose-built-watch.json'
       - 'data/automation-policy.json'
@@ -37,7 +39,7 @@ concurrency:
 jobs:
   refresh:
     runs-on: ubuntu-latest
-    timeout-minutes: 70
+    timeout-minutes: 75
     steps:
       - uses: actions/checkout@v4
         with:
@@ -49,17 +51,29 @@ jobs:
         run: npm install --no-audit --no-fund
       - name: Install Chromium
         run: npx playwright install --with-deps chromium
-      - name: Run live verifier, discovery, reconciliation, purpose-built inventory, official freshness, and quality audit
+      - name: Run live verifier, discovery, reconciliation, purpose-built inventory, official freshness, and data audit
         run: npm run refresh
-      - name: Commit refreshed rental data
+      - name: Browser smoke test against the freshly generated site
+        id: smoke
+        continue-on-error: true
+        run: node scripts/test-site.mjs
+      - name: Finalize decision readiness
+        id: readiness
+        continue-on-error: true
+        run: node scripts/finalize-readiness.mjs
+      - name: Commit refreshed rental data and validation reports
+        if: always()
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add data/listings.json data/history.json data/candidates.json data/rentalsca-candidates.json data/livrent-candidates.json data/craigslist-candidates.json data/realtylink-candidates.json data/reconciliation-state.json data/refresh-state.json data/image-sources.json data/purpose-built-status.json data/official-status.json data/official-status-actions.json data/quality-report.json data/evidence
+          git add data/listings.json data/history.json data/candidates.json data/rentalsca-candidates.json data/livrent-candidates.json data/craigslist-candidates.json data/realtylink-candidates.json data/reconciliation-state.json data/refresh-state.json data/image-sources.json data/purpose-built-status.json data/official-status.json data/official-status-actions.json data/quality-report.json data/site-test-report.json data/evidence
           if git diff --cached --quiet; then
-            echo 'No rental data changes.'
+            echo 'No rental data or validation changes.'
             exit 0
           fi
           git commit -m 'Automated live rental refresh'
           git pull --rebase origin main
           git push
+      - name: Fail when the fresh site is not decision-ready
+        if: steps.smoke.outcome != 'success' || steps.readiness.outcome != 'success'
+        run: exit 1
