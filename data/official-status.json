@@ -1,0 +1,242 @@
+{
+  "refreshedAt": "2026-08-20T06:07:11.823Z",
+  "policy": "Fresh explicit official negative announcements override older official website leasing language and all marketplace evidence. Official positive status alone does not prove a specific unit is available.",
+  "projects": [
+    {
+      "id": "arbutus-terrace",
+      "buildingName": "Arbutus Terrace",
+      "address": "3205 Arbutus St, Vancouver, BC",
+      "checkedAt": "2026-08-20T06:07:11.823Z",
+      "effectiveStatus": "fully_leased",
+      "authority": "official_social_post",
+      "reason": "Strand official Facebook post states Arbutus Terrace is now fully leased.",
+      "latestManualAnnouncement": {
+        "evidenceObservedAt": "2026-08-19T22:51:00-04:00",
+        "evidenceUrl": "https://www.facebook.com/story.php?story_fbid=1486348156843756&id=100064057566750",
+        "reason": "Strand official Facebook post states Arbutus Terrace is now fully leased.",
+        "strongNegative": true
+      },
+      "observations": [
+        {
+          "url": "https://stranddev.com/portfolio/arbutusterrace-rental",
+          "checkedAt": "2026-08-20T06:07:11.823Z",
+          "httpStatus": 200,
+          "usable": true,
+          "negatives": [],
+          "positives": [
+            "now renting",
+            "rent now"
+          ],
+          "textSample": "Portfolio About Approach Team Impact History Contact Arbutus Terrace Vancouver, BC Now Renting Discover Arbutus Terrace, a boutique, pet-friendly rental community of 54 homes perfectly positioned on a prominent corner in Kitsilano at Arbutus Street and West 16th, directly alongside the Arbutus Greenway. As a new addition to Strand's The Westside Collection, Arbutus Terrace features curated local businesses on the ground floor including Vancouver favourite Cafe Artigiano. along with boutique cafes, shops, fitness studios and grocery markets just moments away. RENT NOW Homes Amenities Gallery YOUR HOME Open-concept layouts are thoughtfully planned to support both everyday living and easy entertaining. Durable flooring pairs modern style with long-lasting function, while kitchens feature contemporary cabinetry, sleek countertops, and high-quality appliances for a clean and cohesive finish. North-facing residences capture the city at its most iconic, a sightline framed by ocean and mountain vistas, while other homes are thoughtfully oriented toward the natural privacy of the Arbutus Greenway or the surrounding low-rise, tree-lined residential neighbourhoods. RENT NOW RENT ARBUTUS TERRACE Enjoy a thoughtfully curated collection of amenities. An expansive rooftop terrace offers a sauna, an outdoor kitchen with BBQ and sink, dedicated dining areas, comfortable social lounge seating, community garden plots, and a children’s play area, creating a welcoming space to gather, relax, and enjoy panoramic views. Complementing the rooftop experience is a versatile multi-use entertainment lounge, ideal for socializing, studying, or working remotely. 1 Rooftop Terrace 2 Sauna 3 Dog Wash Station 4 Secure Package Parcel Lockers 5 Children's Play Area 6 Community Garden Plots 7 Entertainment Lounge NEIGHBOURHOOD Life at Arbutus Terrace is effortless. From morning coffee runs downstairs to the ease of having quality local businesses seamlessly woven into where you live, daily life feels effortless. This connected rental community offers effortless access to Kerrisdale, Shaughnessy, South Granville, UBC, and downtown. Just beyond, the vibrant retail corridors of West 4th and West Broadway expand your options even further, offering an unmatched level of convenience. © Mapbox © OpenStreetMap Improve this map GALLERY VIEW MORE PROJECTS INFORMATION Careers Customer Care Contact The Strand Collection Strand Contracting ABOUT US Approach Team Impact History CONNECT WITH US info@strand"
+        },
+        {
+          "url": "https://stranddev.com/the-westside-collection",
+          "checkedAt": "2026-08-20T06:07:11.823Z",
+          "httpStatus": 200,
+          "usable": true,
+          "negatives": [],
+          "positives": [
+            "now renting"
+          ],
+          "textSample": "Portfolio About Approach Team Impact History Contact The Westside Collection Boutique Rental Living The Westside Collection A curated series of boutique rental communities by Strand, celebrating the very best of Westside Vancouver living. REGISTER NOW The Westside Collection brings together thoughtfully designed residences in well-connected, purposefully selected locations that embody lifestyle, convenience, and belonging. With refined interiors and carefully considered amenities, these communities are crafted for residents to put down roots and thrive for years to come. THE COMMUNITIES The Elms | Kerrisdale Now Renting The Dunbar | Dunbar-Southlands Now Renting Arbutus Terrace | Kitsilano Now Renting The Collingwood | Dunbar-Southlands Summer 2026 The Emerson | Kerrisdale Coming 2027 The Henley | Kitsilano Coming 2027 The Everleigh | Kerrisdale Coming 2028 Elevated Living. Westside Address. Perfectly situated within Vancouver's most coveted Westside enclaves, these communities place you steps from everyday essentials, cafes, boutiques, leafy parks, and top-ranked schools. With seamless transit connections and the city's energy at your doorstep, The westside Collection balances timeless character with modern convenience. Developed by Strand. Built by Strand. Every residence within The Westside Collection is a reflection of Strand's commitment to design excellence quality, and community. Elevated interiors, purposeful amenities, and enduring craftsmanship are proudly delivered by Strand Contracting, ensuring lasting value and a home you'll be proud to call your own. 07.29.26 Prior Place Reaches the Bottom of the Hole VANCOUVER READ MORE 07.23.26 Strand’s Role in Burquitlam’s Continued Growth COQUITLAM READ MORE 02.03.26 Reimagined for the Future of Mount Pleasant VANCOUVER READ MORE 04.16.26 Komo Celebrates Topping Off COQUITLAM READ MORE 05.08.26 The Westside Collection Brings Rental Homes to Vancouver’s Most Established Neighbourhoods VANCOUVER READ MORE 03.31.26 Prior Place Groundbreaking Ceremony VANCOUVER READ MORE 11.28.25 Strand Returns as Gold Partner at the 2025 Mission Possible Gala MISSION POSSIBLE READ MORE 06.17.25 Alina Completes and Welcomes Over 246 Homeowners to West Coquitlam COQUITLAM READ MORE 06.06.23 Introducing Strand Contracting- Building With Purpose STRAND CONTRACTING READ MORE REGISTER INFORMATION Careers Customer Care Contact The Strand Collection Strand Contracting ABOUT US Approach Team Impact History CONNECT WITH US info@stran"
+        }
+      ]
+    },
+    {
+      "id": "arbutus-residences",
+      "buildingName": "Arbutus Residences",
+      "address": "2139 Lahb Ave, Vancouver, BC",
+      "checkedAt": "2026-08-20T06:07:11.823Z",
+      "effectiveStatus": "leasing",
+      "authority": "official_web",
+      "reason": "Official page contains current leasing/availability language.",
+      "latestManualAnnouncement": null,
+      "observations": [
+        {
+          "url": "https://arbutusresidences.com/contact/",
+          "checkedAt": "2026-08-20T06:07:11.823Z",
+          "httpStatus": 200,
+          "usable": true,
+          "negatives": [],
+          "positives": [
+            "request a showing",
+            "limited time incentives available"
+          ],
+          "textSample": "604-879-8407 INQUIRE NOW HOME FEATURES LOCATION FLOOR PLANS VIRTUAL TOUR GALLERY CONTACT US Contact Us HOME CONTACT US Contact our leasing agents today and learn more about your next home. leasing@arbutusresidences.com 604-879-8407 Leasing Office 2139 Lahb Avenue, Vancouver, BC Limited Time Incentives Available! Please contact our leasing office for current promotions. CONTACT US Request a Showing NAME * FIRST LAST PHONE * EMAIL * SUITE PREFERANCE One Bedroom Two Bedroom Three Bedroom Townhouse BUDGET $2000-$3000 $3000-$4000 over $4000 EXPECTED MOVE-IN DATE * DESIRED LEASE TERM 1 Year Lease 2 Year Lease ADDITIONAL DETAILS CONSENT * I AGREE TO THE PRIVACY POLICY. Click on the box to confirm you would like to receive future e-communications from and Maple Leaf Property Management, including information about Arbutus Residences or special offers. HOME FEATURES LOCATION FLOOR PLANS VIRTUAL TOURS GALLERY CONTACT US 4188 Yew Street, Vancouver, BC © Copyright 2026 Maple Leaf Property Management MANAGED BY MAPLE LEAF PROPERTY MANAGEMENT Privacy Policy Terms of Use"
+        },
+        {
+          "url": "https://arbutusresidences2.medianation.ca/virtual-tour/",
+          "checkedAt": "2026-08-20T06:07:11.823Z",
+          "httpStatus": 200,
+          "usable": true,
+          "negatives": [],
+          "positives": [
+            "now renting"
+          ],
+          "textSample": "SOUTH TOWER NOW RENTING | FOR DETAILS CALL: 604 879 8407 604-879-8407 INQUIRE NOW Virtual Tours HOME VIRTUAL TOURS 1 Bedroom 1 Bathroom Plan B4 *Prices vary depending on unit type, size and orientation. For specific pricing, please contact the Arbutus Leasing office. Plan C8 *Prices vary depending on unit type, size and orientation. For specific pricing, please contact the Arbutus Leasing office. Plan C9 *Prices vary depending on unit type, size and orientation. For specific pricing, please contact the Arbutus Leasing office. Plan C5 *Prices vary depending on unit type, size and orientation. For specific pricing, please contact the Arbutus Leasing office. Plan D3 *Prices vary depending on unit type, size and orientation. For specific pricing, please contact the Arbutus Leasing office. HOME FEATURES LOCATION FLOOR PLANS VIRTUAL TOURS GALLERY CONTACT US Facebook-f Instagram 2139 Lahb Avenue, Vancouver, BC Copyright 2021 Maple Leaf Property Management MANAGED BY MAPLE LEAF PROPERTY MANAGEMENT Privacy policy Terms of Use"
+        },
+        {
+          "url": "https://www.rentfaster.ca/properties/2139-lahb-ave-vancouver-454186",
+          "checkedAt": "2026-08-20T06:07:11.823Z",
+          "httpStatus": 403,
+          "usable": false
+        }
+      ]
+    },
+    {
+      "id": "the-raven",
+      "buildingName": "The Raven",
+      "address": "3709 W Broadway, Vancouver, BC",
+      "checkedAt": "2026-08-20T06:07:11.823Z",
+      "effectiveStatus": "leasing",
+      "authority": "official_web",
+      "reason": "Official page contains current leasing/availability language.",
+      "latestManualAnnouncement": null,
+      "observations": [
+        {
+          "url": "https://living.westbankcorp.com/property/the-raven",
+          "checkedAt": "2026-08-20T06:07:11.823Z",
+          "httpStatus": 200,
+          "usable": true,
+          "negatives": [],
+          "positives": [
+            "homes for lease",
+            "two bedroom homes"
+          ],
+          "textSample": "keyboard_backspace Tel: 604-893-1678 hello@westbankliving.ca GET IN TOUCH Vancouver Calgary Home Our Philosophy Tenant Portal Contact Follow Us Private Tours Now Available - Book an Appointment close ( ) X Now Booking Tours – Reserve Your Spot Book a Tour Or explore our site to learn more Nestled on Vancouver’s West Side between Kitsilano and Point Grey, The Raven provides upscale new rental homes at the corner of Broadway and Alma, where peaceful living meets a lively community. LEARN MORE Homes for Lease STUDIO HOMES ONE BEDROOM HOMES TWO BEDROOM HOMES THREE BEDROOM HOMES ALL HOMES Featured Tours EXPLORE #802 EXPLORE #811 EXPLORE THE ROOFTOP GYM Gallery Building Exterior Kitchen Living Area Bedroom Rooftop Gym Rooftop Downtown View Lobby Amenity Space Kitchen Dining Living Area Vanity Rooftop View Lobby Entry Living Area Bedroom Rooftop Gym Rooftop Seating Area Lobby Amenity Space The Raven offers new Vancouver rental apartments in Kitsilano at the corner of Broadway and Alma. The architecture is of a natural yet refined character, blurring eastern and contemporary influences. The kitchens are designed with natural material in shades of grey, echoing both the concrete facade and exposed concrete interior details. The bathrooms at The Raven are minimal and light, with matte white ceramic wet walls and a light matte vanity. Features & Amenities Home Specifications Interior design by Leckie Studio Architecture + Design High efficiency heating and air conditioning White oak flooring Kohler matte black fixtures Samsung kitchen appliances Amenities Residence bike lounge & Westbank Cycle Club Rooftop amenity space On-site building manager Building Features Complimentary high-speed WiFi Water efficient low-flush fixtures Smart Home Intercom System Pet-Friendly Available at Monthly Rate Secure underground parking Bike Storage Storage Neighbourhood On Vancouver's West Side at the intersection of Kitsilano and Point Grey 15 minutes from the University of British Columbia (UBC) by transit Steps from Kits Beach, Jericho Adjacent to the 10th Ave Cycling Path Close to parks including Jericho Beach Park, Pacific Spirit Park, McBride Park, Tatlow Park, Volunteer Park, Margaret Pigott Park, Canarvon Park, Almond Park Nearby schools include Kitsilano Secondary, Pacific Spirit School, West Point Grey Academy, Lord Byng Secondary, Trafalgar Elementary School, Lord Tennyson Elementary School, Jule Quesnel Elementary School The Raven offers an ecosystem of amenities curated fo"
+        },
+        {
+          "url": "https://living.westbankcorp.com/",
+          "checkedAt": "2026-08-20T06:07:11.823Z",
+          "httpStatus": 200,
+          "usable": true,
+          "negatives": [],
+          "positives": [
+            "now offering viewings"
+          ],
+          "textSample": "keyboard_backspace Tel: 604-893-1678 hello@westbankliving.ca Vancouver Calgary Home Our Philosophy Tenant Portal Contact Follow Us The world has enough ordinary — we see the need for beautiful, creative living spaces for lease. What sets Westbank Living apart is that each of our projects exemplifies a high degree of artistry, design excellence, and our commitment to the creation of beautiful, quality homes across the housing continuum. LEARN MORE ALL VANCOUVER CALGARY TAKE A TOUR Vancouver House 1477 Continental Street, Vancouver, BC STUDIO • 1 BEDROOM • 2 BEDROOM • 3 BEDROOM TAKE A TOUR Calgary House 655 Centre Street South, Calgary, AB STUDIO • 1 BEDROOM • 2 BEDROOM • 3 BEDROOM TAKE A TOUR Blood Alley Blood Alley Square and Cordova St, Vancouver, BC 1 BEDROOM • 2 BEDROOM TAKE A TOUR The Raven 3709 West Broadway, Vancouver BC STUDIO • 1 BEDROOM • 2 BEDROOM • 3 BEDROOM close Now offering viewings by private appointment 7 days a week from 11am to 6pm Westbank is a practice dedicated to the creation of inspiring environments. Our body of work includes residential, hotels, retail, creative workspace, district energy, affordable housing, exhibitions, and public art. hello@westbankliving.ca @westbankcorp Vancouver Suite 501 - 1067 West Cordova St. Vancouver, BC, V6C 1C7 Tel: 604-893-1678 VIEW MAP Calgary 655 Centre Street S. Calgary, AB, T2G 1S6 Tel: 1-888-811-3777 VIEW MAP Copyright © 2026 Westbank Privacy Policy Disclaimer"
+        }
+      ]
+    },
+    {
+      "id": "raphael",
+      "buildingName": "Raphael",
+      "address": "3668 W 10th Ave, Vancouver, BC",
+      "checkedAt": "2026-08-20T06:07:11.823Z",
+      "effectiveStatus": "fully_leased",
+      "authority": "official_web",
+      "reason": "Official page contains a strong negative leasing signal.",
+      "latestManualAnnouncement": null,
+      "observations": [
+        {
+          "url": "https://www.uniqueaccommodations.com/buildings/the-raphael/",
+          "checkedAt": "2026-08-20T06:07:11.823Z",
+          "httpStatus": 200,
+          "usable": true,
+          "negatives": [
+            "currently rented"
+          ],
+          "positives": [
+            "for rent",
+            "our rentals at the raphael"
+          ],
+          "textSample": "604 984 7368 info@uniqueaccommodations.com HOME OWNERS RENTAL AREAS PROPERTY MANAGEMENT OUR TEAM CONTACT INSIGHTS PORTAL English 简体中文 (Mandarin) فارسی (Farsi) Русский (Russian) Français (French) 繁體中文 (Cantonese) 한국어 (Korean) 日本語 (Japanese) हिन्दी (Hindi) ਪੰਜਾਬੀ (Punjabi) Español (Spanish) Português (Portuguese) Tagalog (Filipino) Tiếng Việt (Vietnamese) العربية (Arabic) Deutsch (German) Italiano (Italian) THE RAPHAEL 3668 10th street West - Point Grey, Vancouver West Side Home › Vancouver West Side › Point Grey › The Raphael The Raphael stands on West 10th Avenue in West Point Grey, Vancouver, with a fitness centre, near the West Point Grey village. The village shops of West 10th are at the doorstep, Jericho Beach and the waterfront are a short distance north, and Pacific Spirit Park's trails and the University of British Columbia are within reach to the west. With a walkable village address, the Raphael is a comfortable home. 1 For Rent 1 Currently Rented 2 Total Managed THE RAPHAEL 3668 10th street West Point Grey, Vancouver West Side, BC V6R 2G3 AMENITIES 💪 Gym / Fitness BUILDING AMENITIES & PHOTOS WALK SCORE & WHAT'S NEARBY 99 Excellent 🚇 Transit 25/25 1 min 🛒 Grocery 19/25 7 min 🍽️ Dining 20/20 1 min 🌳 Parks 15/15 3 min 🎓 Schools 15/15 5 min Based on distance to nearest amenities. 🛒 Grocery Sungiven Foods (West Broadway Store) 7 min Simon's NOFRILLS Vancouver 7 min IGA 8 min 🌳 Parks Almond Park 3 min Wallace Park 5 min Harnam Kaur Plaza 8 min 🍽️ Dining Browns Socialhouse Point Grey 1 min True Confections Broadway 3 min The Eatery 4 min 🎓 Schools Bayview Community Elementary School 5 min Lord Byng Secondary School 9 min Jules Quesnel Elementary School 9 min 🚇 Transit Southbound Alma St @ W 10 Ave 1 min Northbound Alma St @ W 10 Ave 1 min SB Alma St NS w 10 Ave 1 min COMMUTE TIME FROM THE RAPHAEL Calculate OUR RENTALS AT THE RAPHAEL Unfurnished: $7,480 Currently Rented $7,480/mo 3 Bed | 2.5 Bath | 1,228 sqft 407-3668 West 10th Ave Pet-friendly RENTAL HISTORY AT THE RAPHAEL We have managed 1 rental in this building. Prices shown reflect our curated portfolio of quality Vancouver rentals. Type Size Rented For 3 Bed | 2.5 Bath Unfurnished 1,228 sqft $7,480/mo Explore the Point Grey neighbourhood View Point Grey Guide → RECENT BUILDING PERMITS AT THE RAPHAEL Jun 2025 Addition / Alteration · $50,000 Direct to Inspections - Addition / Alteration - Interior alterations to provide residential improvements to unit 401 on the 4th floor of this existing"
+        }
+      ]
+    },
+    {
+      "id": "kits-walk",
+      "buildingName": "Kits Walk",
+      "address": "2075 W 12th Ave, Vancouver, BC",
+      "checkedAt": "2026-08-20T06:07:11.823Z",
+      "effectiveStatus": "unknown",
+      "authority": "none",
+      "reason": "No decisive official signal.",
+      "latestManualAnnouncement": null,
+      "observations": [
+        {
+          "url": "https://www.kitswalkleasing.com/floorplans",
+          "checkedAt": "2026-08-20T06:07:11.823Z",
+          "httpStatus": 403,
+          "usable": false
+        }
+      ]
+    },
+    {
+      "id": "19-greenway",
+      "buildingName": "19 on the Greenway",
+      "address": "3619 Arbutus St, Vancouver, BC",
+      "checkedAt": "2026-08-20T06:07:11.823Z",
+      "effectiveStatus": "unknown",
+      "authority": "none",
+      "reason": "No decisive official signal.",
+      "latestManualAnnouncement": null,
+      "observations": [
+        {
+          "url": "https://www.19otgreenway.com/floorplans",
+          "checkedAt": "2026-08-20T06:07:11.823Z",
+          "httpStatus": 403,
+          "usable": false
+        }
+      ]
+    },
+    {
+      "id": "the-elms",
+      "buildingName": "The Elms",
+      "address": "5828 Granville St, Vancouver, BC",
+      "checkedAt": "2026-08-20T06:07:11.823Z",
+      "effectiveStatus": "leasing",
+      "authority": "official_web",
+      "reason": "Official page contains current leasing/availability language.",
+      "latestManualAnnouncement": null,
+      "observations": [
+        {
+          "url": "https://stranddev.com/portfolio/theelms",
+          "checkedAt": "2026-08-20T06:07:11.823Z",
+          "httpStatus": 200,
+          "usable": true,
+          "negatives": [],
+          "positives": [
+            "now renting"
+          ],
+          "textSample": "Portfolio About Approach Team Impact History Contact The Elms Vancouver, BC Now Renting Anchored in the heart of one of Vancouver’s most desirable neighbourhoods, The Elms offers thoughtfully designed residences paired with an elevated collection of amenities, including an expansive rooftop terrace with sauna. This connected community introduces a new chapter of rental living to Vancouver’s coveted Westside. info@renttheelms.com | 236.471.5540 RENT NOW Homes Amenities Plans & Features Neighbourhood Gallery Register YOUR HOME Homes are crafted with open layouts that make daily living effortless. High-quality, stylish flooring offers both durability and a modern look, while the kitchens are equipped with well-crafted cabinetry, sleek surfaces, and contemporary appliances for a clean, cohesive feel. Large windows bring in abundant natural light, adding to the sense of openness and comfort throughout to enhance everyday living. RENT NOW RENT THE ELMS Enjoy thoughtfully curated amenities designed to elevate life at home. Unwind on the rooftop terrace, relax and rejuvenate in the sauna, or clean up your pets at the convenient dog wash station. Everyday tasks are easier with secure parcel lockers, while children have their own dedicated play area to explore. Grow something of your own in the community garden plots or gather with friends in the rooftop entertainment lounge—everything you need, right where you live. 1 Rooftop Terrace 2 Sauna 3 Dog Wash Station 4 Secure Package Parcel Lockers 5 Children's Play Area 6 Community Garden Plots 7 Entertainment Lounge 8 Bike Repair Station 9 EV Parking PLANS & FEATURES URBAN ONE BED + DEN | STARTING FROM $2,238/MONTH* ONE BED + DEN | STARTING FROM $2395/MONTH* TWO BED + DEN | STARTING FROM $3,295/MONTH* TWO BED TOWNHOME | STARTING FROM $3,395/MONTH* VIEW FEATURE SHEET NEIGHBOURHOOD In the prestigious neighbourhood nestled between the charm of Kerrisdale and the elegance of Shaughnessy, The Elms is just minutes from Kerrisdale’s boutique shops and the vibrant centre of Oakridge. With convenient access to downtown, UBC, and YVR, and surrounded by some of Vancouver’s most beautiful parks and established schools, this location places the best of the Westside within easy reach. © Mapbox © OpenStreetMap Improve this map THE ELMS | 5828 GRANVILLE STREET GALLERY REGISTER After registering, you will receive details on how to book your tour, along with pricing and floorplan availability. A member of our Leasing Team will be in touc"
+        },
+        {
+          "url": "https://rentals.ca/vancouver/the-elms",
+          "checkedAt": "2026-08-20T06:07:11.823Z",
+          "httpStatus": 403,
+          "usable": false
+        }
+      ]
+    },
+    {
+      "id": "the-dunbar",
+      "buildingName": "The Dunbar",
+      "address": "6019 Dunbar St, Vancouver, BC",
+      "checkedAt": "2026-08-20T06:07:11.823Z",
+      "effectiveStatus": "leasing",
+      "authority": "official_web",
+      "reason": "Official page contains current leasing/availability language.",
+      "latestManualAnnouncement": null,
+      "observations": [
+        {
+          "url": "https://stranddev.com/portfolio/thedunbar",
+          "checkedAt": "2026-08-20T06:07:11.823Z",
+          "httpStatus": 200,
+          "usable": true,
+          "negatives": [],
+          "positives": [
+            "now renting"
+          ],
+          "textSample": "Portfolio About Approach Team Impact History Contact The Dunbar Vancouver, BC Now Renting The Dunbar is a rare offering of boutique, purpose-built rental homes in one of Vancouver’s most coveted neighbourhoods featuring urban, one, and two bedroom homes. With pet-friendly residences, elevated amenities, and effortless connection to the Westside and beyond. info@rentthedunbar.com | 236.466.0687. RENT NOW Homes Amenities Plans & Features Neighbourhood Gallery Register YOUR HOME Open-concept layouts are thoughtfully planned to support both everyday living and easy entertaining. Durable flooring pairs modern style with long-lasting function, while kitchens feature contemporary cabinetry, sleek countertops, and reliable appliances for a clean and cohesive finish. Generous windows fill each home with natural light, enhancing the overall sense of space and comfort. RENT NOW RENT THE DUNBAR Access elevated amenities at The Dunbar, providing convenience right at home. Entertain and wind down while enjoying stunning views from the rooftop terrace, stay active in the large, fully-equipped fitness centre, or enjoy the multi-purpose entertainment space complete with a full kitchen and co-working area, perfect for events, studying, or remote work. 1 Rooftop Terrace 2 Fitness Centre 3 Dog Wash Station 4 Sauna 5 Bike Repair and Wash Station 6 Secure Package Parcel Lockers 7 Entertainment Lounge 8 Children's Play Area 9 Community Garden Plots PLANS & FEATURES TWO BED + DEN | STARTING FROM $3,395/MONTH* VIEW FEATURE SHEET NEIGHBOURHOOD Nestled in a tree-lined neighbourhood, this thoughtfully designed community is seamlessly connected to the city’s most desirable destinations—just minutes from UBC, Pacific Spirit Park, and the shops and cafés of Kerrisdale and Dunbar-Southlands. Surrounded by top schools, golf courses, and everyday conveniences, The Dunbar is where lifestyle, learning, and leisure meet. © Mapbox © OpenStreetMap Improve this map THE DUNBAR | 6019 DUNBAR STREET, VANCOUVER GALLERY REGISTER After registering, you will receive details on how to book your tour, along with pricing and floorplan availability. A member of our Leasing Team will be in touch shortly. What bedroom types are you interested in? I want to move in: How did you hear about us? Please confirm your consent to receive email communication from Strand including information about upcoming developments, VIP early access and special offers. * I agree to the terms and conditions. SUBMIT VIEW MORE PROJE"
+        },
+        {
+          "url": "https://rentals.ca/vancouver/the-dunbar",
+          "checkedAt": "2026-08-20T06:07:11.823Z",
+          "httpStatus": 403,
+          "usable": false
+        }
+      ]
+    }
+  ]
+}

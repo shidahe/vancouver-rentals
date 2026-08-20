@@ -196,6 +196,11 @@
       "date": "2026-08-14",
       "rent": 4500,
       "note": "Removed; user browser confirmed Gone too soon"
+    },
+    {
+      "date": "2026-08-20",
+      "rent": 4500,
+      "note": "OFFICIAL STATUS: Raphael marked fully leased; removed from active inventory. Official page contains a strong negative leasing signal."
     }
   ],
   "raven-410-3709-wbroadway": [
@@ -345,6 +350,13 @@
     {
       "date": "2026-08-20",
       "rent": 3000,
+      "note": "NEW: live Zumper detail auto-published as independent inventory."
+    }
+  ],
+  "zumper-72d664370f34": [
+    {
+      "date": "2026-08-20",
+      "rent": 4900,
       "note": "NEW: live Zumper detail auto-published as independent inventory."
     }
   ]
