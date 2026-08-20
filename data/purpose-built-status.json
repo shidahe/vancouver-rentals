@@ -1,0 +1,59 @@
+{
+  "refreshedAt": "2026-08-20T07:13:32.322Z",
+  "buildings": [
+    {
+      "building": "Arbutus Residences",
+      "url": "https://www.rentfaster.ca/properties/2139-lahb-ave-vancouver-454186",
+      "checkedAt": "2026-08-20T07:13:32.322Z",
+      "httpStatus": 403,
+      "usable": false,
+      "error": null,
+      "inventories": [
+        {
+          "key": "2-bedroom-den-900",
+          "label": "2 Bedroom + Den",
+          "bedrooms": 2,
+          "bathrooms": 2,
+          "sqft": 900,
+          "rent": 4110,
+          "unit": "315",
+          "requiredSignals": [
+            "4,110",
+            "900"
+          ],
+          "availabilitySignals": [
+            "Immediate",
+            "Now",
+            "Available"
+          ],
+          "verified": false,
+          "requiredMatched": false,
+          "availabilityMatched": false,
+          "pageNegative": false
+        },
+        {
+          "key": "2-bedroom-townhouse-den-1340",
+          "label": "2 Bedroom Townhouse + Den",
+          "bedrooms": 2,
+          "bathrooms": 2.5,
+          "sqft": 1340,
+          "rent": 5390,
+          "unit": null,
+          "requiredSignals": [
+            "5,390",
+            "1,340"
+          ],
+          "availabilitySignals": [
+            "Immediate",
+            "Now",
+            "Available"
+          ],
+          "verified": false,
+          "requiredMatched": false,
+          "availabilityMatched": false,
+          "pageNegative": false
+        }
+      ]
+    }
+  ]
+}

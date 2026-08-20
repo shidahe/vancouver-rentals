@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-08-20T06:07:10.651Z",
+  "refreshedAt": "2026-08-20T07:13:31.882Z",
   "groups": [
     {
       "identityKey": "2268 w broadway::unit:312",
@@ -182,18 +182,6 @@
       "result": "candidate_only"
     },
     {
-      "identityKey": "3580 19th ave w::url:ed873a052605",
-      "sources": [
-        "zumper"
-      ],
-      "rents": [
-        2800
-      ],
-      "exactUnit": false,
-      "matchedListingId": "zumper-a4de373229e1",
-      "result": "candidate_only"
-    },
-    {
       "identityKey": "3588 w 43rd ave::url:a32b37cf11c0",
       "sources": [
         "zumper"
@@ -203,6 +191,18 @@
       ],
       "exactUnit": false,
       "matchedListingId": "zumper-4dfebec53d29",
+      "result": "candidate_only"
+    },
+    {
+      "identityKey": "larch st w 45th ave::url:d52e1ab40cb4",
+      "sources": [
+        "zumper"
+      ],
+      "rents": [
+        2500
+      ],
+      "exactUnit": false,
+      "matchedListingId": "zumper-5f1919a8a4cb",
       "result": "candidate_only"
     },
     {
