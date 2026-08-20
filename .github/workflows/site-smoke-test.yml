@@ -9,6 +9,7 @@ on:
       - 'app.js'
       - 'map-offset.js'
       - 'image-cache.js'
+      - 'photo-resilience.js'
       - 'site-fixes.js'
       - 'style.css'
       - 'data/listings.json'
