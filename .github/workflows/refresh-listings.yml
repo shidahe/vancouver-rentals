@@ -16,6 +16,7 @@ on:
       - 'scripts/reconcile-candidates.mjs'
       - 'data/live-sources.json'
       - 'data/automation-policy.json'
+      - 'data/manual-overrides.json'
       - 'package.json'
       - '.github/workflows/refresh-listings.yml'
 
