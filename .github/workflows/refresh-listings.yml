@@ -12,6 +12,7 @@ on:
       - 'scripts/refresh-zumper-units-v2.mjs'
       - 'scripts/refresh-rentalsca.mjs'
       - 'scripts/refresh-livrent.mjs'
+      - 'scripts/reconcile-candidates.mjs'
       - 'data/live-sources.json'
       - 'data/automation-policy.json'
       - 'package.json'
@@ -27,7 +28,7 @@ concurrency:
 jobs:
   refresh:
     runs-on: ubuntu-latest
-    timeout-minutes: 55
+    timeout-minutes: 60
     steps:
       - uses: actions/checkout@v4
         with:
@@ -43,14 +44,14 @@ jobs:
       - name: Install Chromium
         run: npx playwright install --with-deps chromium
 
-      - name: Run live verifier, per-unit discovery, and candidate adapters
+      - name: Run live verifier, per-unit discovery, candidate adapters, and reconciliation
         run: npm run refresh
 
       - name: Commit refreshed rental data
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add data/listings.json data/history.json data/candidates.json data/rentalsca-candidates.json data/livrent-candidates.json data/refresh-state.json data/image-sources.json data/evidence
+          git add data/listings.json data/history.json data/candidates.json data/rentalsca-candidates.json data/livrent-candidates.json data/reconciliation-state.json data/refresh-state.json data/image-sources.json data/evidence
           if git diff --cached --quiet; then
             echo 'No rental data changes.'
             exit 0
