@@ -6,9 +6,11 @@ const listingsPath = path.join(DATA, 'listings.json');
 const historyPath = path.join(DATA, 'history.json');
 const statePath = path.join(DATA, 'refresh-state.json');
 const policyPath = path.join(DATA, 'automation-policy.json');
+const overridesPath = path.join(DATA, 'manual-overrides.json');
 
 const readJson = async (p, fallback) => { try { return JSON.parse(await fs.readFile(p, 'utf8')); } catch { return fallback; } };
 const writeJson = async (p, v) => fs.writeFile(p, JSON.stringify(v, null, 2) + '\n');
+const normAddress = s => String(s || '').toLowerCase().replace(/[^a-z0-9]+/g, ' ').trim();
 
 const beforePayload = await readJson(listingsPath, { listings: [] });
 const beforeById = new Map(beforePayload.listings.map(x => [x.id, structuredClone(x)]));
@@ -72,10 +74,37 @@ for (const [id, fields] of Object.entries(policy.canonicalFieldRepairs || {})) {
   for (const [key, value] of Object.entries(fields)) listing[key] = value;
 }
 
+// Manual/official evidence overrides are applied last so stale marketplace or building pages cannot resurrect inventory.
+const manual = await readJson(overridesPath, { overrides: [] });
+for (const override of manual.overrides || []) {
+  const matches = afterPayload.listings.filter(x => {
+    if (override.scope === 'listing' && override.listingId) return x.id === override.listingId;
+    if (override.scope === 'building') {
+      const addressMatch = override.address && normAddress(x.address) === normAddress(override.address);
+      const nameMatch = override.buildingName && String(x.buildingName || '').toLowerCase() === String(override.buildingName).toLowerCase();
+      return addressMatch || nameMatch;
+    }
+    return false;
+  });
+  for (const listing of matches) {
+    listing.availabilityStatus = override.availabilityStatus || 'removed';
+    listing.status = override.status || 'removed';
+    listing.removedAt = today;
+    listing.lastChecked = today;
+    listing.verifiedAt = override.evidenceObservedAt || new Date().toISOString();
+    listing.verificationLevel = 'verified';
+    listing.verificationMethod = `${override.evidenceType || 'manual evidence'}: ${override.reason || 'manual override'}`;
+    listing.dataNotes = `${override.reason || 'Manual override.'}${override.evidenceUrl ? ` Evidence: ${override.evidenceUrl}` : ''}`;
+    afterHistory[listing.id] ||= [];
+    const note = `REMOVED: ${override.reason || 'manual/official evidence override.'}`;
+    if (!afterHistory[listing.id].some(h => h.date === today && h.note === note)) afterHistory[listing.id].push({ date: today, rent: listing.rent, note });
+  }
+}
+
 afterPayload.meta ||= {};
-afterPayload.meta.automationSafety = 'Live price changes are allowlisted per exact single-unit page. Verified static fields are locked. HTTP 401/403/429/5xx responses are unusable evidence.';
+afterPayload.meta.automationSafety = 'Live price changes are allowlisted per exact single-unit page. Verified static fields are locked. HTTP 401/403/429/5xx responses are unusable evidence. Manual/official negative overrides are applied last and cannot be resurrected by stale marketplace evidence.';
 
 await writeJson(listingsPath, afterPayload);
 await writeJson(historyPath, afterHistory);
 await writeJson(statePath, state);
-console.log('Safety pass complete: blocked pages ignored, price changes constrained, canonical rents repaired, verified static fields restored.');
+console.log('Safety pass complete: blocked pages ignored, price changes constrained, canonical rents repaired, verified static fields restored, manual overrides applied.');
