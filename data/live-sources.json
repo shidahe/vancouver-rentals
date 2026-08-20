@@ -22,6 +22,20 @@
       "adapter": "zumper-search"
     },
     {
+      "id": "zumper-arbutus-2br",
+      "name": "Zumper Arbutus 2BR",
+      "url": "https://www.zumper.com/apartments-for-rent/vancouver-bc/arbutus/2-beds",
+      "kind": "marketplace",
+      "adapter": "zumper-search"
+    },
+    {
+      "id": "zumper-quilchena-2br",
+      "name": "Zumper Quilchena 2BR",
+      "url": "https://www.zumper.com/apartments-for-rent/vancouver-bc/quilchena/2-beds",
+      "kind": "marketplace",
+      "adapter": "zumper-search"
+    },
+    {
       "id": "rentfaster-vancouver",
       "name": "RentFaster Vancouver",
       "url": "https://www.rentfaster.ca/bc/vancouver/rentals/",
