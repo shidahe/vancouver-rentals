@@ -3,7 +3,7 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "refresh": "node scripts/refresh-safe.mjs && node scripts/refresh-zumper-units-v2.mjs && node scripts/refresh-rentalsca.mjs"
+    "refresh": "node scripts/refresh-safe.mjs && node scripts/refresh-zumper-units-v2.mjs && node scripts/refresh-rentalsca.mjs && node scripts/refresh-livrent.mjs"
   },
   "dependencies": {
     "playwright": "^1.55.0"
