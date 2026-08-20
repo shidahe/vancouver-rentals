@@ -47,14 +47,10 @@ try {
   assert(statLabels.includes('Active') && statLabels.includes('New'), `Stats header did not render expected labels: ${JSON.stringify(statLabels)}`);
 
   const markers = await page.locator('.leaflet-marker-icon.price-marker').count();
-  report.checkpoints.map = { markers };
+  const desktopMapVisible = await page.locator('#map').isVisible();
+  report.checkpoints.map = { markers, desktopMapVisible };
+  assert(desktopMapVisible, 'Desktop map is not visible');
   assert(markers === cards, `Visible cards ${cards} != map markers ${markers}`);
-
-  await page.locator('#mapView').click();
-  assert(await page.locator('.layout').evaluate(el => el.classList.contains('map-mode')), 'Map view toggle failed');
-  await page.locator('#listView').click();
-  assert(!(await page.locator('.layout').evaluate(el => el.classList.contains('map-mode'))), 'List view toggle failed');
-  report.checkpoints.viewToggle = 'ok';
 
   await page.locator('#minSqft').fill('9999');
   await page.locator('#minSqft').dispatchEvent('change');
@@ -105,7 +101,6 @@ try {
   }
   report.checkpoints.dataEndpoints = 'ok';
 
-  // Mobile layout behavior.
   const mobile = await browser.newContext({ viewport: { width: 390, height: 844 }, isMobile: true });
   const mp = await mobile.newPage();
   await mp.goto(BASE, { waitUntil: 'networkidle', timeout: 60000 });
