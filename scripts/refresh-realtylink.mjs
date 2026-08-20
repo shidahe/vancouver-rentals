@@ -4,7 +4,13 @@ import { chromium } from 'playwright';
 const DATA=path.join(process.cwd(),'data'),iso=new Date().toISOString();
 const write=async(p,x)=>fs.writeFile(p,JSON.stringify(x,null,2)+'\n');
 const browser=await chromium.launch({headless:true});
-const ctx=await browser.newContext({locale:'en-CA',timezoneId:'America/Vancouver',viewport:{width:1440,height:1400}});
+const ctx=await browser.newContext({
+  locale:'en-CA',
+  timezoneId:'America/Vancouver',
+  viewport:{width:1440,height:1400},
+  userAgent:'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36',
+  extraHTTPHeaders:{'Accept-Language':'en-CA,en;q=0.9'}
+});
 const page=await ctx.newPage();
 const searchUrls=['https://realtylink.org/en/apartment~for-rent~vancouver','https://realtylink.org/en/townhouse~for-rent~vancouver','https://realtylink.org/en/house~for-rent~vancouver'];
 const urls=new Set(),health=[];
