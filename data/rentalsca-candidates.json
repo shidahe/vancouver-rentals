@@ -1,33 +1,33 @@
 {
-  "refreshedAt": "2026-08-20T02:29:10.543Z",
+  "refreshedAt": "2026-08-20T02:56:51.245Z",
   "mode": "candidate-only",
   "sourceHealth": {
     "rentalsca-kitsilano-2br": {
-      "checkedAt": "2026-08-20T02:29:10.543Z",
+      "checkedAt": "2026-08-20T02:56:51.245Z",
       "status": 200,
       "ok": true,
       "finalUrl": "https://rentals.ca/vancouver/kitsilano/all-apartments-all-houses/2-bedrooms"
     },
     "rentalsca-point-grey-2br": {
-      "checkedAt": "2026-08-20T02:29:10.543Z",
+      "checkedAt": "2026-08-20T02:56:51.245Z",
       "status": 200,
       "ok": true,
       "finalUrl": "https://rentals.ca/vancouver/west-point-grey/2-bedrooms"
     },
     "rentalsca-arbutus-2br": {
-      "checkedAt": "2026-08-20T02:29:10.543Z",
+      "checkedAt": "2026-08-20T02:56:51.245Z",
       "status": 200,
       "ok": true,
       "finalUrl": "https://rentals.ca/vancouver/arbutus-ridge/2-bedrooms"
     },
     "rentalsca-dunbar-2br": {
-      "checkedAt": "2026-08-20T02:29:10.543Z",
+      "checkedAt": "2026-08-20T02:56:51.245Z",
       "status": 200,
       "ok": true,
       "finalUrl": "https://rentals.ca/vancouver/dunbar-southlands/2-bedrooms"
     },
     "rentalsca-quilchena-2br": {
-      "checkedAt": "2026-08-20T02:29:10.543Z",
+      "checkedAt": "2026-08-20T02:56:51.245Z",
       "status": 404,
       "ok": false,
       "finalUrl": "https://rentals.ca/vancouver/quilchena/2-bedrooms"
@@ -36,12 +36,12 @@
   "pages": [
     {
       "source": "Rentals.ca",
-      "url": "https://rentals.ca/vancouver/1328-maple-street",
-      "address": "1328 Maple Street, Vancouver, British Columbia V6J 3R9",
+      "url": "https://rentals.ca/vancouver/2678-west-broadway",
+      "address": "2678 West Broadway, Vancouver, British Columbia None",
       "addressUnit": null,
       "geo": {
-        "lat": 49.2740149,
-        "lng": -123.1498775
+        "lat": 49.2638511,
+        "lng": -123.1657831
       },
       "targetArea": true,
       "active": true,
@@ -66,51 +66,51 @@
         }
       ],
       "single": {
-        "rent": 2000,
-        "beds": 1,
-        "baths": 2,
-        "sqft": 850
+        "rent": 3350,
+        "beds": 2,
+        "baths": 1.5,
+        "sqft": null
       },
-      "checkedAt": "2026-08-20T02:29:10.543Z"
+      "checkedAt": "2026-08-20T02:56:51.245Z"
     }
   ],
   "inventories": [
     {
       "source": "Rentals.ca",
-      "url": "https://rentals.ca/vancouver/1328-maple-street",
-      "address": "1328 Maple Street, Vancouver, British Columbia V6J 3R9",
+      "url": "https://rentals.ca/vancouver/2678-west-broadway",
+      "address": "2678 West Broadway, Vancouver, British Columbia None",
       "unit": null,
       "floorplan": "2 Bedroom Apartments In Vancouver",
-      "identityKey": "1328 maple st::floorplan:2 bedroom apartments in vancouver",
+      "identityKey": "2678 w broadway::floorplan:2 bedroom apartments in vancouver",
       "rent": 2000,
       "bedrooms": 2,
       "bathrooms": null,
       "sqft": null,
       "geo": {
-        "lat": 49.2740149,
-        "lng": -123.1498775
+        "lat": 49.2638511,
+        "lng": -123.1657831
       },
       "active": true,
-      "checkedAt": "2026-08-20T02:29:10.543Z",
+      "checkedAt": "2026-08-20T02:56:51.245Z",
       "publishable": false
     },
     {
       "source": "Rentals.ca",
-      "url": "https://rentals.ca/vancouver/1328-maple-street",
-      "address": "1328 Maple Street, Vancouver, British Columbia V6J 3R9",
+      "url": "https://rentals.ca/vancouver/2678-west-broadway",
+      "address": "2678 West Broadway, Vancouver, British Columbia None",
       "unit": null,
       "floorplan": "3 Bedroom Apartments In Vancouver",
-      "identityKey": "1328 maple st::floorplan:3 bedroom apartments in vancouver",
+      "identityKey": "2678 w broadway::floorplan:3 bedroom apartments in vancouver",
       "rent": 2000,
       "bedrooms": 3,
       "bathrooms": null,
       "sqft": null,
       "geo": {
-        "lat": 49.2740149,
-        "lng": -123.1498775
+        "lat": 49.2638511,
+        "lng": -123.1657831
       },
       "active": true,
-      "checkedAt": "2026-08-20T02:29:10.543Z",
+      "checkedAt": "2026-08-20T02:56:51.245Z",
       "publishable": false
     }
   ]

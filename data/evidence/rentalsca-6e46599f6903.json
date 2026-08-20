@@ -1,0 +1,138 @@
+{
+  "checkedAt": "2026-08-20T02:56:51.245Z",
+  "page": {
+    "source": "Rentals.ca",
+    "url": "https://rentals.ca/vancouver/2678-west-broadway",
+    "address": "2678 West Broadway, Vancouver, British Columbia None",
+    "addressUnit": null,
+    "geo": {
+      "lat": 49.2638511,
+      "lng": -123.1657831
+    },
+    "targetArea": true,
+    "active": true,
+    "floorplans": [
+      {
+        "label": "2 Bedroom Apartments In Vancouver",
+        "unit": null,
+        "beds": 2,
+        "baths": null,
+        "sqft": null,
+        "rent": 2000,
+        "available": true
+      },
+      {
+        "label": "3 Bedroom Apartments In Vancouver",
+        "unit": null,
+        "beds": 3,
+        "baths": null,
+        "sqft": null,
+        "rent": 2000,
+        "available": true
+      }
+    ],
+    "single": {
+      "rent": 3350,
+      "beds": 2,
+      "baths": 1.5,
+      "sqft": null
+    },
+    "checkedAt": "2026-08-20T02:56:51.245Z"
+  },
+  "jsonLd": [
+    {
+      "@context": "http://schema.org",
+      "@type": "ApartmentComplex",
+      "url": "https://rentals.ca/vancouver/2678-west-broadway",
+      "name": "2678 West Broadway",
+      "description": "Spacious two-level, two-bedroom home in the heart of Kitsilano. The functional layout offers plenty of living space, while large windows showcase beautiful views of the North Shore Mountains and bring in an abundance of natural light. Enjoy three private patios, providing plenty of outdoor space to relax or unwind throughout the day. Conveniently located close to Kitsilano Beach, parks, local cafés, restaurants, and shopping, this home offers comfortable living in one of Vancouver's most desirable neighbourhoods.\nAvailable: September 15, 2026\nRent : $3,350.00\nBedrooms : 2\nBathrooms : 2\nSize: 950 sq ft\nArea : Kitsilano\nParking Available\n1 year lease\nProperty is marketed by:\nAWM Alliance Real Estate group Ltd.\nVancouver, BC\nV5Z 1E5 Canada",
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 49.2638511,
+        "longitude": -123.1657831
+      },
+      "containedInPlace": {
+        "@type": "City",
+        "url": "",
+        "name": "",
+        "address": {
+          "@type": "PostalAddress",
+          "addressCountry": "CA",
+          "addressRegion": ""
+        }
+      },
+      "containsPlace": [
+        {
+          "@context": "http://schema.org",
+          "@type": "Apartment",
+          "name": "2 Bedroom",
+          "potentialAction": {
+            "@type": "RentAction",
+            "priceSpecification": {
+              "@type": "PriceSpecification",
+              "price": 3350,
+              "priceCurrency": "CAD"
+            }
+          },
+          "floorSize": {
+            "@type": "QuantitativeValue",
+            "unitCode": "FTK",
+            "value": "950.0"
+          }
+        }
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "CA",
+        "addressLocality": "Vancouver",
+        "addressRegion": "British Columbia",
+        "postalCode": "None",
+        "streetAddress": "2678 West Broadway"
+      },
+      "telephone": "(778) 986-4899",
+      "photo": [
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/1518739/apartment-2240775187.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/1518739/apartment-2240775187.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/1518739/apartment-2240775191.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/1518739/apartment-2240775191.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/1518739/apartment-2240775190.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/1518739/apartment-2240775190.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/1518739/apartment-2240775188.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/1518739/apartment-2240775188.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/1518739/apartment-2240775189.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/1518739/apartment-2240775189.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/1518739/apartment-2240775192.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/1518739/apartment-2240775192.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/1518739/apartment-2240775193.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/1518739/apartment-2240775193.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/1518739/apartment-2240775194.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/1518739/apartment-2240775194.jpg"
+        }
+      ]
+    }
+  ],
+  "textSample": "Landlords\nRent Report\nBlog\nLogin\nEN\nFR\nPost a Rental\nPost a Rental\nLogin\nCreate Account\nAlerts\nFAQs\nMonthly Rent Report\nCity Rent Trends\nLandlords\nCredit Reports\nCommercial Properties\nRaising the Roof\nCareers\nAbout\nBlog\n Contact us\n Instagram\n Facebook\n Youtube\n LinkedIn\n X\n TikTok\nHome\nBC\nVancouver\nKitsilano\n2678 West Broadway\n Favourite\n Alert\n$3350\nApartment\n2678 West Broadway — Vancouver BC (2-Bedroom)\n\n Recently Updated!\n\n 2 Bed\n 1.5 Bath\n Pets\n 950 FT²\nUnderground\nGet In Touch\n Contact Property\n Request a Tour\n View Phone Number\n1 / 8\nPhotos\nStreet\nSave Alert\n\nSimilar listings in Vancouver\n\nKitsilano Apartments\n\nView on map\n\nFloor Plans\n2 Bedroom\n$3,350\n1.5 Bath\n950 ft²\n2 Parking\nSep 15th 2026\nParking Information\n\nParking Types\n\nUnderground parking\n\nNo visitor parking\n\nParking Spots\n\n2 spots per unit\n\nOther Parking Details\n\nParking fee not included in rent\n\nUtilities Included\n Water\nAbout 2678 West Broadway\nProperty Type\n\nApartment\n\nProperty Sub-type\n\nApartment\n\nLease Term\n\n1-Year\n\nParking Spots\n\n2\n\nShort-term\n\nNo\n\nFurnished\n\nNo\n\nYear Built\n\nNo Info\n\n# of Floors\n\nNo Info\n\n# of Units\n\nNo Info\n\nListing ID\n\n1518739\n\nSpacious two-level, two-bedroom home in the heart of Kitsilano. The functional layout offers plenty of living space, while large windows showcase beautiful views of the North Shore Mountains and bring in an abundance of natural light. Enjoy three private patios,...\n\nRead More\n\nNeighbourhood Score & Commute Time\nSummary\n\n2678 West Broadway is an apartment for rent in Vancouver, BC. It has 1 unit. Units have 2 bedrooms. Units have 1.5 bathrooms. Water is a utility included in the rent price.\n\nKeywords\nTwo-Story Commercial Building On A Corner With L, Living Room With Sectional Sofa, Coffee Table, D, Spacious Living Room With Beige Sectional Sofa,, Balcony With Wooden Decking, Black Sofa With Whi, View Of A Narrow Kitchen Featuring A Refrigerato, Bathroom With Two Sinks, A Large Mirror, Various, Cozy Bedroom Featuring A Large Bed With Brown Be, Cozy Bedroom Featuring A Bed, Desk With Three Mo, Building Exterior, Building Interior, Exterior, 2, Living Room, Balcony View, Kitchen, Bathroom, Bedroom, Hardwood, Tile, Carpet, Is Furnished, Large Windows, Is Cozy, Ample Natural Light, Is Modern, City View, Park View, Refrigerator and Dishwasher\n\n Report Listing\n\nExplore Similar Rentals\nNo listings match right now. You can set up a search alert below to get notified about similar listings!\nVancouver, BC\n $2,680 - $4,020\n All Apartments\n 2+ Beds\nCreate Alert\nPopular Rent Searches In Vancouver\nSearch by Amenities\nPet Friendly Apartments In Vancouver\nApartments With A/C In Vancouver\nApartments With Ensuite Laundry In Vancouver\nApartments With Dishwasher In Vancouver\nSearch by Bedrooms\n1 Bedroom Apartments In Vancouver\n2 Bedroom Apartments In Vancouver\n3 Bedroom Apartments In Vancouver\n4 Bedroom Apartments In Vancouver\nSearch by Budget\nApartments Under $1000 In Vancouver\nApartments Under $1250 In Vancouver\nApartments Under $2000 In Vancouver\nApartments Under $2500 In Vancouver\nSee All Rentals in Vancouver\nBlog\nPress\nContact\nAbout\nCareers\nFAQs\nTerms\nPrivacy Policy\nSitemap\nPopular Searches\nApartments Near Me\nCondos Near Me\nHouses Near Me\nRooms Near Me\nPopular Cities\nToronto Rentals\nCalgary Rentals\nOttawa Rentals\nEdmonton Rentals\nVancouver Rentals\nHalifax Rentals\nPopular Provinces\nOntario\nBritish Columbia\nAlberta\nQuebec\nNova Scotia\nManitoba\nLandlords\nGet Listed\nMy Listings\nTenant Credit Check\nResources\nRent Report\nCity Rent Trends\nCommercial Properties\nGet the Rentals.ca app\nProud partner of\n\nCopyright © 2026 Rentals.ca Network, Inc. All rights reserved.\n\nManage Cookies\n \nThis website uses cookies to ensure you get the best experience on our website. By clicking \"Allow All\", you consent to our use of cookies. Privacy Policy ↗\nManage Cookies\nDecline\nAllow All"
+}
