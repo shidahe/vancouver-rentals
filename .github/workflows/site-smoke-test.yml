@@ -1,0 +1,35 @@
+name: Site smoke test
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'index.html'
+      - 'app.js'
+      - 'image-cache.js'
+      - 'style.css'
+      - 'data/listings.json'
+      - 'data/history.json'
+      - 'data/images.json'
+      - 'scripts/test-site.mjs'
+      - '.github/workflows/site-smoke-test.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  smoke:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Install dependencies
+        run: npm install --no-audit --no-fund
+      - name: Install Chromium
+        run: npx playwright install --with-deps chromium
+      - name: Browser smoke test
+        run: node scripts/test-site.mjs
