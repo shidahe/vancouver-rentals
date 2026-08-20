@@ -12,6 +12,7 @@ on:
       - 'scripts/refresh-zumper-units-v2.mjs'
       - 'scripts/refresh-rentalsca.mjs'
       - 'scripts/refresh-livrent.mjs'
+      - 'scripts/refresh-craigslist.mjs'
       - 'scripts/reconcile-candidates.mjs'
       - 'data/live-sources.json'
       - 'data/automation-policy.json'
@@ -28,7 +29,7 @@ concurrency:
 jobs:
   refresh:
     runs-on: ubuntu-latest
-    timeout-minutes: 60
+    timeout-minutes: 65
     steps:
       - uses: actions/checkout@v4
         with:
@@ -51,7 +52,7 @@ jobs:
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add data/listings.json data/history.json data/candidates.json data/rentalsca-candidates.json data/livrent-candidates.json data/reconciliation-state.json data/refresh-state.json data/image-sources.json data/evidence
+          git add data/listings.json data/history.json data/candidates.json data/rentalsca-candidates.json data/livrent-candidates.json data/craigslist-candidates.json data/reconciliation-state.json data/refresh-state.json data/image-sources.json data/evidence
           if git diff --cached --quiet; then
             echo 'No rental data changes.'
             exit 0
