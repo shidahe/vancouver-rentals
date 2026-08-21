@@ -1,0 +1,153 @@
+{
+  "checkedAt": "2026-08-21T22:57:24.422Z",
+  "page": {
+    "source": "Rentals.ca",
+    "url": "https://rentals.ca/vancouver/3664-west-2nd-avenue-3",
+    "address": "3664 West 2nd Avenue, Vancouver, British Columbia V6R 1J7",
+    "addressUnit": null,
+    "geo": {
+      "lat": 49.2701996,
+      "lng": -123.1850565
+    },
+    "targetArea": true,
+    "active": true,
+    "floorplans": [
+      {
+        "label": "2 Bedroom Apartments In Vancouver",
+        "unit": null,
+        "beds": 2,
+        "baths": null,
+        "sqft": null,
+        "rent": 2000,
+        "available": true
+      },
+      {
+        "label": "3 Bedroom Apartments In Vancouver",
+        "unit": null,
+        "beds": 3,
+        "baths": null,
+        "sqft": null,
+        "rent": 2000,
+        "available": true
+      }
+    ],
+    "single": {
+      "rent": 2300,
+      "beds": 1,
+      "baths": null,
+      "sqft": null
+    },
+    "checkedAt": "2026-08-21T22:57:24.422Z"
+  },
+  "jsonLd": [
+    {
+      "@context": "http://schema.org",
+      "@type": "ApartmentComplex",
+      "url": "https://rentals.ca/vancouver/3664-west-2nd-avenue-3",
+      "name": "3664 West 2nd Avenue",
+      "description": "2 Bd Suite For Rent in Kitsilano\n(2nd Avenue And Alma Street)\nfor September 1st\nNear Jericho Beach and UBC\nPrime location\nSelf Contained, Private Legal Suite In Character Home Built In Year 2000\nFront and back entrances - Garden Level French Doors Leading To Personal Patio Space In Back\nCarpet In Bedrooms, Private Shed Space\nPrivate Washer / Dryer, Private Bathtub And Hot Water\nAlarm System\nWired For Internet Access\nNo Smoking Please, No Cats Please\n($2300 per month, utilities extra)",
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 49.2701996,
+        "longitude": -123.1850565
+      },
+      "containedInPlace": {
+        "@type": "City",
+        "url": "",
+        "name": "",
+        "address": {
+          "@type": "PostalAddress",
+          "addressCountry": "CA",
+          "addressRegion": ""
+        }
+      },
+      "containsPlace": [
+        {
+          "@context": "http://schema.org",
+          "@type": "Apartment",
+          "name": "2 Bedroom",
+          "potentialAction": {
+            "@type": "RentAction",
+            "priceSpecification": {
+              "@type": "PriceSpecification",
+              "price": 2300,
+              "priceCurrency": "CAD"
+            }
+          },
+          "floorSize": {
+            "@type": "QuantitativeValue",
+            "unitCode": "FTK",
+            "value": "650.0"
+          }
+        }
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "CA",
+        "addressLocality": "Vancouver",
+        "addressRegion": "British Columbia",
+        "postalCode": "V6R 1J7",
+        "streetAddress": "3664 West 2nd Avenue"
+      },
+      "telephone": "(604) 353-0467",
+      "photo": [
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/1511189/apartment-2240595371.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/1511189/apartment-2240595371.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/1511189/apartment-2240595372.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/1511189/apartment-2240595372.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/1511189/apartment-2240595378.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/1511189/apartment-2240595378.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/1511189/apartment-2240595377.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/1511189/apartment-2240595377.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/1511189/apartment-2240595369.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/1511189/apartment-2240595369.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/1511189/apartment-2240595368.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/1511189/apartment-2240595368.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/1511189/apartment-2240595373.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/1511189/apartment-2240595373.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/1511189/apartment-2240595370.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/1511189/apartment-2240595370.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/1511189/apartment-2240595374.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/1511189/apartment-2240595374.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/1511189/apartment-2240595375.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/1511189/apartment-2240595375.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/1511189/apartment-2240595376.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/1511189/apartment-2240595376.jpg"
+        }
+      ]
+    }
+  ],
+  "textSample": "Alert\nContact Property Contact\nSave Alert\n\nSimilar listings in\n\nCreate an Alert\nParking Information\nFeatures & Amenities\nUtilities Included\nAbout 3664 West 2nd Avenue\n\n2 Bd Suite For Rent in Kitsilano\n\n(2nd Avenue And Alma Street)\n\nfor September 1st\n\nNear Jericho Beach and UBC\n\nPrime location\n\nSelf Contained, Private Legal Suite In Character Home Built In Year 2000\n\n\n\n\nFront and back entrances - Garden Level French Doors Leading To Personal Patio Space In Back\n\nCarpet In Bedrooms, Private Shed Space\n\nPrivate Washer / Dryer, Private Bathtub And Hot Water\n\nAlarm System\n\nWired For Internet Access\n\nNo Smoking Please, No Cats Please\n\n($2300 per month, utilities extra)\n\n2 Bd Suite For Rent in Kitsilano\n\n(2nd Avenue And Alma Street)\n\nfor September 1st\n\nNear Jericho Beach and UBC\n\nPrime location\n\nSelf Contained, Private Legal Suite In Character Home Built In Year 2000\n\n\n\n\nFront and back entrances - Garden Level French Doors Leading To Personal Patio Space In Back\n\nCarpet In Bedrooms, Private Shed Space\n\nPrivate Washer / Dryer, Private Bathtub And Hot Water\n\nAlarm System\n\nWired For Internet Access\n\nNo Smoking Please, No Cats Please\n\n($2300 per month, utilities extra)\n\nNeighbourhood Score & Commute Time\nOpen House Dates\nSave Alert\n\nSimilar listings in\n\nCreate an Alert\nSummary\n\nReport Listing\n\nExplore Similar Rentals\nPopular Rent Searches In Vancouver\nSearch by Amenities\nPet Friendly Apartments In Vancouver\nApartments With A/C In Vancouver\nApartments With Ensuite Laundry In Vancouver\nApartments With Dishwasher In Vancouver\nSearch by Bedrooms\n1 Bedroom Apartments In Vancouver\n2 Bedroom Apartments In Vancouver\n3 Bedroom Apartments In Vancouver\n4 Bedroom Apartments In Vancouver\nSearch by Budget\nApartments Under $1000 In Vancouver\nApartments Under $1250 In Vancouver\nApartments Under $2000 In Vancouver\nApartments Under $2500 In Vancouver\nSee All Rentals in Vancouver\nThis website uses cookies to ensure you get the best experience on our website. By clicking \"Allow All\", you consent to our use of cookies. Privacy Policy ↗\nManage Cookies\nDecline\nAllow All"
+}
