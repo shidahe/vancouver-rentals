@@ -18,6 +18,7 @@ on:
       - 'scripts/refresh-purposebuilt.mjs'
       - 'scripts/refresh-official-status.mjs'
       - 'scripts/apply-official-status.mjs'
+      - 'scripts/cache-listing-images.mjs'
       - 'scripts/audit-data-quality.mjs'
       - 'scripts/audit-coverage.mjs'
       - 'scripts/test-site.mjs'
@@ -52,7 +53,7 @@ jobs:
         run: npm install --no-audit --no-fund
       - name: Install Chromium
         run: npx playwright install --with-deps chromium
-      - name: Run live verifier, discovery, reconciliation, purpose-built inventory, official freshness, data audit, and coverage audit
+      - name: Run live verifier, discovery, reconciliation, image cache, official freshness, data audit, and coverage audit
         run: npm run refresh
       - name: Browser smoke test against the freshly generated site
         id: smoke
@@ -62,14 +63,14 @@ jobs:
         id: readiness
         continue-on-error: true
         run: node scripts/finalize-readiness.mjs
-      - name: Commit refreshed rental data and validation reports
+      - name: Commit refreshed rental data, cached images, and validation reports
         if: always()
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add data/listings.json data/history.json data/candidates.json data/rentalsca-candidates.json data/livrent-candidates.json data/craigslist-candidates.json data/realtylink-candidates.json data/reconciliation-state.json data/refresh-state.json data/image-sources.json data/purpose-built-status.json data/official-status.json data/official-status-actions.json data/quality-report.json data/coverage-report.json data/site-test-report.json data/evidence
+          git add data/listings.json data/history.json data/candidates.json data/rentalsca-candidates.json data/livrent-candidates.json data/craigslist-candidates.json data/realtylink-candidates.json data/reconciliation-state.json data/refresh-state.json data/image-sources.json data/images.json data/image-cache-report.json data/purpose-built-status.json data/official-status.json data/official-status-actions.json data/quality-report.json data/coverage-report.json data/site-test-report.json data/evidence assets/listings
           if git diff --cached --quiet; then
-            echo 'No rental data or validation changes.'
+            echo 'No rental data, image cache, or validation changes.'
             exit 0
           fi
           git commit -m 'Automated live rental refresh'
