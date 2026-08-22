@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-08-22T18:57:31.440Z",
+  "checkedAt": "2026-08-22T19:36:38.379Z",
   "ok": true,
   "checkpoints": {
     "render": {
@@ -16,13 +16,13 @@
         "Last refreshed"
       ],
       "values": [
-        "27",
-        "22",
+        "26",
+        "21",
         "1",
         "2",
-        "2026-08-22 18:51:02"
+        "2026-08-22 19:30:26"
       ],
-      "html": "<div class=\"stat\"><strong>27</strong><span>Active</span></div><div class=\"stat\"><strong>22</strong><span>New</span></div><div class=\"stat\"><strong>1</strong><span>Price drops</span></div><div class=\"stat\"><strong>2</strong><span>To verify</span></div><div class=\"stat\"><strong>2026-08-22 18:51:02</strong><span>Last refreshed</span></div>"
+      "html": "<div class=\"stat\"><strong>26</strong><span>Active</span></div><div class=\"stat\"><strong>21</strong><span>New</span></div><div class=\"stat\"><strong>1</strong><span>Price drops</span></div><div class=\"stat\"><strong>2</strong><span>To verify</span></div><div class=\"stat\"><strong>2026-08-22 19:30:26</strong><span>Last refreshed</span></div>"
     },
     "map": {
       "markers": 21,
@@ -37,8 +37,8 @@
     "sourceLink": "https://www.rentfaster.ca/properties/2139-lahb-ave-vancouver-454186",
     "photos": {
       "total": 21,
-      "loaded": 6,
-      "fallbacks": 15,
+      "loaded": 20,
+      "fallbacks": 1,
       "bad": []
     },
     "markerPositions": {
