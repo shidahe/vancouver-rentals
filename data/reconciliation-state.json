@@ -1,6 +1,18 @@
 {
-  "refreshedAt": "2026-08-22T01:58:04.829Z",
+  "refreshedAt": "2026-08-22T07:07:52.285Z",
   "groups": [
+    {
+      "identityKey": "2715 w 2nd ave::url:a56695812770",
+      "sources": [
+        "zumper"
+      ],
+      "rents": [
+        2500
+      ],
+      "exactUnit": false,
+      "matchedListingId": "zumper-2fde865f7e2c",
+      "result": "candidate_only"
+    },
     {
       "identityKey": "2268 w broadway::unit:312",
       "sources": [
@@ -11,18 +23,6 @@
       ],
       "exactUnit": true,
       "matchedListingId": "2268-w-broadway-312-r3153999",
-      "result": "candidate_only"
-    },
-    {
-      "identityKey": "2932 w 13th ave::url:a3eadd6de1c0",
-      "sources": [
-        "zumper"
-      ],
-      "rents": [
-        2800
-      ],
-      "exactUnit": false,
-      "matchedListingId": "zumper-cd96ddf129b5",
       "result": "candidate_only"
     },
     {
@@ -38,18 +38,6 @@
       "result": "candidate_only"
     },
     {
-      "identityKey": "2477 waterloo st::url:9bf4862de36a",
-      "sources": [
-        "zumper"
-      ],
-      "rents": [
-        4950
-      ],
-      "exactUnit": false,
-      "matchedListingId": "waterloo-2477-zumper",
-      "result": "candidate_only"
-    },
-    {
       "identityKey": "w broadway trafalgar st::url:70dacf47fe3e",
       "sources": [
         "zumper"
@@ -59,6 +47,18 @@
       ],
       "exactUnit": false,
       "matchedListingId": "zumper-24e8f41077bf",
+      "result": "candidate_only"
+    },
+    {
+      "identityKey": "2477 waterloo st::url:9bf4862de36a",
+      "sources": [
+        "zumper"
+      ],
+      "rents": [
+        4950
+      ],
+      "exactUnit": false,
+      "matchedListingId": "waterloo-2477-zumper",
       "result": "candidate_only"
     },
     {
