@@ -3,7 +3,7 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "refresh": "node scripts/refresh-safe.mjs && node scripts/refresh-zumper-units-v2.mjs && node scripts/refresh-rentalsca.mjs && node scripts/refresh-livrent.mjs && node scripts/refresh-craigslist.mjs && node scripts/refresh-realtylink.mjs && node scripts/reconcile-candidates.mjs && node scripts/refresh-purposebuilt.mjs && node scripts/refresh-official-status.mjs && node scripts/apply-official-status.mjs && node scripts/audit-data-quality.mjs && node scripts/audit-coverage.mjs"
+    "refresh": "node scripts/refresh-safe.mjs && node scripts/refresh-zumper-units-v2.mjs && node scripts/cleanup-verification-methods.mjs && node scripts/refresh-rentalsca.mjs && node scripts/refresh-livrent.mjs && node scripts/refresh-craigslist.mjs && node scripts/refresh-realtylink.mjs && node scripts/reconcile-candidates.mjs && node scripts/refresh-purposebuilt.mjs && node scripts/refresh-official-status.mjs && node scripts/apply-official-status.mjs && node scripts/audit-data-quality.mjs && node scripts/audit-coverage.mjs"
   },
   "dependencies": {
     "playwright": "^1.55.0"
