@@ -10,7 +10,15 @@ const issues=[];
 const keyMap=new Map();
 const floorplanMap=new Map();
 const canon=s=>String(s||'').toLowerCase().replace(/\bwest\b/g,'w').replace(/\beast\b/g,'e').replace(/\bstreet\b/g,'st').replace(/\bavenue\b/g,'ave').replace(/[^a-z0-9]+/g,' ').trim();
-const actualUnit=s=>/^(?=[A-Za-z0-9-]*\d)[A-Za-z0-9-]{1,12}$/.test(String(s||'').replace(/^#/,'').trim());
+// Unit labels in the UI can include descriptive suffixes, e.g. "315 · 2 Bedroom + Den".
+// Extract the concrete leading unit token so duplicate-unit protection remains exact even when display labels are richer.
+const concreteUnit=s=>{
+  const raw=String(s||'').trim().replace(/^#/,'');
+  const direct=raw.match(/^([A-Za-z0-9-]{1,12})(?:\s*(?:·|\||—|–|-{2,})\s*|$)/);
+  if(direct&&/\d/.test(direct[1]))return direct[1].toUpperCase();
+  const tagged=raw.match(/^(?:unit|suite|apt)\s*#?\s*([A-Za-z0-9-]{1,12})\b/i);
+  return tagged&&/\d/.test(tagged[1])?tagged[1].toUpperCase():null;
+};
 const strongOfficialNegative=s=>['fully_leased','rented','unavailable','inactive','off_market','no_availability'].includes(String(s||'').toLowerCase());
 for(const l of active){
   const age=l.verifiedAt?(now-new Date(l.verifiedAt).getTime())/86400000:999;
@@ -25,20 +33,20 @@ for(const l of active){
   if(l.orientation==null)issues.push({severity:'info',id:l.id,issue:'unknown-orientation'});
 
   const street=canon(String(l.address||'').split(',')[0]);
-  const unit=String(l.unit||'').replace(/^#/,'').trim();
-  if(unit&&actualUnit(unit)){
+  const unit=concreteUnit(l.unit);
+  if(unit){
     const k=`${street}::unit:${canon(unit)}`;
     if(keyMap.has(k))issues.push({severity:'high',id:l.id,otherId:keyMap.get(k),issue:'duplicate-address-unit'});else keyMap.set(k,l.id);
   }
 
   // Purpose-built inventory may intentionally use a floorplan label in `unit` when no public suite number exists.
   // Detect accidental duplicate publication using the same fallback identity used by the crawler: building/address + rent + sqft.
-  if(l.type==='purpose-built'&&(!unit||!actualUnit(unit))){
+  if(l.type==='purpose-built'&&!unit){
     const fp=`${street}::building:${canon(l.buildingName)}::rent:${Number(l.rent)}::sqft:${Number(l.sqft)}`;
     if(floorplanMap.has(fp))issues.push({severity:'high',id:l.id,otherId:floorplanMap.get(fp),issue:'duplicate-purpose-built-floorplan'});else floorplanMap.set(fp,l.id);
   }
 }
 const high=issues.filter(x=>x.severity==='high'),medium=issues.filter(x=>x.severity==='medium');
-const report={generatedAt:new Date().toISOString(),activeCount:active.length,decisionReady:high.length===0,highIssueCount:high.length,mediumIssueCount:medium.length,infoIssueCount:issues.length-high.length-medium.length,issues};
+const report={generatedAt:new Date().toISOString(),activeCount:active.length,decisionReady:high.length===0&&medium.length===0,highIssueCount:high.length,mediumIssueCount:medium.length,infoIssueCount:issues.length-high.length-medium.length,issues};
 await write(path.join(DATA,'quality-report.json'),report);
-console.log(`Quality audit: ${active.length} active, ${high.length} high issues, decisionReady=${report.decisionReady}`);
+console.log(`Quality audit: ${active.length} active, ${high.length} high issues, ${medium.length} medium issues, decisionReady=${report.decisionReady}`);
