@@ -12,10 +12,12 @@ const latestData=Math.max(0,...latestDataTimes);
 const smokeAt=smoke.checkedAt?new Date(smoke.checkedAt).getTime():0;
 const smokeFresh=!!smokeAt&&smokeAt>=latestData-60000;
 const existingHigh=Number(q.highIssueCount||0);
+const existingMedium=Number(q.mediumIssueCount||0);
 const readinessIssues=[];
 if(smoke.ok!==true)readinessIssues.push({severity:'high',issue:'latest-browser-smoke-failed-or-missing'});
 if(!smokeFresh)readinessIssues.push({severity:'high',issue:'browser-smoke-older-than-rental-data',detail:{smokeCheckedAt:smoke.checkedAt||null,latestDataAt:latestData?new Date(latestData).toISOString():null}});
 if(coverage.coverageReady!==true)readinessIssues.push({severity:'high',issue:'discovery-coverage-not-ready',detail:coverage.blockers||[]});
+if(existingMedium>0)readinessIssues.push({severity:'high',issue:'medium-data-quality-issues-present',detail:{mediumIssueCount:existingMedium}});
 q.readinessChecks={
   smokeOk:smoke.ok===true,
   smokeFresh,
@@ -26,8 +28,8 @@ q.readinessChecks={
   coverageWarnings:coverage.warnings||[]
 };
 q.readinessIssues=readinessIssues;
-q.decisionReady=existingHigh===0&&readinessIssues.length===0;
+q.decisionReady=existingHigh===0&&existingMedium===0&&readinessIssues.length===0;
 q.finalizedAt=new Date().toISOString();
 await write(path.join(DATA,'quality-report.json'),q);
-console.log(`Final readiness: decisionReady=${q.decisionReady}, smokeOk=${q.readinessChecks.smokeOk}, smokeFresh=${q.readinessChecks.smokeFresh}, coverageReady=${q.readinessChecks.coverageReady}`);
+console.log(`Final readiness: decisionReady=${q.decisionReady}, highIssues=${existingHigh}, mediumIssues=${existingMedium}, smokeOk=${q.readinessChecks.smokeOk}, smokeFresh=${q.readinessChecks.smokeFresh}, coverageReady=${q.readinessChecks.coverageReady}`);
 if(!q.decisionReady)process.exitCode=2;
