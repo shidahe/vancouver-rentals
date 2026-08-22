@@ -1,0 +1,143 @@
+{
+  "checkedAt": "2026-08-22T18:55:06.237Z",
+  "page": {
+    "source": "Rentals.ca",
+    "url": "https://rentals.ca/vancouver/3664-west-2nd-avenue-2",
+    "address": "3664 West 2nd Avenue, Vancouver, British Columbia V6R 1J7",
+    "addressUnit": null,
+    "geo": {
+      "lat": 49.2701996,
+      "lng": -123.1850565
+    },
+    "targetArea": true,
+    "active": true,
+    "floorplans": [
+      {
+        "label": "2 Bedroom Apartments In Vancouver",
+        "unit": null,
+        "beds": 2,
+        "baths": null,
+        "sqft": null,
+        "rent": 2000,
+        "available": true
+      },
+      {
+        "label": "3 Bedroom Apartments In Vancouver",
+        "unit": null,
+        "beds": 3,
+        "baths": null,
+        "sqft": null,
+        "rent": 2000,
+        "available": true
+      }
+    ],
+    "single": {
+      "rent": 2000,
+      "beds": 2,
+      "baths": 1,
+      "sqft": 650
+    },
+    "checkedAt": "2026-08-22T18:55:06.237Z"
+  },
+  "jsonLd": [
+    {
+      "@context": "http://schema.org",
+      "@type": "Accommodation",
+      "url": "https://rentals.ca/vancouver/3664-west-2nd-avenue-2",
+      "name": "3664 West 2nd Avenue",
+      "description": "$2,500 | 3664 West 2nd Ave, Vancouver | 2BD/1BA Garden-Level Suite | Kitsilano\nProperty Overview\nWelcome to this private, self-contained 2-bedroom legal suite in a charming character home built in 2000, ideally located in the heart of Kitsilano. This bright garden-level home offers a private entrance, a personal patio, and a peaceful residential setting just minutes from Jericho Beach and UBC.\nWith a functional layout, private laundry, and excellent access to parks, beaches, transit, and shopping, this suite is perfect for professionals, students, or couples seeking comfortable West Side living.\nUnit Features:\n2 Bedrooms | 1 Bathroom\nApprox. 650 sq ft\nSelf-contained legal suite\nGarden-level unit\nFront and back private entrances\nFrench doors leading to a private patio\nCarpeted bedrooms\nPrivate washer & dryer\nPrivate bathtub with dedicated hot water\nFridge / Freezer\nWired for internet access\nAlarm system\nOutdoor Features:\nPrivate patio\nYard access\nPrivate storage shed\nBuilding Amenities\nBicycle storage\nAdditional storage space\nUtilities:\nWater included\nOther utilities paid by tenant\nParking:\nStreet parking available (no dedicated parking included)\nPolicies:\n1-year lease required\nNo pets\nNo smoking\nLocation Highlights:\nPrime Kitsilano location at West 2nd Avenue & Alma Street\nMinutes from Jericho Beach\nConvenient access to UBC\nClose to parks, cafés, restaurants, grocery stores, and shopping\nExcellent public transit connections\nQuiet, highly desirable West Side neighborhood",
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 49.2701996,
+        "longitude": -123.1850565
+      },
+      "containedInPlace": {
+        "@type": "City",
+        "url": "",
+        "name": "",
+        "address": {
+          "@type": "PostalAddress",
+          "addressCountry": "CA",
+          "addressRegion": ""
+        }
+      },
+      "containsPlace": [
+        {
+          "@context": "http://schema.org",
+          "@type": "Accommodation",
+          "name": "2 Bedroom",
+          "potentialAction": {
+            "@type": "RentAction",
+            "priceSpecification": {
+              "@type": "PriceSpecification",
+              "price": 2499,
+              "priceCurrency": "CAD"
+            }
+          },
+          "floorSize": {
+            "@type": "QuantitativeValue",
+            "unitCode": "FTK",
+            "value": "650.0"
+          }
+        }
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "CA",
+        "addressLocality": "Vancouver",
+        "addressRegion": "British Columbia",
+        "postalCode": "V6R 1J7",
+        "streetAddress": "3664 West 2nd Avenue"
+      },
+      "telephone": "(236) 904-0359",
+      "photo": [
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/1494113/basement-2240232834.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/1494113/basement-2240232834.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/1494113/basement-2240232835.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/1494113/basement-2240232835.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/1494113/basement-2240232838.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/1494113/basement-2240232838.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/1494113/basement-2240232842.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/1494113/basement-2240232842.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/1494113/basement-2240232839.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/1494113/basement-2240232839.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/1494113/basement-2240232836.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/1494113/basement-2240232836.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/1494113/basement-2240232837.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/1494113/basement-2240232837.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/1494113/basement-2240232840.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/1494113/basement-2240232840.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/1494113/basement-2240232841.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/1494113/basement-2240232841.jpg"
+        }
+      ]
+    }
+  ],
+  "textSample": "Alert\nContact Property Contact\nSave Alert\n\nSimilar listings in\n\nCreate an Alert\nParking Information\nFeatures & Amenities\nUtilities Included\nAbout 3664 West 2nd Avenue\n\n$2,500 | 3664 West 2nd Ave, Vancouver | 2BD/1BA Garden-Level Suite | Kitsilano\n\nProperty Overview\n\n\n\n\nWelcome to this private, self-contained 2-bedroom legal suite in a charming character home built in 2000, ideally located in the heart of Kitsilano. This bright garden-level home offers a private entrance, a personal patio, and a peaceful residential setting just minutes from Jericho Beach and UBC.\n\n\n\n\nWith a functional layout, private laundry, and excellent access to parks, beaches, transit, and shopping, this suite is perfect for professionals, students, or couples seeking comfortable West Side living.\n\n\n\n\nUnit Features:\n\n2 Bedrooms | 1 Bathroom\n\nApprox. 650 sq ft\n\nSelf-contained legal suite\n\nGarden-level unit\n\nFront and back private entrances\n\nFrench doors leading to a private patio\n\nCarpeted bedrooms\n\nPrivate washer & dryer\n\nPrivate bathtub with dedicated hot water\n\nFridge / Freezer\n\nWired for internet access\n\nAlarm system\n\n\n\n\nOutdoor Features:\n\nPrivate patio\n\nYard access\n\nPrivate storage shed\n\nBuilding Amenities\n\nBicycle storage\n\nAdditional storage space\n\n\n\n\nUtilities:\n\nWater included\n\nOther utilities paid by tenant\n\n\n\n\nParking:\n\nStreet parking available (no dedicated parking included)\n\n\n\n\nPolicies:\n\n1-year lease required\n\nNo pets\n\nNo smoking\n\n\n\n\nLocation Highlights:\n\nPrime Kitsilano location at West 2nd Avenue & Alma Street\n\nMinutes from Jericho Beach\n\nConvenient access to UBC\n\nClose to parks, cafés, restaurants, grocery stores, and shopping\n\nExcellent public transit connections\n\nQuiet, highly desirable West Side neighborhood\n\n\n\n\n\n\n\n$2,500 | 3664 West 2nd Ave, Vancouver | 2BD/1BA Garden-Level Suite | Kitsilano\n\nProperty Overview\n\n\n\n\nWelcome to this private, self-contained 2-bedroom legal suite in a charming character home built in 2000, ideally located in the heart of Kitsilano. This bright garden-level home offers a private entrance, a personal patio, and a peaceful residential setting just minutes from Jericho Beach and UBC.\n\n\n\n\nWith a functional layout, private laundry, and excellent access to parks, beaches, transit, and shopping, this suite is perfect for professionals, students, or couples seeking comfortable West Side living.\n\n\n\n\nUnit Features:\n\n2 Bedrooms | 1 Bathroom\n\nApprox. 650 sq ft\n\nSelf-contained legal suite\n\nGarden-level unit\n\nFront and back private entrances\n\nFrench doors leading to a private patio\n\nCarpeted bedrooms\n\nPrivate washer & dryer\n\nPrivate bathtub with dedicated hot water\n\nFridge / Freezer\n\nWired for internet access\n\nAlarm system\n\n\n\n\nOutdoor Features:\n\nPrivate patio\n\nYard access\n\nPrivate storage shed\n\nBuilding Amenities\n\nBicycle storage\n\nAdditional storage space\n\n\n\n\nUtilities:\n\nWater included\n\nOther utilities paid by tenant\n\n\n\n\nParking:\n\nStreet parking available (no dedicated parking included)\n\n\n\n\nPolicies:\n\n1-year lease required\n\nNo pets\n\nNo smoking\n\n\n\n\nLocation Highlights:\n\nPrime Kitsilano location at West 2nd Avenue & Alma Street\n\nMinutes from Jericho Beach\n\nConvenient access to UBC\n\nClose to parks, cafés, restaurants, grocery stores, and shopping\n\nExcellent public transit connections\n\nQuiet, highly desirable West Side neighborhood\n\n\n\n\n\n\n\nNeighbourhood Score & Commute Time\nOpen House Dates\nSave Alert\n\nSimilar listings in\n\nCreate an Alert\nSummary\n\nReport Listing\n\nExplore Similar Rentals\nPopular Rent Searches In Vancouver\nSearch by Amenities\nPet Friendly Apartments In Vancouver\nApartments With A/C In Vancouver\nApartments With Ensuite Laundry In Vancouver\nApartments With Dishwasher In Vancouver\nSearch by Bedrooms\n1 Bedroom Apartments In Vancouver\n2 Bedroom Apartments In Vancouver\n3 Bedroom Apartments In Vancouver\n4 Bedroom Apartments In Vancouver\nSearch by Budget\nApartments Under $1000 In Vancouver\nApartments Under $1250 In Vancouver\nApartments Under $2000 In Vancouver\nApartments Under $2500 In Vancouver\nSee All Rentals in Vancouver\nThis website uses cookies to ensure you get the best experience on our website. By clicking \"Allow All\", you consent to our use of cookies. Privacy Policy ↗\nManage Cookies\nDecline\nAllow All"
+}
