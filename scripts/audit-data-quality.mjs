@@ -10,6 +10,7 @@ const issues=[];
 const keyMap=new Map();
 const floorplanMap=new Map();
 const canon=s=>String(s||'').toLowerCase().replace(/\bwest\b/g,'w').replace(/\beast\b/g,'e').replace(/\bstreet\b/g,'st').replace(/\bavenue\b/g,'ave').replace(/[^a-z0-9]+/g,' ').trim();
+const postalFsa=s=>String(s||'').toUpperCase().match(/\b([A-Z]\d[A-Z])\s?\d[A-Z]\d\b/)?.[1]||null;
 // Unit labels in the UI can include descriptive suffixes, e.g. "315 · 2 Bedroom + Den".
 // Extract the concrete leading unit token so duplicate-unit protection remains exact even when display labels are richer.
 const concreteUnit=s=>{
@@ -26,6 +27,8 @@ for(const l of active){
   if(!l.url||!/^https:\/\//.test(l.url))issues.push({severity:'high',id:l.id,issue:'missing-source-url'});
   if(!Number.isFinite(Number(l.rent))||Number(l.rent)<1500||Number(l.rent)>15000)issues.push({severity:'high',id:l.id,issue:'implausible-rent',detail:l.rent});
   if(!Number.isFinite(Number(l.lat))||!Number.isFinite(Number(l.lng)))issues.push({severity:'high',id:l.id,issue:'missing-coordinates'});
+  const fsa=postalFsa(l.address);
+  if(fsa&&!/^V[56][A-Z]$/.test(fsa))issues.push({severity:'high',id:l.id,issue:'non-vancouver-postal-code',detail:`postalFsa=${fsa}`});
   if(l.bedrooms==null||l.bathrooms==null||l.sqft==null)issues.push({severity:'medium',id:l.id,issue:'missing-core-fields'});
   if(strongOfficialNegative(l.officialStatus))issues.push({severity:'high',id:l.id,issue:'active-despite-official-negative',detail:`officialStatus=${l.officialStatus}${l.officialStatusAuthority?` (${l.officialStatusAuthority})`:''}`});
   if(String(l.verificationLevel||'').toLowerCase()==='unverified')issues.push({severity:'high',id:l.id,issue:'active-but-unverified'});
