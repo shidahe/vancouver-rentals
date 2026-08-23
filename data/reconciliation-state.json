@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-08-23T16:58:49.619Z",
+  "refreshedAt": "2026-08-23T18:56:22.698Z",
   "groups": [
     {
       "identityKey": "2715 w 2nd ave::url:a56695812770",
@@ -31,7 +31,7 @@
         "zumper"
       ],
       "rents": [
-        4950
+        4500
       ],
       "exactUnit": false,
       "matchedListingId": "waterloo-2477-zumper",
@@ -107,6 +107,18 @@
       ],
       "exactUnit": false,
       "matchedListingId": "zumper-72d664370f34",
+      "result": "candidate_only"
+    },
+    {
+      "identityKey": "4326 w 10th ave::url:e98ee8eee638",
+      "sources": [
+        "zumper"
+      ],
+      "rents": [
+        3450
+      ],
+      "exactUnit": false,
+      "matchedListingId": "zumper-2e85ffb3f678",
       "result": "candidate_only"
     },
     {

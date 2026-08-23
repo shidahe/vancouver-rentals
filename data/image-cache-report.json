@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-08-23T16:59:23.910Z",
+  "refreshedAt": "2026-08-23T18:56:57.119Z",
   "listings": {
     "arbutus-residences-315-2den-900": {
       "cached": 3,
@@ -17,15 +17,15 @@
     },
     "treo-2688-vine-r3142696": {
       "cached": 3,
-      "preserved": 2,
-      "downloaded": 1,
+      "preserved": 3,
+      "downloaded": 0,
       "failures": [],
       "photoPageUrl": "https://www.zolo.ca/vancouver-real-estate/2688-vine"
     },
     "blenheim-terrace-204-r3149612": {
       "cached": 3,
-      "preserved": 2,
-      "downloaded": 1,
+      "preserved": 3,
+      "downloaded": 0,
       "failures": [],
       "photoPageUrl": "https://www.zolo.ca/vancouver-real-estate/3333-west-4th-avenue/204"
     },
@@ -208,8 +208,8 @@
   "totals": {
     "sourceListings": 29,
     "cachedListings": 29,
-    "downloaded": 2,
+    "downloaded": 0,
     "failed": 0,
-    "preserved": 128
+    "preserved": 130
   }
 }
