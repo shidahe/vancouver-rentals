@@ -9,7 +9,9 @@ on:
     paths:
       - 'scripts/refresh-listings.mjs'
       - 'scripts/refresh-safe.mjs'
+      - 'scripts/prune-invalid-geography.mjs'
       - 'scripts/refresh-zumper-units-v2.mjs'
+      - 'scripts/cleanup-verification-methods.mjs'
       - 'scripts/refresh-rentalsca.mjs'
       - 'scripts/refresh-livrent.mjs'
       - 'scripts/refresh-craigslist.mjs'
