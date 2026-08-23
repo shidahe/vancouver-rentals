@@ -1,11 +1,11 @@
 {
-  "checkedAt": "2026-08-23T07:10:19.636Z",
+  "checkedAt": "2026-08-23T10:58:40.291Z",
   "ok": true,
   "checkpoints": {
     "render": {
       "title": "Vancouver Westside Rentals",
-      "cards": 22,
-      "shown": 22
+      "cards": 21,
+      "shown": 21
     },
     "stats": {
       "labels": [
@@ -16,16 +16,16 @@
         "Last refreshed"
       ],
       "values": [
-        "28",
-        "23",
+        "27",
+        "22",
         "1",
         "2",
-        "2026-08-23 07:04:03"
+        "2026-08-23 10:52:11"
       ],
-      "html": "<div class=\"stat\"><strong>28</strong><span>Active</span></div><div class=\"stat\"><strong>23</strong><span>New</span></div><div class=\"stat\"><strong>1</strong><span>Price drops</span></div><div class=\"stat\"><strong>2</strong><span>To verify</span></div><div class=\"stat\"><strong>2026-08-23 07:04:03</strong><span>Last refreshed</span></div>"
+      "html": "<div class=\"stat\"><strong>27</strong><span>Active</span></div><div class=\"stat\"><strong>22</strong><span>New</span></div><div class=\"stat\"><strong>1</strong><span>Price drops</span></div><div class=\"stat\"><strong>2</strong><span>To verify</span></div><div class=\"stat\"><strong>2026-08-23 10:52:11</strong><span>Last refreshed</span></div>"
     },
     "map": {
-      "markers": 22,
+      "markers": 21,
       "desktopMapVisible": true
     },
     "filters": "ok",
@@ -36,14 +36,14 @@
     },
     "sourceLink": "https://www.rentfaster.ca/properties/2139-lahb-ave-vancouver-454186",
     "photos": {
-      "total": 22,
-      "loaded": 21,
+      "total": 21,
+      "loaded": 20,
       "fallbacks": 1,
       "bad": []
     },
     "markerPositions": {
-      "total": 22,
-      "unique": 22
+      "total": 21,
+      "unique": 21
     },
     "dataEndpoints": "ok",
     "mobile": "ok",
