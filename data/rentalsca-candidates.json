@@ -1,117 +1,38 @@
 {
-  "refreshedAt": "2026-08-23T10:56:24.165Z",
+  "refreshedAt": "2026-08-23T13:08:33.261Z",
   "mode": "candidate-only",
   "sourceHealth": {
     "rentalsca-kitsilano-2br": {
-      "checkedAt": "2026-08-23T10:56:24.165Z",
+      "checkedAt": "2026-08-23T13:08:33.261Z",
       "status": 200,
       "ok": true,
       "finalUrl": "https://rentals.ca/vancouver/kitsilano/all-apartments-all-houses/2-bedrooms"
     },
     "rentalsca-point-grey-2br": {
-      "checkedAt": "2026-08-23T10:56:24.165Z",
+      "checkedAt": "2026-08-23T13:08:33.261Z",
       "status": 200,
       "ok": true,
       "finalUrl": "https://rentals.ca/vancouver/west-point-grey/2-bedrooms"
     },
     "rentalsca-arbutus-2br": {
-      "checkedAt": "2026-08-23T10:56:24.165Z",
-      "status": 200,
-      "ok": true,
-      "finalUrl": "https://rentals.ca/vancouver/arbutus-ridge/2-bedrooms"
+      "checkedAt": "2026-08-23T13:08:33.261Z",
+      "status": 429,
+      "ok": false,
+      "finalUrl": "https://rentals.ca/vancouver/arbutus-ridge/2-bedrooms?__cf_chl_rt_tk=lrsao0scP721Ahmqvvy0QG6U_IXYHEOj5JrLFpJ73Oc-1787490519-1.0.1.1-Hpz9tX_SdPF7o2WmRR5NAjZrg_SHkkJJKx4Wp_kOGdk"
     },
     "rentalsca-dunbar-2br": {
-      "checkedAt": "2026-08-23T10:56:24.165Z",
-      "status": 200,
-      "ok": true,
-      "finalUrl": "https://rentals.ca/vancouver/dunbar-southlands/2-bedrooms"
+      "checkedAt": "2026-08-23T13:08:33.261Z",
+      "status": 429,
+      "ok": false,
+      "finalUrl": "https://rentals.ca/vancouver/dunbar-southlands/2-bedrooms?__cf_chl_rt_tk=wU4IxMXczMjSe8xSGqjN0ix7iZelYCb1knI8O28jHi0-1787490519-1.0.1.1-DxMk8n_kppGdrNnmRs1QijaWtWIJBzpet9ZJkgyX0K0"
     },
     "rentalsca-quilchena-2br": {
-      "checkedAt": "2026-08-23T10:56:24.165Z",
-      "status": 404,
+      "checkedAt": "2026-08-23T13:08:33.261Z",
+      "status": 429,
       "ok": false,
-      "finalUrl": "https://rentals.ca/vancouver/quilchena/2-bedrooms"
+      "finalUrl": "https://rentals.ca/vancouver/quilchena/2-bedrooms?__cf_chl_rt_tk=SDrq_JE1x1RXi_1plgSBXeWa2gKsFxAa1kBxTmhvDJE-1787490519-1.0.1.1-1oE9wmo6A2HMzkQvSJxz9ZvXaAa2WN7YuCEK6u1QYSg"
     }
   },
-  "pages": [
-    {
-      "source": "Rentals.ca",
-      "url": "https://rentals.ca/vancouver/3664-west-2nd-avenue-2",
-      "address": "3664 West 2nd Avenue, Vancouver, British Columbia V6R 1J7",
-      "addressUnit": null,
-      "geo": {
-        "lat": 49.2701996,
-        "lng": -123.1850565
-      },
-      "targetArea": true,
-      "active": true,
-      "floorplans": [
-        {
-          "label": "2 Bedroom Apartments In Vancouver",
-          "unit": null,
-          "beds": 2,
-          "baths": null,
-          "sqft": null,
-          "rent": 2000,
-          "available": true
-        },
-        {
-          "label": "3 Bedroom Apartments In Vancouver",
-          "unit": null,
-          "beds": 3,
-          "baths": null,
-          "sqft": null,
-          "rent": 2000,
-          "available": true
-        }
-      ],
-      "single": {
-        "rent": 2000,
-        "beds": 2,
-        "baths": 1,
-        "sqft": 650
-      },
-      "checkedAt": "2026-08-23T10:56:24.165Z"
-    }
-  ],
-  "inventories": [
-    {
-      "source": "Rentals.ca",
-      "url": "https://rentals.ca/vancouver/3664-west-2nd-avenue-2",
-      "address": "3664 West 2nd Avenue, Vancouver, British Columbia V6R 1J7",
-      "unit": null,
-      "floorplan": "2 Bedroom Apartments In Vancouver",
-      "identityKey": "3664 w 2nd ave::floorplan:2 bedroom apartments in vancouver",
-      "rent": 2000,
-      "bedrooms": 2,
-      "bathrooms": null,
-      "sqft": null,
-      "geo": {
-        "lat": 49.2701996,
-        "lng": -123.1850565
-      },
-      "active": true,
-      "checkedAt": "2026-08-23T10:56:24.165Z",
-      "publishable": false
-    },
-    {
-      "source": "Rentals.ca",
-      "url": "https://rentals.ca/vancouver/3664-west-2nd-avenue-2",
-      "address": "3664 West 2nd Avenue, Vancouver, British Columbia V6R 1J7",
-      "unit": null,
-      "floorplan": "3 Bedroom Apartments In Vancouver",
-      "identityKey": "3664 w 2nd ave::floorplan:3 bedroom apartments in vancouver",
-      "rent": 2000,
-      "bedrooms": 3,
-      "bathrooms": null,
-      "sqft": null,
-      "geo": {
-        "lat": 49.2701996,
-        "lng": -123.1850565
-      },
-      "active": true,
-      "checkedAt": "2026-08-23T10:56:24.165Z",
-      "publishable": false
-    }
-  ]
+  "pages": [],
+  "inventories": []
 }
