@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-08-23T13:09:54.504Z",
+  "refreshedAt": "2026-08-23T16:58:49.619Z",
   "groups": [
     {
       "identityKey": "2715 w 2nd ave::url:a56695812770",
@@ -26,18 +26,6 @@
       "result": "candidate_only"
     },
     {
-      "identityKey": "w broadway alma st::url:0ddb9d6d5385",
-      "sources": [
-        "zumper"
-      ],
-      "rents": [
-        3300
-      ],
-      "exactUnit": false,
-      "matchedListingId": "zumper-c047dd62c7b5",
-      "result": "candidate_only"
-    },
-    {
       "identityKey": "2477 waterloo st::url:9bf4862de36a",
       "sources": [
         "zumper"
@@ -47,6 +35,18 @@
       ],
       "exactUnit": false,
       "matchedListingId": "waterloo-2477-zumper",
+      "result": "candidate_only"
+    },
+    {
+      "identityKey": "w broadway alma st::url:0ddb9d6d5385",
+      "sources": [
+        "zumper"
+      ],
+      "rents": [
+        3300
+      ],
+      "exactUnit": false,
+      "matchedListingId": "zumper-c047dd62c7b5",
       "result": "candidate_only"
     },
     {
