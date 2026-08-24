@@ -18,27 +18,30 @@ const candidates = await read(candidatesPath, []);
 const postal = s => String(s || '').toUpperCase().match(/\b([A-Z]\d[A-Z])\s?\d[A-Z]\d\b/)?.[1] || null;
 const isVancouverPostal = s => {
   const fsa = postal(s);
-  // Vancouver postal FSAs are V5* and V6*. The west-side geo gate narrows this further spatially.
-  // Explicitly reject V7* North Shore addresses even if a source provides a bad Vancouver locality/coordinate.
   return !fsa || /^V[56][A-Z]$/.test(fsa);
 };
 const isAutoZumper = x => x?.source === 'Zumper live detail' || (/zumper\.com/i.test(x?.url || '') && /^zumper-/i.test(x?.id || ''));
+const knownOutOfScope = x => /zumper\.com\/address\/1616-w-13th-ave-902-vancouver-bc-v6j-2g6-can/i.test(x?.url || '');
 
 const removed = [];
 db.listings = (db.listings || []).filter(x => {
-  if (!isAutoZumper(x) || isVancouverPostal(x.address)) return true;
-  removed.push({ id: x.id, address: x.address, reason: 'non-vancouver-postal-code' });
+  if (!isAutoZumper(x)) return true;
+  let reason = null;
+  if (!isVancouverPostal(x.address)) reason = 'non-vancouver-postal-code';
+  else if (knownOutOfScope(x)) reason = 'explicit-source-neighborhood-out-of-scope';
+  if (!reason) return true;
+  removed.push({ id: x.id, address: x.address, reason });
   delete history[x.id];
   delete imageSources[x.id];
   return false;
 });
 
-const filteredCandidates = (candidates || []).filter(x => !(/zumper\.com/i.test(x?.url || '') && !isVancouverPostal(x.address)));
+const filteredCandidates = (candidates || []).filter(x => !(/zumper\.com/i.test(x?.url || '') && (!isVancouverPostal(x.address) || knownOutOfScope(x))));
 
 if (removed.length || filteredCandidates.length !== candidates.length) {
   db.meta ||= {};
   db.meta.lastGeographySanitizer = new Date().toISOString();
-  db.meta.geographySanitizerPolicy = 'Auto-discovered Zumper inventory with an explicit non-Vancouver postal prefix is rejected even when source coordinates fall inside the Vancouver West bounding box.';
+  db.meta.geographySanitizerPolicy = 'Auto-discovered Zumper inventory is rejected for explicit non-Vancouver postal prefixes and for source-confirmed out-of-scope neighborhoods, even when source coordinates fall inside the broad Vancouver West bounding box.';
   await write(listingsPath, db);
   await write(historyPath, history);
   await write(imageSourcesPath, imageSources);
