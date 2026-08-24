@@ -45,12 +45,31 @@ for(const b of cfg.buildings||[]){
     const verifiedSource=sourceMatches.find(x=>x.verified);
     const verified=!!verifiedSource;
     buildingEvidence.inventories.push({...inv,verified,verifiedSource:verifiedSource?.url||null,sourceMatches});
-    if(!verified)continue;
 
     let listing=db.listings.find(l=>
       (inv.unit&&String(l.unit||'').replace(/^#/,'').startsWith(String(inv.unit))&&norm(l.buildingName||'').includes(norm(b.name))) ||
       (norm(l.buildingName||'')===norm(b.name)&&Number(l.rent)===Number(inv.rent)&&Math.abs(Number(l.sqft||0)-Number(inv.sqft))<=5)
     );
+
+    // A building/multi-unit page saying that some apartment is available is not enough to keep a
+    // specific watched unit/floorplan active. If no fallback source contains the exact configured
+    // rent + sqft identity anchors and an availability signal, fail closed until exact inventory
+    // evidence returns. This prevents stale units from surviving because another unit in the same
+    // building remains available.
+    if(!verified){
+      if(listing&&listing.availabilityStatus==='active'){
+        listing.availabilityStatus='needs_confirmation';
+        listing.status='corrected';
+        listing.lastChecked=day;
+        listing.verificationLevel='unverified';
+        listing.verificationMethod='Exact purpose-built unit/floorplan inventory was not confirmed on any usable fallback source in the latest refresh.';
+        const note='NEEDS CONFIRMATION: latest purpose-built fallback sources did not confirm the exact configured rent + sqft inventory row.';
+        history[listing.id] ||= [];
+        if(!history[listing.id].some(h=>h.date===day&&h.note===note)) history[listing.id].push({date:day,rent:listing.rent,note});
+      }
+      continue;
+    }
+
     if(!listing){
       const id=`${slug(b.name)}-${inv.unit?`unit-${slug(inv.unit)}`:`floorplan-${slug(inv.key)}`}`;
       listing={
@@ -76,7 +95,7 @@ for(const b of cfg.buildings||[]){
 }
 await browser.close();
 db.meta.lastPurposeBuiltRefresh=now;
-db.meta.purposeBuiltPolicy='Purpose-built buildings are expanded into independent unit/floorplan inventory. Exact unit is preferred; when a public unit number is absent, floorplan + rent + sqft is a temporary independent inventory identity. Multiple independent live source URLs are tried so one blocked marketplace cannot hide inventory. Building-level leasing language alone never creates a listing.';
+db.meta.purposeBuiltPolicy='Purpose-built buildings are expanded into independent unit/floorplan inventory. Exact unit is preferred; when a public unit number is absent, floorplan + rent + sqft is a temporary independent inventory identity. Multiple independent live source URLs are tried so one blocked marketplace cannot hide inventory. Building-level leasing language alone never creates or preserves a listing: watched inventory without an exact current match is hidden as needs_confirmation until exact evidence returns.';
 await write(path.join(DATA,'purpose-built-status.json'),{refreshedAt:now,buildings:evidence});
 await write(path.join(DATA,'listings.json'),db);
 await write(path.join(DATA,'history.json'),history);
