@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-08-24T16:59:24.064Z",
+  "checkedAt": "2026-08-24T19:08:25.586Z",
   "ok": false,
   "checkpoints": {
     "render": {
@@ -20,9 +20,9 @@
         "21",
         "2",
         "3",
-        "2026-08-24 16:53:02"
+        "2026-08-24 19:01:55"
       ],
-      "html": "<div class=\"stat\"><strong>26</strong><span>Active</span></div><div class=\"stat\"><strong>21</strong><span>New</span></div><div class=\"stat\"><strong>2</strong><span>Price drops</span></div><div class=\"stat\"><strong>3</strong><span>To verify</span></div><div class=\"stat\"><strong>2026-08-24 16:53:02</strong><span>Last refreshed</span></div>"
+      "html": "<div class=\"stat\"><strong>26</strong><span>Active</span></div><div class=\"stat\"><strong>21</strong><span>New</span></div><div class=\"stat\"><strong>2</strong><span>Price drops</span></div><div class=\"stat\"><strong>3</strong><span>To verify</span></div><div class=\"stat\"><strong>2026-08-24 19:01:55</strong><span>Last refreshed</span></div>"
     },
     "map": {
       "markers": 20,
@@ -51,16 +51,10 @@
       "consoleErrors": [
         "Failed to load resource: the server responded with a status of 403 ()",
         "Failed to load resource: the server responded with a status of 403 ()",
-        "Failed to load resource: the server responded with a status of 403 ()",
-        "Failed to load resource: the server responded with a status of 403 ()",
-        "Failed to load resource: the server responded with a status of 403 ()",
-        "Failed to load resource: the server responded with a status of 403 ()",
-        "Failed to load resource: the server responded with a status of 403 ()",
-        "Failed to load resource: the server responded with a status of 403 ()",
         "Failed to load resource: the server responded with a status of 403 ()"
       ],
       "failedRequests": []
     }
   },
-  "error": "Error: Browser console errors: Failed to load resource: the server responded with a status of 403 ()\nFailed to load resource: the server responded with a status of 403 ()\nFailed to load resource: the server responded with a status of 403 ()\nFailed to load resource: the server responded with a status of 403 ()\nFailed to load resource: the server responded with a status of 403 ()\nFailed to load resource: the server responded with a status of 403 ()\nFailed to load resource: the server responded with a status of 403 ()\nFailed to load resource: the server responded with a status of 403 ()\nFailed to load resource: the server responded with a status of 403 ()\n    at assert (file:///home/runner/work/vancouver-rentals/vancouver-rentals/scripts/test-site.mjs:10:50)\n    at file:///home/runner/work/vancouver-rentals/vancouver-rentals/scripts/test-site.mjs:137:3"
+  "error": "Error: Browser console errors: Failed to load resource: the server responded with a status of 403 ()\nFailed to load resource: the server responded with a status of 403 ()\nFailed to load resource: the server responded with a status of 403 ()\n    at assert (file:///home/runner/work/vancouver-rentals/vancouver-rentals/scripts/test-site.mjs:10:50)\n    at file:///home/runner/work/vancouver-rentals/vancouver-rentals/scripts/test-site.mjs:137:3"
 }

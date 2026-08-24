@@ -1,117 +1,38 @@
 {
-  "refreshedAt": "2026-08-24T16:57:11.193Z",
+  "refreshedAt": "2026-08-24T19:06:04.189Z",
   "mode": "candidate-only",
   "sourceHealth": {
     "rentalsca-kitsilano-2br": {
-      "checkedAt": "2026-08-24T16:57:11.193Z",
+      "checkedAt": "2026-08-24T19:06:04.189Z",
       "status": 200,
       "ok": true,
       "finalUrl": "https://rentals.ca/vancouver/kitsilano/all-apartments-all-houses/2-bedrooms"
     },
     "rentalsca-point-grey-2br": {
-      "checkedAt": "2026-08-24T16:57:11.193Z",
+      "checkedAt": "2026-08-24T19:06:04.189Z",
       "status": 200,
       "ok": true,
       "finalUrl": "https://rentals.ca/vancouver/west-point-grey/2-bedrooms"
     },
     "rentalsca-arbutus-2br": {
-      "checkedAt": "2026-08-24T16:57:11.193Z",
-      "status": 200,
-      "ok": true,
-      "finalUrl": "https://rentals.ca/vancouver/arbutus-ridge/2-bedrooms"
+      "checkedAt": "2026-08-24T19:06:04.189Z",
+      "status": 429,
+      "ok": false,
+      "finalUrl": "https://rentals.ca/vancouver/arbutus-ridge/2-bedrooms?__cf_chl_rt_tk=5nrESRymr5T7BIjy0Z7n2qjhMWy_LiPJ0GdD_OAZNRQ-1787598370-1.0.1.1-HW7Vowyup0enbe225RqhfFX6nwZhJqQQskrLEu30x.Y"
     },
     "rentalsca-dunbar-2br": {
-      "checkedAt": "2026-08-24T16:57:11.193Z",
-      "status": 200,
-      "ok": true,
-      "finalUrl": "https://rentals.ca/vancouver/dunbar-southlands/2-bedrooms"
+      "checkedAt": "2026-08-24T19:06:04.189Z",
+      "status": 429,
+      "ok": false,
+      "finalUrl": "https://rentals.ca/vancouver/dunbar-southlands/2-bedrooms?__cf_chl_rt_tk=Zjm8nm4DmnocAavV0gyP8vl3fzhvrgbBz3hJNfO.cEE-1787598370-1.0.1.1-NTGRcKZrm.meXZB7Im9WTc3bC0tjUgfW7NQw3cNhFlU"
     },
     "rentalsca-quilchena-2br": {
-      "checkedAt": "2026-08-24T16:57:11.193Z",
-      "status": 404,
+      "checkedAt": "2026-08-24T19:06:04.189Z",
+      "status": 429,
       "ok": false,
-      "finalUrl": "https://rentals.ca/vancouver/quilchena/2-bedrooms"
+      "finalUrl": "https://rentals.ca/vancouver/quilchena/2-bedrooms?__cf_chl_rt_tk=Jz2wskGPK5Bm6eJRURv0g3aK.7r2SCM4hAMM.OL7wjM-1787598370-1.0.1.1-X2f_C.7wLtNWmzTsahVdOjaYErm72jhTUVWTn4SKe7o"
     }
   },
-  "pages": [
-    {
-      "source": "Rentals.ca",
-      "url": "https://rentals.ca/vancouver/1328-maple-street",
-      "address": "1328 Maple Street, Vancouver, British Columbia V6J 3R9",
-      "addressUnit": null,
-      "geo": {
-        "lat": 49.2740149,
-        "lng": -123.1498775
-      },
-      "targetArea": true,
-      "active": true,
-      "floorplans": [
-        {
-          "label": "2 Bedroom Apartments In Vancouver",
-          "unit": null,
-          "beds": 2,
-          "baths": null,
-          "sqft": null,
-          "rent": 2000,
-          "available": true
-        },
-        {
-          "label": "3 Bedroom Apartments In Vancouver",
-          "unit": null,
-          "beds": 3,
-          "baths": null,
-          "sqft": null,
-          "rent": 2000,
-          "available": true
-        }
-      ],
-      "single": {
-        "rent": 2000,
-        "beds": 1,
-        "baths": 2,
-        "sqft": 850
-      },
-      "checkedAt": "2026-08-24T16:57:11.193Z"
-    }
-  ],
-  "inventories": [
-    {
-      "source": "Rentals.ca",
-      "url": "https://rentals.ca/vancouver/1328-maple-street",
-      "address": "1328 Maple Street, Vancouver, British Columbia V6J 3R9",
-      "unit": null,
-      "floorplan": "2 Bedroom Apartments In Vancouver",
-      "identityKey": "1328 maple st::floorplan:2 bedroom apartments in vancouver",
-      "rent": 2000,
-      "bedrooms": 2,
-      "bathrooms": null,
-      "sqft": null,
-      "geo": {
-        "lat": 49.2740149,
-        "lng": -123.1498775
-      },
-      "active": true,
-      "checkedAt": "2026-08-24T16:57:11.193Z",
-      "publishable": false
-    },
-    {
-      "source": "Rentals.ca",
-      "url": "https://rentals.ca/vancouver/1328-maple-street",
-      "address": "1328 Maple Street, Vancouver, British Columbia V6J 3R9",
-      "unit": null,
-      "floorplan": "3 Bedroom Apartments In Vancouver",
-      "identityKey": "1328 maple st::floorplan:3 bedroom apartments in vancouver",
-      "rent": 2000,
-      "bedrooms": 3,
-      "bathrooms": null,
-      "sqft": null,
-      "geo": {
-        "lat": 49.2740149,
-        "lng": -123.1498775
-      },
-      "active": true,
-      "checkedAt": "2026-08-24T16:57:11.193Z",
-      "publishable": false
-    }
-  ]
+  "pages": [],
+  "inventories": []
 }

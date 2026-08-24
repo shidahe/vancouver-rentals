@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-08-24T16:59:14.706Z",
+  "refreshedAt": "2026-08-24T19:08:05.733Z",
   "listings": {
     "arbutus-residences-315-2den-900": {
       "cached": 3,
@@ -47,7 +47,12 @@
       "cached": 3,
       "preserved": 3,
       "downloaded": 0,
-      "failures": [],
+      "failures": [
+        {
+          "url": "https://admin.warringtonresidential.com/wp-content/uploads/2025/03/19-on-the-greenway-2.jpg",
+          "error": "fetch failed"
+        }
+      ],
       "photoPageUrl": "https://warringtonresidential.com/properties/19-on-the-greenway/"
     },
     "waterloo-2477-zumper": {
@@ -209,7 +214,7 @@
     "sourceListings": 29,
     "cachedListings": 29,
     "downloaded": 0,
-    "failed": 0,
+    "failed": 1,
     "preserved": 132
   }
 }
