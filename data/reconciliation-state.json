@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-08-24T07:36:32.536Z",
+  "refreshedAt": "2026-08-24T13:21:34.096Z",
   "groups": [
     {
       "identityKey": "2715 w 2nd ave::url:a56695812770",
@@ -11,18 +11,6 @@
       ],
       "exactUnit": false,
       "matchedListingId": "zumper-2fde865f7e2c",
-      "result": "candidate_only"
-    },
-    {
-      "identityKey": "2268 w broadway::unit:312",
-      "sources": [
-        "zumper"
-      ],
-      "rents": [
-        3600
-      ],
-      "exactUnit": true,
-      "matchedListingId": "2268-w-broadway-312-r3153999",
       "result": "candidate_only"
     },
     {
@@ -95,18 +83,6 @@
       ],
       "exactUnit": false,
       "matchedListingId": "zumper-976e340c66a7",
-      "result": "candidate_only"
-    },
-    {
-      "identityKey": "1616 w 13th ave 902::url:d02e799d62bd",
-      "sources": [
-        "zumper"
-      ],
-      "rents": [
-        3100
-      ],
-      "exactUnit": false,
-      "matchedListingId": "zumper-a187082b4e0f",
       "result": "candidate_only"
     },
     {
@@ -203,18 +179,6 @@
       ],
       "exactUnit": true,
       "matchedListingId": "zumper-e353962d7737",
-      "result": "candidate_only"
-    },
-    {
-      "identityKey": "4376 alexandra st::unit:3",
-      "sources": [
-        "zumper"
-      ],
-      "rents": [
-        3000
-      ],
-      "exactUnit": true,
-      "matchedListingId": "zumper-e40c2e86e2bc",
       "result": "candidate_only"
     }
   ],
