@@ -24,6 +24,11 @@
       "date": "2026-08-19",
       "rent": 4110,
       "note": "AUTOMATION CORRECTION: restored canonical rent after parser mixed prices from a multi-unit page. Unit 315 was incorrectly overwritten by a different floorplan price from the same multi-unit RentFaster page during the first automation run."
+    },
+    {
+      "date": "2026-08-24",
+      "rent": 4110,
+      "note": "NEEDS CONFIRMATION: latest purpose-built fallback sources did not confirm the exact configured rent + sqft inventory row."
     }
   ],
   "arbutus-terrace-unit6-2den": [

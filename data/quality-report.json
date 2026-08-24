@@ -1,16 +1,11 @@
 {
-  "generatedAt": "2026-08-24T13:22:26.823Z",
-  "activeCount": 27,
-  "decisionReady": true,
+  "generatedAt": "2026-08-24T16:59:18.731Z",
+  "activeCount": 26,
+  "decisionReady": false,
   "highIssueCount": 0,
   "mediumIssueCount": 0,
-  "infoIssueCount": 46,
+  "infoIssueCount": 45,
   "issues": [
-    {
-      "severity": "info",
-      "id": "arbutus-residences-315-2den-900",
-      "issue": "unknown-orientation"
-    },
     {
       "severity": "info",
       "id": "treo-2688-vine-r3142696",
@@ -238,19 +233,13 @@
     }
   ],
   "readinessChecks": {
-    "smokeOk": true,
+    "smokeOk": false,
     "smokeFresh": true,
-    "smokeCheckedAt": "2026-08-24T13:22:33.200Z",
-    "latestDataAt": "2026-08-24T13:21:38.327Z",
+    "smokeCheckedAt": "2026-08-24T16:59:24.064Z",
+    "latestDataAt": "2026-08-24T16:58:42.792Z",
     "coverageReady": true,
-    "healthyDiscoveryLanes": 3,
+    "healthyDiscoveryLanes": 4,
     "coverageWarnings": [
-      {
-        "severity": "warning",
-        "lane": "rentalsca",
-        "status": "degraded",
-        "detail": "2/5 regional searches healthy"
-      },
       {
         "severity": "warning",
         "lane": "livrent",
@@ -259,6 +248,11 @@
       }
     ]
   },
-  "readinessIssues": [],
-  "finalizedAt": "2026-08-24T13:22:33.301Z"
+  "readinessIssues": [
+    {
+      "severity": "high",
+      "issue": "latest-browser-smoke-failed-or-missing"
+    }
+  ],
+  "finalizedAt": "2026-08-24T16:59:24.148Z"
 }
