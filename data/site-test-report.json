@@ -1,6 +1,6 @@
 {
-  "checkedAt": "2026-08-24T19:08:25.586Z",
-  "ok": false,
+  "checkedAt": "2026-08-24T22:55:01.371Z",
+  "ok": true,
   "checkpoints": {
     "render": {
       "title": "Vancouver Westside Rentals",
@@ -48,13 +48,29 @@
     "dataEndpoints": "ok",
     "mobile": "ok",
     "browserHealth": {
-      "consoleErrors": [
-        "Failed to load resource: the server responded with a status of 403 ()",
-        "Failed to load resource: the server responded with a status of 403 ()",
-        "Failed to load resource: the server responded with a status of 403 ()"
-      ],
-      "failedRequests": []
+      "consoleErrors": [],
+      "failedRequests": [],
+      "fatalHttpResponses": [],
+      "recoverableImageHttpResponses": [
+        {
+          "status": 403,
+          "resourceType": "image",
+          "method": "GET",
+          "url": "https://iss-cdn.myrealpage.com/JJoTxvFUAtG7KxCK79uD8Mze_I1Rh9gZkPhlOY9SkAM/rs%3Aauto%3A0%3A0%3A0/g%3Asm/aHR0cDovL3MzLmFtYXpvbmF3cy5jb20vbXJwLWxpc3RpbmdzLzcvOS8yLzEwOTA5NDI5Ny8zYjFkYTdiZjk1NDljYWFlNWU4OTA5ZjE2MmM2MGYzOS5qcGVn"
+        },
+        {
+          "status": 403,
+          "resourceType": "image",
+          "method": "GET",
+          "url": "https://iss-cdn.myrealpage.com/Da5OArdZ0YlHgEGM04vZcBR03s9IhTbcWuQoUwHJFKU/rs%3Aauto%3A320%3A0%3A0/g%3Asm/aHR0cDovL3MzLmFtYXpvbmF3cy5jb20vbXJwLWxpc3RpbmdzLzcvOS8yLzEwOTA5NDI5Ny8zYjFkYTdiZjk1NDljYWFlNWU4OTA5ZjE2MmM2MGYzOS5qcGVn"
+        },
+        {
+          "status": 403,
+          "resourceType": "image",
+          "method": "GET",
+          "url": "https://iss-cdn.myrealpage.com/7mdxK8SGlhQCNpIRqP8KB5vHL5qdkBpnd2yeb2l_Z_M/rs%3Aauto%3A320%3A0%3A0/g%3Asm/aHR0cDovL3MzLmFtYXpvbmF3cy5jb20vbXJwLWxpc3RpbmdzLzcvOS8yLzEwOTA5NDI5Ny81Y2E1OWRhYmI1MjdjMzUzNWJhZDY1ZDVkYWU3ZDY5MC5qcGVn"
+        }
+      ]
     }
-  },
-  "error": "Error: Browser console errors: Failed to load resource: the server responded with a status of 403 ()\nFailed to load resource: the server responded with a status of 403 ()\nFailed to load resource: the server responded with a status of 403 ()\n    at assert (file:///home/runner/work/vancouver-rentals/vancouver-rentals/scripts/test-site.mjs:10:50)\n    at file:///home/runner/work/vancouver-rentals/vancouver-rentals/scripts/test-site.mjs:137:3"
+  }
 }
