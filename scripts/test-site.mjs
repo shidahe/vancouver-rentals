@@ -27,8 +27,14 @@ try {
   const page = await context.newPage();
   const consoleErrors = [];
   const failedRequests = [];
+  const httpErrors = [];
   page.on('console', m => { if (m.type() === 'error') consoleErrors.push(m.text()); });
-  page.on('requestfailed', r => failedRequests.push(`${r.method()} ${r.url()} :: ${r.failure()?.errorText || 'failed'}`));
+  page.on('requestfailed', r => failedRequests.push(`${r.resourceType()} ${r.method()} ${r.url()} :: ${r.failure()?.errorText || 'failed'}`));
+  page.on('response', r => {
+    if (r.status() < 400) return;
+    const req = r.request();
+    httpErrors.push({ status: r.status(), resourceType: req.resourceType(), method: req.method(), url: r.url() });
+  });
 
   await page.goto(BASE, { waitUntil: 'networkidle', timeout: 60000 });
   await page.waitForFunction(() => document.querySelectorAll('.listing-card').length > 0, null, { timeout: 30000 });
@@ -131,11 +137,21 @@ try {
   report.checkpoints.mobile = 'ok';
   await mobile.close();
 
-  const meaningfulConsole = consoleErrors.filter(x => !/favicon/i.test(x));
+  // Chromium emits generic "Failed to load resource" console errors for HTTP image
+  // failures even when the app intentionally recovers with its tested source-link
+  // fallback. Treat those generic messages as diagnostics; HTTP responses below are
+  // classified by resource type so core application resources remain fail-closed.
+  const meaningfulConsole = consoleErrors.filter(x => !/favicon/i.test(x) && !/^Failed to load resource: the server responded with a status of \d+ \(\)$/i.test(x));
   const meaningfulFailed = failedRequests.filter(x => !/favicon/i.test(x));
-  report.checkpoints.browserHealth = { consoleErrors: meaningfulConsole, failedRequests: meaningfulFailed };
+  const fatalHttp = httpErrors.filter(x => {
+    if (/favicon/i.test(x.url)) return false;
+    return x.resourceType !== 'image';
+  });
+  const recoverableImageHttp = httpErrors.filter(x => x.resourceType === 'image' && !/favicon/i.test(x.url));
+  report.checkpoints.browserHealth = { consoleErrors: meaningfulConsole, failedRequests: meaningfulFailed, fatalHttpResponses: fatalHttp, recoverableImageHttpResponses: recoverableImageHttp };
   assert(meaningfulConsole.length === 0, `Browser console errors: ${meaningfulConsole.join('\n')}`);
   assert(meaningfulFailed.length === 0, `Failed browser requests: ${meaningfulFailed.join('\n')}`);
+  assert(fatalHttp.length === 0, `Core browser resources returned HTTP errors: ${JSON.stringify(fatalHttp)}`);
 
   report = { ...report, checkedAt: new Date().toISOString(), ok: true };
 } catch (err) {
