@@ -9,8 +9,11 @@ const active=db.listings.filter(l=>(l.availabilityStatus||l.status)==='active'||
 const issues=[];
 const keyMap=new Map();
 const floorplanMap=new Map();
+const EAST_BOUNDARY=-123.145;
 const canon=s=>String(s||'').toLowerCase().replace(/\bwest\b/g,'w').replace(/\beast\b/g,'e').replace(/\bstreet\b/g,'st').replace(/\bavenue\b/g,'ave').replace(/[^a-z0-9]+/g,' ').trim();
 const postalFsa=s=>String(s||'').toUpperCase().match(/\b([A-Z]\d[A-Z])\s?\d[A-Z]\d\b/)?.[1]||null;
+const isAutoZumper=l=>l?.source==='Zumper live detail'||(/zumper\.com/i.test(l?.url||'')&&/^zumper-/i.test(l?.id||''));
+const explicitlyOutOfScope=l=>/\b(?:Fairview|Downtown Vancouver|Yaletown|Mount Pleasant|Riley Park|Olympic Village|South Cambie)\b/i.test(String(l?.neighborhood||''));
 // Unit labels in the UI can include descriptive suffixes, e.g. "315 · 2 Bedroom + Den".
 // Extract the concrete leading unit token so duplicate-unit protection remains exact even when display labels are richer.
 const concreteUnit=s=>{
@@ -29,6 +32,8 @@ for(const l of active){
   if(!Number.isFinite(Number(l.lat))||!Number.isFinite(Number(l.lng)))issues.push({severity:'high',id:l.id,issue:'missing-coordinates'});
   const fsa=postalFsa(l.address);
   if(fsa&&!/^V[56][A-Z]$/.test(fsa))issues.push({severity:'high',id:l.id,issue:'non-vancouver-postal-code',detail:`postalFsa=${fsa}`});
+  if(isAutoZumper(l)&&explicitlyOutOfScope(l))issues.push({severity:'high',id:l.id,issue:'auto-listing-out-of-scope-neighborhood',detail:l.neighborhood});
+  if(isAutoZumper(l)&&Number.isFinite(Number(l.lng))&&Number(l.lng)>EAST_BOUNDARY)issues.push({severity:'high',id:l.id,issue:'auto-listing-east-of-target-boundary',detail:`lng=${l.lng} > ${EAST_BOUNDARY}`});
   if(l.bedrooms==null||l.bathrooms==null||l.sqft==null)issues.push({severity:'medium',id:l.id,issue:'missing-core-fields'});
   if(strongOfficialNegative(l.officialStatus))issues.push({severity:'high',id:l.id,issue:'active-despite-official-negative',detail:`officialStatus=${l.officialStatus}${l.officialStatusAuthority?` (${l.officialStatusAuthority})`:''}`});
   if(String(l.verificationLevel||'').toLowerCase()==='unverified')issues.push({severity:'high',id:l.id,issue:'active-but-unverified'});
