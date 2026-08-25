@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-08-25T13:20:10.095Z",
+  "refreshedAt": "2026-08-25T16:58:04.828Z",
   "listings": {
     "arbutus-residences-315-2den-900": {
       "cached": 3,
@@ -169,26 +169,12 @@
       "failures": [],
       "photoPageUrl": "https://www.zumper.com/address/4655-vly-dr-vancouver-bc-v6j-5l6-can"
     },
-    "zumper-e40c2e86e2bc": {
-      "cached": 5,
-      "preserved": 5,
-      "downloaded": 0,
-      "failures": [],
-      "photoPageUrl": "https://www.zumper.com/address/4376-alexandra-st-vancouver-bc-v6j-4c7-can"
-    },
     "2268-w-broadway-312-r3153999": {
       "cached": 5,
       "preserved": 5,
       "downloaded": 0,
       "failures": [],
       "photoPageUrl": "https://www.zumper.com/address/2268-w-bdwy-vancouver-bc-v6k-0b1-can"
-    },
-    "zumper-72d664370f34": {
-      "cached": 5,
-      "preserved": 5,
-      "downloaded": 0,
-      "failures": [],
-      "photoPageUrl": "https://www.zumper.com/address/1575-bch-ave-vancouver-bc-v6g-1y5-can"
     },
     "zumper-2fde865f7e2c": {
       "cached": 5,
@@ -206,10 +192,10 @@
     }
   },
   "totals": {
-    "sourceListings": 29,
-    "cachedListings": 29,
+    "sourceListings": 27,
+    "cachedListings": 27,
     "downloaded": 0,
     "failed": 0,
-    "preserved": 132
+    "preserved": 122
   }
 }
