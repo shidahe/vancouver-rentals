@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-25T05:01:38.368Z",
+  "generatedAt": "2026-08-25T07:17:10.674Z",
   "activeCount": 25,
   "decisionReady": true,
   "highIssueCount": 0,
@@ -225,11 +225,17 @@
   "readinessChecks": {
     "smokeOk": true,
     "smokeFresh": true,
-    "smokeCheckedAt": "2026-08-25T05:01:44.375Z",
-    "latestDataAt": "2026-08-25T05:01:04.736Z",
+    "smokeCheckedAt": "2026-08-25T07:17:16.401Z",
+    "latestDataAt": "2026-08-25T07:16:35.725Z",
     "coverageReady": true,
-    "healthyDiscoveryLanes": 4,
+    "healthyDiscoveryLanes": 3,
     "coverageWarnings": [
+      {
+        "severity": "warning",
+        "lane": "rentalsca",
+        "status": "degraded",
+        "detail": "2/5 regional searches healthy"
+      },
       {
         "severity": "warning",
         "lane": "livrent",
@@ -239,5 +245,5 @@
     ]
   },
   "readinessIssues": [],
-  "finalizedAt": "2026-08-25T05:01:44.465Z"
+  "finalizedAt": "2026-08-25T07:17:16.473Z"
 }
