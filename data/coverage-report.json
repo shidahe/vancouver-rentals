@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-08-26T07:17:00.946Z",
+  "generatedAt": "2026-08-26T13:25:47.689Z",
   "coverageReady": true,
-  "healthyLaneCount": 4,
+  "healthyLaneCount": 3,
   "freshLaneCount": 5,
   "lanes": [
     {
@@ -10,7 +10,7 @@
       "healthy": true,
       "status": "healthy",
       "detail": "13 fresh live candidates",
-      "refreshedAt": "2026-08-26T07:14:00.719Z"
+      "refreshedAt": "2026-08-26T13:22:16.596Z"
     },
     {
       "id": "craigslist",
@@ -18,15 +18,15 @@
       "healthy": true,
       "status": "healthy",
       "detail": "4/4 regional searches healthy",
-      "refreshedAt": "2026-08-26T07:15:12.901Z"
+      "refreshedAt": "2026-08-26T13:23:31.954Z"
     },
     {
       "id": "rentalsca",
       "kind": "broad-marketplace",
-      "healthy": true,
-      "status": "healthy",
-      "detail": "3/5 regional searches healthy",
-      "refreshedAt": "2026-08-26T07:15:02.918Z"
+      "healthy": false,
+      "status": "degraded",
+      "detail": "2/5 regional searches healthy",
+      "refreshedAt": "2026-08-26T13:23:23.695Z"
     },
     {
       "id": "livrent",
@@ -34,7 +34,7 @@
       "healthy": false,
       "status": "unhealthy",
       "detail": "0/3 searches healthy",
-      "refreshedAt": "2026-08-26T07:15:12.316Z"
+      "refreshedAt": "2026-08-26T13:23:31.156Z"
     },
     {
       "id": "realtylink",
@@ -42,10 +42,16 @@
       "healthy": true,
       "status": "healthy",
       "detail": "3/3 searches healthy",
-      "refreshedAt": "2026-08-26T07:15:20.227Z"
+      "refreshedAt": "2026-08-26T13:23:40.309Z"
     }
   ],
   "warnings": [
+    {
+      "severity": "warning",
+      "lane": "rentalsca",
+      "status": "degraded",
+      "detail": "2/5 regional searches healthy"
+    },
     {
       "severity": "warning",
       "lane": "livrent",

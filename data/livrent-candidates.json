@@ -1,21 +1,21 @@
 {
-  "refreshedAt": "2026-08-26T07:15:12.316Z",
+  "refreshedAt": "2026-08-26T13:23:31.156Z",
   "mode": "candidate-only",
   "sourceHealth": {
     "livrent-vancouver-2br": {
-      "checkedAt": "2026-08-26T07:15:12.316Z",
+      "checkedAt": "2026-08-26T13:23:31.156Z",
       "status": 403,
       "ok": false,
       "finalUrl": "https://liv.rent/rental-listings/city/vancouver/2-bedroom"
     },
     "livrent-vancouver-2br2ba": {
-      "checkedAt": "2026-08-26T07:15:12.316Z",
+      "checkedAt": "2026-08-26T13:23:31.156Z",
       "status": 403,
       "ok": false,
       "finalUrl": "https://liv.rent/rental-listings/city/vancouver/2-bedroom-2-bath"
     },
     "livrent-all-fallback": {
-      "checkedAt": "2026-08-26T07:15:12.316Z",
+      "checkedAt": "2026-08-26T13:23:31.156Z",
       "status": 403,
       "ok": false,
       "finalUrl": "https://liv.rent/rental-listings"
