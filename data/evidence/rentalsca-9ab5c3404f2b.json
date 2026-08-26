@@ -1,0 +1,218 @@
+{
+  "checkedAt": "2026-08-26T20:10:32.144Z",
+  "page": {
+    "source": "Rentals.ca",
+    "url": "https://rentals.ca/vancouver/kits-walk-by-strand",
+    "address": "2075 W 12th Avenue, Vancouver, British Columbia V6J 2G3",
+    "addressUnit": null,
+    "geo": {
+      "lat": 49.2612564,
+      "lng": -123.1522117
+    },
+    "targetArea": true,
+    "active": true,
+    "floorplans": [
+      {
+        "label": "2 Bedroom Apartments In Vancouver",
+        "unit": null,
+        "beds": 2,
+        "baths": null,
+        "sqft": null,
+        "rent": 2000,
+        "available": true
+      },
+      {
+        "label": "3 Bedroom Apartments In Vancouver",
+        "unit": null,
+        "beds": 3,
+        "baths": null,
+        "sqft": null,
+        "rent": 2000,
+        "available": true
+      }
+    ],
+    "single": {
+      "rent": 2000,
+      "beds": 3,
+      "baths": null,
+      "sqft": null
+    },
+    "checkedAt": "2026-08-26T20:10:32.144Z"
+  },
+  "jsonLd": [
+    {
+      "@context": "http://schema.org",
+      "@type": "ApartmentComplex",
+      "url": "https://rentals.ca/vancouver/kits-walk-by-strand",
+      "name": "Kits Walk by Strand",
+      "description": "Kits Walk is move-in ready, book a tour today!\n**Kits Walk is move-in ready, book a tour today! **\nVirtual Appointments available.Kits Walk is a limited collection of studio, 1, 2, and 3 bedroom, rental homes steps from the Arbutus Greenway. Kits Walk offers plenty of west side charm in the heart Kitsilano. From the high-level finishing, contemporary design, building amenities and conveniences, and transit options outside your door, we are excited to show you Kits Walk and help you find your new home.Features:• Stylish and sophisticated kitchens featuring quartz countertops, flat-panel wood grain cabinetry and energy efficient stainless steel appliances including a quiet, in-suite Whirlpool washer and dryer• Spacious closets and in-suite or below grade storage• Secured state of the art keyless entry• Private outdoor spaces• Over height ceilings• Plenty of natural lightAmenities:• 24-hour camera surveillance, secured underground parking, and personally coded entry fob• Electric vehicle parking stalls• Common lounge, kitchenette, and BBQ• Outdoor common area with children's play area• In-building Bike Room with maintenance bench and Dog Wash Station• Free bike storage\n**Virtual Appointments available. **\n**Features: **\n**Amenities: **\nKits Walk by StrandEmail ****** or call******Located at the corner of 12th Avenue  and Arbutus Street, steps from the Arbutus Greenway in the heart of Kitsilano\n**Kits Walk by Strand **\n******** **\nDimensions, sizes, specifications, layouts, and materials are approximate only and subject to change without notice. E.&O.E\nDimensions, sizes, specifications, layouts, and materials are approximate only and subject to change without notice. E.&O.E\n_Dimensions, sizes, specifications, layouts, and materials are approximate only and subject to change without notice. E.&O.E _\nAdditional Information:\n**Additional Information: **\nKeyless entryEnsuite bathroomCity viewsBeach nearbyInternet readyLaminate Flooring ThroughoutOutdoor BBQ areaDog wash station\nKeyless entry\nEnsuite bathroom\nCity views\nBeach nearby\nInternet ready\nLaminate Flooring Throughout\nOutdoor BBQ area\nDog wash station",
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 49.2612564,
+        "longitude": -123.1522117
+      },
+      "containedInPlace": {
+        "@type": "City",
+        "url": "",
+        "name": "",
+        "address": {
+          "@type": "PostalAddress",
+          "addressCountry": "CA",
+          "addressRegion": ""
+        }
+      },
+      "containsPlace": [
+        {
+          "@context": "http://schema.org",
+          "@type": "Apartment",
+          "name": "2 Bedroom",
+          "potentialAction": {
+            "@type": "RentAction",
+            "priceSpecification": {
+              "@type": "PriceSpecification",
+              "price": 3650,
+              "priceCurrency": "CAD"
+            }
+          },
+          "floorSize": {
+            "@type": "QuantitativeValue",
+            "unitCode": "FTK",
+            "value": "741.0"
+          }
+        }
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "CA",
+        "addressLocality": "Vancouver",
+        "addressRegion": "British Columbia",
+        "postalCode": "V6J 2G3",
+        "streetAddress": "2075 W 12th Avenue"
+      },
+      "telephone": "(778) 386-0522",
+      "photo": [
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/947676/apartment-2214243970.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/947676/apartment-2214243970.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/947676/apartment-2214243971.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/947676/apartment-2214243971.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/947676/apartment-2214243972.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/947676/apartment-2214243972.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/947676/apartment-2214243973.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/947676/apartment-2214243973.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/947676/apartment-2214243974.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/947676/apartment-2214243974.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/947676/apartment-2214243975.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/947676/apartment-2214243975.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/947676/apartment-2214243976.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/947676/apartment-2214243976.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/947676/apartment-2214243977.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/947676/apartment-2214243977.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/947676/apartment-2214243978.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/947676/apartment-2214243978.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/947676/apartment-2214243979.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/947676/apartment-2214243979.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/947676/apartment-2240975486.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/947676/apartment-2240975486.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/947676/apartment-2214243980.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/947676/apartment-2214243980.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/947676/apartment-2240975487.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/947676/apartment-2240975487.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/947676/apartment-2214243981.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/947676/apartment-2214243981.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/947676/apartment-2240975488.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/947676/apartment-2240975488.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/947676/apartment-2214243982.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/947676/apartment-2214243982.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/947676/apartment-2240975489.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/947676/apartment-2240975489.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/947676/apartment-2214243983.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/947676/apartment-2214243983.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/947676/apartment-2240975490.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/947676/apartment-2240975490.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/947676/apartment-2214243984.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/947676/apartment-2214243984.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/947676/apartment-2240975491.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/947676/apartment-2240975491.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/947676/apartment-2214243985.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/947676/apartment-2214243985.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/947676/apartment-2240975492.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/947676/apartment-2240975492.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/947676/apartment-2214243986.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/947676/apartment-2214243986.jpg"
+        }
+      ]
+    }
+  ],
+  "textSample": "Alert\nSave Alert\n\nSimilar listings in\n\nCreate an Alert\nParking Information\nFeatures & Amenities\nUtilities Included\nAbout Kits Walk by Strand\n\nKits Walk is move-in ready, book a tour today!\n\n\nVirtual Appointments available. \n\nKits Walk is a limited collection of studio, 1, 2, and 3 bedroom, rental homes steps from the Arbutus Greenway. Kits Walk offers plenty of west side charm in the heart Kitsilano. From the high-level finishing, contemporary design, building amenities and conveniences, and transit options outside your door, we are excited to show you Kits Walk and help you find your new home.\n\nFeatures:\n• Stylish and sophisticated kitchens featuring quartz countertops, flat-panel wood grain cabinetry and energy efficient stainless steel appliances including a quiet, in-suite Whirlpool washer and dryer\n• Spacious closets and in-suite or below grade storage\n• Secured state of the art keyless entry\n• Private outdoor spaces\n• Over height ceilings\n• Plenty of natural light\n\nAmenities:\n• 24-hour camera surveillance, secured underground parking, and personally coded entry fob\n• Electric vehicle parking stalls\n• Common lounge, kitchenette, and BBQ\n• Outdoor common area with children's play area\n• In-building Bike Room with maintenance bench and Dog Wash Station\n• Free bike storage\n \n\n\nKits Walk by Strand\nEmail ****** or call ******\nLocated at the corner of 12th Avenue  and Arbutus Street, steps from the Arbutus Greenway in the heart of Kitsilano\n\nDimensions, sizes, specifications, layouts, and materials are approximate only and subject to change without notice. E.&O.E\n\n\nAdditional Information:\nKeyless entry\nEnsuite bathroom\nCity views\nBeach nearby\nInternet ready\nLaminate Flooring Throughout\nOutdoor BBQ area\nDog wash station\n\nKits Walk is move-in ready, book a tour today!\n\n\nVirtual Appointments available. \n\nKits Walk is a limited collection of studio, 1, 2, and 3 bedroom, rental homes steps from the Arbutus Greenway. Kits Walk offers plenty of west side charm in the heart Kitsilano. From the high-level finishing, contemporary design, building amenities and conveniences, and transit options outside your door, we are excited to show you Kits Walk and help you find your new home.\n\nFeatures:\n• Stylish and sophisticated kitchens featuring quartz countertops, flat-panel wood grain cabinetry and energy efficient stainless steel appliances including a quiet, in-suite Whirlpool washer and dryer\n• Spacious closets and in-suite or below grade storage\n• Secured state of the art keyless entry\n• Private outdoor spaces\n• Over height ceilings\n• Plenty of natural light\n\nAmenities:\n• 24-hour camera surveillance, secured underground parking, and personally coded entry fob\n• Electric vehicle parking stalls\n• Common lounge, kitchenette, and BBQ\n• Outdoor common area with children's play area\n• In-building Bike Room with maintenance bench and Dog Wash Station\n• Free bike storage\n \n\n\nKits Walk by Strand\nEmail ****** or call ******\nLocated at the corner of 12th Avenue  and Arbutus Street, steps from the Arbutus Greenway in the heart of Kitsilano\n\nDimensions, sizes, specifications, layouts, and materials are approximate only and subject to change without notice. E.&O.E\n\n\nAdditional Information:\nKeyless entry\nEnsuite bathroom\nCity views\nBeach nearby\nInternet ready\nLaminate Flooring Throughout\nOutdoor BBQ area\nDog wash station\nNeighbourhood Score & Commute Time\nOpen House Dates\nSummary\n\nReport Listing\n\nExplore Similar Rentals\nPopular Rent Searches In Vancouver\nSearch by Amenities\nPet Friendly Apartments In Vancouver\nApartments With A/C In Vancouver\nApartments With Ensuite Laundry In Vancouver\nApartments With Dishwasher In Vancouver\nSearch by Bedrooms\n1 Bedroom Apartments In Vancouver\n2 Bedroom Apartments In Vancouver\n3 Bedroom Apartments In Vancouver\n4 Bedroom Apartments In Vancouver\nSearch by Budget\nApartments Under $1000 In Vancouver\nApartments Under $1250 In Vancouver\nApartments Under $2000 In Vancouver\nApartments Under $2500 In Vancouver\nSee All Rentals in Vancouver\nThis website uses cookies to ensure you get the best experience on our website. By clicking \"Allow All\", you consent to our use of cookies. Privacy Policy ↗\nManage Cookies\nDecline\nAllow All"
+}
