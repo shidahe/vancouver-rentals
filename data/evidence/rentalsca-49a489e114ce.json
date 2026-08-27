@@ -1,0 +1,406 @@
+{
+  "checkedAt": "2026-08-27T22:22:33.891Z",
+  "page": {
+    "source": "Rentals.ca",
+    "url": "https://rentals.ca/vancouver/the-robert",
+    "address": "2525 Carnarvon Street, Vancouver, British Columbia V6K 0C6",
+    "addressUnit": null,
+    "geo": {
+      "lat": 49.2638827,
+      "lng": -123.1722891
+    },
+    "targetArea": true,
+    "active": true,
+    "floorplans": [
+      {
+        "label": "2 Bedroom Apartments In Vancouver",
+        "unit": null,
+        "beds": 2,
+        "baths": null,
+        "sqft": null,
+        "rent": 2000,
+        "available": true
+      },
+      {
+        "label": "3 Bedroom Apartments In Vancouver",
+        "unit": null,
+        "beds": 3,
+        "baths": null,
+        "sqft": null,
+        "rent": 2000,
+        "available": true
+      }
+    ],
+    "single": {
+      "rent": 2000,
+      "beds": 1,
+      "baths": null,
+      "sqft": null
+    },
+    "checkedAt": "2026-08-27T22:22:33.891Z"
+  },
+  "jsonLd": [
+    {
+      "@context": "http://schema.org",
+      "@type": "ApartmentComplex",
+      "url": "https://rentals.ca/vancouver/the-robert",
+      "name": "The Robert",
+      "description": "***NOTE: IMAGES SHOWN ARE FOR REFERENCE ONLY AND MAY NOT ACCURATELY REPRESENT EACH AVAILABLE UNIT***\nWelcome to the Robert, a modern 5 story purpose built rental building in the Broadway Village/Greektown area of Kitsilano (2525 Carnarvon Street) with 70 apartments, including: studios, 1 beds, 2beds & 3beds.  The building is owned and professionally managed by Orr Development Corp.\nSUITE FEATURES\nSUITE FEATURES\n•   Large open concept floorplans, no tiny micro units!\n•   Gourmet kitchen with stainless appliance package and quartz counters\n•   LVP flooring throughout, (no carpets!)\n•             All units have balconies with frosted privacy glass, propane BBQs permitted\n•             Full size in-suite stackable washer/dryer in each unit\n•             Flex room in most units\n•             Modern track lighting\n•             Undermount sinks in kitchens & bathrooms\n•             Heat Recovery Ventilation unit in each suite to provide fresh air\n•             Secured parking available\n•             Secured lockers & bike lockers available\nBUILDING FEATURES\nBUILDING FEATURES\n•             MODERN 5 story PURPOSE BUILT RENTAL building – possibility of long-term tenure.  Above 1 floor of commercial including Shoppers Drug Mart\n•             70 modern rental apartments: studios, 1bed, 2bed & 3bed units\n• Amenity Room with pool table, kitchen area, washroom, outdoor seating & dining, lush landscaped area\n•             Extrememly secure building with FOB access at entry and elevators, security cameras and daily security patrols\n• Full time Resident Manager (onsite) & emergency maintenance service\n•             Building is completely NO SMOKING\n•            PETS: up to 2 Cats allowed with pet deposit, SORRY NO DOGS PERMITTED\nNEIGHBOURHOOD\nNEIGHBOURHOOD\nBroadway Village/Greektown area of West Kitsilano in Vancouver, Close proximity to 99 B line bus connecting to UBC and SKYTRAIN, WALKSCORE 92Access to bike paths on 8th Avenue & Balaclava StreetsShort bike ride to Kits Beach/Pool, Jericho beach, Connaught Park Farmers Market, 4th Avenue shopping, Kits Community Centre & Ice Rink etcWide variety of retail stores & restaurants in walking distance including The Hollywood Theatre, Just Another Coffee Shop, Shoppers Drug Mart, Starbucks, Liquor Store, The Banana Leaf, Silk N Spice Restaurant, Your Dollar Store, GoodCo Pub, Parthenon Market, Painted Ship Pub, Orange Theory Fitness, Safeway etc\nBroadway Village/Greektown area of West Kitsilano in Vancouver, Close proximity to 99 B line bus connecting to UBC and SKYTRAIN, WALKSCORE 92\nAccess to bike paths on 8th Avenue & Balaclava Streets\nShort bike ride to Kits Beach/Pool, Jericho beach, Connaught Park Farmers Market, 4th Avenue shopping, Kits Community Centre & Ice Rink etc\nWide variety of retail stores & restaurants in walking distance including The Hollywood Theatre, Just Another Coffee Shop, Shoppers Drug Mart, Starbucks, Liquor Store, The Banana Leaf, Silk N Spice Restaurant, Your Dollar Store, GoodCo Pub, Parthenon Market, Painted Ship Pub, Orange Theory Fitness, Safeway etc\nAdditional Information:\n**Additional Information: **\nKeyless entryEnsuite bathroomCity viewsBeach nearbyInternet readyPrivate balconyOutdoor common dining areaIn-suite storage in most unitsBbqs permittedPool TableWalk-in closets in many units\nKeyless entry\nEnsuite bathroom\nCity views\nBeach nearby\nInternet ready\nPrivate balcony\nOutdoor common dining area\nIn-suite storage in most units\nBbqs permitted\nPool Table\nWalk-in closets in many units",
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 49.2638827,
+        "longitude": -123.1722891
+      },
+      "containedInPlace": {
+        "@type": "City",
+        "url": "",
+        "name": "",
+        "address": {
+          "@type": "PostalAddress",
+          "addressCountry": "CA",
+          "addressRegion": ""
+        }
+      },
+      "containsPlace": [
+        {
+          "@context": "http://schema.org",
+          "@type": "Apartment",
+          "name": "2.5 Bedroom",
+          "potentialAction": {
+            "@type": "RentAction",
+            "priceSpecification": {
+              "@type": "PriceSpecification",
+              "price": 3795,
+              "priceCurrency": "CAD"
+            }
+          },
+          "floorSize": {
+            "@type": "QuantitativeValue",
+            "unitCode": "FTK",
+            "value": "3795.0"
+          }
+        },
+        {
+          "@context": "http://schema.org",
+          "@type": "Apartment",
+          "name": "2.5 Bedroom",
+          "potentialAction": {
+            "@type": "RentAction",
+            "priceSpecification": {
+              "@type": "PriceSpecification",
+              "price": 3795,
+              "priceCurrency": "CAD"
+            }
+          },
+          "floorSize": {
+            "@type": "QuantitativeValue",
+            "unitCode": "FTK",
+            "value": "849.0"
+          }
+        }
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "CA",
+        "addressLocality": "Vancouver",
+        "addressRegion": "British Columbia",
+        "postalCode": "V6K 0C6",
+        "streetAddress": "2525 Carnarvon Street"
+      },
+      "telephone": "None",
+      "photo": [
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/532340/apartment-2007741414.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/532340/apartment-2007741414.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/532340/apartment-2007741415.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/532340/apartment-2007741415.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/532340/apartment-2007741416.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/532340/apartment-2007741416.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/532340/apartment-2007741417.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/532340/apartment-2007741417.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/532340/apartment-2007741418.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/532340/apartment-2007741418.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/532340/apartment-2007741419.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/532340/apartment-2007741419.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/532340/apartment-2007741420.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/532340/apartment-2007741420.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/532340/apartment-2007741421.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/532340/apartment-2007741421.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/532340/apartment-2007741422.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/532340/apartment-2007741422.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/532340/apartment-2007741423.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/532340/apartment-2007741423.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/532340/apartment-2007741424.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/532340/apartment-2007741424.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/532340/apartment-2007741425.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/532340/apartment-2007741425.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/532340/apartment-2007741426.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/532340/apartment-2007741426.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/532340/apartment-2007741427.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/532340/apartment-2007741427.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/532340/apartment-2007741428.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/532340/apartment-2007741428.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/532340/apartment-2007741429.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/532340/apartment-2007741429.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/532340/apartment-2007741430.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/532340/apartment-2007741430.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/532340/apartment-2007741431.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/532340/apartment-2007741431.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/532340/apartment-2007741432.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/532340/apartment-2007741432.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/532340/apartment-2007741433.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/532340/apartment-2007741433.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/532340/apartment-2007741434.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/532340/apartment-2007741434.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/532340/apartment-2007741435.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/532340/apartment-2007741435.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/532340/apartment-2007741436.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/532340/apartment-2007741436.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/532340/apartment-2007741437.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/532340/apartment-2007741437.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/532340/apartment-2007741438.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/532340/apartment-2007741438.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/532340/apartment-2007741439.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/532340/apartment-2007741439.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/532340/apartment-2007741440.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/532340/apartment-2007741440.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/532340/apartment-2007741441.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/532340/apartment-2007741441.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/532340/apartment-2007741442.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/532340/apartment-2007741442.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/532340/apartment-2007741443.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/532340/apartment-2007741443.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/532340/apartment-2007741444.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/532340/apartment-2007741444.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/532340/apartment-2007741445.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/532340/apartment-2007741445.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/532340/apartment-2007741446.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/532340/apartment-2007741446.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/532340/apartment-2007741447.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/532340/apartment-2007741447.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/532340/apartment-2240974686.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/532340/apartment-2240974686.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/532340/apartment-2240973853.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/532340/apartment-2240973853.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/532340/apartment-2007741448.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/532340/apartment-2007741448.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/532340/apartment-2240974687.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/532340/apartment-2240974687.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/532340/apartment-2240973854.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/532340/apartment-2240973854.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/532340/apartment-2007741449.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/532340/apartment-2007741449.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/532340/apartment-2240974688.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/532340/apartment-2240974688.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/532340/apartment-2240973855.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/532340/apartment-2240973855.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/532340/apartment-2007741450.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/532340/apartment-2007741450.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/532340/apartment-2240974689.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/532340/apartment-2240974689.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/532340/apartment-2240973856.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/532340/apartment-2240973856.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/532340/apartment-2007741451.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/532340/apartment-2007741451.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/532340/apartment-2240974690.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/532340/apartment-2240974690.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/532340/apartment-2240973857.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/532340/apartment-2240973857.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/532340/apartment-2007741452.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/532340/apartment-2007741452.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/532340/apartment-2240974691.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/532340/apartment-2240974691.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/532340/apartment-2240973858.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/532340/apartment-2240973858.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/532340/apartment-2007741453.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/532340/apartment-2007741453.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/532340/apartment-2240974692.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/532340/apartment-2240974692.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/532340/apartment-2240973859.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/532340/apartment-2240973859.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/532340/apartment-2007741454.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/532340/apartment-2007741454.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/532340/apartment-2240974693.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/532340/apartment-2240974693.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/532340/apartment-2240973860.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/532340/apartment-2240973860.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/532340/apartment-2007741455.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/532340/apartment-2007741455.jpg"
+        }
+      ]
+    }
+  ],
+  "textSample": "Alert\nSave Alert\n\nSimilar listings in\n\nCreate an Alert\nParking Information\nFeatures & Amenities\nUtilities Included\nAbout The Robert\n\n***NOTE: IMAGES SHOWN ARE FOR REFERENCE ONLY AND MAY NOT ACCURATELY REPRESENT EACH AVAILABLE UNIT***\n\nWelcome to the Robert, a modern 5 story purpose built rental building in the Broadway Village/Greektown area of Kitsilano (2525 Carnarvon Street) with 70 apartments, including: studios, 1 beds, 2beds & 3beds.  The building is owned and professionally managed by Orr Development Corp. \n\nSUITE FEATURES\n\n•   Large open concept floorplans, no tiny micro units!\n\n•   Gourmet kitchen with stainless appliance package and quartz counters\n\n•   LVP flooring throughout, (no carpets!)\n\n•             All units have balconies with frosted privacy glass, propane BBQs permitted\n\n•             Full size in-suite stackable washer/dryer in each unit\n\n•             Flex room in most units\n\n•             Modern track lighting\n\n•             Undermount sinks in kitchens & bathrooms\n\n•             Heat Recovery Ventilation unit in each suite to provide fresh air\n\n•             Secured parking available\n\n•             Secured lockers & bike lockers available\n\nBUILDING FEATURES\n\n•             MODERN 5 story PURPOSE BUILT RENTAL building – possibility of long-term tenure.  Above 1 floor of commercial including Shoppers Drug Mart\n\n•             70 modern rental apartments: studios, 1bed, 2bed & 3bed units\n\n• Amenity Room with pool table, kitchen area, washroom, outdoor seating & dining, lush landscaped area\n\n•             Extrememly secure building with FOB access at entry and elevators, security cameras and daily security patrols\n\n• Full time Resident Manager (onsite) & emergency maintenance service\n\n•             Building is completely NO SMOKING\n\n•            PETS: up to 2 Cats allowed with pet deposit, SORRY NO DOGS PERMITTED\n\nNEIGHBOURHOOD\n\nBroadway Village/Greektown area of West Kitsilano in Vancouver, Close proximity to 99 B line bus connecting to UBC and SKYTRAIN, WALKSCORE 92\nAccess to bike paths on 8th Avenue & Balaclava Streets\nShort bike ride to Kits Beach/Pool, Jericho beach, Connaught Park Farmers Market, 4th Avenue shopping, Kits Community Centre & Ice Rink etc\nWide variety of retail stores & restaurants in walking distance including The Hollywood Theatre, Just Another Coffee Shop, Shoppers Drug Mart, Starbucks, Liquor Store, The Banana Leaf, Silk N Spice Restaurant, Your Dollar Store, GoodCo Pub, Parthenon Market, Painted Ship Pub, Orange Theory Fitness, Safeway etc\n\nAdditional Information:\nKeyless entry\nEnsuite bathroom\nCity views\nBeach nearby\nInternet ready\nPrivate balcony\nOutdoor common dining area\nIn-suite storage in most units\nBbqs permitted\nPool Table\nWalk-in closets in many units\n\n***NOTE: IMAGES SHOWN ARE FOR REFERENCE ONLY AND MAY NOT ACCURATELY REPRESENT EACH AVAILABLE UNIT***\n\nWelcome to the Robert, a modern 5 story purpose built rental building in the Broadway Village/Greektown area of Kitsilano (2525 Carnarvon Street) with 70 apartments, including: studios, 1 beds, 2beds & 3beds.  The building is owned and professionally managed by Orr Development Corp. \n\nSUITE FEATURES\n\n•   Large open concept floorplans, no tiny micro units!\n\n•   Gourmet kitchen with stainless appliance package and quartz counters\n\n•   LVP flooring throughout, (no carpets!)\n\n•             All units have balconies with frosted privacy glass, propane BBQs permitted\n\n•             Full size in-suite stackable washer/dryer in each unit\n\n•             Flex room in most units\n\n•             Modern track lighting\n\n•             Undermount sinks in kitchens & bathrooms\n\n•             Heat Recovery Ventilation unit in each suite to provide fresh air\n\n•             Secured parking available\n\n•             Secured lockers & bike lockers available\n\nBUILDING FEATURES\n\n•             MODERN 5 story PURPOSE BUILT RENTAL building – possibility of long-term tenure.  Above 1 floor of commercial including Shoppers Drug Mart\n\n•             70 modern rental apartments: studios, 1bed, 2bed & 3bed units\n\n• Amenity Room with pool table, kitchen area, washroom, outdoor seating & dining, lush landscaped area\n\n•             Extrememly secure building with FOB access at entry and elevators, security cameras and daily security patrols\n\n• Full time Resident Manager (onsite) & emergency maintenance service\n\n•             Building is completely NO SMOKING\n\n•            PETS: up to 2 Cats allowed with pet deposit, SORRY NO DOGS PERMITTED\n\nNEIGHBOURHOOD\n\nBroadway Village/Greektown area of West Kitsilano in Vancouver, Close proximity to 99 B line bus connecting to UBC and SKYTRAIN, WALKSCORE 92\nAccess to bike paths on 8th Avenue & Balaclava Streets\nShort bike ride to Kits Beach/Pool, Jericho beach, Connaught Park Farmers Market, 4th Avenue shopping, Kits Community Centre & Ice Rink etc\nWide variety of retail stores & restaurants in walking distance including The Hollywood Theatre, Just Another Coffee Shop, Shoppers Drug Mart, Starbucks, Liquor Store, The Banana Leaf, Silk N Spice Restaurant, Your Dollar Store, GoodCo Pub, Parthenon Market, Painted Ship Pub, Orange Theory Fitness, Safeway etc\n\nAdditional Information:\nKeyless entry\nEnsuite bathroom\nCity views\nBeach nearby\nInternet ready\nPrivate balcony\nOutdoor common dining area\nIn-suite storage in most units\nBbqs permitted\nPool Table\nWalk-in closets in many units\nNeighbourhood Score & Commute Time\nOpen House Dates\nSummary\n\nReport Listing\n\nExplore Similar Rentals\nPopular Rent Searches In Vancouver\nSearch by Amenities\nPet Friendly Apartments In Vancouver\nApartments With A/C In Vancouver\nApartments With Ensuite Laundry In Vancouver\nApartments With Dishwasher In Vancouver\nSearch by Bedrooms\n1 Bedroom Apartments In Vancouver\n2 Bedroom Apartments In Vancouver\n3 Bedroom Apartments In Vancouver\n4 Bedroom Apartments In Vancouver\nSearch by Budget\nApartments Under $1000 In Vancouver\nApartments Under $1250 In Vancouver\nApartments Under $2000 In Vancouver\nApartments Under $2500 In Vancouver\nSee All Rentals in Vancouver\nThis website uses cookies to ensure you get the best experience on our website. By clicking \"Allow All\", you consent to our use of cookies. Privacy Policy ↗\nManage Cookies\nDecline\nAllow All"
+}
