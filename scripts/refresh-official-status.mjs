@@ -15,6 +15,7 @@ const browser = await chromium.launch({ headless: true });
 const context = await browser.newContext({ locale: 'en-CA', timezoneId: 'America/Vancouver', viewport: { width: 1440, height: 1200 } });
 const page = await context.newPage();
 const projects = [];
+const challengePage = text => /please wait while your request is being verified|verify you are human|checking your browser|just a moment|security verification|cloudflare ray id/i.test(String(text || ''));
 
 for (const project of watch.projects || []) {
   const observations = [];
@@ -28,6 +29,10 @@ for (const project of watch.projects || []) {
       }
       await page.waitForTimeout(1200);
       const text = (await page.locator('body').innerText({ timeout: 10000 })).replace(/\s+/g, ' ').trim();
+      if (challengePage(text)) {
+        observations.push({ url, checkedAt: iso, httpStatus: status, usable: false, blockedByChallenge: true, textSample: text.slice(0, 500) });
+        continue;
+      }
       const lower = text.toLowerCase();
       const negatives = (project.negativeSignals || []).filter(s => lower.includes(String(s).toLowerCase()));
       const positives = (project.positiveSignals || []).filter(s => lower.includes(String(s).toLowerCase()));
