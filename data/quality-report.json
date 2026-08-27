@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-26T20:12:42.749Z",
+  "generatedAt": "2026-08-27T10:00:42.079Z",
   "activeCount": 23,
   "decisionReady": true,
   "highIssueCount": 0,
@@ -59,16 +59,6 @@
     {
       "severity": "info",
       "id": "zumper-cd96ddf129b5",
-      "issue": "unknown-orientation"
-    },
-    {
-      "severity": "info",
-      "id": "zumper-c047dd62c7b5",
-      "issue": "unknown-ac"
-    },
-    {
-      "severity": "info",
-      "id": "zumper-c047dd62c7b5",
       "issue": "unknown-orientation"
     },
     {
@@ -200,13 +190,23 @@
       "severity": "info",
       "id": "zumper-3d00038ec8dc",
       "issue": "unknown-orientation"
+    },
+    {
+      "severity": "info",
+      "id": "zumper-f9e9614ca8fb",
+      "issue": "unknown-ac"
+    },
+    {
+      "severity": "info",
+      "id": "zumper-f9e9614ca8fb",
+      "issue": "unknown-orientation"
     }
   ],
   "readinessChecks": {
     "smokeOk": true,
     "smokeFresh": true,
-    "smokeCheckedAt": "2026-08-26T20:12:48.864Z",
-    "latestDataAt": "2026-08-26T20:12:09.033Z",
+    "smokeCheckedAt": "2026-08-27T10:00:47.425Z",
+    "latestDataAt": "2026-08-27T09:59:59.831Z",
     "coverageReady": true,
     "healthyDiscoveryLanes": 4,
     "coverageWarnings": [
@@ -219,5 +219,5 @@
     ]
   },
   "readinessIssues": [],
-  "finalizedAt": "2026-08-26T20:12:48.964Z"
+  "finalizedAt": "2026-08-27T10:00:47.516Z"
 }

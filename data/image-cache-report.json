@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-08-26T20:12:39.557Z",
+  "refreshedAt": "2026-08-27T10:00:37.334Z",
   "listings": {
     "arbutus-residences-315-2den-900": {
       "cached": 3,
@@ -189,12 +189,19 @@
       "downloaded": 0,
       "failures": [],
       "photoPageUrl": "https://www.zumper.com/address/3854-w-14th-ave-vancouver-bc-v6r-2w9-can"
+    },
+    "zumper-f9e9614ca8fb": {
+      "cached": 5,
+      "preserved": 0,
+      "downloaded": 5,
+      "failures": [],
+      "photoPageUrl": "https://www.zumper.com/address/3157-w-33rd-ave-vancouver-bc-v6n-2g6-can"
     }
   },
   "totals": {
-    "sourceListings": 27,
-    "cachedListings": 27,
-    "downloaded": 0,
+    "sourceListings": 28,
+    "cachedListings": 28,
+    "downloaded": 5,
     "failed": 0,
     "preserved": 122
   }
