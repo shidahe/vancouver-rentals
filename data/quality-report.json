@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-08-28T22:30:31.433Z",
-  "activeCount": 23,
+  "generatedAt": "2026-08-28T23:00:37.313Z",
+  "activeCount": 22,
   "decisionReady": true,
   "highIssueCount": 0,
   "mediumIssueCount": 0,
-  "infoIssueCount": 39,
+  "infoIssueCount": 38,
   "issues": [
     {
       "severity": "info",
@@ -74,11 +74,6 @@
     {
       "severity": "info",
       "id": "zumper-9157c4798023",
-      "issue": "unknown-orientation"
-    },
-    {
-      "severity": "info",
-      "id": "zumper-6e03d092610a",
       "issue": "unknown-orientation"
     },
     {
@@ -205,11 +200,17 @@
   "readinessChecks": {
     "smokeOk": true,
     "smokeFresh": true,
-    "smokeCheckedAt": "2026-08-28T22:30:36.886Z",
-    "latestDataAt": "2026-08-28T22:29:53.575Z",
+    "smokeCheckedAt": "2026-08-28T23:00:42.499Z",
+    "latestDataAt": "2026-08-28T22:59:48.308Z",
     "coverageReady": true,
-    "healthyDiscoveryLanes": 4,
+    "healthyDiscoveryLanes": 3,
     "coverageWarnings": [
+      {
+        "severity": "warning",
+        "lane": "rentalsca",
+        "status": "degraded",
+        "detail": "2/5 regional searches healthy"
+      },
       {
         "severity": "warning",
         "lane": "livrent",
@@ -219,5 +220,5 @@
     ]
   },
   "readinessIssues": [],
-  "finalizedAt": "2026-08-28T22:30:38.639Z"
+  "finalizedAt": "2026-08-28T23:00:44.284Z"
 }
