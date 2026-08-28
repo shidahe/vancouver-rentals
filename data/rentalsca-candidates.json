@@ -1,38 +1,117 @@
 {
-  "refreshedAt": "2026-08-28T11:32:31.958Z",
+  "refreshedAt": "2026-08-28T22:28:10.716Z",
   "mode": "candidate-only",
   "sourceHealth": {
     "rentalsca-kitsilano-2br": {
-      "checkedAt": "2026-08-28T11:32:31.958Z",
+      "checkedAt": "2026-08-28T22:28:10.716Z",
       "status": 200,
       "ok": true,
       "finalUrl": "https://rentals.ca/vancouver/kitsilano/all-apartments-all-houses/2-bedrooms"
     },
     "rentalsca-point-grey-2br": {
-      "checkedAt": "2026-08-28T11:32:31.958Z",
+      "checkedAt": "2026-08-28T22:28:10.716Z",
       "status": 200,
       "ok": true,
       "finalUrl": "https://rentals.ca/vancouver/west-point-grey/2-bedrooms"
     },
     "rentalsca-arbutus-2br": {
-      "checkedAt": "2026-08-28T11:32:31.958Z",
-      "status": 429,
-      "ok": false,
-      "finalUrl": "https://rentals.ca/vancouver/arbutus-ridge/2-bedrooms?__cf_chl_rt_tk=fdMl0t2v_ONRhQDhMxZD4z43Fiul2gYy3wY2bxuf2dI-1787916758-1.0.1.1-VhC.IOtcAdzO.EvZO0k_O3pKx6bUesuMzTWnIA39CRA"
+      "checkedAt": "2026-08-28T22:28:10.716Z",
+      "status": 200,
+      "ok": true,
+      "finalUrl": "https://rentals.ca/vancouver/arbutus-ridge/2-bedrooms"
     },
     "rentalsca-dunbar-2br": {
-      "checkedAt": "2026-08-28T11:32:31.958Z",
-      "status": 429,
-      "ok": false,
-      "finalUrl": "https://rentals.ca/vancouver/dunbar-southlands/2-bedrooms?__cf_chl_rt_tk=nA.EY0a7jXT.oxhSy78uWpDOcgb8bn.BSWR2LUy_Elg-1787916758-1.0.1.1-NmKjmWJcXakpuIwII5s8H4O0e4Gd.xMt275IfFJ9hk8"
+      "checkedAt": "2026-08-28T22:28:10.716Z",
+      "status": 200,
+      "ok": true,
+      "finalUrl": "https://rentals.ca/vancouver/dunbar-southlands/2-bedrooms"
     },
     "rentalsca-quilchena-2br": {
-      "checkedAt": "2026-08-28T11:32:31.958Z",
-      "status": 429,
+      "checkedAt": "2026-08-28T22:28:10.716Z",
+      "status": 404,
       "ok": false,
-      "finalUrl": "https://rentals.ca/vancouver/quilchena/2-bedrooms?__cf_chl_rt_tk=6agBcxnDj6y_X_bgZO5j4gD82pFIoiGbykzA20kUwow-1787916758-1.0.1.1-RdifhiG793oq6hCpkdFl91NlDk6Jpi0RS8YjE0GlKRI"
+      "finalUrl": "https://rentals.ca/vancouver/quilchena/2-bedrooms"
     }
   },
-  "pages": [],
-  "inventories": []
+  "pages": [
+    {
+      "source": "Rentals.ca",
+      "url": "https://rentals.ca/vancouver/the-robert",
+      "address": "2525 Carnarvon Street, Vancouver, British Columbia V6K 0C6",
+      "addressUnit": null,
+      "geo": {
+        "lat": 49.2638827,
+        "lng": -123.1722891
+      },
+      "targetArea": true,
+      "active": true,
+      "floorplans": [
+        {
+          "label": "2 Bedroom Apartments In Vancouver",
+          "unit": null,
+          "beds": 2,
+          "baths": null,
+          "sqft": null,
+          "rent": 2000,
+          "available": true
+        },
+        {
+          "label": "3 Bedroom Apartments In Vancouver",
+          "unit": null,
+          "beds": 3,
+          "baths": null,
+          "sqft": null,
+          "rent": 2000,
+          "available": true
+        }
+      ],
+      "single": {
+        "rent": null,
+        "beds": 2.5,
+        "baths": 2,
+        "sqft": null
+      },
+      "checkedAt": "2026-08-28T22:28:10.716Z"
+    }
+  ],
+  "inventories": [
+    {
+      "source": "Rentals.ca",
+      "url": "https://rentals.ca/vancouver/the-robert",
+      "address": "2525 Carnarvon Street, Vancouver, British Columbia V6K 0C6",
+      "unit": null,
+      "floorplan": "2 Bedroom Apartments In Vancouver",
+      "identityKey": "2525 carnarvon st::floorplan:2 bedroom apartments in vancouver",
+      "rent": 2000,
+      "bedrooms": 2,
+      "bathrooms": null,
+      "sqft": null,
+      "geo": {
+        "lat": 49.2638827,
+        "lng": -123.1722891
+      },
+      "active": true,
+      "checkedAt": "2026-08-28T22:28:10.716Z",
+      "publishable": false
+    },
+    {
+      "source": "Rentals.ca",
+      "url": "https://rentals.ca/vancouver/the-robert",
+      "address": "2525 Carnarvon Street, Vancouver, British Columbia V6K 0C6",
+      "unit": null,
+      "floorplan": "3 Bedroom Apartments In Vancouver",
+      "identityKey": "2525 carnarvon st::floorplan:3 bedroom apartments in vancouver",
+      "rent": 2000,
+      "bedrooms": 3,
+      "bathrooms": null,
+      "sqft": null,
+      "geo": {
+        "lat": 49.2638827,
+        "lng": -123.1722891
+      },
+      "active": true,
+      "checkedAt": "2026-08-28T22:28:10.716Z",
+      "publishable": false
+    }
+  ]
 }
