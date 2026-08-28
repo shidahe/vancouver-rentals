@@ -21,6 +21,13 @@ on:
 permissions:
   contents: write
 
+# This workflow and the full rental refresh both commit generated validation
+# data to main. Sharing one concurrency group prevents a smoke-report commit
+# from landing while refresh-listings is rebasing/pushing its generated data.
+concurrency:
+  group: rental-refresh
+  cancel-in-progress: false
+
 jobs:
   smoke:
     runs-on: ubuntu-latest
