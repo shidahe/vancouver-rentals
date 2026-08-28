@@ -25,7 +25,10 @@ on:
       - 'scripts/audit-data-quality.mjs'
       - 'scripts/audit-coverage.mjs'
       - 'scripts/test-site.mjs'
+      - 'scripts/test-freshness-guard.mjs'
       - 'scripts/finalize-readiness.mjs'
+      - 'freshness-guard.js'
+      - 'index.html'
       - 'data/live-sources.json'
       - 'data/purpose-built-watch.json'
       - 'data/automation-policy.json'
@@ -62,6 +65,10 @@ jobs:
         id: smoke
         continue-on-error: true
         run: node scripts/test-site.mjs
+      - name: Runtime freshness fail-closed test
+        id: freshness
+        continue-on-error: true
+        run: node scripts/test-freshness-guard.mjs
       - name: Finalize decision readiness
         id: readiness
         continue-on-error: true
@@ -80,5 +87,5 @@ jobs:
           git pull --rebase origin main
           git push
       - name: Fail when the fresh site is not decision-ready
-        if: steps.smoke.outcome != 'success' || steps.readiness.outcome != 'success'
+        if: steps.smoke.outcome != 'success' || steps.freshness.outcome != 'success' || steps.readiness.outcome != 'success'
         run: exit 1
