@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-29T10:56:21.474Z",
+  "generatedAt": "2026-08-29T16:51:22.285Z",
   "coverageReady": true,
   "healthyLaneCount": 3,
   "freshLaneCount": 5,
@@ -10,7 +10,7 @@
       "healthy": true,
       "status": "healthy",
       "detail": "13 fresh live candidates",
-      "refreshedAt": "2026-08-29T10:53:13.757Z"
+      "refreshedAt": "2026-08-29T16:48:17.175Z"
     },
     {
       "id": "craigslist",
@@ -18,7 +18,7 @@
       "healthy": true,
       "status": "healthy",
       "detail": "4/4 regional searches healthy",
-      "refreshedAt": "2026-08-29T10:54:26.670Z"
+      "refreshedAt": "2026-08-29T16:49:30.329Z"
     },
     {
       "id": "rentalsca",
@@ -26,7 +26,7 @@
       "healthy": false,
       "status": "degraded",
       "detail": "2/5 regional searches healthy",
-      "refreshedAt": "2026-08-29T10:54:18.113Z"
+      "refreshedAt": "2026-08-29T16:49:22.316Z"
     },
     {
       "id": "livrent",
@@ -34,7 +34,7 @@
       "healthy": false,
       "status": "unhealthy",
       "detail": "0/3 searches healthy",
-      "refreshedAt": "2026-08-29T10:54:25.752Z"
+      "refreshedAt": "2026-08-29T16:49:29.544Z"
     },
     {
       "id": "realtylink",
@@ -42,7 +42,7 @@
       "healthy": true,
       "status": "healthy",
       "detail": "3/3 searches healthy",
-      "refreshedAt": "2026-08-29T10:54:34.830Z"
+      "refreshedAt": "2026-08-29T16:49:38.122Z"
     }
   ],
   "warnings": [

@@ -1,36 +1,36 @@
 {
-  "refreshedAt": "2026-08-29T10:54:18.113Z",
+  "refreshedAt": "2026-08-29T16:49:22.316Z",
   "mode": "candidate-only",
   "sourceHealth": {
     "rentalsca-kitsilano-2br": {
-      "checkedAt": "2026-08-29T10:54:18.113Z",
+      "checkedAt": "2026-08-29T16:49:22.316Z",
       "status": 200,
       "ok": true,
       "finalUrl": "https://rentals.ca/vancouver/kitsilano/all-apartments-all-houses/2-bedrooms"
     },
     "rentalsca-point-grey-2br": {
-      "checkedAt": "2026-08-29T10:54:18.113Z",
+      "checkedAt": "2026-08-29T16:49:22.316Z",
       "status": 200,
       "ok": true,
       "finalUrl": "https://rentals.ca/vancouver/west-point-grey/2-bedrooms"
     },
     "rentalsca-arbutus-2br": {
-      "checkedAt": "2026-08-29T10:54:18.113Z",
+      "checkedAt": "2026-08-29T16:49:22.316Z",
       "status": 429,
       "ok": false,
-      "finalUrl": "https://rentals.ca/vancouver/arbutus-ridge/2-bedrooms?__cf_chl_rt_tk=Wh6_nD2VTFwEztk1mAf_ycfBrc9IT2PvKm.J_vkg5mc-1788000864-1.0.1.1-y0Sz6k7ioA0y.6lJbaihF8ui6edZfeFKR87t5u8RM7k"
+      "finalUrl": "https://rentals.ca/vancouver/arbutus-ridge/2-bedrooms?__cf_chl_rt_tk=dS6bNkbFgq93UYRFsg4DVu._0Bo2ASYJhDJI99LlPU4-1788022168-1.0.1.1-s4oUdNW1Dg2sAy7DHHBYXTR7nXj3rZ1My609.OBvan4"
     },
     "rentalsca-dunbar-2br": {
-      "checkedAt": "2026-08-29T10:54:18.113Z",
+      "checkedAt": "2026-08-29T16:49:22.316Z",
       "status": 429,
       "ok": false,
-      "finalUrl": "https://rentals.ca/vancouver/dunbar-southlands/2-bedrooms?__cf_chl_rt_tk=zScmO4Sr.EG2Z15Zme0xbItyNY0_3oUNhodvX9vQGkY-1788000864-1.0.1.1-2m1_fT4gRSGejI4jSi3T4Q1xlq3VxR8kthh.D6a5TsA"
+      "finalUrl": "https://rentals.ca/vancouver/dunbar-southlands/2-bedrooms?__cf_chl_rt_tk=Qy8he2pMST9e0dxkBjihVzm4rM4B4Bl8kQp4mHkyqJg-1788022168-1.0.1.1-J2FmwOS1TMpQYrQSb0mj6K0QhmEMRVoAQRoMXNPjKeA"
     },
     "rentalsca-quilchena-2br": {
-      "checkedAt": "2026-08-29T10:54:18.113Z",
+      "checkedAt": "2026-08-29T16:49:22.316Z",
       "status": 429,
       "ok": false,
-      "finalUrl": "https://rentals.ca/vancouver/quilchena/2-bedrooms?__cf_chl_rt_tk=3NNX0dBe.btxE.zFcU1X1Hhco0DX6H2pvcpI6bZBSrc-1788000864-1.0.1.1-0eV5RgGlPjIAwznhuK2i3VnDI2WsiJhplHV6hnBgiVI"
+      "finalUrl": "https://rentals.ca/vancouver/quilchena/2-bedrooms?__cf_chl_rt_tk=cgGBNFUP1gPeZ082tA9TR.eEiPwI9Yw.uKx.H17XDL4-1788022168-1.0.1.1-vKVU1qkKABxH6qc2M.Qh_uSOzpI8pxqwmpxYE._JeWA"
     }
   },
   "pages": [],
