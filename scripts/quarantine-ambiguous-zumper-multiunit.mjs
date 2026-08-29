@@ -8,6 +8,12 @@ const read = async (p, d) => { try { return JSON.parse(await fs.readFile(p, 'utf
 const write = async (p, x) => fs.writeFile(p, JSON.stringify(x, null, 2) + '\n');
 const hash = s => crypto.createHash('sha1').update(String(s || '')).digest('hex').slice(0, 12);
 const today = new Date().toISOString().slice(0, 10);
+const AMBIGUITY_NOTE = 'NEEDS CONFIRMATION: Zumper page is an address-level multi-unit page without a public unit identity; page-level low/high price cannot be treated as an exact unit rent.';
+const normalizeAmbiguityNote = value => {
+  const text = String(value || '');
+  const withoutRepeats = text.split(AMBIGUITY_NOTE).join(' ').replace(/\s+/g, ' ').trim();
+  return [withoutRepeats, AMBIGUITY_NOTE].filter(Boolean).join(' ');
+};
 
 const lp = path.join(DATA, 'listings.json');
 const cp = path.join(DATA, 'candidates.json');
@@ -34,16 +40,19 @@ for (const c of candidates) {
   c.autoPublishResult = 'needs_confirmation_multi_unit_address_page';
   const listing = db.listings.find(x => x.source === 'Zumper live detail' && x.url === c.url && !x.unit);
   if (!listing) continue;
+
+  // Keep provenance readable across repeated refreshes. The live-detail pass may mark the
+  // record active again before this fail-closed quarantine runs, so normalize the note on
+  // every ambiguous observation rather than appending it on every cycle.
+  listing.dataNotes = normalizeAmbiguityNote(listing.dataNotes);
   if (listing.availabilityStatus === 'active') {
     listing.availabilityStatus = 'needs_confirmation';
     listing.verificationLevel = 'unverified';
     listing.status = 'corrected';
     listing.priceDrop = false;
     listing.lastChecked = today;
-    const note = 'NEEDS CONFIRMATION: Zumper page is an address-level multi-unit page without a public unit identity; page-level low/high price cannot be treated as an exact unit rent.';
-    listing.dataNotes = [listing.dataNotes, note].filter(Boolean).join(' ');
     history[listing.id] ||= [];
-    if (!history[listing.id].some(h => h.date === today && h.note === note)) history[listing.id].push({ date: today, rent: listing.rent, note });
+    if (!history[listing.id].some(h => h.date === today && h.note === AMBIGUITY_NOTE)) history[listing.id].push({ date: today, rent: listing.rent, note: AMBIGUITY_NOTE });
     quarantined.push({ id: listing.id, address: listing.address, url: listing.url, rent: listing.rent });
   }
 }
