@@ -53,6 +53,10 @@ jobs:
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0
+          # Push-triggered runs can sit in the shared concurrency queue while main
+          # advances. Always start from the current main tip instead of the stale
+          # event SHA so generated data is not rebased across another refresh.
+          ref: main
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
