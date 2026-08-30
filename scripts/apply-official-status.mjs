@@ -13,6 +13,18 @@ const official = await read(statusPath, { projects: [] });
 const today = new Date().toISOString().slice(0, 10);
 const norm = s => String(s || '').toLowerCase().replace(/[^a-z0-9]+/g, ' ').trim();
 
+const dedupeOfficialRemovalHistory = (listingId, reason) => {
+  const rows = history[listingId] || [];
+  const repeatedNote = `REMOVED: ${reason}`;
+  let kept = false;
+  history[listingId] = rows.filter(row => {
+    if (row?.note !== repeatedNote) return true;
+    if (kept) return false;
+    kept = true;
+    return true;
+  });
+};
+
 const actions = [];
 for (const p of official.projects || []) {
   const matches = payload.listings.filter(x =>
@@ -22,6 +34,9 @@ for (const p of official.projects || []) {
 
   if (p.effectiveStatus === 'fully_leased') {
     for (const x of matches) {
+      // Some upstream verification passes may record the same removal reason on every run.
+      // Keep one provenance row for the explicit official negative instead of growing history forever.
+      dedupeOfficialRemovalHistory(x.id, p.reason);
       if (x.availabilityStatus === 'removed' && x.officialStatusReason === p.reason) continue;
       const prior = x.availabilityStatus;
       x.availabilityStatus = 'removed';
