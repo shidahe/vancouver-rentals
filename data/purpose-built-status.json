@@ -1,9 +1,9 @@
 {
-  "refreshedAt": "2026-08-30T05:33:59.215Z",
+  "refreshedAt": "2026-08-30T10:59:17.483Z",
   "buildings": [
     {
       "building": "Arbutus Residences",
-      "checkedAt": "2026-08-30T05:33:59.215Z",
+      "checkedAt": "2026-08-30T10:59:17.483Z",
       "observations": [
         {
           "url": "https://www.rentfaster.ca/properties/2139-lahb-ave-vancouver-454186",
@@ -19,8 +19,8 @@
         },
         {
           "url": "https://www.zumper.com/apartment-buildings/p1117150/arbutus-residences-quilchena-vancouver-bc",
-          "httpStatus": 429,
-          "usable": false,
+          "httpStatus": 200,
+          "usable": true,
           "error": null
         }
       ],
@@ -66,10 +66,10 @@
             },
             {
               "url": "https://www.zumper.com/apartment-buildings/p1117150/arbutus-residences-quilchena-vancouver-bc",
-              "httpStatus": 429,
-              "usable": false,
+              "httpStatus": 200,
+              "usable": true,
               "requiredMatched": false,
-              "availabilityMatched": false,
+              "availabilityMatched": true,
               "fullyLeased": false,
               "verified": false
             }
@@ -93,8 +93,8 @@
             "Available",
             "1 unit available"
           ],
-          "verified": false,
-          "verifiedSource": null,
+          "verified": true,
+          "verifiedSource": "https://www.zumper.com/apartment-buildings/p1117150/arbutus-residences-quilchena-vancouver-bc",
           "sourceMatches": [
             {
               "url": "https://www.rentfaster.ca/properties/2139-lahb-ave-vancouver-454186",
@@ -116,12 +116,12 @@
             },
             {
               "url": "https://www.zumper.com/apartment-buildings/p1117150/arbutus-residences-quilchena-vancouver-bc",
-              "httpStatus": 429,
-              "usable": false,
-              "requiredMatched": false,
-              "availabilityMatched": false,
+              "httpStatus": 200,
+              "usable": true,
+              "requiredMatched": true,
+              "availabilityMatched": true,
               "fullyLeased": false,
-              "verified": false
+              "verified": true
             }
           ]
         }
