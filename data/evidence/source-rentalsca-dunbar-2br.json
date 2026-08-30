@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-08-30T04:53:46.284Z",
+  "checkedAt": "2026-08-30T05:28:37.516Z",
   "source": {
     "id": "rentalsca-dunbar-2br",
     "name": "Rentals.ca Dunbar-Southlands 2BR",
@@ -8,10 +8,10 @@
     "adapter": "rentalsca-search"
   },
   "ok": true,
-  "status": 403,
+  "status": 429,
   "finalUrl": "https://rentals.ca/vancouver/dunbar-southlands/2-bedrooms",
   "title": "Just a moment...",
-  "bodyText": "rentals.ca\nPerforming security verification\n\nThis website uses a security service to protect against malicious bots. This page is displayed while the website verifies you are not a bot.\n\nRay ID: a33134bd1c8ba14d\nPerformance and Security by Cloudflare\nPrivacy",
+  "bodyText": "rentals.ca\nPerforming security verification\n\nThis website uses a security service to protect against malicious bots. This page is displayed while the website verifies you are not a bot.\n\nRay ID: a33167bf3f188e7d\nPerformance and Security by Cloudflare\nPrivacy",
   "links": [
     {
       "href": "https://www.cloudflare.com/?utm_source=challenge&utm_campaign=m",
@@ -26,5 +26,5 @@
   "images": [
     "https://rentals.ca/favicon.ico"
   ],
-  "elapsedMs": 3074
+  "elapsedMs": 3088
 }
