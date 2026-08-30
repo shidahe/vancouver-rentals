@@ -52,7 +52,14 @@ for (const c of candidates) {
     listing.priceDrop = false;
     listing.lastChecked = today;
     history[listing.id] ||= [];
-    if (!history[listing.id].some(h => h.date === today && h.note === AMBIGUITY_NOTE)) history[listing.id].push({ date: today, rent: listing.rent, note: AMBIGUITY_NOTE });
+    // The upstream live-detail pass can transiently reactivate the same ambiguous address
+    // every cycle without recording a meaningful state transition. Avoid adding the same
+    // quarantine event on every day; if another history event occurs in between, a later
+    // return to ambiguity is recorded again.
+    const lastHistoryEvent = history[listing.id].at(-1);
+    if (lastHistoryEvent?.note !== AMBIGUITY_NOTE) {
+      history[listing.id].push({ date: today, rent: listing.rent, note: AMBIGUITY_NOTE });
+    }
     quarantined.push({ id: listing.id, address: listing.address, url: listing.url, rent: listing.rent });
   }
 }
