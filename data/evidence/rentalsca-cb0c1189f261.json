@@ -1,0 +1,133 @@
+{
+  "checkedAt": "2026-08-30T12:01:51.081Z",
+  "page": {
+    "source": "Rentals.ca",
+    "url": "https://rentals.ca/vancouver/1807-larch",
+    "address": "1807 Larch Street, Vancouver, British Columbia V6K 0H6",
+    "addressUnit": null,
+    "geo": {
+      "lat": 49.2698335,
+      "lng": -123.1626499
+    },
+    "targetArea": true,
+    "active": true,
+    "floorplans": [
+      {
+        "label": "2 Bedroom Apartments In Vancouver",
+        "unit": null,
+        "beds": 2,
+        "baths": null,
+        "sqft": null,
+        "rent": 2000,
+        "available": true
+      },
+      {
+        "label": "3 Bedroom Apartments In Vancouver",
+        "unit": null,
+        "beds": 3,
+        "baths": null,
+        "sqft": null,
+        "rent": 2000,
+        "available": true
+      }
+    ],
+    "single": {
+      "rent": 2000,
+      "beds": 1,
+      "baths": null,
+      "sqft": null
+    },
+    "checkedAt": "2026-08-30T12:01:51.081Z"
+  },
+  "jsonLd": [
+    {
+      "@context": "http://schema.org",
+      "@type": "ApartmentComplex",
+      "url": "https://rentals.ca/vancouver/1807-larch",
+      "name": "The Rothwell",
+      "description": "About\n**About **\nCommunity Amenities\n**Community Amenities **\nVideo surveillanceKeyless entryElevatorsStorage lockersNo Smoking allowedNo PetsBike StorageRooftop TerraceOutdoor PatioResident LoungeElectric Car Charging Option\nVideo surveillance\nKeyless entry\nElevators\nStorage lockers\nNo Smoking allowed\nNo Pets\nBike Storage\nRooftop Terrace\nOutdoor Patio\nResident Lounge\nElectric Car Charging Option\nSuite Amenities\n**Suite Amenities **\nBalconiesDishwasherUpgraded AppliancesIn-Suite Laundry\nBalconies\nDishwasher\nUpgraded Appliances\nIn-Suite Laundry\nAdditional Information:\n**Additional Information: **\nKeyless entryNo PetsBike StorageUpgraded AppliancesOutdoor PatioIn-Suite LaundryResident LoungeElectric Car Charging Option\nKeyless entry\nNo Pets\nBike Storage\nUpgraded Appliances\nOutdoor Patio\nIn-Suite Laundry\nResident Lounge\nElectric Car Charging Option",
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 49.2698335,
+        "longitude": -123.1626499
+      },
+      "containedInPlace": {
+        "@type": "City",
+        "url": "",
+        "name": "",
+        "address": {
+          "@type": "PostalAddress",
+          "addressCountry": "CA",
+          "addressRegion": ""
+        }
+      },
+      "containsPlace": [
+        {
+          "@context": "http://schema.org",
+          "@type": "Apartment",
+          "name": "2 Bedroom",
+          "potentialAction": {
+            "@type": "RentAction",
+            "priceSpecification": {
+              "@type": "PriceSpecification",
+              "price": 3950,
+              "priceCurrency": "CAD"
+            }
+          },
+          "floorSize": {
+            "@type": "QuantitativeValue",
+            "unitCode": "FTK",
+            "value": "753.0"
+          }
+        }
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "CA",
+        "addressLocality": "Vancouver",
+        "addressRegion": "British Columbia",
+        "postalCode": "V6K 0H6",
+        "streetAddress": "1807 Larch Street"
+      },
+      "telephone": "(604) 506-3982",
+      "photo": [
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/1089822/apartment-2240974562.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/1089822/apartment-2240974562.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/1089822/apartment-2240974563.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/1089822/apartment-2240974563.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/1089822/apartment-2240974564.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/1089822/apartment-2240974564.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/1089822/apartment-2240974565.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/1089822/apartment-2240974565.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/1089822/apartment-2240974566.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/1089822/apartment-2240974566.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/1089822/apartment-2240974567.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/1089822/apartment-2240974567.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/1089822/apartment-2239831851.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/1089822/apartment-2239831851.jpg"
+        }
+      ]
+    }
+  ],
+  "textSample": "Alert\nSave Alert\n\nSimilar listings in\n\nCreate an Alert\nParking Information\nFeatures & Amenities\nUtilities Included\nAbout The Rothwell\n\nAbout\n\nLocated on a quiet tree-lined street in the heart of Kitsilano, 1807 Larch (L2) offers studio, one bedroom, two bedroom, and three bedroom suites for rent. Kits Beach and Vanier Park are just a few blocks northeast and restaurants, groceries, boutique shops, and transit are steps to the southeast, on trendy West 4th Avenue.\n\nCommunity Amenities\n\nVideo surveillance\nKeyless entry\nElevators\nStorage lockers\nNo Smoking allowed\nNo Pets\nBike Storage\nRooftop Terrace\nOutdoor Patio\nResident Lounge\nElectric Car Charging Option\n\nSuite Amenities\n\nBalconies\nDishwasher\nUpgraded Appliances\nIn-Suite Laundry\n\nAdditional Information:\nKeyless entry\nNo Pets\nBike Storage\nUpgraded Appliances\nOutdoor Patio\nIn-Suite Laundry\nResident Lounge\nElectric Car Charging Option\n\nAbout\n\nLocated on a quiet tree-lined street in the heart of Kitsilano, 1807 Larch (L2) offers studio, one bedroom, two bedroom, and three bedroom suites for rent. Kits Beach and Vanier Park are just a few blocks northeast and restaurants, groceries, boutique shops, and transit are steps to the southeast, on trendy West 4th Avenue.\n\nCommunity Amenities\n\nVideo surveillance\nKeyless entry\nElevators\nStorage lockers\nNo Smoking allowed\nNo Pets\nBike Storage\nRooftop Terrace\nOutdoor Patio\nResident Lounge\nElectric Car Charging Option\n\nSuite Amenities\n\nBalconies\nDishwasher\nUpgraded Appliances\nIn-Suite Laundry\n\nAdditional Information:\nKeyless entry\nNo Pets\nBike Storage\nUpgraded Appliances\nOutdoor Patio\nIn-Suite Laundry\nResident Lounge\nElectric Car Charging Option\nNeighbourhood Score & Commute Time\nOpen House Dates\nSummary\n\nReport Listing\n\nExplore Similar Rentals\nPopular Rent Searches In Vancouver\nSearch by Amenities\nPet Friendly Apartments In Vancouver\nApartments With A/C In Vancouver\nApartments With Ensuite Laundry In Vancouver\nApartments With Dishwasher In Vancouver\nSearch by Bedrooms\n1 Bedroom Apartments In Vancouver\n2 Bedroom Apartments In Vancouver\n3 Bedroom Apartments In Vancouver\n4 Bedroom Apartments In Vancouver\nSearch by Budget\nApartments Under $1000 In Vancouver\nApartments Under $1250 In Vancouver\nApartments Under $2000 In Vancouver\nApartments Under $2500 In Vancouver\nSee All Rentals in Vancouver\nThis website uses cookies to ensure you get the best experience on our website. By clicking \"Allow All\", you consent to our use of cookies. Privacy Policy ↗\nManage Cookies\nDecline\nAllow All"
+}
