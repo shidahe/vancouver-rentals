@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-08-30T16:49:15.353Z",
+  "refreshedAt": "2026-08-30T21:15:40.750Z",
   "groups": [
     {
       "identityKey": "2715 w 2nd ave::url:a56695812770",
@@ -23,18 +23,6 @@
       ],
       "exactUnit": false,
       "matchedListingId": "zumper-40e7a81ead7b",
-      "result": "candidate_only"
-    },
-    {
-      "identityKey": "2477 waterloo st::url:9bf4862de36a",
-      "sources": [
-        "zumper"
-      ],
-      "rents": [
-        4500
-      ],
-      "exactUnit": false,
-      "matchedListingId": "waterloo-2477-zumper",
       "result": "candidate_only"
     },
     {
@@ -83,6 +71,18 @@
       ],
       "exactUnit": false,
       "matchedListingId": "zumper-976e340c66a7",
+      "result": "candidate_only"
+    },
+    {
+      "identityKey": "1575 beach ave::url:42a6aa06d6a2",
+      "sources": [
+        "zumper"
+      ],
+      "rents": [
+        4900
+      ],
+      "exactUnit": false,
+      "matchedListingId": null,
       "result": "candidate_only"
     },
     {
@@ -167,6 +167,18 @@
       ],
       "exactUnit": false,
       "matchedListingId": "zumper-5f1919a8a4cb",
+      "result": "candidate_only"
+    },
+    {
+      "identityKey": "2477 waterloo st::url:9bf4862de36a",
+      "sources": [
+        "zumper"
+      ],
+      "rents": [
+        4500
+      ],
+      "exactUnit": false,
+      "matchedListingId": "waterloo-2477-zumper",
       "result": "candidate_only"
     }
   ],
