@@ -1,117 +1,38 @@
 {
-  "refreshedAt": "2026-09-01T11:47:31.671Z",
+  "refreshedAt": "2026-09-01T16:46:38.842Z",
   "mode": "candidate-only",
   "sourceHealth": {
     "rentalsca-kitsilano-2br": {
-      "checkedAt": "2026-09-01T11:47:31.671Z",
+      "checkedAt": "2026-09-01T16:46:38.842Z",
       "status": 200,
       "ok": true,
       "finalUrl": "https://rentals.ca/vancouver/kitsilano/all-apartments-all-houses/2-bedrooms"
     },
     "rentalsca-point-grey-2br": {
-      "checkedAt": "2026-09-01T11:47:31.671Z",
+      "checkedAt": "2026-09-01T16:46:38.842Z",
       "status": 200,
       "ok": true,
       "finalUrl": "https://rentals.ca/vancouver/west-point-grey/2-bedrooms"
     },
     "rentalsca-arbutus-2br": {
-      "checkedAt": "2026-09-01T11:47:31.671Z",
-      "status": 200,
-      "ok": true,
-      "finalUrl": "https://rentals.ca/vancouver/arbutus-ridge/2-bedrooms"
+      "checkedAt": "2026-09-01T16:46:38.842Z",
+      "status": 429,
+      "ok": false,
+      "finalUrl": "https://rentals.ca/vancouver/arbutus-ridge/2-bedrooms?__cf_chl_rt_tk=zxTDLc3vEskSz4Td_E4nNSRxSUz0qjNHHQM6foK3SP8-1788281205-1.0.1.1-bmtFfKl_5h51SkKZ9s7dcg.fP_8.DXdwC3a5fVTak_0"
     },
     "rentalsca-dunbar-2br": {
-      "checkedAt": "2026-09-01T11:47:31.671Z",
-      "status": 200,
-      "ok": true,
-      "finalUrl": "https://rentals.ca/vancouver/dunbar-southlands/2-bedrooms"
+      "checkedAt": "2026-09-01T16:46:38.842Z",
+      "status": 429,
+      "ok": false,
+      "finalUrl": "https://rentals.ca/vancouver/dunbar-southlands/2-bedrooms?__cf_chl_rt_tk=7S3h4.k1yu23zcWZfP9_5fvtMk7_BBC5L20TuHWaHws-1788281205-1.0.1.1-EwfkC9xC77A6VKb9jH0sVuuhJjzaTyzSN5xtb_oNPqY"
     },
     "rentalsca-quilchena-2br": {
-      "checkedAt": "2026-09-01T11:47:31.671Z",
-      "status": 404,
+      "checkedAt": "2026-09-01T16:46:38.842Z",
+      "status": 429,
       "ok": false,
-      "finalUrl": "https://rentals.ca/vancouver/quilchena/2-bedrooms"
+      "finalUrl": "https://rentals.ca/vancouver/quilchena/2-bedrooms?__cf_chl_rt_tk=G9pj7Q_QFV6QQ3mlT5wHDDtNpTQE45QF9JYF6tNt6PQ-1788281205-1.0.1.1-3vd.gWZjptcb6J2f3rFuAw_vuwQxHFOgkFjr97HzHDA"
     }
   },
-  "pages": [
-    {
-      "source": "Rentals.ca",
-      "url": "https://rentals.ca/vancouver/kits-walk-by-strand",
-      "address": "2075 W 12th Avenue, Vancouver, British Columbia V6J 2G3",
-      "addressUnit": null,
-      "geo": {
-        "lat": 49.2612564,
-        "lng": -123.1522117
-      },
-      "targetArea": true,
-      "active": true,
-      "floorplans": [
-        {
-          "label": "2 Bedroom Apartments In Vancouver",
-          "unit": null,
-          "beds": 2,
-          "baths": null,
-          "sqft": null,
-          "rent": 2000,
-          "available": true
-        },
-        {
-          "label": "3 Bedroom Apartments In Vancouver",
-          "unit": null,
-          "beds": 3,
-          "baths": null,
-          "sqft": null,
-          "rent": 2000,
-          "available": true
-        }
-      ],
-      "single": {
-        "rent": 2000,
-        "beds": 3,
-        "baths": null,
-        "sqft": null
-      },
-      "checkedAt": "2026-09-01T11:47:31.671Z"
-    }
-  ],
-  "inventories": [
-    {
-      "source": "Rentals.ca",
-      "url": "https://rentals.ca/vancouver/kits-walk-by-strand",
-      "address": "2075 W 12th Avenue, Vancouver, British Columbia V6J 2G3",
-      "unit": null,
-      "floorplan": "2 Bedroom Apartments In Vancouver",
-      "identityKey": "2075 w 12th ave::floorplan:2 bedroom apartments in vancouver",
-      "rent": 2000,
-      "bedrooms": 2,
-      "bathrooms": null,
-      "sqft": null,
-      "geo": {
-        "lat": 49.2612564,
-        "lng": -123.1522117
-      },
-      "active": true,
-      "checkedAt": "2026-09-01T11:47:31.671Z",
-      "publishable": false
-    },
-    {
-      "source": "Rentals.ca",
-      "url": "https://rentals.ca/vancouver/kits-walk-by-strand",
-      "address": "2075 W 12th Avenue, Vancouver, British Columbia V6J 2G3",
-      "unit": null,
-      "floorplan": "3 Bedroom Apartments In Vancouver",
-      "identityKey": "2075 w 12th ave::floorplan:3 bedroom apartments in vancouver",
-      "rent": 2000,
-      "bedrooms": 3,
-      "bathrooms": null,
-      "sqft": null,
-      "geo": {
-        "lat": 49.2612564,
-        "lng": -123.1522117
-      },
-      "active": true,
-      "checkedAt": "2026-09-01T11:47:31.671Z",
-      "publishable": false
-    }
-  ]
+  "pages": [],
+  "inventories": []
 }
