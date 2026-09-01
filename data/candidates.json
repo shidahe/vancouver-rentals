@@ -1,6 +1,32 @@
 [
   {
     "source": "Zumper",
+    "url": "https://www.zumper.com/address/3220-4th-ave-w-vancouver-bc-v6k-1r9-can",
+    "address": "3220 4th Ave W, Vancouver, BC V6K 1R9",
+    "unit": null,
+    "identityKey": "3220 4th ave w::url:4b1a6ebe2d36",
+    "livePrice": 4300,
+    "bedrooms": 2,
+    "bathrooms": 2,
+    "sqft": 1106,
+    "liveCheckedAt": "2026-09-01T21:08:03.189Z",
+    "autoPublishResult": "published_or_updated"
+  },
+  {
+    "source": "Zumper",
+    "url": "https://www.zumper.com/address/2715-w-2nd-ave-vancouver-bc-v6k-1k2-can",
+    "address": "2715 West 2nd Avenue, Vancouver, BC V6K 1K2",
+    "unit": null,
+    "identityKey": "2715 w 2nd ave::url:a56695812770",
+    "livePrice": 2500,
+    "bedrooms": 2,
+    "bathrooms": 1,
+    "sqft": 1000,
+    "liveCheckedAt": "2026-09-01T21:08:03.189Z",
+    "autoPublishResult": "published_or_updated"
+  },
+  {
+    "source": "Zumper",
     "url": "https://www.zumper.com/address/1328-maple-st-vancouver-bc-v6j-3r9-can",
     "address": "1328 Maple Street, Vancouver, BC V6J 3R9",
     "unit": null,
@@ -9,7 +35,7 @@
     "bedrooms": 2,
     "bathrooms": 1,
     "sqft": 717,
-    "liveCheckedAt": "2026-09-01T16:45:40.807Z",
+    "liveCheckedAt": "2026-09-01T21:08:03.189Z",
     "autoPublishResult": "published_or_updated"
   },
   {
@@ -22,7 +48,7 @@
     "bedrooms": 2,
     "bathrooms": 1,
     "sqft": 815,
-    "liveCheckedAt": "2026-09-01T16:45:40.807Z",
+    "liveCheckedAt": "2026-09-01T21:08:03.189Z",
     "autoPublishResult": "published_or_updated"
   },
   {
@@ -35,7 +61,7 @@
     "bedrooms": 2,
     "bathrooms": 1,
     "sqft": 1350,
-    "liveCheckedAt": "2026-09-01T16:45:40.807Z",
+    "liveCheckedAt": "2026-09-01T21:08:03.189Z",
     "autoPublishResult": "published_or_updated"
   },
   {
@@ -48,7 +74,7 @@
     "bedrooms": 2,
     "bathrooms": 1,
     "sqft": 900,
-    "liveCheckedAt": "2026-09-01T16:45:40.807Z",
+    "liveCheckedAt": "2026-09-01T21:08:03.189Z",
     "autoPublishResult": "needs_confirmation_multi_unit_address_page"
   },
   {
@@ -61,7 +87,7 @@
     "bedrooms": 2,
     "bathrooms": 1,
     "sqft": 1000,
-    "liveCheckedAt": "2026-09-01T16:45:40.807Z",
+    "liveCheckedAt": "2026-09-01T21:08:03.189Z",
     "autoPublishResult": "published_or_updated"
   },
   {
@@ -74,7 +100,7 @@
     "bedrooms": 2,
     "bathrooms": 1,
     "sqft": 700,
-    "liveCheckedAt": "2026-09-01T16:45:40.807Z",
+    "liveCheckedAt": "2026-09-01T21:08:03.189Z",
     "autoPublishResult": "published_or_updated"
   },
   {
@@ -87,7 +113,20 @@
     "bedrooms": 2,
     "bathrooms": 2,
     "sqft": 732,
-    "liveCheckedAt": "2026-09-01T16:45:40.807Z",
+    "liveCheckedAt": "2026-09-01T21:08:03.189Z",
+    "autoPublishResult": "published_or_updated"
+  },
+  {
+    "source": "Zumper",
+    "url": "https://www.zumper.com/address/3559-w-31st-ave-vancouver-bc-v6s-1x9-can",
+    "address": "3559 West 31st Avenue, Vancouver, BC V6S 1X9",
+    "unit": null,
+    "identityKey": "3559 w 31st ave::url:78cd39445afa",
+    "livePrice": 2550,
+    "bedrooms": 2,
+    "bathrooms": 1,
+    "sqft": 700,
+    "liveCheckedAt": "2026-09-01T21:08:03.189Z",
     "autoPublishResult": "published_or_updated"
   },
   {
@@ -100,7 +139,7 @@
     "bedrooms": 2,
     "bathrooms": 1,
     "sqft": 1000,
-    "liveCheckedAt": "2026-09-01T16:45:40.807Z",
+    "liveCheckedAt": "2026-09-01T21:08:03.189Z",
     "autoPublishResult": "published_or_updated"
   },
   {
@@ -113,7 +152,7 @@
     "bedrooms": 2,
     "bathrooms": 3,
     "sqft": 1100,
-    "liveCheckedAt": "2026-09-01T16:45:40.807Z",
+    "liveCheckedAt": "2026-09-01T21:08:03.189Z",
     "autoPublishResult": "published_or_updated"
   }
 ]

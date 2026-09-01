@@ -1,6 +1,30 @@
 {
-  "refreshedAt": "2026-09-01T16:47:57.672Z",
+  "refreshedAt": "2026-09-01T21:10:18.892Z",
   "groups": [
+    {
+      "identityKey": "3220 4th ave w::url:4b1a6ebe2d36",
+      "sources": [
+        "zumper"
+      ],
+      "rents": [
+        4300
+      ],
+      "exactUnit": false,
+      "matchedListingId": "zumper-ecd4e868f79c",
+      "result": "candidate_only"
+    },
+    {
+      "identityKey": "2715 w 2nd ave::url:a56695812770",
+      "sources": [
+        "zumper"
+      ],
+      "rents": [
+        2500
+      ],
+      "exactUnit": false,
+      "matchedListingId": "zumper-2fde865f7e2c",
+      "result": "candidate_only"
+    },
     {
       "identityKey": "1328 maple st::url:f51499b18475",
       "sources": [
@@ -83,6 +107,18 @@
       ],
       "exactUnit": true,
       "matchedListingId": "zumper-75ff287e7a72",
+      "result": "candidate_only"
+    },
+    {
+      "identityKey": "3559 w 31st ave::url:78cd39445afa",
+      "sources": [
+        "zumper"
+      ],
+      "rents": [
+        2550
+      ],
+      "exactUnit": false,
+      "matchedListingId": "zumper-a0bd98e76c8f",
       "result": "candidate_only"
     },
     {

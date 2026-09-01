@@ -1,8 +1,22 @@
 {
-  "generatedAt": "2026-09-01T16:46:38.362Z",
-  "checkedCount": 7,
+  "generatedAt": "2026-09-01T21:08:57.854Z",
+  "checkedCount": 10,
   "quarantinedCount": 1,
   "checked": [
+    {
+      "identityKey": "3220 4th ave w::url:4b1a6ebe2d36",
+      "url": "https://www.zumper.com/address/3220-4th-ave-w-vancouver-bc-v6k-1r9-can",
+      "ambiguous": false,
+      "lowPrice": 4300,
+      "highPrice": 4300
+    },
+    {
+      "identityKey": "2715 w 2nd ave::url:a56695812770",
+      "url": "https://www.zumper.com/address/2715-w-2nd-ave-vancouver-bc-v6k-1k2-can",
+      "ambiguous": false,
+      "lowPrice": 2500,
+      "highPrice": 2500
+    },
     {
       "identityKey": "1328 maple st::url:f51499b18475",
       "url": "https://www.zumper.com/address/1328-maple-st-vancouver-bc-v6j-3r9-can",
@@ -37,6 +51,13 @@
       "ambiguous": false,
       "lowPrice": 2500,
       "highPrice": 2500
+    },
+    {
+      "identityKey": "3559 w 31st ave::url:78cd39445afa",
+      "url": "https://www.zumper.com/address/3559-w-31st-ave-vancouver-bc-v6s-1x9-can",
+      "ambiguous": false,
+      "lowPrice": 2550,
+      "highPrice": 2550
     },
     {
       "identityKey": "3157 w 33rd ave::url:cfc0d3b04db3",
