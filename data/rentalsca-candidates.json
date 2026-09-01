@@ -1,33 +1,33 @@
 {
-  "refreshedAt": "2026-08-31T23:02:19.514Z",
+  "refreshedAt": "2026-09-01T05:19:06.905Z",
   "mode": "candidate-only",
   "sourceHealth": {
     "rentalsca-kitsilano-2br": {
-      "checkedAt": "2026-08-31T23:02:19.514Z",
+      "checkedAt": "2026-09-01T05:19:06.905Z",
       "status": 200,
       "ok": true,
       "finalUrl": "https://rentals.ca/vancouver/kitsilano/all-apartments-all-houses/2-bedrooms"
     },
     "rentalsca-point-grey-2br": {
-      "checkedAt": "2026-08-31T23:02:19.514Z",
+      "checkedAt": "2026-09-01T05:19:06.905Z",
       "status": 200,
       "ok": true,
       "finalUrl": "https://rentals.ca/vancouver/west-point-grey/2-bedrooms"
     },
     "rentalsca-arbutus-2br": {
-      "checkedAt": "2026-08-31T23:02:19.514Z",
+      "checkedAt": "2026-09-01T05:19:06.905Z",
       "status": 200,
       "ok": true,
       "finalUrl": "https://rentals.ca/vancouver/arbutus-ridge/2-bedrooms"
     },
     "rentalsca-dunbar-2br": {
-      "checkedAt": "2026-08-31T23:02:19.514Z",
+      "checkedAt": "2026-09-01T05:19:06.905Z",
       "status": 200,
       "ok": true,
       "finalUrl": "https://rentals.ca/vancouver/dunbar-southlands/2-bedrooms"
     },
     "rentalsca-quilchena-2br": {
-      "checkedAt": "2026-08-31T23:02:19.514Z",
+      "checkedAt": "2026-09-01T05:19:06.905Z",
       "status": 404,
       "ok": false,
       "finalUrl": "https://rentals.ca/vancouver/quilchena/2-bedrooms"
@@ -66,12 +66,12 @@
         }
       ],
       "single": {
-        "rent": 3525,
+        "rent": 2350,
         "beds": 2,
         "baths": 2,
         "sqft": null
       },
-      "checkedAt": "2026-08-31T23:02:19.514Z"
+      "checkedAt": "2026-09-01T05:19:06.905Z"
     }
   ],
   "inventories": [
@@ -91,7 +91,7 @@
         "lng": -123.1522117
       },
       "active": true,
-      "checkedAt": "2026-08-31T23:02:19.514Z",
+      "checkedAt": "2026-09-01T05:19:06.905Z",
       "publishable": false
     },
     {
@@ -110,7 +110,7 @@
         "lng": -123.1522117
       },
       "active": true,
-      "checkedAt": "2026-08-31T23:02:19.514Z",
+      "checkedAt": "2026-09-01T05:19:06.905Z",
       "publishable": false
     }
   ]
