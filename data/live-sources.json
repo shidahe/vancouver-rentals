@@ -28,6 +28,8 @@
 
     {"id":"rentfaster-vancouver","name":"RentFaster Vancouver","url":"https://www.rentfaster.ca/bc/vancouver/rentals/","kind":"marketplace","adapter":"generic-search"},
     {"id":"kits-walk-official","name":"Kits Walk official availability","url":"https://www.kitswalkleasing.com/floorplans","kind":"official","adapter":"official-floorplans"},
+    {"id":"larchway-official","name":"Larchway Gardens official availability","url":"https://quadrealresidential.com/vancouver/larchway-gardens/contact/","kind":"official","adapter":"official-floorplans"},
+    {"id":"viridian-official","name":"Viridian official availability","url":"https://www.rentcafe.com/apartments/bc/vancouver/viridian1/default.aspx","kind":"property_manager","adapter":"official-floorplans"},
     {"id":"arbutus-terrace-official","name":"Arbutus Terrace official","url":"https://stranddev.com/portfolio/arbutusterrace-rental","kind":"official","adapter":"official-floorplans"},
     {"id":"arbutus-residences-rentfaster","name":"Arbutus Residences inventory","url":"https://www.rentfaster.ca/properties/2139-lahb-ave-vancouver-454186","kind":"property_manager","adapter":"rentfaster-detail"},
     {"id":"homax-arbutus","name":"Homax / Arbutus Rental","url":"https://www.arbutusrental.com/search","kind":"property_manager","adapter":"generic-search"},

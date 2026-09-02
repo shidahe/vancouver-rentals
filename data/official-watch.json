@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-20T03:26:00Z",
+  "updatedAt": "2026-09-02T19:29:48Z",
   "projects": [
     {
       "id": "arbutus-terrace",
@@ -55,10 +55,37 @@
       "id": "kits-walk",
       "buildingName": "Kits Walk",
       "address": "2075 W 12th Ave, Vancouver, BC",
-      "officialUrls": ["https://www.kitswalkleasing.com/floorplans"],
+      "officialUrls": [
+        "https://www.kitswalkleasing.com/floorplans",
+        "https://stranddev.com/portfolio/kitswalk"
+      ],
       "negativeSignals": ["fully leased", "0 apartment available"],
       "positiveSignals": ["available", "ready to move-in today"],
       "announcementSearchHints": ["Kits Walk Strand availability", "Kits Walk leasing Vancouver"]
+    },
+    {
+      "id": "larchway-gardens",
+      "buildingName": "Larchway Gardens",
+      "address": "2475 W Broadway, Vancouver, BC",
+      "officialUrls": [
+        "https://quadrealresidential.com/vancouver/larchway-gardens/",
+        "https://quadrealresidential.com/vancouver/larchway-gardens/contact/"
+      ],
+      "negativeSignals": ["all units are rented", "fully leased", "no units available"],
+      "positiveSignals": ["apartments available", "book a tour", "apply now"],
+      "announcementSearchHints": ["QuadReal Larchway Gardens availability", "Larchway Gardens 2475 West Broadway rental"]
+    },
+    {
+      "id": "viridian",
+      "buildingName": "Viridian",
+      "address": "1783 W 14th Ave, Vancouver, BC",
+      "officialUrls": [
+        "https://www.rentviridian.com/",
+        "https://www.rentcafe.com/apartments/bc/vancouver/viridian1/default.aspx"
+      ],
+      "negativeSignals": ["fully leased", "no units available", "no apartments available"],
+      "positiveSignals": ["available now", "check for available units"],
+      "announcementSearchHints": ["Viridian 1783 West 14th availability BGO Living", "Rent Viridian Vancouver available units"]
     },
     {
       "id": "19-greenway",

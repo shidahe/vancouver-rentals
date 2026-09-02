@@ -12,6 +12,7 @@ const activeAdapters = [
 ];
 const source = (await Promise.all(activeAdapters.map(read))).join('\n');
 const catalog = JSON.parse(await read('data/live-sources.json'));
+const officialWatch = JSON.parse(await read('data/official-watch.json'));
 
 const failures = [];
 for (const pattern of [/bedrooms\s*===\s*2/, /beds\s*!==\s*2/, /max_bedrooms=2/]) {
@@ -19,6 +20,12 @@ for (const pattern of [/bedrooms\s*===\s*2/, /beds\s*!==\s*2/, /max_bedrooms=2/]
 }
 for (const lane of ['zumper-kitsilano-4br', 'rentalsca-kitsilano-4br', 'livrent-vancouver-4br']) {
   if (!catalog.discovery.some(x => x.id === lane)) failures.push(`Missing 4BR discovery lane: ${lane}`);
+}
+for (const building of ['kits-walk', 'larchway-gardens', 'viridian']) {
+  const project = officialWatch.projects.some(x => x.id === building);
+  const source = catalog.discovery.some(x => x.id.startsWith(building.replace('-gardens', '')) && ['official', 'property_manager'].includes(x.kind));
+  if (!project) failures.push(`Priority building missing from official watch: ${building}`);
+  if (!source) failures.push(`Priority building missing from live source catalog: ${building}`);
 }
 if (!source.includes("mls:${norm(mls)}")) failures.push('MLS number is not a canonical identity.');
 if (!source.includes('auto_published_authoritative_mls')) failures.push('Current authoritative MLS inventory cannot auto-publish.');
