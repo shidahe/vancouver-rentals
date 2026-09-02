@@ -1,0 +1,30 @@
+{
+  "checkedAt": "2026-09-02T18:31:46.797Z",
+  "source": {
+    "id": "rentalsca-vancouver-4br",
+    "name": "Rentals.ca Vancouver 4BR+",
+    "url": "https://rentals.ca/vancouver/4-bedrooms",
+    "kind": "marketplace",
+    "adapter": "rentalsca-search"
+  },
+  "ok": true,
+  "status": 429,
+  "finalUrl": "https://rentals.ca/vancouver/4-bedrooms",
+  "title": "Just a moment...",
+  "bodyText": "rentals.ca\nPerforming security verification\n\nThis website uses a security service to protect against malicious bots. This page is displayed while the website verifies you are not a bot.\n\nRay ID: a34e9ce968e1ae00\nPerformance and Security by Cloudflare\nPrivacy",
+  "links": [
+    {
+      "href": "https://www.cloudflare.com/?utm_source=challenge&utm_campaign=m",
+      "text": "Cloudflare"
+    },
+    {
+      "href": "https://www.cloudflare.com/privacypolicy/",
+      "text": "Privacy"
+    }
+  ],
+  "jsonLd": [],
+  "images": [
+    "https://rentals.ca/favicon.ico"
+  ],
+  "elapsedMs": 3087
+}

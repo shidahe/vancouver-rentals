@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-09-02T17:14:07.148Z",
-  "checkedCount": 14,
-  "quarantinedCount": 0,
+  "generatedAt": "2026-09-02T18:38:41.217Z",
+  "checkedCount": 19,
+  "quarantinedCount": 1,
   "checked": [
     {
       "identityKey": "3220 4th ave w::url:4b1a6ebe2d36",
@@ -25,6 +25,62 @@
       "highPrice": 2500
     },
     {
+      "identityKey": "2406 8th ave w::url:0c632abb462a",
+      "url": "https://www.zumper.com/address/2406-w-8th-ave-vancouver-bc-v6k-2b1-can",
+      "ambiguous": false,
+      "lowPrice": 3800,
+      "highPrice": 3800
+    },
+    {
+      "identityKey": "1541 maple st::url:7a3d01371269",
+      "url": "https://www.zumper.com/address/1541-maple-st-vancouver-bc-v6j-3s2-can",
+      "ambiguous": true,
+      "lowPrice": 3500,
+      "highPrice": 6000
+    },
+    {
+      "identityKey": "1533 maple st::url:69f2e13a0fd5",
+      "url": "https://www.zumper.com/address/1533-maple-st-vancouver-bc-v6j-3s2-can",
+      "ambiguous": false,
+      "lowPrice": 4500,
+      "highPrice": 4500
+    },
+    {
+      "identityKey": "3854 w 14th ave::url:fec994cbb215",
+      "url": "https://www.zumper.com/address/3854-w-14th-ave-vancouver-bc-v6r-2w9-can",
+      "ambiguous": false,
+      "lowPrice": 2500,
+      "highPrice": 2500
+    },
+    {
+      "identityKey": "3559 w 31st ave::url:78cd39445afa",
+      "url": "https://www.zumper.com/address/3559-w-31st-ave-vancouver-bc-v6s-1x9-can",
+      "ambiguous": false,
+      "lowPrice": 2550,
+      "highPrice": 2550
+    },
+    {
+      "identityKey": "3157 w 33rd ave::url:cfc0d3b04db3",
+      "url": "https://www.zumper.com/address/3157-w-33rd-ave-vancouver-bc-v6n-2g6-can",
+      "ambiguous": false,
+      "lowPrice": 2800,
+      "highPrice": 2800
+    },
+    {
+      "identityKey": "3588 w 43rd ave::url:a32b37cf11c0",
+      "url": "https://www.zumper.com/address/3588-w-43rd-ave-vancouver-bc-v6n-3j9-can",
+      "ambiguous": false,
+      "lowPrice": 2600,
+      "highPrice": 2600
+    },
+    {
+      "identityKey": "larch st w 45th ave::url:d52e1ab40cb4",
+      "url": "https://www.zumper.com/address/2532-w-45th-ave-vancouver-bc-v6n-3l1-can",
+      "ambiguous": false,
+      "lowPrice": 2500,
+      "highPrice": 2500
+    },
+    {
       "identityKey": "2138 w 13th ave::url:5b518c4d35f2",
       "url": "https://www.zumper.com/address/2138-w-13th-ave-vancouver-bc-v6k-2s1-can",
       "ambiguous": false,
@@ -39,32 +95,11 @@
       "highPrice": 4995
     },
     {
-      "identityKey": "4631 w 14th ave::url:fc35e420f011",
-      "url": "https://www.zumper.com/address/4631-w-14th-ave-vancouver-bc-v6r-2y7-can",
+      "identityKey": "3200 e blvd::url:d57904351dc9",
+      "url": "https://www.zumper.com/address/3200-e-blvd-vancouver-bc-v6j-4a6-can",
       "ambiguous": false,
-      "lowPrice": 2800,
-      "highPrice": 2800
-    },
-    {
-      "identityKey": "3854 w 14th ave::url:fec994cbb215",
-      "url": "https://www.zumper.com/address/3854-w-14th-ave-vancouver-bc-v6r-2w9-can",
-      "ambiguous": false,
-      "lowPrice": 2500,
-      "highPrice": 2500
-    },
-    {
-      "identityKey": "4402 w 7th ave::url:510fd585fc1d",
-      "url": "https://www.zumper.com/address/4402-w-7th-ave-vancouver-bc-v6r-1w9-can",
-      "ambiguous": false,
-      "lowPrice": 5450,
-      "highPrice": 5450
-    },
-    {
-      "identityKey": "4533 w 16th ave::url:098178582ccb",
-      "url": "https://www.zumper.com/address/4533-w-16th-ave-vancouver-bc-v6r-3e8-can",
-      "ambiguous": false,
-      "lowPrice": 4500,
-      "highPrice": 4500
+      "lowPrice": 5999,
+      "highPrice": 5999
     },
     {
       "identityKey": "3836 w 15th ave::url:ba8360b93bb2",
@@ -74,25 +109,25 @@
       "highPrice": 6800
     },
     {
+      "identityKey": "1462 devonshire crescent::url:1204230a9116",
+      "url": "https://www.zumper.com/address/1462-devonshire-crk-vancouver-bc-v6h-2g6-can",
+      "ambiguous": false,
+      "lowPrice": 8500,
+      "highPrice": 8500
+    },
+    {
+      "identityKey": "4402 w 7th ave::url:510fd585fc1d",
+      "url": "https://www.zumper.com/address/4402-w-7th-ave-vancouver-bc-v6r-1w9-can",
+      "ambiguous": false,
+      "lowPrice": 5450,
+      "highPrice": 5450
+    },
+    {
       "identityKey": "4086 w 29th ave::url:1a3a085e820d",
       "url": "https://www.zumper.com/address/4086-w-29th-ave-vancouver-bc-v6s-1v5-can",
       "ambiguous": false,
       "lowPrice": 12000,
       "highPrice": 12000
-    },
-    {
-      "identityKey": "3559 w 31st ave::url:78cd39445afa",
-      "url": "https://www.zumper.com/address/3559-w-31st-ave-vancouver-bc-v6s-1x9-can",
-      "ambiguous": false,
-      "lowPrice": 2550,
-      "highPrice": 2550
-    },
-    {
-      "identityKey": "3200 e blvd::url:d57904351dc9",
-      "url": "https://www.zumper.com/address/3200-e-blvd-vancouver-bc-v6j-4a6-can",
-      "ambiguous": false,
-      "lowPrice": 5999,
-      "highPrice": 5999
     },
     {
       "identityKey": "2477 waterloo st::url:9bf4862de36a",
@@ -102,5 +137,12 @@
       "highPrice": 4500
     }
   ],
-  "quarantined": []
+  "quarantined": [
+    {
+      "id": "zumper-6e03d092610a",
+      "address": "1541 Maple Street, Vancouver, BC",
+      "url": "https://www.zumper.com/address/1541-maple-st-vancouver-bc-v6j-3s2-can",
+      "rent": 3500
+    }
+  ]
 }

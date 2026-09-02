@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-09-02T17:16:34.944Z",
+  "generatedAt": "2026-09-02T18:40:44.962Z",
   "coverageReady": true,
-  "healthyLaneCount": 4,
+  "healthyLaneCount": 3,
   "freshLaneCount": 5,
   "lanes": [
     {
@@ -9,8 +9,8 @@
       "kind": "broad-marketplace",
       "healthy": true,
       "status": "healthy",
-      "detail": "18 fresh live candidates",
-      "refreshedAt": "2026-09-02T17:11:54.635Z"
+      "detail": "23 fresh live candidates",
+      "refreshedAt": "2026-09-02T18:35:58.184Z"
     },
     {
       "id": "craigslist",
@@ -18,23 +18,23 @@
       "healthy": true,
       "status": "healthy",
       "detail": "4/4 regional searches healthy",
-      "refreshedAt": "2026-09-02T17:14:22.195Z"
+      "refreshedAt": "2026-09-02T18:38:49.815Z"
     },
     {
       "id": "rentalsca",
       "kind": "broad-marketplace",
-      "healthy": true,
-      "status": "healthy",
-      "detail": "4/5 regional searches healthy",
-      "refreshedAt": "2026-09-02T17:14:07.548Z"
+      "healthy": false,
+      "status": "degraded",
+      "detail": "2/9 regional searches healthy",
+      "refreshedAt": "2026-09-02T18:38:41.728Z"
     },
     {
       "id": "livrent",
       "kind": "broad-marketplace",
       "healthy": false,
       "status": "unhealthy",
-      "detail": "0/3 searches healthy",
-      "refreshedAt": "2026-09-02T17:14:21.360Z"
+      "detail": "0/5 searches healthy",
+      "refreshedAt": "2026-09-02T18:38:49.030Z"
     },
     {
       "id": "realtylink",
@@ -42,15 +42,21 @@
       "healthy": true,
       "status": "healthy",
       "detail": "3/3 searches healthy",
-      "refreshedAt": "2026-09-02T17:14:29.792Z"
+      "refreshedAt": "2026-09-02T18:38:57.143Z"
     }
   ],
   "warnings": [
     {
       "severity": "warning",
+      "lane": "rentalsca",
+      "status": "degraded",
+      "detail": "2/9 regional searches healthy"
+    },
+    {
+      "severity": "warning",
       "lane": "livrent",
       "status": "unhealthy",
-      "detail": "0/3 searches healthy"
+      "detail": "0/5 searches healthy"
     }
   ],
   "blockers": [],
