@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-09-01T21:10:18.892Z",
+  "refreshedAt": "2026-09-02T04:45:16.374Z",
   "groups": [
     {
       "identityKey": "3220 4th ave w::url:4b1a6ebe2d36",
@@ -11,6 +11,18 @@
       ],
       "exactUnit": false,
       "matchedListingId": "zumper-ecd4e868f79c",
+      "result": "candidate_only"
+    },
+    {
+      "identityKey": "3535 w 1st ave::unit:3",
+      "sources": [
+        "zumper"
+      ],
+      "rents": [
+        2500
+      ],
+      "exactUnit": true,
+      "matchedListingId": "zumper-289dc426c15b",
       "result": "candidate_only"
     },
     {
