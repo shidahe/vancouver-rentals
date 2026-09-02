@@ -1,4 +1,5 @@
 import fs from 'node:fs/promises';
+import { listingMls, mlsIdentity } from './inventory-identity.mjs';
 
 const read = p => fs.readFile(p, 'utf8');
 const activeAdapters = [
@@ -27,13 +28,19 @@ for (const building of ['kits-walk', 'larchway-gardens', 'viridian']) {
   if (!project) failures.push(`Priority building missing from official watch: ${building}`);
   if (!source) failures.push(`Priority building missing from live source catalog: ${building}`);
 }
-if (!source.includes("mls:${norm(mls)}")) failures.push('MLS number is not a canonical identity.');
 if (!source.includes('auto_published_authoritative_mls')) failures.push('Current authoritative MLS inventory cannot auto-publish.');
 if (!source.includes('two consecutive healthy Realtylink inventory snapshots')) failures.push('MLS disappearance does not fail closed.');
+if (/bedrooms\s*:\s*c\.bedrooms\s*\|\|\s*2/.test(source)) failures.push('Unknown candidate bedrooms are still defaulted to 2BR.');
+if (!source.includes('mlsInventoryManaged!==true')) failures.push('MLS search disappearance is not limited to feed-managed inventory.');
+
+const legacyMlsListing = { id: '2268-w-broadway-312-r3153999', unit: '312 · MLS R3153999' };
+if (listingMls(legacyMlsListing) !== 'R3153999' || mlsIdentity(listingMls(legacyMlsListing)) !== 'mls:r3153999') {
+  failures.push('Legacy MLS-backed listings do not resolve to the canonical MLS identity.');
+}
 
 // Regression fixture: the reported Kitsilano 4BR must pass the global discovery gate.
 const r3160272 = { mls: 'R3160272', bedrooms: 4, rent: 6950, address: '2788 W 1st Avenue, Vancouver, BC' };
-if (!(r3160272.bedrooms >= 2 && r3160272.rent >= 2500 && r3160272.rent <= 12000)) {
+if (mlsIdentity(r3160272.mls) !== 'mls:r3160272' || !(r3160272.bedrooms >= 2 && r3160272.rent >= 2500 && r3160272.rent <= 12000)) {
   failures.push('R3160272 regression fixture is rejected by the 2BR+ policy.');
 }
 

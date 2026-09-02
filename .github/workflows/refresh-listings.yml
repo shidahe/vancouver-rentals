@@ -19,6 +19,7 @@ on:
       - 'scripts/refresh-craigslist.mjs'
       - 'scripts/refresh-realtylink.mjs'
       - 'scripts/reconcile-candidates.mjs'
+      - 'scripts/inventory-identity.mjs'
       - 'scripts/refresh-purposebuilt.mjs'
       - 'scripts/refresh-official-status.mjs'
       - 'scripts/apply-official-status.mjs'

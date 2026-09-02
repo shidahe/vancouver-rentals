@@ -16,13 +16,15 @@ const realtylink=await read(path.join(DATA,'realtylink-candidates.json'),{});
 const countOk=obj=>Object.values(obj||{}).filter(x=>x?.ok===true).length;
 const countTotal=obj=>Object.keys(obj||{}).length;
 const rlHealth=Array.isArray(realtylink.health)?realtylink.health:[];
+const rlReachable=rlHealth.filter(x=>x.status>=200&&x.status<400).length;
+const rlCandidates=Array.isArray(realtylink.candidates)?realtylink.candidates.length:0;
 const zumperFresh=zumper.filter(x=>fresh(x.liveCheckedAt));
 const lanes=[
   {id:'zumper',kind:'broad-marketplace',healthy:zumperFresh.length>=5,status:zumperFresh.length>=5?'healthy':'unhealthy',detail:`${zumperFresh.length} fresh live candidates`,refreshedAt:zumperFresh.map(x=>x.liveCheckedAt).sort().at(-1)||null},
   {id:'craigslist',kind:'independent-classifieds',healthy:countOk(craigslist.sourceHealth)>=3,status:countOk(craigslist.sourceHealth)>=3?'healthy':countOk(craigslist.sourceHealth)>0?'degraded':'unhealthy',detail:`${countOk(craigslist.sourceHealth)}/${countTotal(craigslist.sourceHealth)} regional searches healthy`,refreshedAt:craigslist.refreshedAt||null},
   {id:'rentalsca',kind:'broad-marketplace',healthy:countOk(rentalsca.sourceHealth)>=3,status:countOk(rentalsca.sourceHealth)>=3?'healthy':countOk(rentalsca.sourceHealth)>0?'degraded':'unhealthy',detail:`${countOk(rentalsca.sourceHealth)}/${countTotal(rentalsca.sourceHealth)} regional searches healthy`,refreshedAt:rentalsca.refreshedAt||null},
   {id:'livrent',kind:'broad-marketplace',healthy:countOk(livrent.sourceHealth)>=1,status:countOk(livrent.sourceHealth)>=1?'healthy':'unhealthy',detail:`${countOk(livrent.sourceHealth)}/${countTotal(livrent.sourceHealth)} searches healthy`,refreshedAt:livrent.refreshedAt||null},
-  {id:'realtylink',kind:'mls-rental',healthy:rlHealth.filter(x=>x.status>=200&&x.status<400).length>=1,status:rlHealth.some(x=>x.status>=200&&x.status<400)?'healthy':'unhealthy',detail:`${rlHealth.filter(x=>x.status>=200&&x.status<400).length}/${rlHealth.length} searches healthy`,refreshedAt:realtylink.refreshedAt||null}
+  {id:'realtylink',kind:'mls-rental',healthy:rlReachable>=1&&rlCandidates>=1,status:rlReachable<1?'unhealthy':rlCandidates<1?'degraded':'healthy',detail:`${rlReachable}/${rlHealth.length} searches reachable; ${rlCandidates} live candidates parsed`,refreshedAt:realtylink.refreshedAt||null}
 ];
 
 const freshLanes=lanes.filter(x=>fresh(x.refreshedAt));

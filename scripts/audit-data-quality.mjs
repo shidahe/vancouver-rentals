@@ -1,6 +1,7 @@
 import fs from 'node:fs/promises';
 import path from 'node:path';
 import { bedroomEligible } from './discovery-policy.mjs';
+import { listingMls } from './inventory-identity.mjs';
 const DATA=path.join(process.cwd(),'data');
 const read=async(p,d)=>{try{return JSON.parse(await fs.readFile(p,'utf8'))}catch{return d}};
 const write=async(p,x)=>fs.writeFile(p,JSON.stringify(x,null,2)+'\n');
@@ -10,6 +11,7 @@ const active=db.listings.filter(l=>(l.availabilityStatus||l.status)==='active'||
 const issues=[];
 const keyMap=new Map();
 const floorplanMap=new Map();
+const mlsMap=new Map();
 const EAST_BOUNDARY=-123.145;
 const canon=s=>String(s||'').toLowerCase().replace(/\bwest\b/g,'w').replace(/\beast\b/g,'e').replace(/\bstreet\b/g,'st').replace(/\bavenue\b/g,'ave').replace(/[^a-z0-9]+/g,' ').trim();
 const postalFsa=s=>String(s||'').toUpperCase().match(/\b([A-Z]\d[A-Z])\s?\d[A-Z]\d\b/)?.[1]||null;
@@ -41,6 +43,12 @@ for(const l of active){
   if(String(l.verificationLevel||'').toLowerCase()==='unverified')issues.push({severity:'high',id:l.id,issue:'active-but-unverified'});
   if(l.ac==null)issues.push({severity:'info',id:l.id,issue:'unknown-ac'});
   if(l.orientation==null)issues.push({severity:'info',id:l.id,issue:'unknown-orientation'});
+
+  const mls=listingMls(l);
+  if(mls){
+    if(l.mls!==mls)issues.push({severity:'medium',id:l.id,issue:'missing-canonical-mls-field',detail:`Extracted ${mls} from legacy identity fields`});
+    if(mlsMap.has(mls))issues.push({severity:'high',id:l.id,otherId:mlsMap.get(mls),issue:'duplicate-mls-identity',detail:mls});else mlsMap.set(mls,l.id);
+  }
 
   const street=canon(String(l.address||'').split(',')[0]);
   const unit=concreteUnit(l.unit);

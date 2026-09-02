@@ -1,6 +1,7 @@
 import fs from 'node:fs/promises';
 import path from 'node:path';
 import crypto from 'node:crypto';
+import { listingMls, mlsIdentity } from './inventory-identity.mjs';
 
 const DATA=path.join(process.cwd(),'data');
 const iso=new Date().toISOString(),today=iso.slice(0,10);
@@ -11,7 +12,7 @@ const hash=s=>crypto.createHash('sha1').update(s).digest('hex').slice(0,12);
 function street(s=''){return norm(String(s).split(',')[0]).replace(/\bwest\b/g,'w').replace(/\beast\b/g,'e').replace(/\bnorth\b/g,'n').replace(/\bsouth\b/g,'s').replace(/\bstreet\b/g,'st').replace(/\bavenue\b/g,'ave').replace(/\broad\b/g,'rd').replace(/\bplace\b/g,'pl').replace(/\bdrive\b/g,'dr').replace(/\bboulevard\b/g,'blvd').replace(/\bparkway\b/g,'pky');}
 function unitToken(s){const v=String(s||'').trim().replace(/^#/,'').match(/(?=[A-Za-z0-9-]*\d)[A-Za-z0-9-]{1,12}/)?.[0];return v?v.toUpperCase():null;}
 function listingUnit(x){const direct=unitToken(x.unit);if(direct)return direct;const a=String(x.address||'').split(',')[0];return unitToken(a.match(/(?:unit|suite|apt|#)\s*([A-Za-z0-9-]*\d[A-Za-z0-9-]*)/i)?.[1]);}
-function key(address,unit,url,floorplan,mls){if(mls)return`mls:${norm(mls)}`;const a=street(address);const u=unitToken(unit);if(u)return`${a}::unit:${norm(u)}`;if(floorplan)return`${a}::floorplan:${norm(floorplan)}`;return`${a}::url:${hash(url||'')}`;}
+function key(address,unit,url,floorplan,mls){const mlsKey=mlsIdentity(mls);if(mlsKey)return mlsKey;const a=street(address);const u=unitToken(unit);if(u)return`${a}::unit:${norm(u)}`;if(floorplan)return`${a}::floorplan:${norm(floorplan)}`;return`${a}::url:${hash(url||'')}`;}
 function candidateKey(c){return key(c.address,c.unit,c.url,c.floorplan,c.mls);}
 function sourceFamily(c){return /^zumper$/i.test(c.source)?'zumper':/^rentals\.ca$/i.test(c.source)?'rentalsca':/^liv\.rent$/i.test(c.source)?'livrent':norm(c.source);}
 function usable(c){return !!c&&c.active!==false&&!c.rented&&Number(c.bedrooms)>=2&&c.targetArea!==false&&Number(c.rent)>=2500&&Number(c.rent)<=12000&&!!c.address;}
@@ -36,7 +37,7 @@ const liv=await read(path.join(DATA,'livrent-candidates.json'),{candidates:[]});
 const craigslist=await read(path.join(DATA,'craigslist-candidates.json'),{candidates:[]});
 const realtylink=await read(path.join(DATA,'realtylink-candidates.json'),{candidates:[]});
 const all=[];
-for(const c of zumper)all.push({...c,source:c.source||'Zumper',active:true,targetArea:true,bedrooms:c.bedrooms||2,rent:c.livePrice??c.rent});
+for(const c of zumper)all.push({...c,source:c.source||'Zumper',active:true,targetArea:true,bedrooms:c.bedrooms,rent:c.livePrice??c.rent});
 for(const c of rentals.inventories||[])all.push(c);
 for(const c of liv.candidates||[])all.push({...c,bedrooms:c.beds??c.bedrooms,rent:c.rent});
 for(const c of craigslist.candidates||[])all.push(c);
@@ -45,7 +46,7 @@ for(const c of realtylink.candidates||[])all.push(c);
 const groups=new Map();
 for(const c of all){if(!usable(c))continue;const k=candidateKey(c);if(!groups.has(k))groups.set(k,[]);groups.get(k).push(c);}
 const listingByKey=new Map();
-for(const x of payload.listings){const k=key(x.address,listingUnit(x),x.url,null,x.mls);if(!listingByKey.has(k)||listingByKey.get(k).source==='Zumper live detail')listingByKey.set(k,x);}
+for(const x of payload.listings){const canonicalMls=listingMls(x);if(canonicalMls)x.mls=canonicalMls;const k=key(x.address,listingUnit(x),x.url,null,canonicalMls);if(!listingByKey.has(k)||listingByKey.get(k).source==='Zumper live detail')listingByKey.set(k,x);}
 const state={refreshedAt:iso,groups:[],promoted:[],crossVerified:[],fingerprintCrossVerified:[],negativeMatches:[],mlsMissing:{},mlsRemoved:[]};
 
 for(const [k,items] of groups){
@@ -84,7 +85,7 @@ for(const [k,items] of groups){
     const best=authoritativeMls,lat=best.geo?.lat??best.lat??null,lng=best.geo?.lng??best.lng??null;
     if(lat==null||lng==null){state.groups.push({...summary,result:'authoritative_mls_no_geo'});continue;}
     const id=`mls-${norm(best.mls)}`,rent=Number(best.rent);
-    listing={id,mls:best.mls,buildingName:null,unit:unitToken(best.unit),address:best.address,neighborhood:'Vancouver West',lat,lng,type:best.type||'condo',rent,effectiveRent:null,bedrooms:Number(best.bedrooms),bathrooms:best.bathrooms??best.baths??null,sqft:best.sqft??null,ac:best.ac??null,parking:best.parking??null,petFriendly:best.petFriendly??null,buildingYear:best.buildingYear??null,orientation:best.orientation??null,balcony:best.balcony??null,largeWindows:best.largeWindows??null,modernInterior:best.modernInterior??null,source:'Realtylink MLS',url:best.url,photoPageUrl:best.url,firstSeen:today,lastChecked:today,verifiedAt:iso,verificationLevel:'verified',verificationMethod:`AUTO-PUBLISHED from current authoritative MLS inventory ${best.mls}.`,availabilityStatus:'active',status:'new',priceDrop:false,evidenceSources:['realtylink mls'],dataNotes:'MLS number is the canonical identity; disappearance from the current MLS inventory triggers fail-closed revalidation.'};
+    listing={id,mls:best.mls,mlsInventoryManaged:true,buildingName:null,unit:unitToken(best.unit),address:best.address,neighborhood:'Vancouver West',lat,lng,type:best.type||'condo',rent,effectiveRent:null,bedrooms:Number(best.bedrooms),bathrooms:best.bathrooms??best.baths??null,sqft:best.sqft??null,ac:best.ac??null,parking:best.parking??null,petFriendly:best.petFriendly??null,buildingYear:best.buildingYear??null,orientation:best.orientation??null,balcony:best.balcony??null,largeWindows:best.largeWindows??null,modernInterior:best.modernInterior??null,source:'Realtylink MLS',url:best.url,photoPageUrl:best.url,firstSeen:today,lastChecked:today,verifiedAt:iso,verificationLevel:'verified',verificationMethod:`AUTO-PUBLISHED from current authoritative MLS inventory ${best.mls}.`,availabilityStatus:'active',status:'new',priceDrop:false,evidenceSources:['realtylink mls'],dataNotes:'MLS number is the canonical identity; disappearance from the current MLS inventory triggers fail-closed revalidation.'};
     payload.listings.push(listing);listingByKey.set(k,listing);history[id]=[{date:today,rent,note:`NEW: live Realtylink MLS ${best.mls} auto-published.`}];state.promoted.push(id);state.groups.push({...summary,result:'auto_published_authoritative_mls'});continue;
   }
   state.groups.push({...summary,result:'candidate_only'});
@@ -118,7 +119,11 @@ const realtylinkHealthy=(realtylink.health||[]).some(x=>Number(x.status)>=200&&N
 if(realtylinkHealthy){
   const activeMls=new Set((realtylink.candidates||[]).map(x=>norm(x.mls)).filter(Boolean));
   for(const x of payload.listings){
-    if(!x.mls||x.availabilityStatus==='removed'||activeMls.has(norm(x.mls)))continue;
+    // Only inventory published from the complete Realtylink feed is governed by
+    // search-result disappearance. Manually curated MLS-backed homes can have
+    // stronger current detail-page evidence and must not be hidden merely because
+    // a sampled search page did not contain them.
+    if(!x.mls||x.mlsInventoryManaged!==true||x.availabilityStatus==='removed'||activeMls.has(norm(x.mls)))continue;
     const previous=previousReconciliation.mlsMissing?.[x.mls];
     state.mlsMissing[x.mls]={firstMissingAt:previous?.firstMissingAt||iso,lastMissingAt:iso,listingId:x.id};
     if(previous){
