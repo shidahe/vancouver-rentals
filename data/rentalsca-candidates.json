@@ -1,60 +1,60 @@
 {
-  "refreshedAt": "2026-09-02T18:38:41.728Z",
+  "refreshedAt": "2026-09-02T19:39:54.123Z",
   "mode": "candidate-only",
   "sourceHealth": {
     "rentalsca-kitsilano-2br": {
-      "checkedAt": "2026-09-02T18:38:41.728Z",
+      "checkedAt": "2026-09-02T19:39:54.123Z",
       "status": 200,
       "ok": true,
       "finalUrl": "https://rentals.ca/vancouver/kitsilano/all-apartments-all-houses/2-bedrooms"
     },
     "rentalsca-point-grey-2br": {
-      "checkedAt": "2026-09-02T18:38:41.728Z",
+      "checkedAt": "2026-09-02T19:39:54.123Z",
       "status": 200,
       "ok": true,
       "finalUrl": "https://rentals.ca/vancouver/west-point-grey/2-bedrooms"
     },
     "rentalsca-arbutus-2br": {
-      "checkedAt": "2026-09-02T18:38:41.728Z",
-      "status": 429,
-      "ok": false,
-      "finalUrl": "https://rentals.ca/vancouver/arbutus-ridge/2-bedrooms?__cf_chl_rt_tk=8FhEc7Kgls1aK.unrIUILQD.PIgEWfVmQKIs4S9Reno-1788374328-1.0.1.1-CMXrEDU.muBmSZBXtkb8NN4MgOV_jNRfHh4WsNMJJCM"
+      "checkedAt": "2026-09-02T19:39:54.123Z",
+      "status": 200,
+      "ok": true,
+      "finalUrl": "https://rentals.ca/vancouver/arbutus-ridge/2-bedrooms"
     },
     "rentalsca-dunbar-2br": {
-      "checkedAt": "2026-09-02T18:38:41.728Z",
-      "status": 429,
-      "ok": false,
-      "finalUrl": "https://rentals.ca/vancouver/dunbar-southlands/2-bedrooms?__cf_chl_rt_tk=8HkO9NNAh.9PhSct0Cn2bVOMFS932KYnskxGIOGiOPk-1788374328-1.0.1.1-E6DaEGHWkI.FSTHyxpXM_fEWcCFxWc38F8NTdbdg5gw"
+      "checkedAt": "2026-09-02T19:39:54.123Z",
+      "status": 200,
+      "ok": true,
+      "finalUrl": "https://rentals.ca/vancouver/dunbar-southlands/2-bedrooms"
     },
     "rentalsca-quilchena-2br": {
-      "checkedAt": "2026-09-02T18:38:41.728Z",
-      "status": 429,
+      "checkedAt": "2026-09-02T19:39:54.123Z",
+      "status": 404,
       "ok": false,
-      "finalUrl": "https://rentals.ca/vancouver/quilchena/2-bedrooms?__cf_chl_rt_tk=bbfxdo.aEqfGiA5RYMAgzozTUeTZ1JdcyGSo7jkxDgY-1788374328-1.0.1.1-dsoTBPb7oJo.ALV0eP7g4oRVOyIhheD7IbjVv464lgw"
+      "finalUrl": "https://rentals.ca/vancouver/quilchena/2-bedrooms"
     },
     "rentalsca-kitsilano-3br": {
-      "checkedAt": "2026-09-02T18:38:41.728Z",
+      "checkedAt": "2026-09-02T19:39:54.123Z",
       "status": 429,
       "ok": false,
-      "finalUrl": "https://rentals.ca/vancouver/kitsilano/3-bedrooms?__cf_chl_rt_tk=5QldvHlUd4daGZkmvdM7SCuJeYarGn5uRM1Q7mKa.zE-1788374328-1.0.1.1-A429K7Ih35MjTODsBj2pTIGYq7bggCb4d9ha0G0EuJ0"
+      "finalUrl": "https://rentals.ca/vancouver/kitsilano/3-bedrooms?__cf_chl_rt_tk=WKwevlb3VR9Llz2q2qQHVyZwSsF.ig20jaB1KHPRPPA-1788378005-1.0.1.1-Z.9sdlNfXL7Oxs4ivHasA325Iqqe.ZKZY6fJfxdk8Rw"
     },
     "rentalsca-kitsilano-4br": {
-      "checkedAt": "2026-09-02T18:38:41.728Z",
+      "checkedAt": "2026-09-02T19:39:54.123Z",
       "status": 429,
       "ok": false,
-      "finalUrl": "https://rentals.ca/vancouver/kitsilano/4-bedrooms?__cf_chl_rt_tk=YECHFyiiUucIPjkZdVDWQVzLtVLsI59uOsTZzhyMgIo-1788374328-1.0.1.1-V1PrL8RQ0p1Vo7fa4UCP4daPjOg35v4RHAZJd6vm.Y0"
+      "finalUrl": "https://rentals.ca/vancouver/kitsilano/4-bedrooms?__cf_chl_rt_tk=cRJ5NSb6s6MxukIfOmV.aoNPYuPySaIQqQpalu0i9nw-1788378005-1.0.1.1-cSvjsGFhkXqQH1RAlXoaAZ8ApGvt6PnsWyqhCHrW5Q4"
     },
     "rentalsca-vancouver-3br": {
-      "checkedAt": "2026-09-02T18:38:41.728Z",
+      "checkedAt": "2026-09-02T19:39:54.123Z",
       "status": 429,
       "ok": false,
-      "finalUrl": "https://rentals.ca/vancouver/3-bedrooms?__cf_chl_rt_tk=gf7CsS0tB0OX07gVD6CWebyA4h0m1ER16zbyHq1oS.s-1788374328-1.0.1.1-d4CJ_5oZElWoGGmkbkGeQePCW0aoWQriZoJ9efmcczU"
+      "finalUrl": "https://rentals.ca/vancouver/3-bedrooms?__cf_chl_rt_tk=quaWIMIUmXynoXC.wSQEPMJcWruqRdZMk65MEtWeBFI-1788378005-1.0.1.1-AOtDygJFStdD10qQ2vbz2TY9W448cDmbwAj44NB_4Dc"
     },
     "rentalsca-vancouver-4br": {
-      "checkedAt": "2026-09-02T18:38:41.728Z",
+      "checkedAt": "2026-09-02T19:39:54.123Z",
       "status": 429,
       "ok": false,
-      "finalUrl": "https://rentals.ca/vancouver/4-bedrooms?__cf_chl_rt_tk=LXrHbmebbdRJDfx_ZqmmLfMeYm9VcvA9sf3NqwoxfC8-1788374328-1.0.1.1-zzQ17tVp32Nu_aLGr_qUzzPKU60NlsV07RcXmSPFLT0"
+      "finalUrl": "https://rentals.ca/vancouver/4-bedrooms?__cf_chl_rt_tk=BDWgRQmP4kVBkQ3VLfiaTdDk7A.eL6_dPOaCHdYzz2c-1788378005-1.0.1.1-uRStuEQe6CI3w2bRPljMzwfJw960M6vJVgGqtYvCNSQ"
     }
   },
   "pages": [],
