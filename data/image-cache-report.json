@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-09-02T04:45:52.245Z",
+  "refreshedAt": "2026-09-02T11:29:29.499Z",
   "listings": {
     "arbutus-residences-315-2den-900": {
       "cached": 3,
@@ -47,12 +47,7 @@
       "cached": 3,
       "preserved": 3,
       "downloaded": 0,
-      "failures": [
-        {
-          "url": "https://admin.warringtonresidential.com/wp-content/uploads/2025/03/19-on-the-greenway-2.jpg",
-          "error": "fetch failed"
-        }
-      ],
+      "failures": [],
       "photoPageUrl": "https://warringtonresidential.com/properties/19-on-the-greenway/"
     },
     "waterloo-2477-zumper": {
@@ -211,8 +206,8 @@
     },
     "zumper-289dc426c15b": {
       "cached": 5,
-      "preserved": 0,
-      "downloaded": 5,
+      "preserved": 5,
+      "downloaded": 0,
       "failures": [],
       "photoPageUrl": "https://www.zumper.com/address/3535-w-1st-ave-vancouver-bc-v6r-1g9-can"
     }
@@ -220,8 +215,8 @@
   "totals": {
     "sourceListings": 30,
     "cachedListings": 30,
-    "downloaded": 5,
-    "failed": 1,
-    "preserved": 132
+    "downloaded": 0,
+    "failed": 0,
+    "preserved": 137
   }
 }
