@@ -27,6 +27,7 @@ on:
       - 'scripts/audit-coverage.mjs'
       - 'scripts/test-site.mjs'
       - 'scripts/test-freshness-guard.mjs'
+      - 'scripts/test-maintenance-policy.mjs'
       - 'scripts/finalize-readiness.mjs'
       - 'freshness-guard.js'
       - 'index.html'

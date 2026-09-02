@@ -177,7 +177,8 @@ async function geocodeVancouver(address) {
 function isTargetCandidate(text) {
   const t = norm(text);
   const area = /(kitsilano|point grey|west point grey|arbutus|dunbar|quilchena|vancouver)/i.test(text);
-  const beds = /(2\s*(?:bed|br)|two bedroom)/i.test(text);
+  const numericBeds = Number(text.match(/\b([2-9])(?:\.5)?\s*(?:bedrooms?|beds?|br)\b/i)?.[1] || 0);
+  const beds = numericBeds >= 2 || /\b(?:two|three|four|five)\s+bedrooms?\b/i.test(text);
   return area && beds && !/(roommate|shared room|room for rent)/i.test(t);
 }
 

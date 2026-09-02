@@ -2,7 +2,6 @@ import fs from 'node:fs/promises';
 import path from 'node:path';
 import crypto from 'node:crypto';
 import { chromium } from 'playwright';
-import { bedroomEligible } from './discovery-policy.mjs';
 
 const DATA=path.join(process.cwd(),'data');
 const EVIDENCE=path.join(DATA,'evidence');
@@ -51,7 +50,7 @@ for(const url of [...urls].slice(0,120)){
     const bedrooms=num(/\b([1-5])BR\b/i,title+'\n'+text)??num(/\b([1-5])\s*bedrooms?\b/i,text);
     const bathrooms=num(/\b([1-5](?:\.5)?)Ba\b/i,text)??num(/\b([1-5](?:\.5)?)\s*bathrooms?\b/i,text);
     const sqft=num(/\b([0-9]{3,4})ft\^?\{?2\}?\b/i,title+'\n'+text)??num(/\b([0-9]{3,4})\s*(?:sq\.?\s*ft|sqft|square feet)\b/i,text);
-    if(!bedroomEligible(bedrooms)||!rent)continue;
+    if(!bedrooms||bedrooms<2||!rent)continue;
     const mapEl=page.locator('[data-latitude][data-longitude]').first();
     let geo=null;if(await mapEl.count()){const a=await mapEl.evaluate(el=>({lat:Number(el.getAttribute('data-latitude')),lng:Number(el.getAttribute('data-longitude'))}));if(Number.isFinite(a.lat)&&Number.isFinite(a.lng))geo=a;}
     const addressLine=text.split('\n').map(x=>x.trim()).find(x=>/\bVancouver,\s*BC\b/i.test(x)&&(/\d/.test(x)||/Kitsilano|Arbutus|Point Grey|Dunbar/i.test(x)))||null;

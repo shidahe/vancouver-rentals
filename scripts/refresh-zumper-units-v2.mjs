@@ -2,7 +2,6 @@ import fs from 'node:fs/promises';
 import path from 'node:path';
 import crypto from 'node:crypto';
 import { chromium } from 'playwright';
-import { bedroomEligible } from './discovery-policy.mjs';
 
 const DATA = path.join(process.cwd(), 'data');
 const EVIDENCE = path.join(DATA, 'evidence');
@@ -120,7 +119,7 @@ const browser = await chromium.launch({headless:true});
 const context = await browser.newContext({locale:'en-CA',timezoneId:'America/Vancouver',viewport:{width:1440,height:1200},userAgent:'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 Chrome/126 Safari/537.36'});
 const page = await context.newPage(), urls = new Set();
 for (const s of (sources.discovery||[]).filter(x=>x.adapter==='zumper-search')) {
-  try { const r=await page.goto(s.url,{waitUntil:'domcontentloaded',timeout:45000}); if(!r||r.status()>=400) continue; await page.waitForTimeout(2500); for(const u of await page.locator('a').evaluateAll(as=>as.map(a=>a.href).filter(Boolean))) if(/^https:\/\/www\.zumper\.com\/(address|apartments-for-rent)\//i.test(u)&&!/(?:\/studio|\/[1-5]-beds)\/?(?:\?|$)/i.test(u)) urls.add(u.split('#')[0]); } catch {}
+  try { const r=await page.goto(s.url,{waitUntil:'domcontentloaded',timeout:45000}); if(!r||r.status()>=400) continue; await page.waitForTimeout(2500); for(const u of await page.locator('a').evaluateAll(as=>as.map(a=>a.href).filter(Boolean))) if(/^https:\/\/www\.zumper\.com\/(address|apartments-for-rent)\//i.test(u)&&!/\d+-beds(?:\/|$|\?)/i.test(u)) urls.add(u.split('#')[0]); } catch {}
 }
 for (const s of sources.seedCandidates||[]) if(/zumper\.com/i.test(s.url||'')) urls.add(s.url);
 
@@ -133,7 +132,7 @@ for(const url of [...urls].slice(0,120)) {
     const raws=await page.locator('script[type="application/ld+json"]').evaluateAll(ns=>ns.map(n=>n.textContent||'').slice(0,50));
     const ld=[]; for(const raw of raws){try{ld.push(JSON.parse(raw))}catch{}}
     const x=extract(ld,text,url);
-    if(!x||!x.live||!bedroomEligible(x.bedrooms)||!x.rent||!targetArea(x.exactGeo)||explicitlyOutOfScope(x.description)) continue;
+    if(!x||!x.live||Number(x.bedrooms)<2||!x.rent||!targetArea(x.exactGeo)||explicitlyOutOfScope(x.description)) continue;
     x.identityKey=identityKey(x); found.push(x);
     await write(path.join(EVIDENCE,`zumper-v3-${hash(x.identityKey)}.json`),{checkedAt:iso,identityKey:x.identityKey,facts:x,jsonLd:ld.slice(0,8)});
   } catch {}
@@ -156,7 +155,6 @@ for(const c of found){
     const old=x.rent;
     x.lastChecked=today; x.verifiedAt=iso; x.availabilityStatus='active'; x.verificationLevel='verified'; x.lat=c.exactGeo.lat; x.lng=c.exactGeo.lng;
     if (!x.unit && c.unit) x.unit=c.unit;
-    if (x.source==='Zumper live detail') x.bedrooms=c.bedrooms;
     if(old!==c.rent && (x.source==='Zumper live detail' || x.rent==null)) {x.rent=c.rent;x.status=c.rent<old?'price_drop':'unchanged';x.priceDrop=c.rent<old;(history[x.id]||=[]).push({date:today,rent:c.rent,note:`AUTO Zumper live price update $${old} → $${c.rent}.`});}
     x.verificationMethod = `${x.verificationMethod || ''} Cross-verified by live Zumper detail on ${today}.`.trim();
   }
