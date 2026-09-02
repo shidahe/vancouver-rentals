@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-09-02T11:27:24.713Z",
-  "checkedCount": 10,
+  "generatedAt": "2026-09-02T16:42:16.663Z",
+  "checkedCount": 12,
   "quarantinedCount": 1,
   "checked": [
     {
@@ -65,6 +65,20 @@
       "ambiguous": false,
       "lowPrice": 2800,
       "highPrice": 2800
+    },
+    {
+      "identityKey": "3588 w 43rd ave::url:a32b37cf11c0",
+      "url": "https://www.zumper.com/address/3588-w-43rd-ave-vancouver-bc-v6n-3j9-can",
+      "ambiguous": false,
+      "lowPrice": 2600,
+      "highPrice": 2600
+    },
+    {
+      "identityKey": "larch st w 45th ave::url:d52e1ab40cb4",
+      "url": "https://www.zumper.com/address/2532-w-45th-ave-vancouver-bc-v6n-3l1-can",
+      "ambiguous": false,
+      "lowPrice": 2500,
+      "highPrice": 2500
     },
     {
       "identityKey": "2477 waterloo st::url:9bf4862de36a",
