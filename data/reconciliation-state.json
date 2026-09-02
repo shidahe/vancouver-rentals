@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-09-02T16:43:29.408Z",
+  "refreshedAt": "2026-09-02T17:15:33.830Z",
   "groups": [
     {
       "identityKey": "3220 4th ave w::url:4b1a6ebe2d36",
@@ -50,43 +50,7 @@
       "result": "candidate_only"
     },
     {
-      "identityKey": "2630 arbutus::unit:201",
-      "sources": [
-        "zumper"
-      ],
-      "rents": [
-        2950
-      ],
-      "exactUnit": true,
-      "matchedListingId": "zumper-118592c0411f",
-      "result": "candidate_only"
-    },
-    {
-      "identityKey": "2406 8th ave w::url:0c632abb462a",
-      "sources": [
-        "zumper"
-      ],
-      "rents": [
-        3800
-      ],
-      "exactUnit": false,
-      "matchedListingId": "zumper-9157c4798023",
-      "result": "candidate_only"
-    },
-    {
-      "identityKey": "1541 maple st::url:7a3d01371269",
-      "sources": [
-        "zumper"
-      ],
-      "rents": [
-        3500
-      ],
-      "exactUnit": false,
-      "matchedListingId": "zumper-6e03d092610a",
-      "result": "candidate_only"
-    },
-    {
-      "identityKey": "1533 maple st::url:69f2e13a0fd5",
+      "identityKey": "2138 w 13th ave::url:5b518c4d35f2",
       "sources": [
         "zumper"
       ],
@@ -94,7 +58,43 @@
         4500
       ],
       "exactUnit": false,
-      "matchedListingId": "zumper-976e340c66a7",
+      "matchedListingId": "zumper-1441677a9e59",
+      "result": "candidate_only"
+    },
+    {
+      "identityKey": "3175 courtenay st::url:cfca68d3011d",
+      "sources": [
+        "zumper"
+      ],
+      "rents": [
+        4995
+      ],
+      "exactUnit": false,
+      "matchedListingId": "zumper-717a57c1ea78",
+      "result": "candidate_only"
+    },
+    {
+      "identityKey": "4560 w 5th ave::unit:2",
+      "sources": [
+        "zumper"
+      ],
+      "rents": [
+        7999
+      ],
+      "exactUnit": true,
+      "matchedListingId": "zumper-e3fb92a991a6",
+      "result": "candidate_only"
+    },
+    {
+      "identityKey": "4631 w 14th ave::url:fc35e420f011",
+      "sources": [
+        "zumper"
+      ],
+      "rents": [
+        2800
+      ],
+      "exactUnit": false,
+      "matchedListingId": "zumper-c0c663d5d7eb",
       "result": "candidate_only"
     },
     {
@@ -110,15 +110,51 @@
       "result": "candidate_only"
     },
     {
-      "identityKey": "3366 w 26th ave::unit:3",
+      "identityKey": "4402 w 7th ave::url:510fd585fc1d",
       "sources": [
         "zumper"
       ],
       "rents": [
-        3600
+        5450
       ],
-      "exactUnit": true,
-      "matchedListingId": "zumper-75ff287e7a72",
+      "exactUnit": false,
+      "matchedListingId": "zumper-284446d281ee",
+      "result": "candidate_only"
+    },
+    {
+      "identityKey": "4533 w 16th ave::url:098178582ccb",
+      "sources": [
+        "zumper"
+      ],
+      "rents": [
+        4500
+      ],
+      "exactUnit": false,
+      "matchedListingId": "zumper-03c32d9886e3",
+      "result": "candidate_only"
+    },
+    {
+      "identityKey": "3836 w 15th ave::url:ba8360b93bb2",
+      "sources": [
+        "zumper"
+      ],
+      "rents": [
+        6800
+      ],
+      "exactUnit": false,
+      "matchedListingId": "zumper-9bc484458739",
+      "result": "candidate_only"
+    },
+    {
+      "identityKey": "4086 w 29th ave::url:1a3a085e820d",
+      "sources": [
+        "zumper"
+      ],
+      "rents": [
+        12000
+      ],
+      "exactUnit": false,
+      "matchedListingId": "zumper-bed681f0506a",
       "result": "candidate_only"
     },
     {
@@ -134,39 +170,39 @@
       "result": "candidate_only"
     },
     {
-      "identityKey": "3157 w 33rd ave::url:cfc0d3b04db3",
+      "identityKey": "3366 w 26th ave::unit:3",
       "sources": [
         "zumper"
       ],
       "rents": [
-        2800
+        3600
       ],
-      "exactUnit": false,
-      "matchedListingId": "zumper-f9e9614ca8fb",
+      "exactUnit": true,
+      "matchedListingId": "zumper-75ff287e7a72",
       "result": "candidate_only"
     },
     {
-      "identityKey": "3588 w 43rd ave::url:a32b37cf11c0",
+      "identityKey": "3200 e blvd::url:d57904351dc9",
       "sources": [
         "zumper"
       ],
       "rents": [
-        2600
+        5999
       ],
       "exactUnit": false,
-      "matchedListingId": "zumper-4dfebec53d29",
+      "matchedListingId": "zumper-8618a2d7d599",
       "result": "candidate_only"
     },
     {
-      "identityKey": "larch st w 45th ave::url:d52e1ab40cb4",
+      "identityKey": "2249 w 33rd ave::unit:3",
       "sources": [
         "zumper"
       ],
       "rents": [
-        2500
+        4300
       ],
-      "exactUnit": false,
-      "matchedListingId": "zumper-5f1919a8a4cb",
+      "exactUnit": true,
+      "matchedListingId": "zumper-3b3c85746b5c",
       "result": "candidate_only"
     },
     {

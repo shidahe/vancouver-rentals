@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-09-02T16:44:24.361Z",
-  "activeCount": 24,
+  "generatedAt": "2026-09-02T17:16:34.915Z",
+  "activeCount": 34,
   "decisionReady": true,
   "highIssueCount": 0,
   "mediumIssueCount": 0,
-  "infoIssueCount": 42,
+  "infoIssueCount": 61,
   "issues": [
     {
       "severity": "info",
@@ -215,22 +215,111 @@
       "severity": "info",
       "id": "zumper-289dc426c15b",
       "issue": "unknown-orientation"
+    },
+    {
+      "severity": "info",
+      "id": "zumper-1441677a9e59",
+      "issue": "unknown-ac"
+    },
+    {
+      "severity": "info",
+      "id": "zumper-1441677a9e59",
+      "issue": "unknown-orientation"
+    },
+    {
+      "severity": "info",
+      "id": "zumper-717a57c1ea78",
+      "issue": "unknown-ac"
+    },
+    {
+      "severity": "info",
+      "id": "zumper-717a57c1ea78",
+      "issue": "unknown-orientation"
+    },
+    {
+      "severity": "info",
+      "id": "zumper-e3fb92a991a6",
+      "issue": "unknown-ac"
+    },
+    {
+      "severity": "info",
+      "id": "zumper-e3fb92a991a6",
+      "issue": "unknown-orientation"
+    },
+    {
+      "severity": "info",
+      "id": "zumper-c0c663d5d7eb",
+      "issue": "unknown-ac"
+    },
+    {
+      "severity": "info",
+      "id": "zumper-c0c663d5d7eb",
+      "issue": "unknown-orientation"
+    },
+    {
+      "severity": "info",
+      "id": "zumper-284446d281ee",
+      "issue": "unknown-ac"
+    },
+    {
+      "severity": "info",
+      "id": "zumper-284446d281ee",
+      "issue": "unknown-orientation"
+    },
+    {
+      "severity": "info",
+      "id": "zumper-03c32d9886e3",
+      "issue": "unknown-ac"
+    },
+    {
+      "severity": "info",
+      "id": "zumper-03c32d9886e3",
+      "issue": "unknown-orientation"
+    },
+    {
+      "severity": "info",
+      "id": "zumper-9bc484458739",
+      "issue": "unknown-ac"
+    },
+    {
+      "severity": "info",
+      "id": "zumper-9bc484458739",
+      "issue": "unknown-orientation"
+    },
+    {
+      "severity": "info",
+      "id": "zumper-bed681f0506a",
+      "issue": "unknown-orientation"
+    },
+    {
+      "severity": "info",
+      "id": "zumper-8618a2d7d599",
+      "issue": "unknown-ac"
+    },
+    {
+      "severity": "info",
+      "id": "zumper-8618a2d7d599",
+      "issue": "unknown-orientation"
+    },
+    {
+      "severity": "info",
+      "id": "zumper-3b3c85746b5c",
+      "issue": "unknown-ac"
+    },
+    {
+      "severity": "info",
+      "id": "zumper-3b3c85746b5c",
+      "issue": "unknown-orientation"
     }
   ],
   "readinessChecks": {
     "smokeOk": true,
     "smokeFresh": true,
-    "smokeCheckedAt": "2026-09-02T16:44:28.996Z",
-    "latestDataAt": "2026-09-02T16:43:33.046Z",
+    "smokeCheckedAt": "2026-09-02T17:16:40.209Z",
+    "latestDataAt": "2026-09-02T17:15:37.710Z",
     "coverageReady": true,
-    "healthyDiscoveryLanes": 3,
+    "healthyDiscoveryLanes": 4,
     "coverageWarnings": [
-      {
-        "severity": "warning",
-        "lane": "rentalsca",
-        "status": "degraded",
-        "detail": "2/5 regional searches healthy"
-      },
       {
         "severity": "warning",
         "lane": "livrent",
@@ -240,5 +329,5 @@
     ]
   },
   "readinessIssues": [],
-  "finalizedAt": "2026-09-02T16:44:30.380Z"
+  "finalizedAt": "2026-09-02T17:16:41.758Z"
 }

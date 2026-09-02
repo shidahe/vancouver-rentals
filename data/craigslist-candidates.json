@@ -1,30 +1,30 @@
 {
-  "refreshedAt": "2026-09-02T16:42:24.245Z",
+  "refreshedAt": "2026-09-02T17:14:22.195Z",
   "mode": "candidate-only",
   "sourceHealth": {
     "kitsilano": {
-      "checkedAt": "2026-09-02T16:42:24.245Z",
+      "checkedAt": "2026-09-02T17:14:22.195Z",
       "status": 200,
       "ok": true,
-      "finalUrl": "https://www.craigslist.org/search/subarea/van?cat=apa&max_bedrooms=2&min_bedrooms=2&query=kitsilano"
+      "finalUrl": "https://www.craigslist.org/search/subarea/van?cat=apa&min_bedrooms=2&query=kitsilano"
     },
     "arbutus": {
-      "checkedAt": "2026-09-02T16:42:24.245Z",
+      "checkedAt": "2026-09-02T17:14:22.195Z",
       "status": 200,
       "ok": true,
-      "finalUrl": "https://www.craigslist.org/search/subarea/van?cat=apa&max_bedrooms=2&min_bedrooms=2&query=arbutus"
+      "finalUrl": "https://www.craigslist.org/search/subarea/van?cat=apa&min_bedrooms=2&query=arbutus"
     },
     "point-grey": {
-      "checkedAt": "2026-09-02T16:42:24.245Z",
+      "checkedAt": "2026-09-02T17:14:22.195Z",
       "status": 200,
       "ok": true,
-      "finalUrl": "https://www.craigslist.org/search/subarea/van?cat=apa&max_bedrooms=2&min_bedrooms=2&query=point%20grey"
+      "finalUrl": "https://www.craigslist.org/search/subarea/van?cat=apa&min_bedrooms=2&query=point%20grey"
     },
     "dunbar": {
-      "checkedAt": "2026-09-02T16:42:24.245Z",
+      "checkedAt": "2026-09-02T17:14:22.195Z",
       "status": 200,
       "ok": true,
-      "finalUrl": "https://www.craigslist.org/search/subarea/van?cat=apa&max_bedrooms=2&min_bedrooms=2&query=dunbar"
+      "finalUrl": "https://www.craigslist.org/search/subarea/van?cat=apa&min_bedrooms=2&query=dunbar"
     }
   },
   "candidates": []
