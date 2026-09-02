@@ -2,6 +2,7 @@ import fs from 'node:fs/promises';
 import path from 'node:path';
 import crypto from 'node:crypto';
 import { chromium } from 'playwright';
+import { bedroomEligible } from './discovery-policy.mjs';
 
 const ROOT = process.cwd();
 const DATA = path.join(ROOT, 'data');
@@ -130,7 +131,7 @@ for (const url of [...detailUrls].slice(0, 80)) {
     const rawLd = await page.locator('script[type="application/ld+json"]').evaluateAll(ns => ns.map(n => n.textContent || '').slice(0, 50));
     const jsonLd = []; for (const raw of rawLd) { try { jsonLd.push(JSON.parse(raw)); } catch {} }
     const facts = pickStructured(jsonLd, bodyText, url);
-    if (!facts.address || facts.bedrooms !== 2 || !facts.rent || !facts.currentlyOnMarket) continue;
+    if (!facts.address || !bedroomEligible(facts.bedrooms) || !facts.rent || !facts.currentlyOnMarket) continue;
     if (!/(Vancouver|BC)/i.test(facts.address)) continue;
     const key = identityKey(facts);
     liveCandidates.push({ ...facts, identityKey: key, checkedAt: iso });
@@ -214,4 +215,4 @@ await writeJson(listingsPath, payload);
 await writeJson(historyPath, history);
 await writeJson(imageSourcesPath, imageSources);
 await writeJson(candidatesPath, [...priorByUrl.values()].slice(-500));
-console.log(`Zumper unit refresh: ${liveCandidates.length} live 2BR detail listings evaluated.`);
+console.log(`Zumper unit refresh: ${liveCandidates.length} live 2BR+ detail listings evaluated.`);

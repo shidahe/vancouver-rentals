@@ -68,7 +68,7 @@ Every full refresh must run **all** of these discovery lanes; checking only Goog
 
 ### Discovery filter policy
 
-Discovery should be broader than the UI preference filters. Capture plausible 2BR rentals even when one of sqft, AC, parking, orientation, or year is unknown. Apply the user's preferences during enrichment/ranking. Hard reject only obvious non-matches (wrong geography, clearly <2BR when searching the 2BR pool, short-term-only when inappropriate, explicit inactive/removed, etc.).
+Discovery should be broader than the UI preference filters. Capture plausible 2BR+ rentals, including 3BR and 4BR homes, even when one of sqft, AC, parking, orientation, or year is unknown. Apply the user's preferences during enrichment/ranking. Hard reject only obvious non-matches (wrong geography, clearly <2BR, short-term-only when inappropriate, explicit inactive/removed, etc.). R3160272 / 2788 W 1st Avenue is the permanent 4BR regression case.
 
 Maintain a temporary candidate set keyed by normalized address + unit/floorplan. Deduplicate only after candidates from all lanes have been collected, so a weak marketplace hit can be enriched by a stronger manager/agent source.
 

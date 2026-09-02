@@ -2,6 +2,7 @@ import fs from 'node:fs/promises';
 import path from 'node:path';
 import crypto from 'node:crypto';
 import { chromium } from 'playwright';
+import { bedroomEligible } from './discovery-policy.mjs';
 
 const DATA = path.join(process.cwd(), 'data');
 const EVIDENCE = path.join(DATA, 'evidence');
@@ -119,7 +120,7 @@ const browser = await chromium.launch({headless:true});
 const context = await browser.newContext({locale:'en-CA',timezoneId:'America/Vancouver',viewport:{width:1440,height:1200},userAgent:'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 Chrome/126 Safari/537.36'});
 const page = await context.newPage(), urls = new Set();
 for (const s of (sources.discovery||[]).filter(x=>x.adapter==='zumper-search')) {
-  try { const r=await page.goto(s.url,{waitUntil:'domcontentloaded',timeout:45000}); if(!r||r.status()>=400) continue; await page.waitForTimeout(2500); for(const u of await page.locator('a').evaluateAll(as=>as.map(a=>a.href).filter(Boolean))) if(/^https:\/\/www\.zumper\.com\/(address|apartments-for-rent)\//i.test(u)&&!u.includes('/2-beds')) urls.add(u.split('#')[0]); } catch {}
+  try { const r=await page.goto(s.url,{waitUntil:'domcontentloaded',timeout:45000}); if(!r||r.status()>=400) continue; await page.waitForTimeout(2500); for(const u of await page.locator('a').evaluateAll(as=>as.map(a=>a.href).filter(Boolean))) if(/^https:\/\/www\.zumper\.com\/(address|apartments-for-rent)\//i.test(u)&&!/(?:\/studio|\/[1-5]-beds)\/?(?:\?|$)/i.test(u)) urls.add(u.split('#')[0]); } catch {}
 }
 for (const s of sources.seedCandidates||[]) if(/zumper\.com/i.test(s.url||'')) urls.add(s.url);
 
@@ -132,7 +133,7 @@ for(const url of [...urls].slice(0,120)) {
     const raws=await page.locator('script[type="application/ld+json"]').evaluateAll(ns=>ns.map(n=>n.textContent||'').slice(0,50));
     const ld=[]; for(const raw of raws){try{ld.push(JSON.parse(raw))}catch{}}
     const x=extract(ld,text,url);
-    if(!x||!x.live||x.bedrooms!==2||!x.rent||!targetArea(x.exactGeo)||explicitlyOutOfScope(x.description)) continue;
+    if(!x||!x.live||!bedroomEligible(x.bedrooms)||!x.rent||!targetArea(x.exactGeo)||explicitlyOutOfScope(x.description)) continue;
     x.identityKey=identityKey(x); found.push(x);
     await write(path.join(EVIDENCE,`zumper-v3-${hash(x.identityKey)}.json`),{checkedAt:iso,identityKey:x.identityKey,facts:x,jsonLd:ld.slice(0,8)});
   } catch {}
@@ -149,12 +150,13 @@ for(const c of found){
   let x=byKey.get(c.identityKey);
   const id=x?.id||`zumper-${hash(c.identityKey)}`;
   if(!x){
-    x={id,buildingName:null,unit:c.unit||null,address:c.address,neighborhood:/kitsilano/i.test(c.description)?'Kitsilano':/point grey/i.test(c.description)?'Point Grey':/dunbar/i.test(c.description)?'Dunbar':/arbutus/i.test(c.description)?'Arbutus Ridge':'Vancouver West',lat:c.exactGeo.lat,lng:c.exactGeo.lng,type:'condo',rent:c.rent,effectiveRent:null,bedrooms:2,bathrooms:c.bathrooms,sqft:c.sqft,ac:c.ac,parking:c.parking,petFriendly:c.petFriendly,buildingYear:null,orientation:c.orientation,balcony:c.balcony,largeWindows:c.largeWindows,modernInterior:c.modernInterior,source:'Zumper live detail',url:c.url,photoPageUrl:c.url,firstSeen:today,lastChecked:today,verifiedAt:iso,verificationLevel:'verified',verificationMethod:`AUTO-PUBLISHED from exact live Zumper detail; ${c.identityKey}`,availabilityStatus:'active',status:'new',priceDrop:false,dataNotes:c.unit?'Independent unit identity: canonical address + unit.':'Independent inventory identity: canonical address + exact detail URL (unit not public).'};
+    x={id,buildingName:null,unit:c.unit||null,address:c.address,neighborhood:/kitsilano/i.test(c.description)?'Kitsilano':/point grey/i.test(c.description)?'Point Grey':/dunbar/i.test(c.description)?'Dunbar':/arbutus/i.test(c.description)?'Arbutus Ridge':'Vancouver West',lat:c.exactGeo.lat,lng:c.exactGeo.lng,type:'condo',rent:c.rent,effectiveRent:null,bedrooms:c.bedrooms,bathrooms:c.bathrooms,sqft:c.sqft,ac:c.ac,parking:c.parking,petFriendly:c.petFriendly,buildingYear:null,orientation:c.orientation,balcony:c.balcony,largeWindows:c.largeWindows,modernInterior:c.modernInterior,source:'Zumper live detail',url:c.url,photoPageUrl:c.url,firstSeen:today,lastChecked:today,verifiedAt:iso,verificationLevel:'verified',verificationMethod:`AUTO-PUBLISHED from exact live Zumper detail; ${c.identityKey}`,availabilityStatus:'active',status:'new',priceDrop:false,dataNotes:c.unit?'Independent unit identity: canonical address + unit.':'Independent inventory identity: canonical address + exact detail URL (unit not public).'};
     payload.listings.push(x); byKey.set(c.identityKey,x); history[id]=[{date:today,rent:c.rent,note:'NEW: live Zumper detail auto-published as independent inventory.'}];
   } else {
     const old=x.rent;
     x.lastChecked=today; x.verifiedAt=iso; x.availabilityStatus='active'; x.verificationLevel='verified'; x.lat=c.exactGeo.lat; x.lng=c.exactGeo.lng;
     if (!x.unit && c.unit) x.unit=c.unit;
+    if (x.source==='Zumper live detail') x.bedrooms=c.bedrooms;
     if(old!==c.rent && (x.source==='Zumper live detail' || x.rent==null)) {x.rent=c.rent;x.status=c.rent<old?'price_drop':'unchanged';x.priceDrop=c.rent<old;(history[x.id]||=[]).push({date:today,rent:c.rent,note:`AUTO Zumper live price update $${old} → $${c.rent}.`});}
     x.verificationMethod = `${x.verificationMethod || ''} Cross-verified by live Zumper detail on ${today}.`.trim();
   }
@@ -172,8 +174,8 @@ for (const x of payload.listings) {
 }
 
 const candidatesByUrl=new Map(oldCandidates.filter(x=>!x.url || !/zumper\.com/i.test(x.url)).map(x=>[x.url,x]));
-for(const c of found)candidatesByUrl.set(c.url,{source:'Zumper',url:c.url,address:c.address,unit:c.unit,identityKey:c.identityKey,livePrice:c.rent,bedrooms:2,bathrooms:c.bathrooms,sqft:c.sqft,liveCheckedAt:iso,autoPublishResult:byKey.has(c.identityKey)?'published_or_updated':'candidate_only'});
+for(const c of found)candidatesByUrl.set(c.url,{source:'Zumper',url:c.url,address:c.address,unit:c.unit,identityKey:c.identityKey,livePrice:c.rent,bedrooms:c.bedrooms,bathrooms:c.bathrooms,sqft:c.sqft,liveCheckedAt:iso,autoPublishResult:byKey.has(c.identityKey)?'published_or_updated':'candidate_only'});
 
 payload.meta ||= {}; payload.meta.lastZumperUnitRefresh=iso; payload.meta.identityPolicy='Canonical street address + explicit unit is primary identity across sources; exact detail URL is fallback only when no unit is public. Same-address different units remain independent.'; payload.meta.zumperScope='Live Zumper auto-publication requires Vancouver West geo bounds and rejects pages explicitly labeled as out-of-scope east-side neighborhoods such as Fairview/Downtown/Yaletown/Mount Pleasant/Riley Park/Olympic Village/South Cambie.';
 await write(lp,payload); await write(hp,history); await write(ip,imageSources); await write(cp,[...candidatesByUrl.values()].slice(-500));
-console.log(`Zumper per-unit v3: ${found.length} verified target-area 2BR inventories.`);
+console.log(`Zumper per-unit v3: ${found.length} verified target-area 2BR+ inventories.`);

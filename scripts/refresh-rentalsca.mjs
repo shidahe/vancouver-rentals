@@ -2,6 +2,7 @@ import fs from 'node:fs/promises';
 import path from 'node:path';
 import crypto from 'node:crypto';
 import { chromium } from 'playwright';
+import { bedroomEligible } from './discovery-policy.mjs';
 
 const DATA=path.join(process.cwd(),'data');
 const EVIDENCE=path.join(DATA,'evidence');
@@ -65,15 +66,15 @@ for(const url of [...detailUrls].slice(0,160)){
     const r=await page.goto(url,{waitUntil:'domcontentloaded',timeout:45000});if(!r||r.status()>=400)continue;
     await page.waitForTimeout(1800);const text=await page.locator('body').innerText({timeout:10000});
     const raws=await page.locator('script[type="application/ld+json"]').evaluateAll(ns=>ns.map(n=>n.textContent||'').slice(0,50));const ld=[];for(const raw of raws){try{ld.push(JSON.parse(raw))}catch{}}
-    const addr=structuredAddress(ld)||firstAddress(text),geo=geoFromLd(ld),active=!/no longer available|listing is inactive|this rental is unavailable|off market|gone too soon/i.test(text),floorplans=parseFloorplans(text).filter(x=>x.beds>=2&&x.beds<3.5),single=parseSingle(text);
+    const addr=structuredAddress(ld)||firstAddress(text),geo=geoFromLd(ld),active=!/no longer available|listing is inactive|this rental is unavailable|off market|gone too soon/i.test(text),floorplans=parseFloorplans(text).filter(x=>bedroomEligible(x.beds)),single=parseSingle(text);
     const pageItem={source:'Rentals.ca',url,address:addr?.address||null,addressUnit:addr?.unit||null,geo,targetArea:target(geo),active,floorplans,single,checkedAt:iso};pages.push(pageItem);
     if(active&&target(geo)&&addr?.address){
       if(floorplans.length){for(const f of floorplans)inventories.push({source:'Rentals.ca',url,address:addr.address,unit:f.unit||addr.unit||null,floorplan:f.label,identityKey:identity(addr.address,f.unit||addr.unit,f.label,url),rent:f.rent,bedrooms:f.beds,bathrooms:f.baths,sqft:f.sqft,geo,active:true,checkedAt:iso,publishable:false});}
-      else if(single.beds===2&&single.rent)inventories.push({source:'Rentals.ca',url,address:addr.address,unit:addr.unit||null,floorplan:null,identityKey:identity(addr.address,addr.unit,null,url),rent:single.rent,bedrooms:2,bathrooms:single.baths,sqft:single.sqft,geo,active:true,checkedAt:iso,publishable:false});
+      else if(bedroomEligible(single.beds)&&single.rent)inventories.push({source:'Rentals.ca',url,address:addr.address,unit:addr.unit||null,floorplan:null,identityKey:identity(addr.address,addr.unit,null,url),rent:single.rent,bedrooms:single.beds,bathrooms:single.baths,sqft:single.sqft,geo,active:true,checkedAt:iso,publishable:false});
     }
     await write(path.join(EVIDENCE,`rentalsca-${hash(url)}.json`),{checkedAt:iso,page:pageItem,jsonLd:ld.slice(0,8),textSample:text.slice(0,7000)});
   }catch{}
 }
 await browser.close();
 await write(path.join(DATA,'rentalsca-candidates.json'),{refreshedAt:iso,mode:'candidate-only',sourceHealth,pages,inventories});
-console.log(`Rentals.ca adapter: ${pages.length} pages, ${inventories.length} target-area 2BR unit/floorplan inventories.`);
+console.log(`Rentals.ca adapter: ${pages.length} pages, ${inventories.length} target-area 2BR+ unit/floorplan inventories.`);

@@ -2,6 +2,7 @@ import fs from 'node:fs/promises';
 import path from 'node:path';
 import crypto from 'node:crypto';
 import { chromium } from 'playwright';
+import { bedroomEligible } from './discovery-policy.mjs';
 
 const DATA=path.join(process.cwd(),'data');
 const EVIDENCE=path.join(DATA,'evidence');
@@ -17,10 +18,10 @@ const num=(re,s)=>{const m=String(s||'').match(re);return m?Number(m[1]):null};
 const dateFrom=s=>{const m=String(s||'').match(/(?:posted|updated):\s*(\d{4}-\d{2}-\d{2})/i);if(!m)return null;const t=Date.parse(m[1]+'T12:00:00Z');return Number.isFinite(t)?new Date(t).toISOString():null};
 
 const searches=[
-  ['kitsilano','https://vancouver.craigslist.org/search/van/apa?min_bedrooms=2&max_bedrooms=2&query=kitsilano'],
-  ['arbutus','https://vancouver.craigslist.org/search/van/apa?min_bedrooms=2&max_bedrooms=2&query=arbutus'],
-  ['point-grey','https://vancouver.craigslist.org/search/van/apa?min_bedrooms=2&max_bedrooms=2&query=point%20grey'],
-  ['dunbar','https://vancouver.craigslist.org/search/van/apa?min_bedrooms=2&max_bedrooms=2&query=dunbar']
+  ['kitsilano','https://vancouver.craigslist.org/search/van/apa?min_bedrooms=2&query=kitsilano'],
+  ['arbutus','https://vancouver.craigslist.org/search/van/apa?min_bedrooms=2&query=arbutus'],
+  ['point-grey','https://vancouver.craigslist.org/search/van/apa?min_bedrooms=2&query=point%20grey'],
+  ['dunbar','https://vancouver.craigslist.org/search/van/apa?min_bedrooms=2&query=dunbar']
 ];
 
 const browser=await chromium.launch({headless:true});
@@ -50,7 +51,7 @@ for(const url of [...urls].slice(0,120)){
     const bedrooms=num(/\b([1-5])BR\b/i,title+'\n'+text)??num(/\b([1-5])\s*bedrooms?\b/i,text);
     const bathrooms=num(/\b([1-5](?:\.5)?)Ba\b/i,text)??num(/\b([1-5](?:\.5)?)\s*bathrooms?\b/i,text);
     const sqft=num(/\b([0-9]{3,4})ft\^?\{?2\}?\b/i,title+'\n'+text)??num(/\b([0-9]{3,4})\s*(?:sq\.?\s*ft|sqft|square feet)\b/i,text);
-    if(bedrooms!==2||!rent)continue;
+    if(!bedroomEligible(bedrooms)||!rent)continue;
     const mapEl=page.locator('[data-latitude][data-longitude]').first();
     let geo=null;if(await mapEl.count()){const a=await mapEl.evaluate(el=>({lat:Number(el.getAttribute('data-latitude')),lng:Number(el.getAttribute('data-longitude'))}));if(Number.isFinite(a.lat)&&Number.isFinite(a.lng))geo=a;}
     const addressLine=text.split('\n').map(x=>x.trim()).find(x=>/\bVancouver,\s*BC\b/i.test(x)&&(/\d/.test(x)||/Kitsilano|Arbutus|Point Grey|Dunbar/i.test(x)))||null;
@@ -67,4 +68,4 @@ for(const url of [...urls].slice(0,120)){
 }
 await browser.close();
 await write(path.join(DATA,'craigslist-candidates.json'),{refreshedAt:iso,mode:'candidate-only',sourceHealth,candidates});
-console.log(`Craigslist adapter: ${candidates.length} live recent target-area 2BR candidates.`);
+console.log(`Craigslist adapter: ${candidates.length} live recent target-area 2BR+ candidates.`);

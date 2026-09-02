@@ -1,6 +1,7 @@
 import fs from 'node:fs/promises';
 import path from 'node:path';
 import crypto from 'node:crypto';
+import { bedroomEligible } from './discovery-policy.mjs';
 
 const DATA=path.join(process.cwd(),'data');
 const iso=new Date().toISOString(),today=iso.slice(0,10);
@@ -14,7 +15,7 @@ function listingUnit(x){const direct=unitToken(x.unit);if(direct)return direct;c
 function key(address,unit,url,floorplan){const a=street(address);const u=unitToken(unit);if(u)return`${a}::unit:${norm(u)}`;if(floorplan)return`${a}::floorplan:${norm(floorplan)}`;return`${a}::url:${hash(url||'')}`;}
 function candidateKey(c){return key(c.address,c.unit,c.url,c.floorplan);}
 function sourceFamily(c){return /^zumper$/i.test(c.source)?'zumper':/^rentals\.ca$/i.test(c.source)?'rentalsca':/^liv\.rent$/i.test(c.source)?'livrent':norm(c.source);}
-function usable(c){return !!c&&c.active!==false&&!c.rented&&c.targetArea!==false&&c.bedrooms===2&&Number(c.rent)>=2500&&Number(c.rent)<=12000&&!!c.address;}
+function usable(c){return !!c&&c.active!==false&&!c.rented&&c.targetArea!==false&&bedroomEligible(c.bedrooms)&&Number(c.rent)>=2500&&Number(c.rent)<=12000&&!!c.address;}
 function baths(c){const n=Number(c.bathrooms??c.baths);return Number.isFinite(n)?n:null;}
 function sqft(c){const n=Number(c.sqft);return Number.isFinite(n)?n:null;}
 function fingerprintCompatible(a,b){
@@ -33,7 +34,7 @@ const zumper=await read(path.join(DATA,'candidates.json'),[]);
 const rentals=await read(path.join(DATA,'rentalsca-candidates.json'),{inventories:[]});
 const liv=await read(path.join(DATA,'livrent-candidates.json'),{candidates:[]});
 const all=[];
-for(const c of zumper)all.push({...c,source:c.source||'Zumper',active:true,targetArea:true,bedrooms:c.bedrooms||2,rent:c.livePrice??c.rent});
+for(const c of zumper)all.push({...c,source:c.source||'Zumper',active:true,targetArea:true,rent:c.livePrice??c.rent});
 for(const c of rentals.inventories||[])all.push(c);
 for(const c of liv.candidates||[])all.push({...c,bedrooms:c.beds??c.bedrooms,rent:c.rent});
 
@@ -63,7 +64,7 @@ for(const [k,items] of groups){
     const lat=best.geo?.lat??best.lat??null,lng=best.geo?.lng??best.lng??null;
     if(lat==null||lng==null){state.groups.push({...summary,result:'candidate_no_geo'});continue;}
     const unit=unitToken(best.unit),id=`cross-${hash(k)}`,rent=Math.min(...rents);
-    listing={id,buildingName:null,unit,address:best.address,neighborhood:'Vancouver West',lat,lng,type:'condo',rent,effectiveRent:null,bedrooms:2,bathrooms:best.bathrooms??best.baths??null,sqft:best.sqft??null,ac:best.ac??null,parking:best.parking??null,petFriendly:best.petFriendly??null,buildingYear:best.buildingYear??null,orientation:best.orientation??null,balcony:best.balcony??null,largeWindows:best.largeWindows??null,modernInterior:best.modernInterior??null,source:`Cross-source: ${families.join(' + ')}`,url:best.url,photoPageUrl:best.url,firstSeen:today,lastChecked:today,verifiedAt:iso,verificationLevel:'verified',verificationMethod:`AUTO-PUBLISHED after exact-unit confirmation from independent live sources: ${families.join(', ')}.`,availabilityStatus:'active',status:'new',priceDrop:false,evidenceSources:families,dataNotes:'Exact unit auto-published only after two-source live agreement.'};
+    listing={id,buildingName:null,unit,address:best.address,neighborhood:'Vancouver West',lat,lng,type:'condo',rent,effectiveRent:null,bedrooms:Number(best.bedrooms),bathrooms:best.bathrooms??best.baths??null,sqft:best.sqft??null,ac:best.ac??null,parking:best.parking??null,petFriendly:best.petFriendly??null,buildingYear:best.buildingYear??null,orientation:best.orientation??null,balcony:best.balcony??null,largeWindows:best.largeWindows??null,modernInterior:best.modernInterior??null,source:`Cross-source: ${families.join(' + ')}`,url:best.url,photoPageUrl:best.url,firstSeen:today,lastChecked:today,verifiedAt:iso,verificationLevel:'verified',verificationMethod:`AUTO-PUBLISHED after exact-unit confirmation from independent live sources: ${families.join(', ')}.`,availabilityStatus:'active',status:'new',priceDrop:false,evidenceSources:families,dataNotes:'Exact unit auto-published only after two-source live agreement.'};
     payload.listings.push(listing);listingByKey.set(k,listing);history[id]=[{date:today,rent,note:`NEW: exact unit independently confirmed by ${families.join(' + ')}.`}];state.promoted.push(id);state.groups.push({...summary,result:'auto_published_cross_source'});continue;
   }
   state.groups.push({...summary,result:'candidate_only'});

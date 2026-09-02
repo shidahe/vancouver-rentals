@@ -1,16 +1,16 @@
 {
   "discovery": [
-    {"id":"zumper-kitsilano-2br","name":"Zumper Kitsilano 2BR","url":"https://www.zumper.com/apartments-for-rent/vancouver-bc/kitsilano/2-beds","kind":"marketplace","adapter":"zumper-search"},
-    {"id":"zumper-point-grey-2br","name":"Zumper West Point Grey 2BR","url":"https://www.zumper.com/apartments-for-rent/vancouver-bc/west-point-grey/2-beds","kind":"marketplace","adapter":"zumper-search"},
-    {"id":"zumper-dunbar-2br","name":"Zumper Dunbar 2BR","url":"https://www.zumper.com/apartments-for-rent/vancouver-bc/dunbar/2-beds","kind":"marketplace","adapter":"zumper-search"},
-    {"id":"zumper-arbutus-2br","name":"Zumper Arbutus 2BR","url":"https://www.zumper.com/apartments-for-rent/vancouver-bc/arbutus/2-beds","kind":"marketplace","adapter":"zumper-search"},
-    {"id":"zumper-quilchena-2br","name":"Zumper Quilchena 2BR","url":"https://www.zumper.com/apartments-for-rent/vancouver-bc/quilchena/2-beds","kind":"marketplace","adapter":"zumper-search"},
+    {"id":"zumper-kitsilano-2br","name":"Zumper Kitsilano 2BR+","url":"https://www.zumper.com/apartments-for-rent/vancouver-bc/kitsilano","kind":"marketplace","adapter":"zumper-search"},
+    {"id":"zumper-point-grey-2br","name":"Zumper West Point Grey 2BR+","url":"https://www.zumper.com/apartments-for-rent/vancouver-bc/west-point-grey","kind":"marketplace","adapter":"zumper-search"},
+    {"id":"zumper-dunbar-2br","name":"Zumper Dunbar 2BR+","url":"https://www.zumper.com/apartments-for-rent/vancouver-bc/dunbar","kind":"marketplace","adapter":"zumper-search"},
+    {"id":"zumper-arbutus-2br","name":"Zumper Arbutus 2BR+","url":"https://www.zumper.com/apartments-for-rent/vancouver-bc/arbutus","kind":"marketplace","adapter":"zumper-search"},
+    {"id":"zumper-quilchena-2br","name":"Zumper Quilchena 2BR+","url":"https://www.zumper.com/apartments-for-rent/vancouver-bc/quilchena","kind":"marketplace","adapter":"zumper-search"},
 
-    {"id":"rentalsca-kitsilano-2br","name":"Rentals.ca Kitsilano 2BR","url":"https://rentals.ca/vancouver/kitsilano/all-apartments-all-houses/2-bedrooms","kind":"marketplace","adapter":"rentalsca-search"},
-    {"id":"rentalsca-point-grey-2br","name":"Rentals.ca West Point Grey 2BR","url":"https://rentals.ca/vancouver/west-point-grey/2-bedrooms","kind":"marketplace","adapter":"rentalsca-search"},
-    {"id":"rentalsca-arbutus-2br","name":"Rentals.ca Arbutus Ridge 2BR","url":"https://rentals.ca/vancouver/arbutus-ridge/2-bedrooms","kind":"marketplace","adapter":"rentalsca-search"},
-    {"id":"rentalsca-dunbar-2br","name":"Rentals.ca Dunbar-Southlands 2BR","url":"https://rentals.ca/vancouver/dunbar-southlands/2-bedrooms","kind":"marketplace","adapter":"rentalsca-search"},
-    {"id":"rentalsca-quilchena-2br","name":"Rentals.ca Quilchena 2BR","url":"https://rentals.ca/vancouver/quilchena/2-bedrooms","kind":"marketplace","adapter":"rentalsca-search"},
+    {"id":"rentalsca-kitsilano-2br","name":"Rentals.ca Kitsilano 2BR+","url":"https://rentals.ca/vancouver/kitsilano/all-apartments-all-houses","kind":"marketplace","adapter":"rentalsca-search"},
+    {"id":"rentalsca-point-grey-2br","name":"Rentals.ca West Point Grey 2BR+","url":"https://rentals.ca/vancouver/west-point-grey","kind":"marketplace","adapter":"rentalsca-search"},
+    {"id":"rentalsca-arbutus-2br","name":"Rentals.ca Arbutus Ridge 2BR+","url":"https://rentals.ca/vancouver/arbutus-ridge","kind":"marketplace","adapter":"rentalsca-search"},
+    {"id":"rentalsca-dunbar-2br","name":"Rentals.ca Dunbar-Southlands 2BR+","url":"https://rentals.ca/vancouver/dunbar-southlands","kind":"marketplace","adapter":"rentalsca-search"},
+    {"id":"rentalsca-quilchena-2br","name":"Rentals.ca Quilchena 2BR+","url":"https://rentals.ca/vancouver/quilchena","kind":"marketplace","adapter":"rentalsca-search"},
 
     {"id":"livrent-vancouver-2br","name":"liv.rent Vancouver 2BR","url":"https://liv.rent/rental-listings/city/vancouver/2-bedroom","kind":"marketplace","adapter":"livrent-search"},
     {"id":"livrent-vancouver-2br2ba","name":"liv.rent Vancouver 2BR 2BA","url":"https://liv.rent/rental-listings/city/vancouver/2-bedroom-2-bath","kind":"marketplace","adapter":"livrent-search"},

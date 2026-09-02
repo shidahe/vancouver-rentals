@@ -1,5 +1,6 @@
 import fs from 'node:fs/promises';
 import path from 'node:path';
+import { bedroomEligible } from './discovery-policy.mjs';
 const DATA=path.join(process.cwd(),'data');
 const read=async(p,d)=>{try{return JSON.parse(await fs.readFile(p,'utf8'))}catch{return d}};
 const write=async(p,x)=>fs.writeFile(p,JSON.stringify(x,null,2)+'\n');
@@ -35,6 +36,7 @@ for(const l of active){
   if(isAutoZumper(l)&&explicitlyOutOfScope(l))issues.push({severity:'high',id:l.id,issue:'auto-listing-out-of-scope-neighborhood',detail:l.neighborhood});
   if(isAutoZumper(l)&&Number.isFinite(Number(l.lng))&&Number(l.lng)>EAST_BOUNDARY)issues.push({severity:'high',id:l.id,issue:'auto-listing-east-of-target-boundary',detail:`lng=${l.lng} > ${EAST_BOUNDARY}`});
   if(l.bedrooms==null||l.bathrooms==null||l.sqft==null)issues.push({severity:'medium',id:l.id,issue:'missing-core-fields'});
+  if(!bedroomEligible(l.bedrooms))issues.push({severity:'high',id:l.id,issue:'below-2br-discovery-minimum',detail:`bedrooms=${l.bedrooms}`});
   if(strongOfficialNegative(l.officialStatus))issues.push({severity:'high',id:l.id,issue:'active-despite-official-negative',detail:`officialStatus=${l.officialStatus}${l.officialStatusAuthority?` (${l.officialStatusAuthority})`:''}`});
   if(String(l.verificationLevel||'').toLowerCase()==='unverified')issues.push({severity:'high',id:l.id,issue:'active-but-unverified'});
   if(l.ac==null)issues.push({severity:'info',id:l.id,issue:'unknown-ac'});
