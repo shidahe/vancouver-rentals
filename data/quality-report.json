@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-09-03T04:46:55.059Z",
-  "activeCount": 33,
+  "generatedAt": "2026-09-03T05:02:30.072Z",
+  "activeCount": 34,
   "decisionReady": true,
   "highIssueCount": 0,
   "mediumIssueCount": 0,
-  "infoIssueCount": 60,
+  "infoIssueCount": 61,
   "issues": [
     {
       "severity": "info",
@@ -49,6 +49,11 @@
     {
       "severity": "info",
       "id": "2268-w-broadway-312-r3153999",
+      "issue": "unknown-orientation"
+    },
+    {
+      "severity": "info",
+      "id": "kits-walk-2br-flex-616",
       "issue": "unknown-orientation"
     },
     {
@@ -310,8 +315,8 @@
   "readinessChecks": {
     "smokeOk": true,
     "smokeFresh": true,
-    "smokeCheckedAt": "2026-09-03T04:47:01.011Z",
-    "latestDataAt": "2026-09-03T04:46:07.676Z",
+    "smokeCheckedAt": "2026-09-03T05:02:36.003Z",
+    "latestDataAt": "2026-09-03T05:01:39.718Z",
     "coverageReady": true,
     "healthyDiscoveryLanes": 3,
     "coverageWarnings": [
@@ -330,5 +335,5 @@
     ]
   },
   "readinessIssues": [],
-  "finalizedAt": "2026-09-03T04:47:02.854Z"
+  "finalizedAt": "2026-09-03T05:02:37.770Z"
 }
