@@ -7,6 +7,7 @@ import { findExistingSeedListing } from './inventory-identity.mjs';
 const ROOT = process.cwd();
 const DATA = path.join(ROOT, 'data');
 const EVIDENCE = path.join(DATA, 'evidence');
+const imageSourcesPath = path.join(DATA, 'image-sources.json');
 const now = new Date();
 const iso = now.toISOString();
 const today = iso.slice(0, 10);
@@ -85,6 +86,8 @@ async function visit(page, url) {
     const title = await page.title();
     const links = await page.locator('a').evaluateAll(as => as.slice(0, 1500).map(a => ({ href: a.href, text: (a.innerText || '').trim() })));
     const jsonLdRaw = await page.locator('script[type="application/ld+json"]').evaluateAll(nodes => nodes.map(n => n.textContent || '').slice(0, 50));
+    const socialImages = await page.locator('meta[property="og:image"], meta[name="twitter:image"]')
+      .evaluateAll(nodes => nodes.map(node => node.content).filter(Boolean));
     const images = await page.locator('img').evaluateAll(imgs => imgs.slice(0, 100).map(img => img.currentSrc || img.src).filter(Boolean));
     const jsonLd = [];
     for (const raw of jsonLdRaw) { try { jsonLd.push(JSON.parse(raw)); } catch {} }
@@ -96,7 +99,7 @@ async function visit(page, url) {
       bodyText: bodyText.slice(0, 120000),
       links,
       jsonLd,
-      images: uniq(images).slice(0, 50),
+      images: uniq([...socialImages, ...images]).slice(0, 50),
       elapsedMs: Date.now() - started
     };
   } catch (error) {
@@ -160,6 +163,7 @@ const refreshStatePath = path.join(DATA, 'refresh-state.json');
 const payload = await readJson(listingsPath, { meta: {}, listings: [] });
 const history = await readJson(historyPath, {});
 const sources = await readJson(sourcesPath, { discovery: [], seedCandidates: [] });
+const imageSources = await readJson(imageSourcesPath, {});
 const previousState = await readJson(refreshStatePath, { listings: {} });
 const previousCandidates = await readJson(candidatesPath, []);
 
@@ -355,6 +359,16 @@ for (const seed of sources.seedCandidates || []) {
       }
       direct.autoPublishResult = 'published';
       direct.geocode = geo;
+      const photoCandidates = uniq((result.images || []).filter(url =>
+        /^https?:\/\//i.test(url) && !/(?:logo|icon|avatar|sprite|favicon)/i.test(url)
+      ));
+      if (photoCandidates.length) {
+        imageSources[seed.listingId] = {
+          referer: result.finalUrl || seed.url,
+          photoPageUrl: result.finalUrl || seed.url,
+          candidates: photoCandidates.slice(0, 12)
+        };
+      }
     } else {
       direct.autoPublishResult = 'blocked_no_vancouver_geocode';
     }
@@ -382,6 +396,7 @@ await writeJson(listingsPath, payload);
 await writeJson(historyPath, history);
 await writeJson(candidatesPath, candidates.slice(0, 300));
 await writeJson(refreshStatePath, state);
+await writeJson(imageSourcesPath, imageSources);
 await browser.close();
 
 console.log(`Verified ${Object.keys(state.listings).length} listings; collected ${candidates.length} candidates; auto-published ${state.autoPublished.length}.`);

@@ -55,6 +55,12 @@ if (!source.includes('auto_published_authoritative_mls')) failures.push('Current
 if (!source.includes('two consecutive healthy Realtylink inventory snapshots')) failures.push('MLS disappearance does not fail closed.');
 if (/bedrooms\s*:\s*c\.bedrooms\s*\|\|\s*2/.test(source)) failures.push('Unknown candidate bedrooms are still defaulted to 2BR.');
 if (!source.includes('mlsInventoryManaged!==true')) failures.push('MLS search disappearance is not limited to feed-managed inventory.');
+if (!source.includes("imageSources[seed.listingId]") || !source.includes('photoCandidates')) {
+  failures.push('Strict seed publication does not preserve photo candidates for the image cache.');
+}
+if (!source.includes("meta[property=\"og:image\"]") || !source.includes("meta[name=\"twitter:image\"]")) {
+  failures.push('Exact detail-page verification does not prioritize social preview listing photos.');
+}
 
 const legacyMlsListing = { id: '2268-w-broadway-312-r3153999', unit: '312 · MLS R3153999' };
 if (listingMls(legacyMlsListing) !== 'R3153999' || mlsIdentity(listingMls(legacyMlsListing)) !== 'mls:r3153999') {
