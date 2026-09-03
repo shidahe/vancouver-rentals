@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-09-03T11:08:52.083Z",
+  "refreshedAt": "2026-09-03T11:29:01.422Z",
   "listings": {
     "arbutus-residences-315-2den-900": {
       "cached": 3,
@@ -290,8 +290,8 @@
     },
     "kits-walk-unit-605": {
       "cached": 3,
-      "preserved": 0,
-      "downloaded": 3,
+      "preserved": 3,
+      "downloaded": 0,
       "failures": [],
       "photoPageUrl": "https://www.rew.ca/rentals/7496804/605-2075-w-12th-avenue-vancouver-bc"
     }
@@ -299,8 +299,8 @@
   "totals": {
     "sourceListings": 42,
     "cachedListings": 42,
-    "downloaded": 3,
+    "downloaded": 0,
     "failed": 0,
-    "preserved": 192
+    "preserved": 195
   }
 }
