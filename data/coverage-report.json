@@ -1,8 +1,9 @@
 {
-  "generatedAt": "2026-09-03T18:50:41.559Z",
+  "generatedAt": "2026-09-03T19:27:01.415Z",
   "coverageReady": true,
   "healthyLaneCount": 4,
-  "freshLaneCount": 5,
+  "freshLaneCount": 8,
+  "priorityOfficialReady": true,
   "lanes": [
     {
       "id": "zumper",
@@ -43,6 +44,30 @@
       "status": "healthy",
       "detail": "3/3 searches reachable; 7 live candidates parsed",
       "refreshedAt": "2026-09-03T18:48:39.366Z"
+    },
+    {
+      "id": "priority-kits-walk",
+      "kind": "priority-official",
+      "healthy": true,
+      "status": "healthy",
+      "detail": "1/2 official sources usable",
+      "refreshedAt": "2026-09-03T18:49:46.927Z"
+    },
+    {
+      "id": "priority-larchway-gardens",
+      "kind": "priority-official",
+      "healthy": true,
+      "status": "healthy",
+      "detail": "2/2 official sources usable",
+      "refreshedAt": "2026-09-03T18:49:46.927Z"
+    },
+    {
+      "id": "priority-viridian",
+      "kind": "priority-official",
+      "healthy": true,
+      "status": "healthy",
+      "detail": "1/2 official sources usable",
+      "refreshedAt": "2026-09-03T18:49:46.927Z"
     }
   ],
   "warnings": [
@@ -54,5 +79,5 @@
     }
   ],
   "blockers": [],
-  "policy": "Coverage is ready when at least two fresh independent discovery families are healthy, including one broad marketplace and one independent classifieds/MLS family. Individual blocked sources are warnings while redundant discovery remains healthy."
+  "policy": "Coverage is ready when at least two fresh independent discovery families are healthy, including one broad marketplace and one independent classifieds/MLS family, and every priority building has at least one fresh usable official source."
 }

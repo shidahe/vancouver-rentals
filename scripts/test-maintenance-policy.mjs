@@ -17,6 +17,7 @@ const activeAdapters = [
   'scripts/audit-data-quality.mjs'
 ];
 const source = (await Promise.all(activeAdapters.map(read))).join('\n');
+const coverageSource = await read('scripts/audit-coverage.mjs');
 const catalog = JSON.parse(await read('data/live-sources.json'));
 const officialWatch = JSON.parse(await read('data/official-watch.json'));
 const indexHtml = await read('index.html');
@@ -38,6 +39,12 @@ for (const building of ['kits-walk', 'larchway-gardens', 'viridian']) {
   const source = catalog.discovery.some(x => x.id.startsWith(building.replace('-gardens', '')) && ['official', 'property_manager'].includes(x.kind));
   if (!project) failures.push(`Priority building missing from official watch: ${building}`);
   if (!source) failures.push(`Priority building missing from live source catalog: ${building}`);
+}
+for (const building of ['kits-walk', 'larchway-gardens', 'viridian']) {
+  if (!coverageSource.includes(`'${building}'`)) failures.push(`Priority building missing from runtime coverage audit: ${building}`);
+}
+if (!coverageSource.includes('priority-building-official-monitor-unhealthy') || !coverageSource.includes('priorityHealthy')) {
+  failures.push('Priority official source health is not enforced by coverage readiness.');
 }
 const kitsWalk605 = catalog.seedCandidates?.find(x => x.id === 'rew-kits-walk-605');
 if (!kitsWalk605 || kitsWalk605.unit !== '605' || kitsWalk605.address !== '2075 W 12th Ave, Vancouver, BC' || kitsWalk605.expectedBeds !== 2 || !kitsWalk605.autoPublish || !/\/605-2075-w-12th-avenue-vancouver-bc$/.test(kitsWalk605.url)) {
