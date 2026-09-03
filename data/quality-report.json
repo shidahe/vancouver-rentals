@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-09-03T05:02:30.072Z",
+  "generatedAt": "2026-09-03T05:17:18.161Z",
   "activeCount": 34,
   "decisionReady": true,
   "highIssueCount": 0,
   "mediumIssueCount": 0,
-  "infoIssueCount": 61,
+  "infoIssueCount": 62,
   "issues": [
     {
       "severity": "info",
@@ -49,11 +49,6 @@
     {
       "severity": "info",
       "id": "2268-w-broadway-312-r3153999",
-      "issue": "unknown-orientation"
-    },
-    {
-      "severity": "info",
-      "id": "kits-walk-2br-flex-616",
       "issue": "unknown-orientation"
     },
     {
@@ -310,16 +305,32 @@
       "severity": "info",
       "id": "zumper-3b3c85746b5c",
       "issue": "unknown-orientation"
+    },
+    {
+      "severity": "info",
+      "id": "kits-walk-unit-605",
+      "issue": "unknown-ac"
+    },
+    {
+      "severity": "info",
+      "id": "kits-walk-unit-605",
+      "issue": "unknown-orientation"
     }
   ],
   "readinessChecks": {
     "smokeOk": true,
     "smokeFresh": true,
-    "smokeCheckedAt": "2026-09-03T05:02:36.003Z",
-    "latestDataAt": "2026-09-03T05:01:39.718Z",
+    "smokeCheckedAt": "2026-09-03T05:17:23.878Z",
+    "latestDataAt": "2026-09-03T05:16:27.491Z",
     "coverageReady": true,
-    "healthyDiscoveryLanes": 3,
+    "healthyDiscoveryLanes": 2,
     "coverageWarnings": [
+      {
+        "severity": "warning",
+        "lane": "rentalsca",
+        "status": "degraded",
+        "detail": "2/9 regional searches healthy"
+      },
       {
         "severity": "warning",
         "lane": "livrent",
@@ -335,5 +346,5 @@
     ]
   },
   "readinessIssues": [],
-  "finalizedAt": "2026-09-03T05:02:37.770Z"
+  "finalizedAt": "2026-09-03T05:17:25.610Z"
 }
