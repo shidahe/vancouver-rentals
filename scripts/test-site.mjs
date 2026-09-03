@@ -46,6 +46,7 @@ try {
   report.checkpoints.render = { title, cards, shown };
   assert(cards === shown, `Card count ${cards} != resultCount ${shown}`);
   assert(cards > 0, 'No listings rendered with default filters');
+  assert(await page.locator('[data-id="kits-walk-unit-605"]').count() === 1, 'Current Kits Walk Unit 605 is hidden by default preference filters');
 
   const statLabels = await page.locator('#stats .stat span').allTextContents();
   const statValues = await page.locator('#stats .stat strong').allTextContents();

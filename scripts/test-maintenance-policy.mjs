@@ -15,8 +15,10 @@ const activeAdapters = [
 const source = (await Promise.all(activeAdapters.map(read))).join('\n');
 const catalog = JSON.parse(await read('data/live-sources.json'));
 const officialWatch = JSON.parse(await read('data/official-watch.json'));
+const indexHtml = await read('index.html');
 
 const failures = [];
+if (/id="minSqft"[^>]*value="800"/.test(indexHtml)) failures.push('800 sqft preference is still a default discovery/display gate.');
 for (const pattern of [/bedrooms\s*===\s*2/, /beds\s*!==\s*2/, /max_bedrooms=2/]) {
   if (pattern.test(source)) failures.push(`2BR-only gate remains: ${pattern}`);
 }
