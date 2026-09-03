@@ -1,7 +1,7 @@
 import fs from 'node:fs/promises';
 import path from 'node:path';
 import crypto from 'node:crypto';
-import { listingMls, mlsIdentity } from './inventory-identity.mjs';
+import { listingMls, maskedCivicAddressMatch, mlsIdentity } from './inventory-identity.mjs';
 
 const DATA=path.join(process.cwd(),'data');
 const iso=new Date().toISOString(),today=iso.slice(0,10);
@@ -27,6 +27,12 @@ function fingerprintCompatible(a,b){
   if(ab==null||bb==null||ab!==bb||as==null||bs==null||Math.abs(as-bs)>5)return false;
   return sourceFamily(a)!==sourceFamily(b);
 }
+function maskedMlsFingerprintCompatible(a,b){
+  if(!maskedCivicAddressMatch(a.address,b.address))return false;
+  if(listingUnit(a)||unitToken(b.unit)||Number(a.rent)!==Number(b.rent)||Number(a.bedrooms)!==Number(b.bedrooms))return false;
+  const ab=baths(a),bb=baths(b),as=sqft(a),bs=sqft(b);
+  return ab!=null&&bb!=null&&ab===bb&&as!=null&&bs!=null&&Math.abs(as-bs)<=5;
+}
 
 const lp=path.join(DATA,'listings.json'),hp=path.join(DATA,'history.json');
 const payload=await read(lp,{meta:{},listings:[]}),history=await read(hp,{});
@@ -47,7 +53,26 @@ const groups=new Map();
 for(const c of all){if(!usable(c))continue;const k=candidateKey(c);if(!groups.has(k))groups.set(k,[]);groups.get(k).push(c);}
 const listingByKey=new Map();
 for(const x of payload.listings){const canonicalMls=listingMls(x);if(canonicalMls)x.mls=canonicalMls;const k=key(x.address,listingUnit(x),x.url,null,canonicalMls);if(!listingByKey.has(k)||listingByKey.get(k).source==='Zumper live detail')listingByKey.set(k,x);}
-const state={refreshedAt:iso,groups:[],promoted:[],crossVerified:[],fingerprintCrossVerified:[],negativeMatches:[],mlsMissing:{},mlsRemoved:[]};
+const state={refreshedAt:iso,groups:[],promoted:[],crossVerified:[],fingerprintCrossVerified:[],maskedMlsMerged:[],negativeMatches:[],mlsMissing:{},mlsRemoved:[]};
+
+// Realtylink may mask one civic-number digit (for example 453x) while a marketplace
+// exposes the exact address. When all rent/bed/bath/sqft facts also agree, keep the
+// exact-address record and attach the authoritative MLS identity instead of showing
+// two cards for the same home.
+for(const candidate of realtylink.candidates||[]){
+  if(!usable(candidate)||!candidate.mls)continue;
+  const managed=payload.listings.find(x=>x.availabilityStatus==='active'&&listingMls(x)===candidate.mls);
+  const sibling=payload.listings.find(x=>x.availabilityStatus==='active'&&x!==managed&&!listingMls(x)&&maskedMlsFingerprintCompatible(x,candidate));
+  if(!sibling)continue;
+  sibling.mls=candidate.mls;sibling.mlsInventoryManaged=true;sibling.lastChecked=today;sibling.verifiedAt=iso;
+  sibling.source='Realtylink MLS + marketplace detail';sibling.url=candidate.url;
+  sibling.evidenceSources=[...new Set([...(sibling.evidenceSources||[]),'realtylink mls'])];
+  sibling.verificationMethod=`Reverified and deduplicated by authoritative Realtylink MLS inventory ${candidate.mls}; exact marketplace address retained.`;
+  sibling.dataNotes='MLS number is canonical; Realtylink masks one civic digit, while the exact marketplace address is retained for display.';
+  if(managed){managed.availabilityStatus='removed';managed.status='removed';managed.removedAt=today;managed.lastChecked=today;managed.verificationMethod=`MERGED into ${sibling.id}: masked Realtylink address and exact marketplace address have identical rent/bed/bath/sqft facts.`;(history[managed.id]||=[]).push({date:today,rent:managed.rent,note:`MERGED duplicate inventory into ${sibling.id}; MLS ${candidate.mls} retained as canonical identity.`});}
+  (history[sibling.id]||=[]).push({date:today,rent:sibling.rent,note:`MLS ${candidate.mls} attached; masked-address duplicate merged after exact fact agreement.`});
+  listingByKey.set(mlsIdentity(candidate.mls),sibling);state.maskedMlsMerged.push({mls:candidate.mls,kept:sibling.id,removed:managed?.id||null});
+}
 
 for(const [k,items] of groups){
   const families=[...new Set(items.map(sourceFamily))];

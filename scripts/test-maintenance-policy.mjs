@@ -1,5 +1,5 @@
 import fs from 'node:fs/promises';
-import { findExistingSeedListing, listingMls, mlsIdentity } from './inventory-identity.mjs';
+import { findExistingSeedListing, listingMls, maskedCivicAddressMatch, mlsIdentity } from './inventory-identity.mjs';
 import { firstLikelyRent, parseFacts } from './listing-parser.mjs';
 import { isAutoManagedListing } from './stale-auto-policy.mjs';
 import { verifiedPhotoCandidates } from './listing-photo-candidates.mjs';
@@ -87,6 +87,11 @@ if (rewPhotos.length !== 3 || rewPhotos.some(url => !url.includes('/87904_158524
 const legacyMlsListing = { id: '2268-w-broadway-312-r3153999', unit: '312 · MLS R3153999' };
 if (listingMls(legacyMlsListing) !== 'R3153999' || mlsIdentity(listingMls(legacyMlsListing)) !== 'mls:r3153999') {
   failures.push('Legacy MLS-backed listings do not resolve to the canonical MLS identity.');
+}
+if (!maskedCivicAddressMatch('Ground Floor 453x 16th Ave W, University VW', '4533 West 16th Avenue, Vancouver, BC') ||
+    maskedCivicAddressMatch('453x W 16th Ave', '4543 W 16th Ave') ||
+    maskedCivicAddressMatch('453x W 16th Ave', '4533 W 15th Ave')) {
+  failures.push('Masked Realtylink civic addresses are not matched conservatively to exact marketplace addresses.');
 }
 
 // Regression fixture: the reported Kitsilano 4BR must pass the global discovery gate.
