@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-03T17:26:57.926Z",
+  "generatedAt": "2026-09-03T17:43:37.754Z",
   "activeCount": 42,
   "decisionReady": true,
   "highIssueCount": 0,
@@ -333,43 +333,49 @@
     },
     {
       "severity": "info",
-      "id": "mls-r3160936",
-      "issue": "unknown-orientation"
-    },
-    {
-      "severity": "info",
       "id": "mls-r3159471",
-      "issue": "unknown-orientation"
-    },
-    {
-      "severity": "info",
-      "id": "mls-r3159559",
-      "issue": "unknown-orientation"
-    },
-    {
-      "severity": "info",
-      "id": "mls-r3141972",
-      "issue": "unknown-orientation"
-    },
-    {
-      "severity": "info",
-      "id": "mls-r3150730",
       "issue": "unknown-orientation"
     },
     {
       "severity": "info",
       "id": "mls-r3151022",
       "issue": "unknown-orientation"
+    },
+    {
+      "severity": "info",
+      "id": "mls-r3160689",
+      "issue": "unknown-orientation"
+    },
+    {
+      "severity": "info",
+      "id": "mls-r3150923",
+      "issue": "unknown-orientation"
+    },
+    {
+      "severity": "info",
+      "id": "mls-r3145335",
+      "issue": "unknown-orientation"
+    },
+    {
+      "severity": "info",
+      "id": "mls-r3129974",
+      "issue": "unknown-orientation"
     }
   ],
   "readinessChecks": {
     "smokeOk": true,
     "smokeFresh": true,
-    "smokeCheckedAt": "2026-09-03T17:27:04.414Z",
-    "latestDataAt": "2026-09-03T17:25:54.696Z",
+    "smokeCheckedAt": "2026-09-03T17:43:44.312Z",
+    "latestDataAt": "2026-09-03T17:42:46.622Z",
     "coverageReady": true,
-    "healthyDiscoveryLanes": 4,
+    "healthyDiscoveryLanes": 3,
     "coverageWarnings": [
+      {
+        "severity": "warning",
+        "lane": "rentalsca",
+        "status": "degraded",
+        "detail": "2/9 regional searches healthy"
+      },
       {
         "severity": "warning",
         "lane": "livrent",
@@ -379,5 +385,5 @@
     ]
   },
   "readinessIssues": [],
-  "finalizedAt": "2026-09-03T17:27:06.246Z"
+  "finalizedAt": "2026-09-03T17:43:46.110Z"
 }

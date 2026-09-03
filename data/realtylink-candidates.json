@@ -1,70 +1,94 @@
 {
-  "refreshedAt": "2026-09-03T17:24:52.343Z",
+  "refreshedAt": "2026-09-03T17:41:36.682Z",
   "mode": "candidate-only",
   "health": [
     {
       "url": "https://realtylink.org/en/apartment~for-rent~vancouver",
       "status": 200,
-      "checkedAt": "2026-09-03T17:24:52.343Z"
+      "checkedAt": "2026-09-03T17:41:36.682Z"
     },
     {
       "url": "https://realtylink.org/en/townhouse~for-rent~vancouver",
       "status": 200,
-      "checkedAt": "2026-09-03T17:24:52.343Z"
+      "checkedAt": "2026-09-03T17:41:36.682Z"
     },
     {
       "url": "https://realtylink.org/en/house~for-rent~vancouver",
       "status": 200,
-      "checkedAt": "2026-09-03T17:24:52.343Z"
+      "checkedAt": "2026-09-03T17:41:36.682Z"
     }
   ],
   "candidates": [
     {
       "source": "Realtylink MLS",
-      "url": "https://realtylink.org/en/apartment~for-rent~vancouver/263175626",
-      "mls": "R3153999",
-      "address": "312 2268 W Broadway Avenue",
-      "type": "condo",
-      "rent": 3600,
-      "bedrooms": 2,
-      "bathrooms": 2,
-      "sqft": 820,
-      "lat": 49.26375,
-      "lng": -123.15648,
-      "geo": {
-        "lat": 49.26375,
-        "lng": -123.15648
-      },
-      "targetArea": true,
-      "active": true,
-      "parking": true,
-      "ac": false,
-      "balcony": true,
-      "checkedAt": "2026-09-03T17:24:52.343Z",
-      "publishable": false
-    },
-    {
-      "source": "Realtylink MLS",
-      "url": "https://realtylink.org/en/apartment~for-rent~vancouver/263182563",
-      "mls": "R3160936",
-      "address": "3XX 1529 W 6th Avenue, False Creek",
-      "type": "condo",
-      "rent": 3000,
+      "url": "https://realtylink.org/en/townhouse~for-rent~vancouver/263182316",
+      "mls": "R3160689",
+      "address": "102 3349 Dunbar Street",
+      "type": "townhouse",
+      "rent": 4950,
       "bedrooms": 3,
-      "bathrooms": 1,
-      "sqft": 700,
-      "lat": 49.26631,
-      "lng": -123.13949,
+      "bathrooms": 2,
+      "sqft": 1271,
+      "lat": 49.25688,
+      "lng": -123.18537,
       "geo": {
-        "lat": 49.26631,
-        "lng": -123.13949
+        "lat": 49.25688,
+        "lng": -123.18537
       },
       "targetArea": true,
       "active": true,
       "parking": true,
       "ac": false,
       "balcony": false,
-      "checkedAt": "2026-09-03T17:24:52.343Z",
+      "checkedAt": "2026-09-03T17:41:36.682Z",
+      "publishable": false
+    },
+    {
+      "source": "Realtylink MLS",
+      "url": "https://realtylink.org/en/townhouse~for-rent~vancouver/263172550",
+      "mls": "R3150923",
+      "address": "6558 Arbutus Street, S.W. Marine",
+      "type": "townhouse",
+      "rent": 4790,
+      "bedrooms": 3,
+      "bathrooms": 3,
+      "sqft": 1271,
+      "lat": 49.22614,
+      "lng": -123.15488,
+      "geo": {
+        "lat": 49.22614,
+        "lng": -123.15488
+      },
+      "targetArea": true,
+      "active": true,
+      "parking": true,
+      "ac": false,
+      "balcony": false,
+      "checkedAt": "2026-09-03T17:41:36.682Z",
+      "publishable": false
+    },
+    {
+      "source": "Realtylink MLS",
+      "url": "https://realtylink.org/en/townhouse~for-rent~vancouver/263159073",
+      "mls": "R3137446",
+      "address": "103 2535 York Avenue",
+      "type": "townhouse",
+      "rent": 5850,
+      "bedrooms": 2,
+      "bathrooms": 2,
+      "sqft": 1499,
+      "lat": 49.27208,
+      "lng": -123.163,
+      "geo": {
+        "lat": 49.27208,
+        "lng": -123.163
+      },
+      "targetArea": true,
+      "active": true,
+      "parking": true,
+      "ac": false,
+      "balcony": true,
+      "checkedAt": "2026-09-03T17:41:36.682Z",
       "publishable": false
     },
     {
@@ -88,151 +112,7 @@
       "parking": true,
       "ac": true,
       "balcony": true,
-      "checkedAt": "2026-09-03T17:24:52.343Z",
-      "publishable": false
-    },
-    {
-      "source": "Realtylink MLS",
-      "url": "https://realtylink.org/en/house~for-rent~vancouver/263181186",
-      "mls": "R3159559",
-      "address": "Ground Floor 453x 16th Ave W, University VW",
-      "type": "house",
-      "rent": 4500,
-      "bedrooms": 3,
-      "bathrooms": 1,
-      "sqft": 1221,
-      "lat": 49.25317,
-      "lng": -123.20944,
-      "geo": {
-        "lat": 49.25317,
-        "lng": -123.20944
-      },
-      "targetArea": true,
-      "active": true,
-      "parking": false,
-      "ac": false,
-      "balcony": true,
-      "checkedAt": "2026-09-03T17:24:52.343Z",
-      "publishable": false
-    },
-    {
-      "source": "Realtylink MLS",
-      "url": "https://realtylink.org/en/house~for-rent~vancouver/263163599",
-      "mls": "R3141972",
-      "address": "basement 6575 Lime Street, S.W. Marine",
-      "type": "house",
-      "rent": 2500,
-      "bedrooms": 2,
-      "bathrooms": 1,
-      "sqft": 459,
-      "lat": 49.22622,
-      "lng": -123.15806,
-      "geo": {
-        "lat": 49.22622,
-        "lng": -123.15806
-      },
-      "targetArea": true,
-      "active": true,
-      "parking": true,
-      "ac": false,
-      "balcony": false,
-      "checkedAt": "2026-09-03T17:24:52.343Z",
-      "publishable": false
-    },
-    {
-      "source": "Realtylink MLS",
-      "url": "https://realtylink.org/en/house~for-rent~vancouver/263178311",
-      "mls": "R3156684",
-      "address": "3886 W 29 Avenue",
-      "type": "house",
-      "rent": 1900,
-      "bedrooms": 2,
-      "bathrooms": 1,
-      "sqft": 900,
-      "lat": 49.24599,
-      "lng": -123.19042,
-      "geo": {
-        "lat": 49.24599,
-        "lng": -123.19042
-      },
-      "targetArea": true,
-      "active": true,
-      "parking": false,
-      "ac": false,
-      "balcony": false,
-      "checkedAt": "2026-09-03T17:24:52.343Z",
-      "publishable": false
-    },
-    {
-      "source": "Realtylink MLS",
-      "url": "https://realtylink.org/en/house~for-rent~vancouver/263177017",
-      "mls": "R3155390",
-      "address": "2 2139 W 22nd Avenue",
-      "type": "house",
-      "rent": 2300,
-      "bedrooms": 2,
-      "bathrooms": 1,
-      "sqft": 550,
-      "lat": 49.25284,
-      "lng": -123.15462,
-      "geo": {
-        "lat": 49.25284,
-        "lng": -123.15462
-      },
-      "targetArea": true,
-      "active": true,
-      "parking": true,
-      "ac": false,
-      "balcony": false,
-      "checkedAt": "2026-09-03T17:24:52.343Z",
-      "publishable": false
-    },
-    {
-      "source": "Realtylink MLS",
-      "url": "https://realtylink.org/en/house~for-rent~vancouver/263172357",
-      "mls": "R3150730",
-      "address": "1476 W 33rd Avenue, Shaughnessy",
-      "type": "house",
-      "rent": 2500,
-      "bedrooms": 2,
-      "bathrooms": 1,
-      "sqft": 900,
-      "lat": 49.24155,
-      "lng": -123.13846,
-      "geo": {
-        "lat": 49.24155,
-        "lng": -123.13846
-      },
-      "targetArea": true,
-      "active": true,
-      "parking": false,
-      "ac": false,
-      "balcony": false,
-      "checkedAt": "2026-09-03T17:24:52.343Z",
-      "publishable": false
-    },
-    {
-      "source": "Realtylink MLS",
-      "url": "https://realtylink.org/en/house~for-rent~vancouver/263180687",
-      "mls": "R3159060",
-      "address": "4588 W 2nd Avenue",
-      "type": "house",
-      "rent": 15000,
-      "bedrooms": 4,
-      "bathrooms": 5,
-      "sqft": 4000,
-      "lat": 49.27115,
-      "lng": -123.21141,
-      "geo": {
-        "lat": 49.27115,
-        "lng": -123.21141
-      },
-      "targetArea": true,
-      "active": true,
-      "parking": true,
-      "ac": false,
-      "balcony": true,
-      "checkedAt": "2026-09-03T17:24:52.343Z",
+      "checkedAt": "2026-09-03T17:41:36.682Z",
       "publishable": false
     },
     {
@@ -256,7 +136,55 @@
       "parking": false,
       "ac": true,
       "balcony": true,
-      "checkedAt": "2026-09-03T17:24:52.343Z",
+      "checkedAt": "2026-09-03T17:41:36.682Z",
+      "publishable": false
+    },
+    {
+      "source": "Realtylink MLS",
+      "url": "https://realtylink.org/en/house~for-rent~vancouver/263166962",
+      "mls": "R3145335",
+      "address": "Laneway House 5669 Crown Street",
+      "type": "house",
+      "rent": 3000,
+      "bedrooms": 2,
+      "bathrooms": 1,
+      "sqft": 850,
+      "lat": 49.23517,
+      "lng": -123.19401,
+      "geo": {
+        "lat": 49.23517,
+        "lng": -123.19401
+      },
+      "targetArea": true,
+      "active": true,
+      "parking": true,
+      "ac": false,
+      "balcony": false,
+      "checkedAt": "2026-09-03T17:41:36.682Z",
+      "publishable": false
+    },
+    {
+      "source": "Realtylink MLS",
+      "url": "https://realtylink.org/en/house~for-rent~vancouver/263151601",
+      "mls": "R3129974",
+      "address": "Upper 3750 W 11th Avenue",
+      "type": "house",
+      "rent": 4000,
+      "bedrooms": 3,
+      "bathrooms": 1,
+      "sqft": 2,
+      "lat": 49.26236,
+      "lng": -123.18716,
+      "geo": {
+        "lat": 49.26236,
+        "lng": -123.18716
+      },
+      "targetArea": true,
+      "active": true,
+      "parking": true,
+      "ac": false,
+      "balcony": false,
+      "checkedAt": "2026-09-03T17:41:36.682Z",
       "publishable": false
     }
   ]

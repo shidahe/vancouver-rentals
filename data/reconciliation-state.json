@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-09-03T17:25:50.571Z",
+  "refreshedAt": "2026-09-03T17:42:42.424Z",
   "groups": [
     {
       "identityKey": "3220 4th ave w::url:4b1a6ebe2d36",
@@ -278,19 +278,67 @@
       "result": "candidate_only"
     },
     {
-      "identityKey": "mls:r3153999",
+      "identityKey": "mls:r3160689",
       "sources": [
         "realtylink mls"
       ],
       "rents": [
-        3600
+        4950
       ],
       "exactUnit": false,
-      "matchedListingId": "2268-w-broadway-312-r3153999",
+      "matchedListingId": null,
+      "result": "auto_published_authoritative_mls"
+    },
+    {
+      "identityKey": "mls:r3150923",
+      "sources": [
+        "realtylink mls"
+      ],
+      "rents": [
+        4790
+      ],
+      "exactUnit": false,
+      "matchedListingId": null,
+      "result": "auto_published_authoritative_mls"
+    },
+    {
+      "identityKey": "mls:r3137446",
+      "sources": [
+        "realtylink mls"
+      ],
+      "rents": [
+        5850
+      ],
+      "exactUnit": false,
+      "matchedListingId": "york-103-2535-r3137446",
       "result": "authoritative_mls_reverified"
     },
     {
-      "identityKey": "mls:r3160936",
+      "identityKey": "mls:r3159471",
+      "sources": [
+        "realtylink mls"
+      ],
+      "rents": [
+        5500
+      ],
+      "exactUnit": false,
+      "matchedListingId": "mls-r3159471",
+      "result": "authoritative_mls_reverified"
+    },
+    {
+      "identityKey": "mls:r3151022",
+      "sources": [
+        "realtylink mls"
+      ],
+      "rents": [
+        10500
+      ],
+      "exactUnit": false,
+      "matchedListingId": "mls-r3151022",
+      "result": "authoritative_mls_reverified"
+    },
+    {
+      "identityKey": "mls:r3145335",
       "sources": [
         "realtylink mls"
       ],
@@ -302,60 +350,12 @@
       "result": "auto_published_authoritative_mls"
     },
     {
-      "identityKey": "mls:r3159471",
+      "identityKey": "mls:r3129974",
       "sources": [
         "realtylink mls"
       ],
       "rents": [
-        5500
-      ],
-      "exactUnit": false,
-      "matchedListingId": null,
-      "result": "auto_published_authoritative_mls"
-    },
-    {
-      "identityKey": "mls:r3159559",
-      "sources": [
-        "realtylink mls"
-      ],
-      "rents": [
-        4500
-      ],
-      "exactUnit": false,
-      "matchedListingId": null,
-      "result": "auto_published_authoritative_mls"
-    },
-    {
-      "identityKey": "mls:r3141972",
-      "sources": [
-        "realtylink mls"
-      ],
-      "rents": [
-        2500
-      ],
-      "exactUnit": false,
-      "matchedListingId": null,
-      "result": "auto_published_authoritative_mls"
-    },
-    {
-      "identityKey": "mls:r3150730",
-      "sources": [
-        "realtylink mls"
-      ],
-      "rents": [
-        2500
-      ],
-      "exactUnit": false,
-      "matchedListingId": null,
-      "result": "auto_published_authoritative_mls"
-    },
-    {
-      "identityKey": "mls:r3151022",
-      "sources": [
-        "realtylink mls"
-      ],
-      "rents": [
-        10500
+        4000
       ],
       "exactUnit": false,
       "matchedListingId": null,
@@ -363,18 +363,40 @@
     }
   ],
   "promoted": [
-    "mls-r3160936",
-    "mls-r3159471",
-    "mls-r3159559",
-    "mls-r3141972",
-    "mls-r3150730",
-    "mls-r3151022"
+    "mls-r3160689",
+    "mls-r3150923",
+    "mls-r3145335",
+    "mls-r3129974"
   ],
   "crossVerified": [
-    "2268-w-broadway-312-r3153999"
+    "york-103-2535-r3137446",
+    "mls-r3159471",
+    "mls-r3151022"
   ],
   "fingerprintCrossVerified": [],
+  "maskedMlsMerged": [],
   "negativeMatches": [],
-  "mlsMissing": {},
+  "mlsMissing": {
+    "R3160936": {
+      "firstMissingAt": "2026-09-03T17:42:42.424Z",
+      "lastMissingAt": "2026-09-03T17:42:42.424Z",
+      "listingId": "mls-r3160936"
+    },
+    "R3159559": {
+      "firstMissingAt": "2026-09-03T17:42:42.424Z",
+      "lastMissingAt": "2026-09-03T17:42:42.424Z",
+      "listingId": "mls-r3159559"
+    },
+    "R3141972": {
+      "firstMissingAt": "2026-09-03T17:42:42.424Z",
+      "lastMissingAt": "2026-09-03T17:42:42.424Z",
+      "listingId": "mls-r3141972"
+    },
+    "R3150730": {
+      "firstMissingAt": "2026-09-03T17:42:42.424Z",
+      "lastMissingAt": "2026-09-03T17:42:42.424Z",
+      "listingId": "mls-r3150730"
+    }
+  },
   "mlsRemoved": []
 }
