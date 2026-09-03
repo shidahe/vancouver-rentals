@@ -1,6 +1,7 @@
 import fs from 'node:fs/promises';
 import { findExistingSeedListing, listingMls, mlsIdentity } from './inventory-identity.mjs';
 import { firstLikelyRent, parseFacts } from './listing-parser.mjs';
+import { verifiedPhotoCandidates } from './listing-photo-candidates.mjs';
 
 const read = p => fs.readFile(p, 'utf8');
 const activeAdapters = [
@@ -58,8 +59,23 @@ if (!source.includes('mlsInventoryManaged!==true')) failures.push('MLS search di
 if (!source.includes("imageSources[seed.listingId]") || !source.includes('photoCandidates')) {
   failures.push('Strict seed publication does not preserve photo candidates for the image cache.');
 }
+if (!source.includes("imageSources[listing.id]") || !source.includes('verifiedPhotoCandidates(result.images)')) {
+  failures.push('Verified active detail pages do not repair missing image cache sources.');
+}
 if (!source.includes("meta[property=\"og:image\"]") || !source.includes("meta[name=\"twitter:image\"]")) {
   failures.push('Exact detail-page verification does not prioritize social preview listing photos.');
+}
+
+const rewPhotos = verifiedPhotoCandidates([
+  'https://assets.rew.ca/assets/misc/share-preview.png',
+  'https://assets.rew.ca/assets/logos/rew-one/rew-icon.svg',
+  'https://assets-listings.rew.ca/listing/rent_sync/87904_1585241/00_subject-a.webp?auto=format',
+  'https://assets-listings.rew.ca/listing/rent_sync/87904_1585241/00_subject-b.jpg?auto=format',
+  'https://assets-listings.rew.ca/listing/rent_sync/87904_1585241/00_subject-c.webp?auto=format',
+  'https://assets-listings.rew.ca/listing/rent_sync/other/00_related.jpg?auto=format'
+]);
+if (rewPhotos.length !== 3 || rewPhotos.some(url => !url.includes('/87904_1585241/'))) {
+  failures.push(`REW photo extraction mixed subject photos with chrome or related listings: ${JSON.stringify(rewPhotos)}`);
 }
 
 const legacyMlsListing = { id: '2268-w-broadway-312-r3153999', unit: '312 · MLS R3153999' };

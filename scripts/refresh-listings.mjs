@@ -3,6 +3,7 @@ import path from 'node:path';
 import { chromium } from 'playwright';
 import { firstLikelyRent, parseFacts } from './listing-parser.mjs';
 import { findExistingSeedListing } from './inventory-identity.mjs';
+import { verifiedPhotoCandidates } from './listing-photo-candidates.mjs';
 
 const ROOT = process.cwd();
 const DATA = path.join(ROOT, 'data');
@@ -230,6 +231,14 @@ for (const listing of payload.listings.filter(x => ['active', 'needs_confirmatio
     listing.lastChecked = today;
     listing.verifiedAt = iso;
     if (evidence.explicitPositive) listing.verificationMethod = 'Automated live browser check matched listing identity and current availability wording.';
+    const photoCandidates = evidence.explicitPositive ? verifiedPhotoCandidates(result.images) : [];
+    if (photoCandidates.length && !imageSources[listing.id]?.candidates?.length) {
+      imageSources[listing.id] = {
+        referer: result.finalUrl || listing.url,
+        photoPageUrl: result.finalUrl || listing.url,
+        candidates: photoCandidates.slice(0, 12)
+      };
+    }
     const host = new URL(result.finalUrl || listing.url).hostname;
     const priceSafeHost = /(^|\.)(zumper\.com|rentfaster\.ca)$/i.test(host);
     const newRent = evidence.extractedRent;
@@ -359,9 +368,7 @@ for (const seed of sources.seedCandidates || []) {
       }
       direct.autoPublishResult = 'published';
       direct.geocode = geo;
-      const photoCandidates = uniq((result.images || []).filter(url =>
-        /^https?:\/\//i.test(url) && !/(?:logo|icon|avatar|sprite|favicon)/i.test(url)
-      ));
+      const photoCandidates = verifiedPhotoCandidates(result.images);
       if (photoCandidates.length) {
         imageSources[seed.listingId] = {
           referer: result.finalUrl || seed.url,

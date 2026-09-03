@@ -9,6 +9,7 @@ on:
     paths:
       - 'scripts/refresh-listings.mjs'
       - 'scripts/listing-parser.mjs'
+      - 'scripts/listing-photo-candidates.mjs'
       - 'scripts/refresh-safe.mjs'
       - 'scripts/prune-invalid-geography.mjs'
       - 'scripts/refresh-zumper-units-v2.mjs'
