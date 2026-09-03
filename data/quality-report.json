@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-09-03T18:01:24.810Z",
-  "activeCount": 42,
-  "decisionReady": true,
-  "highIssueCount": 0,
+  "generatedAt": "2026-09-03T18:18:51.903Z",
+  "activeCount": 37,
+  "decisionReady": false,
+  "highIssueCount": 1,
   "mediumIssueCount": 0,
-  "infoIssueCount": 71,
+  "infoIssueCount": 66,
   "issues": [
     {
       "severity": "info",
@@ -159,11 +159,6 @@
     {
       "severity": "info",
       "id": "zumper-e353962d7737",
-      "issue": "unknown-orientation"
-    },
-    {
-      "severity": "info",
-      "id": "arbutus-residences-floorplan-2-bedroom-townhouse-den-1340",
       "issue": "unknown-orientation"
     },
     {
@@ -323,6 +318,22 @@
     },
     {
       "severity": "info",
+      "id": "mls-r3150923",
+      "issue": "unknown-orientation"
+    },
+    {
+      "severity": "high",
+      "id": "mls-r3129974",
+      "issue": "implausible-sqft",
+      "detail": 2
+    },
+    {
+      "severity": "info",
+      "id": "mls-r3129974",
+      "issue": "unknown-orientation"
+    },
+    {
+      "severity": "info",
       "id": "zumper-16e9ae17cd91",
       "issue": "unknown-ac"
     },
@@ -330,52 +341,16 @@
       "severity": "info",
       "id": "zumper-16e9ae17cd91",
       "issue": "unknown-orientation"
-    },
-    {
-      "severity": "info",
-      "id": "mls-r3141972",
-      "issue": "unknown-orientation"
-    },
-    {
-      "severity": "info",
-      "id": "mls-r3150730",
-      "issue": "unknown-orientation"
-    },
-    {
-      "severity": "info",
-      "id": "mls-r3150923",
-      "issue": "unknown-orientation"
-    },
-    {
-      "severity": "info",
-      "id": "mls-r3146085",
-      "issue": "unknown-orientation"
-    },
-    {
-      "severity": "info",
-      "id": "mls-r3146956",
-      "issue": "unknown-orientation"
-    },
-    {
-      "severity": "info",
-      "id": "mls-r3158299",
-      "issue": "unknown-orientation"
     }
   ],
   "readinessChecks": {
     "smokeOk": true,
     "smokeFresh": true,
-    "smokeCheckedAt": "2026-09-03T18:01:31.431Z",
-    "latestDataAt": "2026-09-03T18:00:28.173Z",
+    "smokeCheckedAt": "2026-09-03T18:18:58.364Z",
+    "latestDataAt": "2026-09-03T18:17:02.644Z",
     "coverageReady": true,
-    "healthyDiscoveryLanes": 3,
+    "healthyDiscoveryLanes": 4,
     "coverageWarnings": [
-      {
-        "severity": "warning",
-        "lane": "rentalsca",
-        "status": "degraded",
-        "detail": "2/9 regional searches healthy"
-      },
       {
         "severity": "warning",
         "lane": "livrent",
@@ -385,5 +360,5 @@
     ]
   },
   "readinessIssues": [],
-  "finalizedAt": "2026-09-03T18:01:33.225Z"
+  "finalizedAt": "2026-09-03T18:19:00.113Z"
 }

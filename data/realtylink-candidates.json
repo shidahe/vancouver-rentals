@@ -1,47 +1,54 @@
 {
-  "refreshedAt": "2026-09-03T17:59:08.814Z",
+  "refreshedAt": "2026-09-03T18:15:54.204Z",
   "mode": "candidate-only",
   "health": [
     {
       "url": "https://realtylink.org/en/apartment~for-rent~vancouver",
       "status": 200,
-      "checkedAt": "2026-09-03T17:59:08.814Z"
+      "checkedAt": "2026-09-03T18:15:54.204Z"
     },
     {
       "url": "https://realtylink.org/en/townhouse~for-rent~vancouver",
       "status": 200,
-      "checkedAt": "2026-09-03T17:59:08.814Z"
+      "checkedAt": "2026-09-03T18:15:54.204Z"
     },
     {
       "url": "https://realtylink.org/en/house~for-rent~vancouver",
       "status": 200,
-      "checkedAt": "2026-09-03T17:59:08.814Z"
+      "checkedAt": "2026-09-03T18:15:54.204Z"
     }
   ],
   "candidates": [
     {
       "source": "Realtylink MLS",
-      "url": "https://realtylink.org/en/townhouse~for-rent~vancouver/263159073",
-      "mls": "R3137446",
-      "address": "2535 York Avenue",
-      "unit": "103",
+      "url": "https://realtylink.org/en/townhouse~for-rent~vancouver/263172550",
+      "mls": "R3150923",
+      "address": "6558 Arbutus Street, S.W. Marine",
+      "unit": null,
       "type": "townhouse",
-      "rent": 5850,
-      "bedrooms": 2,
-      "bathrooms": 2,
-      "sqft": 1499,
-      "lat": 49.27208,
-      "lng": -123.163,
+      "rent": 4790,
+      "bedrooms": 3,
+      "bathrooms": 3,
+      "sqft": 1271,
+      "lat": 49.22614,
+      "lng": -123.15488,
       "geo": {
-        "lat": 49.27208,
-        "lng": -123.163
+        "lat": 49.22614,
+        "lng": -123.15488
       },
+      "images": [
+        "https://media.realtylink.org/images/consumersite/property/263172550/9e9a258d2ae04f3b9f4745be9c364212.jpeg?width=640&height=480&fit=cover",
+        "https://media.realtylink.org/images/consumersite/property/263172550/a47085d8476f41d49b205091decef942.jpeg?width=320&height=240&fit=cover",
+        "https://media.realtylink.org/images/consumersite/property/263172550/ad447d4a3f144eb6aa1bd6523632012f.jpeg?width=320&height=240&fit=cover",
+        "https://media.realtylink.org/images/consumersite/property/263172550/b3c39524df924cd5a135cef35aaf852e.jpeg?width=320&height=240&fit=cover",
+        "https://media.realtylink.org/images/consumersite/property/263172550/47a0d66c16d844cb8e39b17d36587db2.jpeg?width=320&height=240&fit=cover"
+      ],
       "targetArea": true,
       "active": true,
       "parking": true,
       "ac": false,
-      "balcony": true,
-      "checkedAt": "2026-09-03T17:59:08.814Z",
+      "balcony": false,
+      "checkedAt": "2026-09-03T18:15:54.204Z",
       "publishable": false
     },
     {
@@ -61,187 +68,115 @@
         "lat": 49.25688,
         "lng": -123.18537
       },
+      "images": [
+        "https://media.realtylink.org/images/consumersite/property/263182316/00c50dbb1e294023bf398ae25ce0d515.jpeg?width=640&height=480&fit=cover",
+        "https://media.realtylink.org/images/consumersite/property/263182316/72286793647f47cd9a695cfbe3d304d4.jpeg?width=320&height=240&fit=cover",
+        "https://media.realtylink.org/images/consumersite/property/263182316/9ff90dbf374c4802a4347969a0cae1e6.jpeg?width=320&height=240&fit=cover",
+        "https://media.realtylink.org/images/consumersite/property/263182316/8498975986b343ffa866148eaa08fc91.jpeg?width=320&height=240&fit=cover",
+        "https://media.realtylink.org/images/consumersite/property/263182316/015a649b6fb945cf8bde7a706fdb80c7.jpeg?width=320&height=240&fit=cover"
+      ],
       "targetArea": true,
       "active": true,
       "parking": true,
       "ac": false,
       "balcony": false,
-      "checkedAt": "2026-09-03T17:59:08.814Z",
+      "checkedAt": "2026-09-03T18:15:54.204Z",
       "publishable": false
     },
     {
       "source": "Realtylink MLS",
-      "url": "https://realtylink.org/en/townhouse~for-rent~vancouver/263172550",
-      "mls": "R3150923",
-      "address": "6558 Arbutus Street, S.W. Marine",
-      "unit": null,
+      "url": "https://realtylink.org/en/townhouse~for-rent~vancouver/263159073",
+      "mls": "R3137446",
+      "address": "2535 York Avenue",
+      "unit": "103",
       "type": "townhouse",
-      "rent": 4790,
-      "bedrooms": 3,
-      "bathrooms": 3,
-      "sqft": 1271,
-      "lat": 49.22614,
-      "lng": -123.15488,
-      "geo": {
-        "lat": 49.22614,
-        "lng": -123.15488
-      },
-      "targetArea": true,
-      "active": true,
-      "parking": true,
-      "ac": false,
-      "balcony": false,
-      "checkedAt": "2026-09-03T17:59:08.814Z",
-      "publishable": false
-    },
-    {
-      "source": "Realtylink MLS",
-      "url": "https://realtylink.org/en/house~for-rent~vancouver/263167712",
-      "mls": "R3146085",
-      "address": "46xx W 12th Avenue",
-      "unit": null,
-      "type": "house",
-      "rent": 6500,
-      "bedrooms": 3,
-      "bathrooms": 5,
-      "sqft": 3372,
-      "lat": 49.26209,
-      "lng": -123.21411,
-      "geo": {
-        "lat": 49.26209,
-        "lng": -123.21411
-      },
-      "targetArea": true,
-      "active": true,
-      "parking": true,
-      "ac": false,
-      "balcony": false,
-      "checkedAt": "2026-09-03T17:59:08.814Z",
-      "publishable": false
-    },
-    {
-      "source": "Realtylink MLS",
-      "url": "https://realtylink.org/en/house~for-rent~vancouver/263177017",
-      "mls": "R3155390",
-      "address": "2139 W 22nd Avenue",
-      "unit": "2",
-      "type": "house",
-      "rent": 2300,
+      "rent": 5850,
       "bedrooms": 2,
-      "bathrooms": 1,
-      "sqft": 550,
-      "lat": 49.25284,
-      "lng": -123.15462,
+      "bathrooms": 2,
+      "sqft": 1499,
+      "lat": 49.27208,
+      "lng": -123.163,
       "geo": {
-        "lat": 49.25284,
-        "lng": -123.15462
+        "lat": 49.27208,
+        "lng": -123.163
       },
+      "images": [
+        "https://media.realtylink.org/images/consumersite/property/263159073/35dd514e86854a44b3e6b4b9490cef65.jpeg?width=640&height=480&fit=cover",
+        "https://media.realtylink.org/images/consumersite/property/263159073/4d45f1e0b1fc423da4dc040057dc511c.jpeg?width=320&height=240&fit=cover",
+        "https://media.realtylink.org/images/consumersite/property/263159073/57cb3ef23f3346e2be923167fe6582ab.jpeg?width=320&height=240&fit=cover",
+        "https://media.realtylink.org/images/consumersite/property/263159073/8d7678f03a9b4482ae8d93b637901737.jpeg?width=320&height=240&fit=cover",
+        "https://media.realtylink.org/images/consumersite/property/263159073/311e8a0ee2f94c4cb373d879df1f9309.jpeg?width=320&height=240&fit=cover"
+      ],
       "targetArea": true,
       "active": true,
       "parking": true,
       "ac": false,
-      "balcony": false,
-      "checkedAt": "2026-09-03T17:59:08.814Z",
+      "balcony": true,
+      "checkedAt": "2026-09-03T18:15:54.204Z",
       "publishable": false
     },
     {
       "source": "Realtylink MLS",
-      "url": "https://realtylink.org/en/house~for-rent~vancouver/263168583",
-      "mls": "R3146956",
-      "address": "3567 W 26th",
+      "url": "https://realtylink.org/en/house~for-rent~vancouver/263173995",
+      "mls": "R3152368",
+      "address": "3818 Broadway W",
       "unit": null,
       "type": "house",
-      "rent": 6390,
+      "rent": 13995,
       "bedrooms": 5,
       "bathrooms": 4,
-      "sqft": 3053,
-      "lat": 49.24923,
-      "lng": -123.18413,
+      "sqft": 4170,
+      "lat": 49.26417,
+      "lng": -123.1884,
       "geo": {
-        "lat": 49.24923,
-        "lng": -123.18413
+        "lat": 49.26417,
+        "lng": -123.1884
       },
+      "images": [
+        "https://media.realtylink.org/images/consumersite/property/263173995/abbe7a972a38462c8ae7fe50390d4377.jpeg?width=640&height=480&fit=cover",
+        "https://media.realtylink.org/images/consumersite/property/263173995/fcd05ce9af1d458dae14d770162badd1.jpeg?width=320&height=240&fit=cover",
+        "https://media.realtylink.org/images/consumersite/property/263173995/de5c19613d704346b58a76ecb38e84bb.jpeg?width=320&height=240&fit=cover",
+        "https://media.realtylink.org/images/consumersite/property/263173995/0bba071ba2854e6bb310b9b6895c7cc3.jpeg?width=320&height=240&fit=cover",
+        "https://media.realtylink.org/images/consumersite/property/263173995/8f525fa22bb84dbfab4a2810ea991385.jpeg?width=320&height=240&fit=cover"
+      ],
       "targetArea": true,
       "active": true,
       "parking": true,
       "ac": false,
-      "balcony": false,
-      "checkedAt": "2026-09-03T17:59:08.814Z",
+      "balcony": true,
+      "checkedAt": "2026-09-03T18:15:54.204Z",
       "publishable": false
     },
     {
       "source": "Realtylink MLS",
-      "url": "https://realtylink.org/en/house~for-rent~vancouver/263179926",
-      "mls": "R3158299",
-      "address": "4631 W 14th Ave",
-      "unit": null,
+      "url": "https://realtylink.org/en/house~for-rent~vancouver/263151601",
+      "mls": "R3129974",
+      "address": "3750 W 11th Avenue",
+      "unit": "Upper",
       "type": "house",
-      "rent": 3000,
+      "rent": 4000,
       "bedrooms": 3,
       "bathrooms": 1,
-      "sqft": 950,
-      "lat": 49.26048,
-      "lng": -123.21331,
+      "sqft": null,
+      "lat": 49.26236,
+      "lng": -123.18716,
       "geo": {
-        "lat": 49.26048,
-        "lng": -123.21331
+        "lat": 49.26236,
+        "lng": -123.18716
       },
+      "images": [
+        "https://media.realtylink.org/images/consumersite/property/263151601/c8590f3436794754a66064822868731b.jpeg?width=640&height=480&fit=cover",
+        "https://media.realtylink.org/images/consumersite/property/263151601/f27253aab9a84df1945c1900f392912b.jpeg?width=320&height=240&fit=cover",
+        "https://media.realtylink.org/images/consumersite/property/263151601/66aa13b50e2645849747f319e6e230a9.jpeg?width=320&height=240&fit=cover",
+        "https://media.realtylink.org/images/consumersite/property/263151601/14a1b03b7fb741f292152ebe1ad62b19.jpeg?width=320&height=240&fit=cover",
+        "https://media.realtylink.org/images/consumersite/property/263151601/a4aa2b2399394b8fb69bc2b100b8bc70.jpeg?width=320&height=240&fit=cover"
+      ],
       "targetArea": true,
       "active": true,
       "parking": true,
       "ac": false,
       "balcony": false,
-      "checkedAt": "2026-09-03T17:59:08.814Z",
-      "publishable": false
-    },
-    {
-      "source": "Realtylink MLS",
-      "url": "https://realtylink.org/en/house~for-rent~vancouver/263172357",
-      "mls": "R3150730",
-      "address": "1476 W 33rd Avenue, Shaughnessy",
-      "unit": null,
-      "type": "house",
-      "rent": 2500,
-      "bedrooms": 2,
-      "bathrooms": 1,
-      "sqft": 900,
-      "lat": 49.24155,
-      "lng": -123.13846,
-      "geo": {
-        "lat": 49.24155,
-        "lng": -123.13846
-      },
-      "targetArea": true,
-      "active": true,
-      "parking": false,
-      "ac": false,
-      "balcony": false,
-      "checkedAt": "2026-09-03T17:59:08.814Z",
-      "publishable": false
-    },
-    {
-      "source": "Realtylink MLS",
-      "url": "https://realtylink.org/en/house~for-rent~vancouver/263163599",
-      "mls": "R3141972",
-      "address": "6575 Lime Street, S.W. Marine",
-      "unit": "basement",
-      "type": "house",
-      "rent": 2500,
-      "bedrooms": 2,
-      "bathrooms": 1,
-      "sqft": 459,
-      "lat": 49.22622,
-      "lng": -123.15806,
-      "geo": {
-        "lat": 49.22622,
-        "lng": -123.15806
-      },
-      "targetArea": true,
-      "active": true,
-      "parking": true,
-      "ac": false,
-      "balcony": false,
-      "checkedAt": "2026-09-03T17:59:08.814Z",
+      "checkedAt": "2026-09-03T18:15:54.204Z",
       "publishable": false
     }
   ]
