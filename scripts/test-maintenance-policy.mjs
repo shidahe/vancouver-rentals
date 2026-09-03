@@ -68,7 +68,7 @@ for (const building of ['kits-walk', 'viridian']) {
   if (!project?.positiveSignals?.includes('now renting')) failures.push(`${building} does not recognize its official Now Renting status.`);
 }
 if (!source.includes('auto_published_authoritative_mls')) failures.push('Current authoritative MLS inventory cannot auto-publish.');
-if (!source.includes('two consecutive healthy Realtylink inventory snapshots')) failures.push('MLS disappearance does not fail closed.');
+if (!source.includes('realtylinkRemovalEligible') || !source.includes('missingAgeMs>=4*60*60*1000') || !source.includes('previousRealtylinkCount*.75')) failures.push('MLS disappearance is not guarded by snapshot completeness and a minimum confirmation interval.');
 if (/bedrooms\s*:\s*c\.bedrooms\s*\|\|\s*2/.test(source)) failures.push('Unknown candidate bedrooms are still defaulted to 2BR.');
 if (!source.includes('mlsInventoryManaged!==true')) failures.push('MLS search disappearance is not limited to feed-managed inventory.');
 if (!source.includes("imageSources[seed.listingId]") || !source.includes('photoCandidates')) {

@@ -151,8 +151,14 @@ for(const x of payload.listings){
 
 for(const c of liv.candidates||[]){if(!c.rented||!unitToken(c.unit))continue;const k=candidateKey(c),x=listingByKey.get(k);if(!x||x.availabilityStatus!=='active')continue;x.availabilityStatus='removed';x.status='removed';x.removedAt=today;x.lastChecked=today;x.verifiedAt=iso;x.verificationMethod='Removed after exact-unit liv.rent detail explicitly showed Rented / no longer accepting applications.';(history[x.id]||=[]).push({date:today,rent:x.rent,note:'AUTO-REMOVED: exact matching liv.rent unit explicitly marked Rented.'});state.negativeMatches.push(x.id);}
 
-const realtylinkHealthy=(realtylink.health||[]).some(x=>Number(x.status)>=200&&Number(x.status)<400);
-if(realtylinkHealthy){
+const realtylinkHealth=realtylink.health||[];
+const realtylinkCount=(realtylink.candidates||[]).length;
+const previousRealtylinkCount=Number(previousReconciliation.realtylinkSnapshotCount||0);
+const realtylinkHealthy=realtylinkHealth.length>=3&&realtylinkHealth.every(x=>Number(x.status)>=200&&Number(x.status)<400)&&realtylinkCount>0;
+const realtylinkComplete=realtylinkHealthy&&(!previousRealtylinkCount||realtylinkCount>=Math.ceil(previousRealtylinkCount*.75));
+state.realtylinkSnapshotCount=realtylinkComplete?realtylinkCount:(previousRealtylinkCount||realtylinkCount);
+state.realtylinkRemovalEligible=realtylinkComplete;
+if(realtylinkComplete){
   const activeMls=new Set((realtylink.candidates||[]).map(x=>norm(x.mls)).filter(Boolean));
   for(const x of payload.listings){
     // Only inventory published from the complete Realtylink feed is governed by
@@ -162,21 +168,24 @@ if(realtylinkHealthy){
     if(!x.mls||x.mlsInventoryManaged!==true||x.availabilityStatus==='removed'||activeMls.has(norm(x.mls)))continue;
     const previous=previousReconciliation.mlsMissing?.[x.mls];
     state.mlsMissing[x.mls]={firstMissingAt:previous?.firstMissingAt||iso,lastMissingAt:iso,listingId:x.id};
-    if(previous){
+    const missingAgeMs=previous?.firstMissingAt?Date.now()-Date.parse(previous.firstMissingAt):0;
+    if(previous&&missingAgeMs>=4*60*60*1000){
       x.availabilityStatus='removed';x.status='removed';x.removedAt=today;x.lastChecked=today;
       x.verificationMethod=`AUTO-REMOVED after MLS ${x.mls} was absent from two consecutive healthy Realtylink inventory snapshots.`;
       (history[x.id]||=[]).push({date:today,rent:x.rent,note:`AUTO-REMOVED: MLS ${x.mls} absent from two consecutive healthy inventory snapshots.`});state.mlsRemoved.push(x.id);
     }else{
       x.availabilityStatus='needs_confirmation';x.status='corrected';x.lastChecked=today;x.verificationLevel='unverified';
-      x.verificationMethod=`Hidden pending removal: MLS ${x.mls} is absent from the latest healthy Realtylink inventory snapshot.`;
+      x.verificationMethod=`Hidden pending removal: MLS ${x.mls} is absent from the latest complete Realtylink inventory snapshot; removal requires another complete confirmation at least four hours later.`;
     }
   }
+}else if(realtylinkHealthy){
+  state.mlsRemovalSuppressed=`Partial Realtylink snapshot (${realtylinkCount} candidates versus previous complete ${previousRealtylinkCount}); disappearance signals ignored.`;
 }
 
 const statusRank=x=>x.availabilityStatus==='active'?3:x.availabilityStatus==='needs_confirmation'?2:1;
 const uniqueListings=new Map();
 for(const listing of payload.listings){const previous=uniqueListings.get(listing.id);if(!previous||statusRank(listing)>statusRank(previous))uniqueListings.set(listing.id,listing);}
 payload.listings=[...uniqueListings.values()];
-payload.meta ||= {};payload.meta.lastCrossSourceReconciliation=iso;payload.meta.reconciliationPolicy='Discover every 2BR+ home. Exact address+unit candidates may auto-publish after two independent live source families agree; current authoritative Realtylink MLS records may publish by MLS number. Address-only cross-source fingerprints never auto-publish. Explicit Rented evidence removes immediately; an MLS absent from two consecutive healthy Realtylink inventory snapshots is removed after being hidden on the first miss.';
+payload.meta ||= {};payload.meta.lastCrossSourceReconciliation=iso;payload.meta.reconciliationPolicy='Discover every 2BR+ home. Exact address+unit candidates may auto-publish after two independent live source families agree; current authoritative Realtylink MLS records may publish by MLS number. Address-only cross-source fingerprints never auto-publish. Explicit Rented evidence removes immediately; MLS disappearance only counts on sufficiently complete Realtylink snapshots, and removal requires a second complete confirmation at least four hours after the first miss.';
 await write(lp,payload);await write(hp,history);await write(ip,imageSources);await write(path.join(DATA,'reconciliation-state.json'),state);
 console.log(`Reconciliation: ${state.crossVerified.length} exact existing, ${state.fingerprintCrossVerified.length} strict-fingerprint existing, ${state.promoted.length} new exact units promoted, ${state.negativeMatches.length} removed.`);
