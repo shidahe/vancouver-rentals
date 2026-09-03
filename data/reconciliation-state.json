@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-09-03T05:16:25.929Z",
+  "refreshedAt": "2026-09-03T05:30:30.509Z",
   "groups": [
     {
       "identityKey": "3220 4th ave w::url:4b1a6ebe2d36",
@@ -251,6 +251,30 @@
       ],
       "exactUnit": false,
       "matchedListingId": "zumper-bed681f0506a",
+      "result": "candidate_only"
+    },
+    {
+      "identityKey": "4560 w 5th ave::unit:2",
+      "sources": [
+        "zumper"
+      ],
+      "rents": [
+        7999
+      ],
+      "exactUnit": true,
+      "matchedListingId": "zumper-e3fb92a991a6",
+      "result": "candidate_only"
+    },
+    {
+      "identityKey": "2477 waterloo st::url:9bf4862de36a",
+      "sources": [
+        "zumper"
+      ],
+      "rents": [
+        4500
+      ],
+      "exactUnit": false,
+      "matchedListingId": "waterloo-2477-zumper",
       "result": "candidate_only"
     }
   ],
