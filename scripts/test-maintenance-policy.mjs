@@ -115,6 +115,9 @@ if (!source.includes("media\\.realtylink\\.org\\/images\\/consumersite\\/propert
 if (!source.includes('listing.sqft=sqft(authoritativeMls)') || !source.includes('uniqueListings')) {
   failures.push('Authoritative Realtylink fact refresh or duplicate-ID cleanup is missing.');
 }
+if (!source.includes('byKey.get(c.identityKey)||byUrl.get(c.url)')) {
+  failures.push('A URL-only marketplace refresh can discard a stronger MLS unit identity.');
+}
 if (!source.includes('cleanAddress') || !source.includes('meta[property="og:image"]')) {
   failures.push('Realtylink address normalization or OpenGraph photo fallback is missing.');
 }

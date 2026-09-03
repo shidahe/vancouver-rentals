@@ -140,17 +140,22 @@ for(const url of [...urls].slice(0,120)) {
 await browser.close();
 
 const byKey = new Map();
+const byUrl = new Map();
 for (const x of payload.listings) {
   const k = identityKey({...x, unit: listingUnit(x)});
   if (!byKey.has(k) || byKey.get(k).source === 'Zumper live detail') byKey.set(k,x);
+  if (x.url) byUrl.set(x.url,x);
 }
 
 for(const c of found){
-  let x=byKey.get(c.identityKey);
+  // An authoritative source can add a previously hidden unit/MLS identity to a
+  // URL-only marketplace listing. Keep matching the same exact detail URL so a
+  // later Zumper refresh cannot recreate the old ID and discard stronger facts.
+  let x=byKey.get(c.identityKey)||byUrl.get(c.url);
   const id=x?.id||`zumper-${hash(c.identityKey)}`;
   if(!x){
     x={id,buildingName:null,unit:c.unit||null,address:c.address,neighborhood:/kitsilano/i.test(c.description)?'Kitsilano':/point grey/i.test(c.description)?'Point Grey':/dunbar/i.test(c.description)?'Dunbar':/arbutus/i.test(c.description)?'Arbutus Ridge':'Vancouver West',lat:c.exactGeo.lat,lng:c.exactGeo.lng,type:'condo',rent:c.rent,effectiveRent:null,bedrooms:c.bedrooms,bathrooms:c.bathrooms,sqft:c.sqft,ac:c.ac,parking:c.parking,petFriendly:c.petFriendly,buildingYear:null,orientation:c.orientation,balcony:c.balcony,largeWindows:c.largeWindows,modernInterior:c.modernInterior,source:'Zumper live detail',url:c.url,photoPageUrl:c.url,firstSeen:today,lastChecked:today,verifiedAt:iso,verificationLevel:'verified',verificationMethod:`AUTO-PUBLISHED from exact live Zumper detail; ${c.identityKey}`,availabilityStatus:'active',status:'new',priceDrop:false,dataNotes:c.unit?'Independent unit identity: canonical address + unit.':'Independent inventory identity: canonical address + exact detail URL (unit not public).'};
-    payload.listings.push(x); byKey.set(c.identityKey,x); history[id]=[{date:today,rent:c.rent,note:'NEW: live Zumper detail auto-published as independent inventory.'}];
+    payload.listings.push(x); byKey.set(c.identityKey,x); byUrl.set(c.url,x); history[id]=[{date:today,rent:c.rent,note:'NEW: live Zumper detail auto-published as independent inventory.'}];
   } else {
     const old=x.rent;
     x.lastChecked=today; x.verifiedAt=iso; x.availabilityStatus='active'; x.verificationLevel='verified'; x.lat=c.exactGeo.lat; x.lng=c.exactGeo.lng;
