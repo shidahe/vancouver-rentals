@@ -21,6 +21,7 @@ on:
       - 'scripts/refresh-livrent.mjs'
       - 'scripts/refresh-craigslist.mjs'
       - 'scripts/refresh-realtylink.mjs'
+      - 'scripts/realtylink-parser.mjs'
       - 'scripts/reconcile-candidates.mjs'
       - 'scripts/inventory-identity.mjs'
       - 'scripts/refresh-purposebuilt.mjs'

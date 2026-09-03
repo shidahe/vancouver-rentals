@@ -3,6 +3,7 @@ import { findExistingSeedListing, listingMls, mlsIdentity } from './inventory-id
 import { firstLikelyRent, parseFacts } from './listing-parser.mjs';
 import { isAutoManagedListing } from './stale-auto-policy.mjs';
 import { verifiedPhotoCandidates } from './listing-photo-candidates.mjs';
+import { isTargetWestsideCoordinate, parseRealtylinkCoordinates } from './realtylink-parser.mjs';
 
 const read = p => fs.readFile(p, 'utf8');
 const activeAdapters = [
@@ -92,6 +93,13 @@ if (listingMls(legacyMlsListing) !== 'R3153999' || mlsIdentity(listingMls(legacy
 const r3160272 = { mls: 'R3160272', bedrooms: 4, rent: 6950, address: '2788 W 1st Avenue, Vancouver, BC' };
 if (mlsIdentity(r3160272.mls) !== 'mls:r3160272' || !(r3160272.bedrooms >= 2 && r3160272.rent >= 2500 && r3160272.rent <= 12000)) {
   failures.push('R3160272 regression fixture is rejected by the 2BR+ policy.');
+}
+
+// Realtylink embeds coordinates at ten decimal places. This real York Avenue
+// shape previously failed the adapter's 4-8 digit regex and emptied the lane.
+const yorkRealtylinkGeo = parseRealtylinkCoordinates('263159073 0 /en/townhouse~for-rent~vancouver/263159073 /photos 49.2720800000 -123.1630000000 true');
+if (!yorkRealtylinkGeo || yorkRealtylinkGeo.lat !== 49.27208 || yorkRealtylinkGeo.lng !== -123.163 || !isTargetWestsideCoordinate(yorkRealtylinkGeo)) {
+  failures.push(`Realtylink ten-decimal Westside coordinate is rejected: ${JSON.stringify(yorkRealtylinkGeo)}`);
 }
 
 if (failures.length) {
