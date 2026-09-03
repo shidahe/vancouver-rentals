@@ -101,6 +101,9 @@ if (!civicAddressMatch('102 3349 Dunbar Street', '3349 Dunbar St, Vancouver, BC'
 if (!source.includes('rawSqft>=200&&rawSqft<=15000') || !source.includes('implausible-sqft')) {
   failures.push('Implausible Realtylink floor areas are not normalized and audited.');
 }
+if (!source.includes("media\\.realtylink\\.org\\/images\\/consumersite\\/property") || !source.includes('attachCandidateImages(imageSources')) {
+  failures.push('Verified Realtylink inventory does not feed listing photos into the image cache.');
+}
 
 // Regression fixture: the reported Kitsilano 4BR must pass the global discovery gate.
 const r3160272 = { mls: 'R3160272', bedrooms: 4, rent: 6950, address: '2788 W 1st Avenue, Vancouver, BC' };

@@ -2,6 +2,7 @@ import fs from 'node:fs/promises';
 import path from 'node:path';
 import crypto from 'node:crypto';
 import { civicAddressMatch, listingMls, mlsIdentity } from './inventory-identity.mjs';
+import { verifiedPhotoCandidates } from './listing-photo-candidates.mjs';
 
 const DATA=path.join(process.cwd(),'data');
 const iso=new Date().toISOString(),today=iso.slice(0,10);
@@ -33,9 +34,14 @@ function maskedMlsFingerprintCompatible(a,b){
   const ab=baths(a),bb=baths(b),as=sqft(a),bs=sqft(b);
   return ab!=null&&bb!=null&&ab===bb&&as!=null&&bs!=null&&Math.abs(as-bs)<=5;
 }
+function attachCandidateImages(imageSources,listing,candidate){
+  const images=verifiedPhotoCandidates(candidate?.images);
+  if(!listing?.id||!images.length)return;
+  imageSources[listing.id]={referer:candidate.url,photoPageUrl:candidate.url,candidates:images.slice(0,8)};
+}
 
-const lp=path.join(DATA,'listings.json'),hp=path.join(DATA,'history.json');
-const payload=await read(lp,{meta:{},listings:[]}),history=await read(hp,{});
+const lp=path.join(DATA,'listings.json'),hp=path.join(DATA,'history.json'),ip=path.join(DATA,'image-sources.json');
+const payload=await read(lp,{meta:{},listings:[]}),history=await read(hp,{}),imageSources=await read(ip,{});
 const previousReconciliation=await read(path.join(DATA,'reconciliation-state.json'),{mlsMissing:{}});
 const zumper=await read(path.join(DATA,'candidates.json'),[]);
 const rentals=await read(path.join(DATA,'rentalsca-candidates.json'),{inventories:[]});
@@ -66,6 +72,7 @@ for(const candidate of realtylink.candidates||[]){
   if(!sibling)continue;
   sibling.mls=candidate.mls;sibling.mlsInventoryManaged=true;sibling.unit=unitToken(candidate.unit)||sibling.unit||null;sibling.lastChecked=today;sibling.verifiedAt=iso;
   sibling.source='Realtylink MLS + marketplace detail';sibling.url=candidate.url;
+  attachCandidateImages(imageSources,sibling,candidate);
   sibling.evidenceSources=[...new Set([...(sibling.evidenceSources||[]),'realtylink mls'])];
   sibling.verificationMethod=`Reverified and deduplicated by authoritative Realtylink MLS inventory ${candidate.mls}; exact marketplace address retained.`;
   sibling.dataNotes='MLS number is canonical; Realtylink masks one civic digit, while the exact marketplace address is retained for display.';
@@ -87,6 +94,7 @@ for(const [k,items] of groups){
     const oldRent=Number(listing.rent),newRent=Number(authoritativeMls.rent);
     listing.availabilityStatus='active';listing.verificationLevel='verified';listing.lastChecked=today;listing.verifiedAt=iso;
     listing.verificationMethod=`Reverified in current authoritative Realtylink MLS inventory ${authoritativeMls.mls}.`;
+    attachCandidateImages(imageSources,listing,authoritativeMls);
     if(Number.isFinite(newRent)&&newRent!==oldRent){listing.rent=newRent;listing.status=newRent<oldRent?'price_drop':'unchanged';listing.priceDrop=newRent<oldRent;(history[listing.id]||=[]).push({date:today,rent:newRent,note:`MLS price update $${oldRent} → $${newRent}.`});}
     state.crossVerified.push(listing.id);state.groups.push({...summary,result:'authoritative_mls_reverified'});continue;
   }
@@ -111,7 +119,7 @@ for(const [k,items] of groups){
     if(lat==null||lng==null){state.groups.push({...summary,result:'authoritative_mls_no_geo'});continue;}
     const id=`mls-${norm(best.mls)}`,rent=Number(best.rent);
     listing={id,mls:best.mls,mlsInventoryManaged:true,buildingName:null,unit:unitToken(best.unit),address:best.address,neighborhood:'Vancouver West',lat,lng,type:best.type||'condo',rent,effectiveRent:null,bedrooms:Number(best.bedrooms),bathrooms:best.bathrooms??best.baths??null,sqft:best.sqft??null,ac:best.ac??null,parking:best.parking??null,petFriendly:best.petFriendly??null,buildingYear:best.buildingYear??null,orientation:best.orientation??null,balcony:best.balcony??null,largeWindows:best.largeWindows??null,modernInterior:best.modernInterior??null,source:'Realtylink MLS',url:best.url,photoPageUrl:best.url,firstSeen:today,lastChecked:today,verifiedAt:iso,verificationLevel:'verified',verificationMethod:`AUTO-PUBLISHED from current authoritative MLS inventory ${best.mls}.`,availabilityStatus:'active',status:'new',priceDrop:false,evidenceSources:['realtylink mls'],dataNotes:'MLS number is the canonical identity; disappearance from the current MLS inventory triggers fail-closed revalidation.'};
-    payload.listings.push(listing);listingByKey.set(k,listing);history[id]=[{date:today,rent,note:`NEW: live Realtylink MLS ${best.mls} auto-published.`}];state.promoted.push(id);state.groups.push({...summary,result:'auto_published_authoritative_mls'});continue;
+    attachCandidateImages(imageSources,listing,best);payload.listings.push(listing);listingByKey.set(k,listing);history[id]=[{date:today,rent,note:`NEW: live Realtylink MLS ${best.mls} auto-published.`}];state.promoted.push(id);state.groups.push({...summary,result:'auto_published_authoritative_mls'});continue;
   }
   state.groups.push({...summary,result:'candidate_only'});
 }
@@ -163,5 +171,5 @@ if(realtylinkHealthy){
 }
 
 payload.meta ||= {};payload.meta.lastCrossSourceReconciliation=iso;payload.meta.reconciliationPolicy='Discover every 2BR+ home. Exact address+unit candidates may auto-publish after two independent live source families agree; current authoritative Realtylink MLS records may publish by MLS number. Address-only cross-source fingerprints never auto-publish. Explicit Rented evidence removes immediately; an MLS absent from two consecutive healthy inventory snapshots is removed after being hidden on the first miss.';
-await write(lp,payload);await write(hp,history);await write(path.join(DATA,'reconciliation-state.json'),state);
+await write(lp,payload);await write(hp,history);await write(ip,imageSources);await write(path.join(DATA,'reconciliation-state.json'),state);
 console.log(`Reconciliation: ${state.crossVerified.length} exact existing, ${state.fingerprintCrossVerified.length} strict-fingerprint existing, ${state.promoted.length} new exact units promoted, ${state.negativeMatches.length} removed.`);
