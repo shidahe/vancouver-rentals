@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-09-03T18:34:26.739Z",
+  "refreshedAt": "2026-09-03T18:49:45.426Z",
   "groups": [
     {
       "identityKey": "3220 4th ave w::url:4b1a6ebe2d36",
@@ -290,6 +290,18 @@
       "result": "authoritative_mls_reverified"
     },
     {
+      "identityKey": "mls:r3150923",
+      "sources": [
+        "realtylink mls"
+      ],
+      "rents": [
+        4790
+      ],
+      "exactUnit": false,
+      "matchedListingId": "mls-r3150923",
+      "result": "authoritative_mls_reverified"
+    },
+    {
       "identityKey": "mls:r3160689",
       "sources": [
         "realtylink mls"
@@ -314,132 +326,67 @@
       "result": "authoritative_mls_reverified"
     },
     {
-      "identityKey": "mls:r3150923",
+      "identityKey": "mls:r3151022",
       "sources": [
         "realtylink mls"
       ],
       "rents": [
-        4790
+        10500
       ],
       "exactUnit": false,
-      "matchedListingId": "mls-r3150923",
+      "matchedListingId": "mls-r3151022",
       "result": "authoritative_mls_reverified"
-    },
-    {
-      "identityKey": "mls:r3151352",
-      "sources": [
-        "realtylink mls"
-      ],
-      "rents": [
-        3495
-      ],
-      "exactUnit": false,
-      "matchedListingId": null,
-      "result": "auto_published_authoritative_mls"
-    },
-    {
-      "identityKey": "mls:r3146956",
-      "sources": [
-        "realtylink mls"
-      ],
-      "rents": [
-        6390
-      ],
-      "exactUnit": false,
-      "matchedListingId": "mls-r3146956",
-      "result": "authoritative_mls_reverified"
-    },
-    {
-      "identityKey": "mls:r3158149",
-      "sources": [
-        "realtylink mls"
-      ],
-      "rents": [
-        7000
-      ],
-      "exactUnit": false,
-      "matchedListingId": null,
-      "result": "auto_published_authoritative_mls"
-    },
-    {
-      "identityKey": "mls:r3141972",
-      "sources": [
-        "realtylink mls"
-      ],
-      "rents": [
-        2500
-      ],
-      "exactUnit": false,
-      "matchedListingId": "mls-r3141972",
-      "result": "authoritative_mls_reverified"
-    },
-    {
-      "identityKey": "mls:r3133139",
-      "sources": [
-        "realtylink mls"
-      ],
-      "rents": [
-        8980
-      ],
-      "exactUnit": false,
-      "matchedListingId": null,
-      "result": "auto_published_authoritative_mls"
-    },
-    {
-      "identityKey": "mls:r3158036",
-      "sources": [
-        "realtylink mls"
-      ],
-      "rents": [
-        4000
-      ],
-      "exactUnit": false,
-      "matchedListingId": null,
-      "result": "auto_published_authoritative_mls"
     }
   ],
-  "promoted": [
-    "mls-r3151352",
-    "mls-r3158149",
-    "mls-r3133139",
-    "mls-r3158036"
-  ],
+  "promoted": [],
   "crossVerified": [
     "york-103-2535-r3137446",
+    "mls-r3150923",
     "zumper-16e9ae17cd91",
     "mls-r3159471",
-    "mls-r3150923",
-    "mls-r3146956",
-    "mls-r3141972"
+    "mls-r3151022"
   ],
   "fingerprintCrossVerified": [],
   "maskedMlsMerged": [],
   "negativeMatches": [],
   "mlsMissing": {
-    "R3150730": {
-      "firstMissingAt": "2026-09-03T18:17:01.365Z",
-      "lastMissingAt": "2026-09-03T18:34:26.739Z",
-      "listingId": "mls-r3150730"
+    "R3141972": {
+      "firstMissingAt": "2026-09-03T18:49:45.426Z",
+      "lastMissingAt": "2026-09-03T18:49:45.426Z",
+      "listingId": "mls-r3141972"
     },
     "R3129974": {
       "firstMissingAt": "2026-09-03T18:34:26.739Z",
-      "lastMissingAt": "2026-09-03T18:34:26.739Z",
+      "lastMissingAt": "2026-09-03T18:49:45.426Z",
       "listingId": "mls-r3129974"
     },
-    "R3146085": {
-      "firstMissingAt": "2026-09-03T18:17:01.365Z",
-      "lastMissingAt": "2026-09-03T18:34:26.739Z",
-      "listingId": "mls-r3146085"
+    "R3146956": {
+      "firstMissingAt": "2026-09-03T18:49:45.426Z",
+      "lastMissingAt": "2026-09-03T18:49:45.426Z",
+      "listingId": "mls-r3146956"
     },
-    "R3158299": {
-      "firstMissingAt": "2026-09-03T18:17:01.365Z",
-      "lastMissingAt": "2026-09-03T18:34:26.739Z",
-      "listingId": "mls-r3158299"
+    "R3151352": {
+      "firstMissingAt": "2026-09-03T18:49:45.426Z",
+      "lastMissingAt": "2026-09-03T18:49:45.426Z",
+      "listingId": "mls-r3151352"
+    },
+    "R3158149": {
+      "firstMissingAt": "2026-09-03T18:49:45.426Z",
+      "lastMissingAt": "2026-09-03T18:49:45.426Z",
+      "listingId": "mls-r3158149"
+    },
+    "R3133139": {
+      "firstMissingAt": "2026-09-03T18:49:45.426Z",
+      "lastMissingAt": "2026-09-03T18:49:45.426Z",
+      "listingId": "mls-r3133139"
+    },
+    "R3158036": {
+      "firstMissingAt": "2026-09-03T18:49:45.426Z",
+      "lastMissingAt": "2026-09-03T18:49:45.426Z",
+      "listingId": "mls-r3158036"
     }
   },
   "mlsRemoved": [
-    "mls-r3150730",
-    "mls-r3146085",
-    "mls-r3158299"
+    "mls-r3129974"
   ]
 }

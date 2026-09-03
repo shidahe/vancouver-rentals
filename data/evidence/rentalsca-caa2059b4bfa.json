@@ -1,0 +1,231 @@
+{
+  "checkedAt": "2026-09-03T18:47:58.879Z",
+  "page": {
+    "source": "Rentals.ca",
+    "url": "https://rentals.ca/vancouver/joyce-2",
+    "address": "5083 Joyce Street, Vancouver, British Columbia V5R 0M2",
+    "addressUnit": null,
+    "geo": {
+      "lat": 49.2388916,
+      "lng": -123.0317695
+    },
+    "targetArea": false,
+    "active": true,
+    "floorplans": [
+      {
+        "label": "2 Bedroom Apartments In Vancouver",
+        "unit": null,
+        "beds": 2,
+        "baths": null,
+        "sqft": null,
+        "rent": 2000,
+        "available": true
+      },
+      {
+        "label": "3 Bedroom Apartments In Vancouver",
+        "unit": null,
+        "beds": 3,
+        "baths": null,
+        "sqft": null,
+        "rent": 2000,
+        "available": true
+      },
+      {
+        "label": "4 Bedroom Apartments In Vancouver",
+        "unit": null,
+        "beds": 4,
+        "baths": null,
+        "sqft": null,
+        "rent": 2000,
+        "available": true
+      }
+    ],
+    "single": {
+      "rent": 2000,
+      "beds": 1,
+      "baths": null,
+      "sqft": null
+    },
+    "checkedAt": "2026-09-03T18:47:58.879Z"
+  },
+  "jsonLd": [
+    {
+      "@context": "http://schema.org",
+      "@type": "ApartmentComplex",
+      "url": "https://rentals.ca/vancouver/joyce-2",
+      "name": "Joyce 2",
+      "description": "Located steps from the Joyce–Collingwood SkyTrain Station, this thoughtfully designed rental apartments offers direct access to the best of Vancouver while providing a welcoming place to call home. Surrounded by local cafés, parks, international dining, and everyday conveniences, residents can enjoy the energy of a vibrant neighbourhood with the ease of rapid transit at their doorstep. Featuring contemporary interiors, premium amenities, and spaces designed for work, wellness, and connection, Joyce² delivers a balanced urban lifestyle in one of Vancouver’s most dynamic communities.\nAdditional Information:\n**Additional Information: **\nCity viewsInternet readyCommon area wifiParcel Management SystemProfessional On-Site ManagementVinyl Plank FloorsCo-Working SpaceOutdoor TerraceOutdoor BBQ & Dining SpacesIn-Suite Washer and DryerLoungeClimate Comfort and EfficiencyIntegrated Wi-Fi ConnectivityBicycle StorageEV ChargingKid's Play AreaFOB Controlled Access\nCity views\nInternet ready\nCommon area wifi\nParcel Management System\nProfessional On-Site Management\nVinyl Plank Floors\nCo-Working Space\nOutdoor Terrace\nOutdoor BBQ & Dining Spaces\nIn-Suite Washer and Dryer\nLounge\nClimate Comfort and Efficiency\nIntegrated Wi-Fi Connectivity\nBicycle Storage\nEV Charging\nKid's Play Area\nFOB Controlled Access",
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 49.2388916,
+        "longitude": -123.0317695
+      },
+      "containedInPlace": {
+        "@type": "City",
+        "url": "",
+        "name": "",
+        "address": {
+          "@type": "PostalAddress",
+          "addressCountry": "CA",
+          "addressRegion": ""
+        }
+      },
+      "containsPlace": [
+        {
+          "@context": "http://schema.org",
+          "@type": "Apartment",
+          "name": "1 Bedroom",
+          "potentialAction": {
+            "@type": "RentAction",
+            "priceSpecification": {
+              "@type": "PriceSpecification",
+              "price": 2395,
+              "priceCurrency": "CAD"
+            }
+          },
+          "floorSize": {
+            "@type": "QuantitativeValue",
+            "unitCode": "FTK",
+            "value": "454.0"
+          }
+        },
+        {
+          "@context": "http://schema.org",
+          "@type": "Apartment",
+          "name": "2 Bedroom",
+          "potentialAction": {
+            "@type": "RentAction",
+            "priceSpecification": {
+              "@type": "PriceSpecification",
+              "price": 2955,
+              "priceCurrency": "CAD"
+            }
+          },
+          "floorSize": {
+            "@type": "QuantitativeValue",
+            "unitCode": "FTK",
+            "value": "680.0"
+          }
+        },
+        {
+          "@context": "http://schema.org",
+          "@type": "Apartment",
+          "name": "2 Bedroom",
+          "potentialAction": {
+            "@type": "RentAction",
+            "priceSpecification": {
+              "@type": "PriceSpecification",
+              "price": 3395,
+              "priceCurrency": "CAD"
+            }
+          },
+          "floorSize": {
+            "@type": "QuantitativeValue",
+            "unitCode": "FTK",
+            "value": "794.0"
+          }
+        },
+        {
+          "@context": "http://schema.org",
+          "@type": "Apartment",
+          "name": "3 Bedroom",
+          "potentialAction": {
+            "@type": "RentAction",
+            "priceSpecification": {
+              "@type": "PriceSpecification",
+              "price": 3805,
+              "priceCurrency": "CAD"
+            }
+          },
+          "floorSize": {
+            "@type": "QuantitativeValue",
+            "unitCode": "FTK",
+            "value": "932.0"
+          }
+        }
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "CA",
+        "addressLocality": "Vancouver",
+        "addressRegion": "British Columbia",
+        "postalCode": "V5R 0M2",
+        "streetAddress": "5083 Joyce Street"
+      },
+      "telephone": "(236) 707-3374",
+      "photo": [
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/1400860/apartment-2240009311.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/1400860/apartment-2240009311.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/1400860/apartment-2240009312.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/1400860/apartment-2240009312.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/1400860/apartment-2240009313.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/1400860/apartment-2240009313.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/1400860/apartment-2240009314.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/1400860/apartment-2240009314.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/1400860/apartment-2240009315.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/1400860/apartment-2240009315.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/1400860/apartment-2240009316.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/1400860/apartment-2240009316.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/1400860/apartment-2240009317.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/1400860/apartment-2240009317.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/1400860/apartment-2240009318.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/1400860/apartment-2240009318.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/1400860/apartment-2240009319.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/1400860/apartment-2240009319.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/1400860/apartment-2240009320.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/1400860/apartment-2240009320.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/1400860/apartment-2240009321.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/1400860/apartment-2240009321.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/1400860/apartment-2240009322.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/1400860/apartment-2240009322.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/1400860/apartment-2240009323.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/1400860/apartment-2240009323.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/1400860/apartment-2240009324.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/1400860/apartment-2240009324.jpg"
+        }
+      ]
+    }
+  ],
+  "textSample": "Alert\nContact Property Contact\nSave Alert\n\nSimilar listings in\n\nCreate an Alert\nParking Information\nFeatures & Amenities\nUtilities Included\nAbout Joyce 2\n\nLocated steps from the Joyce–Collingwood SkyTrain Station, this thoughtfully designed rental apartments offers direct access to the best of Vancouver while providing a welcoming place to call home. Surrounded by local cafés, parks, international dining, and everyday conveniences, residents can enjoy the energy of a vibrant neighbourhood with the ease of rapid transit at their doorstep. Featuring contemporary interiors, premium amenities, and spaces designed for work, wellness, and connection, Joyce² delivers a balanced urban lifestyle in one of Vancouver’s most dynamic communities.\n\n\nAdditional Information:\nCity views\nInternet ready\nCommon area wifi\nParcel Management System\nProfessional On-Site Management\nVinyl Plank Floors\nCo-Working Space\nOutdoor Terrace\nOutdoor BBQ & Dining Spaces\nIn-Suite Washer and Dryer\nLounge\nClimate Comfort and Efficiency\nIntegrated Wi-Fi Connectivity\nBicycle Storage\nEV Charging\nKid's Play Area\nFOB Controlled Access\n\nLocated steps from the Joyce–Collingwood SkyTrain Station, this thoughtfully designed rental apartments offers direct access to the best of Vancouver while providing a welcoming place to call home. Surrounded by local cafés, parks, international dining, and everyday conveniences, residents can enjoy the energy of a vibrant neighbourhood with the ease of rapid transit at their doorstep. Featuring contemporary interiors, premium amenities, and spaces designed for work, wellness, and connection, Joyce² delivers a balanced urban lifestyle in one of Vancouver’s most dynamic communities.\n\n\nAdditional Information:\nCity views\nInternet ready\nCommon area wifi\nParcel Management System\nProfessional On-Site Management\nVinyl Plank Floors\nCo-Working Space\nOutdoor Terrace\nOutdoor BBQ & Dining Spaces\nIn-Suite Washer and Dryer\nLounge\nClimate Comfort and Efficiency\nIntegrated Wi-Fi Connectivity\nBicycle Storage\nEV Charging\nKid's Play Area\nFOB Controlled Access\nNeighbourhood Score & Commute Time\nOpen House Dates\nSave Alert\n\nSimilar listings in\n\nCreate an Alert\nSummary\n\nReport Listing\n\nExplore Similar Rentals\nPopular Rent Searches In Vancouver\nSearch by Amenities\nPet Friendly Apartments In Vancouver\nApartments With A/C In Vancouver\nApartments With Ensuite Laundry In Vancouver\nApartments With Dishwasher In Vancouver\nSearch by Bedrooms\n1 Bedroom Apartments In Vancouver\n2 Bedroom Apartments In Vancouver\n3 Bedroom Apartments In Vancouver\n4 Bedroom Apartments In Vancouver\nSearch by Budget\nApartments Under $1000 In Vancouver\nApartments Under $1250 In Vancouver\nApartments Under $2000 In Vancouver\nApartments Under $2500 In Vancouver\nSee All Rentals in Vancouver\nThis website uses cookies to ensure you get the best experience on our website. By clicking \"Allow All\", you consent to our use of cookies. Privacy Policy ↗\nManage Cookies\nDecline\nAllow All"
+}

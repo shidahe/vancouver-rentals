@@ -1,0 +1,443 @@
+{
+  "checkedAt": "2026-09-03T18:47:58.879Z",
+  "page": {
+    "source": "Rentals.ca",
+    "url": "https://rentals.ca/vancouver/twin-lakes-townhomes",
+    "address": "3817 Princess Avenue, Vancouver, British Columbia V7N 2E5",
+    "addressUnit": "3701",
+    "geo": {
+      "lat": 49.2802555,
+      "lng": -123.0915442
+    },
+    "targetArea": false,
+    "active": true,
+    "floorplans": [
+      {
+        "label": "2 Bedroom Apartments In Vancouver",
+        "unit": null,
+        "beds": 2,
+        "baths": null,
+        "sqft": null,
+        "rent": 2000,
+        "available": true
+      },
+      {
+        "label": "3 Bedroom Apartments In Vancouver",
+        "unit": null,
+        "beds": 3,
+        "baths": null,
+        "sqft": null,
+        "rent": 2000,
+        "available": true
+      },
+      {
+        "label": "4 Bedroom Apartments In Vancouver",
+        "unit": null,
+        "beds": 4,
+        "baths": null,
+        "sqft": null,
+        "rent": 2000,
+        "available": true
+      }
+    ],
+    "single": {
+      "rent": 2000,
+      "beds": 1,
+      "baths": null,
+      "sqft": null
+    },
+    "checkedAt": "2026-09-03T18:47:58.879Z"
+  },
+  "jsonLd": [
+    {
+      "@context": "http://schema.org",
+      "@type": "ApartmentComplex",
+      "url": "https://rentals.ca/vancouver/twin-lakes-townhomes",
+      "name": "Twin Lakes Townhomes",
+      "description": "Located at 3701–3817 Princess Avenue in the Upper Lonsdale neighbourhood of North Vancouver, Twin Lakes Townhomes offers a townhouse rental community. Set within an expansive 9.44-acre park-like property, the community features 57 spacious rental townhomes surrounded by mature landscaping, natural green space, and walking trails, providing a unique balance of privacy, comfort, and convenience.\nThe community features thoughtfully designed two- and three-bedroom townhomes with spacious layouts ideal for families and long-term residents. Each renovated home at Twin Lakes Townhomes features contemporary interiors with premium finishes, including designer kitchens with granite countertops, custom flat-panel cabinetry, stainless steel appliances, and refreshed bathrooms with modern vanities and select granite counters. Thoughtfully upgraded throughout, homes also offer warm laminate flooring, in-suite laundry, updated lighting and window coverings, private outdoor spaces, and the comfort of radiant hot water heating and air-conditioning.\nTwin Lake Townhomes residents have access to the onsite residents-only swimming pool with a terrace and lounge chairs. Each home offers private fenced backyards with generous patios for outdoor entertaining, lounging, and play – providing a great space for kids and pets alike. Surrounded by an abundance of natural and urban amenities, Twin Lakes Townhomes extends daily living beyond your home. Residents enjoy convenient access to the shops, cafés, grocery stores, and restaurants of Lynn Valley Town Centre and Upper Lonsdale, while Carisbrooke Elementary School and Argyle Secondary School are within walking distance.\nPerfectly positioned between Grouse Mountain and Mount Seymour, and directly across from Princess Park, the community offers immediate access to one of the North Shore’s most desirable outdoor settings. Princess Park features tennis courts, picnic areas, open green space, and forested trails along Hastings Creek, with the renowned North Shore trail network just steps away. Set within one of North Vancouver’s most established residential neighbourhoods, Twin Lakes Townhomes offers a balanced blend of nature, community, and everyday convenience.\nAdditional Information:\n**Additional Information: **\nBeach nearbyInternet readyVinyl Plank FloorsResident StorageClose Proximity to ParkHot Water IncludedHeat IncludedNon SmokingGround Floor CourtyardParkingPets Allowed*Gourmet kitchenFull appliance packageIn-suite LaundryBike stand nearbySatellite connection allowedOvenBoutique Shops nearbyOutdoor terraceStainless Steel Appliances\nBeach nearby\nInternet ready\nVinyl Plank Floors\nResident Storage\nClose Proximity to Park\nHot Water Included\nHeat Included\nNon Smoking\nGround Floor Courtyard\nParking\nPets Allowed*\nGourmet kitchen\nFull appliance package\nIn-suite Laundry\nBike stand nearby\nSatellite connection allowed\nOven\nBoutique Shops nearby\nOutdoor terrace\nStainless Steel Appliances",
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 49.2802555,
+        "longitude": -123.0915442
+      },
+      "containedInPlace": {
+        "@type": "City",
+        "url": "",
+        "name": "",
+        "address": {
+          "@type": "PostalAddress",
+          "addressCountry": "CA",
+          "addressRegion": ""
+        }
+      },
+      "containsPlace": [
+        {
+          "@context": "http://schema.org",
+          "@type": "Apartment",
+          "name": "2 Bedroom",
+          "potentialAction": {
+            "@type": "RentAction",
+            "priceSpecification": {
+              "@type": "PriceSpecification",
+              "price": 4277,
+              "priceCurrency": "CAD"
+            }
+          },
+          "floorSize": {
+            "@type": "QuantitativeValue",
+            "unitCode": "FTK",
+            "value": "1060.0"
+          }
+        },
+        {
+          "@context": "http://schema.org",
+          "@type": "Apartment",
+          "name": "3 Bedroom",
+          "potentialAction": {
+            "@type": "RentAction",
+            "priceSpecification": {
+              "@type": "PriceSpecification",
+              "price": 4694,
+              "priceCurrency": "CAD"
+            }
+          },
+          "floorSize": {
+            "@type": "QuantitativeValue",
+            "unitCode": "FTK",
+            "value": "1404.0"
+          }
+        },
+        {
+          "@context": "http://schema.org",
+          "@type": "Apartment",
+          "name": "3 Bedroom",
+          "potentialAction": {
+            "@type": "RentAction",
+            "priceSpecification": {
+              "@type": "PriceSpecification",
+              "price": 5099,
+              "priceCurrency": "CAD"
+            }
+          },
+          "floorSize": {
+            "@type": "QuantitativeValue",
+            "unitCode": "FTK",
+            "value": "1404.0"
+          }
+        }
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "CA",
+        "addressLocality": "Vancouver",
+        "addressRegion": "British Columbia",
+        "postalCode": "V7N 2E5",
+        "streetAddress": "3701-3817 Princess Avenue"
+      },
+      "telephone": "(778) 488-8126",
+      "photo": [
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/1515226/apartment-2240902677.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/1515226/apartment-2240902677.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/1515226/apartment-2240882523.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/1515226/apartment-2240882523.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/1515226/apartment-2240882524.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/1515226/apartment-2240882524.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/1515226/apartment-2240882525.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/1515226/apartment-2240882525.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/1515226/apartment-2240882526.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/1515226/apartment-2240882526.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/1515226/apartment-2240882527.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/1515226/apartment-2240882527.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/1515226/apartment-2240882528.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/1515226/apartment-2240882528.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/1515226/apartment-2240882529.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/1515226/apartment-2240882529.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/1515226/apartment-2240882530.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/1515226/apartment-2240882530.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/1515226/apartment-2240882561.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/1515226/apartment-2240882561.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/1515226/apartment-2240882544.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/1515226/apartment-2240882544.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/1515226/apartment-2240882531.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/1515226/apartment-2240882531.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/1515226/apartment-2240882562.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/1515226/apartment-2240882562.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/1515226/apartment-2240882545.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/1515226/apartment-2240882545.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/1515226/apartment-2240882532.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/1515226/apartment-2240882532.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/1515226/apartment-2240882563.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/1515226/apartment-2240882563.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/1515226/apartment-2240882546.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/1515226/apartment-2240882546.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/1515226/apartment-2240882533.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/1515226/apartment-2240882533.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/1515226/apartment-2240882564.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/1515226/apartment-2240882564.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/1515226/apartment-2240882547.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/1515226/apartment-2240882547.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/1515226/apartment-2240882534.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/1515226/apartment-2240882534.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/1515226/apartment-2240882565.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/1515226/apartment-2240882565.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/1515226/apartment-2240882548.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/1515226/apartment-2240882548.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/1515226/apartment-2240882535.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/1515226/apartment-2240882535.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/1515226/apartment-2240882566.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/1515226/apartment-2240882566.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/1515226/apartment-2240882549.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/1515226/apartment-2240882549.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/1515226/apartment-2240882536.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/1515226/apartment-2240882536.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/1515226/apartment-2240882567.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/1515226/apartment-2240882567.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/1515226/apartment-2240882550.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/1515226/apartment-2240882550.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/1515226/apartment-2240882537.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/1515226/apartment-2240882537.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/1515226/apartment-2240882568.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/1515226/apartment-2240882568.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/1515226/apartment-2240882551.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/1515226/apartment-2240882551.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/1515226/apartment-2240882538.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/1515226/apartment-2240882538.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/1515226/apartment-2240882569.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/1515226/apartment-2240882569.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/1515226/apartment-2240882552.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/1515226/apartment-2240882552.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/1515226/apartment-2240882539.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/1515226/apartment-2240882539.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/1515226/apartment-2240902678.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/1515226/apartment-2240902678.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/1515226/apartment-2240882570.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/1515226/apartment-2240882570.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/1515226/apartment-2240882553.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/1515226/apartment-2240882553.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/1515226/apartment-2240882571.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/1515226/apartment-2240882571.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/1515226/apartment-2240882554.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/1515226/apartment-2240882554.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/1515226/apartment-2240882540.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/1515226/apartment-2240882540.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/1515226/apartment-2240882572.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/1515226/apartment-2240882572.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/1515226/apartment-2240882555.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/1515226/apartment-2240882555.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/1515226/apartment-2240882541.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/1515226/apartment-2240882541.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/1515226/apartment-2240882573.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/1515226/apartment-2240882573.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/1515226/apartment-2240882556.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/1515226/apartment-2240882556.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/1515226/apartment-2240882542.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/1515226/apartment-2240882542.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/1515226/apartment-2240882574.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/1515226/apartment-2240882574.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/1515226/apartment-2240882557.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/1515226/apartment-2240882557.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/1515226/apartment-2240882543.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/1515226/apartment-2240882543.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/1515226/apartment-2240882575.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/1515226/apartment-2240882575.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/1515226/apartment-2240882558.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/1515226/apartment-2240882558.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/1515226/apartment-2240693069.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/1515226/apartment-2240693069.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/1515226/apartment-2240882576.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/1515226/apartment-2240882576.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/1515226/apartment-2240882559.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/1515226/apartment-2240882559.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/1515226/apartment-2240693070.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/1515226/apartment-2240693070.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/1515226/apartment-2240882577.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/1515226/apartment-2240882577.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/1515226/apartment-2240882560.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/1515226/apartment-2240882560.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/1515226/apartment-2240693071.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/1515226/apartment-2240693071.jpg"
+        }
+      ]
+    }
+  ],
+  "textSample": "Alert\nSave Alert\n\nSimilar listings in\n\nCreate an Alert\nParking Information\nFeatures & Amenities\nUtilities Included\nAbout Twin Lakes Townhomes\n\nLocated at 3701–3817 Princess Avenue in the Upper Lonsdale neighbourhood of North Vancouver, Twin Lakes Townhomes offers a townhouse rental community. Set within an expansive 9.44-acre park-like property, the community features 57 spacious rental townhomes surrounded by mature landscaping, natural green space, and walking trails, providing a unique balance of privacy, comfort, and convenience.\n\nThe community features thoughtfully designed two- and three-bedroom townhomes with spacious layouts ideal for families and long-term residents. Each renovated home at Twin Lakes Townhomes features contemporary interiors with premium finishes, including designer kitchens with granite countertops, custom flat-panel cabinetry, stainless steel appliances, and refreshed bathrooms with modern vanities and select granite counters. Thoughtfully upgraded throughout, homes also offer warm laminate flooring, in-suite laundry, updated lighting and window coverings, private outdoor spaces, and the comfort of radiant hot water heating and air-conditioning.\n\nTwin Lake Townhomes residents have access to the onsite residents-only swimming pool with a terrace and lounge chairs. Each home offers private fenced backyards with generous patios for outdoor entertaining, lounging, and play – providing a great space for kids and pets alike. Surrounded by an abundance of natural and urban amenities, Twin Lakes Townhomes extends daily living beyond your home. Residents enjoy convenient access to the shops, cafés, grocery stores, and restaurants of Lynn Valley Town Centre and Upper Lonsdale, while Carisbrooke Elementary School and Argyle Secondary School are within walking distance.\n\nPerfectly positioned between Grouse Mountain and Mount Seymour, and directly across from Princess Park, the community offers immediate access to one of the North Shore’s most desirable outdoor settings. Princess Park features tennis courts, picnic areas, open green space, and forested trails along Hastings Creek, with the renowned North Shore trail network just steps away. Set within one of North Vancouver’s most established residential neighbourhoods, Twin Lakes Townhomes offers a balanced blend of nature, community, and everyday convenience.\n\n\nAdditional Information:\nBeach nearby\nInternet ready\nVinyl Plank Floors\nResident Storage\nClose Proximity to Park\nHot Water Included\nHeat Included\nNon Smoking\nGround Floor Courtyard\nParking\nPets Allowed*\nGourmet kitchen\nFull appliance package\nIn-suite Laundry\nBike stand nearby\nSatellite connection allowed\nOven\nBoutique Shops nearby\nOutdoor terrace\nStainless Steel Appliances\n\nLocated at 3701–3817 Princess Avenue in the Upper Lonsdale neighbourhood of North Vancouver, Twin Lakes Townhomes offers a townhouse rental community. Set within an expansive 9.44-acre park-like property, the community features 57 spacious rental townhomes surrounded by mature landscaping, natural green space, and walking trails, providing a unique balance of privacy, comfort, and convenience.\n\nThe community features thoughtfully designed two- and three-bedroom townhomes with spacious layouts ideal for families and long-term residents. Each renovated home at Twin Lakes Townhomes features contemporary interiors with premium finishes, including designer kitchens with granite countertops, custom flat-panel cabinetry, stainless steel appliances, and refreshed bathrooms with modern vanities and select granite counters. Thoughtfully upgraded throughout, homes also offer warm laminate flooring, in-suite laundry, updated lighting and window coverings, private outdoor spaces, and the comfort of radiant hot water heating and air-conditioning.\n\nTwin Lake Townhomes residents have access to the onsite residents-only swimming pool with a terrace and lounge chairs. Each home offers private fenced backyards with generous patios for outdoor entertaining, lounging, and play – providing a great space for kids and pets alike. Surrounded by an abundance of natural and urban amenities, Twin Lakes Townhomes extends daily living beyond your home. Residents enjoy convenient access to the shops, cafés, grocery stores, and restaurants of Lynn Valley Town Centre and Upper Lonsdale, while Carisbrooke Elementary School and Argyle Secondary School are within walking distance.\n\nPerfectly positioned between Grouse Mountain and Mount Seymour, and directly across from Princess Park, the community offers immediate access to one of the North Shore’s most desirable outdoor settings. Princess Park features tennis courts, picnic areas, open green space, and forested trails along Hastings Creek, with the renowned North Shore trail network just steps away. Set within one of North Vancouver’s most established residential neighbourhoods, Twin Lakes Townhomes offers a balanced blend of nature, community, and everyday convenience.\n\n\nAdditional Information:\nBeach nearby\nInternet ready\nVinyl Plank Floors\nResident Storage\nClose Proximity to Park\nHot Water Included\nHeat Included\nNon Smoking\nGround Floor Courtyard\nParking\nPets Allowed*\nGourmet kitchen\nFull appliance package\nIn-suite Laundry\nBike stand nearby\nSatellite connection allowed\nOven\nBoutique Shops nearby\nOutdoor terrace\nStainless Steel Appliances\nNeighbourhood Score & Commute Time\nOpen House Dates\nSummary\n\nReport Listing\n\nExplore Similar Rentals\nPopular Rent Searches In Vancouver\nSearch by Amenities\nPet Friendly Apartments In Vancouver\nApartments With A/C In Vancouver\nApartments With Ensuite Laundry In Vancouver\nApartments With Dishwasher In Vancouver\nSearch by Bedrooms\n1 Bedroom Apartments In Vancouver\n2 Bedroom Apartments In Vancouver\n3 Bedroom Apartments In Vancouver\n4 Bedroom Apartments In Vancouver\nSearch by Budget\nApartments Under $1000 In Vancouver\nApartments Under $1250 In Vancouver\nApartments Under $2000 In Vancouver\nApartments Under $2500 In Vancouver\nSee All Rentals in Vancouver\nThis website uses cookies to ensure you get the best experience on our website. By clicking \"Allow All\", you consent to our use of cookies. Privacy Policy ↗\nManage Cookies\nDecline\nAllow All"
+}

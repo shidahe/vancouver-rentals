@@ -1,73 +1,73 @@
 {
-  "refreshedAt": "2026-09-03T18:32:46.829Z",
+  "refreshedAt": "2026-09-03T18:47:58.879Z",
   "mode": "candidate-only",
   "sourceHealth": {
     "rentalsca-kitsilano-2br": {
-      "checkedAt": "2026-09-03T18:32:46.829Z",
+      "checkedAt": "2026-09-03T18:47:58.879Z",
       "status": 200,
       "ok": true,
       "finalUrl": "https://rentals.ca/vancouver/kitsilano/all-apartments-all-houses/2-bedrooms"
     },
     "rentalsca-point-grey-2br": {
-      "checkedAt": "2026-09-03T18:32:46.829Z",
+      "checkedAt": "2026-09-03T18:47:58.879Z",
       "status": 200,
       "ok": true,
       "finalUrl": "https://rentals.ca/vancouver/west-point-grey/2-bedrooms"
     },
     "rentalsca-arbutus-2br": {
-      "checkedAt": "2026-09-03T18:32:46.829Z",
+      "checkedAt": "2026-09-03T18:47:58.879Z",
       "status": 200,
       "ok": true,
       "finalUrl": "https://rentals.ca/vancouver/arbutus-ridge/2-bedrooms"
     },
     "rentalsca-dunbar-2br": {
-      "checkedAt": "2026-09-03T18:32:46.829Z",
+      "checkedAt": "2026-09-03T18:47:58.879Z",
       "status": 200,
       "ok": true,
       "finalUrl": "https://rentals.ca/vancouver/dunbar-southlands/2-bedrooms"
     },
     "rentalsca-quilchena-2br": {
-      "checkedAt": "2026-09-03T18:32:46.829Z",
+      "checkedAt": "2026-09-03T18:47:58.879Z",
       "status": 404,
       "ok": false,
       "finalUrl": "https://rentals.ca/vancouver/quilchena/2-bedrooms"
     },
     "rentalsca-kitsilano-3br": {
-      "checkedAt": "2026-09-03T18:32:46.829Z",
+      "checkedAt": "2026-09-03T18:47:58.879Z",
       "status": 200,
       "ok": true,
       "finalUrl": "https://rentals.ca/vancouver/kitsilano/3-bedrooms"
     },
     "rentalsca-kitsilano-4br": {
-      "checkedAt": "2026-09-03T18:32:46.829Z",
+      "checkedAt": "2026-09-03T18:47:58.879Z",
       "status": 200,
       "ok": true,
       "finalUrl": "https://rentals.ca/vancouver/kitsilano/4-bedrooms"
     },
     "rentalsca-vancouver-3br": {
-      "checkedAt": "2026-09-03T18:32:46.829Z",
+      "checkedAt": "2026-09-03T18:47:58.879Z",
       "status": 200,
       "ok": true,
       "finalUrl": "https://rentals.ca/vancouver/3-bedrooms"
     },
     "rentalsca-vancouver-4br": {
-      "checkedAt": "2026-09-03T18:32:46.829Z",
-      "status": 200,
-      "ok": true,
-      "finalUrl": "https://rentals.ca/vancouver/4-bedrooms"
+      "checkedAt": "2026-09-03T18:47:58.879Z",
+      "status": 429,
+      "ok": false,
+      "finalUrl": "https://rentals.ca/vancouver/4-bedrooms?__cf_chl_rt_tk=UY_s9GcctaBQI15_o_cd4S7hTznh2mNCIG_S5kTKaRY-1788461298-1.0.1.1-5nCMqsRPjBDDebBhUyLRIK1uJ.zv1YAxrhNWuS3uMj4"
     }
   },
   "pages": [
     {
       "source": "Rentals.ca",
-      "url": "https://rentals.ca/vancouver/kits-walk-by-strand",
-      "address": "2075 W 12th Avenue, Vancouver, British Columbia V6J 2G3",
+      "url": "https://rentals.ca/vancouver/joyce-2",
+      "address": "5083 Joyce Street, Vancouver, British Columbia V5R 0M2",
       "addressUnit": null,
       "geo": {
-        "lat": 49.2612564,
-        "lng": -123.1522117
+        "lat": 49.2388916,
+        "lng": -123.0317695
       },
-      "targetArea": true,
+      "targetArea": false,
       "active": true,
       "floorplans": [
         {
@@ -100,22 +100,22 @@
       ],
       "single": {
         "rent": 2000,
-        "beds": 3,
+        "beds": 1,
         "baths": null,
         "sqft": null
       },
-      "checkedAt": "2026-09-03T18:32:46.829Z"
+      "checkedAt": "2026-09-03T18:47:58.879Z"
     },
     {
       "source": "Rentals.ca",
-      "url": "https://rentals.ca/vancouver/the-robert",
-      "address": "2525 Carnarvon Street, Vancouver, British Columbia V6K 0C6",
+      "url": "https://rentals.ca/vancouver/752-marine-drive",
+      "address": "723 Main St, Vancouver, British Columbia V7T 1A1",
       "addressUnit": null,
       "geo": {
-        "lat": 49.2638827,
-        "lng": -123.1722891
+        "lat": 49.3267471,
+        "lng": -123.1357037
       },
-      "targetArea": true,
+      "targetArea": false,
       "active": true,
       "floorplans": [
         {
@@ -147,128 +147,109 @@
         }
       ],
       "single": {
-        "rent": null,
-        "beds": 2.5,
-        "baths": 2,
+        "rent": 2000,
+        "beds": 1,
+        "baths": null,
         "sqft": null
       },
-      "checkedAt": "2026-09-03T18:32:46.829Z"
+      "checkedAt": "2026-09-03T18:47:58.879Z"
+    },
+    {
+      "source": "Rentals.ca",
+      "url": "https://rentals.ca/vancouver/revolve",
+      "address": "3572 Glen Drive, Vancouver, British Columbia V5V 0J6",
+      "addressUnit": null,
+      "geo": {
+        "lat": 49.252952,
+        "lng": -123.081797
+      },
+      "targetArea": false,
+      "active": true,
+      "floorplans": [
+        {
+          "label": "2 Bedroom Apartments In Vancouver",
+          "unit": null,
+          "beds": 2,
+          "baths": null,
+          "sqft": null,
+          "rent": 2000,
+          "available": true
+        },
+        {
+          "label": "3 Bedroom Apartments In Vancouver",
+          "unit": null,
+          "beds": 3,
+          "baths": null,
+          "sqft": null,
+          "rent": 2000,
+          "available": true
+        },
+        {
+          "label": "4 Bedroom Apartments In Vancouver",
+          "unit": null,
+          "beds": 4,
+          "baths": null,
+          "sqft": null,
+          "rent": 2000,
+          "available": true
+        }
+      ],
+      "single": {
+        "rent": 2000,
+        "beds": 1,
+        "baths": null,
+        "sqft": null
+      },
+      "checkedAt": "2026-09-03T18:47:58.879Z"
+    },
+    {
+      "source": "Rentals.ca",
+      "url": "https://rentals.ca/vancouver/twin-lakes-townhomes",
+      "address": "3817 Princess Avenue, Vancouver, British Columbia V7N 2E5",
+      "addressUnit": "3701",
+      "geo": {
+        "lat": 49.2802555,
+        "lng": -123.0915442
+      },
+      "targetArea": false,
+      "active": true,
+      "floorplans": [
+        {
+          "label": "2 Bedroom Apartments In Vancouver",
+          "unit": null,
+          "beds": 2,
+          "baths": null,
+          "sqft": null,
+          "rent": 2000,
+          "available": true
+        },
+        {
+          "label": "3 Bedroom Apartments In Vancouver",
+          "unit": null,
+          "beds": 3,
+          "baths": null,
+          "sqft": null,
+          "rent": 2000,
+          "available": true
+        },
+        {
+          "label": "4 Bedroom Apartments In Vancouver",
+          "unit": null,
+          "beds": 4,
+          "baths": null,
+          "sqft": null,
+          "rent": 2000,
+          "available": true
+        }
+      ],
+      "single": {
+        "rent": 2000,
+        "beds": 1,
+        "baths": null,
+        "sqft": null
+      },
+      "checkedAt": "2026-09-03T18:47:58.879Z"
     }
   ],
-  "inventories": [
-    {
-      "source": "Rentals.ca",
-      "url": "https://rentals.ca/vancouver/kits-walk-by-strand",
-      "address": "2075 W 12th Avenue, Vancouver, British Columbia V6J 2G3",
-      "unit": null,
-      "floorplan": "2 Bedroom Apartments In Vancouver",
-      "identityKey": "2075 w 12th ave::floorplan:2 bedroom apartments in vancouver",
-      "rent": 2000,
-      "bedrooms": 2,
-      "bathrooms": null,
-      "sqft": null,
-      "geo": {
-        "lat": 49.2612564,
-        "lng": -123.1522117
-      },
-      "active": true,
-      "checkedAt": "2026-09-03T18:32:46.829Z",
-      "publishable": false
-    },
-    {
-      "source": "Rentals.ca",
-      "url": "https://rentals.ca/vancouver/kits-walk-by-strand",
-      "address": "2075 W 12th Avenue, Vancouver, British Columbia V6J 2G3",
-      "unit": null,
-      "floorplan": "3 Bedroom Apartments In Vancouver",
-      "identityKey": "2075 w 12th ave::floorplan:3 bedroom apartments in vancouver",
-      "rent": 2000,
-      "bedrooms": 3,
-      "bathrooms": null,
-      "sqft": null,
-      "geo": {
-        "lat": 49.2612564,
-        "lng": -123.1522117
-      },
-      "active": true,
-      "checkedAt": "2026-09-03T18:32:46.829Z",
-      "publishable": false
-    },
-    {
-      "source": "Rentals.ca",
-      "url": "https://rentals.ca/vancouver/kits-walk-by-strand",
-      "address": "2075 W 12th Avenue, Vancouver, British Columbia V6J 2G3",
-      "unit": null,
-      "floorplan": "4 Bedroom Apartments In Vancouver",
-      "identityKey": "2075 w 12th ave::floorplan:4 bedroom apartments in vancouver",
-      "rent": 2000,
-      "bedrooms": 4,
-      "bathrooms": null,
-      "sqft": null,
-      "geo": {
-        "lat": 49.2612564,
-        "lng": -123.1522117
-      },
-      "active": true,
-      "checkedAt": "2026-09-03T18:32:46.829Z",
-      "publishable": false
-    },
-    {
-      "source": "Rentals.ca",
-      "url": "https://rentals.ca/vancouver/the-robert",
-      "address": "2525 Carnarvon Street, Vancouver, British Columbia V6K 0C6",
-      "unit": null,
-      "floorplan": "2 Bedroom Apartments In Vancouver",
-      "identityKey": "2525 carnarvon st::floorplan:2 bedroom apartments in vancouver",
-      "rent": 2000,
-      "bedrooms": 2,
-      "bathrooms": null,
-      "sqft": null,
-      "geo": {
-        "lat": 49.2638827,
-        "lng": -123.1722891
-      },
-      "active": true,
-      "checkedAt": "2026-09-03T18:32:46.829Z",
-      "publishable": false
-    },
-    {
-      "source": "Rentals.ca",
-      "url": "https://rentals.ca/vancouver/the-robert",
-      "address": "2525 Carnarvon Street, Vancouver, British Columbia V6K 0C6",
-      "unit": null,
-      "floorplan": "3 Bedroom Apartments In Vancouver",
-      "identityKey": "2525 carnarvon st::floorplan:3 bedroom apartments in vancouver",
-      "rent": 2000,
-      "bedrooms": 3,
-      "bathrooms": null,
-      "sqft": null,
-      "geo": {
-        "lat": 49.2638827,
-        "lng": -123.1722891
-      },
-      "active": true,
-      "checkedAt": "2026-09-03T18:32:46.829Z",
-      "publishable": false
-    },
-    {
-      "source": "Rentals.ca",
-      "url": "https://rentals.ca/vancouver/the-robert",
-      "address": "2525 Carnarvon Street, Vancouver, British Columbia V6K 0C6",
-      "unit": null,
-      "floorplan": "4 Bedroom Apartments In Vancouver",
-      "identityKey": "2525 carnarvon st::floorplan:4 bedroom apartments in vancouver",
-      "rent": 2000,
-      "bedrooms": 4,
-      "bathrooms": null,
-      "sqft": null,
-      "geo": {
-        "lat": 49.2638827,
-        "lng": -123.1722891
-      },
-      "active": true,
-      "checkedAt": "2026-09-03T18:32:46.829Z",
-      "publishable": false
-    }
-  ]
+  "inventories": []
 }
