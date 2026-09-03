@@ -12,7 +12,12 @@ const norm=s=>(s||'').toLowerCase().replace(/[^a-z0-9]+/g,' ').trim();
 const hash=s=>crypto.createHash('sha1').update(s).digest('hex').slice(0,12);
 function street(s=''){return norm(String(s).split(',')[0]).replace(/\bwest\b/g,'w').replace(/\beast\b/g,'e').replace(/\bnorth\b/g,'n').replace(/\bsouth\b/g,'s').replace(/\bstreet\b/g,'st').replace(/\bavenue\b/g,'ave').replace(/\broad\b/g,'rd').replace(/\bplace\b/g,'pl').replace(/\bdrive\b/g,'dr').replace(/\bboulevard\b/g,'blvd').replace(/\bparkway\b/g,'pky');}
 function unitToken(s){const v=String(s||'').trim().replace(/^#/,'').match(/(?=[A-Za-z0-9-]*\d)[A-Za-z0-9-]{1,12}/)?.[0];return v?v.toUpperCase():null;}
-function listingUnit(x){const direct=unitToken(x.unit);if(direct)return direct;const a=String(x.address||'').split(',')[0];return unitToken(a.match(/(?:unit|suite|apt|#)\s*([A-Za-z0-9-]*\d[A-Za-z0-9-]*)/i)?.[1]);}
+function listingUnit(x){
+  const direct=unitToken(x.unit);if(direct)return direct;
+  const a=String(x.address||'').split(',')[0];
+  return unitToken(a.match(/(?:unit|suite|apt|#)\s*([A-Za-z0-9-]*\d[A-Za-z0-9-]*)/i)?.[1])
+    ||unitToken(a.match(/^\s*([A-Za-z0-9-]*\d[A-Za-z0-9-]*)\s+\d{2,5}\b/)?.[1]);
+}
 function key(address,unit,url,floorplan,mls){const mlsKey=mlsIdentity(mls);if(mlsKey)return mlsKey;const a=street(address);const u=unitToken(unit);if(u)return`${a}::unit:${norm(u)}`;if(floorplan)return`${a}::floorplan:${norm(floorplan)}`;return`${a}::url:${hash(url||'')}`;}
 function candidateKey(c){return key(c.address,c.unit,c.url,c.floorplan,c.mls);}
 function sourceFamily(c){return /^zumper$/i.test(c.source)?'zumper':/^rentals\.ca$/i.test(c.source)?'rentalsca':/^liv\.rent$/i.test(c.source)?'livrent':norm(c.source);}
@@ -70,7 +75,8 @@ for(const candidate of realtylink.candidates||[]){
   const managed=payload.listings.find(x=>x.availabilityStatus==='active'&&listingMls(x)===candidate.mls);
   const sibling=payload.listings.find(x=>x.availabilityStatus==='active'&&x.id!==managed?.id&&!listingMls(x)&&maskedMlsFingerprintCompatible(x,candidate));
   if(!sibling)continue;
-  sibling.mls=candidate.mls;sibling.mlsInventoryManaged=true;sibling.unit=unitToken(candidate.unit)||sibling.unit||null;sibling.lastChecked=today;sibling.verifiedAt=iso;
+  sibling.marketplaceUrl ||= sibling.url;
+  sibling.mls=candidate.mls;sibling.mlsInventoryManaged=false;sibling.unit=unitToken(candidate.unit)||listingUnit(candidate)||sibling.unit||null;sibling.lastChecked=today;sibling.verifiedAt=iso;
   sibling.source='Realtylink MLS + marketplace detail';sibling.url=candidate.url;
   attachCandidateImages(imageSources,sibling,candidate);
   sibling.evidenceSources=[...new Set([...(sibling.evidenceSources||[]),'realtylink mls'])];

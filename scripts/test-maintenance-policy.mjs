@@ -118,6 +118,9 @@ if (!source.includes('listing.sqft=sqft(authoritativeMls)') || !source.includes(
 if (!source.includes('byKey.get(c.identityKey)||byUrl.get(c.url)')) {
   failures.push('A URL-only marketplace refresh can discard a stronger MLS unit identity.');
 }
+if (!source.includes('MERGED into ${x.id}:') || !source.includes('x.mlsInventoryManaged=false')) {
+  failures.push('Merged MLS identity cannot survive a later marketplace refresh without becoming feed-removal-managed.');
+}
 if (!source.includes('cleanAddress') || !source.includes('meta[property="og:image"]')) {
   failures.push('Realtylink address normalization or OpenGraph photo fallback is missing.');
 }
