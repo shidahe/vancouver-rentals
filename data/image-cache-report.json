@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-09-03T19:38:56.611Z",
+  "refreshedAt": "2026-09-03T21:14:50.032Z",
   "listings": {
     "arbutus-residences-315-2den-900": {
       "cached": 3,
@@ -401,8 +401,8 @@
     },
     "mls-r3158036": {
       "cached": 4,
-      "preserved": 3,
-      "downloaded": 1,
+      "preserved": 4,
+      "downloaded": 0,
       "failures": [
         {
           "url": "https://media.realtylink.org/images/consumersite/property/263179663/25950b0735df4c2ea17256ee35e9b8f6.jpeg?width=320&height=240&fit=cover",
@@ -417,17 +417,24 @@
     },
     "mls-r3134535": {
       "cached": 5,
+      "preserved": 5,
+      "downloaded": 0,
+      "failures": [],
+      "photoPageUrl": "https://realtylink.org/en/house~for-rent~vancouver/263156162"
+    },
+    "mls-r3158552": {
+      "cached": 5,
       "preserved": 0,
       "downloaded": 5,
       "failures": [],
-      "photoPageUrl": "https://realtylink.org/en/house~for-rent~vancouver/263156162"
+      "photoPageUrl": "https://realtylink.org/en/apartment~for-rent~vancouver/263180179"
     }
   },
   "totals": {
-    "sourceListings": 57,
-    "cachedListings": 57,
-    "downloaded": 6,
+    "sourceListings": 58,
+    "cachedListings": 58,
+    "downloaded": 5,
     "failed": 5,
-    "preserved": 264
+    "preserved": 270
   }
 }
