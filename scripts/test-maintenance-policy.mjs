@@ -28,6 +28,14 @@ for (const building of ['kits-walk', 'larchway-gardens', 'viridian']) {
   if (!project) failures.push(`Priority building missing from official watch: ${building}`);
   if (!source) failures.push(`Priority building missing from live source catalog: ${building}`);
 }
+const kitsWalk605 = catalog.seedCandidates?.find(x => x.id === 'rew-kits-walk-605');
+if (!kitsWalk605 || kitsWalk605.unit !== '605' || kitsWalk605.expectedBeds !== 2 || !kitsWalk605.autoPublish || !/\/605-2075-w-12th-avenue-vancouver-bc$/.test(kitsWalk605.url)) {
+  failures.push('Current Kits Walk Unit 605 exact-detail verification seed is missing or weakened.');
+}
+for (const building of ['kits-walk', 'viridian']) {
+  const project = officialWatch.projects.find(x => x.id === building);
+  if (!project?.positiveSignals?.includes('now renting')) failures.push(`${building} does not recognize its official Now Renting status.`);
+}
 if (!source.includes('auto_published_authoritative_mls')) failures.push('Current authoritative MLS inventory cannot auto-publish.');
 if (!source.includes('two consecutive healthy Realtylink inventory snapshots')) failures.push('MLS disappearance does not fail closed.');
 if (/bedrooms\s*:\s*c\.bedrooms\s*\|\|\s*2/.test(source)) failures.push('Unknown candidate bedrooms are still defaulted to 2BR.');

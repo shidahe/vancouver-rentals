@@ -37,6 +37,10 @@
   ],
   "seedCandidates": [
     {
+      "id":"rew-kits-walk-605","listingId":"kits-walk-unit-605","source":"REW / Rent Sync","url":"https://www.rew.ca/rentals/7496804/605-2075-w-12th-avenue-vancouver-bc","buildingName":"Kits Walk","unit":"605","address":"605-2075 W 12th Ave, Vancouver, BC","neighborhood":"Kitsilano","type":"purpose-built","expectedBeds":2,"autoPublish":true,
+      "hints":{"bedrooms":2,"bathrooms":2,"sqft":741,"parking":true,"petFriendly":true,"balcony":true,"buildingYear":2020,"largeWindows":true,"modernInterior":true}
+    },
+    {
       "id":"zumper-2477-waterloo","listingId":"waterloo-2477-zumper","source":"Zumper","url":"https://www.zumper.com/address/2477-waterloo-st-vancouver-bc-v6r-3h4-can","address":"2477 Waterloo St, Vancouver, BC V6R 3H4","neighborhood":"Kitsilano","type":"condo","expectedBeds":2,"userObservedPrice":4950,"autoPublish":true,
       "hints":{"bedrooms":2,"bathrooms":2.5,"sqft":1100,"ac":true,"parking":true,"petFriendly":true,"orientation":"E","balcony":true,"buildingYear":2010,"largeWindows":true,"modernInterior":true}
     }
