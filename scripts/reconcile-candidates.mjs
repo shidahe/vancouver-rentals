@@ -1,7 +1,7 @@
 import fs from 'node:fs/promises';
 import path from 'node:path';
 import crypto from 'node:crypto';
-import { listingMls, maskedCivicAddressMatch, mlsIdentity } from './inventory-identity.mjs';
+import { civicAddressMatch, listingMls, mlsIdentity } from './inventory-identity.mjs';
 
 const DATA=path.join(process.cwd(),'data');
 const iso=new Date().toISOString(),today=iso.slice(0,10);
@@ -28,8 +28,8 @@ function fingerprintCompatible(a,b){
   return sourceFamily(a)!==sourceFamily(b);
 }
 function maskedMlsFingerprintCompatible(a,b){
-  if(!maskedCivicAddressMatch(a.address,b.address))return false;
-  if(listingUnit(a)||unitToken(b.unit)||Number(a.rent)!==Number(b.rent)||Number(a.bedrooms)!==Number(b.bedrooms))return false;
+  if(!civicAddressMatch(a.address,b.address))return false;
+  if(listingUnit(a)||Number(a.rent)!==Number(b.rent)||Number(a.bedrooms)!==Number(b.bedrooms))return false;
   const ab=baths(a),bb=baths(b),as=sqft(a),bs=sqft(b);
   return ab!=null&&bb!=null&&ab===bb&&as!=null&&bs!=null&&Math.abs(as-bs)<=5;
 }
@@ -64,7 +64,7 @@ for(const candidate of realtylink.candidates||[]){
   const managed=payload.listings.find(x=>x.availabilityStatus==='active'&&listingMls(x)===candidate.mls);
   const sibling=payload.listings.find(x=>x.availabilityStatus==='active'&&x!==managed&&!listingMls(x)&&maskedMlsFingerprintCompatible(x,candidate));
   if(!sibling)continue;
-  sibling.mls=candidate.mls;sibling.mlsInventoryManaged=true;sibling.lastChecked=today;sibling.verifiedAt=iso;
+  sibling.mls=candidate.mls;sibling.mlsInventoryManaged=true;sibling.unit=unitToken(candidate.unit)||sibling.unit||null;sibling.lastChecked=today;sibling.verifiedAt=iso;
   sibling.source='Realtylink MLS + marketplace detail';sibling.url=candidate.url;
   sibling.evidenceSources=[...new Set([...(sibling.evidenceSources||[]),'realtylink mls'])];
   sibling.verificationMethod=`Reverified and deduplicated by authoritative Realtylink MLS inventory ${candidate.mls}; exact marketplace address retained.`;

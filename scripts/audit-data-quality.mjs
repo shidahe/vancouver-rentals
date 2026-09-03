@@ -37,7 +37,9 @@ for(const l of active){
   if(fsa&&!/^V[56][A-Z]$/.test(fsa))issues.push({severity:'high',id:l.id,issue:'non-vancouver-postal-code',detail:`postalFsa=${fsa}`});
   if(isAutoZumper(l)&&explicitlyOutOfScope(l))issues.push({severity:'high',id:l.id,issue:'auto-listing-out-of-scope-neighborhood',detail:l.neighborhood});
   if(isAutoZumper(l)&&Number.isFinite(Number(l.lng))&&Number(l.lng)>EAST_BOUNDARY)issues.push({severity:'high',id:l.id,issue:'auto-listing-east-of-target-boundary',detail:`lng=${l.lng} > ${EAST_BOUNDARY}`});
-  if(l.bedrooms==null||l.bathrooms==null||l.sqft==null)issues.push({severity:'medium',id:l.id,issue:'missing-core-fields'});
+  if(l.bedrooms==null||l.bathrooms==null)issues.push({severity:'medium',id:l.id,issue:'missing-core-fields'});
+  if(l.sqft==null)issues.push({severity:'info',id:l.id,issue:'unknown-sqft'});
+  else if(!Number.isFinite(Number(l.sqft))||Number(l.sqft)<200||Number(l.sqft)>15000)issues.push({severity:'high',id:l.id,issue:'implausible-sqft',detail:l.sqft});
   if(!bedroomEligible(l.bedrooms))issues.push({severity:'high',id:l.id,issue:'below-2br-discovery-minimum',detail:`bedrooms=${l.bedrooms}`});
   if(strongOfficialNegative(l.officialStatus))issues.push({severity:'high',id:l.id,issue:'active-despite-official-negative',detail:`officialStatus=${l.officialStatus}${l.officialStatusAuthority?` (${l.officialStatusAuthority})`:''}`});
   if(String(l.verificationLevel||'').toLowerCase()==='unverified')issues.push({severity:'high',id:l.id,issue:'active-but-unverified'});

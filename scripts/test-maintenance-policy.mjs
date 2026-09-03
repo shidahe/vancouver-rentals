@@ -1,5 +1,5 @@
 import fs from 'node:fs/promises';
-import { findExistingSeedListing, listingMls, maskedCivicAddressMatch, mlsIdentity } from './inventory-identity.mjs';
+import { civicAddressMatch, findExistingSeedListing, listingMls, maskedCivicAddressMatch, mlsIdentity } from './inventory-identity.mjs';
 import { firstLikelyRent, parseFacts } from './listing-parser.mjs';
 import { isAutoManagedListing } from './stale-auto-policy.mjs';
 import { verifiedPhotoCandidates } from './listing-photo-candidates.mjs';
@@ -13,7 +13,8 @@ const activeAdapters = [
   'scripts/refresh-livrent.mjs',
   'scripts/refresh-craigslist.mjs',
   'scripts/refresh-realtylink.mjs',
-  'scripts/reconcile-candidates.mjs'
+  'scripts/reconcile-candidates.mjs',
+  'scripts/audit-data-quality.mjs'
 ];
 const source = (await Promise.all(activeAdapters.map(read))).join('\n');
 const catalog = JSON.parse(await read('data/live-sources.json'));
@@ -92,6 +93,13 @@ if (!maskedCivicAddressMatch('Ground Floor 453x 16th Ave W, University VW', '453
     maskedCivicAddressMatch('453x W 16th Ave', '4543 W 16th Ave') ||
     maskedCivicAddressMatch('453x W 16th Ave', '4533 W 15th Ave')) {
   failures.push('Masked Realtylink civic addresses are not matched conservatively to exact marketplace addresses.');
+}
+if (!civicAddressMatch('102 3349 Dunbar Street', '3349 Dunbar St, Vancouver, BC') ||
+    civicAddressMatch('102 3349 Dunbar Street', '3359 Dunbar St, Vancouver, BC')) {
+  failures.push('Realtylink unit-prefixed addresses are not matched conservatively to exact marketplace addresses.');
+}
+if (!source.includes('rawSqft>=200&&rawSqft<=15000') || !source.includes('implausible-sqft')) {
+  failures.push('Implausible Realtylink floor areas are not normalized and audited.');
 }
 
 // Regression fixture: the reported Kitsilano 4BR must pass the global discovery gate.

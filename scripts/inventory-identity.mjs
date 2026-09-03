@@ -25,16 +25,22 @@ function civicStreet(value) {
     .replace(/\broad\b/g, 'rd').replace(/\bdrive\b/g, 'dr')
     .replace(/\bboulevard\b/g, 'blvd').replace(/\bplace\b/g, 'pl')
     .replace(/[^a-z0-9]+/g, ' ');
-  const match = normalized.match(/\b(\d{2,5}x?)\s+(?:(w|e|n|s)\s+)?(\d+)(?:st|nd|rd|th)?\s+(ave|st|rd|dr|blvd|pl)(?:\s+(w|e|n|s))?\b/);
-  return match ? { civic: match[1], direction: match[2] || match[5] || '', street: match[3], type: match[4] } : null;
+  const match = normalized.match(/\b(\d{2,5}x?)\s+(?:(w|e|n|s)\s+)?([a-z0-9]+)\s+(ave|st|rd|dr|blvd|pl)(?:\s+(w|e|n|s))?\b/);
+  return match ? { civic: match[1], direction: match[2] || match[5] || '', street: match[3].replace(/(?:st|nd|rd|th)$/,''), type: match[4] } : null;
+}
+
+export function civicAddressMatch(first, second) {
+  const a = civicStreet(first), b = civicStreet(second);
+  if (!a || !b || a.street !== b.street || a.type !== b.type || a.direction !== b.direction) return false;
+  if (a.civic === b.civic) return true;
+  const [masked, exact] = a.civic.endsWith('x') ? [a.civic, b.civic] : b.civic.endsWith('x') ? [b.civic, a.civic] : [];
+  return !!masked && /^\d+$/.test(exact) && exact.length === masked.length && exact.startsWith(masked.slice(0, -1));
 }
 
 export function maskedCivicAddressMatch(first, second) {
   const a = civicStreet(first), b = civicStreet(second);
-  if (!a || !b || a.street !== b.street || a.type !== b.type || a.direction !== b.direction) return false;
-  const [masked, exact] = a.civic.endsWith('x') ? [a.civic, b.civic] : b.civic.endsWith('x') ? [b.civic, a.civic] : [];
-  if (!masked || !/^\d+$/.test(exact) || exact.length !== masked.length) return false;
-  return exact.startsWith(masked.slice(0, -1));
+  if (!a || !b || (!a.civic.endsWith('x') && !b.civic.endsWith('x'))) return false;
+  return civicAddressMatch(first, second);
 }
 
 const canonicalAddress = value => String(value || '').toLowerCase().replace(/[^a-z0-9]+/g, ' ').trim();
