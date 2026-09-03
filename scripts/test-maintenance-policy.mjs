@@ -3,7 +3,7 @@ import { findExistingSeedListing, listingMls, mlsIdentity } from './inventory-id
 import { firstLikelyRent, parseFacts } from './listing-parser.mjs';
 import { isAutoManagedListing } from './stale-auto-policy.mjs';
 import { verifiedPhotoCandidates } from './listing-photo-candidates.mjs';
-import { isTargetWestsideCoordinate, parseRealtylinkCoordinates } from './realtylink-parser.mjs';
+import { isTargetWestsideCoordinate, parseRealtylinkCoordinateValues, parseRealtylinkCoordinates } from './realtylink-parser.mjs';
 
 const read = p => fs.readFile(p, 'utf8');
 const activeAdapters = [
@@ -100,6 +100,10 @@ if (mlsIdentity(r3160272.mls) !== 'mls:r3160272' || !(r3160272.bedrooms >= 2 && 
 const yorkRealtylinkGeo = parseRealtylinkCoordinates('263159073 0 /en/townhouse~for-rent~vancouver/263159073 /photos 49.2720800000 -123.1630000000 true');
 if (!yorkRealtylinkGeo || yorkRealtylinkGeo.lat !== 49.27208 || yorkRealtylinkGeo.lng !== -123.163 || !isTargetWestsideCoordinate(yorkRealtylinkGeo)) {
   failures.push(`Realtylink ten-decimal Westside coordinate is rejected: ${JSON.stringify(yorkRealtylinkGeo)}`);
+}
+const yorkMetaGeo = parseRealtylinkCoordinateValues('49.2720800000', '-123.1630000000');
+if (!yorkMetaGeo || yorkMetaGeo.lat !== 49.27208 || yorkMetaGeo.lng !== -123.163 || !isTargetWestsideCoordinate(yorkMetaGeo)) {
+  failures.push(`Realtylink GeoCoordinates metadata is rejected: ${JSON.stringify(yorkMetaGeo)}`);
 }
 
 if (failures.length) {

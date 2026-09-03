@@ -6,6 +6,12 @@ export function parseRealtylinkCoordinates(text) {
   return Number.isFinite(lat) && Number.isFinite(lng) ? { lat, lng } : null;
 }
 
+export function parseRealtylinkCoordinateValues(latitude, longitude) {
+  const lat = Number(latitude);
+  const lng = Number(longitude);
+  return Number.isFinite(lat) && Number.isFinite(lng) ? { lat, lng } : null;
+}
+
 export function isTargetWestsideCoordinate(coordinate) {
   if (!coordinate) return false;
   return coordinate.lat >= 49.225 && coordinate.lat <= 49.286 &&
