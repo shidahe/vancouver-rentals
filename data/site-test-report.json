@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-09-03T23:22:24.484Z",
+  "checkedAt": "2026-09-03T23:40:23.526Z",
   "ok": true,
   "checkpoints": {
     "render": {
@@ -17,12 +17,12 @@
       ],
       "values": [
         "39",
-        "28",
+        "29",
         "4",
-        "13",
-        "2026-09-03 23:12:34"
+        "14",
+        "2026-09-03 23:30:33"
       ],
-      "html": "<div class=\"stat\"><strong>39</strong><span>Active</span></div><div class=\"stat\"><strong>28</strong><span>New</span></div><div class=\"stat\"><strong>4</strong><span>Price drops</span></div><div class=\"stat\"><strong>13</strong><span>To verify</span></div><div class=\"stat\"><strong>2026-09-03 23:12:34</strong><span>Last refreshed</span></div>"
+      "html": "<div class=\"stat\"><strong>39</strong><span>Active</span></div><div class=\"stat\"><strong>29</strong><span>New</span></div><div class=\"stat\"><strong>4</strong><span>Price drops</span></div><div class=\"stat\"><strong>14</strong><span>To verify</span></div><div class=\"stat\"><strong>2026-09-03 23:30:33</strong><span>Last refreshed</span></div>"
     },
     "map": {
       "markers": 39,
@@ -37,8 +37,8 @@
     "sourceLink": "https://www.19otgreenway.com/floorplans",
     "photos": {
       "total": 39,
-      "loaded": 38,
-      "fallbacks": 1,
+      "loaded": 39,
+      "fallbacks": 0,
       "bad": []
     },
     "markerPositions": {

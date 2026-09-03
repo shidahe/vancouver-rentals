@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-09-03T23:22:14.165Z",
+  "refreshedAt": "2026-09-03T23:40:09.165Z",
   "listings": {
     "arbutus-residences-315-2den-900": {
       "cached": 3,
@@ -286,7 +286,7 @@
       "preserved": 5,
       "downloaded": 0,
       "failures": [],
-      "photoPageUrl": "https://realtylink.org/en/townhouse~for-rent~vancouver/263182316"
+      "photoPageUrl": "https://www.zumper.com/address/3349-dunbar-st-vancouver-bc-v6s-2b9-can"
     },
     "kits-walk-unit-605": {
       "cached": 4,
@@ -442,13 +442,33 @@
       "downloaded": 0,
       "failures": [],
       "photoPageUrl": "https://www.zumper.com/apartment-buildings/p1117150/arbutus-residences-quilchena-vancouver-bc"
+    },
+    "mls-r3151372": {
+      "cached": 3,
+      "preserved": 0,
+      "downloaded": 3,
+      "failures": [
+        {
+          "url": "https://media.realtylink.org/images/consumersite/property/263172999/f30edfe3c49c4660ba9111ae7e98814b.jpeg?width=320&height=240&fit=cover",
+          "error": "not a usable image (image/jpeg, 6584 bytes)"
+        },
+        {
+          "url": "https://media.realtylink.org/images/consumersite/property/263172999/dbad0a90c3ff4d6a81393b40751ce33a.jpeg?width=320&height=240&fit=cover",
+          "error": "not a usable image (image/jpeg, 7504 bytes)"
+        },
+        {
+          "url": "https://media.realtylink.org/images/consumersite/property/263172999/714b4bbc2050493b867e77ca36123841.jpeg?width=320&height=240&fit=cover",
+          "error": "not a usable image (image/jpeg, 7118 bytes)"
+        }
+      ],
+      "photoPageUrl": "https://realtylink.org/en/house~for-rent~vancouver/263172999"
     }
   },
   "totals": {
-    "sourceListings": 60,
-    "cachedListings": 60,
-    "downloaded": 0,
-    "failed": 5,
+    "sourceListings": 61,
+    "cachedListings": 61,
+    "downloaded": 3,
+    "failed": 8,
     "preserved": 286
   }
 }
