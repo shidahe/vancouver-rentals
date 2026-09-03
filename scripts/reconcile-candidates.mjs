@@ -17,8 +17,8 @@ function key(address,unit,url,floorplan,mls){const mlsKey=mlsIdentity(mls);if(ml
 function candidateKey(c){return key(c.address,c.unit,c.url,c.floorplan,c.mls);}
 function sourceFamily(c){return /^zumper$/i.test(c.source)?'zumper':/^rentals\.ca$/i.test(c.source)?'rentalsca':/^liv\.rent$/i.test(c.source)?'livrent':norm(c.source);}
 function usable(c){return !!c&&c.active!==false&&!c.rented&&Number(c.bedrooms)>=2&&c.targetArea!==false&&Number(c.rent)>=2500&&Number(c.rent)<=12000&&!!c.address;}
-function baths(c){const n=Number(c.bathrooms??c.baths);return Number.isFinite(n)?n:null;}
-function sqft(c){const n=Number(c.sqft);return Number.isFinite(n)?n:null;}
+function baths(c){const raw=c?.bathrooms??c?.baths;if(raw==null||raw==='')return null;const n=Number(raw);return Number.isFinite(n)?n:null;}
+function sqft(c){if(c?.sqft==null||c.sqft==='')return null;const n=Number(c.sqft);return Number.isFinite(n)?n:null;}
 function fingerprintCompatible(a,b){
   if(street(a.address)!==street(b.address))return false;
   if(unitToken(a.unit)||unitToken(b.unit))return false;
@@ -68,7 +68,7 @@ const state={refreshedAt:iso,groups:[],promoted:[],crossVerified:[],fingerprintC
 for(const candidate of realtylink.candidates||[]){
   if(!usable(candidate)||!candidate.mls)continue;
   const managed=payload.listings.find(x=>x.availabilityStatus==='active'&&listingMls(x)===candidate.mls);
-  const sibling=payload.listings.find(x=>x.availabilityStatus==='active'&&x!==managed&&!listingMls(x)&&maskedMlsFingerprintCompatible(x,candidate));
+  const sibling=payload.listings.find(x=>x.availabilityStatus==='active'&&x.id!==managed?.id&&!listingMls(x)&&maskedMlsFingerprintCompatible(x,candidate));
   if(!sibling)continue;
   sibling.mls=candidate.mls;sibling.mlsInventoryManaged=true;sibling.unit=unitToken(candidate.unit)||sibling.unit||null;sibling.lastChecked=today;sibling.verifiedAt=iso;
   sibling.source='Realtylink MLS + marketplace detail';sibling.url=candidate.url;
@@ -94,6 +94,8 @@ for(const [k,items] of groups){
     const oldRent=Number(listing.rent),newRent=Number(authoritativeMls.rent);
     listing.availabilityStatus='active';listing.verificationLevel='verified';listing.lastChecked=today;listing.verifiedAt=iso;
     listing.verificationMethod=`Reverified in current authoritative Realtylink MLS inventory ${authoritativeMls.mls}.`;
+    listing.bedrooms=Number(authoritativeMls.bedrooms);listing.bathrooms=baths(authoritativeMls);listing.sqft=sqft(authoritativeMls);
+    listing.unit=unitToken(authoritativeMls.unit)||listing.unit||null;
     attachCandidateImages(imageSources,listing,authoritativeMls);
     if(Number.isFinite(newRent)&&newRent!==oldRent){listing.rent=newRent;listing.status=newRent<oldRent?'price_drop':'unchanged';listing.priceDrop=newRent<oldRent;(history[listing.id]||=[]).push({date:today,rent:newRent,note:`MLS price update $${oldRent} → $${newRent}.`});}
     state.crossVerified.push(listing.id);state.groups.push({...summary,result:'authoritative_mls_reverified'});continue;
@@ -170,6 +172,10 @@ if(realtylinkHealthy){
   }
 }
 
-payload.meta ||= {};payload.meta.lastCrossSourceReconciliation=iso;payload.meta.reconciliationPolicy='Discover every 2BR+ home. Exact address+unit candidates may auto-publish after two independent live source families agree; current authoritative Realtylink MLS records may publish by MLS number. Address-only cross-source fingerprints never auto-publish. Explicit Rented evidence removes immediately; an MLS absent from two consecutive healthy inventory snapshots is removed after being hidden on the first miss.';
+const statusRank=x=>x.availabilityStatus==='active'?3:x.availabilityStatus==='needs_confirmation'?2:1;
+const uniqueListings=new Map();
+for(const listing of payload.listings){const previous=uniqueListings.get(listing.id);if(!previous||statusRank(listing)>statusRank(previous))uniqueListings.set(listing.id,listing);}
+payload.listings=[...uniqueListings.values()];
+payload.meta ||= {};payload.meta.lastCrossSourceReconciliation=iso;payload.meta.reconciliationPolicy='Discover every 2BR+ home. Exact address+unit candidates may auto-publish after two independent live source families agree; current authoritative Realtylink MLS records may publish by MLS number. Address-only cross-source fingerprints never auto-publish. Explicit Rented evidence removes immediately; an MLS absent from two consecutive healthy Realtylink inventory snapshots is removed after being hidden on the first miss.';
 await write(lp,payload);await write(hp,history);await write(ip,imageSources);await write(path.join(DATA,'reconciliation-state.json'),state);
 console.log(`Reconciliation: ${state.crossVerified.length} exact existing, ${state.fingerprintCrossVerified.length} strict-fingerprint existing, ${state.promoted.length} new exact units promoted, ${state.negativeMatches.length} removed.`);
