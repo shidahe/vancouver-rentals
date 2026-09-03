@@ -2,6 +2,7 @@ import fs from 'node:fs/promises';
 import path from 'node:path';
 import { chromium } from 'playwright';
 import { firstLikelyRent, parseFacts } from './listing-parser.mjs';
+import { findExistingSeedListing } from './inventory-identity.mjs';
 
 const ROOT = process.cwd();
 const DATA = path.join(ROOT, 'data');
@@ -280,7 +281,7 @@ for (const seed of sources.seedCandidates || []) {
     pageTextSample: result.bodyText.slice(0, 5000)
   } : { ...seed, discoveredAt: iso, liveCheckedAt: iso, liveStatus: result.status ?? null, error: result.error };
 
-  const existing = payload.listings.find(x => x.id === seed.listingId || norm(x.address) === norm(seed.address));
+  const existing = findExistingSeedListing(payload.listings, seed);
   const bedOK = facts.bedrooms === seed.expectedBeds || liveFacts.bedrooms === seed.expectedBeds;
   const priceOK = livePrice && livePrice >= 2500 && livePrice <= 12000;
   const canPublish = !!seed.autoPublish && result.ok && cls?.identityMatch && cls?.explicitPositive && !cls?.explicitNegative && bedOK && priceOK;

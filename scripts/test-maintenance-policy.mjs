@@ -1,5 +1,5 @@
 import fs from 'node:fs/promises';
-import { listingMls, mlsIdentity } from './inventory-identity.mjs';
+import { findExistingSeedListing, listingMls, mlsIdentity } from './inventory-identity.mjs';
 import { firstLikelyRent, parseFacts } from './listing-parser.mjs';
 
 const read = p => fs.readFile(p, 'utf8');
@@ -37,6 +37,13 @@ const kitsWalk605Page = '$3,650/monthUpdated 7 days ago 2075 W 12th Avenue Vanco
 const kitsWalk605Facts = parseFacts(kitsWalk605Page);
 if (firstLikelyRent(kitsWalk605Page) !== 3650 || kitsWalk605Facts.bedrooms !== 2 || kitsWalk605Facts.bathrooms !== 2 || kitsWalk605Facts.sqft !== 741) {
   failures.push(`Kits Walk Unit 605 compact REW facts parse incorrectly: rent=${firstLikelyRent(kitsWalk605Page)}, facts=${JSON.stringify(kitsWalk605Facts)}`);
+}
+const oldKitsWalkFloorplan = { id: 'kits-walk-2br-flex-616', unit: '2 Bedroom Flex', address: kitsWalk605.address };
+if (findExistingSeedListing([oldKitsWalkFloorplan], kitsWalk605) !== null) {
+  failures.push('Exact Kits Walk Unit 605 is incorrectly merged into an address-level floorplan placeholder.');
+}
+if (findExistingSeedListing([{ ...oldKitsWalkFloorplan, id: kitsWalk605.listingId, unit: '605' }], kitsWalk605)?.unit !== '605') {
+  failures.push('Previously published Kits Walk Unit 605 cannot be matched by its exact listing identity.');
 }
 for (const building of ['kits-walk', 'viridian']) {
   const project = officialWatch.projects.find(x => x.id === building);
