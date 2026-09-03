@@ -530,6 +530,11 @@
       "date": "2026-09-03",
       "rent": 4950,
       "note": "NEW: live Zumper detail auto-published as independent inventory."
+    },
+    {
+      "date": "2026-09-03",
+      "rent": 4950,
+      "note": "MLS R3160689 attached; masked-address duplicate merged after exact fact agreement."
     }
   ],
   "mls-r3160936": [
@@ -537,6 +542,11 @@
       "date": "2026-09-03",
       "rent": 3000,
       "note": "NEW: live Realtylink MLS R3160936 auto-published."
+    },
+    {
+      "date": "2026-09-03",
+      "rent": 3000,
+      "note": "AUTO-REMOVED: MLS R3160936 absent from two consecutive healthy inventory snapshots."
     }
   ],
   "mls-r3159471": [
@@ -551,6 +561,11 @@
       "date": "2026-09-03",
       "rent": 4500,
       "note": "NEW: live Realtylink MLS R3159559 auto-published."
+    },
+    {
+      "date": "2026-09-03",
+      "rent": 4500,
+      "note": "AUTO-REMOVED: MLS R3159559 absent from two consecutive healthy inventory snapshots."
     }
   ],
   "mls-r3141972": [
@@ -579,6 +594,11 @@
       "date": "2026-09-03",
       "rent": 4950,
       "note": "NEW: live Realtylink MLS R3160689 auto-published."
+    },
+    {
+      "date": "2026-09-03",
+      "rent": 4950,
+      "note": "MERGED duplicate inventory into zumper-16e9ae17cd91; MLS R3160689 retained as canonical identity."
     }
   ],
   "mls-r3150923": [
@@ -600,6 +620,27 @@
       "date": "2026-09-03",
       "rent": 4000,
       "note": "NEW: live Realtylink MLS R3129974 auto-published."
+    }
+  ],
+  "mls-r3146085": [
+    {
+      "date": "2026-09-03",
+      "rent": 6500,
+      "note": "NEW: live Realtylink MLS R3146085 auto-published."
+    }
+  ],
+  "mls-r3146956": [
+    {
+      "date": "2026-09-03",
+      "rent": 6390,
+      "note": "NEW: live Realtylink MLS R3146956 auto-published."
+    }
+  ],
+  "mls-r3158299": [
+    {
+      "date": "2026-09-03",
+      "rent": 3000,
+      "note": "NEW: live Realtylink MLS R3158299 auto-published."
     }
   ]
 }

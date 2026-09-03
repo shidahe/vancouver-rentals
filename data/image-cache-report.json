@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-09-03T17:43:30.891Z",
+  "refreshedAt": "2026-09-03T18:01:19.170Z",
   "listings": {
     "arbutus-residences-315-2den-900": {
       "cached": 3,
@@ -290,28 +290,40 @@
     },
     "kits-walk-unit-605": {
       "cached": 4,
-      "preserved": 3,
-      "downloaded": 1,
+      "preserved": 4,
+      "downloaded": 0,
       "failures": [],
       "photoPageUrl": "https://www.rew.ca/rentals/7496804/605-2075-w-12th-avenue-vancouver-bc"
     },
     "mls-r3160936": {
       "cached": 5,
-      "preserved": 0,
-      "downloaded": 5,
-      "failures": [
-        {
-          "url": "https://media.realtylink.org/images/consumersite/member/1V64564/aaab9e1243c148dfa6904cfa016ebb2e.jpeg?width=190&height=220&fit=pad",
-          "error": "not a usable image (image/jpeg, 5368 bytes)"
-        },
-        {
-          "url": "https://media.realtylink.org/images/consumersite/member/1V64564/7d1463b662d34bd9bb002af75286cba0.jpeg?width=120&height=90&fit=pad",
-          "error": "not a usable image (image/jpeg, 2244 bytes)"
-        }
-      ],
+      "preserved": 5,
+      "downloaded": 0,
+      "failures": [],
       "photoPageUrl": "https://realtylink.org/en/apartment~for-rent~vancouver/263182563"
     },
     "mls-r3159471": {
+      "cached": 5,
+      "preserved": 5,
+      "downloaded": 0,
+      "failures": [],
+      "photoPageUrl": "https://realtylink.org/en/townhouse~for-rent~vancouver/263181098"
+    },
+    "mls-r3150730": {
+      "cached": 5,
+      "preserved": 5,
+      "downloaded": 0,
+      "failures": [],
+      "photoPageUrl": "https://realtylink.org/en/house~for-rent~vancouver/263172357"
+    },
+    "mls-r3151022": {
+      "cached": 5,
+      "preserved": 5,
+      "downloaded": 0,
+      "failures": [],
+      "photoPageUrl": "https://realtylink.org/en/house~for-rent~vancouver/263172649"
+    },
+    "mls-r3160689": {
       "cached": 5,
       "preserved": 0,
       "downloaded": 5,
@@ -319,48 +331,36 @@
         {
           "url": "https://cdn.realtylink.org/public/bc/consumersite/images/no-broker-pictureV3.png",
           "error": "not a usable image (image/png, 1350 bytes)"
+        },
+        {
+          "url": "https://media.realtylink.org/images/consumersite/property/263182316/9ff90dbf374c4802a4347969a0cae1e6.jpeg?width=320&height=240&fit=cover",
+          "error": "not a usable image (image/jpeg, 7500 bytes)"
         }
       ],
-      "photoPageUrl": "https://realtylink.org/en/townhouse~for-rent~vancouver/263181098"
+      "photoPageUrl": "https://realtylink.org/en/townhouse~for-rent~vancouver/263182316"
     },
-    "mls-r3150730": {
+    "mls-r3150923": {
       "cached": 5,
       "preserved": 0,
       "downloaded": 5,
       "failures": [
         {
-          "url": "https://media.realtylink.org/images/consumersite/member/1V53913/c880daf121424f798b6ab88f0a82e6e3.jpeg?width=190&height=220&fit=pad",
-          "error": "not a usable image (image/jpeg, 5491 bytes)"
+          "url": "https://cdn.realtylink.org/public/bc/consumersite/images/no-broker-pictureV3.png",
+          "error": "not a usable image (image/png, 1350 bytes)"
         },
         {
-          "url": "https://media.realtylink.org/images/consumersite/member/1V53913/094c79850b9f4c93ae443a7f24a8ad99.jpeg?width=120&height=90&fit=pad",
-          "error": "not a usable image (image/jpeg, 4098 bytes)"
+          "url": "https://media.realtylink.org/images/consumersite/member/1V69009/f1e9bfff0dab4d248011c660817ef420.jpeg?width=120&height=90&fit=pad",
+          "error": "not a usable image (image/jpeg, 1526 bytes)"
         }
       ],
-      "photoPageUrl": "https://realtylink.org/en/house~for-rent~vancouver/263172357"
-    },
-    "mls-r3151022": {
-      "cached": 5,
-      "preserved": 0,
-      "downloaded": 5,
-      "failures": [
-        {
-          "url": "https://media.realtylink.org/images/consumersite/member/1V75803/bc537706e70745f4bf9ca8730af96b79.jpeg?width=190&height=220&fit=pad",
-          "error": "not a usable image (image/jpeg, 1580 bytes)"
-        },
-        {
-          "url": "https://media.realtylink.org/images/consumersite/member/1V75803/cc7bcc0c516646e394510792debffb69.jpeg?width=120&height=90&fit=pad",
-          "error": "not a usable image (image/jpeg, 3763 bytes)"
-        }
-      ],
-      "photoPageUrl": "https://realtylink.org/en/house~for-rent~vancouver/263172649"
+      "photoPageUrl": "https://realtylink.org/en/townhouse~for-rent~vancouver/263172550"
     }
   },
   "totals": {
-    "sourceListings": 46,
-    "cachedListings": 46,
-    "downloaded": 21,
-    "failed": 7,
-    "preserved": 195
+    "sourceListings": 48,
+    "cachedListings": 48,
+    "downloaded": 10,
+    "failed": 4,
+    "preserved": 216
   }
 }
