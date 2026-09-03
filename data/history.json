@@ -530,16 +530,6 @@
       "date": "2026-09-03",
       "rent": 4950,
       "note": "NEW: live Zumper detail auto-published as independent inventory."
-    },
-    {
-      "date": "2026-09-03",
-      "rent": 4950,
-      "note": "MERGED duplicate inventory into zumper-16e9ae17cd91; MLS R3160689 retained as canonical identity."
-    },
-    {
-      "date": "2026-09-03",
-      "rent": 4950,
-      "note": "MLS R3160689 attached; masked-address duplicate merged after exact fact agreement."
     }
   ],
   "mls-r3160936": [
@@ -590,6 +580,11 @@
       "date": "2026-09-03",
       "rent": 2500,
       "note": "NEW: live Realtylink MLS R3150730 auto-published."
+    },
+    {
+      "date": "2026-09-03",
+      "rent": 2500,
+      "note": "AUTO-REMOVED: MLS R3150730 absent from two consecutive healthy inventory snapshots."
     }
   ],
   "mls-r3151022": [
@@ -647,6 +642,11 @@
       "date": "2026-09-03",
       "rent": 6500,
       "note": "NEW: live Realtylink MLS R3146085 auto-published."
+    },
+    {
+      "date": "2026-09-03",
+      "rent": 6500,
+      "note": "AUTO-REMOVED: MLS R3146085 absent from two consecutive healthy inventory snapshots."
     }
   ],
   "mls-r3146956": [
@@ -661,6 +661,39 @@
       "date": "2026-09-03",
       "rent": 3000,
       "note": "NEW: live Realtylink MLS R3158299 auto-published."
+    },
+    {
+      "date": "2026-09-03",
+      "rent": 3000,
+      "note": "AUTO-REMOVED: MLS R3158299 absent from two consecutive healthy inventory snapshots."
+    }
+  ],
+  "mls-r3151352": [
+    {
+      "date": "2026-09-03",
+      "rent": 3495,
+      "note": "NEW: live Realtylink MLS R3151352 auto-published."
+    }
+  ],
+  "mls-r3158149": [
+    {
+      "date": "2026-09-03",
+      "rent": 7000,
+      "note": "NEW: live Realtylink MLS R3158149 auto-published."
+    }
+  ],
+  "mls-r3133139": [
+    {
+      "date": "2026-09-03",
+      "rent": 8980,
+      "note": "NEW: live Realtylink MLS R3133139 auto-published."
+    }
+  ],
+  "mls-r3158036": [
+    {
+      "date": "2026-09-03",
+      "rent": 4000,
+      "note": "NEW: live Realtylink MLS R3158036 auto-published."
     }
   ]
 }

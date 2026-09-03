@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-09-03T18:18:37.254Z",
+  "refreshedAt": "2026-09-03T18:35:18.888Z",
   "listings": {
     "arbutus-residences-315-2den-900": {
       "cached": 3,
@@ -31,8 +31,8 @@
     },
     "york-103-2535-r3137446": {
       "cached": 5,
-      "preserved": 2,
-      "downloaded": 3,
+      "preserved": 5,
+      "downloaded": 0,
       "failures": [],
       "photoPageUrl": "https://realtylink.org/en/townhouse~for-rent~vancouver/263159073"
     },
@@ -47,12 +47,7 @@
       "cached": 3,
       "preserved": 3,
       "downloaded": 0,
-      "failures": [
-        {
-          "url": "https://admin.warringtonresidential.com/wp-content/uploads/2025/03/19-on-the-greenway-2.jpg",
-          "error": "fetch failed"
-        }
-      ],
+      "failures": [],
       "photoPageUrl": "https://warringtonresidential.com/properties/19-on-the-greenway/"
     },
     "waterloo-2477-zumper": {
@@ -344,61 +339,88 @@
     },
     "mls-r3146085": {
       "cached": 5,
-      "preserved": 0,
-      "downloaded": 5,
-      "failures": [
-        {
-          "url": "https://media.realtylink.org/images/consumersite/member/1V25306/5183be8f84f248de84455981a142c5b7.jpeg?width=190&height=220&fit=pad",
-          "error": "not a usable image (image/jpeg, 5315 bytes)"
-        },
-        {
-          "url": "https://media.realtylink.org/images/consumersite/member/1V25306/633388148d1b4aeeb10fa610011e2e5f.jpeg?width=120&height=90&fit=pad",
-          "error": "not a usable image (image/jpeg, 2744 bytes)"
-        }
-      ],
+      "preserved": 5,
+      "downloaded": 0,
+      "failures": [],
       "photoPageUrl": "https://realtylink.org/en/house~for-rent~vancouver/263167712"
     },
     "mls-r3146956": {
       "cached": 5,
-      "preserved": 0,
-      "downloaded": 5,
-      "failures": [
-        {
-          "url": "https://media.realtylink.org/images/consumersite/member/1V31731/5e14980aa81a4ea4be451c47e941e1d4.jpeg?width=190&height=220&fit=pad",
-          "error": "not a usable image (image/jpeg, 6911 bytes)"
-        },
-        {
-          "url": "https://media.realtylink.org/images/consumersite/member/1V31731/92e9ddcfed5a457792fb443ae0a033a8.jpeg?width=120&height=90&fit=pad",
-          "error": "not a usable image (image/jpeg, 2095 bytes)"
-        }
-      ],
+      "preserved": 5,
+      "downloaded": 0,
+      "failures": [],
       "photoPageUrl": "https://realtylink.org/en/house~for-rent~vancouver/263168583"
     },
     "mls-r3158299": {
       "cached": 5,
-      "preserved": 0,
-      "downloaded": 5,
-      "failures": [
-        {
-          "url": "https://media.realtylink.org/images/consumersite/member/1V100485/89a40ca35a2a42c7a334f28067743b5a.jpeg?width=190&height=220&fit=pad",
-          "error": "not a usable image (image/jpeg, 6828 bytes)"
-        }
-      ],
+      "preserved": 5,
+      "downloaded": 0,
+      "failures": [],
       "photoPageUrl": "https://realtylink.org/en/house~for-rent~vancouver/263179926"
     },
     "mls-r3129974": {
       "cached": 5,
+      "preserved": 5,
+      "downloaded": 0,
+      "failures": [],
+      "photoPageUrl": "https://realtylink.org/en/house~for-rent~vancouver/263151601"
+    },
+    "mls-r3151352": {
+      "cached": 5,
       "preserved": 0,
       "downloaded": 5,
       "failures": [],
-      "photoPageUrl": "https://realtylink.org/en/house~for-rent~vancouver/263151601"
+      "photoPageUrl": "https://realtylink.org/en/house~for-rent~vancouver/263172979"
+    },
+    "mls-r3158149": {
+      "cached": 5,
+      "preserved": 0,
+      "downloaded": 5,
+      "failures": [],
+      "photoPageUrl": "https://realtylink.org/en/house~for-rent~vancouver/263179776"
+    },
+    "mls-r3141972": {
+      "cached": 2,
+      "preserved": 0,
+      "downloaded": 2,
+      "failures": [
+        {
+          "url": "https://media.realtylink.org/images/consumersite/property/263163599/6eaf788d2caa45cfab0e3350eac907d6.jpeg?width=320&height=240&fit=cover",
+          "error": "not a usable image (image/jpeg, 6917 bytes)"
+        },
+        {
+          "url": "https://media.realtylink.org/images/consumersite/property/263163599/8c9ed88a995c42e99d26728fc40a4dce.jpeg?width=320&height=240&fit=cover",
+          "error": "not a usable image (image/jpeg, 7708 bytes)"
+        },
+        {
+          "url": "https://media.realtylink.org/images/consumersite/property/263163599/dbac275e3f534f5090ef2c89843eeb10.jpeg?width=320&height=240&fit=cover",
+          "error": "not a usable image (image/jpeg, 5741 bytes)"
+        }
+      ],
+      "photoPageUrl": "https://realtylink.org/en/house~for-rent~vancouver/263163599"
+    },
+    "mls-r3158036": {
+      "cached": 3,
+      "preserved": 0,
+      "downloaded": 3,
+      "failures": [
+        {
+          "url": "https://media.realtylink.org/images/consumersite/property/263179663/25950b0735df4c2ea17256ee35e9b8f6.jpeg?width=320&height=240&fit=cover",
+          "error": "not a usable image (image/jpeg, 7646 bytes)"
+        },
+        {
+          "url": "https://media.realtylink.org/images/consumersite/property/263179663/6157136616954a5ca1a78ef3edea5710.jpeg?width=320&height=240&fit=cover",
+          "error": "not a usable image (image/jpeg, 5916 bytes)"
+        }
+      ],
+      "photoPageUrl": "https://realtylink.org/en/house~for-rent~vancouver/263179663"
     }
   },
   "totals": {
-    "sourceListings": 52,
-    "cachedListings": 52,
-    "downloaded": 23,
-    "failed": 6,
-    "preserved": 226
+    "sourceListings": 56,
+    "cachedListings": 56,
+    "downloaded": 15,
+    "failed": 5,
+    "preserved": 249
   }
 }
