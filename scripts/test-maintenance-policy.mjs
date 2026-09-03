@@ -1,5 +1,6 @@
 import fs from 'node:fs/promises';
 import { listingMls, mlsIdentity } from './inventory-identity.mjs';
+import { firstLikelyRent, parseFacts } from './listing-parser.mjs';
 
 const read = p => fs.readFile(p, 'utf8');
 const activeAdapters = [
@@ -29,8 +30,13 @@ for (const building of ['kits-walk', 'larchway-gardens', 'viridian']) {
   if (!source) failures.push(`Priority building missing from live source catalog: ${building}`);
 }
 const kitsWalk605 = catalog.seedCandidates?.find(x => x.id === 'rew-kits-walk-605');
-if (!kitsWalk605 || kitsWalk605.unit !== '605' || kitsWalk605.expectedBeds !== 2 || !kitsWalk605.autoPublish || !/\/605-2075-w-12th-avenue-vancouver-bc$/.test(kitsWalk605.url)) {
+if (!kitsWalk605 || kitsWalk605.unit !== '605' || kitsWalk605.address !== '2075 W 12th Ave, Vancouver, BC' || kitsWalk605.expectedBeds !== 2 || !kitsWalk605.autoPublish || !/\/605-2075-w-12th-avenue-vancouver-bc$/.test(kitsWalk605.url)) {
   failures.push('Current Kits Walk Unit 605 exact-detail verification seed is missing or weakened.');
+}
+const kitsWalk605Page = '$3,650/monthUpdated 7 days ago 2075 W 12th Avenue Vancouver, BC 2 Bed2 Bath741 SqftAvailable Oct 1 Kits Walk offers studio, 1, 2, and 3 bedroom homes.';
+const kitsWalk605Facts = parseFacts(kitsWalk605Page);
+if (firstLikelyRent(kitsWalk605Page) !== 3650 || kitsWalk605Facts.bedrooms !== 2 || kitsWalk605Facts.bathrooms !== 2 || kitsWalk605Facts.sqft !== 741) {
+  failures.push(`Kits Walk Unit 605 compact REW facts parse incorrectly: rent=${firstLikelyRent(kitsWalk605Page)}, facts=${JSON.stringify(kitsWalk605Facts)}`);
 }
 for (const building of ['kits-walk', 'viridian']) {
   const project = officialWatch.projects.find(x => x.id === building);

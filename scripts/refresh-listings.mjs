@@ -1,6 +1,7 @@
 import fs from 'node:fs/promises';
 import path from 'node:path';
 import { chromium } from 'playwright';
+import { firstLikelyRent, parseFacts } from './listing-parser.mjs';
 
 const ROOT = process.cwd();
 const DATA = path.join(ROOT, 'data');
@@ -13,41 +14,6 @@ const readJson = async (p, fallback) => { try { return JSON.parse(await fs.readF
 const writeJson = async (p, v) => { await fs.mkdir(path.dirname(p), { recursive: true }); await fs.writeFile(p, JSON.stringify(v, null, 2) + '\n'); };
 const norm = s => (s || '').toLowerCase().replace(/[^a-z0-9]+/g, ' ').trim();
 const uniq = xs => [...new Set(xs.filter(Boolean))];
-
-function moneyMatches(text = '') {
-  return [...text.matchAll(/\$\s?([2-9][0-9](?:,[0-9]{3}|[0-9]{2}))(?:\.00)?\b/g)]
-    .map(m => Number(m[1].replace(',', '')))
-    .filter(v => v >= 2500 && v <= 12000);
-}
-
-function firstLikelyRent(text = '', jsonLd = []) {
-  const structured = [];
-  const walk = value => {
-    if (!value) return;
-    if (Array.isArray(value)) return value.forEach(walk);
-    if (typeof value !== 'object') return;
-    for (const [k, v] of Object.entries(value)) {
-      if (/^(price|lowPrice|highPrice)$/i.test(k)) {
-        const n = Number(String(v).replace(/[^0-9.]/g, ''));
-        if (n >= 2500 && n <= 12000) structured.push(n);
-      }
-      walk(v);
-    }
-  };
-  jsonLd.forEach(walk);
-  if (structured.length) return structured[0];
-
-  const contextual = [
-    /monthly\s+rent[^$]{0,80}\$\s?([2-9][0-9](?:,[0-9]{3}|[0-9]{2}))/i,
-    /rent\s*(?:price)?\s*[:\-]?[^$]{0,50}\$\s?([2-9][0-9](?:,[0-9]{3}|[0-9]{2}))/i,
-    /\$\s?([2-9][0-9](?:,[0-9]{3}|[0-9]{2}))\s*(?:\/\s*mo|per\s+month|monthly)/i
-  ];
-  for (const re of contextual) {
-    const m = text.match(re);
-    if (m) return Number(m[1].replace(',', ''));
-  }
-  return moneyMatches(text)[0] ?? null;
-}
 
 const strongNegativePatterns = [
   /gone too soon/i,
@@ -70,28 +36,6 @@ const positivePatterns = [
   /request (?:a )?tour/i,
   /available\s+(?:immediately|[a-z]{3,9}\s+\d{1,2})/i
 ];
-
-function parseFacts(text = '') {
-  const beds = text.match(/\b([1-5](?:\.5)?)\s*(?:bedrooms?|beds?|br)\b/i) || text.match(/\b(two|three)\s+bedrooms?\b/i);
-  const baths = text.match(/\b([1-5](?:\.5)?)\s*(?:bathrooms?|baths?|ba)\b/i);
-  const sqft = text.match(/\b([7-9][0-9]{2}|1[0-9]{3}|2[0-9]{3})\s*(?:sq\.?\s*ft|sqft|ft²|square feet)\b/i);
-  const year = text.match(/(?:year built|built in|built)\s*[:\-]?\s*(19[5-9][0-9]|20[0-2][0-9])/i);
-  const orientation = text.match(/\b(north(?:east|west)?|south(?:east|west)?|east|west)[- ]facing\b/i)?.[1] || null;
-  const wordNum = x => x === 'two' ? 2 : x === 'three' ? 3 : Number(x);
-  return {
-    bedrooms: beds ? wordNum(beds[1].toLowerCase()) : null,
-    bathrooms: baths ? Number(baths[1]) : null,
-    sqft: sqft ? Number(sqft[1]) : null,
-    buildingYear: year ? Number(year[1]) : null,
-    ac: /\b(?:air conditioning|air conditioned|central ac|central a\/c)\b/i.test(text) ? true : null,
-    parking: /\b(?:assigned parking|parking included|1 parking|one parking|parking spot)\b/i.test(text) ? true : null,
-    petFriendly: /\b(?:pet friendly|pets allowed|dogs ok|cats ok|dog friendly|cat friendly)\b/i.test(text) ? true : null,
-    orientation: orientation ? orientation.replace(/north/i, 'N').replace(/south/i, 'S').replace(/east/i, 'E').replace(/west/i, 'W') : null,
-    balcony: /\b(?:balcony|private patio|patio)\b/i.test(text) ? true : null,
-    largeWindows: /\b(?:large windows|floor.to.ceiling windows|over height windows|oversized windows)\b/i.test(text) ? true : null,
-    modernInterior: /\b(?:miele|fisher\s*&\s*paykel|caesarstone|quartz|renovated|modern interior|waterfall island)\b/i.test(text) ? true : null
-  };
-}
 
 function identityTokens(item) {
   const address = norm(item.address);
