@@ -1,6 +1,7 @@
 import fs from 'node:fs/promises';
 import path from 'node:path';
 import { chromium } from 'playwright';
+import { verifiedPhotoCandidates } from './listing-photo-candidates.mjs';
 
 const DATA=path.join(process.cwd(),'data');
 const read=async(p,d)=>{try{return JSON.parse(await fs.readFile(p,'utf8'))}catch{return d}};
@@ -13,6 +14,7 @@ const slug=s=>norm(s).replace(/\s+/g,'-');
 const cfg=await read(path.join(DATA,'purpose-built-watch.json'),{buildings:[]});
 const db=await read(path.join(DATA,'listings.json'),{meta:{},listings:[]});
 const history=await read(path.join(DATA,'history.json'),{});
+const imageSources=await read(path.join(DATA,'image-sources.json'),{});
 const evidence=[];
 const browser=await chromium.launch({headless:true});
 const ctx=await browser.newContext({locale:'en-CA',timezoneId:'America/Vancouver',viewport:{width:1440,height:1600}});
@@ -22,13 +24,20 @@ for(const b of cfg.buildings||[]){
   const urls=(b.urls&&b.urls.length?b.urls:[b.url]).filter(Boolean);
   const observations=[];
   for(const url of urls){
-    let text='',status=null,error=null;
+    let text='',status=null,error=null,images=[];
     try{
       const r=await page.goto(url,{waitUntil:'domcontentloaded',timeout:45000}); status=r?.status()??null;
-      if(r&&status<400){await page.waitForTimeout(2200);text=await page.locator('body').innerText({timeout:12000});}
+      if(r&&status<400){
+        await page.waitForTimeout(2200);
+        text=await page.locator('body').innerText({timeout:12000});
+        images=await page.evaluate(()=>[
+          ...[...document.querySelectorAll('meta[property="og:image"],meta[name="twitter:image"]')].map(x=>x.content),
+          ...[...document.images].map(x=>x.currentSrc||x.src)
+        ].filter(Boolean).map(x=>{try{return new URL(x,location.href).href}catch{return null}}).filter(Boolean));
+      }
     }catch(e){error=String(e)}
     const usable=!!text&&status!==401&&status!==403&&status!==429&&!(status>=500);
-    observations.push({url,checkedAt:now,httpStatus:status,usable,error,text});
+    observations.push({url,checkedAt:now,httpStatus:status,usable,error,text,images});
   }
 
   const buildingEvidence={building:b.name,checkedAt:now,observations:observations.map(o=>({url:o.url,httpStatus:o.httpStatus,usable:o.usable,error:o.error})),inventories:[]};
@@ -90,6 +99,12 @@ for(const b of cfg.buildings||[]){
       }
       Object.assign(listing,{availabilityStatus:'active',lastChecked:day,verifiedAt:now,verificationLevel:'primary-live',verificationMethod:`Exact floorplan/unit inventory confirmed on ${verifiedSource.url}`});
     }
+
+    const verifiedObservation=observations.find(x=>x.url===verifiedSource.url);
+    const photoCandidates=verifiedPhotoCandidates(verifiedObservation?.images||[]);
+    if(photoCandidates.length){
+      imageSources[listing.id]={referer:verifiedSource.url,photoPageUrl:verifiedSource.url,candidates:photoCandidates};
+    }
   }
   evidence.push(buildingEvidence);
 }
@@ -99,4 +114,5 @@ db.meta.purposeBuiltPolicy='Purpose-built buildings are expanded into independen
 await write(path.join(DATA,'purpose-built-status.json'),{refreshedAt:now,buildings:evidence});
 await write(path.join(DATA,'listings.json'),db);
 await write(path.join(DATA,'history.json'),history);
+await write(path.join(DATA,'image-sources.json'),imageSources);
 console.log(`Purpose-built verifier checked ${evidence.length} buildings across fallback sources.`);

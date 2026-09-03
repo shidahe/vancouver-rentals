@@ -18,6 +18,7 @@ const activeAdapters = [
 ];
 const source = (await Promise.all(activeAdapters.map(read))).join('\n');
 const coverageSource = await read('scripts/audit-coverage.mjs');
+const purposeBuiltSource = await read('scripts/refresh-purposebuilt.mjs');
 const catalog = JSON.parse(await read('data/live-sources.json'));
 const officialWatch = JSON.parse(await read('data/official-watch.json'));
 const indexHtml = await read('index.html');
@@ -116,6 +117,9 @@ if (!source.includes('listing.sqft=sqft(authoritativeMls)') || !source.includes(
 }
 if (!source.includes('cleanAddress') || !source.includes('meta[property="og:image"]')) {
   failures.push('Realtylink address normalization or OpenGraph photo fallback is missing.');
+}
+if (!purposeBuiltSource.includes('verifiedPhotoCandidates') || !purposeBuiltSource.includes('imageSources[listing.id]')) {
+  failures.push('Verified purpose-built inventory does not feed its current detail-page photos into the image cache.');
 }
 
 // Regression fixture: the reported Kitsilano 4BR must pass the global discovery gate.
