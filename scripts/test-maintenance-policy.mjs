@@ -3,7 +3,7 @@ import { civicAddressMatch, findExistingSeedListing, listingMls, maskedCivicAddr
 import { firstLikelyRent, parseFacts } from './listing-parser.mjs';
 import { isAutoManagedListing } from './stale-auto-policy.mjs';
 import { verifiedPhotoCandidates } from './listing-photo-candidates.mjs';
-import { isTargetWestsideCoordinate, parseRealtylinkCoordinateValues, parseRealtylinkCoordinates } from './realtylink-parser.mjs';
+import { isTargetWestsideCoordinate, parseRealtylinkCoordinateValues, parseRealtylinkCoordinates, parseRealtylinkRoomCount } from './realtylink-parser.mjs';
 
 const read = p => fs.readFile(p, 'utf8');
 const activeAdapters = [
@@ -133,6 +133,11 @@ if (mlsIdentity(r3160272.mls) !== 'mls:r3160272' || !(r3160272.bedrooms >= 2 && 
 
 // Realtylink embeds coordinates at ten decimal places. This real York Avenue
 // shape previously failed the adapter's 4-8 digit regex and emptied the lane.
+if (parseRealtylinkRoomCount('MLS R3134535 9 bedrooms 3 bathrooms', 'bedroom') !== 9 ||
+    parseRealtylinkRoomCount('MLS R3134535 9 bedrooms 3 bathrooms', 'bathroom') !== 3) {
+  failures.push('Realtylink high-bedroom listing R3134535 is truncated by the room-count parser.');
+}
+
 const yorkRealtylinkGeo = parseRealtylinkCoordinates('263159073 0 /en/townhouse~for-rent~vancouver/263159073 /photos 49.2720800000 -123.1630000000 true');
 if (!yorkRealtylinkGeo || yorkRealtylinkGeo.lat !== 49.27208 || yorkRealtylinkGeo.lng !== -123.163 || !isTargetWestsideCoordinate(yorkRealtylinkGeo)) {
   failures.push(`Realtylink ten-decimal Westside coordinate is rejected: ${JSON.stringify(yorkRealtylinkGeo)}`);

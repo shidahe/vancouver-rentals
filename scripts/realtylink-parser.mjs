@@ -17,3 +17,8 @@ export function isTargetWestsideCoordinate(coordinate) {
   return coordinate.lat >= 49.225 && coordinate.lat <= 49.286 &&
     coordinate.lng >= -123.215 && coordinate.lng <= -123.135;
 }
+
+export function parseRealtylinkRoomCount(text, label) {
+  const match=String(text||'').match(new RegExp(`\\b([1-9]\\d?(?:\\.5)?)\\s+${label}s?\\b`,'i'));
+  return match?Number(match[1]):null;
+}
