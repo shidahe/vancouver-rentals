@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-09-03T17:07:08.687Z",
+  "refreshedAt": "2026-09-03T17:25:50.571Z",
   "groups": [
     {
       "identityKey": "3220 4th ave w::url:4b1a6ebe2d36",
@@ -276,10 +276,103 @@
       "exactUnit": false,
       "matchedListingId": "waterloo-2477-zumper",
       "result": "candidate_only"
+    },
+    {
+      "identityKey": "mls:r3153999",
+      "sources": [
+        "realtylink mls"
+      ],
+      "rents": [
+        3600
+      ],
+      "exactUnit": false,
+      "matchedListingId": "2268-w-broadway-312-r3153999",
+      "result": "authoritative_mls_reverified"
+    },
+    {
+      "identityKey": "mls:r3160936",
+      "sources": [
+        "realtylink mls"
+      ],
+      "rents": [
+        3000
+      ],
+      "exactUnit": false,
+      "matchedListingId": null,
+      "result": "auto_published_authoritative_mls"
+    },
+    {
+      "identityKey": "mls:r3159471",
+      "sources": [
+        "realtylink mls"
+      ],
+      "rents": [
+        5500
+      ],
+      "exactUnit": false,
+      "matchedListingId": null,
+      "result": "auto_published_authoritative_mls"
+    },
+    {
+      "identityKey": "mls:r3159559",
+      "sources": [
+        "realtylink mls"
+      ],
+      "rents": [
+        4500
+      ],
+      "exactUnit": false,
+      "matchedListingId": null,
+      "result": "auto_published_authoritative_mls"
+    },
+    {
+      "identityKey": "mls:r3141972",
+      "sources": [
+        "realtylink mls"
+      ],
+      "rents": [
+        2500
+      ],
+      "exactUnit": false,
+      "matchedListingId": null,
+      "result": "auto_published_authoritative_mls"
+    },
+    {
+      "identityKey": "mls:r3150730",
+      "sources": [
+        "realtylink mls"
+      ],
+      "rents": [
+        2500
+      ],
+      "exactUnit": false,
+      "matchedListingId": null,
+      "result": "auto_published_authoritative_mls"
+    },
+    {
+      "identityKey": "mls:r3151022",
+      "sources": [
+        "realtylink mls"
+      ],
+      "rents": [
+        10500
+      ],
+      "exactUnit": false,
+      "matchedListingId": null,
+      "result": "auto_published_authoritative_mls"
     }
   ],
-  "promoted": [],
-  "crossVerified": [],
+  "promoted": [
+    "mls-r3160936",
+    "mls-r3159471",
+    "mls-r3159559",
+    "mls-r3141972",
+    "mls-r3150730",
+    "mls-r3151022"
+  ],
+  "crossVerified": [
+    "2268-w-broadway-312-r3153999"
+  ],
   "fingerprintCrossVerified": [],
   "negativeMatches": [],
   "mlsMissing": {},

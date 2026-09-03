@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-09-03T17:08:14.059Z",
-  "activeCount": 36,
+  "generatedAt": "2026-09-03T17:26:57.926Z",
+  "activeCount": 42,
   "decisionReady": true,
   "highIssueCount": 0,
   "mediumIssueCount": 0,
-  "infoIssueCount": 65,
+  "infoIssueCount": 71,
   "issues": [
     {
       "severity": "info",
@@ -330,30 +330,54 @@
       "severity": "info",
       "id": "zumper-16e9ae17cd91",
       "issue": "unknown-orientation"
+    },
+    {
+      "severity": "info",
+      "id": "mls-r3160936",
+      "issue": "unknown-orientation"
+    },
+    {
+      "severity": "info",
+      "id": "mls-r3159471",
+      "issue": "unknown-orientation"
+    },
+    {
+      "severity": "info",
+      "id": "mls-r3159559",
+      "issue": "unknown-orientation"
+    },
+    {
+      "severity": "info",
+      "id": "mls-r3141972",
+      "issue": "unknown-orientation"
+    },
+    {
+      "severity": "info",
+      "id": "mls-r3150730",
+      "issue": "unknown-orientation"
+    },
+    {
+      "severity": "info",
+      "id": "mls-r3151022",
+      "issue": "unknown-orientation"
     }
   ],
   "readinessChecks": {
     "smokeOk": true,
     "smokeFresh": true,
-    "smokeCheckedAt": "2026-09-03T17:08:20.436Z",
-    "latestDataAt": "2026-09-03T17:07:13.180Z",
+    "smokeCheckedAt": "2026-09-03T17:27:04.414Z",
+    "latestDataAt": "2026-09-03T17:25:54.696Z",
     "coverageReady": true,
-    "healthyDiscoveryLanes": 3,
+    "healthyDiscoveryLanes": 4,
     "coverageWarnings": [
       {
         "severity": "warning",
         "lane": "livrent",
         "status": "unhealthy",
         "detail": "0/5 searches healthy"
-      },
-      {
-        "severity": "warning",
-        "lane": "realtylink",
-        "status": "degraded",
-        "detail": "3/3 searches reachable; 0 live candidates parsed"
       }
     ]
   },
   "readinessIssues": [],
-  "finalizedAt": "2026-09-03T17:08:22.191Z"
+  "finalizedAt": "2026-09-03T17:27:06.246Z"
 }
