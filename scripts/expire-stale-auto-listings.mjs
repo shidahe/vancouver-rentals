@@ -1,5 +1,6 @@
 import fs from 'node:fs/promises';
 import path from 'node:path';
+import { isAutoManagedListing } from './stale-auto-policy.mjs';
 
 const DATA = path.join(process.cwd(), 'data');
 const now = new Date();
@@ -15,7 +16,7 @@ const history = await read(hp, {});
 let expired = 0;
 
 for (const l of db.listings || []) {
-  if (l.source !== 'Zumper live detail' || l.availabilityStatus !== 'active') continue;
+  if (!isAutoManagedListing(l)) continue;
   const verified = Date.parse(l.verifiedAt || '');
   if (!Number.isFinite(verified) || now.getTime() - verified <= MAX_AGE_MS) continue;
 
@@ -26,15 +27,15 @@ for (const l of db.listings || []) {
   l.dataNotes = `${String(l.dataNotes || '').replace(/\s*Auto-hidden after exceeding the 48-hour live-verification window\.?/gi, '').trim()} Auto-hidden after exceeding the 48-hour live-verification window.`.trim();
   history[l.id] ||= [];
   const last = history[l.id][history[l.id].length - 1];
-  if (!last || last.note !== 'Auto-hidden: Zumper live detail was not reverified within 48 hours.') {
-    history[l.id].push({ date: today, rent: l.rent ?? null, note: 'Auto-hidden: Zumper live detail was not reverified within 48 hours.' });
+  if (!last || last.note !== 'Auto-hidden: exact live detail was not reverified within 48 hours.') {
+    history[l.id].push({ date: today, rent: l.rent ?? null, note: 'Auto-hidden: exact live detail was not reverified within 48 hours.' });
   }
   expired++;
 }
 
 db.meta ||= {};
 db.meta.lastStaleAutoListingExpiry = now.toISOString();
-db.meta.staleAutoListingPolicy = 'Auto-published Zumper live-detail inventory is fail-closed: if it is not reverified within 48 hours, it is hidden as needs_confirmation until exact live evidence returns.';
+db.meta.staleAutoListingPolicy = 'Auto-managed exact-detail inventory is fail-closed across sources: if it is not reverified within 48 hours, it is hidden as needs_confirmation until exact live evidence returns. Authoritative MLS-feed inventory uses its separate consecutive-snapshot removal policy.';
 await write(lp, db);
 await write(hp, history);
 console.log(`Stale auto-listing expiry: ${expired} listing(s) hidden.`);

@@ -1,6 +1,7 @@
 import fs from 'node:fs/promises';
 import { findExistingSeedListing, listingMls, mlsIdentity } from './inventory-identity.mjs';
 import { firstLikelyRent, parseFacts } from './listing-parser.mjs';
+import { isAutoManagedListing } from './stale-auto-policy.mjs';
 import { verifiedPhotoCandidates } from './listing-photo-candidates.mjs';
 
 const read = p => fs.readFile(p, 'utf8');
@@ -19,6 +20,10 @@ const officialWatch = JSON.parse(await read('data/official-watch.json'));
 const indexHtml = await read('index.html');
 
 const failures = [];
+const staleFixture = { availabilityStatus: 'active', source: 'REW / Rent Sync', verificationMethod: 'Automated live browser check matched listing identity and current availability wording.' };
+if (!isAutoManagedListing(staleFixture)) failures.push('Non-Zumper exact-detail inventory bypasses stale expiry.');
+if (isAutoManagedListing({ ...staleFixture, mlsInventoryManaged: true })) failures.push('Authoritative MLS-feed inventory is incorrectly handled by generic stale expiry.');
+if (isAutoManagedListing({ ...staleFixture, availabilityStatus: 'needs_confirmation' })) failures.push('Inactive inventory is incorrectly eligible for stale expiry.');
 if (/id="minSqft"[^>]*value="800"/.test(indexHtml)) failures.push('800 sqft preference is still a default discovery/display gate.');
 for (const pattern of [/bedrooms\s*===\s*2/, /beds\s*!==\s*2/, /max_bedrooms=2/]) {
   if (pattern.test(source)) failures.push(`2BR-only gate remains: ${pattern}`);

@@ -15,6 +15,7 @@ on:
       - 'scripts/refresh-zumper-units-v2.mjs'
       - 'scripts/quarantine-ambiguous-zumper-multiunit.mjs'
       - 'scripts/expire-stale-auto-listings.mjs'
+      - 'scripts/stale-auto-policy.mjs'
       - 'scripts/cleanup-verification-methods.mjs'
       - 'scripts/refresh-rentalsca.mjs'
       - 'scripts/refresh-livrent.mjs'
