@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-09-03T21:14:01.799Z",
+  "refreshedAt": "2026-09-03T23:07:26.252Z",
   "groups": [
     {
       "identityKey": "3220 4th ave w::url:4b1a6ebe2d36",
@@ -278,16 +278,16 @@
       "result": "candidate_only"
     },
     {
-      "identityKey": "mls:r3158552",
+      "identityKey": "mls:r3149612",
       "sources": [
         "realtylink mls"
       ],
       "rents": [
-        2850
+        3995
       ],
       "exactUnit": true,
-      "matchedListingId": null,
-      "result": "auto_published_authoritative_mls"
+      "matchedListingId": "blenheim-terrace-204-r3149612",
+      "result": "authoritative_mls_reverified"
     },
     {
       "identityKey": "mls:r3159471",
@@ -299,18 +299,6 @@
       ],
       "exactUnit": false,
       "matchedListingId": "mls-r3159471",
-      "result": "authoritative_mls_reverified"
-    },
-    {
-      "identityKey": "mls:r3160689",
-      "sources": [
-        "realtylink mls"
-      ],
-      "rents": [
-        4950
-      ],
-      "exactUnit": true,
-      "matchedListingId": "zumper-16e9ae17cd91",
       "result": "authoritative_mls_reverified"
     },
     {
@@ -338,39 +326,15 @@
       "result": "authoritative_mls_reverified"
     },
     {
-      "identityKey": "mls:r3146956",
+      "identityKey": "mls:r3158036",
       "sources": [
         "realtylink mls"
       ],
       "rents": [
-        6390
+        4000
       ],
       "exactUnit": false,
-      "matchedListingId": "mls-r3146956",
-      "result": "authoritative_mls_reverified"
-    },
-    {
-      "identityKey": "mls:r3158299",
-      "sources": [
-        "realtylink mls"
-      ],
-      "rents": [
-        3000
-      ],
-      "exactUnit": false,
-      "matchedListingId": "mls-r3158299",
-      "result": "authoritative_mls_reverified"
-    },
-    {
-      "identityKey": "mls:r3150730",
-      "sources": [
-        "realtylink mls"
-      ],
-      "rents": [
-        2500
-      ],
-      "exactUnit": false,
-      "matchedListingId": "mls-r3150730",
+      "matchedListingId": "mls-r3158036",
       "result": "authoritative_mls_reverified"
     },
     {
@@ -384,39 +348,93 @@
       "exactUnit": false,
       "matchedListingId": "mls-r3151022",
       "result": "authoritative_mls_reverified"
+    },
+    {
+      "identityKey": "mls:r3148298",
+      "sources": [
+        "realtylink mls"
+      ],
+      "rents": [
+        5500
+      ],
+      "exactUnit": false,
+      "matchedListingId": null,
+      "result": "auto_published_authoritative_mls"
+    },
+    {
+      "identityKey": "mls:r3146085",
+      "sources": [
+        "realtylink mls"
+      ],
+      "rents": [
+        6500
+      ],
+      "exactUnit": false,
+      "matchedListingId": "mls-r3146085",
+      "result": "authoritative_mls_reverified"
+    },
+    {
+      "identityKey": "mls:r3146956",
+      "sources": [
+        "realtylink mls"
+      ],
+      "rents": [
+        6390
+      ],
+      "exactUnit": false,
+      "matchedListingId": "mls-r3146956",
+      "result": "authoritative_mls_reverified"
+    },
+    {
+      "identityKey": "mls:r3134535",
+      "sources": [
+        "realtylink mls"
+      ],
+      "rents": [
+        9750
+      ],
+      "exactUnit": false,
+      "matchedListingId": "mls-r3134535",
+      "result": "authoritative_mls_reverified"
     }
   ],
   "promoted": [
-    "mls-r3158552"
+    "mls-r3148298"
   ],
   "crossVerified": [
+    "blenheim-terrace-204-r3149612",
     "mls-r3159471",
-    "zumper-16e9ae17cd91",
     "mls-r3150923",
     "york-103-2535-r3137446",
+    "mls-r3158036",
+    "mls-r3151022",
+    "mls-r3146085",
     "mls-r3146956",
-    "mls-r3158299",
-    "mls-r3150730",
-    "mls-r3151022"
+    "mls-r3134535"
   ],
   "fingerprintCrossVerified": [],
   "maskedMlsMerged": [],
   "negativeMatches": [],
   "mlsMissing": {
-    "R3146085": {
-      "firstMissingAt": "2026-09-03T21:14:01.799Z",
-      "lastMissingAt": "2026-09-03T21:14:01.799Z",
-      "listingId": "mls-r3146085"
+    "R3160689": {
+      "firstMissingAt": "2026-09-03T23:07:26.252Z",
+      "lastMissingAt": "2026-09-03T23:07:26.252Z",
+      "listingId": "zumper-16e9ae17cd91"
     },
-    "R3158036": {
-      "firstMissingAt": "2026-09-03T21:14:01.799Z",
-      "lastMissingAt": "2026-09-03T21:14:01.799Z",
-      "listingId": "mls-r3158036"
+    "R3150730": {
+      "firstMissingAt": "2026-09-03T23:07:26.252Z",
+      "lastMissingAt": "2026-09-03T23:07:26.252Z",
+      "listingId": "mls-r3150730"
     },
-    "R3134535": {
-      "firstMissingAt": "2026-09-03T21:14:01.799Z",
-      "lastMissingAt": "2026-09-03T21:14:01.799Z",
-      "listingId": "mls-r3134535"
+    "R3158299": {
+      "firstMissingAt": "2026-09-03T23:07:26.252Z",
+      "lastMissingAt": "2026-09-03T23:07:26.252Z",
+      "listingId": "mls-r3158299"
+    },
+    "R3158552": {
+      "firstMissingAt": "2026-09-03T23:07:26.252Z",
+      "lastMissingAt": "2026-09-03T23:07:26.252Z",
+      "listingId": "mls-r3158552"
     }
   },
   "mlsRemoved": []

@@ -90,6 +90,11 @@
       "date": "2026-08-19",
       "rent": 4495,
       "note": "DOWNGRADED TO NEEDS_CONFIRMATION: duplicate Unit 204 MLS records conflict at $4495/940 sqft vs $4295/905 sqft. Do not classify as price drop until agent confirms identity."
+    },
+    {
+      "date": "2026-09-03",
+      "rent": 3995,
+      "note": "MLS price update $4495 → $3995."
     }
   ],
   "19-greenway-c1-405-3619": [
@@ -738,6 +743,13 @@
       "date": "2026-09-03",
       "rent": 2850,
       "note": "NEW: live Realtylink MLS R3158552 auto-published."
+    }
+  ],
+  "mls-r3148298": [
+    {
+      "date": "2026-09-03",
+      "rent": 5500,
+      "note": "NEW: live Realtylink MLS R3148298 auto-published."
     }
   ]
 }

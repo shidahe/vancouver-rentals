@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-09-03T21:14:53.326Z",
-  "activeCount": 43,
+  "generatedAt": "2026-09-03T23:08:25.751Z",
+  "activeCount": 45,
   "decisionReady": true,
   "highIssueCount": 0,
   "mediumIssueCount": 0,
-  "infoIssueCount": 73,
+  "infoIssueCount": 75,
   "issues": [
     {
       "severity": "info",
@@ -14,6 +14,16 @@
     {
       "severity": "info",
       "id": "treo-2688-vine-r3142696",
+      "issue": "unknown-orientation"
+    },
+    {
+      "severity": "info",
+      "id": "blenheim-terrace-204-r3149612",
+      "issue": "unknown-ac"
+    },
+    {
+      "severity": "info",
+      "id": "blenheim-terrace-204-r3149612",
       "issue": "unknown-orientation"
     },
     {
@@ -338,11 +348,6 @@
     },
     {
       "severity": "info",
-      "id": "mls-r3150730",
-      "issue": "unknown-orientation"
-    },
-    {
-      "severity": "info",
       "id": "mls-r3151022",
       "issue": "unknown-orientation"
     },
@@ -353,39 +358,38 @@
     },
     {
       "severity": "info",
+      "id": "mls-r3146085",
+      "issue": "unknown-orientation"
+    },
+    {
+      "severity": "info",
       "id": "mls-r3146956",
       "issue": "unknown-orientation"
     },
     {
       "severity": "info",
-      "id": "mls-r3158299",
+      "id": "mls-r3158036",
       "issue": "unknown-orientation"
     },
     {
       "severity": "info",
-      "id": "mls-r3158552",
-      "issue": "unknown-sqft"
+      "id": "mls-r3134535",
+      "issue": "unknown-orientation"
     },
     {
       "severity": "info",
-      "id": "mls-r3158552",
+      "id": "mls-r3148298",
       "issue": "unknown-orientation"
     }
   ],
   "readinessChecks": {
     "smokeOk": true,
     "smokeFresh": true,
-    "smokeCheckedAt": "2026-09-03T21:14:59.264Z",
-    "latestDataAt": "2026-09-03T21:14:05.569Z",
+    "smokeCheckedAt": "2026-09-03T23:08:32.199Z",
+    "latestDataAt": "2026-09-03T23:07:30.075Z",
     "coverageReady": true,
-    "healthyDiscoveryLanes": 3,
+    "healthyDiscoveryLanes": 4,
     "coverageWarnings": [
-      {
-        "severity": "warning",
-        "lane": "rentalsca",
-        "status": "degraded",
-        "detail": "2/9 regional searches healthy"
-      },
       {
         "severity": "warning",
         "lane": "livrent",
@@ -395,5 +399,5 @@
     ]
   },
   "readinessIssues": [],
-  "finalizedAt": "2026-09-03T21:15:00.857Z"
+  "finalizedAt": "2026-09-03T23:08:33.897Z"
 }

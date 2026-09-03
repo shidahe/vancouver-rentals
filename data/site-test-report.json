@@ -1,11 +1,11 @@
 {
-  "checkedAt": "2026-09-03T21:14:59.264Z",
+  "checkedAt": "2026-09-03T23:08:32.199Z",
   "ok": true,
   "checkpoints": {
     "render": {
       "title": "Vancouver Westside Rentals",
-      "cards": 43,
-      "shown": 43
+      "cards": 45,
+      "shown": 45
     },
     "stats": {
       "labels": [
@@ -16,16 +16,16 @@
         "Last refreshed"
       ],
       "values": [
-        "43",
-        "29",
-        "3",
-        "9",
-        "2026-09-03 21:05:20"
+        "45",
+        "30",
+        "4",
+        "8",
+        "2026-09-03 22:58:15"
       ],
-      "html": "<div class=\"stat\"><strong>43</strong><span>Active</span></div><div class=\"stat\"><strong>29</strong><span>New</span></div><div class=\"stat\"><strong>3</strong><span>Price drops</span></div><div class=\"stat\"><strong>9</strong><span>To verify</span></div><div class=\"stat\"><strong>2026-09-03 21:05:20</strong><span>Last refreshed</span></div>"
+      "html": "<div class=\"stat\"><strong>45</strong><span>Active</span></div><div class=\"stat\"><strong>30</strong><span>New</span></div><div class=\"stat\"><strong>4</strong><span>Price drops</span></div><div class=\"stat\"><strong>8</strong><span>To verify</span></div><div class=\"stat\"><strong>2026-09-03 22:58:15</strong><span>Last refreshed</span></div>"
     },
     "map": {
-      "markers": 43,
+      "markers": 45,
       "desktopMapVisible": true
     },
     "filters": "ok",
@@ -36,14 +36,14 @@
     },
     "sourceLink": "https://www.19otgreenway.com/floorplans",
     "photos": {
-      "total": 43,
-      "loaded": 42,
-      "fallbacks": 1,
+      "total": 45,
+      "loaded": 45,
+      "fallbacks": 0,
       "bad": []
     },
     "markerPositions": {
-      "total": 43,
-      "unique": 43
+      "total": 45,
+      "unique": 45
     },
     "dataEndpoints": "ok",
     "mobile": "ok",

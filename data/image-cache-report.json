@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-09-03T21:14:50.032Z",
+  "refreshedAt": "2026-09-03T23:08:21.839Z",
   "listings": {
     "arbutus-residences-315-2den-900": {
       "cached": 3,
@@ -23,11 +23,11 @@
       "photoPageUrl": "https://www.zolo.ca/vancouver-real-estate/2688-vine"
     },
     "blenheim-terrace-204-r3149612": {
-      "cached": 4,
+      "cached": 5,
       "preserved": 4,
-      "downloaded": 0,
+      "downloaded": 1,
       "failures": [],
-      "photoPageUrl": "https://www.zolo.ca/vancouver-real-estate/3333-west-4th-avenue/204"
+      "photoPageUrl": "https://realtylink.org/en/apartment~for-rent~vancouver/263171239"
     },
     "york-103-2535-r3137446": {
       "cached": 5,
@@ -286,7 +286,7 @@
       "preserved": 5,
       "downloaded": 0,
       "failures": [],
-      "photoPageUrl": "https://realtylink.org/en/townhouse~for-rent~vancouver/263182316"
+      "photoPageUrl": "https://www.zumper.com/address/3349-dunbar-st-vancouver-bc-v6s-2b9-can"
     },
     "kits-walk-unit-605": {
       "cached": 4,
@@ -424,17 +424,31 @@
     },
     "mls-r3158552": {
       "cached": 5,
+      "preserved": 5,
+      "downloaded": 0,
+      "failures": [],
+      "photoPageUrl": "https://realtylink.org/en/apartment~for-rent~vancouver/263180179"
+    },
+    "mls-r3148298": {
+      "cached": 5,
       "preserved": 0,
       "downloaded": 5,
       "failures": [],
-      "photoPageUrl": "https://realtylink.org/en/apartment~for-rent~vancouver/263180179"
+      "photoPageUrl": "https://realtylink.org/en/house~for-rent~vancouver/263169925"
+    },
+    "arbutus-residences-floorplan-2-bedroom-townhouse-den-1340": {
+      "cached": 5,
+      "preserved": 0,
+      "downloaded": 5,
+      "failures": [],
+      "photoPageUrl": "https://www.zumper.com/apartment-buildings/p1117150/arbutus-residences-quilchena-vancouver-bc"
     }
   },
   "totals": {
-    "sourceListings": 58,
-    "cachedListings": 58,
-    "downloaded": 5,
+    "sourceListings": 60,
+    "cachedListings": 60,
+    "downloaded": 11,
     "failed": 5,
-    "preserved": 270
+    "preserved": 275
   }
 }
