@@ -107,6 +107,9 @@ if (!source.includes("media\\.realtylink\\.org\\/images\\/consumersite\\/propert
 if (!source.includes('listing.sqft=sqft(authoritativeMls)') || !source.includes('uniqueListings')) {
   failures.push('Authoritative Realtylink fact refresh or duplicate-ID cleanup is missing.');
 }
+if (!source.includes('cleanAddress') || !source.includes('meta[property="og:image"]')) {
+  failures.push('Realtylink address normalization or OpenGraph photo fallback is missing.');
+}
 
 // Regression fixture: the reported Kitsilano 4BR must pass the global discovery gate.
 const r3160272 = { mls: 'R3160272', bedrooms: 4, rent: 6950, address: '2788 W 1st Avenue, Vancouver, BC' };

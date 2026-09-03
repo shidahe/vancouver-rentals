@@ -96,6 +96,7 @@ for(const [k,items] of groups){
     listing.verificationMethod=`Reverified in current authoritative Realtylink MLS inventory ${authoritativeMls.mls}.`;
     listing.bedrooms=Number(authoritativeMls.bedrooms);listing.bathrooms=baths(authoritativeMls);listing.sqft=sqft(authoritativeMls);
     listing.unit=unitToken(authoritativeMls.unit)||listing.unit||null;
+    if(listing.source==='Realtylink MLS')listing.address=authoritativeMls.address;
     attachCandidateImages(imageSources,listing,authoritativeMls);
     if(Number.isFinite(newRent)&&newRent!==oldRent){listing.rent=newRent;listing.status=newRent<oldRent?'price_drop':'unchanged';listing.priceDrop=newRent<oldRent;(history[listing.id]||=[]).push({date:today,rent:newRent,note:`MLS price update $${oldRent} → $${newRent}.`});}
     state.crossVerified.push(listing.id);state.groups.push({...summary,result:'authoritative_mls_reverified'});continue;
