@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-09-03T05:31:22.609Z",
-  "activeCount": 35,
+  "generatedAt": "2026-09-03T07:40:48.792Z",
+  "activeCount": 36,
   "decisionReady": true,
   "highIssueCount": 0,
   "mediumIssueCount": 0,
-  "infoIssueCount": 63,
+  "infoIssueCount": 65,
   "issues": [
     {
       "severity": "info",
@@ -320,13 +320,23 @@
       "severity": "info",
       "id": "kits-walk-unit-605",
       "issue": "unknown-orientation"
+    },
+    {
+      "severity": "info",
+      "id": "zumper-16e9ae17cd91",
+      "issue": "unknown-ac"
+    },
+    {
+      "severity": "info",
+      "id": "zumper-16e9ae17cd91",
+      "issue": "unknown-orientation"
     }
   ],
   "readinessChecks": {
     "smokeOk": true,
     "smokeFresh": true,
-    "smokeCheckedAt": "2026-09-03T05:31:28.663Z",
-    "latestDataAt": "2026-09-03T05:30:34.577Z",
+    "smokeCheckedAt": "2026-09-03T07:40:54.419Z",
+    "latestDataAt": "2026-09-03T07:39:58.771Z",
     "coverageReady": true,
     "healthyDiscoveryLanes": 2,
     "coverageWarnings": [
@@ -351,5 +361,5 @@
     ]
   },
   "readinessIssues": [],
-  "finalizedAt": "2026-09-03T05:31:30.414Z"
+  "finalizedAt": "2026-09-03T07:40:56.007Z"
 }

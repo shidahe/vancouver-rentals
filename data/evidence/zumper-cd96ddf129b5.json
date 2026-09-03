@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-09-03T05:22:21.112Z",
+  "checkedAt": "2026-09-03T07:31:42.895Z",
   "listingId": "zumper-cd96ddf129b5",
   "sourceUrl": "https://www.zumper.com/address/2932-w-13th-ave-vancouver-bc-v6k-2t9-can",
   "ok": true,
@@ -293,6 +293,7 @@
     }
   ],
   "images": [
+    "https://img.zumpercdn.com/450608777/1280x960?auto=format",
     "https://d214hhm15p4t1d.cloudfront.net/web-zumper/329be4cdae917e27704c4a12ce8c277cfcdb1d85/img/zumperDarkText.664a5ef8.svg",
     "https://d214hhm15p4t1d.cloudfront.net/web-zumper/329be4cdae917e27704c4a12ce8c277cfcdb1d85/img/search.272ccae9.svg",
     "https://d214hhm15p4t1d.cloudfront.net/web-zumper/329be4cdae917e27704c4a12ce8c277cfcdb1d85/img/locationAutocomplete.81057160.svg",
@@ -311,10 +312,9 @@
     "https://d214hhm15p4t1d.cloudfront.net/web-zumper/329be4cdae917e27704c4a12ce8c277cfcdb1d85/img/background.3e6d80ed.svg",
     "https://d214hhm15p4t1d.cloudfront.net/web-zumper/329be4cdae917e27704c4a12ce8c277cfcdb1d85/img/arrowDown.84d9bdfc.svg",
     "https://cdn.cookielaw.org/logos/static/ot_company_logo.png",
-    "https://cdn.cookielaw.org/logos/static/powered_by_logo.svg",
-    "https://ids4.ad.gt/api/v1/ip_match?id=AU1D-0100-001788412974-QIQM4XRQ-1PXX"
+    "https://cdn.cookielaw.org/logos/static/powered_by_logo.svg"
   ],
-  "elapsedMs": 3306,
+  "elapsedMs": 3296,
   "identityMatch": true,
   "explicitNegative": false,
   "negativePhrase": null,

@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-09-03T05:31:17.999Z",
+  "refreshedAt": "2026-09-03T07:40:43.588Z",
   "listings": {
     "arbutus-residences-315-2den-900": {
       "cached": 3,
@@ -280,12 +280,19 @@
       "downloaded": 0,
       "failures": [],
       "photoPageUrl": "https://www.zumper.com/address/2249-w-33rd-ave-vancouver-bc-v6m-1c1-can"
+    },
+    "zumper-16e9ae17cd91": {
+      "cached": 5,
+      "preserved": 0,
+      "downloaded": 5,
+      "failures": [],
+      "photoPageUrl": "https://www.zumper.com/address/3349-dunbar-st-vancouver-bc-v6s-2b9-can"
     }
   },
   "totals": {
-    "sourceListings": 40,
-    "cachedListings": 40,
-    "downloaded": 0,
+    "sourceListings": 41,
+    "cachedListings": 41,
+    "downloaded": 5,
     "failed": 0,
     "preserved": 187
   }
