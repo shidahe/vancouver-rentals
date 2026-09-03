@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-09-03T23:08:25.751Z",
-  "activeCount": 45,
+  "generatedAt": "2026-09-03T23:22:18.643Z",
+  "activeCount": 39,
   "decisionReady": true,
   "highIssueCount": 0,
   "mediumIssueCount": 0,
-  "infoIssueCount": 75,
+  "infoIssueCount": 69,
   "issues": [
     {
       "severity": "info",
@@ -343,53 +343,29 @@
     },
     {
       "severity": "info",
-      "id": "mls-r3159471",
+      "id": "mls-r3160936",
       "issue": "unknown-orientation"
     },
     {
       "severity": "info",
-      "id": "mls-r3151022",
-      "issue": "unknown-orientation"
-    },
-    {
-      "severity": "info",
-      "id": "mls-r3150923",
-      "issue": "unknown-orientation"
-    },
-    {
-      "severity": "info",
-      "id": "mls-r3146085",
-      "issue": "unknown-orientation"
-    },
-    {
-      "severity": "info",
-      "id": "mls-r3146956",
-      "issue": "unknown-orientation"
-    },
-    {
-      "severity": "info",
-      "id": "mls-r3158036",
-      "issue": "unknown-orientation"
-    },
-    {
-      "severity": "info",
-      "id": "mls-r3134535",
-      "issue": "unknown-orientation"
-    },
-    {
-      "severity": "info",
-      "id": "mls-r3148298",
+      "id": "mls-r3133139",
       "issue": "unknown-orientation"
     }
   ],
   "readinessChecks": {
     "smokeOk": true,
     "smokeFresh": true,
-    "smokeCheckedAt": "2026-09-03T23:08:32.199Z",
-    "latestDataAt": "2026-09-03T23:07:30.075Z",
+    "smokeCheckedAt": "2026-09-03T23:22:24.484Z",
+    "latestDataAt": "2026-09-03T23:21:32.816Z",
     "coverageReady": true,
-    "healthyDiscoveryLanes": 4,
+    "healthyDiscoveryLanes": 3,
     "coverageWarnings": [
+      {
+        "severity": "warning",
+        "lane": "rentalsca",
+        "status": "degraded",
+        "detail": "2/9 regional searches healthy"
+      },
       {
         "severity": "warning",
         "lane": "livrent",
@@ -399,5 +375,5 @@
     ]
   },
   "readinessIssues": [],
-  "finalizedAt": "2026-09-03T23:08:33.897Z"
+  "finalizedAt": "2026-09-03T23:22:25.964Z"
 }
