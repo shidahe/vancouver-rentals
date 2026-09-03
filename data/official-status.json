@@ -1,12 +1,12 @@
 {
-  "refreshedAt": "2026-09-02T23:08:58.074Z",
+  "refreshedAt": "2026-09-03T01:35:02.180Z",
   "policy": "Fresh explicit official negative announcements override older official website leasing language and all marketplace evidence. Official positive status alone does not prove a specific unit is available.",
   "projects": [
     {
       "id": "arbutus-terrace",
       "buildingName": "Arbutus Terrace",
       "address": "3205 Arbutus St, Vancouver, BC",
-      "checkedAt": "2026-09-02T23:08:58.074Z",
+      "checkedAt": "2026-09-03T01:35:02.180Z",
       "effectiveStatus": "fully_leased",
       "authority": "official_social_post",
       "reason": "Strand official Facebook post states Arbutus Terrace is now fully leased.",
@@ -19,7 +19,7 @@
       "observations": [
         {
           "url": "https://stranddev.com/portfolio/arbutusterrace-rental",
-          "checkedAt": "2026-09-02T23:08:58.074Z",
+          "checkedAt": "2026-09-03T01:35:02.180Z",
           "httpStatus": 200,
           "usable": true,
           "negatives": [],
@@ -31,7 +31,7 @@
         },
         {
           "url": "https://stranddev.com/the-westside-collection",
-          "checkedAt": "2026-09-02T23:08:58.074Z",
+          "checkedAt": "2026-09-03T01:35:02.180Z",
           "httpStatus": 200,
           "usable": true,
           "negatives": [],
@@ -46,7 +46,7 @@
       "id": "arbutus-residences",
       "buildingName": "Arbutus Residences",
       "address": "2139 Lahb Ave, Vancouver, BC",
-      "checkedAt": "2026-09-02T23:08:58.074Z",
+      "checkedAt": "2026-09-03T01:35:02.180Z",
       "effectiveStatus": "leasing",
       "authority": "official_web",
       "reason": "Official page contains current leasing/availability language.",
@@ -54,7 +54,7 @@
       "observations": [
         {
           "url": "https://arbutusresidences.com/contact/",
-          "checkedAt": "2026-09-02T23:08:58.074Z",
+          "checkedAt": "2026-09-03T01:35:02.180Z",
           "httpStatus": 200,
           "usable": true,
           "negatives": [],
@@ -66,7 +66,7 @@
         },
         {
           "url": "https://arbutusresidences2.medianation.ca/virtual-tour/",
-          "checkedAt": "2026-09-02T23:08:58.074Z",
+          "checkedAt": "2026-09-03T01:35:02.180Z",
           "httpStatus": 200,
           "usable": true,
           "negatives": [],
@@ -77,7 +77,7 @@
         },
         {
           "url": "https://www.rentfaster.ca/properties/2139-lahb-ave-vancouver-454186",
-          "checkedAt": "2026-09-02T23:08:58.074Z",
+          "checkedAt": "2026-09-03T01:35:02.180Z",
           "httpStatus": 403,
           "usable": false
         }
@@ -87,7 +87,7 @@
       "id": "the-raven",
       "buildingName": "The Raven",
       "address": "3709 W Broadway, Vancouver, BC",
-      "checkedAt": "2026-09-02T23:08:58.074Z",
+      "checkedAt": "2026-09-03T01:35:02.180Z",
       "effectiveStatus": "leasing",
       "authority": "official_web",
       "reason": "Official page contains current leasing/availability language.",
@@ -95,7 +95,7 @@
       "observations": [
         {
           "url": "https://living.westbankcorp.com/property/the-raven",
-          "checkedAt": "2026-09-02T23:08:58.074Z",
+          "checkedAt": "2026-09-03T01:35:02.180Z",
           "httpStatus": 200,
           "usable": true,
           "negatives": [],
@@ -107,7 +107,7 @@
         },
         {
           "url": "https://living.westbankcorp.com/",
-          "checkedAt": "2026-09-02T23:08:58.074Z",
+          "checkedAt": "2026-09-03T01:35:02.180Z",
           "httpStatus": 200,
           "usable": true,
           "negatives": [],
@@ -122,7 +122,7 @@
       "id": "raphael",
       "buildingName": "Raphael",
       "address": "3668 W 10th Ave, Vancouver, BC",
-      "checkedAt": "2026-09-02T23:08:58.074Z",
+      "checkedAt": "2026-09-03T01:35:02.180Z",
       "effectiveStatus": "fully_leased",
       "authority": "official_web",
       "reason": "Official page contains a strong negative leasing signal.",
@@ -130,7 +130,7 @@
       "observations": [
         {
           "url": "https://www.uniqueaccommodations.com/buildings/the-raphael/",
-          "checkedAt": "2026-09-02T23:08:58.074Z",
+          "checkedAt": "2026-09-03T01:35:02.180Z",
           "httpStatus": 200,
           "usable": true,
           "negatives": [
@@ -148,25 +148,27 @@
       "id": "kits-walk",
       "buildingName": "Kits Walk",
       "address": "2075 W 12th Ave, Vancouver, BC",
-      "checkedAt": "2026-09-02T23:08:58.074Z",
-      "effectiveStatus": "unknown",
-      "authority": "none",
-      "reason": "No decisive official signal.",
+      "checkedAt": "2026-09-03T01:35:02.180Z",
+      "effectiveStatus": "leasing",
+      "authority": "official_web",
+      "reason": "Official page contains current leasing/availability language.",
       "latestManualAnnouncement": null,
       "observations": [
         {
           "url": "https://www.kitswalkleasing.com/floorplans",
-          "checkedAt": "2026-09-02T23:08:58.074Z",
+          "checkedAt": "2026-09-03T01:35:02.180Z",
           "httpStatus": 403,
           "usable": false
         },
         {
           "url": "https://stranddev.com/portfolio/kitswalk",
-          "checkedAt": "2026-09-02T23:08:58.074Z",
+          "checkedAt": "2026-09-03T01:35:02.180Z",
           "httpStatus": 200,
           "usable": true,
           "negatives": [],
-          "positives": [],
+          "positives": [
+            "now renting"
+          ],
           "textSample": "Portfolio About Approach Team Impact History Contact Kits Walk Vancouver, BC Now Renting Kits Walk is a boutique collection of only 48 one, two, and three bedroom pet-friendly rental homes at 12th Avenue and Arbutus Street. This walkable location provides residents with easy access to the best of the Kits lifestyle. CONTACT Homes Amenities & Features Neighbourhood Map Gallery YOUR HOME At Kits Walk enjoy all the essentials – these pet-friendly homes include modern features such as full-size stainless steel appliances, convenient and secure keyless suite entry, open-concept floorplans, ceiling heights up to 9’, and spacious in-suite storage solutions. LIVE AT KITS WALK Kits Walk is located on a highly walkable corner, with plenty of west side charm. This prime location offers unbeatable access to the cafes, grocers, nearby retail as well as access to the city via bus routes and the upcoming Broadway SkyTrain Line. 1 Entertainment Lounge with Kitchenette 2 Dog Wash Station 3 Secure Bike Room 4 Children's Play Area NEIGHBOURHOOD Just downstairs, the streets are lined with high-end grocers, cafés, fitness, services, and convenience and destination retail. This location is easily connected to the city, via bus routes on both Broadway and Arbutus. Additionally, the instantly accessible Arbutus Greenway offers a lush open bike path that connects the city from the seawall to the Fraser River. The waterfront is only blocks to the north, giving you access to all the beaches and seawalls of Kitsilano and Point Grey. © Mapbox © OpenStreetMap Improve this map GALLERY VIEW MORE PROJECTS INFORMATION Careers Customer Care Contact The Strand Collection Strand Contracting ABOUT US Approach Team Impact History CONNECT WITH US info@stranddev.com STRAND Suite 2400 – 320 Granville Street Vancouver, BC V6C 1S9 Privacy Policy Terms & Conditions © 2026 Strand"
         }
       ]
@@ -175,35 +177,33 @@
       "id": "larchway-gardens",
       "buildingName": "Larchway Gardens",
       "address": "2475 W Broadway, Vancouver, BC",
-      "checkedAt": "2026-09-02T23:08:58.074Z",
-      "effectiveStatus": "fully_leased",
+      "checkedAt": "2026-09-03T01:35:02.180Z",
+      "effectiveStatus": "leasing",
       "authority": "official_web",
-      "reason": "Official page contains a strong negative leasing signal.",
+      "reason": "Official page contains current leasing/availability language.",
       "latestManualAnnouncement": null,
       "observations": [
         {
           "url": "https://quadrealresidential.com/vancouver/larchway-gardens/",
-          "checkedAt": "2026-09-02T23:08:58.074Z",
+          "checkedAt": "2026-09-03T01:35:02.180Z",
           "httpStatus": 200,
           "usable": true,
           "negatives": [],
           "positives": [
             "book a tour"
           ],
-          "textSample": "Skip to main content Enable accessibility for low vision Open the accessibility menu Skip to content Masterplan Communities Overview Assembly Park Bayview Village Cloverdale Maplewood Oakridge Park TriCity Central Residential Portfolio All Communities Calgary Cambridge Hamilton Kitchener Greater Toronto Greater Vancouver About News & Insights Contact (604) 913-7366 QuadReal CONNECT Floorplans Amenities Neighbourhood Gallery Contact Book a Tour Kitsilano apartments you've been searching for. Limited Time Offer Find a Rental On the way to UBC, Larchway Gardens is home to affordable 1 bedroom and 2 bedroom apartments for rent on Kitsilano's west side. A great choice for those who want to work, study, relax and enjoy everything within walking distance of home, our spacious suites feature a private balcony with beautiful city views. Quiet and relaxed, this is the sanctuary you've been searching for in Vancouver, BC. Book a Tour FLOORPLANS Spacious living. Our 1 bedroom or 2 bedroom apartments for rent in Kitsilano are designed with plenty of living space and large windows throughout, for plenty of natural light. In addition to generous floor plans, each apartment also features a private balcony. View Floorplans AMENITIES Amenities you'll love. At Larchway Gardens, thoughtful amenities make everyday living easier. From well-maintained shared spaces to convenient on-site features, everything is designed to complement the relaxed Kitsilano lifestyle you love. Learn More SOCIAL ROOM AND CO-WORKING SPACE SOCIAL ROOM AND CO-WORKING SPACE COMMUNAL VEGETABLE GARDENS COMMUNAL VEGETABLE GARDENS RUSTIC GAZEBO WITH BBQ RUSTIC GAZEBO WITH BBQ FULL KITCHEN IN SOCIAL ROOM AND CO-WORKING SPACE FULL KITCHEN IN SOCIAL ROOM AND CO-WORKING SPACE ENERGY EFFICIENT APPLIANCES ENERGY EFFICIENT APPLIANCES COMMUNAL COURTYARD COMMUNAL COURTYARD QUADREAL+HOME RESIDENT APP QUADREAL+HOME RESIDENT APP CONVENIENTLY LOCATED IN THE HEART OF KITSILANO CONVENIENTLY LOCATED IN THE HEART OF KITSILANO SOCIAL ROOM AND CO-WORKING SPACE SOCIAL ROOM AND CO-WORKING SPACE COMMUNAL VEGETABLE GARDENS COMMUNAL VEGETABLE GARDENS RUSTIC GAZEBO WITH BBQ RUSTIC GAZEBO WITH BBQ FULL KITCHEN IN SOCIAL ROOM AND CO-WORKING SPACE FULL KITCHEN IN SOCIAL ROOM AND CO-WORKING SPACE ENERGY EFFICIENT APPLIANCES ENERGY EFFICIENT APPLIANCES COMMUNAL COURTYARD COMMUNAL COURTYARD QUADREAL+HOME RESIDENT APP QUADREAL+HOME RESIDENT APP CONVENIENTLY LOCATED IN THE HEART OF KITSILANO CONVENIENTLY LOCATED IN THE HEART OF KITSILANO S"
+          "textSample": "Skip to content Masterplan Communities Overview Assembly Park Bayview Village Cloverdale Maplewood Oakridge Park TriCity Central Residential Portfolio All Communities Calgary Cambridge Hamilton Kitchener Greater Toronto Greater Vancouver About News & Insights Contact (604) 913-7366 QuadReal CONNECT Floorplans Amenities Neighbourhood Gallery Contact Book a Tour Kitsilano apartments you've been searching for. Limited Time Offer Find a Rental On the way to UBC, Larchway Gardens is home to affordable 1 bedroom and 2 bedroom apartments for rent on Kitsilano's west side. A great choice for those who want to work, study, relax and enjoy everything within walking distance of home, our spacious suites feature a private balcony with beautiful city views. Quiet and relaxed, this is the sanctuary you've been searching for in Vancouver, BC. Book a Tour FLOORPLANS Spacious living. Our 1 bedroom or 2 bedroom apartments for rent in Kitsilano are designed with plenty of living space and large windows throughout, for plenty of natural light. In addition to generous floor plans, each apartment also features a private balcony. View Floorplans AMENITIES Amenities you'll love. At Larchway Gardens, thoughtful amenities make everyday living easier. From well-maintained shared spaces to convenient on-site features, everything is designed to complement the relaxed Kitsilano lifestyle you love. Learn More SOCIAL ROOM AND CO-WORKING SPACE SOCIAL ROOM AND CO-WORKING SPACE COMMUNAL VEGETABLE GARDENS COMMUNAL VEGETABLE GARDENS RUSTIC GAZEBO WITH BBQ RUSTIC GAZEBO WITH BBQ FULL KITCHEN IN SOCIAL ROOM AND CO-WORKING SPACE FULL KITCHEN IN SOCIAL ROOM AND CO-WORKING SPACE ENERGY EFFICIENT APPLIANCES ENERGY EFFICIENT APPLIANCES COMMUNAL COURTYARD COMMUNAL COURTYARD QUADREAL+HOME RESIDENT APP QUADREAL+HOME RESIDENT APP CONVENIENTLY LOCATED IN THE HEART OF KITSILANO CONVENIENTLY LOCATED IN THE HEART OF KITSILANO SOCIAL ROOM AND CO-WORKING SPACE SOCIAL ROOM AND CO-WORKING SPACE COMMUNAL VEGETABLE GARDENS COMMUNAL VEGETABLE GARDENS RUSTIC GAZEBO WITH BBQ RUSTIC GAZEBO WITH BBQ FULL KITCHEN IN SOCIAL ROOM AND CO-WORKING SPACE FULL KITCHEN IN SOCIAL ROOM AND CO-WORKING SPACE ENERGY EFFICIENT APPLIANCES ENERGY EFFICIENT APPLIANCES COMMUNAL COURTYARD COMMUNAL COURTYARD QUADREAL+HOME RESIDENT APP QUADREAL+HOME RESIDENT APP CONVENIENTLY LOCATED IN THE HEART OF KITSILANO CONVENIENTLY LOCATED IN THE HEART OF KITSILANO SOCIAL ROOM AND CO-WORKING SPACE SOCIAL ROOM AND CO-WORKING SPACE COMMUNAL VEGETABLE G"
         },
         {
           "url": "https://quadrealresidential.com/vancouver/larchway-gardens/contact/",
-          "checkedAt": "2026-09-02T23:08:58.074Z",
+          "checkedAt": "2026-09-03T01:35:02.180Z",
           "httpStatus": 200,
           "usable": true,
-          "negatives": [
-            "all units are rented"
-          ],
+          "negatives": [],
           "positives": [
             "book a tour"
           ],
-          "textSample": "Skip to content Masterplan Communities Overview Assembly Park Bayview Village Cloverdale Maplewood Oakridge Park TriCity Central Residential Portfolio All Communities Calgary Cambridge Hamilton Kitchener Greater Toronto Greater Vancouver About News & Insights Contact (604) 913-7366 QuadReal CONNECT Floorplans Amenities Neighbourhood Gallery Contact Book a Tour LARCHWAY GARDENS > CONTACT Contact Larchway Gardens 2475 West Broadway Street Vancouver, BC V6K 2E8 (604) 913-7366 © Mapbox © OpenStreetMap Improve this map Hold Ctrl + scroll to zoom Get in touch FIRST NAME LAST NAME EMAIL PHONE NUMBER MOVE-IN DATE LAYOUT Select Layout 1 Bedroom 2 Bedrooms DO YOU HAVE ANY PETS? Select Pets No Pets Cat(s) Dog(s) Other NOTES By entering my contact information and clicking “SUBMIT”, I consent to be used by QuadReal Property Group Limited Partnership (Park Place, 666 Burrard Street, Suite 800, Vancouver, BC V6C 2X8) (“QuadReal”) for the purpose of responding to my inquiry and to send me commercial electronic messages, including emails and text messages, with news and information regarding its homes, communities, related services and general marketing information. Message frequency varies. Message, carrier and data rates may apply. I may withdraw my consent at any time by following the unsubscribe mechanism set out in the applicable electronic message. I can view QuadReal’s Privacy Policy here for more information on how QuadReal may use my personal information and contact them directly at privacy@quadreal.com for more details. Submit Address 2475 West Broadway Street Vancouver, BC V6K 2E8 (604) 913-7366 Floorplans Amenities Neighbourhood Gallery Contact All Units Are Rented Visit Dunway Court for more available units to rent! Rent with us Own with us Masterplan Communities Residential Portfolio About News & Insights Contact Stay up to date Join our mailing list to receive future updates, news, and insights. Subscribe QuadReal CONNECT © 2026 QuadReal and the Quadrant Logo are trademarks of QuadReal Property Group Limited Partnership. All rights reserved. Illustrations are Artists' concept. Prices and specifications are subject to change without notice. E.&O.E. QuadReal Residential Properties UK Accessibility Legal We use essential cookies to help us keep our site running, understand and improve its performance, and save any settings you select. With your consent by clicking \"Accept all Cookies\" or through cookies settings, we use cookies or similar technologies to enhanc"
+          "textSample": "Skip to content Masterplan Communities Overview Assembly Park Bayview Village Cloverdale Maplewood Oakridge Park TriCity Central Residential Portfolio All Communities Calgary Cambridge Hamilton Kitchener Greater Toronto Greater Vancouver About News & Insights Contact (604) 913-7366 QuadReal CONNECT Floorplans Amenities Neighbourhood Gallery Contact Book a Tour LARCHWAY GARDENS > CONTACT Contact Larchway Gardens 2475 West Broadway Street Vancouver, BC V6K 2E8 (604) 913-7366 © Mapbox © OpenStreetMap Improve this map Hold Ctrl + scroll to zoom Get in touch FIRST NAME LAST NAME EMAIL PHONE NUMBER MOVE-IN DATE LAYOUT Select Layout 1 Bedroom 2 Bedrooms DO YOU HAVE ANY PETS? Select Pets No Pets Cat(s) Dog(s) Other NOTES By entering my contact information and clicking “SUBMIT”, I consent to be used by QuadReal Property Group Limited Partnership (Park Place, 666 Burrard Street, Suite 800, Vancouver, BC V6C 2X8) (“QuadReal”) for the purpose of responding to my inquiry and to send me commercial electronic messages, including emails and text messages, with news and information regarding its homes, communities, related services and general marketing information. Message frequency varies. Message, carrier and data rates may apply. I may withdraw my consent at any time by following the unsubscribe mechanism set out in the applicable electronic message. I can view QuadReal’s Privacy Policy here for more information on how QuadReal may use my personal information and contact them directly at privacy@quadreal.com for more details. Submit Address 2475 West Broadway Street Vancouver, BC V6K 2E8 (604) 913-7366 Floorplans Amenities Neighbourhood Gallery Contact Rent with us Own with us Masterplan Communities Residential Portfolio About News & Insights Contact Stay up to date Join our mailing list to receive future updates, news, and insights. Subscribe QuadReal CONNECT © 2026 QuadReal and the Quadrant Logo are trademarks of QuadReal Property Group Limited Partnership. All rights reserved. Illustrations are Artists' concept. Prices and specifications are subject to change without notice. E.&O.E. QuadReal Residential Properties UK Accessibility Legal"
         }
       ]
     },
@@ -211,24 +211,26 @@
       "id": "viridian",
       "buildingName": "Viridian",
       "address": "1783 W 14th Ave, Vancouver, BC",
-      "checkedAt": "2026-09-02T23:08:58.074Z",
-      "effectiveStatus": "unknown",
-      "authority": "none",
-      "reason": "No decisive official signal.",
+      "checkedAt": "2026-09-03T01:35:02.180Z",
+      "effectiveStatus": "leasing",
+      "authority": "official_web",
+      "reason": "Official page contains current leasing/availability language.",
       "latestManualAnnouncement": null,
       "observations": [
         {
           "url": "https://www.rentviridian.com/",
-          "checkedAt": "2026-09-02T23:08:58.074Z",
+          "checkedAt": "2026-09-03T01:35:02.180Z",
           "httpStatus": 200,
           "usable": true,
           "negatives": [],
-          "positives": [],
+          "positives": [
+            "now renting"
+          ],
           "textSample": "Press Alt+1 for screen-reader mode, Alt+0 to cancel Accessibility Screen-Reader Guide, Feedback, and Issue Reporting | New window Viridian Logo AVAILABILITYAMENITIESLIFESTYLEARTWORKNEIGHBOURHOODGALLERYCONTACT US BOOK A TOUR The Fine Art Of City Living Now Renting Our Boutique Rental Homes A Well-Designed Life Starts Here South Granville has always been a neighbourhood designed to celebrate the good life. It’s a desirable locale that brings together Vancouver’s brightest and best in art, cuisine and design, tucked beneath trees planted generations ago. Viridian rises above the dappled green backdrop of West 14th and Burrard, offering stunning boutique one, two and three-bedroom rental homes. The experience is nothing short of exceptional, offering custom curated art, resort like amenities and designer suites to elevate your everyday living. A Picture Perfect Lifestyle Stylish Amenities Thoughtfully designed amenities to make city living calm, comfortable and convenient. LEARN MORE Elevated Lifestyle Experience an unparalleled rental experience, complete with a dedicated on-site team that elevates every aspect of your daily life. LEARN MORE Designer Suites Boutique rental suites that offer open-concept living, with an island kitchen and a terrace for outdoor living. LEARN MORE Stylish Amenities Thoughtfully designed amenities to make city living calm, comfortable and convenient. LEARN MORE Elevated Lifestyle Experience an unparalleled rental experience, complete with a dedicated on-site team that elevates every aspect of your daily life. LEARN MORE Designer Suites Boutique rental suites that offer open-concept living, with an island kitchen and a terrace for outdoor living. LEARN MORE Stylish Amenities Thoughtfully designed amenities to make city living calm, comfortable and convenient. LEARN MORE 1 2 3 Authentic and Eclectic Urban Living South Granville is home to the finest food and beverage, from the venerable Meinhardt’s to beloved bars, bistros and burgers. Culture is around every leafy corner. Your new home joins an island of calm in Vancouver, where storied lawn tennis and bowling clubs rub green shoulders with pretty pocket parks. And when mood strikes, the beach or downtown are just minutes away. EXPLORE THE NEIGHBOURHOOD Custom Designed Cabinetry With Warm or Cool Palettes Open-Concept Layouts Sweeping Views Custom Designed Cabinetry With Warm or Cool Palettes Floor-to-Ceiling Windows Fireside Co-Working and Media Lounge, with Private Dining Area P"
         },
         {
           "url": "https://www.rentcafe.com/apartments/bc/vancouver/viridian1/default.aspx",
-          "checkedAt": "2026-09-02T23:08:58.074Z",
+          "checkedAt": "2026-09-03T01:35:02.180Z",
           "httpStatus": 403,
           "usable": false
         }
@@ -238,7 +240,7 @@
       "id": "19-greenway",
       "buildingName": "19 on the Greenway",
       "address": "3619 Arbutus St, Vancouver, BC",
-      "checkedAt": "2026-09-02T23:08:58.074Z",
+      "checkedAt": "2026-09-03T01:35:02.180Z",
       "effectiveStatus": "unknown",
       "authority": "none",
       "reason": "No decisive official signal.",
@@ -246,7 +248,7 @@
       "observations": [
         {
           "url": "https://www.19otgreenway.com/floorplans",
-          "checkedAt": "2026-09-02T23:08:58.074Z",
+          "checkedAt": "2026-09-03T01:35:02.180Z",
           "httpStatus": 403,
           "usable": false
         }
@@ -256,7 +258,7 @@
       "id": "the-elms",
       "buildingName": "The Elms",
       "address": "5828 Granville St, Vancouver, BC",
-      "checkedAt": "2026-09-02T23:08:58.074Z",
+      "checkedAt": "2026-09-03T01:35:02.180Z",
       "effectiveStatus": "leasing",
       "authority": "official_web",
       "reason": "Official page contains current leasing/availability language.",
@@ -264,7 +266,7 @@
       "observations": [
         {
           "url": "https://stranddev.com/portfolio/theelms",
-          "checkedAt": "2026-09-02T23:08:58.074Z",
+          "checkedAt": "2026-09-03T01:35:02.180Z",
           "httpStatus": 200,
           "usable": true,
           "negatives": [],
@@ -275,7 +277,7 @@
         },
         {
           "url": "https://rentals.ca/vancouver/the-elms",
-          "checkedAt": "2026-09-02T23:08:58.074Z",
+          "checkedAt": "2026-09-03T01:35:02.180Z",
           "httpStatus": 403,
           "usable": false
         }
@@ -285,7 +287,7 @@
       "id": "the-dunbar",
       "buildingName": "The Dunbar",
       "address": "6019 Dunbar St, Vancouver, BC",
-      "checkedAt": "2026-09-02T23:08:58.074Z",
+      "checkedAt": "2026-09-03T01:35:02.180Z",
       "effectiveStatus": "leasing",
       "authority": "official_web",
       "reason": "Official page contains current leasing/availability language.",
@@ -293,7 +295,7 @@
       "observations": [
         {
           "url": "https://stranddev.com/portfolio/thedunbar",
-          "checkedAt": "2026-09-02T23:08:58.074Z",
+          "checkedAt": "2026-09-03T01:35:02.180Z",
           "httpStatus": 200,
           "usable": true,
           "negatives": [],
@@ -304,7 +306,7 @@
         },
         {
           "url": "https://rentals.ca/vancouver/the-dunbar",
-          "checkedAt": "2026-09-02T23:08:58.074Z",
+          "checkedAt": "2026-09-03T01:35:02.180Z",
           "httpStatus": 403,
           "usable": false
         }
