@@ -1,255 +1,62 @@
 {
-  "refreshedAt": "2026-09-03T18:47:58.879Z",
+  "refreshedAt": "2026-09-03T19:35:59.095Z",
   "mode": "candidate-only",
   "sourceHealth": {
     "rentalsca-kitsilano-2br": {
-      "checkedAt": "2026-09-03T18:47:58.879Z",
+      "checkedAt": "2026-09-03T19:35:59.095Z",
       "status": 200,
       "ok": true,
       "finalUrl": "https://rentals.ca/vancouver/kitsilano/all-apartments-all-houses/2-bedrooms"
     },
     "rentalsca-point-grey-2br": {
-      "checkedAt": "2026-09-03T18:47:58.879Z",
+      "checkedAt": "2026-09-03T19:35:59.095Z",
       "status": 200,
       "ok": true,
       "finalUrl": "https://rentals.ca/vancouver/west-point-grey/2-bedrooms"
     },
     "rentalsca-arbutus-2br": {
-      "checkedAt": "2026-09-03T18:47:58.879Z",
+      "checkedAt": "2026-09-03T19:35:59.095Z",
       "status": 200,
       "ok": true,
       "finalUrl": "https://rentals.ca/vancouver/arbutus-ridge/2-bedrooms"
     },
     "rentalsca-dunbar-2br": {
-      "checkedAt": "2026-09-03T18:47:58.879Z",
-      "status": 200,
-      "ok": true,
-      "finalUrl": "https://rentals.ca/vancouver/dunbar-southlands/2-bedrooms"
-    },
-    "rentalsca-quilchena-2br": {
-      "checkedAt": "2026-09-03T18:47:58.879Z",
-      "status": 404,
-      "ok": false,
-      "finalUrl": "https://rentals.ca/vancouver/quilchena/2-bedrooms"
-    },
-    "rentalsca-kitsilano-3br": {
-      "checkedAt": "2026-09-03T18:47:58.879Z",
-      "status": 200,
-      "ok": true,
-      "finalUrl": "https://rentals.ca/vancouver/kitsilano/3-bedrooms"
-    },
-    "rentalsca-kitsilano-4br": {
-      "checkedAt": "2026-09-03T18:47:58.879Z",
-      "status": 200,
-      "ok": true,
-      "finalUrl": "https://rentals.ca/vancouver/kitsilano/4-bedrooms"
-    },
-    "rentalsca-vancouver-3br": {
-      "checkedAt": "2026-09-03T18:47:58.879Z",
-      "status": 200,
-      "ok": true,
-      "finalUrl": "https://rentals.ca/vancouver/3-bedrooms"
-    },
-    "rentalsca-vancouver-4br": {
-      "checkedAt": "2026-09-03T18:47:58.879Z",
+      "checkedAt": "2026-09-03T19:35:59.095Z",
       "status": 429,
       "ok": false,
-      "finalUrl": "https://rentals.ca/vancouver/4-bedrooms?__cf_chl_rt_tk=UY_s9GcctaBQI15_o_cd4S7hTznh2mNCIG_S5kTKaRY-1788461298-1.0.1.1-5nCMqsRPjBDDebBhUyLRIK1uJ.zv1YAxrhNWuS3uMj4"
+      "finalUrl": "https://rentals.ca/vancouver/dunbar-southlands/2-bedrooms?__cf_chl_rt_tk=aWLf4A2DxbGiWdzg3kDehi_9Jh8u7cejLCIII47sjx8-1788464168-1.0.1.1-WqOvrjaop7fi4Kmk.0.6qcZLkO_puo50Wkj6wnY1fsA"
+    },
+    "rentalsca-quilchena-2br": {
+      "checkedAt": "2026-09-03T19:35:59.095Z",
+      "status": 429,
+      "ok": false,
+      "finalUrl": "https://rentals.ca/vancouver/quilchena/2-bedrooms?__cf_chl_rt_tk=0bsBktFhp0ZHPm1NUKC.BCCToR.220BE7XBc8vmyPKk-1788464168-1.0.1.1-pA2fgiYD5ITZV3IqF0D39Gjt6Axt8bCKWec8ywXLBVQ"
+    },
+    "rentalsca-kitsilano-3br": {
+      "checkedAt": "2026-09-03T19:35:59.095Z",
+      "status": 429,
+      "ok": false,
+      "finalUrl": "https://rentals.ca/vancouver/kitsilano/3-bedrooms?__cf_chl_rt_tk=uELKn8_XDRWk7QNesOZ0IEXOSevCUoKu1Eeh1Y0hMfI-1788464168-1.0.1.1-iv1.dg27vDznzSb9gveX9gwnbY_b0vygD9UKyYM.2pM"
+    },
+    "rentalsca-kitsilano-4br": {
+      "checkedAt": "2026-09-03T19:35:59.095Z",
+      "status": 429,
+      "ok": false,
+      "finalUrl": "https://rentals.ca/vancouver/kitsilano/4-bedrooms?__cf_chl_rt_tk=EdXsg3GKv_bgjACq9MpUX9GbUtAG9P6K.qnigrTQU3A-1788464168-1.0.1.1-bVA_ggjWH67AAmwhC9oL9orQdXcG89YOsF4cC30qY0Q"
+    },
+    "rentalsca-vancouver-3br": {
+      "checkedAt": "2026-09-03T19:35:59.095Z",
+      "status": 429,
+      "ok": false,
+      "finalUrl": "https://rentals.ca/vancouver/3-bedrooms?__cf_chl_rt_tk=Q0x292S6fUeawyVyjZOh2bo8eobe1f3fbmWmXUTfVow-1788464168-1.0.1.1-lH6AjBncL9EdkxZmCOepbaZvhWinFwNAWWIcNBT8PkE"
+    },
+    "rentalsca-vancouver-4br": {
+      "checkedAt": "2026-09-03T19:35:59.095Z",
+      "status": 429,
+      "ok": false,
+      "finalUrl": "https://rentals.ca/vancouver/4-bedrooms?__cf_chl_rt_tk=WmQiJ4n8NP.fHwaIEmL9lwy_t43pL77jJP1JAVruJsg-1788464168-1.0.1.1-OLgWTUuF02TSlJVjlltKM2E0V3W3kemDGuf2Isn9Vro"
     }
   },
-  "pages": [
-    {
-      "source": "Rentals.ca",
-      "url": "https://rentals.ca/vancouver/joyce-2",
-      "address": "5083 Joyce Street, Vancouver, British Columbia V5R 0M2",
-      "addressUnit": null,
-      "geo": {
-        "lat": 49.2388916,
-        "lng": -123.0317695
-      },
-      "targetArea": false,
-      "active": true,
-      "floorplans": [
-        {
-          "label": "2 Bedroom Apartments In Vancouver",
-          "unit": null,
-          "beds": 2,
-          "baths": null,
-          "sqft": null,
-          "rent": 2000,
-          "available": true
-        },
-        {
-          "label": "3 Bedroom Apartments In Vancouver",
-          "unit": null,
-          "beds": 3,
-          "baths": null,
-          "sqft": null,
-          "rent": 2000,
-          "available": true
-        },
-        {
-          "label": "4 Bedroom Apartments In Vancouver",
-          "unit": null,
-          "beds": 4,
-          "baths": null,
-          "sqft": null,
-          "rent": 2000,
-          "available": true
-        }
-      ],
-      "single": {
-        "rent": 2000,
-        "beds": 1,
-        "baths": null,
-        "sqft": null
-      },
-      "checkedAt": "2026-09-03T18:47:58.879Z"
-    },
-    {
-      "source": "Rentals.ca",
-      "url": "https://rentals.ca/vancouver/752-marine-drive",
-      "address": "723 Main St, Vancouver, British Columbia V7T 1A1",
-      "addressUnit": null,
-      "geo": {
-        "lat": 49.3267471,
-        "lng": -123.1357037
-      },
-      "targetArea": false,
-      "active": true,
-      "floorplans": [
-        {
-          "label": "2 Bedroom Apartments In Vancouver",
-          "unit": null,
-          "beds": 2,
-          "baths": null,
-          "sqft": null,
-          "rent": 2000,
-          "available": true
-        },
-        {
-          "label": "3 Bedroom Apartments In Vancouver",
-          "unit": null,
-          "beds": 3,
-          "baths": null,
-          "sqft": null,
-          "rent": 2000,
-          "available": true
-        },
-        {
-          "label": "4 Bedroom Apartments In Vancouver",
-          "unit": null,
-          "beds": 4,
-          "baths": null,
-          "sqft": null,
-          "rent": 2000,
-          "available": true
-        }
-      ],
-      "single": {
-        "rent": 2000,
-        "beds": 1,
-        "baths": null,
-        "sqft": null
-      },
-      "checkedAt": "2026-09-03T18:47:58.879Z"
-    },
-    {
-      "source": "Rentals.ca",
-      "url": "https://rentals.ca/vancouver/revolve",
-      "address": "3572 Glen Drive, Vancouver, British Columbia V5V 0J6",
-      "addressUnit": null,
-      "geo": {
-        "lat": 49.252952,
-        "lng": -123.081797
-      },
-      "targetArea": false,
-      "active": true,
-      "floorplans": [
-        {
-          "label": "2 Bedroom Apartments In Vancouver",
-          "unit": null,
-          "beds": 2,
-          "baths": null,
-          "sqft": null,
-          "rent": 2000,
-          "available": true
-        },
-        {
-          "label": "3 Bedroom Apartments In Vancouver",
-          "unit": null,
-          "beds": 3,
-          "baths": null,
-          "sqft": null,
-          "rent": 2000,
-          "available": true
-        },
-        {
-          "label": "4 Bedroom Apartments In Vancouver",
-          "unit": null,
-          "beds": 4,
-          "baths": null,
-          "sqft": null,
-          "rent": 2000,
-          "available": true
-        }
-      ],
-      "single": {
-        "rent": 2000,
-        "beds": 1,
-        "baths": null,
-        "sqft": null
-      },
-      "checkedAt": "2026-09-03T18:47:58.879Z"
-    },
-    {
-      "source": "Rentals.ca",
-      "url": "https://rentals.ca/vancouver/twin-lakes-townhomes",
-      "address": "3817 Princess Avenue, Vancouver, British Columbia V7N 2E5",
-      "addressUnit": "3701",
-      "geo": {
-        "lat": 49.2802555,
-        "lng": -123.0915442
-      },
-      "targetArea": false,
-      "active": true,
-      "floorplans": [
-        {
-          "label": "2 Bedroom Apartments In Vancouver",
-          "unit": null,
-          "beds": 2,
-          "baths": null,
-          "sqft": null,
-          "rent": 2000,
-          "available": true
-        },
-        {
-          "label": "3 Bedroom Apartments In Vancouver",
-          "unit": null,
-          "beds": 3,
-          "baths": null,
-          "sqft": null,
-          "rent": 2000,
-          "available": true
-        },
-        {
-          "label": "4 Bedroom Apartments In Vancouver",
-          "unit": null,
-          "beds": 4,
-          "baths": null,
-          "sqft": null,
-          "rent": 2000,
-          "available": true
-        }
-      ],
-      "single": {
-        "rent": 2000,
-        "beds": 1,
-        "baths": null,
-        "sqft": null
-      },
-      "checkedAt": "2026-09-03T18:47:58.879Z"
-    }
-  ],
+  "pages": [],
   "inventories": []
 }
