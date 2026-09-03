@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-09-03T23:40:09.165Z",
+  "refreshedAt": "2026-09-03T23:52:46.094Z",
   "listings": {
     "arbutus-residences-315-2den-900": {
       "cached": 3,
@@ -47,7 +47,12 @@
       "cached": 3,
       "preserved": 3,
       "downloaded": 0,
-      "failures": [],
+      "failures": [
+        {
+          "url": "https://admin.warringtonresidential.com/wp-content/uploads/2025/03/19-on-the-greenway-2.jpg",
+          "error": "fetch failed"
+        }
+      ],
       "photoPageUrl": "https://warringtonresidential.com/properties/19-on-the-greenway/"
     },
     "waterloo-2477-zumper": {
@@ -445,8 +450,8 @@
     },
     "mls-r3151372": {
       "cached": 3,
-      "preserved": 0,
-      "downloaded": 3,
+      "preserved": 3,
+      "downloaded": 0,
       "failures": [
         {
           "url": "https://media.realtylink.org/images/consumersite/property/263172999/f30edfe3c49c4660ba9111ae7e98814b.jpeg?width=320&height=240&fit=cover",
@@ -462,13 +467,27 @@
         }
       ],
       "photoPageUrl": "https://realtylink.org/en/house~for-rent~vancouver/263172999"
+    },
+    "mls-r3158179": {
+      "cached": 5,
+      "preserved": 0,
+      "downloaded": 5,
+      "failures": [],
+      "photoPageUrl": "https://realtylink.org/en/apartment~for-rent~vancouver/263179806"
+    },
+    "mls-r2907080": {
+      "cached": 5,
+      "preserved": 0,
+      "downloaded": 5,
+      "failures": [],
+      "photoPageUrl": "https://realtylink.org/en/house~for-rent~vancouver/262928707"
     }
   },
   "totals": {
-    "sourceListings": 61,
-    "cachedListings": 61,
-    "downloaded": 3,
-    "failed": 8,
-    "preserved": 286
+    "sourceListings": 63,
+    "cachedListings": 63,
+    "downloaded": 10,
+    "failed": 9,
+    "preserved": 289
   }
 }
