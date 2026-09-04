@@ -1,379 +1,62 @@
 {
-  "refreshedAt": "2026-09-04T00:20:48.894Z",
+  "refreshedAt": "2026-09-04T01:41:16.568Z",
   "mode": "candidate-only",
   "sourceHealth": {
     "rentalsca-kitsilano-2br": {
-      "checkedAt": "2026-09-04T00:20:48.894Z",
+      "checkedAt": "2026-09-04T01:41:16.568Z",
       "status": 200,
       "ok": true,
       "finalUrl": "https://rentals.ca/vancouver/kitsilano/all-apartments-all-houses/2-bedrooms"
     },
     "rentalsca-point-grey-2br": {
-      "checkedAt": "2026-09-04T00:20:48.894Z",
+      "checkedAt": "2026-09-04T01:41:16.568Z",
       "status": 200,
       "ok": true,
       "finalUrl": "https://rentals.ca/vancouver/west-point-grey/2-bedrooms"
     },
     "rentalsca-arbutus-2br": {
-      "checkedAt": "2026-09-04T00:20:48.894Z",
-      "status": 200,
-      "ok": true,
-      "finalUrl": "https://rentals.ca/vancouver/arbutus-ridge/2-bedrooms"
+      "checkedAt": "2026-09-04T01:41:16.568Z",
+      "status": 429,
+      "ok": false,
+      "finalUrl": "https://rentals.ca/vancouver/arbutus-ridge/2-bedrooms?__cf_chl_rt_tk=M1srK51.1ow.jwXGZKtgWdf7dUlf8WPgb0eev70OaO0-1788486082-1.0.1.1-dX7bAGEz8UyTWh2f2gM3m3XpZm8UtBaqxGFuCcofl9Y"
     },
     "rentalsca-dunbar-2br": {
-      "checkedAt": "2026-09-04T00:20:48.894Z",
-      "status": 200,
-      "ok": true,
-      "finalUrl": "https://rentals.ca/vancouver/dunbar-southlands/2-bedrooms"
+      "checkedAt": "2026-09-04T01:41:16.568Z",
+      "status": 429,
+      "ok": false,
+      "finalUrl": "https://rentals.ca/vancouver/dunbar-southlands/2-bedrooms?__cf_chl_rt_tk=yaES.6swm.OucDnN2ZxY43nmHlFm0EezxFOWWSveGV8-1788486082-1.0.1.1-8LA1CJ2xcNyDl1Cui03q.j_sCyMRpDPSKMHt8x6MelM"
     },
     "rentalsca-quilchena-2br": {
-      "checkedAt": "2026-09-04T00:20:48.894Z",
-      "status": 404,
+      "checkedAt": "2026-09-04T01:41:16.568Z",
+      "status": 429,
       "ok": false,
-      "finalUrl": "https://rentals.ca/vancouver/quilchena/2-bedrooms"
+      "finalUrl": "https://rentals.ca/vancouver/quilchena/2-bedrooms?__cf_chl_rt_tk=m6yO1VhZt9ARjhZy2tc4uYvh0HtL_JZ.4wzO0OxXrYs-1788486082-1.0.1.1-hyG69i6Sicvxvil1ofCpLLbwrZH7K05h_en.E8qwfj8"
     },
     "rentalsca-kitsilano-3br": {
-      "checkedAt": "2026-09-04T00:20:48.894Z",
-      "status": 200,
-      "ok": true,
-      "finalUrl": "https://rentals.ca/vancouver/kitsilano/3-bedrooms"
+      "checkedAt": "2026-09-04T01:41:16.568Z",
+      "status": 429,
+      "ok": false,
+      "finalUrl": "https://rentals.ca/vancouver/kitsilano/3-bedrooms?__cf_chl_rt_tk=jLv5wPGKtyiUtsRkbUZOdPC0.YVKijO486Y2bt3oNsY-1788486082-1.0.1.1-QO8ZFDLl0G.08Nw7G.uOU0tgQxMIloCwEVWcbBa8zs0"
     },
     "rentalsca-kitsilano-4br": {
-      "checkedAt": "2026-09-04T00:20:48.894Z",
-      "status": 200,
-      "ok": true,
-      "finalUrl": "https://rentals.ca/vancouver/kitsilano/4-bedrooms"
+      "checkedAt": "2026-09-04T01:41:16.568Z",
+      "status": 429,
+      "ok": false,
+      "finalUrl": "https://rentals.ca/vancouver/kitsilano/4-bedrooms?__cf_chl_rt_tk=A7mBGPQ.e9mtBmS72Q5IhGex.OG4M9jipFneP1xYjPE-1788486082-1.0.1.1-.poSTWO594qG0fCvMYsrw4RcJptCCclpJbWJDgeVyHY"
     },
     "rentalsca-vancouver-3br": {
-      "checkedAt": "2026-09-04T00:20:48.894Z",
-      "status": 200,
-      "ok": true,
-      "finalUrl": "https://rentals.ca/vancouver/3-bedrooms"
+      "checkedAt": "2026-09-04T01:41:16.568Z",
+      "status": 429,
+      "ok": false,
+      "finalUrl": "https://rentals.ca/vancouver/3-bedrooms?__cf_chl_rt_tk=mJY16pzNySwd0xu6hWT5ZGoH.OGOYZ14VNOw5.NZdpY-1788486082-1.0.1.1-cVvjpBdu0rRabAG3HiQ98qpkjb8YN8KonFfgzenvAgA"
     },
     "rentalsca-vancouver-4br": {
-      "checkedAt": "2026-09-04T00:20:48.894Z",
-      "status": 200,
-      "ok": true,
-      "finalUrl": "https://rentals.ca/vancouver/4-bedrooms"
+      "checkedAt": "2026-09-04T01:41:16.568Z",
+      "status": 429,
+      "ok": false,
+      "finalUrl": "https://rentals.ca/vancouver/4-bedrooms?__cf_chl_rt_tk=TQNlUA6tPKsGTCWWhj8sZYfDnJJyLNEm2_X2jUUVhbc-1788486083-1.0.1.1-QEvH7c1aXqdxeZQ0kNz2hzcAbm22c5c7lLaFwacd6K8"
     }
   },
-  "pages": [
-    {
-      "source": "Rentals.ca",
-      "url": "https://rentals.ca/vancouver/3664-west-2nd-avenue-3",
-      "address": "3664 West 2nd Avenue, Vancouver, British Columbia V6R 1J7",
-      "addressUnit": null,
-      "geo": {
-        "lat": 49.2701996,
-        "lng": -123.1850565
-      },
-      "targetArea": true,
-      "active": true,
-      "floorplans": [
-        {
-          "label": "2 Bedroom Apartments In Vancouver",
-          "unit": null,
-          "beds": 2,
-          "baths": null,
-          "sqft": null,
-          "rent": 2000,
-          "available": true
-        },
-        {
-          "label": "3 Bedroom Apartments In Vancouver",
-          "unit": null,
-          "beds": 3,
-          "baths": null,
-          "sqft": null,
-          "rent": 2000,
-          "available": true
-        },
-        {
-          "label": "4 Bedroom Apartments In Vancouver",
-          "unit": null,
-          "beds": 4,
-          "baths": null,
-          "sqft": null,
-          "rent": 2000,
-          "available": true
-        }
-      ],
-      "single": {
-        "rent": 2300,
-        "beds": 1,
-        "baths": null,
-        "sqft": null
-      },
-      "checkedAt": "2026-09-04T00:20:48.894Z"
-    },
-    {
-      "source": "Rentals.ca",
-      "url": "https://rentals.ca/vancouver/2490-stephens-street-2",
-      "address": "2490 Stephens Street, Vancouver, British Columbia V6K 3W9",
-      "addressUnit": null,
-      "geo": {
-        "lat": 49.2642717,
-        "lng": -123.1661854
-      },
-      "targetArea": true,
-      "active": true,
-      "floorplans": [
-        {
-          "label": "2 Bedroom Apartments In Vancouver",
-          "unit": null,
-          "beds": 2,
-          "baths": null,
-          "sqft": null,
-          "rent": 2000,
-          "available": true
-        },
-        {
-          "label": "3 Bedroom Apartments In Vancouver",
-          "unit": null,
-          "beds": 3,
-          "baths": null,
-          "sqft": null,
-          "rent": 2000,
-          "available": true
-        },
-        {
-          "label": "4 Bedroom Apartments In Vancouver",
-          "unit": null,
-          "beds": 4,
-          "baths": null,
-          "sqft": null,
-          "rent": 2000,
-          "available": true
-        }
-      ],
-      "single": {
-        "rent": null,
-        "beds": 1,
-        "baths": null,
-        "sqft": null
-      },
-      "checkedAt": "2026-09-04T00:20:48.894Z"
-    },
-    {
-      "source": "Rentals.ca",
-      "url": "https://rentals.ca/vancouver/1328-maple-street",
-      "address": "1328 Maple Street, Vancouver, British Columbia V6J 3R9",
-      "addressUnit": null,
-      "geo": {
-        "lat": 49.2740149,
-        "lng": -123.1498775
-      },
-      "targetArea": true,
-      "active": true,
-      "floorplans": [
-        {
-          "label": "2 Bedroom Apartments In Vancouver",
-          "unit": null,
-          "beds": 2,
-          "baths": null,
-          "sqft": null,
-          "rent": 2000,
-          "available": true
-        },
-        {
-          "label": "3 Bedroom Apartments In Vancouver",
-          "unit": null,
-          "beds": 3,
-          "baths": null,
-          "sqft": null,
-          "rent": 2000,
-          "available": true
-        },
-        {
-          "label": "4 Bedroom Apartments In Vancouver",
-          "unit": null,
-          "beds": 4,
-          "baths": null,
-          "sqft": null,
-          "rent": 2000,
-          "available": true
-        }
-      ],
-      "single": {
-        "rent": 2000,
-        "beds": 1,
-        "baths": 2,
-        "sqft": 500
-      },
-      "checkedAt": "2026-09-04T00:20:48.894Z"
-    }
-  ],
-  "inventories": [
-    {
-      "source": "Rentals.ca",
-      "url": "https://rentals.ca/vancouver/3664-west-2nd-avenue-3",
-      "address": "3664 West 2nd Avenue, Vancouver, British Columbia V6R 1J7",
-      "unit": null,
-      "floorplan": "2 Bedroom Apartments In Vancouver",
-      "identityKey": "3664 w 2nd ave::floorplan:2 bedroom apartments in vancouver",
-      "rent": 2000,
-      "bedrooms": 2,
-      "bathrooms": null,
-      "sqft": null,
-      "geo": {
-        "lat": 49.2701996,
-        "lng": -123.1850565
-      },
-      "active": true,
-      "checkedAt": "2026-09-04T00:20:48.894Z",
-      "publishable": false
-    },
-    {
-      "source": "Rentals.ca",
-      "url": "https://rentals.ca/vancouver/3664-west-2nd-avenue-3",
-      "address": "3664 West 2nd Avenue, Vancouver, British Columbia V6R 1J7",
-      "unit": null,
-      "floorplan": "3 Bedroom Apartments In Vancouver",
-      "identityKey": "3664 w 2nd ave::floorplan:3 bedroom apartments in vancouver",
-      "rent": 2000,
-      "bedrooms": 3,
-      "bathrooms": null,
-      "sqft": null,
-      "geo": {
-        "lat": 49.2701996,
-        "lng": -123.1850565
-      },
-      "active": true,
-      "checkedAt": "2026-09-04T00:20:48.894Z",
-      "publishable": false
-    },
-    {
-      "source": "Rentals.ca",
-      "url": "https://rentals.ca/vancouver/3664-west-2nd-avenue-3",
-      "address": "3664 West 2nd Avenue, Vancouver, British Columbia V6R 1J7",
-      "unit": null,
-      "floorplan": "4 Bedroom Apartments In Vancouver",
-      "identityKey": "3664 w 2nd ave::floorplan:4 bedroom apartments in vancouver",
-      "rent": 2000,
-      "bedrooms": 4,
-      "bathrooms": null,
-      "sqft": null,
-      "geo": {
-        "lat": 49.2701996,
-        "lng": -123.1850565
-      },
-      "active": true,
-      "checkedAt": "2026-09-04T00:20:48.894Z",
-      "publishable": false
-    },
-    {
-      "source": "Rentals.ca",
-      "url": "https://rentals.ca/vancouver/2490-stephens-street-2",
-      "address": "2490 Stephens Street, Vancouver, British Columbia V6K 3W9",
-      "unit": null,
-      "floorplan": "2 Bedroom Apartments In Vancouver",
-      "identityKey": "2490 stephens st::floorplan:2 bedroom apartments in vancouver",
-      "rent": 2000,
-      "bedrooms": 2,
-      "bathrooms": null,
-      "sqft": null,
-      "geo": {
-        "lat": 49.2642717,
-        "lng": -123.1661854
-      },
-      "active": true,
-      "checkedAt": "2026-09-04T00:20:48.894Z",
-      "publishable": false
-    },
-    {
-      "source": "Rentals.ca",
-      "url": "https://rentals.ca/vancouver/2490-stephens-street-2",
-      "address": "2490 Stephens Street, Vancouver, British Columbia V6K 3W9",
-      "unit": null,
-      "floorplan": "3 Bedroom Apartments In Vancouver",
-      "identityKey": "2490 stephens st::floorplan:3 bedroom apartments in vancouver",
-      "rent": 2000,
-      "bedrooms": 3,
-      "bathrooms": null,
-      "sqft": null,
-      "geo": {
-        "lat": 49.2642717,
-        "lng": -123.1661854
-      },
-      "active": true,
-      "checkedAt": "2026-09-04T00:20:48.894Z",
-      "publishable": false
-    },
-    {
-      "source": "Rentals.ca",
-      "url": "https://rentals.ca/vancouver/2490-stephens-street-2",
-      "address": "2490 Stephens Street, Vancouver, British Columbia V6K 3W9",
-      "unit": null,
-      "floorplan": "4 Bedroom Apartments In Vancouver",
-      "identityKey": "2490 stephens st::floorplan:4 bedroom apartments in vancouver",
-      "rent": 2000,
-      "bedrooms": 4,
-      "bathrooms": null,
-      "sqft": null,
-      "geo": {
-        "lat": 49.2642717,
-        "lng": -123.1661854
-      },
-      "active": true,
-      "checkedAt": "2026-09-04T00:20:48.894Z",
-      "publishable": false
-    },
-    {
-      "source": "Rentals.ca",
-      "url": "https://rentals.ca/vancouver/1328-maple-street",
-      "address": "1328 Maple Street, Vancouver, British Columbia V6J 3R9",
-      "unit": null,
-      "floorplan": "2 Bedroom Apartments In Vancouver",
-      "identityKey": "1328 maple st::floorplan:2 bedroom apartments in vancouver",
-      "rent": 2000,
-      "bedrooms": 2,
-      "bathrooms": null,
-      "sqft": null,
-      "geo": {
-        "lat": 49.2740149,
-        "lng": -123.1498775
-      },
-      "active": true,
-      "checkedAt": "2026-09-04T00:20:48.894Z",
-      "publishable": false
-    },
-    {
-      "source": "Rentals.ca",
-      "url": "https://rentals.ca/vancouver/1328-maple-street",
-      "address": "1328 Maple Street, Vancouver, British Columbia V6J 3R9",
-      "unit": null,
-      "floorplan": "3 Bedroom Apartments In Vancouver",
-      "identityKey": "1328 maple st::floorplan:3 bedroom apartments in vancouver",
-      "rent": 2000,
-      "bedrooms": 3,
-      "bathrooms": null,
-      "sqft": null,
-      "geo": {
-        "lat": 49.2740149,
-        "lng": -123.1498775
-      },
-      "active": true,
-      "checkedAt": "2026-09-04T00:20:48.894Z",
-      "publishable": false
-    },
-    {
-      "source": "Rentals.ca",
-      "url": "https://rentals.ca/vancouver/1328-maple-street",
-      "address": "1328 Maple Street, Vancouver, British Columbia V6J 3R9",
-      "unit": null,
-      "floorplan": "4 Bedroom Apartments In Vancouver",
-      "identityKey": "1328 maple st::floorplan:4 bedroom apartments in vancouver",
-      "rent": 2000,
-      "bedrooms": 4,
-      "bathrooms": null,
-      "sqft": null,
-      "geo": {
-        "lat": 49.2740149,
-        "lng": -123.1498775
-      },
-      "active": true,
-      "checkedAt": "2026-09-04T00:20:48.894Z",
-      "publishable": false
-    }
-  ]
+  "pages": [],
+  "inventories": []
 }

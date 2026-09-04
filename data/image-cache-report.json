@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-09-04T00:23:20.260Z",
+  "refreshedAt": "2026-09-04T01:43:31.864Z",
   "listings": {
     "arbutus-residences-315-2den-900": {
       "cached": 3,
@@ -251,7 +251,7 @@
       "preserved": 5,
       "downloaded": 0,
       "failures": [],
-      "photoPageUrl": "https://www.zumper.com/address/4533-w-16th-ave-vancouver-bc-v6r-3e8-can"
+      "photoPageUrl": "https://realtylink.org/en/house~for-rent~vancouver/263181186"
     },
     "zumper-9bc484458739": {
       "cached": 5,
@@ -483,12 +483,19 @@
       "downloaded": 0,
       "failures": [],
       "photoPageUrl": "https://realtylink.org/en/house~for-rent~vancouver/263166962"
+    },
+    "mls-r3159579": {
+      "cached": 5,
+      "preserved": 0,
+      "downloaded": 5,
+      "failures": [],
+      "photoPageUrl": "https://realtylink.org/en/house~for-rent~vancouver/263181206"
     }
   },
   "totals": {
-    "sourceListings": 64,
-    "cachedListings": 64,
-    "downloaded": 0,
+    "sourceListings": 65,
+    "cachedListings": 65,
+    "downloaded": 5,
     "failed": 8,
     "preserved": 304
   }
