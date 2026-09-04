@@ -1,12 +1,12 @@
 {
-  "refreshedAt": "2026-09-04T05:24:57.815Z",
+  "refreshedAt": "2026-09-04T05:45:27.120Z",
   "policy": "Fresh explicit official negative announcements override older official website leasing language and all marketplace evidence. Official positive status alone does not prove a specific unit is available.",
   "projects": [
     {
       "id": "arbutus-terrace",
       "buildingName": "Arbutus Terrace",
       "address": "3205 Arbutus St, Vancouver, BC",
-      "checkedAt": "2026-09-04T05:24:57.815Z",
+      "checkedAt": "2026-09-04T05:45:27.120Z",
       "effectiveStatus": "fully_leased",
       "authority": "official_social_post",
       "reason": "Strand official Facebook post states Arbutus Terrace is now fully leased.",
@@ -19,7 +19,7 @@
       "observations": [
         {
           "url": "https://stranddev.com/portfolio/arbutusterrace-rental",
-          "checkedAt": "2026-09-04T05:24:57.815Z",
+          "checkedAt": "2026-09-04T05:45:27.120Z",
           "httpStatus": 200,
           "usable": true,
           "negatives": [],
@@ -31,7 +31,7 @@
         },
         {
           "url": "https://stranddev.com/the-westside-collection",
-          "checkedAt": "2026-09-04T05:24:57.815Z",
+          "checkedAt": "2026-09-04T05:45:27.120Z",
           "httpStatus": 200,
           "usable": true,
           "negatives": [],
@@ -46,7 +46,7 @@
       "id": "arbutus-residences",
       "buildingName": "Arbutus Residences",
       "address": "2139 Lahb Ave, Vancouver, BC",
-      "checkedAt": "2026-09-04T05:24:57.815Z",
+      "checkedAt": "2026-09-04T05:45:27.120Z",
       "effectiveStatus": "leasing",
       "authority": "official_web",
       "reason": "Official page contains current leasing/availability language.",
@@ -54,7 +54,7 @@
       "observations": [
         {
           "url": "https://arbutusresidences.com/contact/",
-          "checkedAt": "2026-09-04T05:24:57.815Z",
+          "checkedAt": "2026-09-04T05:45:27.120Z",
           "httpStatus": 200,
           "usable": true,
           "negatives": [],
@@ -66,7 +66,7 @@
         },
         {
           "url": "https://arbutusresidences2.medianation.ca/virtual-tour/",
-          "checkedAt": "2026-09-04T05:24:57.815Z",
+          "checkedAt": "2026-09-04T05:45:27.120Z",
           "httpStatus": 200,
           "usable": true,
           "negatives": [],
@@ -77,7 +77,7 @@
         },
         {
           "url": "https://www.rentfaster.ca/properties/2139-lahb-ave-vancouver-454186",
-          "checkedAt": "2026-09-04T05:24:57.815Z",
+          "checkedAt": "2026-09-04T05:45:27.120Z",
           "httpStatus": 403,
           "usable": false
         }
@@ -87,7 +87,7 @@
       "id": "the-raven",
       "buildingName": "The Raven",
       "address": "3709 W Broadway, Vancouver, BC",
-      "checkedAt": "2026-09-04T05:24:57.815Z",
+      "checkedAt": "2026-09-04T05:45:27.120Z",
       "effectiveStatus": "leasing",
       "authority": "official_web",
       "reason": "Official page contains current leasing/availability language.",
@@ -95,7 +95,7 @@
       "observations": [
         {
           "url": "https://living.westbankcorp.com/property/the-raven",
-          "checkedAt": "2026-09-04T05:24:57.815Z",
+          "checkedAt": "2026-09-04T05:45:27.120Z",
           "httpStatus": 200,
           "usable": true,
           "negatives": [],
@@ -107,7 +107,7 @@
         },
         {
           "url": "https://living.westbankcorp.com/",
-          "checkedAt": "2026-09-04T05:24:57.815Z",
+          "checkedAt": "2026-09-04T05:45:27.120Z",
           "httpStatus": 200,
           "usable": true,
           "negatives": [],
@@ -122,7 +122,7 @@
       "id": "raphael",
       "buildingName": "Raphael",
       "address": "3668 W 10th Ave, Vancouver, BC",
-      "checkedAt": "2026-09-04T05:24:57.815Z",
+      "checkedAt": "2026-09-04T05:45:27.120Z",
       "effectiveStatus": "fully_leased",
       "authority": "official_web",
       "reason": "Official page contains a strong negative leasing signal.",
@@ -130,7 +130,7 @@
       "observations": [
         {
           "url": "https://www.uniqueaccommodations.com/buildings/the-raphael/",
-          "checkedAt": "2026-09-04T05:24:57.815Z",
+          "checkedAt": "2026-09-04T05:45:27.120Z",
           "httpStatus": 200,
           "usable": true,
           "negatives": [
@@ -148,7 +148,7 @@
       "id": "kits-walk",
       "buildingName": "Kits Walk",
       "address": "2075 W 12th Ave, Vancouver, BC",
-      "checkedAt": "2026-09-04T05:24:57.815Z",
+      "checkedAt": "2026-09-04T05:45:27.120Z",
       "effectiveStatus": "leasing",
       "authority": "official_web",
       "reason": "Official page contains current leasing/availability language.",
@@ -156,13 +156,13 @@
       "observations": [
         {
           "url": "https://www.kitswalkleasing.com/floorplans",
-          "checkedAt": "2026-09-04T05:24:57.815Z",
+          "checkedAt": "2026-09-04T05:45:27.120Z",
           "httpStatus": 403,
           "usable": false
         },
         {
           "url": "https://stranddev.com/portfolio/kitswalk",
-          "checkedAt": "2026-09-04T05:24:57.815Z",
+          "checkedAt": "2026-09-04T05:45:27.120Z",
           "httpStatus": 200,
           "usable": true,
           "negatives": [],
@@ -177,15 +177,15 @@
       "id": "larchway-gardens",
       "buildingName": "Larchway Gardens",
       "address": "2475 W Broadway, Vancouver, BC",
-      "checkedAt": "2026-09-04T05:24:57.815Z",
-      "effectiveStatus": "fully_leased",
+      "checkedAt": "2026-09-04T05:45:27.120Z",
+      "effectiveStatus": "leasing",
       "authority": "official_web",
-      "reason": "Official page contains a strong negative leasing signal.",
+      "reason": "Official page contains current leasing/availability language.",
       "latestManualAnnouncement": null,
       "observations": [
         {
           "url": "https://quadrealresidential.com/vancouver/larchway-gardens/",
-          "checkedAt": "2026-09-04T05:24:57.815Z",
+          "checkedAt": "2026-09-04T05:45:27.120Z",
           "httpStatus": 200,
           "usable": true,
           "negatives": [],
@@ -196,16 +196,14 @@
         },
         {
           "url": "https://quadrealresidential.com/vancouver/larchway-gardens/contact/",
-          "checkedAt": "2026-09-04T05:24:57.815Z",
+          "checkedAt": "2026-09-04T05:45:27.120Z",
           "httpStatus": 200,
           "usable": true,
-          "negatives": [
-            "all units are rented"
-          ],
+          "negatives": [],
           "positives": [
             "book a tour"
           ],
-          "textSample": "Skip to content Masterplan Communities Overview Assembly Park Bayview Village Cloverdale Maplewood Oakridge Park TriCity Central Residential Portfolio All Communities Calgary Cambridge Hamilton Kitchener Greater Toronto Greater Vancouver About News & Insights Contact (604) 913-7366 QuadReal CONNECT Floorplans Amenities Neighbourhood Gallery Contact Book a Tour LARCHWAY GARDENS > CONTACT Contact Larchway Gardens 2475 West Broadway Street Vancouver, BC V6K 2E8 (604) 913-7366 © Mapbox © OpenStreetMap Improve this map Hold Ctrl + scroll to zoom Get in touch FIRST NAME LAST NAME EMAIL PHONE NUMBER MOVE-IN DATE LAYOUT Select Layout 1 Bedroom 2 Bedrooms DO YOU HAVE ANY PETS? Select Pets No Pets Cat(s) Dog(s) Other NOTES By entering my contact information and clicking “SUBMIT”, I consent to be used by QuadReal Property Group Limited Partnership (Park Place, 666 Burrard Street, Suite 800, Vancouver, BC V6C 2X8) (“QuadReal”) for the purpose of responding to my inquiry and to send me commercial electronic messages, including emails and text messages, with news and information regarding its homes, communities, related services and general marketing information. Message frequency varies. Message, carrier and data rates may apply. I may withdraw my consent at any time by following the unsubscribe mechanism set out in the applicable electronic message. I can view QuadReal’s Privacy Policy here for more information on how QuadReal may use my personal information and contact them directly at privacy@quadreal.com for more details. Submit Address 2475 West Broadway Street Vancouver, BC V6K 2E8 (604) 913-7366 Floorplans Amenities Neighbourhood Gallery Contact All Units Are Rented Visit Dunway Court for more available units to rent! Rent with us Own with us Masterplan Communities Residential Portfolio About News & Insights Contact Stay up to date Join our mailing list to receive future updates, news, and insights. Subscribe QuadReal CONNECT © 2026 QuadReal and the Quadrant Logo are trademarks of QuadReal Property Group Limited Partnership. All rights reserved. Illustrations are Artists' concept. Prices and specifications are subject to change without notice. E.&O.E. QuadReal Residential Properties UK Accessibility Legal"
+          "textSample": "Skip to content Masterplan Communities Overview Assembly Park Bayview Village Cloverdale Maplewood Oakridge Park TriCity Central Residential Portfolio All Communities Calgary Cambridge Hamilton Kitchener Greater Toronto Greater Vancouver About News & Insights Contact (604) 913-7366 QuadReal CONNECT Floorplans Amenities Neighbourhood Gallery Contact Book a Tour LARCHWAY GARDENS > CONTACT Contact Larchway Gardens 2475 West Broadway Street Vancouver, BC V6K 2E8 (604) 913-7366 © Mapbox © OpenStreetMap Improve this map Hold Ctrl + scroll to zoom Get in touch FIRST NAME LAST NAME EMAIL PHONE NUMBER MOVE-IN DATE LAYOUT Select Layout 1 Bedroom 2 Bedrooms DO YOU HAVE ANY PETS? Select Pets No Pets Cat(s) Dog(s) Other NOTES By entering my contact information and clicking “SUBMIT”, I consent to be used by QuadReal Property Group Limited Partnership (Park Place, 666 Burrard Street, Suite 800, Vancouver, BC V6C 2X8) (“QuadReal”) for the purpose of responding to my inquiry and to send me commercial electronic messages, including emails and text messages, with news and information regarding its homes, communities, related services and general marketing information. Message frequency varies. Message, carrier and data rates may apply. I may withdraw my consent at any time by following the unsubscribe mechanism set out in the applicable electronic message. I can view QuadReal’s Privacy Policy here for more information on how QuadReal may use my personal information and contact them directly at privacy@quadreal.com for more details. Submit Address 2475 West Broadway Street Vancouver, BC V6K 2E8 (604) 913-7366 Floorplans Amenities Neighbourhood Gallery Contact Rent with us Own with us Masterplan Communities Residential Portfolio About News & Insights Contact Stay up to date Join our mailing list to receive future updates, news, and insights. Subscribe QuadReal CONNECT © 2026 QuadReal and the Quadrant Logo are trademarks of QuadReal Property Group Limited Partnership. All rights reserved. Illustrations are Artists' concept. Prices and specifications are subject to change without notice. E.&O.E. QuadReal Residential Properties UK Accessibility Legal"
         }
       ]
     },
@@ -213,7 +211,7 @@
       "id": "viridian",
       "buildingName": "Viridian",
       "address": "1783 W 14th Ave, Vancouver, BC",
-      "checkedAt": "2026-09-04T05:24:57.815Z",
+      "checkedAt": "2026-09-04T05:45:27.120Z",
       "effectiveStatus": "leasing",
       "authority": "official_web",
       "reason": "Official page contains current leasing/availability language.",
@@ -221,7 +219,7 @@
       "observations": [
         {
           "url": "https://www.rentviridian.com/",
-          "checkedAt": "2026-09-04T05:24:57.815Z",
+          "checkedAt": "2026-09-04T05:45:27.120Z",
           "httpStatus": 200,
           "usable": true,
           "negatives": [],
@@ -232,7 +230,7 @@
         },
         {
           "url": "https://www.rentcafe.com/apartments/bc/vancouver/viridian1/default.aspx",
-          "checkedAt": "2026-09-04T05:24:57.815Z",
+          "checkedAt": "2026-09-04T05:45:27.120Z",
           "httpStatus": 403,
           "usable": false
         }
@@ -242,7 +240,7 @@
       "id": "19-greenway",
       "buildingName": "19 on the Greenway",
       "address": "3619 Arbutus St, Vancouver, BC",
-      "checkedAt": "2026-09-04T05:24:57.815Z",
+      "checkedAt": "2026-09-04T05:45:27.120Z",
       "effectiveStatus": "unknown",
       "authority": "none",
       "reason": "No decisive official signal.",
@@ -250,7 +248,7 @@
       "observations": [
         {
           "url": "https://www.19otgreenway.com/floorplans",
-          "checkedAt": "2026-09-04T05:24:57.815Z",
+          "checkedAt": "2026-09-04T05:45:27.120Z",
           "httpStatus": 403,
           "usable": false
         }
@@ -260,7 +258,7 @@
       "id": "the-elms",
       "buildingName": "The Elms",
       "address": "5828 Granville St, Vancouver, BC",
-      "checkedAt": "2026-09-04T05:24:57.815Z",
+      "checkedAt": "2026-09-04T05:45:27.120Z",
       "effectiveStatus": "leasing",
       "authority": "official_web",
       "reason": "Official page contains current leasing/availability language.",
@@ -268,7 +266,7 @@
       "observations": [
         {
           "url": "https://stranddev.com/portfolio/theelms",
-          "checkedAt": "2026-09-04T05:24:57.815Z",
+          "checkedAt": "2026-09-04T05:45:27.120Z",
           "httpStatus": 200,
           "usable": true,
           "negatives": [],
@@ -279,7 +277,7 @@
         },
         {
           "url": "https://rentals.ca/vancouver/the-elms",
-          "checkedAt": "2026-09-04T05:24:57.815Z",
+          "checkedAt": "2026-09-04T05:45:27.120Z",
           "httpStatus": 403,
           "usable": false
         }
@@ -289,7 +287,7 @@
       "id": "the-dunbar",
       "buildingName": "The Dunbar",
       "address": "6019 Dunbar St, Vancouver, BC",
-      "checkedAt": "2026-09-04T05:24:57.815Z",
+      "checkedAt": "2026-09-04T05:45:27.120Z",
       "effectiveStatus": "leasing",
       "authority": "official_web",
       "reason": "Official page contains current leasing/availability language.",
@@ -297,7 +295,7 @@
       "observations": [
         {
           "url": "https://stranddev.com/portfolio/thedunbar",
-          "checkedAt": "2026-09-04T05:24:57.815Z",
+          "checkedAt": "2026-09-04T05:45:27.120Z",
           "httpStatus": 200,
           "usable": true,
           "negatives": [],
@@ -308,7 +306,7 @@
         },
         {
           "url": "https://rentals.ca/vancouver/the-dunbar",
-          "checkedAt": "2026-09-04T05:24:57.815Z",
+          "checkedAt": "2026-09-04T05:45:27.120Z",
           "httpStatus": 403,
           "usable": false
         }

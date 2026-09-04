@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-09-04T05:23:31.688Z",
-  "checkedCount": 14,
+  "generatedAt": "2026-09-04T05:44:06.723Z",
+  "checkedCount": 20,
   "quarantinedCount": 1,
   "checked": [
     {
@@ -100,6 +100,48 @@
       "ambiguous": false,
       "lowPrice": 4995,
       "highPrice": 4995
+    },
+    {
+      "identityKey": "3200 e blvd::url:d57904351dc9",
+      "url": "https://www.zumper.com/address/3200-e-blvd-vancouver-bc-v6j-4a6-can",
+      "ambiguous": false,
+      "lowPrice": 5999,
+      "highPrice": 5999
+    },
+    {
+      "identityKey": "3836 w 15th ave::url:ba8360b93bb2",
+      "url": "https://www.zumper.com/address/3836-w-15th-ave-vancouver-bc-v6r-2z9-can",
+      "ambiguous": false,
+      "lowPrice": 6800,
+      "highPrice": 6800
+    },
+    {
+      "identityKey": "1462 devonshire crescent::url:1204230a9116",
+      "url": "https://www.zumper.com/address/1462-devonshire-crk-vancouver-bc-v6h-2g6-can",
+      "ambiguous": false,
+      "lowPrice": 8500,
+      "highPrice": 8500
+    },
+    {
+      "identityKey": "4402 w 7th ave::url:510fd585fc1d",
+      "url": "https://www.zumper.com/address/4402-w-7th-ave-vancouver-bc-v6r-1w9-can",
+      "ambiguous": false,
+      "lowPrice": 5450,
+      "highPrice": 5450
+    },
+    {
+      "identityKey": "4086 w 29th ave::url:1a3a085e820d",
+      "url": "https://www.zumper.com/address/4086-w-29th-ave-vancouver-bc-v6s-1v5-can",
+      "ambiguous": false,
+      "lowPrice": 12000,
+      "highPrice": 12000
+    },
+    {
+      "identityKey": "2477 waterloo st::url:9bf4862de36a",
+      "url": "https://www.zumper.com/address/2477-waterloo-st-vancouver-bc-v6r-3h4-can",
+      "ambiguous": false,
+      "lowPrice": 4500,
+      "highPrice": 4500
     }
   ],
   "quarantined": [
