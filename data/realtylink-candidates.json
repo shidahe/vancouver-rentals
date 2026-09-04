@@ -1,24 +1,57 @@
 {
-  "refreshedAt": "2026-09-04T20:56:58.886Z",
+  "refreshedAt": "2026-09-04T23:04:00.011Z",
   "mode": "candidate-only",
   "health": [
     {
       "url": "https://realtylink.org/en/apartment~for-rent~vancouver",
       "status": 200,
-      "checkedAt": "2026-09-04T20:56:58.886Z"
+      "checkedAt": "2026-09-04T23:04:00.011Z"
     },
     {
       "url": "https://realtylink.org/en/townhouse~for-rent~vancouver",
       "status": 200,
-      "checkedAt": "2026-09-04T20:56:58.886Z"
+      "checkedAt": "2026-09-04T23:04:00.011Z"
     },
     {
       "url": "https://realtylink.org/en/house~for-rent~vancouver",
       "status": 200,
-      "checkedAt": "2026-09-04T20:56:58.886Z"
+      "checkedAt": "2026-09-04T23:04:00.011Z"
     }
   ],
   "candidates": [
+    {
+      "source": "Realtylink MLS",
+      "url": "https://realtylink.org/en/townhouse~for-rent~vancouver/263159073",
+      "mls": "R3137446",
+      "address": "2535 York Avenue",
+      "unit": "103",
+      "type": "townhouse",
+      "rent": 5850,
+      "bedrooms": 2,
+      "bathrooms": 2,
+      "sqft": 1499,
+      "lat": 49.27208,
+      "lng": -123.163,
+      "geo": {
+        "lat": 49.27208,
+        "lng": -123.163
+      },
+      "images": [
+        "https://media.realtylink.org/images/consumersite/property/263159073/35dd514e86854a44b3e6b4b9490cef65.jpeg?width=640&height=480&fit=cover",
+        "https://media.realtylink.org/images/consumersite/property/263159073/4d45f1e0b1fc423da4dc040057dc511c.jpeg?width=320&height=240&fit=cover",
+        "https://media.realtylink.org/images/consumersite/property/263159073/57cb3ef23f3346e2be923167fe6582ab.jpeg?width=320&height=240&fit=cover",
+        "https://media.realtylink.org/images/consumersite/property/263159073/8d7678f03a9b4482ae8d93b637901737.jpeg?width=320&height=240&fit=cover",
+        "https://media.realtylink.org/images/consumersite/property/263159073/311e8a0ee2f94c4cb373d879df1f9309.jpeg?width=320&height=240&fit=cover",
+        "https://media.realtylink.org/images/consumersite/property/263159073/35dd514e86854a44b3e6b4b9490cef65.jpeg?width=480&height=360&fit=cover"
+      ],
+      "targetArea": true,
+      "active": true,
+      "parking": true,
+      "ac": false,
+      "balcony": true,
+      "checkedAt": "2026-09-04T23:04:00.011Z",
+      "publishable": false
+    },
     {
       "source": "Realtylink MLS",
       "url": "https://realtylink.org/en/townhouse~for-rent~vancouver/263172550",
@@ -49,205 +82,73 @@
       "parking": true,
       "ac": false,
       "balcony": false,
-      "checkedAt": "2026-09-04T20:56:58.886Z",
+      "checkedAt": "2026-09-04T23:04:00.011Z",
       "publishable": false
     },
     {
       "source": "Realtylink MLS",
-      "url": "https://realtylink.org/en/townhouse~for-rent~vancouver/263181098",
-      "mls": "R3159471",
-      "address": "1405 W 7th Avenue, Fairview VW",
-      "unit": null,
-      "type": "townhouse",
-      "rent": 5500,
-      "bedrooms": 3,
-      "bathrooms": 2,
-      "sqft": 1718,
-      "lat": 49.26546,
-      "lng": -123.13644,
-      "geo": {
-        "lat": 49.26546,
-        "lng": -123.13644
-      },
-      "images": [
-        "https://media.realtylink.org/images/consumersite/property/263181098/44932de279b64e6fa73f64a64bed6605.jpeg?width=640&height=480&fit=cover",
-        "https://media.realtylink.org/images/consumersite/property/263181098/ccbf9f3fcf2e4949b304d757a23ad12e.jpeg?width=320&height=240&fit=cover",
-        "https://media.realtylink.org/images/consumersite/property/263181098/a80601fb3c0a43038b53de6d4a34423c.jpeg?width=320&height=240&fit=cover",
-        "https://media.realtylink.org/images/consumersite/property/263181098/b6e3b83d8b5b4f2aba368bd9c4d1f7dd.jpeg?width=320&height=240&fit=cover",
-        "https://media.realtylink.org/images/consumersite/property/263181098/05ad9ed71702416aab8d5ec9ab51ba1e.jpeg?width=320&height=240&fit=cover",
-        "https://media.realtylink.org/images/consumersite/property/263181098/44932de279b64e6fa73f64a64bed6605.jpeg?width=480&height=360&fit=cover"
-      ],
-      "targetArea": true,
-      "active": true,
-      "parking": true,
-      "ac": true,
-      "balcony": true,
-      "checkedAt": "2026-09-04T20:56:58.886Z",
-      "publishable": false
-    },
-    {
-      "source": "Realtylink MLS",
-      "url": "https://realtylink.org/en/house~for-rent~vancouver/263157325",
-      "mls": "R3135698",
-      "address": "3750 W 11th Avenue",
+      "url": "https://realtylink.org/en/house~for-rent~vancouver/263172357",
+      "mls": "R3150730",
+      "address": "1476 W 33rd Avenue, Shaughnessy",
       "unit": null,
       "type": "house",
-      "rent": 2150,
+      "rent": 2500,
       "bedrooms": 2,
       "bathrooms": 1,
-      "sqft": null,
-      "lat": 49.26236,
-      "lng": -123.18716,
+      "sqft": 900,
+      "lat": 49.24155,
+      "lng": -123.13846,
       "geo": {
-        "lat": 49.26236,
-        "lng": -123.18716
+        "lat": 49.24155,
+        "lng": -123.13846
       },
       "images": [
-        "https://media.realtylink.org/images/consumersite/property/263157325/6294a08371764d879ce0f1f589bbdf4f.jpeg?width=640&height=480&fit=cover",
-        "https://media.realtylink.org/images/consumersite/property/263157325/5ed6a456293749de8eab11c55279c941.jpeg?width=320&height=240&fit=cover",
-        "https://media.realtylink.org/images/consumersite/property/263157325/b2f41b5e5183477abc8327755d6bcb00.jpeg?width=320&height=240&fit=cover",
-        "https://media.realtylink.org/images/consumersite/property/263157325/c35cb2dfceab4229a83dcbb6bc4fcf24.jpeg?width=320&height=240&fit=cover",
-        "https://media.realtylink.org/images/consumersite/property/263157325/f43d8e2209ed4a7c89e4905f60b61eff.jpeg?width=320&height=240&fit=cover",
-        "https://media.realtylink.org/images/consumersite/property/263157325/6294a08371764d879ce0f1f589bbdf4f.jpeg?width=480&height=360&fit=cover"
+        "https://media.realtylink.org/images/consumersite/property/263172357/20ac8bbb3dc84940944dfbf49fa11b08.jpeg?width=640&height=480&fit=cover",
+        "https://media.realtylink.org/images/consumersite/property/263172357/a2fe909471e349458325f215f42172f9.jpeg?width=320&height=240&fit=cover",
+        "https://media.realtylink.org/images/consumersite/property/263172357/452f9749a2b84dc284178cfe1c21b79c.jpeg?width=320&height=240&fit=cover",
+        "https://media.realtylink.org/images/consumersite/property/263172357/0983339029b843358dd8f7da51c39b65.jpeg?width=320&height=240&fit=cover",
+        "https://media.realtylink.org/images/consumersite/property/263172357/30657a4eeee34134826488cb16d74a68.jpeg?width=320&height=240&fit=cover",
+        "https://media.realtylink.org/images/consumersite/property/263172357/20ac8bbb3dc84940944dfbf49fa11b08.jpeg?width=480&height=360&fit=cover"
       ],
       "targetArea": true,
       "active": true,
       "parking": false,
       "ac": false,
       "balcony": false,
-      "checkedAt": "2026-09-04T20:56:58.886Z",
+      "checkedAt": "2026-09-04T23:04:00.011Z",
       "publishable": false
     },
     {
       "source": "Realtylink MLS",
-      "url": "https://realtylink.org/en/house~for-rent~vancouver/263177017",
-      "mls": "R3155390",
-      "address": "2139 W 22nd Avenue",
-      "unit": "2",
+      "url": "https://realtylink.org/en/house~for-rent~vancouver/263179663",
+      "mls": "R3158036",
+      "address": "4690 W 6 Avenue",
+      "unit": null,
       "type": "house",
-      "rent": 2300,
+      "rent": 4000,
       "bedrooms": 2,
-      "bathrooms": 1,
-      "sqft": 550,
-      "lat": 49.25284,
-      "lng": -123.15462,
+      "bathrooms": 3,
+      "sqft": 1100,
+      "lat": 49.26717,
+      "lng": -123.21474,
       "geo": {
-        "lat": 49.25284,
-        "lng": -123.15462
+        "lat": 49.26717,
+        "lng": -123.21474
       },
       "images": [
-        "https://media.realtylink.org/images/consumersite/property/263177017/6d160dcc4758499292d175669d952e37.jpeg?width=640&height=480&fit=cover",
-        "https://media.realtylink.org/images/consumersite/property/263177017/7f5f4ac003d64b108c4cfa7ca4bc3ce5.jpeg?width=320&height=240&fit=cover",
-        "https://media.realtylink.org/images/consumersite/property/263177017/d0b36dd19d4d4a9385e1a679673bb9dd.jpeg?width=320&height=240&fit=cover",
-        "https://media.realtylink.org/images/consumersite/property/263177017/017eb0c8c8ff460bb57a33c0552cb8e8.jpeg?width=320&height=240&fit=cover",
-        "https://media.realtylink.org/images/consumersite/property/263177017/0e9794649d2d483ab6ee03f33c7f2dd2.jpeg?width=320&height=240&fit=cover",
-        "https://media.realtylink.org/images/consumersite/property/263177017/6d160dcc4758499292d175669d952e37.jpeg?width=480&height=360&fit=cover"
+        "https://media.realtylink.org/images/consumersite/property/263179663/d8595e348c56429f93ea857dc3159b97.jpeg?width=640&height=480&fit=cover",
+        "https://media.realtylink.org/images/consumersite/property/263179663/25950b0735df4c2ea17256ee35e9b8f6.jpeg?width=320&height=240&fit=cover",
+        "https://media.realtylink.org/images/consumersite/property/263179663/ceaea705650e47f6bbaadd34d55e68c0.jpeg?width=320&height=240&fit=cover",
+        "https://media.realtylink.org/images/consumersite/property/263179663/89d0caaa5e534ff8b440338fd00a35ec.jpeg?width=320&height=240&fit=cover",
+        "https://media.realtylink.org/images/consumersite/property/263179663/6157136616954a5ca1a78ef3edea5710.jpeg?width=320&height=240&fit=cover",
+        "https://media.realtylink.org/images/consumersite/property/263179663/d8595e348c56429f93ea857dc3159b97.jpeg?width=480&height=360&fit=cover"
       ],
       "targetArea": true,
       "active": true,
       "parking": true,
       "ac": false,
       "balcony": false,
-      "checkedAt": "2026-09-04T20:56:58.886Z",
-      "publishable": false
-    },
-    {
-      "source": "Realtylink MLS",
-      "url": "https://realtylink.org/en/house~for-rent~vancouver/263180017",
-      "mls": "R3158390",
-      "address": "6362 Churchill Street, South Granville",
-      "unit": null,
-      "type": "house",
-      "rent": 16000,
-      "bedrooms": 6,
-      "bathrooms": 6,
-      "sqft": 6066,
-      "lat": 49.22819,
-      "lng": -123.14125,
-      "geo": {
-        "lat": 49.22819,
-        "lng": -123.14125
-      },
-      "images": [
-        "https://media.realtylink.org/images/consumersite/property/263180017/89da0b57f99f47698200f2dcb2d2eebe.jpeg?width=640&height=480&fit=cover",
-        "https://media.realtylink.org/images/consumersite/property/263180017/0ab0366140304fb8bb6dc4bc6097f1ff.jpeg?width=320&height=240&fit=cover",
-        "https://media.realtylink.org/images/consumersite/property/263180017/62ee1323c2c24e61a1a399a8667ad4d8.jpeg?width=320&height=240&fit=cover",
-        "https://media.realtylink.org/images/consumersite/property/263180017/09790697ac6341498d18e1746d049f74.jpeg?width=320&height=240&fit=cover",
-        "https://media.realtylink.org/images/consumersite/property/263180017/87cfb6bad0e84b4ab4b91fde119bd4fe.jpeg?width=320&height=240&fit=cover",
-        "https://media.realtylink.org/images/consumersite/property/263180017/89da0b57f99f47698200f2dcb2d2eebe.jpeg?width=480&height=360&fit=cover"
-      ],
-      "targetArea": true,
-      "active": true,
-      "parking": true,
-      "ac": false,
-      "balcony": true,
-      "checkedAt": "2026-09-04T20:56:58.886Z",
-      "publishable": false
-    },
-    {
-      "source": "Realtylink MLS",
-      "url": "https://realtylink.org/en/house~for-rent~vancouver/263179926",
-      "mls": "R3158299",
-      "address": "4631 W 14th Ave",
-      "unit": null,
-      "type": "house",
-      "rent": 3000,
-      "bedrooms": 3,
-      "bathrooms": 1,
-      "sqft": 950,
-      "lat": 49.26048,
-      "lng": -123.21331,
-      "geo": {
-        "lat": 49.26048,
-        "lng": -123.21331
-      },
-      "images": [
-        "https://media.realtylink.org/images/consumersite/property/263179926/38bf127f4b8c4ff1971e8a61717c0499.jpeg?width=640&height=480&fit=cover",
-        "https://media.realtylink.org/images/consumersite/property/263179926/4aa49a737d0245319d50144ab829195f.jpeg?width=320&height=240&fit=cover",
-        "https://media.realtylink.org/images/consumersite/property/263179926/fd4ed20cee164ce5b6802466b146731a.jpeg?width=320&height=240&fit=cover",
-        "https://media.realtylink.org/images/consumersite/property/263179926/4c7c085199bb4121b46b726af918995e.jpeg?width=320&height=240&fit=cover",
-        "https://media.realtylink.org/images/consumersite/property/263179926/aa643ca0856d44d285111b49ce604464.jpeg?width=320&height=240&fit=cover",
-        "https://media.realtylink.org/images/consumersite/property/263179926/38bf127f4b8c4ff1971e8a61717c0499.jpeg?width=480&height=360&fit=cover"
-      ],
-      "targetArea": true,
-      "active": true,
-      "parking": true,
-      "ac": false,
-      "balcony": false,
-      "checkedAt": "2026-09-04T20:56:58.886Z",
-      "publishable": false
-    },
-    {
-      "source": "Realtylink MLS",
-      "url": "https://realtylink.org/en/house~for-rent~vancouver/263167712",
-      "mls": "R3146085",
-      "address": "46xx W 12th Avenue",
-      "unit": null,
-      "type": "house",
-      "rent": 6500,
-      "bedrooms": 3,
-      "bathrooms": 5,
-      "sqft": 3372,
-      "lat": 49.26209,
-      "lng": -123.21411,
-      "geo": {
-        "lat": 49.26209,
-        "lng": -123.21411
-      },
-      "images": [
-        "https://media.realtylink.org/images/consumersite/property/263167712/210d93790d674cb7a73718f0ebdbc3bd.jpeg?width=640&height=480&fit=cover",
-        "https://media.realtylink.org/images/consumersite/property/263167712/4db4e4c0bfa74f0a9fcfc6132c2b1942.jpeg?width=320&height=240&fit=cover",
-        "https://media.realtylink.org/images/consumersite/property/263167712/2d708c9e2f5e4bdc8535016e71ab7029.jpeg?width=320&height=240&fit=cover",
-        "https://media.realtylink.org/images/consumersite/property/263167712/34d6585b45ef4e3881bd7a67ddcd6b74.jpeg?width=320&height=240&fit=cover",
-        "https://media.realtylink.org/images/consumersite/property/263167712/3255e7966de744dbafe9cecf2f293d05.jpeg?width=320&height=240&fit=cover",
-        "https://media.realtylink.org/images/consumersite/property/263167712/210d93790d674cb7a73718f0ebdbc3bd.jpeg?width=480&height=360&fit=cover"
-      ],
-      "targetArea": true,
-      "active": true,
-      "parking": true,
-      "ac": false,
-      "balcony": false,
-      "checkedAt": "2026-09-04T20:56:58.886Z",
+      "checkedAt": "2026-09-04T23:04:00.011Z",
       "publishable": false
     },
     {
@@ -280,7 +181,99 @@
       "parking": false,
       "ac": true,
       "balcony": true,
-      "checkedAt": "2026-09-04T20:56:58.886Z",
+      "checkedAt": "2026-09-04T23:04:00.011Z",
+      "publishable": false
+    },
+    {
+      "source": "Realtylink MLS",
+      "url": "https://realtylink.org/en/house~for-rent~vancouver/263173995",
+      "mls": "R3152368",
+      "address": "3818 Broadway W",
+      "unit": null,
+      "type": "house",
+      "rent": 13995,
+      "bedrooms": 5,
+      "bathrooms": 4,
+      "sqft": 4170,
+      "lat": 49.26417,
+      "lng": -123.1884,
+      "geo": {
+        "lat": 49.26417,
+        "lng": -123.1884
+      },
+      "images": [
+        "https://media.realtylink.org/images/consumersite/property/263173995/abbe7a972a38462c8ae7fe50390d4377.jpeg?width=640&height=480&fit=cover",
+        "https://media.realtylink.org/images/consumersite/property/263173995/fcd05ce9af1d458dae14d770162badd1.jpeg?width=320&height=240&fit=cover",
+        "https://media.realtylink.org/images/consumersite/property/263173995/de5c19613d704346b58a76ecb38e84bb.jpeg?width=320&height=240&fit=cover",
+        "https://media.realtylink.org/images/consumersite/property/263173995/0bba071ba2854e6bb310b9b6895c7cc3.jpeg?width=320&height=240&fit=cover",
+        "https://media.realtylink.org/images/consumersite/property/263173995/8f525fa22bb84dbfab4a2810ea991385.jpeg?width=320&height=240&fit=cover",
+        "https://media.realtylink.org/images/consumersite/property/263173995/abbe7a972a38462c8ae7fe50390d4377.jpeg?width=480&height=360&fit=cover"
+      ],
+      "targetArea": true,
+      "active": true,
+      "parking": true,
+      "ac": false,
+      "balcony": true,
+      "checkedAt": "2026-09-04T23:04:00.011Z",
+      "publishable": false
+    },
+    {
+      "source": "Realtylink MLS",
+      "url": "https://realtylink.org/en/house~for-rent~vancouver/263168583",
+      "mls": "R3146956",
+      "address": "3567 W 26th",
+      "unit": null,
+      "type": "house",
+      "rent": 6390,
+      "bedrooms": 5,
+      "bathrooms": 4,
+      "sqft": 3053,
+      "lat": 49.24923,
+      "lng": -123.18413,
+      "geo": {
+        "lat": 49.24923,
+        "lng": -123.18413
+      },
+      "images": [
+        "https://media.realtylink.org/images/consumersite/property/263168583/afd7e2effba242888a4dd3b9caa4d8ea.jpeg?width=640&height=480&fit=cover",
+        "https://media.realtylink.org/images/consumersite/property/263168583/c95d1d193daa4181af16c3ffbddf37a5.jpeg?width=320&height=240&fit=cover",
+        "https://media.realtylink.org/images/consumersite/property/263168583/cf0873b1fa9d49bd9940b808782f3ba6.jpeg?width=320&height=240&fit=cover",
+        "https://media.realtylink.org/images/consumersite/property/263168583/1196df6064b34150aa93c022a82510f0.jpeg?width=320&height=240&fit=cover",
+        "https://media.realtylink.org/images/consumersite/property/263168583/01087a1f49c64d7eaf3c72b16ea3a0af.jpeg?width=320&height=240&fit=cover",
+        "https://media.realtylink.org/images/consumersite/property/263168583/afd7e2effba242888a4dd3b9caa4d8ea.jpeg?width=480&height=360&fit=cover"
+      ],
+      "targetArea": true,
+      "active": true,
+      "parking": true,
+      "ac": false,
+      "balcony": false,
+      "checkedAt": "2026-09-04T23:04:00.011Z",
+      "publishable": false
+    },
+    {
+      "source": "Realtylink MLS",
+      "url": "https://realtylink.org/en/house~for-rent~vancouver/263154766",
+      "mls": "R3133139",
+      "address": "Wallace Street, Southlands",
+      "unit": null,
+      "type": "house",
+      "rent": 8980,
+      "bedrooms": 5,
+      "bathrooms": 5,
+      "sqft": 5000,
+      "lat": 49.233,
+      "lng": -123.19097,
+      "geo": {
+        "lat": 49.233,
+        "lng": -123.19097
+      },
+      "images": [],
+      "targetArea": true,
+      "active": true,
+      "parking": true,
+      "ac": true,
+      "balcony": true,
+      "checkedAt": "2026-09-04T23:04:00.011Z",
       "publishable": false
     }
   ]

@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-04T20:59:06.093Z",
+  "generatedAt": "2026-09-04T23:06:05.705Z",
   "coverageReady": true,
   "healthyLaneCount": 4,
   "freshLaneCount": 8,
@@ -11,8 +11,8 @@
       "kind": "broad-marketplace",
       "healthy": true,
       "status": "healthy",
-      "detail": "24 fresh live candidates",
-      "refreshedAt": "2026-09-04T20:53:58.284Z"
+      "detail": "11 fresh live candidates",
+      "refreshedAt": "2026-09-04T23:00:56.350Z"
     },
     {
       "id": "craigslist",
@@ -20,7 +20,7 @@
       "healthy": true,
       "status": "healthy",
       "detail": "4/4 regional searches healthy",
-      "refreshedAt": "2026-09-04T20:56:49.660Z"
+      "refreshedAt": "2026-09-04T23:03:52.146Z"
     },
     {
       "id": "rentalsca",
@@ -28,7 +28,7 @@
       "healthy": true,
       "status": "healthy",
       "detail": "4/9 regional searches healthy",
-      "refreshedAt": "2026-09-04T20:56:35.591Z"
+      "refreshedAt": "2026-09-04T23:03:38.376Z"
     },
     {
       "id": "livrent",
@@ -36,7 +36,7 @@
       "healthy": false,
       "status": "unhealthy",
       "detail": "0/5 searches healthy",
-      "refreshedAt": "2026-09-04T20:56:48.897Z"
+      "refreshedAt": "2026-09-04T23:03:51.418Z"
     },
     {
       "id": "realtylink",
@@ -44,7 +44,7 @@
       "healthy": true,
       "status": "healthy",
       "detail": "3/3 searches reachable; 8 live candidates parsed",
-      "refreshedAt": "2026-09-04T20:56:58.886Z"
+      "refreshedAt": "2026-09-04T23:04:00.011Z"
     },
     {
       "id": "priority-kits-walk",
@@ -52,7 +52,7 @@
       "healthy": true,
       "status": "healthy",
       "detail": "1/2 official sources usable",
-      "refreshedAt": "2026-09-04T20:58:04.148Z"
+      "refreshedAt": "2026-09-04T23:05:11.246Z"
     },
     {
       "id": "priority-larchway-gardens",
@@ -60,7 +60,7 @@
       "healthy": true,
       "status": "healthy",
       "detail": "2/2 official sources usable",
-      "refreshedAt": "2026-09-04T20:58:04.148Z"
+      "refreshedAt": "2026-09-04T23:05:11.246Z"
     },
     {
       "id": "priority-viridian",
@@ -68,7 +68,7 @@
       "healthy": true,
       "status": "healthy",
       "detail": "1/2 official sources usable",
-      "refreshedAt": "2026-09-04T20:58:04.148Z"
+      "refreshedAt": "2026-09-04T23:05:11.246Z"
     }
   ],
   "warnings": [

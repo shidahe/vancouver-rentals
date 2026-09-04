@@ -22,8 +22,8 @@
       "largeWindows": true,
       "modernInterior": true
     },
-    "discoveredAt": "2026-09-04T20:48:19.555Z",
-    "liveCheckedAt": "2026-09-04T20:48:19.555Z",
+    "discoveredAt": "2026-09-04T22:56:57.841Z",
+    "liveCheckedAt": "2026-09-04T22:56:57.841Z",
     "liveStatus": 403,
     "finalUrl": "https://www.rew.ca/rentals/7496804/605-2075-w-12th-avenue-vancouver-bc",
     "identityMatch": false,
@@ -32,7 +32,7 @@
     "negativePhrase": null,
     "livePrice": null,
     "liveFacts": {},
-    "pageTextSample": "Sorry, you have been blocked\nYou are unable to access rew.ca\nWhy have I been blocked?\n\nThis website is using a security service to protect itself from online attacks. The action you just performed triggered the security solution. There are several actions that could trigger this block including submitting a certain word or phrase, a SQL command or malformed data.\n\nWhat can I do to resolve this?\n\nYou can email the site owner to let them know you were blocked. Please include what you were doing when this page came up and the Cloudflare Ray ID found at the bottom of this page.\n\nCloudflare Ray ID: a35fe2d49df8b13c • Your IP: Click to reveal • Performance & security by Cloudflare",
+    "pageTextSample": "Sorry, you have been blocked\nYou are unable to access rew.ca\nWhy have I been blocked?\n\nThis website is using a security service to protect itself from online attacks. The action you just performed triggered the security solution. There are several actions that could trigger this block including submitting a certain word or phrase, a SQL command or malformed data.\n\nWhat can I do to resolve this?\n\nYou can email the site owner to let them know you were blocked. Please include what you were doing when this page came up and the Cloudflare Ray ID found at the bottom of this page.\n\nCloudflare Ray ID: a3609ccfb918f36b • Your IP: Click to reveal • Performance & security by Cloudflare",
     "autoPublishResult": "blocked_verification_gate"
   },
   {
@@ -40,7 +40,7 @@
     "sourceName": "Kits Walk Rentals.ca aggregate inventory",
     "url": "https://rentals.ca/vancouver/2-bedrooms",
     "cardText": "2 Bedroom Apartments In Vancouver",
-    "discoveredAt": "2026-09-04T20:48:19.555Z",
+    "discoveredAt": "2026-09-04T22:56:57.841Z",
     "indexedPrice": null,
     "bedrooms": 2,
     "bathrooms": null,
@@ -51,7 +51,7 @@
     "sourceName": "Kits Walk Rentals.ca aggregate inventory",
     "url": "https://rentals.ca/vancouver/3-bedrooms",
     "cardText": "3 Bedroom Apartments In Vancouver",
-    "discoveredAt": "2026-09-04T20:48:19.555Z",
+    "discoveredAt": "2026-09-04T22:56:57.841Z",
     "indexedPrice": null,
     "bedrooms": 3,
     "bathrooms": null,
@@ -62,7 +62,7 @@
     "sourceName": "Kits Walk Rentals.ca aggregate inventory",
     "url": "https://rentals.ca/vancouver/4-bedrooms",
     "cardText": "4 Bedroom Apartments In Vancouver",
-    "discoveredAt": "2026-09-04T20:48:19.555Z",
+    "discoveredAt": "2026-09-04T22:56:57.841Z",
     "indexedPrice": null,
     "bedrooms": 4,
     "bathrooms": null,
@@ -78,59 +78,7 @@
     "bedrooms": 2,
     "bathrooms": 2,
     "sqft": 1106,
-    "liveCheckedAt": "2026-09-04T20:53:58.284Z",
-    "autoPublishResult": "published_or_updated"
-  },
-  {
-    "source": "Zumper",
-    "url": "https://www.zumper.com/address/3535-w-1st-ave-vancouver-bc-v6r-1g9-can",
-    "address": "3535 West 1st Avenue, Vancouver, BC V6R 1G9",
-    "unit": "3",
-    "identityKey": "3535 w 1st ave::unit:3",
-    "livePrice": 2500,
-    "bedrooms": 2,
-    "bathrooms": 1,
-    "sqft": 700,
-    "liveCheckedAt": "2026-09-04T20:53:58.284Z",
-    "autoPublishResult": "published_or_updated"
-  },
-  {
-    "source": "Zumper",
-    "url": "https://www.zumper.com/address/2715-w-2nd-ave-vancouver-bc-v6k-1k2-can",
-    "address": "2715 West 2nd Avenue, Vancouver, BC V6K 1K2",
-    "unit": null,
-    "identityKey": "2715 w 2nd ave::url:a56695812770",
-    "livePrice": 2500,
-    "bedrooms": 2,
-    "bathrooms": 1,
-    "sqft": 1000,
-    "liveCheckedAt": "2026-09-04T20:53:58.284Z",
-    "autoPublishResult": "published_or_updated"
-  },
-  {
-    "source": "Zumper",
-    "url": "https://www.zumper.com/address/1328-maple-st-vancouver-bc-v6j-3r9-can",
-    "address": "1328 Maple Street, Vancouver, BC V6J 3R9",
-    "unit": null,
-    "identityKey": "1328 maple st::url:f51499b18475",
-    "livePrice": 2500,
-    "bedrooms": 2,
-    "bathrooms": 1,
-    "sqft": 717,
-    "liveCheckedAt": "2026-09-04T20:53:58.284Z",
-    "autoPublishResult": "published_or_updated"
-  },
-  {
-    "source": "Zumper",
-    "url": "https://www.zumper.com/address/2630-arbutus-st-vancouver-bc-v6j-5l8-can",
-    "address": "2630 Arbutus, Vancouver, BC V6J 5L8",
-    "unit": "201",
-    "identityKey": "2630 arbutus::unit:201",
-    "livePrice": 2950,
-    "bedrooms": 2,
-    "bathrooms": 1,
-    "sqft": 815,
-    "liveCheckedAt": "2026-09-04T20:53:58.284Z",
+    "liveCheckedAt": "2026-09-04T23:00:56.350Z",
     "autoPublishResult": "published_or_updated"
   },
   {
@@ -143,21 +91,8 @@
     "bedrooms": 2,
     "bathrooms": 1,
     "sqft": 1350,
-    "liveCheckedAt": "2026-09-04T20:53:58.284Z",
+    "liveCheckedAt": "2026-09-04T23:00:56.350Z",
     "autoPublishResult": "published_or_updated"
-  },
-  {
-    "source": "Zumper",
-    "url": "https://www.zumper.com/address/1541-maple-st-vancouver-bc-v6j-3s2-can",
-    "address": "1541 Maple Street, Vancouver, BC V6J 3S2",
-    "unit": null,
-    "identityKey": "1541 maple st::url:7a3d01371269",
-    "livePrice": 3500,
-    "bedrooms": 2,
-    "bathrooms": 1,
-    "sqft": 900,
-    "liveCheckedAt": "2026-09-04T20:53:58.284Z",
-    "autoPublishResult": "needs_confirmation_multi_unit_address_page"
   },
   {
     "source": "Zumper",
@@ -169,20 +104,7 @@
     "bedrooms": 2,
     "bathrooms": 1,
     "sqft": 1000,
-    "liveCheckedAt": "2026-09-04T20:53:58.284Z",
-    "autoPublishResult": "published_or_updated"
-  },
-  {
-    "source": "Zumper",
-    "url": "https://www.zumper.com/address/3854-w-14th-ave-vancouver-bc-v6r-2w9-can",
-    "address": "3854 West 14th Avenue, Vancouver, BC V6R 2W9",
-    "unit": null,
-    "identityKey": "3854 w 14th ave::url:fec994cbb215",
-    "livePrice": 2500,
-    "bedrooms": 2,
-    "bathrooms": 1,
-    "sqft": 700,
-    "liveCheckedAt": "2026-09-04T20:53:58.284Z",
+    "liveCheckedAt": "2026-09-04T23:00:56.350Z",
     "autoPublishResult": "published_or_updated"
   },
   {
@@ -195,46 +117,7 @@
     "bedrooms": 2,
     "bathrooms": 2,
     "sqft": 732,
-    "liveCheckedAt": "2026-09-04T20:53:58.284Z",
-    "autoPublishResult": "published_or_updated"
-  },
-  {
-    "source": "Zumper",
-    "url": "https://www.zumper.com/address/3559-w-31st-ave-vancouver-bc-v6s-1x9-can",
-    "address": "3559 West 31st Avenue, Vancouver, BC V6S 1X9",
-    "unit": null,
-    "identityKey": "3559 w 31st ave::url:78cd39445afa",
-    "livePrice": 2550,
-    "bedrooms": 2,
-    "bathrooms": 1,
-    "sqft": 700,
-    "liveCheckedAt": "2026-09-04T20:53:58.284Z",
-    "autoPublishResult": "published_or_updated"
-  },
-  {
-    "source": "Zumper",
-    "url": "https://www.zumper.com/address/3157-w-33rd-ave-vancouver-bc-v6n-2g6-can",
-    "address": "3157 West 33rd Avenue, Vancouver, BC V6N 2G6",
-    "unit": null,
-    "identityKey": "3157 w 33rd ave::url:cfc0d3b04db3",
-    "livePrice": 2800,
-    "bedrooms": 2,
-    "bathrooms": 1,
-    "sqft": 1000,
-    "liveCheckedAt": "2026-09-04T20:53:58.284Z",
-    "autoPublishResult": "published_or_updated"
-  },
-  {
-    "source": "Zumper",
-    "url": "https://www.zumper.com/address/3588-w-43rd-ave-vancouver-bc-v6n-3j9-can",
-    "address": "3588 West 43rd Avenue, Vancouver, BC V6N 3J9",
-    "unit": null,
-    "identityKey": "3588 w 43rd ave::url:a32b37cf11c0",
-    "livePrice": 2600,
-    "bedrooms": 2,
-    "bathrooms": 2,
-    "sqft": 900,
-    "liveCheckedAt": "2026-09-04T20:53:58.284Z",
+    "liveCheckedAt": "2026-09-04T23:00:56.350Z",
     "autoPublishResult": "published_or_updated"
   },
   {
@@ -247,7 +130,7 @@
     "bedrooms": 3,
     "bathrooms": 1,
     "sqft": 1100,
-    "liveCheckedAt": "2026-09-04T20:53:58.284Z",
+    "liveCheckedAt": "2026-09-04T23:00:56.350Z",
     "autoPublishResult": "published_or_updated"
   },
   {
@@ -260,7 +143,7 @@
     "bedrooms": 3,
     "bathrooms": 2,
     "sqft": 1271,
-    "liveCheckedAt": "2026-09-04T20:53:58.284Z",
+    "liveCheckedAt": "2026-09-04T23:00:56.350Z",
     "autoPublishResult": "candidate_only"
   },
   {
@@ -273,33 +156,7 @@
     "bedrooms": 3,
     "bathrooms": 3,
     "sqft": 2450,
-    "liveCheckedAt": "2026-09-04T20:53:58.284Z",
-    "autoPublishResult": "published_or_updated"
-  },
-  {
-    "source": "Zumper",
-    "url": "https://www.zumper.com/address/3200-e-blvd-vancouver-bc-v6j-4a6-can",
-    "address": "3200 East Boulevard, Vancouver, BC V6J 4A6",
-    "unit": null,
-    "identityKey": "3200 e blvd::url:d57904351dc9",
-    "livePrice": 5999,
-    "bedrooms": 5,
-    "bathrooms": 3,
-    "sqft": 3200,
-    "liveCheckedAt": "2026-09-04T20:53:58.284Z",
-    "autoPublishResult": "published_or_updated"
-  },
-  {
-    "source": "Zumper",
-    "url": "https://www.zumper.com/address/3836-w-15th-ave-vancouver-bc-v6r-2z9-can",
-    "address": "3836 West 15th Avenue, Vancouver, BC V6R 2Z9",
-    "unit": null,
-    "identityKey": "3836 w 15th ave::url:ba8360b93bb2",
-    "livePrice": 6800,
-    "bedrooms": 5,
-    "bathrooms": 2,
-    "sqft": 2400,
-    "liveCheckedAt": "2026-09-04T20:53:58.284Z",
+    "liveCheckedAt": "2026-09-04T23:00:56.350Z",
     "autoPublishResult": "published_or_updated"
   },
   {
@@ -312,33 +169,7 @@
     "bedrooms": 4,
     "bathrooms": 2,
     "sqft": 3680,
-    "liveCheckedAt": "2026-09-04T20:53:58.284Z",
-    "autoPublishResult": "published_or_updated"
-  },
-  {
-    "source": "Zumper",
-    "url": "https://www.zumper.com/address/4402-w-7th-ave-vancouver-bc-v6r-1w9-can",
-    "address": "4402 West 7th Avenue, Vancouver, BC V6R 1W9",
-    "unit": null,
-    "identityKey": "4402 w 7th ave::url:510fd585fc1d",
-    "livePrice": 5450,
-    "bedrooms": 4,
-    "bathrooms": 2,
-    "sqft": 1800,
-    "liveCheckedAt": "2026-09-04T20:53:58.284Z",
-    "autoPublishResult": "published_or_updated"
-  },
-  {
-    "source": "Zumper",
-    "url": "https://www.zumper.com/address/4086-w-29th-ave-vancouver-bc-v6s-1v5-can",
-    "address": "4086 West 29th Avenue, Vancouver, BC V6S 1V5",
-    "unit": null,
-    "identityKey": "4086 w 29th ave::url:1a3a085e820d",
-    "livePrice": 12000,
-    "bedrooms": 5,
-    "bathrooms": 5,
-    "sqft": 4289,
-    "liveCheckedAt": "2026-09-04T20:53:58.284Z",
+    "liveCheckedAt": "2026-09-04T23:00:56.350Z",
     "autoPublishResult": "published_or_updated"
   },
   {
@@ -351,7 +182,7 @@
     "bedrooms": 4,
     "bathrooms": 3,
     "sqft": 3000,
-    "liveCheckedAt": "2026-09-04T20:53:58.284Z",
+    "liveCheckedAt": "2026-09-04T23:00:56.350Z",
     "autoPublishResult": "published_or_updated"
   },
   {
@@ -364,7 +195,7 @@
     "bedrooms": 2,
     "bathrooms": 3,
     "sqft": 1100,
-    "liveCheckedAt": "2026-09-04T20:53:58.284Z",
+    "liveCheckedAt": "2026-09-04T23:00:56.350Z",
     "autoPublishResult": "published_or_updated"
   }
 ]

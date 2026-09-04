@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-09-04T20:58:02.736Z",
+  "refreshedAt": "2026-09-04T23:05:06.969Z",
   "groups": [
     {
       "identityKey": "3220 4th ave w::url:4b1a6ebe2d36",
@@ -11,54 +11,6 @@
       ],
       "exactUnit": false,
       "matchedListingId": "zumper-ecd4e868f79c",
-      "result": "candidate_only"
-    },
-    {
-      "identityKey": "3535 w 1st ave::unit:3",
-      "sources": [
-        "zumper"
-      ],
-      "rents": [
-        2500
-      ],
-      "exactUnit": true,
-      "matchedListingId": "zumper-289dc426c15b",
-      "result": "candidate_only"
-    },
-    {
-      "identityKey": "2715 w 2nd ave::url:a56695812770",
-      "sources": [
-        "zumper"
-      ],
-      "rents": [
-        2500
-      ],
-      "exactUnit": false,
-      "matchedListingId": "zumper-2fde865f7e2c",
-      "result": "candidate_only"
-    },
-    {
-      "identityKey": "1328 maple st::url:f51499b18475",
-      "sources": [
-        "zumper"
-      ],
-      "rents": [
-        2500
-      ],
-      "exactUnit": false,
-      "matchedListingId": "zumper-40e7a81ead7b",
-      "result": "candidate_only"
-    },
-    {
-      "identityKey": "2630 arbutus::unit:201",
-      "sources": [
-        "zumper"
-      ],
-      "rents": [
-        2950
-      ],
-      "exactUnit": true,
-      "matchedListingId": "zumper-118592c0411f",
       "result": "candidate_only"
     },
     {
@@ -74,18 +26,6 @@
       "result": "candidate_only"
     },
     {
-      "identityKey": "1541 maple st::url:7a3d01371269",
-      "sources": [
-        "zumper"
-      ],
-      "rents": [
-        3500
-      ],
-      "exactUnit": false,
-      "matchedListingId": "zumper-6e03d092610a",
-      "result": "candidate_only"
-    },
-    {
       "identityKey": "1533 maple st::url:69f2e13a0fd5",
       "sources": [
         "zumper"
@@ -98,18 +38,6 @@
       "result": "candidate_only"
     },
     {
-      "identityKey": "3854 w 14th ave::url:fec994cbb215",
-      "sources": [
-        "zumper"
-      ],
-      "rents": [
-        2500
-      ],
-      "exactUnit": false,
-      "matchedListingId": "zumper-3d00038ec8dc",
-      "result": "candidate_only"
-    },
-    {
       "identityKey": "3366 w 26th ave::unit:3",
       "sources": [
         "zumper"
@@ -119,42 +47,6 @@
       ],
       "exactUnit": true,
       "matchedListingId": "zumper-75ff287e7a72",
-      "result": "candidate_only"
-    },
-    {
-      "identityKey": "3559 w 31st ave::url:78cd39445afa",
-      "sources": [
-        "zumper"
-      ],
-      "rents": [
-        2550
-      ],
-      "exactUnit": false,
-      "matchedListingId": "zumper-a0bd98e76c8f",
-      "result": "candidate_only"
-    },
-    {
-      "identityKey": "3157 w 33rd ave::url:cfc0d3b04db3",
-      "sources": [
-        "zumper"
-      ],
-      "rents": [
-        2800
-      ],
-      "exactUnit": false,
-      "matchedListingId": "zumper-f9e9614ca8fb",
-      "result": "candidate_only"
-    },
-    {
-      "identityKey": "3588 w 43rd ave::url:a32b37cf11c0",
-      "sources": [
-        "zumper"
-      ],
-      "rents": [
-        2600
-      ],
-      "exactUnit": false,
-      "matchedListingId": "zumper-4dfebec53d29",
       "result": "candidate_only"
     },
     {
@@ -194,30 +86,6 @@
       "result": "candidate_only"
     },
     {
-      "identityKey": "3200 e blvd::url:d57904351dc9",
-      "sources": [
-        "zumper"
-      ],
-      "rents": [
-        5999
-      ],
-      "exactUnit": false,
-      "matchedListingId": "zumper-8618a2d7d599",
-      "result": "candidate_only"
-    },
-    {
-      "identityKey": "3836 w 15th ave::url:ba8360b93bb2",
-      "sources": [
-        "zumper"
-      ],
-      "rents": [
-        6800
-      ],
-      "exactUnit": false,
-      "matchedListingId": "zumper-9bc484458739",
-      "result": "candidate_only"
-    },
-    {
       "identityKey": "1462 devonshire crescent::url:1204230a9116",
       "sources": [
         "zumper"
@@ -227,30 +95,6 @@
       ],
       "exactUnit": false,
       "matchedListingId": null,
-      "result": "candidate_only"
-    },
-    {
-      "identityKey": "4402 w 7th ave::url:510fd585fc1d",
-      "sources": [
-        "zumper"
-      ],
-      "rents": [
-        5450
-      ],
-      "exactUnit": false,
-      "matchedListingId": "zumper-284446d281ee",
-      "result": "candidate_only"
-    },
-    {
-      "identityKey": "4086 w 29th ave::url:1a3a085e820d",
-      "sources": [
-        "zumper"
-      ],
-      "rents": [
-        12000
-      ],
-      "exactUnit": false,
-      "matchedListingId": "zumper-bed681f0506a",
       "result": "candidate_only"
     },
     {
@@ -278,6 +122,18 @@
       "result": "candidate_only"
     },
     {
+      "identityKey": "mls:r3137446",
+      "sources": [
+        "realtylink mls"
+      ],
+      "rents": [
+        5850
+      ],
+      "exactUnit": true,
+      "matchedListingId": "york-103-2535-r3137446",
+      "result": "authoritative_mls_reverified"
+    },
+    {
       "identityKey": "mls:r3150923",
       "sources": [
         "realtylink mls"
@@ -290,39 +146,15 @@
       "result": "authoritative_mls_reverified"
     },
     {
-      "identityKey": "mls:r3159471",
+      "identityKey": "mls:r3158036",
       "sources": [
         "realtylink mls"
       ],
       "rents": [
-        5500
+        4000
       ],
       "exactUnit": false,
-      "matchedListingId": "mls-r3159471",
-      "result": "authoritative_mls_reverified"
-    },
-    {
-      "identityKey": "mls:r3158299",
-      "sources": [
-        "realtylink mls"
-      ],
-      "rents": [
-        3000
-      ],
-      "exactUnit": false,
-      "matchedListingId": "mls-r3158299",
-      "result": "authoritative_mls_reverified"
-    },
-    {
-      "identityKey": "mls:r3146085",
-      "sources": [
-        "realtylink mls"
-      ],
-      "rents": [
-        6500
-      ],
-      "exactUnit": false,
-      "matchedListingId": "mls-r3146085",
+      "matchedListingId": "mls-r3158036",
       "result": "authoritative_mls_reverified"
     },
     {
@@ -340,36 +172,48 @@
   ],
   "promoted": [],
   "crossVerified": [
+    "york-103-2535-r3137446",
     "mls-r3150923",
-    "mls-r3159471",
-    "mls-r3158299",
-    "mls-r3146085",
+    "mls-r3158036",
     "mls-r3151022"
   ],
   "fingerprintCrossVerified": [],
   "maskedMlsMerged": [],
   "negativeMatches": [],
-  "detailReactivated": [],
+  "detailReactivated": [
+    "mls-r3160936",
+    "mls-r3146956",
+    "mls-r3158299",
+    "mls-r3151352",
+    "mls-r3134535",
+    "mls-r3158552",
+    "mls-r2907080",
+    "mls-r3159579",
+    "mls-r3159353"
+  ],
   "mlsMissing": {
-    "R3150730": {
-      "firstMissingAt": "2026-09-04T13:05:40.755Z",
-      "lastMissingAt": "2026-09-04T20:58:02.736Z",
-      "listingId": "mls-r3150730"
+    "R3159559": {
+      "firstMissingAt": "2026-09-04T23:05:06.969Z",
+      "lastMissingAt": "2026-09-04T23:05:06.969Z",
+      "listingId": "mls-r3159559"
     },
-    "R3133139": {
-      "firstMissingAt": "2026-09-04T19:37:04.341Z",
-      "lastMissingAt": "2026-09-04T20:58:02.736Z",
-      "listingId": "mls-r3133139"
+    "R3141972": {
+      "firstMissingAt": "2026-09-04T23:05:06.969Z",
+      "lastMissingAt": "2026-09-04T23:05:06.969Z",
+      "listingId": "mls-r3141972"
+    },
+    "R3145335": {
+      "firstMissingAt": "2026-09-04T23:05:06.969Z",
+      "lastMissingAt": "2026-09-04T23:05:06.969Z",
+      "listingId": "mls-r3145335"
     },
     "R3151372": {
       "firstMissingAt": "2026-09-04T20:58:02.736Z",
-      "lastMissingAt": "2026-09-04T20:58:02.736Z",
+      "lastMissingAt": "2026-09-04T23:05:06.969Z",
       "listingId": "mls-r3151372"
     }
   },
-  "mlsRemoved": [
-    "mls-r3150730"
-  ],
+  "mlsRemoved": [],
   "realtylinkSnapshotCount": 8,
   "realtylinkRemovalEligible": true
 }
