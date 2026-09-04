@@ -67,6 +67,8 @@ const purposeBuiltWatch = JSON.parse(await read('data/purpose-built-watch.json')
 const kitsWalk3600 = purposeBuiltWatch.buildings?.find(x=>x.id==='kits-walk')?.inventories?.find(x=>x.rent===3600&&x.sqft===741);
 if(!kitsWalk3600||kitsWalk3600.bedrooms!==2||kitsWalk3600.bathrooms!==2) failures.push('Verified Kits Walk $3,600 / 741 sqft floorplan is not tracked.');
 if(!purposeBuiltSource.includes('structuredRentalInventories')||!purposeBuiltSource.includes('structuredMatch')) failures.push('Purpose-built verifier cannot match exact structured inventory rows.');
+if(!purposeBuiltWatch.buildings?.find(x=>x.id==='kits-walk')?.evidenceSourceIds?.includes('kits-walk-rentalsca')) failures.push('Kits Walk cannot reuse fresh aggregate evidence.');
+if(!purposeBuiltSource.includes('freshEvidence')||!purposeBuiltSource.includes('reusedEvidence:true')) failures.push('Purpose-built verifier repeats requests instead of reusing fresh evidence.');
 const kitsWalk605 = catalog.seedCandidates?.find(x => x.id === 'rew-kits-walk-605');
 if (!kitsWalk605 || kitsWalk605.unit !== '605' || kitsWalk605.address !== '2075 W 12th Ave, Vancouver, BC' || kitsWalk605.expectedBeds !== 2 || !kitsWalk605.autoPublish || !/\/605-2075-w-12th-avenue-vancouver-bc$/.test(kitsWalk605.url)) {
   failures.push('Current Kits Walk Unit 605 exact-detail verification seed is missing or weakened.');

@@ -11,6 +11,10 @@ const now=new Date().toISOString();
 const day=now.slice(0,10);
 const norm=s=>String(s||'').toLowerCase().replace(/[^a-z0-9]+/g,' ').trim();
 const slug=s=>norm(s).replace(/\s+/g,'-');
+const freshEvidence=e=>{
+  const checked=Date.parse(e?.checkedAt||'');
+  return Number.isFinite(checked)&&Date.now()-checked<=30*60*1000&&e.ok===true&&Number(e.status)<400&&String(e.bodyText||'').length>100;
+};
 
 const cfg=await read(path.join(DATA,'purpose-built-watch.json'),{buildings:[]});
 const db=await read(path.join(DATA,'listings.json'),{meta:{},listings:[]});
@@ -24,7 +28,14 @@ const page=await ctx.newPage();
 for(const b of cfg.buildings||[]){
   const urls=(b.urls&&b.urls.length?b.urls:[b.url]).filter(Boolean);
   const observations=[];
+  const cachedByUrl=new Map();
+  for(const sourceId of b.evidenceSourceIds||[]){
+    const cached=await read(path.join(DATA,'evidence',`source-${sourceId}.json`),null);
+    if(freshEvidence(cached)) cachedByUrl.set(cached.source?.url||cached.finalUrl,{url:cached.source?.url||cached.finalUrl,checkedAt:cached.checkedAt,httpStatus:cached.status,usable:true,error:null,text:cached.bodyText,images:cached.images||[],jsonLd:cached.jsonLd||[],reusedEvidence:true});
+  }
   for(const url of urls){
+    const cached=cachedByUrl.get(url);
+    if(cached){observations.push(cached);continue;}
     let text='',status=null,error=null,images=[],jsonLd=[];
     try{
       const r=await page.goto(url,{waitUntil:'domcontentloaded',timeout:45000}); status=r?.status()??null;
@@ -40,10 +51,10 @@ for(const b of cfg.buildings||[]){
       }
     }catch(e){error=String(e)}
     const usable=!!text&&status!==401&&status!==403&&status!==429&&!(status>=500);
-    observations.push({url,checkedAt:now,httpStatus:status,usable,error,text,images,jsonLd});
+    observations.push({url,checkedAt:now,httpStatus:status,usable,error,text,images,jsonLd,reusedEvidence:false});
   }
 
-  const buildingEvidence={building:b.name,checkedAt:now,observations:observations.map(o=>({url:o.url,httpStatus:o.httpStatus,usable:o.usable,error:o.error})),inventories:[]};
+  const buildingEvidence={building:b.name,checkedAt:now,observations:observations.map(o=>({url:o.url,httpStatus:o.httpStatus,usable:o.usable,error:o.error,reusedEvidence:o.reusedEvidence===true})),inventories:[]};
   for(const inv of b.inventories||[]){
     const sourceMatches=[];
     for(const obs of observations){
