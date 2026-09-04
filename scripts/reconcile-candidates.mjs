@@ -82,7 +82,7 @@ for(const x of payload.listings){
   const evidence=await read(path.join(DATA,'evidence',`${x.id}.json`),null);
   const checkedAt=Date.parse(evidence?.checkedAt||'');
   const rent=Number(evidence?.extractedRent);
-  if(!evidence?.ok||Number(evidence.status)<200||Number(evidence.status)>=400||!evidence.identityMatch||
+  if(!/realtylink\.org/i.test(evidence?.sourceUrl||evidence?.finalUrl||'')||!evidence?.ok||Number(evidence.status)<200||Number(evidence.status)>=400||!evidence.identityMatch||
     !evidence.explicitPositive||evidence.explicitNegative||!Number.isFinite(checkedAt)||Date.now()-checkedAt>12*60*60*1000||
     !Number.isFinite(rent)||rent<2500||rent>12000)continue;
   positiveMlsDetails.set(x.id,evidence);

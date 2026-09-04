@@ -76,6 +76,8 @@ for (const building of ['kits-walk', 'viridian']) {
 if (!source.includes('auto_published_authoritative_mls')) failures.push('Current authoritative MLS inventory cannot auto-publish.');
 if (!source.includes('realtylinkRemovalEligible') || !source.includes('missingAgeMs>=4*60*60*1000') || !source.includes('previousRealtylinkCount*.75')) failures.push('MLS disappearance is not guarded by snapshot completeness and a minimum confirmation interval.');
 if (!source.includes('positiveMlsDetails.has(x.id)') || !source.includes('identity, availability and rent all matched')) failures.push('Fresh exact MLS detail evidence can be overridden by volatile search-result disappearance.');
+if (!source.includes("/realtylink\\.org/i.test(evidence?.sourceUrl||evidence?.finalUrl||'')")) failures.push('Third-party MLS mirrors can be mistaken for authoritative exact Realtylink evidence.');
+if (!source.includes('property is not currently for sale or for rent') || !source.includes('status\\s*\\n\\s*expired')) failures.push('Explicit inactive/expired marketplace evidence is not treated as a strong negative.');
 if (!source.includes('premature MLS removal rolled back')) failures.push('Recent removals made by the old back-to-back MLS rule are not repaired.');
 if (/bedrooms\s*:\s*c\.bedrooms\s*\|\|\s*2/.test(source)) failures.push('Unknown candidate bedrooms are still defaulted to 2BR.');
 if (!source.includes('mlsInventoryManaged!==true')) failures.push('MLS search disappearance is not limited to feed-managed inventory.');

@@ -28,6 +28,8 @@ const strongNegativePatterns = [
   /listing status\s*[:\-]?\s*inactive/i,
   /this listing is inactive/i,
   /status\s*[:\-]?\s*inactive/i,
+  /property is not currently for sale or for rent/i,
+  /status\s*\n\s*expired/i,
   /currently off market/i,
   /listing has been rented/i,
   /this unit has been rented/i
