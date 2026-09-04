@@ -25,7 +25,8 @@
     "lastStaleAutoListingExpiry": "2026-09-04T20:56:35.215Z",
     "staleAutoListingPolicy": "Auto-managed exact-detail inventory is fail-closed across sources: if it is not reverified within 48 hours, it is hidden as needs_confirmation until exact live evidence returns. Authoritative MLS-feed inventory uses its separate consecutive-snapshot removal policy.",
     "lastZumperMultiUnitQuarantine": "2026-09-04T20:56:35.191Z",
-    "zumperMultiUnitPolicy": "Address-level Zumper multi-unit pages without a public unit identity are fail-closed: aggregate low/high prices never auto-publish or auto-update an exact rental inventory."
+    "zumperMultiUnitPolicy": "Address-level Zumper multi-unit pages without a public unit identity are fail-closed: aggregate low/high prices never auto-publish or auto-update an exact rental inventory.",
+    "searchScope": "Only CAD $3,500+ entire-home rentals with 2–4 bedrooms are eligible. House shares and separately rented portions of houses are excluded."
   },
   "listings": [
     {
@@ -369,15 +370,18 @@
       "source": "Kits Walk official",
       "url": "https://www.kitswalkleasing.com/floorplans",
       "firstSeen": "2026-08-14",
-      "lastChecked": "2026-08-19",
+      "lastChecked": "2026-09-04",
       "verifiedAt": "2026-08-19T14:12:00-04:00",
-      "availabilityStatus": "needs_confirmation",
-      "status": "unchanged",
+      "availabilityStatus": "excluded",
+      "status": "excluded",
       "priceDrop": false,
       "dataNotes": "Hidden: no current qualifying 800+ sqft 2BR inventory verified.",
       "officialStatus": "leasing",
       "officialStatusAuthority": "official_web",
-      "officialStatusReason": "Official page contains current leasing/availability language."
+      "officialStatusReason": "Official page contains current leasing/availability language.",
+      "verificationLevel": "excluded_by_scope",
+      "verificationMethod": "Excluded by user search scope: monthly rent below CAD $3,500.",
+      "scopeExclusionReason": "monthly rent below CAD $3,500"
     },
     {
       "id": "cypress-1070-r3129917",
@@ -552,12 +556,13 @@
       "firstSeen": "2026-08-20",
       "lastChecked": "2026-09-04",
       "verifiedAt": "2026-09-04T20:48:19.555Z",
-      "verificationLevel": "verified",
-      "verificationMethod": "Automated live browser check matched listing identity and current availability wording.",
-      "availabilityStatus": "active",
-      "status": "new",
+      "verificationLevel": "excluded_by_scope",
+      "verificationMethod": "Excluded by user search scope: monthly rent below CAD $3,500.",
+      "availabilityStatus": "excluded",
+      "status": "excluded",
       "priceDrop": false,
-      "dataNotes": "Independent inventory identity: address + exact detail URL (unit not public)."
+      "dataNotes": "Independent inventory identity: address + exact detail URL (unit not public).",
+      "scopeExclusionReason": "monthly rent below CAD $3,500"
     },
     {
       "id": "zumper-c047dd62c7b5",
@@ -585,14 +590,15 @@
       "url": "https://www.zumper.com/address/3638-broadway-w-vancouver-bc-v6r-2b7-can",
       "photoPageUrl": "https://www.zumper.com/address/3638-broadway-w-vancouver-bc-v6r-2b7-can",
       "firstSeen": "2026-08-20",
-      "lastChecked": "2026-08-27",
+      "lastChecked": "2026-09-04",
       "verifiedAt": "2026-08-25T04:58:25.124Z",
-      "verificationLevel": "unverified",
-      "verificationMethod": "AUTO-PUBLISHED from exact live Zumper detail; w broadway alma st vancouver bc v6r 2b7::url:0ddb9d6d5385 Cross-verified by live Zumper detail on 2026-08-25.",
-      "availabilityStatus": "needs_confirmation",
-      "status": "corrected",
+      "verificationLevel": "excluded_by_scope",
+      "verificationMethod": "Excluded by user search scope: monthly rent below CAD $3,500.",
+      "availabilityStatus": "excluded",
+      "status": "excluded",
       "priceDrop": false,
-      "dataNotes": "Independent inventory identity: address + exact detail URL (unit not public). Auto-hidden after exceeding the 48-hour live-verification window."
+      "dataNotes": "Independent inventory identity: address + exact detail URL (unit not public). Auto-hidden after exceeding the 48-hour live-verification window.",
+      "scopeExclusionReason": "monthly rent below CAD $3,500"
     },
     {
       "id": "zumper-24e8f41077bf",
@@ -657,12 +663,13 @@
       "firstSeen": "2026-08-20",
       "lastChecked": "2026-09-04",
       "verifiedAt": "2026-09-04T20:53:58.284Z",
-      "verificationLevel": "verified",
-      "verificationMethod": "Automated live browser check matched listing identity and current availability wording. Cross-verified by live Zumper detail on 2026-09-04.",
-      "availabilityStatus": "active",
-      "status": "new",
+      "verificationLevel": "excluded_by_scope",
+      "verificationMethod": "Excluded by user search scope: monthly rent below CAD $3,500.",
+      "availabilityStatus": "excluded",
+      "status": "excluded",
       "priceDrop": false,
-      "dataNotes": "Independent inventory identity: address + exact detail URL (unit not public)."
+      "dataNotes": "Independent inventory identity: address + exact detail URL (unit not public).",
+      "scopeExclusionReason": "monthly rent below CAD $3,500"
     },
     {
       "id": "zumper-9157c4798023",
@@ -727,12 +734,13 @@
       "firstSeen": "2026-08-20",
       "lastChecked": "2026-09-04",
       "verifiedAt": "2026-09-04T20:53:58.284Z",
-      "verificationLevel": "unverified",
-      "verificationMethod": "Automated live browser check matched listing identity and current availability wording. Cross-verified by live Zumper detail on 2026-09-04.",
-      "availabilityStatus": "needs_confirmation",
-      "status": "corrected",
+      "verificationLevel": "excluded_by_scope",
+      "verificationMethod": "Excluded by user search scope: house share or separately rented portion of a house.",
+      "availabilityStatus": "excluded",
+      "status": "excluded",
       "priceDrop": false,
-      "dataNotes": "Independent inventory identity: address + exact detail URL (unit not public). NEEDS CONFIRMATION: Zumper page is an address-level multi-unit page without a public unit identity; page-level low/high price cannot be treated as an exact unit rent."
+      "dataNotes": "Independent inventory identity: address + exact detail URL (unit not public). NEEDS CONFIRMATION: Zumper page is an address-level multi-unit page without a public unit identity; page-level low/high price cannot be treated as an exact unit rent.",
+      "scopeExclusionReason": "house share or separately rented portion of a house"
     },
     {
       "id": "zumper-976e340c66a7",
@@ -797,12 +805,13 @@
       "firstSeen": "2026-08-20",
       "lastChecked": "2026-09-04",
       "verifiedAt": "2026-09-04T20:53:58.284Z",
-      "verificationLevel": "verified",
-      "verificationMethod": "Automated live browser check matched listing identity and current availability wording. Cross-verified by live Zumper detail on 2026-09-04.",
-      "availabilityStatus": "active",
-      "status": "price_drop",
+      "verificationLevel": "excluded_by_scope",
+      "verificationMethod": "Excluded by user search scope: monthly rent below CAD $3,500.",
+      "availabilityStatus": "excluded",
+      "status": "excluded",
       "priceDrop": true,
-      "dataNotes": "Independent inventory identity: address + exact detail URL (unit not public)."
+      "dataNotes": "Independent inventory identity: address + exact detail URL (unit not public).",
+      "scopeExclusionReason": "monthly rent below CAD $3,500"
     },
     {
       "id": "zumper-2e85ffb3f678",
@@ -867,12 +876,13 @@
       "firstSeen": "2026-08-20",
       "lastChecked": "2026-09-04",
       "verifiedAt": "2026-09-04T20:48:19.555Z",
-      "verificationLevel": "verified",
-      "verificationMethod": "Automated live browser check matched listing identity and current availability wording.",
-      "availabilityStatus": "active",
-      "status": "new",
+      "verificationLevel": "excluded_by_scope",
+      "verificationMethod": "Excluded by user search scope: monthly rent below CAD $3,500.",
+      "availabilityStatus": "excluded",
+      "status": "excluded",
       "priceDrop": false,
-      "dataNotes": "Independent inventory identity: address + exact detail URL (unit not public)."
+      "dataNotes": "Independent inventory identity: address + exact detail URL (unit not public).",
+      "scopeExclusionReason": "monthly rent below CAD $3,500"
     },
     {
       "id": "zumper-75ff287e7a72",
@@ -937,12 +947,13 @@
       "firstSeen": "2026-08-20",
       "lastChecked": "2026-09-04",
       "verifiedAt": "2026-09-04T20:53:58.284Z",
-      "verificationLevel": "verified",
-      "verificationMethod": "Automated live browser check matched listing identity and current availability wording. Cross-verified by live Zumper detail on 2026-09-04.",
-      "availabilityStatus": "active",
-      "status": "price_drop",
+      "verificationLevel": "excluded_by_scope",
+      "verificationMethod": "Excluded by user search scope: monthly rent below CAD $3,500.",
+      "availabilityStatus": "excluded",
+      "status": "excluded",
       "priceDrop": true,
-      "dataNotes": "Independent inventory identity: address + exact detail URL (unit not public)."
+      "dataNotes": "Independent inventory identity: address + exact detail URL (unit not public).",
+      "scopeExclusionReason": "monthly rent below CAD $3,500"
     },
     {
       "id": "zumper-a4de373229e1",
@@ -970,15 +981,16 @@
       "url": "https://www.zumper.com/address/3580-19th-ave-w-vancouver-bc-v6s-1c4-can",
       "photoPageUrl": "https://www.zumper.com/address/3580-19th-ave-w-vancouver-bc-v6s-1c4-can",
       "firstSeen": "2026-08-20",
-      "lastChecked": "2026-08-22",
+      "lastChecked": "2026-09-04",
       "verifiedAt": "2026-08-22T19:30:26.181Z",
-      "verificationLevel": "verified",
-      "verificationMethod": "Automated live check found explicit unavailable evidence (HTTP 404).",
-      "availabilityStatus": "removed",
-      "status": "removed",
+      "verificationLevel": "excluded_by_scope",
+      "verificationMethod": "Excluded by user search scope: monthly rent below CAD $3,500.",
+      "availabilityStatus": "excluded",
+      "status": "excluded",
       "priceDrop": false,
       "dataNotes": "Independent inventory identity: address + exact detail URL (unit not public). AUTO-REMOVED 2026-08-22: explicit live unavailable signal.",
-      "removedAt": "2026-08-22"
+      "removedAt": "2026-08-22",
+      "scopeExclusionReason": "monthly rent below CAD $3,500"
     },
     {
       "id": "zumper-4dfebec53d29",
@@ -1008,12 +1020,13 @@
       "firstSeen": "2026-08-20",
       "lastChecked": "2026-09-04",
       "verifiedAt": "2026-09-04T20:53:58.284Z",
-      "verificationLevel": "verified",
-      "verificationMethod": "Automated live browser check matched listing identity and current availability wording. Cross-verified by live Zumper detail on 2026-09-04.",
-      "availabilityStatus": "active",
-      "status": "new",
+      "verificationLevel": "excluded_by_scope",
+      "verificationMethod": "Excluded by user search scope: monthly rent below CAD $3,500.",
+      "availabilityStatus": "excluded",
+      "status": "excluded",
       "priceDrop": false,
-      "dataNotes": "Independent inventory identity: address + exact detail URL (unit not public)."
+      "dataNotes": "Independent inventory identity: address + exact detail URL (unit not public).",
+      "scopeExclusionReason": "monthly rent below CAD $3,500"
     },
     {
       "id": "zumper-5f1919a8a4cb",
@@ -1043,12 +1056,13 @@
       "firstSeen": "2026-08-20",
       "lastChecked": "2026-09-04",
       "verifiedAt": "2026-09-04T17:04:02.131Z",
-      "verificationLevel": "verified",
-      "verificationMethod": "AUTO-PUBLISHED from exact live Zumper detail; larch st w 45th ave vancouver bc v6n 3l1::url:d52e1ab40cb4 Cross-verified by live Zumper detail on 2026-09-04.",
-      "availabilityStatus": "active",
-      "status": "new",
+      "verificationLevel": "excluded_by_scope",
+      "verificationMethod": "Excluded by user search scope: monthly rent below CAD $3,500.",
+      "availabilityStatus": "excluded",
+      "status": "excluded",
       "priceDrop": false,
-      "dataNotes": "Independent inventory identity: address + exact detail URL (unit not public)."
+      "dataNotes": "Independent inventory identity: address + exact detail URL (unit not public).",
+      "scopeExclusionReason": "monthly rent below CAD $3,500"
     },
     {
       "id": "zumper-e353962d7737",
@@ -1078,12 +1092,13 @@
       "firstSeen": "2026-08-20",
       "lastChecked": "2026-09-04",
       "verifiedAt": "2026-09-04T20:48:19.555Z",
-      "verificationLevel": "verified",
-      "verificationMethod": "Automated live browser check matched listing identity and current availability wording.",
-      "availabilityStatus": "active",
-      "status": "new",
+      "verificationLevel": "excluded_by_scope",
+      "verificationMethod": "Excluded by user search scope: monthly rent below CAD $3,500.",
+      "availabilityStatus": "excluded",
+      "status": "excluded",
       "priceDrop": false,
-      "dataNotes": "Independent unit identity: address + unit."
+      "dataNotes": "Independent unit identity: address + unit.",
+      "scopeExclusionReason": "monthly rent below CAD $3,500"
     },
     {
       "id": "arbutus-residences-floorplan-2-bedroom-townhouse-den-1340",
@@ -1149,12 +1164,13 @@
       "firstSeen": "2026-08-22",
       "lastChecked": "2026-09-04",
       "verifiedAt": "2026-09-04T20:53:58.284Z",
-      "verificationLevel": "verified",
-      "verificationMethod": "Automated live browser check matched listing identity and current availability wording. Cross-verified by live Zumper detail on 2026-09-04.",
-      "availabilityStatus": "active",
-      "status": "new",
+      "verificationLevel": "excluded_by_scope",
+      "verificationMethod": "Excluded by user search scope: monthly rent below CAD $3,500.",
+      "availabilityStatus": "excluded",
+      "status": "excluded",
       "priceDrop": false,
-      "dataNotes": "Independent inventory identity: canonical address + exact detail URL (unit not public)."
+      "dataNotes": "Independent inventory identity: canonical address + exact detail URL (unit not public).",
+      "scopeExclusionReason": "monthly rent below CAD $3,500"
     },
     {
       "id": "zumper-3d00038ec8dc",
@@ -1184,12 +1200,13 @@
       "firstSeen": "2026-08-23",
       "lastChecked": "2026-09-04",
       "verifiedAt": "2026-09-04T20:53:58.284Z",
-      "verificationLevel": "verified",
-      "verificationMethod": "Automated live browser check matched listing identity and current availability wording. Cross-verified by live Zumper detail on 2026-09-04.",
-      "availabilityStatus": "active",
-      "status": "new",
+      "verificationLevel": "excluded_by_scope",
+      "verificationMethod": "Excluded by user search scope: monthly rent below CAD $3,500.",
+      "availabilityStatus": "excluded",
+      "status": "excluded",
       "priceDrop": false,
-      "dataNotes": "Independent inventory identity: canonical address + exact detail URL (unit not public)."
+      "dataNotes": "Independent inventory identity: canonical address + exact detail URL (unit not public).",
+      "scopeExclusionReason": "monthly rent below CAD $3,500"
     },
     {
       "id": "zumper-f9e9614ca8fb",
@@ -1219,12 +1236,13 @@
       "firstSeen": "2026-08-27",
       "lastChecked": "2026-09-04",
       "verifiedAt": "2026-09-04T20:53:58.284Z",
-      "verificationLevel": "verified",
-      "verificationMethod": "Automated live browser check matched listing identity and current availability wording. Cross-verified by live Zumper detail on 2026-09-04.",
-      "availabilityStatus": "active",
-      "status": "new",
+      "verificationLevel": "excluded_by_scope",
+      "verificationMethod": "Excluded by user search scope: monthly rent below CAD $3,500.",
+      "availabilityStatus": "excluded",
+      "status": "excluded",
       "priceDrop": false,
-      "dataNotes": "Independent inventory identity: canonical address + exact detail URL (unit not public)."
+      "dataNotes": "Independent inventory identity: canonical address + exact detail URL (unit not public).",
+      "scopeExclusionReason": "monthly rent below CAD $3,500"
     },
     {
       "id": "zumper-ecd4e868f79c",
@@ -1289,12 +1307,13 @@
       "firstSeen": "2026-09-02",
       "lastChecked": "2026-09-04",
       "verifiedAt": "2026-09-04T20:53:58.284Z",
-      "verificationLevel": "verified",
-      "verificationMethod": "Automated live browser check matched listing identity and current availability wording. Cross-verified by live Zumper detail on 2026-09-04.",
-      "availabilityStatus": "active",
-      "status": "new",
+      "verificationLevel": "excluded_by_scope",
+      "verificationMethod": "Excluded by user search scope: monthly rent below CAD $3,500.",
+      "availabilityStatus": "excluded",
+      "status": "excluded",
       "priceDrop": false,
-      "dataNotes": "Independent unit identity: canonical address + unit."
+      "dataNotes": "Independent unit identity: canonical address + unit.",
+      "scopeExclusionReason": "monthly rent below CAD $3,500"
     },
     {
       "id": "zumper-1441677a9e59",
@@ -1429,12 +1448,13 @@
       "firstSeen": "2026-09-02",
       "lastChecked": "2026-09-04",
       "verifiedAt": "2026-09-04T20:48:19.555Z",
-      "verificationLevel": "verified",
-      "verificationMethod": "Automated live browser check matched listing identity and current availability wording.",
-      "availabilityStatus": "active",
-      "status": "new",
+      "verificationLevel": "excluded_by_scope",
+      "verificationMethod": "Excluded by user search scope: monthly rent below CAD $3,500.",
+      "availabilityStatus": "excluded",
+      "status": "excluded",
       "priceDrop": false,
-      "dataNotes": "Independent inventory identity: canonical address + exact detail URL (unit not public)."
+      "dataNotes": "Independent inventory identity: canonical address + exact detail URL (unit not public).",
+      "scopeExclusionReason": "monthly rent below CAD $3,500"
     },
     {
       "id": "zumper-284446d281ee",
@@ -1464,12 +1484,13 @@
       "firstSeen": "2026-09-02",
       "lastChecked": "2026-09-04",
       "verifiedAt": "2026-09-04T20:53:58.284Z",
-      "verificationLevel": "verified",
-      "verificationMethod": "Automated live browser check matched listing identity and current availability wording. Cross-verified by live Zumper detail on 2026-09-04.",
-      "availabilityStatus": "active",
-      "status": "new",
+      "verificationLevel": "excluded_by_scope",
+      "verificationMethod": "Excluded by user search scope: house share or separately rented portion of a house.",
+      "availabilityStatus": "excluded",
+      "status": "excluded",
       "priceDrop": false,
-      "dataNotes": "Independent inventory identity: canonical address + exact detail URL (unit not public)."
+      "dataNotes": "Independent inventory identity: canonical address + exact detail URL (unit not public).",
+      "scopeExclusionReason": "house share or separately rented portion of a house"
     },
     {
       "id": "zumper-03c32d9886e3",
@@ -1499,10 +1520,10 @@
       "firstSeen": "2026-09-02",
       "lastChecked": "2026-09-04",
       "verifiedAt": "2026-09-04T01:42:45.103Z",
-      "verificationLevel": "verified",
-      "verificationMethod": "Reverified in current authoritative Realtylink MLS inventory R3159559.",
-      "availabilityStatus": "active",
-      "status": "new",
+      "verificationLevel": "excluded_by_scope",
+      "verificationMethod": "Excluded by user search scope: house share or separately rented portion of a house.",
+      "availabilityStatus": "excluded",
+      "status": "excluded",
       "priceDrop": false,
       "dataNotes": "MLS number is canonical; Realtylink masks one civic digit, while the exact marketplace address is retained for display.",
       "marketplaceUrl": "https://www.zumper.com/address/4533-w-16th-ave-vancouver-bc-v6r-3e8-can",
@@ -1510,7 +1531,8 @@
       "mlsInventoryManaged": false,
       "evidenceSources": [
         "realtylink mls"
-      ]
+      ],
+      "scopeExclusionReason": "house share or separately rented portion of a house"
     },
     {
       "id": "zumper-9bc484458739",
@@ -1540,12 +1562,13 @@
       "firstSeen": "2026-09-02",
       "lastChecked": "2026-09-04",
       "verifiedAt": "2026-09-04T20:53:58.284Z",
-      "verificationLevel": "verified",
-      "verificationMethod": "Automated live browser check matched listing identity and current availability wording. Cross-verified by live Zumper detail on 2026-09-04.",
-      "availabilityStatus": "active",
-      "status": "new",
+      "verificationLevel": "excluded_by_scope",
+      "verificationMethod": "Excluded by user search scope: five or more bedrooms.",
+      "availabilityStatus": "excluded",
+      "status": "excluded",
       "priceDrop": false,
-      "dataNotes": "Independent inventory identity: canonical address + exact detail URL (unit not public)."
+      "dataNotes": "Independent inventory identity: canonical address + exact detail URL (unit not public).",
+      "scopeExclusionReason": "five or more bedrooms"
     },
     {
       "id": "zumper-bed681f0506a",
@@ -1575,12 +1598,13 @@
       "firstSeen": "2026-09-02",
       "lastChecked": "2026-09-04",
       "verifiedAt": "2026-09-04T20:53:58.284Z",
-      "verificationLevel": "verified",
-      "verificationMethod": "Automated live browser check matched listing identity and current availability wording. Cross-verified by live Zumper detail on 2026-09-04.",
-      "availabilityStatus": "active",
-      "status": "new",
+      "verificationLevel": "excluded_by_scope",
+      "verificationMethod": "Excluded by user search scope: five or more bedrooms.",
+      "availabilityStatus": "excluded",
+      "status": "excluded",
       "priceDrop": false,
-      "dataNotes": "Independent inventory identity: canonical address + exact detail URL (unit not public)."
+      "dataNotes": "Independent inventory identity: canonical address + exact detail URL (unit not public).",
+      "scopeExclusionReason": "five or more bedrooms"
     },
     {
       "id": "zumper-8618a2d7d599",
@@ -1610,12 +1634,13 @@
       "firstSeen": "2026-09-02",
       "lastChecked": "2026-09-04",
       "verifiedAt": "2026-09-04T20:53:58.284Z",
-      "verificationLevel": "verified",
-      "verificationMethod": "Automated live browser check matched listing identity and current availability wording. Cross-verified by live Zumper detail on 2026-09-04.",
-      "availabilityStatus": "active",
-      "status": "new",
+      "verificationLevel": "excluded_by_scope",
+      "verificationMethod": "Excluded by user search scope: five or more bedrooms.",
+      "availabilityStatus": "excluded",
+      "status": "excluded",
       "priceDrop": false,
-      "dataNotes": "Independent inventory identity: canonical address + exact detail URL (unit not public)."
+      "dataNotes": "Independent inventory identity: canonical address + exact detail URL (unit not public).",
+      "scopeExclusionReason": "five or more bedrooms"
     },
     {
       "id": "zumper-3b3c85746b5c",
@@ -1758,16 +1783,17 @@
       "firstSeen": "2026-09-03",
       "lastChecked": "2026-09-04",
       "verifiedAt": "2026-09-04T20:48:19.555Z",
-      "verificationLevel": "verified",
-      "verificationMethod": "Reverified by exact current Realtylink detail for MLS R3160936; identity, availability and rent all matched.",
-      "availabilityStatus": "active",
-      "status": "corrected",
+      "verificationLevel": "excluded_by_scope",
+      "verificationMethod": "Excluded by user search scope: monthly rent below CAD $3,500.",
+      "availabilityStatus": "excluded",
+      "status": "excluded",
       "priceDrop": false,
       "evidenceSources": [
         "realtylink mls"
       ],
       "dataNotes": "MLS number is the canonical identity; disappearance from the current MLS inventory triggers fail-closed revalidation.",
-      "removedAt": null
+      "removedAt": null,
+      "scopeExclusionReason": "monthly rent below CAD $3,500"
     },
     {
       "id": "mls-r3159471",
@@ -1838,18 +1864,19 @@
       "url": "https://realtylink.org/en/house~for-rent~vancouver/263181186",
       "photoPageUrl": "https://realtylink.org/en/house~for-rent~vancouver/263181186",
       "firstSeen": "2026-09-03",
-      "lastChecked": "2026-09-03",
+      "lastChecked": "2026-09-04",
       "verifiedAt": "2026-09-03T17:25:50.571Z",
-      "verificationLevel": "unverified",
-      "verificationMethod": "AUTO-REMOVED after MLS R3159559 was absent from two consecutive healthy Realtylink inventory snapshots.",
-      "availabilityStatus": "removed",
-      "status": "removed",
+      "verificationLevel": "excluded_by_scope",
+      "verificationMethod": "Excluded by user search scope: house share or separately rented portion of a house.",
+      "availabilityStatus": "excluded",
+      "status": "excluded",
       "priceDrop": false,
       "evidenceSources": [
         "realtylink mls"
       ],
       "dataNotes": "MLS number is the canonical identity; disappearance from the current MLS inventory triggers fail-closed revalidation.",
-      "removedAt": "2026-09-03"
+      "removedAt": "2026-09-03",
+      "scopeExclusionReason": "house share or separately rented portion of a house"
     },
     {
       "id": "mls-r3141972",
@@ -1879,18 +1906,19 @@
       "url": "https://realtylink.org/en/house~for-rent~vancouver/263163599",
       "photoPageUrl": "https://realtylink.org/en/house~for-rent~vancouver/263163599",
       "firstSeen": "2026-09-03",
-      "lastChecked": "2026-09-03",
+      "lastChecked": "2026-09-04",
       "verifiedAt": "2026-09-03T18:34:26.739Z",
-      "verificationLevel": "unverified",
-      "verificationMethod": "AUTO-REMOVED after MLS R3141972 was absent from two consecutive healthy Realtylink inventory snapshots.",
-      "availabilityStatus": "removed",
-      "status": "removed",
+      "verificationLevel": "excluded_by_scope",
+      "verificationMethod": "Excluded by user search scope: monthly rent below CAD $3,500.",
+      "availabilityStatus": "excluded",
+      "status": "excluded",
       "priceDrop": false,
       "evidenceSources": [
         "realtylink mls"
       ],
       "dataNotes": "MLS number is the canonical identity; disappearance from the current MLS inventory triggers fail-closed revalidation.",
-      "removedAt": "2026-09-03"
+      "removedAt": "2026-09-03",
+      "scopeExclusionReason": "monthly rent below CAD $3,500"
     },
     {
       "id": "mls-r3150730",
@@ -1922,16 +1950,17 @@
       "firstSeen": "2026-09-03",
       "lastChecked": "2026-09-04",
       "verifiedAt": "2026-09-04T16:58:24.450Z",
-      "verificationLevel": "unverified",
-      "verificationMethod": "AUTO-REMOVED after MLS R3150730 was absent from two consecutive healthy Realtylink inventory snapshots.",
-      "availabilityStatus": "removed",
-      "status": "removed",
+      "verificationLevel": "excluded_by_scope",
+      "verificationMethod": "Excluded by user search scope: monthly rent below CAD $3,500.",
+      "availabilityStatus": "excluded",
+      "status": "excluded",
       "priceDrop": false,
       "evidenceSources": [
         "realtylink mls"
       ],
       "dataNotes": "MLS number is the canonical identity; disappearance from the current MLS inventory triggers fail-closed revalidation.",
-      "removedAt": "2026-09-04"
+      "removedAt": "2026-09-04",
+      "scopeExclusionReason": "monthly rent below CAD $3,500"
     },
     {
       "id": "mls-r3151022",
@@ -2086,16 +2115,17 @@
       "firstSeen": "2026-09-03",
       "lastChecked": "2026-09-04",
       "verifiedAt": "2026-09-04T00:08:39.129Z",
-      "verificationLevel": "unverified",
-      "verificationMethod": "AUTO-REMOVED after MLS R3145335 was absent from two consecutive healthy Realtylink inventory snapshots.",
-      "availabilityStatus": "removed",
-      "status": "removed",
+      "verificationLevel": "excluded_by_scope",
+      "verificationMethod": "Excluded by user search scope: monthly rent below CAD $3,500.",
+      "availabilityStatus": "excluded",
+      "status": "excluded",
       "priceDrop": false,
       "evidenceSources": [
         "realtylink mls"
       ],
       "dataNotes": "MLS number is the canonical identity; disappearance from the current MLS inventory triggers fail-closed revalidation.",
-      "removedAt": "2026-09-04"
+      "removedAt": "2026-09-04",
+      "scopeExclusionReason": "monthly rent below CAD $3,500"
     },
     {
       "id": "mls-r3129974",
@@ -2209,16 +2239,17 @@
       "firstSeen": "2026-09-03",
       "lastChecked": "2026-09-04",
       "verifiedAt": "2026-09-04T20:48:19.555Z",
-      "verificationLevel": "verified",
-      "verificationMethod": "Reverified by exact current Realtylink detail for MLS R3146956; identity, availability and rent all matched.",
-      "availabilityStatus": "active",
-      "status": "corrected",
+      "verificationLevel": "excluded_by_scope",
+      "verificationMethod": "Excluded by user search scope: five or more bedrooms.",
+      "availabilityStatus": "excluded",
+      "status": "excluded",
       "priceDrop": false,
       "evidenceSources": [
         "realtylink mls"
       ],
       "dataNotes": "MLS number is the canonical identity; disappearance from the current MLS inventory triggers fail-closed revalidation.",
-      "removedAt": null
+      "removedAt": null,
+      "scopeExclusionReason": "five or more bedrooms"
     },
     {
       "id": "mls-r3158299",
@@ -2250,16 +2281,17 @@
       "firstSeen": "2026-09-03",
       "lastChecked": "2026-09-04",
       "verifiedAt": "2026-09-04T20:58:02.736Z",
-      "verificationLevel": "verified",
-      "verificationMethod": "Reverified in current authoritative Realtylink MLS inventory R3158299.",
-      "availabilityStatus": "active",
-      "status": "corrected",
+      "verificationLevel": "excluded_by_scope",
+      "verificationMethod": "Excluded by user search scope: monthly rent below CAD $3,500.",
+      "availabilityStatus": "excluded",
+      "status": "excluded",
       "priceDrop": false,
       "evidenceSources": [
         "realtylink mls"
       ],
       "dataNotes": "MLS number is the canonical identity; disappearance from the current MLS inventory triggers fail-closed revalidation.",
-      "removedAt": null
+      "removedAt": null,
+      "scopeExclusionReason": "monthly rent below CAD $3,500"
     },
     {
       "id": "mls-r3151352",
@@ -2291,16 +2323,17 @@
       "firstSeen": "2026-09-03",
       "lastChecked": "2026-09-04",
       "verifiedAt": "2026-09-04T20:48:19.555Z",
-      "verificationLevel": "verified",
-      "verificationMethod": "Reverified by exact current Realtylink detail for MLS R3151352; identity, availability and rent all matched.",
-      "availabilityStatus": "active",
-      "status": "removed",
+      "verificationLevel": "excluded_by_scope",
+      "verificationMethod": "Excluded by user search scope: monthly rent below CAD $3,500.",
+      "availabilityStatus": "excluded",
+      "status": "excluded",
       "priceDrop": false,
       "evidenceSources": [
         "realtylink mls"
       ],
       "dataNotes": "MLS number is the canonical identity; disappearance from the current MLS inventory triggers fail-closed revalidation.",
-      "removedAt": null
+      "removedAt": null,
+      "scopeExclusionReason": "monthly rent below CAD $3,500"
     },
     {
       "id": "mls-r3158149",
@@ -2373,16 +2406,17 @@
       "firstSeen": "2026-09-03",
       "lastChecked": "2026-09-04",
       "verifiedAt": "2026-09-04T17:08:09.614Z",
-      "verificationLevel": "unverified",
-      "verificationMethod": "Hidden pending removal: MLS R3133139 is absent from the latest complete Realtylink inventory snapshot; removal requires another complete confirmation at least four hours later.",
-      "availabilityStatus": "needs_confirmation",
-      "status": "corrected",
+      "verificationLevel": "excluded_by_scope",
+      "verificationMethod": "Excluded by user search scope: five or more bedrooms.",
+      "availabilityStatus": "excluded",
+      "status": "excluded",
       "priceDrop": false,
       "evidenceSources": [
         "realtylink mls"
       ],
       "dataNotes": "MLS number is the canonical identity; disappearance from the current MLS inventory triggers fail-closed revalidation.",
-      "removedAt": "2026-09-04"
+      "removedAt": "2026-09-04",
+      "scopeExclusionReason": "five or more bedrooms"
     },
     {
       "id": "mls-r3158036",
@@ -2455,16 +2489,17 @@
       "firstSeen": "2026-09-03",
       "lastChecked": "2026-09-04",
       "verifiedAt": "2026-09-04T20:48:19.555Z",
-      "verificationLevel": "verified",
-      "verificationMethod": "Reverified by exact current Realtylink detail for MLS R3134535; identity, availability and rent all matched.",
-      "availabilityStatus": "active",
-      "status": "corrected",
+      "verificationLevel": "excluded_by_scope",
+      "verificationMethod": "Excluded by user search scope: five or more bedrooms.",
+      "availabilityStatus": "excluded",
+      "status": "excluded",
       "priceDrop": false,
       "evidenceSources": [
         "realtylink mls"
       ],
       "dataNotes": "MLS number is the canonical identity; disappearance from the current MLS inventory triggers fail-closed revalidation.",
-      "removedAt": null
+      "removedAt": null,
+      "scopeExclusionReason": "five or more bedrooms"
     },
     {
       "id": "mls-r3158552",
@@ -2496,16 +2531,17 @@
       "firstSeen": "2026-09-03",
       "lastChecked": "2026-09-04",
       "verifiedAt": "2026-09-04T20:48:19.555Z",
-      "verificationLevel": "verified",
-      "verificationMethod": "Reverified by exact current Realtylink detail for MLS R3158552; identity, availability and rent all matched.",
-      "availabilityStatus": "active",
-      "status": "corrected",
+      "verificationLevel": "excluded_by_scope",
+      "verificationMethod": "Excluded by user search scope: monthly rent below CAD $3,500.",
+      "availabilityStatus": "excluded",
+      "status": "excluded",
       "priceDrop": false,
       "evidenceSources": [
         "realtylink mls"
       ],
       "dataNotes": "MLS number is the canonical identity; disappearance from the current MLS inventory triggers fail-closed revalidation.",
-      "removedAt": null
+      "removedAt": null,
+      "scopeExclusionReason": "monthly rent below CAD $3,500"
     },
     {
       "id": "mls-r3148298",
@@ -2660,16 +2696,17 @@
       "firstSeen": "2026-09-03",
       "lastChecked": "2026-09-04",
       "verifiedAt": "2026-09-04T20:48:19.555Z",
-      "verificationLevel": "verified",
-      "verificationMethod": "Reverified by exact current Realtylink detail for MLS R2907080; identity, availability and rent all matched.",
-      "availabilityStatus": "active",
-      "status": "corrected",
+      "verificationLevel": "excluded_by_scope",
+      "verificationMethod": "Excluded by user search scope: five or more bedrooms.",
+      "availabilityStatus": "excluded",
+      "status": "excluded",
       "priceDrop": false,
       "evidenceSources": [
         "realtylink mls"
       ],
       "dataNotes": "MLS number is the canonical identity; disappearance from the current MLS inventory triggers fail-closed revalidation.",
-      "removedAt": null
+      "removedAt": null,
+      "scopeExclusionReason": "five or more bedrooms"
     },
     {
       "id": "mls-r3159579",
@@ -2701,16 +2738,17 @@
       "firstSeen": "2026-09-04",
       "lastChecked": "2026-09-04",
       "verifiedAt": "2026-09-04T20:48:19.555Z",
-      "verificationLevel": "verified",
-      "verificationMethod": "Reverified by exact current Realtylink detail for MLS R3159579; identity, availability and rent all matched.",
-      "availabilityStatus": "active",
-      "status": "corrected",
+      "verificationLevel": "excluded_by_scope",
+      "verificationMethod": "Excluded by user search scope: five or more bedrooms.",
+      "availabilityStatus": "excluded",
+      "status": "excluded",
       "priceDrop": false,
       "evidenceSources": [
         "realtylink mls"
       ],
       "dataNotes": "MLS number is the canonical identity; disappearance from the current MLS inventory triggers fail-closed revalidation.",
-      "removedAt": null
+      "removedAt": null,
+      "scopeExclusionReason": "five or more bedrooms"
     },
     {
       "id": "mls-r3159353",
@@ -2742,16 +2780,17 @@
       "firstSeen": "2026-09-04",
       "lastChecked": "2026-09-04",
       "verifiedAt": "2026-09-04T20:48:19.555Z",
-      "verificationLevel": "verified",
-      "verificationMethod": "Reverified by exact current Realtylink detail for MLS R3159353; identity, availability and rent all matched.",
-      "availabilityStatus": "active",
-      "status": "new",
+      "verificationLevel": "excluded_by_scope",
+      "verificationMethod": "Excluded by user search scope: monthly rent below CAD $3,500.",
+      "availabilityStatus": "excluded",
+      "status": "excluded",
       "priceDrop": false,
       "evidenceSources": [
         "realtylink mls"
       ],
       "dataNotes": "MLS number is the canonical identity; disappearance from the current MLS inventory triggers fail-closed revalidation.",
-      "removedAt": null
+      "removedAt": null,
+      "scopeExclusionReason": "monthly rent below CAD $3,500"
     },
     {
       "id": "kits-walk-floorplan-2-bedroom-741-3600",

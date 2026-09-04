@@ -1,6 +1,6 @@
 import fs from 'node:fs/promises';
 import path from 'node:path';
-import { bedroomEligible } from './discovery-policy.mjs';
+import { bedroomEligible, rentEligible } from './discovery-policy.mjs';
 import { listingMls } from './inventory-identity.mjs';
 const DATA=path.join(process.cwd(),'data');
 const read=async(p,d)=>{try{return JSON.parse(await fs.readFile(p,'utf8'))}catch{return d}};
@@ -41,6 +41,7 @@ for(const l of active){
   if(l.sqft==null)issues.push({severity:'info',id:l.id,issue:'unknown-sqft'});
   else if(!Number.isFinite(Number(l.sqft))||Number(l.sqft)<200||Number(l.sqft)>15000)issues.push({severity:'high',id:l.id,issue:'implausible-sqft',detail:l.sqft});
   if(!bedroomEligible(l.bedrooms))issues.push({severity:'high',id:l.id,issue:'below-2br-discovery-minimum',detail:`bedrooms=${l.bedrooms}`});
+  if(!rentEligible(l.rent))issues.push({severity:'high',id:l.id,issue:'below-rent-scope-minimum',detail:`rent=${l.rent}`});
   if(strongOfficialNegative(l.officialStatus))issues.push({severity:'high',id:l.id,issue:'active-despite-official-negative',detail:`officialStatus=${l.officialStatus}${l.officialStatusAuthority?` (${l.officialStatusAuthority})`:''}`});
   if(String(l.verificationLevel||'').toLowerCase()==='unverified')issues.push({severity:'high',id:l.id,issue:'active-but-unverified'});
   if(l.ac==null)issues.push({severity:'info',id:l.id,issue:'unknown-ac'});

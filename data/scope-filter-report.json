@@ -1,0 +1,194 @@
+{
+  "generatedAt": "2026-09-04T22:32:20.028Z",
+  "policy": "Only CAD $3,500+ entire-home rentals with 2–4 bedrooms are eligible. House shares and separately rented portions of houses are excluded.",
+  "activeCount": 26,
+  "excludedCount": 36,
+  "exclusionEventsToday": 27,
+  "countsByReason": {
+    "monthly rent below CAD $3,500": 24,
+    "house share or separately rented portion of a house": 4,
+    "five or more bedrooms": 8
+  },
+  "excluded": [
+    {
+      "id": "kits-walk-2br-flex-616",
+      "reason": "monthly rent below CAD $3,500",
+      "wasActive": false
+    },
+    {
+      "id": "zumper-cd96ddf129b5",
+      "reason": "monthly rent below CAD $3,500",
+      "wasActive": false
+    },
+    {
+      "id": "zumper-c047dd62c7b5",
+      "reason": "monthly rent below CAD $3,500",
+      "wasActive": false
+    },
+    {
+      "id": "zumper-118592c0411f",
+      "reason": "monthly rent below CAD $3,500",
+      "wasActive": false
+    },
+    {
+      "id": "zumper-6e03d092610a",
+      "reason": "house share or separately rented portion of a house",
+      "wasActive": false
+    },
+    {
+      "id": "zumper-40e7a81ead7b",
+      "reason": "monthly rent below CAD $3,500",
+      "wasActive": false
+    },
+    {
+      "id": "zumper-adc0623c7c44",
+      "reason": "monthly rent below CAD $3,500",
+      "wasActive": false
+    },
+    {
+      "id": "zumper-a0bd98e76c8f",
+      "reason": "monthly rent below CAD $3,500",
+      "wasActive": false
+    },
+    {
+      "id": "zumper-a4de373229e1",
+      "reason": "monthly rent below CAD $3,500",
+      "wasActive": false
+    },
+    {
+      "id": "zumper-4dfebec53d29",
+      "reason": "monthly rent below CAD $3,500",
+      "wasActive": false
+    },
+    {
+      "id": "zumper-5f1919a8a4cb",
+      "reason": "monthly rent below CAD $3,500",
+      "wasActive": false
+    },
+    {
+      "id": "zumper-e353962d7737",
+      "reason": "monthly rent below CAD $3,500",
+      "wasActive": false
+    },
+    {
+      "id": "zumper-2fde865f7e2c",
+      "reason": "monthly rent below CAD $3,500",
+      "wasActive": false
+    },
+    {
+      "id": "zumper-3d00038ec8dc",
+      "reason": "monthly rent below CAD $3,500",
+      "wasActive": false
+    },
+    {
+      "id": "zumper-f9e9614ca8fb",
+      "reason": "monthly rent below CAD $3,500",
+      "wasActive": false
+    },
+    {
+      "id": "zumper-289dc426c15b",
+      "reason": "monthly rent below CAD $3,500",
+      "wasActive": false
+    },
+    {
+      "id": "zumper-c0c663d5d7eb",
+      "reason": "monthly rent below CAD $3,500",
+      "wasActive": false
+    },
+    {
+      "id": "zumper-284446d281ee",
+      "reason": "house share or separately rented portion of a house",
+      "wasActive": false
+    },
+    {
+      "id": "zumper-03c32d9886e3",
+      "reason": "house share or separately rented portion of a house",
+      "wasActive": false
+    },
+    {
+      "id": "zumper-9bc484458739",
+      "reason": "five or more bedrooms",
+      "wasActive": false
+    },
+    {
+      "id": "zumper-bed681f0506a",
+      "reason": "five or more bedrooms",
+      "wasActive": false
+    },
+    {
+      "id": "zumper-8618a2d7d599",
+      "reason": "five or more bedrooms",
+      "wasActive": false
+    },
+    {
+      "id": "mls-r3160936",
+      "reason": "monthly rent below CAD $3,500",
+      "wasActive": false
+    },
+    {
+      "id": "mls-r3159559",
+      "reason": "house share or separately rented portion of a house",
+      "wasActive": false
+    },
+    {
+      "id": "mls-r3141972",
+      "reason": "monthly rent below CAD $3,500",
+      "wasActive": false
+    },
+    {
+      "id": "mls-r3150730",
+      "reason": "monthly rent below CAD $3,500",
+      "wasActive": false
+    },
+    {
+      "id": "mls-r3145335",
+      "reason": "monthly rent below CAD $3,500",
+      "wasActive": false
+    },
+    {
+      "id": "mls-r3146956",
+      "reason": "five or more bedrooms",
+      "wasActive": false
+    },
+    {
+      "id": "mls-r3158299",
+      "reason": "monthly rent below CAD $3,500",
+      "wasActive": false
+    },
+    {
+      "id": "mls-r3151352",
+      "reason": "monthly rent below CAD $3,500",
+      "wasActive": false
+    },
+    {
+      "id": "mls-r3133139",
+      "reason": "five or more bedrooms",
+      "wasActive": false
+    },
+    {
+      "id": "mls-r3134535",
+      "reason": "five or more bedrooms",
+      "wasActive": false
+    },
+    {
+      "id": "mls-r3158552",
+      "reason": "monthly rent below CAD $3,500",
+      "wasActive": false
+    },
+    {
+      "id": "mls-r2907080",
+      "reason": "five or more bedrooms",
+      "wasActive": false
+    },
+    {
+      "id": "mls-r3159579",
+      "reason": "five or more bedrooms",
+      "wasActive": false
+    },
+    {
+      "id": "mls-r3159353",
+      "reason": "monthly rent below CAD $3,500",
+      "wasActive": false
+    }
+  ]
+}

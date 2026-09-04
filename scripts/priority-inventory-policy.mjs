@@ -1,3 +1,5 @@
+import { bedroomEligible, rentEligible } from './discovery-policy.mjs';
+
 export function aggregateUnitCount(jsonLd = []) {
   let maximum = 0;
   const visit = value => {
@@ -27,8 +29,8 @@ export function structuredRentalInventories(jsonLd = []) {
     const sqft = Number(value.floorSize?.value);
     const name = String(value.name || '');
     const bedrooms = Number(name.match(/\b([1-9]\d?)\s*(?:bedroom|bed|br)\b/i)?.[1]);
-    if (Number.isFinite(price) && price >= 1500 && price <= 15000 &&
-        Number.isFinite(sqft) && sqft >= 200 && sqft <= 15000 && bedrooms >= 2) {
+    if (Number.isFinite(price) && rentEligible(price) && price <= 15000 &&
+        Number.isFinite(sqft) && sqft >= 200 && sqft <= 15000 && bedroomEligible(bedrooms)) {
       const key = `${bedrooms}:${price}:${sqft}`;
       if (!rows.some(row => row.key === key)) rows.push({ key, name, bedrooms, rent: price, sqft });
     }

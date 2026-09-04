@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-09-04T20:59:06.064Z",
-  "activeCount": 53,
+  "generatedAt": "2026-09-04T22:32:20.159Z",
+  "activeCount": 26,
   "decisionReady": true,
   "highIssueCount": 0,
   "mediumIssueCount": 0,
-  "infoIssueCount": 85,
+  "infoIssueCount": 42,
   "issues": [
     {
       "severity": "info",
@@ -53,21 +53,6 @@
     },
     {
       "severity": "info",
-      "id": "zumper-cd96ddf129b5",
-      "issue": "unknown-ac"
-    },
-    {
-      "severity": "info",
-      "id": "zumper-cd96ddf129b5",
-      "issue": "unknown-orientation"
-    },
-    {
-      "severity": "info",
-      "id": "zumper-118592c0411f",
-      "issue": "unknown-ac"
-    },
-    {
-      "severity": "info",
       "id": "zumper-9157c4798023",
       "issue": "unknown-ac"
     },
@@ -88,27 +73,12 @@
     },
     {
       "severity": "info",
-      "id": "zumper-40e7a81ead7b",
-      "issue": "unknown-orientation"
-    },
-    {
-      "severity": "info",
       "id": "zumper-2e85ffb3f678",
       "issue": "unknown-ac"
     },
     {
       "severity": "info",
       "id": "zumper-2e85ffb3f678",
-      "issue": "unknown-orientation"
-    },
-    {
-      "severity": "info",
-      "id": "zumper-adc0623c7c44",
-      "issue": "unknown-ac"
-    },
-    {
-      "severity": "info",
-      "id": "zumper-adc0623c7c44",
       "issue": "unknown-orientation"
     },
     {
@@ -123,92 +93,12 @@
     },
     {
       "severity": "info",
-      "id": "zumper-a0bd98e76c8f",
-      "issue": "unknown-ac"
-    },
-    {
-      "severity": "info",
-      "id": "zumper-a0bd98e76c8f",
-      "issue": "unknown-orientation"
-    },
-    {
-      "severity": "info",
-      "id": "zumper-4dfebec53d29",
-      "issue": "unknown-ac"
-    },
-    {
-      "severity": "info",
-      "id": "zumper-4dfebec53d29",
-      "issue": "unknown-orientation"
-    },
-    {
-      "severity": "info",
-      "id": "zumper-5f1919a8a4cb",
-      "issue": "unknown-ac"
-    },
-    {
-      "severity": "info",
-      "id": "zumper-5f1919a8a4cb",
-      "issue": "unknown-orientation"
-    },
-    {
-      "severity": "info",
-      "id": "zumper-e353962d7737",
-      "issue": "unknown-ac"
-    },
-    {
-      "severity": "info",
-      "id": "zumper-e353962d7737",
-      "issue": "unknown-orientation"
-    },
-    {
-      "severity": "info",
-      "id": "zumper-2fde865f7e2c",
-      "issue": "unknown-ac"
-    },
-    {
-      "severity": "info",
-      "id": "zumper-2fde865f7e2c",
-      "issue": "unknown-orientation"
-    },
-    {
-      "severity": "info",
-      "id": "zumper-3d00038ec8dc",
-      "issue": "unknown-ac"
-    },
-    {
-      "severity": "info",
-      "id": "zumper-3d00038ec8dc",
-      "issue": "unknown-orientation"
-    },
-    {
-      "severity": "info",
-      "id": "zumper-f9e9614ca8fb",
-      "issue": "unknown-ac"
-    },
-    {
-      "severity": "info",
-      "id": "zumper-f9e9614ca8fb",
-      "issue": "unknown-orientation"
-    },
-    {
-      "severity": "info",
       "id": "zumper-ecd4e868f79c",
       "issue": "unknown-ac"
     },
     {
       "severity": "info",
       "id": "zumper-ecd4e868f79c",
-      "issue": "unknown-orientation"
-    },
-    {
-      "severity": "info",
-      "id": "zumper-289dc426c15b",
-      "issue": "unknown-ac"
-    },
-    {
-      "severity": "info",
-      "id": "zumper-289dc426c15b",
       "issue": "unknown-orientation"
     },
     {
@@ -243,61 +133,6 @@
     },
     {
       "severity": "info",
-      "id": "zumper-c0c663d5d7eb",
-      "issue": "unknown-ac"
-    },
-    {
-      "severity": "info",
-      "id": "zumper-c0c663d5d7eb",
-      "issue": "unknown-orientation"
-    },
-    {
-      "severity": "info",
-      "id": "zumper-284446d281ee",
-      "issue": "unknown-ac"
-    },
-    {
-      "severity": "info",
-      "id": "zumper-284446d281ee",
-      "issue": "unknown-orientation"
-    },
-    {
-      "severity": "info",
-      "id": "zumper-03c32d9886e3",
-      "issue": "unknown-ac"
-    },
-    {
-      "severity": "info",
-      "id": "zumper-03c32d9886e3",
-      "issue": "unknown-orientation"
-    },
-    {
-      "severity": "info",
-      "id": "zumper-9bc484458739",
-      "issue": "unknown-ac"
-    },
-    {
-      "severity": "info",
-      "id": "zumper-9bc484458739",
-      "issue": "unknown-orientation"
-    },
-    {
-      "severity": "info",
-      "id": "zumper-bed681f0506a",
-      "issue": "unknown-orientation"
-    },
-    {
-      "severity": "info",
-      "id": "zumper-8618a2d7d599",
-      "issue": "unknown-ac"
-    },
-    {
-      "severity": "info",
-      "id": "zumper-8618a2d7d599",
-      "issue": "unknown-orientation"
-    },
-    {
-      "severity": "info",
       "id": "zumper-3b3c85746b5c",
       "issue": "unknown-ac"
     },
@@ -324,11 +159,6 @@
     {
       "severity": "info",
       "id": "zumper-16e9ae17cd91",
-      "issue": "unknown-orientation"
-    },
-    {
-      "severity": "info",
-      "id": "mls-r3160936",
       "issue": "unknown-orientation"
     },
     {
@@ -363,37 +193,7 @@
     },
     {
       "severity": "info",
-      "id": "mls-r3146956",
-      "issue": "unknown-orientation"
-    },
-    {
-      "severity": "info",
-      "id": "mls-r3158299",
-      "issue": "unknown-orientation"
-    },
-    {
-      "severity": "info",
-      "id": "mls-r3151352",
-      "issue": "unknown-orientation"
-    },
-    {
-      "severity": "info",
       "id": "mls-r3158036",
-      "issue": "unknown-orientation"
-    },
-    {
-      "severity": "info",
-      "id": "mls-r3134535",
-      "issue": "unknown-orientation"
-    },
-    {
-      "severity": "info",
-      "id": "mls-r3158552",
-      "issue": "unknown-sqft"
-    },
-    {
-      "severity": "info",
-      "id": "mls-r3158552",
       "issue": "unknown-orientation"
     },
     {
@@ -408,21 +208,6 @@
     },
     {
       "severity": "info",
-      "id": "mls-r2907080",
-      "issue": "unknown-orientation"
-    },
-    {
-      "severity": "info",
-      "id": "mls-r3159579",
-      "issue": "unknown-orientation"
-    },
-    {
-      "severity": "info",
-      "id": "mls-r3159353",
-      "issue": "unknown-orientation"
-    },
-    {
-      "severity": "info",
       "id": "kits-walk-floorplan-2-bedroom-741-3600",
       "issue": "unknown-ac"
     },
@@ -431,23 +216,5 @@
       "id": "kits-walk-floorplan-2-bedroom-741-3600",
       "issue": "unknown-orientation"
     }
-  ],
-  "readinessChecks": {
-    "smokeOk": true,
-    "smokeFresh": true,
-    "smokeCheckedAt": "2026-09-04T20:59:12.501Z",
-    "latestDataAt": "2026-09-04T20:58:04.148Z",
-    "coverageReady": true,
-    "healthyDiscoveryLanes": 4,
-    "coverageWarnings": [
-      {
-        "severity": "warning",
-        "lane": "livrent",
-        "status": "unhealthy",
-        "detail": "0/5 searches healthy"
-      }
-    ]
-  },
-  "readinessIssues": [],
-  "finalizedAt": "2026-09-04T20:59:14.112Z"
+  ]
 }

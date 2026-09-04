@@ -2,6 +2,7 @@ import fs from 'node:fs/promises';
 import { civicAddressMatch, findExistingSeedListing, listingMls, maskedCivicAddressMatch, mlsIdentity } from './inventory-identity.mjs';
 import { firstLikelyRent, parseFacts } from './listing-parser.mjs';
 import { isAutoManagedListing } from './stale-auto-policy.mjs';
+import { bedroomEligible, isHouseShareText, listingScopeEligible, rentEligible } from './discovery-policy.mjs';
 import { aggregateUnitCount, discoveredStructuredInventories, structuredRentalInventories } from './priority-inventory-policy.mjs';
 import { dedupeHistoryEvents } from './history-policy.mjs';
 import { verifiedPhotoCandidates } from './listing-photo-candidates.mjs';
@@ -21,12 +22,20 @@ const activeAdapters = [
 const source = (await Promise.all(activeAdapters.map(read))).join('\n');
 const coverageSource = await read('scripts/audit-coverage.mjs');
 const purposeBuiltSource = await read('scripts/refresh-purposebuilt.mjs');
+const scopeSource = await read('scripts/enforce-listing-scope.mjs');
 const imageCacheWorkflow = await read('.github/workflows/cache-listing-images.yml');
 const catalog = JSON.parse(await read('data/live-sources.json'));
 const officialWatch = JSON.parse(await read('data/official-watch.json'));
 const indexHtml = await read('index.html');
 
 const failures = [];
+if(rentEligible(3499)||!rentEligible(3500))failures.push('CAD $3,500 minimum rent scope is not enforced.');
+if(!bedroomEligible(4)||bedroomEligible(5))failures.push('2–4 bedroom scope is not enforced.');
+if(!isHouseShareText('Furnished 3-bedroom basement suite with private entrance')||!isHouseShareText('upper and lower levels are available for rent separately')||!isHouseShareText('AVAILABLE basement 2 Beds 1 Bath')||isHouseShareText('Entire detached house with basement storage')||isHouseShareText('No roommate sharing; one family only'))failures.push('House-share classifier does not distinguish clear split-house evidence.');
+if(listingScopeEligible({rent:4500,bedrooms:3},'Main floor unit in a house')||!listingScopeEligible({rent:4500,bedrooms:3},'Entire family home'))failures.push('Unified listing scope policy is incorrect.');
+if(!scopeSource.includes("availabilityStatus='excluded'")||!scopeSource.includes('scope-filter-report.json'))failures.push('Out-of-scope listings are not persistently excluded and reported.');
+const scopedListings=JSON.parse(await read('data/listings.json')).listings||[];
+if(scopedListings.some(x=>x.availabilityStatus==='active'&&!listingScopeEligible(x)))failures.push('An active listing remains outside the rent/bedroom scope.');
 const duplicateHistoryFixture = {
   listing: [
     { date: '2026-09-04', rent: 2500, note: 'AUTO-REMOVED: exact negative.' },

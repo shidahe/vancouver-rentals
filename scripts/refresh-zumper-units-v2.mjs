@@ -2,6 +2,7 @@ import fs from 'node:fs/promises';
 import path from 'node:path';
 import crypto from 'node:crypto';
 import { chromium } from 'playwright';
+import { listingScopeEligible } from './discovery-policy.mjs';
 
 const DATA = path.join(process.cwd(), 'data');
 const EVIDENCE = path.join(DATA, 'evidence');
@@ -132,7 +133,7 @@ for(const url of [...urls].slice(0,120)) {
     const raws=await page.locator('script[type="application/ld+json"]').evaluateAll(ns=>ns.map(n=>n.textContent||'').slice(0,50));
     const ld=[]; for(const raw of raws){try{ld.push(JSON.parse(raw))}catch{}}
     const x=extract(ld,text,url);
-    if(!x||!x.live||Number(x.bedrooms)<2||!x.rent||!targetArea(x.exactGeo)||explicitlyOutOfScope(x.description)) continue;
+    if(!x||!x.live||!listingScopeEligible(x,x.description)||!targetArea(x.exactGeo)||explicitlyOutOfScope(x.description)) continue;
     x.identityKey=identityKey(x); found.push(x);
     await write(path.join(EVIDENCE,`zumper-v3-${hash(x.identityKey)}.json`),{checkedAt:iso,identityKey:x.identityKey,facts:x,jsonLd:ld.slice(0,8)});
   } catch {}
