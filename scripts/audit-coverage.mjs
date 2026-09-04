@@ -1,5 +1,6 @@
 import fs from 'node:fs/promises';
 import path from 'node:path';
+import { aggregateUnitCount } from './priority-inventory-policy.mjs';
 
 const DATA=path.join(process.cwd(),'data');
 const read=async(p,d)=>{try{return JSON.parse(await fs.readFile(p,'utf8'))}catch{return d}};
@@ -49,7 +50,8 @@ const independentHealthy=healthy.some(x=>x.kind==='independent-classifieds'||x.k
 const coverageReady=healthyDiscovery.length>=2&&broadHealthy&&independentHealthy&&priorityHealthy;
 const warnings=lanes.filter(x=>x.status!=='healthy').map(x=>({severity:'warning',lane:x.id,status:x.status,detail:x.detail}));
 const aggregateText=String(kitsWalkAggregate.bodyText||'');
-const aggregateCount=Number(aggregateText.match(/(?:listing|property|it)\s+has\s+(\d+)\s+units?/i)?.[1]||0);
+const textCount=Number(aggregateText.match(/(?:listing|property|it)\s+has\s+(\d+)\s+units?/i)?.[1]||0);
+const aggregateCount=Math.max(textCount,aggregateUnitCount(kitsWalkAggregate.jsonLd));
 const exactKitsWalkCount=(listings.listings||[]).filter(x=>
   x.availabilityStatus==='active' && /kits walk/i.test(String(x.buildingName||'')) && /^\d+[A-Za-z]?$/.test(String(x.unit||''))
 ).length;

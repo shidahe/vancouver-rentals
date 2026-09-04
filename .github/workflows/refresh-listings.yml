@@ -30,6 +30,7 @@ on:
       - 'scripts/cache-listing-images.mjs'
       - 'scripts/audit-data-quality.mjs'
       - 'scripts/audit-coverage.mjs'
+      - 'scripts/priority-inventory-policy.mjs'
       - 'scripts/test-site.mjs'
       - 'scripts/test-freshness-guard.mjs'
       - 'scripts/test-maintenance-policy.mjs'

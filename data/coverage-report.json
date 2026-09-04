@@ -1,10 +1,18 @@
 {
-  "generatedAt": "2026-09-04T05:46:15.346Z",
+  "generatedAt": "2026-09-04T07:28:10.458Z",
   "coverageReady": true,
   "healthyLaneCount": 3,
   "freshLaneCount": 8,
   "priorityOfficialReady": true,
-  "inventoryGaps": [],
+  "inventoryGaps": [
+    {
+      "building": "kits-walk",
+      "aggregateCount": 2,
+      "exactVerifiedCount": 1,
+      "missingExactUnits": 1,
+      "evidenceUrl": "https://rentals.ca/vancouver/kits-walk-by-strand"
+    }
+  ],
   "lanes": [
     {
       "id": "zumper",
@@ -83,6 +91,12 @@
       "lane": "livrent",
       "status": "unhealthy",
       "detail": "0/5 searches healthy"
+    },
+    {
+      "severity": "warning",
+      "lane": "priority-kits-walk-inventory",
+      "status": "incomplete",
+      "detail": "Aggregate inventory reports 2 units; 1 exact active units are verified"
     }
   ],
   "blockers": [],

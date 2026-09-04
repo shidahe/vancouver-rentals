@@ -2,6 +2,7 @@ import fs from 'node:fs/promises';
 import { civicAddressMatch, findExistingSeedListing, listingMls, maskedCivicAddressMatch, mlsIdentity } from './inventory-identity.mjs';
 import { firstLikelyRent, parseFacts } from './listing-parser.mjs';
 import { isAutoManagedListing } from './stale-auto-policy.mjs';
+import { aggregateUnitCount } from './priority-inventory-policy.mjs';
 import { verifiedPhotoCandidates } from './listing-photo-candidates.mjs';
 import { isTargetWestsideCoordinate, parseRealtylinkCoordinateValues, parseRealtylinkCoordinates, parseRealtylinkFloorArea, parseRealtylinkRoomCount } from './realtylink-parser.mjs';
 
@@ -25,6 +26,8 @@ const officialWatch = JSON.parse(await read('data/official-watch.json'));
 const indexHtml = await read('index.html');
 
 const failures = [];
+const aggregateFixture=[{'@type':'ApartmentComplex',containsPlace:[{'@type':'Apartment'},{'@type':'Apartment'}]}];
+if(aggregateUnitCount(aggregateFixture)!==2) failures.push('Structured priority-building inventory count is not parsed.');
 const staleFixture = { availabilityStatus: 'active', source: 'REW / Rent Sync', verificationMethod: 'Automated live browser check matched listing identity and current availability wording.' };
 if (!isAutoManagedListing(staleFixture)) failures.push('Non-Zumper exact-detail inventory bypasses stale expiry.');
 if (isAutoManagedListing({ ...staleFixture, mlsInventoryManaged: true })) failures.push('Authoritative MLS-feed inventory is incorrectly handled by generic stale expiry.');
