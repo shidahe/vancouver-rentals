@@ -47,6 +47,12 @@ for (const building of ['kits-walk', 'larchway-gardens', 'viridian']) {
 if (!coverageSource.includes('priority-building-official-monitor-unhealthy') || !coverageSource.includes('priorityHealthy')) {
   failures.push('Priority official source health is not enforced by coverage readiness.');
 }
+if (!catalog.discovery.some(x=>x.id==='kits-walk-rentalsca'&&/kits-walk-by-strand/.test(x.url))) {
+  failures.push('Kits Walk aggregate inventory source is missing.');
+}
+if (!coverageSource.includes('aggregateCount>exactKitsWalkCount') || !coverageSource.includes('inventoryGaps')) {
+  failures.push('Aggregate priority inventory is not compared with exact verified units.');
+}
 const kitsWalk605 = catalog.seedCandidates?.find(x => x.id === 'rew-kits-walk-605');
 if (!kitsWalk605 || kitsWalk605.unit !== '605' || kitsWalk605.address !== '2075 W 12th Ave, Vancouver, BC' || kitsWalk605.expectedBeds !== 2 || !kitsWalk605.autoPublish || !/\/605-2075-w-12th-avenue-vancouver-bc$/.test(kitsWalk605.url)) {
   failures.push('Current Kits Walk Unit 605 exact-detail verification seed is missing or weakened.');

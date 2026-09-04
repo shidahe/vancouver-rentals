@@ -13,6 +13,8 @@ const craigslist=await read(path.join(DATA,'craigslist-candidates.json'),{});
 const livrent=await read(path.join(DATA,'livrent-candidates.json'),{});
 const realtylink=await read(path.join(DATA,'realtylink-candidates.json'),{});
 const officialStatus=await read(path.join(DATA,'official-status.json'),{projects:[]});
+const listings=await read(path.join(DATA,'listings.json'),{listings:[]});
+const kitsWalkAggregate=await read(path.join(DATA,'evidence','source-kits-walk-rentalsca.json'),{});
 
 const countOk=obj=>Object.values(obj||{}).filter(x=>x?.ok===true).length;
 const countTotal=obj=>Object.keys(obj||{}).length;
@@ -46,6 +48,17 @@ const broadHealthy=healthy.some(x=>x.kind==='broad-marketplace');
 const independentHealthy=healthy.some(x=>x.kind==='independent-classifieds'||x.kind==='mls-rental');
 const coverageReady=healthyDiscovery.length>=2&&broadHealthy&&independentHealthy&&priorityHealthy;
 const warnings=lanes.filter(x=>x.status!=='healthy').map(x=>({severity:'warning',lane:x.id,status:x.status,detail:x.detail}));
+const aggregateText=String(kitsWalkAggregate.bodyText||'');
+const aggregateCount=Number(aggregateText.match(/(?:listing|property|it)\s+has\s+(\d+)\s+units?/i)?.[1]||0);
+const exactKitsWalkCount=(listings.listings||[]).filter(x=>
+  x.availabilityStatus==='active' && /kits walk/i.test(String(x.buildingName||'')) && /^\d+[A-Za-z]?$/.test(String(x.unit||''))
+).length;
+const inventoryGaps=[];
+if(aggregateCount>exactKitsWalkCount){
+  const gap={severity:'warning',lane:'priority-kits-walk-inventory',status:'incomplete',detail:`Aggregate inventory reports ${aggregateCount} units; ${exactKitsWalkCount} exact active units are verified`};
+  warnings.push(gap);
+  inventoryGaps.push({building:'kits-walk',aggregateCount,exactVerifiedCount:exactKitsWalkCount,missingExactUnits:aggregateCount-exactKitsWalkCount,evidenceUrl:kitsWalkAggregate.source?.url||null});
+}
 const blockers=[];
 if(!broadHealthy)blockers.push({severity:'high',issue:'no-healthy-broad-marketplace-discovery-lane'});
 if(!independentHealthy)blockers.push({severity:'high',issue:'no-healthy-independent-discovery-lane'});
@@ -54,6 +67,6 @@ for(const lane of priorityLanes.filter(x=>!x.healthy||!fresh(x.refreshedAt))){
   blockers.push({severity:'high',issue:'priority-building-official-monitor-unhealthy',lane:lane.id,detail:lane.detail});
 }
 
-const report={generatedAt:new Date().toISOString(),coverageReady,healthyLaneCount:healthyDiscovery.length,freshLaneCount:freshLanes.length,priorityOfficialReady:priorityHealthy,lanes,warnings,blockers,policy:'Coverage is ready when at least two fresh independent discovery families are healthy, including one broad marketplace and one independent classifieds/MLS family, and every priority building has at least one fresh usable official source.'};
+const report={generatedAt:new Date().toISOString(),coverageReady,healthyLaneCount:healthyDiscovery.length,freshLaneCount:freshLanes.length,priorityOfficialReady:priorityHealthy,inventoryGaps,lanes,warnings,blockers,policy:'Coverage is ready when at least two fresh independent discovery families are healthy, including one broad marketplace and one independent classifieds/MLS family, and every priority building has at least one fresh usable official source. Aggregate inventory counts are compared with exact verified units and reported as warnings, never auto-published.'};
 await write(path.join(DATA,'coverage-report.json'),report);
 console.log(`Coverage audit: coverageReady=${coverageReady}, healthy=${healthy.length}/${lanes.length}`);

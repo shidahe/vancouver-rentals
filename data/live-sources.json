@@ -28,6 +28,7 @@
 
     {"id":"rentfaster-vancouver","name":"RentFaster Vancouver","url":"https://www.rentfaster.ca/bc/vancouver/rentals/","kind":"marketplace","adapter":"generic-search"},
     {"id":"kits-walk-official","name":"Kits Walk official availability","url":"https://www.kitswalkleasing.com/floorplans","kind":"official","adapter":"official-floorplans"},
+    {"id":"kits-walk-rentalsca","name":"Kits Walk Rentals.ca aggregate inventory","url":"https://rentals.ca/vancouver/kits-walk-by-strand","kind":"marketplace","adapter":"official-floorplans"},
     {"id":"larchway-official","name":"Larchway Gardens official availability","url":"https://quadrealresidential.com/vancouver/larchway-gardens/contact/","kind":"official","adapter":"official-floorplans"},
     {"id":"viridian-official","name":"Viridian official availability","url":"https://www.rentcafe.com/apartments/bc/vancouver/viridian1/default.aspx","kind":"property_manager","adapter":"official-floorplans"},
     {"id":"arbutus-terrace-official","name":"Arbutus Terrace official","url":"https://stranddev.com/portfolio/arbutusterrace-rental","kind":"official","adapter":"official-floorplans"},

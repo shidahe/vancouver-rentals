@@ -1,9 +1,10 @@
 {
-  "generatedAt": "2026-09-04T00:23:24.996Z",
+  "generatedAt": "2026-09-04T01:31:38.228Z",
   "coverageReady": true,
   "healthyLaneCount": 4,
   "freshLaneCount": 8,
   "priorityOfficialReady": true,
+  "inventoryGaps": [],
   "lanes": [
     {
       "id": "zumper",
@@ -79,5 +80,5 @@
     }
   ],
   "blockers": [],
-  "policy": "Coverage is ready when at least two fresh independent discovery families are healthy, including one broad marketplace and one independent classifieds/MLS family, and every priority building has at least one fresh usable official source."
+  "policy": "Coverage is ready when at least two fresh independent discovery families are healthy, including one broad marketplace and one independent classifieds/MLS family, and every priority building has at least one fresh usable official source. Aggregate inventory counts are compared with exact verified units and reported as warnings, never auto-published."
 }
