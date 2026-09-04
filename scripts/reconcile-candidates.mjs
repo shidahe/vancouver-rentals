@@ -157,6 +157,21 @@ for(const x of payload.listings){
 
 for(const c of liv.candidates||[]){if(!c.rented||!unitToken(c.unit))continue;const k=candidateKey(c),x=listingByKey.get(k);if(!x||x.availabilityStatus!=='active')continue;x.availabilityStatus='removed';x.status='removed';x.removedAt=today;x.lastChecked=today;x.verifiedAt=iso;x.verificationMethod='Removed after exact-unit liv.rent detail explicitly showed Rented / no longer accepting applications.';(history[x.id]||=[]).push({date:today,rent:x.rent,note:'AUTO-REMOVED: exact matching liv.rent unit explicitly marked Rented.'});state.negativeMatches.push(x.id);}
 
+// Roll back removals produced by the former back-to-back-snapshot rule when the
+// listing was verified less than four hours ago. They remain hidden, but return
+// to needs_confirmation so a later, properly spaced complete snapshot must
+// confirm the disappearance before the record is considered removed.
+for(const x of payload.listings){
+  const verifiedAt=Date.parse(x.verifiedAt||'');
+  if(x.mlsInventoryManaged===true&&x.availabilityStatus==='removed'&&
+    /^AUTO-REMOVED after MLS .* two consecutive healthy Realtylink inventory snapshots\.$/.test(x.verificationMethod||'')&&
+    Number.isFinite(verifiedAt)&&Date.now()-verifiedAt<4*60*60*1000){
+    x.availabilityStatus='needs_confirmation';x.status='corrected';x.removedAt=null;x.verificationLevel='unverified';
+    x.verificationMethod=`Removal rolled back: MLS ${x.mls} disappearance was confirmed by snapshots less than four hours apart; awaiting a properly spaced complete snapshot.`;
+    (history[x.id]||=[]).push({date:today,rent:x.rent,note:'CORRECTED: premature MLS removal rolled back; a complete snapshot at least four hours later is required.'});
+  }
+}
+
 const realtylinkHealth=realtylink.health||[];
 const realtylinkCount=(realtylink.candidates||[]).length;
 const previousRealtylinkCount=Number(previousReconciliation.realtylinkSnapshotCount||0);
