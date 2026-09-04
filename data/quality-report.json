@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-04T01:43:37.589Z",
+  "generatedAt": "2026-09-04T04:49:36.517Z",
   "activeCount": 39,
   "decisionReady": true,
   "highIssueCount": 0,
@@ -338,34 +338,28 @@
     },
     {
       "severity": "info",
-      "id": "mls-r3159471",
+      "id": "mls-r3146956",
       "issue": "unknown-orientation"
     },
     {
       "severity": "info",
-      "id": "mls-r3158149",
+      "id": "mls-r3151352",
       "issue": "unknown-orientation"
     },
     {
       "severity": "info",
-      "id": "mls-r3159579",
+      "id": "mls-r3133139",
       "issue": "unknown-orientation"
     }
   ],
   "readinessChecks": {
     "smokeOk": true,
     "smokeFresh": true,
-    "smokeCheckedAt": "2026-09-04T01:43:44.296Z",
-    "latestDataAt": "2026-09-04T01:42:46.661Z",
+    "smokeCheckedAt": "2026-09-04T04:49:43.024Z",
+    "latestDataAt": "2026-09-04T04:48:45.352Z",
     "coverageReady": true,
-    "healthyDiscoveryLanes": 3,
+    "healthyDiscoveryLanes": 4,
     "coverageWarnings": [
-      {
-        "severity": "warning",
-        "lane": "rentalsca",
-        "status": "degraded",
-        "detail": "2/9 regional searches healthy"
-      },
       {
         "severity": "warning",
         "lane": "livrent",
@@ -375,5 +369,5 @@
     ]
   },
   "readinessIssues": [],
-  "finalizedAt": "2026-09-04T01:43:46.052Z"
+  "finalizedAt": "2026-09-04T04:49:44.805Z"
 }
