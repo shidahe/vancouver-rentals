@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-09-04T04:38:53.115Z",
+  "checkedAt": "2026-09-04T05:16:14.592Z",
   "listingId": "mls-r2907080",
   "sourceUrl": "https://realtylink.org/en/house~for-rent~vancouver/262928707",
   "ok": true,
@@ -423,7 +423,7 @@
     "https://media.realtylink.org/images/consumersite/member/1V26780/6b7b15f319644c27abb17042cb08918b.jpeg?width=120&height=90&fit=contain",
     "https://cdn.realtylink.org/public/bc/consumersite/images/logos/powered-by-centris.svg"
   ],
-  "elapsedMs": 3352,
+  "elapsedMs": 3363,
   "identityMatch": true,
   "explicitNegative": false,
   "negativePhrase": null,
@@ -431,9 +431,9 @@
   "positivePhrase": "/for rent/i",
   "extractedRent": 6980,
   "facts": {
-    "bedrooms": null,
+    "bedrooms": 8,
     "bathrooms": 4,
-    "sqft": null,
+    "sqft": 4000,
     "buildingYear": null,
     "ac": null,
     "parking": null,

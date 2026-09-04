@@ -1,21 +1,11 @@
 {
-  "generatedAt": "2026-09-04T05:11:12.962Z",
-  "activeCount": 56,
+  "generatedAt": "2026-09-04T05:25:58.027Z",
+  "activeCount": 52,
   "decisionReady": true,
   "highIssueCount": 0,
   "mediumIssueCount": 0,
-  "infoIssueCount": 88,
+  "infoIssueCount": 83,
   "issues": [
-    {
-      "severity": "info",
-      "id": "treo-2688-vine-r3142696",
-      "issue": "unknown-ac"
-    },
-    {
-      "severity": "info",
-      "id": "treo-2688-vine-r3142696",
-      "issue": "unknown-orientation"
-    },
     {
       "severity": "info",
       "id": "blenheim-terrace-204-r3149612",
@@ -169,11 +159,6 @@
     {
       "severity": "info",
       "id": "zumper-e353962d7737",
-      "issue": "unknown-orientation"
-    },
-    {
-      "severity": "info",
-      "id": "arbutus-residences-floorplan-2-bedroom-townhouse-den-1340",
       "issue": "unknown-orientation"
     },
     {
@@ -393,11 +378,6 @@
     },
     {
       "severity": "info",
-      "id": "mls-r3158149",
-      "issue": "unknown-orientation"
-    },
-    {
-      "severity": "info",
       "id": "mls-r3158036",
       "issue": "unknown-orientation"
     },
@@ -419,11 +399,6 @@
     {
       "severity": "info",
       "id": "mls-r3148298",
-      "issue": "unknown-orientation"
-    },
-    {
-      "severity": "info",
-      "id": "mls-r3151372",
       "issue": "unknown-orientation"
     },
     {
@@ -450,25 +425,25 @@
   "readinessChecks": {
     "smokeOk": true,
     "smokeFresh": true,
-    "smokeCheckedAt": "2026-09-04T05:11:20.435Z",
-    "latestDataAt": "2026-09-04T05:10:15.200Z",
+    "smokeCheckedAt": "2026-09-04T05:26:05.193Z",
+    "latestDataAt": "2026-09-04T05:24:57.815Z",
     "coverageReady": true,
-    "healthyDiscoveryLanes": 4,
+    "healthyDiscoveryLanes": 3,
     "coverageWarnings": [
+      {
+        "severity": "warning",
+        "lane": "rentalsca",
+        "status": "degraded",
+        "detail": "2/9 regional searches healthy"
+      },
       {
         "severity": "warning",
         "lane": "livrent",
         "status": "unhealthy",
         "detail": "0/5 searches healthy"
-      },
-      {
-        "severity": "warning",
-        "lane": "priority-kits-walk-inventory",
-        "status": "incomplete",
-        "detail": "Aggregate inventory reports 2 units; 1 exact active units are verified"
       }
     ]
   },
   "readinessIssues": [],
-  "finalizedAt": "2026-09-04T05:11:22.223Z"
+  "finalizedAt": "2026-09-04T05:26:06.957Z"
 }
