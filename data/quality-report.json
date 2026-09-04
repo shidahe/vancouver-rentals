@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-09-04T13:06:37.193Z",
+  "generatedAt": "2026-09-04T16:36:06.071Z",
   "activeCount": 54,
   "decisionReady": true,
   "highIssueCount": 0,
   "mediumIssueCount": 0,
-  "infoIssueCount": 85,
+  "infoIssueCount": 86,
   "issues": [
     {
       "severity": "info",
@@ -383,11 +383,6 @@
     },
     {
       "severity": "info",
-      "id": "mls-r3133139",
-      "issue": "unknown-orientation"
-    },
-    {
-      "severity": "info",
       "id": "mls-r3158036",
       "issue": "unknown-orientation"
     },
@@ -430,13 +425,23 @@
       "severity": "info",
       "id": "mls-r3159353",
       "issue": "unknown-orientation"
+    },
+    {
+      "severity": "info",
+      "id": "kits-walk-floorplan-2-bedroom-741-3600",
+      "issue": "unknown-ac"
+    },
+    {
+      "severity": "info",
+      "id": "kits-walk-floorplan-2-bedroom-741-3600",
+      "issue": "unknown-orientation"
     }
   ],
   "readinessChecks": {
     "smokeOk": true,
     "smokeFresh": true,
-    "smokeCheckedAt": "2026-09-04T13:06:44.337Z",
-    "latestDataAt": "2026-09-04T13:05:45.225Z",
+    "smokeCheckedAt": "2026-09-04T16:36:13.246Z",
+    "latestDataAt": "2026-09-04T16:35:15.615Z",
     "coverageReady": true,
     "healthyDiscoveryLanes": 4,
     "coverageWarnings": [
@@ -449,5 +454,5 @@
     ]
   },
   "readinessIssues": [],
-  "finalizedAt": "2026-09-04T13:06:46.124Z"
+  "finalizedAt": "2026-09-04T16:36:15.091Z"
 }
