@@ -426,6 +426,11 @@
       "date": "2026-09-03",
       "rent": 5390,
       "note": "NEEDS CONFIRMATION: latest purpose-built fallback sources did not confirm the exact configured rent + sqft inventory row."
+    },
+    {
+      "date": "2026-09-04",
+      "rent": 5390,
+      "note": "NEEDS CONFIRMATION: latest purpose-built fallback sources did not confirm the exact configured rent + sqft inventory row."
     }
   ],
   "zumper-2fde865f7e2c": [
@@ -706,6 +711,11 @@
       "date": "2026-09-03",
       "rent": 3000,
       "note": "AUTO-REMOVED: MLS R3158299 absent from two consecutive healthy inventory snapshots."
+    },
+    {
+      "date": "2026-09-04",
+      "rent": 3000,
+      "note": "CORRECTED: premature MLS removal rolled back; a complete snapshot at least four hours later is required."
     }
   ],
   "mls-r3151352": [
@@ -768,6 +778,11 @@
       "date": "2026-09-03",
       "rent": 2850,
       "note": "AUTO-REMOVED: MLS R3158552 absent from two consecutive healthy inventory snapshots."
+    },
+    {
+      "date": "2026-09-04",
+      "rent": 2850,
+      "note": "CORRECTED: premature MLS removal rolled back; a complete snapshot at least four hours later is required."
     }
   ],
   "mls-r3148298": [

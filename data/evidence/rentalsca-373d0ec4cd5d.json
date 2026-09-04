@@ -1,0 +1,162 @@
+{
+  "checkedAt": "2026-09-04T00:20:48.894Z",
+  "page": {
+    "source": "Rentals.ca",
+    "url": "https://rentals.ca/vancouver/2490-stephens-street-2",
+    "address": "2490 Stephens Street, Vancouver, British Columbia V6K 3W9",
+    "addressUnit": null,
+    "geo": {
+      "lat": 49.2642717,
+      "lng": -123.1661854
+    },
+    "targetArea": true,
+    "active": true,
+    "floorplans": [
+      {
+        "label": "2 Bedroom Apartments In Vancouver",
+        "unit": null,
+        "beds": 2,
+        "baths": null,
+        "sqft": null,
+        "rent": 2000,
+        "available": true
+      },
+      {
+        "label": "3 Bedroom Apartments In Vancouver",
+        "unit": null,
+        "beds": 3,
+        "baths": null,
+        "sqft": null,
+        "rent": 2000,
+        "available": true
+      },
+      {
+        "label": "4 Bedroom Apartments In Vancouver",
+        "unit": null,
+        "beds": 4,
+        "baths": null,
+        "sqft": null,
+        "rent": 2000,
+        "available": true
+      }
+    ],
+    "single": {
+      "rent": null,
+      "beds": 1,
+      "baths": null,
+      "sqft": null
+    },
+    "checkedAt": "2026-09-04T00:20:48.894Z"
+  },
+  "jsonLd": [
+    {
+      "@context": "http://schema.org",
+      "@type": "ApartmentComplex",
+      "url": "https://rentals.ca/vancouver/2490-stephens-street-2",
+      "name": "2490 Stephens Street",
+      "description": "Kitsilano, Nice, Large, Bright 1 Bedroom + Den Suite + Solarium\nFacing South (Lots of Natural Light)\nLaminate Flooring in Living Room and Hallways\nBedroom + Den have Carpets\nAppliances: Fridge, Stove, Dishwasher\nCoin Operated Laundry on Same Floor\nVery close to all amenities, 10 Minute drive to UBC and Downtown\nGarage Parking Available\nNO PETS, NO SMOKING BUILDING\n1 year Lease\nRent is $2,650 per month plus Utilities\nAvailable October 1st",
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 49.2642717,
+        "longitude": -123.1661854
+      },
+      "containedInPlace": {
+        "@type": "City",
+        "url": "",
+        "name": "",
+        "address": {
+          "@type": "PostalAddress",
+          "addressCountry": "CA",
+          "addressRegion": ""
+        }
+      },
+      "containsPlace": [
+        {
+          "@context": "http://schema.org",
+          "@type": "Apartment",
+          "name": "2 Bedroom",
+          "potentialAction": {
+            "@type": "RentAction",
+            "priceSpecification": {
+              "@type": "PriceSpecification",
+              "price": 2650,
+              "priceCurrency": "CAD"
+            }
+          },
+          "floorSize": {
+            "@type": "QuantitativeValue",
+            "unitCode": "FTK",
+            "value": "710.0"
+          }
+        }
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "CA",
+        "addressLocality": "Vancouver",
+        "addressRegion": "British Columbia",
+        "postalCode": "V6K 3W9",
+        "streetAddress": "2490 Stephens Street"
+      },
+      "telephone": "778-886-4322",
+      "photo": [
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/1528350/apartment-2240998599.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/1528350/apartment-2240998599.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/1528350/apartment-2240998598.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/1528350/apartment-2240998598.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/1528350/apartment-2240998601.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/1528350/apartment-2240998601.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/1528350/apartment-2240998600.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/1528350/apartment-2240998600.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/1528350/apartment-2240998602.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/1528350/apartment-2240998602.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/1528350/apartment-2240998603.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/1528350/apartment-2240998603.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/1528350/apartment-2240998604.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/1528350/apartment-2240998604.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/1528350/apartment-2240998605.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/1528350/apartment-2240998605.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/1528350/apartment-2240998606.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/1528350/apartment-2240998606.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/1528350/apartment-2240998607.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/1528350/apartment-2240998607.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/1528350/apartment-2240998608.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/1528350/apartment-2240998608.jpg"
+        }
+      ]
+    }
+  ],
+  "textSample": "Alert\nContact Property Contact\nSave Alert\n\nSimilar listings in\n\nCreate an Alert\nParking Information\nFeatures & Amenities\nUtilities Included\nAbout 2490 Stephens Street\n\nKitsilano, Nice, Large, Bright 1 Bedroom + Den Suite + Solarium\n\n \n\nFacing South (Lots of Natural Light)\n\nLaminate Flooring in Living Room and Hallways\n\nBedroom + Den have Carpets\n\nAppliances: Fridge, Stove, Dishwasher\n\nCoin Operated Laundry on Same Floor\n\nVery close to all amenities, 10 Minute drive to UBC and Downtown\n\nGarage Parking Available \n\nNO PETS, NO SMOKING BUILDING \n\n\n\n\n1 year Lease\n\n \n\nRent is $2,650 per month plus Utilities \n\nAvailable October 1st\n\nKitsilano, Nice, Large, Bright 1 Bedroom + Den Suite + Solarium\n\n \n\nFacing South (Lots of Natural Light)\n\nLaminate Flooring in Living Room and Hallways\n\nBedroom + Den have Carpets\n\nAppliances: Fridge, Stove, Dishwasher\n\nCoin Operated Laundry on Same Floor\n\nVery close to all amenities, 10 Minute drive to UBC and Downtown\n\nGarage Parking Available \n\nNO PETS, NO SMOKING BUILDING \n\n\n\n\n1 year Lease\n\n \n\nRent is $2,650 per month plus Utilities \n\nAvailable October 1st\n\nNeighbourhood Score & Commute Time\nOpen House Dates\nSave Alert\n\nSimilar listings in\n\nCreate an Alert\nSummary\n\nReport Listing\n\nExplore Similar Rentals\nPopular Rent Searches In Vancouver\nSearch by Amenities\nPet Friendly Apartments In Vancouver\nApartments With A/C In Vancouver\nApartments With Ensuite Laundry In Vancouver\nApartments With Dishwasher In Vancouver\nSearch by Bedrooms\n1 Bedroom Apartments In Vancouver\n2 Bedroom Apartments In Vancouver\n3 Bedroom Apartments In Vancouver\n4 Bedroom Apartments In Vancouver\nSearch by Budget\nApartments Under $1000 In Vancouver\nApartments Under $1250 In Vancouver\nApartments Under $2000 In Vancouver\nApartments Under $2500 In Vancouver\nSee All Rentals in Vancouver\nThis website uses cookies to ensure you get the best experience on our website. By clicking \"Allow All\", you consent to our use of cookies. Privacy Policy ↗\nManage Cookies\nDecline\nAllow All"
+}

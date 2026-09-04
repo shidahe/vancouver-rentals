@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-09-03T18:40:06.703Z",
+  "checkedAt": "2026-09-04T00:13:04.858Z",
   "listingId": "mls-r3129974",
   "sourceUrl": "https://realtylink.org/en/house~for-rent~vancouver/263151601",
   "ok": true,
@@ -421,12 +421,24 @@
     "https://media.realtylink.org/images/consumersite/property/263151601/a4aa2b2399394b8fb69bc2b100b8bc70.jpeg?width=320&height=240&fit=cover",
     "https://cdn.realtylink.org/public/bc/consumersite/images/logos/powered-by-centris.svg"
   ],
-  "elapsedMs": 4923,
-  "identityMatch": false,
+  "elapsedMs": 3387,
+  "identityMatch": true,
   "explicitNegative": false,
   "negativePhrase": null,
-  "explicitPositive": false,
+  "explicitPositive": true,
   "positivePhrase": "/for rent/i",
-  "extractedRent": null,
-  "facts": {}
+  "extractedRent": 4000,
+  "facts": {
+    "bedrooms": 3,
+    "bathrooms": 1,
+    "sqft": null,
+    "buildingYear": null,
+    "ac": null,
+    "parking": null,
+    "petFriendly": null,
+    "orientation": null,
+    "balcony": null,
+    "largeWindows": null,
+    "modernInterior": null
+  }
 }

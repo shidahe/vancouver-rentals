@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-09-04T00:09:37.635Z",
-  "activeCount": 44,
+  "generatedAt": "2026-09-04T00:23:24.960Z",
+  "activeCount": 41,
   "decisionReady": true,
   "highIssueCount": 0,
   "mediumIssueCount": 0,
-  "infoIssueCount": 75,
+  "infoIssueCount": 72,
   "issues": [
     {
       "severity": "info",
@@ -169,11 +169,6 @@
     {
       "severity": "info",
       "id": "zumper-e353962d7737",
-      "issue": "unknown-orientation"
-    },
-    {
-      "severity": "info",
-      "id": "arbutus-residences-floorplan-2-bedroom-townhouse-den-1340",
       "issue": "unknown-orientation"
     },
     {
@@ -343,17 +338,17 @@
     },
     {
       "severity": "info",
-      "id": "mls-r3160936",
-      "issue": "unknown-orientation"
-    },
-    {
-      "severity": "info",
       "id": "mls-r3159471",
       "issue": "unknown-orientation"
     },
     {
       "severity": "info",
-      "id": "mls-r3145335",
+      "id": "mls-r3150730",
+      "issue": "unknown-orientation"
+    },
+    {
+      "severity": "info",
+      "id": "mls-r3150923",
       "issue": "unknown-orientation"
     },
     {
@@ -370,32 +365,16 @@
       "severity": "info",
       "id": "mls-r3146956",
       "issue": "unknown-orientation"
-    },
-    {
-      "severity": "info",
-      "id": "mls-r3158179",
-      "issue": "unknown-orientation"
-    },
-    {
-      "severity": "info",
-      "id": "mls-r2907080",
-      "issue": "unknown-orientation"
     }
   ],
   "readinessChecks": {
     "smokeOk": true,
     "smokeFresh": true,
-    "smokeCheckedAt": "2026-09-04T00:09:44.431Z",
-    "latestDataAt": "2026-09-04T00:08:43.325Z",
+    "smokeCheckedAt": "2026-09-04T00:23:31.328Z",
+    "latestDataAt": "2026-09-04T00:22:37.943Z",
     "coverageReady": true,
-    "healthyDiscoveryLanes": 3,
+    "healthyDiscoveryLanes": 4,
     "coverageWarnings": [
-      {
-        "severity": "warning",
-        "lane": "rentalsca",
-        "status": "degraded",
-        "detail": "2/9 regional searches healthy"
-      },
       {
         "severity": "warning",
         "lane": "livrent",
@@ -405,5 +384,5 @@
     ]
   },
   "readinessIssues": [],
-  "finalizedAt": "2026-09-04T00:09:46.215Z"
+  "finalizedAt": "2026-09-04T00:23:33.030Z"
 }
