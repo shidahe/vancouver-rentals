@@ -3,6 +3,7 @@ import { civicAddressMatch, findExistingSeedListing, listingMls, maskedCivicAddr
 import { firstLikelyRent, parseFacts } from './listing-parser.mjs';
 import { isAutoManagedListing } from './stale-auto-policy.mjs';
 import { aggregateUnitCount, structuredRentalInventories } from './priority-inventory-policy.mjs';
+import { dedupeHistoryEvents } from './history-policy.mjs';
 import { verifiedPhotoCandidates } from './listing-photo-candidates.mjs';
 import { isTargetWestsideCoordinate, parseRealtylinkCoordinateValues, parseRealtylinkCoordinates, parseRealtylinkFloorArea, parseRealtylinkRoomCount } from './realtylink-parser.mjs';
 
@@ -26,6 +27,17 @@ const officialWatch = JSON.parse(await read('data/official-watch.json'));
 const indexHtml = await read('index.html');
 
 const failures = [];
+const duplicateHistoryFixture = {
+  listing: [
+    { date: '2026-09-04', rent: 2500, note: 'AUTO-REMOVED: exact negative.' },
+    { date: '2026-09-04', rent: 2500, note: 'AUTO-REMOVED: exact negative.' },
+    { date: '2026-09-05', rent: 2500, note: 'Relisted.' }
+  ]
+};
+const normalizedHistoryFixture = dedupeHistoryEvents(duplicateHistoryFixture);
+if (normalizedHistoryFixture.removed !== 1 || normalizedHistoryFixture.history.listing.length !== 2) failures.push('Duplicate history events are not normalized idempotently.');
+const currentHistory = dedupeHistoryEvents(JSON.parse(await read('data/history.json')));
+if (currentHistory.removed !== 0) failures.push(`Tracked history still contains ${currentHistory.removed} duplicate events.`);
 const aggregateFixture=[{'@type':'ApartmentComplex',containsPlace:[{'@type':'Apartment'},{'@type':'Apartment'}]}];
 if(aggregateUnitCount(aggregateFixture)!==2) failures.push('Structured priority-building inventory count is not parsed.');
 const kitsWalkStructuredFixture=[{'@type':'ApartmentComplex',containsPlace:[
