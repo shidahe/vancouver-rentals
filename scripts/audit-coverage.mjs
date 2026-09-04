@@ -55,11 +55,15 @@ const aggregateCount=Math.max(textCount,aggregateUnitCount(kitsWalkAggregate.jso
 const exactKitsWalkCount=(listings.listings||[]).filter(x=>
   x.availabilityStatus==='active' && /kits walk/i.test(String(x.buildingName||'')) && /^\d+[A-Za-z]?$/.test(String(x.unit||''))
 ).length;
+const verifiedKitsWalkCount=(listings.listings||[]).filter(x=>
+  x.availabilityStatus==='active' && /kits walk/i.test(String(x.buildingName||'')) &&
+  (/^\d+[A-Za-z]?$/.test(String(x.unit||'')) || (x.type==='purpose-built' && x.verificationLevel==='primary-live' && Number(x.rent)>0 && Number(x.sqft)>0))
+).length;
 const inventoryGaps=[];
-if(aggregateCount>exactKitsWalkCount){
-  const gap={severity:'warning',lane:'priority-kits-walk-inventory',status:'incomplete',detail:`Aggregate inventory reports ${aggregateCount} units; ${exactKitsWalkCount} exact active units are verified`};
+if(aggregateCount>verifiedKitsWalkCount){
+  const gap={severity:'warning',lane:'priority-kits-walk-inventory',status:'incomplete',detail:`Aggregate inventory reports ${aggregateCount} units; ${verifiedKitsWalkCount} exact unit/floorplan inventories are verified`};
   warnings.push(gap);
-  inventoryGaps.push({building:'kits-walk',aggregateCount,exactVerifiedCount:exactKitsWalkCount,missingExactUnits:aggregateCount-exactKitsWalkCount,evidenceUrl:kitsWalkAggregate.source?.url||null});
+  inventoryGaps.push({building:'kits-walk',aggregateCount,verifiedInventoryCount:verifiedKitsWalkCount,exactVerifiedCount:exactKitsWalkCount,missingVerifiedInventories:aggregateCount-verifiedKitsWalkCount,evidenceUrl:kitsWalkAggregate.source?.url||null});
 }
 const blockers=[];
 if(!broadHealthy)blockers.push({severity:'high',issue:'no-healthy-broad-marketplace-discovery-lane'});
@@ -69,6 +73,6 @@ for(const lane of priorityLanes.filter(x=>!x.healthy||!fresh(x.refreshedAt))){
   blockers.push({severity:'high',issue:'priority-building-official-monitor-unhealthy',lane:lane.id,detail:lane.detail});
 }
 
-const report={generatedAt:new Date().toISOString(),coverageReady,healthyLaneCount:healthyDiscovery.length,freshLaneCount:freshLanes.length,priorityOfficialReady:priorityHealthy,inventoryGaps,lanes,warnings,blockers,policy:'Coverage is ready when at least two fresh independent discovery families are healthy, including one broad marketplace and one independent classifieds/MLS family, and every priority building has at least one fresh usable official source. Aggregate inventory counts are compared with exact verified units and reported as warnings, never auto-published.'};
+const report={generatedAt:new Date().toISOString(),coverageReady,healthyLaneCount:healthyDiscovery.length,freshLaneCount:freshLanes.length,priorityOfficialReady:priorityHealthy,inventoryGaps,lanes,warnings,blockers,policy:'Coverage is ready when at least two fresh independent discovery families are healthy, including one broad marketplace and one independent classifieds/MLS family, and every priority building has at least one fresh usable official source. Aggregate counts alone never publish inventory; structured rows with exact rent, bedroom and sqft anchors may be tracked as verified floorplans when the page also has current availability language.'};
 await write(path.join(DATA,'coverage-report.json'),report);
 console.log(`Coverage audit: coverageReady=${coverageReady}, healthy=${healthy.length}/${lanes.length}`);

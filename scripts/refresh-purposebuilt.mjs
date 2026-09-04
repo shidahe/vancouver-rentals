@@ -2,6 +2,7 @@ import fs from 'node:fs/promises';
 import path from 'node:path';
 import { chromium } from 'playwright';
 import { verifiedPhotoCandidates } from './listing-photo-candidates.mjs';
+import { structuredRentalInventories } from './priority-inventory-policy.mjs';
 
 const DATA=path.join(process.cwd(),'data');
 const read=async(p,d)=>{try{return JSON.parse(await fs.readFile(p,'utf8'))}catch{return d}};
@@ -24,7 +25,7 @@ for(const b of cfg.buildings||[]){
   const urls=(b.urls&&b.urls.length?b.urls:[b.url]).filter(Boolean);
   const observations=[];
   for(const url of urls){
-    let text='',status=null,error=null,images=[];
+    let text='',status=null,error=null,images=[],jsonLd=[];
     try{
       const r=await page.goto(url,{waitUntil:'domcontentloaded',timeout:45000}); status=r?.status()??null;
       if(r&&status<400){
@@ -34,10 +35,12 @@ for(const b of cfg.buildings||[]){
           ...[...document.querySelectorAll('meta[property="og:image"],meta[name="twitter:image"]')].map(x=>x.content),
           ...[...document.images].map(x=>x.currentSrc||x.src)
         ].filter(Boolean).map(x=>{try{return new URL(x,location.href).href}catch{return null}}).filter(Boolean));
+        const rawJsonLd=await page.locator('script[type="application/ld+json"]').evaluateAll(nodes=>nodes.map(node=>node.textContent||'').slice(0,50));
+        for(const raw of rawJsonLd){try{jsonLd.push(JSON.parse(raw))}catch{}}
       }
     }catch(e){error=String(e)}
     const usable=!!text&&status!==401&&status!==403&&status!==429&&!(status>=500);
-    observations.push({url,checkedAt:now,httpStatus:status,usable,error,text,images});
+    observations.push({url,checkedAt:now,httpStatus:status,usable,error,text,images,jsonLd});
   }
 
   const buildingEvidence={building:b.name,checkedAt:now,observations:observations.map(o=>({url:o.url,httpStatus:o.httpStatus,usable:o.usable,error:o.error})),inventories:[]};
@@ -45,11 +48,14 @@ for(const b of cfg.buildings||[]){
     const sourceMatches=[];
     for(const obs of observations){
       const lower=obs.text.toLowerCase();
-      const required=(inv.requiredSignals||[]).every(x=>lower.includes(String(x).toLowerCase()));
+      const structuredMatch=structuredRentalInventories(obs.jsonLd).some(row=>
+        row.bedrooms===Number(inv.bedrooms)&&row.rent===Number(inv.rent)&&Math.abs(row.sqft-Number(inv.sqft))<=5
+      );
+      const required=structuredMatch||(inv.requiredSignals||[]).every(x=>lower.includes(String(x).toLowerCase()));
       const availability=(inv.availabilitySignals||[]).some(x=>lower.includes(String(x).toLowerCase()));
       const fullyLeased=/fully leased/i.test(obs.text);
       const verified=obs.usable&&required&&availability&&!fullyLeased;
-      sourceMatches.push({url:obs.url,httpStatus:obs.httpStatus,usable:obs.usable,requiredMatched:required,availabilityMatched:availability,fullyLeased,verified});
+      sourceMatches.push({url:obs.url,httpStatus:obs.httpStatus,usable:obs.usable,structuredMatch,requiredMatched:required,availabilityMatched:availability,fullyLeased,verified});
     }
     const verifiedSource=sourceMatches.find(x=>x.verified);
     const verified=!!verifiedSource;

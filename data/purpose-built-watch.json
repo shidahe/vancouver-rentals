@@ -1,6 +1,37 @@
 {
   "buildings": [
     {
+      "id": "kits-walk",
+      "name": "Kits Walk",
+      "address": "2075 W 12th Ave, Vancouver, BC V6J 2G3",
+      "neighborhood": "Kitsilano",
+      "urls": [
+        "https://rentals.ca/vancouver/kits-walk-by-strand"
+      ],
+      "lat": 49.2612564,
+      "lng": -123.1522117,
+      "buildingYear": 2020,
+      "ac": null,
+      "parking": true,
+      "petFriendly": true,
+      "balcony": true,
+      "largeWindows": true,
+      "modernInterior": true,
+      "inventories": [
+        {
+          "key": "2-bedroom-741-3600",
+          "label": "2 Bedroom · 741 sqft · $3,600",
+          "bedrooms": 2,
+          "bathrooms": 2,
+          "sqft": 741,
+          "rent": 3600,
+          "unit": null,
+          "requiredSignals": ["3,600", "741"],
+          "availabilitySignals": ["move-in ready", "book a tour today"]
+        }
+      ]
+    },
+    {
       "id": "arbutus-residences",
       "name": "Arbutus Residences",
       "address": "4188 Yew St, Vancouver, BC V6L 0C1",

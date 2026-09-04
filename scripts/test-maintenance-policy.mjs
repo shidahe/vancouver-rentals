@@ -2,7 +2,7 @@ import fs from 'node:fs/promises';
 import { civicAddressMatch, findExistingSeedListing, listingMls, maskedCivicAddressMatch, mlsIdentity } from './inventory-identity.mjs';
 import { firstLikelyRent, parseFacts } from './listing-parser.mjs';
 import { isAutoManagedListing } from './stale-auto-policy.mjs';
-import { aggregateUnitCount } from './priority-inventory-policy.mjs';
+import { aggregateUnitCount, structuredRentalInventories } from './priority-inventory-policy.mjs';
 import { verifiedPhotoCandidates } from './listing-photo-candidates.mjs';
 import { isTargetWestsideCoordinate, parseRealtylinkCoordinateValues, parseRealtylinkCoordinates, parseRealtylinkFloorArea, parseRealtylinkRoomCount } from './realtylink-parser.mjs';
 
@@ -28,6 +28,12 @@ const indexHtml = await read('index.html');
 const failures = [];
 const aggregateFixture=[{'@type':'ApartmentComplex',containsPlace:[{'@type':'Apartment'},{'@type':'Apartment'}]}];
 if(aggregateUnitCount(aggregateFixture)!==2) failures.push('Structured priority-building inventory count is not parsed.');
+const kitsWalkStructuredFixture=[{'@type':'ApartmentComplex',containsPlace:[
+  {'@type':'Apartment',name:'2 Bedroom',potentialAction:{priceSpecification:{price:3600}},floorSize:{value:'741.0'}},
+  {'@type':'Apartment',name:'2 Bedroom',potentialAction:{priceSpecification:{price:3650}},floorSize:{value:'741.0'}}
+]}];
+const structuredKitsWalk=structuredRentalInventories(kitsWalkStructuredFixture);
+if(structuredKitsWalk.length!==2||!structuredKitsWalk.some(x=>x.rent===3600&&x.bedrooms===2&&x.sqft===741)) failures.push('Exact structured Kits Walk floorplan inventory is not parsed.');
 const staleFixture = { availabilityStatus: 'active', source: 'REW / Rent Sync', verificationMethod: 'Automated live browser check matched listing identity and current availability wording.' };
 if (!isAutoManagedListing(staleFixture)) failures.push('Non-Zumper exact-detail inventory bypasses stale expiry.');
 if (isAutoManagedListing({ ...staleFixture, mlsInventoryManaged: true })) failures.push('Authoritative MLS-feed inventory is incorrectly handled by generic stale expiry.');
@@ -54,9 +60,13 @@ if (!coverageSource.includes('priority-building-official-monitor-unhealthy') || 
 if (!catalog.discovery.some(x=>x.id==='kits-walk-rentalsca'&&/kits-walk-by-strand/.test(x.url))) {
   failures.push('Kits Walk aggregate inventory source is missing.');
 }
-if (!coverageSource.includes('aggregateCount>exactKitsWalkCount') || !coverageSource.includes('inventoryGaps')) {
+if (!coverageSource.includes('aggregateCount>verifiedKitsWalkCount') || !coverageSource.includes('inventoryGaps')) {
   failures.push('Aggregate priority inventory is not compared with exact verified units.');
 }
+const purposeBuiltWatch = JSON.parse(await read('data/purpose-built-watch.json'));
+const kitsWalk3600 = purposeBuiltWatch.buildings?.find(x=>x.id==='kits-walk')?.inventories?.find(x=>x.rent===3600&&x.sqft===741);
+if(!kitsWalk3600||kitsWalk3600.bedrooms!==2||kitsWalk3600.bathrooms!==2) failures.push('Verified Kits Walk $3,600 / 741 sqft floorplan is not tracked.');
+if(!purposeBuiltSource.includes('structuredRentalInventories')||!purposeBuiltSource.includes('structuredMatch')) failures.push('Purpose-built verifier cannot match exact structured inventory rows.');
 const kitsWalk605 = catalog.seedCandidates?.find(x => x.id === 'rew-kits-walk-605');
 if (!kitsWalk605 || kitsWalk605.unit !== '605' || kitsWalk605.address !== '2075 W 12th Ave, Vancouver, BC' || kitsWalk605.expectedBeds !== 2 || !kitsWalk605.autoPublish || !/\/605-2075-w-12th-avenue-vancouver-bc$/.test(kitsWalk605.url)) {
   failures.push('Current Kits Walk Unit 605 exact-detail verification seed is missing or weakened.');
