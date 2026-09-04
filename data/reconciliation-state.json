@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-09-04T19:37:04.341Z",
+  "refreshedAt": "2026-09-04T20:58:02.736Z",
   "groups": [
     {
       "identityKey": "3220 4th ave w::url:4b1a6ebe2d36",
@@ -146,6 +146,18 @@
       "result": "candidate_only"
     },
     {
+      "identityKey": "3588 w 43rd ave::url:a32b37cf11c0",
+      "sources": [
+        "zumper"
+      ],
+      "rents": [
+        2600
+      ],
+      "exactUnit": false,
+      "matchedListingId": "zumper-4dfebec53d29",
+      "result": "candidate_only"
+    },
+    {
       "identityKey": "2138 w 13th ave::url:5b518c4d35f2",
       "sources": [
         "zumper"
@@ -266,27 +278,15 @@
       "result": "candidate_only"
     },
     {
-      "identityKey": "mls:r3153999",
+      "identityKey": "mls:r3150923",
       "sources": [
         "realtylink mls"
       ],
       "rents": [
-        3600
+        4790
       ],
-      "exactUnit": true,
-      "matchedListingId": "2268-w-broadway-312-r3153999",
-      "result": "authoritative_mls_reverified"
-    },
-    {
-      "identityKey": "mls:r3160936",
-      "sources": [
-        "realtylink mls"
-      ],
-      "rents": [
-        3000
-      ],
-      "exactUnit": true,
-      "matchedListingId": "mls-r3160936",
+      "exactUnit": false,
+      "matchedListingId": "mls-r3150923",
       "result": "authoritative_mls_reverified"
     },
     {
@@ -302,27 +302,15 @@
       "result": "authoritative_mls_reverified"
     },
     {
-      "identityKey": "mls:r3150923",
+      "identityKey": "mls:r3158299",
       "sources": [
         "realtylink mls"
       ],
       "rents": [
-        4790
+        3000
       ],
       "exactUnit": false,
-      "matchedListingId": "mls-r3150923",
-      "result": "authoritative_mls_reverified"
-    },
-    {
-      "identityKey": "mls:r3159353",
-      "sources": [
-        "realtylink mls"
-      ],
-      "rents": [
-        2900
-      ],
-      "exactUnit": false,
-      "matchedListingId": "mls-r3159353",
+      "matchedListingId": "mls-r3158299",
       "result": "authoritative_mls_reverified"
     },
     {
@@ -338,53 +326,25 @@
       "result": "authoritative_mls_reverified"
     },
     {
-      "identityKey": "mls:r2907080",
+      "identityKey": "mls:r3151022",
       "sources": [
         "realtylink mls"
       ],
       "rents": [
-        6980
+        10500
       ],
       "exactUnit": false,
-      "matchedListingId": "mls-r2907080",
-      "result": "authoritative_mls_reverified"
-    },
-    {
-      "identityKey": "mls:r3151372",
-      "sources": [
-        "realtylink mls"
-      ],
-      "rents": [
-        4800
-      ],
-      "exactUnit": false,
-      "matchedListingId": "mls-r3151372",
-      "result": "authoritative_mls_reverified"
-    },
-    {
-      "identityKey": "mls:r3151352",
-      "sources": [
-        "realtylink mls"
-      ],
-      "rents": [
-        3495
-      ],
-      "exactUnit": false,
-      "matchedListingId": "mls-r3151352",
+      "matchedListingId": "mls-r3151022",
       "result": "authoritative_mls_reverified"
     }
   ],
   "promoted": [],
   "crossVerified": [
-    "2268-w-broadway-312-r3153999",
-    "mls-r3160936",
-    "mls-r3159471",
     "mls-r3150923",
-    "mls-r3159353",
+    "mls-r3159471",
+    "mls-r3158299",
     "mls-r3146085",
-    "mls-r2907080",
-    "mls-r3151372",
-    "mls-r3151352"
+    "mls-r3151022"
   ],
   "fingerprintCrossVerified": [],
   "maskedMlsMerged": [],
@@ -393,18 +353,23 @@
   "mlsMissing": {
     "R3150730": {
       "firstMissingAt": "2026-09-04T13:05:40.755Z",
-      "lastMissingAt": "2026-09-04T19:37:04.341Z",
+      "lastMissingAt": "2026-09-04T20:58:02.736Z",
       "listingId": "mls-r3150730"
     },
     "R3133139": {
       "firstMissingAt": "2026-09-04T19:37:04.341Z",
-      "lastMissingAt": "2026-09-04T19:37:04.341Z",
+      "lastMissingAt": "2026-09-04T20:58:02.736Z",
       "listingId": "mls-r3133139"
+    },
+    "R3151372": {
+      "firstMissingAt": "2026-09-04T20:58:02.736Z",
+      "lastMissingAt": "2026-09-04T20:58:02.736Z",
+      "listingId": "mls-r3151372"
     }
   },
   "mlsRemoved": [
     "mls-r3150730"
   ],
-  "realtylinkSnapshotCount": 10,
+  "realtylinkSnapshotCount": 8,
   "realtylinkRemovalEligible": true
 }

@@ -1,60 +1,60 @@
 {
-  "refreshedAt": "2026-09-04T19:35:41.058Z",
+  "refreshedAt": "2026-09-04T20:56:35.591Z",
   "mode": "candidate-only",
   "sourceHealth": {
     "rentalsca-kitsilano-2br": {
-      "checkedAt": "2026-09-04T19:35:41.058Z",
+      "checkedAt": "2026-09-04T20:56:35.591Z",
       "status": 200,
       "ok": true,
       "finalUrl": "https://rentals.ca/vancouver/kitsilano/all-apartments-all-houses/2-bedrooms"
     },
     "rentalsca-point-grey-2br": {
-      "checkedAt": "2026-09-04T19:35:41.058Z",
+      "checkedAt": "2026-09-04T20:56:35.591Z",
       "status": 200,
       "ok": true,
       "finalUrl": "https://rentals.ca/vancouver/west-point-grey/2-bedrooms"
     },
     "rentalsca-arbutus-2br": {
-      "checkedAt": "2026-09-04T19:35:41.058Z",
+      "checkedAt": "2026-09-04T20:56:35.591Z",
       "status": 200,
       "ok": true,
       "finalUrl": "https://rentals.ca/vancouver/arbutus-ridge/2-bedrooms"
     },
     "rentalsca-dunbar-2br": {
-      "checkedAt": "2026-09-04T19:35:41.058Z",
-      "status": 429,
-      "ok": false,
-      "finalUrl": "https://rentals.ca/vancouver/dunbar-southlands/2-bedrooms?__cf_chl_rt_tk=1ZFXJslLhqwHY7a1HL4VAXQDyZJFSr9AoaivafY1BYc-1788550550-1.0.1.1-Os1aWo4sYzFR._02fN0iMMwNKE6aFxSLuFfyMOenADU"
+      "checkedAt": "2026-09-04T20:56:35.591Z",
+      "status": 200,
+      "ok": true,
+      "finalUrl": "https://rentals.ca/vancouver/dunbar-southlands/2-bedrooms"
     },
     "rentalsca-quilchena-2br": {
-      "checkedAt": "2026-09-04T19:35:41.058Z",
-      "status": 429,
+      "checkedAt": "2026-09-04T20:56:35.591Z",
+      "status": 404,
       "ok": false,
-      "finalUrl": "https://rentals.ca/vancouver/quilchena/2-bedrooms?__cf_chl_rt_tk=Wg017swk0zYGzDuuOm.wxo9E6pZnO1SH2sZ2HNgjxNk-1788550550-1.0.1.1-X7eg02139aNsXYwkx9iLz9RuZEteXBiP1XlBn7iGF.Y"
+      "finalUrl": "https://rentals.ca/vancouver/quilchena/2-bedrooms"
     },
     "rentalsca-kitsilano-3br": {
-      "checkedAt": "2026-09-04T19:35:41.058Z",
+      "checkedAt": "2026-09-04T20:56:35.591Z",
       "status": 429,
       "ok": false,
-      "finalUrl": "https://rentals.ca/vancouver/kitsilano/3-bedrooms?__cf_chl_rt_tk=1tges.nbASTqqs3EjeRXmL_NOw0._zI1LVKiZuJcfM0-1788550550-1.0.1.1-vv37teHgEV.eEWDYCDhtjmv2aKHsgJ41UQ.7hSN5ZWc"
+      "finalUrl": "https://rentals.ca/vancouver/kitsilano/3-bedrooms?__cf_chl_rt_tk=92qZ05ylKW1Oull8OkfDueK39gcBU8LZatsvjyISx9U-1788555407-1.0.1.1-wyYtDTYT9Igfzs436OphbaL_.KURWxqpjMdtbYFj5MA"
     },
     "rentalsca-kitsilano-4br": {
-      "checkedAt": "2026-09-04T19:35:41.058Z",
+      "checkedAt": "2026-09-04T20:56:35.591Z",
       "status": 429,
       "ok": false,
-      "finalUrl": "https://rentals.ca/vancouver/kitsilano/4-bedrooms?__cf_chl_rt_tk=qH19Sp.NhNa1F9FbV8pCYNkA81_T1o7moKzmjr4KH8U-1788550550-1.0.1.1-CI9gLwtNuQFU3rKrX.thYpxbqeTWrOZZReG74rzBO3I"
+      "finalUrl": "https://rentals.ca/vancouver/kitsilano/4-bedrooms?__cf_chl_rt_tk=7fNCe57iixxita2DJLgUHzDVWP6X_BVAVrhtboSiqAE-1788555407-1.0.1.1-pfzdleeUCtPKUiubbJykc0d84wHUKlRRssnKIQ2KudM"
     },
     "rentalsca-vancouver-3br": {
-      "checkedAt": "2026-09-04T19:35:41.058Z",
+      "checkedAt": "2026-09-04T20:56:35.591Z",
       "status": 429,
       "ok": false,
-      "finalUrl": "https://rentals.ca/vancouver/3-bedrooms?__cf_chl_rt_tk=LVe5Rdvu9O0jNdlMREhQeIerhL6vwncSb0LlsNqOSMQ-1788550550-1.0.1.1-2gDX3vXUAXzB8n_nlMOfPZhA7AKar6ntzu8ioUfNhn8"
+      "finalUrl": "https://rentals.ca/vancouver/3-bedrooms?__cf_chl_rt_tk=fu2ty2NTMoH3bCvMM2_74EsjGbEC56PyQHMeX9raG70-1788555407-1.0.1.1-yiYWvycxo.7qgKcEYJTum3yfZoS.GLYz8Pv8UmMKkwg"
     },
     "rentalsca-vancouver-4br": {
-      "checkedAt": "2026-09-04T19:35:41.058Z",
+      "checkedAt": "2026-09-04T20:56:35.591Z",
       "status": 429,
       "ok": false,
-      "finalUrl": "https://rentals.ca/vancouver/4-bedrooms?__cf_chl_rt_tk=I_n94.eBtOl2wCEi65HZ14aEcgIXl0R3VhB9fFrEYU8-1788550550-1.0.1.1-LNhGGoMcdlEEVzThVeQtih_deN6oA.PXXhw.ceCw8ok"
+      "finalUrl": "https://rentals.ca/vancouver/4-bedrooms?__cf_chl_rt_tk=1fYM7ohWrhOc1qYxrsFS2YBRrd8kQufbX_30kLxPNxU-1788555407-1.0.1.1-bEw0IfKgnukXPRP.8VPBWDHKjY3Z5j.BZAkxzvQ3ghQ"
     }
   },
   "pages": [],
