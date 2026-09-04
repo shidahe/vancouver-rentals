@@ -184,8 +184,8 @@ if (!imageCacheWorkflow.includes('group: rental-refresh') || !imageCacheWorkflow
 
 // Regression fixture: the reported Kitsilano 4BR must pass the global discovery gate.
 const r3160272 = { mls: 'R3160272', bedrooms: 4, rent: 6950, address: '2788 W 1st Avenue, Vancouver, BC' };
-if (mlsIdentity(r3160272.mls) !== 'mls:r3160272' || !(r3160272.bedrooms >= 2 && r3160272.rent >= 2500 && r3160272.rent <= 12000)) {
-  failures.push('R3160272 regression fixture is rejected by the 2BR+ policy.');
+if (mlsIdentity(r3160272.mls) !== 'mls:r3160272' || !listingScopeEligible(r3160272, 'Entire townhouse')) {
+  failures.push('R3160272 regression fixture is rejected by the 2–4BR entire-home scope.');
 }
 
 // Realtylink embeds coordinates at ten decimal places. This real York Avenue

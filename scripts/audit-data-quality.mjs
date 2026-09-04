@@ -40,7 +40,7 @@ for(const l of active){
   if(l.bedrooms==null||l.bathrooms==null)issues.push({severity:'medium',id:l.id,issue:'missing-core-fields'});
   if(l.sqft==null)issues.push({severity:'info',id:l.id,issue:'unknown-sqft'});
   else if(!Number.isFinite(Number(l.sqft))||Number(l.sqft)<200||Number(l.sqft)>15000)issues.push({severity:'high',id:l.id,issue:'implausible-sqft',detail:l.sqft});
-  if(!bedroomEligible(l.bedrooms))issues.push({severity:'high',id:l.id,issue:'below-2br-discovery-minimum',detail:`bedrooms=${l.bedrooms}`});
+  if(!bedroomEligible(l.bedrooms))issues.push({severity:'high',id:l.id,issue:'outside-2-to-4-bedroom-scope',detail:`bedrooms=${l.bedrooms}`});
   if(!rentEligible(l.rent))issues.push({severity:'high',id:l.id,issue:'below-rent-scope-minimum',detail:`rent=${l.rent}`});
   if(strongOfficialNegative(l.officialStatus))issues.push({severity:'high',id:l.id,issue:'active-despite-official-negative',detail:`officialStatus=${l.officialStatus}${l.officialStatusAuthority?` (${l.officialStatusAuthority})`:''}`});
   if(String(l.verificationLevel||'').toLowerCase()==='unverified')issues.push({severity:'high',id:l.id,issue:'active-but-unverified'});
