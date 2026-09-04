@@ -1,10 +1,18 @@
 {
-  "generatedAt": "2026-09-04T04:49:36.551Z",
+  "generatedAt": "2026-09-04T05:11:12.998Z",
   "coverageReady": true,
   "healthyLaneCount": 4,
   "freshLaneCount": 8,
   "priorityOfficialReady": true,
-  "inventoryGaps": [],
+  "inventoryGaps": [
+    {
+      "building": "kits-walk",
+      "aggregateCount": 2,
+      "exactVerifiedCount": 1,
+      "missingExactUnits": 1,
+      "evidenceUrl": "https://rentals.ca/vancouver/kits-walk-by-strand"
+    }
+  ],
   "lanes": [
     {
       "id": "zumper",
@@ -12,7 +20,7 @@
       "healthy": true,
       "status": "healthy",
       "detail": "25 fresh live candidates",
-      "refreshedAt": "2026-09-04T04:44:37.635Z"
+      "refreshedAt": "2026-09-04T05:05:56.295Z"
     },
     {
       "id": "craigslist",
@@ -20,7 +28,7 @@
       "healthy": true,
       "status": "healthy",
       "detail": "4/4 regional searches healthy",
-      "refreshedAt": "2026-09-04T04:47:35.955Z"
+      "refreshedAt": "2026-09-04T05:08:59.385Z"
     },
     {
       "id": "rentalsca",
@@ -28,7 +36,7 @@
       "healthy": true,
       "status": "healthy",
       "detail": "5/9 regional searches healthy",
-      "refreshedAt": "2026-09-04T04:47:19.300Z"
+      "refreshedAt": "2026-09-04T05:08:42.128Z"
     },
     {
       "id": "livrent",
@@ -36,15 +44,15 @@
       "healthy": false,
       "status": "unhealthy",
       "detail": "0/5 searches healthy",
-      "refreshedAt": "2026-09-04T04:47:35.126Z"
+      "refreshedAt": "2026-09-04T05:08:58.430Z"
     },
     {
       "id": "realtylink",
       "kind": "mls-rental",
       "healthy": true,
       "status": "healthy",
-      "detail": "3/3 searches reachable; 6 live candidates parsed",
-      "refreshedAt": "2026-09-04T04:47:43.503Z"
+      "detail": "3/3 searches reachable; 9 live candidates parsed",
+      "refreshedAt": "2026-09-04T05:09:07.599Z"
     },
     {
       "id": "priority-kits-walk",
@@ -52,7 +60,7 @@
       "healthy": true,
       "status": "healthy",
       "detail": "1/2 official sources usable",
-      "refreshedAt": "2026-09-04T04:48:45.352Z"
+      "refreshedAt": "2026-09-04T05:10:15.200Z"
     },
     {
       "id": "priority-larchway-gardens",
@@ -60,7 +68,7 @@
       "healthy": true,
       "status": "healthy",
       "detail": "2/2 official sources usable",
-      "refreshedAt": "2026-09-04T04:48:45.352Z"
+      "refreshedAt": "2026-09-04T05:10:15.200Z"
     },
     {
       "id": "priority-viridian",
@@ -68,7 +76,7 @@
       "healthy": true,
       "status": "healthy",
       "detail": "1/2 official sources usable",
-      "refreshedAt": "2026-09-04T04:48:45.352Z"
+      "refreshedAt": "2026-09-04T05:10:15.200Z"
     }
   ],
   "warnings": [
@@ -77,6 +85,12 @@
       "lane": "livrent",
       "status": "unhealthy",
       "detail": "0/5 searches healthy"
+    },
+    {
+      "severity": "warning",
+      "lane": "priority-kits-walk-inventory",
+      "status": "incomplete",
+      "detail": "Aggregate inventory reports 2 units; 1 exact active units are verified"
     }
   ],
   "blockers": [],

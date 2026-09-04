@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-09-04T04:49:36.517Z",
-  "activeCount": 39,
+  "generatedAt": "2026-09-04T05:11:12.962Z",
+  "activeCount": 56,
   "decisionReady": true,
   "highIssueCount": 0,
   "mediumIssueCount": 0,
-  "infoIssueCount": 69,
+  "infoIssueCount": 88,
   "issues": [
     {
       "severity": "info",
@@ -169,6 +169,11 @@
     {
       "severity": "info",
       "id": "zumper-e353962d7737",
+      "issue": "unknown-orientation"
+    },
+    {
+      "severity": "info",
+      "id": "arbutus-residences-floorplan-2-bedroom-townhouse-den-1340",
       "issue": "unknown-orientation"
     },
     {
@@ -338,7 +343,47 @@
     },
     {
       "severity": "info",
+      "id": "mls-r3160936",
+      "issue": "unknown-orientation"
+    },
+    {
+      "severity": "info",
+      "id": "mls-r3159471",
+      "issue": "unknown-orientation"
+    },
+    {
+      "severity": "info",
+      "id": "mls-r3151022",
+      "issue": "unknown-orientation"
+    },
+    {
+      "severity": "info",
+      "id": "mls-r3150923",
+      "issue": "unknown-orientation"
+    },
+    {
+      "severity": "info",
+      "id": "mls-r3129974",
+      "issue": "unknown-sqft"
+    },
+    {
+      "severity": "info",
+      "id": "mls-r3129974",
+      "issue": "unknown-orientation"
+    },
+    {
+      "severity": "info",
+      "id": "mls-r3146085",
+      "issue": "unknown-orientation"
+    },
+    {
+      "severity": "info",
       "id": "mls-r3146956",
+      "issue": "unknown-orientation"
+    },
+    {
+      "severity": "info",
+      "id": "mls-r3158299",
       "issue": "unknown-orientation"
     },
     {
@@ -348,15 +393,65 @@
     },
     {
       "severity": "info",
-      "id": "mls-r3133139",
+      "id": "mls-r3158149",
+      "issue": "unknown-orientation"
+    },
+    {
+      "severity": "info",
+      "id": "mls-r3158036",
+      "issue": "unknown-orientation"
+    },
+    {
+      "severity": "info",
+      "id": "mls-r3134535",
+      "issue": "unknown-orientation"
+    },
+    {
+      "severity": "info",
+      "id": "mls-r3158552",
+      "issue": "unknown-sqft"
+    },
+    {
+      "severity": "info",
+      "id": "mls-r3158552",
+      "issue": "unknown-orientation"
+    },
+    {
+      "severity": "info",
+      "id": "mls-r3148298",
+      "issue": "unknown-orientation"
+    },
+    {
+      "severity": "info",
+      "id": "mls-r3151372",
+      "issue": "unknown-orientation"
+    },
+    {
+      "severity": "info",
+      "id": "mls-r3158179",
+      "issue": "unknown-orientation"
+    },
+    {
+      "severity": "info",
+      "id": "mls-r2907080",
+      "issue": "unknown-orientation"
+    },
+    {
+      "severity": "info",
+      "id": "mls-r3159579",
+      "issue": "unknown-orientation"
+    },
+    {
+      "severity": "info",
+      "id": "mls-r3159353",
       "issue": "unknown-orientation"
     }
   ],
   "readinessChecks": {
     "smokeOk": true,
     "smokeFresh": true,
-    "smokeCheckedAt": "2026-09-04T04:49:43.024Z",
-    "latestDataAt": "2026-09-04T04:48:45.352Z",
+    "smokeCheckedAt": "2026-09-04T05:11:20.435Z",
+    "latestDataAt": "2026-09-04T05:10:15.200Z",
     "coverageReady": true,
     "healthyDiscoveryLanes": 4,
     "coverageWarnings": [
@@ -365,9 +460,15 @@
         "lane": "livrent",
         "status": "unhealthy",
         "detail": "0/5 searches healthy"
+      },
+      {
+        "severity": "warning",
+        "lane": "priority-kits-walk-inventory",
+        "status": "incomplete",
+        "detail": "Aggregate inventory reports 2 units; 1 exact active units are verified"
       }
     ]
   },
   "readinessIssues": [],
-  "finalizedAt": "2026-09-04T04:49:44.805Z"
+  "finalizedAt": "2026-09-04T05:11:22.223Z"
 }

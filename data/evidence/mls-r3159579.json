@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-09-04T04:38:53.115Z",
+  "checkedAt": "2026-09-04T05:00:56.927Z",
   "listingId": "mls-r3159579",
   "sourceUrl": "https://realtylink.org/en/house~for-rent~vancouver/263181206",
   "ok": true,
@@ -424,7 +424,7 @@
     "https://media.realtylink.org/images/consumersite/member/1V83783/70a347acde494bae8ea3d838a1b7c297.jpeg?width=120&height=90&fit=contain",
     "https://cdn.realtylink.org/public/bc/consumersite/images/logos/powered-by-centris.svg"
   ],
-  "elapsedMs": 3285,
+  "elapsedMs": 3320,
   "identityMatch": true,
   "explicitNegative": false,
   "negativePhrase": null,
@@ -432,9 +432,9 @@
   "positivePhrase": "/for rent/i",
   "extractedRent": 9750,
   "facts": {
-    "bedrooms": null,
+    "bedrooms": 8,
     "bathrooms": 5,
-    "sqft": 697,
+    "sqft": 3697,
     "buildingYear": null,
     "ac": null,
     "parking": null,
