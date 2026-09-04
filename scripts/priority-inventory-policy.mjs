@@ -37,3 +37,18 @@ export function structuredRentalInventories(jsonLd = []) {
   visit(jsonLd);
   return rows;
 }
+
+export function discoveredStructuredInventories(jsonLd = [], defaults = {}) {
+  return structuredRentalInventories(jsonLd).map(row => ({
+    key: `${row.bedrooms}-bedroom-${Math.round(row.sqft)}-${Math.round(row.rent)}`,
+    label: `${row.name || `${row.bedrooms} Bedroom`} · ${Math.round(row.sqft)} sqft · $${Math.round(row.rent).toLocaleString('en-CA')}`,
+    bedrooms: row.bedrooms,
+    bathrooms: defaults.bathrooms ?? null,
+    sqft: row.sqft,
+    rent: row.rent,
+    unit: null,
+    requiredSignals: [Math.round(row.rent).toLocaleString('en-CA'), String(Math.round(row.sqft))],
+    availabilitySignals: defaults.availabilitySignals || [],
+    dynamicallyDiscovered: true
+  }));
+}

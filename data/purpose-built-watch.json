@@ -9,6 +9,11 @@
         "https://rentals.ca/vancouver/kits-walk-by-strand"
       ],
       "evidenceSourceIds": ["kits-walk-rentalsca"],
+      "discoverStructuredInventories": true,
+      "structuredInventoryDefaults": {
+        "bathrooms": 2,
+        "availabilitySignals": ["move-in ready", "book a tour today"]
+      },
       "lat": 49.2612564,
       "lng": -123.1522117,
       "buildingYear": 2020,

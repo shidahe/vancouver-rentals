@@ -2,7 +2,7 @@ import fs from 'node:fs/promises';
 import { civicAddressMatch, findExistingSeedListing, listingMls, maskedCivicAddressMatch, mlsIdentity } from './inventory-identity.mjs';
 import { firstLikelyRent, parseFacts } from './listing-parser.mjs';
 import { isAutoManagedListing } from './stale-auto-policy.mjs';
-import { aggregateUnitCount, structuredRentalInventories } from './priority-inventory-policy.mjs';
+import { aggregateUnitCount, discoveredStructuredInventories, structuredRentalInventories } from './priority-inventory-policy.mjs';
 import { dedupeHistoryEvents } from './history-policy.mjs';
 import { verifiedPhotoCandidates } from './listing-photo-candidates.mjs';
 import { isTargetWestsideCoordinate, parseRealtylinkCoordinateValues, parseRealtylinkCoordinates, parseRealtylinkFloorArea, parseRealtylinkRoomCount } from './realtylink-parser.mjs';
@@ -46,6 +46,8 @@ const kitsWalkStructuredFixture=[{'@type':'ApartmentComplex',containsPlace:[
 ]}];
 const structuredKitsWalk=structuredRentalInventories(kitsWalkStructuredFixture);
 if(structuredKitsWalk.length!==2||!structuredKitsWalk.some(x=>x.rent===3600&&x.bedrooms===2&&x.sqft===741)) failures.push('Exact structured Kits Walk floorplan inventory is not parsed.');
+const discoveredKitsWalk=discoveredStructuredInventories(kitsWalkStructuredFixture,{bathrooms:2,availabilitySignals:['move-in ready']});
+if(discoveredKitsWalk.length!==2||!discoveredKitsWalk.some(x=>x.key==='2-bedroom-741-3650'&&x.bathrooms===2&&x.dynamicallyDiscovered&&x.availabilitySignals.includes('move-in ready'))) failures.push('Structured Kits Walk inventory cannot become tracked dynamic floorplans.');
 const staleFixture = { availabilityStatus: 'active', source: 'REW / Rent Sync', verificationMethod: 'Automated live browser check matched listing identity and current availability wording.' };
 if (!isAutoManagedListing(staleFixture)) failures.push('Non-Zumper exact-detail inventory bypasses stale expiry.');
 if (isAutoManagedListing({ ...staleFixture, mlsInventoryManaged: true })) failures.push('Authoritative MLS-feed inventory is incorrectly handled by generic stale expiry.');
@@ -81,6 +83,8 @@ if(!kitsWalk3600||kitsWalk3600.bedrooms!==2||kitsWalk3600.bathrooms!==2) failure
 if(!purposeBuiltSource.includes('structuredRentalInventories')||!purposeBuiltSource.includes('structuredMatch')) failures.push('Purpose-built verifier cannot match exact structured inventory rows.');
 if(!purposeBuiltWatch.buildings?.find(x=>x.id==='kits-walk')?.evidenceSourceIds?.includes('kits-walk-rentalsca')) failures.push('Kits Walk cannot reuse fresh aggregate evidence.');
 if(!purposeBuiltSource.includes('freshEvidence')||!purposeBuiltSource.includes('reusedEvidence:true')) failures.push('Purpose-built verifier repeats requests instead of reusing fresh evidence.');
+if(!purposeBuiltWatch.buildings?.find(x=>x.id==='kits-walk')?.discoverStructuredInventories) failures.push('Kits Walk structured inventory cannot be discovered dynamically.');
+if(!purposeBuiltSource.includes('discoveredStructuredInventories')||!purposeBuiltSource.includes('exactUnit')) failures.push('Dynamic purpose-built discovery or exact-unit protection is missing.');
 const kitsWalk605 = catalog.seedCandidates?.find(x => x.id === 'rew-kits-walk-605');
 if (!kitsWalk605 || kitsWalk605.unit !== '605' || kitsWalk605.address !== '2075 W 12th Ave, Vancouver, BC' || kitsWalk605.expectedBeds !== 2 || !kitsWalk605.autoPublish || !/\/605-2075-w-12th-avenue-vancouver-bc$/.test(kitsWalk605.url)) {
   failures.push('Current Kits Walk Unit 605 exact-detail verification seed is missing or weakened.');

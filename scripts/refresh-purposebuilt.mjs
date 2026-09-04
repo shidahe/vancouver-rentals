@@ -2,7 +2,7 @@ import fs from 'node:fs/promises';
 import path from 'node:path';
 import { chromium } from 'playwright';
 import { verifiedPhotoCandidates } from './listing-photo-candidates.mjs';
-import { structuredRentalInventories } from './priority-inventory-policy.mjs';
+import { discoveredStructuredInventories, structuredRentalInventories } from './priority-inventory-policy.mjs';
 
 const DATA=path.join(process.cwd(),'data');
 const read=async(p,d)=>{try{return JSON.parse(await fs.readFile(p,'utf8'))}catch{return d}};
@@ -55,7 +55,17 @@ for(const b of cfg.buildings||[]){
   }
 
   const buildingEvidence={building:b.name,checkedAt:now,observations:observations.map(o=>({url:o.url,httpStatus:o.httpStatus,usable:o.usable,error:o.error,reusedEvidence:o.reusedEvidence===true})),inventories:[]};
-  for(const inv of b.inventories||[]){
+  const inventories=[...(b.inventories||[])];
+  if(b.discoverStructuredInventories){
+    for(const obs of observations.filter(x=>x.usable)){
+      for(const inv of discoveredStructuredInventories(obs.jsonLd,b.structuredInventoryDefaults||{})){
+        const duplicate=inventories.some(x=>Number(x.bedrooms)===inv.bedrooms&&Number(x.rent)===inv.rent&&Math.abs(Number(x.sqft)-inv.sqft)<=5);
+        const exactUnit=db.listings.some(l=>l.availabilityStatus==='active'&&norm(l.buildingName||'')===norm(b.name)&&/^#?\d+[a-z]?$/i.test(String(l.unit||''))&&Number(l.rent)===inv.rent&&Math.abs(Number(l.sqft||0)-inv.sqft)<=5);
+        if(!duplicate&&!exactUnit) inventories.push(inv);
+      }
+    }
+  }
+  for(const inv of inventories){
     const sourceMatches=[];
     for(const obs of observations){
       const lower=obs.text.toLowerCase();
