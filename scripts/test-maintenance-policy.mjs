@@ -19,6 +19,7 @@ const activeAdapters = [
 const source = (await Promise.all(activeAdapters.map(read))).join('\n');
 const coverageSource = await read('scripts/audit-coverage.mjs');
 const purposeBuiltSource = await read('scripts/refresh-purposebuilt.mjs');
+const imageCacheWorkflow = await read('.github/workflows/cache-listing-images.yml');
 const catalog = JSON.parse(await read('data/live-sources.json'));
 const officialWatch = JSON.parse(await read('data/official-watch.json'));
 const indexHtml = await read('index.html');
@@ -136,6 +137,9 @@ if (!source.includes('cleanAddress') || !source.includes('meta[property="og:imag
 }
 if (!purposeBuiltSource.includes('verifiedPhotoCandidates') || !purposeBuiltSource.includes('imageSources[listing.id]')) {
   failures.push('Verified purpose-built inventory does not feed its current detail-page photos into the image cache.');
+}
+if (!imageCacheWorkflow.includes('group: rental-refresh') || !imageCacheWorkflow.includes('ref: main') || !imageCacheWorkflow.includes('git pull --rebase origin main')) {
+  failures.push('Image-cache generated-data commits can race refresh or smoke-report writers.');
 }
 
 // Regression fixture: the reported Kitsilano 4BR must pass the global discovery gate.

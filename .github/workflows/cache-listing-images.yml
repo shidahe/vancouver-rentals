@@ -13,8 +13,10 @@ permissions:
   contents: write
 
 concurrency:
-  group: listing-image-cache
-  cancel-in-progress: true
+  # Serialize every generated-data writer so image and smoke-report commits
+  # cannot race each other or the full inventory refresh.
+  group: rental-refresh
+  cancel-in-progress: false
 
 jobs:
   cache-images:
@@ -23,6 +25,7 @@ jobs:
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0
+          ref: main
 
       - name: Download verified image candidates
         run: |
@@ -127,4 +130,5 @@ jobs:
             exit 0
           fi
           git commit -m 'Cache listing photos for GitHub Pages'
+          git pull --rebase origin main
           git push
