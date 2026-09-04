@@ -22,3 +22,10 @@ export function parseRealtylinkRoomCount(text, label) {
   const match=String(text||'').match(new RegExp(`\\b([1-9]\\d?(?:\\.5)?)\\s+${label}s?\\b`,'i'));
   return match?Number(match[1]):null;
 }
+
+export function parseRealtylinkFloorArea(text) {
+  const match=String(text||'').match(/Floor Area\s*\n?\s*([\d,]+)\s*sqft\b/i);
+  if(!match)return null;
+  const value=Number(match[1].replace(/,/g,''));
+  return Number.isFinite(value)&&value>=200&&value<=15000?value:null;
+}

@@ -3,6 +3,7 @@ import path from 'node:path';
 import crypto from 'node:crypto';
 import { civicAddressMatch, listingMls, mlsIdentity } from './inventory-identity.mjs';
 import { verifiedPhotoCandidates } from './listing-photo-candidates.mjs';
+import { parseRealtylinkFloorArea, parseRealtylinkRoomCount } from './realtylink-parser.mjs';
 
 const DATA=path.join(process.cwd(),'data');
 const iso=new Date().toISOString(),today=iso.slice(0,10);
@@ -64,7 +65,42 @@ const groups=new Map();
 for(const c of all){if(!usable(c))continue;const k=candidateKey(c);if(!groups.has(k))groups.set(k,[]);groups.get(k).push(c);}
 const listingByKey=new Map();
 for(const x of payload.listings){const canonicalMls=listingMls(x);if(canonicalMls)x.mls=canonicalMls;const k=key(x.address,listingUnit(x),x.url,null,canonicalMls);if(!listingByKey.has(k)||listingByKey.get(k).source==='Zumper live detail')listingByKey.set(k,x);}
-const state={refreshedAt:iso,groups:[],promoted:[],crossVerified:[],fingerprintCrossVerified:[],maskedMlsMerged:[],negativeMatches:[],mlsMissing:{},mlsRemoved:[]};
+const state={refreshedAt:iso,groups:[],promoted:[],crossVerified:[],fingerprintCrossVerified:[],maskedMlsMerged:[],negativeMatches:[],detailReactivated:[],mlsMissing:{},mlsRemoved:[]};
+
+// A volatile search result page is weaker than a fresh exact MLS detail page.
+// Require identity, explicit current availability and a current rent before the
+// detail page can restore/keep inventory; a merely loading old URL is insufficient.
+const positiveMlsDetails=new Map();
+const initiallyActiveMls=new Map();
+for(const x of payload.listings){
+  const mls=listingMls(x);
+  if(mls&&x.availabilityStatus==='active'&&!initiallyActiveMls.has(norm(mls)))initiallyActiveMls.set(norm(mls),x.id);
+}
+for(const x of payload.listings){
+  const mls=listingMls(x);
+  if(!mls||initiallyActiveMls.get(norm(mls))&&initiallyActiveMls.get(norm(mls))!==x.id)continue;
+  const evidence=await read(path.join(DATA,'evidence',`${x.id}.json`),null);
+  const checkedAt=Date.parse(evidence?.checkedAt||'');
+  const rent=Number(evidence?.extractedRent);
+  if(!evidence?.ok||Number(evidence.status)<200||Number(evidence.status)>=400||!evidence.identityMatch||
+    !evidence.explicitPositive||evidence.explicitNegative||!Number.isFinite(checkedAt)||Date.now()-checkedAt>12*60*60*1000||
+    !Number.isFinite(rent)||rent<2500||rent>12000)continue;
+  positiveMlsDetails.set(x.id,evidence);
+  const wasActive=x.availabilityStatus==='active';
+  const oldRent=Number(x.rent);
+  x.availabilityStatus='active';x.verificationLevel='verified';x.removedAt=null;x.lastChecked=today;x.verifiedAt=evidence.checkedAt;
+  x.verificationMethod=`Reverified by exact current Realtylink detail for MLS ${listingMls(x)}; identity, availability and rent all matched.`;
+  x.rent=rent;
+  const beds=parseRealtylinkRoomCount(evidence.bodyText,'bedroom');
+  const bathrooms=parseRealtylinkRoomCount(evidence.bodyText,'bathroom');
+  const area=parseRealtylinkFloorArea(evidence.bodyText);
+  if(beds!=null)x.bedrooms=beds;if(bathrooms!=null)x.bathrooms=bathrooms;if(area!=null)x.sqft=area;
+  if(rent<oldRent){x.status='price_drop';x.priceDrop=true;}else if(!wasActive)x.status='corrected';
+  if(!wasActive){
+    state.detailReactivated.push(x.id);
+    (history[x.id]||=[]).push({date:today,rent,note:'CORRECTED: restored after exact current MLS detail matched identity, explicit availability and rent.'});
+  }
+}
 
 // Realtylink may mask one civic-number digit (for example 453x) while a marketplace
 // exposes the exact address. When all rent/bed/bath/sqft facts also agree, keep the
@@ -186,7 +222,7 @@ if(realtylinkComplete){
     // search-result disappearance. Manually curated MLS-backed homes can have
     // stronger current detail-page evidence and must not be hidden merely because
     // a sampled search page did not contain them.
-    if(!x.mls||x.mlsInventoryManaged!==true||x.availabilityStatus==='removed'||activeMls.has(norm(x.mls)))continue;
+    if(!x.mls||x.mlsInventoryManaged!==true||x.availabilityStatus==='removed'||positiveMlsDetails.has(x.id)||activeMls.has(norm(x.mls)))continue;
     const previous=previousReconciliation.mlsMissing?.[x.mls];
     state.mlsMissing[x.mls]={firstMissingAt:previous?.firstMissingAt||iso,lastMissingAt:iso,listingId:x.id};
     const missingAgeMs=previous?.firstMissingAt?Date.now()-Date.parse(previous.firstMissingAt):0;

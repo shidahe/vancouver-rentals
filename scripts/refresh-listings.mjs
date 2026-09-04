@@ -4,6 +4,7 @@ import { chromium } from 'playwright';
 import { firstLikelyRent, parseFacts } from './listing-parser.mjs';
 import { findExistingSeedListing } from './inventory-identity.mjs';
 import { verifiedPhotoCandidates } from './listing-photo-candidates.mjs';
+import { parseRealtylinkFloorArea, parseRealtylinkRoomCount } from './realtylink-parser.mjs';
 
 const ROOT = process.cwd();
 const DATA = path.join(ROOT, 'data');
@@ -66,6 +67,12 @@ function classify(text, item, jsonLd = [], httpStatus = null) {
   const negative = strongNegativePatterns.find(r => r.test(text));
   const positive = positivePatterns.find(r => r.test(text));
   const hardHttpGone = [404, 410].includes(httpStatus);
+  const facts=parseFacts(text);
+  if(/realtylink\.org/i.test(item.url||'')){
+    facts.bedrooms=parseRealtylinkRoomCount(text,'bedroom')??facts.bedrooms;
+    facts.bathrooms=parseRealtylinkRoomCount(text,'bathroom')??facts.bathrooms;
+    facts.sqft=parseRealtylinkFloorArea(text)??facts.sqft;
+  }
   return {
     identityMatch: idMatch,
     explicitNegative: (idMatch && !!negative) || hardHttpGone,
@@ -73,7 +80,7 @@ function classify(text, item, jsonLd = [], httpStatus = null) {
     explicitPositive: idMatch && !!positive && !negative,
     positivePhrase: positive ? String(positive) : null,
     extractedRent: idMatch ? firstLikelyRent(text, jsonLd) : null,
-    facts: idMatch ? parseFacts(text) : {}
+    facts: idMatch ? facts : {}
   };
 }
 
