@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-04T07:40:19.034Z",
+  "generatedAt": "2026-09-04T11:11:02.367Z",
   "activeCount": 53,
   "decisionReady": true,
   "highIssueCount": 0,
@@ -159,11 +159,6 @@
     {
       "severity": "info",
       "id": "zumper-e353962d7737",
-      "issue": "unknown-orientation"
-    },
-    {
-      "severity": "info",
-      "id": "arbutus-residences-floorplan-2-bedroom-townhouse-den-1340",
       "issue": "unknown-orientation"
     },
     {
@@ -383,6 +378,11 @@
     },
     {
       "severity": "info",
+      "id": "mls-r3158149",
+      "issue": "unknown-orientation"
+    },
+    {
+      "severity": "info",
       "id": "mls-r3158036",
       "issue": "unknown-orientation"
     },
@@ -430,8 +430,8 @@
   "readinessChecks": {
     "smokeOk": true,
     "smokeFresh": true,
-    "smokeCheckedAt": "2026-09-04T07:40:25.337Z",
-    "latestDataAt": "2026-09-04T07:39:22.923Z",
+    "smokeCheckedAt": "2026-09-04T11:11:09.755Z",
+    "latestDataAt": "2026-09-04T11:10:09.534Z",
     "coverageReady": true,
     "healthyDiscoveryLanes": 4,
     "coverageWarnings": [
@@ -440,15 +440,9 @@
         "lane": "livrent",
         "status": "unhealthy",
         "detail": "0/5 searches healthy"
-      },
-      {
-        "severity": "warning",
-        "lane": "priority-kits-walk-inventory",
-        "status": "incomplete",
-        "detail": "Aggregate inventory reports 2 units; 1 exact active units are verified"
       }
     ]
   },
   "readinessIssues": [],
-  "finalizedAt": "2026-09-04T07:40:26.850Z"
+  "finalizedAt": "2026-09-04T11:11:11.604Z"
 }

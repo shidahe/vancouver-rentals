@@ -1,9 +1,54 @@
 {
-  "refreshedAt": "2026-09-04T07:39:19.404Z",
+  "refreshedAt": "2026-09-04T11:10:08.423Z",
   "buildings": [
     {
+      "building": "Kits Walk",
+      "checkedAt": "2026-09-04T11:10:08.423Z",
+      "observations": [
+        {
+          "url": "https://rentals.ca/vancouver/kits-walk-by-strand",
+          "httpStatus": 403,
+          "usable": false,
+          "error": null
+        }
+      ],
+      "inventories": [
+        {
+          "key": "2-bedroom-741-3600",
+          "label": "2 Bedroom · 741 sqft · $3,600",
+          "bedrooms": 2,
+          "bathrooms": 2,
+          "sqft": 741,
+          "rent": 3600,
+          "unit": null,
+          "requiredSignals": [
+            "3,600",
+            "741"
+          ],
+          "availabilitySignals": [
+            "move-in ready",
+            "book a tour today"
+          ],
+          "verified": false,
+          "verifiedSource": null,
+          "sourceMatches": [
+            {
+              "url": "https://rentals.ca/vancouver/kits-walk-by-strand",
+              "httpStatus": 403,
+              "usable": false,
+              "structuredMatch": false,
+              "requiredMatched": false,
+              "availabilityMatched": false,
+              "fullyLeased": false,
+              "verified": false
+            }
+          ]
+        }
+      ]
+    },
+    {
       "building": "Arbutus Residences",
-      "checkedAt": "2026-09-04T07:39:19.404Z",
+      "checkedAt": "2026-09-04T11:10:08.423Z",
       "observations": [
         {
           "url": "https://www.rentfaster.ca/properties/2139-lahb-ave-vancouver-454186",
@@ -19,8 +64,8 @@
         },
         {
           "url": "https://www.zumper.com/apartment-buildings/p1117150/arbutus-residences-quilchena-vancouver-bc",
-          "httpStatus": 200,
-          "usable": true,
+          "httpStatus": 429,
+          "usable": false,
           "error": null
         }
       ],
@@ -50,6 +95,7 @@
               "url": "https://www.rentfaster.ca/properties/2139-lahb-ave-vancouver-454186",
               "httpStatus": 403,
               "usable": false,
+              "structuredMatch": false,
               "requiredMatched": false,
               "availabilityMatched": false,
               "fullyLeased": false,
@@ -59,6 +105,7 @@
               "url": "https://www.apartments.com/arbutus-residences-vancouver-bc/sxw5hm4/",
               "httpStatus": 403,
               "usable": false,
+              "structuredMatch": false,
               "requiredMatched": false,
               "availabilityMatched": false,
               "fullyLeased": false,
@@ -66,10 +113,11 @@
             },
             {
               "url": "https://www.zumper.com/apartment-buildings/p1117150/arbutus-residences-quilchena-vancouver-bc",
-              "httpStatus": 200,
-              "usable": true,
+              "httpStatus": 429,
+              "usable": false,
+              "structuredMatch": false,
               "requiredMatched": false,
-              "availabilityMatched": true,
+              "availabilityMatched": false,
               "fullyLeased": false,
               "verified": false
             }
@@ -93,13 +141,14 @@
             "Available",
             "1 unit available"
           ],
-          "verified": true,
-          "verifiedSource": "https://www.zumper.com/apartment-buildings/p1117150/arbutus-residences-quilchena-vancouver-bc",
+          "verified": false,
+          "verifiedSource": null,
           "sourceMatches": [
             {
               "url": "https://www.rentfaster.ca/properties/2139-lahb-ave-vancouver-454186",
               "httpStatus": 403,
               "usable": false,
+              "structuredMatch": false,
               "requiredMatched": false,
               "availabilityMatched": false,
               "fullyLeased": false,
@@ -109,6 +158,7 @@
               "url": "https://www.apartments.com/arbutus-residences-vancouver-bc/sxw5hm4/",
               "httpStatus": 403,
               "usable": false,
+              "structuredMatch": false,
               "requiredMatched": false,
               "availabilityMatched": false,
               "fullyLeased": false,
@@ -116,12 +166,13 @@
             },
             {
               "url": "https://www.zumper.com/apartment-buildings/p1117150/arbutus-residences-quilchena-vancouver-bc",
-              "httpStatus": 200,
-              "usable": true,
-              "requiredMatched": true,
-              "availabilityMatched": true,
+              "httpStatus": 429,
+              "usable": false,
+              "structuredMatch": false,
+              "requiredMatched": false,
+              "availabilityMatched": false,
               "fullyLeased": false,
-              "verified": true
+              "verified": false
             }
           ]
         }

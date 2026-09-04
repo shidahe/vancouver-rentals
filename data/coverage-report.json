@@ -1,26 +1,18 @@
 {
-  "generatedAt": "2026-09-04T07:40:19.061Z",
+  "generatedAt": "2026-09-04T11:11:02.425Z",
   "coverageReady": true,
   "healthyLaneCount": 4,
   "freshLaneCount": 8,
   "priorityOfficialReady": true,
-  "inventoryGaps": [
-    {
-      "building": "kits-walk",
-      "aggregateCount": 2,
-      "exactVerifiedCount": 1,
-      "missingExactUnits": 1,
-      "evidenceUrl": "https://rentals.ca/vancouver/kits-walk-by-strand"
-    }
-  ],
+  "inventoryGaps": [],
   "lanes": [
     {
       "id": "zumper",
       "kind": "broad-marketplace",
       "healthy": true,
       "status": "healthy",
-      "detail": "25 fresh live candidates",
-      "refreshedAt": "2026-09-04T07:35:19.659Z"
+      "detail": "23 fresh live candidates",
+      "refreshedAt": "2026-09-04T11:06:33.627Z"
     },
     {
       "id": "craigslist",
@@ -28,7 +20,7 @@
       "healthy": true,
       "status": "healthy",
       "detail": "4/4 regional searches healthy",
-      "refreshedAt": "2026-09-04T07:38:09.610Z"
+      "refreshedAt": "2026-09-04T11:08:55.148Z"
     },
     {
       "id": "rentalsca",
@@ -36,7 +28,7 @@
       "healthy": true,
       "status": "healthy",
       "detail": "4/9 regional searches healthy",
-      "refreshedAt": "2026-09-04T07:37:56.040Z"
+      "refreshedAt": "2026-09-04T11:08:41.466Z"
     },
     {
       "id": "livrent",
@@ -44,15 +36,15 @@
       "healthy": false,
       "status": "unhealthy",
       "detail": "0/5 searches healthy",
-      "refreshedAt": "2026-09-04T07:38:08.818Z"
+      "refreshedAt": "2026-09-04T11:08:54.275Z"
     },
     {
       "id": "realtylink",
       "kind": "mls-rental",
       "healthy": true,
       "status": "healthy",
-      "detail": "3/3 searches reachable; 7 live candidates parsed",
-      "refreshedAt": "2026-09-04T07:38:17.251Z"
+      "detail": "3/3 searches reachable; 9 live candidates parsed",
+      "refreshedAt": "2026-09-04T11:09:02.588Z"
     },
     {
       "id": "priority-kits-walk",
@@ -60,7 +52,7 @@
       "healthy": true,
       "status": "healthy",
       "detail": "1/2 official sources usable",
-      "refreshedAt": "2026-09-04T07:39:22.923Z"
+      "refreshedAt": "2026-09-04T11:10:09.534Z"
     },
     {
       "id": "priority-larchway-gardens",
@@ -68,7 +60,7 @@
       "healthy": true,
       "status": "healthy",
       "detail": "2/2 official sources usable",
-      "refreshedAt": "2026-09-04T07:39:22.923Z"
+      "refreshedAt": "2026-09-04T11:10:09.534Z"
     },
     {
       "id": "priority-viridian",
@@ -76,7 +68,7 @@
       "healthy": true,
       "status": "healthy",
       "detail": "1/2 official sources usable",
-      "refreshedAt": "2026-09-04T07:39:22.923Z"
+      "refreshedAt": "2026-09-04T11:10:09.534Z"
     }
   ],
   "warnings": [
@@ -85,14 +77,8 @@
       "lane": "livrent",
       "status": "unhealthy",
       "detail": "0/5 searches healthy"
-    },
-    {
-      "severity": "warning",
-      "lane": "priority-kits-walk-inventory",
-      "status": "incomplete",
-      "detail": "Aggregate inventory reports 2 units; 1 exact active units are verified"
     }
   ],
   "blockers": [],
-  "policy": "Coverage is ready when at least two fresh independent discovery families are healthy, including one broad marketplace and one independent classifieds/MLS family, and every priority building has at least one fresh usable official source. Aggregate inventory counts are compared with exact verified units and reported as warnings, never auto-published."
+  "policy": "Coverage is ready when at least two fresh independent discovery families are healthy, including one broad marketplace and one independent classifieds/MLS family, and every priority building has at least one fresh usable official source. Aggregate counts alone never publish inventory; structured rows with exact rent, bedroom and sqft anchors may be tracked as verified floorplans when the page also has current availability language."
 }
