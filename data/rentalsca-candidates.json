@@ -1,60 +1,60 @@
 {
-  "refreshedAt": "2026-09-05T10:46:28.446Z",
+  "refreshedAt": "2026-09-05T15:24:09.381Z",
   "mode": "candidate-only",
   "sourceHealth": {
     "rentalsca-kitsilano-2br": {
-      "checkedAt": "2026-09-05T10:46:28.446Z",
+      "checkedAt": "2026-09-05T15:24:09.381Z",
       "status": 200,
       "ok": true,
       "finalUrl": "https://rentals.ca/vancouver/kitsilano/all-apartments-all-houses/2-bedrooms"
     },
     "rentalsca-point-grey-2br": {
-      "checkedAt": "2026-09-05T10:46:28.446Z",
+      "checkedAt": "2026-09-05T15:24:09.381Z",
       "status": 200,
       "ok": true,
       "finalUrl": "https://rentals.ca/vancouver/west-point-grey/2-bedrooms"
     },
     "rentalsca-arbutus-2br": {
-      "checkedAt": "2026-09-05T10:46:28.446Z",
+      "checkedAt": "2026-09-05T15:24:09.381Z",
       "status": 200,
       "ok": true,
       "finalUrl": "https://rentals.ca/vancouver/arbutus-ridge/2-bedrooms"
     },
     "rentalsca-dunbar-2br": {
-      "checkedAt": "2026-09-05T10:46:28.446Z",
-      "status": 200,
-      "ok": true,
-      "finalUrl": "https://rentals.ca/vancouver/dunbar-southlands/2-bedrooms"
+      "checkedAt": "2026-09-05T15:24:09.381Z",
+      "status": 429,
+      "ok": false,
+      "finalUrl": "https://rentals.ca/vancouver/dunbar-southlands/2-bedrooms?__cf_chl_rt_tk=C9.bL6PxCD_TykYi1Gt6ydXO8q4Fd_mVuklsgVqPrbA-1788621859-1.0.1.1-N6hYwooe7pKJKuqMfO_7XoH0XIOtUWEaZ5ORR6QFsVU"
     },
     "rentalsca-quilchena-2br": {
-      "checkedAt": "2026-09-05T10:46:28.446Z",
+      "checkedAt": "2026-09-05T15:24:09.381Z",
       "status": 429,
       "ok": false,
-      "finalUrl": "https://rentals.ca/vancouver/quilchena/2-bedrooms?__cf_chl_rt_tk=F4fbi03if.lI5Stx3qd3uQM0M6hyVL1uL_d1fGZ60iA-1788605200-1.0.1.1-wbNQVBlkVfIUcg_4PZJg8J80BYP64CbkZ8ta6sWuCyc"
+      "finalUrl": "https://rentals.ca/vancouver/quilchena/2-bedrooms?__cf_chl_rt_tk=VQMBCAdg7VtoPJuUobP_jvbQRARkygh8HxNoTkhNJV0-1788621859-1.0.1.1-uUPv8CbKa4Tfk9PZC4yUW8P8SVDuK5SJZ70mObprBdk"
     },
     "rentalsca-kitsilano-3br": {
-      "checkedAt": "2026-09-05T10:46:28.446Z",
+      "checkedAt": "2026-09-05T15:24:09.381Z",
       "status": 429,
       "ok": false,
-      "finalUrl": "https://rentals.ca/vancouver/kitsilano/3-bedrooms?__cf_chl_rt_tk=oKoF8za5gyVYkrW8_wyhsNUHzAfx__E89J7dnGXZvHw-1788605200-1.0.1.1-TuMrgSFpSjuxT1CPcrKd3wPWaAhKWoTM0Kkc1Etf5Cs"
+      "finalUrl": "https://rentals.ca/vancouver/kitsilano/3-bedrooms?__cf_chl_rt_tk=I_x0Tx926q8EBw_Y5bSUxu.fd6A376led9gS1csk5Fo-1788621859-1.0.1.1-K01qu9SA.wt4XF699QcfDqdUYgt.yGiBTo6CfrdYlWQ"
     },
     "rentalsca-kitsilano-4br": {
-      "checkedAt": "2026-09-05T10:46:28.446Z",
+      "checkedAt": "2026-09-05T15:24:09.381Z",
       "status": 429,
       "ok": false,
-      "finalUrl": "https://rentals.ca/vancouver/kitsilano/4-bedrooms?__cf_chl_rt_tk=WmM.d3dXbAz9tDbaOgBvSFyoLsm5hN0uiOB2rkNmo.U-1788605200-1.0.1.1-17bx_dtgHuAChNQIzfLCSR7D7wdKfGv46svOvj9BqJQ"
+      "finalUrl": "https://rentals.ca/vancouver/kitsilano/4-bedrooms?__cf_chl_rt_tk=yki7j__DdzMxyv1MoEBchgIt8fCmU9RKm7L.XZdyeVY-1788621859-1.0.1.1-Tt5lMo0ivHJbQy8Q9Nisqo5pdn1ENGV_2c34QPHFxrY"
     },
     "rentalsca-vancouver-3br": {
-      "checkedAt": "2026-09-05T10:46:28.446Z",
+      "checkedAt": "2026-09-05T15:24:09.381Z",
       "status": 429,
       "ok": false,
-      "finalUrl": "https://rentals.ca/vancouver/3-bedrooms?__cf_chl_rt_tk=WhHe3xa0a2ynFpeEyniGiNGFIB7XaqxKPxlONuqI4lg-1788605200-1.0.1.1-flpIqB36Lo7TTHQnxi7iXNdjTs4nuSJ8gAdMMdjWcvc"
+      "finalUrl": "https://rentals.ca/vancouver/3-bedrooms?__cf_chl_rt_tk=UNkHtZmQqKnzfpSukR93Uz0PmAjTuPZOnQu_bFsPUpY-1788621859-1.0.1.1-7pYdvUGDfLlrHiQoh.yj2bb92u.hiEHKMRM.bL2MswE"
     },
     "rentalsca-vancouver-4br": {
-      "checkedAt": "2026-09-05T10:46:28.446Z",
+      "checkedAt": "2026-09-05T15:24:09.381Z",
       "status": 429,
       "ok": false,
-      "finalUrl": "https://rentals.ca/vancouver/4-bedrooms?__cf_chl_rt_tk=knTeLIzyFt.DA.wSkQ36.XVGM4A.UrlZRWEXnvddX3g-1788605200-1.0.1.1-R2eVPdLufjIDn90Alzz4S0gwVjVDstJX4tRfQm2KVzs"
+      "finalUrl": "https://rentals.ca/vancouver/4-bedrooms?__cf_chl_rt_tk=_lNgDM2gAgxbaS4tlsEeSUo0LQfxYxCP0qo_KSIAdpE-1788621859-1.0.1.1-DSWdRxtjlb6brSo44Un8r3bl_PYhVqG_nwBeknj99oE"
     }
   },
   "pages": [],

@@ -1,55 +1,55 @@
 {
-  "refreshedAt": "2026-09-05T10:46:49.370Z",
+  "refreshedAt": "2026-09-05T15:24:28.262Z",
   "mode": "candidate-only",
   "health": [
     {
       "url": "https://realtylink.org/en/apartment~for-rent~vancouver",
       "status": 200,
-      "checkedAt": "2026-09-05T10:46:49.370Z"
+      "checkedAt": "2026-09-05T15:24:28.262Z"
     },
     {
       "url": "https://realtylink.org/en/townhouse~for-rent~vancouver",
       "status": 200,
-      "checkedAt": "2026-09-05T10:46:49.370Z"
+      "checkedAt": "2026-09-05T15:24:28.262Z"
     },
     {
       "url": "https://realtylink.org/en/house~for-rent~vancouver",
       "status": 200,
-      "checkedAt": "2026-09-05T10:46:49.370Z"
+      "checkedAt": "2026-09-05T15:24:28.262Z"
     }
   ],
   "candidates": [
     {
       "source": "Realtylink MLS",
-      "url": "https://realtylink.org/en/townhouse~for-rent~vancouver/263181098",
-      "mls": "R3159471",
-      "address": "1405 W 7th Avenue, Fairview VW",
-      "unit": null,
+      "url": "https://realtylink.org/en/townhouse~for-rent~vancouver/263159073",
+      "mls": "R3137446",
+      "address": "2535 York Avenue",
+      "unit": "103",
       "type": "townhouse",
-      "rent": 5500,
-      "bedrooms": 3,
+      "rent": 5850,
+      "bedrooms": 2,
       "bathrooms": 2,
-      "sqft": 1718,
-      "lat": 49.26546,
-      "lng": -123.13644,
+      "sqft": 1499,
+      "lat": 49.27208,
+      "lng": -123.163,
       "geo": {
-        "lat": 49.26546,
-        "lng": -123.13644
+        "lat": 49.27208,
+        "lng": -123.163
       },
       "images": [
-        "https://media.realtylink.org/images/consumersite/property/263181098/44932de279b64e6fa73f64a64bed6605.jpeg?width=640&height=480&fit=cover",
-        "https://media.realtylink.org/images/consumersite/property/263181098/ccbf9f3fcf2e4949b304d757a23ad12e.jpeg?width=320&height=240&fit=cover",
-        "https://media.realtylink.org/images/consumersite/property/263181098/a80601fb3c0a43038b53de6d4a34423c.jpeg?width=320&height=240&fit=cover",
-        "https://media.realtylink.org/images/consumersite/property/263181098/b6e3b83d8b5b4f2aba368bd9c4d1f7dd.jpeg?width=320&height=240&fit=cover",
-        "https://media.realtylink.org/images/consumersite/property/263181098/05ad9ed71702416aab8d5ec9ab51ba1e.jpeg?width=320&height=240&fit=cover",
-        "https://media.realtylink.org/images/consumersite/property/263181098/44932de279b64e6fa73f64a64bed6605.jpeg?width=480&height=360&fit=cover"
+        "https://media.realtylink.org/images/consumersite/property/263159073/35dd514e86854a44b3e6b4b9490cef65.jpeg?width=640&height=480&fit=cover",
+        "https://media.realtylink.org/images/consumersite/property/263159073/4d45f1e0b1fc423da4dc040057dc511c.jpeg?width=320&height=240&fit=cover",
+        "https://media.realtylink.org/images/consumersite/property/263159073/57cb3ef23f3346e2be923167fe6582ab.jpeg?width=320&height=240&fit=cover",
+        "https://media.realtylink.org/images/consumersite/property/263159073/8d7678f03a9b4482ae8d93b637901737.jpeg?width=320&height=240&fit=cover",
+        "https://media.realtylink.org/images/consumersite/property/263159073/311e8a0ee2f94c4cb373d879df1f9309.jpeg?width=320&height=240&fit=cover",
+        "https://media.realtylink.org/images/consumersite/property/263159073/35dd514e86854a44b3e6b4b9490cef65.jpeg?width=480&height=360&fit=cover"
       ],
       "targetArea": true,
       "active": true,
       "parking": true,
-      "ac": true,
+      "ac": false,
       "balcony": true,
-      "checkedAt": "2026-09-05T10:46:49.370Z",
+      "checkedAt": "2026-09-05T15:24:28.262Z",
       "publishable": false
     },
     {
@@ -82,139 +82,99 @@
       "parking": true,
       "ac": false,
       "balcony": false,
-      "checkedAt": "2026-09-05T10:46:49.370Z",
+      "checkedAt": "2026-09-05T15:24:28.262Z",
       "publishable": false
     },
     {
       "source": "Realtylink MLS",
-      "url": "https://realtylink.org/en/house~for-rent~vancouver/263172357",
-      "mls": "R3150730",
-      "address": "1476 W 33rd Avenue, Shaughnessy",
+      "url": "https://realtylink.org/en/townhouse~for-rent~vancouver/263181098",
+      "mls": "R3159471",
+      "address": "1405 W 7th Avenue, Fairview VW",
       "unit": null,
-      "type": "house",
-      "rent": 2500,
-      "bedrooms": 2,
-      "bathrooms": 1,
-      "sqft": 900,
-      "lat": 49.24155,
-      "lng": -123.13846,
-      "geo": {
-        "lat": 49.24155,
-        "lng": -123.13846
-      },
-      "images": [
-        "https://media.realtylink.org/images/consumersite/property/263172357/20ac8bbb3dc84940944dfbf49fa11b08.jpeg?width=640&height=480&fit=cover",
-        "https://media.realtylink.org/images/consumersite/property/263172357/a2fe909471e349458325f215f42172f9.jpeg?width=320&height=240&fit=cover",
-        "https://media.realtylink.org/images/consumersite/property/263172357/452f9749a2b84dc284178cfe1c21b79c.jpeg?width=320&height=240&fit=cover",
-        "https://media.realtylink.org/images/consumersite/property/263172357/0983339029b843358dd8f7da51c39b65.jpeg?width=320&height=240&fit=cover",
-        "https://media.realtylink.org/images/consumersite/property/263172357/30657a4eeee34134826488cb16d74a68.jpeg?width=320&height=240&fit=cover",
-        "https://media.realtylink.org/images/consumersite/property/263172357/20ac8bbb3dc84940944dfbf49fa11b08.jpeg?width=480&height=360&fit=cover"
-      ],
-      "targetArea": true,
-      "active": true,
-      "parking": false,
-      "ac": false,
-      "balcony": false,
-      "checkedAt": "2026-09-05T10:46:49.370Z",
-      "publishable": false
-    },
-    {
-      "source": "Realtylink MLS",
-      "url": "https://realtylink.org/en/house~for-rent~vancouver/263177017",
-      "mls": "R3155390",
-      "address": "2139 W 22nd Avenue",
-      "unit": "2",
-      "type": "house",
-      "rent": 2300,
-      "bedrooms": 2,
-      "bathrooms": 1,
-      "sqft": 550,
-      "lat": 49.25284,
-      "lng": -123.15462,
-      "geo": {
-        "lat": 49.25284,
-        "lng": -123.15462
-      },
-      "images": [
-        "https://media.realtylink.org/images/consumersite/property/263177017/6d160dcc4758499292d175669d952e37.jpeg?width=640&height=480&fit=cover",
-        "https://media.realtylink.org/images/consumersite/property/263177017/7f5f4ac003d64b108c4cfa7ca4bc3ce5.jpeg?width=320&height=240&fit=cover",
-        "https://media.realtylink.org/images/consumersite/property/263177017/d0b36dd19d4d4a9385e1a679673bb9dd.jpeg?width=320&height=240&fit=cover",
-        "https://media.realtylink.org/images/consumersite/property/263177017/017eb0c8c8ff460bb57a33c0552cb8e8.jpeg?width=320&height=240&fit=cover",
-        "https://media.realtylink.org/images/consumersite/property/263177017/0e9794649d2d483ab6ee03f33c7f2dd2.jpeg?width=320&height=240&fit=cover",
-        "https://media.realtylink.org/images/consumersite/property/263177017/6d160dcc4758499292d175669d952e37.jpeg?width=480&height=360&fit=cover"
-      ],
-      "targetArea": true,
-      "active": true,
-      "parking": true,
-      "ac": false,
-      "balcony": false,
-      "checkedAt": "2026-09-05T10:46:49.370Z",
-      "publishable": false
-    },
-    {
-      "source": "Realtylink MLS",
-      "url": "https://realtylink.org/en/house~for-rent~vancouver/263151601",
-      "mls": "R3129974",
-      "address": "3750 W 11th Avenue",
-      "unit": "Upper",
-      "type": "house",
-      "rent": 4000,
+      "type": "townhouse",
+      "rent": 5500,
       "bedrooms": 3,
-      "bathrooms": 1,
-      "sqft": null,
-      "lat": 49.26236,
-      "lng": -123.18716,
+      "bathrooms": 2,
+      "sqft": 1718,
+      "lat": 49.26546,
+      "lng": -123.13644,
       "geo": {
-        "lat": 49.26236,
-        "lng": -123.18716
+        "lat": 49.26546,
+        "lng": -123.13644
       },
       "images": [
-        "https://media.realtylink.org/images/consumersite/property/263151601/c8590f3436794754a66064822868731b.jpeg?width=640&height=480&fit=cover",
-        "https://media.realtylink.org/images/consumersite/property/263151601/f27253aab9a84df1945c1900f392912b.jpeg?width=320&height=240&fit=cover",
-        "https://media.realtylink.org/images/consumersite/property/263151601/66aa13b50e2645849747f319e6e230a9.jpeg?width=320&height=240&fit=cover",
-        "https://media.realtylink.org/images/consumersite/property/263151601/14a1b03b7fb741f292152ebe1ad62b19.jpeg?width=320&height=240&fit=cover",
-        "https://media.realtylink.org/images/consumersite/property/263151601/a4aa2b2399394b8fb69bc2b100b8bc70.jpeg?width=320&height=240&fit=cover",
-        "https://media.realtylink.org/images/consumersite/property/263151601/c8590f3436794754a66064822868731b.jpeg?width=480&height=360&fit=cover"
+        "https://media.realtylink.org/images/consumersite/property/263181098/44932de279b64e6fa73f64a64bed6605.jpeg?width=640&height=480&fit=cover",
+        "https://media.realtylink.org/images/consumersite/property/263181098/ccbf9f3fcf2e4949b304d757a23ad12e.jpeg?width=320&height=240&fit=cover",
+        "https://media.realtylink.org/images/consumersite/property/263181098/a80601fb3c0a43038b53de6d4a34423c.jpeg?width=320&height=240&fit=cover",
+        "https://media.realtylink.org/images/consumersite/property/263181098/b6e3b83d8b5b4f2aba368bd9c4d1f7dd.jpeg?width=320&height=240&fit=cover",
+        "https://media.realtylink.org/images/consumersite/property/263181098/05ad9ed71702416aab8d5ec9ab51ba1e.jpeg?width=320&height=240&fit=cover",
+        "https://media.realtylink.org/images/consumersite/property/263181098/44932de279b64e6fa73f64a64bed6605.jpeg?width=480&height=360&fit=cover"
+      ],
+      "targetArea": true,
+      "active": true,
+      "parking": true,
+      "ac": true,
+      "balcony": true,
+      "checkedAt": "2026-09-05T15:24:28.262Z",
+      "publishable": false
+    },
+    {
+      "source": "Realtylink MLS",
+      "url": "https://realtylink.org/en/house~for-rent~vancouver/263166962",
+      "mls": "R3145335",
+      "address": "Laneway House 5669 Crown Street",
+      "unit": null,
+      "type": "house",
+      "rent": 3000,
+      "bedrooms": 2,
+      "bathrooms": 1,
+      "sqft": 850,
+      "lat": 49.23517,
+      "lng": -123.19401,
+      "geo": {
+        "lat": 49.23517,
+        "lng": -123.19401
+      },
+      "images": [
+        "https://media.realtylink.org/images/consumersite/property/263166962/9541995094f4453aa6a92fc367c8f409.jpeg?width=640&height=480&fit=cover",
+        "https://media.realtylink.org/images/consumersite/property/263166962/b135eefe2cc94657a758d72452132952.jpeg?width=320&height=240&fit=cover",
+        "https://media.realtylink.org/images/consumersite/property/263166962/2155e04861dc4cfb8e44ddc9d4b6ba71.jpeg?width=320&height=240&fit=cover",
+        "https://media.realtylink.org/images/consumersite/property/263166962/63eedf84224744869aa9fb199773aeed.jpeg?width=320&height=240&fit=cover",
+        "https://media.realtylink.org/images/consumersite/property/263166962/f393bf4f279b4c87bccf12be4af71495.jpeg?width=320&height=240&fit=cover",
+        "https://media.realtylink.org/images/consumersite/property/263166962/9541995094f4453aa6a92fc367c8f409.jpeg?width=480&height=360&fit=cover"
       ],
       "targetArea": true,
       "active": true,
       "parking": true,
       "ac": false,
       "balcony": false,
-      "checkedAt": "2026-09-05T10:46:49.370Z",
+      "checkedAt": "2026-09-05T15:24:28.262Z",
       "publishable": false
     },
     {
       "source": "Realtylink MLS",
-      "url": "https://realtylink.org/en/house~for-rent~vancouver/263180687",
-      "mls": "R3159060",
-      "address": "4588 W 2nd Avenue",
+      "url": "https://realtylink.org/en/house~for-rent~vancouver/263154766",
+      "mls": "R3133139",
+      "address": "Wallace Street, Southlands",
       "unit": null,
       "type": "house",
-      "rent": 15000,
-      "bedrooms": 4,
+      "rent": 8980,
+      "bedrooms": 5,
       "bathrooms": 5,
-      "sqft": 4000,
-      "lat": 49.27115,
-      "lng": -123.21141,
+      "sqft": 5000,
+      "lat": 49.233,
+      "lng": -123.19097,
       "geo": {
-        "lat": 49.27115,
-        "lng": -123.21141
+        "lat": 49.233,
+        "lng": -123.19097
       },
-      "images": [
-        "https://media.realtylink.org/images/consumersite/property/263180687/e7fb7e25c13d4a8b890fa301484f952c.jpeg?width=640&height=480&fit=cover",
-        "https://media.realtylink.org/images/consumersite/property/263180687/ddc8b52c7b7c418b9f5fdfd379be1b9f.jpeg?width=320&height=240&fit=cover",
-        "https://media.realtylink.org/images/consumersite/property/263180687/98e613cc834647e9b0538a342f32c126.jpeg?width=320&height=240&fit=cover",
-        "https://media.realtylink.org/images/consumersite/property/263180687/2b3b912b97804dc9ab3829afb07b0e6a.jpeg?width=320&height=240&fit=cover",
-        "https://media.realtylink.org/images/consumersite/property/263180687/e00965e4795f48dd9fb9fda11a89d4b3.jpeg?width=320&height=240&fit=cover",
-        "https://media.realtylink.org/images/consumersite/property/263180687/e7fb7e25c13d4a8b890fa301484f952c.jpeg?width=480&height=360&fit=cover"
-      ],
+      "images": [],
       "targetArea": true,
       "active": true,
       "parking": true,
-      "ac": false,
+      "ac": true,
       "balcony": true,
-      "checkedAt": "2026-09-05T10:46:49.370Z",
+      "checkedAt": "2026-09-05T15:24:28.262Z",
       "publishable": false
     },
     {
@@ -247,7 +207,7 @@
       "parking": true,
       "ac": false,
       "balcony": true,
-      "checkedAt": "2026-09-05T10:46:49.370Z",
+      "checkedAt": "2026-09-05T15:24:28.262Z",
       "publishable": false
     }
   ]
