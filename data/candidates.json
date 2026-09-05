@@ -22,8 +22,8 @@
       "largeWindows": true,
       "modernInterior": true
     },
-    "discoveredAt": "2026-09-05T15:17:40.066Z",
-    "liveCheckedAt": "2026-09-05T15:17:40.066Z",
+    "discoveredAt": "2026-09-05T20:25:55.462Z",
+    "liveCheckedAt": "2026-09-05T20:25:55.462Z",
     "liveStatus": 403,
     "finalUrl": "https://www.rew.ca/rentals/7496804/605-2075-w-12th-avenue-vancouver-bc",
     "identityMatch": false,
@@ -32,7 +32,7 @@
     "negativePhrase": null,
     "livePrice": null,
     "liveFacts": {},
-    "pageTextSample": "Sorry, you have been blocked\nYou are unable to access rew.ca\nWhy have I been blocked?\n\nThis website is using a security service to protect itself from online attacks. The action you just performed triggered the security solution. There are several actions that could trigger this block including submitting a certain word or phrase, a SQL command or malformed data.\n\nWhat can I do to resolve this?\n\nYou can email the site owner to let them know you were blocked. Please include what you were doing when this page came up and the Cloudflare Ray ID found at the bottom of this page.\n\nCloudflare Ray ID: a366391cb86757f3 • Your IP: Click to reveal • Performance & security by Cloudflare",
+    "pageTextSample": "Sorry, you have been blocked\nYou are unable to access rew.ca\nWhy have I been blocked?\n\nThis website is using a security service to protect itself from online attacks. The action you just performed triggered the security solution. There are several actions that could trigger this block including submitting a certain word or phrase, a SQL command or malformed data.\n\nWhat can I do to resolve this?\n\nYou can email the site owner to let them know you were blocked. Please include what you were doing when this page came up and the Cloudflare Ray ID found at the bottom of this page.\n\nCloudflare Ray ID: a367fcb38fe3179d • Your IP: Click to reveal • Performance & security by Cloudflare",
     "autoPublishResult": "blocked_verification_gate"
   },
   {
@@ -40,7 +40,7 @@
     "sourceName": "Kits Walk Rentals.ca aggregate inventory",
     "url": "https://rentals.ca/vancouver/2-bedrooms",
     "cardText": "2 Bedroom Apartments In Vancouver",
-    "discoveredAt": "2026-09-05T15:17:40.066Z",
+    "discoveredAt": "2026-09-05T20:25:55.462Z",
     "indexedPrice": null,
     "bedrooms": 2,
     "bathrooms": null,
@@ -51,7 +51,7 @@
     "sourceName": "Kits Walk Rentals.ca aggregate inventory",
     "url": "https://rentals.ca/vancouver/3-bedrooms",
     "cardText": "3 Bedroom Apartments In Vancouver",
-    "discoveredAt": "2026-09-05T15:17:40.066Z",
+    "discoveredAt": "2026-09-05T20:25:55.462Z",
     "indexedPrice": null,
     "bedrooms": 3,
     "bathrooms": null,
@@ -62,7 +62,7 @@
     "sourceName": "Kits Walk Rentals.ca aggregate inventory",
     "url": "https://rentals.ca/vancouver/4-bedrooms",
     "cardText": "4 Bedroom Apartments In Vancouver",
-    "discoveredAt": "2026-09-05T15:17:40.066Z",
+    "discoveredAt": "2026-09-05T20:25:55.462Z",
     "indexedPrice": null,
     "bedrooms": 4,
     "bathrooms": null,
@@ -78,20 +78,7 @@
     "bedrooms": 2,
     "bathrooms": 2,
     "sqft": 1106,
-    "liveCheckedAt": "2026-09-05T15:21:27.333Z",
-    "autoPublishResult": "published_or_updated"
-  },
-  {
-    "source": "Zumper",
-    "url": "https://www.zumper.com/address/2406-w-8th-ave-vancouver-bc-v6k-2b1-can",
-    "address": "2406 8th Ave W, Vancouver, BC V6K 2B1",
-    "unit": null,
-    "identityKey": "2406 8th ave w::url:0c632abb462a",
-    "livePrice": 3800,
-    "bedrooms": 2,
-    "bathrooms": 1,
-    "sqft": 1350,
-    "liveCheckedAt": "2026-09-05T15:21:27.333Z",
+    "liveCheckedAt": "2026-09-05T20:29:44.340Z",
     "autoPublishResult": "published_or_updated"
   },
   {
@@ -104,7 +91,20 @@
     "bedrooms": 2,
     "bathrooms": 1,
     "sqft": 1000,
-    "liveCheckedAt": "2026-09-05T15:21:27.333Z",
+    "liveCheckedAt": "2026-09-05T20:29:44.340Z",
+    "autoPublishResult": "published_or_updated"
+  },
+  {
+    "source": "Zumper",
+    "url": "https://www.zumper.com/address/2406-w-8th-ave-vancouver-bc-v6k-2b1-can",
+    "address": "2406 8th Ave W, Vancouver, BC V6K 2B1",
+    "unit": null,
+    "identityKey": "2406 8th ave w::url:0c632abb462a",
+    "livePrice": 3800,
+    "bedrooms": 2,
+    "bathrooms": 1,
+    "sqft": 1350,
+    "liveCheckedAt": "2026-09-05T20:29:44.340Z",
     "autoPublishResult": "published_or_updated"
   },
   {
@@ -117,7 +117,7 @@
     "bedrooms": 2,
     "bathrooms": 2,
     "sqft": 732,
-    "liveCheckedAt": "2026-09-05T15:21:27.333Z",
+    "liveCheckedAt": "2026-09-05T20:29:44.340Z",
     "autoPublishResult": "published_or_updated"
   },
   {
@@ -130,7 +130,7 @@
     "bedrooms": 3,
     "bathrooms": 1,
     "sqft": 1100,
-    "liveCheckedAt": "2026-09-05T15:21:27.333Z",
+    "liveCheckedAt": "2026-09-05T20:29:44.340Z",
     "autoPublishResult": "published_or_updated"
   },
   {
@@ -143,7 +143,7 @@
     "bedrooms": 3,
     "bathrooms": 2,
     "sqft": 1271,
-    "liveCheckedAt": "2026-09-05T15:21:27.333Z",
+    "liveCheckedAt": "2026-09-05T20:29:44.340Z",
     "autoPublishResult": "candidate_only"
   },
   {
@@ -156,7 +156,7 @@
     "bedrooms": 3,
     "bathrooms": 3,
     "sqft": 2450,
-    "liveCheckedAt": "2026-09-05T15:21:27.333Z",
+    "liveCheckedAt": "2026-09-05T20:29:44.340Z",
     "autoPublishResult": "published_or_updated"
   },
   {
@@ -169,7 +169,7 @@
     "bedrooms": 4,
     "bathrooms": 2,
     "sqft": 3680,
-    "liveCheckedAt": "2026-09-05T15:21:27.333Z",
+    "liveCheckedAt": "2026-09-05T20:29:44.340Z",
     "autoPublishResult": "published_or_updated"
   },
   {
@@ -182,7 +182,7 @@
     "bedrooms": 4,
     "bathrooms": 3,
     "sqft": 3000,
-    "liveCheckedAt": "2026-09-05T15:21:27.333Z",
+    "liveCheckedAt": "2026-09-05T20:29:44.340Z",
     "autoPublishResult": "published_or_updated"
   },
   {
@@ -195,7 +195,7 @@
     "bedrooms": 2,
     "bathrooms": 3,
     "sqft": 1100,
-    "liveCheckedAt": "2026-09-05T15:21:27.333Z",
+    "liveCheckedAt": "2026-09-05T20:29:44.340Z",
     "autoPublishResult": "published_or_updated"
   }
 ]
