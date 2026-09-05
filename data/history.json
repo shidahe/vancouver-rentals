@@ -476,6 +476,11 @@
       "date": "2026-09-04",
       "rent": 5390,
       "note": "NEEDS CONFIRMATION: latest purpose-built fallback sources did not confirm the exact configured rent + sqft inventory row."
+    },
+    {
+      "date": "2026-09-05",
+      "rent": 5390,
+      "note": "NEEDS CONFIRMATION: latest purpose-built fallback sources did not confirm the exact configured rent + sqft inventory row."
     }
   ],
   "zumper-2fde865f7e2c": [
@@ -593,6 +598,11 @@
       "date": "2026-09-04",
       "rent": 4500,
       "note": "EXCLUDED: house share or separately rented portion of a house."
+    },
+    {
+      "date": "2026-09-05",
+      "rent": 4500,
+      "note": "EXCLUDED: house share or separately rented portion of a house."
     }
   ],
   "zumper-9bc484458739": [
@@ -677,6 +687,16 @@
       "date": "2026-09-04",
       "rent": 3000,
       "note": "EXCLUDED: monthly rent below CAD $3,500."
+    },
+    {
+      "date": "2026-09-05",
+      "rent": 3000,
+      "note": "CORRECTED: restored after exact current MLS detail matched identity, explicit availability and rent."
+    },
+    {
+      "date": "2026-09-05",
+      "rent": 3000,
+      "note": "EXCLUDED: monthly rent below CAD $3,500."
     }
   ],
   "mls-r3159471": [
@@ -716,6 +736,11 @@
     },
     {
       "date": "2026-09-03",
+      "rent": 2500,
+      "note": "AUTO-REMOVED: MLS R3141972 absent from two consecutive healthy inventory snapshots."
+    },
+    {
+      "date": "2026-09-05",
       "rent": 2500,
       "note": "AUTO-REMOVED: MLS R3141972 absent from two consecutive healthy inventory snapshots."
     }
@@ -803,6 +828,11 @@
       "date": "2026-09-04",
       "rent": 3000,
       "note": "AUTO-REMOVED: MLS R3145335 absent from two consecutive healthy inventory snapshots."
+    },
+    {
+      "date": "2026-09-05",
+      "rent": 3000,
+      "note": "AUTO-REMOVED: MLS R3145335 absent from two consecutive healthy inventory snapshots."
     }
   ],
   "mls-r3129974": [
@@ -864,6 +894,16 @@
       "date": "2026-09-04",
       "rent": 6390,
       "note": "CORRECTED: restored after exact current MLS detail matched identity, explicit availability and rent."
+    },
+    {
+      "date": "2026-09-05",
+      "rent": 6390,
+      "note": "CORRECTED: restored after exact current MLS detail matched identity, explicit availability and rent."
+    },
+    {
+      "date": "2026-09-05",
+      "rent": 6390,
+      "note": "EXCLUDED: five or more bedrooms."
     }
   ],
   "mls-r3158299": [
@@ -896,6 +936,16 @@
       "date": "2026-09-04",
       "rent": 3000,
       "note": "EXCLUDED: monthly rent below CAD $3,500."
+    },
+    {
+      "date": "2026-09-05",
+      "rent": 3000,
+      "note": "CORRECTED: restored after exact current MLS detail matched identity, explicit availability and rent."
+    },
+    {
+      "date": "2026-09-05",
+      "rent": 3000,
+      "note": "EXCLUDED: monthly rent below CAD $3,500."
     }
   ],
   "mls-r3151352": [
@@ -918,6 +968,16 @@
       "date": "2026-09-04",
       "rent": 3495,
       "note": "CORRECTED: restored after exact current MLS detail matched identity, explicit availability and rent."
+    },
+    {
+      "date": "2026-09-05",
+      "rent": 3495,
+      "note": "CORRECTED: restored after exact current MLS detail matched identity, explicit availability and rent."
+    },
+    {
+      "date": "2026-09-05",
+      "rent": 3495,
+      "note": "EXCLUDED: monthly rent below CAD $3,500."
     }
   ],
   "mls-r3158149": [
@@ -991,6 +1051,16 @@
       "date": "2026-09-04",
       "rent": 9750,
       "note": "EXCLUDED: five or more bedrooms."
+    },
+    {
+      "date": "2026-09-05",
+      "rent": 9750,
+      "note": "CORRECTED: restored after exact current MLS detail matched identity, explicit availability and rent."
+    },
+    {
+      "date": "2026-09-05",
+      "rent": 9750,
+      "note": "EXCLUDED: five or more bedrooms."
     }
   ],
   "mls-r3158552": [
@@ -1023,6 +1093,16 @@
       "date": "2026-09-04",
       "rent": 2850,
       "note": "EXCLUDED: monthly rent below CAD $3,500."
+    },
+    {
+      "date": "2026-09-05",
+      "rent": 2850,
+      "note": "CORRECTED: restored after exact current MLS detail matched identity, explicit availability and rent."
+    },
+    {
+      "date": "2026-09-05",
+      "rent": 2850,
+      "note": "EXCLUDED: monthly rent below CAD $3,500."
     }
   ],
   "mls-r3148298": [
@@ -1050,6 +1130,11 @@
     },
     {
       "date": "2026-09-04",
+      "rent": 4800,
+      "note": "AUTO-REMOVED: MLS R3151372 absent from two consecutive healthy inventory snapshots."
+    },
+    {
+      "date": "2026-09-05",
       "rent": 4800,
       "note": "AUTO-REMOVED: MLS R3151372 absent from two consecutive healthy inventory snapshots."
     }
@@ -1091,6 +1176,16 @@
       "date": "2026-09-04",
       "rent": 6980,
       "note": "EXCLUDED: five or more bedrooms."
+    },
+    {
+      "date": "2026-09-05",
+      "rent": 6980,
+      "note": "CORRECTED: restored after exact current MLS detail matched identity, explicit availability and rent."
+    },
+    {
+      "date": "2026-09-05",
+      "rent": 6980,
+      "note": "EXCLUDED: five or more bedrooms."
     }
   ],
   "mls-r3159579": [
@@ -1106,6 +1201,16 @@
     },
     {
       "date": "2026-09-04",
+      "rent": 9750,
+      "note": "EXCLUDED: five or more bedrooms."
+    },
+    {
+      "date": "2026-09-05",
+      "rent": 9750,
+      "note": "CORRECTED: restored after exact current MLS detail matched identity, explicit availability and rent."
+    },
+    {
+      "date": "2026-09-05",
       "rent": 9750,
       "note": "EXCLUDED: five or more bedrooms."
     }
@@ -1125,6 +1230,16 @@
       "date": "2026-09-04",
       "rent": 2900,
       "note": "CORRECTED: restored after exact current MLS detail matched identity, explicit availability and rent."
+    },
+    {
+      "date": "2026-09-05",
+      "rent": 2900,
+      "note": "CORRECTED: restored after exact current MLS detail matched identity, explicit availability and rent."
+    },
+    {
+      "date": "2026-09-05",
+      "rent": 2900,
+      "note": "EXCLUDED: monthly rent below CAD $3,500."
     }
   ],
   "kits-walk-floorplan-2-bedroom-741-3600": [

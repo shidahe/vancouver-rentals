@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-09-04T23:06:01.220Z",
+  "generatedAt": "2026-09-05T04:43:48.804Z",
   "policy": "Only CAD $3,500+ entire-home rentals with 2–4 bedrooms are eligible. House shares and separately rented portions of houses are excluded.",
-  "activeCount": 27,
+  "activeCount": 26,
   "excludedCount": 36,
-  "exclusionEventsToday": 27,
+  "exclusionEventsToday": 10,
   "countsByReason": {
     "monthly rent below CAD $3,500": 24,
     "house share or separately rented portion of a house": 4,
@@ -103,7 +103,7 @@
     {
       "id": "zumper-03c32d9886e3",
       "reason": "house share or separately rented portion of a house",
-      "wasActive": false
+      "wasActive": true
     },
     {
       "id": "zumper-9bc484458739",
