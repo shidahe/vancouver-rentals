@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-09-05T04:43:48.804Z",
+  "generatedAt": "2026-09-05T10:48:35.207Z",
   "policy": "Only CAD $3,500+ entire-home rentals with 2–4 bedrooms are eligible. House shares and separately rented portions of houses are excluded.",
-  "activeCount": 26,
+  "activeCount": 27,
   "excludedCount": 36,
   "exclusionEventsToday": 10,
   "countsByReason": {
@@ -103,7 +103,7 @@
     {
       "id": "zumper-03c32d9886e3",
       "reason": "house share or separately rented portion of a house",
-      "wasActive": true
+      "wasActive": false
     },
     {
       "id": "zumper-9bc484458739",
@@ -123,7 +123,7 @@
     {
       "id": "mls-r3160936",
       "reason": "monthly rent below CAD $3,500",
-      "wasActive": true
+      "wasActive": false
     },
     {
       "id": "mls-r3159559",
@@ -148,17 +148,17 @@
     {
       "id": "mls-r3146956",
       "reason": "five or more bedrooms",
-      "wasActive": true
+      "wasActive": false
     },
     {
       "id": "mls-r3158299",
       "reason": "monthly rent below CAD $3,500",
-      "wasActive": true
+      "wasActive": false
     },
     {
       "id": "mls-r3151352",
       "reason": "monthly rent below CAD $3,500",
-      "wasActive": true
+      "wasActive": false
     },
     {
       "id": "mls-r3133139",
@@ -168,27 +168,27 @@
     {
       "id": "mls-r3134535",
       "reason": "five or more bedrooms",
-      "wasActive": true
+      "wasActive": false
     },
     {
       "id": "mls-r3158552",
       "reason": "monthly rent below CAD $3,500",
-      "wasActive": true
+      "wasActive": false
     },
     {
       "id": "mls-r2907080",
       "reason": "five or more bedrooms",
-      "wasActive": true
+      "wasActive": false
     },
     {
       "id": "mls-r3159579",
       "reason": "five or more bedrooms",
-      "wasActive": true
+      "wasActive": false
     },
     {
       "id": "mls-r3159353",
       "reason": "monthly rent below CAD $3,500",
-      "wasActive": true
+      "wasActive": false
     }
   ]
 }
