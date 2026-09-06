@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-09-06T11:10:21.421Z",
+  "refreshedAt": "2026-09-06T15:39:25.681Z",
   "listings": {
     "arbutus-residences-315-2den-900": {
       "cached": 3,
@@ -507,8 +507,8 @@
     },
     "mls-r3160879": {
       "cached": 5,
-      "preserved": 0,
-      "downloaded": 5,
+      "preserved": 5,
+      "downloaded": 0,
       "failures": [],
       "photoPageUrl": "https://realtylink.org/en/apartment~for-rent~vancouver/263182506"
     }
@@ -516,8 +516,8 @@
   "totals": {
     "sourceListings": 68,
     "cachedListings": 68,
-    "downloaded": 5,
+    "downloaded": 0,
     "failed": 8,
-    "preserved": 319
+    "preserved": 324
   }
 }
