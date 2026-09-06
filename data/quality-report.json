@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-09-06T04:52:54.463Z",
-  "activeCount": 27,
+  "generatedAt": "2026-09-06T11:10:25.939Z",
+  "activeCount": 28,
   "decisionReady": true,
   "highIssueCount": 0,
   "mediumIssueCount": 0,
-  "infoIssueCount": 43,
+  "infoIssueCount": 44,
   "issues": [
     {
       "severity": "info",
@@ -89,11 +89,6 @@
     {
       "severity": "info",
       "id": "zumper-75ff287e7a72",
-      "issue": "unknown-orientation"
-    },
-    {
-      "severity": "info",
-      "id": "arbutus-residences-floorplan-2-bedroom-townhouse-den-1340",
       "issue": "unknown-orientation"
     },
     {
@@ -198,6 +193,11 @@
     },
     {
       "severity": "info",
+      "id": "mls-r3158149",
+      "issue": "unknown-orientation"
+    },
+    {
+      "severity": "info",
       "id": "mls-r3158036",
       "issue": "unknown-orientation"
     },
@@ -220,13 +220,18 @@
       "severity": "info",
       "id": "kits-walk-floorplan-2-bedroom-741-3600",
       "issue": "unknown-orientation"
+    },
+    {
+      "severity": "info",
+      "id": "mls-r3160879",
+      "issue": "unknown-orientation"
     }
   ],
   "readinessChecks": {
     "smokeOk": true,
     "smokeFresh": true,
-    "smokeCheckedAt": "2026-09-06T04:53:00.317Z",
-    "latestDataAt": "2026-09-06T04:52:07.750Z",
+    "smokeCheckedAt": "2026-09-06T11:10:31.742Z",
+    "latestDataAt": "2026-09-06T11:09:37.789Z",
     "coverageReady": true,
     "healthyDiscoveryLanes": 4,
     "coverageWarnings": [
@@ -239,5 +244,5 @@
     ]
   },
   "readinessIssues": [],
-  "finalizedAt": "2026-09-06T04:53:02.118Z"
+  "finalizedAt": "2026-09-06T11:10:33.501Z"
 }

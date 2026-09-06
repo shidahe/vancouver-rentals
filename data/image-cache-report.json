@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-09-06T04:52:50.240Z",
+  "refreshedAt": "2026-09-06T11:10:21.421Z",
   "listings": {
     "arbutus-residences-315-2den-900": {
       "cached": 3,
@@ -286,7 +286,7 @@
       "preserved": 5,
       "downloaded": 0,
       "failures": [],
-      "photoPageUrl": "https://www.zumper.com/address/3349-dunbar-st-vancouver-bc-v6s-2b9-can"
+      "photoPageUrl": "https://realtylink.org/en/townhouse~for-rent~vancouver/263182316"
     },
     "kits-walk-unit-605": {
       "cached": 4,
@@ -504,12 +504,19 @@
       "downloaded": 0,
       "failures": [],
       "photoPageUrl": "https://rentals.ca/vancouver/kits-walk-by-strand"
+    },
+    "mls-r3160879": {
+      "cached": 5,
+      "preserved": 0,
+      "downloaded": 5,
+      "failures": [],
+      "photoPageUrl": "https://realtylink.org/en/apartment~for-rent~vancouver/263182506"
     }
   },
   "totals": {
-    "sourceListings": 67,
-    "cachedListings": 67,
-    "downloaded": 0,
+    "sourceListings": 68,
+    "cachedListings": 68,
+    "downloaded": 5,
     "failed": 8,
     "preserved": 319
   }

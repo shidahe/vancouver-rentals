@@ -481,6 +481,11 @@
       "date": "2026-09-05",
       "rent": 5390,
       "note": "NEEDS CONFIRMATION: latest purpose-built fallback sources did not confirm the exact configured rent + sqft inventory row."
+    },
+    {
+      "date": "2026-09-06",
+      "rent": 5390,
+      "note": "NEEDS CONFIRMATION: latest purpose-built fallback sources did not confirm the exact configured rent + sqft inventory row."
     }
   ],
   "zumper-2fde865f7e2c": [
@@ -1025,6 +1030,11 @@
       "date": "2026-09-04",
       "rent": 7000,
       "note": "AUTO-REMOVED: MLS R3158149 absent from two consecutive healthy inventory snapshots."
+    },
+    {
+      "date": "2026-09-06",
+      "rent": 6500,
+      "note": "MLS price update $7000 → $6500."
     }
   ],
   "mls-r3133139": [
@@ -1307,6 +1317,13 @@
       "date": "2026-09-04",
       "rent": 3600,
       "note": "First seen in live purpose-built inventory via https://rentals.ca/vancouver/kits-walk-by-strand"
+    }
+  ],
+  "mls-r3160879": [
+    {
+      "date": "2026-09-06",
+      "rent": 3500,
+      "note": "NEW: live Realtylink MLS R3160879 auto-published."
     }
   ]
 }
