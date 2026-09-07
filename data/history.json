@@ -486,6 +486,11 @@
       "date": "2026-09-06",
       "rent": 5390,
       "note": "NEEDS CONFIRMATION: latest purpose-built fallback sources did not confirm the exact configured rent + sqft inventory row."
+    },
+    {
+      "date": "2026-09-07",
+      "rent": 5390,
+      "note": "NEEDS CONFIRMATION: latest purpose-built fallback sources did not confirm the exact configured rent + sqft inventory row."
     }
   ],
   "zumper-2fde865f7e2c": [
@@ -611,6 +616,11 @@
     },
     {
       "date": "2026-09-06",
+      "rent": 4500,
+      "note": "EXCLUDED: house share or separately rented portion of a house."
+    },
+    {
+      "date": "2026-09-07",
       "rent": 4500,
       "note": "EXCLUDED: house share or separately rented portion of a house."
     }
