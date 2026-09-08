@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-09-08T21:22:52.068Z",
-  "activeCount": 27,
+  "generatedAt": "2026-09-08T23:12:36.923Z",
+  "activeCount": 23,
   "decisionReady": true,
   "highIssueCount": 0,
   "mediumIssueCount": 0,
-  "infoIssueCount": 41,
+  "infoIssueCount": 37,
   "issues": [
     {
       "severity": "info",
@@ -93,11 +93,6 @@
     },
     {
       "severity": "info",
-      "id": "arbutus-residences-floorplan-2-bedroom-townhouse-den-1340",
-      "issue": "unknown-orientation"
-    },
-    {
-      "severity": "info",
       "id": "zumper-ecd4e868f79c",
       "issue": "unknown-ac"
     },
@@ -164,11 +159,6 @@
     {
       "severity": "info",
       "id": "zumper-16e9ae17cd91",
-      "issue": "unknown-orientation"
-    },
-    {
-      "severity": "info",
-      "id": "mls-r3159471",
       "issue": "unknown-orientation"
     },
     {
@@ -179,11 +169,6 @@
     {
       "severity": "info",
       "id": "mls-r3150923",
-      "issue": "unknown-orientation"
-    },
-    {
-      "severity": "info",
-      "id": "mls-r3146085",
       "issue": "unknown-orientation"
     },
     {
@@ -203,11 +188,6 @@
     },
     {
       "severity": "info",
-      "id": "mls-r3161908",
-      "issue": "unknown-orientation"
-    },
-    {
-      "severity": "info",
       "id": "mls-r3161880",
       "issue": "unknown-orientation"
     }
@@ -215,8 +195,8 @@
   "readinessChecks": {
     "smokeOk": true,
     "smokeFresh": true,
-    "smokeCheckedAt": "2026-09-08T21:22:58.091Z",
-    "latestDataAt": "2026-09-08T21:22:07.779Z",
+    "smokeCheckedAt": "2026-09-08T23:12:42.916Z",
+    "latestDataAt": "2026-09-08T23:11:53.665Z",
     "coverageReady": true,
     "healthyDiscoveryLanes": 4,
     "coverageWarnings": [
@@ -229,5 +209,5 @@
     ]
   },
   "readinessIssues": [],
-  "finalizedAt": "2026-09-08T21:22:59.882Z"
+  "finalizedAt": "2026-09-08T23:12:44.785Z"
 }

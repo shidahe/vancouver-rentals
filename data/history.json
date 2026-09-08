@@ -920,6 +920,11 @@
       "date": "2026-09-08",
       "rent": 4000,
       "note": "AUTO-REMOVED: MLS R3129974 absent from two consecutive healthy inventory snapshots."
+    },
+    {
+      "date": "2026-09-08",
+      "rent": 4000,
+      "note": "CORRECTED: premature MLS removal rolled back; a complete snapshot at least four hours later is required."
     }
   ],
   "mls-r3146085": [
@@ -942,6 +947,11 @@
       "date": "2026-09-04",
       "rent": 6500,
       "note": "CORRECTED: restored after exact current MLS detail matched identity, explicit availability and rent."
+    },
+    {
+      "date": "2026-09-08",
+      "rent": 6500,
+      "note": "AUTO-REMOVED after direct live verification found explicit unavailable evidence."
     }
   ],
   "mls-r3146956": [
