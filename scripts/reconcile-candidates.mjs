@@ -83,16 +83,16 @@ for(const x of payload.listings){
   const evidence=await read(path.join(DATA,'evidence',`${x.id}.json`),null);
   const checkedAt=Date.parse(evidence?.checkedAt||'');
   const rent=Number(evidence?.extractedRent);
+  const beds=parseRealtylinkRoomCount(evidence?.bodyText,'bedroom')??x.bedrooms;
   if(!/realtylink\.org/i.test(evidence?.sourceUrl||evidence?.finalUrl||'')||!evidence?.ok||Number(evidence.status)<200||Number(evidence.status)>=400||!evidence.identityMatch||
     !evidence.explicitPositive||evidence.explicitNegative||!Number.isFinite(checkedAt)||Date.now()-checkedAt>12*60*60*1000||
-    !Number.isFinite(rent)||rent<2500||rent>12000)continue;
+    !listingScopeEligible({...x,rent,bedrooms:beds},evidence.bodyText||'')||rent>12000)continue;
   positiveMlsDetails.set(x.id,evidence);
   const wasActive=x.availabilityStatus==='active';
   const oldRent=Number(x.rent);
   x.availabilityStatus='active';x.verificationLevel='verified';x.removedAt=null;x.lastChecked=today;x.verifiedAt=evidence.checkedAt;
   x.verificationMethod=`Reverified by exact current Realtylink detail for MLS ${listingMls(x)}; identity, availability and rent all matched.`;
   x.rent=rent;
-  const beds=parseRealtylinkRoomCount(evidence.bodyText,'bedroom');
   const bathrooms=parseRealtylinkRoomCount(evidence.bodyText,'bathroom');
   const area=parseRealtylinkFloorArea(evidence.bodyText);
   if(beds!=null)x.bedrooms=beds;if(bathrooms!=null)x.bathrooms=bathrooms;if(area!=null)x.sqft=area;
@@ -223,7 +223,7 @@ if(realtylinkComplete){
     // search-result disappearance. Manually curated MLS-backed homes can have
     // stronger current detail-page evidence and must not be hidden merely because
     // a sampled search page did not contain them.
-    if(!x.mls||x.mlsInventoryManaged!==true||x.availabilityStatus==='removed'||positiveMlsDetails.has(x.id)||activeMls.has(norm(x.mls)))continue;
+    if(!x.mls||x.mlsInventoryManaged!==true||['removed','excluded'].includes(x.availabilityStatus)||positiveMlsDetails.has(x.id)||activeMls.has(norm(x.mls)))continue;
     const previous=previousReconciliation.mlsMissing?.[x.mls];
     state.mlsMissing[x.mls]={firstMissingAt:previous?.firstMissingAt||iso,lastMissingAt:iso,listingId:x.id};
     const missingAgeMs=previous?.firstMissingAt?Date.now()-Date.parse(previous.firstMissingAt):0;

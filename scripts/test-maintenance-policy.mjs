@@ -4,7 +4,7 @@ import { firstLikelyRent, parseFacts } from './listing-parser.mjs';
 import { isAutoManagedListing } from './stale-auto-policy.mjs';
 import { bedroomEligible, isHouseShareText, listingScopeEligible, rentEligible } from './discovery-policy.mjs';
 import { aggregateUnitCount, discoveredStructuredInventories, structuredRentalInventories } from './priority-inventory-policy.mjs';
-import { dedupeHistoryEvents } from './history-policy.mjs';
+import { dedupeHistoryEvents, pruneExcludedScopeChurn } from './history-policy.mjs';
 import { verifiedPhotoCandidates } from './listing-photo-candidates.mjs';
 import { isTargetWestsideCoordinate, parseRealtylinkCoordinateValues, parseRealtylinkCoordinates, parseRealtylinkFloorArea, parseRealtylinkRoomCount } from './realtylink-parser.mjs';
 
@@ -45,8 +45,15 @@ const duplicateHistoryFixture = {
 };
 const normalizedHistoryFixture = dedupeHistoryEvents(duplicateHistoryFixture);
 if (normalizedHistoryFixture.removed !== 1 || normalizedHistoryFixture.history.listing.length !== 2) failures.push('Duplicate history events are not normalized idempotently.');
+const scopeChurnFixture = pruneExcludedScopeChurn({ excluded: [
+  { date: '2026-09-04', rent: 3000, note: 'EXCLUDED: monthly rent below CAD $3,500.' },
+  { date: '2026-09-05', rent: 3000, note: 'CORRECTED: restored after exact current MLS detail matched identity, explicit availability and rent.' },
+  { date: '2026-09-06', rent: 3000, note: 'AUTO-REMOVED: MLS RTEST absent from two consecutive healthy inventory snapshots.' }
+] }, ['excluded']);
+if (scopeChurnFixture.removed !== 2 || scopeChurnFixture.history.excluded.length !== 1) failures.push('Excluded MLS scope churn is not removed from history.');
 const currentHistory = dedupeHistoryEvents(JSON.parse(await read('data/history.json')));
 if (currentHistory.removed !== 0) failures.push(`Tracked history still contains ${currentHistory.removed} duplicate events.`);
+if (!source.includes("!listingScopeEligible({...x,rent,bedrooms:beds}") || !source.includes("['removed','excluded'].includes(x.availabilityStatus)")) failures.push('Exact MLS detail or disappearance can still churn an excluded listing.');
 const aggregateFixture=[{'@type':'ApartmentComplex',containsPlace:[{'@type':'Apartment'},{'@type':'Apartment'}]}];
 if(aggregateUnitCount(aggregateFixture)!==2) failures.push('Structured priority-building inventory count is not parsed.');
 const kitsWalkStructuredFixture=[{'@type':'ApartmentComplex',containsPlace:[

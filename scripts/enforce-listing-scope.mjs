@@ -61,6 +61,7 @@ for(const listing of db.listings||[]){
   listing.verificationLevel='excluded_by_scope';
   listing.verificationMethod=`Excluded by user search scope: ${reason}.`;
   listing.scopeExclusionReason=reason;
+  if(reason==='house share or separately rented portion of a house')listing.rentalScope='shared_house';
   excluded.push({id:listing.id,reason,wasActive});
   if(wasActive){
     history[listing.id]||=[];
