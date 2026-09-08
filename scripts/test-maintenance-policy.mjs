@@ -7,6 +7,7 @@ import { aggregateUnitCount, discoveredStructuredInventories, structuredRentalIn
 import { dedupeHistoryEvents, pruneExcludedScopeChurn } from './history-policy.mjs';
 import { verifiedPhotoCandidates } from './listing-photo-candidates.mjs';
 import { isTargetWestsideCoordinate, parseRealtylinkCoordinateValues, parseRealtylinkCoordinates, parseRealtylinkFloorArea, parseRealtylinkRoomCount } from './realtylink-parser.mjs';
+import { realtylinkLaneHealth } from './coverage-policy.mjs';
 
 const read = p => fs.readFile(p, 'utf8');
 const activeAdapters = [
@@ -88,6 +89,10 @@ for (const building of ['kits-walk', 'larchway-gardens', 'viridian']) {
 if (!coverageSource.includes('priority-building-official-monitor-unhealthy') || !coverageSource.includes('priorityHealthy')) {
   failures.push('Priority official source health is not enforced by coverage readiness.');
 }
+const partialRealtylink=realtylinkLaneHealth({reachable:3,total:3,candidates:3,previousCompleteCount:10,removalEligible:false,suppression:'Partial Realtylink snapshot (3 candidates versus previous complete 10); disappearance signals ignored.'});
+if(partialRealtylink.healthy||partialRealtylink.status!=='degraded'||!partialRealtylink.partial) failures.push('A partial Realtylink snapshot is still reported as a healthy coverage lane.');
+const completeRealtylink=realtylinkLaneHealth({reachable:3,total:3,candidates:10,previousCompleteCount:10,removalEligible:true});
+if(!completeRealtylink.healthy||completeRealtylink.status!=='healthy') failures.push('A complete Realtylink snapshot is not reported as healthy.');
 if (!catalog.discovery.some(x=>x.id==='kits-walk-rentalsca'&&/kits-walk-by-strand/.test(x.url))) {
   failures.push('Kits Walk aggregate inventory source is missing.');
 }

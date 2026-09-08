@@ -30,6 +30,7 @@ on:
       - 'scripts/cache-listing-images.mjs'
       - 'scripts/audit-data-quality.mjs'
       - 'scripts/audit-coverage.mjs'
+      - 'scripts/coverage-policy.mjs'
       - 'scripts/priority-inventory-policy.mjs'
       - 'scripts/discovery-policy.mjs'
       - 'scripts/enforce-listing-scope.mjs'

@@ -1,6 +1,7 @@
 import fs from 'node:fs/promises';
 import path from 'node:path';
 import { aggregateUnitCount } from './priority-inventory-policy.mjs';
+import { realtylinkLaneHealth } from './coverage-policy.mjs';
 
 const DATA=path.join(process.cwd(),'data');
 const read=async(p,d)=>{try{return JSON.parse(await fs.readFile(p,'utf8'))}catch{return d}};
@@ -13,6 +14,7 @@ const rentalsca=await read(path.join(DATA,'rentalsca-candidates.json'),{});
 const craigslist=await read(path.join(DATA,'craigslist-candidates.json'),{});
 const livrent=await read(path.join(DATA,'livrent-candidates.json'),{});
 const realtylink=await read(path.join(DATA,'realtylink-candidates.json'),{});
+const reconciliation=await read(path.join(DATA,'reconciliation-state.json'),{});
 const officialStatus=await read(path.join(DATA,'official-status.json'),{projects:[]});
 const listings=await read(path.join(DATA,'listings.json'),{listings:[]});
 const kitsWalkAggregate=await read(path.join(DATA,'evidence','source-kits-walk-rentalsca.json'),{});
@@ -22,13 +24,14 @@ const countTotal=obj=>Object.keys(obj||{}).length;
 const rlHealth=Array.isArray(realtylink.health)?realtylink.health:[];
 const rlReachable=rlHealth.filter(x=>x.status>=200&&x.status<400).length;
 const rlCandidates=Array.isArray(realtylink.candidates)?realtylink.candidates.length:0;
+const rlLane=realtylinkLaneHealth({reachable:rlReachable,total:rlHealth.length,candidates:rlCandidates,previousCompleteCount:reconciliation.realtylinkSnapshotCount||0,removalEligible:reconciliation.realtylinkRemovalEligible,suppression:reconciliation.mlsRemovalSuppressed});
 const zumperFresh=zumper.filter(x=>fresh(x.liveCheckedAt));
 const discoveryLanes=[
   {id:'zumper',kind:'broad-marketplace',healthy:zumperFresh.length>=5,status:zumperFresh.length>=5?'healthy':'unhealthy',detail:`${zumperFresh.length} fresh live candidates`,refreshedAt:zumperFresh.map(x=>x.liveCheckedAt).sort().at(-1)||null},
   {id:'craigslist',kind:'independent-classifieds',healthy:countOk(craigslist.sourceHealth)>=3,status:countOk(craigslist.sourceHealth)>=3?'healthy':countOk(craigslist.sourceHealth)>0?'degraded':'unhealthy',detail:`${countOk(craigslist.sourceHealth)}/${countTotal(craigslist.sourceHealth)} regional searches healthy`,refreshedAt:craigslist.refreshedAt||null},
   {id:'rentalsca',kind:'broad-marketplace',healthy:countOk(rentalsca.sourceHealth)>=3,status:countOk(rentalsca.sourceHealth)>=3?'healthy':countOk(rentalsca.sourceHealth)>0?'degraded':'unhealthy',detail:`${countOk(rentalsca.sourceHealth)}/${countTotal(rentalsca.sourceHealth)} regional searches healthy`,refreshedAt:rentalsca.refreshedAt||null},
   {id:'livrent',kind:'broad-marketplace',healthy:countOk(livrent.sourceHealth)>=1,status:countOk(livrent.sourceHealth)>=1?'healthy':'unhealthy',detail:`${countOk(livrent.sourceHealth)}/${countTotal(livrent.sourceHealth)} searches healthy`,refreshedAt:livrent.refreshedAt||null},
-  {id:'realtylink',kind:'mls-rental',healthy:rlReachable>=1&&rlCandidates>=1,status:rlReachable<1?'unhealthy':rlCandidates<1?'degraded':'healthy',detail:`${rlReachable}/${rlHealth.length} searches reachable; ${rlCandidates} live candidates parsed`,refreshedAt:realtylink.refreshedAt||null}
+  {id:'realtylink',kind:'mls-rental',...rlLane,refreshedAt:realtylink.refreshedAt||null}
 ];
 const priorityIds=['kits-walk','larchway-gardens','viridian'];
 const priorityLanes=priorityIds.map(id=>{
