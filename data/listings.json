@@ -26,7 +26,7 @@
     "staleAutoListingPolicy": "Auto-managed exact-detail inventory is fail-closed across sources: if it is not reverified within 48 hours, it is hidden as needs_confirmation until exact live evidence returns. Authoritative MLS-feed inventory uses its separate consecutive-snapshot removal policy.",
     "lastZumperMultiUnitQuarantine": "2026-09-08T21:20:33.858Z",
     "zumperMultiUnitPolicy": "Address-level Zumper multi-unit pages without a public unit identity are fail-closed: aggregate low/high prices never auto-publish or auto-update an exact rental inventory.",
-    "searchScope": "Only CAD $3,500+ entire-home rentals with 2–4 bedrooms are eligible. House shares and separately rented portions of houses are excluded."
+    "searchScope": "Only CAD $3,500+ entire-home rentals with 2–4 bedrooms in the Vancouver Westside target area are eligible. Fairview, West End, Downtown, Yaletown, Mount Pleasant, Riley Park, Olympic Village and South Cambie are excluded, as are house shares and separately rented portions of houses."
   },
   "listings": [
     {
@@ -1825,16 +1825,17 @@
       "firstSeen": "2026-09-03",
       "lastChecked": "2026-09-08",
       "verifiedAt": "2026-09-08T21:22:03.531Z",
-      "verificationLevel": "verified",
-      "verificationMethod": "Reverified in current authoritative Realtylink MLS inventory R3159471.",
-      "availabilityStatus": "active",
-      "status": "corrected",
+      "verificationLevel": "excluded_by_scope",
+      "verificationMethod": "Excluded by user search scope: outside the Vancouver Westside target area.",
+      "availabilityStatus": "excluded",
+      "status": "excluded",
       "priceDrop": false,
       "evidenceSources": [
         "realtylink mls"
       ],
       "dataNotes": "MLS number is the canonical identity; disappearance from the current MLS inventory triggers fail-closed revalidation.",
-      "removedAt": null
+      "removedAt": null,
+      "scopeExclusionReason": "outside the Vancouver Westside target area"
     },
     {
       "id": "mls-r3159559",
@@ -2901,16 +2902,17 @@
       "firstSeen": "2026-09-08",
       "lastChecked": "2026-09-08",
       "verifiedAt": "2026-09-08T21:22:03.531Z",
-      "verificationLevel": "verified",
-      "verificationMethod": "Reverified in current authoritative Realtylink MLS inventory R3161908.",
-      "availabilityStatus": "active",
-      "status": "new",
+      "verificationLevel": "excluded_by_scope",
+      "verificationMethod": "Excluded by user search scope: outside the Vancouver Westside target area.",
+      "availabilityStatus": "excluded",
+      "status": "excluded",
       "priceDrop": false,
       "evidenceSources": [
         "realtylink mls"
       ],
       "dataNotes": "MLS number is the canonical identity; disappearance from the current MLS inventory triggers fail-closed revalidation.",
-      "removedAt": null
+      "removedAt": null,
+      "scopeExclusionReason": "outside the Vancouver Westside target area"
     },
     {
       "id": "mls-r3161880",
