@@ -1,6 +1,7 @@
 export const MIN_DISCOVERY_BEDROOMS = 2;
 export const MAX_DISCOVERY_BEDROOMS = 4;
 export const MIN_DISCOVERY_RENT = 3500;
+export const LISTING_SCOPE_VERSION = 'rent-3500-beds-2-4-whole-home-v1';
 
 export function bedroomEligible(value) {
   const bedrooms = Number(value);

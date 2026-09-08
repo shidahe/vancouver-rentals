@@ -2,7 +2,7 @@ import fs from 'node:fs/promises';
 import { civicAddressMatch, findExistingSeedListing, listingMls, maskedCivicAddressMatch, mlsIdentity } from './inventory-identity.mjs';
 import { firstLikelyRent, parseFacts } from './listing-parser.mjs';
 import { isAutoManagedListing } from './stale-auto-policy.mjs';
-import { bedroomEligible, isHouseShareText, listingScopeEligible, rentEligible } from './discovery-policy.mjs';
+import { bedroomEligible, isHouseShareText, LISTING_SCOPE_VERSION, listingScopeEligible, rentEligible } from './discovery-policy.mjs';
 import { aggregateUnitCount, discoveredStructuredInventories, structuredRentalInventories } from './priority-inventory-policy.mjs';
 import { dedupeHistoryEvents, pruneExcludedScopeChurn } from './history-policy.mjs';
 import { verifiedPhotoCandidates } from './listing-photo-candidates.mjs';
@@ -56,6 +56,7 @@ const currentHistory = dedupeHistoryEvents(JSON.parse(await read('data/history.j
 if (currentHistory.removed !== 0) failures.push(`Tracked history still contains ${currentHistory.removed} duplicate events.`);
 if (!source.includes("!listingScopeEligible({...x,rent,bedrooms:beds}") || !source.includes("['removed','excluded'].includes(x.availabilityStatus)")) failures.push('Exact MLS detail or disappearance can still churn an excluded listing.');
 if (!source.includes('listingScopeEligible({rent,bedrooms:beds},t)')) failures.push('Realtylink discovery can admit an out-of-scope split-house listing before reconciliation.');
+if(!LISTING_SCOPE_VERSION||!source.includes('scopeVersion:LISTING_SCOPE_VERSION')||!source.includes('previousReconciliation.realtylinkSnapshotScope===realtylinkScope')) failures.push('Realtylink completeness baseline is not reset when listing scope changes.');
 const aggregateFixture=[{'@type':'ApartmentComplex',containsPlace:[{'@type':'Apartment'},{'@type':'Apartment'}]}];
 if(aggregateUnitCount(aggregateFixture)!==2) failures.push('Structured priority-building inventory count is not parsed.');
 const kitsWalkStructuredFixture=[{'@type':'ApartmentComplex',containsPlace:[
@@ -225,4 +226,4 @@ if (failures.length) {
   console.error(failures.join('\n'));
   process.exit(1);
 }
-console.log('Maintenance policy regression tests passed: 2BR+, MLS identity/publication, and fail-closed removal.');
+console.log('Maintenance policy regression tests passed: scoped whole-home discovery, MLS identity/publication, and fail-closed removal.');
