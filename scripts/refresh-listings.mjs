@@ -4,7 +4,7 @@ import { chromium } from 'playwright';
 import { firstLikelyRent, parseFacts } from './listing-parser.mjs';
 import { findExistingSeedListing } from './inventory-identity.mjs';
 import { verifiedPhotoCandidates } from './listing-photo-candidates.mjs';
-import { parseRealtylinkFloorArea, parseRealtylinkRoomCount } from './realtylink-parser.mjs';
+import { isRealtylinkListingNotFoundRedirect, parseRealtylinkFloorArea, parseRealtylinkRoomCount } from './realtylink-parser.mjs';
 
 const ROOT = process.cwd();
 const DATA = path.join(ROOT, 'data');
@@ -65,11 +65,12 @@ function identityMatch(text, item) {
   return true;
 }
 
-function classify(text, item, jsonLd = [], httpStatus = null) {
+function classify(text, item, jsonLd = [], httpStatus = null, finalUrl = null) {
   const idMatch = identityMatch(text, item);
   const negative = strongNegativePatterns.find(r => r.test(text));
   const positive = positivePatterns.find(r => r.test(text));
   const hardHttpGone = [404, 410].includes(httpStatus);
+  const exactNotFoundRedirect = isRealtylinkListingNotFoundRedirect(item.url, finalUrl);
   const facts=parseFacts(text);
   if(/realtylink\.org/i.test(item.url||'')){
     facts.bedrooms=parseRealtylinkRoomCount(text,'bedroom')??facts.bedrooms;
@@ -77,9 +78,9 @@ function classify(text, item, jsonLd = [], httpStatus = null) {
     facts.sqft=parseRealtylinkFloorArea(text)??facts.sqft;
   }
   return {
-    identityMatch: idMatch,
-    explicitNegative: (idMatch && !!negative) || hardHttpGone,
-    negativePhrase: hardHttpGone ? `HTTP ${httpStatus}` : negative ? String(negative) : null,
+    identityMatch: idMatch || exactNotFoundRedirect,
+    explicitNegative: (idMatch && !!negative) || hardHttpGone || exactNotFoundRedirect,
+    negativePhrase: hardHttpGone ? `HTTP ${httpStatus}` : exactNotFoundRedirect ? 'exact Realtylink listingnotfound redirect' : negative ? String(negative) : null,
     explicitPositive: idMatch && !!positive && !negative,
     positivePhrase: positive ? String(positive) : null,
     extractedRent: idMatch ? firstLikelyRent(text, jsonLd) : null,
@@ -191,7 +192,7 @@ const state = { refreshedAt: iso, listings: {}, sources: {}, autoPublished: [] }
 for (const listing of payload.listings.filter(x => ['active', 'needs_confirmation'].includes(x.availabilityStatus))) {
   const result = await visit(page, listing.url);
   const evidence = { checkedAt: iso, listingId: listing.id, sourceUrl: listing.url, ...result };
-  if (result.ok) Object.assign(evidence, classify(result.bodyText, listing, result.jsonLd, result.status));
+  if (result.ok) Object.assign(evidence, classify(result.bodyText, listing, result.jsonLd, result.status, result.finalUrl));
   else if ([404, 410].includes(result.status)) Object.assign(evidence, { explicitNegative: true, negativePhrase: `HTTP ${result.status}`, identityMatch: true });
 
   const safeEvidence = { ...evidence };

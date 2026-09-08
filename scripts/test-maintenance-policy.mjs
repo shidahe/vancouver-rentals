@@ -6,7 +6,7 @@ import { bedroomEligible, isHouseShareText, LISTING_SCOPE_VERSION, listingScopeE
 import { aggregateUnitCount, discoveredStructuredInventories, structuredRentalInventories } from './priority-inventory-policy.mjs';
 import { dedupeHistoryEvents, pruneExcludedScopeChurn } from './history-policy.mjs';
 import { verifiedPhotoCandidates } from './listing-photo-candidates.mjs';
-import { isTargetWestsideCoordinate, parseRealtylinkCoordinateValues, parseRealtylinkCoordinates, parseRealtylinkFloorArea, parseRealtylinkRoomCount } from './realtylink-parser.mjs';
+import { isRealtylinkListingNotFoundRedirect, isTargetWestsideCoordinate, parseRealtylinkCoordinateValues, parseRealtylinkCoordinates, parseRealtylinkFloorArea, parseRealtylinkRoomCount } from './realtylink-parser.mjs';
 import { realtylinkLaneHealth } from './coverage-policy.mjs';
 
 const read = p => fs.readFile(p, 'utf8');
@@ -134,6 +134,7 @@ if (!source.includes('realtylinkRemovalEligible') || !source.includes('missingAg
 if (!source.includes('positiveMlsDetails.has(x.id)') || !source.includes('identity, availability and rent all matched')) failures.push('Fresh exact MLS detail evidence can be overridden by volatile search-result disappearance.');
 if (!source.includes("/realtylink\\.org/i.test(evidence?.sourceUrl||evidence?.finalUrl||'')")) failures.push('Third-party MLS mirrors can be mistaken for authoritative exact Realtylink evidence.');
 if (!source.includes('property is not currently for sale or for rent') || !source.includes('this property is no longer available') || !source.includes('status\\s*\\n\\s*expired')) failures.push('Explicit inactive/expired marketplace evidence is not treated as a strong negative.');
+if(!isRealtylinkListingNotFoundRedirect('https://realtylink.org/en/house~for-rent~vancouver/263179663','https://realtylink.org/en/house~for-rent~vancouver?listingnotfound=263179663&q=abc')||isRealtylinkListingNotFoundRedirect('https://realtylink.org/en/house~for-rent~vancouver/263179663','https://realtylink.org/en/house~for-rent~vancouver?listingnotfound=999'))failures.push('Exact Realtylink listing-not-found redirects are not safely identity-bound.');
 if (!source.includes('premature MLS removal rolled back')) failures.push('Recent removals made by the old back-to-back MLS rule are not repaired.');
 if (/bedrooms\s*:\s*c\.bedrooms\s*\|\|\s*2/.test(source)) failures.push('Unknown candidate bedrooms are still defaulted to 2BR.');
 if (!source.includes('mlsInventoryManaged!==true')) failures.push('MLS search disappearance is not limited to feed-managed inventory.');

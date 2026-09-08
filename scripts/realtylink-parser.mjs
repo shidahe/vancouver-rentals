@@ -29,3 +29,15 @@ export function parseRealtylinkFloorArea(text) {
   const value=Number(match[1].replace(/,/g,''));
   return Number.isFinite(value)&&value>=200&&value<=15000?value:null;
 }
+
+export function isRealtylinkListingNotFoundRedirect(sourceUrl, finalUrl) {
+  try {
+    const source=new URL(sourceUrl);
+    const final=new URL(finalUrl);
+    if(source.hostname!=='realtylink.org'||final.hostname!=='realtylink.org')return false;
+    const sourceId=source.pathname.match(/\/(\d+)\/?$/)?.[1];
+    return !!sourceId&&final.searchParams.get('listingnotfound')===sourceId;
+  } catch {
+    return false;
+  }
+}
