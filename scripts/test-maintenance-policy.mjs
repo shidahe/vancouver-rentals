@@ -54,6 +54,7 @@ if (scopeChurnFixture.removed !== 2 || scopeChurnFixture.history.excluded.length
 const currentHistory = dedupeHistoryEvents(JSON.parse(await read('data/history.json')));
 if (currentHistory.removed !== 0) failures.push(`Tracked history still contains ${currentHistory.removed} duplicate events.`);
 if (!source.includes("!listingScopeEligible({...x,rent,bedrooms:beds}") || !source.includes("['removed','excluded'].includes(x.availabilityStatus)")) failures.push('Exact MLS detail or disappearance can still churn an excluded listing.');
+if (!source.includes('listingScopeEligible({rent,bedrooms:beds},t)')) failures.push('Realtylink discovery can admit an out-of-scope split-house listing before reconciliation.');
 const aggregateFixture=[{'@type':'ApartmentComplex',containsPlace:[{'@type':'Apartment'},{'@type':'Apartment'}]}];
 if(aggregateUnitCount(aggregateFixture)!==2) failures.push('Structured priority-building inventory count is not parsed.');
 const kitsWalkStructuredFixture=[{'@type':'ApartmentComplex',containsPlace:[
