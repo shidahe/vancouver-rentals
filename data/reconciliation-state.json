@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-09-08T23:11:52.213Z",
+  "refreshedAt": "2026-09-08T23:26:46.369Z",
   "groups": [
     {
       "identityKey": "1533 maple st::url:69f2e13a0fd5",
@@ -110,18 +110,6 @@
       "result": "candidate_only"
     },
     {
-      "identityKey": "mls:r3150923",
-      "sources": [
-        "realtylink mls"
-      ],
-      "rents": [
-        4680
-      ],
-      "exactUnit": false,
-      "matchedListingId": "mls-r3150923",
-      "result": "authoritative_mls_reverified"
-    },
-    {
       "identityKey": "mls:r3160689",
       "sources": [
         "realtylink mls"
@@ -134,39 +122,31 @@
       "result": "authoritative_mls_reverified"
     },
     {
-      "identityKey": "mls:r3137446",
+      "identityKey": "mls:r3150923",
       "sources": [
         "realtylink mls"
       ],
       "rents": [
-        5850
+        4680
       ],
-      "exactUnit": true,
-      "matchedListingId": "york-103-2535-r3137446",
+      "exactUnit": false,
+      "matchedListingId": "mls-r3150923",
       "result": "authoritative_mls_reverified"
     }
   ],
   "promoted": [],
   "crossVerified": [
-    "mls-r3150923",
     "zumper-16e9ae17cd91",
-    "york-103-2535-r3137446"
+    "mls-r3150923"
   ],
   "fingerprintCrossVerified": [],
   "maskedMlsMerged": [],
   "negativeMatches": [],
   "detailReactivated": [],
-  "mlsMissing": {
-    "R3129974": {
-      "firstMissingAt": "2026-09-08T17:06:37.342Z",
-      "lastMissingAt": "2026-09-08T23:11:52.213Z",
-      "listingId": "mls-r3129974"
-    }
-  },
-  "mlsRemoved": [
-    "mls-r3129974"
-  ],
+  "mlsMissing": {},
+  "mlsRemoved": [],
   "realtylinkSnapshotCount": 3,
   "realtylinkSnapshotScope": "rent-3500-beds-2-4-whole-home-westside-v2",
-  "realtylinkRemovalEligible": true
+  "realtylinkRemovalEligible": false,
+  "mlsRemovalSuppressed": "Partial Realtylink snapshot (2 candidates versus previous complete 3); disappearance signals ignored."
 }
