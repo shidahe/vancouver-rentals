@@ -16,6 +16,7 @@ export function rentEligible(value) {
 export function isHouseShareText(value = '') {
   const text = String(value);
   return /\b(?:private\s+room|room\s+for\s+rent|shared\s+(?:kitchen|bathroom|accommodation|household)|roommate\s+wanted|looking\s+for\s+(?:a\s+)?roommate)\b/i.test(text) ||
+    /(?:^|\n)(?:house\s+for\s+rent\s*\n)?(?:main|upper|lower|ground)(?:\s+floor|\s+level)?\s+\d{3,5}\b/im.test(text) ||
     /\b(?:basement|upper|lower|main|ground|first|second)[-\s]+(?:floor|level)?\s*(?:suite|unit)\b/i.test(text) ||
     /\bbasement\s+\d+(?:\.\d+)?[-\s]*(?:bedroom|bed|br).*?\bsuite\b/i.test(text) ||
     /\bavailable\s*[-:]?\s*basement\b/i.test(text) ||
@@ -27,8 +28,9 @@ export function isHouseShareText(value = '') {
 }
 
 export function listingScopeEligible(listing, evidenceText = '') {
+  const scopeText = [evidenceText, listing?.description, listing?.address, listing?.unit, listing?.buildingName].filter(Boolean).join('\n');
   return bedroomEligible(listing?.bedrooms ?? listing?.beds) &&
     rentEligible(listing?.rent ?? listing?.livePrice) &&
     listing?.rentalScope !== 'shared_house' &&
-    !isHouseShareText(evidenceText || listing?.description || '');
+    !isHouseShareText(scopeText);
 }

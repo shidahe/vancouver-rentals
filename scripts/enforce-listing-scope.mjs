@@ -48,7 +48,7 @@ for(const listing of db.listings||[]){
   let reason=null;
   if(!rentEligible(listing.rent))reason='monthly rent below CAD $3,500';
   else if(!bedroomEligible(listing.bedrooms))reason=Number(listing.bedrooms)>=5?'five or more bedrooms':'outside the 2–4 bedroom scope';
-  else if(listing.rentalScope==='shared_house'||isHouseShareText(text))reason='house share or separately rented portion of a house';
+  else if(listing.rentalScope==='shared_house'||isHouseShareText([listing.address,listing.unit,text].filter(Boolean).join('\n')))reason='house share or separately rented portion of a house';
   if(!reason)continue;
   const wasActive=listing.availabilityStatus==='active';
   if(listing.availabilityStatus==='excluded'&&listing.scopeExclusionReason===reason){

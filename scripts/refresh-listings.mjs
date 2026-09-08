@@ -23,6 +23,7 @@ const strongNegativePatterns = [
   /gone too soon/i,
   /listing is no longer available/i,
   /this listing is no longer available/i,
+  /this property is no longer available/i,
   /this rental is unavailable/i,
   /this property is unavailable/i,
   /listing status\s*[:\-]?\s*inactive/i,
