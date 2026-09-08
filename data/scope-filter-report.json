@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-09-08T16:51:05.951Z",
+  "generatedAt": "2026-09-08T17:07:23.099Z",
   "policy": "Only CAD $3,500+ entire-home rentals with 2–4 bedrooms are eligible. House shares and separately rented portions of houses are excluded.",
-  "activeCount": 28,
-  "excludedCount": 36,
+  "activeCount": 26,
+  "excludedCount": 37,
   "exclusionEventsToday": 1,
   "countsByReason": {
     "monthly rent below CAD $3,500": 24,
-    "house share or separately rented portion of a house": 4,
+    "house share or separately rented portion of a house": 5,
     "five or more bedrooms": 8
   },
   "excluded": [
@@ -158,6 +158,11 @@
     {
       "id": "mls-r3151352",
       "reason": "monthly rent below CAD $3,500",
+      "wasActive": false
+    },
+    {
+      "id": "mls-r3158149",
+      "reason": "house share or separately rented portion of a house",
       "wasActive": false
     },
     {
