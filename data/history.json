@@ -1084,6 +1084,11 @@
       "date": "2026-09-04",
       "rent": 4000,
       "note": "CORRECTED: restored after exact current MLS detail matched identity, explicit availability and rent."
+    },
+    {
+      "date": "2026-09-08",
+      "rent": 4000,
+      "note": "AUTO-REMOVED after direct live verification found explicit unavailable evidence."
     }
   ],
   "mls-r3134535": [
@@ -1286,6 +1291,13 @@
       "date": "2026-09-08",
       "rent": 5500,
       "note": "NEW: live Realtylink MLS R3161908 auto-published."
+    }
+  ],
+  "mls-r3161880": [
+    {
+      "date": "2026-09-08",
+      "rent": 8800,
+      "note": "NEW: live Realtylink MLS R3161880 auto-published."
     }
   ]
 }
