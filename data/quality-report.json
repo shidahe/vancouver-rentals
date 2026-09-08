@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-09-08T17:20:42.959Z",
-  "activeCount": 28,
+  "generatedAt": "2026-09-08T21:22:52.068Z",
+  "activeCount": 27,
   "decisionReady": true,
   "highIssueCount": 0,
   "mediumIssueCount": 0,
-  "infoIssueCount": 43,
+  "infoIssueCount": 41,
   "issues": [
     {
       "severity": "info",
@@ -198,16 +198,6 @@
     },
     {
       "severity": "info",
-      "id": "kits-walk-floorplan-2-bedroom-741-3600",
-      "issue": "unknown-ac"
-    },
-    {
-      "severity": "info",
-      "id": "kits-walk-floorplan-2-bedroom-741-3600",
-      "issue": "unknown-orientation"
-    },
-    {
-      "severity": "info",
       "id": "mls-r3160879",
       "issue": "unknown-orientation"
     },
@@ -225,8 +215,8 @@
   "readinessChecks": {
     "smokeOk": true,
     "smokeFresh": true,
-    "smokeCheckedAt": "2026-09-08T17:20:48.736Z",
-    "latestDataAt": "2026-09-08T17:19:51.731Z",
+    "smokeCheckedAt": "2026-09-08T21:22:58.091Z",
+    "latestDataAt": "2026-09-08T21:22:07.779Z",
     "coverageReady": true,
     "healthyDiscoveryLanes": 4,
     "coverageWarnings": [
@@ -239,5 +229,5 @@
     ]
   },
   "readinessIssues": [],
-  "finalizedAt": "2026-09-08T17:20:50.495Z"
+  "finalizedAt": "2026-09-08T21:22:59.882Z"
 }
