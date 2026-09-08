@@ -198,6 +198,7 @@ for(const c of liv.candidates||[]){if(!c.rented||!unitToken(c.unit))continue;con
 // listing was verified less than four hours ago. They remain hidden, but return
 // to needs_confirmation so a later, properly spaced complete snapshot must
 // confirm the disappearance before the record is considered removed.
+const rolledBackMls=new Set();
 for(const x of payload.listings){
   const verifiedAt=Date.parse(x.verifiedAt||'');
   if(x.mlsInventoryManaged===true&&x.availabilityStatus==='removed'&&
@@ -205,6 +206,7 @@ for(const x of payload.listings){
     Number.isFinite(verifiedAt)&&Date.now()-verifiedAt<4*60*60*1000){
     x.availabilityStatus='needs_confirmation';x.status='corrected';x.removedAt=null;x.verificationLevel='unverified';
     x.verificationMethod=`Removal rolled back: MLS ${x.mls} disappearance was confirmed by snapshots less than four hours apart; awaiting a properly spaced complete snapshot.`;
+    rolledBackMls.add(x.mls);
     (history[x.id]||=[]).push({date:today,rent:x.rent,note:'CORRECTED: premature MLS removal rolled back; a complete snapshot at least four hours later is required.'});
   }
 }
@@ -226,7 +228,7 @@ if(realtylinkComplete){
     // stronger current detail-page evidence and must not be hidden merely because
     // a sampled search page did not contain them.
     if(!x.mls||x.mlsInventoryManaged!==true||['removed','excluded'].includes(x.availabilityStatus)||positiveMlsDetails.has(x.id)||activeMls.has(norm(x.mls)))continue;
-    const previous=previousReconciliation.mlsMissing?.[x.mls];
+    const previous=previousReconciliation.realtylinkSnapshotScope===realtylinkScope&&!rolledBackMls.has(x.mls)?previousReconciliation.mlsMissing?.[x.mls]:null;
     state.mlsMissing[x.mls]={firstMissingAt:previous?.firstMissingAt||iso,lastMissingAt:iso,listingId:x.id};
     const missingAgeMs=previous?.firstMissingAt?Date.now()-Date.parse(previous.firstMissingAt):0;
     if(previous&&missingAgeMs>=4*60*60*1000){
