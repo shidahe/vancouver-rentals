@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-09-08T14:04:04.056Z",
-  "activeCount": 27,
+  "generatedAt": "2026-09-08T16:51:18.595Z",
+  "activeCount": 28,
   "decisionReady": true,
   "highIssueCount": 0,
   "mediumIssueCount": 0,
-  "infoIssueCount": 43,
+  "infoIssueCount": 44,
   "issues": [
     {
       "severity": "info",
@@ -89,6 +89,11 @@
     {
       "severity": "info",
       "id": "zumper-75ff287e7a72",
+      "issue": "unknown-orientation"
+    },
+    {
+      "severity": "info",
+      "id": "arbutus-residences-floorplan-2-bedroom-townhouse-den-1340",
       "issue": "unknown-orientation"
     },
     {
@@ -225,8 +230,8 @@
   "readinessChecks": {
     "smokeOk": true,
     "smokeFresh": true,
-    "smokeCheckedAt": "2026-09-08T14:04:09.510Z",
-    "latestDataAt": "2026-09-08T14:03:12.929Z",
+    "smokeCheckedAt": "2026-09-08T16:51:24.764Z",
+    "latestDataAt": "2026-09-08T16:50:07.575Z",
     "coverageReady": true,
     "healthyDiscoveryLanes": 4,
     "coverageWarnings": [
@@ -239,5 +244,5 @@
     ]
   },
   "readinessIssues": [],
-  "finalizedAt": "2026-09-08T14:04:11.158Z"
+  "finalizedAt": "2026-09-08T16:51:26.578Z"
 }

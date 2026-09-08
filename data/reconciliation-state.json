@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-09-08T14:03:11.618Z",
+  "refreshedAt": "2026-09-08T16:50:03.377Z",
   "groups": [
     {
       "identityKey": "3220 4th ave w::url:4b1a6ebe2d36",
@@ -122,34 +122,34 @@
       "result": "candidate_only"
     },
     {
-      "identityKey": "mls:r3160689",
+      "identityKey": "mls:r3159471",
       "sources": [
         "realtylink mls"
       ],
       "rents": [
-        4950
+        5500
       ],
-      "exactUnit": true,
-      "matchedListingId": "zumper-16e9ae17cd91",
+      "exactUnit": false,
+      "matchedListingId": "mls-r3159471",
       "result": "authoritative_mls_reverified"
     },
     {
-      "identityKey": "mls:r3150923",
+      "identityKey": "mls:r3129974",
       "sources": [
         "realtylink mls"
       ],
       "rents": [
-        4680
+        4000
       ],
       "exactUnit": false,
-      "matchedListingId": "mls-r3150923",
+      "matchedListingId": "mls-r3129974",
       "result": "authoritative_mls_reverified"
     }
   ],
   "promoted": [],
   "crossVerified": [
-    "zumper-16e9ae17cd91",
-    "mls-r3150923"
+    "mls-r3159471",
+    "mls-r3129974"
   ],
   "fingerprintCrossVerified": [],
   "maskedMlsMerged": [],
@@ -158,17 +158,17 @@
   "mlsMissing": {
     "R3158149": {
       "firstMissingAt": "2026-09-08T14:03:11.618Z",
-      "lastMissingAt": "2026-09-08T14:03:11.618Z",
+      "lastMissingAt": "2026-09-08T16:50:03.377Z",
       "listingId": "mls-r3158149"
     },
     "R3158036": {
       "firstMissingAt": "2026-09-08T14:03:11.618Z",
-      "lastMissingAt": "2026-09-08T14:03:11.618Z",
+      "lastMissingAt": "2026-09-08T16:50:03.377Z",
       "listingId": "mls-r3158036"
     },
     "R3151372": {
       "firstMissingAt": "2026-09-08T14:03:11.618Z",
-      "lastMissingAt": "2026-09-08T14:03:11.618Z",
+      "lastMissingAt": "2026-09-08T16:50:03.377Z",
       "listingId": "mls-r3151372"
     }
   },

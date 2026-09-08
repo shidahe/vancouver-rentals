@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-09-08T14:03:59.505Z",
+  "refreshedAt": "2026-09-08T16:51:05.995Z",
   "listings": {
     "arbutus-residences-315-2den-900": {
       "cached": 3,
@@ -52,7 +52,12 @@
       "cached": 3,
       "preserved": 3,
       "downloaded": 0,
-      "failures": [],
+      "failures": [
+        {
+          "url": "https://admin.warringtonresidential.com/wp-content/uploads/2025/03/19-on-the-greenway-2.jpg",
+          "error": "fetch failed"
+        }
+      ],
       "photoPageUrl": "https://warringtonresidential.com/properties/19-on-the-greenway/"
     },
     "waterloo-2477-zumper": {
@@ -291,7 +296,7 @@
       "preserved": 5,
       "downloaded": 0,
       "failures": [],
-      "photoPageUrl": "https://realtylink.org/en/townhouse~for-rent~vancouver/263182316"
+      "photoPageUrl": "https://www.zumper.com/address/3349-dunbar-st-vancouver-bc-v6s-2b9-can"
     },
     "kits-walk-unit-605": {
       "cached": 4,
@@ -529,7 +534,7 @@
     "sourceListings": 69,
     "cachedListings": 69,
     "downloaded": 0,
-    "failed": 9,
+    "failed": 10,
     "preserved": 329
   }
 }

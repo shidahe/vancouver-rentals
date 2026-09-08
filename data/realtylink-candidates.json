@@ -1,89 +1,89 @@
 {
-  "refreshedAt": "2026-09-08T14:02:06.735Z",
+  "refreshedAt": "2026-09-08T16:48:57.774Z",
   "mode": "candidate-only",
   "scopeVersion": "rent-3500-beds-2-4-whole-home-v1",
   "health": [
     {
       "url": "https://realtylink.org/en/apartment~for-rent~vancouver",
       "status": 200,
-      "checkedAt": "2026-09-08T14:02:06.735Z"
+      "checkedAt": "2026-09-08T16:48:57.774Z"
     },
     {
       "url": "https://realtylink.org/en/townhouse~for-rent~vancouver",
       "status": 200,
-      "checkedAt": "2026-09-08T14:02:06.735Z"
+      "checkedAt": "2026-09-08T16:48:57.774Z"
     },
     {
       "url": "https://realtylink.org/en/house~for-rent~vancouver",
       "status": 200,
-      "checkedAt": "2026-09-08T14:02:06.735Z"
+      "checkedAt": "2026-09-08T16:48:57.774Z"
     }
   ],
   "candidates": [
     {
       "source": "Realtylink MLS",
-      "url": "https://realtylink.org/en/townhouse~for-rent~vancouver/263182316",
-      "mls": "R3160689",
-      "address": "3349 Dunbar Street",
-      "unit": "102",
+      "url": "https://realtylink.org/en/townhouse~for-rent~vancouver/263181098",
+      "mls": "R3159471",
+      "address": "1405 W 7th Avenue, Fairview VW",
+      "unit": null,
       "type": "townhouse",
-      "rent": 4950,
+      "rent": 5500,
       "bedrooms": 3,
       "bathrooms": 2,
-      "sqft": 1271,
-      "lat": 49.25688,
-      "lng": -123.18537,
+      "sqft": 1718,
+      "lat": 49.26546,
+      "lng": -123.13644,
       "geo": {
-        "lat": 49.25688,
-        "lng": -123.18537
+        "lat": 49.26546,
+        "lng": -123.13644
       },
       "images": [
-        "https://media.realtylink.org/images/consumersite/property/263182316/00c50dbb1e294023bf398ae25ce0d515.jpeg?width=640&height=480&fit=cover",
-        "https://media.realtylink.org/images/consumersite/property/263182316/72286793647f47cd9a695cfbe3d304d4.jpeg?width=320&height=240&fit=cover",
-        "https://media.realtylink.org/images/consumersite/property/263182316/9ff90dbf374c4802a4347969a0cae1e6.jpeg?width=320&height=240&fit=cover",
-        "https://media.realtylink.org/images/consumersite/property/263182316/8498975986b343ffa866148eaa08fc91.jpeg?width=320&height=240&fit=cover",
-        "https://media.realtylink.org/images/consumersite/property/263182316/015a649b6fb945cf8bde7a706fdb80c7.jpeg?width=320&height=240&fit=cover",
-        "https://media.realtylink.org/images/consumersite/property/263182316/00c50dbb1e294023bf398ae25ce0d515.jpeg?width=480&height=360&fit=cover"
+        "https://media.realtylink.org/images/consumersite/property/263181098/44932de279b64e6fa73f64a64bed6605.jpeg?width=640&height=480&fit=cover",
+        "https://media.realtylink.org/images/consumersite/property/263181098/ccbf9f3fcf2e4949b304d757a23ad12e.jpeg?width=320&height=240&fit=cover",
+        "https://media.realtylink.org/images/consumersite/property/263181098/a80601fb3c0a43038b53de6d4a34423c.jpeg?width=320&height=240&fit=cover",
+        "https://media.realtylink.org/images/consumersite/property/263181098/b6e3b83d8b5b4f2aba368bd9c4d1f7dd.jpeg?width=320&height=240&fit=cover",
+        "https://media.realtylink.org/images/consumersite/property/263181098/05ad9ed71702416aab8d5ec9ab51ba1e.jpeg?width=320&height=240&fit=cover",
+        "https://media.realtylink.org/images/consumersite/property/263181098/44932de279b64e6fa73f64a64bed6605.jpeg?width=480&height=360&fit=cover"
       ],
       "targetArea": true,
       "active": true,
       "parking": true,
-      "ac": false,
-      "balcony": false,
-      "checkedAt": "2026-09-08T14:02:06.735Z",
+      "ac": true,
+      "balcony": true,
+      "checkedAt": "2026-09-08T16:48:57.774Z",
       "publishable": false
     },
     {
       "source": "Realtylink MLS",
-      "url": "https://realtylink.org/en/townhouse~for-rent~vancouver/263172550",
-      "mls": "R3150923",
-      "address": "6558 Arbutus Street, S.W. Marine",
-      "unit": null,
-      "type": "townhouse",
-      "rent": 4680,
+      "url": "https://realtylink.org/en/house~for-rent~vancouver/263151601",
+      "mls": "R3129974",
+      "address": "3750 W 11th Avenue",
+      "unit": "Upper",
+      "type": "house",
+      "rent": 4000,
       "bedrooms": 3,
-      "bathrooms": 3,
-      "sqft": 1271,
-      "lat": 49.22614,
-      "lng": -123.15488,
+      "bathrooms": 1,
+      "sqft": null,
+      "lat": 49.26236,
+      "lng": -123.18716,
       "geo": {
-        "lat": 49.22614,
-        "lng": -123.15488
+        "lat": 49.26236,
+        "lng": -123.18716
       },
       "images": [
-        "https://media.realtylink.org/images/consumersite/property/263172550/9e9a258d2ae04f3b9f4745be9c364212.jpeg?width=640&height=480&fit=cover",
-        "https://media.realtylink.org/images/consumersite/property/263172550/a47085d8476f41d49b205091decef942.jpeg?width=320&height=240&fit=cover",
-        "https://media.realtylink.org/images/consumersite/property/263172550/ad447d4a3f144eb6aa1bd6523632012f.jpeg?width=320&height=240&fit=cover",
-        "https://media.realtylink.org/images/consumersite/property/263172550/b3c39524df924cd5a135cef35aaf852e.jpeg?width=320&height=240&fit=cover",
-        "https://media.realtylink.org/images/consumersite/property/263172550/47a0d66c16d844cb8e39b17d36587db2.jpeg?width=320&height=240&fit=cover",
-        "https://media.realtylink.org/images/consumersite/property/263172550/9e9a258d2ae04f3b9f4745be9c364212.jpeg?width=480&height=360&fit=cover"
+        "https://media.realtylink.org/images/consumersite/property/263151601/c8590f3436794754a66064822868731b.jpeg?width=640&height=480&fit=cover",
+        "https://media.realtylink.org/images/consumersite/property/263151601/f27253aab9a84df1945c1900f392912b.jpeg?width=320&height=240&fit=cover",
+        "https://media.realtylink.org/images/consumersite/property/263151601/66aa13b50e2645849747f319e6e230a9.jpeg?width=320&height=240&fit=cover",
+        "https://media.realtylink.org/images/consumersite/property/263151601/14a1b03b7fb741f292152ebe1ad62b19.jpeg?width=320&height=240&fit=cover",
+        "https://media.realtylink.org/images/consumersite/property/263151601/a4aa2b2399394b8fb69bc2b100b8bc70.jpeg?width=320&height=240&fit=cover",
+        "https://media.realtylink.org/images/consumersite/property/263151601/c8590f3436794754a66064822868731b.jpeg?width=480&height=360&fit=cover"
       ],
       "targetArea": true,
       "active": true,
       "parking": true,
       "ac": false,
       "balcony": false,
-      "checkedAt": "2026-09-08T14:02:06.735Z",
+      "checkedAt": "2026-09-08T16:48:57.774Z",
       "publishable": false
     }
   ]
