@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-09-08T11:33:04.460Z",
+  "generatedAt": "2026-09-08T14:04:04.091Z",
   "coverageReady": true,
-  "healthyLaneCount": 3,
+  "healthyLaneCount": 4,
   "freshLaneCount": 8,
   "priorityOfficialReady": true,
   "inventoryGaps": [],
@@ -12,7 +12,7 @@
       "healthy": true,
       "status": "healthy",
       "detail": "11 fresh live candidates",
-      "refreshedAt": "2026-09-08T11:28:02.375Z"
+      "refreshedAt": "2026-09-08T13:59:13.750Z"
     },
     {
       "id": "craigslist",
@@ -20,7 +20,7 @@
       "healthy": true,
       "status": "healthy",
       "detail": "4/4 regional searches healthy",
-      "refreshedAt": "2026-09-08T11:30:51.425Z"
+      "refreshedAt": "2026-09-08T14:01:59.008Z"
     },
     {
       "id": "rentalsca",
@@ -28,7 +28,7 @@
       "healthy": true,
       "status": "healthy",
       "detail": "3/9 regional searches healthy",
-      "refreshedAt": "2026-09-08T11:30:40.543Z"
+      "refreshedAt": "2026-09-08T14:01:46.447Z"
     },
     {
       "id": "livrent",
@@ -36,16 +36,16 @@
       "healthy": false,
       "status": "unhealthy",
       "detail": "0/5 searches healthy",
-      "refreshedAt": "2026-09-08T11:30:50.636Z"
+      "refreshedAt": "2026-09-08T14:01:57.968Z"
     },
     {
       "id": "realtylink",
       "kind": "mls-rental",
-      "healthy": false,
-      "status": "degraded",
-      "partial": true,
-      "detail": "3/3 searches reachable; partial snapshot parsed 4 candidates versus complete baseline 10; removals suppressed",
-      "refreshedAt": "2026-09-08T11:30:59.347Z"
+      "healthy": true,
+      "status": "healthy",
+      "partial": false,
+      "detail": "3/3 searches reachable; 2 live candidates parsed",
+      "refreshedAt": "2026-09-08T14:02:06.735Z"
     },
     {
       "id": "priority-kits-walk",
@@ -53,7 +53,7 @@
       "healthy": true,
       "status": "healthy",
       "detail": "1/2 official sources usable",
-      "refreshedAt": "2026-09-08T11:32:12.895Z"
+      "refreshedAt": "2026-09-08T14:03:12.929Z"
     },
     {
       "id": "priority-larchway-gardens",
@@ -61,7 +61,7 @@
       "healthy": true,
       "status": "healthy",
       "detail": "2/2 official sources usable",
-      "refreshedAt": "2026-09-08T11:32:12.895Z"
+      "refreshedAt": "2026-09-08T14:03:12.929Z"
     },
     {
       "id": "priority-viridian",
@@ -69,7 +69,7 @@
       "healthy": true,
       "status": "healthy",
       "detail": "1/2 official sources usable",
-      "refreshedAt": "2026-09-08T11:32:12.895Z"
+      "refreshedAt": "2026-09-08T14:03:12.929Z"
     }
   ],
   "warnings": [
@@ -78,12 +78,6 @@
       "lane": "livrent",
       "status": "unhealthy",
       "detail": "0/5 searches healthy"
-    },
-    {
-      "severity": "warning",
-      "lane": "realtylink",
-      "status": "degraded",
-      "detail": "3/3 searches reachable; partial snapshot parsed 4 candidates versus complete baseline 10; removals suppressed"
     }
   ],
   "blockers": [],

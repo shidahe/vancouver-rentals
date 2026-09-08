@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-09-08T11:33:04.424Z",
-  "activeCount": 29,
+  "generatedAt": "2026-09-08T14:04:04.056Z",
+  "activeCount": 27,
   "decisionReady": true,
   "highIssueCount": 0,
   "mediumIssueCount": 0,
-  "infoIssueCount": 45,
+  "infoIssueCount": 43,
   "issues": [
     {
       "severity": "info",
@@ -89,11 +89,6 @@
     {
       "severity": "info",
       "id": "zumper-75ff287e7a72",
-      "issue": "unknown-orientation"
-    },
-    {
-      "severity": "info",
-      "id": "arbutus-residences-floorplan-2-bedroom-townhouse-den-1340",
       "issue": "unknown-orientation"
     },
     {
@@ -203,11 +198,6 @@
     },
     {
       "severity": "info",
-      "id": "mls-r3151372",
-      "issue": "unknown-orientation"
-    },
-    {
-      "severity": "info",
       "id": "mls-r3158179",
       "issue": "unknown-orientation"
     },
@@ -235,25 +225,19 @@
   "readinessChecks": {
     "smokeOk": true,
     "smokeFresh": true,
-    "smokeCheckedAt": "2026-09-08T11:33:10.306Z",
-    "latestDataAt": "2026-09-08T11:32:12.895Z",
+    "smokeCheckedAt": "2026-09-08T14:04:09.510Z",
+    "latestDataAt": "2026-09-08T14:03:12.929Z",
     "coverageReady": true,
-    "healthyDiscoveryLanes": 3,
+    "healthyDiscoveryLanes": 4,
     "coverageWarnings": [
       {
         "severity": "warning",
         "lane": "livrent",
         "status": "unhealthy",
         "detail": "0/5 searches healthy"
-      },
-      {
-        "severity": "warning",
-        "lane": "realtylink",
-        "status": "degraded",
-        "detail": "3/3 searches reachable; partial snapshot parsed 4 candidates versus complete baseline 10; removals suppressed"
       }
     ]
   },
   "readinessIssues": [],
-  "finalizedAt": "2026-09-08T11:33:12.116Z"
+  "finalizedAt": "2026-09-08T14:04:11.158Z"
 }

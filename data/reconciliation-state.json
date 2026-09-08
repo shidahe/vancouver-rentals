@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-09-08T11:32:08.493Z",
+  "refreshedAt": "2026-09-08T14:03:11.618Z",
   "groups": [
     {
       "identityKey": "3220 4th ave w::url:4b1a6ebe2d36",
@@ -122,18 +122,6 @@
       "result": "candidate_only"
     },
     {
-      "identityKey": "mls:r3161908",
-      "sources": [
-        "realtylink mls"
-      ],
-      "rents": [
-        5500
-      ],
-      "exactUnit": true,
-      "matchedListingId": null,
-      "result": "auto_published_authoritative_mls"
-    },
-    {
       "identityKey": "mls:r3160689",
       "sources": [
         "realtylink mls"
@@ -156,35 +144,36 @@
       "exactUnit": false,
       "matchedListingId": "mls-r3150923",
       "result": "authoritative_mls_reverified"
-    },
-    {
-      "identityKey": "mls:r3146085",
-      "sources": [
-        "realtylink mls"
-      ],
-      "rents": [
-        6500
-      ],
-      "exactUnit": false,
-      "matchedListingId": "mls-r3146085",
-      "result": "authoritative_mls_reverified"
     }
   ],
-  "promoted": [
-    "mls-r3161908"
-  ],
+  "promoted": [],
   "crossVerified": [
     "zumper-16e9ae17cd91",
-    "mls-r3150923",
-    "mls-r3146085"
+    "mls-r3150923"
   ],
   "fingerprintCrossVerified": [],
   "maskedMlsMerged": [],
   "negativeMatches": [],
   "detailReactivated": [],
-  "mlsMissing": {},
+  "mlsMissing": {
+    "R3158149": {
+      "firstMissingAt": "2026-09-08T14:03:11.618Z",
+      "lastMissingAt": "2026-09-08T14:03:11.618Z",
+      "listingId": "mls-r3158149"
+    },
+    "R3158036": {
+      "firstMissingAt": "2026-09-08T14:03:11.618Z",
+      "lastMissingAt": "2026-09-08T14:03:11.618Z",
+      "listingId": "mls-r3158036"
+    },
+    "R3151372": {
+      "firstMissingAt": "2026-09-08T14:03:11.618Z",
+      "lastMissingAt": "2026-09-08T14:03:11.618Z",
+      "listingId": "mls-r3151372"
+    }
+  },
   "mlsRemoved": [],
-  "realtylinkSnapshotCount": 10,
-  "realtylinkRemovalEligible": false,
-  "mlsRemovalSuppressed": "Partial Realtylink snapshot (4 candidates versus previous complete 10); disappearance signals ignored."
+  "realtylinkSnapshotCount": 2,
+  "realtylinkSnapshotScope": "rent-3500-beds-2-4-whole-home-v1",
+  "realtylinkRemovalEligible": true
 }

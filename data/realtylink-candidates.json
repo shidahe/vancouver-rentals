@@ -1,57 +1,25 @@
 {
-  "refreshedAt": "2026-09-08T11:30:59.347Z",
+  "refreshedAt": "2026-09-08T14:02:06.735Z",
   "mode": "candidate-only",
+  "scopeVersion": "rent-3500-beds-2-4-whole-home-v1",
   "health": [
     {
       "url": "https://realtylink.org/en/apartment~for-rent~vancouver",
       "status": 200,
-      "checkedAt": "2026-09-08T11:30:59.347Z"
+      "checkedAt": "2026-09-08T14:02:06.735Z"
     },
     {
       "url": "https://realtylink.org/en/townhouse~for-rent~vancouver",
       "status": 200,
-      "checkedAt": "2026-09-08T11:30:59.347Z"
+      "checkedAt": "2026-09-08T14:02:06.735Z"
     },
     {
       "url": "https://realtylink.org/en/house~for-rent~vancouver",
       "status": 200,
-      "checkedAt": "2026-09-08T11:30:59.347Z"
+      "checkedAt": "2026-09-08T14:02:06.735Z"
     }
   ],
   "candidates": [
-    {
-      "source": "Realtylink MLS",
-      "url": "https://realtylink.org/en/apartment~for-rent~vancouver/263183535",
-      "mls": "R3161908",
-      "address": "1365 Se Davie Street, West End VW",
-      "unit": "1203",
-      "type": "condo",
-      "rent": 5500,
-      "bedrooms": 2,
-      "bathrooms": 2,
-      "sqft": 1336,
-      "lat": 49.28333,
-      "lng": -123.1354,
-      "geo": {
-        "lat": 49.28333,
-        "lng": -123.1354
-      },
-      "images": [
-        "https://media.realtylink.org/images/consumersite/property/263183535/963125d52325472c9494ed867592ec87.jpeg?width=640&height=480&fit=cover",
-        "https://media.realtylink.org/images/consumersite/property/263183535/3ffd9ed28ef343909aefdde8023f330a.jpeg?width=320&height=240&fit=cover",
-        "https://media.realtylink.org/images/consumersite/property/263183535/c59a9f1efa1c416eb45d1f72ebb56995.jpeg?width=320&height=240&fit=cover",
-        "https://media.realtylink.org/images/consumersite/property/263183535/6f350a6c8ab84622936cd75df78f0004.jpeg?width=320&height=240&fit=cover",
-        "https://media.realtylink.org/images/consumersite/property/263183535/4a8ff0da600b4d209c767eefd233e0f8.jpeg?width=320&height=240&fit=cover",
-        "https://media.realtylink.org/images/consumersite/property/263183535/963125d52325472c9494ed867592ec87.jpeg?width=480&height=360&fit=cover"
-      ],
-      "targetArea": true,
-      "active": true,
-      "parking": true,
-      "ac": false,
-      "balcony": false,
-      "checkedAt": "2026-09-08T11:30:59.347Z",
-      "publishable": false
-    },
     {
       "source": "Realtylink MLS",
       "url": "https://realtylink.org/en/townhouse~for-rent~vancouver/263182316",
@@ -82,7 +50,7 @@
       "parking": true,
       "ac": false,
       "balcony": false,
-      "checkedAt": "2026-09-08T11:30:59.347Z",
+      "checkedAt": "2026-09-08T14:02:06.735Z",
       "publishable": false
     },
     {
@@ -115,40 +83,7 @@
       "parking": true,
       "ac": false,
       "balcony": false,
-      "checkedAt": "2026-09-08T11:30:59.347Z",
-      "publishable": false
-    },
-    {
-      "source": "Realtylink MLS",
-      "url": "https://realtylink.org/en/house~for-rent~vancouver/263167712",
-      "mls": "R3146085",
-      "address": "46xx W 12th Avenue",
-      "unit": null,
-      "type": "house",
-      "rent": 6500,
-      "bedrooms": 3,
-      "bathrooms": 5,
-      "sqft": 3372,
-      "lat": 49.26209,
-      "lng": -123.21411,
-      "geo": {
-        "lat": 49.26209,
-        "lng": -123.21411
-      },
-      "images": [
-        "https://media.realtylink.org/images/consumersite/property/263167712/210d93790d674cb7a73718f0ebdbc3bd.jpeg?width=640&height=480&fit=cover",
-        "https://media.realtylink.org/images/consumersite/property/263167712/4db4e4c0bfa74f0a9fcfc6132c2b1942.jpeg?width=320&height=240&fit=cover",
-        "https://media.realtylink.org/images/consumersite/property/263167712/2d708c9e2f5e4bdc8535016e71ab7029.jpeg?width=320&height=240&fit=cover",
-        "https://media.realtylink.org/images/consumersite/property/263167712/34d6585b45ef4e3881bd7a67ddcd6b74.jpeg?width=320&height=240&fit=cover",
-        "https://media.realtylink.org/images/consumersite/property/263167712/3255e7966de744dbafe9cecf2f293d05.jpeg?width=320&height=240&fit=cover",
-        "https://media.realtylink.org/images/consumersite/property/263167712/210d93790d674cb7a73718f0ebdbc3bd.jpeg?width=480&height=360&fit=cover"
-      ],
-      "targetArea": true,
-      "active": true,
-      "parking": true,
-      "ac": false,
-      "balcony": false,
-      "checkedAt": "2026-09-08T11:30:59.347Z",
+      "checkedAt": "2026-09-08T14:02:06.735Z",
       "publishable": false
     }
   ]
