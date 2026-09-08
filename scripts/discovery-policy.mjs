@@ -1,7 +1,9 @@
 export const MIN_DISCOVERY_BEDROOMS = 2;
 export const MAX_DISCOVERY_BEDROOMS = 4;
 export const MIN_DISCOVERY_RENT = 3500;
-export const LISTING_SCOPE_VERSION = 'rent-3500-beds-2-4-whole-home-v1';
+export const LISTING_SCOPE_VERSION = 'rent-3500-beds-2-4-whole-home-westside-v2';
+
+const OUT_OF_SCOPE_AREA = /\b(?:Fairview(?:\s+VW)?|West\s+End(?:\s+VW)?|Downtown(?:\s+Vancouver)?|Yaletown|Mount\s+Pleasant|Riley\s+Park|Olympic\s+Village|South\s+Cambie)\b/i;
 
 export function bedroomEligible(value) {
   const bedrooms = Number(value);
@@ -27,10 +29,16 @@ export function isHouseShareText(value = '') {
     /\bground\s+level\s+unit\s+in\s+a\s+(?:duplex|triplex|house)\b/i.test(text);
 }
 
+export function isTargetRentalAreaText(value = '') {
+  return !OUT_OF_SCOPE_AREA.test(String(value));
+}
+
 export function listingScopeEligible(listing, evidenceText = '') {
   const scopeText = [evidenceText, listing?.description, listing?.address, listing?.unit, listing?.buildingName].filter(Boolean).join('\n');
+  const areaText = [listing?.address, listing?.neighborhood].filter(Boolean).join('\n');
   return bedroomEligible(listing?.bedrooms ?? listing?.beds) &&
     rentEligible(listing?.rent ?? listing?.livePrice) &&
+    isTargetRentalAreaText(areaText) &&
     listing?.rentalScope !== 'shared_house' &&
     !isHouseShareText(scopeText);
 }

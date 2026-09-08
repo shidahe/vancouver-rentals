@@ -2,7 +2,7 @@ import fs from 'node:fs/promises';
 import { civicAddressMatch, findExistingSeedListing, listingMls, maskedCivicAddressMatch, mlsIdentity } from './inventory-identity.mjs';
 import { firstLikelyRent, parseFacts } from './listing-parser.mjs';
 import { isAutoManagedListing } from './stale-auto-policy.mjs';
-import { bedroomEligible, isHouseShareText, LISTING_SCOPE_VERSION, listingScopeEligible, rentEligible } from './discovery-policy.mjs';
+import { bedroomEligible, isHouseShareText, isTargetRentalAreaText, LISTING_SCOPE_VERSION, listingScopeEligible, rentEligible } from './discovery-policy.mjs';
 import { aggregateUnitCount, discoveredStructuredInventories, structuredRentalInventories } from './priority-inventory-policy.mjs';
 import { dedupeHistoryEvents, pruneExcludedScopeChurn } from './history-policy.mjs';
 import { verifiedPhotoCandidates } from './listing-photo-candidates.mjs';
@@ -35,6 +35,8 @@ if(!bedroomEligible(4)||bedroomEligible(5))failures.push('2–4 bedroom scope is
 if(!isHouseShareText('Furnished 3-bedroom basement suite with private entrance')||!isHouseShareText('upper and lower levels are available for rent separately')||!isHouseShareText('AVAILABLE basement 2 Beds 1 Bath')||!isHouseShareText('House for rent\nMain Floor 3546 W 39 Avenue, Dunbar, Vancouver')||isHouseShareText('Entire detached house with basement storage')||isHouseShareText('No roommate sharing; one family only'))failures.push('House-share classifier does not distinguish clear split-house evidence.');
 if(listingScopeEligible({rent:4500,bedrooms:3},'Main floor unit in a house')||!listingScopeEligible({rent:4500,bedrooms:3},'Entire family home'))failures.push('Unified listing scope policy is incorrect.');
 if(listingScopeEligible({rent:6500,bedrooms:3,address:'Main Floor 3546 W 39 Avenue'},'Available now'))failures.push('Address-labeled house portions can bypass the entire-home scope.');
+if(isTargetRentalAreaText('1365 Se Davie Street, West End VW')||isTargetRentalAreaText('1405 W 7th Avenue, Fairview VW')||!isTargetRentalAreaText('2788 W 1st Avenue, Kitsilano'))failures.push('Explicit out-of-area MLS labels are not distinguished from the target Westside.');
+if(listingScopeEligible({rent:5500,bedrooms:2,address:'1365 Se Davie Street',neighborhood:'West End VW'},'Available now'))failures.push('West End inventory can bypass the shared geographic scope.');
 if(!scopeSource.includes("availabilityStatus='excluded'")||!scopeSource.includes('scope-filter-report.json'))failures.push('Out-of-scope listings are not persistently excluded and reported.');
 const scopedListings=JSON.parse(await read('data/listings.json')).listings||[];
 if(scopedListings.some(x=>x.availabilityStatus==='active'&&!listingScopeEligible(x)))failures.push('An active listing remains outside the rent/bedroom scope.');
