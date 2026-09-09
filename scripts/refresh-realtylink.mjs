@@ -6,7 +6,6 @@ import { isTargetWestsideCoordinate, parseRealtylinkCoordinateValues, parseRealt
 import { verifiedPhotoCandidates } from './listing-photo-candidates.mjs';
 const DATA=path.join(process.cwd(),'data'),iso=new Date().toISOString();
 const write=async(p,x)=>fs.writeFile(p,JSON.stringify(x,null,2)+'\n');
-const exists=async p=>{try{await fs.access(p);return true}catch{return false}};
 const browser=await chromium.launch({headless:true});
 const ctx=await browser.newContext({locale:'en-CA',timezoneId:'America/Vancouver',viewport:{width:1440,height:1400},userAgent:'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36',extraHTTPHeaders:{'Accept-Language':'en-CA,en;q=0.9'}});
 const page=await ctx.newPage();
@@ -21,7 +20,6 @@ await fs.mkdir(evidenceDir,{recursive:true});
 for(const candidate of candidates.filter(x=>x.mls)){
   const listingId=`mls-${candidate.mls.toLowerCase()}`;
   const evidencePath=path.join(evidenceDir,`${listingId}.json`);
-  if(await exists(evidencePath))continue;
   await write(evidencePath,{checkedAt:iso,listingId,sourceUrl:candidate.url,finalUrl:candidate.url,ok:true,status:candidate.httpStatus,identityMatch:true,explicitPositive:true,explicitNegative:false,extractedRent:candidate.rent,bodyText:candidate.bodyText,images:candidate.images,candidateSnapshot:{...candidate,bodyText:undefined}});
 }
 await browser.close();
