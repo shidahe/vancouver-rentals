@@ -1,0 +1,347 @@
+{
+  "checkedAt": "2026-09-09T01:49:47.206Z",
+  "page": {
+    "source": "Rentals.ca",
+    "url": "https://rentals.ca/vancouver/senakw",
+    "address": "1370 Senakw Lane, Vancouver, British Columbia V6J 0J5",
+    "addressUnit": null,
+    "geo": {
+      "lat": 49.2738008,
+      "lng": -123.1445701
+    },
+    "targetArea": true,
+    "active": true,
+    "floorplans": [
+      {
+        "label": "0 - 3 BED",
+        "unit": null,
+        "beds": 3,
+        "baths": 2,
+        "sqft": 1062,
+        "rent": 2395,
+        "available": true
+      },
+      {
+        "label": "2 Bedroom Apartments In Vancouver",
+        "unit": null,
+        "beds": 2,
+        "baths": null,
+        "sqft": null,
+        "rent": 2000,
+        "available": true
+      },
+      {
+        "label": "3 Bedroom Apartments In Vancouver",
+        "unit": null,
+        "beds": 3,
+        "baths": null,
+        "sqft": null,
+        "rent": 2000,
+        "available": true
+      },
+      {
+        "label": "4 Bedroom Apartments In Vancouver",
+        "unit": null,
+        "beds": 4,
+        "baths": null,
+        "sqft": null,
+        "rent": 2000,
+        "available": true
+      }
+    ],
+    "single": {
+      "rent": 2550,
+      "beds": 2,
+      "baths": 1,
+      "sqft": null
+    },
+    "checkedAt": "2026-09-09T01:49:47.206Z"
+  },
+  "jsonLd": [
+    {
+      "@context": "http://schema.org",
+      "@type": "ApartmentComplex",
+      "url": "https://rentals.ca/vancouver/senakw",
+      "name": "Sen̓áḵw",
+      "description": "Sen̓áḵw stands on the traditional lands of the Sḵwx̱wú7mesh Úxwumixw (Squamish Nation). Phase 1 brings three towers and a village renewed. Currently we are renting Tower 1. The views from here are unmatched. Water, mountains, downtown, and the North Shore.\nAdditional Information:\n**Additional Information: **\nKeyless entryWaterfront viewsCity viewsBeach nearbyGym / Fitness CentreKey / fob elevatorsBike stand nearbyConcierge servicesOven\nKeyless entry\nWaterfront views\nCity views\nBeach nearby\nGym / Fitness Centre\nKey / fob elevators\nBike stand nearby\nConcierge services\nOven",
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 49.2738008,
+        "longitude": -123.1445701
+      },
+      "containedInPlace": {
+        "@type": "City",
+        "url": "",
+        "name": "",
+        "address": {
+          "@type": "PostalAddress",
+          "addressCountry": "CA",
+          "addressRegion": ""
+        }
+      },
+      "containsPlace": [
+        {
+          "@context": "http://schema.org",
+          "@type": "Apartment",
+          "name": "0 Bedroom",
+          "potentialAction": {
+            "@type": "RentAction",
+            "priceSpecification": {
+              "@type": "PriceSpecification",
+              "price": 2195,
+              "priceCurrency": "CAD"
+            }
+          },
+          "floorSize": {
+            "@type": "QuantitativeValue",
+            "unitCode": "FTK",
+            "value": "340.0"
+          }
+        },
+        {
+          "@context": "http://schema.org",
+          "@type": "Apartment",
+          "name": "1 Bedroom",
+          "potentialAction": {
+            "@type": "RentAction",
+            "priceSpecification": {
+              "@type": "PriceSpecification",
+              "price": 2400,
+              "priceCurrency": "CAD"
+            }
+          },
+          "floorSize": {
+            "@type": "QuantitativeValue",
+            "unitCode": "FTK",
+            "value": "410.0"
+          }
+        },
+        {
+          "@context": "http://schema.org",
+          "@type": "Apartment",
+          "name": "2 Bedroom",
+          "potentialAction": {
+            "@type": "RentAction",
+            "priceSpecification": {
+              "@type": "PriceSpecification",
+              "price": 3455,
+              "priceCurrency": "CAD"
+            }
+          },
+          "floorSize": {
+            "@type": "QuantitativeValue",
+            "unitCode": "FTK",
+            "value": "645.0"
+          }
+        }
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "CA",
+        "addressLocality": "Vancouver",
+        "addressRegion": "British Columbia",
+        "postalCode": "V6J 0J5",
+        "streetAddress": "1370 Senakw Lane"
+      },
+      "telephone": "(236) 706-0587",
+      "photo": [
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/1537761/apartment-2241244956.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/1537761/apartment-2241244956.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/1537761/apartment-2241244968.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/1537761/apartment-2241244968.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/1537761/apartment-2241244957.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/1537761/apartment-2241244957.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/1537761/apartment-2241244945.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/1537761/apartment-2241244945.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/1537761/apartment-2241244969.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/1537761/apartment-2241244969.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/1537761/apartment-2241244958.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/1537761/apartment-2241244958.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/1537761/apartment-2241244946.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/1537761/apartment-2241244946.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/1537761/apartment-2241244970.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/1537761/apartment-2241244970.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/1537761/apartment-2241244959.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/1537761/apartment-2241244959.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/1537761/apartment-2241244947.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/1537761/apartment-2241244947.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/1537761/apartment-2241244971.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/1537761/apartment-2241244971.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/1537761/apartment-2241244960.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/1537761/apartment-2241244960.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/1537761/apartment-2241244948.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/1537761/apartment-2241244948.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/1537761/apartment-2241244972.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/1537761/apartment-2241244972.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/1537761/apartment-2241244961.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/1537761/apartment-2241244961.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/1537761/apartment-2241244949.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/1537761/apartment-2241244949.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/1537761/apartment-2241244973.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/1537761/apartment-2241244973.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/1537761/apartment-2241244962.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/1537761/apartment-2241244962.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/1537761/apartment-2241244950.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/1537761/apartment-2241244950.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/1537761/apartment-2241244974.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/1537761/apartment-2241244974.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/1537761/apartment-2241244963.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/1537761/apartment-2241244963.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/1537761/apartment-2241244951.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/1537761/apartment-2241244951.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/1537761/apartment-2241244940.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/1537761/apartment-2241244940.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/1537761/apartment-2241244975.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/1537761/apartment-2241244975.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/1537761/apartment-2241244964.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/1537761/apartment-2241244964.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/1537761/apartment-2241244952.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/1537761/apartment-2241244952.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/1537761/apartment-2241244941.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/1537761/apartment-2241244941.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/1537761/apartment-2241244976.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/1537761/apartment-2241244976.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/1537761/apartment-2241244965.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/1537761/apartment-2241244965.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/1537761/apartment-2241244953.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/1537761/apartment-2241244953.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/1537761/apartment-2241244942.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/1537761/apartment-2241244942.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/1537761/apartment-2241244977.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/1537761/apartment-2241244977.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/1537761/apartment-2241244966.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/1537761/apartment-2241244966.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/1537761/apartment-2241244954.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/1537761/apartment-2241244954.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/1537761/apartment-2241244943.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/1537761/apartment-2241244943.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/1537761/apartment-2241244978.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/1537761/apartment-2241244978.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/1537761/apartment-2241244967.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/1537761/apartment-2241244967.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/1537761/apartment-2241244955.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/1537761/apartment-2241244955.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/1537761/apartment-2241244944.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/1537761/apartment-2241244944.jpg"
+        }
+      ]
+    }
+  ],
+  "textSample": "Landlords\nRent Report\nBlog\nLogin\nEN\nFR\nPost a Rental\nPost a Rental\nLogin\nCreate Account\nAlerts\nFAQs\nMonthly Rent Report\nCity Rent Trends\nLandlords\nCredit Reports\nCommercial Properties\nRaising the Roof\nCareers\nAbout\nBlog\n Contact us\n Instagram\n Facebook\n Youtube\n LinkedIn\n X\n TikTok\nHome\nBC\nVancouver\nKitsilano\nSen̓áḵw\n Favourite\n Alert\n$2195 - $3455\nApartment\n1370 Senakw Lane — Sen̓áḵw, Vancouver BC (0-Bedroom to 2-Bedroom)\n\n 13 hours ago\n\n 0 - 2 Bed\n 1 Bath\n Pets\n 340 - 645 FT²\nNo info\nGet In Touch\n\nSen̓áḵw\n\n Contact Property\n View Phone Number\n Verified\n Popular\n1 / 5\nPhotos\nStreet\nSave Alert\n\nSimilar listings in Vancouver\n\nKitsilano Apartments\n\nView on map\n\nAll0 Bed1 Bed2+ Bed\nFloor Plans\n0 Bedroom\n$2,195\n1 Bath\n340 ft²\nAvailable\n 11\n1 Bedroom\n$2,400\n1 Bath\n410 ft²\nAvailable\n 12\n2 Bedroom\n$3,455\n1 Bath\n645 ft²\nAvailable\n 11\nParking Information\n\nParking Types\n\nNo visitor parking\n\nOther Parking Details\n\nParking fee not included in rent\n\nFeatures & Amenities\n Building Features (9)\n Unit Features (10)\n Nearby (5)\nRooftop Lounge\nSecured Access\nSwimming Pool\nOn-site Staff\nSauna\nRecreation Room\nBike Room\nRooftop Deck\nElevator\nAbout Sen̓áḵw\nProperty Type\n\nApartment\n\nProperty Sub-type\n\nApartment\n\nLease Term\n\n1-Year\n\nParking Spots\n\nNo Info\n\nShort-term\n\nNo Info\n\nFurnished\n\nNo\n\nYear Built\n\n2026\n\n# of Floors\n\n26\n\n# of Units\n\n333\n\nListing ID\n\n1537761\n\nSen̓áḵw stands on the traditional lands of the Sḵwx̱wú7mesh Úxwumixw (Squamish Nation). Phase 1 brings three towers and a village renewed. Currently we are renting Tower 1. The views from here are unmatched. Water, mountains, downtown, and the North Shore. Addit...\n\nRead More\n\nNeighbourhood Score & Commute Time\nProperty Managed By\n\nSen̓áḵw\n\nSummary\n\n1370 Senakw Lane is an apartment for rent in Vancouver, BC. It has 3 units. Units have 0 to 2 bedrooms. Units have 1 bathroom.\n\n Report Listing\n\nExplore Similar Rentals\n\n$2550\n\nDetails\n\nApartment\n\n Verified\n1 BED\n1 BATH\n524 FT²\n1245 Harwood Street, Vancouver, BC\n Parking Available\n Dishwasher\n Ensuite Laundry\n Air Conditioning\n\n$2500\n\nDetails\n\nApartment\n\n Verified\n1 BED\n1 BATH\n579 FT²\n1111 RICHARDS Street, Vancouver, BC\n Parking Available\n Dishwasher\n Ensuite Laundry\n Air Conditioning\n\n$2395\n\nDetails\n\nApartment\n\n Verified\n1 BED\n1 BATH\n480 FT²\n1090 Jervis Street, Vancouver, BC\n Parking Available\n Dishwasher\n Ensuite Laundry\n Air Conditioning\n\n$3000\n\nDetails\n\nApartment\n\n Verified\n1 BED\n1 BATH\n731 FT²\n189 DAVIE Street, Vancouver, BC\n Parking Available\n Dishwasher\n Ensuite Laundry\n Air Conditioning\n Popular\nRent Special\n3D Tour\n\n$2525 - $7495\n\nDetails\n\nApartment\n\n Verified\n0 - 3 BED\n1 - 2 BATH\n435 - 1062 FT²\n2488 Granville Street, Vancouver, BC\n Parking Available\n Dishwasher\n Ensuite Laundry\n Air Conditioning\n\n$2395\n\nDetails\n\nApartment\n\n Verified\n1 BED\n1 BATH\n685 FT²\n1165 West 13th Avenue, Vancouver, BC\n Parking Available\n Dishwasher\n Ensuite Laundry\n Air Conditioning\nSee All Similar Rentals\n Turn On Alerts for Similar Listings\nPopular Rent Searches In Vancouver\nSearch by Amenities\nPet Friendly Apartments In Vancouver\nApartments With A/C In Vancouver\nApartments With Ensuite Laundry In Vancouver\nApartments With Dishwasher In Vancouver\nSearch by Bedrooms\n1 Bedroom Apartments In Vancouver\n2 Bedroom Apartments In Vancouver\n3 Bedroom Apartments In Vancouver\n4 Bedroom Apartments In Vancouver\nSearch by Budget\nApartments Under $1000 In Vancouver\nApartments Under $1250 In Vancouver\nApartments Under $2000 In Vancouver\nApartments Under $2500 In Vancouver\nSee All Rentals in Vancouver\nBlog\nPress\nContact\nAbout\nCareers\nFAQs\nTerms\nPrivacy Policy\nSitemap\nPopular Searches\nApartments Near Me\nCondos Near Me\nHouses Near Me\nRooms Near Me\nPopular Cities\nToronto Rentals\nCalgary Rentals\nOttawa Rentals\nEdmonton Rentals\nVancouver Rentals\nHalifax Rentals\nPopular Provinces\nOntario\nBritish Columbia\nAlberta\nQuebec\nNova Scotia\nManitoba\nLandlords\nGet Listed\nMy Listings\nTenant Credit Check\nResources\nRent Report\nCity Rent Trends\nCommercial Properties\nGet the Rentals.ca app\nProud partner of\n\nCopyright © 2026 Rentals.ca Network, Inc. All rights reserved.\n\nManage Cookies\n \nThis website uses cookies to ensure you get the best experience on our website. By clicking \"Allow All\", you consent to our use of cookies. Privacy Policy ↗\nManage Cookies\nDecline\nAllow All"
+}

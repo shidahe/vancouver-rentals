@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-09-08T23:27:31.598Z",
+  "refreshedAt": "2026-09-09T01:55:17.358Z",
   "listings": {
     "arbutus-residences-315-2den-900": {
       "cached": 2,
@@ -22,8 +22,8 @@
     },
     "treo-2688-vine-r3142696": {
       "cached": 4,
-      "preserved": 2,
-      "downloaded": 2,
+      "preserved": 4,
+      "downloaded": 0,
       "failures": [],
       "photoPageUrl": "https://www.zolo.ca/vancouver-real-estate/2688-vine"
     },
@@ -535,8 +535,8 @@
   "totals": {
     "sourceListings": 70,
     "cachedListings": 70,
-    "downloaded": 2,
+    "downloaded": 0,
     "failed": 9,
-    "preserved": 331
+    "preserved": 333
   }
 }

@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-09-08T23:18:57.356Z",
+  "checkedAt": "2026-09-09T01:39:15.352Z",
   "source": {
     "id": "rentalsca-vancouver-4br",
     "name": "Rentals.ca Vancouver 4BR+",
@@ -7,24 +7,9 @@
     "kind": "marketplace",
     "adapter": "rentalsca-search"
   },
-  "ok": true,
-  "status": 429,
-  "finalUrl": "https://rentals.ca/vancouver/4-bedrooms",
-  "title": "Just a moment...",
-  "bodyText": "rentals.ca\nPerforming security verification\n\nThis website uses a security service to protect against malicious bots. This page is displayed while the website verifies you are not a bot.\n\nRay ID: a381b0b2f8f1def4\nPerformance and Security by Cloudflare\nPrivacy",
-  "links": [
-    {
-      "href": "https://www.cloudflare.com/?utm_source=challenge&utm_campaign=m",
-      "text": "Cloudflare"
-    },
-    {
-      "href": "https://www.cloudflare.com/privacypolicy/",
-      "text": "Privacy"
-    }
-  ],
-  "jsonLd": [],
-  "images": [
-    "https://rentals.ca/favicon.ico"
-  ],
-  "elapsedMs": 3100
+  "ok": false,
+  "error": "TimeoutError: page.goto: Timeout 45000ms exceeded.\nCall log:\n  - navigating to \"https://rentals.ca/vancouver/4-bedrooms\", waiting until \"domcontentloaded\"\n",
+  "status": null,
+  "finalUrl": "https://rentals.ca/vancouver/quilchena/2-bedrooms",
+  "elapsedMs": 45045
 }
