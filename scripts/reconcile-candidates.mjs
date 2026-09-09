@@ -1,7 +1,7 @@
 import fs from 'node:fs/promises';
 import path from 'node:path';
 import crypto from 'node:crypto';
-import { civicAddressMatch, listingMls, mlsIdentity } from './inventory-identity.mjs';
+import { civicAddressMatch, exactAddressUnitIdentity, listingMls, mlsIdentity } from './inventory-identity.mjs';
 import { dedupeMlsRecords } from './mls-dedupe.mjs';
 import { verifiedPhotoCandidates } from './listing-photo-candidates.mjs';
 import { parseRealtylinkFloorArea, parseRealtylinkRoomCount } from './realtylink-parser.mjs';
@@ -67,7 +67,7 @@ const groups=new Map();
 for(const c of all){if(!usable(c))continue;const k=candidateKey(c);if(!groups.has(k))groups.set(k,[]);groups.get(k).push(c);}
 const listingByKey=new Map();
 for(const x of payload.listings){const canonicalMls=listingMls(x);if(canonicalMls)x.mls=canonicalMls;const k=key(x.address,listingUnit(x),x.url,null,canonicalMls);if(!listingByKey.has(k)||listingByKey.get(k).source==='Zumper live detail')listingByKey.set(k,x);}
-const state={refreshedAt:iso,groups:[],promoted:[],crossVerified:[],fingerprintCrossVerified:[],maskedMlsMerged:[],negativeMatches:[],detailReactivated:[],mlsMissing:{},mlsRemoved:[]};
+const state={refreshedAt:iso,groups:[],promoted:[],crossVerified:[],fingerprintCrossVerified:[],maskedMlsMerged:[],relistedMlsMerged:[],negativeMatches:[],detailReactivated:[],mlsMissing:{},mlsRemoved:[]};
 
 // A volatile search result page is weaker than a fresh exact MLS detail page.
 // Require identity, explicit current availability and a current rent before the
@@ -123,6 +123,28 @@ for(const candidate of realtylink.candidates||[]){
   if(managed){managed.availabilityStatus='removed';managed.status='removed';managed.removedAt=today;managed.lastChecked=today;managed.verificationMethod=`MERGED into ${sibling.id}: masked Realtylink address and exact marketplace address have identical rent/bed/bath/sqft facts.`;(history[managed.id]||=[]).push({date:today,rent:managed.rent,note:`MERGED duplicate inventory into ${sibling.id}; MLS ${candidate.mls} retained as canonical identity.`});}
   (history[sibling.id]||=[]).push({date:today,rent:sibling.rent,note:`MLS ${candidate.mls} attached; masked-address duplicate merged after exact fact agreement.`});
   listingByKey.set(mlsIdentity(candidate.mls),sibling);state.maskedMlsMerged.push({mls:candidate.mls,kept:sibling.id,removed:managed?.id||null});
+}
+
+// A current MLS number can replace an older MLS number for the exact same suite.
+// Address + concrete unit is stronger than the listing-number change: retain the
+// established card/history identity, attach the current authoritative MLS, and
+// let the final MLS deduper absorb any feed-created duplicate row.
+for(const candidate of realtylink.candidates||[]){
+  if(!usable(candidate)||!candidate.mls||!unitToken(candidate.unit))continue;
+  const sibling=payload.listings.find(x=>x.availabilityStatus==='active'&&listingMls(x)!==candidate.mls&&exactAddressUnitIdentity(x,candidate));
+  if(!sibling)continue;
+  const oldMls=listingMls(sibling);
+  sibling.marketplaceUrl ||= sibling.url;
+  sibling.previousMls=[...new Set([...(sibling.previousMls||[]),oldMls].filter(Boolean))];
+  sibling.mls=candidate.mls;sibling.mlsInventoryManaged=true;sibling.unit=unitToken(candidate.unit);sibling.lastChecked=today;sibling.verifiedAt=iso;
+  sibling.source='Current Realtylink MLS + prior marketplace detail';sibling.url=candidate.url;sibling.photoPageUrl=candidate.url;
+  sibling.rent=Number(candidate.rent);sibling.bedrooms=Number(candidate.bedrooms);sibling.bathrooms=baths(candidate);sibling.sqft=sqft(candidate);
+  sibling.verificationLevel='verified';sibling.verificationMethod=`Reverified as the current MLS relisting ${candidate.mls}; exact address and Unit ${sibling.unit} match former MLS ${oldMls}.`;
+  sibling.evidenceSources=[...new Set([...(sibling.evidenceSources||[]),'realtylink mls'])];
+  attachCandidateImages(imageSources,sibling,candidate);
+  listingByKey.set(mlsIdentity(candidate.mls),sibling);
+  (history[sibling.id]||=[]).push({date:today,rent:sibling.rent,note:`MLS RELIST: ${oldMls} → ${candidate.mls}; exact address and Unit ${sibling.unit} retained as one inventory record.`});
+  state.relistedMlsMerged.push({previousMls:oldMls,currentMls:candidate.mls,kept:sibling.id});
 }
 
 for(const [k,items] of groups){

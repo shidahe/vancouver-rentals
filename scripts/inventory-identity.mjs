@@ -43,6 +43,20 @@ export function maskedCivicAddressMatch(first, second) {
   return civicAddressMatch(first, second);
 }
 
+export function concreteUnitToken(value) {
+  const raw = String(value || '').trim().replace(/^#/, '');
+  const direct = raw.match(/^([A-Za-z0-9-]{1,12})(?:\s*(?:·|\||—|–|-{2,})\s*|$)/);
+  if (direct && /\d/.test(direct[1])) return direct[1].toUpperCase();
+  const tagged = raw.match(/^(?:unit|suite|apt)\s*#?\s*([A-Za-z0-9-]{1,12})\b/i);
+  return tagged && /\d/.test(tagged[1]) ? tagged[1].toUpperCase() : null;
+}
+
+export function exactAddressUnitIdentity(first = {}, second = {}) {
+  const firstUnit = concreteUnitToken(first.unit);
+  const secondUnit = concreteUnitToken(second.unit);
+  return !!firstUnit && firstUnit === secondUnit && civicAddressMatch(first.address, second.address);
+}
+
 const canonicalAddress = value => String(value || '').toLowerCase().replace(/[^a-z0-9]+/g, ' ').trim();
 
 export function findExistingSeedListing(listings = [], seed = {}) {

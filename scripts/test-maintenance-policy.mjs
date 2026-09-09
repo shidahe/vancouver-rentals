@@ -1,5 +1,5 @@
 import fs from 'node:fs/promises';
-import { civicAddressMatch, findExistingSeedListing, listingMls, maskedCivicAddressMatch, mlsIdentity } from './inventory-identity.mjs';
+import { civicAddressMatch, exactAddressUnitIdentity, findExistingSeedListing, listingMls, maskedCivicAddressMatch, mlsIdentity } from './inventory-identity.mjs';
 import { firstLikelyRent, parseFacts } from './listing-parser.mjs';
 import { isAutoManagedListing } from './stale-auto-policy.mjs';
 import { bedroomEligible, isHouseShareText, isTargetRentalAreaText, LISTING_SCOPE_VERSION, listingScopeEligible, rentEligible } from './discovery-policy.mjs';
@@ -196,6 +196,16 @@ if (!maskedCivicAddressMatch('Ground Floor 453x 16th Ave W, University VW', '453
 if (!civicAddressMatch('102 3349 Dunbar Street', '3349 Dunbar St, Vancouver, BC') ||
     civicAddressMatch('102 3349 Dunbar Street', '3359 Dunbar St, Vancouver, BC')) {
   failures.push('Realtylink unit-prefixed addresses are not matched conservatively to exact marketplace addresses.');
+}
+if (!exactAddressUnitIdentity(
+  {address:'3333 W 4th Ave, Vancouver, BC',unit:'204',mls:'R3149612'},
+  {address:'3333 W 4th Avenue',unit:'204',mls:'R3149267'}
+) || exactAddressUnitIdentity(
+  {address:'3333 W 4th Ave, Vancouver, BC',unit:'204'},
+  {address:'3333 W 4th Avenue',unit:'205'}
+)) failures.push('Exact-unit MLS relist identity cannot distinguish a replacement MLS from a neighboring suite.');
+if (!source.includes('relistedMlsMerged') || !source.includes('MLS RELIST: ${oldMls} → ${candidate.mls}')) {
+  failures.push('A replacement MLS for the same address and unit can still publish a duplicate card.');
 }
 if (!source.includes('rawSqft>=200&&rawSqft<=15000') || !source.includes('implausible-sqft')) {
   failures.push('Implausible Realtylink floor areas are not normalized and audited.');
