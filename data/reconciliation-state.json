@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-09-09T07:09:31.183Z",
+  "refreshedAt": "2026-09-09T11:06:53.820Z",
   "groups": [
     {
       "identityKey": "1533 maple st::url:69f2e13a0fd5",
@@ -122,6 +122,18 @@
       "result": "authoritative_mls_reverified"
     },
     {
+      "identityKey": "mls:r3160689",
+      "sources": [
+        "realtylink mls"
+      ],
+      "rents": [
+        4950
+      ],
+      "exactUnit": true,
+      "matchedListingId": "zumper-16e9ae17cd91",
+      "result": "authoritative_mls_reverified"
+    },
+    {
       "identityKey": "mls:r3161950",
       "sources": [
         "realtylink mls"
@@ -137,16 +149,57 @@
   "promoted": [],
   "crossVerified": [
     "york-103-2535-r3137446",
+    "zumper-16e9ae17cd91",
     "mls-r3161950"
   ],
   "fingerprintCrossVerified": [],
   "maskedMlsMerged": [],
   "negativeMatches": [],
   "detailReactivated": [],
-  "mlsMissing": {},
+  "mlsMissing": {
+    "R3151022": {
+      "firstMissingAt": "2026-09-09T11:06:53.820Z",
+      "lastMissingAt": "2026-09-09T11:06:53.820Z",
+      "listingId": "mls-r3151022"
+    },
+    "R3150923": {
+      "firstMissingAt": "2026-09-09T11:06:53.820Z",
+      "lastMissingAt": "2026-09-09T11:06:53.820Z",
+      "listingId": "mls-r3150923"
+    },
+    "R3129974": {
+      "firstMissingAt": "2026-09-09T11:06:53.820Z",
+      "lastMissingAt": "2026-09-09T11:06:53.820Z",
+      "listingId": "mls-r3129974"
+    },
+    "R3148298": {
+      "firstMissingAt": "2026-09-09T11:06:53.820Z",
+      "lastMissingAt": "2026-09-09T11:06:53.820Z",
+      "listingId": "mls-r3148298"
+    },
+    "R3151372": {
+      "firstMissingAt": "2026-09-09T11:06:53.820Z",
+      "lastMissingAt": "2026-09-09T11:06:53.820Z",
+      "listingId": "mls-r3151372"
+    },
+    "R3158179": {
+      "firstMissingAt": "2026-09-09T11:06:53.820Z",
+      "lastMissingAt": "2026-09-09T11:06:53.820Z",
+      "listingId": "mls-r3158179"
+    },
+    "R3160879": {
+      "firstMissingAt": "2026-09-09T11:06:53.820Z",
+      "lastMissingAt": "2026-09-09T11:06:53.820Z",
+      "listingId": "mls-r3160879"
+    },
+    "R3161880": {
+      "firstMissingAt": "2026-09-09T11:06:53.820Z",
+      "lastMissingAt": "2026-09-09T11:06:53.820Z",
+      "listingId": "mls-r3161880"
+    }
+  },
   "mlsRemoved": [],
-  "realtylinkSnapshotCount": 3,
+  "realtylinkSnapshotCount": 4,
   "realtylinkSnapshotScope": "rent-3500-beds-2-4-whole-home-westside-v2",
-  "realtylinkRemovalEligible": false,
-  "mlsRemovalSuppressed": "Partial Realtylink snapshot (2 candidates versus previous complete 3); disappearance signals ignored."
+  "realtylinkRemovalEligible": true
 }
