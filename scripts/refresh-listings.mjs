@@ -246,8 +246,15 @@ for (const listing of payload.listings.filter(x =>
 
   if (result.ok && evidence.identityMatch) {
     listing.lastChecked = today;
-    listing.verifiedAt = iso;
-    if (evidence.explicitPositive) listing.verificationMethod = 'Automated live browser check matched listing identity and current availability wording.';
+    // A detail URL that merely still renders is not current availability evidence.
+    // Only refresh the positive-verification clock when the page also contains an
+    // explicit availability signal for the matched listing identity. Otherwise the
+    // existing verifiedAt is allowed to age out through the stale-listing policy.
+    if (evidence.explicitPositive) {
+      listing.verifiedAt = iso;
+      listing.verificationLevel = 'verified';
+      listing.verificationMethod = 'Automated live browser check matched listing identity and current availability wording.';
+    }
     const photoCandidates = evidence.explicitPositive ? verifiedPhotoCandidates(result.images) : [];
     if (photoCandidates.length && !imageSources[listing.id]?.candidates?.length) {
       imageSources[listing.id] = {

@@ -113,6 +113,7 @@ if(!purposeBuiltSource.includes('freshEvidence')||!purposeBuiltSource.includes('
 if(!purposeBuiltWatch.buildings?.find(x=>x.id==='kits-walk')?.discoverStructuredInventories) failures.push('Kits Walk structured inventory cannot be discovered dynamically.');
 if(!purposeBuiltSource.includes('discoveredStructuredInventories')||!purposeBuiltSource.includes('exactUnit')) failures.push('Dynamic purpose-built discovery or exact-unit protection is missing.');
 if(!source.includes("x.type === 'purpose-built' && !/^#?\\d+[A-Za-z]?$/")) failures.push('Generic detail verification can override stricter address-level purpose-built inventory validation.');
+if(!source.includes('if (evidence.explicitPositive) {')||!source.includes("listing.verificationLevel = 'verified';")) failures.push('A loading detail URL can refresh verifiedAt without current positive availability evidence.');
 const kitsWalk605 = catalog.seedCandidates?.find(x => x.id === 'rew-kits-walk-605');
 if (!kitsWalk605 || kitsWalk605.unit !== '605' || kitsWalk605.address !== '2075 W 12th Ave, Vancouver, BC' || kitsWalk605.expectedBeds !== 2 || !kitsWalk605.autoPublish || !/\/605-2075-w-12th-avenue-vancouver-bc$/.test(kitsWalk605.url)) {
   failures.push('Current Kits Walk Unit 605 exact-detail verification seed is missing or weakened.');
