@@ -1,6 +1,18 @@
 {
-  "refreshedAt": "2026-09-09T17:07:59.283Z",
+  "refreshedAt": "2026-09-09T21:06:17.557Z",
   "groups": [
+    {
+      "identityKey": "3220 4th ave w::url:4b1a6ebe2d36",
+      "sources": [
+        "zumper"
+      ],
+      "rents": [
+        4300
+      ],
+      "exactUnit": false,
+      "matchedListingId": "zumper-ecd4e868f79c",
+      "result": "candidate_only"
+    },
     {
       "identityKey": "1533 maple st::url:69f2e13a0fd5",
       "sources": [
@@ -23,18 +35,6 @@
       ],
       "exactUnit": false,
       "matchedListingId": "zumper-9157c4798023",
-      "result": "candidate_only"
-    },
-    {
-      "identityKey": "3220 4th ave w::url:4b1a6ebe2d36",
-      "sources": [
-        "zumper"
-      ],
-      "rents": [
-        4300
-      ],
-      "exactUnit": false,
-      "matchedListingId": "zumper-ecd4e868f79c",
       "result": "candidate_only"
     },
     {
@@ -122,16 +122,16 @@
       "result": "candidate_only"
     },
     {
-      "identityKey": "mls:r3153999",
+      "identityKey": "mls:r3149267",
       "sources": [
         "realtylink mls"
       ],
       "rents": [
-        3600
+        3995
       ],
       "exactUnit": true,
-      "matchedListingId": "2268-w-broadway-312-r3153999",
-      "result": "authoritative_mls_reverified"
+      "matchedListingId": null,
+      "result": "auto_published_authoritative_mls"
     },
     {
       "identityKey": "mls:r3137446",
@@ -158,60 +158,54 @@
       "result": "authoritative_mls_reverified"
     },
     {
-      "identityKey": "mls:r3159060",
+      "identityKey": "mls:r3161880",
       "sources": [
         "realtylink mls"
       ],
       "rents": [
-        15000
+        8800
       ],
       "exactUnit": false,
-      "matchedListingId": "mls-r3159060",
+      "matchedListingId": "mls-r3161880",
       "result": "authoritative_mls_reverified"
     }
   ],
-  "promoted": [],
+  "promoted": [
+    "mls-r3149267"
+  ],
   "crossVerified": [
-    "2268-w-broadway-312-r3153999",
     "york-103-2535-r3137446",
     "zumper-16e9ae17cd91",
-    "mls-r3159060"
+    "mls-r3161880"
   ],
   "fingerprintCrossVerified": [],
   "maskedMlsMerged": [],
   "negativeMatches": [],
-  "detailReactivated": [],
+  "detailReactivated": [
+    "mls-r3161880"
+  ],
   "mlsMissing": {
     "R3150923": {
       "firstMissingAt": "2026-09-09T16:49:29.944Z",
-      "lastMissingAt": "2026-09-09T17:07:59.283Z",
+      "lastMissingAt": "2026-09-09T21:06:17.557Z",
       "listingId": "mls-r3150923"
     },
     "R3151372": {
       "firstMissingAt": "2026-09-09T17:07:59.283Z",
-      "lastMissingAt": "2026-09-09T17:07:59.283Z",
+      "lastMissingAt": "2026-09-09T21:06:17.557Z",
       "listingId": "mls-r3151372"
     },
-    "R3161880": {
-      "firstMissingAt": "2026-09-09T17:07:59.283Z",
-      "lastMissingAt": "2026-09-09T17:07:59.283Z",
-      "listingId": "mls-r3161880"
+    "R3159060": {
+      "firstMissingAt": "2026-09-09T21:06:17.557Z",
+      "lastMissingAt": "2026-09-09T21:06:17.557Z",
+      "listingId": "mls-r3159060"
     }
   },
-  "mlsRemoved": [],
+  "mlsRemoved": [
+    "mls-r3150923"
+  ],
   "realtylinkSnapshotCount": 4,
   "realtylinkSnapshotScope": "rent-3500-beds-2-4-whole-home-westside-v2",
   "realtylinkRemovalEligible": true,
-  "mlsDuplicatesMerged": [
-    {
-      "mls": "R3159559",
-      "kept": "zumper-03c32d9886e3",
-      "removed": "mls-r3159559"
-    },
-    {
-      "mls": "R3160689",
-      "kept": "zumper-16e9ae17cd91",
-      "removed": "mls-r3160689"
-    }
-  ]
+  "mlsDuplicatesMerged": []
 }

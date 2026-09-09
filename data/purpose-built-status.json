@@ -1,9 +1,9 @@
 {
-  "refreshedAt": "2026-09-09T17:07:59.725Z",
+  "refreshedAt": "2026-09-09T21:06:17.979Z",
   "buildings": [
     {
       "building": "Kits Walk",
-      "checkedAt": "2026-09-09T17:07:59.725Z",
+      "checkedAt": "2026-09-09T21:06:17.979Z",
       "observations": [
         {
           "url": "https://rentals.ca/vancouver/kits-walk-by-strand",
@@ -39,7 +39,7 @@
               "usable": true,
               "structuredMatch": false,
               "requiredMatched": false,
-              "availabilityMatched": true,
+              "availabilityMatched": false,
               "fullyLeased": false,
               "verified": false
             }
@@ -49,7 +49,7 @@
     },
     {
       "building": "Arbutus Residences",
-      "checkedAt": "2026-09-09T17:07:59.725Z",
+      "checkedAt": "2026-09-09T21:06:17.979Z",
       "observations": [
         {
           "url": "https://www.rentfaster.ca/properties/2139-lahb-ave-vancouver-454186",

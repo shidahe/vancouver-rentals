@@ -1,8 +1,15 @@
 {
-  "generatedAt": "2026-09-09T17:06:28.890Z",
+  "generatedAt": "2026-09-09T21:04:55.042Z",
   "checkedCount": 8,
   "quarantinedCount": 0,
   "checked": [
+    {
+      "identityKey": "3220 4th ave w::url:4b1a6ebe2d36",
+      "url": "https://www.zumper.com/address/3220-4th-ave-w-vancouver-bc-v6k-1r9-can",
+      "ambiguous": false,
+      "lowPrice": 4300,
+      "highPrice": 4300
+    },
     {
       "identityKey": "1533 maple st::url:69f2e13a0fd5",
       "url": "https://www.zumper.com/address/1533-maple-st-vancouver-bc-v6j-3s2-can",
@@ -16,13 +23,6 @@
       "ambiguous": false,
       "lowPrice": 3800,
       "highPrice": 3800
-    },
-    {
-      "identityKey": "3220 4th ave w::url:4b1a6ebe2d36",
-      "url": "https://www.zumper.com/address/3220-4th-ave-w-vancouver-bc-v6k-1r9-can",
-      "ambiguous": false,
-      "lowPrice": 4300,
-      "highPrice": 4300
     },
     {
       "identityKey": "2138 w 13th ave::url:5b518c4d35f2",

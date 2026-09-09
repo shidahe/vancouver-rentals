@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-09-09T17:08:54.139Z",
-  "activeCount": 19,
-  "decisionReady": true,
-  "highIssueCount": 0,
+  "generatedAt": "2026-09-09T21:07:11.979Z",
+  "activeCount": 20,
+  "decisionReady": false,
+  "highIssueCount": 1,
   "mediumIssueCount": 0,
-  "infoIssueCount": 33,
+  "infoIssueCount": 34,
   "issues": [
     {
       "severity": "info",
@@ -168,18 +168,35 @@
     },
     {
       "severity": "info",
-      "id": "mls-r3159060",
+      "id": "mls-r3161880",
       "issue": "unknown-orientation"
+    },
+    {
+      "severity": "info",
+      "id": "mls-r3149267",
+      "issue": "unknown-orientation"
+    },
+    {
+      "severity": "high",
+      "id": "mls-r3149267",
+      "otherId": "blenheim-terrace-204-r3149612",
+      "issue": "duplicate-address-unit"
     }
   ],
   "readinessChecks": {
     "smokeOk": true,
     "smokeFresh": true,
-    "smokeCheckedAt": "2026-09-09T17:08:59.594Z",
-    "latestDataAt": "2026-09-09T17:08:03.610Z",
+    "smokeCheckedAt": "2026-09-09T21:07:17.615Z",
+    "latestDataAt": "2026-09-09T21:06:21.820Z",
     "coverageReady": true,
-    "healthyDiscoveryLanes": 4,
+    "healthyDiscoveryLanes": 3,
     "coverageWarnings": [
+      {
+        "severity": "warning",
+        "lane": "rentalsca",
+        "status": "degraded",
+        "detail": "2/9 regional searches healthy"
+      },
       {
         "severity": "warning",
         "lane": "livrent",
@@ -189,5 +206,5 @@
     ]
   },
   "readinessIssues": [],
-  "finalizedAt": "2026-09-09T17:09:01.394Z"
+  "finalizedAt": "2026-09-09T21:07:19.282Z"
 }
