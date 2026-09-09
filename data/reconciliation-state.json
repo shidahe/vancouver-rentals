@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-09-09T16:49:29.944Z",
+  "refreshedAt": "2026-09-09T17:07:59.283Z",
   "groups": [
     {
       "identityKey": "1533 maple st::url:69f2e13a0fd5",
@@ -122,6 +122,18 @@
       "result": "candidate_only"
     },
     {
+      "identityKey": "mls:r3153999",
+      "sources": [
+        "realtylink mls"
+      ],
+      "rents": [
+        3600
+      ],
+      "exactUnit": true,
+      "matchedListingId": "2268-w-broadway-312-r3153999",
+      "result": "authoritative_mls_reverified"
+    },
+    {
       "identityKey": "mls:r3137446",
       "sources": [
         "realtylink mls"
@@ -146,18 +158,6 @@
       "result": "authoritative_mls_reverified"
     },
     {
-      "identityKey": "mls:r3161880",
-      "sources": [
-        "realtylink mls"
-      ],
-      "rents": [
-        8800
-      ],
-      "exactUnit": false,
-      "matchedListingId": "mls-r3161880",
-      "result": "authoritative_mls_reverified"
-    },
-    {
       "identityKey": "mls:r3159060",
       "sources": [
         "realtylink mls"
@@ -168,81 +168,50 @@
       "exactUnit": false,
       "matchedListingId": "mls-r3159060",
       "result": "authoritative_mls_reverified"
-    },
-    {
-      "identityKey": "mls:r3151372",
-      "sources": [
-        "realtylink mls"
-      ],
-      "rents": [
-        4800
-      ],
-      "exactUnit": false,
-      "matchedListingId": "mls-r3151372",
-      "result": "authoritative_mls_reverified"
     }
   ],
   "promoted": [],
   "crossVerified": [
+    "2268-w-broadway-312-r3153999",
     "york-103-2535-r3137446",
     "zumper-16e9ae17cd91",
-    "mls-r3161880",
-    "mls-r3159060",
-    "mls-r3151372"
+    "mls-r3159060"
   ],
   "fingerprintCrossVerified": [],
   "maskedMlsMerged": [],
   "negativeMatches": [],
-  "detailReactivated": [
-    "mls-r3151372",
-    "mls-r3159060"
-  ],
+  "detailReactivated": [],
   "mlsMissing": {
-    "R3151022": {
-      "firstMissingAt": "2026-09-09T11:06:53.820Z",
-      "lastMissingAt": "2026-09-09T16:49:29.944Z",
-      "listingId": "mls-r3151022"
-    },
     "R3150923": {
       "firstMissingAt": "2026-09-09T16:49:29.944Z",
-      "lastMissingAt": "2026-09-09T16:49:29.944Z",
+      "lastMissingAt": "2026-09-09T17:07:59.283Z",
       "listingId": "mls-r3150923"
     },
-    "R3129974": {
-      "firstMissingAt": "2026-09-09T11:06:53.820Z",
-      "lastMissingAt": "2026-09-09T16:49:29.944Z",
-      "listingId": "mls-r3129974"
+    "R3151372": {
+      "firstMissingAt": "2026-09-09T17:07:59.283Z",
+      "lastMissingAt": "2026-09-09T17:07:59.283Z",
+      "listingId": "mls-r3151372"
     },
-    "R3148298": {
-      "firstMissingAt": "2026-09-09T11:06:53.820Z",
-      "lastMissingAt": "2026-09-09T16:49:29.944Z",
-      "listingId": "mls-r3148298"
-    },
-    "R3158179": {
-      "firstMissingAt": "2026-09-09T11:06:53.820Z",
-      "lastMissingAt": "2026-09-09T16:49:29.944Z",
-      "listingId": "mls-r3158179"
-    },
-    "R3160879": {
-      "firstMissingAt": "2026-09-09T11:06:53.820Z",
-      "lastMissingAt": "2026-09-09T16:49:29.944Z",
-      "listingId": "mls-r3160879"
-    },
-    "R3161950": {
-      "firstMissingAt": "2026-09-09T11:45:29.124Z",
-      "lastMissingAt": "2026-09-09T16:49:29.944Z",
-      "listingId": "mls-r3161950"
+    "R3161880": {
+      "firstMissingAt": "2026-09-09T17:07:59.283Z",
+      "lastMissingAt": "2026-09-09T17:07:59.283Z",
+      "listingId": "mls-r3161880"
     }
   },
-  "mlsRemoved": [
-    "mls-r3151022",
-    "mls-r3129974",
-    "mls-r3148298",
-    "mls-r3158179",
-    "mls-r3160879",
-    "mls-r3161950"
-  ],
-  "realtylinkSnapshotCount": 5,
+  "mlsRemoved": [],
+  "realtylinkSnapshotCount": 4,
   "realtylinkSnapshotScope": "rent-3500-beds-2-4-whole-home-westside-v2",
-  "realtylinkRemovalEligible": true
+  "realtylinkRemovalEligible": true,
+  "mlsDuplicatesMerged": [
+    {
+      "mls": "R3159559",
+      "kept": "zumper-03c32d9886e3",
+      "removed": "mls-r3159559"
+    },
+    {
+      "mls": "R3160689",
+      "kept": "zumper-16e9ae17cd91",
+      "removed": "mls-r3160689"
+    }
+  ]
 }

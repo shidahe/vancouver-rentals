@@ -638,6 +638,16 @@
       "date": "2026-09-08",
       "rent": 4500,
       "note": "EXCLUDED: house share or separately rented portion of a house."
+    },
+    {
+      "date": "2026-09-03",
+      "rent": 4500,
+      "note": "NEW: live Realtylink MLS R3159559 auto-published."
+    },
+    {
+      "date": "2026-09-09",
+      "rent": 4500,
+      "note": "MERGED duplicate record mls-r3159559 under canonical MLS R3159559."
     }
   ],
   "zumper-9bc484458739": [
@@ -695,6 +705,21 @@
       "date": "2026-09-03",
       "rent": 4950,
       "note": "NEW: live Zumper detail auto-published as independent inventory."
+    },
+    {
+      "date": "2026-09-03",
+      "rent": 4950,
+      "note": "NEW: live Realtylink MLS R3160689 auto-published."
+    },
+    {
+      "date": "2026-09-03",
+      "rent": 4950,
+      "note": "MERGED duplicate inventory into zumper-16e9ae17cd91; MLS R3160689 retained as canonical identity."
+    },
+    {
+      "date": "2026-09-09",
+      "rent": 4950,
+      "note": "MERGED duplicate record mls-r3160689 under canonical MLS R3160689."
     }
   ],
   "mls-r3160936": [
@@ -749,23 +774,6 @@
       "date": "2026-09-08",
       "rent": 5500,
       "note": "EXCLUDED: outside the Vancouver Westside target area."
-    }
-  ],
-  "mls-r3159559": [
-    {
-      "date": "2026-09-03",
-      "rent": 4500,
-      "note": "NEW: live Realtylink MLS R3159559 auto-published."
-    },
-    {
-      "date": "2026-09-03",
-      "rent": 4500,
-      "note": "AUTO-REMOVED: MLS R3159559 absent from two consecutive healthy inventory snapshots."
-    },
-    {
-      "date": "2026-09-05",
-      "rent": 4500,
-      "note": "AUTO-REMOVED: MLS R3159559 absent from two consecutive healthy inventory snapshots."
     }
   ],
   "mls-r3141972": [
@@ -852,18 +860,6 @@
       "date": "2026-09-09",
       "rent": 10500,
       "note": "AUTO-REMOVED: MLS R3151022 absent from two consecutive healthy inventory snapshots."
-    }
-  ],
-  "mls-r3160689": [
-    {
-      "date": "2026-09-03",
-      "rent": 4950,
-      "note": "NEW: live Realtylink MLS R3160689 auto-published."
-    },
-    {
-      "date": "2026-09-03",
-      "rent": 4950,
-      "note": "MERGED duplicate inventory into zumper-16e9ae17cd91; MLS R3160689 retained as canonical identity."
     }
   ],
   "mls-r3150923": [
