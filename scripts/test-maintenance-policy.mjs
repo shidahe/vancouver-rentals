@@ -9,6 +9,7 @@ import { verifiedPhotoCandidates } from './listing-photo-candidates.mjs';
 import { isRealtylinkListingNotFoundRedirect, isTargetWestsideCoordinate, parseRealtylinkCoordinateValues, parseRealtylinkCoordinates, parseRealtylinkFloorArea, parseRealtylinkRoomCount } from './realtylink-parser.mjs';
 import { realtylinkLaneHealth } from './coverage-policy.mjs';
 import { exactPurposeBuiltFloorplanEvidence } from './purposebuilt-floorplan-evidence.mjs';
+import { dedupeMlsRecords } from './mls-dedupe.mjs';
 
 const read = p => fs.readFile(p, 'utf8');
 const activeAdapters = [
@@ -31,6 +32,15 @@ const officialWatch = JSON.parse(await read('data/official-watch.json'));
 const indexHtml = await read('index.html');
 
 const failures = [];
+const duplicateMlsHistory={legacy:[{date:'2026-09-08',rent:4950,note:'legacy'}],canonical:[{date:'2026-09-09',rent:4950,note:'canonical'}]};
+const duplicateMlsImages={legacy:{candidates:['legacy.jpg']}};
+const duplicateMlsResult=dedupeMlsRecords([
+  {id:'legacy',mls:'R3160689',availabilityStatus:'removed',mlsInventoryManaged:true,rent:4950},
+  {id:'canonical',mls:'R3160689',availabilityStatus:'active',mlsInventoryManaged:false,unit:'102',rent:4950}
+],duplicateMlsHistory,duplicateMlsImages);
+if(duplicateMlsResult.listings.length!==1||duplicateMlsResult.listings[0].id!=='canonical'||duplicateMlsResult.merged[0]?.removed!=='legacy'||duplicateMlsHistory.legacy||duplicateMlsHistory.canonical.length!==3||duplicateMlsImages.legacy){
+  failures.push('MLS-first deduplication does not retain the strongest canonical record and merge its history.');
+}
 if(rentEligible(3499)||!rentEligible(3500))failures.push('CAD $3,500 minimum rent scope is not enforced.');
 if(!bedroomEligible(4)||bedroomEligible(5))failures.push('2–4 bedroom scope is not enforced.');
 if(!isHouseShareText('Furnished 3-bedroom basement suite with private entrance')||!isHouseShareText('upper and lower levels are available for rent separately')||!isHouseShareText('AVAILABLE basement 2 Beds 1 Bath')||!isHouseShareText('House for rent\nMain Floor 3546 W 39 Avenue, Dunbar, Vancouver')||isHouseShareText('Entire detached house with basement storage')||isHouseShareText('No roommate sharing; one family only'))failures.push('House-share classifier does not distinguish clear split-house evidence.');

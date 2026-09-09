@@ -24,6 +24,7 @@ on:
       - 'scripts/refresh-realtylink.mjs'
       - 'scripts/realtylink-parser.mjs'
       - 'scripts/reconcile-candidates.mjs'
+      - 'scripts/mls-dedupe.mjs'
       - 'scripts/inventory-identity.mjs'
       - 'scripts/refresh-purposebuilt.mjs'
       - 'scripts/refresh-official-status.mjs'

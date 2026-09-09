@@ -27,6 +27,12 @@ const concreteUnit=s=>{
   return tagged&&/\d/.test(tagged[1])?tagged[1].toUpperCase():null;
 };
 const strongOfficialNegative=s=>['fully_leased','rented','unavailable','inactive','off_market','no_availability'].includes(String(s||'').toLowerCase());
+for(const l of db.listings){
+  const mls=listingMls(l);
+  if(!mls)continue;
+  if(mlsMap.has(mls))issues.push({severity:'high',id:l.id,otherId:mlsMap.get(mls),issue:'duplicate-mls-record',detail:`${mls} appears in multiple inventory rows`});else mlsMap.set(mls,l.id);
+}
+mlsMap.clear();
 for(const l of active){
   const age=l.verifiedAt?(now-new Date(l.verifiedAt).getTime())/86400000:999;
   if(age>2)issues.push({severity:'high',id:l.id,issue:'stale-verification',detail:`Last verified ${age.toFixed(1)} days ago`});

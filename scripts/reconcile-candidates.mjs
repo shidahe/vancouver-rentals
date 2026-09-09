@@ -2,6 +2,7 @@ import fs from 'node:fs/promises';
 import path from 'node:path';
 import crypto from 'node:crypto';
 import { civicAddressMatch, listingMls, mlsIdentity } from './inventory-identity.mjs';
+import { dedupeMlsRecords } from './mls-dedupe.mjs';
 import { verifiedPhotoCandidates } from './listing-photo-candidates.mjs';
 import { parseRealtylinkFloorArea, parseRealtylinkRoomCount } from './realtylink-parser.mjs';
 import { LISTING_SCOPE_VERSION, listingScopeEligible } from './discovery-policy.mjs';
@@ -247,7 +248,9 @@ if(realtylinkComplete){
 const statusRank=x=>x.availabilityStatus==='active'?3:x.availabilityStatus==='needs_confirmation'?2:1;
 const uniqueListings=new Map();
 for(const listing of payload.listings){const previous=uniqueListings.get(listing.id);if(!previous||statusRank(listing)>statusRank(previous))uniqueListings.set(listing.id,listing);}
-payload.listings=[...uniqueListings.values()];
+const mlsDeduped=dedupeMlsRecords([...uniqueListings.values()],history,imageSources);
+payload.listings=mlsDeduped.listings;
+state.mlsDuplicatesMerged=mlsDeduped.merged;
 payload.meta ||= {};payload.meta.lastCrossSourceReconciliation=iso;payload.meta.reconciliationPolicy='Discover whole-home rentals at CAD $3,500+ with 2–4 bedrooms. Exact address+unit candidates may auto-publish after two independent live source families agree; current authoritative Realtylink MLS records may publish by MLS number. Address-only cross-source fingerprints never auto-publish. Explicit Rented evidence removes immediately; MLS disappearance only counts on sufficiently complete same-scope Realtylink snapshots, and removal requires a second complete confirmation at least four hours after the first miss.';
 await write(lp,payload);await write(hp,history);await write(ip,imageSources);await write(path.join(DATA,'reconciliation-state.json'),state);
 console.log(`Reconciliation: ${state.crossVerified.length} exact existing, ${state.fingerprintCrossVerified.length} strict-fingerprint existing, ${state.promoted.length} new exact units promoted, ${state.negativeMatches.length} removed.`);
