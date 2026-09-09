@@ -189,7 +189,13 @@ const context = await browser.newContext({
 const page = await context.newPage();
 const state = { refreshedAt: iso, listings: {}, sources: {}, autoPublished: [] };
 
-for (const listing of payload.listings.filter(x => ['active', 'needs_confirmation'].includes(x.availabilityStatus))) {
+for (const listing of payload.listings.filter(x =>
+  ['active', 'needs_confirmation'].includes(x.availabilityStatus) &&
+  // Address-level purpose-built floorplans are verified by refresh-purposebuilt,
+  // which requires the exact rent + sqft inventory row. A generic building page
+  // must not overwrite that stricter decision merely because some unit is leasing.
+  !(x.type === 'purpose-built' && !/^#?\d+[A-Za-z]?$/.test(String(x.unit || '')))
+)) {
   const result = await visit(page, listing.url);
   const evidence = { checkedAt: iso, listingId: listing.id, sourceUrl: listing.url, ...result };
   if (result.ok) Object.assign(evidence, classify(result.bodyText, listing, result.jsonLd, result.status, result.finalUrl));
