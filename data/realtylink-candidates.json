@@ -1,56 +1,89 @@
 {
-  "refreshedAt": "2026-09-09T01:53:13.968Z",
+  "refreshedAt": "2026-09-09T04:54:17.923Z",
   "mode": "candidate-only",
   "scopeVersion": "rent-3500-beds-2-4-whole-home-westside-v2",
   "health": [
     {
       "url": "https://realtylink.org/en/apartment~for-rent~vancouver",
       "status": 200,
-      "checkedAt": "2026-09-09T01:53:13.968Z"
+      "checkedAt": "2026-09-09T04:54:17.923Z"
     },
     {
       "url": "https://realtylink.org/en/townhouse~for-rent~vancouver",
       "status": 200,
-      "checkedAt": "2026-09-09T01:53:13.968Z"
+      "checkedAt": "2026-09-09T04:54:17.923Z"
     },
     {
       "url": "https://realtylink.org/en/house~for-rent~vancouver",
       "status": 200,
-      "checkedAt": "2026-09-09T01:53:13.968Z"
+      "checkedAt": "2026-09-09T04:54:17.923Z"
     }
   ],
   "candidates": [
     {
       "source": "Realtylink MLS",
-      "url": "https://realtylink.org/en/townhouse~for-rent~vancouver/263182316",
-      "mls": "R3160689",
-      "address": "3349 Dunbar Street",
-      "unit": "102",
-      "type": "townhouse",
-      "rent": 4950,
-      "bedrooms": 3,
+      "url": "https://realtylink.org/en/apartment~for-rent~vancouver/263179806",
+      "mls": "R3158179",
+      "address": "2828 Yew Street",
+      "unit": "108",
+      "type": "condo",
+      "rent": 5995,
+      "bedrooms": 2,
       "bathrooms": 2,
-      "sqft": 1271,
-      "lat": 49.25688,
-      "lng": -123.18537,
+      "sqft": 1100,
+      "lat": 49.26072,
+      "lng": -123.15507,
       "geo": {
-        "lat": 49.25688,
-        "lng": -123.18537
+        "lat": 49.26072,
+        "lng": -123.15507
       },
       "images": [
-        "https://media.realtylink.org/images/consumersite/property/263182316/00c50dbb1e294023bf398ae25ce0d515.jpeg?width=640&height=480&fit=cover",
-        "https://media.realtylink.org/images/consumersite/property/263182316/72286793647f47cd9a695cfbe3d304d4.jpeg?width=320&height=240&fit=cover",
-        "https://media.realtylink.org/images/consumersite/property/263182316/9ff90dbf374c4802a4347969a0cae1e6.jpeg?width=320&height=240&fit=cover",
-        "https://media.realtylink.org/images/consumersite/property/263182316/8498975986b343ffa866148eaa08fc91.jpeg?width=320&height=240&fit=cover",
-        "https://media.realtylink.org/images/consumersite/property/263182316/015a649b6fb945cf8bde7a706fdb80c7.jpeg?width=320&height=240&fit=cover",
-        "https://media.realtylink.org/images/consumersite/property/263182316/00c50dbb1e294023bf398ae25ce0d515.jpeg?width=480&height=360&fit=cover"
+        "https://media.realtylink.org/images/consumersite/property/263179806/5fc72e441c4b4ee3a668dde86550528e.jpeg?width=640&height=480&fit=cover",
+        "https://media.realtylink.org/images/consumersite/property/263179806/f387d10a2d7646489915bfbd70d64ef0.jpeg?width=320&height=240&fit=cover",
+        "https://media.realtylink.org/images/consumersite/property/263179806/26f7657f8a4644ec82bb9a358257693a.jpeg?width=320&height=240&fit=cover",
+        "https://media.realtylink.org/images/consumersite/property/263179806/5d8cbba36cb045b0b822d7eca0574103.jpeg?width=320&height=240&fit=cover",
+        "https://media.realtylink.org/images/consumersite/property/263179806/6126a68010b545a3be8e250c38a8c285.jpeg?width=320&height=240&fit=cover",
+        "https://media.realtylink.org/images/consumersite/property/263179806/5fc72e441c4b4ee3a668dde86550528e.jpeg?width=480&height=360&fit=cover"
       ],
       "targetArea": true,
       "active": true,
       "parking": true,
       "ac": false,
       "balcony": false,
-      "checkedAt": "2026-09-09T01:53:13.968Z",
+      "checkedAt": "2026-09-09T04:54:17.923Z",
+      "publishable": false
+    },
+    {
+      "source": "Realtylink MLS",
+      "url": "https://realtylink.org/en/townhouse~for-rent~vancouver/263172550",
+      "mls": "R3150923",
+      "address": "6558 Arbutus Street, S.W. Marine",
+      "unit": null,
+      "type": "townhouse",
+      "rent": 4680,
+      "bedrooms": 3,
+      "bathrooms": 3,
+      "sqft": 1271,
+      "lat": 49.22614,
+      "lng": -123.15488,
+      "geo": {
+        "lat": 49.22614,
+        "lng": -123.15488
+      },
+      "images": [
+        "https://media.realtylink.org/images/consumersite/property/263172550/9e9a258d2ae04f3b9f4745be9c364212.jpeg?width=640&height=480&fit=cover",
+        "https://media.realtylink.org/images/consumersite/property/263172550/a47085d8476f41d49b205091decef942.jpeg?width=320&height=240&fit=cover",
+        "https://media.realtylink.org/images/consumersite/property/263172550/ad447d4a3f144eb6aa1bd6523632012f.jpeg?width=320&height=240&fit=cover",
+        "https://media.realtylink.org/images/consumersite/property/263172550/b3c39524df924cd5a135cef35aaf852e.jpeg?width=320&height=240&fit=cover",
+        "https://media.realtylink.org/images/consumersite/property/263172550/47a0d66c16d844cb8e39b17d36587db2.jpeg?width=320&height=240&fit=cover",
+        "https://media.realtylink.org/images/consumersite/property/263172550/9e9a258d2ae04f3b9f4745be9c364212.jpeg?width=480&height=360&fit=cover"
+      ],
+      "targetArea": true,
+      "active": true,
+      "parking": true,
+      "ac": false,
+      "balcony": false,
+      "checkedAt": "2026-09-09T04:54:17.923Z",
       "publishable": false
     },
     {
@@ -83,7 +116,7 @@
       "parking": true,
       "ac": false,
       "balcony": true,
-      "checkedAt": "2026-09-09T01:53:13.968Z",
+      "checkedAt": "2026-09-09T04:54:17.923Z",
       "publishable": false
     },
     {
@@ -116,7 +149,7 @@
       "parking": false,
       "ac": true,
       "balcony": false,
-      "checkedAt": "2026-09-09T01:53:13.968Z",
+      "checkedAt": "2026-09-09T04:54:17.923Z",
       "publishable": false
     }
   ]
