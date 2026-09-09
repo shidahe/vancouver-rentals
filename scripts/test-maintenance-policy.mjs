@@ -60,6 +60,7 @@ if (currentHistory.removed !== 0) failures.push(`Tracked history still contains 
 if (!source.includes("!listingScopeEligible({...x,rent,bedrooms:beds}") || !source.includes("['removed','excluded'].includes(x.availabilityStatus)")) failures.push('Exact MLS detail or disappearance can still churn an excluded listing.');
 if (!source.includes('listingScopeEligible({rent,bedrooms:beds},t)')) failures.push('Realtylink discovery can admit an out-of-scope split-house listing before reconciliation.');
 if(!source.includes('candidateSnapshot')||source.includes('if(await exists(evidencePath))continue')) failures.push('Current Realtylink MLS inventory does not refresh its auditable per-listing positive evidence snapshot.');
+if(!source.includes('Number(c.rent)<=15000')||!source.includes('rent>15000')||source.includes('Number(c.rent)<=12000')||source.includes('rent>12000')) failures.push('High-rent MLS homes can still be discarded by the obsolete CAD $12,000 reconciliation ceiling.');
 if (!source.includes('isTargetRentalAreaText(rawAddress)')) failures.push('Realtylink discovery does not reject explicit out-of-area MLS labels before reconciliation.');
 if(!LISTING_SCOPE_VERSION||!source.includes('scopeVersion:LISTING_SCOPE_VERSION')||!source.includes('previousReconciliation.realtylinkSnapshotScope===realtylinkScope')) failures.push('Realtylink completeness baseline is not reset when listing scope changes.');
 const aggregateFixture=[{'@type':'ApartmentComplex',containsPlace:[{'@type':'Apartment'},{'@type':'Apartment'}]}];
@@ -210,6 +211,10 @@ if (!imageCacheWorkflow.includes('group: rental-refresh') || !imageCacheWorkflow
 const r3160272 = { mls: 'R3160272', bedrooms: 4, rent: 6950, address: '2788 W 1st Avenue, Vancouver, BC' };
 if (mlsIdentity(r3160272.mls) !== 'mls:r3160272' || !listingScopeEligible(r3160272, 'Entire townhouse')) {
   failures.push('R3160272 regression fixture is rejected by the 2–4BR entire-home scope.');
+}
+const r3159060 = { mls: 'R3159060', bedrooms: 4, rent: 15000, address: '4588 W 2nd Avenue, Point Grey, Vancouver, BC' };
+if (!listingScopeEligible(r3159060, 'Entire detached house for rent')) {
+  failures.push('R3159060 regression fixture is rejected solely because of its CAD $15,000 rent.');
 }
 
 // Realtylink embeds coordinates at ten decimal places. This real York Avenue

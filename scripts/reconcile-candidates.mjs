@@ -23,7 +23,7 @@ function listingUnit(x){
 function key(address,unit,url,floorplan,mls){const mlsKey=mlsIdentity(mls);if(mlsKey)return mlsKey;const a=street(address);const u=unitToken(unit);if(u)return`${a}::unit:${norm(u)}`;if(floorplan)return`${a}::floorplan:${norm(floorplan)}`;return`${a}::url:${hash(url||'')}`;}
 function candidateKey(c){return key(c.address,c.unit,c.url,c.floorplan,c.mls);}
 function sourceFamily(c){return /^zumper$/i.test(c.source)?'zumper':/^rentals\.ca$/i.test(c.source)?'rentalsca':/^liv\.rent$/i.test(c.source)?'livrent':norm(c.source);}
-function usable(c){return !!c&&c.active!==false&&!c.rented&&listingScopeEligible(c,c.description||c.bodyText||'')&&c.targetArea!==false&&Number(c.rent)<=12000&&!!c.address;}
+function usable(c){return !!c&&c.active!==false&&!c.rented&&listingScopeEligible(c,c.description||c.bodyText||'')&&c.targetArea!==false&&Number(c.rent)<=15000&&!!c.address;}
 function baths(c){const raw=c?.bathrooms??c?.baths;if(raw==null||raw==='')return null;const n=Number(raw);return Number.isFinite(n)?n:null;}
 function sqft(c){if(c?.sqft==null||c.sqft==='')return null;const n=Number(c.sqft);return Number.isFinite(n)?n:null;}
 function fingerprintCompatible(a,b){
@@ -86,7 +86,7 @@ for(const x of payload.listings){
   const beds=parseRealtylinkRoomCount(evidence?.bodyText,'bedroom')??x.bedrooms;
   if(!/realtylink\.org/i.test(evidence?.sourceUrl||evidence?.finalUrl||'')||!evidence?.ok||Number(evidence.status)<200||Number(evidence.status)>=400||!evidence.identityMatch||
     !evidence.explicitPositive||evidence.explicitNegative||!Number.isFinite(checkedAt)||Date.now()-checkedAt>12*60*60*1000||
-    !listingScopeEligible({...x,rent,bedrooms:beds},evidence.bodyText||'')||rent>12000)continue;
+    !listingScopeEligible({...x,rent,bedrooms:beds},evidence.bodyText||'')||rent>15000)continue;
   positiveMlsDetails.set(x.id,evidence);
   const wasActive=x.availabilityStatus==='active';
   const oldRent=Number(x.rent);
