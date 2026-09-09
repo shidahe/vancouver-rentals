@@ -8,6 +8,7 @@ on:
     branches: [main]
     paths:
       - 'scripts/refresh-listings.mjs'
+      - 'scripts/purposebuilt-floorplan-evidence.mjs'
       - 'scripts/listing-parser.mjs'
       - 'scripts/listing-photo-candidates.mjs'
       - 'scripts/refresh-safe.mjs'

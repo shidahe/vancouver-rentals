@@ -5,6 +5,7 @@ import { firstLikelyRent, parseFacts } from './listing-parser.mjs';
 import { findExistingSeedListing } from './inventory-identity.mjs';
 import { verifiedPhotoCandidates } from './listing-photo-candidates.mjs';
 import { isRealtylinkListingNotFoundRedirect, parseRealtylinkFloorArea, parseRealtylinkRoomCount } from './realtylink-parser.mjs';
+import { exactPurposeBuiltFloorplanEvidence } from './purposebuilt-floorplan-evidence.mjs';
 
 const ROOT = process.cwd();
 const DATA = path.join(ROOT, 'data');
@@ -67,7 +68,8 @@ function identityMatch(text, item) {
 function classify(text, item, jsonLd = [], httpStatus = null, finalUrl = null) {
   const idMatch = identityMatch(text, item);
   const negative = strongNegativePatterns.find(r => r.test(text));
-  const strongPositive = strongPositivePatterns.find(r => r.test(text));
+  const exactFloorplan = exactPurposeBuiltFloorplanEvidence(text, item);
+  const strongPositive = strongPositivePatterns.find(r => r.test(text)) || (exactFloorplan ? /exact purpose-built floorplan availability/i : null);
   // Realtylink detail URLs can keep a static "for rent" title after the home
   // disappears from the current MLS search inventory. Treat that phrase as a
   // weak positive only on other source families; MLS listings need a stronger
@@ -89,7 +91,8 @@ function classify(text, item, jsonLd = [], httpStatus = null, finalUrl = null) {
     negativePhrase: hardHttpGone ? `HTTP ${httpStatus}` : exactNotFoundRedirect ? 'exact Realtylink listingnotfound redirect' : negative ? String(negative) : null,
     explicitPositive: idMatch && !!positive && !negative,
     positivePhrase: positive ? String(positive) : null,
-    extractedRent: idMatch ? firstLikelyRent(text, jsonLd) : null,
+    extractedRent: idMatch ? exactFloorplan?.rent ?? firstLikelyRent(text, jsonLd) : null,
+    exactFloorplanMatch: exactFloorplan ? { label: exactFloorplan.label, rent: exactFloorplan.rent, sqft: exactFloorplan.sqft } : null,
     facts: idMatch ? facts : {}
   };
 }
@@ -200,7 +203,7 @@ for (const listing of payload.listings.filter(x =>
   // Address-level purpose-built floorplans are verified by refresh-purposebuilt,
   // which requires the exact rent + sqft inventory row. A generic building page
   // must not overwrite that stricter decision merely because some unit is leasing.
-  !(x.type === 'purpose-built' && !/^#?\d+[A-Za-z]?$/.test(String(x.unit || '')))
+  !(x.type === 'purpose-built' && !/^#?\d+[A-Za-z]?$/.test(String(x.unit || '')) && !String(x.unit || '').includes('·'))
 )) {
   const result = await visit(page, listing.url);
   const evidence = { checkedAt: iso, listingId: listing.id, sourceUrl: listing.url, ...result };

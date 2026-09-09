@@ -8,6 +8,7 @@ import { dedupeHistoryEvents, pruneExcludedScopeChurn } from './history-policy.m
 import { verifiedPhotoCandidates } from './listing-photo-candidates.mjs';
 import { isRealtylinkListingNotFoundRedirect, isTargetWestsideCoordinate, parseRealtylinkCoordinateValues, parseRealtylinkCoordinates, parseRealtylinkFloorArea, parseRealtylinkRoomCount } from './realtylink-parser.mjs';
 import { realtylinkLaneHealth } from './coverage-policy.mjs';
+import { exactPurposeBuiltFloorplanEvidence } from './purposebuilt-floorplan-evidence.mjs';
 
 const read = p => fs.readFile(p, 'utf8');
 const activeAdapters = [
@@ -62,6 +63,10 @@ if (!source.includes('listingScopeEligible({rent,bedrooms:beds},t)')) failures.p
 if(!source.includes('candidateSnapshot')||source.includes('if(await exists(evidencePath))continue')) failures.push('Current Realtylink MLS inventory does not refresh its auditable per-listing positive evidence snapshot.');
 if(!source.includes('Number(c.rent)<=15000')||!source.includes('rent>15000')||source.includes('Number(c.rent)<=12000')||source.includes('rent>12000')) failures.push('High-rent MLS homes can still be discarded by the obsolete CAD $12,000 reconciliation ceiling.');
 if (!source.includes('isTargetRentalAreaText(rawAddress)')) failures.push('Realtylink discovery does not reject explicit out-of-area MLS labels before reconciliation.');
+const greenwayListing={type:'purpose-built',unit:'405-3619 · 2 Bedroom Flex C1',rent:4050,sqft:840};
+const greenwayPage='1 Bedroom Flex A4 1 Bed 467 Sq. Ft. Starting at $2,795.00 /Month VIEW AVAILABLE UNITS FOR 1 Bedroom Flex A4 GUIDED TOUR FOR 1 Bedroom Flex A4 2 Bedroom Flex C1 2 Bed 2 Bath 840 Sq. Ft. Starting at $4,050.00 /Month VIEW AVAILABLE UNITS FOR 2 Bedroom Flex C1 GUIDED TOUR FOR 2 Bedroom Flex C1 2 Bedroom C3 773 Sq. Ft. Starting at $3,975.00 /Month';
+const greenwayEvidence=exactPurposeBuiltFloorplanEvidence(greenwayPage,greenwayListing);
+if(greenwayEvidence?.rent!==4050||greenwayEvidence?.sqft!==840||exactPurposeBuiltFloorplanEvidence(greenwayPage,{...greenwayListing,rent:3975})) failures.push('Exact purpose-built floorplan evidence can mix price or availability across adjacent floorplans.');
 if(!LISTING_SCOPE_VERSION||!source.includes('scopeVersion:LISTING_SCOPE_VERSION')||!source.includes('previousReconciliation.realtylinkSnapshotScope===realtylinkScope')) failures.push('Realtylink completeness baseline is not reset when listing scope changes.');
 const aggregateFixture=[{'@type':'ApartmentComplex',containsPlace:[{'@type':'Apartment'},{'@type':'Apartment'}]}];
 if(aggregateUnitCount(aggregateFixture)!==2) failures.push('Structured priority-building inventory count is not parsed.');
