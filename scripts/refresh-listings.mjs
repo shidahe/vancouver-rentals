@@ -35,9 +35,8 @@ const strongNegativePatterns = [
   /listing has been rented/i,
   /this unit has been rented/i
 ];
-const positivePatterns = [
+const strongPositivePatterns = [
   /available now/i,
-  /for rent/i,
   /now renting/i,
   /check availability/i,
   /request (?:a )?tour/i,
@@ -68,7 +67,14 @@ function identityMatch(text, item) {
 function classify(text, item, jsonLd = [], httpStatus = null, finalUrl = null) {
   const idMatch = identityMatch(text, item);
   const negative = strongNegativePatterns.find(r => r.test(text));
-  const positive = positivePatterns.find(r => r.test(text));
+  const strongPositive = strongPositivePatterns.find(r => r.test(text));
+  // Realtylink detail URLs can keep a static "for rent" title after the home
+  // disappears from the current MLS search inventory. Treat that phrase as a
+  // weak positive only on other source families; MLS listings need a stronger
+  // availability signal or presence in the current authoritative snapshot.
+  const weakForRent = /for rent/i.test(text);
+  const isRealtylink = /realtylink\.org/i.test(item.url || finalUrl || '');
+  const positive = strongPositive || (!isRealtylink && weakForRent ? /for rent/i : null);
   const hardHttpGone = [404, 410].includes(httpStatus);
   const exactNotFoundRedirect = isRealtylinkListingNotFoundRedirect(item.url, finalUrl);
   const facts=parseFacts(text);
