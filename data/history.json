@@ -85,28 +85,6 @@
       "note": "AUTO-REMOVED after direct live verification found explicit inactive/not-for-rent evidence; preserved last verified active rent and rejected the page mortgage estimate."
     }
   ],
-  "blenheim-terrace-204-r3149612": [
-    {
-      "date": "2026-08-16",
-      "rent": 4495,
-      "note": "NEW: MLS R3149612, Unit 204, 2BR/2BA, 940 sqft, 1 parking"
-    },
-    {
-      "date": "2026-08-17",
-      "rent": 4495,
-      "note": "Still shown Active/For Rent"
-    },
-    {
-      "date": "2026-08-19",
-      "rent": 4495,
-      "note": "DOWNGRADED TO NEEDS_CONFIRMATION: duplicate Unit 204 MLS records conflict at $4495/940 sqft vs $4295/905 sqft. Do not classify as price drop until agent confirms identity."
-    },
-    {
-      "date": "2026-09-03",
-      "rent": 3995,
-      "note": "MLS price update $4495 → $3995."
-    }
-  ],
   "19-greenway-c1-405-3619": [
     {
       "date": "2026-08-19",
@@ -1420,6 +1398,36 @@
       "date": "2026-09-09",
       "rent": 3995,
       "note": "NEW: live Realtylink MLS R3149267 auto-published."
+    },
+    {
+      "date": "2026-08-16",
+      "rent": 4495,
+      "note": "NEW: MLS R3149612, Unit 204, 2BR/2BA, 940 sqft, 1 parking"
+    },
+    {
+      "date": "2026-08-17",
+      "rent": 4495,
+      "note": "Still shown Active/For Rent"
+    },
+    {
+      "date": "2026-08-19",
+      "rent": 4495,
+      "note": "DOWNGRADED TO NEEDS_CONFIRMATION: duplicate Unit 204 MLS records conflict at $4495/940 sqft vs $4295/905 sqft. Do not classify as price drop until agent confirms identity."
+    },
+    {
+      "date": "2026-09-03",
+      "rent": 3995,
+      "note": "MLS price update $4495 → $3995."
+    },
+    {
+      "date": "2026-09-09",
+      "rent": 3995,
+      "note": "MLS RELIST: R3149612 → R3149267; exact address and Unit 204 retained as one inventory record."
+    },
+    {
+      "date": "2026-09-09",
+      "rent": 3995,
+      "note": "MERGED duplicate record blenheim-terrace-204-r3149612 under canonical MLS R3149267."
     }
   ]
 }

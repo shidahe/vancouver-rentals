@@ -1,21 +1,11 @@
 {
-  "generatedAt": "2026-09-09T23:06:03.269Z",
-  "activeCount": 21,
-  "decisionReady": false,
-  "highIssueCount": 1,
+  "generatedAt": "2026-09-09T23:20:24.244Z",
+  "activeCount": 19,
+  "decisionReady": true,
+  "highIssueCount": 0,
   "mediumIssueCount": 0,
-  "infoIssueCount": 35,
+  "infoIssueCount": 32,
   "issues": [
-    {
-      "severity": "info",
-      "id": "blenheim-terrace-204-r3149612",
-      "issue": "unknown-ac"
-    },
-    {
-      "severity": "info",
-      "id": "blenheim-terrace-204-r3149612",
-      "issue": "unknown-orientation"
-    },
     {
       "severity": "info",
       "id": "york-103-2535-r3137446",
@@ -173,26 +163,15 @@
     },
     {
       "severity": "info",
-      "id": "mls-r3161950",
-      "issue": "unknown-orientation"
-    },
-    {
-      "severity": "info",
       "id": "mls-r3149267",
       "issue": "unknown-orientation"
-    },
-    {
-      "severity": "high",
-      "id": "mls-r3149267",
-      "otherId": "blenheim-terrace-204-r3149612",
-      "issue": "duplicate-address-unit"
     }
   ],
   "readinessChecks": {
     "smokeOk": true,
     "smokeFresh": true,
-    "smokeCheckedAt": "2026-09-09T23:06:08.826Z",
-    "latestDataAt": "2026-09-09T23:05:12.882Z",
+    "smokeCheckedAt": "2026-09-09T23:20:29.760Z",
+    "latestDataAt": "2026-09-09T23:19:31.158Z",
     "coverageReady": true,
     "healthyDiscoveryLanes": 3,
     "coverageWarnings": [
@@ -211,5 +190,5 @@
     ]
   },
   "readinessIssues": [],
-  "finalizedAt": "2026-09-09T23:06:10.627Z"
+  "finalizedAt": "2026-09-09T23:20:31.557Z"
 }

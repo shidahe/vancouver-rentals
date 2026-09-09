@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-09-09T23:05:08.728Z",
+  "refreshedAt": "2026-09-09T23:19:26.806Z",
   "groups": [
     {
       "identityKey": "3220 4th ave w::url:4b1a6ebe2d36",
@@ -122,15 +122,15 @@
       "result": "candidate_only"
     },
     {
-      "identityKey": "mls:r3160689",
+      "identityKey": "mls:r3153999",
       "sources": [
         "realtylink mls"
       ],
       "rents": [
-        4950
+        3600
       ],
       "exactUnit": true,
-      "matchedListingId": "zumper-16e9ae17cd91",
+      "matchedListingId": "2268-w-broadway-312-r3153999",
       "result": "authoritative_mls_reverified"
     },
     {
@@ -158,55 +158,67 @@
       "result": "authoritative_mls_reverified"
     },
     {
-      "identityKey": "mls:r3161950",
+      "identityKey": "mls:r3160689",
       "sources": [
         "realtylink mls"
       ],
       "rents": [
-        4000
+        4950
       ],
-      "exactUnit": false,
-      "matchedListingId": "mls-r3161950",
+      "exactUnit": true,
+      "matchedListingId": "zumper-16e9ae17cd91",
       "result": "authoritative_mls_reverified"
     }
   ],
   "promoted": [],
   "crossVerified": [
-    "zumper-16e9ae17cd91",
+    "2268-w-broadway-312-r3153999",
     "york-103-2535-r3137446",
     "mls-r3150923",
-    "mls-r3161950"
+    "zumper-16e9ae17cd91"
   ],
   "fingerprintCrossVerified": [],
   "maskedMlsMerged": [],
-  "relistedMlsMerged": [],
-  "negativeMatches": [],
-  "detailReactivated": [
-    "mls-r3150923",
-    "mls-r3161950"
+  "relistedMlsMerged": [
+    {
+      "previousMls": "R3149612",
+      "currentMls": "R3149267",
+      "kept": "blenheim-terrace-204-r3149612"
+    }
   ],
+  "negativeMatches": [],
+  "detailReactivated": [],
   "mlsMissing": {
-    "R3151372": {
-      "firstMissingAt": "2026-09-09T17:07:59.283Z",
-      "lastMissingAt": "2026-09-09T23:05:08.728Z",
-      "listingId": "mls-r3151372"
+    "R3149267": {
+      "firstMissingAt": "2026-09-09T23:19:26.806Z",
+      "lastMissingAt": "2026-09-09T23:19:26.806Z",
+      "listingId": "blenheim-terrace-204-r3149612"
     },
     "R3161880": {
       "firstMissingAt": "2026-09-09T23:05:08.728Z",
-      "lastMissingAt": "2026-09-09T23:05:08.728Z",
+      "lastMissingAt": "2026-09-09T23:19:26.806Z",
       "listingId": "mls-r3161880"
+    },
+    "R3161950": {
+      "firstMissingAt": "2026-09-09T23:19:26.806Z",
+      "lastMissingAt": "2026-09-09T23:19:26.806Z",
+      "listingId": "mls-r3161950"
     },
     "R3159060": {
       "firstMissingAt": "2026-09-09T21:06:17.557Z",
-      "lastMissingAt": "2026-09-09T23:05:08.728Z",
+      "lastMissingAt": "2026-09-09T23:19:26.806Z",
       "listingId": "mls-r3159060"
     }
   },
-  "mlsRemoved": [
-    "mls-r3151372"
-  ],
+  "mlsRemoved": [],
   "realtylinkSnapshotCount": 4,
   "realtylinkSnapshotScope": "rent-3500-beds-2-4-whole-home-westside-v2",
   "realtylinkRemovalEligible": true,
-  "mlsDuplicatesMerged": []
+  "mlsDuplicatesMerged": [
+    {
+      "mls": "R3149267",
+      "kept": "mls-r3149267",
+      "removed": "blenheim-terrace-204-r3149612"
+    }
+  ]
 }
