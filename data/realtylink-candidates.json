@@ -1,56 +1,56 @@
 {
-  "refreshedAt": "2026-09-09T04:54:17.923Z",
+  "refreshedAt": "2026-09-09T05:09:21.745Z",
   "mode": "candidate-only",
   "scopeVersion": "rent-3500-beds-2-4-whole-home-westside-v2",
   "health": [
     {
       "url": "https://realtylink.org/en/apartment~for-rent~vancouver",
       "status": 200,
-      "checkedAt": "2026-09-09T04:54:17.923Z"
+      "checkedAt": "2026-09-09T05:09:21.745Z"
     },
     {
       "url": "https://realtylink.org/en/townhouse~for-rent~vancouver",
       "status": 200,
-      "checkedAt": "2026-09-09T04:54:17.923Z"
+      "checkedAt": "2026-09-09T05:09:21.745Z"
     },
     {
       "url": "https://realtylink.org/en/house~for-rent~vancouver",
       "status": 200,
-      "checkedAt": "2026-09-09T04:54:17.923Z"
+      "checkedAt": "2026-09-09T05:09:21.745Z"
     }
   ],
   "candidates": [
     {
       "source": "Realtylink MLS",
-      "url": "https://realtylink.org/en/apartment~for-rent~vancouver/263179806",
-      "mls": "R3158179",
-      "address": "2828 Yew Street",
-      "unit": "108",
-      "type": "condo",
-      "rent": 5995,
-      "bedrooms": 2,
+      "url": "https://realtylink.org/en/townhouse~for-rent~vancouver/263182316",
+      "mls": "R3160689",
+      "address": "3349 Dunbar Street",
+      "unit": "102",
+      "type": "townhouse",
+      "rent": 4950,
+      "bedrooms": 3,
       "bathrooms": 2,
-      "sqft": 1100,
-      "lat": 49.26072,
-      "lng": -123.15507,
+      "sqft": 1271,
+      "lat": 49.25688,
+      "lng": -123.18537,
       "geo": {
-        "lat": 49.26072,
-        "lng": -123.15507
+        "lat": 49.25688,
+        "lng": -123.18537
       },
       "images": [
-        "https://media.realtylink.org/images/consumersite/property/263179806/5fc72e441c4b4ee3a668dde86550528e.jpeg?width=640&height=480&fit=cover",
-        "https://media.realtylink.org/images/consumersite/property/263179806/f387d10a2d7646489915bfbd70d64ef0.jpeg?width=320&height=240&fit=cover",
-        "https://media.realtylink.org/images/consumersite/property/263179806/26f7657f8a4644ec82bb9a358257693a.jpeg?width=320&height=240&fit=cover",
-        "https://media.realtylink.org/images/consumersite/property/263179806/5d8cbba36cb045b0b822d7eca0574103.jpeg?width=320&height=240&fit=cover",
-        "https://media.realtylink.org/images/consumersite/property/263179806/6126a68010b545a3be8e250c38a8c285.jpeg?width=320&height=240&fit=cover",
-        "https://media.realtylink.org/images/consumersite/property/263179806/5fc72e441c4b4ee3a668dde86550528e.jpeg?width=480&height=360&fit=cover"
+        "https://media.realtylink.org/images/consumersite/property/263182316/00c50dbb1e294023bf398ae25ce0d515.jpeg?width=640&height=480&fit=cover",
+        "https://media.realtylink.org/images/consumersite/property/263182316/72286793647f47cd9a695cfbe3d304d4.jpeg?width=320&height=240&fit=cover",
+        "https://media.realtylink.org/images/consumersite/property/263182316/9ff90dbf374c4802a4347969a0cae1e6.jpeg?width=320&height=240&fit=cover",
+        "https://media.realtylink.org/images/consumersite/property/263182316/8498975986b343ffa866148eaa08fc91.jpeg?width=320&height=240&fit=cover",
+        "https://media.realtylink.org/images/consumersite/property/263182316/015a649b6fb945cf8bde7a706fdb80c7.jpeg?width=320&height=240&fit=cover",
+        "https://media.realtylink.org/images/consumersite/property/263182316/00c50dbb1e294023bf398ae25ce0d515.jpeg?width=480&height=360&fit=cover"
       ],
       "targetArea": true,
       "active": true,
       "parking": true,
       "ac": false,
       "balcony": false,
-      "checkedAt": "2026-09-09T04:54:17.923Z",
+      "checkedAt": "2026-09-09T05:09:21.745Z",
       "publishable": false
     },
     {
@@ -83,73 +83,40 @@
       "parking": true,
       "ac": false,
       "balcony": false,
-      "checkedAt": "2026-09-09T04:54:17.923Z",
+      "checkedAt": "2026-09-09T05:09:21.745Z",
       "publishable": false
     },
     {
       "source": "Realtylink MLS",
-      "url": "https://realtylink.org/en/townhouse~for-rent~vancouver/263159073",
-      "mls": "R3137446",
-      "address": "2535 York Avenue",
-      "unit": "103",
-      "type": "townhouse",
-      "rent": 5850,
-      "bedrooms": 2,
-      "bathrooms": 2,
-      "sqft": 1499,
-      "lat": 49.27208,
-      "lng": -123.163,
+      "url": "https://realtylink.org/en/house~for-rent~vancouver/263183507",
+      "mls": "R3161880",
+      "address": "4xxxx-1 W 28th Avenue",
+      "unit": null,
+      "type": "house",
+      "rent": 8800,
+      "bedrooms": 4,
+      "bathrooms": 4,
+      "sqft": 2629,
+      "lat": 49.2476,
+      "lng": -123.19596,
       "geo": {
-        "lat": 49.27208,
-        "lng": -123.163
+        "lat": 49.2476,
+        "lng": -123.19596
       },
       "images": [
-        "https://media.realtylink.org/images/consumersite/property/263159073/35dd514e86854a44b3e6b4b9490cef65.jpeg?width=640&height=480&fit=cover",
-        "https://media.realtylink.org/images/consumersite/property/263159073/4d45f1e0b1fc423da4dc040057dc511c.jpeg?width=320&height=240&fit=cover",
-        "https://media.realtylink.org/images/consumersite/property/263159073/57cb3ef23f3346e2be923167fe6582ab.jpeg?width=320&height=240&fit=cover",
-        "https://media.realtylink.org/images/consumersite/property/263159073/8d7678f03a9b4482ae8d93b637901737.jpeg?width=320&height=240&fit=cover",
-        "https://media.realtylink.org/images/consumersite/property/263159073/311e8a0ee2f94c4cb373d879df1f9309.jpeg?width=320&height=240&fit=cover",
-        "https://media.realtylink.org/images/consumersite/property/263159073/35dd514e86854a44b3e6b4b9490cef65.jpeg?width=480&height=360&fit=cover"
+        "https://media.realtylink.org/images/consumersite/property/263183507/e3d3967d901f4eb69300dbcf7361ec92.jpeg?width=640&height=480&fit=cover",
+        "https://media.realtylink.org/images/consumersite/property/263183507/66d773923854457ca8b374205342f534.jpeg?width=320&height=240&fit=cover",
+        "https://media.realtylink.org/images/consumersite/property/263183507/e4e5866b75df45308373319b4d92aaf9.jpeg?width=320&height=240&fit=cover",
+        "https://media.realtylink.org/images/consumersite/property/263183507/6b68a4f5c36144b5b912ba27f408d470.jpeg?width=320&height=240&fit=cover",
+        "https://media.realtylink.org/images/consumersite/property/263183507/7237a6a111a044cdbe15d8269d3faac1.jpeg?width=320&height=240&fit=cover",
+        "https://media.realtylink.org/images/consumersite/property/263183507/e3d3967d901f4eb69300dbcf7361ec92.jpeg?width=480&height=360&fit=cover"
       ],
       "targetArea": true,
       "active": true,
       "parking": true,
-      "ac": false,
-      "balcony": true,
-      "checkedAt": "2026-09-09T04:54:17.923Z",
-      "publishable": false
-    },
-    {
-      "source": "Realtylink MLS",
-      "url": "https://realtylink.org/en/house~for-rent~vancouver/263172999",
-      "mls": "R3151372",
-      "address": "Laneway House 498x Macdonald Street, MacKenzie Heights",
-      "unit": null,
-      "type": "house",
-      "rent": 4800,
-      "bedrooms": 3,
-      "bathrooms": 3,
-      "sqft": 1300,
-      "lat": 49.2416,
-      "lng": -123.16783,
-      "geo": {
-        "lat": 49.2416,
-        "lng": -123.16783
-      },
-      "images": [
-        "https://media.realtylink.org/images/consumersite/property/263172999/c5424aa8ec754c5dbde8b458e950da3a.jpeg?width=640&height=480&fit=cover",
-        "https://media.realtylink.org/images/consumersite/property/263172999/a07d5cb980304786a09092bfaa18c942.jpeg?width=320&height=240&fit=cover",
-        "https://media.realtylink.org/images/consumersite/property/263172999/f30edfe3c49c4660ba9111ae7e98814b.jpeg?width=320&height=240&fit=cover",
-        "https://media.realtylink.org/images/consumersite/property/263172999/dbad0a90c3ff4d6a81393b40751ce33a.jpeg?width=320&height=240&fit=cover",
-        "https://media.realtylink.org/images/consumersite/property/263172999/714b4bbc2050493b867e77ca36123841.jpeg?width=320&height=240&fit=cover",
-        "https://media.realtylink.org/images/consumersite/property/263172999/c5424aa8ec754c5dbde8b458e950da3a.jpeg?width=480&height=360&fit=cover"
-      ],
-      "targetArea": true,
-      "active": true,
-      "parking": false,
       "ac": true,
-      "balcony": false,
-      "checkedAt": "2026-09-09T04:54:17.923Z",
+      "balcony": true,
+      "checkedAt": "2026-09-09T05:09:21.745Z",
       "publishable": false
     }
   ]
