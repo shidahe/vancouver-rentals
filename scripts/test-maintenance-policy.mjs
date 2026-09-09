@@ -204,7 +204,7 @@ if (!exactAddressUnitIdentity(
   {address:'3333 W 4th Ave, Vancouver, BC',unit:'204'},
   {address:'3333 W 4th Avenue',unit:'205'}
 )) failures.push('Exact-unit MLS relist identity cannot distinguish a replacement MLS from a neighboring suite.');
-if (!source.includes('relistedMlsMerged') || !source.includes('MLS RELIST: ${oldMls} → ${candidate.mls}')) {
+if (!source.includes('relistedMlsMerged') || !source.includes('MLS RELIST: ${oldMls} → ${candidate.mls}') || !source.includes('for(const candidate of [...payload.listings])')) {
   failures.push('A replacement MLS for the same address and unit can still publish a duplicate card.');
 }
 if (!source.includes('rawSqft>=200&&rawSqft<=15000') || !source.includes('implausible-sqft')) {

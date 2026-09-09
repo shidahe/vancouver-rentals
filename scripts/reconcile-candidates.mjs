@@ -128,11 +128,10 @@ for(const candidate of realtylink.candidates||[]){
 // A current MLS number can replace an older MLS number for the exact same suite.
 // Address + concrete unit is stronger than the listing-number change: retain the
 // established card/history identity, attach the current authoritative MLS, and
-// let the final MLS deduper absorb any feed-created duplicate row.
-for(const candidate of realtylink.candidates||[]){
-  if(!usable(candidate)||!candidate.mls||!unitToken(candidate.unit))continue;
-  const sibling=payload.listings.find(x=>x.availabilityStatus==='active'&&listingMls(x)!==candidate.mls&&exactAddressUnitIdentity(x,candidate));
-  if(!sibling)continue;
+// let the final MLS deduper absorb any feed-created duplicate row. Run this both
+// against the current feed and against stored inventory so a one-run feed wobble
+// cannot strand a duplicate created by the preceding refresh.
+const mergeExactUnitRelisting=(sibling,candidate)=>{
   const oldMls=listingMls(sibling);
   sibling.marketplaceUrl ||= sibling.url;
   sibling.previousMls=[...new Set([...(sibling.previousMls||[]),oldMls].filter(Boolean))];
@@ -145,6 +144,16 @@ for(const candidate of realtylink.candidates||[]){
   listingByKey.set(mlsIdentity(candidate.mls),sibling);
   (history[sibling.id]||=[]).push({date:today,rent:sibling.rent,note:`MLS RELIST: ${oldMls} → ${candidate.mls}; exact address and Unit ${sibling.unit} retained as one inventory record.`});
   state.relistedMlsMerged.push({previousMls:oldMls,currentMls:candidate.mls,kept:sibling.id});
+};
+for(const candidate of realtylink.candidates||[]){
+  if(!usable(candidate)||!candidate.mls||!unitToken(candidate.unit))continue;
+  const sibling=payload.listings.find(x=>x.availabilityStatus==='active'&&listingMls(x)!==candidate.mls&&exactAddressUnitIdentity(x,candidate));
+  if(sibling)mergeExactUnitRelisting(sibling,candidate);
+}
+for(const candidate of [...payload.listings]){
+  if(candidate.availabilityStatus!=='active'||!candidate.mlsInventoryManaged||!listingMls(candidate)||!unitToken(candidate.unit))continue;
+  const sibling=payload.listings.find(x=>x!==candidate&&x.availabilityStatus==='active'&&listingMls(x)!==listingMls(candidate)&&exactAddressUnitIdentity(x,candidate));
+  if(sibling)mergeExactUnitRelisting(sibling,candidate);
 }
 
 for(const [k,items] of groups){
