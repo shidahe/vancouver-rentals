@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-09-08T23:18:57.356Z",
+  "checkedAt": "2026-09-09T11:37:45.735Z",
   "listingId": "kits-walk-floorplan-2-bedroom-741-3600",
   "sourceUrl": "https://rentals.ca/vancouver/kits-walk-by-strand",
   "ok": true,
@@ -606,13 +606,14 @@
     "https://images.rentals.ca/property-pictures/medium/vancouver-bc/947676/apartment-2214243986.jpg",
     "https://assets.rentsync.com/placeholder/company-placeholder.jpg"
   ],
-  "elapsedMs": 3762,
+  "elapsedMs": 3702,
   "identityMatch": true,
   "explicitNegative": false,
   "negativePhrase": null,
   "explicitPositive": true,
   "positivePhrase": "/for rent/i",
   "extractedRent": 3650,
+  "exactFloorplanMatch": null,
   "facts": {
     "bedrooms": 2,
     "bathrooms": 2,

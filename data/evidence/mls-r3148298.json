@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-09-09T11:28:40.975Z",
+  "checkedAt": "2026-09-09T11:37:45.735Z",
   "listingId": "mls-r3148298",
   "sourceUrl": "https://realtylink.org/en/house~for-rent~vancouver/263169925",
   "ok": true,
@@ -421,13 +421,14 @@
     "https://media.realtylink.org/images/consumersite/property/263169925/462b3b3849d44942a7e2373d59285ab4.jpeg?width=320&height=240&fit=cover",
     "https://cdn.realtylink.org/public/bc/consumersite/images/logos/powered-by-centris.svg"
   ],
-  "elapsedMs": 3274,
+  "elapsedMs": 3282,
   "identityMatch": true,
   "explicitNegative": false,
   "negativePhrase": null,
   "explicitPositive": false,
   "positivePhrase": null,
   "extractedRent": 5200,
+  "exactFloorplanMatch": null,
   "facts": {
     "bedrooms": 3,
     "bathrooms": 2,

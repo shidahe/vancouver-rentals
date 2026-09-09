@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-09-09T11:36:08.384Z",
+  "refreshedAt": "2026-09-09T11:45:29.124Z",
   "groups": [
     {
       "identityKey": "1533 maple st::url:69f2e13a0fd5",
@@ -122,78 +122,82 @@
       "result": "authoritative_mls_reverified"
     },
     {
-      "identityKey": "mls:r3159060",
+      "identityKey": "mls:r3137446",
       "sources": [
         "realtylink mls"
       ],
       "rents": [
-        15000
+        5850
       ],
-      "exactUnit": false,
-      "matchedListingId": null,
-      "result": "auto_published_authoritative_mls"
+      "exactUnit": true,
+      "matchedListingId": "york-103-2535-r3137446",
+      "result": "authoritative_mls_reverified"
     },
     {
-      "identityKey": "mls:r3161950",
+      "identityKey": "mls:r3161880",
       "sources": [
         "realtylink mls"
       ],
       "rents": [
-        4000
+        8800
       ],
       "exactUnit": false,
-      "matchedListingId": "mls-r3161950",
+      "matchedListingId": "mls-r3161880",
       "result": "authoritative_mls_reverified"
     }
   ],
-  "promoted": [
-    "mls-r3159060"
-  ],
+  "promoted": [],
   "crossVerified": [
     "mls-r3150923",
-    "mls-r3161950"
+    "york-103-2535-r3137446",
+    "mls-r3161880"
   ],
   "fingerprintCrossVerified": [],
   "maskedMlsMerged": [],
   "negativeMatches": [],
   "detailReactivated": [
-    "mls-r3161950"
+    "mls-r3161880"
   ],
   "mlsMissing": {
     "R3151022": {
       "firstMissingAt": "2026-09-09T11:06:53.820Z",
-      "lastMissingAt": "2026-09-09T11:36:08.384Z",
+      "lastMissingAt": "2026-09-09T11:45:29.124Z",
       "listingId": "mls-r3151022"
     },
     "R3129974": {
       "firstMissingAt": "2026-09-09T11:06:53.820Z",
-      "lastMissingAt": "2026-09-09T11:36:08.384Z",
+      "lastMissingAt": "2026-09-09T11:45:29.124Z",
       "listingId": "mls-r3129974"
     },
     "R3148298": {
       "firstMissingAt": "2026-09-09T11:06:53.820Z",
-      "lastMissingAt": "2026-09-09T11:36:08.384Z",
+      "lastMissingAt": "2026-09-09T11:45:29.124Z",
       "listingId": "mls-r3148298"
     },
     "R3151372": {
       "firstMissingAt": "2026-09-09T11:06:53.820Z",
-      "lastMissingAt": "2026-09-09T11:36:08.384Z",
+      "lastMissingAt": "2026-09-09T11:45:29.124Z",
       "listingId": "mls-r3151372"
     },
     "R3158179": {
       "firstMissingAt": "2026-09-09T11:06:53.820Z",
-      "lastMissingAt": "2026-09-09T11:36:08.384Z",
+      "lastMissingAt": "2026-09-09T11:45:29.124Z",
       "listingId": "mls-r3158179"
     },
     "R3160879": {
       "firstMissingAt": "2026-09-09T11:06:53.820Z",
-      "lastMissingAt": "2026-09-09T11:36:08.384Z",
+      "lastMissingAt": "2026-09-09T11:45:29.124Z",
       "listingId": "mls-r3160879"
     },
-    "R3161880": {
-      "firstMissingAt": "2026-09-09T11:06:53.820Z",
-      "lastMissingAt": "2026-09-09T11:36:08.384Z",
-      "listingId": "mls-r3161880"
+    "R3161950": {
+      "firstMissingAt": "2026-09-09T11:45:29.124Z",
+      "lastMissingAt": "2026-09-09T11:45:29.124Z",
+      "listingId": "mls-r3161950"
+    },
+    "R3159060": {
+      "firstMissingAt": "2026-09-09T11:45:29.124Z",
+      "lastMissingAt": "2026-09-09T11:45:29.124Z",
+      "listingId": "mls-r3159060"
     }
   },
   "mlsRemoved": [],

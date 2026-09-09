@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-09-09T11:28:40.975Z",
+  "checkedAt": "2026-09-09T11:37:45.735Z",
   "listingId": "zumper-ecd4e868f79c",
   "sourceUrl": "https://www.zumper.com/address/3220-4th-ave-w-vancouver-bc-v6k-1r9-can",
   "ok": true,
@@ -315,15 +315,16 @@
     "https://d214hhm15p4t1d.cloudfront.net/web-zumper/7dd84ae592d291504789c6e83c6e2c4889e272bf/img/arrowDown.84d9bdfc.svg",
     "https://cdn.cookielaw.org/logos/static/ot_company_logo.png",
     "https://cdn.cookielaw.org/logos/static/powered_by_logo.svg",
-    "https://ids.ad.gt/api/v1/halo_match?id=AU1D-0100-001788953340-JOY7WGM6-6PXD&halo_id=060ixszo8jsgld5989e9f9f969a9f9e9f9fuoes64weq0ky646m6o6o606e6o6m6o"
+    "https://ids.ad.gt/api/v1/halo_match?id=AU1D-0100-001788953892-OZ85Z2O9-6KCD&halo_id=060ixszo8jsgld5999a98989b9b979c9e66uoes64weq0ky666e64646g6g626i6m"
   ],
-  "elapsedMs": 3202,
+  "elapsedMs": 3193,
   "identityMatch": true,
   "explicitNegative": false,
   "negativePhrase": null,
   "explicitPositive": true,
   "positivePhrase": "/available\\s+(?:immediately|[a-z]{3,9}\\s+\\d{1,2})/i",
   "extractedRent": 4300,
+  "exactFloorplanMatch": null,
   "facts": {
     "bedrooms": null,
     "bathrooms": 2,

@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-09-09T11:28:40.975Z",
+  "checkedAt": "2026-09-09T11:37:45.735Z",
   "listingId": "mls-r3160879",
   "sourceUrl": "https://realtylink.org/en/apartment~for-rent~vancouver/263182506",
   "ok": true,
@@ -421,13 +421,14 @@
     "https://media.realtylink.org/images/consumersite/property/263182506/628f510e567941fca25b0f2c6428a33c.jpeg?width=320&height=240&fit=cover",
     "https://cdn.realtylink.org/public/bc/consumersite/images/logos/powered-by-centris.svg"
   ],
-  "elapsedMs": 3658,
+  "elapsedMs": 3491,
   "identityMatch": true,
   "explicitNegative": false,
   "negativePhrase": null,
   "explicitPositive": false,
   "positivePhrase": null,
   "extractedRent": 3500,
+  "exactFloorplanMatch": null,
   "facts": {
     "bedrooms": 2,
     "bathrooms": 2,

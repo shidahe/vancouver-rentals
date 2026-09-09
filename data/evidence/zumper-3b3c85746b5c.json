@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-09-09T11:28:40.975Z",
+  "checkedAt": "2026-09-09T11:37:45.735Z",
   "listingId": "zumper-3b3c85746b5c",
   "sourceUrl": "https://www.zumper.com/address/2249-w-33rd-ave-vancouver-bc-v6m-1c1-can",
   "ok": true,
@@ -291,13 +291,14 @@
     "https://img.zumpercdn.com/917877258/1280x960?dpr=1&fit=crop&h=446&q=76&w=792",
     "https://img.zumpercdn.com/917877259/1280x960?dpr=1&fit=crop&h=222&q=76&w=394"
   ],
-  "elapsedMs": 3201,
+  "elapsedMs": 3204,
   "identityMatch": true,
   "explicitNegative": false,
   "negativePhrase": null,
   "explicitPositive": true,
   "positivePhrase": "/available now/i",
   "extractedRent": 4300,
+  "exactFloorplanMatch": null,
   "facts": {
     "bedrooms": null,
     "bathrooms": 3,
