@@ -123,6 +123,7 @@ const emptyMarketplace=marketplaceLaneHealth({reachable:6,total:9,candidates:0})
 if(emptyMarketplace.healthy||emptyMarketplace.status!=='degraded'||!/0 qualifying candidates/.test(emptyMarketplace.detail)) failures.push('A reachable marketplace with zero parsed candidates is still reported as a healthy discovery lane.');
 const productiveMarketplace=marketplaceLaneHealth({reachable:3,total:9,candidates:1});
 if(!productiveMarketplace.healthy||productiveMarketplace.status!=='healthy') failures.push('A reachable marketplace with parsed candidates is not reported as healthy.');
+if(!coverageSource.includes('const craigslistLane=marketplaceLaneHealth')||!coverageSource.includes("{id:'craigslist',kind:'independent-classifieds',...craigslistLane")) failures.push('Craigslist can still be reported healthy when every reachable search produces zero candidates.');
 if (!catalog.discovery.some(x=>x.id==='kits-walk-rentalsca'&&/kits-walk-by-strand/.test(x.url))) {
   failures.push('Kits Walk aggregate inventory source is missing.');
 }
