@@ -30,6 +30,7 @@ const imageCacheWorkflow = await read('.github/workflows/cache-listing-images.ym
 const catalog = JSON.parse(await read('data/live-sources.json'));
 const officialWatch = JSON.parse(await read('data/official-watch.json'));
 const indexHtml = await read('index.html');
+const siteTestSource = await read('scripts/test-site.mjs');
 
 const failures = [];
 const duplicateMlsHistory={legacy:[{date:'2026-09-08',rent:4950,note:'legacy'}],canonical:[{date:'2026-09-09',rent:4950,note:'canonical'}]};
@@ -93,6 +94,7 @@ if (!isAutoManagedListing(staleFixture)) failures.push('Non-Zumper exact-detail 
 if (isAutoManagedListing({ ...staleFixture, mlsInventoryManaged: true })) failures.push('Authoritative MLS-feed inventory is incorrectly handled by generic stale expiry.');
 if (isAutoManagedListing({ ...staleFixture, availabilityStatus: 'needs_confirmation' })) failures.push('Inactive inventory is incorrectly eligible for stale expiry.');
 if (/id="minSqft"[^>]*value="800"/.test(indexHtml)) failures.push('800 sqft preference is still a default discovery/display gate.');
+if (!siteTestSource.includes("locator('#minSqft').inputValue() === ''") || siteTestSource.includes('kits-walk-unit-605')) failures.push('Browser smoke still couples the 800 sqft preference regression to one volatile live listing.');
 for (const pattern of [/bedrooms\s*===\s*2/, /beds\s*!==\s*2/, /max_bedrooms=2/]) {
   if (pattern.test(source)) failures.push(`2BR-only gate remains: ${pattern}`);
 }
