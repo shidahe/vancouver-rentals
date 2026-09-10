@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-09-10T17:06:36.202Z",
+  "refreshedAt": "2026-09-10T17:16:05.899Z",
   "listings": {
     "york-103-2535-r3137446": {
       "cached": 5,
@@ -108,10 +108,17 @@
     },
     "mls-r3150923": {
       "cached": 5,
+      "preserved": 5,
+      "downloaded": 0,
+      "failures": [],
+      "photoPageUrl": "https://realtylink.org/en/townhouse~for-rent~vancouver/263172550"
+    },
+    "mls-r3148298": {
+      "cached": 5,
       "preserved": 0,
       "downloaded": 5,
       "failures": [],
-      "photoPageUrl": "https://realtylink.org/en/townhouse~for-rent~vancouver/263172550"
+      "photoPageUrl": "https://realtylink.org/en/house~for-rent~vancouver/263169925"
     },
     "arbutus-residences-floorplan-2-bedroom-townhouse-den-1340": {
       "cached": 5,
@@ -120,26 +127,12 @@
       "failures": [],
       "photoPageUrl": "https://www.zumper.com/apartment-buildings/p1117150/arbutus-residences-quilchena-vancouver-bc"
     },
-    "mls-r3158179": {
-      "cached": 5,
-      "preserved": 0,
-      "downloaded": 5,
-      "failures": [],
-      "photoPageUrl": "https://realtylink.org/en/apartment~for-rent~vancouver/263179806"
-    },
     "mls-r3161950": {
       "cached": 5,
-      "preserved": 0,
-      "downloaded": 5,
+      "preserved": 5,
+      "downloaded": 0,
       "failures": [],
       "photoPageUrl": "https://realtylink.org/en/house~for-rent~vancouver/263183577"
-    },
-    "mls-r3159060": {
-      "cached": 5,
-      "preserved": 0,
-      "downloaded": 5,
-      "failures": [],
-      "photoPageUrl": "https://realtylink.org/en/house~for-rent~vancouver/263180687"
     },
     "mls-r3149267": {
       "cached": 5,
@@ -150,13 +143,13 @@
     }
   },
   "totals": {
-    "sourceListings": 21,
-    "cachedListings": 21,
-    "downloaded": 20,
+    "sourceListings": 20,
+    "cachedListings": 20,
+    "downloaded": 5,
     "failed": 0,
-    "preserved": 81,
-    "prunedListings": 1,
-    "prunedIndexImages": 5,
+    "preserved": 91,
+    "prunedListings": 2,
+    "prunedIndexImages": 10,
     "prunedOrphanFiles": 0
   }
 }

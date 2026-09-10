@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-09-10T17:06:37.980Z",
-  "activeCount": 21,
+  "generatedAt": "2026-09-10T17:16:06.486Z",
+  "activeCount": 20,
   "decisionReady": true,
   "highIssueCount": 0,
   "mediumIssueCount": 0,
-  "infoIssueCount": 33,
+  "infoIssueCount": 32,
   "issues": [
     {
       "severity": "info",
@@ -153,17 +153,12 @@
     },
     {
       "severity": "info",
-      "id": "mls-r3158179",
+      "id": "mls-r3148298",
       "issue": "unknown-orientation"
     },
     {
       "severity": "info",
       "id": "mls-r3161950",
-      "issue": "unknown-orientation"
-    },
-    {
-      "severity": "info",
-      "id": "mls-r3159060",
       "issue": "unknown-orientation"
     },
     {
@@ -175,8 +170,8 @@
   "readinessChecks": {
     "smokeOk": true,
     "smokeFresh": true,
-    "smokeCheckedAt": "2026-09-10T17:06:43.529Z",
-    "latestDataAt": "2026-09-10T17:05:44.727Z",
+    "smokeCheckedAt": "2026-09-10T17:16:13.897Z",
+    "latestDataAt": "2026-09-10T17:15:13.101Z",
     "coverageReady": true,
     "healthyDiscoveryLanes": 3,
     "coverageWarnings": [
@@ -184,7 +179,7 @@
         "severity": "warning",
         "lane": "rentalsca",
         "status": "degraded",
-        "detail": "2/9 regional searches healthy"
+        "detail": "2/9 regional searches reachable; 0 qualifying candidates parsed"
       },
       {
         "severity": "warning",
@@ -195,5 +190,5 @@
     ]
   },
   "readinessIssues": [],
-  "finalizedAt": "2026-09-10T17:06:45.256Z"
+  "finalizedAt": "2026-09-10T17:16:15.672Z"
 }
