@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-10T17:16:06.486Z",
+  "generatedAt": "2026-09-10T21:03:47.331Z",
   "activeCount": 20,
   "decisionReady": true,
   "highIssueCount": 0,
@@ -148,12 +148,12 @@
     },
     {
       "severity": "info",
-      "id": "mls-r3150923",
+      "id": "mls-r3151022",
       "issue": "unknown-orientation"
     },
     {
       "severity": "info",
-      "id": "mls-r3148298",
+      "id": "mls-r3150923",
       "issue": "unknown-orientation"
     },
     {
@@ -170,8 +170,8 @@
   "readinessChecks": {
     "smokeOk": true,
     "smokeFresh": true,
-    "smokeCheckedAt": "2026-09-10T17:16:13.897Z",
-    "latestDataAt": "2026-09-10T17:15:13.101Z",
+    "smokeCheckedAt": "2026-09-10T21:03:52.214Z",
+    "latestDataAt": "2026-09-10T21:03:02.262Z",
     "coverageReady": true,
     "healthyDiscoveryLanes": 3,
     "coverageWarnings": [
@@ -179,7 +179,7 @@
         "severity": "warning",
         "lane": "rentalsca",
         "status": "degraded",
-        "detail": "2/9 regional searches reachable; 0 qualifying candidates parsed"
+        "detail": "6/9 regional searches reachable; 0 qualifying candidates parsed"
       },
       {
         "severity": "warning",
@@ -190,5 +190,5 @@
     ]
   },
   "readinessIssues": [],
-  "finalizedAt": "2026-09-10T17:16:15.672Z"
+  "finalizedAt": "2026-09-10T21:03:53.840Z"
 }

@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-09-10T17:16:05.899Z",
+  "refreshedAt": "2026-09-10T21:03:46.564Z",
   "listings": {
     "york-103-2535-r3137446": {
       "cached": 5,
@@ -104,7 +104,14 @@
       "preserved": 5,
       "downloaded": 0,
       "failures": [],
-      "photoPageUrl": "https://realtylink.org/en/townhouse~for-rent~vancouver/263182316"
+      "photoPageUrl": "https://www.zumper.com/address/3349-dunbar-st-vancouver-bc-v6s-2b9-can"
+    },
+    "mls-r3151022": {
+      "cached": 5,
+      "preserved": 0,
+      "downloaded": 5,
+      "failures": [],
+      "photoPageUrl": "https://realtylink.org/en/house~for-rent~vancouver/263172649"
     },
     "mls-r3150923": {
       "cached": 5,
@@ -112,13 +119,6 @@
       "downloaded": 0,
       "failures": [],
       "photoPageUrl": "https://realtylink.org/en/townhouse~for-rent~vancouver/263172550"
-    },
-    "mls-r3148298": {
-      "cached": 5,
-      "preserved": 0,
-      "downloaded": 5,
-      "failures": [],
-      "photoPageUrl": "https://realtylink.org/en/house~for-rent~vancouver/263169925"
     },
     "arbutus-residences-floorplan-2-bedroom-townhouse-den-1340": {
       "cached": 5,
@@ -148,8 +148,8 @@
     "downloaded": 5,
     "failed": 0,
     "preserved": 91,
-    "prunedListings": 2,
-    "prunedIndexImages": 10,
+    "prunedListings": 1,
+    "prunedIndexImages": 5,
     "prunedOrphanFiles": 0
   }
 }
