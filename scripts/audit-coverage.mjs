@@ -26,10 +26,11 @@ const rlReachable=rlHealth.filter(x=>x.status>=200&&x.status<400).length;
 const rlCandidates=Array.isArray(realtylink.candidates)?realtylink.candidates.length:0;
 const rlLane=realtylinkLaneHealth({reachable:rlReachable,total:rlHealth.length,candidates:rlCandidates,previousCompleteCount:reconciliation.realtylinkSnapshotCount||0,removalEligible:reconciliation.realtylinkRemovalEligible,suppression:reconciliation.mlsRemovalSuppressed});
 const rentalscaLane=marketplaceLaneHealth({reachable:countOk(rentalsca.sourceHealth),total:countTotal(rentalsca.sourceHealth),candidates:Array.isArray(rentalsca.inventories)?rentalsca.inventories.length:0});
+const craigslistLane=marketplaceLaneHealth({reachable:countOk(craigslist.sourceHealth),total:countTotal(craigslist.sourceHealth),candidates:Array.isArray(craigslist.candidates)?craigslist.candidates.length:0});
 const zumperFresh=zumper.filter(x=>fresh(x.liveCheckedAt));
 const discoveryLanes=[
   {id:'zumper',kind:'broad-marketplace',healthy:zumperFresh.length>=5,status:zumperFresh.length>=5?'healthy':'unhealthy',detail:`${zumperFresh.length} fresh live candidates`,refreshedAt:zumperFresh.map(x=>x.liveCheckedAt).sort().at(-1)||null},
-  {id:'craigslist',kind:'independent-classifieds',healthy:countOk(craigslist.sourceHealth)>=3,status:countOk(craigslist.sourceHealth)>=3?'healthy':countOk(craigslist.sourceHealth)>0?'degraded':'unhealthy',detail:`${countOk(craigslist.sourceHealth)}/${countTotal(craigslist.sourceHealth)} regional searches healthy`,refreshedAt:craigslist.refreshedAt||null},
+  {id:'craigslist',kind:'independent-classifieds',...craigslistLane,refreshedAt:craigslist.refreshedAt||null},
   {id:'rentalsca',kind:'broad-marketplace',...rentalscaLane,refreshedAt:rentalsca.refreshedAt||null},
   {id:'livrent',kind:'broad-marketplace',healthy:countOk(livrent.sourceHealth)>=1,status:countOk(livrent.sourceHealth)>=1?'healthy':'unhealthy',detail:`${countOk(livrent.sourceHealth)}/${countTotal(livrent.sourceHealth)} searches healthy`,refreshedAt:livrent.refreshedAt||null},
   {id:'realtylink',kind:'mls-rental',...rlLane,refreshedAt:realtylink.refreshedAt||null}
