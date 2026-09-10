@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-09-10T04:56:55.146Z",
+  "generatedAt": "2026-09-10T05:17:04.399Z",
   "activeCount": 19,
-  "decisionReady": false,
+  "decisionReady": true,
   "highIssueCount": 0,
   "mediumIssueCount": 0,
   "infoIssueCount": 31,
@@ -153,7 +153,7 @@
     },
     {
       "severity": "info",
-      "id": "mls-r3151372",
+      "id": "mls-r3159060",
       "issue": "unknown-orientation"
     },
     {
@@ -163,13 +163,19 @@
     }
   ],
   "readinessChecks": {
-    "smokeOk": false,
+    "smokeOk": true,
     "smokeFresh": true,
-    "smokeCheckedAt": "2026-09-10T04:56:56.844Z",
-    "latestDataAt": "2026-09-10T04:56:04.810Z",
+    "smokeCheckedAt": "2026-09-10T05:17:09.776Z",
+    "latestDataAt": "2026-09-10T05:15:40.174Z",
     "coverageReady": true,
-    "healthyDiscoveryLanes": 4,
+    "healthyDiscoveryLanes": 3,
     "coverageWarnings": [
+      {
+        "severity": "warning",
+        "lane": "rentalsca",
+        "status": "degraded",
+        "detail": "2/9 regional searches healthy"
+      },
       {
         "severity": "warning",
         "lane": "livrent",
@@ -178,11 +184,6 @@
       }
     ]
   },
-  "readinessIssues": [
-    {
-      "severity": "high",
-      "issue": "latest-browser-smoke-failed-or-missing"
-    }
-  ],
-  "finalizedAt": "2026-09-10T04:56:58.584Z"
+  "readinessIssues": [],
+  "finalizedAt": "2026-09-10T05:17:11.526Z"
 }
