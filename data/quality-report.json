@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-09-09T23:20:24.244Z",
+  "generatedAt": "2026-09-10T04:56:55.146Z",
   "activeCount": 19,
-  "decisionReady": true,
+  "decisionReady": false,
   "highIssueCount": 0,
   "mediumIssueCount": 0,
-  "infoIssueCount": 32,
+  "infoIssueCount": 31,
   "issues": [
     {
       "severity": "info",
@@ -138,16 +138,6 @@
     },
     {
       "severity": "info",
-      "id": "kits-walk-unit-605",
-      "issue": "unknown-ac"
-    },
-    {
-      "severity": "info",
-      "id": "kits-walk-unit-605",
-      "issue": "unknown-orientation"
-    },
-    {
-      "severity": "info",
       "id": "zumper-16e9ae17cd91",
       "issue": "unknown-ac"
     },
@@ -163,24 +153,23 @@
     },
     {
       "severity": "info",
+      "id": "mls-r3151372",
+      "issue": "unknown-orientation"
+    },
+    {
+      "severity": "info",
       "id": "mls-r3149267",
       "issue": "unknown-orientation"
     }
   ],
   "readinessChecks": {
-    "smokeOk": true,
+    "smokeOk": false,
     "smokeFresh": true,
-    "smokeCheckedAt": "2026-09-09T23:20:29.760Z",
-    "latestDataAt": "2026-09-09T23:19:31.158Z",
+    "smokeCheckedAt": "2026-09-10T04:56:56.844Z",
+    "latestDataAt": "2026-09-10T04:56:04.810Z",
     "coverageReady": true,
-    "healthyDiscoveryLanes": 3,
+    "healthyDiscoveryLanes": 4,
     "coverageWarnings": [
-      {
-        "severity": "warning",
-        "lane": "rentalsca",
-        "status": "degraded",
-        "detail": "2/9 regional searches healthy"
-      },
       {
         "severity": "warning",
         "lane": "livrent",
@@ -189,6 +178,11 @@
       }
     ]
   },
-  "readinessIssues": [],
-  "finalizedAt": "2026-09-09T23:20:31.557Z"
+  "readinessIssues": [
+    {
+      "severity": "high",
+      "issue": "latest-browser-smoke-failed-or-missing"
+    }
+  ],
+  "finalizedAt": "2026-09-10T04:56:58.584Z"
 }

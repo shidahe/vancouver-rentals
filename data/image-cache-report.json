@@ -1,11 +1,16 @@
 {
-  "refreshedAt": "2026-09-09T23:20:17.331Z",
+  "refreshedAt": "2026-09-10T04:56:48.770Z",
   "listings": {
     "arbutus-residences-315-2den-900": {
       "cached": 3,
       "preserved": 3,
       "downloaded": 0,
-      "failures": [],
+      "failures": [
+        {
+          "url": "https://rf-images-prod-bcdn.rentfaster.ca/454186/17802679.v.c07ac6fe3caaac1790c1a84fecc9fdb5.jpg",
+          "error": "HTTP 404"
+        }
+      ],
       "photoPageUrl": "https://www.rentfaster.ca/properties/2139-lahb-ave-vancouver-454186"
     },
     "arbutus-terrace-unit6-2den": {
@@ -538,7 +543,7 @@
     "sourceListings": 71,
     "cachedListings": 71,
     "downloaded": 0,
-    "failed": 8,
+    "failed": 9,
     "preserved": 339
   }
 }

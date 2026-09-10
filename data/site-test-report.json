@@ -1,57 +1,12 @@
 {
-  "checkedAt": "2026-09-09T23:20:29.760Z",
-  "ok": true,
+  "checkedAt": "2026-09-10T04:56:56.844Z",
+  "ok": false,
   "checkpoints": {
     "render": {
       "title": "Vancouver Westside Rentals",
       "cards": 19,
       "shown": 19
-    },
-    "stats": {
-      "labels": [
-        "Active",
-        "New",
-        "Price drops",
-        "To verify",
-        "Last refreshed"
-      ],
-      "values": [
-        "19",
-        "13",
-        "2",
-        "6",
-        "2026-09-09 23:11:58"
-      ],
-      "html": "<div class=\"stat\"><strong>19</strong><span>Active</span></div><div class=\"stat\"><strong>13</strong><span>New</span></div><div class=\"stat\"><strong>2</strong><span>Price drops</span></div><div class=\"stat\"><strong>6</strong><span>To verify</span></div><div class=\"stat\"><strong>2026-09-09 23:11:58</strong><span>Last refreshed</span></div>"
-    },
-    "map": {
-      "markers": 19,
-      "desktopMapVisible": true
-    },
-    "filters": "ok",
-    "localStorage": {
-      "favorite": true,
-      "notes": true,
-      "firstId": "19-greenway-c1-405-3619"
-    },
-    "sourceLink": "https://www.19otgreenway.com/floorplans",
-    "photos": {
-      "total": 19,
-      "loaded": 19,
-      "fallbacks": 0,
-      "bad": []
-    },
-    "markerPositions": {
-      "total": 19,
-      "unique": 19
-    },
-    "dataEndpoints": "ok",
-    "mobile": "ok",
-    "browserHealth": {
-      "consoleErrors": [],
-      "failedRequests": [],
-      "fatalHttpResponses": [],
-      "recoverableImageHttpResponses": []
     }
-  }
+  },
+  "error": "Error: Current Kits Walk Unit 605 is hidden by default preference filters\n    at assert (file:///home/runner/work/vancouver-rentals/vancouver-rentals/scripts/test-site.mjs:10:50)\n    at file:///home/runner/work/vancouver-rentals/vancouver-rentals/scripts/test-site.mjs:49:3"
 }
