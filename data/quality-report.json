@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-10T11:33:16.601Z",
+  "generatedAt": "2026-09-10T16:36:36.996Z",
   "activeCount": 18,
   "decisionReady": true,
   "highIssueCount": 0,
@@ -160,25 +160,25 @@
   "readinessChecks": {
     "smokeOk": true,
     "smokeFresh": true,
-    "smokeCheckedAt": "2026-09-10T11:33:21.852Z",
-    "latestDataAt": "2026-09-10T11:32:30.454Z",
+    "smokeCheckedAt": "2026-09-10T16:36:42.640Z",
+    "latestDataAt": "2026-09-10T16:35:45.603Z",
     "coverageReady": true,
     "healthyDiscoveryLanes": 3,
     "coverageWarnings": [
       {
         "severity": "warning",
-        "lane": "rentalsca",
-        "status": "degraded",
-        "detail": "2/9 regional searches healthy"
-      },
-      {
-        "severity": "warning",
         "lane": "livrent",
         "status": "unhealthy",
         "detail": "0/5 searches healthy"
+      },
+      {
+        "severity": "warning",
+        "lane": "realtylink",
+        "status": "degraded",
+        "detail": "3/3 searches reachable; partial snapshot parsed 1 candidates versus complete baseline 3; removals suppressed"
       }
     ]
   },
   "readinessIssues": [],
-  "finalizedAt": "2026-09-10T11:33:23.560Z"
+  "finalizedAt": "2026-09-10T16:36:44.470Z"
 }
