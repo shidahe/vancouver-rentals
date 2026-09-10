@@ -7,7 +7,7 @@ import { aggregateUnitCount, discoveredStructuredInventories, structuredRentalIn
 import { dedupeHistoryEvents, pruneExcludedScopeChurn } from './history-policy.mjs';
 import { verifiedPhotoCandidates } from './listing-photo-candidates.mjs';
 import { isRealtylinkListingNotFoundRedirect, isTargetWestsideCoordinate, parseRealtylinkCoordinateValues, parseRealtylinkCoordinates, parseRealtylinkFloorArea, parseRealtylinkRoomCount } from './realtylink-parser.mjs';
-import { realtylinkLaneHealth } from './coverage-policy.mjs';
+import { marketplaceLaneHealth, realtylinkLaneHealth } from './coverage-policy.mjs';
 import { exactPurposeBuiltFloorplanEvidence } from './purposebuilt-floorplan-evidence.mjs';
 import { dedupeMlsRecords } from './mls-dedupe.mjs';
 
@@ -119,6 +119,10 @@ const partialRealtylink=realtylinkLaneHealth({reachable:3,total:3,candidates:3,p
 if(partialRealtylink.healthy||partialRealtylink.status!=='degraded'||!partialRealtylink.partial) failures.push('A partial Realtylink snapshot is still reported as a healthy coverage lane.');
 const completeRealtylink=realtylinkLaneHealth({reachable:3,total:3,candidates:10,previousCompleteCount:10,removalEligible:true});
 if(!completeRealtylink.healthy||completeRealtylink.status!=='healthy') failures.push('A complete Realtylink snapshot is not reported as healthy.');
+const emptyMarketplace=marketplaceLaneHealth({reachable:6,total:9,candidates:0});
+if(emptyMarketplace.healthy||emptyMarketplace.status!=='degraded'||!/0 qualifying candidates/.test(emptyMarketplace.detail)) failures.push('A reachable marketplace with zero parsed candidates is still reported as a healthy discovery lane.');
+const productiveMarketplace=marketplaceLaneHealth({reachable:3,total:9,candidates:1});
+if(!productiveMarketplace.healthy||productiveMarketplace.status!=='healthy') failures.push('A reachable marketplace with parsed candidates is not reported as healthy.');
 if (!catalog.discovery.some(x=>x.id==='kits-walk-rentalsca'&&/kits-walk-by-strand/.test(x.url))) {
   failures.push('Kits Walk aggregate inventory source is missing.');
 }
