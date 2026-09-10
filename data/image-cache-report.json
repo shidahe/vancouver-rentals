@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-09-10T11:10:22.650Z",
+  "refreshedAt": "2026-09-10T11:19:30.274Z",
   "listings": {
     "york-103-2535-r3137446": {
       "cached": 5,
@@ -104,7 +104,7 @@
       "preserved": 5,
       "downloaded": 0,
       "failures": [],
-      "photoPageUrl": "https://realtylink.org/en/townhouse~for-rent~vancouver/263182316"
+      "photoPageUrl": "https://www.zumper.com/address/3349-dunbar-st-vancouver-bc-v6s-2b9-can"
     },
     "mls-r3150923": {
       "cached": 5,
@@ -140,16 +140,23 @@
       "downloaded": 0,
       "failures": [],
       "photoPageUrl": "https://realtylink.org/en/apartment~for-rent~vancouver/263170894"
+    },
+    "mls-r3163709": {
+      "cached": 5,
+      "preserved": 0,
+      "downloaded": 5,
+      "failures": [],
+      "photoPageUrl": "https://realtylink.org/en/house~for-rent~vancouver/263185336"
     }
   },
   "totals": {
-    "sourceListings": 20,
-    "cachedListings": 20,
-    "downloaded": 0,
+    "sourceListings": 21,
+    "cachedListings": 21,
+    "downloaded": 5,
     "failed": 0,
     "preserved": 96,
-    "prunedListings": 57,
-    "prunedIndexImages": 253,
-    "prunedOrphanFiles": 38
+    "prunedListings": 0,
+    "prunedIndexImages": 0,
+    "prunedOrphanFiles": 0
   }
 }
