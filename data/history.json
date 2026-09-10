@@ -1283,6 +1283,11 @@
       "date": "2026-09-10",
       "rent": 5995,
       "note": "CORRECTED: restored after exact current MLS detail matched identity, explicit availability and rent."
+    },
+    {
+      "date": "2026-09-10",
+      "rent": 5995,
+      "note": "AUTO-REMOVED: MLS R3158179 absent from two consecutive healthy inventory snapshots."
     }
   ],
   "mls-r2907080": [
@@ -1500,6 +1505,11 @@
       "date": "2026-09-10",
       "rent": 6000,
       "note": "NEW: live Realtylink MLS R3163709 auto-published."
+    },
+    {
+      "date": "2026-09-10",
+      "rent": 6000,
+      "note": "CORRECTED: restored after exact current MLS detail matched identity, explicit availability and rent."
     }
   ]
 }
