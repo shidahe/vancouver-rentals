@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-09-11T06:36:24.112Z",
+  "refreshedAt": "2026-09-11T11:09:00.334Z",
   "groups": [
     {
       "identityKey": "3220 4th ave w::url:4b1a6ebe2d36",
@@ -122,15 +122,483 @@
       "result": "candidate_only"
     },
     {
-      "identityKey": "mls:r3150923",
+      "identityKey": "kitsilano::url:649c3743ae04",
       "sources": [
-        "realtylink mls"
+        "craigslist"
+      ],
+      "rents": [
+        6200
+      ],
+      "exactUnit": false,
+      "matchedListingId": null,
+      "result": "candidate_only"
+    },
+    {
+      "identityKey": "kitsilano::url:57b10ff789e4",
+      "sources": [
+        "craigslist"
+      ],
+      "rents": [
+        3995
+      ],
+      "exactUnit": false,
+      "matchedListingId": null,
+      "result": "candidate_only"
+    },
+    {
+      "identityKey": "kitsilano::url:05b5fb2d3eb1",
+      "sources": [
+        "craigslist"
+      ],
+      "rents": [
+        4595
+      ],
+      "exactUnit": false,
+      "matchedListingId": null,
+      "result": "candidate_only"
+    },
+    {
+      "identityKey": "kitsilano::url:789223e5a717",
+      "sources": [
+        "craigslist"
+      ],
+      "rents": [
+        10500
+      ],
+      "exactUnit": false,
+      "matchedListingId": null,
+      "result": "candidate_only"
+    },
+    {
+      "identityKey": "vancouver::url:0a21062aa06b",
+      "sources": [
+        "craigslist"
+      ],
+      "rents": [
+        4000
+      ],
+      "exactUnit": false,
+      "matchedListingId": null,
+      "result": "candidate_only"
+    },
+    {
+      "identityKey": "vancouver::url:6329879d9043",
+      "sources": [
+        "craigslist"
+      ],
+      "rents": [
+        4000
+      ],
+      "exactUnit": false,
+      "matchedListingId": null,
+      "result": "candidate_only"
+    },
+    {
+      "identityKey": "vancouver::url:4c78e76e3fa7",
+      "sources": [
+        "craigslist"
+      ],
+      "rents": [
+        3700
+      ],
+      "exactUnit": false,
+      "matchedListingId": null,
+      "result": "candidate_only"
+    },
+    {
+      "identityKey": "vancouver::url:139b000f2bc5",
+      "sources": [
+        "craigslist"
+      ],
+      "rents": [
+        3650
+      ],
+      "exactUnit": false,
+      "matchedListingId": null,
+      "result": "candidate_only"
+    },
+    {
+      "identityKey": "kitsilano::url:a0b4229e6cb4",
+      "sources": [
+        "craigslist"
+      ],
+      "rents": [
+        4500
+      ],
+      "exactUnit": false,
+      "matchedListingId": null,
+      "result": "candidate_only"
+    },
+    {
+      "identityKey": "city of vancouver::url:4e11abbefc3b",
+      "sources": [
+        "craigslist"
+      ],
+      "rents": [
+        8000
+      ],
+      "exactUnit": false,
+      "matchedListingId": null,
+      "result": "candidate_only"
+    },
+    {
+      "identityKey": "vancouver arbutus ridge kitsilano::url:819b83847bb7",
+      "sources": [
+        "craigslist"
+      ],
+      "rents": [
+        3950
+      ],
+      "exactUnit": false,
+      "matchedListingId": null,
+      "result": "candidate_only"
+    },
+    {
+      "identityKey": "kitsilano::url:8bf4ea943e2b",
+      "sources": [
+        "craigslist"
+      ],
+      "rents": [
+        3900
+      ],
+      "exactUnit": false,
+      "matchedListingId": null,
+      "result": "candidate_only"
+    },
+    {
+      "identityKey": "kitsilano on the park::url:949a4028673a",
+      "sources": [
+        "craigslist"
+      ],
+      "rents": [
+        5695
+      ],
+      "exactUnit": false,
+      "matchedListingId": null,
+      "result": "candidate_only"
+    },
+    {
+      "identityKey": "kitsilano::url:372dead4f846",
+      "sources": [
+        "craigslist"
+      ],
+      "rents": [
+        3550
+      ],
+      "exactUnit": false,
+      "matchedListingId": null,
+      "result": "candidate_only"
+    },
+    {
+      "identityKey": "arbutus ridge::url:0ed00aa1e937",
+      "sources": [
+        "craigslist"
+      ],
+      "rents": [
+        3500
+      ],
+      "exactUnit": false,
+      "matchedListingId": null,
+      "result": "candidate_only"
+    },
+    {
+      "identityKey": "kitsilano::url:919308cdb569",
+      "sources": [
+        "craigslist"
+      ],
+      "rents": [
+        5000
+      ],
+      "exactUnit": false,
+      "matchedListingId": null,
+      "result": "candidate_only"
+    },
+    {
+      "identityKey": "city of vancouver::url:bb60df601e64",
+      "sources": [
+        "craigslist"
+      ],
+      "rents": [
+        6200
+      ],
+      "exactUnit": false,
+      "matchedListingId": null,
+      "result": "candidate_only"
+    },
+    {
+      "identityKey": "city of vancouver::url:2a8d0812a93e",
+      "sources": [
+        "craigslist"
+      ],
+      "rents": [
+        3800
+      ],
+      "exactUnit": false,
+      "matchedListingId": null,
+      "result": "candidate_only"
+    },
+    {
+      "identityKey": "kitsilano::url:ee65454581e0",
+      "sources": [
+        "craigslist"
+      ],
+      "rents": [
+        7750
+      ],
+      "exactUnit": false,
+      "matchedListingId": null,
+      "result": "candidate_only"
+    },
+    {
+      "identityKey": "kitsilano::url:9fe6976311ec",
+      "sources": [
+        "craigslist"
+      ],
+      "rents": [
+        3700
+      ],
+      "exactUnit": false,
+      "matchedListingId": null,
+      "result": "candidate_only"
+    },
+    {
+      "identityKey": "vancouver::url:a7d78e252ec1",
+      "sources": [
+        "craigslist"
+      ],
+      "rents": [
+        3900
+      ],
+      "exactUnit": false,
+      "matchedListingId": null,
+      "result": "candidate_only"
+    },
+    {
+      "identityKey": "spacious 4 bedroom detached house for rent in vancouver s arbutus area::url:2a430f96ecb0",
+      "sources": [
+        "craigslist"
+      ],
+      "rents": [
+        4800
+      ],
+      "exactUnit": false,
+      "matchedListingId": null,
+      "result": "candidate_only"
+    },
+    {
+      "identityKey": "vancouver::url:1790154a39c8",
+      "sources": [
+        "craigslist"
+      ],
+      "rents": [
+        3695
+      ],
+      "exactUnit": false,
+      "matchedListingId": null,
+      "result": "candidate_only"
+    },
+    {
+      "identityKey": "vancouver::url:cf67d31b969b",
+      "sources": [
+        "craigslist"
+      ],
+      "rents": [
+        4300
+      ],
+      "exactUnit": false,
+      "matchedListingId": null,
+      "result": "candidate_only"
+    },
+    {
+      "identityKey": "city of vancouver::url:be84e1b1ec98",
+      "sources": [
+        "craigslist"
+      ],
+      "rents": [
+        3500
+      ],
+      "exactUnit": false,
+      "matchedListingId": null,
+      "result": "candidate_only"
+    },
+    {
+      "identityKey": "vancouver::url:ab6d2714b32f",
+      "sources": [
+        "craigslist"
       ],
       "rents": [
         4680
       ],
       "exactUnit": false,
-      "matchedListingId": "mls-r3150923",
+      "matchedListingId": null,
+      "result": "candidate_only"
+    },
+    {
+      "identityKey": "vancouver::url:c17ac3d6e782",
+      "sources": [
+        "craigslist"
+      ],
+      "rents": [
+        4300
+      ],
+      "exactUnit": false,
+      "matchedListingId": null,
+      "result": "candidate_only"
+    },
+    {
+      "identityKey": "vancouver::url:6fcd0c7610c8",
+      "sources": [
+        "craigslist"
+      ],
+      "rents": [
+        4300
+      ],
+      "exactUnit": false,
+      "matchedListingId": null,
+      "result": "candidate_only"
+    },
+    {
+      "identityKey": "city of vancouver::url:6eff662d8966",
+      "sources": [
+        "craigslist"
+      ],
+      "rents": [
+        3800
+      ],
+      "exactUnit": false,
+      "matchedListingId": null,
+      "result": "candidate_only"
+    },
+    {
+      "identityKey": "city of vancouver::url:7ca76a3b1c55",
+      "sources": [
+        "craigslist"
+      ],
+      "rents": [
+        5500
+      ],
+      "exactUnit": false,
+      "matchedListingId": null,
+      "result": "candidate_only"
+    },
+    {
+      "identityKey": "w point grey::url:aa03650bb32d",
+      "sources": [
+        "craigslist"
+      ],
+      "rents": [
+        15000
+      ],
+      "exactUnit": false,
+      "matchedListingId": null,
+      "result": "candidate_only"
+    },
+    {
+      "identityKey": "vancouver dunbar vancouver w::url:25fe04eb2d92",
+      "sources": [
+        "craigslist"
+      ],
+      "rents": [
+        6500
+      ],
+      "exactUnit": false,
+      "matchedListingId": null,
+      "result": "candidate_only"
+    },
+    {
+      "identityKey": "point grey::url:27af75d482ae",
+      "sources": [
+        "craigslist"
+      ],
+      "rents": [
+        5000
+      ],
+      "exactUnit": false,
+      "matchedListingId": null,
+      "result": "candidate_only"
+    },
+    {
+      "identityKey": "point grey::url:5e79d61e8e98",
+      "sources": [
+        "craigslist"
+      ],
+      "rents": [
+        4600
+      ],
+      "exactUnit": false,
+      "matchedListingId": null,
+      "result": "candidate_only"
+    },
+    {
+      "identityKey": "point grey::url:619762b61870",
+      "sources": [
+        "craigslist"
+      ],
+      "rents": [
+        4600
+      ],
+      "exactUnit": false,
+      "matchedListingId": null,
+      "result": "candidate_only"
+    },
+    {
+      "identityKey": "vancouver::url:d3c4ddeb6f8b",
+      "sources": [
+        "craigslist"
+      ],
+      "rents": [
+        5400
+      ],
+      "exactUnit": false,
+      "matchedListingId": null,
+      "result": "candidate_only"
+    },
+    {
+      "identityKey": "kerrisdale::url:b42d7300106c",
+      "sources": [
+        "craigslist"
+      ],
+      "rents": [
+        3500
+      ],
+      "exactUnit": false,
+      "matchedListingId": null,
+      "result": "candidate_only"
+    },
+    {
+      "identityKey": "w point grey::url:636cf36569b6",
+      "sources": [
+        "craigslist"
+      ],
+      "rents": [
+        5795
+      ],
+      "exactUnit": false,
+      "matchedListingId": null,
+      "result": "candidate_only"
+    },
+    {
+      "identityKey": "dunbar::url:441d589a256b",
+      "sources": [
+        "craigslist"
+      ],
+      "rents": [
+        5200
+      ],
+      "exactUnit": false,
+      "matchedListingId": null,
+      "result": "candidate_only"
+    },
+    {
+      "identityKey": "mls:r3160689",
+      "sources": [
+        "realtylink mls"
+      ],
+      "rents": [
+        4950
+      ],
+      "exactUnit": true,
+      "matchedListingId": "zumper-16e9ae17cd91",
       "result": "authoritative_mls_reverified"
     },
     {
@@ -144,85 +612,23 @@
       "exactUnit": true,
       "matchedListingId": "york-103-2535-r3137446",
       "result": "authoritative_mls_reverified"
-    },
-    {
-      "identityKey": "mls:r3148298",
-      "sources": [
-        "realtylink mls"
-      ],
-      "rents": [
-        5200
-      ],
-      "exactUnit": false,
-      "matchedListingId": "mls-r3148298",
-      "result": "authoritative_mls_reverified"
-    },
-    {
-      "identityKey": "mls:r3161880",
-      "sources": [
-        "realtylink mls"
-      ],
-      "rents": [
-        8800
-      ],
-      "exactUnit": false,
-      "matchedListingId": "mls-r3161880",
-      "result": "authoritative_mls_reverified"
-    },
-    {
-      "identityKey": "mls:r3161950",
-      "sources": [
-        "realtylink mls"
-      ],
-      "rents": [
-        4000
-      ],
-      "exactUnit": false,
-      "matchedListingId": "mls-r3161950",
-      "result": "authoritative_mls_reverified"
     }
   ],
   "promoted": [],
   "crossVerified": [
-    "mls-r3150923",
-    "york-103-2535-r3137446",
-    "mls-r3148298",
-    "mls-r3161880",
-    "mls-r3161950"
+    "zumper-16e9ae17cd91",
+    "york-103-2535-r3137446"
   ],
   "fingerprintCrossVerified": [],
   "maskedMlsMerged": [],
   "relistedMlsMerged": [],
   "negativeMatches": [],
-  "detailReactivated": [
-    "mls-r3161880",
-    "mls-r3161950"
-  ],
-  "mlsMissing": {
-    "R3151022": {
-      "firstMissingAt": "2026-09-11T05:43:31.626Z",
-      "lastMissingAt": "2026-09-11T06:36:24.112Z",
-      "listingId": "mls-r3151022"
-    },
-    "R3151372": {
-      "firstMissingAt": "2026-09-11T06:10:10.083Z",
-      "lastMissingAt": "2026-09-11T06:36:24.112Z",
-      "listingId": "mls-r3151372"
-    },
-    "R3158179": {
-      "firstMissingAt": "2026-09-11T06:10:10.083Z",
-      "lastMissingAt": "2026-09-11T06:36:24.112Z",
-      "listingId": "mls-r3158179"
-    },
-    "R3163709": {
-      "firstMissingAt": "2026-09-11T06:25:20.648Z",
-      "lastMissingAt": "2026-09-11T06:36:24.112Z",
-      "listingId": "mls-r3163709"
-    }
-  },
+  "detailReactivated": [],
+  "mlsMissing": {},
   "mlsRemoved": [],
   "realtylinkSnapshotCount": 5,
   "realtylinkSnapshotScope": "rent-3500-beds-2-4-whole-home-westside-v2",
-  "realtylinkRemovalEligible": true,
+  "realtylinkRemovalEligible": false,
+  "mlsRemovalSuppressed": "Partial Realtylink snapshot (2 candidates versus previous complete 5); disappearance signals ignored.",
   "mlsDuplicatesMerged": []
 }

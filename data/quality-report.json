@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-09-11T06:37:12.624Z",
-  "activeCount": 20,
+  "generatedAt": "2026-09-11T11:09:49.608Z",
+  "activeCount": 21,
   "decisionReady": true,
   "highIssueCount": 0,
   "mediumIssueCount": 0,
-  "infoIssueCount": 32,
+  "infoIssueCount": 33,
   "issues": [
     {
       "severity": "info",
@@ -79,6 +79,11 @@
     {
       "severity": "info",
       "id": "zumper-75ff287e7a72",
+      "issue": "unknown-orientation"
+    },
+    {
+      "severity": "info",
+      "id": "arbutus-residences-floorplan-2-bedroom-townhouse-den-1340",
       "issue": "unknown-orientation"
     },
     {
@@ -170,31 +175,31 @@
   "readinessChecks": {
     "smokeOk": true,
     "smokeFresh": true,
-    "smokeCheckedAt": "2026-09-11T06:37:17.998Z",
-    "latestDataAt": "2026-09-11T06:36:25.468Z",
+    "smokeCheckedAt": "2026-09-11T11:09:54.532Z",
+    "latestDataAt": "2026-09-11T11:09:04.274Z",
     "coverageReady": true,
-    "healthyDiscoveryLanes": 2,
+    "healthyDiscoveryLanes": 3,
     "coverageWarnings": [
-      {
-        "severity": "warning",
-        "lane": "craigslist",
-        "status": "degraded",
-        "detail": "4/4 regional searches reachable; 0 qualifying candidates parsed"
-      },
       {
         "severity": "warning",
         "lane": "rentalsca",
         "status": "degraded",
-        "detail": "6/9 regional searches reachable; 0 qualifying candidates parsed"
+        "detail": "2/9 regional searches reachable; 0 qualifying candidates parsed"
       },
       {
         "severity": "warning",
         "lane": "livrent",
         "status": "unhealthy",
         "detail": "0/5 searches healthy"
+      },
+      {
+        "severity": "warning",
+        "lane": "realtylink",
+        "status": "degraded",
+        "detail": "3/3 searches reachable; 2 current live candidates parsed from a partial snapshot versus complete baseline 5; positive discovery usable, removals suppressed"
       }
     ]
   },
   "readinessIssues": [],
-  "finalizedAt": "2026-09-11T06:37:19.612Z"
+  "finalizedAt": "2026-09-11T11:09:56.111Z"
 }
