@@ -2,6 +2,7 @@ import fs from 'node:fs/promises';
 import path from 'node:path';
 import { aggregateUnitCount } from './priority-inventory-policy.mjs';
 import { marketplaceLaneHealth, realtylinkLaneHealth } from './coverage-policy.mjs';
+import { listingScopeEligible } from './discovery-policy.mjs';
 
 const DATA=path.join(process.cwd(),'data');
 const read=async(p,d)=>{try{return JSON.parse(await fs.readFile(p,'utf8'))}catch{return d}};
@@ -25,7 +26,8 @@ const rlHealth=Array.isArray(realtylink.health)?realtylink.health:[];
 const rlReachable=rlHealth.filter(x=>x.status>=200&&x.status<400).length;
 const rlCandidates=Array.isArray(realtylink.candidates)?realtylink.candidates.length:0;
 const rlLane=realtylinkLaneHealth({reachable:rlReachable,total:rlHealth.length,candidates:rlCandidates,previousCompleteCount:reconciliation.realtylinkSnapshotCount||0,removalEligible:reconciliation.realtylinkRemovalEligible,suppression:reconciliation.mlsRemovalSuppressed});
-const rentalscaLane=marketplaceLaneHealth({reachable:countOk(rentalsca.sourceHealth),total:countTotal(rentalsca.sourceHealth),candidates:Array.isArray(rentalsca.inventories)?rentalsca.inventories.length:0});
+const rentalscaCandidates=Array.isArray(rentalsca.inventories)?rentalsca.inventories.filter(x=>listingScopeEligible({rent:x.rent,bedrooms:x.bedrooms},x.floorplan||x.address||'')):[];
+const rentalscaLane=marketplaceLaneHealth({reachable:countOk(rentalsca.sourceHealth),total:countTotal(rentalsca.sourceHealth),candidates:rentalscaCandidates.length});
 const craigslistLane=marketplaceLaneHealth({reachable:countOk(craigslist.sourceHealth),total:countTotal(craigslist.sourceHealth),candidates:Array.isArray(craigslist.candidates)?craigslist.candidates.length:0});
 const zumperFresh=zumper.filter(x=>fresh(x.liveCheckedAt));
 const discoveryLanes=[
