@@ -1,17 +1,17 @@
 {
-  "refreshedAt": "2026-09-11T06:22:27.979Z",
+  "refreshedAt": "2026-09-11T06:33:33.804Z",
   "mode": "candidate-only",
   "sourceHealth": {
     "kitsilano": {
-      "checkedAt": "2026-09-11T06:22:27.979Z",
+      "checkedAt": "2026-09-11T06:33:33.804Z",
       "status": 200,
       "ok": true,
       "finalUrl": "https://www.craigslist.org/search/subarea/van?cat=apa&min_bedrooms=2&query=kitsilano",
-      "anchorCount": 290,
-      "detailLinkCount": 268,
-      "embeddedDetailLinkCount": 134,
+      "anchorCount": 292,
+      "detailLinkCount": 270,
+      "embeddedDetailLinkCount": 135,
       "resultContainerCount": 135,
-      "postIdCount": 134,
+      "postIdCount": 135,
       "hrefShapeSamples": [
         "www.craigslist.org/subarea/van",
         "www.craigslist.org/favorites",
@@ -23,21 +23,21 @@
         "www.craigslist.org/about/prohibited",
         "www.craigslist.org/about/recalled_items",
         "www.craigslist.org/about/help/safety/scams",
-        "www.craigslist.org/view/d/vancouver-prime-kitsilano-location/aySKoCQFweXkchv5ithiCt",
-        "www.craigslist.org/view/d/vancouver-kitsilano-2br-garden-suite/ip9UMamrmPxkdKDuezwah7"
+        "www.craigslist.org/view/d/vancouver-fully-furnished-kitsilano/w8GVaQpvy6MdXKyWX5TWEE",
+        "www.craigslist.org/view/d/vancouver-prime-kitsilano-location/aySKoCQFweXkchv5ithiCt"
       ],
       "title": "vancouver apartments / housing for rent \"kitsilano\" - craigslist"
     },
     "arbutus": {
-      "checkedAt": "2026-09-11T06:22:27.979Z",
+      "checkedAt": "2026-09-11T06:33:33.804Z",
       "status": 200,
       "ok": true,
       "finalUrl": "https://www.craigslist.org/search/subarea/van?cat=apa&min_bedrooms=2&query=arbutus",
-      "anchorCount": 178,
-      "detailLinkCount": 156,
-      "embeddedDetailLinkCount": 78,
-      "resultContainerCount": 78,
-      "postIdCount": 78,
+      "anchorCount": 180,
+      "detailLinkCount": 158,
+      "embeddedDetailLinkCount": 79,
+      "resultContainerCount": 81,
+      "postIdCount": 79,
       "hrefShapeSamples": [
         "www.craigslist.org/subarea/van",
         "www.craigslist.org/favorites",
@@ -55,7 +55,7 @@
       "title": "vancouver apartments / housing for rent \"arbutus\" - craigslist"
     },
     "point-grey": {
-      "checkedAt": "2026-09-11T06:22:27.979Z",
+      "checkedAt": "2026-09-11T06:33:33.804Z",
       "status": 200,
       "ok": true,
       "finalUrl": "https://www.craigslist.org/search/subarea/van?cat=apa&min_bedrooms=2&query=point%20grey",
@@ -81,7 +81,7 @@
       "title": "vancouver apartments / housing for rent \"point grey\" - craigslist"
     },
     "dunbar": {
-      "checkedAt": "2026-09-11T06:22:27.979Z",
+      "checkedAt": "2026-09-11T06:33:33.804Z",
       "status": 200,
       "ok": true,
       "finalUrl": "https://www.craigslist.org/search/subarea/van?cat=apa&min_bedrooms=2&query=dunbar",
@@ -108,7 +108,7 @@
     }
   },
   "diagnostics": {
-    "discoveredDetailUrls": 329,
+    "discoveredDetailUrls": 330,
     "detailChecks": 120,
     "expiredOrRemoved": 0,
     "missingRentOrBedrooms": 120,

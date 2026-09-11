@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-09-11T06:26:07.327Z",
+  "refreshedAt": "2026-09-11T06:37:11.378Z",
   "listings": {
     "york-103-2535-r3137446": {
       "cached": 5,
@@ -104,7 +104,7 @@
       "preserved": 5,
       "downloaded": 0,
       "failures": [],
-      "photoPageUrl": "https://realtylink.org/en/townhouse~for-rent~vancouver/263182316"
+      "photoPageUrl": "https://www.zumper.com/address/3349-dunbar-st-vancouver-bc-v6s-2b9-can"
     },
     "mls-r3150923": {
       "cached": 5,
@@ -115,10 +115,24 @@
     },
     "mls-r3148298": {
       "cached": 5,
+      "preserved": 5,
+      "downloaded": 0,
+      "failures": [],
+      "photoPageUrl": "https://realtylink.org/en/house~for-rent~vancouver/263169925"
+    },
+    "mls-r3161880": {
+      "cached": 5,
       "preserved": 0,
       "downloaded": 5,
       "failures": [],
-      "photoPageUrl": "https://realtylink.org/en/house~for-rent~vancouver/263169925"
+      "photoPageUrl": "https://realtylink.org/en/house~for-rent~vancouver/263183507"
+    },
+    "mls-r3161950": {
+      "cached": 5,
+      "preserved": 0,
+      "downloaded": 5,
+      "failures": [],
+      "photoPageUrl": "https://realtylink.org/en/house~for-rent~vancouver/263183577"
     },
     "mls-r3149267": {
       "cached": 5,
@@ -129,13 +143,13 @@
     }
   },
   "totals": {
-    "sourceListings": 18,
-    "cachedListings": 18,
-    "downloaded": 5,
+    "sourceListings": 20,
+    "cachedListings": 20,
+    "downloaded": 10,
     "failed": 0,
-    "preserved": 81,
-    "prunedListings": 3,
-    "prunedIndexImages": 15,
+    "preserved": 86,
+    "prunedListings": 0,
+    "prunedIndexImages": 0,
     "prunedOrphanFiles": 0
   }
 }
