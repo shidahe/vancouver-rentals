@@ -10,7 +10,7 @@ import { isRealtylinkListingNotFoundRedirect, isTargetWestsideCoordinate, parseR
 import { marketplaceLaneHealth, realtylinkLaneHealth } from './coverage-policy.mjs';
 import { exactPurposeBuiltFloorplanEvidence } from './purposebuilt-floorplan-evidence.mjs';
 import { dedupeMlsRecords } from './mls-dedupe.mjs';
-import { craigslistPostId, normalizeCraigslistDetailUrl } from './craigslist-parser.mjs';
+import { craigslistPostId, extractCraigslistDetailUrls, normalizeCraigslistDetailUrl } from './craigslist-parser.mjs';
 
 const read = p => fs.readFile(p, 'utf8');
 const activeAdapters = [
@@ -37,7 +37,8 @@ const imageCacheSource = await read('scripts/cache-listing-images.mjs');
 const failures = [];
 const craigslistWww=normalizeCraigslistDetailUrl('/van/apa/d/vancouver-kitsilano-home/7890123456.html?lang=en','https://www.craigslist.org/search/subarea/van');
 const craigslistLegacy=normalizeCraigslistDetailUrl('https://vancouver.craigslist.org/van/apa/d/vancouver-kitsilano-home/7890123456.html');
-if(!craigslistWww||!craigslistLegacy||craigslistPostId(craigslistWww)!=='7890123456'||normalizeCraigslistDetailUrl('https://example.com/van/apa/d/fake/7890123456.html')) failures.push('Craigslist detail URL normalization rejects the current www host or accepts a non-Craigslist host.');
+const craigslistEmbedded=extractCraigslistDetailUrls('{"url":"https:\\/\\/www.craigslist.org\\/vancouver-bc\\/apa\\/d\\/kitsilano-home\\/7890123457.html?lang=en"}');
+if(!craigslistWww||!craigslistLegacy||craigslistPostId(craigslistWww)!=='7890123456'||craigslistPostId(craigslistEmbedded[0])!=='7890123457'||normalizeCraigslistDetailUrl('https://example.com/van/apa/d/fake/7890123456.html')) failures.push('Craigslist detail URL normalization rejects current host/path or embedded formats, or accepts a non-Craigslist host.');
 const duplicateMlsHistory={legacy:[{date:'2026-09-08',rent:4950,note:'legacy'}],canonical:[{date:'2026-09-09',rent:4950,note:'canonical'}]};
 const duplicateMlsImages={legacy:{candidates:['legacy.jpg']}};
 const duplicateMlsResult=dedupeMlsRecords([
@@ -130,7 +131,7 @@ if(emptyMarketplace.healthy||emptyMarketplace.status!=='degraded'||!/0 qualifyin
 const productiveMarketplace=marketplaceLaneHealth({reachable:3,total:9,candidates:1});
 if(!productiveMarketplace.healthy||productiveMarketplace.status!=='healthy') failures.push('A reachable marketplace with parsed candidates is not reported as healthy.');
 if(!coverageSource.includes('const craigslistLane=marketplaceLaneHealth')||!coverageSource.includes("{id:'craigslist',kind:'independent-classifieds',...craigslistLane")) failures.push('Craigslist can still be reported healthy when every reachable search produces zero candidates.');
-if(!source.includes('normalizeCraigslistDetailUrl(u,page.url())')||!source.includes('discoveredDetailUrls:urls.size')||!source.includes('detailLinkCount=acceptedLinks')) failures.push('Craigslist zero-yield runs do not expose link discovery and rejection diagnostics.');
+if(!source.includes('normalizeCraigslistDetailUrl(u,page.url())')||!source.includes('extractCraigslistDetailUrls(await page.content()')||!source.includes('discoveredDetailUrls:urls.size')||!source.includes('embeddedDetailLinkCount=embeddedLinks.length')) failures.push('Craigslist zero-yield runs do not inspect embedded results or expose link discovery diagnostics.');
 if(!coverageSource.includes('(x.healthy||x.positiveDiscoveryHealthy)')||!coverageSource.includes('const independentHealthy=healthyDiscovery.some')) failures.push('Exact positive MLS discovery is still coupled to snapshot removal completeness.');
 if(!source.includes("if(/\\b(?:apartments?|condos?|houses?)\\s+in\\s+vancouver\\b/i.test(lines[i]))continue")||!source.includes("floorplans=parseFloorplans(text).filter(x=>listingScopeEligible")||!source.includes("else if(listingScopeEligible({rent:single.rent,bedrooms:single.beds},text))")) failures.push('Rentals.ca generic navigation rows or out-of-scope rents can still become discovery candidates.');
 if(!coverageSource.includes('rentalsca.inventories.filter(x=>listingScopeEligible')) failures.push('Out-of-scope Rentals.ca rows can still make the coverage lane appear productive.');
