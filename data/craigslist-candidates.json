@@ -1,31 +1,49 @@
 {
-  "refreshedAt": "2026-09-11T05:15:32.807Z",
+  "refreshedAt": "2026-09-11T05:33:25.986Z",
   "mode": "candidate-only",
   "sourceHealth": {
     "kitsilano": {
-      "checkedAt": "2026-09-11T05:15:32.807Z",
+      "checkedAt": "2026-09-11T05:33:25.986Z",
       "status": 200,
       "ok": true,
-      "finalUrl": "https://www.craigslist.org/search/subarea/van?cat=apa&min_bedrooms=2&query=kitsilano"
+      "finalUrl": "https://www.craigslist.org/search/subarea/van?cat=apa&min_bedrooms=2&query=kitsilano",
+      "anchorCount": 290,
+      "detailLinkCount": 0
     },
     "arbutus": {
-      "checkedAt": "2026-09-11T05:15:32.807Z",
+      "checkedAt": "2026-09-11T05:33:25.986Z",
       "status": 200,
       "ok": true,
-      "finalUrl": "https://www.craigslist.org/search/subarea/van?cat=apa&min_bedrooms=2&query=arbutus"
+      "finalUrl": "https://www.craigslist.org/search/subarea/van?cat=apa&min_bedrooms=2&query=arbutus",
+      "anchorCount": 176,
+      "detailLinkCount": 0
     },
     "point-grey": {
-      "checkedAt": "2026-09-11T05:15:32.807Z",
+      "checkedAt": "2026-09-11T05:33:25.986Z",
       "status": 200,
       "ok": true,
-      "finalUrl": "https://www.craigslist.org/search/subarea/van?cat=apa&min_bedrooms=2&query=point%20grey"
+      "finalUrl": "https://www.craigslist.org/search/subarea/van?cat=apa&min_bedrooms=2&query=point%20grey",
+      "anchorCount": 220,
+      "detailLinkCount": 0
     },
     "dunbar": {
-      "checkedAt": "2026-09-11T05:15:32.807Z",
+      "checkedAt": "2026-09-11T05:33:25.986Z",
       "status": 200,
       "ok": true,
-      "finalUrl": "https://www.craigslist.org/search/subarea/van?cat=apa&min_bedrooms=2&query=dunbar"
+      "finalUrl": "https://www.craigslist.org/search/subarea/van?cat=apa&min_bedrooms=2&query=dunbar",
+      "anchorCount": 230,
+      "detailLinkCount": 0
     }
+  },
+  "diagnostics": {
+    "discoveredDetailUrls": 0,
+    "detailChecks": 0,
+    "expiredOrRemoved": 0,
+    "missingRentOrBedrooms": 0,
+    "outOfScope": 0,
+    "staleOrOutOfArea": 0,
+    "accepted": 0,
+    "errors": 0
   },
   "candidates": []
 }
