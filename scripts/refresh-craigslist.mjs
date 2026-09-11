@@ -35,6 +35,14 @@ for(const [id,url] of searches){
     if(!r||status>=400)continue;
     await page.waitForTimeout(1500);
     const links=await page.locator('a').evaluateAll(as=>as.map(a=>a.getAttribute('href')||a.href).filter(Boolean));
+    const structure=await page.evaluate(()=>{
+      const resultNodes=[...document.querySelectorAll('.cl-search-result, .result-row, li.cl-static-search-result, [data-pid]')];
+      const postIds=[...new Set(resultNodes.map(n=>n.getAttribute('data-pid')).filter(Boolean))];
+      const samples=[...new Set([...document.querySelectorAll('a')].map(a=>a.getAttribute('href')).filter(Boolean).map(raw=>{
+        try{const u=new URL(raw,location.href);return `${u.hostname}${u.pathname}`;}catch{return null;}
+      }).filter(Boolean))].slice(0,12);
+      return {resultContainerCount:resultNodes.length,postIdCount:postIds.length,hrefShapeSamples:samples};
+    });
     let acceptedLinks=0;
     for(const u of links){const detail=normalizeCraigslistDetailUrl(u,page.url());if(detail){urls.add(detail);acceptedLinks++;}}
     const embeddedLinks=extractCraigslistDetailUrls(await page.content(),page.url());
@@ -42,6 +50,7 @@ for(const [id,url] of searches){
     sourceHealth[id].anchorCount=links.length;
     sourceHealth[id].detailLinkCount=acceptedLinks;
     sourceHealth[id].embeddedDetailLinkCount=embeddedLinks.length;
+    Object.assign(sourceHealth[id],structure);
     sourceHealth[id].title=await page.title();
   }catch(e){sourceHealth[id]={checkedAt:iso,ok:false,error:String(e)}}
 }
