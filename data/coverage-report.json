@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-11T06:10:57.709Z",
+  "generatedAt": "2026-09-11T06:26:09.268Z",
   "coverageReady": true,
   "healthyLaneCount": 2,
   "freshLaneCount": 8,
@@ -12,16 +12,15 @@
       "healthy": true,
       "status": "healthy",
       "detail": "11 fresh live candidates",
-      "refreshedAt": "2026-09-11T06:06:04.788Z"
+      "refreshedAt": "2026-09-11T06:19:28.410Z"
     },
     {
       "id": "craigslist",
       "kind": "independent-classifieds",
       "healthy": false,
       "status": "degraded",
-      "detail": "4/4 regional searches reachable; 0 qualifying candidates parsed; parser structure mismatch (920 anchors, 417 result containers, 416 post IDs, 0 detail links)",
-      "structureMismatch": true,
-      "refreshedAt": "2026-09-11T06:08:58.072Z"
+      "detail": "4/4 regional searches reachable; 0 qualifying candidates parsed",
+      "refreshedAt": "2026-09-11T06:22:27.979Z"
     },
     {
       "id": "rentalsca",
@@ -29,7 +28,7 @@
       "healthy": false,
       "status": "degraded",
       "detail": "5/9 regional searches reachable; 0 qualifying candidates parsed",
-      "refreshedAt": "2026-09-11T06:08:41.751Z"
+      "refreshedAt": "2026-09-11T06:22:11.114Z"
     },
     {
       "id": "livrent",
@@ -37,7 +36,7 @@
       "healthy": false,
       "status": "unhealthy",
       "detail": "0/5 searches healthy",
-      "refreshedAt": "2026-09-11T06:08:57.343Z"
+      "refreshedAt": "2026-09-11T06:22:27.206Z"
     },
     {
       "id": "realtylink",
@@ -46,8 +45,8 @@
       "positiveDiscoveryHealthy": true,
       "status": "healthy",
       "partial": false,
-      "detail": "3/3 searches reachable; 5 live candidates parsed",
-      "refreshedAt": "2026-09-11T06:09:05.579Z"
+      "detail": "3/3 searches reachable; 4 live candidates parsed",
+      "refreshedAt": "2026-09-11T06:24:11.407Z"
     },
     {
       "id": "priority-kits-walk",
@@ -55,7 +54,7 @@
       "healthy": true,
       "status": "healthy",
       "detail": "1/2 official sources usable",
-      "refreshedAt": "2026-09-11T06:10:14.299Z"
+      "refreshedAt": "2026-09-11T06:25:22.141Z"
     },
     {
       "id": "priority-larchway-gardens",
@@ -63,7 +62,7 @@
       "healthy": true,
       "status": "healthy",
       "detail": "2/2 official sources usable",
-      "refreshedAt": "2026-09-11T06:10:14.299Z"
+      "refreshedAt": "2026-09-11T06:25:22.141Z"
     },
     {
       "id": "priority-viridian",
@@ -71,7 +70,7 @@
       "healthy": true,
       "status": "healthy",
       "detail": "1/2 official sources usable",
-      "refreshedAt": "2026-09-11T06:10:14.299Z"
+      "refreshedAt": "2026-09-11T06:25:22.141Z"
     }
   ],
   "warnings": [
@@ -79,7 +78,7 @@
       "severity": "warning",
       "lane": "craigslist",
       "status": "degraded",
-      "detail": "4/4 regional searches reachable; 0 qualifying candidates parsed; parser structure mismatch (920 anchors, 417 result containers, 416 post IDs, 0 detail links)"
+      "detail": "4/4 regional searches reachable; 0 qualifying candidates parsed"
     },
     {
       "severity": "warning",
