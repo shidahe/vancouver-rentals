@@ -59,3 +59,32 @@ export function parseCraigslistSearchCard(card = {}, base = 'https://vancouver.c
     postedOrUpdatedAt: card.datetime && Number.isFinite(Date.parse(card.datetime)) ? new Date(card.datetime).toISOString() : null
   };
 }
+
+export function craigslistDetailEvidence(detail = {}) {
+  const parsed = parseCraigslistSearchCard({
+    href: detail.url,
+    title: detail.title,
+    text: detail.text,
+    location: detail.address,
+    latitude: detail.latitude,
+    longitude: detail.longitude,
+    image: detail.images?.[0],
+    datetime: detail.datetime
+  }, detail.url);
+  const text = String(detail.text || '');
+  const pagePostId = text.match(/\bpost\s+id:\s*([a-z0-9_-]+)/i)?.[1] || null;
+  const expectedPostId = String(detail.expectedPostId || '').trim();
+  const identityMatch = !!pagePostId && (!expectedPostId || pagePostId === expectedPostId);
+  const explicitNegative = /this posting has been deleted by its author|this posting has expired|flagged for removal/i.test(text);
+  const status = Number(detail.status);
+  const explicitPositive = !!parsed && status >= 200 && status < 400 && identityMatch && !explicitNegative && !!parsed.rent && !!parsed.bedrooms;
+  return {
+    ...parsed,
+    pagePostId,
+    identityMatch,
+    explicitNegative,
+    explicitPositive,
+    address: String(detail.address || '').trim() || null,
+    images: [...new Set((detail.images || []).filter(x => /^https?:\/\//i.test(String(x))))]
+  };
+}

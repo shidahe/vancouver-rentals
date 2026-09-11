@@ -2,7 +2,7 @@ import fs from 'node:fs/promises';
 import path from 'node:path';
 import crypto from 'node:crypto';
 import { chromium } from 'playwright';
-import { extractCraigslistDetailUrls, normalizeCraigslistDetailUrl, parseCraigslistSearchCard } from './craigslist-parser.mjs';
+import { craigslistDetailEvidence, extractCraigslistDetailUrls, normalizeCraigslistDetailUrl, parseCraigslistSearchCard } from './craigslist-parser.mjs';
 import { isTargetRentalAreaText, listingScopeEligible } from './discovery-policy.mjs';
 
 const DATA=path.join(process.cwd(),'data');
@@ -74,8 +74,8 @@ for(const [id,url] of searches){
   }catch(e){sourceHealth[id]={checkedAt:iso,ok:false,error:String(e)}}
 }
 
-const candidates=[],seenCards=new Set();
-const diagnostics={discoveredDetailUrls:urls.size,searchCards:rawCards.length,uniqueSearchCards:0,missingRentOrBedrooms:0,outOfScope:0,outOfArea:0,accepted:0,detailChecks:0,errors:0};
+const scopedCards=[],seenCards=new Set();
+const diagnostics={discoveredDetailUrls:urls.size,searchCards:rawCards.length,uniqueSearchCards:0,missingRentOrBedrooms:0,outOfScope:0,outOfArea:0,searchAccepted:0,detailChecks:0,detailVerified:0,detailNegative:0,detailIdentityMismatch:0,detailStale:0,detailErrors:0,exactAddresses:0,accepted:0,errors:0};
 for(const raw of rawCards){
   try{
     const parsed=parseCraigslistSearchCard(raw,raw.baseUrl);
@@ -89,8 +89,43 @@ for(const raw of rawCards){
     if(!inArea){diagnostics.outOfArea++;continue;}
     const addressLine=parsed.text.split('\n').map(x=>x.trim()).find(x=>/\bVancouver,?\s*(?:BC)?\b/i.test(x)&&(/\d/.test(x)||targetAreaText(x)))||parsed.location;
     const c={source:'Craigslist',postId:identity,url:parsed.url,title:parsed.title,address:addressLine||null,identityKey:`craigslist::post:${identity}`,rent:parsed.rent,bedrooms:parsed.bedrooms,bathrooms:parsed.bathrooms,sqft:parsed.sqft,geo:parsed.geo,targetArea:true,active:true,postedOrUpdatedAt:parsed.postedOrUpdatedAt,checkedAt:iso,images:parsed.image?[parsed.image]:[],publishable:false,evidenceKind:'current_search_result_card',queryIds:[raw.queryId]};
-    candidates.push(c);diagnostics.accepted++;await write(path.join(EVIDENCE,`craigslist-${identity}.json`),{checkedAt:iso,c,cardText:parsed.text.slice(0,3000)});
+    scopedCards.push(c);diagnostics.searchAccepted++;
   }catch{diagnostics.errors++;}
+}
+
+const candidates=[];
+for(const card of scopedCards){
+  try{
+    diagnostics.detailChecks++;
+    const response=await page.goto(card.url,{waitUntil:'domcontentloaded',timeout:30000});
+    const status=response?.status()??null;
+    if(!response||status>=400){diagnostics.detailErrors++;continue;}
+    await page.waitForTimeout(300);
+    const detail=await page.evaluate(()=>{
+      const body=document.body?.innerText||'';
+      const heading=document.querySelector('h1')?.textContent||document.title||'';
+      const geo=document.querySelector('[data-latitude][data-longitude]');
+      const address=document.querySelector('.mapaddress, [class*="mapaddress"]')?.textContent||null;
+      const times=[...document.querySelectorAll('time[datetime]')].map(x=>x.getAttribute('datetime')).filter(Boolean);
+      const images=[...document.querySelectorAll('img')].map(x=>x.currentSrc||x.src).filter(x=>/^https?:\/\//i.test(x)&&/images\.craigslist\.org/i.test(x));
+      return {text:body,title:heading,address,latitude:geo?.getAttribute('data-latitude'),longitude:geo?.getAttribute('data-longitude'),datetime:times.at(-1)||times[0]||null,images};
+    });
+    const evidence=craigslistDetailEvidence({...detail,url:card.url,status,expectedPostId:card.postId});
+    if(evidence.explicitNegative){diagnostics.detailNegative++;continue;}
+    if(!evidence.identityMatch){diagnostics.detailIdentityMismatch++;continue;}
+    if(!evidence.explicitPositive){diagnostics.detailErrors++;continue;}
+    const checkedDate=Date.parse(evidence.postedOrUpdatedAt||'');
+    if(Number.isFinite(checkedDate)&&Date.now()-checkedDate>45*86400000){diagnostics.detailStale++;continue;}
+    if(!listingScopeEligible({rent:evidence.rent,bedrooms:evidence.bedrooms},evidence.text)){diagnostics.outOfScope++;continue;}
+    const detailInArea=evidence.geo?targetGeo(evidence.geo):targetAreaText([card.title,card.address,evidence.address,evidence.text].filter(Boolean).join('\n'));
+    if(!detailInArea){diagnostics.outOfArea++;continue;}
+    const description=(await page.locator('#postingbody').count()?await page.locator('#postingbody').innerText():evidence.text).trim();
+    const type=/\b(?:half|1\/2)\s*duplex\b/i.test(evidence.text)?'duplex':/\btownhome|townhouse\b/i.test(evidence.text)?'townhouse':/\bcondo\b/i.test(evidence.text)?'condo':/\bhouse|detached\s+home\b/i.test(evidence.text)?'house':'rental';
+    const c={...card,title:evidence.title||card.title,address:evidence.address||card.address,rent:evidence.rent,bedrooms:evidence.bedrooms,bathrooms:evidence.bathrooms??card.bathrooms,sqft:evidence.sqft??card.sqft,geo:evidence.geo||card.geo,images:evidence.images.length?evidence.images.slice(0,12):card.images,postedOrUpdatedAt:evidence.postedOrUpdatedAt||card.postedOrUpdatedAt,description:description.slice(0,2000),type,ac:/\bair conditioning\b|\bA\/?C\b/i.test(evidence.text)?true:null,detailVerified:true,evidenceKind:'current_search_card_and_exact_detail'};
+    if(evidence.address)diagnostics.exactAddresses++;
+    candidates.push(c);diagnostics.detailVerified++;diagnostics.accepted++;
+    await write(path.join(EVIDENCE,`craigslist-${card.postId}.json`),{checkedAt:iso,status,identityMatch:evidence.identityMatch,explicitPositive:evidence.explicitPositive,explicitNegative:evidence.explicitNegative,c,bodyText:evidence.text.slice(0,7000)});
+  }catch{diagnostics.detailErrors++;}
 }
 await browser.close();
 await write(path.join(DATA,'craigslist-candidates.json'),{refreshedAt:iso,mode:'candidate-only',sourceHealth,diagnostics,candidates});
