@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-09-11T17:02:59.101Z",
-  "activeCount": 22,
+  "generatedAt": "2026-09-11T21:09:52.143Z",
+  "activeCount": 19,
   "decisionReady": true,
   "highIssueCount": 0,
   "mediumIssueCount": 0,
-  "infoIssueCount": 34,
+  "infoIssueCount": 31,
   "issues": [
     {
       "severity": "info",
@@ -148,27 +148,12 @@
     },
     {
       "severity": "info",
-      "id": "mls-r3150923",
-      "issue": "unknown-orientation"
-    },
-    {
-      "severity": "info",
-      "id": "mls-r3148298",
+      "id": "mls-r3151022",
       "issue": "unknown-orientation"
     },
     {
       "severity": "info",
       "id": "mls-r3161880",
-      "issue": "unknown-orientation"
-    },
-    {
-      "severity": "info",
-      "id": "mls-r3161950",
-      "issue": "unknown-orientation"
-    },
-    {
-      "severity": "info",
-      "id": "mls-r3159060",
       "issue": "unknown-orientation"
     },
     {
@@ -180,8 +165,8 @@
   "readinessChecks": {
     "smokeOk": true,
     "smokeFresh": true,
-    "smokeCheckedAt": "2026-09-11T17:03:05.052Z",
-    "latestDataAt": "2026-09-11T17:02:11.206Z",
+    "smokeCheckedAt": "2026-09-11T21:09:57.840Z",
+    "latestDataAt": "2026-09-11T21:08:58.971Z",
     "coverageReady": true,
     "healthyDiscoveryLanes": 3,
     "coverageWarnings": [
@@ -189,22 +174,16 @@
         "severity": "warning",
         "lane": "rentalsca",
         "status": "degraded",
-        "detail": "6/9 regional searches reachable; 0 qualifying candidates parsed"
+        "detail": "2/9 regional searches reachable; 0 qualifying candidates parsed"
       },
       {
         "severity": "warning",
         "lane": "livrent",
         "status": "unhealthy",
         "detail": "0/5 searches healthy"
-      },
-      {
-        "severity": "warning",
-        "lane": "realtylink",
-        "status": "degraded",
-        "detail": "3/3 searches reachable; 3 current live candidates parsed from a partial snapshot versus complete baseline 5; positive discovery usable, removals suppressed"
       }
     ]
   },
   "readinessIssues": [],
-  "finalizedAt": "2026-09-11T17:03:06.854Z"
+  "finalizedAt": "2026-09-11T21:09:59.613Z"
 }
