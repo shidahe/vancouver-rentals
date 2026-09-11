@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-09-11T05:43:31.626Z",
+  "refreshedAt": "2026-09-11T05:52:44.482Z",
   "groups": [
     {
       "identityKey": "3220 4th ave w::url:4b1a6ebe2d36",
@@ -122,27 +122,15 @@
       "result": "candidate_only"
     },
     {
-      "identityKey": "mls:r3160689",
+      "identityKey": "mls:r3158179",
       "sources": [
         "realtylink mls"
       ],
       "rents": [
-        4950
+        5995
       ],
       "exactUnit": true,
-      "matchedListingId": "zumper-16e9ae17cd91",
-      "result": "authoritative_mls_reverified"
-    },
-    {
-      "identityKey": "mls:r3137446",
-      "sources": [
-        "realtylink mls"
-      ],
-      "rents": [
-        5850
-      ],
-      "exactUnit": true,
-      "matchedListingId": "york-103-2535-r3137446",
+      "matchedListingId": "mls-r3158179",
       "result": "authoritative_mls_reverified"
     },
     {
@@ -158,15 +146,27 @@
       "result": "authoritative_mls_reverified"
     },
     {
-      "identityKey": "mls:r3151372",
+      "identityKey": "mls:r3137446",
       "sources": [
         "realtylink mls"
       ],
       "rents": [
-        4800
+        5850
       ],
-      "exactUnit": false,
-      "matchedListingId": "mls-r3151372",
+      "exactUnit": true,
+      "matchedListingId": "york-103-2535-r3137446",
+      "result": "authoritative_mls_reverified"
+    },
+    {
+      "identityKey": "mls:r3160689",
+      "sources": [
+        "realtylink mls"
+      ],
+      "rents": [
+        4950
+      ],
+      "exactUnit": true,
+      "matchedListingId": "zumper-16e9ae17cd91",
       "result": "authoritative_mls_reverified"
     },
     {
@@ -180,42 +180,55 @@
       "exactUnit": false,
       "matchedListingId": "mls-r3161950",
       "result": "authoritative_mls_reverified"
+    },
+    {
+      "identityKey": "mls:r3151372",
+      "sources": [
+        "realtylink mls"
+      ],
+      "rents": [
+        4800
+      ],
+      "exactUnit": false,
+      "matchedListingId": "mls-r3151372",
+      "result": "authoritative_mls_reverified"
     }
   ],
   "promoted": [],
   "crossVerified": [
-    "zumper-16e9ae17cd91",
-    "york-103-2535-r3137446",
+    "mls-r3158179",
     "mls-r3150923",
-    "mls-r3151372",
-    "mls-r3161950"
+    "york-103-2535-r3137446",
+    "zumper-16e9ae17cd91",
+    "mls-r3161950",
+    "mls-r3151372"
   ],
   "fingerprintCrossVerified": [],
   "maskedMlsMerged": [],
   "relistedMlsMerged": [],
   "negativeMatches": [],
   "detailReactivated": [
-    "mls-r3151372"
+    "mls-r3158179"
   ],
   "mlsMissing": {
     "R3151022": {
       "firstMissingAt": "2026-09-11T05:43:31.626Z",
-      "lastMissingAt": "2026-09-11T05:43:31.626Z",
+      "lastMissingAt": "2026-09-11T05:52:44.482Z",
       "listingId": "mls-r3151022"
     },
     "R3148298": {
       "firstMissingAt": "2026-09-11T05:43:31.626Z",
-      "lastMissingAt": "2026-09-11T05:43:31.626Z",
+      "lastMissingAt": "2026-09-11T05:52:44.482Z",
       "listingId": "mls-r3148298"
     },
     "R3163709": {
       "firstMissingAt": "2026-09-11T05:43:31.626Z",
-      "lastMissingAt": "2026-09-11T05:43:31.626Z",
+      "lastMissingAt": "2026-09-11T05:52:44.482Z",
       "listingId": "mls-r3163709"
     }
   },
   "mlsRemoved": [],
-  "realtylinkSnapshotCount": 5,
+  "realtylinkSnapshotCount": 6,
   "realtylinkSnapshotScope": "rent-3500-beds-2-4-whole-home-westside-v2",
   "realtylinkRemovalEligible": true,
   "mlsDuplicatesMerged": []

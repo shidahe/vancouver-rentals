@@ -1,38 +1,46 @@
 {
-  "refreshedAt": "2026-09-11T05:42:26.479Z",
+  "refreshedAt": "2026-09-11T05:51:30.741Z",
   "mode": "candidate-only",
   "sourceHealth": {
     "kitsilano": {
-      "checkedAt": "2026-09-11T05:42:26.479Z",
+      "checkedAt": "2026-09-11T05:51:30.741Z",
       "status": 200,
       "ok": true,
       "finalUrl": "https://www.craigslist.org/search/subarea/van?cat=apa&min_bedrooms=2&query=kitsilano",
       "anchorCount": 290,
-      "detailLinkCount": 0
+      "detailLinkCount": 0,
+      "embeddedDetailLinkCount": 0,
+      "title": "vancouver apartments / housing for rent \"kitsilano\" - craigslist"
     },
     "arbutus": {
-      "checkedAt": "2026-09-11T05:42:26.479Z",
+      "checkedAt": "2026-09-11T05:51:30.741Z",
       "status": 200,
       "ok": true,
       "finalUrl": "https://www.craigslist.org/search/subarea/van?cat=apa&min_bedrooms=2&query=arbutus",
-      "anchorCount": 176,
-      "detailLinkCount": 0
+      "anchorCount": 178,
+      "detailLinkCount": 0,
+      "embeddedDetailLinkCount": 0,
+      "title": "vancouver apartments / housing for rent \"arbutus\" - craigslist"
     },
     "point-grey": {
-      "checkedAt": "2026-09-11T05:42:26.479Z",
+      "checkedAt": "2026-09-11T05:51:30.741Z",
       "status": 200,
       "ok": true,
       "finalUrl": "https://www.craigslist.org/search/subarea/van?cat=apa&min_bedrooms=2&query=point%20grey",
       "anchorCount": 220,
-      "detailLinkCount": 0
+      "detailLinkCount": 0,
+      "embeddedDetailLinkCount": 0,
+      "title": "vancouver apartments / housing for rent \"point grey\" - craigslist"
     },
     "dunbar": {
-      "checkedAt": "2026-09-11T05:42:26.479Z",
+      "checkedAt": "2026-09-11T05:51:30.741Z",
       "status": 200,
       "ok": true,
       "finalUrl": "https://www.craigslist.org/search/subarea/van?cat=apa&min_bedrooms=2&query=dunbar",
-      "anchorCount": 230,
-      "detailLinkCount": 0
+      "anchorCount": 232,
+      "detailLinkCount": 0,
+      "embeddedDetailLinkCount": 0,
+      "title": "vancouver apartments / housing for rent \"dunbar\" - craigslist"
     }
   },
   "diagnostics": {
