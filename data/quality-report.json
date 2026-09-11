@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-09-11T11:09:49.608Z",
-  "activeCount": 21,
+  "generatedAt": "2026-09-11T11:35:33.595Z",
+  "activeCount": 22,
   "decisionReady": true,
   "highIssueCount": 0,
   "mediumIssueCount": 0,
-  "infoIssueCount": 33,
+  "infoIssueCount": 34,
   "issues": [
     {
       "severity": "info",
@@ -168,6 +168,11 @@
     },
     {
       "severity": "info",
+      "id": "mls-r3159060",
+      "issue": "unknown-orientation"
+    },
+    {
+      "severity": "info",
       "id": "mls-r3149267",
       "issue": "unknown-orientation"
     }
@@ -175,8 +180,8 @@
   "readinessChecks": {
     "smokeOk": true,
     "smokeFresh": true,
-    "smokeCheckedAt": "2026-09-11T11:09:54.532Z",
-    "latestDataAt": "2026-09-11T11:09:04.274Z",
+    "smokeCheckedAt": "2026-09-11T11:35:38.759Z",
+    "latestDataAt": "2026-09-11T11:34:49.802Z",
     "coverageReady": true,
     "healthyDiscoveryLanes": 3,
     "coverageWarnings": [
@@ -201,5 +206,5 @@
     ]
   },
   "readinessIssues": [],
-  "finalizedAt": "2026-09-11T11:09:56.111Z"
+  "finalizedAt": "2026-09-11T11:35:40.306Z"
 }

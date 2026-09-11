@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-11T11:09:49.638Z",
+  "generatedAt": "2026-09-11T11:35:33.625Z",
   "coverageReady": true,
   "healthyLaneCount": 3,
   "freshLaneCount": 8,
@@ -12,15 +12,15 @@
       "healthy": true,
       "status": "healthy",
       "detail": "11 fresh live candidates",
-      "refreshedAt": "2026-09-11T11:05:08.378Z"
+      "refreshedAt": "2026-09-11T11:30:45.921Z"
     },
     {
       "id": "craigslist",
       "kind": "independent-classifieds",
       "healthy": true,
       "status": "healthy",
-      "detail": "4/4 regional searches reachable; 39 qualifying candidates parsed",
-      "refreshedAt": "2026-09-11T11:07:52.669Z"
+      "detail": "4/4 regional searches reachable; 25 qualifying candidates parsed",
+      "refreshedAt": "2026-09-11T11:33:29.440Z"
     },
     {
       "id": "rentalsca",
@@ -28,7 +28,7 @@
       "healthy": false,
       "status": "degraded",
       "detail": "2/9 regional searches reachable; 0 qualifying candidates parsed",
-      "refreshedAt": "2026-09-11T11:07:44.928Z"
+      "refreshedAt": "2026-09-11T11:33:22.295Z"
     },
     {
       "id": "livrent",
@@ -36,7 +36,7 @@
       "healthy": false,
       "status": "unhealthy",
       "detail": "0/5 searches healthy",
-      "refreshedAt": "2026-09-11T11:07:51.808Z"
+      "refreshedAt": "2026-09-11T11:33:28.840Z"
     },
     {
       "id": "realtylink",
@@ -46,7 +46,7 @@
       "status": "degraded",
       "partial": true,
       "detail": "3/3 searches reachable; 2 current live candidates parsed from a partial snapshot versus complete baseline 5; positive discovery usable, removals suppressed",
-      "refreshedAt": "2026-09-11T11:08:00.602Z"
+      "refreshedAt": "2026-09-11T11:33:37.646Z"
     },
     {
       "id": "priority-kits-walk",
@@ -54,7 +54,7 @@
       "healthy": true,
       "status": "healthy",
       "detail": "1/2 official sources usable",
-      "refreshedAt": "2026-09-11T11:09:04.274Z"
+      "refreshedAt": "2026-09-11T11:34:49.802Z"
     },
     {
       "id": "priority-larchway-gardens",
@@ -62,7 +62,7 @@
       "healthy": true,
       "status": "healthy",
       "detail": "2/2 official sources usable",
-      "refreshedAt": "2026-09-11T11:09:04.274Z"
+      "refreshedAt": "2026-09-11T11:34:49.802Z"
     },
     {
       "id": "priority-viridian",
@@ -70,7 +70,7 @@
       "healthy": true,
       "status": "healthy",
       "detail": "1/2 official sources usable",
-      "refreshedAt": "2026-09-11T11:09:04.274Z"
+      "refreshedAt": "2026-09-11T11:34:49.802Z"
     }
   ],
   "warnings": [
