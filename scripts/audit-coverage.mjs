@@ -47,11 +47,14 @@ const priorityLanes=priorityIds.map(id=>{
 const lanes=[...discoveryLanes,...priorityLanes];
 
 const freshLanes=lanes.filter(x=>fresh(x.refreshedAt));
-const healthyDiscovery=discoveryLanes.filter(x=>x.healthy&&fresh(x.refreshedAt));
+// Partial MLS snapshots are unsafe for disappearance evidence, but their exact
+// current rows remain valid positive discovery evidence. Keep the capabilities
+// separate so removals stay fail-closed without disabling useful inventory.
+const healthyDiscovery=discoveryLanes.filter(x=>(x.healthy||x.positiveDiscoveryHealthy)&&fresh(x.refreshedAt));
 const priorityHealthy=priorityLanes.every(x=>x.healthy&&fresh(x.refreshedAt));
 const healthy=lanes.filter(x=>x.healthy&&fresh(x.refreshedAt));
 const broadHealthy=healthy.some(x=>x.kind==='broad-marketplace');
-const independentHealthy=healthy.some(x=>x.kind==='independent-classifieds'||x.kind==='mls-rental');
+const independentHealthy=healthyDiscovery.some(x=>x.kind==='independent-classifieds'||x.kind==='mls-rental');
 const coverageReady=healthyDiscovery.length>=2&&broadHealthy&&independentHealthy&&priorityHealthy;
 const warnings=lanes.filter(x=>x.status!=='healthy').map(x=>({severity:'warning',lane:x.id,status:x.status,detail:x.detail}));
 const aggregateText=String(kitsWalkAggregate.bodyText||'');
@@ -78,6 +81,6 @@ for(const lane of priorityLanes.filter(x=>!x.healthy||!fresh(x.refreshedAt))){
   blockers.push({severity:'high',issue:'priority-building-official-monitor-unhealthy',lane:lane.id,detail:lane.detail});
 }
 
-const report={generatedAt:new Date().toISOString(),coverageReady,healthyLaneCount:healthyDiscovery.length,freshLaneCount:freshLanes.length,priorityOfficialReady:priorityHealthy,inventoryGaps,lanes,warnings,blockers,policy:'Coverage is ready when at least two fresh independent discovery families are healthy, including one broad marketplace and one independent classifieds/MLS family, and every priority building has at least one fresh usable official source. Aggregate counts alone never publish inventory; structured rows with exact rent, bedroom and sqft anchors may be tracked as verified floorplans when the page also has current availability language.'};
+const report={generatedAt:new Date().toISOString(),coverageReady,healthyLaneCount:healthyDiscovery.length,freshLaneCount:freshLanes.length,priorityOfficialReady:priorityHealthy,inventoryGaps,lanes,warnings,blockers,policy:'Coverage is ready when at least two fresh independent discovery families have current positive candidate yield, including one broad marketplace and one independent classifieds/MLS family, and every priority building has at least one fresh usable official source. A partial MLS snapshot may contribute exact positive discovery rows but never disappearance or removal evidence. Aggregate counts alone never publish inventory; structured rows with exact rent, bedroom and sqft anchors may be tracked as verified floorplans when the page also has current availability language.'};
 await write(path.join(DATA,'coverage-report.json'),report);
 console.log(`Coverage audit: coverageReady=${coverageReady}, healthy=${healthy.length}/${lanes.length}`);
