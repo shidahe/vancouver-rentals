@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-09-11T05:53:33.361Z",
-  "activeCount": 21,
+  "generatedAt": "2026-09-11T06:10:57.672Z",
+  "activeCount": 20,
   "decisionReady": true,
   "highIssueCount": 0,
   "mediumIssueCount": 0,
-  "infoIssueCount": 33,
+  "infoIssueCount": 32,
   "issues": [
     {
       "severity": "info",
@@ -153,16 +153,6 @@
     },
     {
       "severity": "info",
-      "id": "mls-r3151372",
-      "issue": "unknown-orientation"
-    },
-    {
-      "severity": "info",
-      "id": "mls-r3158179",
-      "issue": "unknown-orientation"
-    },
-    {
-      "severity": "info",
       "id": "mls-r3161950",
       "issue": "unknown-orientation"
     },
@@ -170,13 +160,18 @@
       "severity": "info",
       "id": "mls-r3149267",
       "issue": "unknown-orientation"
+    },
+    {
+      "severity": "info",
+      "id": "mls-r3163709",
+      "issue": "unknown-orientation"
     }
   ],
   "readinessChecks": {
     "smokeOk": true,
     "smokeFresh": true,
-    "smokeCheckedAt": "2026-09-11T05:53:38.787Z",
-    "latestDataAt": "2026-09-11T05:52:48.674Z",
+    "smokeCheckedAt": "2026-09-11T06:11:03.128Z",
+    "latestDataAt": "2026-09-11T06:10:14.299Z",
     "coverageReady": true,
     "healthyDiscoveryLanes": 2,
     "coverageWarnings": [
@@ -184,13 +179,13 @@
         "severity": "warning",
         "lane": "craigslist",
         "status": "degraded",
-        "detail": "4/4 regional searches reachable; 0 qualifying candidates parsed"
+        "detail": "4/4 regional searches reachable; 0 qualifying candidates parsed; parser structure mismatch (920 anchors, 417 result containers, 416 post IDs, 0 detail links)"
       },
       {
         "severity": "warning",
         "lane": "rentalsca",
         "status": "degraded",
-        "detail": "2/9 regional searches reachable; 0 qualifying candidates parsed"
+        "detail": "5/9 regional searches reachable; 0 qualifying candidates parsed"
       },
       {
         "severity": "warning",
@@ -201,5 +196,5 @@
     ]
   },
   "readinessIssues": [],
-  "finalizedAt": "2026-09-11T05:53:40.488Z"
+  "finalizedAt": "2026-09-11T06:11:04.850Z"
 }
