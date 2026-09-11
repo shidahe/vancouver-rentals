@@ -127,6 +127,8 @@ const productiveMarketplace=marketplaceLaneHealth({reachable:3,total:9,candidate
 if(!productiveMarketplace.healthy||productiveMarketplace.status!=='healthy') failures.push('A reachable marketplace with parsed candidates is not reported as healthy.');
 if(!coverageSource.includes('const craigslistLane=marketplaceLaneHealth')||!coverageSource.includes("{id:'craigslist',kind:'independent-classifieds',...craigslistLane")) failures.push('Craigslist can still be reported healthy when every reachable search produces zero candidates.');
 if(!coverageSource.includes('(x.healthy||x.positiveDiscoveryHealthy)')||!coverageSource.includes('const independentHealthy=healthyDiscovery.some')) failures.push('Exact positive MLS discovery is still coupled to snapshot removal completeness.');
+if(!source.includes("if(/\\b(?:apartments?|condos?|houses?)\\s+in\\s+vancouver\\b/i.test(lines[i]))continue")||!source.includes("floorplans=parseFloorplans(text).filter(x=>listingScopeEligible")||!source.includes("else if(listingScopeEligible({rent:single.rent,bedrooms:single.beds},text))")) failures.push('Rentals.ca generic navigation rows or out-of-scope rents can still become discovery candidates.');
+if(!coverageSource.includes('rentalsca.inventories.filter(x=>listingScopeEligible')) failures.push('Out-of-scope Rentals.ca rows can still make the coverage lane appear productive.');
 if (!catalog.discovery.some(x=>x.id==='kits-walk-rentalsca'&&/kits-walk-by-strand/.test(x.url))) {
   failures.push('Kits Walk aggregate inventory source is missing.');
 }
