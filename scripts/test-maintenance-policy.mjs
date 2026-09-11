@@ -38,7 +38,8 @@ const failures = [];
 const craigslistWww=normalizeCraigslistDetailUrl('/van/apa/d/vancouver-kitsilano-home/7890123456.html?lang=en','https://www.craigslist.org/search/subarea/van');
 const craigslistLegacy=normalizeCraigslistDetailUrl('https://vancouver.craigslist.org/van/apa/d/vancouver-kitsilano-home/7890123456.html');
 const craigslistEmbedded=extractCraigslistDetailUrls('{"url":"https:\\/\\/www.craigslist.org\\/vancouver-bc\\/apa\\/d\\/kitsilano-home\\/7890123457.html?lang=en"}');
-if(!craigslistWww||!craigslistLegacy||craigslistPostId(craigslistWww)!=='7890123456'||craigslistPostId(craigslistEmbedded[0])!=='7890123457'||normalizeCraigslistDetailUrl('https://example.com/van/apa/d/fake/7890123456.html')) failures.push('Craigslist detail URL normalization rejects current host/path or embedded formats, or accepts a non-Craigslist host.');
+const craigslistCurrent=normalizeCraigslistDetailUrl('/view/d/vancouver-kitsilano-2br-garden-suite/ip9UMamrmPxkdKDuezwah7','https://www.craigslist.org/search/subarea/van');
+if(!craigslistWww||!craigslistLegacy||!craigslistCurrent||craigslistPostId(craigslistWww)!=='7890123456'||craigslistPostId(craigslistEmbedded[0])!=='7890123457'||craigslistPostId(craigslistCurrent)!=='ip9UMamrmPxkdKDuezwah7'||normalizeCraigslistDetailUrl('https://example.com/view/d/fake/token')) failures.push('Craigslist detail URL normalization rejects current opaque or legacy formats, or accepts a non-Craigslist host.');
 const duplicateMlsHistory={legacy:[{date:'2026-09-08',rent:4950,note:'legacy'}],canonical:[{date:'2026-09-09',rent:4950,note:'canonical'}]};
 const duplicateMlsImages={legacy:{candidates:['legacy.jpg']}};
 const duplicateMlsResult=dedupeMlsRecords([
