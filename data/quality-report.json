@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-11T05:35:40.596Z",
+  "generatedAt": "2026-09-11T05:44:16.530Z",
   "activeCount": 20,
   "decisionReady": true,
   "highIssueCount": 0,
@@ -153,6 +153,11 @@
     },
     {
       "severity": "info",
+      "id": "mls-r3151372",
+      "issue": "unknown-orientation"
+    },
+    {
+      "severity": "info",
       "id": "mls-r3161950",
       "issue": "unknown-orientation"
     },
@@ -160,18 +165,13 @@
       "severity": "info",
       "id": "mls-r3149267",
       "issue": "unknown-orientation"
-    },
-    {
-      "severity": "info",
-      "id": "mls-r3163709",
-      "issue": "unknown-orientation"
     }
   ],
   "readinessChecks": {
     "smokeOk": true,
     "smokeFresh": true,
-    "smokeCheckedAt": "2026-09-11T05:35:46.105Z",
-    "latestDataAt": "2026-09-11T05:34:41.919Z",
+    "smokeCheckedAt": "2026-09-11T05:44:21.664Z",
+    "latestDataAt": "2026-09-11T05:43:35.305Z",
     "coverageReady": true,
     "healthyDiscoveryLanes": 2,
     "coverageWarnings": [
@@ -192,15 +192,9 @@
         "lane": "livrent",
         "status": "unhealthy",
         "detail": "0/5 searches healthy"
-      },
-      {
-        "severity": "warning",
-        "lane": "realtylink",
-        "status": "degraded",
-        "detail": "3/3 searches reachable; 2 current live candidates parsed from a partial snapshot versus complete baseline 4; positive discovery usable, removals suppressed"
       }
     ]
   },
   "readinessIssues": [],
-  "finalizedAt": "2026-09-11T05:35:47.844Z"
+  "finalizedAt": "2026-09-11T05:44:23.206Z"
 }
