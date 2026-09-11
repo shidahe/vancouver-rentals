@@ -10,7 +10,7 @@ import { isRealtylinkListingNotFoundRedirect, isTargetWestsideCoordinate, parseR
 import { craigslistLaneHealth, marketplaceLaneHealth, realtylinkLaneHealth } from './coverage-policy.mjs';
 import { exactPurposeBuiltFloorplanEvidence } from './purposebuilt-floorplan-evidence.mjs';
 import { dedupeMlsRecords } from './mls-dedupe.mjs';
-import { craigslistPostId, extractCraigslistDetailUrls, normalizeCraigslistDetailUrl } from './craigslist-parser.mjs';
+import { craigslistPostId, extractCraigslistDetailUrls, normalizeCraigslistDetailUrl, parseCraigslistSearchCard } from './craigslist-parser.mjs';
 
 const read = p => fs.readFile(p, 'utf8');
 const activeAdapters = [
@@ -40,6 +40,9 @@ const craigslistLegacy=normalizeCraigslistDetailUrl('https://vancouver.craigslis
 const craigslistEmbedded=extractCraigslistDetailUrls('{"url":"https:\\/\\/www.craigslist.org\\/vancouver-bc\\/apa\\/d\\/kitsilano-home\\/7890123457.html?lang=en"}');
 const craigslistCurrent=normalizeCraigslistDetailUrl('/view/d/vancouver-kitsilano-2br-garden-suite/ip9UMamrmPxkdKDuezwah7','https://www.craigslist.org/search/subarea/van');
 if(!craigslistWww||!craigslistLegacy||!craigslistCurrent||craigslistPostId(craigslistWww)!=='7890123456'||craigslistPostId(craigslistEmbedded[0])!=='7890123457'||craigslistPostId(craigslistCurrent)!=='ip9UMamrmPxkdKDuezwah7'||normalizeCraigslistDetailUrl('https://example.com/view/d/fake/token')) failures.push('Craigslist detail URL normalization rejects current opaque or legacy formats, or accepts a non-Craigslist host.');
+const craigslistCard=parseCraigslistSearchCard({href:'/view/d/vancouver-bright-kitsilano-home/ip9UMamrmPxkdKDuezwah7',title:'Bright Kitsilano home',text:'$3,950\n2br - 2ba - 920ft2\nKitsilano',datetime:'2026-09-11T05:30:00-0700'},'https://www.craigslist.org/search/subarea/van');
+const craigslistFourBedroomCard=parseCraigslistSearchCard({href:'/view/d/vancouver-dunbar-family-home/fourBedroomOpaqueId',text:'$6,500 4 bedrooms 3.5 bathrooms 2,100 sq ft Dunbar'},'https://www.craigslist.org/search/subarea/van');
+if(craigslistCard?.rent!==3950||craigslistCard?.bedrooms!==2||craigslistCard?.bathrooms!==2||craigslistCard?.sqft!==920||craigslistCard?.postId!=='ip9UMamrmPxkdKDuezwah7'||craigslistFourBedroomCard?.rent!==6500||craigslistFourBedroomCard?.bedrooms!==4||craigslistFourBedroomCard?.sqft!==2100) failures.push('Current Craigslist search-card facts or 4BR inventory do not parse correctly.');
 const duplicateMlsHistory={legacy:[{date:'2026-09-08',rent:4950,note:'legacy'}],canonical:[{date:'2026-09-09',rent:4950,note:'canonical'}]};
 const duplicateMlsImages={legacy:{candidates:['legacy.jpg']}};
 const duplicateMlsResult=dedupeMlsRecords([
@@ -134,7 +137,7 @@ if(!productiveMarketplace.healthy||productiveMarketplace.status!=='healthy') fai
 const brokenCraigslist=craigslistLaneHealth({reachable:4,total:4,candidates:0,sourceHealth:{kits:{ok:true,anchorCount:290,detailLinkCount:0,embeddedDetailLinkCount:0,resultContainerCount:12,postIdCount:12}}});
 if(brokenCraigslist.healthy||!brokenCraigslist.structureMismatch||!/290 anchors, 12 result containers, 12 post IDs, 0 detail links/.test(brokenCraigslist.detail)) failures.push('Craigslist parser structure mismatches are not distinguished from true zero-result searches.');
 if(!coverageSource.includes('const craigslistLane=craigslistLaneHealth')||!coverageSource.includes("{id:'craigslist',kind:'independent-classifieds',...craigslistLane")) failures.push('Craigslist can still be reported healthy when every reachable search produces zero candidates.');
-if(!source.includes('normalizeCraigslistDetailUrl(u,page.url())')||!source.includes('extractCraigslistDetailUrls(await page.content()')||!source.includes('resultContainerCount:resultNodes.length')||!source.includes('hrefShapeSamples:samples')||!source.includes('discoveredDetailUrls:urls.size')||!source.includes('embeddedDetailLinkCount=embeddedLinks.length')) failures.push('Craigslist zero-yield runs do not inspect or report enough structure to diagnose parser drift.');
+if(!source.includes('parseCraigslistSearchCard(raw,raw.baseUrl)')||!source.includes("evidenceKind:'current_search_result_card'")||!source.includes('searchCards:rawCards.length')||!source.includes('detailChecks:0')||!source.includes('normalizeCraigslistDetailUrl(u,page.url())')||!source.includes('extractCraigslistDetailUrls(await page.content()')||!source.includes('resultContainerCount:resultNodes.length')||!source.includes('hrefShapeSamples:samples')||!source.includes('discoveredDetailUrls:urls.size')||!source.includes('embeddedDetailLinkCount=embeddedLinks.length')) failures.push('Craigslist search-card recovery or zero-yield diagnostics can silently regress.');
 if(!coverageSource.includes('(x.healthy||x.positiveDiscoveryHealthy)')||!coverageSource.includes('const independentHealthy=healthyDiscovery.some')) failures.push('Exact positive MLS discovery is still coupled to snapshot removal completeness.');
 if(!source.includes("if(/\\b(?:apartments?|condos?|houses?)\\s+in\\s+vancouver\\b/i.test(lines[i]))continue")||!source.includes("floorplans=parseFloorplans(text).filter(x=>listingScopeEligible")||!source.includes("else if(listingScopeEligible({rent:single.rent,bedrooms:single.beds},text))")) failures.push('Rentals.ca generic navigation rows or out-of-scope rents can still become discovery candidates.');
 if(!coverageSource.includes('rentalsca.inventories.filter(x=>listingScopeEligible')) failures.push('Out-of-scope Rentals.ca rows can still make the coverage lane appear productive.');
