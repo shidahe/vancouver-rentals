@@ -1,27 +1,51 @@
 {
-  "checkedAt": "2026-09-11T16:39:00.637Z",
+  "checkedAt": "2026-09-11T17:00:34.911Z",
+  "status": 200,
+  "identityMatch": true,
+  "explicitPositive": true,
+  "explicitNegative": false,
   "c": {
     "source": "Craigslist",
     "postId": "7950963955",
     "url": "https://www.craigslist.org/view/d/vancouver-arbutus-new-laneway-house-for/9YcVUMyLzfPMjzveu3dzZ2",
-    "title": "Arbutus new laneway house for rent",
-    "address": "city of vancouver",
+    "title": "$3,800 / 3br - Arbutus new laneway house for rent",
+    "address": "26xx west king Edward ave near Trafalgar street",
     "identityKey": "craigslist::post:7950963955",
     "rent": 3800,
     "bedrooms": 3,
-    "bathrooms": null,
+    "bathrooms": 2,
     "sqft": null,
-    "geo": null,
+    "geo": {
+      "lat": 49.2497,
+      "lng": -123.166
+    },
     "targetArea": true,
     "active": true,
-    "postedOrUpdatedAt": null,
-    "checkedAt": "2026-09-11T16:39:00.637Z",
-    "images": [],
+    "postedOrUpdatedAt": "2026-08-01T21:54:44.000Z",
+    "checkedAt": "2026-09-11T17:00:34.911Z",
+    "images": [
+      "https://images.craigslist.org/00u0u_17qRuFgysi4_0dq0t2_600x450.jpg",
+      "https://images.craigslist.org/00u0u_17qRuFgysi4_0dq0t2_50x50c.jpg",
+      "https://images.craigslist.org/01010_5JJj5ozxK9C_0t20CI_50x50c.jpg",
+      "https://images.craigslist.org/00g0g_exCNyPCTkpO_0t20CI_50x50c.jpg",
+      "https://images.craigslist.org/00W0W_Pv37fnRpdt_0t20CI_50x50c.jpg",
+      "https://images.craigslist.org/00q0q_64nUeT35hr5_0t20CI_50x50c.jpg",
+      "https://images.craigslist.org/00e0e_dgojyefXBVC_0dq0t2_50x50c.jpg",
+      "https://images.craigslist.org/00m0m_g81uSJGWGUw_0t20CI_50x50c.jpg",
+      "https://images.craigslist.org/00S0S_8n90Dytqaul_0t20CI_50x50c.jpg",
+      "https://images.craigslist.org/00707_8RJusXZpzzn_0dq0t2_50x50c.jpg",
+      "https://images.craigslist.org/00D0D_bgxngCW6D3k_0dq0t2_50x50c.jpg",
+      "https://images.craigslist.org/00S0S_8IZ5z5S3rZx_0dq0t2_50x50c.jpg"
+    ],
     "publishable": false,
-    "evidenceKind": "current_search_result_card",
+    "evidenceKind": "current_search_card_and_exact_detail",
     "queryIds": [
       "arbutus"
-    ]
+    ],
+    "description": "A newly laneway house located at the beautiful Arbutus Ridge.inside have 3bedrooms and 2bathroom.surrounding is quiet and clean with kindly neighbhood the super convenient transportation can easily and promptly take you to UBC/Downtown in18-28mins by bus(No25,No2),and you can also get to supermarkets and various types of restaurants in few minutes by walk. The bus stations are steps away by walk less than 2 mins. The skytrain station is reachable within 5-6mins by bus.\nFully equipped morden kitchen facilities and amenities. Rent included high speed Wifi ,Tv and laundry.the house is ideal for college students,small family and professional workers to walk-in stay.",
+    "type": "house",
+    "ac": true,
+    "detailVerified": true
   },
-  "cardText": "•\n•\n•\n•\n•\n•\n•\n•\n•\n•\n•\n•\nArbutus new laneway house for rent\n08-01\n3br\ncity of vancouver\n$3,800"
+  "bodyText": "CL\n\nvancouver, BC >\n\nvancouver >\n\nhousing >\n\napartments / housing for rent\n\npost\naccount\nreply \nfavorite\n \nhide\n \n⚐\nflag\n \n\nshare\n\nPosted about a month ago\n\nprint\n$3,800 / 3br - Arbutus new laneway house for rent\n26xx west king Edward ave, Vancouver, BC V6L1T6\n© craigslist - Map data © OpenStreetMap\n26xx west king Edward ave near Trafalgar street\n3BR / 2Ba available now\nopen house dates:\nmonday 2026-08-03\nsaturday 2026-08-08\nsaturday 2026-08-15\nrent period: monthly\nhouse\nw/d in unit\nfurnished\nstreet parking\nno smoking\nair conditioning\nEV charging\nA newly laneway house located at the beautiful Arbutus Ridge.inside have 3bedrooms and 2bathroom.surrounding is quiet and clean with kindly neighbhood the super convenient transportation can easily and promptly take you to UBC/Downtown in18-28mins by bus(No25,No2),and you can also get to supermarkets and various types of restaurants in few minutes by walk. The bus stations are steps away by walk less than 2 mins. The skytrain station is reachable within 5-6mins by bus.\nFully equipped morden kitchen facilities and amenities. Rent included high speed Wifi ,Tv and laundry.the house is ideal for college students,small family and professional workers to walk-in stay.\n\npost id: 7950963955\n\n \n\nposted: about a month ago\n\n \n\n♥ best of [?]\n\nhelp\nsafety\nprivacy\nterms\nabout\napp\n© 2026 craigslist"
 }

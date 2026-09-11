@@ -1,27 +1,51 @@
 {
-  "checkedAt": "2026-09-11T16:39:00.637Z",
+  "checkedAt": "2026-09-11T17:00:34.911Z",
+  "status": 200,
+  "identityMatch": true,
+  "explicitPositive": true,
+  "explicitNegative": false,
   "c": {
     "source": "Craigslist",
     "postId": "7956031596",
     "url": "https://www.craigslist.org/view/d/vancouver-top-floor-heart-of-kits-beds/4rFSAuZHRZB2t6XpXGvPR9",
-    "title": "Top Floor Heart of Kits, 3 beds",
-    "address": "Vancouver, Kitsilano, UBC,",
+    "title": "$3,900 / 3br - 1000ft2 - Top Floor Heart of Kits, 3 beds (Vancouver, Kitsilano, UBC,)",
+    "address": "Vine near 3rd",
     "identityKey": "craigslist::post:7956031596",
     "rent": 3900,
     "bedrooms": 3,
-    "bathrooms": null,
+    "bathrooms": 1,
     "sqft": 1000,
-    "geo": null,
+    "geo": {
+      "lat": 49.269037,
+      "lng": -123.158112
+    },
     "targetArea": true,
     "active": true,
-    "postedOrUpdatedAt": null,
-    "checkedAt": "2026-09-11T16:39:00.637Z",
-    "images": [],
+    "postedOrUpdatedAt": "2026-09-07T02:50:44.000Z",
+    "checkedAt": "2026-09-11T17:00:34.911Z",
+    "images": [
+      "https://images.craigslist.org/00P0P_5AApCehTqd1_1320MM_600x450.jpg",
+      "https://images.craigslist.org/00P0P_5AApCehTqd1_1320MM_50x50c.jpg",
+      "https://images.craigslist.org/00D0D_1vgj6juv9m1_0CI0t2_50x50c.jpg",
+      "https://images.craigslist.org/00A0A_9HeIq8dTDKp_0lG0t2_50x50c.jpg",
+      "https://images.craigslist.org/00X0X_acX5QWYzURh_0t20t2_50x50c.jpg",
+      "https://images.craigslist.org/00u0u_bMLU6Hw4Rsx_0CI0t2_50x50c.jpg",
+      "https://images.craigslist.org/00Q0Q_hzcnPS8cH8K_0CI0t2_50x50c.jpg",
+      "https://images.craigslist.org/00t0t_kvl3ue6Eh00_0CI0t2_50x50c.jpg",
+      "https://images.craigslist.org/00606_9eqzUvf2JBT_0CI0t2_50x50c.jpg",
+      "https://images.craigslist.org/00606_8z5gJK35kCN_0lM0t2_50x50c.jpg",
+      "https://images.craigslist.org/00u0u_cTBqj34qPG5_0lM0t2_50x50c.jpg",
+      "https://images.craigslist.org/00Q0Q_k0tJAtXYxgY_0lM0t2_50x50c.jpg"
+    ],
     "publishable": false,
-    "evidenceKind": "current_search_result_card",
+    "evidenceKind": "current_search_card_and_exact_detail",
     "queryIds": [
       "kitsilano"
-    ]
+    ],
+    "description": "Spacious 3 Bedrooms 1 bath, top floor with high ceilings, in a restored, quaint character building\nwith hardwood floors, built in cabinets and window seats\nBedroom with a small balcony and ocean views.\nKitchen with gas stove opening to large back porch.\nlocated one block to Whole Foods and trendy restaurants and shops on 4th Avenue\nonly 3 blocks to Kits Beach, Tennis courts and other amenities.\nHeat and hot water included,\none cat is welcomed,\nTenant insurance required, no sublet or smoking please.\nOne year lease. Available October 1st, 2026",
+    "type": "townhouse",
+    "ac": null,
+    "detailVerified": true
   },
-  "cardText": "•\n•\n•\n•\n•\n•\n•\n•\n•\n•\n•\n•\n•\nTop Floor Heart of Kits, 3 beds\n09-06\n3br1000ft2\nVancouver, Kitsilano, UBC,\n$3,900"
+  "bodyText": "CL\n\nvancouver, BC >\n\nvancouver >\n\nhousing >\n\napartments / housing for rent\n\npost\naccount\nreply \nfavorite\n \nhide\n \n⚐\nflag\n \n\nshare\n\nPosted 16 days ago\n\nprint\n$3,900 / 3br - 1000ft2 - Top Floor Heart of Kits, 3 beds (Vancouver, Kitsilano, UBC,)\nVine, Vancouver, BC V6K3J7\n© craigslist - Map data © OpenStreetMap\nVine near 3rd\n\ngoogle map\n\n3BR / 1Ba 1000ft2 available oct 1\nrent period: monthly\ncats are OK - purrr\ntownhouse\nlaundry on site\nstreet parking\nSpacious 3 Bedrooms 1 bath, top floor with high ceilings, in a restored, quaint character building\nwith hardwood floors, built in cabinets and window seats\nBedroom with a small balcony and ocean views.\nKitchen with gas stove opening to large back porch.\nlocated one block to Whole Foods and trendy restaurants and shops on 4th Avenue\nonly 3 blocks to Kits Beach, Tennis courts and other amenities.\nHeat and hot water included,\none cat is welcomed,\nTenant insurance required, no sublet or smoking please.\nOne year lease. Available October 1st, 2026\n\n\npost id: 7956031596\n\n \n\nposted: 16 days ago\n\n \n\nupdated: 5 days ago\n\n \n\n♥ best of [?]\n\nhelp\nsafety\nprivacy\nterms\nabout\napp\n© 2026 craigslist"
 }

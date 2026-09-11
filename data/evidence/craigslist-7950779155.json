@@ -1,27 +1,38 @@
 {
-  "checkedAt": "2026-09-11T16:39:00.637Z",
+  "checkedAt": "2026-09-11T17:00:34.911Z",
+  "status": 200,
+  "identityMatch": true,
+  "explicitPositive": true,
+  "explicitNegative": false,
   "c": {
     "source": "Craigslist",
     "postId": "7950779155",
     "url": "https://www.craigslist.org/view/d/vancouver-west-point-grey-bed-den/eFUE2oJtX22MV1ygZGm3Yt",
-    "title": "West Point Grey 3 Bed + Den Family Home Near Beaches & Schools",
+    "title": "$5,795 / 3br - 2800ft2 - West Point Grey 3 Bed + Den Family Home Near Beaches & Schools (West Point Grey)",
     "address": "West Point Grey",
     "identityKey": "craigslist::post:7950779155",
     "rent": 5795,
     "bedrooms": 3,
-    "bathrooms": null,
+    "bathrooms": 2.5,
     "sqft": 2800,
-    "geo": null,
+    "geo": {
+      "lat": 49.2666,
+      "lng": -123.1976
+    },
     "targetArea": true,
     "active": true,
-    "postedOrUpdatedAt": null,
-    "checkedAt": "2026-09-11T16:39:00.637Z",
+    "postedOrUpdatedAt": "2026-08-01T01:02:33.000Z",
+    "checkedAt": "2026-09-11T17:00:34.911Z",
     "images": [],
     "publishable": false,
-    "evidenceKind": "current_search_result_card",
+    "evidenceKind": "current_search_card_and_exact_detail",
     "queryIds": [
       "point-grey"
-    ]
+    ],
+    "description": "3878 West 8th Avenue, Vancouver BC\n\nWell-maintained 3-bedroom + den, 2.5-bath character home in sought-after West Point Grey. Approx. 2,800 sq. ft. over two levels with hardwood floors, bright living spaces, and a flexible layout ideal for families or professionals.\n\nPrivate front and back yards, plus parking pad with EV charging. Plenty of free street parking available.\n\nPrime location near Jericho, Locarno, and Spanish Banks beaches, Royal Vancouver Yacht Club, and Jericho Tennis & Sailing Centres. Close to UBC, West Point Grey Academy, shops, cafés, and amenities along West 4th, West Broadway, and West 10th. Easy commute downtown.\n\n📅 1-year lease\n🚭 No smoking\n🐾 Small pet considered\n\nContact Jonathan at Metro Core Realty at show contact info . Quote \"Point Grey\". Please include a quick introduction and desired move in date!\n\n\n\n\nDisclaimers: The above information, while deemed to be correct, is not guaranteed. Metro Core Realty Ltd. provides professional property management services on behalf of the owner of this property. Tenants are not required to pay any fees to Metro Core Realty Ltd. for the leasing of this property.",
+    "type": "rental",
+    "ac": null,
+    "detailVerified": true
   },
-  "cardText": "no image\n\nWest Point Grey 3 Bed + Den Family Home Near Beaches & Schools\n07-31\n3br2800ft2\nWest Point Grey\n$5,795"
+  "bodyText": "CL\n\nvancouver, BC >\n\nvancouver >\n\nhousing >\n\napartments / housing for rent\n\npost\naccount\nreply \nfavorite\n \nhide\n \n⚐\nflag\n \n\nshare\n\nPosted about a month ago\n\nprint\n$5,795 / 3br - 2800ft2 - West Point Grey 3 Bed + Den Family Home Near Beaches & Schools (West Point Grey)\n© craigslist - Map data © OpenStreetMap\n3BR / 2.5Ba 2800ft2\nrent period: monthly\ncats are OK - purrr\napartment\ndogs are OK - wooof\nw/d in unit\noff-street parking\nno smoking\n3878 West 8th Avenue, Vancouver BC\n\nWell-maintained 3-bedroom + den, 2.5-bath character home in sought-after West Point Grey. Approx. 2,800 sq. ft. over two levels with hardwood floors, bright living spaces, and a flexible layout ideal for families or professionals.\n\nPrivate front and back yards, plus parking pad with EV charging. Plenty of free street parking available.\n\nPrime location near Jericho, Locarno, and Spanish Banks beaches, Royal Vancouver Yacht Club, and Jericho Tennis & Sailing Centres. Close to UBC, West Point Grey Academy, shops, cafés, and amenities along West 4th, West Broadway, and West 10th. Easy commute downtown.\n\n📅 1-year lease\n🚭 No smoking\n🐾 Small pet considered\n\nContact Jonathan at Metro Core Realty at show contact info . Quote \"Point Grey\". Please include a quick introduction and desired move in date!\n\n\n\n\nDisclaimers: The above information, while deemed to be correct, is not guaranteed. Metro Core Realty Ltd. provides professional property management services on behalf of the owner of this property. Tenants are not required to pay any fees to Metro Core Realty Ltd. for the leasing of this property.\n\n\npost id: 7950779155\n\n \n\nposted: about a month ago\n\n \n\n♥ best of [?]\n\nhelp\nsafety\nprivacy\nterms\nabout\napp\n© 2026 craigslist"
 }

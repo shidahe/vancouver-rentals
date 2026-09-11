@@ -1,27 +1,46 @@
 {
-  "checkedAt": "2026-09-11T16:39:00.637Z",
+  "checkedAt": "2026-09-11T17:00:34.911Z",
+  "status": 200,
+  "identityMatch": true,
+  "explicitPositive": true,
+  "explicitNegative": false,
   "c": {
     "source": "Craigslist",
     "postId": "7962958107",
     "url": "https://www.craigslist.org/view/d/vancouver-suite-for-rent/ehZzq7mykgJfapJkqDYrCa",
-    "title": "Suite for rent",
-    "address": "Kitsilano",
+    "title": "$3,700 / 2br - Suite for rent (Kitsilano)",
+    "address": "8th near Vine",
     "identityKey": "craigslist::post:7962958107",
     "rent": 3700,
     "bedrooms": 2,
-    "bathrooms": null,
+    "bathrooms": 1,
     "sqft": null,
-    "geo": null,
+    "geo": {
+      "lat": 49.2646,
+      "lng": -123.1648
+    },
     "targetArea": true,
     "active": true,
-    "postedOrUpdatedAt": null,
-    "checkedAt": "2026-09-11T16:39:00.637Z",
-    "images": [],
+    "postedOrUpdatedAt": "2026-09-08T18:16:44.000Z",
+    "checkedAt": "2026-09-11T17:00:34.911Z",
+    "images": [
+      "https://images.craigslist.org/00W0W_kG8iSepXJjO_0jm0CI_600x450.jpg",
+      "https://images.craigslist.org/00W0W_kG8iSepXJjO_0jm0CI_50x50c.jpg",
+      "https://images.craigslist.org/00U0U_jvz2XPA76P1_0jm0CI_50x50c.jpg",
+      "https://images.craigslist.org/00I0I_3NYdphNm9bH_0CI0jm_50x50c.jpg",
+      "https://images.craigslist.org/00v0v_6ECFzBkTsvO_0jm0CI_50x50c.jpg",
+      "https://images.craigslist.org/00W0W_6glkOgo5R9G_0jm0CI_50x50c.jpg",
+      "https://images.craigslist.org/00b0b_5i1tCc8Z5Ic_0jm0CI_50x50c.jpg"
+    ],
     "publishable": false,
-    "evidenceKind": "current_search_result_card",
+    "evidenceKind": "current_search_card_and_exact_detail",
     "queryIds": [
       "kitsilano"
-    ]
+    ],
+    "description": "Large bright top floor 2 Bedroom + loft and balcony, for rent in prime Kitsilano area (8th and Vine)\n- Utilities (Hydro and gas) included\n- Hardwood floors\n- Coin laundry\n- No pets (house cats ok)\n- No Smoking or Vaping on property\n- Available Oct 1st\n\n$3700 per month\n\nReferences required",
+    "type": "house",
+    "ac": null,
+    "detailVerified": true
   },
-  "cardText": "•\n•\n•\n•\n•\n•\nSuite for rent\n09-08\n2br\nKitsilano\n$3,700"
+  "bodyText": "CL\n\nvancouver, BC >\n\nvancouver >\n\nhousing >\n\napartments / housing for rent\n\npost\naccount\nreply \nfavorite\n \nhide\n \n⚐\nflag\n \n\nshare\n\nPosted 3 days ago\n\nprint\n$3,700 / 2br - Suite for rent (Kitsilano)\n8th, Vancouver, BC V6K2A8\n© craigslist - Map data © OpenStreetMap\n8th near Vine\n2BR / 1Ba available oct 1\nrent period: monthly\napartment\nlaundry in bldg\nstreet parking\nno smoking\nLarge bright top floor 2 Bedroom + loft and balcony, for rent in prime Kitsilano area (8th and Vine)\n- Utilities (Hydro and gas) included\n- Hardwood floors\n- Coin laundry\n- No pets (house cats ok)\n- No Smoking or Vaping on property\n- Available Oct 1st\n\n$3700 per month\n\nReferences required\n\n\n\n\n\n\npost id: 7962958107\n\n \n\nposted: 3 days ago\n\n \n\nupdated: 3 days ago\n\n \n\n♥ best of [?]\n\nhelp\nsafety\nprivacy\nterms\nabout\napp\n© 2026 craigslist"
 }

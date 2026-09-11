@@ -1,27 +1,47 @@
 {
-  "checkedAt": "2026-09-11T16:39:00.637Z",
+  "checkedAt": "2026-09-11T17:00:34.911Z",
+  "status": 200,
+  "identityMatch": true,
+  "explicitPositive": true,
+  "explicitNegative": false,
   "c": {
     "source": "Craigslist",
     "postId": "7953626877",
     "url": "https://www.craigslist.org/view/d/vancouver-new-bedrooms-35-bathrooms-2/m7NJbsvPdcDUScq6CgeWJc",
-    "title": "New 3 bedrooms 3.5 bathrooms 1/2 Duplex in Kitsilano",
+    "title": "$6,200 / 3br - 1500ft2 - New 3 bedrooms 3.5 bathrooms 1/2 Duplex in Kitsilano (Kitsilano)",
     "address": "Kitsilano",
     "identityKey": "craigslist::post:7953626877",
     "rent": 6200,
     "bedrooms": 3,
     "bathrooms": 3.5,
     "sqft": 1500,
-    "geo": null,
+    "geo": {
+      "lat": 49.2621,
+      "lng": -123.1804
+    },
     "targetArea": true,
     "active": true,
-    "postedOrUpdatedAt": null,
-    "checkedAt": "2026-09-11T16:39:00.637Z",
-    "images": [],
+    "postedOrUpdatedAt": "2026-09-10T21:25:32.000Z",
+    "checkedAt": "2026-09-11T17:00:34.911Z",
+    "images": [
+      "https://images.craigslist.org/00X0X_8fAXb0mepVn_0t20CI_600x450.jpg",
+      "https://images.craigslist.org/00X0X_8fAXb0mepVn_0t20CI_50x50c.jpg",
+      "https://images.craigslist.org/00q0q_bPnZqZo8ZWF_0t20CI_50x50c.jpg",
+      "https://images.craigslist.org/00P0P_bhpaXiTPvCn_0vb0CI_50x50c.jpg",
+      "https://images.craigslist.org/00d0d_cRtyrtz39fh_0CI0t0_50x50c.jpg",
+      "https://images.craigslist.org/00x0x_gSqPWfWvnL2_0CI0s7_50x50c.jpg",
+      "https://images.craigslist.org/00R0R_iI52BGLtDkD_0t00CI_50x50c.jpg",
+      "https://images.craigslist.org/00K0K_bsQwSpDw4jV_0CI0s3_50x50c.jpg"
+    ],
     "publishable": false,
-    "evidenceKind": "current_search_result_card",
+    "evidenceKind": "current_search_card_and_exact_detail",
     "queryIds": [
       "kitsilano"
-    ]
+    ],
+    "description": "Beautiful newly built duplex completed in 2022, all 3 bedrooms are en-suite.\nExcellent location near the West Broadway commercial corridor, with easy access to supermarkets, banks, restaurants, cafes, and various daily conveniences within walking distance.\n\nSteps to West 4th shopping and Kits Beach\n\nMultiple bus routes nearby provide convenient transportation to different areas of the city. The neighborhood is surrounded by elementary and secondary schools, community facilities, and family-friendly amenities.\n\nEquipped with premium North American luxury brand Thermador stove, refrigerator, and dishwasher. All faucets and shower systems throughout the home are fitted with high-end brand （Brizo ）fixtures. The kitchen features a designer-crafted apron-front Blanco sink made from premium materials.\nAC and HRV systems.\nRadiant floor heating\n\nNo garage. Street parking .\nPerfect for small families or professionals looking for a modern and convenient home.\n\nRequirements:\n\n• Minimum 1-year lease\n• No pets, no smoking\n• Tenant insurance required\n• Credit reference check and referral letter is required\n\nAppointment for viewing.",
+    "type": "duplex",
+    "ac": true,
+    "detailVerified": true
   },
-  "cardText": "•\n•\n•\n•\n•\n•\n•\nNew 3 bedrooms 3.5 bathrooms 1/2 Duplex in Kitsilano\n09-10\n3br1500ft2\nKitsilano\n$6,200"
+  "bodyText": "CL\n\nvancouver, BC >\n\nvancouver >\n\nhousing >\n\napartments / housing for rent\n\npost\naccount\n favorites\nreply \nfavorite\n \nhide\n \n⚐\nflag\n \n\nPosted 2026-08-14 15:20\n\nprint\n$6,200 / 3br - 1500ft2 - New 3 bedrooms 3.5 bathrooms 1/2 Duplex in Kitsilano (Kitsilano)\n‹\nimage 1 of 7\n›\n3BR / 3.5Ba 1500ft2 available oct 1\nrent period: monthly\nduplex\nw/d in unit\nstreet parking\nno smoking\nair conditioning\nBeautiful newly built duplex completed in 2022, all 3 bedrooms are en-suite.\nExcellent location near the West Broadway commercial corridor, with easy access to supermarkets, banks, restaurants, cafes, and various daily conveniences within walking distance.\n\nSteps to West 4th shopping and Kits Beach\n\nMultiple bus routes nearby provide convenient transportation to different areas of the city. The neighborhood is surrounded by elementary and secondary schools, community facilities, and family-friendly amenities.\n\nEquipped with premium North American luxury brand Thermador stove, refrigerator, and dishwasher. All faucets and shower systems throughout the home are fitted with high-end brand （Brizo ）fixtures. The kitchen features a designer-crafted apron-front Blanco sink made from premium materials.\nAC and HRV systems.\nRadiant floor heating\n\nNo garage. Street parking .\nPerfect for small families or professionals looking for a modern and convenient home.\n\nRequirements:\n\n• Minimum 1-year lease\n• No pets, no smoking\n• Tenant insurance required\n• Credit reference check and referral letter is required\n\nAppointment for viewing.\n\npost id: 7953626877\n\n \n\nposted: 2026-08-14 15:20\n\n \n\nupdated: 2026-09-10 14:25\n\n \n\n♥ best of [?]\n\nhelp\nsafety\nprivacy\nterms\nabout\napp\n© 2026 craigslist"
 }
