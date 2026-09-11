@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-09-10T23:09:27.074Z",
-  "activeCount": 18,
-  "decisionReady": true,
+  "generatedAt": "2026-09-11T04:54:23.359Z",
+  "activeCount": 17,
+  "decisionReady": false,
   "highIssueCount": 0,
   "mediumIssueCount": 0,
-  "infoIssueCount": 30,
+  "infoIssueCount": 29,
   "issues": [
     {
       "severity": "info",
@@ -83,11 +83,6 @@
     },
     {
       "severity": "info",
-      "id": "arbutus-residences-floorplan-2-bedroom-townhouse-den-1340",
-      "issue": "unknown-orientation"
-    },
-    {
-      "severity": "info",
       "id": "zumper-ecd4e868f79c",
       "issue": "unknown-ac"
     },
@@ -160,9 +155,9 @@
   "readinessChecks": {
     "smokeOk": true,
     "smokeFresh": true,
-    "smokeCheckedAt": "2026-09-10T23:09:32.552Z",
-    "latestDataAt": "2026-09-10T23:08:42.325Z",
-    "coverageReady": true,
+    "smokeCheckedAt": "2026-09-11T04:54:28.210Z",
+    "latestDataAt": "2026-09-11T04:53:33.916Z",
+    "coverageReady": false,
     "healthyDiscoveryLanes": 2,
     "coverageWarnings": [
       {
@@ -173,18 +168,29 @@
       },
       {
         "severity": "warning",
-        "lane": "rentalsca",
-        "status": "degraded",
-        "detail": "2/9 regional searches reachable; 0 qualifying candidates parsed"
-      },
-      {
-        "severity": "warning",
         "lane": "livrent",
         "status": "unhealthy",
         "detail": "0/5 searches healthy"
+      },
+      {
+        "severity": "warning",
+        "lane": "realtylink",
+        "status": "degraded",
+        "detail": "3/3 searches reachable; partial snapshot parsed 2 candidates versus complete baseline 3; removals suppressed"
       }
     ]
   },
-  "readinessIssues": [],
-  "finalizedAt": "2026-09-10T23:09:34.320Z"
+  "readinessIssues": [
+    {
+      "severity": "high",
+      "issue": "discovery-coverage-not-ready",
+      "detail": [
+        {
+          "severity": "high",
+          "issue": "no-healthy-independent-discovery-lane"
+        }
+      ]
+    }
+  ],
+  "finalizedAt": "2026-09-11T04:54:29.776Z"
 }

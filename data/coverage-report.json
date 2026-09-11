@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-09-10T23:09:27.111Z",
-  "coverageReady": true,
+  "generatedAt": "2026-09-11T04:54:23.391Z",
+  "coverageReady": false,
   "healthyLaneCount": 2,
   "freshLaneCount": 8,
   "priorityOfficialReady": true,
@@ -12,7 +12,7 @@
       "healthy": true,
       "status": "healthy",
       "detail": "11 fresh live candidates",
-      "refreshedAt": "2026-09-10T23:04:33.500Z"
+      "refreshedAt": "2026-09-11T04:49:15.732Z"
     },
     {
       "id": "craigslist",
@@ -20,15 +20,15 @@
       "healthy": false,
       "status": "degraded",
       "detail": "4/4 regional searches reachable; 0 qualifying candidates parsed",
-      "refreshedAt": "2026-09-10T23:07:25.300Z"
+      "refreshedAt": "2026-09-11T04:52:24.588Z"
     },
     {
       "id": "rentalsca",
       "kind": "broad-marketplace",
-      "healthy": false,
-      "status": "degraded",
-      "detail": "2/9 regional searches reachable; 0 qualifying candidates parsed",
-      "refreshedAt": "2026-09-10T23:07:16.704Z"
+      "healthy": true,
+      "status": "healthy",
+      "detail": "8/9 regional searches reachable; 3 qualifying candidates parsed",
+      "refreshedAt": "2026-09-11T04:51:55.789Z"
     },
     {
       "id": "livrent",
@@ -36,16 +36,16 @@
       "healthy": false,
       "status": "unhealthy",
       "detail": "0/5 searches healthy",
-      "refreshedAt": "2026-09-10T23:07:24.352Z"
+      "refreshedAt": "2026-09-11T04:52:23.703Z"
     },
     {
       "id": "realtylink",
       "kind": "mls-rental",
-      "healthy": true,
-      "status": "healthy",
-      "partial": false,
-      "detail": "3/3 searches reachable; 3 live candidates parsed",
-      "refreshedAt": "2026-09-10T23:07:33.087Z"
+      "healthy": false,
+      "status": "degraded",
+      "partial": true,
+      "detail": "3/3 searches reachable; partial snapshot parsed 2 candidates versus complete baseline 3; removals suppressed",
+      "refreshedAt": "2026-09-11T04:52:32.673Z"
     },
     {
       "id": "priority-kits-walk",
@@ -53,7 +53,7 @@
       "healthy": true,
       "status": "healthy",
       "detail": "1/2 official sources usable",
-      "refreshedAt": "2026-09-10T23:08:42.325Z"
+      "refreshedAt": "2026-09-11T04:53:33.916Z"
     },
     {
       "id": "priority-larchway-gardens",
@@ -61,7 +61,7 @@
       "healthy": true,
       "status": "healthy",
       "detail": "2/2 official sources usable",
-      "refreshedAt": "2026-09-10T23:08:42.325Z"
+      "refreshedAt": "2026-09-11T04:53:33.916Z"
     },
     {
       "id": "priority-viridian",
@@ -69,7 +69,7 @@
       "healthy": true,
       "status": "healthy",
       "detail": "1/2 official sources usable",
-      "refreshedAt": "2026-09-10T23:08:42.325Z"
+      "refreshedAt": "2026-09-11T04:53:33.916Z"
     }
   ],
   "warnings": [
@@ -81,17 +81,22 @@
     },
     {
       "severity": "warning",
-      "lane": "rentalsca",
-      "status": "degraded",
-      "detail": "2/9 regional searches reachable; 0 qualifying candidates parsed"
-    },
-    {
-      "severity": "warning",
       "lane": "livrent",
       "status": "unhealthy",
       "detail": "0/5 searches healthy"
+    },
+    {
+      "severity": "warning",
+      "lane": "realtylink",
+      "status": "degraded",
+      "detail": "3/3 searches reachable; partial snapshot parsed 2 candidates versus complete baseline 3; removals suppressed"
     }
   ],
-  "blockers": [],
+  "blockers": [
+    {
+      "severity": "high",
+      "issue": "no-healthy-independent-discovery-lane"
+    }
+  ],
   "policy": "Coverage is ready when at least two fresh independent discovery families are healthy, including one broad marketplace and one independent classifieds/MLS family, and every priority building has at least one fresh usable official source. Aggregate counts alone never publish inventory; structured rows with exact rent, bedroom and sqft anchors may be tracked as verified floorplans when the page also has current availability language."
 }

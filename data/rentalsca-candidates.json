@@ -1,62 +1,169 @@
 {
-  "refreshedAt": "2026-09-10T23:07:16.704Z",
+  "refreshedAt": "2026-09-11T04:51:55.789Z",
   "mode": "candidate-only",
   "sourceHealth": {
     "rentalsca-kitsilano-2br": {
-      "checkedAt": "2026-09-10T23:07:16.704Z",
+      "checkedAt": "2026-09-11T04:51:55.789Z",
       "status": 200,
       "ok": true,
       "finalUrl": "https://rentals.ca/vancouver/kitsilano/all-apartments-all-houses/2-bedrooms"
     },
     "rentalsca-point-grey-2br": {
-      "checkedAt": "2026-09-10T23:07:16.704Z",
+      "checkedAt": "2026-09-11T04:51:55.789Z",
       "status": 200,
       "ok": true,
       "finalUrl": "https://rentals.ca/vancouver/west-point-grey/2-bedrooms"
     },
     "rentalsca-arbutus-2br": {
-      "checkedAt": "2026-09-10T23:07:16.704Z",
-      "status": 429,
-      "ok": false,
-      "finalUrl": "https://rentals.ca/vancouver/arbutus-ridge/2-bedrooms?__cf_chl_rt_tk=FHF3mjAlozSRJmaWUPSCcN0o1KEX.ldbRqzAxILq9qc-1789081643-1.0.1.1-0OnVQGrOATH0Y2IKH7XMGNWdIplrMGsQDW6gHZwc2cU"
+      "checkedAt": "2026-09-11T04:51:55.789Z",
+      "status": 200,
+      "ok": true,
+      "finalUrl": "https://rentals.ca/vancouver/arbutus-ridge/2-bedrooms"
     },
     "rentalsca-dunbar-2br": {
-      "checkedAt": "2026-09-10T23:07:16.704Z",
-      "status": 429,
-      "ok": false,
-      "finalUrl": "https://rentals.ca/vancouver/dunbar-southlands/2-bedrooms?__cf_chl_rt_tk=4st5EcjSOvVRXH7SFTaJVUMyvfoQ5CY0sPVbxpV.QW8-1789081643-1.0.1.1-jUx6wRgFXpWsR5GfBZ7wibtbzZF8fRaHJcRawh6mYiY"
+      "checkedAt": "2026-09-11T04:51:55.789Z",
+      "status": 200,
+      "ok": true,
+      "finalUrl": "https://rentals.ca/vancouver/dunbar-southlands/2-bedrooms"
     },
     "rentalsca-quilchena-2br": {
-      "checkedAt": "2026-09-10T23:07:16.704Z",
-      "status": 429,
+      "checkedAt": "2026-09-11T04:51:55.789Z",
+      "status": 404,
       "ok": false,
-      "finalUrl": "https://rentals.ca/vancouver/quilchena/2-bedrooms?__cf_chl_rt_tk=Hv9eK3znjN8Cq9S3xOlXyq7.sD3DqT627cuGJX1TAVo-1789081643-1.0.1.1-jZwxPPGghredMWK5pso5XehX6tNOwHQqDqKnahnsVMI"
+      "finalUrl": "https://rentals.ca/vancouver/quilchena/2-bedrooms"
     },
     "rentalsca-kitsilano-3br": {
-      "checkedAt": "2026-09-10T23:07:16.704Z",
-      "status": 429,
-      "ok": false,
-      "finalUrl": "https://rentals.ca/vancouver/kitsilano/3-bedrooms?__cf_chl_rt_tk=swPzuEXdH5.tZGWiopcEmlS5NwvU9aRMTweYLaKGwtA-1789081643-1.0.1.1-lUHvINKzW7Lg_icB82VE2YLqTtWM7HenFdn11hiwfPo"
+      "checkedAt": "2026-09-11T04:51:55.789Z",
+      "status": 200,
+      "ok": true,
+      "finalUrl": "https://rentals.ca/vancouver/kitsilano/3-bedrooms"
     },
     "rentalsca-kitsilano-4br": {
-      "checkedAt": "2026-09-10T23:07:16.704Z",
-      "status": 429,
-      "ok": false,
-      "finalUrl": "https://rentals.ca/vancouver/kitsilano/4-bedrooms?__cf_chl_rt_tk=LSVuU4G5Klnq2NVc4TGIxhZCG4zO2k9uh55WKiI9ORA-1789081643-1.0.1.1-rySNmpnpfQegRxqzUZ6ArPhK84lmwa1OndJEREjotMo"
+      "checkedAt": "2026-09-11T04:51:55.789Z",
+      "status": 200,
+      "ok": true,
+      "finalUrl": "https://rentals.ca/vancouver/kitsilano/4-bedrooms"
     },
     "rentalsca-vancouver-3br": {
-      "checkedAt": "2026-09-10T23:07:16.704Z",
-      "status": 429,
-      "ok": false,
-      "finalUrl": "https://rentals.ca/vancouver/3-bedrooms?__cf_chl_rt_tk=hJC1Qd01BUPel9irhIfPlSnCBPGyYEEG5fJnbnSSVe8-1789081643-1.0.1.1-IvCl3YTwkqxyu._PIL289w79WRO9Ez9ETHnt9HOPUm4"
+      "checkedAt": "2026-09-11T04:51:55.789Z",
+      "status": 200,
+      "ok": true,
+      "finalUrl": "https://rentals.ca/vancouver/3-bedrooms"
     },
     "rentalsca-vancouver-4br": {
-      "checkedAt": "2026-09-10T23:07:16.704Z",
-      "status": 429,
-      "ok": false,
-      "finalUrl": "https://rentals.ca/vancouver/4-bedrooms?__cf_chl_rt_tk=Ef7Esaog_cK.nDwwu_h6E4bZVDu7B67qFE9eWQcZDag-1789081643-1.0.1.1-NK09E7hbVx5.GIT5uEw7c6TKsEvdqmxjX57Gpir6_gE"
+      "checkedAt": "2026-09-11T04:51:55.789Z",
+      "status": 200,
+      "ok": true,
+      "finalUrl": "https://rentals.ca/vancouver/4-bedrooms"
     }
   },
-  "pages": [],
-  "inventories": []
+  "pages": [
+    {
+      "source": "Rentals.ca",
+      "url": "https://rentals.ca/vancouver/senakw",
+      "address": "1370 Senakw Lane, Vancouver, British Columbia V6J 0J5",
+      "addressUnit": null,
+      "geo": {
+        "lat": 49.2738008,
+        "lng": -123.1445701
+      },
+      "targetArea": true,
+      "active": true,
+      "floorplans": [
+        {
+          "label": "2 Bedroom Apartments In Vancouver",
+          "unit": null,
+          "beds": 2,
+          "baths": null,
+          "sqft": null,
+          "rent": 2000,
+          "available": true
+        },
+        {
+          "label": "3 Bedroom Apartments In Vancouver",
+          "unit": null,
+          "beds": 3,
+          "baths": null,
+          "sqft": null,
+          "rent": 2000,
+          "available": true
+        },
+        {
+          "label": "4 Bedroom Apartments In Vancouver",
+          "unit": null,
+          "beds": 4,
+          "baths": null,
+          "sqft": null,
+          "rent": 2000,
+          "available": true
+        }
+      ],
+      "single": {
+        "rent": 2000,
+        "beds": 1,
+        "baths": null,
+        "sqft": null
+      },
+      "checkedAt": "2026-09-11T04:51:55.789Z"
+    }
+  ],
+  "inventories": [
+    {
+      "source": "Rentals.ca",
+      "url": "https://rentals.ca/vancouver/senakw",
+      "address": "1370 Senakw Lane, Vancouver, British Columbia V6J 0J5",
+      "unit": null,
+      "floorplan": "2 Bedroom Apartments In Vancouver",
+      "identityKey": "1370 senakw lane::floorplan:2 bedroom apartments in vancouver",
+      "rent": 2000,
+      "bedrooms": 2,
+      "bathrooms": null,
+      "sqft": null,
+      "geo": {
+        "lat": 49.2738008,
+        "lng": -123.1445701
+      },
+      "active": true,
+      "checkedAt": "2026-09-11T04:51:55.789Z",
+      "publishable": false
+    },
+    {
+      "source": "Rentals.ca",
+      "url": "https://rentals.ca/vancouver/senakw",
+      "address": "1370 Senakw Lane, Vancouver, British Columbia V6J 0J5",
+      "unit": null,
+      "floorplan": "3 Bedroom Apartments In Vancouver",
+      "identityKey": "1370 senakw lane::floorplan:3 bedroom apartments in vancouver",
+      "rent": 2000,
+      "bedrooms": 3,
+      "bathrooms": null,
+      "sqft": null,
+      "geo": {
+        "lat": 49.2738008,
+        "lng": -123.1445701
+      },
+      "active": true,
+      "checkedAt": "2026-09-11T04:51:55.789Z",
+      "publishable": false
+    },
+    {
+      "source": "Rentals.ca",
+      "url": "https://rentals.ca/vancouver/senakw",
+      "address": "1370 Senakw Lane, Vancouver, British Columbia V6J 0J5",
+      "unit": null,
+      "floorplan": "4 Bedroom Apartments In Vancouver",
+      "identityKey": "1370 senakw lane::floorplan:4 bedroom apartments in vancouver",
+      "rent": 2000,
+      "bedrooms": 4,
+      "bathrooms": null,
+      "sqft": null,
+      "geo": {
+        "lat": 49.2738008,
+        "lng": -123.1445701
+      },
+      "active": true,
+      "checkedAt": "2026-09-11T04:51:55.789Z",
+      "publishable": false
+    }
+  ]
 }
