@@ -21,6 +21,7 @@ on:
       - 'scripts/refresh-rentalsca.mjs'
       - 'scripts/refresh-livrent.mjs'
       - 'scripts/refresh-craigslist.mjs'
+      - 'scripts/craigslist-parser.mjs'
       - 'scripts/refresh-realtylink.mjs'
       - 'scripts/realtylink-parser.mjs'
       - 'scripts/reconcile-candidates.mjs'
