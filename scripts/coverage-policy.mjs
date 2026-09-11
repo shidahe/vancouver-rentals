@@ -12,3 +12,17 @@ export function marketplaceLaneHealth({ reachable = 0, total = 0, candidates = 0
   const healthy = reachable >= 3;
   return { healthy, status: healthy ? 'healthy' : 'degraded', detail: `${reachable}/${total} regional searches reachable; ${candidates} qualifying candidates parsed` };
 }
+
+export function craigslistLaneHealth({ reachable = 0, total = 0, candidates = 0, sourceHealth = {} } = {}) {
+  const lane = marketplaceLaneHealth({ reachable, total, candidates });
+  if (candidates > 0 || reachable < 1) return lane;
+  const observations = Object.values(sourceHealth || {}).filter(x => x?.ok === true);
+  const anchors = observations.reduce((sum,x)=>sum+Number(x.anchorCount||0),0);
+  const detailLinks = observations.reduce((sum,x)=>sum+Number(x.detailLinkCount||0)+Number(x.embeddedDetailLinkCount||0),0);
+  const resultContainers = observations.reduce((sum,x)=>sum+Number(x.resultContainerCount||0),0);
+  const postIds = observations.reduce((sum,x)=>sum+Number(x.postIdCount||0),0);
+  if (anchors > 0 && detailLinks === 0) {
+    return {...lane,structureMismatch:true,detail:`${lane.detail}; parser structure mismatch (${anchors} anchors, ${resultContainers} result containers, ${postIds} post IDs, 0 detail links)`};
+  }
+  return lane;
+}
