@@ -7,7 +7,7 @@ import { aggregateUnitCount, discoveredStructuredInventories, structuredRentalIn
 import { dedupeHistoryEvents, pruneExcludedScopeChurn } from './history-policy.mjs';
 import { verifiedPhotoCandidates } from './listing-photo-candidates.mjs';
 import { isRealtylinkListingNotFoundRedirect, isTargetWestsideCoordinate, parseRealtylinkCoordinateValues, parseRealtylinkCoordinates, parseRealtylinkFloorArea, parseRealtylinkRoomCount } from './realtylink-parser.mjs';
-import { marketplaceLaneHealth, realtylinkLaneHealth } from './coverage-policy.mjs';
+import { craigslistLaneHealth, marketplaceLaneHealth, realtylinkLaneHealth } from './coverage-policy.mjs';
 import { exactPurposeBuiltFloorplanEvidence } from './purposebuilt-floorplan-evidence.mjs';
 import { dedupeMlsRecords } from './mls-dedupe.mjs';
 import { craigslistPostId, extractCraigslistDetailUrls, normalizeCraigslistDetailUrl } from './craigslist-parser.mjs';
@@ -130,8 +130,10 @@ const emptyMarketplace=marketplaceLaneHealth({reachable:6,total:9,candidates:0})
 if(emptyMarketplace.healthy||emptyMarketplace.status!=='degraded'||!/0 qualifying candidates/.test(emptyMarketplace.detail)) failures.push('A reachable marketplace with zero parsed candidates is still reported as a healthy discovery lane.');
 const productiveMarketplace=marketplaceLaneHealth({reachable:3,total:9,candidates:1});
 if(!productiveMarketplace.healthy||productiveMarketplace.status!=='healthy') failures.push('A reachable marketplace with parsed candidates is not reported as healthy.');
-if(!coverageSource.includes('const craigslistLane=marketplaceLaneHealth')||!coverageSource.includes("{id:'craigslist',kind:'independent-classifieds',...craigslistLane")) failures.push('Craigslist can still be reported healthy when every reachable search produces zero candidates.');
-if(!source.includes('normalizeCraigslistDetailUrl(u,page.url())')||!source.includes('extractCraigslistDetailUrls(await page.content()')||!source.includes('discoveredDetailUrls:urls.size')||!source.includes('embeddedDetailLinkCount=embeddedLinks.length')) failures.push('Craigslist zero-yield runs do not inspect embedded results or expose link discovery diagnostics.');
+const brokenCraigslist=craigslistLaneHealth({reachable:4,total:4,candidates:0,sourceHealth:{kits:{ok:true,anchorCount:290,detailLinkCount:0,embeddedDetailLinkCount:0,resultContainerCount:12,postIdCount:12}}});
+if(brokenCraigslist.healthy||!brokenCraigslist.structureMismatch||!/290 anchors, 12 result containers, 12 post IDs, 0 detail links/.test(brokenCraigslist.detail)) failures.push('Craigslist parser structure mismatches are not distinguished from true zero-result searches.');
+if(!coverageSource.includes('const craigslistLane=craigslistLaneHealth')||!coverageSource.includes("{id:'craigslist',kind:'independent-classifieds',...craigslistLane")) failures.push('Craigslist can still be reported healthy when every reachable search produces zero candidates.');
+if(!source.includes('normalizeCraigslistDetailUrl(u,page.url())')||!source.includes('extractCraigslistDetailUrls(await page.content()')||!source.includes('resultContainerCount:resultNodes.length')||!source.includes('hrefShapeSamples:samples')||!source.includes('discoveredDetailUrls:urls.size')||!source.includes('embeddedDetailLinkCount=embeddedLinks.length')) failures.push('Craigslist zero-yield runs do not inspect or report enough structure to diagnose parser drift.');
 if(!coverageSource.includes('(x.healthy||x.positiveDiscoveryHealthy)')||!coverageSource.includes('const independentHealthy=healthyDiscovery.some')) failures.push('Exact positive MLS discovery is still coupled to snapshot removal completeness.');
 if(!source.includes("if(/\\b(?:apartments?|condos?|houses?)\\s+in\\s+vancouver\\b/i.test(lines[i]))continue")||!source.includes("floorplans=parseFloorplans(text).filter(x=>listingScopeEligible")||!source.includes("else if(listingScopeEligible({rent:single.rent,bedrooms:single.beds},text))")) failures.push('Rentals.ca generic navigation rows or out-of-scope rents can still become discovery candidates.');
 if(!coverageSource.includes('rentalsca.inventories.filter(x=>listingScopeEligible')) failures.push('Out-of-scope Rentals.ca rows can still make the coverage lane appear productive.');
