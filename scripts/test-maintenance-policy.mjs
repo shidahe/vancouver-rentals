@@ -116,14 +116,17 @@ if (!coverageSource.includes('priority-building-official-monitor-unhealthy') || 
   failures.push('Priority official source health is not enforced by coverage readiness.');
 }
 const partialRealtylink=realtylinkLaneHealth({reachable:3,total:3,candidates:3,previousCompleteCount:10,removalEligible:false,suppression:'Partial Realtylink snapshot (3 candidates versus previous complete 10); disappearance signals ignored.'});
-if(partialRealtylink.healthy||partialRealtylink.status!=='degraded'||!partialRealtylink.partial) failures.push('A partial Realtylink snapshot is still reported as a healthy coverage lane.');
+if(partialRealtylink.healthy||partialRealtylink.positiveDiscoveryHealthy!==true||partialRealtylink.status!=='degraded'||!partialRealtylink.partial) failures.push('A partial Realtylink snapshot must allow exact positive discovery while remaining unhealthy for removals.');
+const emptyRealtylink=realtylinkLaneHealth({reachable:3,total:3,candidates:0,previousCompleteCount:10,removalEligible:false,suppression:'Partial Realtylink snapshot (0 candidates versus previous complete 10); disappearance signals ignored.'});
+if(emptyRealtylink.positiveDiscoveryHealthy||emptyRealtylink.healthy) failures.push('A zero-yield Realtylink snapshot can still qualify as positive discovery.');
 const completeRealtylink=realtylinkLaneHealth({reachable:3,total:3,candidates:10,previousCompleteCount:10,removalEligible:true});
-if(!completeRealtylink.healthy||completeRealtylink.status!=='healthy') failures.push('A complete Realtylink snapshot is not reported as healthy.');
+if(!completeRealtylink.healthy||!completeRealtylink.positiveDiscoveryHealthy||completeRealtylink.status!=='healthy') failures.push('A complete Realtylink snapshot is not reported as healthy.');
 const emptyMarketplace=marketplaceLaneHealth({reachable:6,total:9,candidates:0});
 if(emptyMarketplace.healthy||emptyMarketplace.status!=='degraded'||!/0 qualifying candidates/.test(emptyMarketplace.detail)) failures.push('A reachable marketplace with zero parsed candidates is still reported as a healthy discovery lane.');
 const productiveMarketplace=marketplaceLaneHealth({reachable:3,total:9,candidates:1});
 if(!productiveMarketplace.healthy||productiveMarketplace.status!=='healthy') failures.push('A reachable marketplace with parsed candidates is not reported as healthy.');
 if(!coverageSource.includes('const craigslistLane=marketplaceLaneHealth')||!coverageSource.includes("{id:'craigslist',kind:'independent-classifieds',...craigslistLane")) failures.push('Craigslist can still be reported healthy when every reachable search produces zero candidates.');
+if(!coverageSource.includes('(x.healthy||x.positiveDiscoveryHealthy)')||!coverageSource.includes('const independentHealthy=healthyDiscovery.some')) failures.push('Exact positive MLS discovery is still coupled to snapshot removal completeness.');
 if (!catalog.discovery.some(x=>x.id==='kits-walk-rentalsca'&&/kits-walk-by-strand/.test(x.url))) {
   failures.push('Kits Walk aggregate inventory source is missing.');
 }
