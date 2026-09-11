@@ -2,7 +2,7 @@ import fs from 'node:fs/promises';
 import path from 'node:path';
 import crypto from 'node:crypto';
 import { chromium } from 'playwright';
-import { craigslistPostId, normalizeCraigslistDetailUrl } from './craigslist-parser.mjs';
+import { craigslistPostId, extractCraigslistDetailUrls, normalizeCraigslistDetailUrl } from './craigslist-parser.mjs';
 
 const DATA=path.join(process.cwd(),'data');
 const EVIDENCE=path.join(DATA,'evidence');
@@ -37,8 +37,12 @@ for(const [id,url] of searches){
     const links=await page.locator('a').evaluateAll(as=>as.map(a=>a.getAttribute('href')||a.href).filter(Boolean));
     let acceptedLinks=0;
     for(const u of links){const detail=normalizeCraigslistDetailUrl(u,page.url());if(detail){urls.add(detail);acceptedLinks++;}}
+    const embeddedLinks=extractCraigslistDetailUrls(await page.content(),page.url());
+    for(const detail of embeddedLinks)urls.add(detail);
     sourceHealth[id].anchorCount=links.length;
     sourceHealth[id].detailLinkCount=acceptedLinks;
+    sourceHealth[id].embeddedDetailLinkCount=embeddedLinks.length;
+    sourceHealth[id].title=await page.title();
   }catch(e){sourceHealth[id]={checkedAt:iso,ok:false,error:String(e)}}
 }
 
