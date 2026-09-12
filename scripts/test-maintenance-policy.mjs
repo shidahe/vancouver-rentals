@@ -7,7 +7,7 @@ import { aggregateUnitCount, discoveredStructuredInventories, rentCafeUnpricedUn
 import { dedupeHistoryEvents, pruneExcludedScopeChurn } from './history-policy.mjs';
 import { verifiedPhotoCandidates } from './listing-photo-candidates.mjs';
 import { isRealtylinkListingNotFoundRedirect, isTargetWestsideCoordinate, parseRealtylinkCoordinateValues, parseRealtylinkCoordinates, parseRealtylinkFloorArea, parseRealtylinkRoomCount } from './realtylink-parser.mjs';
-import { craigslistLaneHealth, marketplaceLaneHealth, realtylinkLaneHealth } from './coverage-policy.mjs';
+import { craigslistLaneHealth, marketplaceLaneHealth, rentalscaLaneHealth, realtylinkLaneHealth } from './coverage-policy.mjs';
 import { exactPurposeBuiltFloorplanEvidence } from './purposebuilt-floorplan-evidence.mjs';
 import { dedupeMlsRecords } from './mls-dedupe.mjs';
 import { craigslistAddressPrecision, craigslistDetailEvidence, craigslistPostId, extractCraigslistDetailUrls, normalizeCraigslistDetailUrl, parseCraigslistSearchCard } from './craigslist-parser.mjs';
@@ -144,6 +144,10 @@ const emptyMarketplace=marketplaceLaneHealth({reachable:6,total:9,candidates:0})
 if(emptyMarketplace.healthy||emptyMarketplace.status!=='degraded'||!/0 qualifying candidates/.test(emptyMarketplace.detail)) failures.push('A reachable marketplace with zero parsed candidates is still reported as a healthy discovery lane.');
 const productiveMarketplace=marketplaceLaneHealth({reachable:3,total:9,candidates:1});
 if(!productiveMarketplace.healthy||productiveMarketplace.status!=='healthy') failures.push('A reachable marketplace with parsed candidates is not reported as healthy.');
+const rentalscaMissingLinks=rentalscaLaneHealth({reachable:2,total:9,candidates:0,diagnostics:{searchResultCount:6,detailUrls:0}});
+const rentalscaBlockedDetails=rentalscaLaneHealth({reachable:2,total:9,candidates:0,diagnostics:{searchResultCount:6,detailUrls:6,detailBlocked:6}});
+if(!rentalscaMissingLinks.structureMismatch||!/6 visible search results, 0 detail URLs/.test(rentalscaMissingLinks.detail)||rentalscaBlockedDetails.structureMismatch||!/6 detail pages blocked/.test(rentalscaBlockedDetails.detail))failures.push('Rentals.ca reachable-but-unproductive searches cannot distinguish a parser mismatch from blocked detail pages.');
+if(!coverageSource.includes('const rentalscaLane=rentalscaLaneHealth')||!source.includes('diagnostics.searchResultCount+=observed')||!source.includes('diagnostics.detailBlocked++'))failures.push('Rentals.ca no-yield cause is not persisted and surfaced in the coverage audit.');
 const brokenCraigslist=craigslistLaneHealth({reachable:4,total:4,candidates:0,sourceHealth:{kits:{ok:true,anchorCount:290,detailLinkCount:0,embeddedDetailLinkCount:0,resultContainerCount:12,postIdCount:12}}});
 if(brokenCraigslist.healthy||!brokenCraigslist.structureMismatch||!/290 anchors, 12 result containers, 12 post IDs, 0 detail links/.test(brokenCraigslist.detail)) failures.push('Craigslist parser structure mismatches are not distinguished from true zero-result searches.');
 if(!coverageSource.includes('const craigslistLane=craigslistLaneHealth')||!coverageSource.includes("{id:'craigslist',kind:'independent-classifieds',...craigslistLane")) failures.push('Craigslist can still be reported healthy when every reachable search produces zero candidates.');

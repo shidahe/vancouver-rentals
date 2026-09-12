@@ -50,35 +50,50 @@ const sources=await read(path.join(DATA,'live-sources.json'),{discovery:[]});
 const browser=await chromium.launch({headless:true});
 const context=await browser.newContext({locale:'en-CA',timezoneId:'America/Vancouver',viewport:{width:1440,height:1200},userAgent:'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 Chrome/126 Safari/537.36'});
 const page=await context.newPage(),detailUrls=new Set(),sourceHealth={};
+const diagnostics={searchResultCount:0,searchAddressLines:0,searchDetailLinks:0,detailUrls:0,detailChecked:0,detailBlocked:0,detailNotFound:0,detailErrors:0,detailParsed:0};
 for(const s of (sources.discovery||[]).filter(x=>x.adapter==='rentalsca-search')){
   try{
     const r=await page.goto(s.url,{waitUntil:'domcontentloaded',timeout:45000}),status=r?.status()??null;sourceHealth[s.id]={checkedAt:iso,status,ok:!!r&&status<400,finalUrl:page.url()};if(!r||status>=400)continue;
     await page.waitForTimeout(2500);
+    const before=detailUrls.size;
     for(const u of await page.locator('a').evaluateAll(as=>as.map(a=>a.href).filter(Boolean))){if(!/^https:\/\/rentals\.ca\/vancouver\//i.test(u))continue;const clean=u.split('#')[0].split('?')[0];if(/\/(kitsilano|west-point-grey|arbutus-ridge|dunbar-southlands|quilchena)(?:\/|$)/i.test(clean))continue;if(/\/(2-bedrooms|apartments|condos|houses|rooms|pet-friendly|under-|all-)/i.test(clean))continue;detailUrls.add(clean);}
+    sourceHealth[s.id].detailLinkCount=detailUrls.size-before;
     // Some Rentals.ca result cards are JS-clickable rather than normal anchors. Recover them from visible address text.
     const bodyText=await page.locator('body').innerText();
+    const title=await page.title();
+    const observed=Number(bodyText.match(/\b(\d+)\s+rentals?\s+found\b/i)?.[1]||0);
+    sourceHealth[s.id].title=title;sourceHealth[s.id].observedListingCount=observed;
+    sourceHealth[s.id].challengeDetected=/just a moment|verify you are human|checking your browser|attention required|enable javascript and cookies/i.test(`${title}\n${bodyText.slice(0,1500)}`);
+    if(sourceHealth[s.id].challengeDetected)sourceHealth[s.id].ok=false;
+    let addressLines=0;
     for(const line of bodyText.split('\n').map(x=>x.trim()).filter(Boolean)){
       if(!/,\s*Vancouver,\s*(?:BC|British Columbia)/i.test(line))continue;
       if(!/^\s*(?:[A-Za-z0-9#-]+\s+)?\d{3,5}\s+/i.test(line))continue;
-      const u=detailUrlFromAddress(line);if(u)detailUrls.add(u);
+      addressLines++;const u=detailUrlFromAddress(line);if(u)detailUrls.add(u);
     }
+    sourceHealth[s.id].addressLineCount=addressLines;
+    sourceHealth[s.id].detailUrlCount=detailUrls.size-before;
+    diagnostics.searchResultCount+=observed;diagnostics.searchAddressLines+=addressLines;diagnostics.searchDetailLinks+=sourceHealth[s.id].detailLinkCount;
   }catch(e){sourceHealth[s.id]={checkedAt:iso,ok:false,error:String(e)}}
 }
+diagnostics.detailUrls=detailUrls.size;
 const pages=[],inventories=[];
 for(const url of [...detailUrls].slice(0,160)){
   try{
-    const r=await page.goto(url,{waitUntil:'domcontentloaded',timeout:45000});if(!r||r.status()>=400)continue;
+    diagnostics.detailChecked++;
+    const r=await page.goto(url,{waitUntil:'domcontentloaded',timeout:45000});
+    if(!r||r.status()>=400){if(r?.status()===404||r?.status()===410)diagnostics.detailNotFound++;else diagnostics.detailBlocked++;continue;}
     await page.waitForTimeout(1800);const text=await page.locator('body').innerText({timeout:10000});
     const raws=await page.locator('script[type="application/ld+json"]').evaluateAll(ns=>ns.map(n=>n.textContent||'').slice(0,50));const ld=[];for(const raw of raws){try{ld.push(JSON.parse(raw))}catch{}}
     const addr=structuredAddress(ld)||firstAddress(text),geo=geoFromLd(ld),active=!/no longer available|listing is inactive|this rental is unavailable|off market|gone too soon/i.test(text),floorplans=parseFloorplans(text).filter(x=>listingScopeEligible({rent:x.rent,bedrooms:x.beds},x.label)),single=parseSingle(text);
-    const pageItem={source:'Rentals.ca',url,address:addr?.address||null,addressUnit:addr?.unit||null,geo,targetArea:target(geo),active,floorplans,single,checkedAt:iso};pages.push(pageItem);
+    const pageItem={source:'Rentals.ca',url,address:addr?.address||null,addressUnit:addr?.unit||null,geo,targetArea:target(geo),active,floorplans,single,checkedAt:iso};pages.push(pageItem);diagnostics.detailParsed++;
     if(active&&target(geo)&&addr?.address){
       if(floorplans.length){for(const f of floorplans)inventories.push({source:'Rentals.ca',url,address:addr.address,unit:f.unit||addr.unit||null,floorplan:f.label,identityKey:identity(addr.address,f.unit||addr.unit,f.label,url),rent:f.rent,bedrooms:f.beds,bathrooms:f.baths,sqft:f.sqft,geo,active:true,checkedAt:iso,publishable:false});}
       else if(listingScopeEligible({rent:single.rent,bedrooms:single.beds},text))inventories.push({source:'Rentals.ca',url,address:addr.address,unit:addr.unit||null,floorplan:null,identityKey:identity(addr.address,addr.unit,null,url),rent:single.rent,bedrooms:single.beds,bathrooms:single.baths,sqft:single.sqft,geo,active:true,checkedAt:iso,publishable:false});
     }
     await write(path.join(EVIDENCE,`rentalsca-${hash(url)}.json`),{checkedAt:iso,page:pageItem,jsonLd:ld.slice(0,8),textSample:text.slice(0,7000)});
-  }catch{}
+  }catch{diagnostics.detailErrors++;}
 }
 await browser.close();
-await write(path.join(DATA,'rentalsca-candidates.json'),{refreshedAt:iso,mode:'candidate-only',sourceHealth,pages,inventories});
+await write(path.join(DATA,'rentalsca-candidates.json'),{refreshedAt:iso,mode:'candidate-only',sourceHealth,diagnostics,pages,inventories});
 console.log(`Rentals.ca adapter: ${pages.length} pages, ${inventories.length} target-area 2BR+ unit/floorplan inventories.`);

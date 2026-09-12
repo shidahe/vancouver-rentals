@@ -13,6 +13,18 @@ export function marketplaceLaneHealth({ reachable = 0, total = 0, candidates = 0
   return { healthy, status: healthy ? 'healthy' : 'degraded', detail: `${reachable}/${total} regional searches reachable; ${candidates} qualifying candidates parsed` };
 }
 
+export function rentalscaLaneHealth({ reachable = 0, total = 0, candidates = 0, diagnostics = {} } = {}) {
+  const lane=marketplaceLaneHealth({reachable,total,candidates});
+  if(candidates>0||reachable<1)return lane;
+  const observed=Number(diagnostics.searchResultCount||0);
+  const urls=Number(diagnostics.detailUrls||0);
+  const blocked=Number(diagnostics.detailBlocked||0);
+  if(blocked>0)return {...lane,detail:`${lane.detail}; ${blocked} detail pages blocked after ${urls} discovered URLs`};
+  if(observed>0&&urls===0)return {...lane,structureMismatch:true,detail:`${lane.detail}; parser structure mismatch (${observed} visible search results, 0 detail URLs)`};
+  if(observed>0)return {...lane,detail:`${lane.detail}; ${observed} visible search results, ${urls} detail URLs, ${Number(diagnostics.detailParsed||0)} parsed details`};
+  return lane;
+}
+
 export function craigslistLaneHealth({ reachable = 0, total = 0, candidates = 0, sourceHealth = {} } = {}) {
   const lane = marketplaceLaneHealth({ reachable, total, candidates });
   if (candidates > 0 || reachable < 1) return lane;
