@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-09-12T15:43:46.118Z",
-  "activeCount": 19,
+  "generatedAt": "2026-09-12T17:04:41.695Z",
+  "activeCount": 18,
   "decisionReady": true,
   "highIssueCount": 0,
   "mediumIssueCount": 0,
-  "infoIssueCount": 31,
+  "infoIssueCount": 30,
   "issues": [
     {
       "severity": "info",
@@ -148,25 +148,20 @@
     },
     {
       "severity": "info",
-      "id": "mls-r3161950",
-      "issue": "unknown-orientation"
-    },
-    {
-      "severity": "info",
-      "id": "mls-r3159060",
-      "issue": "unknown-orientation"
-    },
-    {
-      "severity": "info",
       "id": "mls-r3149267",
+      "issue": "unknown-orientation"
+    },
+    {
+      "severity": "info",
+      "id": "mls-r3164628",
       "issue": "unknown-orientation"
     }
   ],
   "readinessChecks": {
     "smokeOk": true,
     "smokeFresh": true,
-    "smokeCheckedAt": "2026-09-12T15:43:51.710Z",
-    "latestDataAt": "2026-09-12T15:43:01.598Z",
+    "smokeCheckedAt": "2026-09-12T17:04:47.096Z",
+    "latestDataAt": "2026-09-12T17:03:58.867Z",
     "coverageReady": true,
     "healthyDiscoveryLanes": 3,
     "coverageWarnings": [
@@ -174,7 +169,7 @@
         "severity": "warning",
         "lane": "rentalsca",
         "status": "degraded",
-        "detail": "2/9 regional searches reachable; 0 qualifying candidates parsed"
+        "detail": "8/9 regional searches reachable; 0 qualifying candidates parsed; 91 detail pages blocked after 92 discovered URLs"
       },
       {
         "severity": "warning",
@@ -191,5 +186,5 @@
     ]
   },
   "readinessIssues": [],
-  "finalizedAt": "2026-09-12T15:43:53.454Z"
+  "finalizedAt": "2026-09-12T17:04:48.868Z"
 }

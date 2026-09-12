@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-09-11T04:51:55.789Z",
+  "checkedAt": "2026-09-12T17:01:58.284Z",
   "page": {
     "source": "Rentals.ca",
     "url": "https://rentals.ca/vancouver/senakw",
@@ -11,42 +11,14 @@
     },
     "targetArea": true,
     "active": true,
-    "floorplans": [
-      {
-        "label": "2 Bedroom Apartments In Vancouver",
-        "unit": null,
-        "beds": 2,
-        "baths": null,
-        "sqft": null,
-        "rent": 2000,
-        "available": true
-      },
-      {
-        "label": "3 Bedroom Apartments In Vancouver",
-        "unit": null,
-        "beds": 3,
-        "baths": null,
-        "sqft": null,
-        "rent": 2000,
-        "available": true
-      },
-      {
-        "label": "4 Bedroom Apartments In Vancouver",
-        "unit": null,
-        "beds": 4,
-        "baths": null,
-        "sqft": null,
-        "rent": 2000,
-        "available": true
-      }
-    ],
+    "floorplans": [],
     "single": {
       "rent": 2000,
       "beds": 1,
       "baths": null,
       "sqft": null
     },
-    "checkedAt": "2026-09-11T04:51:55.789Z"
+    "checkedAt": "2026-09-12T17:01:58.284Z"
   },
   "jsonLd": [
     {
