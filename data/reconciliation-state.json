@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-09-12T11:08:43.470Z",
+  "refreshedAt": "2026-09-12T13:40:41.000Z",
   "groups": [
     {
       "identityKey": "3220 4th ave w::url:4b1a6ebe2d36",
@@ -206,7 +206,7 @@
       "result": "candidate_only"
     },
     {
-      "identityKey": "3639 w 16th ave::url:619762b61870",
+      "identityKey": "3639 w 16th ave::url:5e79d61e8e98",
       "sources": [
         "craigslist"
       ],
@@ -218,7 +218,7 @@
       "result": "candidate_only"
     },
     {
-      "identityKey": "3639 w 16th ave::url:5e79d61e8e98",
+      "identityKey": "3639 w 16th ave::url:619762b61870",
       "sources": [
         "craigslist"
       ],
@@ -242,6 +242,18 @@
       "result": "candidate_only"
     },
     {
+      "identityKey": "mls:r3150923",
+      "sources": [
+        "realtylink mls"
+      ],
+      "rents": [
+        4680
+      ],
+      "exactUnit": false,
+      "matchedListingId": "mls-r3150923",
+      "result": "authoritative_mls_reverified"
+    },
+    {
       "identityKey": "mls:r3160689",
       "sources": [
         "realtylink mls"
@@ -254,68 +266,75 @@
       "result": "authoritative_mls_reverified"
     },
     {
-      "identityKey": "mls:r3159060",
+      "identityKey": "mls:r3161950",
       "sources": [
         "realtylink mls"
       ],
       "rents": [
-        15000
+        4000
       ],
       "exactUnit": false,
-      "matchedListingId": "mls-r3159060",
+      "matchedListingId": "mls-r3161950",
       "result": "authoritative_mls_reverified"
     },
     {
-      "identityKey": "mls:r3163709",
+      "identityKey": "mls:r3151372",
       "sources": [
         "realtylink mls"
       ],
       "rents": [
-        6000
+        4800
       ],
       "exactUnit": false,
-      "matchedListingId": "mls-r3163709",
+      "matchedListingId": "mls-r3151372",
       "result": "authoritative_mls_reverified"
     }
   ],
   "promoted": [],
   "crossVerified": [
+    "mls-r3150923",
     "zumper-16e9ae17cd91",
-    "mls-r3159060",
-    "mls-r3163709"
+    "mls-r3161950",
+    "mls-r3151372"
   ],
   "fingerprintCrossVerified": [],
   "maskedMlsMerged": [],
   "relistedMlsMerged": [],
   "negativeMatches": [],
   "detailReactivated": [
-    "mls-r3159060",
-    "mls-r3163709"
+    "mls-r3150923",
+    "mls-r3151372",
+    "mls-r3161950"
   ],
   "mlsMissing": {
     "R3151022": {
       "firstMissingAt": "2026-09-12T10:59:41.599Z",
-      "lastMissingAt": "2026-09-12T11:08:43.470Z",
+      "lastMissingAt": "2026-09-12T13:40:41.000Z",
       "listingId": "mls-r3151022"
-    },
-    "R3150923": {
-      "firstMissingAt": "2026-09-12T10:59:41.599Z",
-      "lastMissingAt": "2026-09-12T11:08:43.470Z",
-      "listingId": "mls-r3150923"
     },
     "R3160879": {
       "firstMissingAt": "2026-09-12T11:08:43.470Z",
-      "lastMissingAt": "2026-09-12T11:08:43.470Z",
+      "lastMissingAt": "2026-09-12T13:40:41.000Z",
       "listingId": "mls-r3160879"
     },
     "R3161880": {
       "firstMissingAt": "2026-09-12T11:08:43.470Z",
-      "lastMissingAt": "2026-09-12T11:08:43.470Z",
+      "lastMissingAt": "2026-09-12T13:40:41.000Z",
       "listingId": "mls-r3161880"
+    },
+    "R3159060": {
+      "firstMissingAt": "2026-09-12T13:40:41.000Z",
+      "lastMissingAt": "2026-09-12T13:40:41.000Z",
+      "listingId": "mls-r3159060"
+    },
+    "R3163709": {
+      "firstMissingAt": "2026-09-12T13:40:41.000Z",
+      "lastMissingAt": "2026-09-12T13:40:41.000Z",
+      "listingId": "mls-r3163709"
     }
   },
   "mlsRemoved": [],
-  "realtylinkSnapshotCount": 3,
+  "realtylinkSnapshotCount": 4,
   "realtylinkSnapshotScope": "rent-3500-beds-2-4-whole-home-westside-v2",
   "realtylinkRemovalEligible": true,
   "mlsDuplicatesMerged": []

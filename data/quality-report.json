@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-12T11:09:34.246Z",
+  "generatedAt": "2026-09-12T13:41:27.638Z",
   "activeCount": 19,
   "decisionReady": true,
   "highIssueCount": 0,
@@ -83,11 +83,6 @@
     },
     {
       "severity": "info",
-      "id": "arbutus-residences-floorplan-2-bedroom-townhouse-den-1340",
-      "issue": "unknown-orientation"
-    },
-    {
-      "severity": "info",
       "id": "zumper-ecd4e868f79c",
       "issue": "unknown-ac"
     },
@@ -148,25 +143,30 @@
     },
     {
       "severity": "info",
-      "id": "mls-r3159060",
+      "id": "mls-r3150923",
+      "issue": "unknown-orientation"
+    },
+    {
+      "severity": "info",
+      "id": "mls-r3151372",
+      "issue": "unknown-orientation"
+    },
+    {
+      "severity": "info",
+      "id": "mls-r3161950",
       "issue": "unknown-orientation"
     },
     {
       "severity": "info",
       "id": "mls-r3149267",
       "issue": "unknown-orientation"
-    },
-    {
-      "severity": "info",
-      "id": "mls-r3163709",
-      "issue": "unknown-orientation"
     }
   ],
   "readinessChecks": {
     "smokeOk": true,
     "smokeFresh": true,
-    "smokeCheckedAt": "2026-09-12T11:09:39.512Z",
-    "latestDataAt": "2026-09-12T11:08:47.510Z",
+    "smokeCheckedAt": "2026-09-12T13:41:33.174Z",
+    "latestDataAt": "2026-09-12T13:40:42.433Z",
     "coverageReady": true,
     "healthyDiscoveryLanes": 3,
     "coverageWarnings": [
@@ -181,9 +181,15 @@
         "lane": "livrent",
         "status": "unhealthy",
         "detail": "0/5 searches healthy"
+      },
+      {
+        "severity": "warning",
+        "lane": "priority-viridian-unpriced-unit",
+        "status": "price-unverified",
+        "detail": "Viridian unit 0103 (2BR) is offered for Sep 30, but official rent is withheld; do not publish before verifying rent >= CAD $3,500"
       }
     ]
   },
   "readinessIssues": [],
-  "finalizedAt": "2026-09-12T11:09:41.182Z"
+  "finalizedAt": "2026-09-12T13:41:34.935Z"
 }
