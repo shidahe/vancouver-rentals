@@ -31,6 +31,14 @@ const numberFrom = (pattern, value) => {
   return match ? Number(match[1].replaceAll(',', '')) : null;
 };
 
+export function craigslistAddressPrecision(value = '') {
+  const address = String(value).replace(/\s+/g, ' ').trim();
+  if (!address || /^(?:google\s+map|map|show\s+on\s+map)\b/i.test(address)) return null;
+  if (/\b\d{2,5}\s+(?:(?:w|west|e|east)\s+)?(?:\d+(?:st|nd|rd|th)?|[a-z][a-z.'-]+)(?:\s+[a-z][a-z.'-]+){0,3}\s+(?:ave(?:nue)?|st(?:reet)?|rd|road|dr(?:ive)?|blvd|boulevard|pl(?:ace)?|way|cres(?:cent)?)\b/i.test(address)) return 'exact_civic';
+  if (/\b(?:near|at|&|and)\b/i.test(address) && /\b(?:ave(?:nue)?|st(?:reet)?|rd|road|dr(?:ive)?|blvd|boulevard|way)\b/i.test(address)) return 'intersection';
+  return null;
+}
+
 export function parseCraigslistSearchCard(card = {}, base = 'https://vancouver.craigslist.org') {
   const url = normalizeCraigslistDetailUrl(card.href || card.url, base);
   if (!url) return null;
@@ -84,7 +92,8 @@ export function craigslistDetailEvidence(detail = {}) {
     identityMatch,
     explicitNegative,
     explicitPositive,
-    address: String(detail.address || '').trim() || null,
+    address: craigslistAddressPrecision(detail.address) ? String(detail.address).replace(/\s+/g, ' ').trim() : null,
+    addressPrecision: craigslistAddressPrecision(detail.address),
     images: [...new Set((detail.images || []).filter(x => /^https?:\/\//i.test(String(x))))]
   };
 }
