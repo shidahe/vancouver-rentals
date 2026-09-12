@@ -1,10 +1,19 @@
 {
-  "generatedAt": "2026-09-12T11:09:34.282Z",
+  "generatedAt": "2026-09-12T13:31:37.972Z",
   "coverageReady": true,
   "healthyLaneCount": 3,
   "freshLaneCount": 8,
   "priorityOfficialReady": true,
-  "inventoryGaps": [],
+  "inventoryGaps": [
+    {
+      "building": "viridian",
+      "unit": "0103",
+      "bedrooms": 2,
+      "availability": "Sep 30",
+      "reason": "official-price-unverified",
+      "evidenceUrl": "https://www.rentcafe.com/apartments/bc/vancouver/viridian1/default.aspx"
+    }
+  ],
   "lanes": [
     {
       "id": "zumper",
@@ -85,6 +94,12 @@
       "lane": "livrent",
       "status": "unhealthy",
       "detail": "0/5 searches healthy"
+    },
+    {
+      "severity": "warning",
+      "lane": "priority-viridian-unpriced-unit",
+      "status": "price-unverified",
+      "detail": "Viridian unit 0103 (2BR) is offered for Sep 30, but official rent is withheld; do not publish before verifying rent >= CAD $3,500"
     }
   ],
   "blockers": [],

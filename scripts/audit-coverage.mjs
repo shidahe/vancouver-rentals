@@ -1,6 +1,6 @@
 import fs from 'node:fs/promises';
 import path from 'node:path';
-import { aggregateUnitCount } from './priority-inventory-policy.mjs';
+import { aggregateUnitCount, rentCafeUnpricedUnits } from './priority-inventory-policy.mjs';
 import { craigslistLaneHealth, marketplaceLaneHealth, realtylinkLaneHealth } from './coverage-policy.mjs';
 import { listingScopeEligible } from './discovery-policy.mjs';
 
@@ -19,6 +19,7 @@ const reconciliation=await read(path.join(DATA,'reconciliation-state.json'),{});
 const officialStatus=await read(path.join(DATA,'official-status.json'),{projects:[]});
 const listings=await read(path.join(DATA,'listings.json'),{listings:[]});
 const kitsWalkAggregate=await read(path.join(DATA,'evidence','source-kits-walk-rentalsca.json'),{});
+const viridianOfficial=await read(path.join(DATA,'evidence','source-viridian-official.json'),{});
 
 const countOk=obj=>Object.values(obj||{}).filter(x=>x?.ok===true).length;
 const countTotal=obj=>Object.keys(obj||{}).length;
@@ -70,6 +71,12 @@ const verifiedKitsWalkCount=(listings.listings||[]).filter(x=>
   (/^\d+[A-Za-z]?$/.test(String(x.unit||'')) || (x.type==='purpose-built' && x.verificationLevel==='primary-live' && Number(x.rent)>0 && Number(x.sqft)>0))
 ).length;
 const inventoryGaps=[];
+if(viridianOfficial.ok===true && fresh(viridianOfficial.checkedAt)){
+  for(const unit of rentCafeUnpricedUnits(viridianOfficial.bodyText)){
+    warnings.push({severity:'warning',lane:'priority-viridian-unpriced-unit',status:'price-unverified',detail:`Viridian unit ${unit.unit} (${unit.bedrooms}BR) is offered for ${unit.availability}, but official rent is withheld; do not publish before verifying rent >= CAD $3,500`});
+    inventoryGaps.push({building:'viridian',unit:unit.unit,bedrooms:unit.bedrooms,availability:unit.availability,reason:'official-price-unverified',evidenceUrl:viridianOfficial.source?.url||viridianOfficial.finalUrl||null});
+  }
+}
 if(aggregateCount>verifiedKitsWalkCount){
   const gap={severity:'warning',lane:'priority-kits-walk-inventory',status:'incomplete',detail:`Aggregate inventory reports ${aggregateCount} units; ${verifiedKitsWalkCount} exact unit/floorplan inventories are verified`};
   warnings.push(gap);

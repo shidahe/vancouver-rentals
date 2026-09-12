@@ -1,5 +1,23 @@
 import { bedroomEligible, rentEligible } from './discovery-policy.mjs';
 
+// RentCafe's floor-plan table exposes exact units even when its price is
+// withheld. Keep those units in the audit queue, never in published inventory.
+export function rentCafeUnpricedUnits(bodyText = '') {
+  const text = String(bodyText);
+  const sections = text.split(/(?=^Two Bedroom\s*$|^Three Bedroom\s*$|^Four Bedroom\s*$)/im);
+  const units = [];
+  for (const section of sections) {
+    const beds = { two: 2, three: 3, four: 4 }[section.match(/^(Two|Three|Four) Bedroom\s*$/im)?.[1]?.toLowerCase()];
+    if (!beds || !new RegExp(`${beds} Beds?\\s*\\/`, 'i').test(section)) continue;
+    const table = section.split(/Unit\s+Base rent\s+Availability/i)[1]?.split(/Ratings and reviews|Check for available units/i)[0];
+    if (!table) continue;
+    for (const match of table.matchAll(/(?:^|\n)\s*(\d{3,5}[a-z]?)\s+Ask for pricing\s+(Now|(?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)\s+\d{1,2})\b/gi)) {
+      if (!units.some(x => x.unit === match[1])) units.push({ unit: match[1], bedrooms: beds, availability: match[2] });
+    }
+  }
+  return units;
+}
+
 export function aggregateUnitCount(jsonLd = []) {
   let maximum = 0;
   const visit = value => {
