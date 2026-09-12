@@ -50,7 +50,7 @@ const sources=await read(path.join(DATA,'live-sources.json'),{discovery:[]});
 const browser=await chromium.launch({headless:true});
 const context=await browser.newContext({locale:'en-CA',timezoneId:'America/Vancouver',viewport:{width:1440,height:1200},userAgent:'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 Chrome/126 Safari/537.36'});
 const page=await context.newPage(),detailUrls=new Set(),sourceHealth={};
-const diagnostics={searchResultCount:0,searchAddressLines:0,searchDetailLinks:0,detailUrls:0,detailChecked:0,detailBlocked:0,detailNotFound:0,detailErrors:0,detailParsed:0};
+const diagnostics={searchResultCount:0,searchAddressLines:0,searchDetailLinks:0,detailUrls:0,detailChecked:0,detailBlocked:0,detailNotFound:0,detailErrors:0,detailParsed:0,detailSuppressed:0,detailCircuitOpen:false};
 for(const s of (sources.discovery||[]).filter(x=>x.adapter==='rentalsca-search')){
   try{
     const r=await page.goto(s.url,{waitUntil:'domcontentloaded',timeout:45000}),status=r?.status()??null;sourceHealth[s.id]={checkedAt:iso,status,ok:!!r&&status<400,finalUrl:page.url()};if(!r||status>=400)continue;
@@ -78,11 +78,17 @@ for(const s of (sources.discovery||[]).filter(x=>x.adapter==='rentalsca-search')
 }
 diagnostics.detailUrls=detailUrls.size;
 const pages=[],inventories=[];
-for(const url of [...detailUrls].slice(0,160)){
+const requestedDetails=[...detailUrls].slice(0,160);
+let consecutiveBlocked=0;
+for(const url of requestedDetails){
+  // Three consecutive 403/429 responses indicate source-level throttling.
+  // Do not hammer the remaining detail URLs or treat search cards as availability.
+  if(consecutiveBlocked>=3){diagnostics.detailCircuitOpen=true;diagnostics.detailSuppressed=requestedDetails.length-diagnostics.detailChecked;break;}
   try{
     diagnostics.detailChecked++;
     const r=await page.goto(url,{waitUntil:'domcontentloaded',timeout:45000});
-    if(!r||r.status()>=400){if(r?.status()===404||r?.status()===410)diagnostics.detailNotFound++;else diagnostics.detailBlocked++;continue;}
+    if(!r||r.status()>=400){if(r?.status()===404||r?.status()===410){diagnostics.detailNotFound++;consecutiveBlocked=0;}else{diagnostics.detailBlocked++;consecutiveBlocked=[403,429].includes(r?.status())?consecutiveBlocked+1:0;}continue;}
+    consecutiveBlocked=0;
     await page.waitForTimeout(1800);const text=await page.locator('body').innerText({timeout:10000});
     const raws=await page.locator('script[type="application/ld+json"]').evaluateAll(ns=>ns.map(n=>n.textContent||'').slice(0,50));const ld=[];for(const raw of raws){try{ld.push(JSON.parse(raw))}catch{}}
     const addr=structuredAddress(ld)||firstAddress(text),geo=geoFromLd(ld),active=!/no longer available|listing is inactive|this rental is unavailable|off market|gone too soon/i.test(text),floorplans=parseFloorplans(text).filter(x=>listingScopeEligible({rent:x.rent,bedrooms:x.beds},x.label)),single=parseSingle(text);

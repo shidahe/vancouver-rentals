@@ -19,7 +19,7 @@ export function rentalscaLaneHealth({ reachable = 0, total = 0, candidates = 0, 
   const observed=Number(diagnostics.searchResultCount||0);
   const urls=Number(diagnostics.detailUrls||0);
   const blocked=Number(diagnostics.detailBlocked||0);
-  if(blocked>0)return {...lane,detail:`${lane.detail}; ${blocked} detail pages blocked after ${urls} discovered URLs`};
+  if(blocked>0)return {...lane,detail:`${lane.detail}; ${blocked} detail pages blocked after ${urls} discovered URLs${diagnostics.detailCircuitOpen?`; ${Number(diagnostics.detailSuppressed||0)} further detail checks suppressed after repeated 403/429`:''}`};
   if(observed>0&&urls===0)return {...lane,structureMismatch:true,detail:`${lane.detail}; parser structure mismatch (${observed} visible search results, 0 detail URLs)`};
   if(observed>0)return {...lane,detail:`${lane.detail}; ${observed} visible search results, ${urls} detail URLs, ${Number(diagnostics.detailParsed||0)} parsed details`};
   return lane;
