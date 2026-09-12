@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-12T20:44:58.998Z",
+  "generatedAt": "2026-09-12T23:05:37.818Z",
   "coverageReady": true,
   "healthyLaneCount": 3,
   "freshLaneCount": 8,
@@ -20,8 +20,8 @@
       "kind": "broad-marketplace",
       "healthy": true,
       "status": "healthy",
-      "detail": "11 fresh live candidates",
-      "refreshedAt": "2026-09-12T20:39:43.972Z"
+      "detail": "10 fresh live candidates",
+      "refreshedAt": "2026-09-12T23:00:37.740Z"
     },
     {
       "id": "craigslist",
@@ -29,15 +29,15 @@
       "healthy": true,
       "status": "healthy",
       "detail": "4/4 regional searches reachable; 36 qualifying candidates parsed",
-      "refreshedAt": "2026-09-12T20:42:45.650Z"
+      "refreshedAt": "2026-09-12T23:03:19.351Z"
     },
     {
       "id": "rentalsca",
       "kind": "broad-marketplace",
       "healthy": false,
       "status": "degraded",
-      "detail": "5/9 regional searches reachable; 0 qualifying candidates parsed; 3 detail pages blocked after 75 discovered URLs; 72 further detail checks suppressed after repeated 403/429",
-      "refreshedAt": "2026-09-12T20:42:29.165Z"
+      "detail": "6/9 regional searches reachable; 0 qualifying candidates parsed; 2 scoped search-only leads retained; 3 detail pages blocked after 26 discovered URLs; 23 further detail checks suppressed after repeated 403/429",
+      "refreshedAt": "2026-09-12T23:02:59.379Z"
     },
     {
       "id": "livrent",
@@ -45,17 +45,17 @@
       "healthy": false,
       "status": "unhealthy",
       "detail": "0/5 searches healthy",
-      "refreshedAt": "2026-09-12T20:42:44.938Z"
+      "refreshedAt": "2026-09-12T23:03:18.457Z"
     },
     {
       "id": "realtylink",
       "kind": "mls-rental",
-      "healthy": false,
+      "healthy": true,
       "positiveDiscoveryHealthy": true,
-      "status": "degraded",
-      "partial": true,
-      "detail": "3/3 searches reachable; 3 current live candidates parsed from a partial snapshot versus complete baseline 5; positive discovery usable, removals suppressed",
-      "refreshedAt": "2026-09-12T20:43:09.455Z"
+      "status": "healthy",
+      "partial": false,
+      "detail": "3/3 searches reachable; 4 live candidates parsed",
+      "refreshedAt": "2026-09-12T23:03:41.849Z"
     },
     {
       "id": "priority-kits-walk",
@@ -63,7 +63,7 @@
       "healthy": true,
       "status": "healthy",
       "detail": "1/2 official sources usable",
-      "refreshedAt": "2026-09-12T20:44:14.628Z"
+      "refreshedAt": "2026-09-12T23:04:52.453Z"
     },
     {
       "id": "priority-larchway-gardens",
@@ -71,7 +71,7 @@
       "healthy": true,
       "status": "healthy",
       "detail": "2/2 official sources usable",
-      "refreshedAt": "2026-09-12T20:44:14.628Z"
+      "refreshedAt": "2026-09-12T23:04:52.453Z"
     },
     {
       "id": "priority-viridian",
@@ -79,7 +79,7 @@
       "healthy": true,
       "status": "healthy",
       "detail": "1/2 official sources usable",
-      "refreshedAt": "2026-09-12T20:44:14.628Z"
+      "refreshedAt": "2026-09-12T23:04:52.453Z"
     }
   ],
   "warnings": [
@@ -87,19 +87,13 @@
       "severity": "warning",
       "lane": "rentalsca",
       "status": "degraded",
-      "detail": "5/9 regional searches reachable; 0 qualifying candidates parsed; 3 detail pages blocked after 75 discovered URLs; 72 further detail checks suppressed after repeated 403/429"
+      "detail": "6/9 regional searches reachable; 0 qualifying candidates parsed; 2 scoped search-only leads retained; 3 detail pages blocked after 26 discovered URLs; 23 further detail checks suppressed after repeated 403/429"
     },
     {
       "severity": "warning",
       "lane": "livrent",
       "status": "unhealthy",
       "detail": "0/5 searches healthy"
-    },
-    {
-      "severity": "warning",
-      "lane": "realtylink",
-      "status": "degraded",
-      "detail": "3/3 searches reachable; 3 current live candidates parsed from a partial snapshot versus complete baseline 5; positive discovery usable, removals suppressed"
     },
     {
       "severity": "warning",
