@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-11T21:09:52.186Z",
+  "generatedAt": "2026-09-12T04:49:52.649Z",
   "coverageReady": true,
   "healthyLaneCount": 3,
   "freshLaneCount": 8,
@@ -12,23 +12,23 @@
       "healthy": true,
       "status": "healthy",
       "detail": "11 fresh live candidates",
-      "refreshedAt": "2026-09-11T21:04:34.978Z"
+      "refreshedAt": "2026-09-12T04:44:41.539Z"
     },
     {
       "id": "craigslist",
       "kind": "independent-classifieds",
       "healthy": true,
       "status": "healthy",
-      "detail": "4/4 regional searches reachable; 35 qualifying candidates parsed",
-      "refreshedAt": "2026-09-11T21:07:29.860Z"
+      "detail": "4/4 regional searches reachable; 34 qualifying candidates parsed",
+      "refreshedAt": "2026-09-12T04:47:45.991Z"
     },
     {
       "id": "rentalsca",
       "kind": "broad-marketplace",
       "healthy": false,
       "status": "degraded",
-      "detail": "2/9 regional searches reachable; 0 qualifying candidates parsed",
-      "refreshedAt": "2026-09-11T21:07:21.764Z"
+      "detail": "6/9 regional searches reachable; 0 qualifying candidates parsed",
+      "refreshedAt": "2026-09-12T04:47:27.418Z"
     },
     {
       "id": "livrent",
@@ -36,7 +36,7 @@
       "healthy": false,
       "status": "unhealthy",
       "detail": "0/5 searches healthy",
-      "refreshedAt": "2026-09-11T21:07:29.125Z"
+      "refreshedAt": "2026-09-12T04:47:45.392Z"
     },
     {
       "id": "realtylink",
@@ -46,7 +46,7 @@
       "status": "healthy",
       "partial": false,
       "detail": "3/3 searches reachable; 4 live candidates parsed",
-      "refreshedAt": "2026-09-11T21:07:51.832Z"
+      "refreshedAt": "2026-09-12T04:48:06.858Z"
     },
     {
       "id": "priority-kits-walk",
@@ -54,7 +54,7 @@
       "healthy": true,
       "status": "healthy",
       "detail": "1/2 official sources usable",
-      "refreshedAt": "2026-09-11T21:08:58.971Z"
+      "refreshedAt": "2026-09-12T04:49:13.929Z"
     },
     {
       "id": "priority-larchway-gardens",
@@ -62,7 +62,7 @@
       "healthy": true,
       "status": "healthy",
       "detail": "2/2 official sources usable",
-      "refreshedAt": "2026-09-11T21:08:58.971Z"
+      "refreshedAt": "2026-09-12T04:49:13.929Z"
     },
     {
       "id": "priority-viridian",
@@ -70,7 +70,7 @@
       "healthy": true,
       "status": "healthy",
       "detail": "1/2 official sources usable",
-      "refreshedAt": "2026-09-11T21:08:58.971Z"
+      "refreshedAt": "2026-09-12T04:49:13.929Z"
     }
   ],
   "warnings": [
@@ -78,7 +78,7 @@
       "severity": "warning",
       "lane": "rentalsca",
       "status": "degraded",
-      "detail": "2/9 regional searches reachable; 0 qualifying candidates parsed"
+      "detail": "6/9 regional searches reachable; 0 qualifying candidates parsed"
     },
     {
       "severity": "warning",

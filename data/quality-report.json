@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-11T21:09:52.143Z",
+  "generatedAt": "2026-09-12T04:49:52.616Z",
   "activeCount": 19,
   "decisionReady": true,
   "highIssueCount": 0,
@@ -153,7 +153,7 @@
     },
     {
       "severity": "info",
-      "id": "mls-r3161880",
+      "id": "mls-r3150923",
       "issue": "unknown-orientation"
     },
     {
@@ -165,8 +165,8 @@
   "readinessChecks": {
     "smokeOk": true,
     "smokeFresh": true,
-    "smokeCheckedAt": "2026-09-11T21:09:57.840Z",
-    "latestDataAt": "2026-09-11T21:08:58.971Z",
+    "smokeCheckedAt": "2026-09-12T04:49:57.503Z",
+    "latestDataAt": "2026-09-12T04:49:13.929Z",
     "coverageReady": true,
     "healthyDiscoveryLanes": 3,
     "coverageWarnings": [
@@ -174,7 +174,7 @@
         "severity": "warning",
         "lane": "rentalsca",
         "status": "degraded",
-        "detail": "2/9 regional searches reachable; 0 qualifying candidates parsed"
+        "detail": "6/9 regional searches reachable; 0 qualifying candidates parsed"
       },
       {
         "severity": "warning",
@@ -185,5 +185,5 @@
     ]
   },
   "readinessIssues": [],
-  "finalizedAt": "2026-09-11T21:09:59.613Z"
+  "finalizedAt": "2026-09-12T04:49:59.041Z"
 }

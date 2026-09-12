@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-09-11T21:08:54.720Z",
+  "refreshedAt": "2026-09-12T04:49:09.975Z",
   "groups": [
     {
       "identityKey": "3220 4th ave w::url:4b1a6ebe2d36",
@@ -122,6 +122,54 @@
       "result": "candidate_only"
     },
     {
+      "identityKey": "3095 w 5th ave near balaclava st::url:789223e5a717",
+      "sources": [
+        "craigslist"
+      ],
+      "rents": [
+        10500
+      ],
+      "exactUnit": false,
+      "matchedListingId": null,
+      "result": "candidate_only"
+    },
+    {
+      "identityKey": "vancouver::url:139b000f2bc5",
+      "sources": [
+        "craigslist"
+      ],
+      "rents": [
+        3650
+      ],
+      "exactUnit": false,
+      "matchedListingId": null,
+      "result": "candidate_only"
+    },
+    {
+      "identityKey": "google map::url:0a21062aa06b",
+      "sources": [
+        "craigslist"
+      ],
+      "rents": [
+        4000
+      ],
+      "exactUnit": false,
+      "matchedListingId": null,
+      "result": "candidate_only"
+    },
+    {
+      "identityKey": "google map::url:6329879d9043",
+      "sources": [
+        "craigslist"
+      ],
+      "rents": [
+        4000
+      ],
+      "exactUnit": false,
+      "matchedListingId": null,
+      "result": "candidate_only"
+    },
+    {
       "identityKey": "1823 w 7th::url:a0b4229e6cb4",
       "sources": [
         "craigslist"
@@ -176,54 +224,6 @@
       ],
       "rents": [
         4595
-      ],
-      "exactUnit": false,
-      "matchedListingId": null,
-      "result": "candidate_only"
-    },
-    {
-      "identityKey": "3095 w 5th ave near balaclava st::url:789223e5a717",
-      "sources": [
-        "craigslist"
-      ],
-      "rents": [
-        10500
-      ],
-      "exactUnit": false,
-      "matchedListingId": null,
-      "result": "candidate_only"
-    },
-    {
-      "identityKey": "google map::url:6329879d9043",
-      "sources": [
-        "craigslist"
-      ],
-      "rents": [
-        4000
-      ],
-      "exactUnit": false,
-      "matchedListingId": null,
-      "result": "candidate_only"
-    },
-    {
-      "identityKey": "google map::url:0a21062aa06b",
-      "sources": [
-        "craigslist"
-      ],
-      "rents": [
-        4000
-      ],
-      "exactUnit": false,
-      "matchedListingId": null,
-      "result": "candidate_only"
-    },
-    {
-      "identityKey": "vancouver::url:139b000f2bc5",
-      "sources": [
-        "craigslist"
-      ],
-      "rents": [
-        3650
       ],
       "exactUnit": false,
       "matchedListingId": null,
@@ -374,18 +374,6 @@
       "result": "candidate_only"
     },
     {
-      "identityKey": "2036 w 15th ave::url:1790154a39c8",
-      "sources": [
-        "craigslist"
-      ],
-      "rents": [
-        3695
-      ],
-      "exactUnit": false,
-      "matchedListingId": null,
-      "result": "candidate_only"
-    },
-    {
       "identityKey": "6558 arbutus st::url:ab6d2714b32f",
       "sources": [
         "craigslist"
@@ -410,7 +398,7 @@
       "result": "candidate_only"
     },
     {
-      "identityKey": "mcbain near valley::url:6fcd0c7610c8",
+      "identityKey": "mcbain near valley::url:c17ac3d6e782",
       "sources": [
         "craigslist"
       ],
@@ -422,7 +410,7 @@
       "result": "candidate_only"
     },
     {
-      "identityKey": "mcbain near valley::url:c17ac3d6e782",
+      "identityKey": "mcbain near valley::url:6fcd0c7610c8",
       "sources": [
         "craigslist"
       ],
@@ -542,6 +530,18 @@
       "result": "candidate_only"
     },
     {
+      "identityKey": "mls:r3150923",
+      "sources": [
+        "realtylink mls"
+      ],
+      "rents": [
+        4680
+      ],
+      "exactUnit": false,
+      "matchedListingId": "mls-r3150923",
+      "result": "authoritative_mls_reverified"
+    },
+    {
       "identityKey": "mls:r3160689",
       "sources": [
         "realtylink mls"
@@ -566,18 +566,6 @@
       "result": "authoritative_mls_reverified"
     },
     {
-      "identityKey": "mls:r3161880",
-      "sources": [
-        "realtylink mls"
-      ],
-      "rents": [
-        8800
-      ],
-      "exactUnit": false,
-      "matchedListingId": "mls-r3161880",
-      "result": "authoritative_mls_reverified"
-    },
-    {
       "identityKey": "mls:r3151022",
       "sources": [
         "realtylink mls"
@@ -592,9 +580,9 @@
   ],
   "promoted": [],
   "crossVerified": [
+    "mls-r3150923",
     "zumper-16e9ae17cd91",
     "york-103-2535-r3137446",
-    "mls-r3161880",
     "mls-r3151022"
   ],
   "fingerprintCrossVerified": [],
@@ -602,46 +590,53 @@
   "relistedMlsMerged": [],
   "negativeMatches": [],
   "detailReactivated": [
-    "mls-r3151022"
+    "mls-r3150923"
   ],
   "mlsMissing": {
-    "R3150923": {
-      "firstMissingAt": "2026-09-11T21:08:54.720Z",
-      "lastMissingAt": "2026-09-11T21:08:54.720Z",
-      "listingId": "mls-r3150923"
-    },
     "R3148298": {
       "firstMissingAt": "2026-09-11T21:08:54.720Z",
-      "lastMissingAt": "2026-09-11T21:08:54.720Z",
+      "lastMissingAt": "2026-09-12T04:49:09.975Z",
       "listingId": "mls-r3148298"
     },
     "R3151372": {
       "firstMissingAt": "2026-09-11T21:08:54.720Z",
-      "lastMissingAt": "2026-09-11T21:08:54.720Z",
+      "lastMissingAt": "2026-09-12T04:49:09.975Z",
       "listingId": "mls-r3151372"
     },
     "R3158179": {
       "firstMissingAt": "2026-09-11T21:08:54.720Z",
-      "lastMissingAt": "2026-09-11T21:08:54.720Z",
+      "lastMissingAt": "2026-09-12T04:49:09.975Z",
       "listingId": "mls-r3158179"
+    },
+    "R3161880": {
+      "firstMissingAt": "2026-09-12T04:49:09.975Z",
+      "lastMissingAt": "2026-09-12T04:49:09.975Z",
+      "listingId": "mls-r3161880"
     },
     "R3161950": {
       "firstMissingAt": "2026-09-11T21:08:54.720Z",
-      "lastMissingAt": "2026-09-11T21:08:54.720Z",
+      "lastMissingAt": "2026-09-12T04:49:09.975Z",
       "listingId": "mls-r3161950"
     },
     "R3159060": {
       "firstMissingAt": "2026-09-11T21:08:54.720Z",
-      "lastMissingAt": "2026-09-11T21:08:54.720Z",
+      "lastMissingAt": "2026-09-12T04:49:09.975Z",
       "listingId": "mls-r3159060"
     },
     "R3163709": {
       "firstMissingAt": "2026-09-11T21:08:54.720Z",
-      "lastMissingAt": "2026-09-11T21:08:54.720Z",
+      "lastMissingAt": "2026-09-12T04:49:09.975Z",
       "listingId": "mls-r3163709"
     }
   },
-  "mlsRemoved": [],
+  "mlsRemoved": [
+    "mls-r3148298",
+    "mls-r3151372",
+    "mls-r3158179",
+    "mls-r3161950",
+    "mls-r3159060",
+    "mls-r3163709"
+  ],
   "realtylinkSnapshotCount": 4,
   "realtylinkSnapshotScope": "rent-3500-beds-2-4-whole-home-westside-v2",
   "realtylinkRemovalEligible": true,
