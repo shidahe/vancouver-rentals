@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-09-12T10:58:21.959Z",
+  "checkedAt": "2026-09-12T11:07:20.426Z",
   "status": 200,
   "identityMatch": true,
   "explicitPositive": true,
@@ -9,7 +9,7 @@
     "postId": "7950963955",
     "url": "https://www.craigslist.org/view/d/vancouver-arbutus-new-laneway-house-for/9YcVUMyLzfPMjzveu3dzZ2",
     "title": "$3,800 / 3br - Arbutus new laneway house for rent",
-    "address": "26xx west king Edward ave near Trafalgar street",
+    "address": null,
     "identityKey": "craigslist::post:7950963955",
     "rent": 3800,
     "bedrooms": 3,
@@ -22,7 +22,7 @@
     "targetArea": true,
     "active": true,
     "postedOrUpdatedAt": "2026-08-01T21:54:44.000Z",
-    "checkedAt": "2026-09-12T10:58:21.959Z",
+    "checkedAt": "2026-09-12T11:07:20.426Z",
     "images": [
       "https://images.craigslist.org/00u0u_17qRuFgysi4_0dq0t2_600x450.jpg",
       "https://images.craigslist.org/00u0u_17qRuFgysi4_0dq0t2_50x50c.jpg",
@@ -42,6 +42,8 @@
     "queryIds": [
       "arbutus"
     ],
+    "approximateLocation": "26xx west king Edward ave near Trafalgar street",
+    "addressPrecision": "intersection",
     "description": "A newly laneway house located at the beautiful Arbutus Ridge.inside have 3bedrooms and 2bathroom.surrounding is quiet and clean with kindly neighbhood the super convenient transportation can easily and promptly take you to UBC/Downtown in18-28mins by bus(No25,No2),and you can also get to supermarkets and various types of restaurants in few minutes by walk. The bus stations are steps away by walk less than 2 mins. The skytrain station is reachable within 5-6mins by bus.\nFully equipped morden kitchen facilities and amenities. Rent included high speed Wifi ,Tv and laundry.the house is ideal for college students,small family and professional workers to walk-in stay.",
     "type": "house",
     "ac": true,

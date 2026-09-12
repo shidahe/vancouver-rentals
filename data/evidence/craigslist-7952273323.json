@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-09-12T10:58:21.959Z",
+  "checkedAt": "2026-09-12T11:07:20.426Z",
   "status": 200,
   "identityMatch": true,
   "explicitPositive": true,
@@ -9,7 +9,7 @@
     "postId": "7952273323",
     "url": "https://www.craigslist.org/view/d/vancouver-stylish-south-facing-2bedroom/s3DQXLBpSeUjuR7WQq3Ya6",
     "title": "$3,800 / 2br - 1190ft2 - Stylish South-facing 2Bedroom 2Pkng FUNISHED Townhome in Arbutus Walk",
-    "address": "google map",
+    "address": null,
     "identityKey": "craigslist::post:7952273323",
     "rent": 3800,
     "bedrooms": 2,
@@ -22,7 +22,7 @@
     "targetArea": true,
     "active": true,
     "postedOrUpdatedAt": "2026-09-10T07:48:36.000Z",
-    "checkedAt": "2026-09-12T10:58:21.959Z",
+    "checkedAt": "2026-09-12T11:07:20.426Z",
     "images": [
       "https://images.craigslist.org/00p0p_1XnMnR4kdZ9_0oN0gv_600x450.jpg",
       "https://images.craigslist.org/00p0p_1XnMnR4kdZ9_0oN0gv_50x50c.jpg",
@@ -39,6 +39,8 @@
     "queryIds": [
       "kitsilano"
     ],
+    "approximateLocation": "city of vancouver",
+    "addressPrecision": "neighborhood",
     "description": "A bright and beautifully upgraded former display suite, New York Style 2 bedroom 2 bathroom Townhome in the heart of Arbutus Walk! Enjoy two private patios, ideal for morning coffee or summer dining, and two secure parking spots—a rare find in the area. Located in one of Vancouver’s most desirable neighborhoods, you're just a short walk to St. John’s School and Kitsilano Secondary, as well as trendy shops, grocery stores, and acclaimed restaurants.\n\nAddress: 22** W 12th Ave, VancouverV6K 4S6\nAvailable: September\nFurnishing: Furnished\nRent: $3800/Month\nProperty Type: New York Style Townhouse\nBedrooms: 2 Bedrooms\nBathrooms: 2\nFinished area: 1190 sqft\nFlooring: Mixed\nHeating: Baseboard\nParking: 2\nEn-suite Laundry: Yes\nLease term: Minimum one year lease.\nUtilities: not included\nPets: No, sorry\nAbsolutely No Smoking Please, credit / reference check will be done after receiving the application.\nTenant insurance is required\n\nFor viewing appointments, contact Alva show contact info TEXT ONLY!!\nplease include the following information:\n-Your full name.\n-Expect starting date\n-Your email.\n-Total number of occupants.\n-Profession/occupation\n\nSutton Group 1st West Realty.",
     "type": "townhouse",
     "ac": null,

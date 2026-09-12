@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-09-12T10:58:21.959Z",
+  "checkedAt": "2026-09-12T11:07:20.426Z",
   "status": 200,
   "identityMatch": true,
   "explicitPositive": true,
@@ -9,7 +9,7 @@
     "postId": "7964313684",
     "url": "https://www.craigslist.org/view/d/vancouver-bedroom-townhouse-for-rent-in/qtCkc9obYvFJmVwtZYs4Xs",
     "title": "$4,300 / 3br - 2101ft2 - 3 Bedroom Townhouse for Rent in Arbutus Area (Vancouver)",
-    "address": "Mcbain near Valley",
+    "address": null,
     "identityKey": "craigslist::post:7964313684",
     "rent": 4300,
     "bedrooms": 3,
@@ -22,7 +22,7 @@
     "targetArea": true,
     "active": true,
     "postedOrUpdatedAt": "2026-09-10T21:54:42.000Z",
-    "checkedAt": "2026-09-12T10:58:21.959Z",
+    "checkedAt": "2026-09-12T11:07:20.426Z",
     "images": [
       "https://images.craigslist.org/00E0E_bgxsuXxAQe9_0CI0t2_600x450.jpg",
       "https://images.craigslist.org/00E0E_bgxsuXxAQe9_0CI0t2_50x50c.jpg",
@@ -39,6 +39,8 @@
     "queryIds": [
       "arbutus"
     ],
+    "approximateLocation": "Vancouver",
+    "addressPrecision": "neighborhood",
     "description": "• Size: 2101SF\n• Rent: $4300 per month\n• Appliances: Fridge, Stove, Dishwasher, Washer and Dryer\n• 2 level townhouse with a finished basement\n• Front yard, back yard plus a balcony on the second floor\n• New laminated floor, curtains and painting,\n\n\nLooking for a quiet and clean family for moving in October 1 st, 2026, No smoking, vaping, recreational drugs or heavy alcohol consumption on the property.\n\nEasy access to all types of amenities including new opening Safeway, shopping, restaurants, trendy coffee shops, groceries, and 25 line direct to UBC. PW Secondary and Trafalgar Elementary school are close by.\n\n\n• One Year Lease\n• Landlord References needed\n• Proof of Income required\n• Credit Check requested",
     "type": "townhouse",
     "ac": null,
