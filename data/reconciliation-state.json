@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-09-12T17:15:37.248Z",
+  "refreshedAt": "2026-09-12T19:15:09.321Z",
   "groups": [
     {
       "identityKey": "3220 4th ave w::url:4b1a6ebe2d36",
@@ -242,18 +242,6 @@
       "result": "candidate_only"
     },
     {
-      "identityKey": "mls:r3150923",
-      "sources": [
-        "realtylink mls"
-      ],
-      "rents": [
-        4680
-      ],
-      "exactUnit": false,
-      "matchedListingId": "mls-r3150923",
-      "result": "authoritative_mls_reverified"
-    },
-    {
       "identityKey": "mls:r3137446",
       "sources": [
         "realtylink mls"
@@ -266,15 +254,15 @@
       "result": "authoritative_mls_reverified"
     },
     {
-      "identityKey": "mls:r3161880",
+      "identityKey": "mls:r3150923",
       "sources": [
         "realtylink mls"
       ],
       "rents": [
-        8800
+        4680
       ],
       "exactUnit": false,
-      "matchedListingId": "mls-r3161880",
+      "matchedListingId": "mls-r3150923",
       "result": "authoritative_mls_reverified"
     },
     {
@@ -288,47 +276,68 @@
       "exactUnit": false,
       "matchedListingId": "mls-r3159060",
       "result": "authoritative_mls_reverified"
+    },
+    {
+      "identityKey": "mls:r3151372",
+      "sources": [
+        "realtylink mls"
+      ],
+      "rents": [
+        4800
+      ],
+      "exactUnit": false,
+      "matchedListingId": "mls-r3151372",
+      "result": "authoritative_mls_reverified"
+    },
+    {
+      "identityKey": "mls:r3161880",
+      "sources": [
+        "realtylink mls"
+      ],
+      "rents": [
+        8800
+      ],
+      "exactUnit": false,
+      "matchedListingId": "mls-r3161880",
+      "result": "authoritative_mls_reverified"
     }
   ],
   "promoted": [],
   "crossVerified": [
-    "mls-r3150923",
     "york-103-2535-r3137446",
-    "mls-r3161880",
-    "mls-r3159060"
+    "mls-r3150923",
+    "mls-r3159060",
+    "mls-r3151372",
+    "mls-r3161880"
   ],
   "fingerprintCrossVerified": [],
   "maskedMlsMerged": [],
   "relistedMlsMerged": [],
   "negativeMatches": [],
   "detailReactivated": [
-    "mls-r3161880",
-    "mls-r3159060"
+    "mls-r3151372"
   ],
   "mlsMissing": {
-    "R3151372": {
-      "firstMissingAt": "2026-09-12T15:43:00.262Z",
-      "lastMissingAt": "2026-09-12T17:15:37.248Z",
-      "listingId": "mls-r3151372"
-    },
     "R3161950": {
       "firstMissingAt": "2026-09-12T17:03:57.513Z",
-      "lastMissingAt": "2026-09-12T17:15:37.248Z",
+      "lastMissingAt": "2026-09-12T19:15:09.321Z",
       "listingId": "mls-r3161950"
     },
     "R3163709": {
       "firstMissingAt": "2026-09-12T13:40:41.000Z",
-      "lastMissingAt": "2026-09-12T17:15:37.248Z",
+      "lastMissingAt": "2026-09-12T19:15:09.321Z",
       "listingId": "mls-r3163709"
     },
     "R3164628": {
       "firstMissingAt": "2026-09-12T17:15:37.248Z",
-      "lastMissingAt": "2026-09-12T17:15:37.248Z",
+      "lastMissingAt": "2026-09-12T19:15:09.321Z",
       "listingId": "mls-r3164628"
     }
   },
-  "mlsRemoved": [],
-  "realtylinkSnapshotCount": 4,
+  "mlsRemoved": [
+    "mls-r3163709"
+  ],
+  "realtylinkSnapshotCount": 5,
   "realtylinkSnapshotScope": "rent-3500-beds-2-4-whole-home-westside-v2",
   "realtylinkRemovalEligible": true,
   "mlsDuplicatesMerged": []
