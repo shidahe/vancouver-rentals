@@ -1,6 +1,6 @@
 import fs from 'node:fs/promises';
 import path from 'node:path';
-import { aggregateUnitCount, rentCafeUnpricedUnits } from './priority-inventory-policy.mjs';
+import { aggregateUnitCount, rentCafeExactUnits } from './priority-inventory-policy.mjs';
 import { craigslistLaneHealth, rentalscaLaneHealth, realtylinkLaneHealth } from './coverage-policy.mjs';
 import { listingScopeEligible } from './discovery-policy.mjs';
 
@@ -72,9 +72,14 @@ const verifiedKitsWalkCount=(listings.listings||[]).filter(x=>
 ).length;
 const inventoryGaps=[];
 if(viridianOfficial.ok===true && fresh(viridianOfficial.checkedAt)){
-  for(const unit of rentCafeUnpricedUnits(viridianOfficial.bodyText)){
-    warnings.push({severity:'warning',lane:'priority-viridian-unpriced-unit',status:'price-unverified',detail:`Viridian unit ${unit.unit} (${unit.bedrooms}BR) is offered for ${unit.availability}, but official rent is withheld; do not publish before verifying rent >= CAD $3,500`});
-    inventoryGaps.push({building:'viridian',unit:unit.unit,bedrooms:unit.bedrooms,availability:unit.availability,reason:'official-price-unverified',evidenceUrl:viridianOfficial.source?.url||viridianOfficial.finalUrl||null});
+  for(const unit of rentCafeExactUnits(viridianOfficial.bodyText)){
+    if(unit.rent===null){
+      warnings.push({severity:'warning',lane:'priority-viridian-unpriced-unit',status:'price-unverified',detail:`Viridian unit ${unit.unit} (${unit.bedrooms}BR) is offered for ${unit.availability}, but official rent is withheld; do not publish before verifying rent >= CAD $3,500`});
+      inventoryGaps.push({building:'viridian',unit:unit.unit,bedrooms:unit.bedrooms,availability:unit.availability,reason:'official-price-unverified',evidenceUrl:viridianOfficial.source?.url||viridianOfficial.finalUrl||null});
+    }else if(listingScopeEligible({rent:unit.rent,bedrooms:unit.bedrooms}) && !(listings.listings||[]).some(x=>x.availabilityStatus==='active' && /viridian/i.test(String(x.buildingName||'')) && String(x.unit||'').replace(/^0+/,'')===unit.unit.replace(/^0+/,''))){
+      warnings.push({severity:'warning',lane:'priority-viridian-priced-unit',status:'untracked',detail:`Viridian unit ${unit.unit} (${unit.bedrooms}BR) is offered for ${unit.availability} at CAD $${unit.rent}; verify exact detail and photos before publishing`});
+      inventoryGaps.push({building:'viridian',unit:unit.unit,bedrooms:unit.bedrooms,rent:unit.rent,availability:unit.availability,reason:'official-priced-unit-untracked',evidenceUrl:viridianOfficial.source?.url||viridianOfficial.finalUrl||null});
+    }
   }
 }
 if(aggregateCount>verifiedKitsWalkCount){

@@ -3,7 +3,7 @@ import { civicAddressMatch, exactAddressUnitIdentity, findExistingSeedListing, l
 import { firstLikelyRent, parseFacts } from './listing-parser.mjs';
 import { isAutoManagedListing } from './stale-auto-policy.mjs';
 import { bedroomEligible, isHouseShareText, isTargetRentalAreaText, LISTING_SCOPE_VERSION, listingScopeEligible, rentEligible } from './discovery-policy.mjs';
-import { aggregateUnitCount, discoveredStructuredInventories, rentCafeUnpricedUnits, structuredRentalInventories } from './priority-inventory-policy.mjs';
+import { aggregateUnitCount, discoveredStructuredInventories, rentCafeExactUnits, rentCafeUnpricedUnits, structuredRentalInventories } from './priority-inventory-policy.mjs';
 import { dedupeHistoryEvents, pruneExcludedScopeChurn } from './history-policy.mjs';
 import { verifiedPhotoCandidates } from './listing-photo-candidates.mjs';
 import { isRealtylinkListingNotFoundRedirect, isTargetWestsideCoordinate, parseRealtylinkCoordinateValues, parseRealtylinkCoordinates, parseRealtylinkFloorArea, parseRealtylinkRoomCount } from './realtylink-parser.mjs';
@@ -38,7 +38,11 @@ const failures = [];
 const viridianFixture='One Bedroom\n1 Bed / 1 Bath\nUnit\tBase rent\tAvailability\n0405\tAsk for pricing\tNow\nTwo Bedroom\n2 Beds / 1 Bath\nAsk for pricing\nFloor plan details\nUnit\tBase rent\tAvailability\n0103\tAsk for pricing\tSep 30\nTwo Bedroom\n2 Beds / 2 Baths\nCheck for available units\nRatings and reviews\n2 bedroom units for nearly $4,000';
 if(JSON.stringify(rentCafeUnpricedUnits(viridianFixture))!==JSON.stringify([{unit:'0103',bedrooms:2,availability:'Sep 30'}])||
    rentCafeUnpricedUnits('Two Bedroom\n2 Beds / 2 Baths\nCheck for available units').length||
-   !coverageSource.includes('rentCafeUnpricedUnits(viridianOfficial.bodyText)')) failures.push('Viridian exact unpriced 2BR units are not audited safely.');
+   !coverageSource.includes('rentCafeExactUnits(viridianOfficial.bodyText)')) failures.push('Viridian exact unpriced 2BR units are not audited safely.');
+const pricedViridianFixture='One Bedroom\n1 Bed / 1 Bath\nUnit Base rent Availability\n0405 $2,700 Now\nTwo Bedroom\n2 Beds / 1 Bath\nUnit Base rent Availability\n0103 $3,600 Sep 30\nTwo Bedroom\n2 Beds / 2 Baths\nCheck for available units';
+if(JSON.stringify(rentCafeExactUnits(pricedViridianFixture))!==JSON.stringify([{unit:'0103',bedrooms:2,rent:3600,availability:'Sep 30'}])||
+   rentCafeUnpricedUnits(pricedViridianFixture).length||
+   !coverageSource.includes('official-priced-unit-untracked')) failures.push('A newly priced exact Viridian unit can silently disappear from the inventory-gap audit.');
 const craigslistWww=normalizeCraigslistDetailUrl('/van/apa/d/vancouver-kitsilano-home/7890123456.html?lang=en','https://www.craigslist.org/search/subarea/van');
 const craigslistLegacy=normalizeCraigslistDetailUrl('https://vancouver.craigslist.org/van/apa/d/vancouver-kitsilano-home/7890123456.html');
 const craigslistEmbedded=extractCraigslistDetailUrls('{"url":"https:\\/\\/www.craigslist.org\\/vancouver-bc\\/apa\\/d\\/kitsilano-home\\/7890123457.html?lang=en"}');
