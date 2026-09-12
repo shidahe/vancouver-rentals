@@ -2,7 +2,8 @@ import fs from 'node:fs/promises';
 import path from 'node:path';
 import crypto from 'node:crypto';
 import { chromium } from 'playwright';
-import { listingScopeEligible } from './discovery-policy.mjs';
+import { isTargetRentalAreaText, listingScopeEligible } from './discovery-policy.mjs';
+import { parseRentalsCaSearchLeads } from './rentalsca-search-parser.mjs';
 
 const DATA=path.join(process.cwd(),'data');
 const EVIDENCE=path.join(DATA,'evidence');
@@ -49,8 +50,8 @@ function identity(address,unit,floorplan,url){const a=canonStreet(String(address
 const sources=await read(path.join(DATA,'live-sources.json'),{discovery:[]});
 const browser=await chromium.launch({headless:true});
 const context=await browser.newContext({locale:'en-CA',timezoneId:'America/Vancouver',viewport:{width:1440,height:1200},userAgent:'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 Chrome/126 Safari/537.36'});
-const page=await context.newPage(),detailUrls=new Set(),sourceHealth={};
-const diagnostics={searchResultCount:0,searchAddressLines:0,searchDetailLinks:0,detailUrls:0,detailChecked:0,detailBlocked:0,detailNotFound:0,detailErrors:0,detailParsed:0,detailSuppressed:0,detailCircuitOpen:false};
+const page=await context.newPage(),detailUrls=new Set(),sourceHealth={},searchLeadMap=new Map();
+const diagnostics={searchResultCount:0,searchAddressLines:0,searchDetailLinks:0,searchLeadCount:0,detailUrls:0,detailChecked:0,detailBlocked:0,detailNotFound:0,detailErrors:0,detailParsed:0,detailSuppressed:0,detailCircuitOpen:false};
 for(const s of (sources.discovery||[]).filter(x=>x.adapter==='rentalsca-search')){
   try{
     const r=await page.goto(s.url,{waitUntil:'domcontentloaded',timeout:45000}),status=r?.status()??null;sourceHealth[s.id]={checkedAt:iso,status,ok:!!r&&status<400,finalUrl:page.url()};if(!r||status>=400)continue;
@@ -65,6 +66,14 @@ for(const s of (sources.discovery||[]).filter(x=>x.adapter==='rentalsca-search')
     sourceHealth[s.id].title=title;sourceHealth[s.id].observedListingCount=observed;
     sourceHealth[s.id].challengeDetected=/just a moment|verify you are human|checking your browser|attention required|enable javascript and cookies/i.test(`${title}\n${bodyText.slice(0,1500)}`);
     if(sourceHealth[s.id].challengeDetected)sourceHealth[s.id].ok=false;
+    const searchLeads=parseRentalsCaSearchLeads(bodyText);
+    const neighborhoodSearch=/rentalsca-(?:kitsilano|point-grey|arbutus|dunbar|quilchena)-/i.test(s.id);
+    for(const lead of searchLeads){
+      if(lead.rentMin<3500||lead.bedroomMax<2||lead.bedroomMin>4)continue;
+      if(!neighborhoodSearch&&!isTargetRentalAreaText(lead.address))continue;
+      searchLeadMap.set(lead.identityKey,{...lead,source:'Rentals.ca search',searchUrl:s.url,checkedAt:iso,publishable:false,evidenceKind:'search_result_lead_only',availabilityVerified:false});
+    }
+    sourceHealth[s.id].searchLeadCount=searchLeads.length;
     let addressLines=0;
     for(const line of bodyText.split('\n').map(x=>x.trim()).filter(Boolean)){
       if(!/,\s*Vancouver,\s*(?:BC|British Columbia)/i.test(line))continue;
@@ -77,6 +86,7 @@ for(const s of (sources.discovery||[]).filter(x=>x.adapter==='rentalsca-search')
   }catch(e){sourceHealth[s.id]={checkedAt:iso,ok:false,error:String(e)}}
 }
 diagnostics.detailUrls=detailUrls.size;
+diagnostics.searchLeadCount=searchLeadMap.size;
 const pages=[],inventories=[];
 const requestedDetails=[...detailUrls].slice(0,160);
 let consecutiveBlocked=0;
@@ -101,5 +111,5 @@ for(const url of requestedDetails){
   }catch{diagnostics.detailErrors++;}
 }
 await browser.close();
-await write(path.join(DATA,'rentalsca-candidates.json'),{refreshedAt:iso,mode:'candidate-only',sourceHealth,diagnostics,pages,inventories});
+await write(path.join(DATA,'rentalsca-candidates.json'),{refreshedAt:iso,mode:'candidate-only',sourceHealth,diagnostics,searchLeads:[...searchLeadMap.values()],pages,inventories});
 console.log(`Rentals.ca adapter: ${pages.length} pages, ${inventories.length} target-area 2BR+ unit/floorplan inventories.`);
