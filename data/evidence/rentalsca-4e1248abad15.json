@@ -1,0 +1,209 @@
+{
+  "checkedAt": "2026-09-13T04:59:44.301Z",
+  "page": {
+    "source": "Rentals.ca",
+    "url": "https://rentals.ca/vancouver/fourth-mac",
+    "address": "1960 Macdonald Street, Vancouver, British Columbia V6K 0J1",
+    "addressUnit": null,
+    "geo": {
+      "lat": 49.2686389,
+      "lng": -123.1676173
+    },
+    "targetArea": true,
+    "active": true,
+    "floorplans": [],
+    "single": {
+      "rent": 2595,
+      "beds": 2,
+      "baths": 2,
+      "sqft": null
+    },
+    "checkedAt": "2026-09-13T04:59:44.301Z"
+  },
+  "jsonLd": [
+    {
+      "@context": "http://schema.org",
+      "@type": "ApartmentComplex",
+      "url": "https://rentals.ca/vancouver/fourth-mac",
+      "name": "Fourth + Mac",
+      "description": "Fourth + Mac is Now Renting. Book A Tour and Move-in Today!\n**Fourth + Mac is Now Renting. Book A Tour and Move-in Today! **\nKitsilano is a neighbourhood known for epic mountain views, sunset beach runs, patio culture and a walk-everywhere lifestyle. Located on the corner of West 4th Ave and Macdonald Street, Fourth + Mac is in the center of it all (and just a flip-flop away from the beach). The building offers studio, 1 and 2 bedroom rental homes with a natural design palette, so you can easily make the space your own.\nMeet the Neighbourhood\n**Meet the Neighbourhood **\nShoppers Drug Mart opening at Fourth + Mac in 2026.Fresh Street Market is located next door.West 4th Ave is home  to some of Vancouver's best retail, restaurants and cafes, beaches, and fitness studios.Easy access to main bus lines 44 and 84 running to UBC and downtown Vancouver.\nShoppers Drug Mart opening at Fourth + Mac in 2026.\nFresh Street Market is located next door.\nWest 4th Ave is home  to some of Vancouver's best retail, restaurants and cafes, beaches, and fitness studios.\nEasy access to main bus lines 44 and 84 running to UBC and downtown Vancouver.\nThe Building\n**The Building **\nZero-carbon operations building.100% smoke-free property.Keyless entry and FOB access.Professionally managed by Third Space's in-house property management team.Secure parcel lockers.Pet-friendly.Storage lockers available.\nZero-carbon operations building.\n100% smoke-free property.\nKeyless entry and FOB access.\nProfessionally managed by Third Space's in-house property management team.\nSecure parcel lockers.\nPet-friendly.\nStorage lockers available.\nAmenities\n**Amenities **\nThe Hub: connected lobby + co-working space with flexible work areas.The Lounge: social lounge with big screen TV, pool table, and outdoor patio.The Roof: huge rooftop patio with BBQ stations, dining zone, garden plots, and play and lounge areas.Dedicated wash room for cleaning sandy paws and muddy bikes.High-speed Wi-Fi provided in most amenity spaces.\nThe Hub: connected lobby + co-working space with flexible work areas.\nThe Lounge: social lounge with big screen TV, pool table, and outdoor patio.\nThe Roof: huge rooftop patio with BBQ stations, dining zone, garden plots, and play and lounge areas.\nDedicated wash room for cleaning sandy paws and muddy bikes.\nHigh-speed Wi-Fi provided in most amenity spaces.\nThe Homes\n**The Homes **\nFull-sized appliances.Individual air-conditioning.Ample storage (most homes come with an in-suite flex room).Private outdoor space.Under-cabinet LED lightingMedicine cabinet in bathrooms.\nFull-sized appliances.\nIndividual air-conditioning.\nAmple storage (most homes come with an in-suite flex room).\nPrivate outdoor space.\nUnder-cabinet LED lighting\nMedicine cabinet in bathrooms.\n*Prices, promotions, incentives and availability are limited time, do not apply to all homes, and are subject to changes without notice. Contact a developer representative for more details. E&OE.Kindly note: the photos displayed are of a comparable unit within the building. The floorplan accurately represents this apartment's layout. The unit is offered unfurnished, allowing you to personalize the space to your taste.\nAdditional Information:\n**Additional Information: **\nKeyless entryOutdoor play areaBeach nearbyInternet readyComplimentary WIFI in social areasGarden PlotsThe RoofHigh-Speed InternetThe LoungeDog WashFull-size appliancesIndividual air-conditioningGrocery nearbyFlex room in most homesDrug store nearbyIn-suite laundryCity views (select homes)Water views (select homes)\nKeyless entry\nOutdoor play area\nBeach nearby\nInternet ready\nComplimentary WIFI in social areas\nGarden Plots\nThe Roof\nHigh-Speed Internet\nThe Lounge\nDog Wash\nFull-size appliances\nIndividual air-conditioning\nGrocery nearby\nFlex room in most homes\nDrug store nearby\nIn-suite laundry\nCity views (select homes)\nWater views (select homes)",
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 49.2686389,
+        "longitude": -123.1676173
+      },
+      "containedInPlace": {
+        "@type": "City",
+        "url": "",
+        "name": "",
+        "address": {
+          "@type": "PostalAddress",
+          "addressCountry": "CA",
+          "addressRegion": ""
+        }
+      },
+      "containsPlace": [
+        {
+          "@context": "http://schema.org",
+          "@type": "Apartment",
+          "name": "2 Bedroom",
+          "potentialAction": {
+            "@type": "RentAction",
+            "priceSpecification": {
+              "@type": "PriceSpecification",
+              "price": 4350,
+              "priceCurrency": "CAD"
+            }
+          },
+          "floorSize": {
+            "@type": "QuantitativeValue",
+            "unitCode": "FTK",
+            "value": "747.0"
+          }
+        }
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "CA",
+        "addressLocality": "Vancouver",
+        "addressRegion": "British Columbia",
+        "postalCode": "V6K 0J1",
+        "streetAddress": "1960 Macdonald Street"
+      },
+      "telephone": "(778) 900-2467",
+      "photo": [
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/1122678/apartment-2240046022.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/1122678/apartment-2240046022.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/1122678/apartment-2240046023.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/1122678/apartment-2240046023.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/1122678/apartment-2240046024.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/1122678/apartment-2240046024.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/1122678/apartment-2240046025.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/1122678/apartment-2240046025.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/1122678/apartment-2240046026.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/1122678/apartment-2240046026.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/1122678/apartment-2240046027.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/1122678/apartment-2240046027.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/1122678/apartment-2241444452.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/1122678/apartment-2241444452.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/1122678/apartment-2240046028.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/1122678/apartment-2240046028.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/1122678/apartment-2241444453.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/1122678/apartment-2241444453.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/1122678/apartment-2240046029.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/1122678/apartment-2240046029.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/1122678/apartment-2241444454.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/1122678/apartment-2241444454.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/1122678/apartment-2240046030.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/1122678/apartment-2240046030.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/1122678/apartment-2241444455.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/1122678/apartment-2241444455.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/1122678/apartment-2240046031.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/1122678/apartment-2240046031.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/1122678/apartment-2241444456.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/1122678/apartment-2241444456.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/1122678/apartment-2240046032.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/1122678/apartment-2240046032.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/1122678/apartment-2241444457.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/1122678/apartment-2241444457.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/1122678/apartment-2240046033.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/1122678/apartment-2240046033.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/1122678/apartment-2241444458.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/1122678/apartment-2241444458.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/1122678/apartment-2240046034.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/1122678/apartment-2240046034.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/1122678/apartment-2241444459.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/1122678/apartment-2241444459.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/1122678/apartment-2240046035.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/1122678/apartment-2240046035.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/1122678/apartment-2241444460.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/1122678/apartment-2241444460.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/1122678/apartment-2240046036.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/1122678/apartment-2240046036.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/1122678/apartment-2241444461.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/1122678/apartment-2241444461.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/1122678/apartment-2240046037.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/1122678/apartment-2240046037.jpg"
+        }
+      ]
+    }
+  ],
+  "textSample": "Landlords\nRent Report\nBlog\nLogin\nEN\nFR\nPost a Rental\nPost a Rental\nLogin\nCreate Account\nAlerts\nFAQs\nMonthly Rent Report\nCity Rent Trends\nLandlords\nCredit Reports\nCommercial Properties\nRaising the Roof\nCareers\nAbout\nBlog\n Contact us\n Instagram\n Facebook\n Youtube\n LinkedIn\n X\n TikTok\nHome\nBC\nVancouver\nKitsilano\nFourth + Mac\n Favourite\n Alert\n$4350\nApartment\n1960 Macdonald Street — Fourth + Mac, Vancouver BC (2-Bedroom)\n 2 Bed\n 2 Bath\n Pets\n 747 FT²\nUnderground\nGet In Touch\n\nThird Space Properties\n\n Contact Property\n View Phone Number\n Verified\nPromoted\n3D Tour\n1 / 16\nPhotos\n3D\nTour\nStreet\nSave Alert\n\nSimilar listings in Vancouver\n\nKitsilano Apartments\n\nView on map\n\nFloor Plans\n2 Bedroom\n$4,350\n2 Bath\n747 ft²\nAvailable\n 10\nParking Information\n\nParking Types\n\nUnderground parking\n\nVisitor parking available\n\nOther Parking Details\n\nParking fee not included in rent\n\nFeatures & Amenities\n Building Features (4)\n Unit Features (3)\n Nearby (5)\n Other (1)\nElevator\nBike Room\nRecreation Room\nRooftop Deck\nAbout Fourth + Mac\nProperty Type\n\nApartment\n\nProperty Sub-type\n\nApartment\n\nLease Term\n\n1-Year\n\nParking Spots\n\nNo Info\n\nShort-term\n\nNo Info\n\nFurnished\n\nNo\n\nYear Built\n\n2025\n\n# of Floors\n\n6\n\n# of Units\n\n99\n\nListing ID\n\n1122678\n\nFourth + Mac is Now Renting. Book A Tour and Move-in Today! Kitsilano is a neighbourhood known for epic mountain views, sunset beach runs, patio culture and a walk-everywhere lifestyle. Located on the corner of West 4th Ave and Macdonald Street, Fourth + Mac is ...\n\nRead More\n\nNeighbourhood Score\nProperty Managed By\n\nThird Space Properties\n\n View Phone Number\nSummary\n\n1960 Macdonald Street is an apartment for rent in Vancouver, BC. It has 1 unit. Units have 2 bedrooms. Units have 2 bathrooms.\n\n Report Listing\n\nExplore Similar Rentals\n\n$2595\n\nDetails\n\nApartment\n\n Verified\n1 BED\n1 BATH\n500 FT²\n2190 7TH Avenue, Vancouver, BC\n Parking Available\n Dishwasher\n Ensuite Laundry\n Air Conditioning\nPromoted\n\n$2850\n\nDetails\n\nApartment\n\n Verified\n1 BED\n1 BATH\n513 FT²\nVancouver, BC\n Parking Available\n Dishwasher\n Ensuite Laundry\n Air Conditioning\nMust See\n\n$2215 - $3455\n\nDetails\n\nApartment\n\n Verified\n0 - 2 BED\n1 BATH\n340 - 645 FT²\n1370 Senakw Lane, Vancouver, BC\n Parking Available\n Dishwasher\n Ensuite Laundry\n Air Conditioning\nPromoted\n\n$2395\n\nDetails\n\nApartment\n\n Verified\n1 BED\n1 BATH\n648 FT²\n1850 West 8th Avenue, Vancouver, BC\n Parking Available\n Dishwasher\n Ensuite Laundry\n Air Conditioning\nPromoted\n\n$2600\n\nDetails\n\nApartment\n\n Verified\n1 BED\n1 BATH\n650 FT²\n4418 West 10th Avenue, Vancouver, BC\n Parking Available\n Dishwasher\n Ensuite Laundry\n Air Conditioning\nPromoted\nPromo Available\n3D Tour\n\n$2575 - $3240\n\nDetails\n\nApartment\n\n Verified\n1 - 2 BED\n1 BATH\n650 - 790 FT²\n3550 West Broadway Street, Vancouver, BC\n Parking Available\n Dishwasher\n Ensuite Laundry\n Air Conditioning\nSee All Similar Rentals\n Turn On Alerts for Similar Listings\nPopular Rent Searches In Vancouver\nSearch by Amenities\nPet Friendly Apartments In Vancouver\nApartments With A/C In Vancouver\nApartments With Ensuite Laundry In Vancouver\nApartments With Dishwasher In Vancouver\nSearch by Bedrooms\n1 Bedroom Apartments In Vancouver\n2 Bedroom Apartments In Vancouver\n3 Bedroom Apartments In Vancouver\n4 Bedroom Apartments In Vancouver\nSearch by Budget\nApartments Under $1000 In Vancouver\nApartments Under $1250 In Vancouver\nApartments Under $2000 In Vancouver\nApartments Under $2500 In Vancouver\nSee All Rentals in Vancouver\nBlog\nPress\nContact\nAbout\nCareers\nFAQs\nTerms\nPrivacy Policy\nSitemap\nPopular Searches\nApartments Near Me\nCondos Near Me\nHouses Near Me\nRooms Near Me\nPopular Cities\nToronto Rentals\nCalgary Rentals\nOttawa Rentals\nEdmonton Rentals\nVancouver Rentals\nHalifax Rentals\nPopular Provinces\nOntario\nBritish Columbia\nAlberta\nQuebec\nNova Scotia\nManitoba\nLandlords\nGet Listed\nMy Listings\nTenant Credit Check\nResources\nRent Report\nCity Rent Trends\nCommercial Properties\nGet the Rentals.ca app\nProud partner of\n\nCopyright © 2026 Rentals.ca Network, Inc. All rights reserved.\n\nManage Cookies\n \nThis website uses cookies to ensure you get the best experience on our website. By clicking \"Allow All\", you consent to our use of cookies. Privacy Policy ↗\nManage Cookies\nDecline\nAllow All"
+}
