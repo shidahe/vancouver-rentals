@@ -1,57 +1,6 @@
 {
-  "checkedAt": "2026-09-13T05:11:32.268Z",
-  "ok": true,
-  "checkpoints": {
-    "render": {
-      "title": "Vancouver Westside Rentals",
-      "cards": 20,
-      "shown": 20
-    },
-    "stats": {
-      "labels": [
-        "Active",
-        "New",
-        "Price drops",
-        "To verify",
-        "Last refreshed"
-      ],
-      "values": [
-        "20",
-        "12",
-        "3",
-        "9",
-        "2026-09-13 05:03:08"
-      ],
-      "html": "<div class=\"stat\"><strong>20</strong><span>Active</span></div><div class=\"stat\"><strong>12</strong><span>New</span></div><div class=\"stat\"><strong>3</strong><span>Price drops</span></div><div class=\"stat\"><strong>9</strong><span>To verify</span></div><div class=\"stat\"><strong>2026-09-13 05:03:08</strong><span>Last refreshed</span></div>"
-    },
-    "map": {
-      "markers": 20,
-      "desktopMapVisible": true
-    },
-    "filters": "ok",
-    "localStorage": {
-      "favorite": true,
-      "notes": true,
-      "firstId": "19-greenway-c1-405-3619"
-    },
-    "sourceLink": "https://www.19otgreenway.com/floorplans",
-    "photos": {
-      "total": 20,
-      "loaded": 20,
-      "fallbacks": 0,
-      "bad": []
-    },
-    "markerPositions": {
-      "total": 20,
-      "unique": 20
-    },
-    "dataEndpoints": "ok",
-    "mobile": "ok",
-    "browserHealth": {
-      "consoleErrors": [],
-      "failedRequests": [],
-      "fatalHttpResponses": [],
-      "recoverableImageHttpResponses": []
-    }
-  }
+  "checkedAt": "2026-09-13T07:34:57.062Z",
+  "ok": false,
+  "checkpoints": {},
+  "error": "page.waitForFunction: Timeout 30000ms exceeded.\n    at /home/runner/work/vancouver-rentals/vancouver-rentals/scripts/test-site.mjs:40:14"
 }
