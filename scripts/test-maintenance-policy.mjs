@@ -1,7 +1,7 @@
 import fs from 'node:fs/promises';
 import { civicAddressMatch, exactAddressUnitIdentity, findExistingSeedListing, listingMls, maskedCivicAddressMatch, mlsIdentity } from './inventory-identity.mjs';
 import { firstLikelyRent, parseFacts } from './listing-parser.mjs';
-import { isAutoManagedListing } from './stale-auto-policy.mjs';
+import { isAutoManagedListing, isStalePendingAutoListing } from './stale-auto-policy.mjs';
 import { bedroomEligible, isHouseShareText, isTargetRentalAreaText, LISTING_SCOPE_VERSION, listingScopeEligible, rentEligible } from './discovery-policy.mjs';
 import { aggregateUnitCount, discoveredStructuredInventories, priorityInventoryEvidenceHealthy, rentCafeExactUnits, rentCafeUnpricedUnits, structuredRentalInventories } from './priority-inventory-policy.mjs';
 import { dedupeHistoryEvents, pruneExcludedScopeChurn } from './history-policy.mjs';
@@ -147,7 +147,9 @@ if(discoveredKitsWalk.length!==2||!discoveredKitsWalk.some(x=>x.key==='2-bedroom
 const staleFixture = { availabilityStatus: 'active', source: 'REW / Rent Sync', verificationMethod: 'Automated live browser check matched listing identity and current availability wording.' };
 if (!isAutoManagedListing(staleFixture)) failures.push('Non-Zumper exact-detail inventory bypasses stale expiry.');
 if (isAutoManagedListing({ ...staleFixture, mlsInventoryManaged: true })) failures.push('Authoritative MLS-feed inventory is incorrectly handled by generic stale expiry.');
-if (isAutoManagedListing({ ...staleFixture, availabilityStatus: 'needs_confirmation' })) failures.push('Inactive inventory is incorrectly eligible for stale expiry.');
+if (isAutoManagedListing({ ...staleFixture, availabilityStatus: 'needs_confirmation' })) failures.push('Inactive inventory is incorrectly eligible for initial stale expiry.');
+if (!isStalePendingAutoListing({ ...staleFixture, availabilityStatus: 'needs_confirmation' })) failures.push('Long-pending auto inventory cannot reach terminal removal.');
+if (isStalePendingAutoListing({ ...staleFixture, availabilityStatus: 'needs_confirmation', mlsInventoryManaged: true })) failures.push('MLS inventory can bypass its consecutive-snapshot removal policy through generic pending expiry.');
 if (/id="minSqft"[^>]*value="800"/.test(indexHtml)) failures.push('800 sqft preference is still a default discovery/display gate.');
 if (!siteTestSource.includes("locator('#minSqft').inputValue() === ''") || siteTestSource.includes('kits-walk-unit-605')) failures.push('Browser smoke still couples the 800 sqft preference regression to one volatile live listing.');
 if (!imageCacheSource.includes("x.availabilityStatus === 'active'") || !imageCacheSource.includes('activeIds.has(id)') || !imageCacheSource.includes('Cannot safely prune image cache') || !imageCacheSource.includes('prunedOrphanFiles')) failures.push('Inactive or orphaned listing media is not pruned with a fail-safe inventory guard.');

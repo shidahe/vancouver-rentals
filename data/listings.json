@@ -22,8 +22,8 @@
     "purposeBuiltPolicy": "Purpose-built buildings are expanded into independent unit/floorplan inventory. Exact unit is preferred; when a public unit number is absent, floorplan + rent + sqft is a temporary independent inventory identity. Multiple independent live source URLs are tried so one blocked marketplace cannot hide inventory. Building-level leasing language alone never creates or preserves a listing: watched inventory without an exact current match is hidden as needs_confirmation until exact evidence returns.",
     "lastGeographySanitizer": "2026-09-13T17:23:57.447Z",
     "geographySanitizerPolicy": "Auto-discovered Zumper inventory is fail-closed to Vancouver West: valid Vancouver postal prefix, no explicit out-of-scope neighborhood, and longitude at or west of -123.145.",
-    "lastStaleAutoListingExpiry": "2026-09-13T17:23:57.406Z",
-    "staleAutoListingPolicy": "Auto-managed exact-detail inventory is fail-closed across sources: if it is not reverified within 48 hours, it is hidden as needs_confirmation until exact live evidence returns. Authoritative MLS-feed inventory uses its separate consecutive-snapshot removal policy.",
+    "lastStaleAutoListingExpiry": "2026-09-13T19:18:07.161Z",
+    "staleAutoListingPolicy": "Auto-managed exact-detail inventory is fail-closed across sources: if it is not reverified within 48 hours, it is hidden as needs_confirmation; after seven days without renewed exact availability it is marked removed. Authoritative MLS-feed inventory uses its separate consecutive-snapshot removal policy.",
     "lastZumperMultiUnitQuarantine": "2026-09-13T17:23:57.374Z",
     "zumperMultiUnitPolicy": "Address-level Zumper multi-unit pages without a public unit identity are fail-closed: aggregate low/high prices never auto-publish or auto-update an exact rental inventory.",
     "searchScope": "Only CAD $3,500+ entire-home rentals with 2–4 bedrooms in the Vancouver Westside target area are eligible. Fairview, West End, Downtown, Yaletown, Mount Pleasant, Riley Park, Olympic Village and South Cambie are excluded, as are house shares and separately rented portions of houses."
@@ -590,14 +590,15 @@
       "url": "https://www.zumper.com/address/2545-w-bdwy-vancouver-bc-v6k-2e9-can",
       "photoPageUrl": "https://www.zumper.com/address/2545-w-bdwy-vancouver-bc-v6k-2e9-can",
       "firstSeen": "2026-08-20",
-      "lastChecked": "2026-08-25",
+      "lastChecked": "2026-09-13",
       "verifiedAt": "2026-08-22T19:33:19.016Z",
       "verificationLevel": "unverified",
-      "verificationMethod": "AUTO-PUBLISHED from exact live Zumper detail; w broadway trafalgar st vancouver bc v6k 2e9::url:70dacf47fe3e Cross-verified by live Zumper detail on 2026-08-22.",
-      "availabilityStatus": "needs_confirmation",
-      "status": "corrected",
+      "verificationMethod": "Removed after seven days hidden without renewed exact live-detail availability.",
+      "availabilityStatus": "removed",
+      "status": "removed",
       "priceDrop": false,
-      "dataNotes": "Independent inventory identity: address + exact detail URL (unit not public). Auto-hidden after exceeding the 48-hour live-verification window."
+      "dataNotes": "Independent inventory identity: address + exact detail URL (unit not public). Auto-hidden after exceeding the 48-hour live-verification window.",
+      "removedAt": "2026-09-13"
     },
     {
       "id": "zumper-118592c0411f",

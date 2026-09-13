@@ -5,3 +5,9 @@ export function isAutoManagedListing(listing) {
   if (listing.mlsInventoryManaged === true) return false;
   return AUTO_VERIFICATION.test(String(listing.verificationMethod || ''));
 }
+
+export function isStalePendingAutoListing(listing) {
+  if (!listing || listing.availabilityStatus !== 'needs_confirmation') return false;
+  if (listing.mlsInventoryManaged === true) return false;
+  return AUTO_VERIFICATION.test(String(listing.verificationMethod || ''));
+}
