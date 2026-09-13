@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-09-13T17:12:32.699Z",
+  "refreshedAt": "2026-09-13T17:26:26.596Z",
   "listings": {
     "york-103-2535-r3137446": {
       "cached": 5,
@@ -21,13 +21,6 @@
       "downloaded": 0,
       "failures": [],
       "photoPageUrl": "https://warringtonresidential.com/properties/19-on-the-greenway/"
-    },
-    "waterloo-2477-zumper": {
-      "cached": 5,
-      "preserved": 5,
-      "downloaded": 0,
-      "failures": [],
-      "photoPageUrl": "https://www.zumper.com/address/2477-waterloo-st-vancouver-bc-v6r-3h4-can"
     },
     "zumper-9157c4798023": {
       "cached": 5,
@@ -120,13 +113,6 @@
       "failures": [],
       "photoPageUrl": "https://realtylink.org/en/house~for-rent~vancouver/263169925"
     },
-    "arbutus-residences-floorplan-2-bedroom-townhouse-den-1340": {
-      "cached": 5,
-      "preserved": 0,
-      "downloaded": 5,
-      "failures": [],
-      "photoPageUrl": "https://www.zumper.com/apartment-buildings/p1117150/arbutus-residences-quilchena-vancouver-bc"
-    },
     "mls-r3161950": {
       "cached": 5,
       "preserved": 5,
@@ -150,20 +136,20 @@
     },
     "mls-r3164628": {
       "cached": 5,
-      "preserved": 0,
-      "downloaded": 5,
+      "preserved": 5,
+      "downloaded": 0,
       "failures": [],
       "photoPageUrl": "https://realtylink.org/en/house~for-rent~vancouver/263186255"
     }
   },
   "totals": {
-    "sourceListings": 22,
-    "cachedListings": 22,
-    "downloaded": 10,
+    "sourceListings": 20,
+    "cachedListings": 20,
+    "downloaded": 0,
     "failed": 0,
     "preserved": 96,
-    "prunedListings": 0,
-    "prunedIndexImages": 0,
+    "prunedListings": 2,
+    "prunedIndexImages": 10,
     "prunedOrphanFiles": 0
   }
 }
