@@ -78,6 +78,19 @@ for(const x of payload.listings){
   const mls=listingMls(x);
   if(mls&&x.availabilityStatus==='active'&&!initiallyActiveMls.has(norm(mls)))initiallyActiveMls.set(norm(mls),x.id);
 }
+// Refresh factual attributes from any recent, identity-matched detail evidence,
+// even when the page is not strong enough to prove live availability. Otherwise
+// a partial MLS search snapshot can preserve an old `ac: false` value after the
+// detail parser has correctly changed an omitted cooling field to unknown.
+for(const x of payload.listings){
+  if(!listingMls(x))continue;
+  const evidence=await read(path.join(DATA,'evidence',`${x.id}.json`),null);
+  const checkedAt=Date.parse(evidence?.checkedAt||'');
+  if(!/realtylink\.org/i.test(evidence?.sourceUrl||evidence?.finalUrl||'')||!evidence?.ok||
+    Number(evidence.status)<200||Number(evidence.status)>=400||!evidence.identityMatch||
+    !Number.isFinite(checkedAt)||Date.now()-checkedAt>12*60*60*1000)continue;
+  x.ac=parseRealtylinkAirConditioning(evidence.bodyText);
+}
 for(const x of payload.listings){
   const mls=listingMls(x);
   if(!mls||initiallyActiveMls.get(norm(mls))&&initiallyActiveMls.get(norm(mls))!==x.id)continue;

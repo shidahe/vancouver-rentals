@@ -69,6 +69,8 @@ const craigslistMismatchedDetail=craigslistDetailEvidence({url:craigslistCurrent
 if(!craigslistDetail.explicitPositive||!craigslistDetail.identityMatch||craigslistDetail.rent!==6200||craigslistDetail.bedrooms!==3||craigslistDetail.bathrooms!==3.5||craigslistDetail.sqft!==1500||craigslistMismatchedDetail.explicitPositive||craigslistMismatchedDetail.identityMatch) failures.push('Craigslist exact-detail identity and current fact validation can silently regress.');
 if(craigslistAddressPrecision('google map')!==null||craigslistAddressPrecision('Kitsilano')!==null||craigslistAddressPrecision('3220 W 4TH AVE near Musqueamview St')!=='exact_civic'||craigslistAddressPrecision('West 4th Ave near Blenheim')!=='intersection') failures.push('Craigslist map controls or neighborhoods can be mistaken for canonical addresses.');
 const reconciliationSource=await fs.readFile('scripts/reconcile-candidates.mjs','utf8');
+if(!reconciliationSource.includes("x.ac=parseRealtylinkAirConditioning(evidence.bodyText)")||
+  !reconciliationSource.includes("Date.now()-checkedAt>12*60*60*1000"))failures.push('Reconciliation no longer refreshes Realtylink AC from recent identity-matched detail evidence.');
 if(!reconciliationSource.includes("c.detailVerified===true&&c.addressPrecision==='exact_civic'")||!reconciliationSource.includes('items.every(c=>c.publishable!==false)')) failures.push('Unverified Craigslist addresses can cross-verify inventory or candidate-only records can be auto-published.');
 const duplicateMlsHistory={legacy:[{date:'2026-09-08',rent:4950,note:'legacy'}],canonical:[{date:'2026-09-09',rent:4950,note:'canonical'}]};
 const duplicateMlsImages={legacy:{candidates:['legacy.jpg']}};
