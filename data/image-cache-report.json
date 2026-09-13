@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-09-13T12:06:44.931Z",
+  "refreshedAt": "2026-09-13T13:35:30.979Z",
   "listings": {
     "york-103-2535-r3137446": {
       "cached": 5,
@@ -19,40 +19,45 @@
       "cached": 3,
       "preserved": 3,
       "downloaded": 0,
-      "failures": [],
+      "failures": [
+        {
+          "url": "https://admin.warringtonresidential.com/wp-content/uploads/2025/03/19-on-the-greenway-2.jpg",
+          "error": "fetch failed"
+        }
+      ],
       "photoPageUrl": "https://warringtonresidential.com/properties/19-on-the-greenway/"
     },
     "waterloo-2477-zumper": {
-      "cached": 8,
-      "preserved": 8,
+      "cached": 5,
+      "preserved": 5,
       "downloaded": 0,
       "failures": [],
       "photoPageUrl": "https://www.zumper.com/address/2477-waterloo-st-vancouver-bc-v6r-3h4-can"
     },
     "zumper-9157c4798023": {
-      "cached": 8,
-      "preserved": 8,
+      "cached": 5,
+      "preserved": 5,
       "downloaded": 0,
       "failures": [],
       "photoPageUrl": "https://www.zumper.com/address/2406-w-8th-ave-vancouver-bc-v6k-2b1-can"
     },
     "zumper-976e340c66a7": {
-      "cached": 8,
-      "preserved": 8,
+      "cached": 5,
+      "preserved": 5,
       "downloaded": 0,
       "failures": [],
       "photoPageUrl": "https://www.zumper.com/address/1533-maple-st-vancouver-bc-v6j-3s2-can"
     },
     "zumper-2e85ffb3f678": {
-      "cached": 8,
-      "preserved": 8,
+      "cached": 5,
+      "preserved": 5,
       "downloaded": 0,
       "failures": [],
       "photoPageUrl": "https://www.zumper.com/address/4326-w-10th-ave-vancouver-bc-v6r-none-can"
     },
     "zumper-75ff287e7a72": {
-      "cached": 8,
-      "preserved": 8,
+      "cached": 5,
+      "preserved": 5,
       "downloaded": 0,
       "failures": [],
       "photoPageUrl": "https://www.zumper.com/address/3366-w-26th-ave-vancouver-bc-v6s-1n5-can"
@@ -65,46 +70,46 @@
       "photoPageUrl": "https://realtylink.org/en/apartment~for-rent~vancouver/263175626"
     },
     "zumper-ecd4e868f79c": {
-      "cached": 8,
-      "preserved": 8,
+      "cached": 5,
+      "preserved": 5,
       "downloaded": 0,
       "failures": [],
       "photoPageUrl": "https://www.zumper.com/address/3220-4th-ave-w-vancouver-bc-v6k-1r9-can"
     },
     "zumper-1441677a9e59": {
-      "cached": 8,
-      "preserved": 8,
+      "cached": 5,
+      "preserved": 5,
       "downloaded": 0,
       "failures": [],
       "photoPageUrl": "https://www.zumper.com/address/2138-w-13th-ave-vancouver-bc-v6k-2s1-can"
     },
     "zumper-717a57c1ea78": {
-      "cached": 8,
-      "preserved": 8,
+      "cached": 5,
+      "preserved": 5,
       "downloaded": 0,
       "failures": [],
       "photoPageUrl": "https://www.zumper.com/address/3175-courtenay-st-vancouver-bc-v6r-3y2-can"
     },
     "zumper-e3fb92a991a6": {
-      "cached": 8,
-      "preserved": 8,
+      "cached": 5,
+      "preserved": 5,
       "downloaded": 0,
       "failures": [],
       "photoPageUrl": "https://www.zumper.com/address/4560-w-5th-ave-vancouver-bc-v6r-1s7-can"
     },
     "zumper-3b3c85746b5c": {
-      "cached": 8,
-      "preserved": 8,
+      "cached": 5,
+      "preserved": 5,
       "downloaded": 0,
       "failures": [],
       "photoPageUrl": "https://www.zumper.com/address/2249-w-33rd-ave-vancouver-bc-v6m-1c1-can"
     },
     "zumper-16e9ae17cd91": {
       "cached": 5,
-      "preserved": 4,
-      "downloaded": 1,
+      "preserved": 5,
+      "downloaded": 0,
       "failures": [],
-      "photoPageUrl": "https://www.zumper.com/address/3349-dunbar-st-vancouver-bc-v6s-2b9-can"
+      "photoPageUrl": "https://realtylink.org/en/townhouse~for-rent~vancouver/263182316"
     },
     "mls-r3151022": {
       "cached": 5,
@@ -128,8 +133,8 @@
       "photoPageUrl": "https://realtylink.org/en/house~for-rent~vancouver/263169925"
     },
     "arbutus-residences-floorplan-2-bedroom-townhouse-den-1340": {
-      "cached": 8,
-      "preserved": 8,
+      "cached": 5,
+      "preserved": 5,
       "downloaded": 0,
       "failures": [],
       "photoPageUrl": "https://www.zumper.com/apartment-buildings/p1117150/arbutus-residences-quilchena-vancouver-bc"
@@ -197,11 +202,11 @@
   "totals": {
     "sourceListings": 25,
     "cachedListings": 25,
-    "downloaded": 1,
-    "failed": 4,
-    "preserved": 150,
-    "prunedListings": 48,
-    "prunedIndexImages": 294,
-    "prunedOrphanFiles": 37
+    "downloaded": 0,
+    "failed": 5,
+    "preserved": 118,
+    "prunedListings": 0,
+    "prunedIndexImages": 0,
+    "prunedOrphanFiles": 0
   }
 }
