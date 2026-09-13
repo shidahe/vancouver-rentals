@@ -2,6 +2,7 @@ import fs from 'node:fs/promises';
 import path from 'node:path';
 import { bedroomEligible, rentEligible } from './discovery-policy.mjs';
 import { listingMls } from './inventory-identity.mjs';
+import { activeListingContradictedByFreshEvidence } from './evidence-consistency.mjs';
 const DATA=path.join(process.cwd(),'data');
 const read=async(p,d)=>{try{return JSON.parse(await fs.readFile(p,'utf8'))}catch{return d}};
 const write=async(p,x)=>fs.writeFile(p,JSON.stringify(x,null,2)+'\n');
@@ -34,6 +35,8 @@ for(const l of db.listings){
 }
 mlsMap.clear();
 for(const l of active){
+  const evidence=await read(path.join(DATA,'evidence',`${l.id}.json`),null);
+  if(activeListingContradictedByFreshEvidence(l,evidence,now))issues.push({severity:'high',id:l.id,issue:'active-despite-fresh-exact-negative',detail:`negative evidence checked at ${evidence.checkedAt}`});
   const age=l.verifiedAt?(now-new Date(l.verifiedAt).getTime())/86400000:999;
   if(age>2)issues.push({severity:'high',id:l.id,issue:'stale-verification',detail:`Last verified ${age.toFixed(1)} days ago`});
   if(!l.url||!/^https:\/\//.test(l.url))issues.push({severity:'high',id:l.id,issue:'missing-source-url'});

@@ -32,6 +32,7 @@ on:
       - 'scripts/apply-official-status.mjs'
       - 'scripts/cache-listing-images.mjs'
       - 'scripts/audit-data-quality.mjs'
+      - 'scripts/evidence-consistency.mjs'
       - 'scripts/audit-coverage.mjs'
       - 'scripts/coverage-policy.mjs'
       - 'scripts/priority-inventory-policy.mjs'

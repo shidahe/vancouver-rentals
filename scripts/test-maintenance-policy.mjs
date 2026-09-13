@@ -10,6 +10,7 @@ import { isRealtylinkListingNotFoundRedirect, isTargetWestsideCoordinate, parseR
 import { craigslistLaneHealth, marketplaceLaneHealth, rentalscaLaneHealth, realtylinkLaneHealth } from './coverage-policy.mjs';
 import { exactPurposeBuiltFloorplanEvidence } from './purposebuilt-floorplan-evidence.mjs';
 import { hasCurrentMarketplaceAvailability, softNegativeDisposition, softUnavailablePrompt } from './listing-availability.mjs';
+import { activeListingContradictedByFreshEvidence } from './evidence-consistency.mjs';
 import { dedupeMlsRecords } from './mls-dedupe.mjs';
 import { craigslistAddressPrecision, craigslistDetailEvidence, craigslistPostId, extractCraigslistDetailUrls, normalizeCraigslistDetailUrl, parseCraigslistSearchCard } from './craigslist-parser.mjs';
 import { classifyRentalsCaSearchLead, parseRentalsCaSearchLeads } from './rentalsca-search-parser.mjs';
@@ -37,6 +38,15 @@ const siteTestSource = await read('scripts/test-site.mjs');
 const imageCacheSource = await read('scripts/cache-listing-images.mjs');
 
 const failures = [];
+const contradictionNow=Date.parse('2026-09-13T21:00:00Z');
+const contradictionListing={id:'waterloo-regression',availabilityStatus:'active',url:'https://www.zumper.com/address/2477-waterloo?source=search',verifiedAt:'2026-09-13T19:00:00Z'};
+const contradictionEvidence={checkedAt:'2026-09-13T20:53:00Z',sourceUrl:'https://www.zumper.com/address/2477-waterloo',identityMatch:true,explicitNegative:true};
+if(!activeListingContradictedByFreshEvidence(contradictionListing,contradictionEvidence,contradictionNow)||
+   activeListingContradictedByFreshEvidence({...contradictionListing,availabilityStatus:'needs_confirmation'},contradictionEvidence,contradictionNow)||
+   activeListingContradictedByFreshEvidence({...contradictionListing,verifiedAt:'2026-09-13T20:59:00Z'},contradictionEvidence,contradictionNow)||
+   activeListingContradictedByFreshEvidence(contradictionListing,{...contradictionEvidence,identityMatch:false},contradictionNow)){
+  failures.push('Fresh exact negative evidence cannot reliably block a later adapter from republishing the listing.');
+}
 const unavailableAlertFixture = 'MONTHLY RENT - BEDS 2 BATHS 3 SQFT 1,100 Alert me when this rental is available. We\u2019ll let you know when this property is available. *Available: August 1, 2026';
 if (!softUnavailablePrompt(unavailableAlertFixture) || softUnavailablePrompt('Available immediately. Request a tour today.')) {
   failures.push('A current marketplace availability-alert prompt can be overridden by a stale available date in the retained description.');
