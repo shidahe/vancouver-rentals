@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-09-12T23:05:37.776Z",
-  "activeCount": 19,
+  "generatedAt": "2026-09-13T01:08:05.132Z",
+  "activeCount": 18,
   "decisionReady": true,
   "highIssueCount": 0,
   "mediumIssueCount": 0,
-  "infoIssueCount": 31,
+  "infoIssueCount": 30,
   "issues": [
     {
       "severity": "info",
@@ -143,30 +143,25 @@
     },
     {
       "severity": "info",
-      "id": "mls-r3151022",
+      "id": "mls-r3161880",
       "issue": "unknown-orientation"
     },
     {
       "severity": "info",
-      "id": "mls-r3161880",
+      "id": "mls-r3161950",
       "issue": "unknown-orientation"
     },
     {
       "severity": "info",
       "id": "mls-r3149267",
       "issue": "unknown-orientation"
-    },
-    {
-      "severity": "info",
-      "id": "mls-r3163709",
-      "issue": "unknown-orientation"
     }
   ],
   "readinessChecks": {
     "smokeOk": true,
     "smokeFresh": true,
-    "smokeCheckedAt": "2026-09-12T23:05:43.244Z",
-    "latestDataAt": "2026-09-12T23:04:52.453Z",
+    "smokeCheckedAt": "2026-09-13T01:08:10.267Z",
+    "latestDataAt": "2026-09-13T01:07:17.091Z",
     "coverageReady": true,
     "healthyDiscoveryLanes": 3,
     "coverageWarnings": [
@@ -174,7 +169,7 @@
         "severity": "warning",
         "lane": "rentalsca",
         "status": "degraded",
-        "detail": "6/9 regional searches reachable; 0 qualifying candidates parsed; 2 scoped search-only leads retained; 3 detail pages blocked after 26 discovered URLs; 23 further detail checks suppressed after repeated 403/429"
+        "detail": "2/9 regional searches reachable; 0 qualifying candidates parsed; 1 scoped search-only leads retained; 3 detail pages blocked after 11 discovered URLs; 8 further detail checks suppressed after repeated 403/429"
       },
       {
         "severity": "warning",
@@ -191,5 +186,5 @@
     ]
   },
   "readinessIssues": [],
-  "finalizedAt": "2026-09-12T23:05:45.014Z"
+  "finalizedAt": "2026-09-13T01:08:11.947Z"
 }
