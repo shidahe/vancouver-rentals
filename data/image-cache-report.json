@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-09-13T05:02:18.225Z",
+  "refreshedAt": "2026-09-13T05:11:26.058Z",
   "listings": {
     "york-103-2535-r3137446": {
       "cached": 5,
@@ -104,28 +104,28 @@
       "preserved": 5,
       "downloaded": 0,
       "failures": [],
-      "photoPageUrl": "https://www.zumper.com/address/3349-dunbar-st-vancouver-bc-v6s-2b9-can"
+      "photoPageUrl": "https://realtylink.org/en/townhouse~for-rent~vancouver/263182316"
     },
     "mls-r3150923": {
+      "cached": 5,
+      "preserved": 5,
+      "downloaded": 0,
+      "failures": [],
+      "photoPageUrl": "https://realtylink.org/en/townhouse~for-rent~vancouver/263172550"
+    },
+    "mls-r3148298": {
       "cached": 5,
       "preserved": 0,
       "downloaded": 5,
       "failures": [],
-      "photoPageUrl": "https://realtylink.org/en/townhouse~for-rent~vancouver/263172550"
+      "photoPageUrl": "https://realtylink.org/en/house~for-rent~vancouver/263169925"
     },
-    "mls-r3161880": {
+    "mls-r3159060": {
       "cached": 5,
-      "preserved": 5,
-      "downloaded": 0,
+      "preserved": 0,
+      "downloaded": 5,
       "failures": [],
-      "photoPageUrl": "https://realtylink.org/en/house~for-rent~vancouver/263183507"
-    },
-    "mls-r3161950": {
-      "cached": 5,
-      "preserved": 5,
-      "downloaded": 0,
-      "failures": [],
-      "photoPageUrl": "https://realtylink.org/en/house~for-rent~vancouver/263183577"
+      "photoPageUrl": "https://realtylink.org/en/house~for-rent~vancouver/263180687"
     },
     "mls-r3149267": {
       "cached": 5,
@@ -133,16 +133,23 @@
       "downloaded": 0,
       "failures": [],
       "photoPageUrl": "https://realtylink.org/en/apartment~for-rent~vancouver/263170894"
+    },
+    "mls-r3164628": {
+      "cached": 5,
+      "preserved": 0,
+      "downloaded": 5,
+      "failures": [],
+      "photoPageUrl": "https://realtylink.org/en/house~for-rent~vancouver/263186255"
     }
   },
   "totals": {
-    "sourceListings": 19,
-    "cachedListings": 19,
-    "downloaded": 5,
+    "sourceListings": 20,
+    "cachedListings": 20,
+    "downloaded": 15,
     "failed": 0,
-    "preserved": 86,
-    "prunedListings": 0,
-    "prunedIndexImages": 0,
+    "preserved": 81,
+    "prunedListings": 2,
+    "prunedIndexImages": 10,
     "prunedOrphanFiles": 0
   }
 }
