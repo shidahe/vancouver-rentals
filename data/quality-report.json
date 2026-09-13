@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-09-13T23:07:34.535Z",
-  "activeCount": 18,
+  "generatedAt": "2026-09-13T23:16:46.764Z",
+  "activeCount": 16,
   "decisionReady": true,
   "highIssueCount": 0,
   "mediumIssueCount": 0,
-  "infoIssueCount": 32,
+  "infoIssueCount": 30,
   "issues": [
     {
       "severity": "info",
@@ -83,11 +83,6 @@
     },
     {
       "severity": "info",
-      "id": "arbutus-residences-floorplan-2-bedroom-townhouse-den-1340",
-      "issue": "unknown-orientation"
-    },
-    {
-      "severity": "info",
       "id": "zumper-ecd4e868f79c",
       "issue": "unknown-ac"
     },
@@ -160,18 +155,13 @@
       "severity": "info",
       "id": "mls-r3161880",
       "issue": "unknown-orientation"
-    },
-    {
-      "severity": "info",
-      "id": "mls-r3163709",
-      "issue": "unknown-orientation"
     }
   ],
   "readinessChecks": {
     "smokeOk": true,
     "smokeFresh": true,
-    "smokeCheckedAt": "2026-09-13T23:07:39.902Z",
-    "latestDataAt": "2026-09-13T23:06:53.240Z",
+    "smokeCheckedAt": "2026-09-13T23:16:51.650Z",
+    "latestDataAt": "2026-09-13T23:16:06.468Z",
     "coverageReady": true,
     "healthyDiscoveryLanes": 3,
     "coverageWarnings": [
@@ -189,12 +179,6 @@
       },
       {
         "severity": "warning",
-        "lane": "realtylink",
-        "status": "degraded",
-        "detail": "3/3 searches reachable; 3 current live candidates parsed from a partial snapshot versus complete baseline 5; positive discovery usable, removals suppressed"
-      },
-      {
-        "severity": "warning",
         "lane": "priority-viridian-unpriced-unit",
         "status": "price-unverified",
         "detail": "Viridian unit 0103 (2BR) is offered for Sep 30, but official rent is withheld; do not publish before verifying rent >= CAD $3,500"
@@ -202,5 +186,5 @@
     ]
   },
   "readinessIssues": [],
-  "finalizedAt": "2026-09-13T23:07:41.570Z"
+  "finalizedAt": "2026-09-13T23:16:53.105Z"
 }
