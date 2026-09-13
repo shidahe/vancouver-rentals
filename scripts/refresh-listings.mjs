@@ -6,6 +6,7 @@ import { findExistingSeedListing } from './inventory-identity.mjs';
 import { verifiedPhotoCandidates } from './listing-photo-candidates.mjs';
 import { isRealtylinkListingNotFoundRedirect, parseRealtylinkFloorArea, parseRealtylinkRoomCount } from './realtylink-parser.mjs';
 import { exactPurposeBuiltFloorplanEvidence } from './purposebuilt-floorplan-evidence.mjs';
+import { softNegativeDisposition, softUnavailablePrompt } from './listing-availability.mjs';
 
 const ROOT = process.cwd();
 const DATA = path.join(ROOT, 'data');
@@ -67,7 +68,8 @@ function identityMatch(text, item) {
 
 function classify(text, item, jsonLd = [], httpStatus = null, finalUrl = null) {
   const idMatch = identityMatch(text, item);
-  const negative = strongNegativePatterns.find(r => r.test(text));
+  const softNegative = softUnavailablePrompt(text);
+  const negative = strongNegativePatterns.find(r => r.test(text)) || softNegative;
   const exactFloorplan = exactPurposeBuiltFloorplanEvidence(text, item);
   const strongPositive = strongPositivePatterns.find(r => r.test(text)) || (exactFloorplan ? /exact purpose-built floorplan availability/i : null);
   // Realtylink detail URLs can keep a static "for rent" title after the home
@@ -89,6 +91,7 @@ function classify(text, item, jsonLd = [], httpStatus = null, finalUrl = null) {
     identityMatch: idMatch || exactNotFoundRedirect,
     explicitNegative: (idMatch && !!negative) || hardHttpGone || exactNotFoundRedirect,
     negativePhrase: hardHttpGone ? `HTTP ${httpStatus}` : exactNotFoundRedirect ? 'exact Realtylink listingnotfound redirect' : negative ? String(negative) : null,
+    negativeNeedsConfirmation: !!softNegative && !hardHttpGone && !exactNotFoundRedirect,
     explicitPositive: idMatch && !!positive && !negative,
     positivePhrase: positive ? String(positive) : null,
     extractedRent: idMatch ? exactFloorplan?.rent ?? firstLikelyRent(text, jsonLd) : null,
@@ -226,11 +229,30 @@ for (const listing of payload.listings.filter(x =>
     consecutiveFailures: failures,
     identityMatch: evidence.identityMatch ?? false,
     explicitNegative: evidence.explicitNegative ?? false,
+    negativeNeedsConfirmation: evidence.negativeNeedsConfirmation ?? false,
+    softNegativeFirstSeenAt: evidence.negativeNeedsConfirmation
+      ? (prev.negativeNeedsConfirmation && prev.softNegativeFirstSeenAt ? prev.softNegativeFirstSeenAt : iso)
+      : null,
     explicitPositive: evidence.explicitPositive ?? false,
     extractedRent: evidence.extractedRent ?? null
   };
 
   if (evidence.explicitNegative) {
+    const softNegativeAction = softNegativeDisposition(evidence.negativeNeedsConfirmation, prev, now.getTime());
+    if (softNegativeAction === 'hide') {
+      const wasActive = listing.availabilityStatus === 'active';
+      listing.availabilityStatus = 'needs_confirmation';
+      listing.status = 'corrected';
+      listing.removedAt = null;
+      listing.lastChecked = today;
+      listing.verificationLevel = 'unverified';
+      listing.verificationMethod = `Hidden after the exact marketplace page switched to an availability-alert prompt (${evidence.negativePhrase}); awaiting a second check at least four hours later.`;
+      if (wasActive) {
+        history[listing.id] ||= [];
+        history[listing.id].push({ date: today, rent: listing.rent ?? null, note: 'AUTO-HIDDEN: exact marketplace page now offers an availability alert instead of a currently available rental; confirmation required before removal.' });
+      }
+      continue;
+    }
     listing.availabilityStatus = 'removed';
     listing.status = 'removed';
     listing.removedAt = today;

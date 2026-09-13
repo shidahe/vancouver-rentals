@@ -9,6 +9,7 @@ import { verifiedPhotoCandidates } from './listing-photo-candidates.mjs';
 import { isRealtylinkListingNotFoundRedirect, isTargetWestsideCoordinate, parseRealtylinkAirConditioning, parseRealtylinkCoordinateValues, parseRealtylinkCoordinates, parseRealtylinkFloorArea, parseRealtylinkRoomCount } from './realtylink-parser.mjs';
 import { craigslistLaneHealth, marketplaceLaneHealth, rentalscaLaneHealth, realtylinkLaneHealth } from './coverage-policy.mjs';
 import { exactPurposeBuiltFloorplanEvidence } from './purposebuilt-floorplan-evidence.mjs';
+import { softNegativeDisposition, softUnavailablePrompt } from './listing-availability.mjs';
 import { dedupeMlsRecords } from './mls-dedupe.mjs';
 import { craigslistAddressPrecision, craigslistDetailEvidence, craigslistPostId, extractCraigslistDetailUrls, normalizeCraigslistDetailUrl, parseCraigslistSearchCard } from './craigslist-parser.mjs';
 import { classifyRentalsCaSearchLead, parseRentalsCaSearchLeads } from './rentalsca-search-parser.mjs';
@@ -36,6 +37,17 @@ const siteTestSource = await read('scripts/test-site.mjs');
 const imageCacheSource = await read('scripts/cache-listing-images.mjs');
 
 const failures = [];
+const unavailableAlertFixture = 'MONTHLY RENT - BEDS 2 BATHS 3 SQFT 1,100 Alert me when this rental is available. We\u2019ll let you know when this property is available. *Available: August 1, 2026';
+if (!softUnavailablePrompt(unavailableAlertFixture) || softUnavailablePrompt('Available immediately. Request a tour today.')) {
+  failures.push('A current marketplace availability-alert prompt can be overridden by a stale available date in the retained description.');
+}
+const softNegativePrevious = { checkedAt: '2026-09-13T12:00:00Z', softNegativeFirstSeenAt: '2026-09-13T12:00:00Z', explicitNegative: true, negativeNeedsConfirmation: true };
+if (softNegativeDisposition(true, {}, Date.parse('2026-09-13T18:00:00Z')) !== 'hide' ||
+    softNegativeDisposition(true, softNegativePrevious, Date.parse('2026-09-13T15:59:59Z')) !== 'hide' ||
+    softNegativeDisposition(true, softNegativePrevious, Date.parse('2026-09-13T16:00:00Z')) !== 'remove' ||
+    softNegativeDisposition(false, softNegativePrevious, Date.parse('2026-09-13T18:00:00Z')) !== null) {
+  failures.push('Soft marketplace negative evidence does not follow the four-hour hide-then-confirm rule.');
+}
 if(parseRealtylinkAirConditioning('Forced-air heating')!==null||parseRealtylinkAirConditioning('Cooling Features\nAir Conditioning')!==true||parseRealtylinkAirConditioning('No air conditioning')!==false)failures.push('Realtylink AC omission is still being misreported as confirmed no AC.');
 const inventoryNow=Date.parse('2026-09-13T00:00:00Z');
 if(!priorityInventoryEvidenceHealthy({ok:true,checkedAt:'2026-09-12T23:00:00Z',bodyText:'Kits Walk Floor Plans'},/kits walk/i,inventoryNow)||
