@@ -235,6 +235,11 @@
       "date": "2026-08-24",
       "rent": 4500,
       "note": "AUTO price update from 4950 to 4500 after direct live detail-page verification."
+    },
+    {
+      "date": "2026-09-13",
+      "rent": 4500,
+      "note": "AUTO-HIDDEN: exact marketplace page now offers an availability alert instead of a currently available rental; confirmation required before removal."
     }
   ],
   "zumper-cd96ddf129b5": [
@@ -1658,6 +1663,11 @@
       "date": "2026-09-09",
       "rent": 3995,
       "note": "MERGED duplicate record blenheim-terrace-204-r3149612 under canonical MLS R3149267."
+    },
+    {
+      "date": "2026-09-13",
+      "rent": 3995,
+      "note": "MLS RELIST: R3149267 → R3149612; exact address and Unit 204 retained as one inventory record."
     }
   ],
   "mls-r3163709": [

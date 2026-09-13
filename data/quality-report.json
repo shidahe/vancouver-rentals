@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-09-13T16:31:09.504Z",
-  "activeCount": 20,
+  "generatedAt": "2026-09-13T17:12:33.998Z",
+  "activeCount": 22,
   "decisionReady": true,
   "highIssueCount": 0,
   "mediumIssueCount": 0,
-  "infoIssueCount": 37,
+  "infoIssueCount": 40,
   "issues": [
     {
       "severity": "info",
@@ -83,6 +83,11 @@
     },
     {
       "severity": "info",
+      "id": "arbutus-residences-floorplan-2-bedroom-townhouse-den-1340",
+      "issue": "unknown-orientation"
+    },
+    {
+      "severity": "info",
       "id": "zumper-ecd4e868f79c",
       "issue": "unknown-ac"
     },
@@ -189,14 +194,24 @@
     {
       "severity": "info",
       "id": "mls-r3149267",
+      "issue": "unknown-orientation"
+    },
+    {
+      "severity": "info",
+      "id": "mls-r3164628",
+      "issue": "unknown-ac"
+    },
+    {
+      "severity": "info",
+      "id": "mls-r3164628",
       "issue": "unknown-orientation"
     }
   ],
   "readinessChecks": {
     "smokeOk": true,
     "smokeFresh": true,
-    "smokeCheckedAt": "2026-09-13T16:31:15.044Z",
-    "latestDataAt": "2026-09-13T16:30:25.428Z",
+    "smokeCheckedAt": "2026-09-13T17:12:39.679Z",
+    "latestDataAt": "2026-09-13T17:11:51.927Z",
     "coverageReady": true,
     "healthyDiscoveryLanes": 3,
     "coverageWarnings": [
@@ -204,13 +219,19 @@
         "severity": "warning",
         "lane": "rentalsca",
         "status": "degraded",
-        "detail": "5/9 regional searches reachable; 0 qualifying candidates parsed; 2 scoped search-only leads retained (2 new, 0 already active, 0 need revalidation); 3 detail pages blocked after 25 discovered URLs; 22 further detail checks suppressed after repeated 403/429"
+        "detail": "2/9 regional searches reachable; 0 qualifying candidates parsed; 1 scoped search-only leads retained (1 new, 0 already active, 0 need revalidation); 3 detail pages blocked after 11 discovered URLs; 8 further detail checks suppressed after repeated 403/429"
       },
       {
         "severity": "warning",
         "lane": "livrent",
         "status": "unhealthy",
         "detail": "0/5 searches healthy"
+      },
+      {
+        "severity": "warning",
+        "lane": "realtylink",
+        "status": "degraded",
+        "detail": "3/3 searches reachable; 4 current live candidates parsed from a partial snapshot versus complete baseline 6; positive discovery usable, removals suppressed"
       },
       {
         "severity": "warning",
@@ -221,5 +242,5 @@
     ]
   },
   "readinessIssues": [],
-  "finalizedAt": "2026-09-13T16:31:16.877Z"
+  "finalizedAt": "2026-09-13T17:12:41.465Z"
 }

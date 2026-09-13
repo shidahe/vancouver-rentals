@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-09-13T16:22:18.101Z",
+  "checkedAt": "2026-09-13T17:03:47.257Z",
   "listingId": "zumper-1441677a9e59",
   "sourceUrl": "https://www.zumper.com/address/2138-w-13th-ave-vancouver-bc-v6k-2s1-can",
   "ok": true,
@@ -457,10 +457,11 @@
     "https://img.zumpercdn.com/918582401/1280x960?dpr=1&fit=crop&h=446&q=76&w=792",
     "https://img.zumpercdn.com/918582428/1280x960?dpr=1&fit=crop&h=222&q=76&w=394"
   ],
-  "elapsedMs": 3281,
+  "elapsedMs": 3351,
   "identityMatch": true,
   "explicitNegative": false,
   "negativePhrase": null,
+  "negativeNeedsConfirmation": false,
   "explicitPositive": true,
   "positivePhrase": "/available now/i",
   "extractedRent": 4500,

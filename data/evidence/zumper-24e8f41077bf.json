@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-09-13T16:22:18.101Z",
+  "checkedAt": "2026-09-13T17:03:47.257Z",
   "listingId": "zumper-24e8f41077bf",
   "sourceUrl": "https://www.zumper.com/address/2545-w-bdwy-vancouver-bc-v6k-2e9-can",
   "ok": true,
@@ -322,10 +322,11 @@
     "https://cdn.cookielaw.org/logos/static/ot_company_logo.png",
     "https://cdn.cookielaw.org/logos/static/powered_by_logo.svg"
   ],
-  "elapsedMs": 3312,
+  "elapsedMs": 3380,
   "identityMatch": false,
   "explicitNegative": false,
-  "negativePhrase": null,
+  "negativePhrase": "/alert me when this rental is available/i",
+  "negativeNeedsConfirmation": true,
   "explicitPositive": false,
   "positivePhrase": "/available\\s+(?:immediately|[a-z]{3,9}\\s+\\d{1,2})/i",
   "extractedRent": null,
