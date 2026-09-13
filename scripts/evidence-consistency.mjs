@@ -1,4 +1,5 @@
 const ACTIVE = 'active';
+const MAX_EVIDENCE_AGE_MS = 24 * 60 * 60 * 1000;
 
 const normalizedUrl = value => {
   try {
@@ -19,7 +20,7 @@ export function activeListingContradictedByFreshEvidence(listing, evidence, nowM
   if (!evidence?.identityMatch || !evidence?.explicitNegative) return false;
 
   const checkedAt = Date.parse(evidence.checkedAt || '');
-  if (!Number.isFinite(checkedAt) || nowMs - checkedAt > 24 * 60 * 60 * 1000) return false;
+  if (!Number.isFinite(checkedAt) || nowMs - checkedAt > MAX_EVIDENCE_AGE_MS) return false;
 
   const listingUrl = normalizedUrl(listing.url);
   const evidenceUrl = normalizedUrl(evidence.sourceUrl || evidence.finalUrl);
