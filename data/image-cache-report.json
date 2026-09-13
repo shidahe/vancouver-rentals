@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-09-13T05:11:26.058Z",
+  "refreshedAt": "2026-09-13T11:04:07.810Z",
   "listings": {
     "york-103-2535-r3137446": {
       "cached": 5,
@@ -115,15 +115,46 @@
     },
     "mls-r3148298": {
       "cached": 5,
-      "preserved": 0,
-      "downloaded": 5,
+      "preserved": 5,
+      "downloaded": 0,
       "failures": [],
       "photoPageUrl": "https://realtylink.org/en/house~for-rent~vancouver/263169925"
     },
-    "mls-r3159060": {
+    "mls-r3151372": {
+      "cached": 2,
+      "preserved": 0,
+      "downloaded": 2,
+      "failures": [
+        {
+          "url": "https://media.realtylink.org/images/consumersite/property/263172999/f30edfe3c49c4660ba9111ae7e98814b.jpeg?width=320&height=240&fit=cover",
+          "error": "not a usable image (image/jpeg, 6584 bytes)"
+        },
+        {
+          "url": "https://media.realtylink.org/images/consumersite/property/263172999/dbad0a90c3ff4d6a81393b40751ce33a.jpeg?width=320&height=240&fit=cover",
+          "error": "not a usable image (image/jpeg, 7504 bytes)"
+        },
+        {
+          "url": "https://media.realtylink.org/images/consumersite/property/263172999/714b4bbc2050493b867e77ca36123841.jpeg?width=320&height=240&fit=cover",
+          "error": "not a usable image (image/jpeg, 7118 bytes)"
+        },
+        {
+          "url": "https://media.realtylink.org/images/consumersite/property/263172999/c5424aa8ec754c5dbde8b458e950da3a.jpeg?width=480&height=360&fit=cover",
+          "error": "HTTP 400"
+        }
+      ],
+      "photoPageUrl": "https://realtylink.org/en/house~for-rent~vancouver/263172999"
+    },
+    "mls-r3161950": {
       "cached": 5,
       "preserved": 0,
       "downloaded": 5,
+      "failures": [],
+      "photoPageUrl": "https://realtylink.org/en/house~for-rent~vancouver/263183577"
+    },
+    "mls-r3159060": {
+      "cached": 5,
+      "preserved": 5,
+      "downloaded": 0,
       "failures": [],
       "photoPageUrl": "https://realtylink.org/en/house~for-rent~vancouver/263180687"
     },
@@ -136,20 +167,20 @@
     },
     "mls-r3164628": {
       "cached": 5,
-      "preserved": 0,
-      "downloaded": 5,
+      "preserved": 5,
+      "downloaded": 0,
       "failures": [],
       "photoPageUrl": "https://realtylink.org/en/house~for-rent~vancouver/263186255"
     }
   },
   "totals": {
-    "sourceListings": 20,
-    "cachedListings": 20,
-    "downloaded": 15,
-    "failed": 0,
-    "preserved": 81,
-    "prunedListings": 2,
-    "prunedIndexImages": 10,
+    "sourceListings": 22,
+    "cachedListings": 22,
+    "downloaded": 7,
+    "failed": 4,
+    "preserved": 96,
+    "prunedListings": 0,
+    "prunedIndexImages": 0,
     "prunedOrphanFiles": 0
   }
 }
