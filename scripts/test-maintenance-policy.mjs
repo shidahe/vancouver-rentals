@@ -9,7 +9,7 @@ import { verifiedPhotoCandidates } from './listing-photo-candidates.mjs';
 import { isRealtylinkListingNotFoundRedirect, isTargetWestsideCoordinate, parseRealtylinkAirConditioning, parseRealtylinkCoordinateValues, parseRealtylinkCoordinates, parseRealtylinkFloorArea, parseRealtylinkRoomCount } from './realtylink-parser.mjs';
 import { craigslistLaneHealth, marketplaceLaneHealth, rentalscaLaneHealth, realtylinkLaneHealth } from './coverage-policy.mjs';
 import { exactPurposeBuiltFloorplanEvidence } from './purposebuilt-floorplan-evidence.mjs';
-import { softNegativeDisposition, softUnavailablePrompt } from './listing-availability.mjs';
+import { hasCurrentMarketplaceAvailability, softNegativeDisposition, softUnavailablePrompt } from './listing-availability.mjs';
 import { dedupeMlsRecords } from './mls-dedupe.mjs';
 import { craigslistAddressPrecision, craigslistDetailEvidence, craigslistPostId, extractCraigslistDetailUrls, normalizeCraigslistDetailUrl, parseCraigslistSearchCard } from './craigslist-parser.mjs';
 import { classifyRentalsCaSearchLead, parseRentalsCaSearchLeads } from './rentalsca-search-parser.mjs';
@@ -40,6 +40,10 @@ const failures = [];
 const unavailableAlertFixture = 'MONTHLY RENT - BEDS 2 BATHS 3 SQFT 1,100 Alert me when this rental is available. We\u2019ll let you know when this property is available. *Available: August 1, 2026';
 if (!softUnavailablePrompt(unavailableAlertFixture) || softUnavailablePrompt('Available immediately. Request a tour today.')) {
   failures.push('A current marketplace availability-alert prompt can be overridden by a stale available date in the retained description.');
+}
+if (hasCurrentMarketplaceAvailability(`Townhouse for rent\n${unavailableAlertFixture}`) ||
+    !hasCurrentMarketplaceAvailability('Townhouse for rent. Currently on market. Request tour.')) {
+  failures.push('The Zumper discovery adapter can reactivate a listing whose exact page now offers only an availability alert.');
 }
 const softNegativePrevious = { checkedAt: '2026-09-13T12:00:00Z', softNegativeFirstSeenAt: '2026-09-13T12:00:00Z', explicitNegative: true, negativeNeedsConfirmation: true };
 if (softNegativeDisposition(true, {}, Date.parse('2026-09-13T18:00:00Z')) !== 'hide' ||

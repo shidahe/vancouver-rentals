@@ -19,3 +19,11 @@ export function softNegativeDisposition(isSoftNegative, previous = {}, nowMs = D
     Number.isFinite(firstSeenAt) && nowMs - firstSeenAt >= 4 * 60 * 60 * 1000;
   return confirmed ? 'remove' : 'hide';
 }
+
+export function hasCurrentMarketplaceAvailability(text) {
+  const value = String(text || '');
+  const positive = /currently on market|check availability|request tour|for rent/i.test(value);
+  const negative = /gone too soon|no longer available|this rental is unavailable|listing is inactive|currently off market|\boff market\b/i.test(value) ||
+    !!softUnavailablePrompt(value);
+  return positive && !negative;
+}
