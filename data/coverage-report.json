@@ -1,9 +1,30 @@
 {
-  "generatedAt": "2026-09-12T23:05:37.818Z",
+  "generatedAt": "2026-09-13T00:57:53.263Z",
   "coverageReady": true,
   "healthyLaneCount": 3,
   "freshLaneCount": 8,
   "priorityOfficialReady": true,
+  "priorityInventoryReady": true,
+  "priorityInventorySources": [
+    {
+      "building": "kits-walk",
+      "healthy": true,
+      "checkedAt": "2026-09-12T22:57:03.967Z",
+      "evidenceUrl": "https://www.kitswalkleasing.com/floorplans"
+    },
+    {
+      "building": "larchway-gardens",
+      "healthy": true,
+      "checkedAt": "2026-09-12T22:57:03.967Z",
+      "evidenceUrl": "https://quadrealresidential.com/vancouver/larchway-gardens/contact/"
+    },
+    {
+      "building": "viridian",
+      "healthy": true,
+      "checkedAt": "2026-09-12T22:57:03.967Z",
+      "evidenceUrl": "https://www.rentcafe.com/apartments/bc/vancouver/viridian1/default.aspx"
+    }
+  ],
   "inventoryGaps": [
     {
       "building": "viridian",
@@ -103,5 +124,5 @@
     }
   ],
   "blockers": [],
-  "policy": "Coverage is ready when at least two fresh independent discovery families have current positive candidate yield, including one broad marketplace and one independent classifieds/MLS family, and every priority building has at least one fresh usable official source. A partial MLS snapshot may contribute exact positive discovery rows but never disappearance or removal evidence. Aggregate counts alone never publish inventory; structured rows with exact rent, bedroom and sqft anchors may be tracked as verified floorplans when the page also has current availability language."
+  "policy": "Coverage is ready when at least two fresh independent discovery families have current positive candidate yield, including one broad marketplace and one independent classifieds/MLS family, every priority building has at least one fresh usable official source, and each priority building has a fresh semantically valid inventory-page snapshot. A partial MLS snapshot may contribute exact positive discovery rows but never disappearance or removal evidence. Aggregate counts alone never publish inventory; structured rows with exact rent, bedroom and sqft anchors may be tracked as verified floorplans when the page also has current availability language."
 }

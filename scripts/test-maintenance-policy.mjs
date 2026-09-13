@@ -3,7 +3,7 @@ import { civicAddressMatch, exactAddressUnitIdentity, findExistingSeedListing, l
 import { firstLikelyRent, parseFacts } from './listing-parser.mjs';
 import { isAutoManagedListing } from './stale-auto-policy.mjs';
 import { bedroomEligible, isHouseShareText, isTargetRentalAreaText, LISTING_SCOPE_VERSION, listingScopeEligible, rentEligible } from './discovery-policy.mjs';
-import { aggregateUnitCount, discoveredStructuredInventories, rentCafeExactUnits, rentCafeUnpricedUnits, structuredRentalInventories } from './priority-inventory-policy.mjs';
+import { aggregateUnitCount, discoveredStructuredInventories, priorityInventoryEvidenceHealthy, rentCafeExactUnits, rentCafeUnpricedUnits, structuredRentalInventories } from './priority-inventory-policy.mjs';
 import { dedupeHistoryEvents, pruneExcludedScopeChurn } from './history-policy.mjs';
 import { verifiedPhotoCandidates } from './listing-photo-candidates.mjs';
 import { isRealtylinkListingNotFoundRedirect, isTargetWestsideCoordinate, parseRealtylinkCoordinateValues, parseRealtylinkCoordinates, parseRealtylinkFloorArea, parseRealtylinkRoomCount } from './realtylink-parser.mjs';
@@ -36,6 +36,11 @@ const siteTestSource = await read('scripts/test-site.mjs');
 const imageCacheSource = await read('scripts/cache-listing-images.mjs');
 
 const failures = [];
+const inventoryNow=Date.parse('2026-09-13T00:00:00Z');
+if(!priorityInventoryEvidenceHealthy({ok:true,checkedAt:'2026-09-12T23:00:00Z',bodyText:'Kits Walk Floor Plans'},/kits walk/i,inventoryNow)||
+   priorityInventoryEvidenceHealthy({ok:true,checkedAt:'2026-09-12T00:00:00Z',bodyText:'Kits Walk Floor Plans'},/kits walk/i,inventoryNow)||
+   priorityInventoryEvidenceHealthy({ok:true,checkedAt:'2026-09-12T23:00:00Z',bodyText:'generic leasing page'},/kits walk/i,inventoryNow)||
+   !coverageSource.includes('priority-building-inventory-source-unhealthy')) failures.push('Priority coverage can pass without fresh semantically valid inventory-page evidence.');
 const rentalscaSearchLeads=parseRentalsCaSearchLeads('$3,600 – $3,650\n2 Bed\n2 Bath\n2075 W 12th Avenue, Vancouver, BC\n$2,195 – $3,455\n0–2 Bed\n1 Bath\n1370 Senakw Lane, Vancouver, BC');
 if(rentalscaSearchLeads.length!==2||rentalscaSearchLeads[0].rentMin!==3600||rentalscaSearchLeads[0].rentMax!==3650||rentalscaSearchLeads[0].bedroomMin!==2||rentalscaSearchLeads[0].bedroomMax!==2||rentalscaSearchLeads[0].bathrooms!==2||rentalscaSearchLeads[1].bedroomMin!==0||rentalscaSearchLeads[1].bedroomMax!==2)failures.push('Rentals.ca visible search-result rent/bed/bath/address leads do not parse safely.');
 const viridianFixture='One Bedroom\n1 Bed / 1 Bath\nUnit\tBase rent\tAvailability\n0405\tAsk for pricing\tNow\nTwo Bedroom\n2 Beds / 1 Bath\nAsk for pricing\nFloor plan details\nUnit\tBase rent\tAvailability\n0103\tAsk for pricing\tSep 30\nTwo Bedroom\n2 Beds / 2 Baths\nCheck for available units\nRatings and reviews\n2 bedroom units for nearly $4,000';

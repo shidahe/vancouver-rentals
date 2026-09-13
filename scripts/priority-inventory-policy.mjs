@@ -1,5 +1,10 @@
 import { bedroomEligible, rentEligible } from './discovery-policy.mjs';
 
+export function priorityInventoryEvidenceHealthy(evidence = {}, expectedPattern, now = Date.now(), maxAgeHours = 12) {
+  const checkedAt = new Date(evidence.checkedAt || 0).getTime();
+  return evidence.ok === true && Number.isFinite(checkedAt) && now - checkedAt <= maxAgeHours * 3600000 && expectedPattern.test(String(evidence.bodyText || ''));
+}
+
 // RentCafe's floor-plan table exposes exact units even when its price is
 // withheld. Keep those units in the audit queue, never in published inventory.
 export function rentCafeExactUnits(bodyText = '') {
