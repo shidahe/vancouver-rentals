@@ -1,3 +1,5 @@
+import { civicAddressMatch } from './inventory-identity.mjs';
+
 const amount=value=>Number(String(value||'').replace(/[^0-9]/g,''))||null;
 
 export function parseRentalsCaSearchLeads(text=''){
@@ -20,4 +22,19 @@ export function parseRentalsCaSearchLeads(text=''){
     if(!leads.some(x=>x.identityKey===key))leads.push({identityKey:key,address,rentMin,rentMax,bedroomMin,bedroomMax,bathrooms:bathMatch?Number(bathMatch[1]):null});
   }
   return leads;
+}
+
+export function classifyRentalsCaSearchLead(lead={},listings=[]){
+  const matches=(listings||[]).filter(x=>civicAddressMatch(lead.address,x.address));
+  const active=matches.filter(x=>x.availabilityStatus==='active');
+  const pending=matches.filter(x=>x.availabilityStatus==='needs_confirmation');
+  const preferred=active[0]||pending[0]||matches[0]||null;
+  return {
+    leadStatus:active.length?'represented_active_address':matches.length?'needs_detail_revalidation':'new_unverified_address',
+    addressMatchOnly:matches.length>0,
+    matchingListingCount:matches.length,
+    matchedListingIds:matches.map(x=>x.id).filter(Boolean),
+    matchedListingId:preferred?.id||null,
+    matchedAvailabilityStatus:preferred?.availabilityStatus||null
+  };
 }

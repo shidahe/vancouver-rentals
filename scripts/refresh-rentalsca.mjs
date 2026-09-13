@@ -3,7 +3,7 @@ import path from 'node:path';
 import crypto from 'node:crypto';
 import { chromium } from 'playwright';
 import { isTargetRentalAreaText, listingScopeEligible } from './discovery-policy.mjs';
-import { parseRentalsCaSearchLeads } from './rentalsca-search-parser.mjs';
+import { classifyRentalsCaSearchLead, parseRentalsCaSearchLeads } from './rentalsca-search-parser.mjs';
 
 const DATA=path.join(process.cwd(),'data');
 const EVIDENCE=path.join(DATA,'evidence');
@@ -48,10 +48,11 @@ function parseSingle(text){return{rent:money(text.match(/(?:Rent|monthly rent)[\
 function identity(address,unit,floorplan,url){const a=canonStreet(String(address||'').split(',')[0]);if(unit)return`${a}::unit:${norm(unit)}`;if(floorplan)return`${a}::floorplan:${norm(floorplan)}`;return`${a}::url:${hash(url)}`;}
 
 const sources=await read(path.join(DATA,'live-sources.json'),{discovery:[]});
+const listingCatalog=await read(path.join(DATA,'listings.json'),{listings:[]});
 const browser=await chromium.launch({headless:true});
 const context=await browser.newContext({locale:'en-CA',timezoneId:'America/Vancouver',viewport:{width:1440,height:1200},userAgent:'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 Chrome/126 Safari/537.36'});
 const page=await context.newPage(),detailUrls=new Set(),sourceHealth={},searchLeadMap=new Map();
-const diagnostics={searchResultCount:0,searchAddressLines:0,searchDetailLinks:0,searchLeadCount:0,detailUrls:0,detailChecked:0,detailBlocked:0,detailNotFound:0,detailErrors:0,detailParsed:0,detailSuppressed:0,detailCircuitOpen:false};
+const diagnostics={searchResultCount:0,searchAddressLines:0,searchDetailLinks:0,searchLeadCount:0,newSearchLeadCount:0,representedSearchLeadCount:0,revalidationSearchLeadCount:0,detailUrls:0,detailChecked:0,detailBlocked:0,detailNotFound:0,detailErrors:0,detailParsed:0,detailSuppressed:0,detailCircuitOpen:false};
 for(const s of (sources.discovery||[]).filter(x=>x.adapter==='rentalsca-search')){
   try{
     const r=await page.goto(s.url,{waitUntil:'domcontentloaded',timeout:45000}),status=r?.status()??null;sourceHealth[s.id]={checkedAt:iso,status,ok:!!r&&status<400,finalUrl:page.url()};if(!r||status>=400)continue;
@@ -86,7 +87,15 @@ for(const s of (sources.discovery||[]).filter(x=>x.adapter==='rentalsca-search')
   }catch(e){sourceHealth[s.id]={checkedAt:iso,ok:false,error:String(e)}}
 }
 diagnostics.detailUrls=detailUrls.size;
-diagnostics.searchLeadCount=searchLeadMap.size;
+const searchLeads=[...searchLeadMap.values()].map(lead=>({
+  ...lead,
+  url:detailUrlFromAddress(lead.address),
+  ...classifyRentalsCaSearchLead(lead,listingCatalog.listings)
+}));
+diagnostics.searchLeadCount=searchLeads.length;
+diagnostics.newSearchLeadCount=searchLeads.filter(x=>x.leadStatus==='new_unverified_address').length;
+diagnostics.representedSearchLeadCount=searchLeads.filter(x=>x.leadStatus==='represented_active_address').length;
+diagnostics.revalidationSearchLeadCount=searchLeads.filter(x=>x.leadStatus==='needs_detail_revalidation').length;
 const pages=[],inventories=[];
 const requestedDetails=[...detailUrls].slice(0,160);
 let consecutiveBlocked=0;
@@ -111,5 +120,5 @@ for(const url of requestedDetails){
   }catch{diagnostics.detailErrors++;}
 }
 await browser.close();
-await write(path.join(DATA,'rentalsca-candidates.json'),{refreshedAt:iso,mode:'candidate-only',sourceHealth,diagnostics,searchLeads:[...searchLeadMap.values()],pages,inventories});
+await write(path.join(DATA,'rentalsca-candidates.json'),{refreshedAt:iso,mode:'candidate-only',sourceHealth,diagnostics,searchLeads,pages,inventories});
 console.log(`Rentals.ca adapter: ${pages.length} pages, ${inventories.length} target-area 2BR+ unit/floorplan inventories.`);
