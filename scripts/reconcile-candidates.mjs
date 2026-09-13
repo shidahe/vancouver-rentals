@@ -4,7 +4,7 @@ import crypto from 'node:crypto';
 import { civicAddressMatch, exactAddressUnitIdentity, listingMls, mlsIdentity } from './inventory-identity.mjs';
 import { dedupeMlsRecords } from './mls-dedupe.mjs';
 import { verifiedPhotoCandidates } from './listing-photo-candidates.mjs';
-import { parseRealtylinkFloorArea, parseRealtylinkRoomCount } from './realtylink-parser.mjs';
+import { parseRealtylinkAirConditioning, parseRealtylinkFloorArea, parseRealtylinkRoomCount } from './realtylink-parser.mjs';
 import { LISTING_SCOPE_VERSION, listingScopeEligible } from './discovery-policy.mjs';
 
 const DATA=path.join(process.cwd(),'data');
@@ -96,7 +96,7 @@ for(const x of payload.listings){
   x.rent=rent;
   const bathrooms=parseRealtylinkRoomCount(evidence.bodyText,'bathroom');
   const area=parseRealtylinkFloorArea(evidence.bodyText);
-  if(beds!=null)x.bedrooms=beds;if(bathrooms!=null)x.bathrooms=bathrooms;if(area!=null)x.sqft=area;
+  if(beds!=null)x.bedrooms=beds;if(bathrooms!=null)x.bathrooms=bathrooms;if(area!=null)x.sqft=area;x.ac=parseRealtylinkAirConditioning(evidence.bodyText);
   if(rent<oldRent){x.status='price_drop';x.priceDrop=true;}else if(!wasActive)x.status='corrected';
   if(!wasActive){
     state.detailReactivated.push(x.id);

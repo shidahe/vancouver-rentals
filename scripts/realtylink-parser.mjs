@@ -30,6 +30,13 @@ export function parseRealtylinkFloorArea(text) {
   return Number.isFinite(value)&&value>=200&&value<=15000?value:null;
 }
 
+export function parseRealtylinkAirConditioning(text) {
+  const value=String(text||'');
+  if(/\b(?:no|without) (?:central )?air condition(?:ing|er)\b/i.test(value))return false;
+  if(/Cooling Features\s+Air Conditioning|\b(?:central )?air condition(?:ing|ed)|\bcentral a\/c\b/i.test(value))return true;
+  return null;
+}
+
 export function isRealtylinkListingNotFoundRedirect(sourceUrl, finalUrl) {
   try {
     const source=new URL(sourceUrl);

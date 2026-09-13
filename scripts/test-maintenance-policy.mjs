@@ -6,7 +6,7 @@ import { bedroomEligible, isHouseShareText, isTargetRentalAreaText, LISTING_SCOP
 import { aggregateUnitCount, discoveredStructuredInventories, priorityInventoryEvidenceHealthy, rentCafeExactUnits, rentCafeUnpricedUnits, structuredRentalInventories } from './priority-inventory-policy.mjs';
 import { dedupeHistoryEvents, pruneExcludedScopeChurn } from './history-policy.mjs';
 import { verifiedPhotoCandidates } from './listing-photo-candidates.mjs';
-import { isRealtylinkListingNotFoundRedirect, isTargetWestsideCoordinate, parseRealtylinkCoordinateValues, parseRealtylinkCoordinates, parseRealtylinkFloorArea, parseRealtylinkRoomCount } from './realtylink-parser.mjs';
+import { isRealtylinkListingNotFoundRedirect, isTargetWestsideCoordinate, parseRealtylinkAirConditioning, parseRealtylinkCoordinateValues, parseRealtylinkCoordinates, parseRealtylinkFloorArea, parseRealtylinkRoomCount } from './realtylink-parser.mjs';
 import { craigslistLaneHealth, marketplaceLaneHealth, rentalscaLaneHealth, realtylinkLaneHealth } from './coverage-policy.mjs';
 import { exactPurposeBuiltFloorplanEvidence } from './purposebuilt-floorplan-evidence.mjs';
 import { dedupeMlsRecords } from './mls-dedupe.mjs';
@@ -36,6 +36,7 @@ const siteTestSource = await read('scripts/test-site.mjs');
 const imageCacheSource = await read('scripts/cache-listing-images.mjs');
 
 const failures = [];
+if(parseRealtylinkAirConditioning('Forced-air heating')!==null||parseRealtylinkAirConditioning('Cooling Features\nAir Conditioning')!==true||parseRealtylinkAirConditioning('No air conditioning')!==false)failures.push('Realtylink AC omission is still being misreported as confirmed no AC.');
 const inventoryNow=Date.parse('2026-09-13T00:00:00Z');
 if(!priorityInventoryEvidenceHealthy({ok:true,checkedAt:'2026-09-12T23:00:00Z',bodyText:'Kits Walk Floor Plans'},/kits walk/i,inventoryNow)||
    priorityInventoryEvidenceHealthy({ok:true,checkedAt:'2026-09-12T00:00:00Z',bodyText:'Kits Walk Floor Plans'},/kits walk/i,inventoryNow)||
