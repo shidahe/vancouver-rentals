@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-09-13T11:03:22.661Z",
+  "refreshedAt": "2026-09-13T12:05:56.826Z",
   "groups": [
     {
       "identityKey": "3220 4th ave w::url:4b1a6ebe2d36",
@@ -242,27 +242,27 @@
       "result": "candidate_only"
     },
     {
-      "identityKey": "mls:r3137446",
+      "identityKey": "mls:r3150923",
       "sources": [
         "realtylink mls"
       ],
       "rents": [
-        5850
+        4680
       ],
-      "exactUnit": true,
-      "matchedListingId": "york-103-2535-r3137446",
+      "exactUnit": false,
+      "matchedListingId": "mls-r3150923",
       "result": "authoritative_mls_reverified"
     },
     {
-      "identityKey": "mls:r3160689",
+      "identityKey": "mls:r3161880",
       "sources": [
         "realtylink mls"
       ],
       "rents": [
-        4950
+        8800
       ],
-      "exactUnit": true,
-      "matchedListingId": "zumper-16e9ae17cd91",
+      "exactUnit": false,
+      "matchedListingId": "mls-r3161880",
       "result": "authoritative_mls_reverified"
     },
     {
@@ -278,32 +278,32 @@
       "result": "authoritative_mls_reverified"
     },
     {
-      "identityKey": "mls:r3161950",
+      "identityKey": "mls:r3151022",
       "sources": [
         "realtylink mls"
       ],
       "rents": [
-        4000
+        10500
       ],
       "exactUnit": false,
-      "matchedListingId": "mls-r3161950",
+      "matchedListingId": "mls-r3151022",
       "result": "authoritative_mls_reverified"
     }
   ],
   "promoted": [],
   "crossVerified": [
-    "york-103-2535-r3137446",
-    "zumper-16e9ae17cd91",
+    "mls-r3150923",
+    "mls-r3161880",
     "mls-r3151372",
-    "mls-r3161950"
+    "mls-r3151022"
   ],
   "fingerprintCrossVerified": [],
   "maskedMlsMerged": [],
   "relistedMlsMerged": [],
   "negativeMatches": [],
   "detailReactivated": [
-    "mls-r3151372",
-    "mls-r3161950"
+    "mls-r3151022",
+    "mls-r3161880"
   ],
   "mlsMissing": {},
   "mlsRemoved": [],

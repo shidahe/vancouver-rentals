@@ -1,9 +1,9 @@
 {
-  "refreshedAt": "2026-09-13T11:01:27.410Z",
+  "refreshedAt": "2026-09-13T12:04:13.165Z",
   "mode": "candidate-only",
   "sourceHealth": {
     "rentalsca-kitsilano-2br": {
-      "checkedAt": "2026-09-13T11:01:27.410Z",
+      "checkedAt": "2026-09-13T12:04:13.165Z",
       "status": 200,
       "ok": true,
       "finalUrl": "https://rentals.ca/vancouver/kitsilano/all-apartments-all-houses/2-bedrooms",
@@ -16,7 +16,7 @@
       "detailUrlCount": 10
     },
     "rentalsca-point-grey-2br": {
-      "checkedAt": "2026-09-13T11:01:27.410Z",
+      "checkedAt": "2026-09-13T12:04:13.165Z",
       "status": 200,
       "ok": true,
       "finalUrl": "https://rentals.ca/vancouver/west-point-grey/2-bedrooms",
@@ -29,7 +29,7 @@
       "detailUrlCount": 1
     },
     "rentalsca-arbutus-2br": {
-      "checkedAt": "2026-09-13T11:01:27.410Z",
+      "checkedAt": "2026-09-13T12:04:13.165Z",
       "status": 200,
       "ok": true,
       "finalUrl": "https://rentals.ca/vancouver/arbutus-ridge/2-bedrooms",
@@ -42,78 +42,64 @@
       "detailUrlCount": 8
     },
     "rentalsca-dunbar-2br": {
-      "checkedAt": "2026-09-13T11:01:27.410Z",
+      "checkedAt": "2026-09-13T12:04:13.165Z",
       "status": 200,
       "ok": true,
       "finalUrl": "https://rentals.ca/vancouver/dunbar-southlands/2-bedrooms",
       "detailLinkCount": 1,
       "title": "Dunbar-Southlands Vancouver 2 Bedroom Apartments Condos and Houses for Rent",
-      "observedListingCount": 2,
-      "challengeDetected": false,
-      "searchLeadCount": 1,
-      "addressLineCount": 1,
-      "detailUrlCount": 2
-    },
-    "rentalsca-quilchena-2br": {
-      "checkedAt": "2026-09-13T11:01:27.410Z",
-      "status": 404,
-      "ok": false,
-      "finalUrl": "https://rentals.ca/vancouver/quilchena/2-bedrooms"
-    },
-    "rentalsca-kitsilano-3br": {
-      "checkedAt": "2026-09-13T11:01:27.410Z",
-      "status": 200,
-      "ok": true,
-      "finalUrl": "https://rentals.ca/vancouver/kitsilano/3-bedrooms",
-      "detailLinkCount": 4,
-      "title": "Kitsilano Vancouver 3 Bedroom Apartments Condos and Houses for Rent",
-      "observedListingCount": 4,
-      "challengeDetected": false,
-      "searchLeadCount": 1,
-      "addressLineCount": 1,
-      "detailUrlCount": 4
-    },
-    "rentalsca-kitsilano-4br": {
-      "checkedAt": "2026-09-13T11:01:27.410Z",
-      "status": 200,
-      "ok": true,
-      "finalUrl": "https://rentals.ca/vancouver/kitsilano/4-bedrooms",
-      "detailLinkCount": 1,
-      "title": "Kitsilano Vancouver 4 Bedroom Apartments Condos and Houses for Rent",
-      "observedListingCount": 1,
+      "observedListingCount": 0,
       "challengeDetected": false,
       "searchLeadCount": 0,
       "addressLineCount": 0,
       "detailUrlCount": 1
     },
-    "rentalsca-vancouver-3br": {
-      "checkedAt": "2026-09-13T11:01:27.410Z",
+    "rentalsca-quilchena-2br": {
+      "checkedAt": "2026-09-13T12:04:13.165Z",
       "status": 429,
       "ok": false,
-      "finalUrl": "https://rentals.ca/vancouver/3-bedrooms?__cf_chl_rt_tk=vBdSbomXqy4QPLo5wxgv8Om23mnaKXPGJz9rpYGRQt4-1789297305-1.0.1.1-tK_c6LRjeVhUQ2GkHF1qqrX.LIk1N1Uwez4pSo_118c"
+      "finalUrl": "https://rentals.ca/vancouver/quilchena/2-bedrooms?__cf_chl_rt_tk=jQCzbvrOk9M66wqH3Ji_bCWYC_AB_j3C7OQXGsCoFAA-1789301066-1.0.1.1-hKfbMYLK8lyb83NFMHkJW0SvuoeeSKSfq0IJRD5rMO4"
+    },
+    "rentalsca-kitsilano-3br": {
+      "checkedAt": "2026-09-13T12:04:13.165Z",
+      "status": 429,
+      "ok": false,
+      "finalUrl": "https://rentals.ca/vancouver/kitsilano/3-bedrooms?__cf_chl_rt_tk=keftMoEd2rZwlu_kfi6muEwJzgWeLJXzvOzwuRlHRWg-1789301066-1.0.1.1-_a_prfP8.di46Zm.OEd41Ej1IFSSx7WYMNA8gPXggPQ"
+    },
+    "rentalsca-kitsilano-4br": {
+      "checkedAt": "2026-09-13T12:04:13.165Z",
+      "status": 429,
+      "ok": false,
+      "finalUrl": "https://rentals.ca/vancouver/kitsilano/4-bedrooms?__cf_chl_rt_tk=UD8Yh9CTMgBN_a0c2OCzIgXWsLm7ozBdt79wPBT8F6Y-1789301066-1.0.1.1-8GXd0NoebwU6D4eceLRxSeCLTDKXF3K2ittHuL4GMj4"
+    },
+    "rentalsca-vancouver-3br": {
+      "checkedAt": "2026-09-13T12:04:13.165Z",
+      "status": 429,
+      "ok": false,
+      "finalUrl": "https://rentals.ca/vancouver/3-bedrooms?__cf_chl_rt_tk=tMh5qbfs07LFqvK0xtI29cb0l1kBBysnCmQIcAjiw_o-1789301066-1.0.1.1-IvoIuG58KSJl8JEwPoY68VQguqH1ItHlmWHkEab.igw"
     },
     "rentalsca-vancouver-4br": {
-      "checkedAt": "2026-09-13T11:01:27.410Z",
+      "checkedAt": "2026-09-13T12:04:13.165Z",
       "status": 429,
       "ok": false,
-      "finalUrl": "https://rentals.ca/vancouver/4-bedrooms?__cf_chl_rt_tk=iUt.Sd98ECOSGZTLBMKyR4UO8IyF2i4e1pqrd5rNR2Q-1789297305-1.0.1.1-WQ5NYkfC7mrTWPnxql8ubi4t9UO1Gn0Jd5EoW4WHkiQ"
+      "finalUrl": "https://rentals.ca/vancouver/4-bedrooms?__cf_chl_rt_tk=UvrEOwe1EqUKlkooe24IBADXRVjhI_BdWza6OpDX7rA-1789301066-1.0.1.1-sWcz4JxWgZMfqbebp7gwDxqvRzqNo1QoDFNIC6_gPHQ"
     }
   },
   "diagnostics": {
-    "searchResultCount": 26,
-    "searchAddressLines": 14,
-    "searchDetailLinks": 18,
+    "searchResultCount": 19,
+    "searchAddressLines": 12,
+    "searchDetailLinks": 13,
     "searchLeadCount": 2,
     "newSearchLeadCount": 2,
     "representedSearchLeadCount": 0,
     "revalidationSearchLeadCount": 0,
-    "detailUrls": 26,
+    "detailUrls": 20,
     "detailChecked": 3,
     "detailBlocked": 3,
     "detailNotFound": 0,
     "detailErrors": 0,
     "detailParsed": 0,
-    "detailSuppressed": 23,
+    "detailSuppressed": 17,
     "detailCircuitOpen": true
   },
   "searchLeads": [
@@ -127,7 +113,7 @@
       "bathrooms": 2,
       "source": "Rentals.ca search",
       "searchUrl": "https://rentals.ca/vancouver/kitsilano/all-apartments-all-houses/2-bedrooms",
-      "checkedAt": "2026-09-13T11:01:27.410Z",
+      "checkedAt": "2026-09-13T12:04:13.165Z",
       "publishable": false,
       "evidenceKind": "search_result_lead_only",
       "availabilityVerified": false,
@@ -149,7 +135,7 @@
       "bathrooms": 2,
       "source": "Rentals.ca search",
       "searchUrl": "https://rentals.ca/vancouver/arbutus-ridge/2-bedrooms",
-      "checkedAt": "2026-09-13T11:01:27.410Z",
+      "checkedAt": "2026-09-13T12:04:13.165Z",
       "publishable": false,
       "evidenceKind": "search_result_lead_only",
       "availabilityVerified": false,
