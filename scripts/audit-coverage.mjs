@@ -58,11 +58,11 @@ const freshLanes=lanes.filter(x=>fresh(x.refreshedAt));
 const healthyDiscovery=discoveryLanes.filter(x=>(x.healthy||x.positiveDiscoveryHealthy)&&fresh(x.refreshedAt));
 const priorityHealthy=priorityLanes.every(x=>x.healthy&&fresh(x.refreshedAt));
 const priorityInventorySources=[
-  {building:'kits-walk',evidence:kitsWalkOfficial,semantic:/kits walk|2075 west 12th|floor plans/i},
-  {building:'larchway-gardens',evidence:larchwayOfficial,semantic:/larchway gardens|2475 west broadway/i},
-  {building:'viridian',evidence:viridianOfficial,semantic:/viridian|1783 west 14th/i}
-].map(({building,evidence,semantic})=>{
-  const healthy=priorityInventoryEvidenceHealthy(evidence,semantic,now);
+  {building:'kits-walk',evidence:kitsWalkOfficial,semantic:/kits walk|2075 west 12th|floor plans/i,urlPattern:/kitswalkleasing\.com\/floorplans/i},
+  {building:'larchway-gardens',evidence:larchwayOfficial,semantic:/larchway gardens|2475 west broadway/i,urlPattern:/quadrealresidential\.com\/vancouver\/larchway-gardens\/floorplans\/?/i},
+  {building:'viridian',evidence:viridianOfficial,semantic:/viridian|1783 west 14th/i,urlPattern:/rentcafe\.com\/apartments\/bc\/vancouver\/viridian1\/default\.aspx/i}
+].map(({building,evidence,semantic,urlPattern})=>{
+  const healthy=priorityInventoryEvidenceHealthy(evidence,semantic,now,12,urlPattern);
   return {building,healthy,checkedAt:evidence.checkedAt||null,evidenceUrl:evidence.source?.url||evidence.finalUrl||null};
 });
 const priorityInventoryReady=priorityInventorySources.every(x=>x.healthy);

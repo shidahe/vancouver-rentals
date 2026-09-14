@@ -1,8 +1,10 @@
 import { bedroomEligible, rentEligible } from './discovery-policy.mjs';
 
-export function priorityInventoryEvidenceHealthy(evidence = {}, expectedPattern, now = Date.now(), maxAgeHours = 12) {
+export function priorityInventoryEvidenceHealthy(evidence = {}, expectedPattern, now = Date.now(), maxAgeHours = 12, expectedUrlPattern = null) {
   const checkedAt = new Date(evidence.checkedAt || 0).getTime();
-  return evidence.ok === true && Number.isFinite(checkedAt) && now - checkedAt <= maxAgeHours * 3600000 && expectedPattern.test(String(evidence.bodyText || ''));
+  const evidenceUrl = String(evidence.source?.url || evidence.finalUrl || '');
+  return evidence.ok === true && Number.isFinite(checkedAt) && now - checkedAt <= maxAgeHours * 3600000 &&
+    expectedPattern.test(String(evidence.bodyText || '')) && (!expectedUrlPattern || expectedUrlPattern.test(evidenceUrl));
 }
 
 // RentCafe's floor-plan table exposes exact units even when its price is

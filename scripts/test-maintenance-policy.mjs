@@ -76,7 +76,8 @@ if (softNegativeDisposition(true, {}, Date.parse('2026-09-13T18:00:00Z')) !== 'h
 }
 if(parseRealtylinkAirConditioning('Forced-air heating')!==null||parseRealtylinkAirConditioning('Cooling Features\nAir Conditioning')!==true||parseRealtylinkAirConditioning('No air conditioning')!==false)failures.push('Realtylink AC omission is still being misreported as confirmed no AC.');
 const inventoryNow=Date.parse('2026-09-13T00:00:00Z');
-if(!priorityInventoryEvidenceHealthy({ok:true,checkedAt:'2026-09-12T23:00:00Z',bodyText:'Kits Walk Floor Plans'},/kits walk/i,inventoryNow)||
+if(!priorityInventoryEvidenceHealthy({ok:true,checkedAt:'2026-09-12T23:00:00Z',bodyText:'Kits Walk Floor Plans',source:{url:'https://www.kitswalkleasing.com/floorplans'}},/kits walk/i,inventoryNow,12,/kitswalkleasing\.com\/floorplans/i)||
+   priorityInventoryEvidenceHealthy({ok:true,checkedAt:'2026-09-12T23:00:00Z',bodyText:'Larchway Gardens 2475 West Broadway',source:{url:'https://quadrealresidential.com/vancouver/larchway-gardens/contact/'}},/larchway gardens/i,inventoryNow,12,/larchway-gardens\/floorplans/i)||
    priorityInventoryEvidenceHealthy({ok:true,checkedAt:'2026-09-12T00:00:00Z',bodyText:'Kits Walk Floor Plans'},/kits walk/i,inventoryNow)||
    priorityInventoryEvidenceHealthy({ok:true,checkedAt:'2026-09-12T23:00:00Z',bodyText:'generic leasing page'},/kits walk/i,inventoryNow)||
    !coverageSource.includes('priority-building-inventory-source-unhealthy')) failures.push('Priority coverage can pass without fresh semantically valid inventory-page evidence.');
@@ -187,6 +188,7 @@ for (const building of ['kits-walk', 'larchway-gardens', 'viridian']) {
   if (!project) failures.push(`Priority building missing from official watch: ${building}`);
   if (!source) failures.push(`Priority building missing from live source catalog: ${building}`);
 }
+if (!catalog.discovery.some(x => x.id === 'larchway-official' && /\/floorplans\/?$/.test(x.url))) failures.push('Larchway priority inventory source can regress from the floorplans page to a generic contact page.');
 for (const building of ['kits-walk', 'larchway-gardens', 'viridian']) {
   if (!coverageSource.includes(`'${building}'`)) failures.push(`Priority building missing from runtime coverage audit: ${building}`);
 }
