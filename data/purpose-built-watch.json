@@ -80,6 +80,46 @@
           "availabilitySignals": ["Immediate", "Now", "Available", "1 unit available"]
         }
       ]
+    },
+    {
+      "id": "fourth-and-mac",
+      "name": "Fourth + Mac",
+      "address": "1960 Macdonald St, Vancouver, BC V6K 0J1",
+      "neighborhood": "Kitsilano",
+      "urls": [
+        "https://www.craigslist.org/view/d/vancouver-bed-bath-fourth-mac-kitsilano/eiSLCKTVqsrtPUWpUpJyDN",
+        "https://liv.rent/building/52105/fourth--mac-apartment-building-1960-macdonald-street-vancouver-bc",
+        "https://rentals.ca/vancouver/1960-macdonald-street"
+      ],
+      "lat": 49.2682,
+      "lng": -123.1682,
+      "buildingYear": 2025,
+      "ac": true,
+      "parking": true,
+      "petFriendly": true,
+      "balcony": true,
+      "largeWindows": true,
+      "modernInterior": true,
+      "inventories": [
+        {
+          "key": "2-bedroom-2-bath-801-4350",
+          "label": "2 Bedroom · 2 Bath · 801 sqft · $4,350",
+          "bedrooms": 2,
+          "bathrooms": 2,
+          "sqft": 801,
+          "rent": 4350,
+          "unit": null,
+          "requiredSignals": [
+            "4,350",
+            "801"
+          ],
+          "availabilitySignals": [
+            "available oct 1",
+            "available october 1",
+            "check availability"
+          ]
+        }
+      ]
     }
   ]
 }

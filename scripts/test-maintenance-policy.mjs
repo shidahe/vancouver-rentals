@@ -38,6 +38,7 @@ const siteTestSource = await read('scripts/test-site.mjs');
 const imageCacheSource = await read('scripts/cache-listing-images.mjs');
 
 const failures = [];
+if(!source.includes('if(consecutiveBlocked>=3)')||!source.includes('diagnostics.searchesSuppressed=searchSources.length-diagnostics.searchesChecked')||!coverageSource.includes('blocked searches opened circuit'))failures.push('liv.rent repeated 403/429 search suppression or its coverage diagnostic can silently regress.');
 if(realtylinkSnapshotBaseline({previousBaseline:6,currentCount:5,sameScope:true})!==6||
    realtylinkSnapshotBaseline({previousBaseline:6,currentCount:4,sameScope:true})!==6||
    realtylinkSnapshotBaseline({previousBaseline:6,currentCount:4,sameScope:false})!==4||
@@ -216,6 +217,9 @@ if (!coverageSource.includes('aggregateCount>verifiedKitsWalkCount') || !coverag
   failures.push('Aggregate priority inventory is not compared with exact verified units.');
 }
 const purposeBuiltWatch = JSON.parse(await read('data/purpose-built-watch.json'));
+const fourthAndMac=purposeBuiltWatch.buildings.find(x=>x.id==='fourth-and-mac');
+const fourthAndMacInventory=fourthAndMac?.inventories?.find(x=>x.key==='2-bedroom-2-bath-801-4350');
+if(fourthAndMac?.address!=='1960 Macdonald St, Vancouver, BC V6K 0J1'||fourthAndMacInventory?.bedrooms!==2||fourthAndMacInventory?.bathrooms!==2||fourthAndMacInventory?.sqft!==801||fourthAndMacInventory?.rent!==4350||!fourthAndMacInventory?.availabilitySignals?.includes('available oct 1'))failures.push('Current Fourth + Mac 2BR exact floorplan inventory is no longer monitored.');
 const kitsWalk3600 = purposeBuiltWatch.buildings?.find(x=>x.id==='kits-walk')?.inventories?.find(x=>x.rent===3600&&x.sqft===741);
 if(!kitsWalk3600||kitsWalk3600.bedrooms!==2||kitsWalk3600.bathrooms!==2) failures.push('Verified Kits Walk $3,600 / 741 sqft floorplan is not tracked.');
 if(!purposeBuiltSource.includes('structuredRentalInventories')||!purposeBuiltSource.includes('structuredMatch')) failures.push('Purpose-built verifier cannot match exact structured inventory rows.');

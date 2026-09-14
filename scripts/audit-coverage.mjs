@@ -37,7 +37,7 @@ const discoveryLanes=[
   {id:'zumper',kind:'broad-marketplace',healthy:zumperFresh.length>=5,status:zumperFresh.length>=5?'healthy':'unhealthy',detail:`${zumperFresh.length} fresh live candidates`,refreshedAt:zumperFresh.map(x=>x.liveCheckedAt).sort().at(-1)||null},
   {id:'craigslist',kind:'independent-classifieds',...craigslistLane,refreshedAt:craigslist.refreshedAt||null},
   {id:'rentalsca',kind:'broad-marketplace',...rentalscaLane,refreshedAt:rentalsca.refreshedAt||null},
-  {id:'livrent',kind:'broad-marketplace',healthy:countOk(livrent.sourceHealth)>=1,status:countOk(livrent.sourceHealth)>=1?'healthy':'unhealthy',detail:`${countOk(livrent.sourceHealth)}/${countTotal(livrent.sourceHealth)} searches healthy`,refreshedAt:livrent.refreshedAt||null},
+  {id:'livrent',kind:'broad-marketplace',healthy:countOk(livrent.sourceHealth)>=1,status:countOk(livrent.sourceHealth)>=1?'healthy':'unhealthy',detail:`${countOk(livrent.sourceHealth)}/${Number(livrent.diagnostics?.searchesConfigured||countTotal(livrent.sourceHealth))} searches healthy${livrent.diagnostics?.searchCircuitOpen?`; ${Number(livrent.diagnostics.searchesBlocked||0)} blocked searches opened circuit; ${Number(livrent.diagnostics.searchesSuppressed||0)} further checks suppressed`:''}`,refreshedAt:livrent.refreshedAt||null},
   {id:'realtylink',kind:'mls-rental',...rlLane,refreshedAt:realtylink.refreshedAt||null}
 ];
 const priorityIds=['kits-walk','larchway-gardens','viridian'];
