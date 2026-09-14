@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-09-14T11:17:30.985Z",
-  "activeCount": 18,
+  "generatedAt": "2026-09-14T13:03:47.114Z",
+  "activeCount": 19,
   "decisionReady": true,
   "readinessStatus": "finalized",
   "highIssueCount": 0,
@@ -84,6 +84,11 @@
     },
     {
       "severity": "info",
+      "id": "arbutus-residences-floorplan-2-bedroom-townhouse-den-1340",
+      "issue": "unknown-orientation"
+    },
+    {
+      "severity": "info",
       "id": "zumper-ecd4e868f79c",
       "issue": "unknown-ac"
     },
@@ -144,12 +149,17 @@
     },
     {
       "severity": "info",
-      "id": "mls-r3148298",
+      "id": "mls-r3150923",
       "issue": "unknown-ac"
     },
     {
       "severity": "info",
-      "id": "mls-r3148298",
+      "id": "mls-r3150923",
+      "issue": "unknown-orientation"
+    },
+    {
+      "severity": "info",
+      "id": "mls-r3151372",
       "issue": "unknown-orientation"
     },
     {
@@ -160,16 +170,6 @@
     {
       "severity": "info",
       "id": "mls-r3149267",
-      "issue": "unknown-orientation"
-    },
-    {
-      "severity": "info",
-      "id": "mls-r3164628",
-      "issue": "unknown-ac"
-    },
-    {
-      "severity": "info",
-      "id": "mls-r3164628",
       "issue": "unknown-orientation"
     },
     {
@@ -181,8 +181,8 @@
   "readinessChecks": {
     "smokeOk": true,
     "smokeFresh": true,
-    "smokeCheckedAt": "2026-09-14T11:17:36.546Z",
-    "latestDataAt": "2026-09-14T11:16:48.679Z",
+    "smokeCheckedAt": "2026-09-14T13:03:52.397Z",
+    "latestDataAt": "2026-09-14T13:02:57.880Z",
     "coverageReady": true,
     "healthyDiscoveryLanes": 3,
     "coverageWarnings": [
@@ -190,7 +190,7 @@
         "severity": "warning",
         "lane": "rentalsca",
         "status": "degraded",
-        "detail": "2/9 regional searches reachable; 0 qualifying candidates parsed; 1 scoped search-only leads retained (0 new, 1 already active, 0 need revalidation); 3 detail pages blocked after 12 discovered URLs; 9 further detail checks suppressed after repeated 403/429"
+        "detail": "8/9 regional searches reachable; 0 qualifying candidates parsed; 19 scoped search-only leads retained (18 new, 1 already active, 0 need revalidation); 3 detail pages blocked after 95 discovered URLs; 91 further detail checks suppressed after repeated 403/429"
       },
       {
         "severity": "warning",
@@ -207,5 +207,5 @@
     ]
   },
   "readinessIssues": [],
-  "finalizedAt": "2026-09-14T11:17:36.643Z"
+  "finalizedAt": "2026-09-14T13:03:52.485Z"
 }
