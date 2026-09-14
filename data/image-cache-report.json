@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-09-14T01:32:32.295Z",
+  "refreshedAt": "2026-09-14T05:09:30.747Z",
   "listings": {
     "york-103-2535-r3137446": {
       "cached": 5,
@@ -23,29 +23,29 @@
       "photoPageUrl": "https://warringtonresidential.com/properties/19-on-the-greenway/"
     },
     "zumper-9157c4798023": {
-      "cached": 8,
-      "preserved": 8,
+      "cached": 5,
+      "preserved": 5,
       "downloaded": 0,
       "failures": [],
       "photoPageUrl": "https://www.zumper.com/address/2406-w-8th-ave-vancouver-bc-v6k-2b1-can"
     },
     "zumper-976e340c66a7": {
-      "cached": 8,
-      "preserved": 8,
+      "cached": 5,
+      "preserved": 5,
       "downloaded": 0,
       "failures": [],
       "photoPageUrl": "https://www.zumper.com/address/1533-maple-st-vancouver-bc-v6j-3s2-can"
     },
     "zumper-2e85ffb3f678": {
-      "cached": 8,
-      "preserved": 8,
+      "cached": 5,
+      "preserved": 5,
       "downloaded": 0,
       "failures": [],
       "photoPageUrl": "https://www.zumper.com/address/4326-w-10th-ave-vancouver-bc-v6r-none-can"
     },
     "zumper-75ff287e7a72": {
-      "cached": 8,
-      "preserved": 8,
+      "cached": 5,
+      "preserved": 5,
       "downloaded": 0,
       "failures": [],
       "photoPageUrl": "https://www.zumper.com/address/3366-w-26th-ave-vancouver-bc-v6s-1n5-can"
@@ -58,55 +58,46 @@
       "photoPageUrl": "https://realtylink.org/en/apartment~for-rent~vancouver/263175626"
     },
     "zumper-ecd4e868f79c": {
-      "cached": 8,
-      "preserved": 8,
+      "cached": 5,
+      "preserved": 5,
       "downloaded": 0,
       "failures": [],
       "photoPageUrl": "https://www.zumper.com/address/3220-4th-ave-w-vancouver-bc-v6k-1r9-can"
     },
     "zumper-1441677a9e59": {
-      "cached": 8,
-      "preserved": 8,
+      "cached": 5,
+      "preserved": 5,
       "downloaded": 0,
       "failures": [],
       "photoPageUrl": "https://www.zumper.com/address/2138-w-13th-ave-vancouver-bc-v6k-2s1-can"
     },
     "zumper-717a57c1ea78": {
-      "cached": 8,
-      "preserved": 8,
+      "cached": 5,
+      "preserved": 5,
       "downloaded": 0,
       "failures": [],
       "photoPageUrl": "https://www.zumper.com/address/3175-courtenay-st-vancouver-bc-v6r-3y2-can"
     },
     "zumper-e3fb92a991a6": {
-      "cached": 8,
-      "preserved": 8,
+      "cached": 5,
+      "preserved": 5,
       "downloaded": 0,
       "failures": [],
       "photoPageUrl": "https://www.zumper.com/address/4560-w-5th-ave-vancouver-bc-v6r-1s7-can"
     },
     "zumper-3b3c85746b5c": {
-      "cached": 8,
-      "preserved": 8,
+      "cached": 5,
+      "preserved": 5,
       "downloaded": 0,
       "failures": [],
       "photoPageUrl": "https://www.zumper.com/address/2249-w-33rd-ave-vancouver-bc-v6m-1c1-can"
     },
     "zumper-16e9ae17cd91": {
-      "cached": 4,
+      "cached": 5,
       "preserved": 4,
-      "downloaded": 0,
-      "failures": [
-        {
-          "url": "https://media.realtylink.org/images/consumersite/property/263182316/9ff90dbf374c4802a4347969a0cae1e6.jpeg?width=320&height=240&fit=cover",
-          "error": "not a usable image (image/jpeg, 7500 bytes)"
-        },
-        {
-          "url": "https://media.realtylink.org/images/consumersite/property/263182316/00c50dbb1e294023bf398ae25ce0d515.jpeg?width=480&height=360&fit=cover",
-          "error": "HTTP 400"
-        }
-      ],
-      "photoPageUrl": "https://realtylink.org/en/townhouse~for-rent~vancouver/263182316"
+      "downloaded": 1,
+      "failures": [],
+      "photoPageUrl": "https://www.zumper.com/address/3349-dunbar-st-vancouver-bc-v6s-2b9-can"
     },
     "mls-r3151022": {
       "cached": 5,
@@ -114,6 +105,13 @@
       "downloaded": 0,
       "failures": [],
       "photoPageUrl": "https://realtylink.org/en/house~for-rent~vancouver/263172649"
+    },
+    "arbutus-residences-floorplan-2-bedroom-townhouse-den-1340": {
+      "cached": 5,
+      "preserved": 0,
+      "downloaded": 5,
+      "failures": [],
+      "photoPageUrl": "https://www.zumper.com/apartment-buildings/p1117150/arbutus-residences-quilchena-vancouver-bc"
     },
     "mls-r3161880": {
       "cached": 5,
@@ -128,16 +126,44 @@
       "downloaded": 0,
       "failures": [],
       "photoPageUrl": "https://realtylink.org/en/house~for-rent~vancouver/263185336"
+    },
+    "fourth-mac-floorplan-2-bedroom-2-bath-801-4350": {
+      "cached": 4,
+      "preserved": 0,
+      "downloaded": 4,
+      "failures": [
+        {
+          "url": "https://images.craigslist.org/00H0H_aBooG6gbfXq_0ia0du_50x50c.jpg",
+          "error": "not a usable image (image/jpeg, 1172 bytes)"
+        },
+        {
+          "url": "https://images.craigslist.org/01616_5y1u2ed2ikT_0cR0gy_50x50c.jpg",
+          "error": "not a usable image (image/jpeg, 890 bytes)"
+        },
+        {
+          "url": "https://images.craigslist.org/00G0G_FtcifFWbJS_0x20m1_50x50c.jpg",
+          "error": "not a usable image (image/jpeg, 769 bytes)"
+        },
+        {
+          "url": "https://images.craigslist.org/00g0g_cKxf1HqS4mD_0x20m1_50x50c.jpg",
+          "error": "not a usable image (image/jpeg, 838 bytes)"
+        },
+        {
+          "url": "https://images.craigslist.org/01717_brSs8WLGzbx_0x20m1_50x50c.jpg",
+          "error": "not a usable image (image/jpeg, 841 bytes)"
+        }
+      ],
+      "photoPageUrl": "https://www.craigslist.org/view/d/vancouver-bed-bath-fourth-mac-kitsilano/eiSLCKTVqsrtPUWpUpJyDN"
     }
   },
   "totals": {
-    "sourceListings": 17,
-    "cachedListings": 17,
-    "downloaded": 0,
-    "failed": 2,
-    "preserved": 107,
-    "prunedListings": 56,
-    "prunedIndexImages": 340,
-    "prunedOrphanFiles": 28
+    "sourceListings": 19,
+    "cachedListings": 19,
+    "downloaded": 10,
+    "failed": 19,
+    "preserved": 80,
+    "prunedListings": 0,
+    "prunedIndexImages": 0,
+    "prunedOrphanFiles": 0
   }
 }

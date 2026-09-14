@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-09-14T01:32:33.710Z",
-  "activeCount": 17,
+  "generatedAt": "2026-09-14T05:09:33.948Z",
+  "activeCount": 19,
   "decisionReady": true,
   "highIssueCount": 0,
   "mediumIssueCount": 0,
-  "infoIssueCount": 30,
+  "infoIssueCount": 32,
   "issues": [
     {
       "severity": "info",
@@ -83,6 +83,11 @@
     },
     {
       "severity": "info",
+      "id": "arbutus-residences-floorplan-2-bedroom-townhouse-den-1340",
+      "issue": "unknown-orientation"
+    },
+    {
+      "severity": "info",
       "id": "zumper-ecd4e868f79c",
       "issue": "unknown-ac"
     },
@@ -155,15 +160,20 @@
       "severity": "info",
       "id": "mls-r3163709",
       "issue": "unknown-orientation"
+    },
+    {
+      "severity": "info",
+      "id": "fourth-mac-floorplan-2-bedroom-2-bath-801-4350",
+      "issue": "unknown-orientation"
     }
   ],
   "readinessChecks": {
     "smokeOk": true,
     "smokeFresh": true,
-    "smokeCheckedAt": "2026-09-14T01:32:39.001Z",
-    "latestDataAt": "2026-09-14T01:31:48.055Z",
+    "smokeCheckedAt": "2026-09-14T05:09:39.671Z",
+    "latestDataAt": "2026-09-14T05:08:48.044Z",
     "coverageReady": true,
-    "healthyDiscoveryLanes": 3,
+    "healthyDiscoveryLanes": 2,
     "coverageWarnings": [
       {
         "severity": "warning",
@@ -175,7 +185,13 @@
         "severity": "warning",
         "lane": "livrent",
         "status": "unhealthy",
-        "detail": "0/5 searches healthy"
+        "detail": "0/5 searches healthy; 3 blocked searches opened circuit; 2 further checks suppressed"
+      },
+      {
+        "severity": "warning",
+        "lane": "realtylink",
+        "status": "degraded",
+        "detail": "3/3 searches reachable; 0 live candidates parsed"
       },
       {
         "severity": "warning",
@@ -186,5 +202,5 @@
     ]
   },
   "readinessIssues": [],
-  "finalizedAt": "2026-09-14T01:32:40.729Z"
+  "finalizedAt": "2026-09-14T05:09:41.527Z"
 }

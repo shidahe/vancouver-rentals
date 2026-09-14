@@ -1,37 +1,32 @@
 {
-  "refreshedAt": "2026-09-14T01:30:18.074Z",
+  "refreshedAt": "2026-09-14T05:07:14.994Z",
   "mode": "candidate-only",
   "sourceHealth": {
     "livrent-vancouver-2br": {
-      "checkedAt": "2026-09-14T01:30:18.074Z",
+      "checkedAt": "2026-09-14T05:07:14.994Z",
       "status": 403,
       "ok": false,
       "finalUrl": "https://liv.rent/rental-listings/city/vancouver/2-bedroom"
     },
     "livrent-vancouver-2br2ba": {
-      "checkedAt": "2026-09-14T01:30:18.074Z",
+      "checkedAt": "2026-09-14T05:07:14.994Z",
       "status": 403,
       "ok": false,
       "finalUrl": "https://liv.rent/rental-listings/city/vancouver/2-bedroom-2-bath"
     },
     "livrent-vancouver-3br": {
-      "checkedAt": "2026-09-14T01:30:18.074Z",
+      "checkedAt": "2026-09-14T05:07:14.994Z",
       "status": 403,
       "ok": false,
       "finalUrl": "https://liv.rent/rental-listings/city/vancouver/3-bedroom"
-    },
-    "livrent-vancouver-4br": {
-      "checkedAt": "2026-09-14T01:30:18.074Z",
-      "status": 403,
-      "ok": false,
-      "finalUrl": "https://liv.rent/rental-listings/city/vancouver/4-bedroom"
-    },
-    "livrent-all-fallback": {
-      "checkedAt": "2026-09-14T01:30:18.074Z",
-      "status": 403,
-      "ok": false,
-      "finalUrl": "https://liv.rent/rental-listings"
     }
+  },
+  "diagnostics": {
+    "searchesConfigured": 5,
+    "searchesChecked": 3,
+    "searchesBlocked": 3,
+    "searchCircuitOpen": true,
+    "searchesSuppressed": 2
   },
   "candidates": []
 }

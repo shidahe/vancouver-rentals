@@ -1,9 +1,9 @@
 {
-  "refreshedAt": "2026-09-14T01:31:46.835Z",
+  "refreshedAt": "2026-09-14T05:08:41.536Z",
   "buildings": [
     {
       "building": "Kits Walk",
-      "checkedAt": "2026-09-14T01:31:46.835Z",
+      "checkedAt": "2026-09-14T05:08:41.536Z",
       "observations": [
         {
           "url": "https://rentals.ca/vancouver/kits-walk-by-strand",
@@ -49,7 +49,7 @@
     },
     {
       "building": "Arbutus Residences",
-      "checkedAt": "2026-09-14T01:31:46.835Z",
+      "checkedAt": "2026-09-14T05:08:41.536Z",
       "observations": [
         {
           "url": "https://www.rentfaster.ca/properties/2139-lahb-ave-vancouver-454186",
@@ -67,8 +67,8 @@
         },
         {
           "url": "https://www.zumper.com/apartment-buildings/p1117150/arbutus-residences-quilchena-vancouver-bc",
-          "httpStatus": 429,
-          "usable": false,
+          "httpStatus": 200,
+          "usable": true,
           "error": null,
           "reusedEvidence": false
         }
@@ -117,11 +117,11 @@
             },
             {
               "url": "https://www.zumper.com/apartment-buildings/p1117150/arbutus-residences-quilchena-vancouver-bc",
-              "httpStatus": 429,
-              "usable": false,
+              "httpStatus": 200,
+              "usable": true,
               "structuredMatch": false,
               "requiredMatched": false,
-              "availabilityMatched": false,
+              "availabilityMatched": true,
               "fullyLeased": false,
               "verified": false
             }
@@ -145,8 +145,8 @@
             "Available",
             "1 unit available"
           ],
-          "verified": false,
-          "verifiedSource": null,
+          "verified": true,
+          "verifiedSource": "https://www.zumper.com/apartment-buildings/p1117150/arbutus-residences-quilchena-vancouver-bc",
           "sourceMatches": [
             {
               "url": "https://www.rentfaster.ca/properties/2139-lahb-ave-vancouver-454186",
@@ -170,7 +170,88 @@
             },
             {
               "url": "https://www.zumper.com/apartment-buildings/p1117150/arbutus-residences-quilchena-vancouver-bc",
-              "httpStatus": 429,
+              "httpStatus": 200,
+              "usable": true,
+              "structuredMatch": false,
+              "requiredMatched": true,
+              "availabilityMatched": true,
+              "fullyLeased": false,
+              "verified": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "building": "Fourth + Mac",
+      "checkedAt": "2026-09-14T05:08:41.536Z",
+      "observations": [
+        {
+          "url": "https://www.craigslist.org/view/d/vancouver-bed-bath-fourth-mac-kitsilano/eiSLCKTVqsrtPUWpUpJyDN",
+          "httpStatus": 200,
+          "usable": true,
+          "error": null,
+          "reusedEvidence": false
+        },
+        {
+          "url": "https://liv.rent/building/52105/fourth--mac-apartment-building-1960-macdonald-street-vancouver-bc",
+          "httpStatus": 403,
+          "usable": false,
+          "error": null,
+          "reusedEvidence": false
+        },
+        {
+          "url": "https://rentals.ca/vancouver/1960-macdonald-street",
+          "httpStatus": 403,
+          "usable": false,
+          "error": null,
+          "reusedEvidence": false
+        }
+      ],
+      "inventories": [
+        {
+          "key": "2-bedroom-2-bath-801-4350",
+          "label": "2 Bedroom · 2 Bath · 801 sqft · $4,350",
+          "bedrooms": 2,
+          "bathrooms": 2,
+          "sqft": 801,
+          "rent": 4350,
+          "unit": null,
+          "requiredSignals": [
+            "4,350",
+            "801"
+          ],
+          "availabilitySignals": [
+            "available oct 1",
+            "available october 1",
+            "check availability"
+          ],
+          "verified": true,
+          "verifiedSource": "https://www.craigslist.org/view/d/vancouver-bed-bath-fourth-mac-kitsilano/eiSLCKTVqsrtPUWpUpJyDN",
+          "sourceMatches": [
+            {
+              "url": "https://www.craigslist.org/view/d/vancouver-bed-bath-fourth-mac-kitsilano/eiSLCKTVqsrtPUWpUpJyDN",
+              "httpStatus": 200,
+              "usable": true,
+              "structuredMatch": false,
+              "requiredMatched": true,
+              "availabilityMatched": true,
+              "fullyLeased": false,
+              "verified": true
+            },
+            {
+              "url": "https://liv.rent/building/52105/fourth--mac-apartment-building-1960-macdonald-street-vancouver-bc",
+              "httpStatus": 403,
+              "usable": false,
+              "structuredMatch": false,
+              "requiredMatched": false,
+              "availabilityMatched": false,
+              "fullyLeased": false,
+              "verified": false
+            },
+            {
+              "url": "https://rentals.ca/vancouver/1960-macdonald-street",
+              "httpStatus": 403,
               "usable": false,
               "structuredMatch": false,
               "requiredMatched": false,
