@@ -85,14 +85,16 @@ jobs:
         id: smoke
         continue-on-error: true
         run: node scripts/test-site.mjs
-      - name: Runtime freshness fail-closed test
-        id: freshness
-        continue-on-error: true
-        run: node scripts/test-freshness-guard.mjs
       - name: Finalize decision readiness
         id: readiness
         continue-on-error: true
         run: node scripts/finalize-readiness.mjs
+      # The runtime guard consumes the finalized report. Running it while the
+      # audit is intentionally pending would correctly keep the site closed.
+      - name: Runtime freshness fail-closed test
+        id: freshness
+        continue-on-error: true
+        run: node scripts/test-freshness-guard.mjs
       - name: Commit refreshed rental data, cached images, and validation reports
         if: always()
         run: |

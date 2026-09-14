@@ -31,6 +31,7 @@ const coverageSource = await read('scripts/audit-coverage.mjs');
 const purposeBuiltSource = await read('scripts/refresh-purposebuilt.mjs');
 const scopeSource = await read('scripts/enforce-listing-scope.mjs');
 const imageCacheWorkflow = await read('.github/workflows/cache-listing-images.yml');
+const refreshWorkflow = await read('.github/workflows/refresh-listings.yml');
 const catalog = JSON.parse(await read('data/live-sources.json'));
 const officialWatch = JSON.parse(await read('data/official-watch.json'));
 const indexHtml = await read('index.html');
@@ -42,6 +43,7 @@ const readinessFinalizerSource = await read('scripts/finalize-readiness.mjs');
 const failures = [];
 if(!qualityAuditSource.includes("decisionReady:false")||!qualityAuditSource.includes("readinessStatus:'pending_finalization'")||
    !readinessFinalizerSource.includes("readinessStatus='finalized'")) failures.push('A standalone quality audit can claim decision readiness before browser, freshness, and coverage checks are finalized.');
+if(refreshWorkflow.indexOf('id: readiness')<0||refreshWorkflow.indexOf('id: freshness')<refreshWorkflow.indexOf('id: readiness')) failures.push('The runtime freshness guard runs before the current quality report is finalized.');
 if(!source.includes('if(consecutiveBlocked>=3)')||!source.includes('diagnostics.searchesSuppressed=searchSources.length-diagnostics.searchesChecked')||!coverageSource.includes('blocked searches opened circuit'))failures.push('liv.rent repeated 403/429 search suppression or its coverage diagnostic can silently regress.');
 if(realtylinkSnapshotBaseline({previousBaseline:6,currentCount:5,sameScope:true})!==6||
    realtylinkSnapshotBaseline({previousBaseline:6,currentCount:4,sameScope:true})!==6||
