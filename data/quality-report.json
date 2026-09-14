@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-14T10:52:23.000Z",
+  "generatedAt": "2026-09-14T11:04:05.612Z",
   "activeCount": 19,
   "decisionReady": true,
   "readinessStatus": "finalized",
@@ -149,6 +149,11 @@
     },
     {
       "severity": "info",
+      "id": "mls-r3151022",
+      "issue": "unknown-orientation"
+    },
+    {
+      "severity": "info",
       "id": "mls-r3150923",
       "issue": "unknown-ac"
     },
@@ -159,17 +164,12 @@
     },
     {
       "severity": "info",
-      "id": "mls-r3151372",
-      "issue": "unknown-orientation"
-    },
-    {
-      "severity": "info",
-      "id": "mls-r3164628",
+      "id": "mls-r3160879",
       "issue": "unknown-ac"
     },
     {
       "severity": "info",
-      "id": "mls-r3164628",
+      "id": "mls-r3160879",
       "issue": "unknown-orientation"
     },
     {
@@ -181,8 +181,8 @@
   "readinessChecks": {
     "smokeOk": true,
     "smokeFresh": true,
-    "smokeCheckedAt": "2026-09-14T07:40:35.788Z",
-    "latestDataAt": "2026-09-14T05:18:22.159Z",
+    "smokeCheckedAt": "2026-09-14T11:04:11.117Z",
+    "latestDataAt": "2026-09-14T11:03:16.279Z",
     "coverageReady": true,
     "healthyDiscoveryLanes": 3,
     "coverageWarnings": [
@@ -190,7 +190,7 @@
         "severity": "warning",
         "lane": "rentalsca",
         "status": "degraded",
-        "detail": "2/9 regional searches reachable; 0 qualifying candidates parsed; 1 scoped search-only leads retained (0 new, 1 already active, 0 need revalidation); 3 detail pages blocked after 11 discovered URLs; 8 further detail checks suppressed after repeated 403/429"
+        "detail": "5/9 regional searches reachable; 0 qualifying candidates parsed; 2 scoped search-only leads retained (1 new, 1 already active, 0 need revalidation); 3 detail pages blocked after 26 discovered URLs; 23 further detail checks suppressed after repeated 403/429"
       },
       {
         "severity": "warning",
@@ -207,5 +207,5 @@
     ]
   },
   "readinessIssues": [],
-  "finalizedAt": "2026-09-14T10:53:13.434Z"
+  "finalizedAt": "2026-09-14T11:04:12.923Z"
 }
