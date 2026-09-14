@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-09-14T05:09:33.948Z",
+  "generatedAt": "2026-09-14T05:19:10.077Z",
   "activeCount": 19,
   "decisionReady": true,
   "highIssueCount": 0,
   "mediumIssueCount": 0,
-  "infoIssueCount": 32,
+  "infoIssueCount": 34,
   "issues": [
     {
       "severity": "info",
@@ -148,17 +148,27 @@
     },
     {
       "severity": "info",
-      "id": "mls-r3151022",
+      "id": "mls-r3150923",
+      "issue": "unknown-ac"
+    },
+    {
+      "severity": "info",
+      "id": "mls-r3150923",
       "issue": "unknown-orientation"
     },
     {
       "severity": "info",
-      "id": "mls-r3161880",
+      "id": "mls-r3151372",
       "issue": "unknown-orientation"
     },
     {
       "severity": "info",
-      "id": "mls-r3163709",
+      "id": "mls-r3164628",
+      "issue": "unknown-ac"
+    },
+    {
+      "severity": "info",
+      "id": "mls-r3164628",
       "issue": "unknown-orientation"
     },
     {
@@ -170,28 +180,22 @@
   "readinessChecks": {
     "smokeOk": true,
     "smokeFresh": true,
-    "smokeCheckedAt": "2026-09-14T05:09:39.671Z",
-    "latestDataAt": "2026-09-14T05:08:48.044Z",
+    "smokeCheckedAt": "2026-09-14T05:19:15.556Z",
+    "latestDataAt": "2026-09-14T05:18:22.159Z",
     "coverageReady": true,
-    "healthyDiscoveryLanes": 2,
+    "healthyDiscoveryLanes": 3,
     "coverageWarnings": [
       {
         "severity": "warning",
         "lane": "rentalsca",
         "status": "degraded",
-        "detail": "2/9 regional searches reachable; 0 qualifying candidates parsed; 1 scoped search-only leads retained (1 new, 0 already active, 0 need revalidation); 3 detail pages blocked after 11 discovered URLs; 8 further detail checks suppressed after repeated 403/429"
+        "detail": "2/9 regional searches reachable; 0 qualifying candidates parsed; 1 scoped search-only leads retained (0 new, 1 already active, 0 need revalidation); 3 detail pages blocked after 11 discovered URLs; 8 further detail checks suppressed after repeated 403/429"
       },
       {
         "severity": "warning",
         "lane": "livrent",
         "status": "unhealthy",
         "detail": "0/5 searches healthy; 3 blocked searches opened circuit; 2 further checks suppressed"
-      },
-      {
-        "severity": "warning",
-        "lane": "realtylink",
-        "status": "degraded",
-        "detail": "3/3 searches reachable; 0 live candidates parsed"
       },
       {
         "severity": "warning",
@@ -202,5 +206,5 @@
     ]
   },
   "readinessIssues": [],
-  "finalizedAt": "2026-09-14T05:09:41.527Z"
+  "finalizedAt": "2026-09-14T05:19:17.339Z"
 }
