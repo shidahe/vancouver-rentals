@@ -29,6 +29,7 @@ q.readinessChecks={
 };
 q.readinessIssues=readinessIssues;
 q.decisionReady=existingHigh===0&&existingMedium===0&&readinessIssues.length===0;
+q.readinessStatus='finalized';
 q.finalizedAt=new Date().toISOString();
 await write(path.join(DATA,'quality-report.json'),q);
 console.log(`Final readiness: decisionReady=${q.decisionReady}, highIssues=${existingHigh}, mediumIssues=${existingMedium}, smokeOk=${q.readinessChecks.smokeOk}, smokeFresh=${q.readinessChecks.smokeFresh}, coverageReady=${q.readinessChecks.coverageReady}`);

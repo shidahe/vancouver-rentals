@@ -77,6 +77,9 @@ for(const l of active){
   }
 }
 const high=issues.filter(x=>x.severity==='high'),medium=issues.filter(x=>x.severity==='medium');
-const report={generatedAt:new Date().toISOString(),activeCount:active.length,decisionReady:high.length===0&&medium.length===0,highIssueCount:high.length,mediumIssueCount:medium.length,infoIssueCount:issues.length-high.length-medium.length,issues};
+// This audit is only one input to publication readiness. Keep the intermediate
+// report fail-closed until finalize-readiness also validates the current browser
+// smoke, runtime freshness guard, and discovery coverage.
+const report={generatedAt:new Date().toISOString(),activeCount:active.length,decisionReady:false,readinessStatus:'pending_finalization',highIssueCount:high.length,mediumIssueCount:medium.length,infoIssueCount:issues.length-high.length-medium.length,issues};
 await write(path.join(DATA,'quality-report.json'),report);
-console.log(`Quality audit: ${active.length} active, ${high.length} high issues, ${medium.length} medium issues, decisionReady=${report.decisionReady}`);
+console.log(`Quality audit: ${active.length} active, ${high.length} high issues, ${medium.length} medium issues, readiness pending finalization`);

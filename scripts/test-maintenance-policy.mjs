@@ -36,8 +36,12 @@ const officialWatch = JSON.parse(await read('data/official-watch.json'));
 const indexHtml = await read('index.html');
 const siteTestSource = await read('scripts/test-site.mjs');
 const imageCacheSource = await read('scripts/cache-listing-images.mjs');
+const qualityAuditSource = await read('scripts/audit-data-quality.mjs');
+const readinessFinalizerSource = await read('scripts/finalize-readiness.mjs');
 
 const failures = [];
+if(!qualityAuditSource.includes("decisionReady:false")||!qualityAuditSource.includes("readinessStatus:'pending_finalization'")||
+   !readinessFinalizerSource.includes("readinessStatus='finalized'")) failures.push('A standalone quality audit can claim decision readiness before browser, freshness, and coverage checks are finalized.');
 if(!source.includes('if(consecutiveBlocked>=3)')||!source.includes('diagnostics.searchesSuppressed=searchSources.length-diagnostics.searchesChecked')||!coverageSource.includes('blocked searches opened circuit'))failures.push('liv.rent repeated 403/429 search suppression or its coverage diagnostic can silently regress.');
 if(realtylinkSnapshotBaseline({previousBaseline:6,currentCount:5,sameScope:true})!==6||
    realtylinkSnapshotBaseline({previousBaseline:6,currentCount:4,sameScope:true})!==6||
