@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-14T05:19:10.077Z",
+  "generatedAt": "2026-09-14T07:37:16.656Z",
   "activeCount": 19,
   "decisionReady": true,
   "highIssueCount": 0,
@@ -176,35 +176,5 @@
       "id": "fourth-mac-floorplan-2-bedroom-2-bath-801-4350",
       "issue": "unknown-orientation"
     }
-  ],
-  "readinessChecks": {
-    "smokeOk": true,
-    "smokeFresh": true,
-    "smokeCheckedAt": "2026-09-14T05:19:15.556Z",
-    "latestDataAt": "2026-09-14T05:18:22.159Z",
-    "coverageReady": true,
-    "healthyDiscoveryLanes": 3,
-    "coverageWarnings": [
-      {
-        "severity": "warning",
-        "lane": "rentalsca",
-        "status": "degraded",
-        "detail": "2/9 regional searches reachable; 0 qualifying candidates parsed; 1 scoped search-only leads retained (0 new, 1 already active, 0 need revalidation); 3 detail pages blocked after 11 discovered URLs; 8 further detail checks suppressed after repeated 403/429"
-      },
-      {
-        "severity": "warning",
-        "lane": "livrent",
-        "status": "unhealthy",
-        "detail": "0/5 searches healthy; 3 blocked searches opened circuit; 2 further checks suppressed"
-      },
-      {
-        "severity": "warning",
-        "lane": "priority-viridian-unpriced-unit",
-        "status": "price-unverified",
-        "detail": "Viridian unit 0103 (2BR) is offered for Sep 30, but official rent is withheld; do not publish before verifying rent >= CAD $3,500"
-      }
-    ]
-  },
-  "readinessIssues": [],
-  "finalizedAt": "2026-09-14T05:19:17.339Z"
+  ]
 }

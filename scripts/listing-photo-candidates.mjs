@@ -2,6 +2,17 @@ const uniq = values => [...new Set((values || []).filter(Boolean))];
 
 const unwantedAsset = /(?:logo|icon|avatar|sprite|favicon|placeholder|share-preview|developer_placeholder|agent_placeholder)/i;
 
+function normalizeMarketplacePhoto(url) {
+  try {
+    const parsed=new URL(url);
+    if(/^map\d*\.craigslist\.org$/i.test(parsed.hostname))return null;
+    if(parsed.hostname==='images.craigslist.org')parsed.pathname=parsed.pathname.replace(/_[0-9]+x[0-9]+[a-z]?\.(jpe?g|png|webp)$/i,'_600x450.$1');
+    return parsed.href;
+  } catch {
+    return null;
+  }
+}
+
 function rewAssetGroup(url) {
   try {
     const parsed = new URL(url);
@@ -13,7 +24,7 @@ function rewAssetGroup(url) {
 }
 
 export function verifiedPhotoCandidates(urls) {
-  const candidates = uniq(urls).filter(url =>
+  const candidates = uniq((urls||[]).map(normalizeMarketplacePhoto)).filter(url =>
     /^https?:\/\//i.test(url) && !unwantedAsset.test(url) && !/\.svg(?:\?|$)/i.test(url)
   );
 

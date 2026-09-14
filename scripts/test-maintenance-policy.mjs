@@ -281,6 +281,14 @@ const rewPhotos = verifiedPhotoCandidates([
 if (rewPhotos.length !== 3 || rewPhotos.some(url => !url.includes('/87904_1585241/'))) {
   failures.push(`REW photo extraction mixed subject photos with chrome or related listings: ${JSON.stringify(rewPhotos)}`);
 }
+const craigslistPhotos=verifiedPhotoCandidates([
+  'https://images.craigslist.org/01616_subject_0cR0gy_50x50c.jpg',
+  'https://images.craigslist.org/00G0G_subject2_0x20m1_50x50c.jpg',
+  'https://map5.craigslist.org/t09/13/1292/2803.png'
+]);
+if(craigslistPhotos.length!==2||craigslistPhotos.some(url=>!/_600x450\.jpg$/.test(url)||/map\d*\.craigslist\.org/.test(url))){
+  failures.push(`Craigslist photo extraction retained thumbnails or map tiles: ${JSON.stringify(craigslistPhotos)}`);
+}
 
 const legacyMlsListing = { id: '2268-w-broadway-312-r3153999', unit: '312 · MLS R3153999' };
 if (listingMls(legacyMlsListing) !== 'R3153999' || mlsIdentity(listingMls(legacyMlsListing)) !== 'mls:r3153999') {

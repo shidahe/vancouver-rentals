@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-09-14T05:19:07.139Z",
+  "refreshedAt": "2026-09-14T07:34:41.793Z",
   "listings": {
     "york-103-2535-r3137446": {
       "cached": 5,
@@ -101,8 +101,8 @@
     },
     "mls-r3150923": {
       "cached": 5,
-      "preserved": 0,
-      "downloaded": 5,
+      "preserved": 5,
+      "downloaded": 0,
       "failures": [],
       "photoPageUrl": "https://realtylink.org/en/townhouse~for-rent~vancouver/263172550"
     },
@@ -115,8 +115,8 @@
     },
     "mls-r3151372": {
       "cached": 2,
-      "preserved": 0,
-      "downloaded": 2,
+      "preserved": 2,
+      "downloaded": 0,
       "failures": [
         {
           "url": "https://media.realtylink.org/images/consumersite/property/263172999/f30edfe3c49c4660ba9111ae7e98814b.jpeg?width=320&height=240&fit=cover",
@@ -139,48 +139,27 @@
     },
     "mls-r3164628": {
       "cached": 5,
-      "preserved": 0,
-      "downloaded": 5,
+      "preserved": 5,
+      "downloaded": 0,
       "failures": [],
       "photoPageUrl": "https://realtylink.org/en/house~for-rent~vancouver/263186255"
     },
     "fourth-mac-floorplan-2-bedroom-2-bath-801-4350": {
-      "cached": 4,
-      "preserved": 4,
-      "downloaded": 0,
-      "failures": [
-        {
-          "url": "https://images.craigslist.org/00H0H_aBooG6gbfXq_0ia0du_50x50c.jpg",
-          "error": "not a usable image (image/jpeg, 1172 bytes)"
-        },
-        {
-          "url": "https://images.craigslist.org/01616_5y1u2ed2ikT_0cR0gy_50x50c.jpg",
-          "error": "not a usable image (image/jpeg, 890 bytes)"
-        },
-        {
-          "url": "https://images.craigslist.org/00G0G_FtcifFWbJS_0x20m1_50x50c.jpg",
-          "error": "not a usable image (image/jpeg, 769 bytes)"
-        },
-        {
-          "url": "https://images.craigslist.org/00g0g_cKxf1HqS4mD_0x20m1_50x50c.jpg",
-          "error": "not a usable image (image/jpeg, 838 bytes)"
-        },
-        {
-          "url": "https://images.craigslist.org/01717_brSs8WLGzbx_0x20m1_50x50c.jpg",
-          "error": "not a usable image (image/jpeg, 841 bytes)"
-        }
-      ],
+      "cached": 5,
+      "preserved": 0,
+      "downloaded": 5,
+      "failures": [],
       "photoPageUrl": "https://www.craigslist.org/view/d/vancouver-bed-bath-fourth-mac-kitsilano/eiSLCKTVqsrtPUWpUpJyDN"
     }
   },
   "totals": {
     "sourceListings": 19,
     "cachedListings": 19,
-    "downloaded": 12,
-    "failed": 23,
-    "preserved": 75,
-    "prunedListings": 3,
-    "prunedIndexImages": 15,
+    "downloaded": 5,
+    "failed": 4,
+    "preserved": 83,
+    "prunedListings": 0,
+    "prunedIndexImages": 0,
     "prunedOrphanFiles": 0
   }
 }
