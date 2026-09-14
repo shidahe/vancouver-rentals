@@ -509,6 +509,11 @@
       "date": "2026-09-13",
       "rent": 5390,
       "note": "NEEDS CONFIRMATION: latest purpose-built fallback sources did not confirm the exact configured rent + sqft inventory row."
+    },
+    {
+      "date": "2026-09-14",
+      "rent": 5390,
+      "note": "NEEDS CONFIRMATION: latest purpose-built fallback sources did not confirm the exact configured rent + sqft inventory row."
     }
   ],
   "zumper-2fde865f7e2c": [
@@ -1304,6 +1309,11 @@
       "date": "2026-09-14",
       "rent": 5200,
       "note": "AUTO-REMOVED: MLS R3148298 absent from two consecutive healthy inventory snapshots."
+    },
+    {
+      "date": "2026-09-14",
+      "rent": 5200,
+      "note": "CORRECTED: restored after exact current MLS detail matched identity, explicit availability and rent."
     }
   ],
   "mls-r3151372": [
@@ -1733,6 +1743,16 @@
       "date": "2026-09-14",
       "rent": 3995,
       "note": "AUTO-REMOVED: MLS R3149612 absent from two consecutive healthy inventory snapshots."
+    },
+    {
+      "date": "2026-09-14",
+      "rent": 3995,
+      "note": "CORRECTED: restored after exact current MLS detail matched identity, explicit availability and rent."
+    },
+    {
+      "date": "2026-09-14",
+      "rent": 3995,
+      "note": "MLS RELIST: R3149612 → R3149267; exact address and Unit 204 retained as one inventory record."
     }
   ],
   "mls-r3163709": [
