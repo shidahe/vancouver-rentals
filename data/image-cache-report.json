@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-09-14T13:31:31.029Z",
+  "refreshedAt": "2026-09-14T22:01:36.622Z",
   "listings": {
     "york-103-2535-r3137446": {
       "cached": 5,
@@ -94,10 +94,10 @@
     },
     "zumper-16e9ae17cd91": {
       "cached": 5,
-      "preserved": 4,
-      "downloaded": 1,
+      "preserved": 5,
+      "downloaded": 0,
       "failures": [],
-      "photoPageUrl": "https://www.zumper.com/address/3349-dunbar-st-vancouver-bc-v6s-2b9-can"
+      "photoPageUrl": "https://realtylink.org/en/townhouse~for-rent~vancouver/263182316"
     },
     "mls-r3150923": {
       "cached": 5,
@@ -137,19 +137,19 @@
       ],
       "photoPageUrl": "https://realtylink.org/en/house~for-rent~vancouver/263172999"
     },
-    "mls-r3161950": {
-      "cached": 5,
-      "preserved": 0,
-      "downloaded": 5,
-      "failures": [],
-      "photoPageUrl": "https://realtylink.org/en/house~for-rent~vancouver/263183577"
-    },
     "mls-r3149267": {
       "cached": 5,
       "preserved": 5,
       "downloaded": 0,
       "failures": [],
       "photoPageUrl": "https://realtylink.org/en/apartment~for-rent~vancouver/263170894"
+    },
+    "mls-r3163709": {
+      "cached": 5,
+      "preserved": 0,
+      "downloaded": 5,
+      "failures": [],
+      "photoPageUrl": "https://realtylink.org/en/house~for-rent~vancouver/263185336"
     },
     "fourth-mac-floorplan-2-bedroom-2-bath-801-4350": {
       "cached": 5,
@@ -162,11 +162,11 @@
   "totals": {
     "sourceListings": 20,
     "cachedListings": 20,
-    "downloaded": 6,
+    "downloaded": 5,
     "failed": 4,
-    "preserved": 87,
-    "prunedListings": 0,
-    "prunedIndexImages": 0,
+    "preserved": 88,
+    "prunedListings": 1,
+    "prunedIndexImages": 5,
     "prunedOrphanFiles": 0
   }
 }

@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-09-14T13:30:38.757Z",
+  "refreshedAt": "2026-09-14T22:00:45.839Z",
   "groups": [
     {
       "identityKey": "3220 4th ave w::url:4b1a6ebe2d36",
@@ -110,24 +110,24 @@
       "result": "candidate_only"
     },
     {
-      "identityKey": "3095 w 5th ave near balaclava st::url:789223e5a717",
-      "sources": [
-        "craigslist"
-      ],
-      "rents": [
-        10500
-      ],
-      "exactUnit": false,
-      "matchedListingId": null,
-      "result": "candidate_only"
-    },
-    {
       "identityKey": "3220 w 4th ave near musqueamview st::url:4c78e76e3fa7",
       "sources": [
         "craigslist"
       ],
       "rents": [
         3700
+      ],
+      "exactUnit": false,
+      "matchedListingId": null,
+      "result": "candidate_only"
+    },
+    {
+      "identityKey": "3095 w 5th ave near balaclava st::url:789223e5a717",
+      "sources": [
+        "craigslist"
+      ],
+      "rents": [
+        10500
       ],
       "exactUnit": false,
       "matchedListingId": null,
@@ -242,6 +242,18 @@
       "result": "authoritative_mls_reverified"
     },
     {
+      "identityKey": "mls:r3160689",
+      "sources": [
+        "realtylink mls"
+      ],
+      "rents": [
+        4950
+      ],
+      "exactUnit": true,
+      "matchedListingId": "zumper-16e9ae17cd91",
+      "result": "authoritative_mls_reverified"
+    },
+    {
       "identityKey": "mls:r3137446",
       "sources": [
         "realtylink mls"
@@ -254,15 +266,15 @@
       "result": "authoritative_mls_reverified"
     },
     {
-      "identityKey": "mls:r3161950",
+      "identityKey": "mls:r3163709",
       "sources": [
         "realtylink mls"
       ],
       "rents": [
-        4000
+        6000
       ],
       "exactUnit": false,
-      "matchedListingId": "mls-r3161950",
+      "matchedListingId": "mls-r3163709",
       "result": "authoritative_mls_reverified"
     },
     {
@@ -281,8 +293,9 @@
   "promoted": [],
   "crossVerified": [
     "mls-r3150923",
+    "zumper-16e9ae17cd91",
     "york-103-2535-r3137446",
-    "mls-r3161950",
+    "mls-r3163709",
     "mls-r3151372"
   ],
   "fingerprintCrossVerified": [],
@@ -290,14 +303,39 @@
   "relistedMlsMerged": [],
   "negativeMatches": [],
   "detailReactivated": [
-    "mls-r3161950"
+    "mls-r3163709"
   ],
-  "mlsMissing": {},
+  "mlsMissing": {
+    "R3151022": {
+      "firstMissingAt": "2026-09-14T22:00:45.839Z",
+      "lastMissingAt": "2026-09-14T22:00:45.839Z",
+      "listingId": "mls-r3151022"
+    },
+    "R3148298": {
+      "firstMissingAt": "2026-09-14T22:00:45.839Z",
+      "lastMissingAt": "2026-09-14T22:00:45.839Z",
+      "listingId": "mls-r3148298"
+    },
+    "R3160879": {
+      "firstMissingAt": "2026-09-14T22:00:45.839Z",
+      "lastMissingAt": "2026-09-14T22:00:45.839Z",
+      "listingId": "mls-r3160879"
+    },
+    "R3161950": {
+      "firstMissingAt": "2026-09-14T22:00:45.839Z",
+      "lastMissingAt": "2026-09-14T22:00:45.839Z",
+      "listingId": "mls-r3161950"
+    },
+    "R3164628": {
+      "firstMissingAt": "2026-09-14T22:00:45.839Z",
+      "lastMissingAt": "2026-09-14T22:00:45.839Z",
+      "listingId": "mls-r3164628"
+    }
+  },
   "mlsRemoved": [],
-  "realtylinkSnapshotCount": 4,
+  "realtylinkSnapshotCount": 5,
   "realtylinkSnapshotHighWaterMark": 6,
   "realtylinkSnapshotScope": "rent-3500-beds-2-4-whole-home-westside-v2",
-  "realtylinkRemovalEligible": false,
-  "mlsRemovalSuppressed": "Partial Realtylink snapshot (4 candidates versus previous complete 6); disappearance signals ignored.",
+  "realtylinkRemovalEligible": true,
   "mlsDuplicatesMerged": []
 }
