@@ -6,6 +6,17 @@ export function realtylinkLaneHealth({ reachable = 0, total = 0, candidates = 0,
   return { healthy: true, positiveDiscoveryHealthy: true, status: 'healthy', partial: false, detail: `${reachable}/${total} searches reachable; ${candidates} live candidates parsed` };
 }
 
+// Completeness must be measured against a same-scope high-water mark. Using the
+// immediately preceding snapshot lets repeated 20–25% parser losses ratchet the
+// baseline downward until a badly incomplete feed is allowed to remove listings.
+export function realtylinkSnapshotBaseline({ previousBaseline = 0, currentCount = 0, sameScope = true } = {}) {
+  return sameScope ? Math.max(Number(previousBaseline) || 0, Number(currentCount) || 0) : Number(currentCount) || 0;
+}
+
+export function realtylinkSnapshotComplete({ healthy = false, currentCount = 0, baseline = 0 } = {}) {
+  return !!healthy && Number(currentCount) > 0 && (!Number(baseline) || Number(currentCount) >= Math.ceil(Number(baseline) * .75));
+}
+
 export function marketplaceLaneHealth({ reachable = 0, total = 0, candidates = 0 } = {}) {
   if (reachable < 1) return { healthy: false, status: 'unhealthy', detail: `${reachable}/${total} regional searches reachable; ${candidates} qualifying candidates parsed` };
   if (candidates < 1) return { healthy: false, status: 'degraded', detail: `${reachable}/${total} regional searches reachable; 0 qualifying candidates parsed` };

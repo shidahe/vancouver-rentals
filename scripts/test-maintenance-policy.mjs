@@ -7,7 +7,7 @@ import { aggregateUnitCount, discoveredStructuredInventories, priorityInventoryE
 import { dedupeHistoryEvents, pruneExcludedScopeChurn } from './history-policy.mjs';
 import { verifiedPhotoCandidates } from './listing-photo-candidates.mjs';
 import { isRealtylinkListingNotFoundRedirect, isTargetWestsideCoordinate, parseRealtylinkAirConditioning, parseRealtylinkCoordinateValues, parseRealtylinkCoordinates, parseRealtylinkFloorArea, parseRealtylinkRoomCount } from './realtylink-parser.mjs';
-import { craigslistLaneHealth, marketplaceLaneHealth, rentalscaLaneHealth, realtylinkLaneHealth } from './coverage-policy.mjs';
+import { craigslistLaneHealth, marketplaceLaneHealth, rentalscaLaneHealth, realtylinkLaneHealth, realtylinkSnapshotBaseline, realtylinkSnapshotComplete } from './coverage-policy.mjs';
 import { exactPurposeBuiltFloorplanEvidence } from './purposebuilt-floorplan-evidence.mjs';
 import { hasCurrentMarketplaceAvailability, softNegativeDisposition, softUnavailablePrompt } from './listing-availability.mjs';
 import { activeListingContradictedByFreshEvidence } from './evidence-consistency.mjs';
@@ -38,6 +38,11 @@ const siteTestSource = await read('scripts/test-site.mjs');
 const imageCacheSource = await read('scripts/cache-listing-images.mjs');
 
 const failures = [];
+if(realtylinkSnapshotBaseline({previousBaseline:6,currentCount:5,sameScope:true})!==6||
+   realtylinkSnapshotBaseline({previousBaseline:6,currentCount:4,sameScope:true})!==6||
+   realtylinkSnapshotBaseline({previousBaseline:6,currentCount:4,sameScope:false})!==4||
+   !realtylinkSnapshotComplete({healthy:true,currentCount:5,baseline:6})||
+   realtylinkSnapshotComplete({healthy:true,currentCount:4,baseline:6}))failures.push('Realtylink completeness baseline can ratchet downward across partial snapshots.');
 const contradictionNow=Date.parse('2026-09-13T21:00:00Z');
 const contradictionListing={id:'waterloo-regression',availabilityStatus:'active',url:'https://www.zumper.com/address/2477-waterloo?source=search',verifiedAt:'2026-09-13T19:00:00Z'};
 const contradictionEvidence={checkedAt:'2026-09-13T20:53:00Z',sourceUrl:'https://www.zumper.com/address/2477-waterloo',identityMatch:true,explicitNegative:true};
@@ -242,7 +247,7 @@ for (const building of ['kits-walk', 'viridian']) {
   if (!project?.positiveSignals?.includes('now renting')) failures.push(`${building} does not recognize its official Now Renting status.`);
 }
 if (!source.includes('auto_published_authoritative_mls')) failures.push('Current authoritative MLS inventory cannot auto-publish.');
-if (!source.includes('realtylinkRemovalEligible') || !source.includes('missingAgeMs>=4*60*60*1000') || !source.includes('previousRealtylinkCount*.75')) failures.push('MLS disappearance is not guarded by snapshot completeness and a minimum confirmation interval.');
+if (!source.includes('realtylinkRemovalEligible') || !source.includes('missingAgeMs>=4*60*60*1000') || !source.includes('realtylinkSnapshotComplete')) failures.push('MLS disappearance is not guarded by snapshot completeness and a minimum confirmation interval.');
 if (!source.includes('positiveMlsDetails.has(x.id)') || !source.includes('identity, availability and rent all matched')) failures.push('Fresh exact MLS detail evidence can be overridden by volatile search-result disappearance.');
 if (!source.includes("/realtylink\\.org/i.test(evidence?.sourceUrl||evidence?.finalUrl||'')")) failures.push('Third-party MLS mirrors can be mistaken for authoritative exact Realtylink evidence.');
 if (!source.includes('property is not currently for sale or for rent') || !source.includes('this property is no longer available') || !source.includes('status\\s*\\n\\s*expired')) failures.push('Explicit inactive/expired marketplace evidence is not treated as a strong negative.');

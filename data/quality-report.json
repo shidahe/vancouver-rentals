@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-09-13T23:16:46.764Z",
-  "activeCount": 16,
+  "generatedAt": "2026-09-14T01:21:46.915Z",
+  "activeCount": 21,
   "decisionReady": true,
   "highIssueCount": 0,
   "mediumIssueCount": 0,
-  "infoIssueCount": 30,
+  "infoIssueCount": 40,
   "issues": [
     {
       "severity": "info",
@@ -153,38 +153,58 @@
     },
     {
       "severity": "info",
+      "id": "mls-r3148298",
+      "issue": "unknown-ac"
+    },
+    {
+      "severity": "info",
+      "id": "mls-r3148298",
+      "issue": "unknown-orientation"
+    },
+    {
+      "severity": "info",
       "id": "mls-r3161880",
       "issue": "unknown-orientation"
+    },
+    {
+      "severity": "info",
+      "id": "mls-r3161950",
+      "issue": "unknown-ac"
+    },
+    {
+      "severity": "info",
+      "id": "mls-r3161950",
+      "issue": "unknown-orientation"
+    },
+    {
+      "severity": "info",
+      "id": "mls-r3159060",
+      "issue": "unknown-ac"
+    },
+    {
+      "severity": "info",
+      "id": "mls-r3159060",
+      "issue": "unknown-orientation"
+    },
+    {
+      "severity": "info",
+      "id": "mls-r3149267",
+      "issue": "unknown-ac"
+    },
+    {
+      "severity": "info",
+      "id": "mls-r3149267",
+      "issue": "unknown-orientation"
+    },
+    {
+      "severity": "info",
+      "id": "mls-r3164628",
+      "issue": "unknown-ac"
+    },
+    {
+      "severity": "info",
+      "id": "mls-r3164628",
+      "issue": "unknown-orientation"
     }
-  ],
-  "readinessChecks": {
-    "smokeOk": true,
-    "smokeFresh": true,
-    "smokeCheckedAt": "2026-09-13T23:16:51.650Z",
-    "latestDataAt": "2026-09-13T23:16:06.468Z",
-    "coverageReady": true,
-    "healthyDiscoveryLanes": 3,
-    "coverageWarnings": [
-      {
-        "severity": "warning",
-        "lane": "rentalsca",
-        "status": "degraded",
-        "detail": "2/9 regional searches reachable; 0 qualifying candidates parsed; 1 scoped search-only leads retained (1 new, 0 already active, 0 need revalidation); 3 detail pages blocked after 11 discovered URLs; 8 further detail checks suppressed after repeated 403/429"
-      },
-      {
-        "severity": "warning",
-        "lane": "livrent",
-        "status": "unhealthy",
-        "detail": "0/5 searches healthy"
-      },
-      {
-        "severity": "warning",
-        "lane": "priority-viridian-unpriced-unit",
-        "status": "price-unverified",
-        "detail": "Viridian unit 0103 (2BR) is offered for Sep 30, but official rent is withheld; do not publish before verifying rent >= CAD $3,500"
-      }
-    ]
-  },
-  "readinessIssues": [],
-  "finalizedAt": "2026-09-13T23:16:53.105Z"
+  ]
 }

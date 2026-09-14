@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-09-13T23:16:05.028Z",
+  "refreshedAt": "2026-09-14T01:20:18.107Z",
   "groups": [
     {
       "identityKey": "3220 4th ave w::url:4b1a6ebe2d36",
@@ -290,56 +290,12 @@
   "relistedMlsMerged": [],
   "negativeMatches": [],
   "detailReactivated": [],
-  "mlsMissing": {
-    "R3151022": {
-      "firstMissingAt": "2026-09-13T23:16:05.028Z",
-      "lastMissingAt": "2026-09-13T23:16:05.028Z",
-      "listingId": "mls-r3151022"
-    },
-    "R3148298": {
-      "firstMissingAt": "2026-09-13T23:16:05.028Z",
-      "lastMissingAt": "2026-09-13T23:16:05.028Z",
-      "listingId": "mls-r3148298"
-    },
-    "R3151372": {
-      "firstMissingAt": "2026-09-13T23:16:05.028Z",
-      "lastMissingAt": "2026-09-13T23:16:05.028Z",
-      "listingId": "mls-r3151372"
-    },
-    "R3158179": {
-      "firstMissingAt": "2026-09-13T23:16:05.028Z",
-      "lastMissingAt": "2026-09-13T23:16:05.028Z",
-      "listingId": "mls-r3158179"
-    },
-    "R3161950": {
-      "firstMissingAt": "2026-09-13T23:16:05.028Z",
-      "lastMissingAt": "2026-09-13T23:16:05.028Z",
-      "listingId": "mls-r3161950"
-    },
-    "R3159060": {
-      "firstMissingAt": "2026-09-13T23:16:05.028Z",
-      "lastMissingAt": "2026-09-13T23:16:05.028Z",
-      "listingId": "mls-r3159060"
-    },
-    "R3149612": {
-      "firstMissingAt": "2026-09-13T23:16:05.028Z",
-      "lastMissingAt": "2026-09-13T23:16:05.028Z",
-      "listingId": "mls-r3149267"
-    },
-    "R3163709": {
-      "firstMissingAt": "2026-09-13T23:16:05.028Z",
-      "lastMissingAt": "2026-09-13T23:16:05.028Z",
-      "listingId": "mls-r3163709"
-    },
-    "R3164628": {
-      "firstMissingAt": "2026-09-13T23:16:05.028Z",
-      "lastMissingAt": "2026-09-13T23:16:05.028Z",
-      "listingId": "mls-r3164628"
-    }
-  },
+  "mlsMissing": {},
   "mlsRemoved": [],
   "realtylinkSnapshotCount": 4,
+  "realtylinkSnapshotHighWaterMark": 6,
   "realtylinkSnapshotScope": "rent-3500-beds-2-4-whole-home-westside-v2",
-  "realtylinkRemovalEligible": true,
+  "realtylinkRemovalEligible": false,
+  "mlsRemovalSuppressed": "Partial Realtylink snapshot (4 candidates versus previous complete 6); disappearance signals ignored.",
   "mlsDuplicatesMerged": []
 }

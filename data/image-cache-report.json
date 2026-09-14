@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-09-13T23:16:45.170Z",
+  "refreshedAt": "2026-09-14T01:20:31.673Z",
   "listings": {
     "york-103-2535-r3137446": {
       "cached": 5,
@@ -106,22 +106,57 @@
       "failures": [],
       "photoPageUrl": "https://realtylink.org/en/townhouse~for-rent~vancouver/263172550"
     },
+    "mls-r3148298": {
+      "cached": 5,
+      "preserved": 0,
+      "downloaded": 5,
+      "failures": [],
+      "photoPageUrl": "https://realtylink.org/en/house~for-rent~vancouver/263169925"
+    },
     "mls-r3161880": {
       "cached": 5,
       "preserved": 5,
       "downloaded": 0,
       "failures": [],
       "photoPageUrl": "https://realtylink.org/en/house~for-rent~vancouver/263183507"
+    },
+    "mls-r3161950": {
+      "cached": 5,
+      "preserved": 0,
+      "downloaded": 5,
+      "failures": [],
+      "photoPageUrl": "https://realtylink.org/en/house~for-rent~vancouver/263183577"
+    },
+    "mls-r3159060": {
+      "cached": 5,
+      "preserved": 0,
+      "downloaded": 5,
+      "failures": [],
+      "photoPageUrl": "https://realtylink.org/en/house~for-rent~vancouver/263180687"
+    },
+    "mls-r3149267": {
+      "cached": 5,
+      "preserved": 0,
+      "downloaded": 5,
+      "failures": [],
+      "photoPageUrl": "https://realtylink.org/en/apartment~for-rent~vancouver/263171239"
+    },
+    "mls-r3164628": {
+      "cached": 5,
+      "preserved": 0,
+      "downloaded": 5,
+      "failures": [],
+      "photoPageUrl": "https://realtylink.org/en/house~for-rent~vancouver/263186255"
     }
   },
   "totals": {
-    "sourceListings": 16,
-    "cachedListings": 16,
-    "downloaded": 0,
+    "sourceListings": 21,
+    "cachedListings": 21,
+    "downloaded": 25,
     "failed": 0,
     "preserved": 76,
-    "prunedListings": 2,
-    "prunedIndexImages": 10,
+    "prunedListings": 0,
+    "prunedIndexImages": 0,
     "prunedOrphanFiles": 0
   }
 }

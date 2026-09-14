@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-13T23:16:46.793Z",
+  "generatedAt": "2026-09-14T01:21:46.991Z",
   "coverageReady": true,
   "healthyLaneCount": 3,
   "freshLaneCount": 8,
@@ -71,11 +71,11 @@
     {
       "id": "realtylink",
       "kind": "mls-rental",
-      "healthy": true,
+      "healthy": false,
       "positiveDiscoveryHealthy": true,
-      "status": "healthy",
-      "partial": false,
-      "detail": "3/3 searches reachable; 4 live candidates parsed",
+      "status": "degraded",
+      "partial": true,
+      "detail": "3/3 searches reachable; 4 current live candidates parsed from a partial snapshot versus complete baseline 4; positive discovery usable, removals suppressed",
       "refreshedAt": "2026-09-13T23:14:58.932Z"
     },
     {
@@ -115,6 +115,12 @@
       "lane": "livrent",
       "status": "unhealthy",
       "detail": "0/5 searches healthy"
+    },
+    {
+      "severity": "warning",
+      "lane": "realtylink",
+      "status": "degraded",
+      "detail": "3/3 searches reachable; 4 current live candidates parsed from a partial snapshot versus complete baseline 4; positive discovery usable, removals suppressed"
     },
     {
       "severity": "warning",

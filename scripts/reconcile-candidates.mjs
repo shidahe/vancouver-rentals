@@ -6,6 +6,7 @@ import { dedupeMlsRecords } from './mls-dedupe.mjs';
 import { verifiedPhotoCandidates } from './listing-photo-candidates.mjs';
 import { parseRealtylinkAirConditioning, parseRealtylinkFloorArea, parseRealtylinkRoomCount } from './realtylink-parser.mjs';
 import { LISTING_SCOPE_VERSION, listingScopeEligible } from './discovery-policy.mjs';
+import { realtylinkSnapshotBaseline, realtylinkSnapshotComplete } from './coverage-policy.mjs';
 
 const DATA=path.join(process.cwd(),'data');
 const iso=new Date().toISOString(),today=iso.slice(0,10);
@@ -259,10 +260,13 @@ for(const x of payload.listings){
 const realtylinkHealth=realtylink.health||[];
 const realtylinkCount=(realtylink.candidates||[]).length;
 const realtylinkScope=realtylink.scopeVersion||LISTING_SCOPE_VERSION;
-const previousRealtylinkCount=previousReconciliation.realtylinkSnapshotScope===realtylinkScope?Number(previousReconciliation.realtylinkSnapshotCount||0):0;
+const sameRealtylinkScope=previousReconciliation.realtylinkSnapshotScope===realtylinkScope;
+const previousRealtylinkCount=sameRealtylinkScope?Number(previousReconciliation.realtylinkSnapshotHighWaterMark||previousReconciliation.realtylinkSnapshotCount||0):0;
 const realtylinkHealthy=realtylinkHealth.length>=3&&realtylinkHealth.every(x=>Number(x.status)>=200&&Number(x.status)<400)&&realtylinkCount>0;
-const realtylinkComplete=realtylinkHealthy&&(!previousRealtylinkCount||realtylinkCount>=Math.ceil(previousRealtylinkCount*.75));
-state.realtylinkSnapshotCount=realtylinkComplete?realtylinkCount:(previousRealtylinkCount||realtylinkCount);
+const realtylinkBaseline=realtylinkSnapshotBaseline({previousBaseline:previousRealtylinkCount,currentCount:realtylinkCount,sameScope:sameRealtylinkScope});
+const realtylinkComplete=realtylinkSnapshotComplete({healthy:realtylinkHealthy,currentCount:realtylinkCount,baseline:previousRealtylinkCount});
+state.realtylinkSnapshotCount=realtylinkCount;
+state.realtylinkSnapshotHighWaterMark=realtylinkBaseline;
 state.realtylinkSnapshotScope=realtylinkScope;
 state.realtylinkRemovalEligible=realtylinkComplete;
 if(realtylinkComplete){
