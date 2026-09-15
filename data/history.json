@@ -1391,6 +1391,11 @@
       "date": "2026-09-14",
       "rent": 4800,
       "note": "CORRECTED: restored after exact current MLS detail matched identity, explicit availability and rent."
+    },
+    {
+      "date": "2026-09-15",
+      "rent": 4800,
+      "note": "CORRECTED: restored after exact current MLS detail matched identity, explicit availability and rent."
     }
   ],
   "mls-r3158179": [
@@ -1859,6 +1864,13 @@
       "date": "2026-09-14",
       "rent": 4350,
       "note": "First seen in live purpose-built inventory via https://www.craigslist.org/view/d/vancouver-bed-bath-fourth-mac-kitsilano/eiSLCKTVqsrtPUWpUpJyDN"
+    }
+  ],
+  "tennyson-mews-b6": [
+    {
+      "date": "2026-09-15",
+      "rent": 3600,
+      "note": "AUTO-PUBLISHED after strict live detail-page verification."
     }
   ]
 }
