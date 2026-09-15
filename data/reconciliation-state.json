@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-09-15T05:06:50.223Z",
+  "refreshedAt": "2026-09-15T11:56:53.355Z",
   "groups": [
     {
       "identityKey": "3220 4th ave w::url:4b1a6ebe2d36",
@@ -107,6 +107,18 @@
       ],
       "exactUnit": true,
       "matchedListingId": "zumper-e3fb92a991a6",
+      "result": "candidate_only"
+    },
+    {
+      "identityKey": "1855 w 10th ave near cypress st::url:285a6d3de4b4",
+      "sources": [
+        "craigslist"
+      ],
+      "rents": [
+        3600
+      ],
+      "exactUnit": false,
+      "matchedListingId": null,
       "result": "candidate_only"
     },
     {
@@ -230,117 +242,49 @@
       "result": "candidate_only"
     },
     {
-      "identityKey": "mls:r3160689",
+      "identityKey": "mls:r3164628",
       "sources": [
         "realtylink mls"
       ],
       "rents": [
-        4950
-      ],
-      "exactUnit": true,
-      "matchedListingId": "zumper-16e9ae17cd91",
-      "result": "authoritative_mls_reverified"
-    },
-    {
-      "identityKey": "mls:r3137446",
-      "sources": [
-        "realtylink mls"
-      ],
-      "rents": [
-        5850
-      ],
-      "exactUnit": true,
-      "matchedListingId": "york-103-2535-r3137446",
-      "result": "authoritative_mls_reverified"
-    },
-    {
-      "identityKey": "mls:r3150923",
-      "sources": [
-        "realtylink mls"
-      ],
-      "rents": [
-        4680
+        5000
       ],
       "exactUnit": false,
-      "matchedListingId": "mls-r3150923",
+      "matchedListingId": "mls-r3164628",
       "result": "authoritative_mls_reverified"
     },
     {
-      "identityKey": "mls:r3161950",
+      "identityKey": "mls:r3163709",
       "sources": [
         "realtylink mls"
       ],
       "rents": [
-        4000
+        6000
       ],
       "exactUnit": false,
-      "matchedListingId": "mls-r3161950",
-      "result": "authoritative_mls_reverified"
-    },
-    {
-      "identityKey": "mls:r3151022",
-      "sources": [
-        "realtylink mls"
-      ],
-      "rents": [
-        10500
-      ],
-      "exactUnit": false,
-      "matchedListingId": "mls-r3151022",
+      "matchedListingId": "mls-r3163709",
       "result": "authoritative_mls_reverified"
     }
   ],
   "promoted": [],
   "crossVerified": [
-    "zumper-16e9ae17cd91",
-    "york-103-2535-r3137446",
-    "mls-r3150923",
-    "mls-r3161950",
-    "mls-r3151022"
+    "mls-r3164628",
+    "mls-r3163709"
   ],
   "fingerprintCrossVerified": [],
   "maskedMlsMerged": [],
   "relistedMlsMerged": [],
   "negativeMatches": [],
   "detailReactivated": [
-    "mls-r3151022",
-    "mls-r3161950"
-  ],
-  "mlsMissing": {
-    "R3148298": {
-      "firstMissingAt": "2026-09-14T22:00:45.839Z",
-      "lastMissingAt": "2026-09-15T05:06:50.223Z",
-      "listingId": "mls-r3148298"
-    },
-    "R3151372": {
-      "firstMissingAt": "2026-09-15T05:06:50.223Z",
-      "lastMissingAt": "2026-09-15T05:06:50.223Z",
-      "listingId": "mls-r3151372"
-    },
-    "R3160879": {
-      "firstMissingAt": "2026-09-14T22:00:45.839Z",
-      "lastMissingAt": "2026-09-15T05:06:50.223Z",
-      "listingId": "mls-r3160879"
-    },
-    "R3163709": {
-      "firstMissingAt": "2026-09-15T05:06:50.223Z",
-      "lastMissingAt": "2026-09-15T05:06:50.223Z",
-      "listingId": "mls-r3163709"
-    },
-    "R3164628": {
-      "firstMissingAt": "2026-09-14T22:00:45.839Z",
-      "lastMissingAt": "2026-09-15T05:06:50.223Z",
-      "listingId": "mls-r3164628"
-    }
-  },
-  "mlsRemoved": [
-    "mls-r3148298",
-    "mls-r3160879",
+    "mls-r3163709",
     "mls-r3164628"
   ],
-  "realtylinkSnapshotCount": 5,
+  "mlsMissing": {},
+  "mlsRemoved": [],
+  "realtylinkSnapshotCount": 2,
   "realtylinkSnapshotHighWaterMark": 6,
   "realtylinkSnapshotScope": "rent-3500-beds-2-4-whole-home-westside-v2",
-  "realtylinkRemovalEligible": true,
+  "realtylinkRemovalEligible": false,
+  "mlsRemovalSuppressed": "Partial Realtylink snapshot (2 candidates versus previous complete 6); disappearance signals ignored.",
   "mlsDuplicatesMerged": []
 }
