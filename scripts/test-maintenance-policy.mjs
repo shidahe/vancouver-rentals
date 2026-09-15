@@ -238,6 +238,13 @@ if(!purposeBuiltSource.includes('discoveredStructuredInventories')||!purposeBuil
 if(!source.includes("x.type === 'purpose-built' && !/^#?\\d+[A-Za-z]?$/")) failures.push('Generic detail verification can override stricter address-level purpose-built inventory validation.');
 if(!source.includes('if (evidence.explicitPositive) {')||!source.includes("listing.verificationLevel = 'verified';")) failures.push('A loading detail URL can refresh verifiedAt without current positive availability evidence.');
 if(!source.includes('const isRealtylink = /realtylink\\.org/i')||!source.includes('!isRealtylink && weakForRent')) failures.push('A stale Realtylink detail page can use its static for-rent title as current availability evidence.');
+const tennysonMewsB6 = catalog.seedCandidates?.find(x => x.id === 'craigslist-tennyson-mews-b6');
+if (!tennysonMewsB6 || tennysonMewsB6.listingId !== 'tennyson-mews-b6' || tennysonMewsB6.unit !== 'B6' || tennysonMewsB6.address !== '1855 W 10th Ave, Vancouver, BC V6J 2A8' || tennysonMewsB6.expectedBeds !== 2 || !tennysonMewsB6.autoPublish || !/\/vancouver-spacious-bedroom-bathroom\/uWMbQgQXpdxGrrD5NEfX4J$/.test(tennysonMewsB6.url) || tennysonMewsB6.hints?.bathrooms !== 2 || tennysonMewsB6.hints?.sqft !== 1189) {
+  failures.push('New Tennyson Mews B6 exact-unit discovery is missing or its strict publication identity was weakened.');
+}
+if (findExistingSeedListing([{ id: 'other-1855-floorplan', address: tennysonMewsB6?.address, unit: null }], tennysonMewsB6) !== null) {
+  failures.push('Tennyson Mews B6 can be incorrectly merged into an address-level placeholder.');
+}
 const kitsWalk605 = catalog.seedCandidates?.find(x => x.id === 'rew-kits-walk-605');
 if (!kitsWalk605 || kitsWalk605.unit !== '605' || kitsWalk605.address !== '2075 W 12th Ave, Vancouver, BC' || kitsWalk605.expectedBeds !== 2 || !kitsWalk605.autoPublish || !/\/605-2075-w-12th-avenue-vancouver-bc$/.test(kitsWalk605.url)) {
   failures.push('Current Kits Walk Unit 605 exact-detail verification seed is missing or weakened.');

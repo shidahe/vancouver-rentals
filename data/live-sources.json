@@ -38,6 +38,10 @@
   ],
   "seedCandidates": [
     {
+      "id":"craigslist-tennyson-mews-b6","listingId":"tennyson-mews-b6","source":"Craigslist / Zumper","url":"https://www.craigslist.org/view/d/vancouver-spacious-bedroom-bathroom/uWMbQgQXpdxGrrD5NEfX4J","buildingName":"Tennyson Mews","unit":"B6","address":"1855 W 10th Ave, Vancouver, BC V6J 2A8","neighborhood":"Kitsilano","type":"townhouse","expectedBeds":2,"autoPublish":true,
+      "hints":{"bedrooms":2,"bathrooms":2,"sqft":1189,"parking":true,"petFriendly":true,"balcony":true,"largeWindows":true}
+    },
+    {
       "id":"rew-kits-walk-605","listingId":"kits-walk-unit-605","source":"REW / Rent Sync","url":"https://www.rew.ca/rentals/7496804/605-2075-w-12th-avenue-vancouver-bc","buildingName":"Kits Walk","unit":"605","address":"2075 W 12th Ave, Vancouver, BC","neighborhood":"Kitsilano","type":"purpose-built","expectedBeds":2,"autoPublish":true,
       "hints":{"bedrooms":2,"bathrooms":2,"sqft":741,"parking":true,"petFriendly":true,"balcony":true,"buildingYear":2020,"largeWindows":true,"modernInterior":true}
     },
