@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-09-14T22:01:38.148Z",
+  "generatedAt": "2026-09-15T05:07:45.233Z",
   "activeCount": 20,
   "decisionReady": true,
   "readinessStatus": "finalized",
   "highIssueCount": 0,
   "mediumIssueCount": 0,
-  "infoIssueCount": 35,
+  "infoIssueCount": 36,
   "issues": [
     {
       "severity": "info",
@@ -149,6 +149,11 @@
     },
     {
       "severity": "info",
+      "id": "mls-r3151022",
+      "issue": "unknown-orientation"
+    },
+    {
+      "severity": "info",
       "id": "mls-r3150923",
       "issue": "unknown-ac"
     },
@@ -159,7 +164,12 @@
     },
     {
       "severity": "info",
-      "id": "mls-r3151372",
+      "id": "mls-r3161950",
+      "issue": "unknown-ac"
+    },
+    {
+      "severity": "info",
+      "id": "mls-r3161950",
       "issue": "unknown-orientation"
     },
     {
@@ -170,11 +180,6 @@
     {
       "severity": "info",
       "id": "mls-r3149267",
-      "issue": "unknown-orientation"
-    },
-    {
-      "severity": "info",
-      "id": "mls-r3163709",
       "issue": "unknown-orientation"
     },
     {
@@ -186,8 +191,8 @@
   "readinessChecks": {
     "smokeOk": true,
     "smokeFresh": true,
-    "smokeCheckedAt": "2026-09-14T22:01:43.659Z",
-    "latestDataAt": "2026-09-14T22:00:52.823Z",
+    "smokeCheckedAt": "2026-09-15T05:07:50.238Z",
+    "latestDataAt": "2026-09-15T05:06:56.924Z",
     "coverageReady": true,
     "healthyDiscoveryLanes": 3,
     "coverageWarnings": [
@@ -195,7 +200,7 @@
         "severity": "warning",
         "lane": "rentalsca",
         "status": "degraded",
-        "detail": "2/9 regional searches reachable; 0 qualifying candidates parsed; 2 scoped search-only leads retained (1 new, 1 already active, 0 need revalidation); 3 detail pages blocked after 13 discovered URLs; 10 further detail checks suppressed after repeated 403/429"
+        "detail": "3/9 regional searches reachable; 0 qualifying candidates parsed; 3 scoped search-only leads retained (2 new, 1 already active, 0 need revalidation); 3 detail pages blocked after 20 discovered URLs; 17 further detail checks suppressed after repeated 403/429"
       },
       {
         "severity": "warning",
@@ -212,5 +217,5 @@
     ]
   },
   "readinessIssues": [],
-  "finalizedAt": "2026-09-14T22:01:43.754Z"
+  "finalizedAt": "2026-09-15T05:07:50.311Z"
 }
