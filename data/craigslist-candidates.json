@@ -1,17 +1,17 @@
 {
-  "refreshedAt": "2026-09-16T17:10:01.680Z",
+  "refreshedAt": "2026-09-16T21:28:19.906Z",
   "mode": "candidate-only",
   "sourceHealth": {
     "kitsilano": {
-      "checkedAt": "2026-09-16T17:10:01.680Z",
+      "checkedAt": "2026-09-16T21:28:19.906Z",
       "status": 200,
       "ok": true,
       "finalUrl": "https://www.craigslist.org/search/subarea/van?cat=apa&min_bedrooms=2&query=kitsilano",
-      "anchorCount": 284,
-      "detailLinkCount": 262,
-      "embeddedDetailLinkCount": 131,
+      "anchorCount": 282,
+      "detailLinkCount": 260,
+      "embeddedDetailLinkCount": 130,
       "resultContainerCount": 132,
-      "postIdCount": 131,
+      "postIdCount": 130,
       "hrefShapeSamples": [
         "www.craigslist.org/subarea/van",
         "www.craigslist.org/favorites",
@@ -23,13 +23,13 @@
         "www.craigslist.org/about/prohibited",
         "www.craigslist.org/about/recalled_items",
         "www.craigslist.org/about/help/safety/scams",
-        "www.craigslist.org/view/d/vancouver-two-bedroom-furnished/51eVRnSAKuXA8SHFyZvcV2",
-        "www.craigslist.org/view/d/vancouver-beautiful-house-in-highly/eyAfckwPp4PJNK644EQw42"
+        "www.craigslist.org/view/d/vancouver-prime-kitsilano-location/aySKoCQFweXkchv5ithiCt",
+        "www.craigslist.org/view/d/vancouver-furnished-bd-ba-in-kitsilano/2ZzuXtwhvBVgUskYawP84E"
       ],
       "title": "vancouver apartments / housing for rent \"kitsilano\" - craigslist"
     },
     "arbutus": {
-      "checkedAt": "2026-09-16T17:10:01.680Z",
+      "checkedAt": "2026-09-16T21:28:19.906Z",
       "status": 200,
       "ok": true,
       "finalUrl": "https://www.craigslist.org/search/subarea/van?cat=apa&min_bedrooms=2&query=arbutus",
@@ -55,15 +55,15 @@
       "title": "vancouver apartments / housing for rent \"arbutus\" - craigslist"
     },
     "point-grey": {
-      "checkedAt": "2026-09-16T17:10:01.680Z",
+      "checkedAt": "2026-09-16T21:28:19.906Z",
       "status": 200,
       "ok": true,
       "finalUrl": "https://www.craigslist.org/search/subarea/van?cat=apa&min_bedrooms=2&query=point%20grey",
-      "anchorCount": 206,
-      "detailLinkCount": 184,
-      "embeddedDetailLinkCount": 92,
+      "anchorCount": 204,
+      "detailLinkCount": 182,
+      "embeddedDetailLinkCount": 91,
       "resultContainerCount": 93,
-      "postIdCount": 92,
+      "postIdCount": 91,
       "hrefShapeSamples": [
         "www.craigslist.org/subarea/van",
         "www.craigslist.org/favorites",
@@ -75,13 +75,13 @@
         "www.craigslist.org/about/prohibited",
         "www.craigslist.org/about/recalled_items",
         "www.craigslist.org/about/help/safety/scams",
-        "www.craigslist.org/view/d/vancouver-true-waterfront-living-with/oGgMe5t1qTUbgLhgGAsjSQ",
-        "www.craigslist.org/view/d/vancouver-vancouver-west-point-grey/reNvrH4yUPSdTsgXDCZD1e"
+        "www.craigslist.org/view/d/furnished-pt-grey-rd-main-floor/e919sGpBQfcJSgJJdAcwjM",
+        "www.craigslist.org/view/d/vancouver-point-grey-oceanfront-luxury/qPPSrTkTWqBaXAd56Pf2dW"
       ],
       "title": "vancouver apartments / housing for rent \"point grey\" - craigslist"
     },
     "dunbar": {
-      "checkedAt": "2026-09-16T17:10:01.680Z",
+      "checkedAt": "2026-09-16T21:28:19.906Z",
       "status": 200,
       "ok": true,
       "finalUrl": "https://www.craigslist.org/search/subarea/van?cat=apa&min_bedrooms=2&query=dunbar",
@@ -101,39 +101,84 @@
         "www.craigslist.org/about/prohibited",
         "www.craigslist.org/about/recalled_items",
         "www.craigslist.org/about/help/safety/scams",
-        "www.craigslist.org/view/d/vancouver-bedroom-basement-suite-dunbar/dNwSFGU19MGxtUX3QUy28b",
-        "www.craigslist.org/view/d/vancouver-plhref3837elegant-bedroom/6ZaP8LM5eHWv5542tAPv2L"
+        "www.craigslist.org/view/d/vancouver-furnished-bd-ba-in-kitsilano/2ZzuXtwhvBVgUskYawP84E",
+        "www.craigslist.org/view/d/vancouver-dunbar-5b-2b-house-for-rent/7iHmgeWwvpe6P5cBArEAUV"
       ],
       "title": "vancouver apartments / housing for rent \"dunbar\" - craigslist"
     }
   },
   "diagnostics": {
-    "discoveredDetailUrls": 310,
+    "discoveredDetailUrls": 308,
     "searchCards": 393,
-    "uniqueSearchCards": 310,
-    "missingRentOrBedrooms": 117,
+    "uniqueSearchCards": 308,
+    "missingRentOrBedrooms": 116,
     "outOfScope": 136,
     "outOfArea": 23,
-    "searchAccepted": 38,
-    "detailChecks": 38,
-    "detailVerified": 34,
+    "searchAccepted": 37,
+    "detailChecks": 37,
+    "detailVerified": 33,
     "detailNegative": 0,
     "detailIdentityMismatch": 0,
     "detailStale": 0,
     "detailErrors": 0,
     "exactAddresses": 11,
-    "accepted": 34,
+    "accepted": 33,
     "errors": 0
   },
   "candidates": [
     {
       "source": "Craigslist",
+      "postId": "7965071439",
+      "url": "https://www.craigslist.org/view/d/vancouver-bed-bath-fourth-mac-kitsilano/eiSLCKTVqsrtPUWpUpJyDN",
+      "title": "$4,350 / 2br - 801ft2 - 2 Bed + 2 Bath @ Fourth + Mac — Kitsilano | Available October 1 (Vancouver)",
+      "address": null,
+      "identityKey": "craigslist::post:7965071439",
+      "rent": 4350,
+      "bedrooms": 2,
+      "bathrooms": 2,
+      "sqft": 801,
+      "geo": {
+        "lat": 49.2646,
+        "lng": -123.1648
+      },
+      "targetArea": true,
+      "active": true,
+      "postedOrUpdatedAt": "2026-09-16T17:28:30.000Z",
+      "checkedAt": "2026-09-16T21:28:19.906Z",
+      "images": [
+        "https://images.craigslist.org/00H0H_aBooG6gbfXq_0ia0du_600x450.jpg",
+        "https://images.craigslist.org/00H0H_aBooG6gbfXq_0ia0du_50x50c.jpg",
+        "https://images.craigslist.org/01616_5y1u2ed2ikT_0cR0gy_50x50c.jpg",
+        "https://images.craigslist.org/00G0G_FtcifFWbJS_0x20m1_50x50c.jpg",
+        "https://images.craigslist.org/00g0g_cKxf1HqS4mD_0x20m1_50x50c.jpg",
+        "https://images.craigslist.org/01717_brSs8WLGzbx_0x20m1_50x50c.jpg",
+        "https://images.craigslist.org/00Z0Z_8QlIijYV87P_0x20m1_50x50c.jpg",
+        "https://images.craigslist.org/00101_5d0cQqFQ14E_0x20m1_50x50c.jpg",
+        "https://images.craigslist.org/00606_8G3MJW0Opxj_0x20m1_50x50c.jpg",
+        "https://images.craigslist.org/00E0E_9KTVVOLIAAt_0x20m1_50x50c.jpg",
+        "https://images.craigslist.org/00o0o_4DErAG485G_0x20m1_50x50c.jpg",
+        "https://images.craigslist.org/00A0A_4u5TVAsKfmk_0x20m1_50x50c.jpg"
+      ],
+      "publishable": false,
+      "evidenceKind": "current_search_card_and_exact_detail",
+      "queryIds": [
+        "kitsilano"
+      ],
+      "approximateLocation": "Fourth Avenue near Macdonald Street",
+      "addressPrecision": "intersection",
+      "description": "Live at Fourth + Mac in this spacious 801 sqft two-bedroom, two-bathroom home featuring city and water views, a private balcony, air conditioning and flexible in-suite storage/worksapce. Located at West 4th Ave and Macdonald Street , Fourth + Mac puts you steps from Fresh Street Market, Shoppers Drug Mart, cafés, restaurants, fitness studios, transit and some of Kitsilano's best beaches.\n\nHome Features\n• City + water views\n• Full size appliance package\n• Individual air conditioning\n• In suite flex room for storage or workspace\n• Private balcony\n• Under cabinet LED lighting\n• Medicine cabinet in bathroom\n• In suite laundry\n\nParking Available for Rent\n\nNeighborhood\n• West 4th retail, restaurants, cafés, fitness studios\n• Easy access to bus routes 44 & 84 (UBC + downtown)\n• Beaches within minutes\n\nBuilding Features\n• Zero carbon operations\n• 100% smoke free\n• Keyless entry + FOB access\n• Professionally managed by Third Space\n• Secure parcel lockers\n• Pet friendly\n• Storage lockers available\n\nAmenities\n• The Hub — lobby + co working space with flexible work areas\n• The Lounge — social lounge with big screen TV, pool table, and outdoor patio\n• The Roof — rooftop with BBQ stations, dining zone, garden plots, play areas, and lounge spaces\n• Dedicated wash room for sandy paws + muddy bikes\n• High speed Wi Fi in most amenity spaces\n\nVideos:\nhttps://youtube.com/@basepoint-x4e?si=PSD7d8IxlrwlAxJ4",
+      "type": "rental",
+      "ac": true,
+      "detailVerified": true
+    },
+    {
+      "source": "Craigslist",
       "postId": "7954830745",
       "url": "https://www.craigslist.org/view/d/vancouver-renovated-fully-furnished-bed/9HN52tQkPrX9N8JhUqQnLn",
-      "title": "$4,500 / 2br - 1011ft2 - Renovated Fully furnished 2 bed/2 bath condo West 7th Ave, Kitsilano (Kitsilano)",
+      "title": "$4,300 / 2br - 1011ft2 - Renovated Fully furnished 2 bed/2 bath condo West 7th Ave, Kitsilano (Kitsilano)",
       "address": null,
       "identityKey": "craigslist::post:7954830745",
-      "rent": 4500,
+      "rent": 4300,
       "bedrooms": 2,
       "bathrooms": 2,
       "sqft": 1011,
@@ -143,8 +188,8 @@
       },
       "targetArea": true,
       "active": true,
-      "postedOrUpdatedAt": "2026-09-15T17:01:59.000Z",
-      "checkedAt": "2026-09-16T17:10:01.680Z",
+      "postedOrUpdatedAt": "2026-09-16T19:09:25.000Z",
+      "checkedAt": "2026-09-16T21:28:19.906Z",
       "images": [
         "https://images.craigslist.org/00a0a_enPB3cuwCIj_0CI0t2_600x450.jpg",
         "https://images.craigslist.org/00a0a_enPB3cuwCIj_0CI0t2_50x50c.jpg",
@@ -166,7 +211,7 @@
       ],
       "approximateLocation": "Kitsilano",
       "addressPrecision": "neighborhood",
-      "description": "Beautiful Furnished Kitsilano Home\n\nFully Furnished 2 Bed + Den | 2 Bath | Private Patio\n\n📍 Ground Floor — 1823 W 7th Avenue, Vancouver\n💰 $4,500/month | Available Now\n🏡 6+ month lease | Pets with owner approval\n\n✨ 1,011 sq. ft. of bright living space\n🌿 272 sq. ft. private patio\n🛏️ 2 bedrooms + open den\n🛁 2 full bathrooms\n🚗 Secured parking\n🧺 In-suite laundry\n🔥 Gas fireplace + gas & hot water included\n\nBeautifully renovated and fully furnished, this spacious Kitsilano home features modern finishes, engineered hardwood floors, updated kitchen and bathrooms, custom closets, and a cozy double-sided fireplace.\n\nEnjoy a fantastic location just steps from West 4th Avenue, cafés, restaurants, shopping, transit, and Kitsilano Beach.\n\nContact today to book your private viewing!\n\nElvira Domracheva\nOrca Realty Inc.\nshow contact info",
+      "description": "Beautiful Furnished Kitsilano Home\n\nFully Furnished 2 Bed + Den | 2 Bath | Private Patio\n\n📍 Ground Floor - 1823 W 7th Avenue, Vancouver\n💰 $4,300/month | Available Now\n🏡 6+ month lease | Pets with owner approval\n\n✨ 1,011 sq. ft. of bright living space\n🌿 272 sq. ft. private patio\n🛏️ 2 bedrooms + open den\n🛁 2 full bathrooms\n🚗 Secured parking\n🧺 In-suite laundry\n🔥 Gas fireplace + gas & hot water included\n\nBeautifully renovated and fully furnished, this spacious Kitsilano home features modern finishes, engineered hardwood floors, updated kitchen and bathrooms, custom closets, and a cozy double-sided fireplace.\n\nEnjoy a fantastic location just steps from West 4th Avenue, cafés, restaurants, shopping, transit, and Kitsilano Beach.\n\nContact today to book your private viewing!\n\nElvira Domracheva\nOrca Realty Inc.\nshow contact info",
       "type": "condo",
       "ac": null,
       "detailVerified": true
@@ -189,7 +234,7 @@
       "targetArea": true,
       "active": true,
       "postedOrUpdatedAt": "2026-09-15T07:14:28.000Z",
-      "checkedAt": "2026-09-16T17:10:01.680Z",
+      "checkedAt": "2026-09-16T21:28:19.906Z",
       "images": [
         "https://images.craigslist.org/00707_8WR1nrwBo3R_0oM0gw_600x450.jpg",
         "https://images.craigslist.org/00707_8WR1nrwBo3R_0oM0gw_50x50c.jpg",
@@ -234,7 +279,7 @@
       "targetArea": true,
       "active": true,
       "postedOrUpdatedAt": "2026-09-15T01:34:20.000Z",
-      "checkedAt": "2026-09-16T17:10:01.680Z",
+      "checkedAt": "2026-09-16T21:28:19.906Z",
       "images": [
         "https://images.craigslist.org/00X0X_8fAXb0mepVn_0t20CI_600x450.jpg",
         "https://images.craigslist.org/00X0X_8fAXb0mepVn_0t20CI_50x50c.jpg",
@@ -275,7 +320,7 @@
       "targetArea": true,
       "active": true,
       "postedOrUpdatedAt": "2026-09-14T23:48:10.000Z",
-      "checkedAt": "2026-09-16T17:10:01.680Z",
+      "checkedAt": "2026-09-16T21:28:19.906Z",
       "images": [
         "https://images.craigslist.org/00S0S_3nmCt9azPdx_1320MM_600x450.jpg",
         "https://images.craigslist.org/00S0S_3nmCt9azPdx_1320MM_50x50c.jpg",
@@ -320,7 +365,7 @@
       "targetArea": true,
       "active": true,
       "postedOrUpdatedAt": "2026-09-14T23:07:09.000Z",
-      "checkedAt": "2026-09-16T17:10:01.680Z",
+      "checkedAt": "2026-09-16T21:28:19.906Z",
       "images": [
         "https://images.craigslist.org/00o0o_jGuXcZK9yR9_0uY0kE_600x450.jpg",
         "https://images.craigslist.org/00o0o_jGuXcZK9yR9_0uY0kE_50x50c.jpg",
@@ -365,7 +410,7 @@
       "targetArea": true,
       "active": true,
       "postedOrUpdatedAt": "2026-09-14T16:43:18.000Z",
-      "checkedAt": "2026-09-16T17:10:01.680Z",
+      "checkedAt": "2026-09-16T21:28:19.906Z",
       "images": [
         "https://images.craigslist.org/00R0R_jEKGSr5IUMC_0CI0pN_600x450.jpg",
         "https://images.craigslist.org/00R0R_jEKGSr5IUMC_0CI0pN_50x50c.jpg",
@@ -394,51 +439,6 @@
     },
     {
       "source": "Craigslist",
-      "postId": "7965071439",
-      "url": "https://www.craigslist.org/view/d/vancouver-bed-bath-fourth-mac-kitsilano/eiSLCKTVqsrtPUWpUpJyDN",
-      "title": "$4,350 / 2br - 801ft2 - 2 Bed + 2 Bath @ Fourth + Mac — Kitsilano | Available October 1 (Vancouver)",
-      "address": null,
-      "identityKey": "craigslist::post:7965071439",
-      "rent": 4350,
-      "bedrooms": 2,
-      "bathrooms": 2,
-      "sqft": 801,
-      "geo": {
-        "lat": 49.2646,
-        "lng": -123.1648
-      },
-      "targetArea": true,
-      "active": true,
-      "postedOrUpdatedAt": "2026-09-14T14:37:05.000Z",
-      "checkedAt": "2026-09-16T17:10:01.680Z",
-      "images": [
-        "https://images.craigslist.org/00H0H_aBooG6gbfXq_0ia0du_600x450.jpg",
-        "https://images.craigslist.org/00H0H_aBooG6gbfXq_0ia0du_50x50c.jpg",
-        "https://images.craigslist.org/01616_5y1u2ed2ikT_0cR0gy_50x50c.jpg",
-        "https://images.craigslist.org/00G0G_FtcifFWbJS_0x20m1_50x50c.jpg",
-        "https://images.craigslist.org/00g0g_cKxf1HqS4mD_0x20m1_50x50c.jpg",
-        "https://images.craigslist.org/01717_brSs8WLGzbx_0x20m1_50x50c.jpg",
-        "https://images.craigslist.org/00Z0Z_8QlIijYV87P_0x20m1_50x50c.jpg",
-        "https://images.craigslist.org/00101_5d0cQqFQ14E_0x20m1_50x50c.jpg",
-        "https://images.craigslist.org/00606_8G3MJW0Opxj_0x20m1_50x50c.jpg",
-        "https://images.craigslist.org/00E0E_9KTVVOLIAAt_0x20m1_50x50c.jpg",
-        "https://images.craigslist.org/00o0o_4DErAG485G_0x20m1_50x50c.jpg",
-        "https://images.craigslist.org/00A0A_4u5TVAsKfmk_0x20m1_50x50c.jpg"
-      ],
-      "publishable": false,
-      "evidenceKind": "current_search_card_and_exact_detail",
-      "queryIds": [
-        "kitsilano"
-      ],
-      "approximateLocation": "Fourth Avenue near Macdonald Street",
-      "addressPrecision": "intersection",
-      "description": "Live at Fourth + Mac in this spacious 801 sqft two-bedroom, two-bathroom home featuring city and water views, a private balcony, air conditioning and flexible in-suite storage/worksapce. Located at West 4th Ave and Macdonald Street , Fourth + Mac puts you steps from Fresh Street Market, Shoppers Drug Mart, cafés, restaurants, fitness studios, transit and some of Kitsilano's best beaches.\n\nHome Features\n• City + water views\n• Full size appliance package\n• Individual air conditioning\n• In suite flex room for storage or workspace\n• Private balcony\n• Under cabinet LED lighting\n• Medicine cabinet in bathroom\n• In suite laundry\n\nParking Available for Rent\n\nNeighborhood\n• West 4th retail, restaurants, cafés, fitness studios\n• Easy access to bus routes 44 & 84 (UBC + downtown)\n• Beaches within minutes\n\nBuilding Features\n• Zero carbon operations\n• 100% smoke free\n• Keyless entry + FOB access\n• Professionally managed by Third Space\n• Secure parcel lockers\n• Pet friendly\n• Storage lockers available\n\nAmenities\n• The Hub — lobby + co working space with flexible work areas\n• The Lounge — social lounge with big screen TV, pool table, and outdoor patio\n• The Roof — rooftop with BBQ stations, dining zone, garden plots, play areas, and lounge spaces\n• Dedicated wash room for sandy paws + muddy bikes\n• High speed Wi Fi in most amenity spaces\n\nVideos:\nhttps://youtube.com/@basepoint-x4e?si=PSD7d8IxlrwlAxJ4",
-      "type": "rental",
-      "ac": true,
-      "detailVerified": true
-    },
-    {
-      "source": "Craigslist",
       "postId": "7965085026",
       "url": "https://www.craigslist.org/view/d/vancouver-bedroom-furnished-apartment/p1ipqysect8HRKCdJiZ5tc",
       "title": "$5,495 / 3br - 1000ft2 - 3 Bedroom Furnished Apartment in Kitsilano #447 (Kitsilano)",
@@ -455,7 +455,7 @@
       "targetArea": true,
       "active": true,
       "postedOrUpdatedAt": "2026-09-14T12:43:50.000Z",
-      "checkedAt": "2026-09-16T17:10:01.680Z",
+      "checkedAt": "2026-09-16T21:28:19.906Z",
       "images": [
         "https://images.craigslist.org/00c0c_jI6maH6Pk5V_08g05v_600x450.jpg",
         "https://images.craigslist.org/00c0c_jI6maH6Pk5V_08g05v_50x50c.jpg",
@@ -500,7 +500,7 @@
       "targetArea": true,
       "active": true,
       "postedOrUpdatedAt": "2026-09-14T12:43:46.000Z",
-      "checkedAt": "2026-09-16T17:10:01.680Z",
+      "checkedAt": "2026-09-16T21:28:19.906Z",
       "images": [
         "https://images.craigslist.org/00c0c_jI6maH6Pk5V_08g05v_600x450.jpg",
         "https://images.craigslist.org/00c0c_jI6maH6Pk5V_08g05v_50x50c.jpg",
@@ -529,51 +529,6 @@
     },
     {
       "source": "Craigslist",
-      "postId": "7959774069",
-      "url": "https://www.craigslist.org/view/d/vancouver-fully-furnished-bed-den/dueMaHxYVaBX1wWex3DBRi",
-      "title": "$3,995 / 2br - 905ft2 - Fully Furnished 2 Bed + Den Executive Condo in Prime Kitsilano (Kitsilano)",
-      "address": null,
-      "identityKey": "craigslist::post:7959774069",
-      "rent": 3995,
-      "bedrooms": 2,
-      "bathrooms": 2,
-      "sqft": 905,
-      "geo": {
-        "lat": 49.268422,
-        "lng": -123.171072
-      },
-      "targetArea": true,
-      "active": true,
-      "postedOrUpdatedAt": "2026-09-10T16:12:02.000Z",
-      "checkedAt": "2026-09-16T17:10:01.680Z",
-      "images": [
-        "https://images.craigslist.org/00Z0Z_4yf93NFKJbO_0x20oM_600x450.jpg",
-        "https://images.craigslist.org/00Z0Z_4yf93NFKJbO_0x20oM_50x50c.jpg",
-        "https://images.craigslist.org/01616_d3FkLaPJQKQ_0x20oM_50x50c.jpg",
-        "https://images.craigslist.org/00z0z_4wrsE0HOqFS_0x20oM_50x50c.jpg",
-        "https://images.craigslist.org/00O0O_8CfRLCs5OoU_0x20oM_50x50c.jpg",
-        "https://images.craigslist.org/00u0u_yejjGnodhy_0x20oM_50x50c.jpg",
-        "https://images.craigslist.org/00x0x_1EdfOiarSTs_0x20oM_50x50c.jpg",
-        "https://images.craigslist.org/00w0w_f2MqIbvNe6A_0x20oM_50x50c.jpg",
-        "https://images.craigslist.org/00i0i_cEcnGBFLlad_0x20oM_50x50c.jpg",
-        "https://images.craigslist.org/01717_a6QEfmK8u4D_0x20oM_50x50c.jpg",
-        "https://images.craigslist.org/00T0T_j7K40OCXR8w_0x20oM_50x50c.jpg",
-        "https://images.craigslist.org/00X0X_hOj7nCWN3o0_0x20oM_50x50c.jpg"
-      ],
-      "publishable": false,
-      "evidenceKind": "current_search_card_and_exact_detail",
-      "queryIds": [
-        "kitsilano"
-      ],
-      "approximateLocation": "West 4th Ave near Blenheim",
-      "addressPrecision": "intersection",
-      "description": "✨ Luxury Fully Furnished 2 Bed + Den Executive Condo | Kitsilano | 🚗 Parking Included | Available September 1\n\n💰 $3995/month | 🛋️ Fully Furnished | 🛏️ 2 Bed | 🛁 2 Bath | 💻 Private Den/Home Office | 🚗 Secure Parking\n\nExperience elevated Kitsilano living in this beautifully appointed fully furnished executive residence at 204-3333 West 4th Avenue. Thoughtfully curated with designer furnishings from INspiration Furniture, including elegant Natuzzi pieces, this bright and sophisticated home offers the perfect blend of luxury, comfort, and functionality.\n\n✨ Home Features\n\n• Beautifully furnished with premium designer furniture\n• Spacious 2 bedrooms, 2 full bathrooms + private den/home office\n• Bright open-concept layout with hardwood flooring throughout\n• Cozy gas fireplace\n• Quartz countertops & premium stainless steel appliances\n• Fully equipped gourmet kitchen\n• In-suite laundry\n• 🚗 One secure underground parking stall included\n\n💻 Private Home Office\n\nA dedicated, enclosed office filled with natural light provides the perfect space for working remotely, virtual meetings, studying, or creative pursuits.\n\n🛏️ Relaxing Bedrooms\n\nPrimary Suite\n• Queen Serta Perfect Sleeper bed\n• Large dresser & bedside table\n• Two mirrored closets with exceptional storage\n\nSecond Bedroom\n• Comfortable double bed\n• Beautifully furnished for guests or additional workspace\n\n🛁 Spa-Inspired Bathrooms\n\nEnjoy two luxurious bathrooms featuring premium Riobel rain shower systems, elegant finishes, and a deep soaking tub for ultimate relaxation.\n\n🌿 Prime Kitsilano Location\n\nLocated just steps from the best of West 4th Avenue.\n\nWalk to:\n• Kitsilano Beach 🏖️\n• Jericho Beach 🌊\n• Boutique shopping 🛍️\n• Cafés & award-winning restaurants ☕🍽️\n• Whole Foods & Safeway 🛒\n• Parks, yoga studios & recreation 🌳\n\nEasy transit to:\n• 🎓 UBC\n• 🌆 Downtown Vancouver\n\n✔️ Rent Includes\n\n• Water & gas\n• Internet (up to $100/month)\n• Electricity (seasonally capped)\n• 🚗 One secure underground parking sta",
-      "type": "condo",
-      "ac": null,
-      "detailVerified": true
-    },
-    {
-      "source": "Craigslist",
       "postId": "7961932563",
       "url": "https://www.craigslist.org/view/d/vancouver-furnished-kitsilano-2br/aRKK1rTHU8xtfcY8mLTLBC",
       "title": "$8,000 / 2br - 1157ft2 - Furnished Kitsilano 2BR | Rooftop Patio + Solarium",
@@ -590,7 +545,7 @@
       "targetArea": true,
       "active": true,
       "postedOrUpdatedAt": "2026-09-06T21:00:40.000Z",
-      "checkedAt": "2026-09-16T17:10:01.680Z",
+      "checkedAt": "2026-09-16T21:28:19.906Z",
       "images": [
         "https://images.craigslist.org/00V0V_aCa1scEE9g3_0qY0fb_600x450.jpg",
         "https://images.craigslist.org/00V0V_aCa1scEE9g3_0qY0fb_50x50c.jpg",
@@ -635,7 +590,7 @@
       "targetArea": true,
       "active": true,
       "postedOrUpdatedAt": "2026-08-24T22:59:23.000Z",
-      "checkedAt": "2026-09-16T17:10:01.680Z",
+      "checkedAt": "2026-09-16T21:28:19.906Z",
       "images": [
         "https://images.craigslist.org/00Z0Z_k7sjTiNFcjk_0CI0t2_600x450.jpg",
         "https://images.craigslist.org/00Z0Z_k7sjTiNFcjk_0CI0t2_50x50c.jpg",
@@ -673,7 +628,7 @@
       "targetArea": true,
       "active": true,
       "postedOrUpdatedAt": "2026-08-22T14:03:54.000Z",
-      "checkedAt": "2026-09-16T17:10:01.680Z",
+      "checkedAt": "2026-09-16T21:28:19.906Z",
       "images": [
         "https://images.craigslist.org/00505_9JjEv3eRS29_0CI0pO_600x450.jpg",
         "https://images.craigslist.org/00505_9JjEv3eRS29_0CI0pO_50x50c.jpg",
@@ -718,7 +673,7 @@
       "targetArea": true,
       "active": true,
       "postedOrUpdatedAt": "2026-09-16T03:36:15.000Z",
-      "checkedAt": "2026-09-16T17:10:01.680Z",
+      "checkedAt": "2026-09-16T21:28:19.906Z",
       "images": [
         "https://images.craigslist.org/00P0P_5AApCehTqd1_1320MM_600x450.jpg",
         "https://images.craigslist.org/00P0P_5AApCehTqd1_1320MM_50x50c.jpg",
@@ -763,7 +718,7 @@
       "targetArea": true,
       "active": true,
       "postedOrUpdatedAt": "2026-09-15T22:59:39.000Z",
-      "checkedAt": "2026-09-16T17:10:01.680Z",
+      "checkedAt": "2026-09-16T21:28:19.906Z",
       "images": [
         "https://images.craigslist.org/01616_jLj3OlQV1v_0jm0c6_600x450.jpg",
         "https://images.craigslist.org/01616_jLj3OlQV1v_0jm0c6_50x50c.jpg",
@@ -808,7 +763,7 @@
       "targetArea": true,
       "active": true,
       "postedOrUpdatedAt": "2026-09-15T22:59:38.000Z",
-      "checkedAt": "2026-09-16T17:10:01.680Z",
+      "checkedAt": "2026-09-16T21:28:19.906Z",
       "images": [
         "https://images.craigslist.org/00x0x_5rdhaj721wT_0jm0c6_600x450.jpg",
         "https://images.craigslist.org/00x0x_5rdhaj721wT_0jm0c6_50x50c.jpg",
@@ -853,7 +808,7 @@
       "targetArea": true,
       "active": true,
       "postedOrUpdatedAt": "2026-09-15T15:09:46.000Z",
-      "checkedAt": "2026-09-16T17:10:01.680Z",
+      "checkedAt": "2026-09-16T21:28:19.906Z",
       "images": [
         "https://images.craigslist.org/00W0W_kG8iSepXJjO_0jm0CI_600x450.jpg",
         "https://images.craigslist.org/00W0W_kG8iSepXJjO_0jm0CI_50x50c.jpg",
@@ -893,7 +848,7 @@
       "targetArea": true,
       "active": true,
       "postedOrUpdatedAt": "2026-09-14T20:48:30.000Z",
-      "checkedAt": "2026-09-16T17:10:01.680Z",
+      "checkedAt": "2026-09-16T21:28:19.906Z",
       "images": [
         "https://images.craigslist.org/00p0p_1XnMnR4kdZ9_0oN0gv_600x450.jpg",
         "https://images.craigslist.org/00p0p_1XnMnR4kdZ9_0oN0gv_50x50c.jpg",
@@ -935,7 +890,7 @@
       "targetArea": true,
       "active": true,
       "postedOrUpdatedAt": "2026-09-15T03:21:47.000Z",
-      "checkedAt": "2026-09-16T17:10:01.680Z",
+      "checkedAt": "2026-09-16T21:28:19.906Z",
       "images": [
         "https://images.craigslist.org/00y0y_9QoxDSNE4uG_0pO0jm_600x450.jpg",
         "https://images.craigslist.org/00y0y_9QoxDSNE4uG_0pO0jm_50x50c.jpg",
@@ -980,7 +935,7 @@
       "targetArea": true,
       "active": true,
       "postedOrUpdatedAt": "2026-09-08T20:12:58.000Z",
-      "checkedAt": "2026-09-16T17:10:01.680Z",
+      "checkedAt": "2026-09-16T21:28:19.906Z",
       "images": [
         "https://images.craigslist.org/00E0E_e5n8yh4XnBK_0CI0pP_600x450.jpg",
         "https://images.craigslist.org/00E0E_e5n8yh4XnBK_0CI0pP_50x50c.jpg",
@@ -1025,7 +980,7 @@
       "targetArea": true,
       "active": true,
       "postedOrUpdatedAt": "2026-09-16T05:07:08.000Z",
-      "checkedAt": "2026-09-16T17:10:01.680Z",
+      "checkedAt": "2026-09-16T21:28:19.906Z",
       "images": [
         "https://images.craigslist.org/00R0R_XV0jcKDQvv_0aT07g_600x450.jpg",
         "https://images.craigslist.org/00R0R_XV0jcKDQvv_0aT07g_50x50c.jpg",
@@ -1070,7 +1025,7 @@
       "targetArea": true,
       "active": true,
       "postedOrUpdatedAt": "2026-09-10T21:54:42.000Z",
-      "checkedAt": "2026-09-16T17:10:01.680Z",
+      "checkedAt": "2026-09-16T21:28:19.906Z",
       "images": [
         "https://images.craigslist.org/00E0E_bgxsuXxAQe9_0CI0t2_600x450.jpg",
         "https://images.craigslist.org/00E0E_bgxsuXxAQe9_0CI0t2_50x50c.jpg",
@@ -1112,7 +1067,7 @@
       "targetArea": true,
       "active": true,
       "postedOrUpdatedAt": "2026-09-01T01:29:50.000Z",
-      "checkedAt": "2026-09-16T17:10:01.680Z",
+      "checkedAt": "2026-09-16T21:28:19.906Z",
       "images": [
         "https://images.craigslist.org/00505_fc07bV1J49b_0CI0t2_600x450.jpg",
         "https://images.craigslist.org/00505_fc07bV1J49b_0CI0t2_50x50c.jpg",
@@ -1157,7 +1112,7 @@
       "targetArea": true,
       "active": true,
       "postedOrUpdatedAt": "2026-09-01T01:29:50.000Z",
-      "checkedAt": "2026-09-16T17:10:01.680Z",
+      "checkedAt": "2026-09-16T21:28:19.906Z",
       "images": [
         "https://images.craigslist.org/00505_fc07bV1J49b_0CI0t2_600x450.jpg",
         "https://images.craigslist.org/00505_fc07bV1J49b_0CI0t2_50x50c.jpg",
@@ -1201,7 +1156,7 @@
       "targetArea": true,
       "active": true,
       "postedOrUpdatedAt": "2026-09-16T05:07:22.000Z",
-      "checkedAt": "2026-09-16T17:10:01.680Z",
+      "checkedAt": "2026-09-16T21:28:19.906Z",
       "images": [
         "https://images.craigslist.org/00101_8Lj1RrRW6kM_0gw0b1_600x450.jpg",
         "https://images.craigslist.org/00101_8Lj1RrRW6kM_0gw0b1_50x50c.jpg",
@@ -1246,7 +1201,7 @@
       "targetArea": true,
       "active": true,
       "postedOrUpdatedAt": "2026-09-16T10:45:24.000Z",
-      "checkedAt": "2026-09-16T17:10:01.680Z",
+      "checkedAt": "2026-09-16T21:28:19.906Z",
       "images": [
         "https://images.craigslist.org/00g0g_4rGVb0GDyC7_0pO0hd_600x450.jpg",
         "https://images.craigslist.org/00g0g_4rGVb0GDyC7_0pO0hd_50x50c.jpg",
@@ -1291,7 +1246,7 @@
       "targetArea": true,
       "active": true,
       "postedOrUpdatedAt": "2026-09-14T23:07:29.000Z",
-      "checkedAt": "2026-09-16T17:10:01.680Z",
+      "checkedAt": "2026-09-16T21:28:19.906Z",
       "images": [
         "https://images.craigslist.org/00Y0Y_k3PKmKJZ2y9_0uY0kE_600x450.jpg",
         "https://images.craigslist.org/00Y0Y_k3PKmKJZ2y9_0uY0kE_50x50c.jpg",
@@ -1336,7 +1291,7 @@
       "targetArea": true,
       "active": true,
       "postedOrUpdatedAt": "2026-09-15T21:17:55.000Z",
-      "checkedAt": "2026-09-16T17:10:01.680Z",
+      "checkedAt": "2026-09-16T21:28:19.906Z",
       "images": [
         "https://images.craigslist.org/00404_cuCXJxUPcyv_0ak074_600x450.jpg",
         "https://images.craigslist.org/00404_cuCXJxUPcyv_0ak074_50x50c.jpg",
@@ -1379,7 +1334,7 @@
       "targetArea": true,
       "active": true,
       "postedOrUpdatedAt": "2026-09-15T18:02:22.000Z",
-      "checkedAt": "2026-09-16T17:10:01.680Z",
+      "checkedAt": "2026-09-16T21:28:19.906Z",
       "images": [
         "https://images.craigslist.org/00l0l_gDgjaXlRlPe_0A30t2_600x450.jpg",
         "https://images.craigslist.org/00l0l_gDgjaXlRlPe_0A30t2_50x50c.jpg",
@@ -1424,7 +1379,7 @@
       "targetArea": true,
       "active": true,
       "postedOrUpdatedAt": "2026-09-15T18:01:50.000Z",
-      "checkedAt": "2026-09-16T17:10:01.680Z",
+      "checkedAt": "2026-09-16T21:28:19.906Z",
       "images": [
         "https://images.craigslist.org/00l0l_gDgjaXlRlPe_0A30t2_600x450.jpg",
         "https://images.craigslist.org/00l0l_gDgjaXlRlPe_0A30t2_50x50c.jpg",
@@ -1469,7 +1424,7 @@
       "targetArea": true,
       "active": true,
       "postedOrUpdatedAt": "2026-09-15T04:45:10.000Z",
-      "checkedAt": "2026-09-16T17:10:01.680Z",
+      "checkedAt": "2026-09-16T21:28:19.906Z",
       "images": [
         "https://images.craigslist.org/00b0b_fJ1dKmYpeL7_1320MM_600x450.jpg",
         "https://images.craigslist.org/00b0b_fJ1dKmYpeL7_1320MM_50x50c.jpg",
@@ -1514,7 +1469,7 @@
       "targetArea": true,
       "active": true,
       "postedOrUpdatedAt": "2026-09-07T04:35:34.000Z",
-      "checkedAt": "2026-09-16T17:10:01.680Z",
+      "checkedAt": "2026-09-16T21:28:19.906Z",
       "images": [
         "https://images.craigslist.org/00p0p_aYFyAMBvlUw_0CI0t2_600x450.jpg",
         "https://images.craigslist.org/00p0p_aYFyAMBvlUw_0CI0t2_50x50c.jpg",
@@ -1559,7 +1514,7 @@
       "targetArea": true,
       "active": true,
       "postedOrUpdatedAt": "2026-09-16T05:11:15.000Z",
-      "checkedAt": "2026-09-16T17:10:01.680Z",
+      "checkedAt": "2026-09-16T21:28:19.906Z",
       "images": [
         "https://images.craigslist.org/00R0R_5D6x8JG8rRh_0gw0t2_600x450.jpg",
         "https://images.craigslist.org/00R0R_5D6x8JG8rRh_0gw0t2_50x50c.jpg",
@@ -1604,7 +1559,7 @@
       "targetArea": true,
       "active": true,
       "postedOrUpdatedAt": "2026-09-12T21:11:47.000Z",
-      "checkedAt": "2026-09-16T17:10:01.680Z",
+      "checkedAt": "2026-09-16T21:28:19.906Z",
       "images": [
         "https://images.craigslist.org/00d0d_1HidEZAzuOu_0CI0t2_600x450.jpg",
         "https://images.craigslist.org/00d0d_1HidEZAzuOu_0CI0t2_50x50c.jpg",

@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-09-16T17:12:29.237Z",
-  "activeCount": 23,
+  "generatedAt": "2026-09-16T21:30:37.596Z",
+  "activeCount": 25,
   "decisionReady": true,
   "readinessStatus": "finalized",
   "highIssueCount": 0,
   "mediumIssueCount": 0,
-  "infoIssueCount": 42,
+  "infoIssueCount": 45,
   "issues": [
     {
       "severity": "info",
@@ -80,6 +80,11 @@
     {
       "severity": "info",
       "id": "zumper-75ff287e7a72",
+      "issue": "unknown-orientation"
+    },
+    {
+      "severity": "info",
+      "id": "arbutus-residences-floorplan-2-bedroom-townhouse-den-1340",
       "issue": "unknown-orientation"
     },
     {
@@ -216,13 +221,23 @@
       "severity": "info",
       "id": "mls-r3164604",
       "issue": "unknown-orientation"
+    },
+    {
+      "severity": "info",
+      "id": "mls-r3166264",
+      "issue": "unknown-ac"
+    },
+    {
+      "severity": "info",
+      "id": "mls-r3166264",
+      "issue": "unknown-orientation"
     }
   ],
   "readinessChecks": {
     "smokeOk": true,
     "smokeFresh": true,
-    "smokeCheckedAt": "2026-09-16T17:12:34.932Z",
-    "latestDataAt": "2026-09-16T17:11:41.294Z",
+    "smokeCheckedAt": "2026-09-16T21:30:43.029Z",
+    "latestDataAt": "2026-09-16T21:29:48.623Z",
     "coverageReady": true,
     "healthyDiscoveryLanes": 3,
     "coverageWarnings": [
@@ -230,7 +245,7 @@
         "severity": "warning",
         "lane": "rentalsca",
         "status": "degraded",
-        "detail": "5/9 regional searches reachable; 0 qualifying candidates parsed; 18 scoped search-only leads retained (17 new, 1 already active, 0 need revalidation); 3 detail pages blocked after 85 discovered URLs; 82 further detail checks suppressed after repeated 403/429"
+        "detail": "4/9 regional searches reachable; 0 qualifying candidates parsed; 3 scoped search-only leads retained (2 new, 1 already active, 0 need revalidation); 3 detail pages blocked after 26 discovered URLs; 22 further detail checks suppressed after repeated 403/429"
       },
       {
         "severity": "warning",
@@ -253,5 +268,5 @@
     ]
   },
   "readinessIssues": [],
-  "finalizedAt": "2026-09-16T17:12:35.031Z"
+  "finalizedAt": "2026-09-16T21:30:43.114Z"
 }
