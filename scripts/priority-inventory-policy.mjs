@@ -3,7 +3,9 @@ import { bedroomEligible, rentEligible } from './discovery-policy.mjs';
 export function priorityInventoryEvidenceHealthy(evidence = {}, expectedPattern, now = Date.now(), maxAgeHours = 12, expectedUrlPattern = null) {
   const checkedAt = new Date(evidence.checkedAt || 0).getTime();
   const evidenceUrl = String(evidence.source?.url || evidence.finalUrl || '');
-  return evidence.ok === true && Number.isFinite(checkedAt) && now - checkedAt <= maxAgeHours * 3600000 &&
+  const status = Number(evidence.status);
+  return evidence.ok === true && Number.isFinite(status) && status >= 200 && status < 400 &&
+    Number.isFinite(checkedAt) && now - checkedAt <= maxAgeHours * 3600000 &&
     expectedPattern.test(String(evidence.bodyText || '')) && (!expectedUrlPattern || expectedUrlPattern.test(evidenceUrl));
 }
 

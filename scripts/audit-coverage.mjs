@@ -20,6 +20,7 @@ const officialStatus=await read(path.join(DATA,'official-status.json'),{projects
 const listings=await read(path.join(DATA,'listings.json'),{listings:[]});
 const kitsWalkAggregate=await read(path.join(DATA,'evidence','source-kits-walk-rentalsca.json'),{});
 const kitsWalkOfficial=await read(path.join(DATA,'evidence','source-kits-walk-official.json'),{});
+const kitsWalkZumper=await read(path.join(DATA,'evidence','source-kits-walk-zumper.json'),{});
 const larchwayOfficial=await read(path.join(DATA,'evidence','source-larchway-official.json'),{});
 const viridianOfficial=await read(path.join(DATA,'evidence','source-viridian-official.json'),{});
 
@@ -57,13 +58,17 @@ const freshLanes=lanes.filter(x=>fresh(x.refreshedAt));
 // separate so removals stay fail-closed without disabling useful inventory.
 const healthyDiscovery=discoveryLanes.filter(x=>(x.healthy||x.positiveDiscoveryHealthy)&&fresh(x.refreshedAt));
 const priorityHealthy=priorityLanes.every(x=>x.healthy&&fresh(x.refreshedAt));
+const kitsWalkInventoryEvidence=[
+  {evidence:kitsWalkOfficial,urlPattern:/kitswalkleasing\.com\/floorplans/i},
+  {evidence:kitsWalkZumper,urlPattern:/zumper\.com\/apartment-buildings\/p\d+\/kits-walk-by-strand-/i}
+];
 const priorityInventorySources=[
-  {building:'kits-walk',evidence:kitsWalkOfficial,semantic:/kits walk|2075 west 12th|floor plans/i,urlPattern:/kitswalkleasing\.com\/floorplans/i},
+  {building:'kits-walk',evidence:kitsWalkInventoryEvidence.find(({evidence,urlPattern})=>priorityInventoryEvidenceHealthy(evidence,/kits walk|2075 (?:west |w )?12th/i,now,12,urlPattern))?.evidence||kitsWalkOfficial,semantic:/kits walk|2075 (?:west |w )?12th/i,urlPattern:null,alternateCount:kitsWalkInventoryEvidence.length},
   {building:'larchway-gardens',evidence:larchwayOfficial,semantic:/larchway gardens|2475 west broadway/i,urlPattern:/quadrealresidential\.com\/vancouver\/larchway-gardens\/floorplans\/?/i},
   {building:'viridian',evidence:viridianOfficial,semantic:/viridian|1783 west 14th/i,urlPattern:/rentcafe\.com\/apartments\/bc\/vancouver\/viridian1\/default\.aspx/i}
-].map(({building,evidence,semantic,urlPattern})=>{
+].map(({building,evidence,semantic,urlPattern,alternateCount=1})=>{
   const healthy=priorityInventoryEvidenceHealthy(evidence,semantic,now,12,urlPattern);
-  return {building,healthy,checkedAt:evidence.checkedAt||null,evidenceUrl:evidence.source?.url||evidence.finalUrl||null};
+  return {building,healthy,checkedAt:evidence.checkedAt||null,evidenceUrl:evidence.source?.url||evidence.finalUrl||null,sourceOptions:alternateCount};
 });
 const priorityInventoryReady=priorityInventorySources.every(x=>x.healthy);
 const healthy=lanes.filter(x=>x.healthy&&fresh(x.refreshedAt));

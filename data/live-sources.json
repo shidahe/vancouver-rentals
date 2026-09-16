@@ -28,6 +28,7 @@
 
     {"id":"rentfaster-vancouver","name":"RentFaster Vancouver","url":"https://www.rentfaster.ca/bc/vancouver/rentals/","kind":"marketplace","adapter":"generic-search"},
     {"id":"kits-walk-official","name":"Kits Walk official availability","url":"https://www.kitswalkleasing.com/floorplans","kind":"official","adapter":"official-floorplans"},
+    {"id":"kits-walk-zumper","name":"Kits Walk exact-building fallback","url":"https://www.zumper.com/apartment-buildings/p481389/kits-walk-by-strand-kitsilano-vancouver-bc","kind":"marketplace","adapter":"official-floorplans"},
     {"id":"kits-walk-rentalsca","name":"Kits Walk Rentals.ca aggregate inventory","url":"https://rentals.ca/vancouver/kits-walk-by-strand","kind":"marketplace","adapter":"official-floorplans"},
     {"id":"larchway-official","name":"Larchway Gardens official availability","url":"https://quadrealresidential.com/vancouver/larchway-gardens/floorplans/","kind":"official","adapter":"official-floorplans"},
     {"id":"viridian-official","name":"Viridian official availability","url":"https://www.rentcafe.com/apartments/bc/vancouver/viridian1/default.aspx","kind":"property_manager","adapter":"official-floorplans"},
@@ -37,6 +38,10 @@
     {"id":"19-greenway-official","name":"19 on the Greenway official","url":"https://www.19otgreenway.com/floorplans","kind":"official","adapter":"official-floorplans"}
   ],
   "seedCandidates": [
+    {
+      "id":"craigslist-yorkville-north-2br-den-979","listingId":"yorkville-north-2br-den-979","source":"Craigslist / Zumper","url":"https://www.craigslist.org/view/d/vancouver-ocean-view-2br-2ba-with-den/kZEyBrAFDhJYBcmtaq27m2","buildingName":"Yorkville North","unit":"2BR+Den · 979 sqft","address":"1888 York Avenue, Vancouver, BC V6J 5A7","neighborhood":"Kitsilano","type":"purpose-built","expectedBeds":2,"autoPublish":true,
+      "hints":{"bedrooms":2,"bathrooms":2,"sqft":979,"parking":true,"petFriendly":true,"balcony":true,"largeWindows":true}
+    },
     {
       "id":"craigslist-tennyson-mews-b6","listingId":"tennyson-mews-b6","source":"Craigslist / Zumper","url":"https://www.craigslist.org/view/d/vancouver-spacious-bedroom-bathroom/uWMbQgQXpdxGrrD5NEfX4J","buildingName":"Tennyson Mews","unit":"B6","address":"1855 W 10th Ave, Vancouver, BC V6J 2A8","neighborhood":"Kitsilano","type":"townhouse","expectedBeds":2,"autoPublish":true,
       "hints":{"bedrooms":2,"bathrooms":2,"sqft":1189,"parking":true,"petFriendly":true,"balcony":true,"largeWindows":true}

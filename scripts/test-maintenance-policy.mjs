@@ -76,10 +76,11 @@ if (softNegativeDisposition(true, {}, Date.parse('2026-09-13T18:00:00Z')) !== 'h
 }
 if(parseRealtylinkAirConditioning('Forced-air heating')!==null||parseRealtylinkAirConditioning('Cooling Features\nAir Conditioning')!==true||parseRealtylinkAirConditioning('No air conditioning')!==false)failures.push('Realtylink AC omission is still being misreported as confirmed no AC.');
 const inventoryNow=Date.parse('2026-09-13T00:00:00Z');
-if(!priorityInventoryEvidenceHealthy({ok:true,checkedAt:'2026-09-12T23:00:00Z',bodyText:'Kits Walk Floor Plans',source:{url:'https://www.kitswalkleasing.com/floorplans'}},/kits walk/i,inventoryNow,12,/kitswalkleasing\.com\/floorplans/i)||
-   priorityInventoryEvidenceHealthy({ok:true,checkedAt:'2026-09-12T23:00:00Z',bodyText:'Larchway Gardens 2475 West Broadway',source:{url:'https://quadrealresidential.com/vancouver/larchway-gardens/contact/'}},/larchway gardens/i,inventoryNow,12,/larchway-gardens\/floorplans/i)||
-   priorityInventoryEvidenceHealthy({ok:true,checkedAt:'2026-09-12T00:00:00Z',bodyText:'Kits Walk Floor Plans'},/kits walk/i,inventoryNow)||
-   priorityInventoryEvidenceHealthy({ok:true,checkedAt:'2026-09-12T23:00:00Z',bodyText:'generic leasing page'},/kits walk/i,inventoryNow)||
+if(!priorityInventoryEvidenceHealthy({ok:true,status:200,checkedAt:'2026-09-12T23:00:00Z',bodyText:'Kits Walk Floor Plans',source:{url:'https://www.kitswalkleasing.com/floorplans'}},/kits walk/i,inventoryNow,12,/kitswalkleasing\.com\/floorplans/i)||
+   priorityInventoryEvidenceHealthy({ok:true,status:403,checkedAt:'2026-09-12T23:00:00Z',bodyText:'Kits Walk Floor Plans',source:{url:'https://www.kitswalkleasing.com/floorplans'}},/kits walk/i,inventoryNow,12,/kitswalkleasing\.com\/floorplans/i)||
+   priorityInventoryEvidenceHealthy({ok:true,status:200,checkedAt:'2026-09-12T23:00:00Z',bodyText:'Larchway Gardens 2475 West Broadway',source:{url:'https://quadrealresidential.com/vancouver/larchway-gardens/contact/'}},/larchway gardens/i,inventoryNow,12,/larchway-gardens\/floorplans/i)||
+   priorityInventoryEvidenceHealthy({ok:true,status:200,checkedAt:'2026-09-12T00:00:00Z',bodyText:'Kits Walk Floor Plans'},/kits walk/i,inventoryNow)||
+   priorityInventoryEvidenceHealthy({ok:true,status:200,checkedAt:'2026-09-12T23:00:00Z',bodyText:'generic leasing page'},/kits walk/i,inventoryNow)||
    !coverageSource.includes('priority-building-inventory-source-unhealthy')) failures.push('Priority coverage can pass without fresh semantically valid inventory-page evidence.');
 const rentalscaSearchLeads=parseRentalsCaSearchLeads('$3,600 – $3,650\n2 Bed\n2 Bath\n2075 W 12th Avenue, Vancouver, BC\n$2,195 – $3,455\n0–2 Bed\n1 Bath\n1370 Senakw Lane, Vancouver, BC');
 if(rentalscaSearchLeads.length!==2||rentalscaSearchLeads[0].rentMin!==3600||rentalscaSearchLeads[0].rentMax!==3650||rentalscaSearchLeads[0].bedroomMin!==2||rentalscaSearchLeads[0].bedroomMax!==2||rentalscaSearchLeads[0].bathrooms!==2||rentalscaSearchLeads[1].bedroomMin!==0||rentalscaSearchLeads[1].bedroomMax!==2)failures.push('Rentals.ca visible search-result rent/bed/bath/address leads do not parse safely.');
@@ -241,6 +242,13 @@ if(!source.includes('const isRealtylink = /realtylink\\.org/i')||!source.include
 const tennysonMewsB6 = catalog.seedCandidates?.find(x => x.id === 'craigslist-tennyson-mews-b6');
 if (!tennysonMewsB6 || tennysonMewsB6.listingId !== 'tennyson-mews-b6' || tennysonMewsB6.unit !== 'B6' || tennysonMewsB6.address !== '1855 W 10th Ave, Vancouver, BC V6J 2A8' || tennysonMewsB6.expectedBeds !== 2 || !tennysonMewsB6.autoPublish || !/\/vancouver-spacious-bedroom-bathroom\/uWMbQgQXpdxGrrD5NEfX4J$/.test(tennysonMewsB6.url) || tennysonMewsB6.hints?.bathrooms !== 2 || tennysonMewsB6.hints?.sqft !== 1189) {
   failures.push('New Tennyson Mews B6 exact-unit discovery is missing or its strict publication identity was weakened.');
+}
+const yorkvilleNorth = catalog.seedCandidates?.find(x => x.id === 'craigslist-yorkville-north-2br-den-979');
+if (!yorkvilleNorth || yorkvilleNorth.listingId !== 'yorkville-north-2br-den-979' || yorkvilleNorth.unit !== '2BR+Den · 979 sqft' || yorkvilleNorth.address !== '1888 York Avenue, Vancouver, BC V6J 5A7' || yorkvilleNorth.expectedBeds !== 2 || !yorkvilleNorth.autoPublish || yorkvilleNorth.hints?.bathrooms !== 2 || yorkvilleNorth.hints?.sqft !== 979) {
+  failures.push('New Yorkville North 2BR+den floorplan discovery is missing or its strict publication identity was weakened.');
+}
+if (findExistingSeedListing([{ id: 'other-yorkville-floorplan', address: yorkvilleNorth?.address, unit: '2BR · 850 sqft' }], yorkvilleNorth) !== null) {
+  failures.push('Yorkville North 979 sqft floorplan can be incorrectly merged into another floorplan at the same address.');
 }
 if (findExistingSeedListing([{ id: 'other-1855-floorplan', address: tennysonMewsB6?.address, unit: null }], tennysonMewsB6) !== null) {
   failures.push('Tennyson Mews B6 can be incorrectly merged into an address-level placeholder.');
