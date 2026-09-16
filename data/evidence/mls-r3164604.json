@@ -1,55 +1,446 @@
 {
-  "checkedAt": "2026-09-16T15:13:12.268Z",
+  "checkedAt": "2026-09-16T17:02:42.805Z",
   "listingId": "mls-r3164604",
   "sourceUrl": "https://realtylink.org/en/apartment~for-rent~vancouver/263186231",
-  "finalUrl": "https://realtylink.org/en/apartment~for-rent~vancouver/263186231",
   "ok": true,
   "status": 200,
-  "identityMatch": true,
-  "explicitPositive": true,
-  "explicitNegative": false,
-  "extractedRent": 5495,
+  "finalUrl": "https://realtylink.org/en/apartment~for-rent~vancouver/263186231",
+  "title": "Apartment for rent in Vancouver, Vancouver West, 2680 W 4th Avenue, 263186231 | Realtylink.org",
   "bodyText": "Search\nBuy\nSell\nMy REALTOR®\nMarket Tools\nLog in\nApartment for rent\n2680 W 4th Avenue, Kitsilano, Vancouver\nGoogle Maps\nStreet View\n$5,495\n/month\n25\nFeatures\n?\nLifestyle\n 2 bedrooms\n 2 bathrooms\nFloor Area\n1,012 sqft\nParking Spaces\n1\nDescription\nImmerse yourself in the modern elegance of this furnished two-bedroom, two-bathroom condo, spanning 1,012 square feet of beautifully appointed living space in the desirable Kitsilano neighborhood of Vancouver. The home features a dedicated office area, perfect for today's remote professionals and students seeking a quiet corner to focus and achieve. The 'May Be Considered' pet policy adds to the appeal, potentially welcoming your furry companions into this stylish space. Located in a dynamic area, the residence is a stone's throw away from an array of dining experiences, chic boutiques, engaging recreational spots, and the serene beaches that define the Kitsilano lifestyle.\nMLS® No.  R3164604\nLocation\nWalk Score\n95\nIn accordance with our Terms of Use, location data are provided to you “as-is”, without warranty. Any liability arising from location data is expressly excluded.\nListing REALTOR®\nMichelle Blanchard\nREALTOR®\nRent It Furnished Realty\nContact REALTOR®\nShowing with the Listing REALTOR®\n\nBook an appointment with the listing REALTOR® to tour the property at your own pace, in person.\n\nRequest a showing\nCalculators\nMortgage payments\nPrice of property\n$\nDown payment\n$\n%\nMortgage amount\n$0.00\nInterest rate\n%\nAmortization\nyears\nPayment frequency\nMonthly\nCalculate\nPayment amount\n$0.00\nSee monthly payment chart\nProperty transfer tax\nFair Market Value\n$\nCalculate\n1% of $200,000\n$0.00\n2% of remaining value up to and including $2,000,000\n$0.00\n3% of remaining portion over $2,000,000\n$0.00\nEstimated Property Transfer Tax\n$0.00\nBorrowing capacity\nPayment amount\n$\nPayment frequency\nMonthly\nInterest rate\n%\nAmortization\nyears\nCalculate\nMortgage amount\n$0.00\nThe amounts shown above are for information purposes only and do not include taxes, if applicable.\nYou must purchase mortgage default insurance if your down payment is less than 20 per cent of the purchase price of the property.\nThis calculator doesn't calculate the further 2% tax on residential property greater than $3,000,000 or the additional property transfer tax on residential property transfers to foreign entities or taxable trustees. Learn more about property transfer tax.\nThere are additional costs to buying a home. Speak with your REALTOR® for more information.\nDISCOVER REALTYLINK.ORG\n\nRealtylink.org is a property search website hosted by REALTORS® at Greater Vancouver REALTORS®, Fraser Valley Real Estate Board, Vancouver Island Real Estate Board, BC Northern Real Estate Board, and Chilliwack and District Real Estate Board.\n\nDiscover Realtylink.org\nWORKING WITH A REALTOR®\n\nWhether you’re buying or selling a home, it’s important to understand from the outset how professional representation can help you at every step of the process.\n\nHow Realtors help\nCONTACT REALTYLINK.ORG\n\nDo you have any questions or comments for us?\n\nContact Realtylink.org\nView regions\n\n\n\nThe trademarks REALTOR®, REALTORS®, and the REALTOR® logo are controlled by The Canadian Real Estate Association (CREA) and identify real estate professionals who are members of CREA. The trademarks MLS®, Multiple Listing Service® and the associated logos are owned by CREA and identify the quality of services provided by real estate professionals who are members of CREA.\n\n© Centris 2026. All rights reserved.\nSite privacy policy and terms of use",
+  "links": [
+    {
+      "href": "https://realtylink.org/en",
+      "text": ""
+    },
+    {
+      "href": "https://realtylink.org/en/properties~for-sale?q=H4sIAAAAAAAACk2MsQ6DMAxE_8UzA3NXhqqq1KFULIjBJReIaghKoBVC_HuNYGDzu7vnhTqJdKGUEnoH_0HIvIEGyt5aV-OOeccp4grfBB7aOW95gHppQnE7C4efYlkpg0PdPrg7vlgnI8JRWgcxsWCZNrtc9uBmdJrxiMaHWZXv1mv0RHQG_ehYaE3O4xwirm9e84DTPmcBrdX6B0Br93fVAAAA&v=2",
+      "text": "Search"
+    },
+    {
+      "href": "https://realtylink.org/en/buy",
+      "text": "Buy"
+    },
+    {
+      "href": "https://realtylink.org/en/properties~for-sale",
+      "text": "Find a home"
+    },
+    {
+      "href": "https://realtylink.org/en/find-homes-by-neighbourhood",
+      "text": "Find homes by neighbourhood"
+    },
+    {
+      "href": "https://realtylink.org/en/buy/steps-to-buying-a-home",
+      "text": "Steps to buying a home"
+    },
+    {
+      "href": "https://realtylink.org/en/buy/buying-costs",
+      "text": "Home buying costs"
+    },
+    {
+      "href": "https://realtylink.org/en/commercial-properties~for-sale",
+      "text": "Find a commercial property"
+    },
+    {
+      "href": "https://realtylink.org/en/sell",
+      "text": "Sell"
+    },
+    {
+      "href": "https://realtylink.org/en/sell/steps-to-sell",
+      "text": "Steps to sell a home"
+    },
+    {
+      "href": "https://realtylink.org/en/sell/prepping-your-home",
+      "text": "Prepping your home"
+    },
+    {
+      "href": "https://realtylink.org/en/sell/selling-costs",
+      "text": "Home selling costs"
+    },
+    {
+      "href": "https://realtylink.org/en/my-realtor",
+      "text": "My REALTOR®"
+    },
+    {
+      "href": "https://realtylink.org/en/realtors",
+      "text": "Find a REALTOR®"
+    },
+    {
+      "href": "https://realtylink.org/en/my-realtor/how-realtors-help",
+      "text": "How REALTORS® help"
+    },
+    {
+      "href": "https://realtylink.org/en/my-realtor/ten-steps-to-help-you-find-the-right-realtor",
+      "text": "Ten steps to help you find the right REALTOR®"
+    },
+    {
+      "href": "https://realtylink.org/en/my-realtor/commercial-realtor",
+      "text": "Working with a commercial REALTOR®"
+    },
+    {
+      "href": "https://realtylink.org/en/market-tools",
+      "text": "Market Tools"
+    },
+    {
+      "href": "https://realtylink.org/en/news",
+      "text": "Real estate news"
+    },
+    {
+      "href": "https://realtylink.org/en/market-tools/mortgagecalculator",
+      "text": "Mortgage calculator"
+    },
+    {
+      "href": "https://realtylink.org/en/market-tools/statistics",
+      "text": "Market stats"
+    },
+    {
+      "href": "",
+      "text": "British Columbia"
+    },
+    {
+      "href": "https://realtylink.org/redirect/tenant/qc",
+      "text": "Québec"
+    },
+    {
+      "href": "https://realtylink.org/en/login",
+      "text": "Log in"
+    },
+    {
+      "href": "https://www.locallogic.co/en",
+      "text": ""
+    },
+    {
+      "href": "https://maps.google.ca/maps?z=15&hl=en&q=49.26815,-123.16575",
+      "text": "Google Maps"
+    },
+    {
+      "href": "https://maps.google.com/maps?q=49.26815,-123.16575&layer=c&cbll=49.26815,-123.16575&cbp=12,173.33,,0,5&iframe=true&width=950&height=490&hl=en",
+      "text": "Street View"
+    },
+    {
+      "href": "",
+      "text": "Facebook"
+    },
+    {
+      "href": "",
+      "text": "LinkedIn"
+    },
+    {
+      "href": "",
+      "text": "X"
+    },
+    {
+      "href": "",
+      "text": "Pinterest"
+    },
+    {
+      "href": "",
+      "text": "Email"
+    },
+    {
+      "href": "",
+      "text": "Copy link"
+    },
+    {
+      "href": "https://realtylink.org/en/print/property/263186231",
+      "text": "Print"
+    },
+    {
+      "href": "https://realtylink.org/en/terms-use-privacy-policy?tab=PrivacyPolicy",
+      "text": "Realtylink’ Privacy Policy"
+    },
+    {
+      "href": "",
+      "text": ""
+    },
+    {
+      "href": "",
+      "text": ""
+    },
+    {
+      "href": "https://realtylink.org/en/contact-broker/p61845/property/263186231",
+      "text": "Contact"
+    },
+    {
+      "href": "https://realtylink.org/",
+      "text": ""
+    },
+    {
+      "href": "https://realtylink.org/",
+      "text": ""
+    },
+    {
+      "href": "https://realtylink.org/",
+      "text": ""
+    },
+    {
+      "href": "https://realtylink.org/",
+      "text": ""
+    },
+    {
+      "href": "https://realtylink.org/",
+      "text": ""
+    },
+    {
+      "href": "https://realtylink.org/en/contact-broker/p61845/property/263186231/showing",
+      "text": "Request a showing"
+    },
+    {
+      "href": "https://realtylink.org/en/contact-broker/p61845/property/263186231/showing",
+      "text": "Request a showing"
+    },
+    {
+      "href": "https://www.walkscore.com/score/2680-w-4th-avenue-vancouver/lat=49.26815/lng=-123.16575/?utm_source=realtylink.org&utm_medium=ws_api&utm_campaign=ws_api",
+      "text": "Walk Score\n95"
+    },
+    {
+      "href": "https://realtylink.org/en/terms-use-privacy-policy",
+      "text": "Terms of Use"
+    },
+    {
+      "href": "https://realtylink.org/en/realtor~michelle-blanchard~rent-it-furnished-realty/p61845",
+      "text": ""
+    },
+    {
+      "href": "https://realtylink.org/en/contact-broker/p61845/property/263186231",
+      "text": ""
+    },
+    {
+      "href": "tel:7789809000",
+      "text": ""
+    },
+    {
+      "href": "https://www.rentitfurnished.com/",
+      "text": ""
+    },
+    {
+      "href": "https://realtylink.org/en/contact-broker/p61845/property/263186231",
+      "text": "Contact REALTOR®"
+    },
+    {
+      "href": "https://realtylink.org/en/contact-broker/p61845/property/263186231/showing",
+      "text": "Request a showing"
+    },
+    {
+      "href": "",
+      "text": "Mortgage payments"
+    },
+    {
+      "href": "",
+      "text": "Property transfer tax"
+    },
+    {
+      "href": "",
+      "text": "Borrowing capacity"
+    },
+    {
+      "href": "https://www.cmhc-schl.gc.ca/en/buying/mortgage-loan-insurance-for-consumers/what-is-mortgage-loan-insurance",
+      "text": "mortgage default insurance"
+    },
+    {
+      "href": "https://www2.gov.bc.ca/gov/content/taxes/property-taxes/property-transfer-tax",
+      "text": "Learn more"
+    },
+    {
+      "href": "https://realtylink.org/en/buy/buying-costs",
+      "text": "additional costs"
+    },
+    {
+      "href": "https://realtylink.org/#main",
+      "text": "Back top"
+    },
+    {
+      "href": "https://realtylink.org/en/about",
+      "text": "DISCOVER REALTYLINK.ORG"
+    },
+    {
+      "href": "https://realtylink.org/en/about",
+      "text": "Discover Realtylink.org"
+    },
+    {
+      "href": "https://realtylink.org/en/my-realtor/how-realtors-help",
+      "text": "WORKING WITH A REALTOR®"
+    },
+    {
+      "href": "https://realtylink.org/en/my-realtor/how-realtors-help",
+      "text": "How Realtors help"
+    },
+    {
+      "href": "https://realtylink.org/en/contact-realtylink",
+      "text": "CONTACT REALTYLINK.ORG"
+    },
+    {
+      "href": "https://realtylink.org/en/contact-realtylink",
+      "text": "Contact Realtylink.org"
+    },
+    {
+      "href": "https://www.facebook.com/officialgvrealtors/",
+      "text": ""
+    },
+    {
+      "href": "https://x.com/gvrealtors",
+      "text": ""
+    },
+    {
+      "href": "https://www.youtube.com/@GreaterVancouverREALTORS",
+      "text": ""
+    },
+    {
+      "href": "https://www.instagram.com/greatervancouverrealtors/",
+      "text": ""
+    },
+    {
+      "href": "https://realtylink.org/en/properties~for-sale~bowen-island",
+      "text": "Bowen Island"
+    },
+    {
+      "href": "https://realtylink.org/en/properties~for-sale~burnaby",
+      "text": "Burnaby"
+    },
+    {
+      "href": "https://realtylink.org/en/properties~for-sale~burnaby-east",
+      "text": "Burnaby East"
+    },
+    {
+      "href": "https://realtylink.org/en/properties~for-sale~burnaby-north",
+      "text": "Burnaby North"
+    },
+    {
+      "href": "https://realtylink.org/en/properties~for-sale~burnaby-South",
+      "text": "Burnaby South"
+    },
+    {
+      "href": "https://realtylink.org/en/properties~for-sale~coquitlam",
+      "text": "Coquitlam"
+    },
+    {
+      "href": "https://realtylink.org/en/properties~for-sale~maple-ridge",
+      "text": "Maple Ridge"
+    },
+    {
+      "href": "https://realtylink.org/en/properties~for-sale~vancouver",
+      "text": "Vancouver"
+    },
+    {
+      "href": "https://realtylink.org/en/properties~for-sale~ladner",
+      "text": "Ladner"
+    },
+    {
+      "href": "https://realtylink.org/en/properties~for-sale~new-westminster",
+      "text": "New Westminster"
+    },
+    {
+      "href": "https://realtylink.org/en/properties~for-sale~north-vancouver",
+      "text": "North Vancouver"
+    },
+    {
+      "href": "https://realtylink.org/en/properties~for-sale~pitt-meadows",
+      "text": "Pitt Meadows"
+    },
+    {
+      "href": "https://realtylink.org/en/properties~for-sale~port-coquitlam",
+      "text": "Port Coquitlam"
+    },
+    {
+      "href": "https://realtylink.org/en/properties~for-sale~port-moody",
+      "text": "Port Moody"
+    },
+    {
+      "href": "https://realtylink.org/en/properties~for-sale~richmond",
+      "text": "Richmond"
+    },
+    {
+      "href": "https://realtylink.org/en/properties~for-sale~squamish",
+      "text": "Squamish"
+    },
+    {
+      "href": "https://realtylink.org/en/properties~for-sale~tsawwassen",
+      "text": "Tsawwassen"
+    },
+    {
+      "href": "https://realtylink.org/en/properties~for-sale~vancouver-east",
+      "text": "Vancouver East"
+    },
+    {
+      "href": "https://realtylink.org/en/properties~for-sale~vancouver-west",
+      "text": "Vancouver West"
+    },
+    {
+      "href": "https://realtylink.org/en/properties~for-sale~west-vancouver",
+      "text": "West Vancouver"
+    },
+    {
+      "href": "https://realtylink.org/en/properties~for-sale~whistler",
+      "text": "Whistler"
+    },
+    {
+      "href": "https://realtylink.org/en/properties~for-sale~pemberton",
+      "text": "Pemberton"
+    },
+    {
+      "href": "https://realtylink.org/en/properties~for-sale~sunshine-coast",
+      "text": "Sunshine Coast"
+    },
+    {
+      "href": "https://realtylink.org/en/properties~for-sale~abbotsford",
+      "text": "Abbotsford"
+    },
+    {
+      "href": "https://realtylink.org/en/properties~for-sale~north-delta",
+      "text": "North Delta"
+    },
+    {
+      "href": "https://realtylink.org/en/properties~for-sale~langley",
+      "text": "Langley"
+    },
+    {
+      "href": "https://realtylink.org/en/properties~for-sale~surrey",
+      "text": "Surrey"
+    },
+    {
+      "href": "https://realtylink.org/en/properties~for-sale~mission",
+      "text": "Mission"
+    },
+    {
+      "href": "https://realtylink.org/en/properties~for-sale~white-rock",
+      "text": "White Rock"
+    },
+    {
+      "href": "https://realtylink.org/en/properties~for-sale~campbell-river",
+      "text": "Campbell River"
+    }
+  ],
+  "jsonLd": [],
   "images": [
+    "https://media.realtylink.org/images/consumersite/property/263186231/050c6616bbfc4d008da26a460f129b5a.jpeg?width=480&height=360&fit=cover",
+    "https://cdn.realtylink.org/public/bc/consumersite/images/logos/logo-realtylink-v2.svg",
+    "https://cdn.realtylink.org/public/bc/consumersite/images/no-broker-pictureV3.png",
     "https://media.realtylink.org/images/consumersite/property/263186231/050c6616bbfc4d008da26a460f129b5a.jpeg?width=640&height=480&fit=cover",
     "https://media.realtylink.org/images/consumersite/property/263186231/64fe28c1d9d34e67b26eff0c7149ecf7.jpeg?width=320&height=240&fit=cover",
     "https://media.realtylink.org/images/consumersite/property/263186231/84f29032e80646a6880e5cc5d6a65e5f.jpeg?width=320&height=240&fit=cover",
     "https://media.realtylink.org/images/consumersite/property/263186231/31db7297cfcd4ef3b35885a3039c5955.jpeg?width=320&height=240&fit=cover",
     "https://media.realtylink.org/images/consumersite/property/263186231/ce8ef01acc494c0cab896e8944cd835d.jpeg?width=320&height=240&fit=cover",
-    "https://media.realtylink.org/images/consumersite/property/263186231/050c6616bbfc4d008da26a460f129b5a.jpeg?width=480&height=360&fit=cover"
+    "https://cdn.realtylink.org/public/bc/consumersite/images/logos/powered-by-centris.svg"
   ],
-  "candidateSnapshot": {
-    "source": "Realtylink MLS",
-    "url": "https://realtylink.org/en/apartment~for-rent~vancouver/263186231",
-    "mls": "R3164604",
-    "address": "2680 W 4th Avenue",
-    "unit": null,
-    "type": "condo",
-    "rent": 5495,
+  "elapsedMs": 3557,
+  "identityMatch": true,
+  "explicitNegative": false,
+  "negativePhrase": null,
+  "negativeNeedsConfirmation": false,
+  "explicitPositive": false,
+  "positivePhrase": null,
+  "extractedRent": 5495,
+  "exactFloorplanMatch": null,
+  "facts": {
     "bedrooms": 2,
     "bathrooms": 2,
     "sqft": 1012,
-    "lat": 49.26815,
-    "lng": -123.16575,
-    "geo": {
-      "lat": 49.26815,
-      "lng": -123.16575
-    },
-    "images": [
-      "https://media.realtylink.org/images/consumersite/property/263186231/050c6616bbfc4d008da26a460f129b5a.jpeg?width=640&height=480&fit=cover",
-      "https://media.realtylink.org/images/consumersite/property/263186231/64fe28c1d9d34e67b26eff0c7149ecf7.jpeg?width=320&height=240&fit=cover",
-      "https://media.realtylink.org/images/consumersite/property/263186231/84f29032e80646a6880e5cc5d6a65e5f.jpeg?width=320&height=240&fit=cover",
-      "https://media.realtylink.org/images/consumersite/property/263186231/31db7297cfcd4ef3b35885a3039c5955.jpeg?width=320&height=240&fit=cover",
-      "https://media.realtylink.org/images/consumersite/property/263186231/ce8ef01acc494c0cab896e8944cd835d.jpeg?width=320&height=240&fit=cover",
-      "https://media.realtylink.org/images/consumersite/property/263186231/050c6616bbfc4d008da26a460f129b5a.jpeg?width=480&height=360&fit=cover"
-    ],
-    "targetArea": true,
-    "active": true,
-    "parking": true,
+    "buildingYear": null,
     "ac": null,
-    "balcony": false,
-    "checkedAt": "2026-09-16T15:13:12.268Z",
-    "publishable": false,
-    "httpStatus": 200
+    "parking": null,
+    "petFriendly": null,
+    "orientation": null,
+    "balcony": null,
+    "largeWindows": null,
+    "modernInterior": null
   }
 }
