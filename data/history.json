@@ -1699,6 +1699,11 @@
       "date": "2026-09-15",
       "rent": 4000,
       "note": "CORRECTED: restored after exact current MLS detail matched identity, explicit availability and rent."
+    },
+    {
+      "date": "2026-09-16",
+      "rent": 4000,
+      "note": "CORRECTED: restored after exact current MLS detail matched identity, explicit availability and rent."
     }
   ],
   "mls-r3159060": [
@@ -1855,6 +1860,11 @@
       "date": "2026-09-15",
       "rent": 6000,
       "note": "CORRECTED: restored after exact current MLS detail matched identity, explicit availability and rent."
+    },
+    {
+      "date": "2026-09-16",
+      "rent": 6000,
+      "note": "CORRECTED: restored after exact current MLS detail matched identity, explicit availability and rent."
     }
   ],
   "mls-r3164628": [
@@ -1896,6 +1906,20 @@
       "date": "2026-09-15",
       "rent": 3600,
       "note": "AUTO-PUBLISHED after strict live detail-page verification."
+    }
+  ],
+  "yorkville-north-2br-den-979": [
+    {
+      "date": "2026-09-16",
+      "rent": 5000,
+      "note": "AUTO-PUBLISHED after strict live detail-page verification."
+    }
+  ],
+  "mls-r3164604": [
+    {
+      "date": "2026-09-16",
+      "rent": 5495,
+      "note": "NEW: live Realtylink MLS R3164604 auto-published."
     }
   ]
 }

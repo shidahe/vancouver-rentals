@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-09-16T11:50:49.989Z",
-  "activeCount": 21,
-  "decisionReady": false,
+  "generatedAt": "2026-09-16T15:15:15.779Z",
+  "activeCount": 22,
+  "decisionReady": true,
   "readinessStatus": "finalized",
   "highIssueCount": 0,
   "mediumIssueCount": 0,
-  "infoIssueCount": 39,
+  "infoIssueCount": 41,
   "issues": [
     {
       "severity": "info",
@@ -154,17 +154,12 @@
     },
     {
       "severity": "info",
-      "id": "mls-r3151372",
-      "issue": "unknown-orientation"
-    },
-    {
-      "severity": "info",
-      "id": "mls-r3159060",
+      "id": "mls-r3161950",
       "issue": "unknown-ac"
     },
     {
       "severity": "info",
-      "id": "mls-r3159060",
+      "id": "mls-r3161950",
       "issue": "unknown-orientation"
     },
     {
@@ -179,12 +174,7 @@
     },
     {
       "severity": "info",
-      "id": "mls-r3164628",
-      "issue": "unknown-ac"
-    },
-    {
-      "severity": "info",
-      "id": "mls-r3164628",
+      "id": "mls-r3163709",
       "issue": "unknown-orientation"
     },
     {
@@ -201,14 +191,34 @@
       "severity": "info",
       "id": "tennyson-mews-b6",
       "issue": "unknown-orientation"
+    },
+    {
+      "severity": "info",
+      "id": "yorkville-north-2br-den-979",
+      "issue": "unknown-ac"
+    },
+    {
+      "severity": "info",
+      "id": "yorkville-north-2br-den-979",
+      "issue": "unknown-orientation"
+    },
+    {
+      "severity": "info",
+      "id": "mls-r3164604",
+      "issue": "unknown-ac"
+    },
+    {
+      "severity": "info",
+      "id": "mls-r3164604",
+      "issue": "unknown-orientation"
     }
   ],
   "readinessChecks": {
     "smokeOk": true,
     "smokeFresh": true,
-    "smokeCheckedAt": "2026-09-16T11:50:55.547Z",
-    "latestDataAt": "2026-09-16T11:49:59.118Z",
-    "coverageReady": false,
+    "smokeCheckedAt": "2026-09-16T15:15:21.500Z",
+    "latestDataAt": "2026-09-16T15:14:21.764Z",
+    "coverageReady": true,
     "healthyDiscoveryLanes": 3,
     "coverageWarnings": [
       {
@@ -231,20 +241,6 @@
       }
     ]
   },
-  "readinessIssues": [
-    {
-      "severity": "high",
-      "issue": "discovery-coverage-not-ready",
-      "detail": [
-        {
-          "severity": "high",
-          "issue": "priority-building-inventory-source-unhealthy",
-          "building": "kits-walk",
-          "checkedAt": "2026-09-16T11:41:49.465Z",
-          "evidenceUrl": "https://www.kitswalkleasing.com/floorplans"
-        }
-      ]
-    }
-  ],
-  "finalizedAt": "2026-09-16T11:50:55.633Z"
+  "readinessIssues": [],
+  "finalizedAt": "2026-09-16T15:15:21.602Z"
 }
