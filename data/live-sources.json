@@ -43,6 +43,10 @@
       "hints":{"bedrooms":2,"bathrooms":2,"sqft":979,"parking":true,"petFriendly":true,"balcony":true,"largeWindows":true}
     },
     {
+      "id":"craigslist-w16-coach-house-850","listingId":"w16-coach-house-850","source":"Craigslist / Rent It Furnished","url":"https://www.craigslist.org/view/d/vancouver-fully-furnished-designer-2br/dK4HrSygC6FiEijPJfe35N","buildingName":"W 16th Coach House","unit":"Coach House · 850 sqft","address":"3260 W 16th Ave, Vancouver, BC V6K 3E3","neighborhood":"Arbutus Ridge / Kitsilano","type":"house","expectedBeds":2,"autoPublish":true,
+      "hints":{"bedrooms":2,"bathrooms":1.5,"sqft":850,"ac":true,"petFriendly":true,"balcony":true,"largeWindows":true,"modernInterior":true}
+    },
+    {
       "id":"craigslist-tennyson-mews-b6","listingId":"tennyson-mews-b6","source":"Craigslist / Zumper","url":"https://www.craigslist.org/view/d/vancouver-spacious-bedroom-bathroom/uWMbQgQXpdxGrrD5NEfX4J","buildingName":"Tennyson Mews","unit":"B6","address":"1855 W 10th Ave, Vancouver, BC V6J 2A8","neighborhood":"Kitsilano","type":"townhouse","expectedBeds":2,"autoPublish":true,
       "hints":{"bedrooms":2,"bathrooms":2,"sqft":1189,"parking":true,"petFriendly":true,"balcony":true,"largeWindows":true}
     },

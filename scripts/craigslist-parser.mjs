@@ -68,6 +68,21 @@ export function parseCraigslistSearchCard(card = {}, base = 'https://vancouver.c
   };
 }
 
+// Craigslist's compact attribute row is more reliable than seller-written
+// titles (which occasionally round 1.5 baths up to 2). Only return fields
+// present together in that structured row so prose cannot override them.
+export function craigslistStructuredFacts(value = '') {
+  const text = String(value || '');
+  const match = text.match(/(?:^|\n)\s*([1-5])\s*BR\s*\/\s*([1-5](?:\.5)?)\s*Ba\b([^\n]*)/im);
+  if (!match) return {};
+  const sqftMatch = match[3].match(/\b([0-9][0-9,]{2,5})\s*(?:ft\s*2|ft\^?2|sq\.?\s*ft\.?|sqft)\b/i);
+  return {
+    bedrooms: Number(match[1]),
+    bathrooms: Number(match[2]),
+    ...(sqftMatch ? { sqft: Number(sqftMatch[1].replaceAll(',', '')) } : {})
+  };
+}
+
 export function craigslistDetailEvidence(detail = {}) {
   const parsed = parseCraigslistSearchCard({
     href: detail.url,
@@ -80,6 +95,7 @@ export function craigslistDetailEvidence(detail = {}) {
     datetime: detail.datetime
   }, detail.url);
   const text = String(detail.text || '');
+  const structuredFacts = craigslistStructuredFacts(text);
   const pagePostId = text.match(/\bpost\s+id:\s*([a-z0-9_-]+)/i)?.[1] || null;
   const expectedPostId = String(detail.expectedPostId || '').trim();
   const identityMatch = !!pagePostId && (!expectedPostId || pagePostId === expectedPostId);
@@ -88,6 +104,7 @@ export function craigslistDetailEvidence(detail = {}) {
   const explicitPositive = !!parsed && status >= 200 && status < 400 && identityMatch && !explicitNegative && !!parsed.rent && !!parsed.bedrooms;
   return {
     ...parsed,
+    ...structuredFacts,
     pagePostId,
     identityMatch,
     explicitNegative,

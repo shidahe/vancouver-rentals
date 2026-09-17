@@ -12,7 +12,7 @@ import { exactPurposeBuiltFloorplanEvidence } from './purposebuilt-floorplan-evi
 import { hasCurrentMarketplaceAvailability, softNegativeDisposition, softUnavailablePrompt } from './listing-availability.mjs';
 import { activeListingContradictedByFreshEvidence } from './evidence-consistency.mjs';
 import { dedupeMlsRecords } from './mls-dedupe.mjs';
-import { craigslistAddressPrecision, craigslistDetailEvidence, craigslistPostId, extractCraigslistDetailUrls, normalizeCraigslistDetailUrl, parseCraigslistSearchCard } from './craigslist-parser.mjs';
+import { craigslistAddressPrecision, craigslistDetailEvidence, craigslistPostId, craigslistStructuredFacts, extractCraigslistDetailUrls, normalizeCraigslistDetailUrl, parseCraigslistSearchCard } from './craigslist-parser.mjs';
 import { classifyRentalsCaSearchLead, parseRentalsCaSearchLeads } from './rentalsca-search-parser.mjs';
 
 const read = p => fs.readFile(p, 'utf8');
@@ -105,8 +105,10 @@ const craigslistCard=parseCraigslistSearchCard({href:'/view/d/vancouver-bright-k
 const craigslistFourBedroomCard=parseCraigslistSearchCard({href:'/view/d/vancouver-dunbar-family-home/fourBedroomOpaqueId',text:'$6,500 4 bedrooms 3.5 bathrooms 2,100 sq ft Dunbar'},'https://www.craigslist.org/search/subarea/van');
 if(craigslistCard?.rent!==3950||craigslistCard?.bedrooms!==2||craigslistCard?.bathrooms!==2||craigslistCard?.sqft!==920||craigslistCard?.postId!=='ip9UMamrmPxkdKDuezwah7'||craigslistFourBedroomCard?.rent!==6500||craigslistFourBedroomCard?.bedrooms!==4||craigslistFourBedroomCard?.sqft!==2100) failures.push('Current Craigslist search-card facts or 4BR inventory do not parse correctly.');
 const craigslistDetail=craigslistDetailEvidence({url:craigslistCurrent,status:200,expectedPostId:'7953626877',title:'$6,200 / 3br - 1500ft2 - New 3 bedrooms 3.5 bathrooms 1/2 Duplex in Kitsilano',text:'Posted 2026-08-14\n$6,200 / 3br - 1500ft2\n3BR / 3.5Ba\navailable oct 1\nair conditioning\npost id: 7953626877\nupdated: 2026-09-10 14:25'});
+const craigslistConflictingBaths=craigslistDetailEvidence({url:craigslistCurrent,status:200,expectedPostId:'7967911446',title:'$5,475 / 2br - 850ft2 - Designer 2BR / 2BA Coach House',text:'$5,475 / 2br - 850ft2\n2BR / 1.5Ba 850ft2 available oct 1\npost id: 7967911446'});
 const craigslistMismatchedDetail=craigslistDetailEvidence({url:craigslistCurrent,status:200,expectedPostId:'7953626877',title:'$6,200 / 3br - 1500ft2',text:'post id: 7000000000'});
 if(!craigslistDetail.explicitPositive||!craigslistDetail.identityMatch||craigslistDetail.rent!==6200||craigslistDetail.bedrooms!==3||craigslistDetail.bathrooms!==3.5||craigslistDetail.sqft!==1500||craigslistMismatchedDetail.explicitPositive||craigslistMismatchedDetail.identityMatch) failures.push('Craigslist exact-detail identity and current fact validation can silently regress.');
+if(craigslistConflictingBaths.bathrooms!==1.5||craigslistConflictingBaths.sqft!==850||craigslistStructuredFacts('2BR / 1.5Ba 850ft2').bathrooms!==1.5) failures.push('Craigslist structured attributes no longer outrank conflicting marketing-title facts.');
 if(craigslistAddressPrecision('google map')!==null||craigslistAddressPrecision('Kitsilano')!==null||craigslistAddressPrecision('3220 W 4TH AVE near Musqueamview St')!=='exact_civic'||craigslistAddressPrecision('West 4th Ave near Blenheim')!=='intersection') failures.push('Craigslist map controls or neighborhoods can be mistaken for canonical addresses.');
 const reconciliationSource=await fs.readFile('scripts/reconcile-candidates.mjs','utf8');
 if(!reconciliationSource.includes("x.ac=parseRealtylinkAirConditioning(evidence.bodyText)")||

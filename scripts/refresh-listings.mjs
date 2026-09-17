@@ -7,6 +7,7 @@ import { verifiedPhotoCandidates } from './listing-photo-candidates.mjs';
 import { isRealtylinkListingNotFoundRedirect, parseRealtylinkFloorArea, parseRealtylinkRoomCount } from './realtylink-parser.mjs';
 import { exactPurposeBuiltFloorplanEvidence } from './purposebuilt-floorplan-evidence.mjs';
 import { softNegativeDisposition, softUnavailablePrompt } from './listing-availability.mjs';
+import { craigslistStructuredFacts } from './craigslist-parser.mjs';
 
 const ROOT = process.cwd();
 const DATA = path.join(ROOT, 'data');
@@ -332,7 +333,8 @@ for (const seed of sources.seedCandidates || []) {
   let cls = null;
   if (result.ok) cls = classify(result.bodyText, seed, result.jsonLd, result.status);
   const liveFacts = cls?.facts || {};
-  const facts = mergeHints(liveFacts, seed.hints || {});
+  const sourceFacts = /craigslist\.org/i.test(seed.url) ? craigslistStructuredFacts(result.bodyText) : {};
+  const facts = mergeHints({ ...liveFacts, ...sourceFacts }, seed.hints || {});
   const livePrice = cls?.extractedRent || null;
   const direct = result.ok ? {
     ...seed,
