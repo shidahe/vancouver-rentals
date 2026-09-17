@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-17T17:12:29.570Z",
+  "generatedAt": "2026-09-17T21:35:05.831Z",
   "coverageReady": false,
   "healthyLaneCount": 3,
   "freshLaneCount": 8,
@@ -9,21 +9,21 @@
     {
       "building": "kits-walk",
       "healthy": true,
-      "checkedAt": "2026-09-17T17:03:29.839Z",
-      "evidenceUrl": "https://www.zumper.com/apartment-buildings/p481389/kits-walk-by-strand-kitsilano-vancouver-bc",
+      "checkedAt": "2026-09-17T21:26:03.695Z",
+      "evidenceUrl": "https://www.kitswalkleasing.com/floorplans",
       "sourceOptions": 2
     },
     {
       "building": "larchway-gardens",
       "healthy": true,
-      "checkedAt": "2026-09-17T17:03:29.839Z",
+      "checkedAt": "2026-09-17T21:26:03.695Z",
       "evidenceUrl": "https://quadrealresidential.com/vancouver/larchway-gardens/floorplans/",
       "sourceOptions": 1
     },
     {
       "building": "viridian",
       "healthy": false,
-      "checkedAt": "2026-09-17T17:03:29.839Z",
+      "checkedAt": "2026-09-17T21:26:03.695Z",
       "evidenceUrl": "https://www.rentcafe.com/apartments/bc/vancouver/viridian1/default.aspx",
       "sourceOptions": 1
     }
@@ -35,24 +35,24 @@
       "kind": "broad-marketplace",
       "healthy": true,
       "status": "healthy",
-      "detail": "11 fresh live candidates",
-      "refreshedAt": "2026-09-17T17:07:19.244Z"
+      "detail": "10 fresh live candidates",
+      "refreshedAt": "2026-09-17T21:29:58.641Z"
     },
     {
       "id": "craigslist",
       "kind": "independent-classifieds",
       "healthy": true,
       "status": "healthy",
-      "detail": "4/4 regional searches reachable; 31 qualifying candidates parsed",
-      "refreshedAt": "2026-09-17T17:10:16.007Z"
+      "detail": "4/4 regional searches reachable; 28 qualifying candidates parsed",
+      "refreshedAt": "2026-09-17T21:32:47.793Z"
     },
     {
       "id": "rentalsca",
       "kind": "broad-marketplace",
       "healthy": false,
       "status": "degraded",
-      "detail": "7/9 regional searches reachable; 0 qualifying candidates parsed; 17 scoped search-only leads retained (17 new, 0 already active, 0 need revalidation); 3 detail pages blocked after 82 discovered URLs; 79 further detail checks suppressed after repeated 403/429",
-      "refreshedAt": "2026-09-17T17:09:54.172Z"
+      "detail": "4/9 regional searches reachable; 0 qualifying candidates parsed; 3 scoped search-only leads retained (2 new, 1 already active, 0 need revalidation); 3 detail pages blocked after 24 discovered URLs; 21 further detail checks suppressed after repeated 403/429",
+      "refreshedAt": "2026-09-17T21:32:33.326Z"
     },
     {
       "id": "livrent",
@@ -60,17 +60,17 @@
       "healthy": false,
       "status": "unhealthy",
       "detail": "0/5 searches healthy; 3 blocked searches opened circuit; 2 further checks suppressed",
-      "refreshedAt": "2026-09-17T17:10:15.226Z"
+      "refreshedAt": "2026-09-17T21:32:47.208Z"
     },
     {
       "id": "realtylink",
       "kind": "mls-rental",
-      "healthy": false,
+      "healthy": true,
       "positiveDiscoveryHealthy": true,
-      "status": "degraded",
-      "partial": true,
-      "detail": "3/3 searches reachable; 4 current live candidates parsed from a partial snapshot versus complete baseline 4; positive discovery usable, removals suppressed",
-      "refreshedAt": "2026-09-17T17:10:38.045Z"
+      "status": "healthy",
+      "partial": false,
+      "detail": "3/3 searches reachable; 5 live candidates parsed",
+      "refreshedAt": "2026-09-17T21:33:07.390Z"
     },
     {
       "id": "priority-kits-walk",
@@ -78,7 +78,7 @@
       "healthy": true,
       "status": "healthy",
       "detail": "1/2 official sources usable",
-      "refreshedAt": "2026-09-17T17:11:46.157Z"
+      "refreshedAt": "2026-09-17T21:34:16.728Z"
     },
     {
       "id": "priority-larchway-gardens",
@@ -86,7 +86,7 @@
       "healthy": true,
       "status": "healthy",
       "detail": "2/2 official sources usable",
-      "refreshedAt": "2026-09-17T17:11:46.157Z"
+      "refreshedAt": "2026-09-17T21:34:16.728Z"
     },
     {
       "id": "priority-viridian",
@@ -94,7 +94,7 @@
       "healthy": true,
       "status": "healthy",
       "detail": "1/2 official sources usable",
-      "refreshedAt": "2026-09-17T17:11:46.157Z"
+      "refreshedAt": "2026-09-17T21:34:16.728Z"
     }
   ],
   "warnings": [
@@ -102,19 +102,13 @@
       "severity": "warning",
       "lane": "rentalsca",
       "status": "degraded",
-      "detail": "7/9 regional searches reachable; 0 qualifying candidates parsed; 17 scoped search-only leads retained (17 new, 0 already active, 0 need revalidation); 3 detail pages blocked after 82 discovered URLs; 79 further detail checks suppressed after repeated 403/429"
+      "detail": "4/9 regional searches reachable; 0 qualifying candidates parsed; 3 scoped search-only leads retained (2 new, 1 already active, 0 need revalidation); 3 detail pages blocked after 24 discovered URLs; 21 further detail checks suppressed after repeated 403/429"
     },
     {
       "severity": "warning",
       "lane": "livrent",
       "status": "unhealthy",
       "detail": "0/5 searches healthy; 3 blocked searches opened circuit; 2 further checks suppressed"
-    },
-    {
-      "severity": "warning",
-      "lane": "realtylink",
-      "status": "degraded",
-      "detail": "3/3 searches reachable; 4 current live candidates parsed from a partial snapshot versus complete baseline 4; positive discovery usable, removals suppressed"
     }
   ],
   "blockers": [
@@ -122,7 +116,7 @@
       "severity": "high",
       "issue": "priority-building-inventory-source-unhealthy",
       "building": "viridian",
-      "checkedAt": "2026-09-17T17:03:29.839Z",
+      "checkedAt": "2026-09-17T21:26:03.695Z",
       "evidenceUrl": "https://www.rentcafe.com/apartments/bc/vancouver/viridian1/default.aspx"
     }
   ],
