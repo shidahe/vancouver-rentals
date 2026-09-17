@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-09-17T15:09:45.530Z",
+  "generatedAt": "2026-09-17T17:12:29.532Z",
   "activeCount": 22,
-  "decisionReady": true,
+  "decisionReady": false,
   "readinessStatus": "finalized",
   "highIssueCount": 0,
   "mediumIssueCount": 0,
@@ -84,11 +84,6 @@
     },
     {
       "severity": "info",
-      "id": "arbutus-residences-floorplan-2-bedroom-townhouse-den-1340",
-      "issue": "unknown-orientation"
-    },
-    {
-      "severity": "info",
       "id": "zumper-ecd4e868f79c",
       "issue": "unknown-ac"
     },
@@ -155,6 +150,11 @@
     {
       "severity": "info",
       "id": "mls-r3150923",
+      "issue": "unknown-orientation"
+    },
+    {
+      "severity": "info",
+      "id": "mls-r3161880",
       "issue": "unknown-orientation"
     },
     {
@@ -211,16 +211,16 @@
   "readinessChecks": {
     "smokeOk": true,
     "smokeFresh": true,
-    "smokeCheckedAt": "2026-09-17T15:09:51.563Z",
-    "latestDataAt": "2026-09-17T15:08:55.677Z",
-    "coverageReady": true,
+    "smokeCheckedAt": "2026-09-17T17:12:34.849Z",
+    "latestDataAt": "2026-09-17T17:11:46.157Z",
+    "coverageReady": false,
     "healthyDiscoveryLanes": 3,
     "coverageWarnings": [
       {
         "severity": "warning",
         "lane": "rentalsca",
         "status": "degraded",
-        "detail": "4/9 regional searches reachable; 0 qualifying candidates parsed; 18 scoped search-only leads retained (17 new, 1 already active, 0 need revalidation); 3 detail pages blocked after 88 discovered URLs; 85 further detail checks suppressed after repeated 403/429"
+        "detail": "7/9 regional searches reachable; 0 qualifying candidates parsed; 17 scoped search-only leads retained (17 new, 0 already active, 0 need revalidation); 3 detail pages blocked after 82 discovered URLs; 79 further detail checks suppressed after repeated 403/429"
       },
       {
         "severity": "warning",
@@ -230,12 +230,26 @@
       },
       {
         "severity": "warning",
-        "lane": "priority-viridian-unpriced-unit",
-        "status": "price-unverified",
-        "detail": "Viridian unit 0103 (2BR) is offered for Sep 30, but official rent is withheld; do not publish before verifying rent >= CAD $3,500"
+        "lane": "realtylink",
+        "status": "degraded",
+        "detail": "3/3 searches reachable; 4 current live candidates parsed from a partial snapshot versus complete baseline 4; positive discovery usable, removals suppressed"
       }
     ]
   },
-  "readinessIssues": [],
-  "finalizedAt": "2026-09-17T15:09:51.652Z"
+  "readinessIssues": [
+    {
+      "severity": "high",
+      "issue": "discovery-coverage-not-ready",
+      "detail": [
+        {
+          "severity": "high",
+          "issue": "priority-building-inventory-source-unhealthy",
+          "building": "viridian",
+          "checkedAt": "2026-09-17T17:03:29.839Z",
+          "evidenceUrl": "https://www.rentcafe.com/apartments/bc/vancouver/viridian1/default.aspx"
+        }
+      ]
+    }
+  ],
+  "finalizedAt": "2026-09-17T17:12:34.920Z"
 }

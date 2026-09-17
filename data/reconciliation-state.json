@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-09-17T15:08:48.277Z",
+  "refreshedAt": "2026-09-17T17:11:42.075Z",
   "groups": [
     {
       "identityKey": "1533 maple st::url:69f2e13a0fd5",
@@ -86,24 +86,24 @@
       "result": "candidate_only"
     },
     {
-      "identityKey": "1855 w 10th ave near cypress st::url:285a6d3de4b4",
-      "sources": [
-        "craigslist"
-      ],
-      "rents": [
-        3600
-      ],
-      "exactUnit": false,
-      "matchedListingId": null,
-      "result": "candidate_only"
-    },
-    {
       "identityKey": "3095 w 5th ave near balaclava st::url:a2e15ddfb19d",
       "sources": [
         "craigslist"
       ],
       "rents": [
         10500
+      ],
+      "exactUnit": false,
+      "matchedListingId": null,
+      "result": "candidate_only"
+    },
+    {
+      "identityKey": "1855 w 10th ave near cypress st::url:285a6d3de4b4",
+      "sources": [
+        "craigslist"
+      ],
+      "rents": [
+        3600
       ],
       "exactUnit": false,
       "matchedListingId": null,
@@ -122,24 +122,24 @@
       "result": "candidate_only"
     },
     {
-      "identityKey": "1888 york ave near cypress st::url:919308cdb569",
-      "sources": [
-        "craigslist"
-      ],
-      "rents": [
-        5000
-      ],
-      "exactUnit": false,
-      "matchedListingId": null,
-      "result": "candidate_only"
-    },
-    {
       "identityKey": "2111 w 11th ave near arbutus st::url:0ed00aa1e937",
       "sources": [
         "craigslist"
       ],
       "rents": [
         3500
+      ],
+      "exactUnit": false,
+      "matchedListingId": null,
+      "result": "candidate_only"
+    },
+    {
+      "identityKey": "1888 york ave near cypress st::url:919308cdb569",
+      "sources": [
+        "craigslist"
+      ],
+      "rents": [
+        5000
       ],
       "exactUnit": false,
       "matchedListingId": null,
@@ -242,18 +242,6 @@
       "result": "authoritative_mls_reverified"
     },
     {
-      "identityKey": "mls:r3166264",
-      "sources": [
-        "realtylink mls"
-      ],
-      "rents": [
-        5500
-      ],
-      "exactUnit": false,
-      "matchedListingId": "mls-r3166264",
-      "result": "authoritative_mls_reverified"
-    },
-    {
       "identityKey": "mls:r3160689",
       "sources": [
         "realtylink mls"
@@ -266,15 +254,15 @@
       "result": "authoritative_mls_reverified"
     },
     {
-      "identityKey": "mls:r3159060",
+      "identityKey": "mls:r3161880",
       "sources": [
         "realtylink mls"
       ],
       "rents": [
-        15000
+        8800
       ],
       "exactUnit": false,
-      "matchedListingId": "mls-r3159060",
+      "matchedListingId": "mls-r3161880",
       "result": "authoritative_mls_reverified"
     }
   ],
@@ -282,43 +270,22 @@
   "crossVerified": [
     "york-103-2535-r3137446",
     "mls-r3150923",
-    "mls-r3166264",
     "zumper-16e9ae17cd91",
-    "mls-r3159060"
+    "mls-r3161880"
   ],
   "fingerprintCrossVerified": [],
   "maskedMlsMerged": [],
   "relistedMlsMerged": [],
   "negativeMatches": [],
   "detailReactivated": [
-    "mls-r3159060"
+    "mls-r3161880"
   ],
-  "mlsMissing": {
-    "R3151022": {
-      "firstMissingAt": "2026-09-17T15:08:48.277Z",
-      "lastMissingAt": "2026-09-17T15:08:48.277Z",
-      "listingId": "mls-r3151022"
-    },
-    "R3161950": {
-      "firstMissingAt": "2026-09-17T11:55:03.969Z",
-      "lastMissingAt": "2026-09-17T15:08:48.277Z",
-      "listingId": "mls-r3161950"
-    },
-    "R3163709": {
-      "firstMissingAt": "2026-09-17T11:55:03.969Z",
-      "lastMissingAt": "2026-09-17T15:08:48.277Z",
-      "listingId": "mls-r3163709"
-    },
-    "R3164628": {
-      "firstMissingAt": "2026-09-17T15:08:48.277Z",
-      "lastMissingAt": "2026-09-17T15:08:48.277Z",
-      "listingId": "mls-r3164628"
-    }
-  },
+  "mlsMissing": {},
   "mlsRemoved": [],
-  "realtylinkSnapshotCount": 5,
+  "realtylinkSnapshotCount": 4,
   "realtylinkSnapshotHighWaterMark": 6,
   "realtylinkSnapshotScope": "rent-3500-beds-2-4-whole-home-westside-v2",
-  "realtylinkRemovalEligible": true,
+  "realtylinkRemovalEligible": false,
+  "mlsRemovalSuppressed": "Partial Realtylink snapshot (4 candidates versus previous complete 6); disappearance signals ignored.",
   "mlsDuplicatesMerged": []
 }
