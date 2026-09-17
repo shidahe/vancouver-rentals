@@ -524,6 +524,11 @@
       "date": "2026-09-16",
       "rent": 5390,
       "note": "NEEDS CONFIRMATION: latest purpose-built fallback sources did not confirm the exact configured rent + sqft inventory row."
+    },
+    {
+      "date": "2026-09-17",
+      "rent": 5390,
+      "note": "NEEDS CONFIRMATION: latest purpose-built fallback sources did not confirm the exact configured rent + sqft inventory row."
     }
   ],
   "zumper-2fde865f7e2c": [
@@ -1344,6 +1349,11 @@
       "date": "2026-09-15",
       "rent": 5000,
       "note": "CORRECTED: restored after exact current MLS detail matched identity, explicit availability and rent."
+    },
+    {
+      "date": "2026-09-17",
+      "rent": 5000,
+      "note": "AUTO-REMOVED: MLS R3148298 absent from two consecutive healthy inventory snapshots."
     }
   ],
   "mls-r3151372": [
@@ -1421,6 +1431,11 @@
       "date": "2026-09-16",
       "rent": 4800,
       "note": "CORRECTED: restored after exact current MLS detail matched identity, explicit availability and rent."
+    },
+    {
+      "date": "2026-09-17",
+      "rent": 4800,
+      "note": "AUTO-REMOVED: MLS R3151372 absent from two consecutive healthy inventory snapshots."
     }
   ],
   "mls-r3158179": [
@@ -1478,6 +1493,11 @@
       "date": "2026-09-15",
       "rent": 5995,
       "note": "CORRECTED: restored after exact current MLS detail matched identity, explicit availability and rent."
+    },
+    {
+      "date": "2026-09-17",
+      "rent": 5995,
+      "note": "AUTO-REMOVED: MLS R3158179 absent from two consecutive healthy inventory snapshots."
     }
   ],
   "mls-r2907080": [
@@ -1771,6 +1791,11 @@
       "date": "2026-09-16",
       "rent": 15000,
       "note": "CORRECTED: restored after exact current MLS detail matched identity, explicit availability and rent."
+    },
+    {
+      "date": "2026-09-17",
+      "rent": 15000,
+      "note": "AUTO-REMOVED: MLS R3159060 absent from two consecutive healthy inventory snapshots."
     }
   ],
   "mls-r3149267": [
@@ -1912,6 +1937,11 @@
       "date": "2026-09-15",
       "rent": 5000,
       "note": "CORRECTED: restored after exact current MLS detail matched identity, explicit availability and rent."
+    },
+    {
+      "date": "2026-09-17",
+      "rent": 5000,
+      "note": "CORRECTED: restored after exact current MLS detail matched identity, explicit availability and rent."
     }
   ],
   "fourth-mac-floorplan-2-bedroom-2-bath-801-4350": [
@@ -1940,6 +1970,11 @@
       "date": "2026-09-16",
       "rent": 5495,
       "note": "NEW: live Realtylink MLS R3164604 auto-published."
+    },
+    {
+      "date": "2026-09-17",
+      "rent": 5495,
+      "note": "AUTO-REMOVED: MLS R3164604 absent from two consecutive healthy inventory snapshots."
     }
   ],
   "mls-r3166264": [
@@ -1947,6 +1982,11 @@
       "date": "2026-09-16",
       "rent": 5500,
       "note": "NEW: live Realtylink MLS R3166264 auto-published."
+    },
+    {
+      "date": "2026-09-17",
+      "rent": 5500,
+      "note": "CORRECTED: restored after exact current MLS detail matched identity, explicit availability and rent."
     }
   ]
 }

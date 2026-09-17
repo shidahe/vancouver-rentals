@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-09-17T05:06:57.811Z",
+  "refreshedAt": "2026-09-17T11:55:52.328Z",
   "listings": {
     "york-103-2535-r3137446": {
       "cached": 5,
@@ -101,8 +101,8 @@
     },
     "mls-r3151022": {
       "cached": 5,
-      "preserved": 0,
-      "downloaded": 5,
+      "preserved": 5,
+      "downloaded": 0,
       "failures": [],
       "photoPageUrl": "https://realtylink.org/en/house~for-rent~vancouver/263172649"
     },
@@ -113,26 +113,12 @@
       "failures": [],
       "photoPageUrl": "https://realtylink.org/en/townhouse~for-rent~vancouver/263172550"
     },
-    "arbutus-residences-floorplan-2-bedroom-townhouse-den-1340": {
+    "mls-r3164628": {
       "cached": 5,
-      "preserved": 5,
-      "downloaded": 0,
+      "preserved": 0,
+      "downloaded": 5,
       "failures": [],
-      "photoPageUrl": "https://www.zumper.com/apartment-buildings/p1117150/arbutus-residences-quilchena-vancouver-bc"
-    },
-    "mls-r3161950": {
-      "cached": 5,
-      "preserved": 5,
-      "downloaded": 0,
-      "failures": [],
-      "photoPageUrl": "https://realtylink.org/en/house~for-rent~vancouver/263183577"
-    },
-    "mls-r3163709": {
-      "cached": 5,
-      "preserved": 5,
-      "downloaded": 0,
-      "failures": [],
-      "photoPageUrl": "https://realtylink.org/en/house~for-rent~vancouver/263185336"
+      "photoPageUrl": "https://realtylink.org/en/house~for-rent~vancouver/263186255"
     },
     "fourth-mac-floorplan-2-bedroom-2-bath-801-4350": {
       "cached": 5,
@@ -154,16 +140,23 @@
       "downloaded": 0,
       "failures": [],
       "photoPageUrl": "https://www.craigslist.org/view/d/vancouver-ocean-view-2br-2ba-with-den/kZEyBrAFDhJYBcmtaq27m2"
+    },
+    "mls-r3166264": {
+      "cached": 5,
+      "preserved": 0,
+      "downloaded": 5,
+      "failures": [],
+      "photoPageUrl": "https://realtylink.org/en/townhouse~for-rent~vancouver/263187891"
     }
   },
   "totals": {
-    "sourceListings": 22,
-    "cachedListings": 22,
-    "downloaded": 5,
+    "sourceListings": 21,
+    "cachedListings": 21,
+    "downloaded": 10,
     "failed": 0,
-    "preserved": 101,
-    "prunedListings": 4,
-    "prunedIndexImages": 17,
+    "preserved": 91,
+    "prunedListings": 3,
+    "prunedIndexImages": 15,
     "prunedOrphanFiles": 0
   }
 }

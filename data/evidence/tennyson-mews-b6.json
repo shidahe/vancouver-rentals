@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-09-17T04:57:34.443Z",
+  "checkedAt": "2026-09-17T11:46:56.074Z",
   "listingId": "tennyson-mews-b6",
   "sourceUrl": "https://www.craigslist.org/view/d/vancouver-spacious-bedroom-bathroom/uWMbQgQXpdxGrrD5NEfX4J",
   "ok": true,
@@ -249,33 +249,33 @@
     {
       "itemListElement": [
         {
-          "item": "https://www.craigslist.org/area/vancouver",
-          "name": "craigslist: vancouver, BC",
           "@type": "ListItem",
+          "name": "craigslist: vancouver, BC",
+          "item": "https://www.craigslist.org/area/vancouver",
           "position": 1
         },
         {
-          "name": "vancouver",
-          "@type": "ListItem",
+          "item": "https://www.craigslist.org/subarea/van",
           "position": 2,
-          "item": "https://www.craigslist.org/subarea/van"
-        },
-        {
           "@type": "ListItem",
-          "name": "housing",
-          "position": 3,
-          "item": "https://www.craigslist.org/search/subarea/van?cat=hhh"
+          "name": "vancouver"
         },
         {
+          "position": 3,
+          "item": "https://www.craigslist.org/search/subarea/van?cat=hhh",
+          "name": "housing",
+          "@type": "ListItem"
+        },
+        {
+          "position": 4,
           "item": "https://www.craigslist.org/search/subarea/van?cat=apa",
           "name": "apartments / housing for rent",
-          "@type": "ListItem",
-          "position": 4
+          "@type": "ListItem"
         },
         {
-          "item": "https://www.craigslist.org/view/d/vancouver-spacious-bedroom-bathroom/uWMbQgQXpdxGrrD5NEfX4J",
-          "name": "🏡 Spacious 2 Bedroom + 2 Bathroom Townhome in Kitsilano",
           "@type": "ListItem",
+          "name": "🏡 Spacious 2 Bedroom + 2 Bathroom Townhome in Kitsilano",
+          "item": "https://www.craigslist.org/view/d/vancouver-spacious-bedroom-bathroom/uWMbQgQXpdxGrrD5NEfX4J",
           "position": 5
         }
       ],
@@ -283,23 +283,23 @@
       "@context": "https://schema.org"
     },
     {
-      "longitude": "-123.147110",
-      "smokingAllowed": false,
-      "name": "🏡 Spacious 2 Bedroom + 2 Bathroom Townhome in Kitsilano",
+      "latitude": "49.262770",
       "numberOfBathroomsTotal": 2,
+      "numberOfBedrooms": "2",
+      "smokingAllowed": false,
+      "longitude": "-123.147110",
+      "petsAllowed": true,
       "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "1855 W 10th Ave",
         "addressRegion": "BC",
+        "streetAddress": "1855 W 10th Ave",
         "postalCode": "V6J1Y9",
         "addressLocality": "Vancouver",
-        "addressCountry": "CA"
+        "addressCountry": "CA",
+        "@type": "PostalAddress"
       },
+      "name": "🏡 Spacious 2 Bedroom + 2 Bathroom Townhome in Kitsilano",
       "@context": "http://schema.org",
-      "petsAllowed": true,
-      "latitude": "49.262770",
-      "@type": "Apartment",
-      "numberOfBedrooms": "2"
+      "@type": "Apartment"
     }
   ],
   "images": [
@@ -324,7 +324,7 @@
     "https://images.craigslist.org/00v0v_k5zO64hdXF0_0oM0gw_50x50c.jpg",
     "https://images.craigslist.org/00000_8ATbcpylEtQ_0CI0pO_50x50c.jpg"
   ],
-  "elapsedMs": 3104,
+  "elapsedMs": 3129,
   "identityMatch": true,
   "explicitNegative": false,
   "negativePhrase": null,

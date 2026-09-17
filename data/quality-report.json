@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-09-17T05:06:59.542Z",
-  "activeCount": 22,
+  "generatedAt": "2026-09-17T11:55:54.350Z",
+  "activeCount": 21,
   "decisionReady": true,
   "readinessStatus": "finalized",
   "highIssueCount": 0,
@@ -84,11 +84,6 @@
     },
     {
       "severity": "info",
-      "id": "arbutus-residences-floorplan-2-bedroom-townhouse-den-1340",
-      "issue": "unknown-orientation"
-    },
-    {
-      "severity": "info",
       "id": "zumper-ecd4e868f79c",
       "issue": "unknown-ac"
     },
@@ -164,17 +159,12 @@
     },
     {
       "severity": "info",
-      "id": "mls-r3161950",
+      "id": "mls-r3164628",
       "issue": "unknown-ac"
     },
     {
       "severity": "info",
-      "id": "mls-r3161950",
-      "issue": "unknown-orientation"
-    },
-    {
-      "severity": "info",
-      "id": "mls-r3163709",
+      "id": "mls-r3164628",
       "issue": "unknown-orientation"
     },
     {
@@ -201,13 +191,23 @@
       "severity": "info",
       "id": "yorkville-north-2br-den-979",
       "issue": "unknown-orientation"
+    },
+    {
+      "severity": "info",
+      "id": "mls-r3166264",
+      "issue": "unknown-ac"
+    },
+    {
+      "severity": "info",
+      "id": "mls-r3166264",
+      "issue": "unknown-orientation"
     }
   ],
   "readinessChecks": {
     "smokeOk": true,
     "smokeFresh": true,
-    "smokeCheckedAt": "2026-09-17T05:07:05.169Z",
-    "latestDataAt": "2026-09-17T05:05:58.927Z",
+    "smokeCheckedAt": "2026-09-17T11:55:59.873Z",
+    "latestDataAt": "2026-09-17T11:55:08.024Z",
     "coverageReady": true,
     "healthyDiscoveryLanes": 3,
     "coverageWarnings": [
@@ -215,7 +215,7 @@
         "severity": "warning",
         "lane": "rentalsca",
         "status": "degraded",
-        "detail": "5/9 regional searches reachable; 0 qualifying candidates parsed; 3 scoped search-only leads retained (2 new, 1 already active, 0 need revalidation); 3 detail pages blocked after 29 discovered URLs; 26 further detail checks suppressed after repeated 403/429"
+        "detail": "2/9 regional searches reachable; 0 qualifying candidates parsed; 0 scoped search-only leads retained; 3 detail pages blocked after 3 discovered URLs"
       },
       {
         "severity": "warning",
@@ -232,5 +232,5 @@
     ]
   },
   "readinessIssues": [],
-  "finalizedAt": "2026-09-17T05:07:05.261Z"
+  "finalizedAt": "2026-09-17T11:55:59.969Z"
 }
