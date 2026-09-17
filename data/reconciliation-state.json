@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-09-17T11:55:03.969Z",
+  "refreshedAt": "2026-09-17T15:08:48.277Z",
   "groups": [
     {
       "identityKey": "1533 maple st::url:69f2e13a0fd5",
@@ -122,24 +122,24 @@
       "result": "candidate_only"
     },
     {
-      "identityKey": "2111 w 11th ave near arbutus st::url:0ed00aa1e937",
-      "sources": [
-        "craigslist"
-      ],
-      "rents": [
-        3500
-      ],
-      "exactUnit": false,
-      "matchedListingId": null,
-      "result": "candidate_only"
-    },
-    {
       "identityKey": "1888 york ave near cypress st::url:919308cdb569",
       "sources": [
         "craigslist"
       ],
       "rents": [
         5000
+      ],
+      "exactUnit": false,
+      "matchedListingId": null,
+      "result": "candidate_only"
+    },
+    {
+      "identityKey": "2111 w 11th ave near arbutus st::url:0ed00aa1e937",
+      "sources": [
+        "craigslist"
+      ],
+      "rents": [
+        3500
       ],
       "exactUnit": false,
       "matchedListingId": null,
@@ -266,27 +266,15 @@
       "result": "authoritative_mls_reverified"
     },
     {
-      "identityKey": "mls:r3164628",
+      "identityKey": "mls:r3159060",
       "sources": [
         "realtylink mls"
       ],
       "rents": [
-        5000
+        15000
       ],
       "exactUnit": false,
-      "matchedListingId": "mls-r3164628",
-      "result": "authoritative_mls_reverified"
-    },
-    {
-      "identityKey": "mls:r3151022",
-      "sources": [
-        "realtylink mls"
-      ],
-      "rents": [
-        10500
-      ],
-      "exactUnit": false,
-      "matchedListingId": "mls-r3151022",
+      "matchedListingId": "mls-r3159060",
       "result": "authoritative_mls_reverified"
     }
   ],
@@ -296,62 +284,39 @@
     "mls-r3150923",
     "mls-r3166264",
     "zumper-16e9ae17cd91",
-    "mls-r3164628",
-    "mls-r3151022"
+    "mls-r3159060"
   ],
   "fingerprintCrossVerified": [],
   "maskedMlsMerged": [],
   "relistedMlsMerged": [],
   "negativeMatches": [],
   "detailReactivated": [
-    "mls-r3164628",
-    "mls-r3166264"
+    "mls-r3159060"
   ],
   "mlsMissing": {
-    "R3148298": {
-      "firstMissingAt": "2026-09-17T05:05:51.807Z",
-      "lastMissingAt": "2026-09-17T11:55:03.969Z",
-      "listingId": "mls-r3148298"
-    },
-    "R3151372": {
-      "firstMissingAt": "2026-09-17T05:05:51.807Z",
-      "lastMissingAt": "2026-09-17T11:55:03.969Z",
-      "listingId": "mls-r3151372"
-    },
-    "R3158179": {
-      "firstMissingAt": "2026-09-17T05:05:51.807Z",
-      "lastMissingAt": "2026-09-17T11:55:03.969Z",
-      "listingId": "mls-r3158179"
+    "R3151022": {
+      "firstMissingAt": "2026-09-17T15:08:48.277Z",
+      "lastMissingAt": "2026-09-17T15:08:48.277Z",
+      "listingId": "mls-r3151022"
     },
     "R3161950": {
       "firstMissingAt": "2026-09-17T11:55:03.969Z",
-      "lastMissingAt": "2026-09-17T11:55:03.969Z",
+      "lastMissingAt": "2026-09-17T15:08:48.277Z",
       "listingId": "mls-r3161950"
-    },
-    "R3159060": {
-      "firstMissingAt": "2026-09-17T05:05:51.807Z",
-      "lastMissingAt": "2026-09-17T11:55:03.969Z",
-      "listingId": "mls-r3159060"
     },
     "R3163709": {
       "firstMissingAt": "2026-09-17T11:55:03.969Z",
-      "lastMissingAt": "2026-09-17T11:55:03.969Z",
+      "lastMissingAt": "2026-09-17T15:08:48.277Z",
       "listingId": "mls-r3163709"
     },
-    "R3164604": {
-      "firstMissingAt": "2026-09-17T05:05:51.807Z",
-      "lastMissingAt": "2026-09-17T11:55:03.969Z",
-      "listingId": "mls-r3164604"
+    "R3164628": {
+      "firstMissingAt": "2026-09-17T15:08:48.277Z",
+      "lastMissingAt": "2026-09-17T15:08:48.277Z",
+      "listingId": "mls-r3164628"
     }
   },
-  "mlsRemoved": [
-    "mls-r3148298",
-    "mls-r3151372",
-    "mls-r3158179",
-    "mls-r3159060",
-    "mls-r3164604"
-  ],
-  "realtylinkSnapshotCount": 6,
+  "mlsRemoved": [],
+  "realtylinkSnapshotCount": 5,
   "realtylinkSnapshotHighWaterMark": 6,
   "realtylinkSnapshotScope": "rent-3500-beds-2-4-whole-home-westside-v2",
   "realtylinkRemovalEligible": true,

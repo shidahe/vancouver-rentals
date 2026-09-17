@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-09-17T11:55:54.350Z",
-  "activeCount": 21,
+  "generatedAt": "2026-09-17T15:09:45.530Z",
+  "activeCount": 22,
   "decisionReady": true,
   "readinessStatus": "finalized",
   "highIssueCount": 0,
   "mediumIssueCount": 0,
-  "infoIssueCount": 39,
+  "infoIssueCount": 40,
   "issues": [
     {
       "severity": "info",
@@ -84,6 +84,11 @@
     },
     {
       "severity": "info",
+      "id": "arbutus-residences-floorplan-2-bedroom-townhouse-den-1340",
+      "issue": "unknown-orientation"
+    },
+    {
+      "severity": "info",
       "id": "zumper-ecd4e868f79c",
       "issue": "unknown-ac"
     },
@@ -144,11 +149,6 @@
     },
     {
       "severity": "info",
-      "id": "mls-r3151022",
-      "issue": "unknown-orientation"
-    },
-    {
-      "severity": "info",
       "id": "mls-r3150923",
       "issue": "unknown-ac"
     },
@@ -159,12 +159,12 @@
     },
     {
       "severity": "info",
-      "id": "mls-r3164628",
+      "id": "mls-r3159060",
       "issue": "unknown-ac"
     },
     {
       "severity": "info",
-      "id": "mls-r3164628",
+      "id": "mls-r3159060",
       "issue": "unknown-orientation"
     },
     {
@@ -201,13 +201,18 @@
       "severity": "info",
       "id": "mls-r3166264",
       "issue": "unknown-orientation"
+    },
+    {
+      "severity": "info",
+      "id": "w16-coach-house-850",
+      "issue": "unknown-orientation"
     }
   ],
   "readinessChecks": {
     "smokeOk": true,
     "smokeFresh": true,
-    "smokeCheckedAt": "2026-09-17T11:55:59.873Z",
-    "latestDataAt": "2026-09-17T11:55:08.024Z",
+    "smokeCheckedAt": "2026-09-17T15:09:51.563Z",
+    "latestDataAt": "2026-09-17T15:08:55.677Z",
     "coverageReady": true,
     "healthyDiscoveryLanes": 3,
     "coverageWarnings": [
@@ -215,7 +220,7 @@
         "severity": "warning",
         "lane": "rentalsca",
         "status": "degraded",
-        "detail": "2/9 regional searches reachable; 0 qualifying candidates parsed; 0 scoped search-only leads retained; 3 detail pages blocked after 3 discovered URLs"
+        "detail": "4/9 regional searches reachable; 0 qualifying candidates parsed; 18 scoped search-only leads retained (17 new, 1 already active, 0 need revalidation); 3 detail pages blocked after 88 discovered URLs; 85 further detail checks suppressed after repeated 403/429"
       },
       {
         "severity": "warning",
@@ -232,5 +237,5 @@
     ]
   },
   "readinessIssues": [],
-  "finalizedAt": "2026-09-17T11:55:59.969Z"
+  "finalizedAt": "2026-09-17T15:09:51.652Z"
 }

@@ -1796,6 +1796,11 @@
       "date": "2026-09-17",
       "rent": 15000,
       "note": "AUTO-REMOVED: MLS R3159060 absent from two consecutive healthy inventory snapshots."
+    },
+    {
+      "date": "2026-09-17",
+      "rent": 15000,
+      "note": "CORRECTED: restored after exact current MLS detail matched identity, explicit availability and rent."
     }
   ],
   "mls-r3149267": [
@@ -1987,6 +1992,13 @@
       "date": "2026-09-17",
       "rent": 5500,
       "note": "CORRECTED: restored after exact current MLS detail matched identity, explicit availability and rent."
+    }
+  ],
+  "w16-coach-house-850": [
+    {
+      "date": "2026-09-17",
+      "rent": 5475,
+      "note": "AUTO-PUBLISHED after strict live detail-page verification."
     }
   ]
 }
