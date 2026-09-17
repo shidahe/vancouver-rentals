@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-09-16T21:30:37.596Z",
-  "activeCount": 25,
+  "generatedAt": "2026-09-17T05:06:59.542Z",
+  "activeCount": 22,
   "decisionReady": true,
   "readinessStatus": "finalized",
   "highIssueCount": 0,
   "mediumIssueCount": 0,
-  "infoIssueCount": 45,
+  "infoIssueCount": 39,
   "issues": [
     {
       "severity": "info",
@@ -149,6 +149,11 @@
     },
     {
       "severity": "info",
+      "id": "mls-r3151022",
+      "issue": "unknown-orientation"
+    },
+    {
+      "severity": "info",
       "id": "mls-r3150923",
       "issue": "unknown-ac"
     },
@@ -159,27 +164,12 @@
     },
     {
       "severity": "info",
-      "id": "mls-r3151372",
-      "issue": "unknown-orientation"
-    },
-    {
-      "severity": "info",
       "id": "mls-r3161950",
       "issue": "unknown-ac"
     },
     {
       "severity": "info",
       "id": "mls-r3161950",
-      "issue": "unknown-orientation"
-    },
-    {
-      "severity": "info",
-      "id": "mls-r3149267",
-      "issue": "unknown-ac"
-    },
-    {
-      "severity": "info",
-      "id": "mls-r3149267",
       "issue": "unknown-orientation"
     },
     {
@@ -211,33 +201,13 @@
       "severity": "info",
       "id": "yorkville-north-2br-den-979",
       "issue": "unknown-orientation"
-    },
-    {
-      "severity": "info",
-      "id": "mls-r3164604",
-      "issue": "unknown-ac"
-    },
-    {
-      "severity": "info",
-      "id": "mls-r3164604",
-      "issue": "unknown-orientation"
-    },
-    {
-      "severity": "info",
-      "id": "mls-r3166264",
-      "issue": "unknown-ac"
-    },
-    {
-      "severity": "info",
-      "id": "mls-r3166264",
-      "issue": "unknown-orientation"
     }
   ],
   "readinessChecks": {
     "smokeOk": true,
     "smokeFresh": true,
-    "smokeCheckedAt": "2026-09-16T21:30:43.029Z",
-    "latestDataAt": "2026-09-16T21:29:48.623Z",
+    "smokeCheckedAt": "2026-09-17T05:07:05.169Z",
+    "latestDataAt": "2026-09-17T05:05:58.927Z",
     "coverageReady": true,
     "healthyDiscoveryLanes": 3,
     "coverageWarnings": [
@@ -245,19 +215,13 @@
         "severity": "warning",
         "lane": "rentalsca",
         "status": "degraded",
-        "detail": "4/9 regional searches reachable; 0 qualifying candidates parsed; 3 scoped search-only leads retained (2 new, 1 already active, 0 need revalidation); 3 detail pages blocked after 26 discovered URLs; 22 further detail checks suppressed after repeated 403/429"
+        "detail": "5/9 regional searches reachable; 0 qualifying candidates parsed; 3 scoped search-only leads retained (2 new, 1 already active, 0 need revalidation); 3 detail pages blocked after 29 discovered URLs; 26 further detail checks suppressed after repeated 403/429"
       },
       {
         "severity": "warning",
         "lane": "livrent",
         "status": "unhealthy",
         "detail": "0/5 searches healthy; 3 blocked searches opened circuit; 2 further checks suppressed"
-      },
-      {
-        "severity": "warning",
-        "lane": "realtylink",
-        "status": "degraded",
-        "detail": "3/3 searches reachable; 3 current live candidates parsed from a partial snapshot versus complete baseline 3; positive discovery usable, removals suppressed"
       },
       {
         "severity": "warning",
@@ -268,5 +232,5 @@
     ]
   },
   "readinessIssues": [],
-  "finalizedAt": "2026-09-16T21:30:43.114Z"
+  "finalizedAt": "2026-09-17T05:07:05.261Z"
 }
