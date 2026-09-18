@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-09-18T16:35:46.120Z",
+  "refreshedAt": "2026-09-18T21:05:06.512Z",
   "groups": [
     {
       "identityKey": "1533 maple st::url:69f2e13a0fd5",
@@ -62,6 +62,18 @@
       "result": "candidate_only"
     },
     {
+      "identityKey": "1500 nanton ave::url:8de4a495742f",
+      "sources": [
+        "zumper"
+      ],
+      "rents": [
+        8000
+      ],
+      "exactUnit": false,
+      "matchedListingId": null,
+      "result": "candidate_only"
+    },
+    {
       "identityKey": "1462 devonshire crescent::url:1204230a9116",
       "sources": [
         "zumper"
@@ -98,24 +110,24 @@
       "result": "candidate_only"
     },
     {
-      "identityKey": "1888 york ave near cypress st::url:919308cdb569",
-      "sources": [
-        "craigslist"
-      ],
-      "rents": [
-        5000
-      ],
-      "exactUnit": false,
-      "matchedListingId": null,
-      "result": "candidate_only"
-    },
-    {
       "identityKey": "2111 w 11th ave near arbutus st::url:0ed00aa1e937",
       "sources": [
         "craigslist"
       ],
       "rents": [
         3500
+      ],
+      "exactUnit": false,
+      "matchedListingId": null,
+      "result": "candidate_only"
+    },
+    {
+      "identityKey": "1888 york ave near cypress st::url:919308cdb569",
+      "sources": [
+        "craigslist"
+      ],
+      "rents": [
+        5000
       ],
       "exactUnit": false,
       "matchedListingId": null,
@@ -182,6 +194,18 @@
       "result": "candidate_only"
     },
     {
+      "identityKey": "mls:r3160689",
+      "sources": [
+        "realtylink mls"
+      ],
+      "rents": [
+        4800
+      ],
+      "exactUnit": true,
+      "matchedListingId": "zumper-16e9ae17cd91",
+      "result": "authoritative_mls_reverified"
+    },
+    {
       "identityKey": "mls:r3137446",
       "sources": [
         "realtylink mls"
@@ -194,36 +218,94 @@
       "result": "authoritative_mls_reverified"
     },
     {
-      "identityKey": "mls:r3161880",
+      "identityKey": "mls:r3151372",
       "sources": [
         "realtylink mls"
       ],
       "rents": [
-        8800
+        4800
       ],
       "exactUnit": false,
-      "matchedListingId": "mls-r3161880",
+      "matchedListingId": "mls-r3151372",
+      "result": "authoritative_mls_reverified"
+    },
+    {
+      "identityKey": "mls:r3163709",
+      "sources": [
+        "realtylink mls"
+      ],
+      "rents": [
+        6000
+      ],
+      "exactUnit": false,
+      "matchedListingId": "mls-r3163709",
+      "result": "authoritative_mls_reverified"
+    },
+    {
+      "identityKey": "mls:r3151022",
+      "sources": [
+        "realtylink mls"
+      ],
+      "rents": [
+        10500
+      ],
+      "exactUnit": false,
+      "matchedListingId": "mls-r3151022",
       "result": "authoritative_mls_reverified"
     }
   ],
   "promoted": [],
   "crossVerified": [
+    "zumper-16e9ae17cd91",
     "york-103-2535-r3137446",
-    "mls-r3161880"
+    "mls-r3151372",
+    "mls-r3163709",
+    "mls-r3151022"
   ],
   "fingerprintCrossVerified": [],
   "maskedMlsMerged": [],
   "relistedMlsMerged": [],
   "negativeMatches": [],
   "detailReactivated": [
-    "mls-r3161880"
+    "mls-r3151022",
+    "mls-r3151372"
   ],
-  "mlsMissing": {},
+  "mlsMissing": {
+    "R3150923": {
+      "firstMissingAt": "2026-09-18T21:05:06.512Z",
+      "lastMissingAt": "2026-09-18T21:05:06.512Z",
+      "listingId": "mls-r3150923"
+    },
+    "R3161880": {
+      "firstMissingAt": "2026-09-18T21:05:06.512Z",
+      "lastMissingAt": "2026-09-18T21:05:06.512Z",
+      "listingId": "mls-r3161880"
+    },
+    "R3161950": {
+      "firstMissingAt": "2026-09-18T21:05:06.512Z",
+      "lastMissingAt": "2026-09-18T21:05:06.512Z",
+      "listingId": "mls-r3161950"
+    },
+    "R3159060": {
+      "firstMissingAt": "2026-09-18T21:05:06.512Z",
+      "lastMissingAt": "2026-09-18T21:05:06.512Z",
+      "listingId": "mls-r3159060"
+    },
+    "R3164628": {
+      "firstMissingAt": "2026-09-18T21:05:06.512Z",
+      "lastMissingAt": "2026-09-18T21:05:06.512Z",
+      "listingId": "mls-r3164628"
+    },
+    "R3149612": {
+      "firstMissingAt": "2026-09-18T21:05:06.512Z",
+      "lastMissingAt": "2026-09-18T21:05:06.512Z",
+      "listingId": "mls-r3149612"
+    }
+  },
   "mlsRemoved": [],
-  "realtylinkSnapshotCount": 2,
+  "realtylinkSnapshotCount": 5,
   "realtylinkSnapshotHighWaterMark": 6,
   "realtylinkSnapshotScope": "rent-3500-beds-2-4-whole-home-westside-v2",
-  "realtylinkRemovalEligible": false,
-  "mlsRemovalSuppressed": "Partial Realtylink snapshot (2 candidates versus previous complete 6); disappearance signals ignored.",
+  "realtylinkRemovalEligible": true,
   "mlsDuplicatesMerged": []
 }

@@ -577,6 +577,11 @@
       "date": "2026-09-01",
       "rent": 4300,
       "note": "NEW: live Zumper detail auto-published as independent inventory."
+    },
+    {
+      "date": "2026-09-18",
+      "rent": 4300,
+      "note": "Auto-hidden: exact live detail was not reverified within 48 hours."
     }
   ],
   "zumper-289dc426c15b": [
@@ -951,6 +956,11 @@
     },
     {
       "date": "2026-09-17",
+      "rent": 10500,
+      "note": "CORRECTED: restored after exact current MLS detail matched identity, explicit availability and rent."
+    },
+    {
+      "date": "2026-09-18",
       "rent": 10500,
       "note": "CORRECTED: restored after exact current MLS detail matched identity, explicit availability and rent."
     }
@@ -1459,6 +1469,11 @@
     },
     {
       "date": "2026-09-17",
+      "rent": 4800,
+      "note": "CORRECTED: restored after exact current MLS detail matched identity, explicit availability and rent."
+    },
+    {
+      "date": "2026-09-18",
       "rent": 4800,
       "note": "CORRECTED: restored after exact current MLS detail matched identity, explicit availability and rent."
     }
