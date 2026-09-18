@@ -23,6 +23,7 @@ const kitsWalkOfficial=await read(path.join(DATA,'evidence','source-kits-walk-of
 const kitsWalkZumper=await read(path.join(DATA,'evidence','source-kits-walk-zumper.json'),{});
 const larchwayOfficial=await read(path.join(DATA,'evidence','source-larchway-official.json'),{});
 const viridianOfficial=await read(path.join(DATA,'evidence','source-viridian-official.json'),{});
+const viridianZumper=await read(path.join(DATA,'evidence','source-viridian-zumper.json'),{});
 
 const countOk=obj=>Object.values(obj||{}).filter(x=>x?.ok===true).length;
 const countTotal=obj=>Object.keys(obj||{}).length;
@@ -62,10 +63,14 @@ const kitsWalkInventoryEvidence=[
   {evidence:kitsWalkOfficial,urlPattern:/kitswalkleasing\.com\/floorplans/i},
   {evidence:kitsWalkZumper,urlPattern:/zumper\.com\/apartment-buildings\/p\d+\/kits-walk-by-strand-/i}
 ];
+const viridianInventoryEvidence=[
+  {evidence:viridianOfficial,urlPattern:/rentcafe\.com\/apartments\/bc\/vancouver\/viridian1\/default\.aspx/i},
+  {evidence:viridianZumper,urlPattern:/zumper\.com\/apartment-buildings\/p510456\/viridian-fairview-vancouver-bc/i}
+];
 const priorityInventorySources=[
   {building:'kits-walk',evidence:kitsWalkInventoryEvidence.find(({evidence,urlPattern})=>priorityInventoryEvidenceHealthy(evidence,/kits walk|2075 (?:west |w )?12th/i,now,12,urlPattern))?.evidence||kitsWalkOfficial,semantic:/kits walk|2075 (?:west |w )?12th/i,urlPattern:null,alternateCount:kitsWalkInventoryEvidence.length},
   {building:'larchway-gardens',evidence:larchwayOfficial,semantic:/larchway gardens|2475 west broadway/i,urlPattern:/quadrealresidential\.com\/vancouver\/larchway-gardens\/floorplans\/?/i},
-  {building:'viridian',evidence:viridianOfficial,semantic:/viridian|1783 west 14th/i,urlPattern:/rentcafe\.com\/apartments\/bc\/vancouver\/viridian1\/default\.aspx/i}
+  {building:'viridian',evidence:viridianInventoryEvidence.find(({evidence,urlPattern})=>priorityInventoryEvidenceHealthy(evidence,/viridian|1783 (?:west |w )?14th/i,now,12,urlPattern))?.evidence||viridianOfficial,semantic:/viridian|1783 (?:west |w )?14th/i,urlPattern:null,alternateCount:viridianInventoryEvidence.length}
 ].map(({building,evidence,semantic,urlPattern,alternateCount=1})=>{
   const healthy=priorityInventoryEvidenceHealthy(evidence,semantic,now,12,urlPattern);
   return {building,healthy,checkedAt:evidence.checkedAt||null,evidenceUrl:evidence.source?.url||evidence.finalUrl||null,sourceOptions:alternateCount};

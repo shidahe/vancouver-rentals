@@ -32,6 +32,7 @@
     {"id":"kits-walk-rentalsca","name":"Kits Walk Rentals.ca aggregate inventory","url":"https://rentals.ca/vancouver/kits-walk-by-strand","kind":"marketplace","adapter":"official-floorplans"},
     {"id":"larchway-official","name":"Larchway Gardens official availability","url":"https://quadrealresidential.com/vancouver/larchway-gardens/floorplans/","kind":"official","adapter":"official-floorplans"},
     {"id":"viridian-official","name":"Viridian official availability","url":"https://www.rentcafe.com/apartments/bc/vancouver/viridian1/default.aspx","kind":"property_manager","adapter":"official-floorplans"},
+    {"id":"viridian-zumper","name":"Viridian exact-building fallback","url":"https://www.zumper.com/apartment-buildings/p510456/viridian-fairview-vancouver-bc","kind":"marketplace","adapter":"official-floorplans"},
     {"id":"arbutus-terrace-official","name":"Arbutus Terrace official","url":"https://stranddev.com/portfolio/arbutusterrace-rental","kind":"official","adapter":"official-floorplans"},
     {"id":"arbutus-residences-rentfaster","name":"Arbutus Residences inventory","url":"https://www.rentfaster.ca/properties/2139-lahb-ave-vancouver-454186","kind":"property_manager","adapter":"rentfaster-detail"},
     {"id":"homax-arbutus","name":"Homax / Arbutus Rental","url":"https://www.arbutusrental.com/search","kind":"property_manager","adapter":"generic-search"},
