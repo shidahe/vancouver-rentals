@@ -1,17 +1,17 @@
 {
-  "refreshedAt": "2026-09-18T04:55:27.712Z",
+  "refreshedAt": "2026-09-18T11:27:48.982Z",
   "mode": "candidate-only",
   "sourceHealth": {
     "kitsilano": {
-      "checkedAt": "2026-09-18T04:55:27.712Z",
+      "checkedAt": "2026-09-18T11:27:48.982Z",
       "status": 200,
       "ok": true,
       "finalUrl": "https://www.craigslist.org/search/subarea/van?cat=apa&min_bedrooms=2&query=kitsilano",
-      "anchorCount": 266,
-      "detailLinkCount": 244,
-      "embeddedDetailLinkCount": 122,
+      "anchorCount": 264,
+      "detailLinkCount": 242,
+      "embeddedDetailLinkCount": 121,
       "resultContainerCount": 123,
-      "postIdCount": 122,
+      "postIdCount": 121,
       "hrefShapeSamples": [
         "www.craigslist.org/subarea/van",
         "www.craigslist.org/favorites",
@@ -29,15 +29,15 @@
       "title": "vancouver apartments / housing for rent \"kitsilano\" - craigslist"
     },
     "arbutus": {
-      "checkedAt": "2026-09-18T04:55:27.712Z",
+      "checkedAt": "2026-09-18T11:27:48.982Z",
       "status": 200,
       "ok": true,
       "finalUrl": "https://www.craigslist.org/search/subarea/van?cat=apa&min_bedrooms=2&query=arbutus",
-      "anchorCount": 160,
-      "detailLinkCount": 138,
-      "embeddedDetailLinkCount": 69,
+      "anchorCount": 158,
+      "detailLinkCount": 136,
+      "embeddedDetailLinkCount": 68,
       "resultContainerCount": 69,
-      "postIdCount": 69,
+      "postIdCount": 68,
       "hrefShapeSamples": [
         "www.craigslist.org/subarea/van",
         "www.craigslist.org/favorites",
@@ -55,15 +55,15 @@
       "title": "vancouver apartments / housing for rent \"arbutus\" - craigslist"
     },
     "point-grey": {
-      "checkedAt": "2026-09-18T04:55:27.712Z",
+      "checkedAt": "2026-09-18T11:27:48.982Z",
       "status": 200,
       "ok": true,
       "finalUrl": "https://www.craigslist.org/search/subarea/van?cat=apa&min_bedrooms=2&query=point%20grey",
-      "anchorCount": 200,
-      "detailLinkCount": 178,
-      "embeddedDetailLinkCount": 89,
-      "resultContainerCount": 90,
-      "postIdCount": 89,
+      "anchorCount": 194,
+      "detailLinkCount": 172,
+      "embeddedDetailLinkCount": 86,
+      "resultContainerCount": 87,
+      "postIdCount": 86,
       "hrefShapeSamples": [
         "www.craigslist.org/subarea/van",
         "www.craigslist.org/favorites",
@@ -81,15 +81,15 @@
       "title": "vancouver apartments / housing for rent \"point grey\" - craigslist"
     },
     "dunbar": {
-      "checkedAt": "2026-09-18T04:55:27.712Z",
+      "checkedAt": "2026-09-18T11:27:48.982Z",
       "status": 200,
       "ok": true,
       "finalUrl": "https://www.craigslist.org/search/subarea/van?cat=apa&min_bedrooms=2&query=dunbar",
-      "anchorCount": 210,
-      "detailLinkCount": 188,
-      "embeddedDetailLinkCount": 94,
-      "resultContainerCount": 96,
-      "postIdCount": 94,
+      "anchorCount": 208,
+      "detailLinkCount": 186,
+      "embeddedDetailLinkCount": 93,
+      "resultContainerCount": 93,
+      "postIdCount": 93,
       "hrefShapeSamples": [
         "www.craigslist.org/subarea/van",
         "www.craigslist.org/favorites",
@@ -101,28 +101,28 @@
         "www.craigslist.org/about/prohibited",
         "www.craigslist.org/about/recalled_items",
         "www.craigslist.org/about/help/safety/scams",
-        "www.craigslist.org/view/d/vancouver-furnished-bd-ba-in-kitsilano/gpsWdkqgqmv4Nz23gKmNJN",
-        "www.craigslist.org/view/d/vancouver-d41-luxury-home-in-dunbar/jwYDcFRU93tQ4RMPog5WiK"
+        "www.craigslist.org/view/d/vancouver-rooms-share-at-br-suite-in/qLuJpgoE8FmWUnfA4xxPTa",
+        "www.craigslist.org/view/d/vancouver-furnished-bd-ba-in-kitsilano/gpsWdkqgqmv4Nz23gKmNJN"
       ],
       "title": "vancouver apartments / housing for rent \"dunbar\" - craigslist"
     }
   },
   "diagnostics": {
-    "discoveredDetailUrls": 297,
-    "searchCards": 378,
-    "uniqueSearchCards": 297,
-    "missingRentOrBedrooms": 115,
-    "outOfScope": 131,
-    "outOfArea": 23,
-    "searchAccepted": 32,
-    "detailChecks": 32,
-    "detailVerified": 28,
+    "discoveredDetailUrls": 291,
+    "searchCards": 372,
+    "uniqueSearchCards": 291,
+    "missingRentOrBedrooms": 112,
+    "outOfScope": 130,
+    "outOfArea": 22,
+    "searchAccepted": 31,
+    "detailChecks": 31,
+    "detailVerified": 27,
     "detailNegative": 0,
     "detailIdentityMismatch": 0,
     "detailStale": 0,
     "detailErrors": 0,
     "exactAddresses": 8,
-    "accepted": 28,
+    "accepted": 27,
     "errors": 0
   },
   "candidates": [
@@ -144,7 +144,7 @@
       "targetArea": true,
       "active": true,
       "postedOrUpdatedAt": "2026-09-17T16:10:21.000Z",
-      "checkedAt": "2026-09-18T04:55:27.712Z",
+      "checkedAt": "2026-09-18T11:27:48.982Z",
       "images": [
         "https://images.craigslist.org/00o0o_jGuXcZK9yR9_0uY0kE_600x450.jpg",
         "https://images.craigslist.org/00o0o_jGuXcZK9yR9_0uY0kE_50x50c.jpg",
@@ -189,7 +189,7 @@
       "targetArea": true,
       "active": true,
       "postedOrUpdatedAt": "2026-09-17T16:04:57.000Z",
-      "checkedAt": "2026-09-18T04:55:27.712Z",
+      "checkedAt": "2026-09-18T11:27:48.982Z",
       "images": [
         "https://images.craigslist.org/00S0S_3nmCt9azPdx_1320MM_600x450.jpg",
         "https://images.craigslist.org/00S0S_3nmCt9azPdx_1320MM_50x50c.jpg",
@@ -234,7 +234,7 @@
       "targetArea": true,
       "active": true,
       "postedOrUpdatedAt": "2026-09-17T08:48:42.000Z",
-      "checkedAt": "2026-09-18T04:55:27.712Z",
+      "checkedAt": "2026-09-18T11:27:48.982Z",
       "images": [
         "https://images.craigslist.org/00c0c_jI6maH6Pk5V_08g05v_600x450.jpg",
         "https://images.craigslist.org/00c0c_jI6maH6Pk5V_08g05v_50x50c.jpg",
@@ -279,7 +279,7 @@
       "targetArea": true,
       "active": true,
       "postedOrUpdatedAt": "2026-09-17T08:48:38.000Z",
-      "checkedAt": "2026-09-18T04:55:27.712Z",
+      "checkedAt": "2026-09-18T11:27:48.982Z",
       "images": [
         "https://images.craigslist.org/00c0c_jI6maH6Pk5V_08g05v_600x450.jpg",
         "https://images.craigslist.org/00c0c_jI6maH6Pk5V_08g05v_50x50c.jpg",
@@ -324,7 +324,7 @@
       "targetArea": true,
       "active": true,
       "postedOrUpdatedAt": "2026-09-17T02:26:26.000Z",
-      "checkedAt": "2026-09-18T04:55:27.712Z",
+      "checkedAt": "2026-09-18T11:27:48.982Z",
       "images": [
         "https://images.craigslist.org/00X0X_8fAXb0mepVn_0t20CI_600x450.jpg",
         "https://images.craigslist.org/00X0X_8fAXb0mepVn_0t20CI_50x50c.jpg",
@@ -365,7 +365,7 @@
       "targetArea": true,
       "active": true,
       "postedOrUpdatedAt": "2026-09-16T17:28:30.000Z",
-      "checkedAt": "2026-09-18T04:55:27.712Z",
+      "checkedAt": "2026-09-18T11:27:48.982Z",
       "images": [
         "https://images.craigslist.org/00H0H_aBooG6gbfXq_0ia0du_600x450.jpg",
         "https://images.craigslist.org/00H0H_aBooG6gbfXq_0ia0du_50x50c.jpg",
@@ -410,7 +410,7 @@
       "targetArea": true,
       "active": true,
       "postedOrUpdatedAt": "2026-09-16T19:09:25.000Z",
-      "checkedAt": "2026-09-18T04:55:27.712Z",
+      "checkedAt": "2026-09-18T11:27:48.982Z",
       "images": [
         "https://images.craigslist.org/00a0a_enPB3cuwCIj_0CI0t2_600x450.jpg",
         "https://images.craigslist.org/00a0a_enPB3cuwCIj_0CI0t2_50x50c.jpg",
@@ -455,7 +455,7 @@
       "targetArea": true,
       "active": true,
       "postedOrUpdatedAt": "2026-09-06T21:00:40.000Z",
-      "checkedAt": "2026-09-18T04:55:27.712Z",
+      "checkedAt": "2026-09-18T11:27:48.982Z",
       "images": [
         "https://images.craigslist.org/00V0V_aCa1scEE9g3_0qY0fb_600x450.jpg",
         "https://images.craigslist.org/00V0V_aCa1scEE9g3_0qY0fb_50x50c.jpg",
@@ -500,7 +500,7 @@
       "targetArea": true,
       "active": true,
       "postedOrUpdatedAt": "2026-08-24T22:59:23.000Z",
-      "checkedAt": "2026-09-18T04:55:27.712Z",
+      "checkedAt": "2026-09-18T11:27:48.982Z",
       "images": [
         "https://images.craigslist.org/00Z0Z_k7sjTiNFcjk_0CI0t2_600x450.jpg",
         "https://images.craigslist.org/00Z0Z_k7sjTiNFcjk_0CI0t2_50x50c.jpg",
@@ -538,7 +538,7 @@
       "targetArea": true,
       "active": true,
       "postedOrUpdatedAt": "2026-08-22T14:03:54.000Z",
-      "checkedAt": "2026-09-18T04:55:27.712Z",
+      "checkedAt": "2026-09-18T11:27:48.982Z",
       "images": [
         "https://images.craigslist.org/00505_9JjEv3eRS29_0CI0pO_600x450.jpg",
         "https://images.craigslist.org/00505_9JjEv3eRS29_0CI0pO_50x50c.jpg",
@@ -583,7 +583,7 @@
       "targetArea": true,
       "active": true,
       "postedOrUpdatedAt": "2026-09-17T23:10:06.000Z",
-      "checkedAt": "2026-09-18T04:55:27.712Z",
+      "checkedAt": "2026-09-18T11:27:48.982Z",
       "images": [
         "https://images.craigslist.org/01616_jLj3OlQV1v_0jm0c6_600x450.jpg",
         "https://images.craigslist.org/01616_jLj3OlQV1v_0jm0c6_50x50c.jpg",
@@ -628,7 +628,7 @@
       "targetArea": true,
       "active": true,
       "postedOrUpdatedAt": "2026-09-17T23:09:53.000Z",
-      "checkedAt": "2026-09-18T04:55:27.712Z",
+      "checkedAt": "2026-09-18T11:27:48.982Z",
       "images": [
         "https://images.craigslist.org/00x0x_5rdhaj721wT_0jm0c6_600x450.jpg",
         "https://images.craigslist.org/00x0x_5rdhaj721wT_0jm0c6_50x50c.jpg",
@@ -673,7 +673,7 @@
       "targetArea": true,
       "active": true,
       "postedOrUpdatedAt": "2026-09-17T18:54:22.000Z",
-      "checkedAt": "2026-09-18T04:55:27.712Z",
+      "checkedAt": "2026-09-18T11:27:48.982Z",
       "images": [
         "https://images.craigslist.org/00p0p_1XnMnR4kdZ9_0oN0gv_600x450.jpg",
         "https://images.craigslist.org/00p0p_1XnMnR4kdZ9_0oN0gv_50x50c.jpg",
@@ -715,7 +715,7 @@
       "targetArea": true,
       "active": true,
       "postedOrUpdatedAt": "2026-09-17T06:10:40.000Z",
-      "checkedAt": "2026-09-18T04:55:27.712Z",
+      "checkedAt": "2026-09-18T11:27:48.982Z",
       "images": [
         "https://images.craigslist.org/00N0N_78ZMrBVFcbB_0CI0pO_600x450.jpg",
         "https://images.craigslist.org/00N0N_78ZMrBVFcbB_0CI0pO_50x50c.jpg",
@@ -744,51 +744,6 @@
     },
     {
       "source": "Craigslist",
-      "postId": "7967805435",
-      "url": "https://www.craigslist.org/view/d/vancouver-kits-furnished-large-bedrooms/6rCKqdhAzb1LGv9bqEC11Z",
-      "title": "$3,500 / 3br - Kits Furnished Large 3 Bedrooms-Gr Fl-September-Great Location (Kitsilano, Vancouver-UBC/Beach)",
-      "address": null,
-      "identityKey": "craigslist::post:7967805435",
-      "rent": 3500,
-      "bedrooms": 3,
-      "bathrooms": 1,
-      "sqft": null,
-      "geo": {
-        "lat": 49.267917,
-        "lng": -123.16957
-      },
-      "targetArea": true,
-      "active": true,
-      "postedOrUpdatedAt": "2026-09-16T23:58:53.000Z",
-      "checkedAt": "2026-09-18T04:55:27.712Z",
-      "images": [
-        "https://images.craigslist.org/00d0d_1zL49FRcbKK_0AE0ru_600x450.jpg",
-        "https://images.craigslist.org/00d0d_1zL49FRcbKK_0AE0ru_50x50c.jpg",
-        "https://images.craigslist.org/00J0J_bf3vkVEP0SZ_0AE0ru_50x50c.jpg",
-        "https://images.craigslist.org/00G0G_fmr4LXgIjBm_0AE0ru_50x50c.jpg",
-        "https://images.craigslist.org/00r0r_cN205jvTmTo_0AE0ru_50x50c.jpg",
-        "https://images.craigslist.org/00O0O_b2mdym9AZcX_0AE0ru_50x50c.jpg",
-        "https://images.craigslist.org/00Z0Z_b4YOFE54j9a_0CI0t2_50x50c.jpg",
-        "https://images.craigslist.org/00h0h_8EmzgOTBSJy_0CI0t2_50x50c.jpg",
-        "https://images.craigslist.org/00Z0Z_72VloNXQPrz_0CI0t2_50x50c.jpg",
-        "https://images.craigslist.org/00a0a_3kx09tLYY4U_0CI0t2_50x50c.jpg",
-        "https://images.craigslist.org/00Z0Z_1sdumWyP74H_0CI0t2_50x50c.jpg",
-        "https://images.craigslist.org/00s0s_cCohggRHIko_0CI0t2_50x50c.jpg"
-      ],
-      "publishable": false,
-      "evidenceKind": "current_search_card_and_exact_detail",
-      "queryIds": [
-        "kitsilano"
-      ],
-      "approximateLocation": "Kitsilano, Vancouver-UBC/Beach",
-      "addressPrecision": "neighborhood",
-      "description": "The property at one of the most desirable living places in Kitsilano, lots of fun things to do year-round.\nThe entire suite just been painted and ready for move in.\nIt is a nice place, with easy short transit to UBC, downtown or anywhere.\n\nThe three bedrooms, living room, kitchen and bathroom, partly furnished.\n\nFive minutes walk to the beach. Major bus lines to UBC and downtown are all within a few steps - including the 84, 44 Express buses, and minutes to the 99 B-line.\nNew developments are popping up to keep this location to be one of the most desirable places to live, of enjoyment and fun things to do.\n\nPublic parks, tennis court and the beach are just minutes of walking distance.\nRelax and have fun on the beach, walk on the ocean floor afar when low tide, watch the waves on the ocean and the sunset. watch the firework in the summer.\nJog in the neighbourhood, play tennis at the tennis court (2 blocks away).\n\nRent $3500 + per month.\nLease required.\n\nTwo supermarket grocery stores, Fresh Street and Safeway, food stores and cafes of all kinds, Naam restaurant and many other shops are all close-by, also Darby liquor store just around at West 4th Ave.\n\nThere are three large bedrooms on the ground floor, each bedroom is fitted with full or single size bed with lots of room around. Each of the bedrooms is furnished with a dresser.\nIn addition, there is a walk in closet of about 8 foot wide in each bedroom.\n\nOne of the three bedrooms is extra large with two windows.\n\nLiving room is furnished with a very comfortable couch and chair, coffee table, shelves and table and chairs in the dining area, etc.\n\nLiving room and kitchen are combined in one open area.\nThere are windows throughout the bedrooms, living room, kitchen and bathroom.\n\nKitchen area with dishwasher, cabinet and countertop.\nBathroom with tub and shower.\n\nWasher and dryer provided for laundry.\n\nWe are looking for quiet, responsible tenants, clean and tidy, garbage/green bin/recycling, etc.\nNo smoker, No pet.\n\n[",
-      "type": "house",
-      "ac": null,
-      "detailVerified": true
-    },
-    {
-      "source": "Craigslist",
       "postId": "7956031596",
       "url": "https://www.craigslist.org/view/d/vancouver-top-floor-heart-of-kits-beds/4rFSAuZHRZB2t6XpXGvPR9",
       "title": "$3,900 / 3br - 1000ft2 - Top Floor Heart of Kits, 3 beds (Vancouver, Kitsilano, UBC,)",
@@ -805,7 +760,7 @@
       "targetArea": true,
       "active": true,
       "postedOrUpdatedAt": "2026-09-16T03:36:15.000Z",
-      "checkedAt": "2026-09-18T04:55:27.712Z",
+      "checkedAt": "2026-09-18T11:27:48.982Z",
       "images": [
         "https://images.craigslist.org/00P0P_5AApCehTqd1_1320MM_600x450.jpg",
         "https://images.craigslist.org/00P0P_5AApCehTqd1_1320MM_50x50c.jpg",
@@ -850,7 +805,7 @@
       "targetArea": true,
       "active": true,
       "postedOrUpdatedAt": "2026-09-15T15:09:46.000Z",
-      "checkedAt": "2026-09-18T04:55:27.712Z",
+      "checkedAt": "2026-09-18T11:27:48.982Z",
       "images": [
         "https://images.craigslist.org/00W0W_kG8iSepXJjO_0jm0CI_600x450.jpg",
         "https://images.craigslist.org/00W0W_kG8iSepXJjO_0jm0CI_50x50c.jpg",
@@ -890,7 +845,7 @@
       "targetArea": true,
       "active": true,
       "postedOrUpdatedAt": "2026-09-15T03:21:47.000Z",
-      "checkedAt": "2026-09-18T04:55:27.712Z",
+      "checkedAt": "2026-09-18T11:27:48.982Z",
       "images": [
         "https://images.craigslist.org/00y0y_9QoxDSNE4uG_0pO0jm_600x450.jpg",
         "https://images.craigslist.org/00y0y_9QoxDSNE4uG_0pO0jm_50x50c.jpg",
@@ -935,7 +890,7 @@
       "targetArea": true,
       "active": true,
       "postedOrUpdatedAt": "2026-09-08T20:12:58.000Z",
-      "checkedAt": "2026-09-18T04:55:27.712Z",
+      "checkedAt": "2026-09-18T11:27:48.982Z",
       "images": [
         "https://images.craigslist.org/00E0E_e5n8yh4XnBK_0CI0pP_600x450.jpg",
         "https://images.craigslist.org/00E0E_e5n8yh4XnBK_0CI0pP_50x50c.jpg",
@@ -980,7 +935,7 @@
       "targetArea": true,
       "active": true,
       "postedOrUpdatedAt": "2026-09-16T05:07:08.000Z",
-      "checkedAt": "2026-09-18T04:55:27.712Z",
+      "checkedAt": "2026-09-18T11:27:48.982Z",
       "images": [
         "https://images.craigslist.org/00R0R_XV0jcKDQvv_0aT07g_600x450.jpg",
         "https://images.craigslist.org/00R0R_XV0jcKDQvv_0aT07g_50x50c.jpg",
@@ -1025,7 +980,7 @@
       "targetArea": true,
       "active": true,
       "postedOrUpdatedAt": "2026-09-16T05:07:22.000Z",
-      "checkedAt": "2026-09-18T04:55:27.712Z",
+      "checkedAt": "2026-09-18T11:27:48.982Z",
       "images": [
         "https://images.craigslist.org/00101_8Lj1RrRW6kM_0gw0b1_600x450.jpg",
         "https://images.craigslist.org/00101_8Lj1RrRW6kM_0gw0b1_50x50c.jpg",
@@ -1070,7 +1025,7 @@
       "targetArea": true,
       "active": true,
       "postedOrUpdatedAt": "2026-09-17T16:10:22.000Z",
-      "checkedAt": "2026-09-18T04:55:27.712Z",
+      "checkedAt": "2026-09-18T11:27:48.982Z",
       "images": [
         "https://images.craigslist.org/00Y0Y_k3PKmKJZ2y9_0uY0kE_600x450.jpg",
         "https://images.craigslist.org/00Y0Y_k3PKmKJZ2y9_0uY0kE_50x50c.jpg",
@@ -1115,7 +1070,7 @@
       "targetArea": true,
       "active": true,
       "postedOrUpdatedAt": "2026-09-16T10:45:24.000Z",
-      "checkedAt": "2026-09-18T04:55:27.712Z",
+      "checkedAt": "2026-09-18T11:27:48.982Z",
       "images": [
         "https://images.craigslist.org/00g0g_4rGVb0GDyC7_0pO0hd_600x450.jpg",
         "https://images.craigslist.org/00g0g_4rGVb0GDyC7_0pO0hd_50x50c.jpg",
@@ -1160,7 +1115,7 @@
       "targetArea": true,
       "active": true,
       "postedOrUpdatedAt": "2026-09-17T23:04:32.000Z",
-      "checkedAt": "2026-09-18T04:55:27.712Z",
+      "checkedAt": "2026-09-18T11:27:48.982Z",
       "images": [
         "https://images.craigslist.org/00404_cuCXJxUPcyv_0ak074_600x450.jpg",
         "https://images.craigslist.org/00404_cuCXJxUPcyv_0ak074_50x50c.jpg",
@@ -1203,7 +1158,7 @@
       "targetArea": true,
       "active": true,
       "postedOrUpdatedAt": "2026-09-15T04:45:10.000Z",
-      "checkedAt": "2026-09-18T04:55:27.712Z",
+      "checkedAt": "2026-09-18T11:27:48.982Z",
       "images": [
         "https://images.craigslist.org/00b0b_fJ1dKmYpeL7_1320MM_600x450.jpg",
         "https://images.craigslist.org/00b0b_fJ1dKmYpeL7_1320MM_50x50c.jpg",
@@ -1248,7 +1203,7 @@
       "targetArea": true,
       "active": true,
       "postedOrUpdatedAt": "2026-09-07T04:35:34.000Z",
-      "checkedAt": "2026-09-18T04:55:27.712Z",
+      "checkedAt": "2026-09-18T11:27:48.982Z",
       "images": [
         "https://images.craigslist.org/00p0p_aYFyAMBvlUw_0CI0t2_600x450.jpg",
         "https://images.craigslist.org/00p0p_aYFyAMBvlUw_0CI0t2_50x50c.jpg",
@@ -1293,7 +1248,7 @@
       "targetArea": true,
       "active": true,
       "postedOrUpdatedAt": "2026-09-17T00:56:28.000Z",
-      "checkedAt": "2026-09-18T04:55:27.712Z",
+      "checkedAt": "2026-09-18T11:27:48.982Z",
       "images": [
         "https://images.craigslist.org/00d0d_1HidEZAzuOu_0CI0t2_600x450.jpg",
         "https://images.craigslist.org/00d0d_1HidEZAzuOu_0CI0t2_50x50c.jpg",
@@ -1338,7 +1293,7 @@
       "targetArea": true,
       "active": true,
       "postedOrUpdatedAt": "2026-09-16T05:11:15.000Z",
-      "checkedAt": "2026-09-18T04:55:27.712Z",
+      "checkedAt": "2026-09-18T11:27:48.982Z",
       "images": [
         "https://images.craigslist.org/00R0R_5D6x8JG8rRh_0gw0t2_600x450.jpg",
         "https://images.craigslist.org/00R0R_5D6x8JG8rRh_0gw0t2_50x50c.jpg",

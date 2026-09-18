@@ -608,6 +608,11 @@
       "date": "2026-09-18",
       "rent": 4995,
       "note": "AUTO-HIDDEN: exact marketplace page now offers an availability alert instead of a currently available rental; confirmation required before removal."
+    },
+    {
+      "date": "2026-09-18",
+      "rent": 4995,
+      "note": "AUTO-REMOVED after direct live verification found explicit unavailable evidence."
     }
   ],
   "zumper-e3fb92a991a6": [
@@ -1950,6 +1955,11 @@
       "date": "2026-09-16",
       "rent": 6000,
       "note": "CORRECTED: restored after exact current MLS detail matched identity, explicit availability and rent."
+    },
+    {
+      "date": "2026-09-18",
+      "rent": 6000,
+      "note": "CORRECTED: restored after exact current MLS detail matched identity, explicit availability and rent."
     }
   ],
   "mls-r3164628": [
@@ -1980,6 +1990,11 @@
     },
     {
       "date": "2026-09-17",
+      "rent": 5000,
+      "note": "CORRECTED: restored after exact current MLS detail matched identity, explicit availability and rent."
+    },
+    {
+      "date": "2026-09-18",
       "rent": 5000,
       "note": "CORRECTED: restored after exact current MLS detail matched identity, explicit availability and rent."
     }
