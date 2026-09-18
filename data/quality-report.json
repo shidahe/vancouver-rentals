@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-09-17T21:35:05.798Z",
-  "activeCount": 22,
+  "generatedAt": "2026-09-18T04:57:35.571Z",
+  "activeCount": 21,
   "decisionReady": false,
   "readinessStatus": "finalized",
   "highIssueCount": 0,
   "mediumIssueCount": 0,
-  "infoIssueCount": 39,
+  "infoIssueCount": 37,
   "issues": [
     {
       "severity": "info",
@@ -84,11 +84,6 @@
     },
     {
       "severity": "info",
-      "id": "arbutus-residences-floorplan-2-bedroom-townhouse-den-1340",
-      "issue": "unknown-orientation"
-    },
-    {
-      "severity": "info",
       "id": "zumper-ecd4e868f79c",
       "issue": "unknown-ac"
     },
@@ -105,16 +100,6 @@
     {
       "severity": "info",
       "id": "zumper-1441677a9e59",
-      "issue": "unknown-orientation"
-    },
-    {
-      "severity": "info",
-      "id": "zumper-717a57c1ea78",
-      "issue": "unknown-ac"
-    },
-    {
-      "severity": "info",
-      "id": "zumper-717a57c1ea78",
       "issue": "unknown-orientation"
     },
     {
@@ -164,6 +149,21 @@
     },
     {
       "severity": "info",
+      "id": "mls-r3161880",
+      "issue": "unknown-orientation"
+    },
+    {
+      "severity": "info",
+      "id": "mls-r3159060",
+      "issue": "unknown-ac"
+    },
+    {
+      "severity": "info",
+      "id": "mls-r3159060",
+      "issue": "unknown-orientation"
+    },
+    {
+      "severity": "info",
       "id": "fourth-mac-floorplan-2-bedroom-2-bath-801-4350",
       "issue": "unknown-orientation"
     },
@@ -175,16 +175,6 @@
     {
       "severity": "info",
       "id": "yorkville-north-2br-den-979",
-      "issue": "unknown-orientation"
-    },
-    {
-      "severity": "info",
-      "id": "mls-r3166264",
-      "issue": "unknown-ac"
-    },
-    {
-      "severity": "info",
-      "id": "mls-r3166264",
       "issue": "unknown-orientation"
     },
     {
@@ -206,8 +196,8 @@
   "readinessChecks": {
     "smokeOk": true,
     "smokeFresh": true,
-    "smokeCheckedAt": "2026-09-17T21:35:10.807Z",
-    "latestDataAt": "2026-09-17T21:34:16.728Z",
+    "smokeCheckedAt": "2026-09-18T04:57:40.662Z",
+    "latestDataAt": "2026-09-18T04:56:54.360Z",
     "coverageReady": false,
     "healthyDiscoveryLanes": 3,
     "coverageWarnings": [
@@ -215,13 +205,19 @@
         "severity": "warning",
         "lane": "rentalsca",
         "status": "degraded",
-        "detail": "4/9 regional searches reachable; 0 qualifying candidates parsed; 3 scoped search-only leads retained (2 new, 1 already active, 0 need revalidation); 3 detail pages blocked after 24 discovered URLs; 21 further detail checks suppressed after repeated 403/429"
+        "detail": "1/9 regional searches reachable; 0 qualifying candidates parsed; 2 scoped search-only leads retained (1 new, 1 already active, 0 need revalidation); 3 detail pages blocked after 11 discovered URLs; 8 further detail checks suppressed after repeated 403/429"
       },
       {
         "severity": "warning",
         "lane": "livrent",
         "status": "unhealthy",
         "detail": "0/5 searches healthy; 3 blocked searches opened circuit; 2 further checks suppressed"
+      },
+      {
+        "severity": "warning",
+        "lane": "realtylink",
+        "status": "degraded",
+        "detail": "3/3 searches reachable; 3 current live candidates parsed from a partial snapshot versus complete baseline 3; positive discovery usable, removals suppressed"
       }
     ]
   },
@@ -234,11 +230,11 @@
           "severity": "high",
           "issue": "priority-building-inventory-source-unhealthy",
           "building": "viridian",
-          "checkedAt": "2026-09-17T21:26:03.695Z",
+          "checkedAt": "2026-09-18T04:48:53.646Z",
           "evidenceUrl": "https://www.rentcafe.com/apartments/bc/vancouver/viridian1/default.aspx"
         }
       ]
     }
   ],
-  "finalizedAt": "2026-09-17T21:35:10.886Z"
+  "finalizedAt": "2026-09-18T04:57:40.731Z"
 }

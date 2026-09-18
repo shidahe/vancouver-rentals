@@ -529,6 +529,11 @@
       "date": "2026-09-17",
       "rent": 5390,
       "note": "NEEDS CONFIRMATION: latest purpose-built fallback sources did not confirm the exact configured rent + sqft inventory row."
+    },
+    {
+      "date": "2026-09-18",
+      "rent": 5390,
+      "note": "NEEDS CONFIRMATION: latest purpose-built fallback sources did not confirm the exact configured rent + sqft inventory row."
     }
   ],
   "zumper-2fde865f7e2c": [
@@ -598,6 +603,11 @@
       "date": "2026-09-02",
       "rent": 4995,
       "note": "NEW: live Zumper detail auto-published as independent inventory."
+    },
+    {
+      "date": "2026-09-18",
+      "rent": 4995,
+      "note": "AUTO-HIDDEN: exact marketplace page now offers an availability alert instead of a currently available rental; confirmation required before removal."
     }
   ],
   "zumper-e3fb92a991a6": [
@@ -1687,6 +1697,11 @@
       "date": "2026-09-17",
       "rent": 8800,
       "note": "CORRECTED: restored after exact current MLS detail matched identity, explicit availability and rent."
+    },
+    {
+      "date": "2026-09-18",
+      "rent": 8800,
+      "note": "CORRECTED: restored after exact current MLS detail matched identity, explicit availability and rent."
     }
   ],
   "mls-r3161950": [
@@ -1814,6 +1829,11 @@
     },
     {
       "date": "2026-09-17",
+      "rent": 15000,
+      "note": "CORRECTED: restored after exact current MLS detail matched identity, explicit availability and rent."
+    },
+    {
+      "date": "2026-09-18",
       "rent": 15000,
       "note": "CORRECTED: restored after exact current MLS detail matched identity, explicit availability and rent."
     }
@@ -2012,6 +2032,11 @@
       "date": "2026-09-17",
       "rent": 5500,
       "note": "CORRECTED: restored after exact current MLS detail matched identity, explicit availability and rent."
+    },
+    {
+      "date": "2026-09-18",
+      "rent": 5500,
+      "note": "AUTO-REMOVED after direct live verification found explicit unavailable evidence."
     }
   ],
   "w16-coach-house-850": [
