@@ -26,6 +26,51 @@ export function craigslistPostId(url) {
   return value.match(/\/(\d+)\.html$/)?.[1] || value.match(/\/view\/d\/[^/]+\/([a-z0-9_-]+)$/i)?.[1] || null;
 }
 
+const craigslistComparableTitle = value => String(value || '')
+  .toLowerCase()
+  .replace(/^\s*\$[\d,]+\s*\/\s*\d+br\s*-\s*\d+ft2\s*-\s*/i, '')
+  .replace(/\s*\([^)]*\)\s*$/g, '')
+  .replace(/[^a-z0-9]+/g, ' ')
+  .trim();
+
+export function craigslistImageAssetIds(images = []) {
+  return [...new Set(images.map(url => {
+    const filename=String(url).match(/images\.craigslist\.org\/([^/?#]+)/i)?.[1];
+    return filename?.split('_')[1]||null;
+  }).filter(Boolean))];
+}
+
+// A Craigslist repost gets a new post ID, so post-ID deduplication alone can
+// inflate the candidate queue. Collapse only candidates that share the same
+// normalized headline, structured facts, precise map point, and at least one
+// Craigslist image asset. Those independent signals keep same-building or
+// same-address units separate while recognizing a genuine repost.
+export function dedupeCraigslistRelistings(candidates = []) {
+  const kept=[];
+  let merged=0;
+  for(const candidate of [...candidates].sort((a,b)=>Date.parse(b.postedOrUpdatedAt||0)-Date.parse(a.postedOrUpdatedAt||0))){
+    const imageIds=new Set(craigslistImageAssetIds(candidate.images));
+    const match=kept.find(existing=>{
+      if(!candidate.geo||!existing.geo||!imageIds.size)return false;
+      if(craigslistComparableTitle(candidate.title)!==craigslistComparableTitle(existing.title))return false;
+      if(['rent','bedrooms','bathrooms','sqft'].some(key=>(candidate[key]??null)!==(existing[key]??null)))return false;
+      if(Math.abs(candidate.geo.lat-existing.geo.lat)>0.0001||Math.abs(candidate.geo.lng-existing.geo.lng)>0.0001)return false;
+      const existingImages=new Set(craigslistImageAssetIds(existing.images));
+      return [...imageIds].some(id=>existingImages.has(id));
+    });
+    if(!match){
+      kept.push({...candidate,relistingPostIds:[candidate.postId],relistingUrls:[candidate.url]});
+      continue;
+    }
+    merged++;
+    match.relistingPostIds=[...new Set([...(match.relistingPostIds||[match.postId]),candidate.postId])];
+    match.relistingUrls=[...new Set([...(match.relistingUrls||[match.url]),candidate.url])];
+    match.queryIds=[...new Set([...(match.queryIds||[]),...(candidate.queryIds||[])])];
+    match.images=[...new Set([...(match.images||[]),...(candidate.images||[])])];
+  }
+  return {candidates:kept,merged};
+}
+
 const numberFrom = (pattern, value) => {
   const match = String(value || '').match(pattern);
   return match ? Number(match[1].replaceAll(',', '')) : null;

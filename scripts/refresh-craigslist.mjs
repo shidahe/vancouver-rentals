@@ -2,7 +2,7 @@ import fs from 'node:fs/promises';
 import path from 'node:path';
 import crypto from 'node:crypto';
 import { chromium } from 'playwright';
-import { craigslistDetailEvidence, extractCraigslistDetailUrls, normalizeCraigslistDetailUrl, parseCraigslistSearchCard } from './craigslist-parser.mjs';
+import { craigslistDetailEvidence, dedupeCraigslistRelistings, extractCraigslistDetailUrls, normalizeCraigslistDetailUrl, parseCraigslistSearchCard } from './craigslist-parser.mjs';
 import { isTargetRentalAreaText, listingScopeEligible } from './discovery-policy.mjs';
 
 const DATA=path.join(process.cwd(),'data');
@@ -75,7 +75,7 @@ for(const [id,url] of searches){
 }
 
 const scopedCards=[],seenCards=new Set();
-const diagnostics={discoveredDetailUrls:urls.size,searchCards:rawCards.length,uniqueSearchCards:0,missingRentOrBedrooms:0,outOfScope:0,outOfArea:0,searchAccepted:0,detailChecks:0,detailVerified:0,detailNegative:0,detailIdentityMismatch:0,detailStale:0,detailErrors:0,exactAddresses:0,accepted:0,errors:0};
+const diagnostics={discoveredDetailUrls:urls.size,searchCards:rawCards.length,uniqueSearchCards:0,missingRentOrBedrooms:0,outOfScope:0,outOfArea:0,searchAccepted:0,detailChecks:0,detailVerified:0,detailNegative:0,detailIdentityMismatch:0,detailStale:0,detailErrors:0,exactAddresses:0,relistingsMerged:0,accepted:0,errors:0};
 for(const raw of rawCards){
   try{
     const parsed=parseCraigslistSearchCard(raw,raw.baseUrl);
@@ -128,5 +128,8 @@ for(const card of scopedCards){
   }catch{diagnostics.detailErrors++;}
 }
 await browser.close();
-await write(path.join(DATA,'craigslist-candidates.json'),{refreshedAt:iso,mode:'candidate-only',sourceHealth,diagnostics,candidates});
-console.log(`Craigslist adapter: ${candidates.length} live recent target-area 2BR+ candidates; ${urls.size} detail URLs discovered.`);
+const deduped=dedupeCraigslistRelistings(candidates);
+diagnostics.relistingsMerged=deduped.merged;
+diagnostics.accepted=deduped.candidates.length;
+await write(path.join(DATA,'craigslist-candidates.json'),{refreshedAt:iso,mode:'candidate-only',sourceHealth,diagnostics,candidates:deduped.candidates});
+console.log(`Craigslist adapter: ${deduped.candidates.length} unique live recent target-area 2BR+ candidates (${deduped.merged} reposts merged); ${urls.size} detail URLs discovered.`);

@@ -12,7 +12,7 @@ import { exactPurposeBuiltFloorplanEvidence } from './purposebuilt-floorplan-evi
 import { hasCurrentMarketplaceAvailability, softNegativeDisposition, softUnavailablePrompt } from './listing-availability.mjs';
 import { activeListingContradictedByFreshEvidence } from './evidence-consistency.mjs';
 import { dedupeMlsRecords } from './mls-dedupe.mjs';
-import { craigslistAddressPrecision, craigslistDetailEvidence, craigslistPostId, craigslistStructuredFacts, extractCraigslistDetailUrls, normalizeCraigslistDetailUrl, parseCraigslistSearchCard } from './craigslist-parser.mjs';
+import { craigslistAddressPrecision, craigslistDetailEvidence, craigslistPostId, craigslistStructuredFacts, dedupeCraigslistRelistings, extractCraigslistDetailUrls, normalizeCraigslistDetailUrl, parseCraigslistSearchCard } from './craigslist-parser.mjs';
 import { classifyRentalsCaSearchLead, parseRentalsCaSearchLeads } from './rentalsca-search-parser.mjs';
 
 const read = p => fs.readFile(p, 'utf8');
@@ -112,6 +112,13 @@ const craigslistConflictingBaths=craigslistDetailEvidence({url:craigslistCurrent
 const craigslistMismatchedDetail=craigslistDetailEvidence({url:craigslistCurrent,status:200,expectedPostId:'7953626877',title:'$6,200 / 3br - 1500ft2',text:'post id: 7000000000'});
 if(!craigslistDetail.explicitPositive||!craigslistDetail.identityMatch||craigslistDetail.rent!==6200||craigslistDetail.bedrooms!==3||craigslistDetail.bathrooms!==3.5||craigslistDetail.sqft!==1500||craigslistMismatchedDetail.explicitPositive||craigslistMismatchedDetail.identityMatch) failures.push('Craigslist exact-detail identity and current fact validation can silently regress.');
 if(craigslistConflictingBaths.bathrooms!==1.5||craigslistConflictingBaths.sqft!==850||craigslistStructuredFacts('2BR / 1.5Ba 850ft2').bathrooms!==1.5) failures.push('Craigslist structured attributes no longer outrank conflicting marketing-title facts.');
+const craigslistRelistings=dedupeCraigslistRelistings([
+  {postId:'old',url:'https://www.craigslist.org/view/d/vancouver-duplex/old',title:'$6,200 / 3br - 1500ft2 - New 3 bedrooms 3.5 bathrooms 1/2 Duplex in Kitsilano (Kitsilano)',rent:5980,bedrooms:3,bathrooms:3.5,sqft:1500,geo:{lat:49.2621,lng:-123.1804},postedOrUpdatedAt:'2026-09-18T08:00:00Z',images:['https://images.craigslist.org/00q0q_shared_0t20CI_600x450.jpg'],queryIds:['kitsilano']},
+  {postId:'new',url:'https://www.craigslist.org/view/d/vancouver-duplex/new',title:'$5,980 / 3br - 1500ft2 - New 3 bedrooms 3.5 bathrooms 1/2 Duplex in Kitsilano (Kitsilano)',rent:5980,bedrooms:3,bathrooms:3.5,sqft:1500,geo:{lat:49.2621,lng:-123.1804},postedOrUpdatedAt:'2026-09-19T09:00:00Z',images:['https://images.craigslist.org/00q0q_shared_0t20CI_600x450.jpg'],queryIds:['point-grey']},
+  {postId:'distinct',url:'https://www.craigslist.org/view/d/vancouver-duplex/distinct',title:'$5,980 / 3br - 1500ft2 - New 3 bedrooms 3.5 bathrooms 1/2 Duplex in Kitsilano (Kitsilano)',rent:5980,bedrooms:3,bathrooms:3.5,sqft:1500,geo:{lat:49.2621,lng:-123.1804},postedOrUpdatedAt:'2026-09-19T10:00:00Z',images:['https://images.craigslist.org/00z0z_distinct_0t20CI_600x450.jpg'],queryIds:['kitsilano']}
+]);
+const mergedCraigslistRelisting=craigslistRelistings.candidates.find(x=>x.postId==='new');
+if(craigslistRelistings.merged!==1||craigslistRelistings.candidates.length!==2||!mergedCraigslistRelisting?.relistingPostIds.includes('old')||mergedCraigslistRelisting?.queryIds.length!==2) failures.push('Craigslist reposts no longer collapse conservatively while distinct same-fact inventory remains separate.');
 if(craigslistAddressPrecision('google map')!==null||craigslistAddressPrecision('Kitsilano')!==null||craigslistAddressPrecision('3220 W 4TH AVE near Musqueamview St')!=='exact_civic'||craigslistAddressPrecision('West 4th Ave near Blenheim')!=='intersection') failures.push('Craigslist map controls or neighborhoods can be mistaken for canonical addresses.');
 const reconciliationSource=await fs.readFile('scripts/reconcile-candidates.mjs','utf8');
 if(!reconciliationSource.includes("x.ac=parseRealtylinkAirConditioning(evidence.bodyText)")||
