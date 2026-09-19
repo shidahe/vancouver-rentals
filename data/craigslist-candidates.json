@@ -1,9 +1,9 @@
 {
-  "refreshedAt": "2026-09-19T11:11:50.399Z",
+  "refreshedAt": "2026-09-19T15:09:23.449Z",
   "mode": "candidate-only",
   "sourceHealth": {
     "kitsilano": {
-      "checkedAt": "2026-09-19T11:11:50.399Z",
+      "checkedAt": "2026-09-19T15:09:23.449Z",
       "status": 200,
       "ok": true,
       "finalUrl": "https://www.craigslist.org/search/subarea/van?cat=apa&min_bedrooms=2&query=kitsilano",
@@ -23,13 +23,13 @@
         "www.craigslist.org/about/prohibited",
         "www.craigslist.org/about/recalled_items",
         "www.craigslist.org/about/help/safety/scams",
-        "www.craigslist.org/view/d/vancouver-new-bedrooms-35-bathrooms-2/xrz9rn6HCEMu9FMi36UYPf",
-        "www.craigslist.org/view/d/vancouver-half-duplex-in-kitsilano/3ZX2bEzmSAErUrEu9puB2s"
+        "www.craigslist.org/view/d/vancouver-luxurious-bedroom-furnished/3CCUEFUUCJ6g5ufGmyUwxP",
+        "www.craigslist.org/view/d/vancouver-bedroom-furnished-apartment/p1ipqysect8HRKCdJiZ5tc"
       ],
       "title": "vancouver apartments / housing for rent \"kitsilano\" - craigslist"
     },
     "arbutus": {
-      "checkedAt": "2026-09-19T11:11:50.399Z",
+      "checkedAt": "2026-09-19T15:09:23.449Z",
       "status": 200,
       "ok": true,
       "finalUrl": "https://www.craigslist.org/search/subarea/van?cat=apa&min_bedrooms=2&query=arbutus",
@@ -55,7 +55,7 @@
       "title": "vancouver apartments / housing for rent \"arbutus\" - craigslist"
     },
     "point-grey": {
-      "checkedAt": "2026-09-19T11:11:50.399Z",
+      "checkedAt": "2026-09-19T15:09:23.449Z",
       "status": 200,
       "ok": true,
       "finalUrl": "https://www.craigslist.org/search/subarea/van?cat=apa&min_bedrooms=2&query=point%20grey",
@@ -81,7 +81,7 @@
       "title": "vancouver apartments / housing for rent \"point grey\" - craigslist"
     },
     "dunbar": {
-      "checkedAt": "2026-09-19T11:11:50.399Z",
+      "checkedAt": "2026-09-19T15:09:23.449Z",
       "status": 200,
       "ok": true,
       "finalUrl": "https://www.craigslist.org/search/subarea/van?cat=apa&min_bedrooms=2&query=dunbar",
@@ -101,8 +101,8 @@
         "www.craigslist.org/about/prohibited",
         "www.craigslist.org/about/recalled_items",
         "www.craigslist.org/about/help/safety/scams",
-        "www.craigslist.org/view/d/vancouver-furnished-two-bedroom/gzLet3FdMXyoVy5j1AXbX5",
-        "www.craigslist.org/view/d/vancouver-bright-furnished-dunbar/8dfnsbLj3ydwWj3Nyui8o7"
+        "www.craigslist.org/view/d/vancouver-vancouver-west-bedroom/vcRqKijcPpieaYsd2hZ8iX",
+        "www.craigslist.org/view/d/vancouver-furnished-two-bedroom/gzLet3FdMXyoVy5j1AXbX5"
       ],
       "title": "vancouver apartments / housing for rent \"dunbar\" - craigslist"
     }
@@ -122,177 +122,56 @@
     "detailStale": 0,
     "detailErrors": 0,
     "exactAddresses": 8,
-    "accepted": 29,
+    "relistingsMerged": 1,
+    "accepted": 28,
     "errors": 0
   },
   "candidates": [
     {
       "source": "Craigslist",
-      "postId": "7969115448",
-      "url": "https://www.craigslist.org/view/d/vancouver-new-bedrooms-35-bathrooms-2/xrz9rn6HCEMu9FMi36UYPf",
-      "title": "$5,980 / 3br - 1500ft2 - New 3 bedrooms 3.5 bathrooms 1/2 Duplex in Kitsilano (Kitsilano)",
+      "postId": "7962958107",
+      "url": "https://www.craigslist.org/view/d/vancouver-suite-for-rent/ehZzq7mykgJfapJkqDYrCa",
+      "title": "$3,500 / 2br - Suite for rent (Kitsilano)",
       "address": null,
-      "identityKey": "craigslist::post:7969115448",
-      "rent": 5980,
-      "bedrooms": 3,
-      "bathrooms": 3.5,
-      "sqft": 1500,
-      "geo": {
-        "lat": 49.2621,
-        "lng": -123.1804
-      },
-      "targetArea": true,
-      "active": true,
-      "postedOrUpdatedAt": "2026-09-19T08:59:15.000Z",
-      "checkedAt": "2026-09-19T11:11:50.399Z",
-      "images": [
-        "https://images.craigslist.org/00q0q_bPnZqZo8ZWF_0t20CI_600x450.jpg",
-        "https://images.craigslist.org/00q0q_bPnZqZo8ZWF_0t20CI_50x50c.jpg",
-        "https://images.craigslist.org/00P0P_bhpaXiTPvCn_0vb0CI_50x50c.jpg",
-        "https://images.craigslist.org/01717_7cdRRHmeGl8_0t10CI_50x50c.jpg"
-      ],
-      "publishable": false,
-      "evidenceKind": "current_search_card_and_exact_detail",
-      "queryIds": [
-        "kitsilano"
-      ],
-      "approximateLocation": "Kitsilano",
-      "addressPrecision": "neighborhood",
-      "description": "Beautiful newly built duplex completed in 2022, all 3 bedrooms are en-suite.\nExcellent location near the West Broadway commercial corridor, with easy access to supermarkets, banks, restaurants, cafes, and various daily conveniences within walking distance.\n\nSteps to West 4th shopping and Kits Beach\n\nMultiple bus routes nearby provide convenient transportation to different areas of the city. The neighborhood is surrounded by elementary and secondary schools, community facilities, and family-friendly amenities.\n\nEquipped with premium North American luxury brand Thermador stove, refrigerator, and dishwasher. All faucets and shower systems throughout the home are fitted with high-end brand （Brizo ）fixtures. The kitchen features a designer-crafted apron-front Blanco sink made from premium materials.\nAC and HRV systems.\nRadiant floor heating\n\nNo garage, free street parking.\nPerfect for small families or professionals looking for a modern and convenient home.\n\nRequirements:\n\n• Minimum 1-year lease\n• No pets, no smoking\n• Tenant insurance required\n• Credit reference check and referral letter is required\n\nAppointment for viewing.",
-      "type": "duplex",
-      "ac": true,
-      "detailVerified": true
-    },
-    {
-      "source": "Craigslist",
-      "postId": "7953626877",
-      "url": "https://www.craigslist.org/view/d/vancouver-new-bedrooms-35-bathrooms-2/m7NJbsvPdcDUScq6CgeWJc",
-      "title": "$5,980 / 3br - 1500ft2 - New 3 bedrooms 3.5 bathrooms 1/2 Duplex in Kitsilano (Kitsilano)",
-      "address": null,
-      "identityKey": "craigslist::post:7953626877",
-      "rent": 5980,
-      "bedrooms": 3,
-      "bathrooms": 3.5,
-      "sqft": 1500,
-      "geo": {
-        "lat": 49.2621,
-        "lng": -123.1804
-      },
-      "targetArea": true,
-      "active": true,
-      "postedOrUpdatedAt": "2026-09-19T06:37:59.000Z",
-      "checkedAt": "2026-09-19T11:11:50.399Z",
-      "images": [
-        "https://images.craigslist.org/00X0X_8fAXb0mepVn_0t20CI_600x450.jpg",
-        "https://images.craigslist.org/00X0X_8fAXb0mepVn_0t20CI_50x50c.jpg",
-        "https://images.craigslist.org/00q0q_bPnZqZo8ZWF_0t20CI_50x50c.jpg",
-        "https://images.craigslist.org/00P0P_bhpaXiTPvCn_0vb0CI_50x50c.jpg",
-        "https://images.craigslist.org/00d0d_cRtyrtz39fh_0CI0t0_50x50c.jpg",
-        "https://images.craigslist.org/00x0x_gSqPWfWvnL2_0CI0s7_50x50c.jpg",
-        "https://images.craigslist.org/00R0R_iI52BGLtDkD_0t00CI_50x50c.jpg",
-        "https://images.craigslist.org/00K0K_bsQwSpDw4jV_0CI0s3_50x50c.jpg"
-      ],
-      "publishable": false,
-      "evidenceKind": "current_search_card_and_exact_detail",
-      "queryIds": [
-        "kitsilano"
-      ],
-      "approximateLocation": "Kitsilano",
-      "addressPrecision": "neighborhood",
-      "description": "Beautiful newly built duplex completed in 2022, all 3 bedrooms are en-suite.\nExcellent location near the West Broadway commercial corridor, with easy access to supermarkets, banks, restaurants, cafes, and various daily conveniences within walking distance.\n\nSteps to West 4th shopping and Kits Beach\n\nMultiple bus routes nearby provide convenient transportation to different areas of the city. The neighborhood is surrounded by elementary and secondary schools, community facilities, and family-friendly amenities.\n\nEquipped with premium North American luxury brand Thermador stove, refrigerator, and dishwasher. All faucets and shower systems throughout the home are fitted with high-end brand （Brizo ）fixtures. The kitchen features a designer-crafted apron-front Blanco sink made from premium materials.\nAC and HRV systems.\nRadiant floor heating\n\nNo garage. Street parking .\nPerfect for small families or professionals looking for a modern and convenient home.\n\nRequirements:\n\n• Minimum 1-year lease\n• No pets, no smoking\n• Tenant insurance required\n• Credit reference check and referral letter is required\n\nAppointment for viewing.",
-      "type": "duplex",
-      "ac": true,
-      "detailVerified": true
-    },
-    {
-      "source": "Craigslist",
-      "postId": "7966577196",
-      "url": "https://www.craigslist.org/view/d/vancouver-charming-fully-furnished-bed/qfdidPDmMprJBNMErSbGeB",
-      "title": "$10,500 / 3br - 1700ft2 - Charming Fully Furnished 3 Bed + 3 Bath Kitsilano House | Oct 1st (Kitsilano)",
-      "address": "3095 W 5th Ave near Balaclava St",
-      "identityKey": "craigslist::post:7966577196",
-      "rent": 10500,
-      "bedrooms": 3,
-      "bathrooms": 3,
-      "sqft": 1700,
-      "geo": {
-        "lat": 49.267553,
-        "lng": -123.173797
-      },
-      "targetArea": true,
-      "active": true,
-      "postedOrUpdatedAt": "2026-09-17T16:10:21.000Z",
-      "checkedAt": "2026-09-19T11:11:50.399Z",
-      "images": [
-        "https://images.craigslist.org/00o0o_jGuXcZK9yR9_0uY0kE_600x450.jpg",
-        "https://images.craigslist.org/00o0o_jGuXcZK9yR9_0uY0kE_50x50c.jpg",
-        "https://images.craigslist.org/00h0h_d1uOGHfEfvq_0uY0kE_50x50c.jpg",
-        "https://images.craigslist.org/00r0r_luvANMVkrBt_0uY0kE_50x50c.jpg",
-        "https://images.craigslist.org/00m0m_j8Mhm0eozxZ_0uY0kE_50x50c.jpg",
-        "https://images.craigslist.org/00B0B_8V1VQB5zNoK_0uY0kE_50x50c.jpg",
-        "https://images.craigslist.org/00b0b_lCRVGl634Vp_0uY0kE_50x50c.jpg",
-        "https://images.craigslist.org/00R0R_hWJinv16DO4_0uY0kE_50x50c.jpg",
-        "https://images.craigslist.org/00f0f_eYPgfgzS9Lx_0uY0kE_50x50c.jpg",
-        "https://images.craigslist.org/00A0A_fcneZXTywar_0uY0kE_50x50c.jpg",
-        "https://images.craigslist.org/01616_840eydTJKXE_0uY0kE_50x50c.jpg",
-        "https://images.craigslist.org/00J0J_1HyhphRCilF_0uY0kE_50x50c.jpg"
-      ],
-      "publishable": false,
-      "evidenceKind": "current_search_card_and_exact_detail",
-      "queryIds": [
-        "kitsilano"
-      ],
-      "approximateLocation": "Kitsilano",
-      "addressPrecision": "exact_civic",
-      "description": "Property Details:\n\nProperty ID: 5877\nLocation: 3095 W 5th Avenue, Vancouver\nRent: $10,500/mo\nAvailability: October 1st\nFurnished: Yes\nBedroom: 3 Bedroom\nBathroom: 3 Bathroom\nSize of Area: 1,700 sqft\nPet: No\nParking: Street Parking\nUtilities: Not Included\nLease Term: Minimum lease term 4 months required\n\nDescription:\nSituated on a sun-drenched, south-facing corner lot in the heart of Kitsilano, this beautiful 1,700-square-foot Craftsman-style character home seamlessly blends 1920s architecture with contemporary luxury and picturesque North Shore mountain views. Bathed in natural light through generous windows, the open-concept 3-bedroom, 3-bathroom interior features rich wood flooring, refined architectural millwork, and a chef’s kitchen equipped with top-tier Wolf gas appliances, a Sub-Zero refrigerator, and premium custom finishes ideal for entertaining. Outdoors, the home transitions to a private yard and patio space that captures maximum southern exposure. Beyond the front door, you are surrounded by the best of Vancouver’s Westside: steps from the newly rebuilt General Gordon Elementary, minutes from Kitsilano Secondary, and directly connected to the scenic Kitsilano Bike Path for effortless cycling to UBC or Downtown. The vibrant West 4th Avenue corridor is just around the corner, offering boutique shopping, organic grocers, local cafes, and celebrated neighborhood dining, while the iconic sands and saltwater pool of Kitsilano Beach are only a short stroll away.\n\n\n\nPlease to this ad to arrange your private viewing or inquire about the house.\nPlease include your personal contact information for us to be able to assist you with your inquiry more promptly.\n\n\n\n** Professionally managed and marketed by Vancouver Luxury Realty. VLR does not charge prospective tenants any handling fees, application fees or processing fees. We are fully licensed with the Real Estate Council of British Columbia and simply act as the landlord/marketer for the owner. **\n\n**Any storage loc",
-      "type": "house",
-      "ac": true,
-      "detailVerified": true
-    },
-    {
-      "source": "Craigslist",
-      "postId": "7963109907",
-      "url": "https://www.craigslist.org/view/d/vancouver-kitsilano-bed-den-bath-condo/ojJmUfXer5iQFD5rvcusu5",
-      "title": "$3,650 / 2br - 771ft2 - Kitsilano - 2 Bed + Den 2 Bath Condo; Balcony, In-Suite Laundry (Vancouver)",
-      "address": null,
-      "identityKey": "craigslist::post:7963109907",
-      "rent": 3650,
+      "identityKey": "craigslist::post:7962958107",
+      "rent": 3500,
       "bedrooms": 2,
-      "bathrooms": 2,
-      "sqft": 771,
+      "bathrooms": 1,
+      "sqft": null,
       "geo": {
-        "lat": 49.2603,
-        "lng": -123.146
+        "lat": 49.2646,
+        "lng": -123.1648
       },
       "targetArea": true,
       "active": true,
-      "postedOrUpdatedAt": "2026-09-17T16:04:57.000Z",
-      "checkedAt": "2026-09-19T11:11:50.399Z",
+      "postedOrUpdatedAt": "2026-09-19T14:30:59.000Z",
+      "checkedAt": "2026-09-19T15:09:23.449Z",
       "images": [
-        "https://images.craigslist.org/00S0S_3nmCt9azPdx_1320MM_600x450.jpg",
-        "https://images.craigslist.org/00S0S_3nmCt9azPdx_1320MM_50x50c.jpg",
-        "https://images.craigslist.org/01616_3M2P3AGTSNH_1320MM_50x50c.jpg",
-        "https://images.craigslist.org/00j0j_bra3yHQ9P6Y_1320MM_50x50c.jpg",
-        "https://images.craigslist.org/00u0u_jOt4ZEgT6QY_1320MM_50x50c.jpg",
-        "https://images.craigslist.org/00A0A_feEJGSX8ISy_1320MM_50x50c.jpg",
-        "https://images.craigslist.org/00T0T_dYCq0hgfpXb_1320MM_50x50c.jpg",
-        "https://images.craigslist.org/00n0n_igaZtUgrwPy_1320MM_50x50c.jpg",
-        "https://images.craigslist.org/00l0l_d1MxPzePU2B_1320MM_50x50c.jpg",
-        "https://images.craigslist.org/00L0L_cG2Idknp47I_1320MM_50x50c.jpg",
-        "https://images.craigslist.org/00T0T_9PqPqEUexRL_1320MM_50x50c.jpg",
-        "https://images.craigslist.org/00W0W_93ofCBkNufy_1320MM_50x50c.jpg"
+        "https://images.craigslist.org/00W0W_kG8iSepXJjO_0jm0CI_600x450.jpg",
+        "https://images.craigslist.org/00W0W_kG8iSepXJjO_0jm0CI_50x50c.jpg",
+        "https://images.craigslist.org/00U0U_jvz2XPA76P1_0jm0CI_50x50c.jpg",
+        "https://images.craigslist.org/00I0I_3NYdphNm9bH_0CI0jm_50x50c.jpg",
+        "https://images.craigslist.org/00v0v_6ECFzBkTsvO_0jm0CI_50x50c.jpg",
+        "https://images.craigslist.org/00W0W_6glkOgo5R9G_0jm0CI_50x50c.jpg",
+        "https://images.craigslist.org/00b0b_5i1tCc8Z5Ic_0jm0CI_50x50c.jpg"
       ],
       "publishable": false,
       "evidenceKind": "current_search_card_and_exact_detail",
       "queryIds": [
         "kitsilano"
       ],
-      "approximateLocation": "Vancouver",
+      "approximateLocation": "Kitsilano",
       "addressPrecision": "neighborhood",
-      "description": "To book a showing, please copy and paste this link into your browser:\n\nhttps://showmojo.com/ep/l/2c8a09a08d\n\nThis listing is presented by Birds Nest Properties.\n\nKits360\n1777 West 7th Avenue, Vancouver\n7th Floor Condo\n\n2 Bedrooms + Den\n2 Bathrooms\n2 Parking Stall\n1 Storage Locker\n771 sq ft\n\n✓ Unfurnished\n✓ Open-Concept\n✓ In-Suite Laundry\n✓ High-End Appliances\n✓ Balcony\n✓ City Views\n\nSmall pets may be considered.\n\nWelcome home to Kits360, situated in the vibrant Kitsilano area. This condo features an open-concept floor plan with laminate wood flooring throughout, over-height ceilings, and floor-to-ceiling windows that allow natural light and fresh air to flood the home. The solarium provides a versatile space, while the large balcony offers a perfect place to relax and enjoy views of the city. The gourmet kitchen is thoughtfully designed with two-tone cabinetry, high-end appliances, quartz countertops, and an island bar—perfect for everyday living. Residents of Kits360 enjoy access to premium amenities such as a 24-hour concierge, fitness centre, and rooftop terrace with a lounge offering beautiful views of English Bay and Downtown.\n\nNestled in the heart of Vancouver, Kitsilano is in a coveted area within walking distance of gorgeous parks and amazing shopping, cafes and dining options. Stop for some delicious pastries and a coffee at Beaucoup Bakery and Cafe, and then head over to Vanier Park for a stroll along the seawall, or enjoy a day at Kitsilano Beach while enjoying the beautiful water views. Spend a day shopping along West 4th Ave or Granville St and then head down to Granville Island where you can browse the shops and pick up fresh groceries at the Public Market. For public transit, regular bus service stops along West 4th Avenue, Granville Street, and West Broadway for convenient access to the rest of Vancouver.\n\nPlease note: Leases are a minimum of a one-year fixed lease. Strata corporations may charge move-in/move-out fees, which are the direct responsibi",
-      "type": "condo",
+      "description": "Large bright top floor 2 Bedroom + loft (Could be used as office/extra room) and balcony, for rent in prime Kitsilano area (8th and Vine)\n- Utilities (Hydro and gas) included\n- Hardwood floors\n- Coin laundry\n- No pets (house cats ok)\n- No Smoking or Vaping on property\n- Available Oct 1st\n\n$3500 per month\n\nReferences required",
+      "type": "house",
       "ac": null,
-      "detailVerified": true
+      "detailVerified": true,
+      "relistingPostIds": [
+        "7962958107"
+      ],
+      "relistingUrls": [
+        "https://www.craigslist.org/view/d/vancouver-suite-for-rent/ehZzq7mykgJfapJkqDYrCa"
+      ]
     },
     {
       "source": "Craigslist",
@@ -311,8 +190,8 @@
       },
       "targetArea": true,
       "active": true,
-      "postedOrUpdatedAt": "2026-09-17T08:48:42.000Z",
-      "checkedAt": "2026-09-19T11:11:50.399Z",
+      "postedOrUpdatedAt": "2026-09-19T11:29:36.000Z",
+      "checkedAt": "2026-09-19T15:09:23.449Z",
       "images": [
         "https://images.craigslist.org/00c0c_jI6maH6Pk5V_08g05v_600x450.jpg",
         "https://images.craigslist.org/00c0c_jI6maH6Pk5V_08g05v_50x50c.jpg",
@@ -337,7 +216,13 @@
       "description": "Available now!\n\n3 Bedroom Furnished Family-Friendly Apartment in Kitsilano.\n\nSpanish Banks Three-Bedroom Suite at the Alma Beach Manor. This ground level family-friendly suite on the south side of the Manor offers 2 bedrooms with queen beds, 1 bedroom with twin beds, and 1 and 1/2 baths. Comfortable furnishings. Open living/dining/kitchen area.\n\nPrivate patio with table and chairs. One of seven private apartments in this restored Heritage Home. The location - steps to shops, cafes, public transportation and public beaches and is perfect for both vacation travelers or professionals coming to UBC and/or downtown.\n\nNo Booking/Service Fees.\n\nFeatured Property in Vancouver:\n\n- 1000 Square Feet\n- 3 bedrooms\n- 1.5 bathrooms\n\nAdditional apartment amenities:\n\n- Shared laundry in the building (coin-operated)\n- Ultra high speed fibre optic Wireless internet\n- Flat screen TV (46 \")\n- Local phone\n- Built in microwave\n- Dishwasher\n- Fireplace\n- Large private outdoor covered patio for dining\n- Leather furniture\n- Private entrance\n- Free street parking and $100 private parking\n\nPrice per month: $5,495\n$450 Cleaning Fee\n\nSorry, no pets.\n\nPlease Contact:\nMake Yourself at Home\nVancouver, BC, Canada\nWebsite: https://www.makeyourselfathome.com\nProperty Information: https://www.makeyourselfathome.com/listing.html&447\n\n*** PLEASE quote reference #447 when inquiring. ***",
       "type": "rental",
       "ac": null,
-      "detailVerified": true
+      "detailVerified": true,
+      "relistingPostIds": [
+        "7965085026"
+      ],
+      "relistingUrls": [
+        "https://www.craigslist.org/view/d/vancouver-bedroom-furnished-apartment/p1ipqysect8HRKCdJiZ5tc"
+      ]
     },
     {
       "source": "Craigslist",
@@ -356,8 +241,8 @@
       },
       "targetArea": true,
       "active": true,
-      "postedOrUpdatedAt": "2026-09-17T08:48:38.000Z",
-      "checkedAt": "2026-09-19T11:11:50.399Z",
+      "postedOrUpdatedAt": "2026-09-19T11:29:33.000Z",
+      "checkedAt": "2026-09-19T15:09:23.449Z",
       "images": [
         "https://images.craigslist.org/00c0c_jI6maH6Pk5V_08g05v_600x450.jpg",
         "https://images.craigslist.org/00c0c_jI6maH6Pk5V_08g05v_50x50c.jpg",
@@ -382,712 +267,13 @@
       "description": "Available January 16, 2027\n\nFully furnished, luxurious 2 bedroom apartment suite for rent in Kitsilano.\n\n- 2 bedrooms\n- 1 bathroom\n- 1,050 square feet\n\nKitsilano Penthouse Suite. This 2 bedroom (with queen beds) and 1 full bath is the jewel of the Manor. Located on the top floor, it offers north, south and east views. Lots of light. Private south-facing balcony. Skylights. Open layout with combined kitchen/living/dining areas.\n\nOne of seven private apartments in a restored Heritage Home. Unique furnishings. The location - steps to shops, cafes, public transportation and public beaches - is perfect for both vacation travelers or professionals coming to UBC and/or downtown.\n\nFurnished Suite Rental Features:\n\n- Shared laundry in the building (coin-operated)\n- Ultra high speed fibre optic Wireless internet\n- Flat screen TV (46 \")\n- Local phone\n- Built in microwave\n- Dishwasher\n- Fireplace\n- South facing balcony\n- Skylights\n- View of ocean and mountains\n- Free street parking and $100 private parking\n\nPrice per month: $4,595\nCleaning Fee: $495\n\nSorry, no pets.\n\nPlease quote reference #445 when inquiring about the property.\n\nPlease Contact:\nMake Yourself at Home\nVancouver, BC, Canada\nWebsite: https://www.makeyourselfathome.com\nProperty Listing: https://www.makeyourselfathome.com/listing.html&445",
       "type": "rental",
       "ac": null,
-      "detailVerified": true
-    },
-    {
-      "source": "Craigslist",
-      "postId": "7965071439",
-      "url": "https://www.craigslist.org/view/d/vancouver-bed-bath-fourth-mac-kitsilano/eiSLCKTVqsrtPUWpUpJyDN",
-      "title": "$4,350 / 2br - 801ft2 - 2 Bed + 2 Bath @ Fourth + Mac — Kitsilano | Available October 1 (Vancouver)",
-      "address": null,
-      "identityKey": "craigslist::post:7965071439",
-      "rent": 4350,
-      "bedrooms": 2,
-      "bathrooms": 2,
-      "sqft": 801,
-      "geo": {
-        "lat": 49.2646,
-        "lng": -123.1648
-      },
-      "targetArea": true,
-      "active": true,
-      "postedOrUpdatedAt": "2026-09-16T17:28:30.000Z",
-      "checkedAt": "2026-09-19T11:11:50.399Z",
-      "images": [
-        "https://images.craigslist.org/00H0H_aBooG6gbfXq_0ia0du_600x450.jpg",
-        "https://images.craigslist.org/00H0H_aBooG6gbfXq_0ia0du_50x50c.jpg",
-        "https://images.craigslist.org/01616_5y1u2ed2ikT_0cR0gy_50x50c.jpg",
-        "https://images.craigslist.org/00G0G_FtcifFWbJS_0x20m1_50x50c.jpg",
-        "https://images.craigslist.org/00g0g_cKxf1HqS4mD_0x20m1_50x50c.jpg",
-        "https://images.craigslist.org/01717_brSs8WLGzbx_0x20m1_50x50c.jpg",
-        "https://images.craigslist.org/00Z0Z_8QlIijYV87P_0x20m1_50x50c.jpg",
-        "https://images.craigslist.org/00101_5d0cQqFQ14E_0x20m1_50x50c.jpg",
-        "https://images.craigslist.org/00606_8G3MJW0Opxj_0x20m1_50x50c.jpg",
-        "https://images.craigslist.org/00E0E_9KTVVOLIAAt_0x20m1_50x50c.jpg",
-        "https://images.craigslist.org/00o0o_4DErAG485G_0x20m1_50x50c.jpg",
-        "https://images.craigslist.org/00A0A_4u5TVAsKfmk_0x20m1_50x50c.jpg"
+      "detailVerified": true,
+      "relistingPostIds": [
+        "7961061015"
       ],
-      "publishable": false,
-      "evidenceKind": "current_search_card_and_exact_detail",
-      "queryIds": [
-        "kitsilano"
-      ],
-      "approximateLocation": "Fourth Avenue near Macdonald Street",
-      "addressPrecision": "intersection",
-      "description": "Live at Fourth + Mac in this spacious 801 sqft two-bedroom, two-bathroom home featuring city and water views, a private balcony, air conditioning and flexible in-suite storage/worksapce. Located at West 4th Ave and Macdonald Street , Fourth + Mac puts you steps from Fresh Street Market, Shoppers Drug Mart, cafés, restaurants, fitness studios, transit and some of Kitsilano's best beaches.\n\nHome Features\n• City + water views\n• Full size appliance package\n• Individual air conditioning\n• In suite flex room for storage or workspace\n• Private balcony\n• Under cabinet LED lighting\n• Medicine cabinet in bathroom\n• In suite laundry\n\nParking Available for Rent\n\nNeighborhood\n• West 4th retail, restaurants, cafés, fitness studios\n• Easy access to bus routes 44 & 84 (UBC + downtown)\n• Beaches within minutes\n\nBuilding Features\n• Zero carbon operations\n• 100% smoke free\n• Keyless entry + FOB access\n• Professionally managed by Third Space\n• Secure parcel lockers\n• Pet friendly\n• Storage lockers available\n\nAmenities\n• The Hub — lobby + co working space with flexible work areas\n• The Lounge — social lounge with big screen TV, pool table, and outdoor patio\n• The Roof — rooftop with BBQ stations, dining zone, garden plots, play areas, and lounge spaces\n• Dedicated wash room for sandy paws + muddy bikes\n• High speed Wi Fi in most amenity spaces\n\nVideos:\nhttps://youtube.com/@basepoint-x4e?si=PSD7d8IxlrwlAxJ4",
-      "type": "rental",
-      "ac": true,
-      "detailVerified": true
-    },
-    {
-      "source": "Craigslist",
-      "postId": "7954830745",
-      "url": "https://www.craigslist.org/view/d/vancouver-renovated-fully-furnished-bed/9HN52tQkPrX9N8JhUqQnLn",
-      "title": "$4,300 / 2br - 1011ft2 - Renovated Fully furnished 2 bed/2 bath condo West 7th Ave, Kitsilano (Kitsilano)",
-      "address": null,
-      "identityKey": "craigslist::post:7954830745",
-      "rent": 4300,
-      "bedrooms": 2,
-      "bathrooms": 2,
-      "sqft": 1011,
-      "geo": {
-        "lat": 49.265465,
-        "lng": -123.146239
-      },
-      "targetArea": true,
-      "active": true,
-      "postedOrUpdatedAt": "2026-09-16T19:09:25.000Z",
-      "checkedAt": "2026-09-19T11:11:50.399Z",
-      "images": [
-        "https://images.craigslist.org/00a0a_enPB3cuwCIj_0CI0t2_600x450.jpg",
-        "https://images.craigslist.org/00a0a_enPB3cuwCIj_0CI0t2_50x50c.jpg",
-        "https://images.craigslist.org/00F0F_hs3RgyZlwJ_0CI0t2_50x50c.jpg",
-        "https://images.craigslist.org/00k0k_34tMz5DIw9q_0CI0t2_50x50c.jpg",
-        "https://images.craigslist.org/00R0R_cL9wtehC0qg_0CI0t2_50x50c.jpg",
-        "https://images.craigslist.org/00y0y_cpFfPB39e2j_0CI0t2_50x50c.jpg",
-        "https://images.craigslist.org/00707_Fso2UPao1a_0CI0t2_50x50c.jpg",
-        "https://images.craigslist.org/00V0V_in9qb2AWRJU_0CI0t2_50x50c.jpg",
-        "https://images.craigslist.org/00Q0Q_fuVqvUAxPoH_0CI0t2_50x50c.jpg",
-        "https://images.craigslist.org/00808_bUXqBSJ7Brh_0CI0t2_50x50c.jpg",
-        "https://images.craigslist.org/00E0E_dpKROQUoson_0CI0t2_50x50c.jpg",
-        "https://images.craigslist.org/00B0B_eHABS7AmPjS_0CI0t2_50x50c.jpg"
-      ],
-      "publishable": false,
-      "evidenceKind": "current_search_card_and_exact_detail",
-      "queryIds": [
-        "kitsilano"
-      ],
-      "approximateLocation": "Kitsilano",
-      "addressPrecision": "neighborhood",
-      "description": "Beautiful Furnished Kitsilano Home\n\nFully Furnished 2 Bed + Den | 2 Bath | Private Patio\n\n📍 Ground Floor - 1823 W 7th Avenue, Vancouver\n💰 $4,300/month | Available Now\n🏡 6+ month lease | Pets with owner approval\n\n✨ 1,011 sq. ft. of bright living space\n🌿 272 sq. ft. private patio\n🛏️ 2 bedrooms + open den\n🛁 2 full bathrooms\n🚗 Secured parking\n🧺 In-suite laundry\n🔥 Gas fireplace + gas & hot water included\n\nBeautifully renovated and fully furnished, this spacious Kitsilano home features modern finishes, engineered hardwood floors, updated kitchen and bathrooms, custom closets, and a cozy double-sided fireplace.\n\nEnjoy a fantastic location just steps from West 4th Avenue, cafés, restaurants, shopping, transit, and Kitsilano Beach.\n\nContact today to book your private viewing!\n\nElvira Domracheva\nOrca Realty Inc.\nshow contact info",
-      "type": "condo",
-      "ac": null,
-      "detailVerified": true
-    },
-    {
-      "source": "Craigslist",
-      "postId": "7961932563",
-      "url": "https://www.craigslist.org/view/d/vancouver-furnished-kitsilano-2br/aRKK1rTHU8xtfcY8mLTLBC",
-      "title": "$8,000 / 2br - 1157ft2 - Furnished Kitsilano 2BR | Rooftop Patio + Solarium",
-      "address": null,
-      "identityKey": "craigslist::post:7961932563",
-      "rent": 8000,
-      "bedrooms": 2,
-      "bathrooms": 2,
-      "sqft": 1157,
-      "geo": {
-        "lat": 49.2603,
-        "lng": -123.146
-      },
-      "targetArea": true,
-      "active": true,
-      "postedOrUpdatedAt": "2026-09-06T21:00:40.000Z",
-      "checkedAt": "2026-09-19T11:11:50.399Z",
-      "images": [
-        "https://images.craigslist.org/00V0V_aCa1scEE9g3_0qY0fb_600x450.jpg",
-        "https://images.craigslist.org/00V0V_aCa1scEE9g3_0qY0fb_50x50c.jpg",
-        "https://images.craigslist.org/00202_bztBdLOvVBQ_0qY0fb_50x50c.jpg",
-        "https://images.craigslist.org/00n0n_ibnq63WtzLW_0qY0fb_50x50c.jpg",
-        "https://images.craigslist.org/00101_bYLjQA55QxV_0qY0fb_50x50c.jpg",
-        "https://images.craigslist.org/01515_2u0DMfCW4AO_0qY0fb_50x50c.jpg",
-        "https://images.craigslist.org/00404_1wSuhzF8BeR_0CI0pQ_50x50c.jpg",
-        "https://images.craigslist.org/00l0l_f196attlnJ6_0qY0fb_50x50c.jpg",
-        "https://images.craigslist.org/01212_ar0o2BtXuR_0CI0pQ_50x50c.jpg",
-        "https://images.craigslist.org/00F0F_by29jijoRNi_0CI0pQ_50x50c.jpg",
-        "https://images.craigslist.org/00n0n_16WDUKKYtGk_0CI0pQ_50x50c.jpg",
-        "https://images.craigslist.org/00505_lItu6swkLIo_0CI0pQ_50x50c.jpg"
-      ],
-      "publishable": false,
-      "evidenceKind": "current_search_card_and_exact_detail",
-      "queryIds": [
-        "kitsilano"
-      ],
-      "approximateLocation": "city of vancouver",
-      "addressPrecision": "neighborhood",
-      "description": "Available November 1 for a six-month stay, this fully furnished Kitsilano home offers approximately 1,157 sq ft with 2 bedrooms and 2 bathrooms. The home includes a flexible upper solarium, furnished living areas, work space, artwork throughout, and several outdoor spaces.\n\nLocated near Kits Beach, the seawall, West 4th Avenue, restaurants, cafés, grocery stores, fitness studios, and other neighbourhood amenities.\n\n🏠 About the Home\n\nApprox. 1,157 sq ft\n2 bedrooms\n2 bathrooms\nUpper bedroom/solarium suitable for guests, relaxing, or movie nights\nSkylight and structural glass details\nPrimary bedroom with king-size bed and darkening curtains\nDedicated work-from-home area\nRoche Bobois furnishings\nCanadian and international artwork throughout\nFast TELUS fibre internet\nIn-suite washer and dryer\n\n🌿 Outdoor + Living Areas\n\nCovered lower patio\nUV-filtered covering over the lower patio area\nOutdoor fire feature with seating and entertaining space\nSeparate rooftop patio\nUpper-level fireplace and mini fridge\nBBQ setup\nMultiple areas for outdoor dining, reading, relaxing, or entertaining\n\n🍽 Kitchen\n\nFully furnished and equipped kitchen\nFive-burner cooktop\nDouble ovens\nBuilt-in microwave and dishwasher\nWine refrigeration\nVitamix, kettle, and coffee equipment\nFood processor\nCookware and other kitchen essentials included\n\n🛁 Bathrooms\n\nHeated bathroom flooring\nCustom bathroom finishes\nMulti-directional shower jets\n\n📍 Kitsilano Location\n\nClose to Kits Beach, the seawall, West 4th Avenue, local restaurants, cafés, shopping, fitness options, and neighbourhood markets. The property offers easy access to the waterfront and everyday amenities in a residential setting.\n\n💰 Rental Details\n\n$8,000/month\nFully furnished\nAvailable for 6 months starting November 1, 2026\nNo smoking\n\n📩 If interested, please reply with a brief introduction, your preferred move-in date, number of occupants, parking requirements, and whether you have any pets.",
-      "type": "rental",
-      "ac": null,
-      "detailVerified": true
-    },
-    {
-      "source": "Craigslist",
-      "postId": "7954163334",
-      "url": "https://www.craigslist.org/view/d/vancouver-br-1500-sq-ft-house-kitsilano/gzdTLTMsxUGYW9zVYnXt4Y",
-      "title": "$3,900 / 3br - 1500ft2 - 3,900/3BR-1500 sq. ft. house (Kitsilano) (Kitsilano)",
-      "address": null,
-      "identityKey": "craigslist::post:7954163334",
-      "rent": 3900,
-      "bedrooms": 3,
-      "bathrooms": 1,
-      "sqft": 1500,
-      "geo": {
-        "lat": 49.2603,
-        "lng": -123.146
-      },
-      "targetArea": true,
-      "active": true,
-      "postedOrUpdatedAt": "2026-08-24T22:59:23.000Z",
-      "checkedAt": "2026-09-19T11:11:50.399Z",
-      "images": [
-        "https://images.craigslist.org/00Z0Z_k7sjTiNFcjk_0CI0t2_600x450.jpg",
-        "https://images.craigslist.org/00Z0Z_k7sjTiNFcjk_0CI0t2_50x50c.jpg",
-        "https://images.craigslist.org/00B0B_drEGeHWzUkP_0pO0jm_50x50c.jpg",
-        "https://images.craigslist.org/00B0B_8MBLTSANjvV_0CI0t2_50x50c.jpg",
-        "https://images.craigslist.org/00G0G_eujYPagcLf7_0lM0t2_50x50c.jpg"
-      ],
-      "publishable": false,
-      "evidenceKind": "current_search_card_and_exact_detail",
-      "queryIds": [
-        "kitsilano"
-      ],
-      "approximateLocation": "Kitsilano",
-      "addressPrecision": "neighborhood",
-      "description": "Unfurnished, 3 bedroom house- approx. 1,500 sq. ft., hardwood floors, master bedroom on main floor; 2- bedrooms on upper level, spacious walk-in closets, one bathroom, living room, kitchen, fridge, stove, NO DISHWASHER, washer/dryer, street parking; minutes to Downtown, Yaletown; NO SMOKERS; SORRY, NO PETS; looking for mature and responsible people who are respectful of the property and their neighbours; quiet atmosphere suitable for mature working professionals; MAXIMUM 3 occupants, one Residential Tenancy Agreement. Minimum one year lease.\n\nNo Sublet. No AirBnB. Tenant Insurance required.\n\nRENT: $3,900.00( method of rent payment- post-dated cheques)\n\nSECURITY DEPOSIT: $1,950.00\n\nUTILITIES: tenant is responsible for electricity (BC Hydro) and gas ( Fortis Gas)\n\nAVAILABLE NOW OR SEPTEMBER 1\n\nREFERENCES REQUIRED AND CREDIT CHECK\n\nIf you are interested, please write a short introduction about yourself and your room-mates. Please provide name, age, current address, employment, reason for moving, how long do you need the place. Thank you.",
-      "type": "house",
-      "ac": null,
-      "detailVerified": true
-    },
-    {
-      "source": "Craigslist",
-      "postId": "7955143177",
-      "url": "https://www.craigslist.org/view/d/vancouver-bedroom-heart-of-kitsilano/uc9wPxbCZSwaNDPNBxpSAu",
-      "title": "$5,695 / 3br - 1050ft2 - 3 bedroom - heart of Kitsilano, 2 blocks from beach! (Kitsilano on the park)",
-      "address": null,
-      "identityKey": "craigslist::post:7955143177",
-      "rent": 5695,
-      "bedrooms": 3,
-      "bathrooms": 1.5,
-      "sqft": 1050,
-      "geo": {
-        "lat": 49.269461,
-        "lng": -123.181678
-      },
-      "targetArea": true,
-      "active": true,
-      "postedOrUpdatedAt": "2026-08-22T14:03:54.000Z",
-      "checkedAt": "2026-09-19T11:11:50.399Z",
-      "images": [
-        "https://images.craigslist.org/00505_9JjEv3eRS29_0CI0pO_600x450.jpg",
-        "https://images.craigslist.org/00505_9JjEv3eRS29_0CI0pO_50x50c.jpg",
-        "https://images.craigslist.org/00A0A_fBd1YifmimS_0CI0pO_50x50c.jpg",
-        "https://images.craigslist.org/00M0M_cFPsvkagv6H_0CI0pO_50x50c.jpg",
-        "https://images.craigslist.org/00B0B_2cz9qsvVCuT_0CI0pO_50x50c.jpg",
-        "https://images.craigslist.org/00J0J_6zQzmHUZEDN_0CI0pO_50x50c.jpg",
-        "https://images.craigslist.org/00k0k_CGRyLXB6oJ_0p50gJ_50x50c.jpg",
-        "https://images.craigslist.org/00E0E_2XkA2E5e6NS_0p50gJ_50x50c.jpg",
-        "https://images.craigslist.org/00404_clDy0IIhEaF_0MM132_50x50c.jpg",
-        "https://images.craigslist.org/00O0O_gfjWtTMAiLE_0MM132_50x50c.jpg",
-        "https://images.craigslist.org/00A0A_8BnHDcovVIk_0MM132_50x50c.jpg",
-        "https://images.craigslist.org/00r0r_gf5q7O1aEG3_0p50gJ_50x50c.jpg"
-      ],
-      "publishable": false,
-      "evidenceKind": "current_search_card_and_exact_detail",
-      "queryIds": [
-        "kitsilano"
-      ],
-      "approximateLocation": "West 3rd. Ave near McDonald Street",
-      "addressPrecision": "intersection",
-      "description": "Beautifully furnished self-contained 1050 square foot garden level apartment in the heart of Kitsilano just 2 blocks from the ocean.\nThis large suite has its own private entrance, yard and outdoor covered patio with garden dining furniture.\nThe suite faces south and west and is located on West 3rd. Ave. near Macdonald. Easy to get to downtown (8 minutes), airport (20 minutes), UBC (10 minutes). Bus stops at 4th and Macdonald providing for easy transportation anywhere.\nThere is a brand new high end Fresh Street Market supermarket just steps from the Manor. There are many restaurants in close proximity and lovely walking parks including the beach.\nThis suite has a beautifully appointed granite kitchen with all appliances, full bathroom and a second two piece ensuite bath. All three bedrooms have a queen size bed with luxurious bedding.\nThere is a 46 inch flat screen TV, high speed fibre optic WIFI, free parking, telephone and laundry facilities. Private parking is available at extra monthly charge of $150.\nThe suite has new flooring, leather sofa, work station and electric fireplace.\nThis is not a high-rise; it is a beautiful Vancouver heritage manor home.\nSpectacular restaurants, shops, sports facilities are all a few steps away. No need for a car, as everything is accessible either on foot, bike, bus, shared car ( EVO) or taxi. It is also on a designated bike path.\n\nIdeal for corporate executives, exchange doctors or professors, new arrivals to Vancouver and vacationers requiring comfortable elegant self contained housing while visiting our lovely city.\nIf you need temporary housing due to renovation or possible insurance claims due to flooding, we provide you a perfect home away from home.\n\nRental terms on monthly basis, 90 day minimum.\nFree street parking as well as private paid parking.\nContact us today.\nEnjoy Vancouver at its best with all its beaches, swimming, biking, restaurants, shops - Great location!",
-      "type": "rental",
-      "ac": null,
-      "detailVerified": true
-    },
-    {
-      "source": "Craigslist",
-      "postId": "7967911446",
-      "url": "https://www.craigslist.org/view/d/vancouver-fully-furnished-designer-2br/dK4HrSygC6FiEijPJfe35N",
-      "title": "$5,475 / 2br - 850ft2 - Fully Furnished Designer 2BR/2BA Coach House (Arbutus / Kits / UBC / Point Grey)",
-      "address": "3260 W 16 Ave near Blenheim",
-      "identityKey": "craigslist::post:7967911446",
-      "rent": 5475,
-      "bedrooms": 2,
-      "bathrooms": 1.5,
-      "sqft": 850,
-      "geo": {
-        "lat": 49.2646,
-        "lng": -123.1648
-      },
-      "targetArea": true,
-      "active": true,
-      "postedOrUpdatedAt": "2026-09-19T06:14:44.000Z",
-      "checkedAt": "2026-09-19T11:11:50.399Z",
-      "images": [
-        "https://images.craigslist.org/00N0N_78ZMrBVFcbB_0CI0pO_600x450.jpg",
-        "https://images.craigslist.org/00N0N_78ZMrBVFcbB_0CI0pO_50x50c.jpg",
-        "https://images.craigslist.org/00808_ftEZ1Yjx8xr_0jm0t2_50x50c.jpg",
-        "https://images.craigslist.org/00l0l_2hh5fzNMpOU_0CI0pO_50x50c.jpg",
-        "https://images.craigslist.org/00t0t_7qGr1yJ5amx_0CI0pO_50x50c.jpg",
-        "https://images.craigslist.org/00z0z_jjyQ6FNqKw8_0CI0pO_50x50c.jpg",
-        "https://images.craigslist.org/00v0v_1UU3oGcKWX6_0jm0t2_50x50c.jpg",
-        "https://images.craigslist.org/00C0C_6NWXqxP77lK_0jm0t2_50x50c.jpg",
-        "https://images.craigslist.org/00a0a_4nZXOTRlxcj_0jm0t2_50x50c.jpg",
-        "https://images.craigslist.org/00j0j_cQrrHMIM1NT_0CI0pO_50x50c.jpg",
-        "https://images.craigslist.org/00808_KkbhXDoDMX_0jm0t2_50x50c.jpg",
-        "https://images.craigslist.org/00f0f_drNhc2KQejA_0CI0pL_50x50c.jpg"
-      ],
-      "publishable": false,
-      "evidenceKind": "current_search_card_and_exact_detail",
-      "queryIds": [
-        "kitsilano"
-      ],
-      "approximateLocation": "Arbutus / Kits / UBC / Point Grey",
-      "addressPrecision": "exact_civic",
-      "description": "Experience upscale Westside living in this fully furnished, designer-appointed 2-bedroom, 2-bathroom coach house located at W 16th Ave & Blenheim St. Nestled on the vibrant border of Kitsilano, Arbutus, and Point Grey, this private residence offers premium finishes, air conditioning, and a fully equipped home gym.\n\nWhether you are a relocating professional, a visiting academic, or exploring the Lower Mainland, this turn-key home serves as your ultimate luxury Vancouver base.\n\nPremium Features & Interior Amenities\n\n* Chef's Kitchen: Equipped with stainless steel appliances, premium stone countertops, and custom millwork.\n* Climate Control: Stay comfortable year-round with built-in air conditioning (AC).\n* Luxury Millwork: Features elegant custom millwork and high-end built-ins throughout the home.\n* Entertainment & Living: Relax in a living space featuring a comfortable sofa bed (perfect for guests) and two large HD smart TVs.\n* Private Fitness Center: Access a fully equipped home gym complete with a premium functional trainer.\n\nOutdoor Living & Entry\n\n* Private Deck: Includes premium exterior patio furniture, a dining table, and a BBQ for effortless outdoor dining.\n* Serene Entry: Features a private entrance adjacent to a beautifully landscaped, tranquil backyard.\n\nPrime Westside Location\n\n* Neighborhoods: Steps from Kitsilano, Arbutus Ridge, and Point Grey.\n* Proximity to UBC: Minutes away from the University of British Columbia—ideal for faculty, medical professionals, or researchers.\n* Nature & Recreation: Easy access to local beaches, Pacific Spirit Regional Park forest trails, and neighborhood parks.\n* Shopping & Dining: Surrounded by the trendy boutiques, cafes, and restaurants of West 4th, West Broadway, and West 10th Ave.\n* Transit & Travel: Central location with seamless transit options to explore Downtown Vancouver and the entire Lower Mainland.\n\nRental Details & Inclusions\n\n* All-Inclusive Living: Monthly rent includes high-speed Wi-Fi, all utilities, and",
-      "type": "house",
-      "ac": true,
-      "detailVerified": true
-    },
-    {
-      "source": "Craigslist",
-      "postId": "7968890487",
-      "url": "https://www.craigslist.org/view/d/vancouver-furnished-suite-in-kits/kF4GzDKKMuVnewKp6Eh6zP",
-      "title": "$3,600 / 3br - Furnished suite in Kits (Kitsilano)",
-      "address": null,
-      "identityKey": "craigslist::post:7968890487",
-      "rent": 3600,
-      "bedrooms": 3,
-      "bathrooms": 1,
-      "sqft": null,
-      "geo": {
-        "lat": 49.266485,
-        "lng": -123.157281
-      },
-      "targetArea": true,
-      "active": true,
-      "postedOrUpdatedAt": "2026-09-18T21:03:10.000Z",
-      "checkedAt": "2026-09-19T11:11:50.399Z",
-      "images": [
-        "https://images.craigslist.org/00W0W_b8SzGSsys9e_0j10dJ_600x450.jpg",
-        "https://images.craigslist.org/00W0W_b8SzGSsys9e_0j10dJ_50x50c.jpg",
-        "https://images.craigslist.org/00o0o_kAtmMnL39Dv_0iO0oL_50x50c.jpg",
-        "https://images.craigslist.org/00505_6O8a1f2QM5H_0j10ow_50x50c.jpg",
-        "https://images.craigslist.org/00i0i_cZHW1qqjEpu_0j10p4_50x50c.jpg",
-        "https://images.craigslist.org/00G0G_fNoGEosR64L_0j10nn_50x50c.jpg",
-        "https://images.craigslist.org/00c0c_6B8Ttl4yd0Z_0j10k7_50x50c.jpg",
-        "https://images.craigslist.org/00l0l_t4YreAVIVq_0j10pH_50x50c.jpg",
-        "https://images.craigslist.org/00E0E_5aQXOyFySa_0j10iA_50x50c.jpg",
-        "https://images.craigslist.org/00B0B_iN60ajAjrgd_0j10dT_50x50c.jpg",
-        "https://images.craigslist.org/00p0p_d3dmmAuOLDV_0j10dV_50x50c.jpg",
-        "https://images.craigslist.org/00W0W_24ptboPKjgU_0j10eh_50x50c.jpg"
-      ],
-      "publishable": false,
-      "evidenceKind": "current_search_card_and_exact_detail",
-      "queryIds": [
-        "kitsilano"
-      ],
-      "approximateLocation": "Kitsilano",
-      "addressPrecision": "neighborhood",
-      "description": "Available October 1, 2026\n\nBright, comfortable, stylish and affordable 3 bedroom home in an amazing Kitsilano location at 6& Vine ground level\n\nThis is a great option for looking a cool furnished three-bedroom in an awesome location. The home is well furnished and has a large, private south-facing backyard.\n\n$3,600 /month – utilities included ( if shared between three people equally, that’s 1200 a month!)\n\n• 3 bedrooms\n• 1 bathroom\n• Furnished- 3 beds, sectional, TV, Dining table chair, chairs, Kitchen basics, decor…\n• Large south-facing backyard\n• Utilities included\n• Free shared laundry\n• Free street parking\n• Minimum 3-month lease\n• Available October 1, 2026\n\nGreat location if you’re just moving to Vancouver or you’ve been here for a while, you’ll appreciate how close it is to walk to shops and the beach and transit\n\nThe suite offers a lot of space for the price, particularly for anyone who needs three true bedrooms and outdoor space in central Vancouver.\n\nWe are local owners who self-manage the property. We don’t live on site, but we’re nearby and available if anything comes up. We have owned the building for 13 years and know the neighborhood and Neighbours well. I’m a mom of 3 busy kids so we are looking for easygoing Tenants that can care for the property.\n\nA small non shedding Dog may be accepted.\n\nPlease reply with a little information about yourself, who would be living in the home, and your preferred move-in date/length of stay. I have video of the unit I can send as well. I’m also happy to answer any questions or arrange a viewing\n\nFor quickest reply, please text",
-      "type": "rental",
-      "ac": null,
-      "detailVerified": true
-    },
-    {
-      "source": "Craigslist",
-      "postId": "7956031596",
-      "url": "https://www.craigslist.org/view/d/vancouver-top-floor-heart-of-kits-beds/4rFSAuZHRZB2t6XpXGvPR9",
-      "title": "$3,900 / 3br - 1000ft2 - Top Floor Heart of Kits, 3 beds (Vancouver, Kitsilano, UBC,)",
-      "address": null,
-      "identityKey": "craigslist::post:7956031596",
-      "rent": 3900,
-      "bedrooms": 3,
-      "bathrooms": 1,
-      "sqft": 1000,
-      "geo": {
-        "lat": 49.269037,
-        "lng": -123.158112
-      },
-      "targetArea": true,
-      "active": true,
-      "postedOrUpdatedAt": "2026-09-18T16:36:32.000Z",
-      "checkedAt": "2026-09-19T11:11:50.399Z",
-      "images": [
-        "https://images.craigslist.org/00P0P_5AApCehTqd1_1320MM_600x450.jpg",
-        "https://images.craigslist.org/00P0P_5AApCehTqd1_1320MM_50x50c.jpg",
-        "https://images.craigslist.org/00D0D_1vgj6juv9m1_0CI0t2_50x50c.jpg",
-        "https://images.craigslist.org/00A0A_9HeIq8dTDKp_0lG0t2_50x50c.jpg",
-        "https://images.craigslist.org/00X0X_acX5QWYzURh_0t20t2_50x50c.jpg",
-        "https://images.craigslist.org/00u0u_bMLU6Hw4Rsx_0CI0t2_50x50c.jpg",
-        "https://images.craigslist.org/00Q0Q_hzcnPS8cH8K_0CI0t2_50x50c.jpg",
-        "https://images.craigslist.org/00t0t_kvl3ue6Eh00_0CI0t2_50x50c.jpg",
-        "https://images.craigslist.org/00606_9eqzUvf2JBT_0CI0t2_50x50c.jpg",
-        "https://images.craigslist.org/00606_8z5gJK35kCN_0lM0t2_50x50c.jpg",
-        "https://images.craigslist.org/00u0u_cTBqj34qPG5_0lM0t2_50x50c.jpg",
-        "https://images.craigslist.org/00Q0Q_k0tJAtXYxgY_0lM0t2_50x50c.jpg"
-      ],
-      "publishable": false,
-      "evidenceKind": "current_search_card_and_exact_detail",
-      "queryIds": [
-        "kitsilano"
-      ],
-      "approximateLocation": "Vancouver, Kitsilano, UBC,",
-      "addressPrecision": "neighborhood",
-      "description": "Spacious 3 Bedrooms 1 bath, top floor with high ceilings, in a restored, quaint character building\nwith hardwood floors, built in cabinets and window seats\nBedroom with a small balcony and ocean views.\nKitchen with gas stove opening to large back porch.\nlocated one block to Whole Foods and trendy restaurants and shops on 4th Avenue\nonly 3 blocks to Kits Beach, Tennis courts and other amenities.\nHeat and hot water included,\none cat is welcomed,\nTenant insurance required, no sublet or smoking please.\nOne year lease. Available October 1st, 2026",
-      "type": "townhouse",
-      "ac": null,
-      "detailVerified": true
-    },
-    {
-      "source": "Craigslist",
-      "postId": "7964416485",
-      "url": "https://www.craigslist.org/view/d/west-vancouver-quiet-2br-2ba-starting/r1gkAYMThUZC362bYXrXeH",
-      "title": "$3,500 / 2br - 893ft2 - Quiet 2br/2ba starting at $3,500 | Tribeca (Arbutus Ridge)",
-      "address": "2111 West 11th Avenue near Arbutus Street",
-      "identityKey": "craigslist::post:7964416485",
-      "rent": 3500,
-      "bedrooms": 2,
-      "bathrooms": 2,
-      "sqft": 893,
-      "geo": {
-        "lat": 49.26219,
-        "lng": -123.153369
-      },
-      "targetArea": true,
-      "active": true,
-      "postedOrUpdatedAt": "2026-09-17T23:10:06.000Z",
-      "checkedAt": "2026-09-19T11:11:50.399Z",
-      "images": [
-        "https://images.craigslist.org/01616_jLj3OlQV1v_0jm0c6_600x450.jpg",
-        "https://images.craigslist.org/01616_jLj3OlQV1v_0jm0c6_50x50c.jpg",
-        "https://images.craigslist.org/00505_hhrceBfAPn1_0jm0c6_50x50c.jpg",
-        "https://images.craigslist.org/00G0G_1161nx9IgK_0jm0c6_50x50c.jpg",
-        "https://images.craigslist.org/00000_354VhIiOt7u_0jm0c6_50x50c.jpg",
-        "https://images.craigslist.org/00e0e_fcMVJBdjWgj_0jm0c6_50x50c.jpg",
-        "https://images.craigslist.org/00a0a_7MPJEtgaTXG_0jm0c6_50x50c.jpg",
-        "https://images.craigslist.org/00n0n_7YGAm7g7Ymf_0jm0c6_50x50c.jpg",
-        "https://images.craigslist.org/00B0B_7dpw3bfJPt2_0jm0c6_50x50c.jpg",
-        "https://images.craigslist.org/00q0q_eWzxIU1Y3na_0jm0c6_50x50c.jpg",
-        "https://images.craigslist.org/01111_3CdqOjp0rsg_0jm0c6_50x50c.jpg",
-        "https://images.craigslist.org/00O0O_i4BVZw1BrIh_0jm0c6_50x50c.jpg"
-      ],
-      "publishable": false,
-      "evidenceKind": "current_search_card_and_exact_detail",
-      "queryIds": [
-        "kitsilano"
-      ],
-      "approximateLocation": "Arbutus Ridge",
-      "addressPrecision": "exact_civic",
-      "description": "Apartments for Rent in Arbutus Ridge, Vancouver\nTribeca at 2111 West 11th Avenue is a professionally managed rental property located in Vancouver’s sought-after Arbutus Ridge neighbourhood, close to Kitsilano, West Broadway and the Arbutus Greenway. This central Vancouver location offers convenient access to Downtown Vancouver, UBC, Kitsilano Beach and West 4th Avenue, with shopping, dining, recreation and transit nearby.\n\nThe Arbutus Greenway, just a 2-minute walk away, provides a scenic walking and cycling route through the city, while the future Arbutus Station on the Broadway Subway will provide convenient rapid transit access just minutes from the property.\n\nSUITE & BUILDING FEATURES\nSuites feature spacious floorplans, gas fireplaces, dishwashers, in-suite laundry and private decks. Secured underground parking and storage are available for an additional fee, subject to availability.\n\nWALKABLE & CONNECTED LOCATION\nTribeca offers an exceptionally walkable and bike-friendly Arbutus Ridge location, with a Walk Score of 95 (Walker’s Paradise), Bike Score of 93 (Biker’s Paradise) and Transit Score of 72 (Excellent Transit). Shopping, dining, recreation, transit and some of Vancouver’s most popular destinations are all nearby.\n\nNearby amenities and destinations include:\n• Arbutus Greenway (2 min walk)\n• West Broadway shops, cafés & restaurants (5 min walk)\n• Future Arbutus Station – Broadway Subway (5 min walk)\n• Connaught Park (7 min walk)\n• Kitsilano Community Centre (8 min walk)\n• West 4th Avenue Shopping District (12 min walk)\n• Kitsilano Beach & Kitsilano Pool (20 min walk)\n• Downtown Vancouver (10 min drive / 20 min transit)\n• Granville Island (25 min walk)\n• Vanier Park (25 min walk)\n• UBC (15 min drive / 25 min transit)\n\nDisclaimer: Images and virtual tours may depict a similar floor plan and may be virtually staged. Actual suite finishes, features and layouts may vary.\n\nCopy and paste this link into your browser for a 3D virtual tour:\nhttps://my.matterport.co",
-      "type": "rental",
-      "ac": null,
-      "detailVerified": true
-    },
-    {
-      "source": "Craigslist",
-      "postId": "7964413899",
-      "url": "https://www.craigslist.org/view/d/vancouver-ocean-view-2br-2ba-with-den/kZEyBrAFDhJYBcmtaq27m2",
-      "title": "$5,000 / 2br - 979ft2 - Ocean View 2br/2ba with Den | Yorkville North (Kitsilano)",
-      "address": "1888 York Avenue near Cypress Street",
-      "identityKey": "craigslist::post:7964413899",
-      "rent": 5000,
-      "bedrooms": 2,
-      "bathrooms": 2,
-      "sqft": 979,
-      "geo": {
-        "lat": 49.271319,
-        "lng": -123.147469
-      },
-      "targetArea": true,
-      "active": true,
-      "postedOrUpdatedAt": "2026-09-17T23:09:53.000Z",
-      "checkedAt": "2026-09-19T11:11:50.399Z",
-      "images": [
-        "https://images.craigslist.org/00x0x_5rdhaj721wT_0jm0c6_600x450.jpg",
-        "https://images.craigslist.org/00x0x_5rdhaj721wT_0jm0c6_50x50c.jpg",
-        "https://images.craigslist.org/00P0P_5fOwirW1IUx_0jm0c6_50x50c.jpg",
-        "https://images.craigslist.org/00U0U_8zZ28j8N16a_0jm0c6_50x50c.jpg",
-        "https://images.craigslist.org/00O0O_lmi6BsDEfB5_0jm0c6_50x50c.jpg",
-        "https://images.craigslist.org/00N0N_4O2Z4t8DYuk_0jm0c6_50x50c.jpg",
-        "https://images.craigslist.org/00n0n_dKaVNk7k53m_0jm0c6_50x50c.jpg",
-        "https://images.craigslist.org/00707_5mDWRyBpILM_0jm0c6_50x50c.jpg",
-        "https://images.craigslist.org/01010_jtNj0tNKVtF_0jm0c6_50x50c.jpg",
-        "https://images.craigslist.org/01515_5Ia4rcKTSJG_0jm0c6_50x50c.jpg",
-        "https://images.craigslist.org/00Y0Y_2ovpbuUWPLR_0jm0c6_50x50c.jpg",
-        "https://images.craigslist.org/00505_k3idEWV6GRm_0jm0c6_50x50c.jpg"
-      ],
-      "publishable": false,
-      "evidenceKind": "current_search_card_and_exact_detail",
-      "queryIds": [
-        "kitsilano"
-      ],
-      "approximateLocation": "Kitsilano",
-      "addressPrecision": "exact_civic",
-      "description": "Apartment for Rent in Kitsilano, Vancouver\nYorkville North at 1888 York Avenue is a property located in Vancouver’s sought-after Kitsilano neighbourhood, just minutes from Kitsilano Beach and the waterfront. This desirable Westside location offers convenient access to West 4th Avenue, Granville Island, Vanier Park and Downtown Vancouver, with shopping, dining, recreation and transit nearby.\n\nKitsilano Beach and the waterfront are just a short walk from the property, while nearby West 4th Avenue offers a wide selection of shops, cafés, restaurants and everyday conveniences. With beaches, parks, the Seawall and Granville Island all nearby, Yorkville North offers exceptional access to some of Vancouver’s most popular destinations.\n\nSUITE & BUILDING FEATURES\nSuites feature spacious floorplans, in-suite laundry, generous private decks and panoramic views of Burrard Inlet, the city and surrounding mountains. Secured underground parking is also available.\n\nWALKABLE & CONNECTED LOCATION\nYorkville North offers an exceptionally walkable and bike-friendly Kitsilano location, with a Walk Score of 97 (Walker’s Paradise), Bike Score of 99 (Biker’s Paradise) and Transit Score of 72 (Excellent Transit). Shopping, dining, recreation, transit and some of Vancouver’s most popular destinations are all nearby.\n\nNearby amenities and destinations include:\n• Henry Hudson Elementary School (1 min walk)\n• Kitsilano Beach (7 min walk)\n• Kitsilano Pool (10 min walk)\n• West 4th Avenue shops, cafés & restaurants (10 min walk)\n• Whole Foods Market (10 min walk)\n• Vanier Park (12 min walk)\n• Hadden Park (15 min walk)\n• Museum of Vancouver (15 min walk)\n• H.R. MacMillan Space Centre (15 min walk)\n• Granville Island (15 min walk)\n• Downtown Vancouver (10 min drive / 10 min bike)\n\nDisclaimer: Images and virtual tours may depict a similar floor plan and may be virtually staged. Actual suite finishes, features and layouts may vary.\n\nCopy and paste this link into your browser for a 3D virtual tour:\nhttp",
-      "type": "rental",
-      "ac": null,
-      "detailVerified": true
-    },
-    {
-      "source": "Craigslist",
-      "postId": "7966491858",
-      "url": "https://www.craigslist.org/view/d/vancouver-stylish-south-facing-2bedroom/msdCcwfzq1tUDpt7KvYhGh",
-      "title": "$3,500 / 2br - 1190ft2 - Stylish South-facing 2Bedroom 2Pkng FURNISHED Townhome in Arbutus Walk",
-      "address": null,
-      "identityKey": "craigslist::post:7966491858",
-      "rent": 3500,
-      "bedrooms": 2,
-      "bathrooms": 2,
-      "sqft": 1190,
-      "geo": {
-        "lat": 49.261196,
-        "lng": -123.156652
-      },
-      "targetArea": true,
-      "active": true,
-      "postedOrUpdatedAt": "2026-09-17T18:54:22.000Z",
-      "checkedAt": "2026-09-19T11:11:50.399Z",
-      "images": [
-        "https://images.craigslist.org/00p0p_1XnMnR4kdZ9_0oN0gv_600x450.jpg",
-        "https://images.craigslist.org/00p0p_1XnMnR4kdZ9_0oN0gv_50x50c.jpg",
-        "https://images.craigslist.org/01717_b41uHIO6NAL_0CI0t2_50x50c.jpg",
-        "https://images.craigslist.org/01212_ibwzpaenXvB_0CI0t2_50x50c.jpg",
-        "https://images.craigslist.org/00g0g_8ZxXDrrPf7U_0kE0fu_50x50c.jpg",
-        "https://images.craigslist.org/00y0y_bjktf9Hi6hn_0nm0hw_50x50c.jpg",
-        "https://images.craigslist.org/00Q0Q_9XjQ0L73CdH_0nm0hw_50x50c.jpg",
-        "https://images.craigslist.org/00H0H_bbYHUWb0Vfv_0kE0fu_50x50c.jpg",
-        "https://images.craigslist.org/00v0v_4wcdhjW0McF_0kE0fu_50x50c.jpg"
-      ],
-      "publishable": false,
-      "evidenceKind": "current_search_card_and_exact_detail",
-      "queryIds": [
-        "kitsilano"
-      ],
-      "approximateLocation": "city of vancouver",
-      "addressPrecision": "neighborhood",
-      "description": "A bright and beautifully upgraded former display suite, New York Style 2 bedroom 2 bathroom Townhome in the heart of Arbutus Walk! Enjoy two private patios, ideal for morning coffee or summer dining, and two secure parking spots—a rare find in the area. Located in one of Vancouver’s most desirable neighborhoods, you're just a short walk to St. John’s School and Kitsilano Secondary, as well as trendy shops, grocery stores, and acclaimed restaurants.\n\nAddress: 22** W 12th Ave, VancouverV6K 4S6\nAvailable: Now\nFurnishing: Furnished\nRent: $3500/Month\nProperty Type: New York Style Townhouse\nBedrooms: 2 Bedrooms\nBathrooms: 2\nFinished area: 1190 sqft\nFlooring: Mixed\nHeating: Baseboard\nParking: 2\nEn-suite Laundry: Yes\nLease term: Minimum 6 months.\nUtilities: not included\nPets: No, sorry\nAbsolutely No Smoking Please, credit / reference check will be done after receiving the application.\nTenant insurance is required\n\nFor viewing appointments, contact Alva show contact info TEXT ONLY!!\nplease include the following information:\n-Your full name.\n-Expect starting date\n-Total number of occupants.\n-Profession/occupation\n\nSutton Group 1st West Realty.",
-      "type": "townhouse",
-      "ac": null,
-      "detailVerified": true
-    },
-    {
-      "source": "Craigslist",
-      "postId": "7962958107",
-      "url": "https://www.craigslist.org/view/d/vancouver-suite-for-rent/ehZzq7mykgJfapJkqDYrCa",
-      "title": "$3,500 / 2br - Suite for rent (Kitsilano)",
-      "address": null,
-      "identityKey": "craigslist::post:7962958107",
-      "rent": 3500,
-      "bedrooms": 2,
-      "bathrooms": 1,
-      "sqft": null,
-      "geo": {
-        "lat": 49.2646,
-        "lng": -123.1648
-      },
-      "targetArea": true,
-      "active": true,
-      "postedOrUpdatedAt": "2026-09-15T15:09:46.000Z",
-      "checkedAt": "2026-09-19T11:11:50.399Z",
-      "images": [
-        "https://images.craigslist.org/00W0W_kG8iSepXJjO_0jm0CI_600x450.jpg",
-        "https://images.craigslist.org/00W0W_kG8iSepXJjO_0jm0CI_50x50c.jpg",
-        "https://images.craigslist.org/00U0U_jvz2XPA76P1_0jm0CI_50x50c.jpg",
-        "https://images.craigslist.org/00I0I_3NYdphNm9bH_0CI0jm_50x50c.jpg",
-        "https://images.craigslist.org/00v0v_6ECFzBkTsvO_0jm0CI_50x50c.jpg",
-        "https://images.craigslist.org/00W0W_6glkOgo5R9G_0jm0CI_50x50c.jpg",
-        "https://images.craigslist.org/00b0b_5i1tCc8Z5Ic_0jm0CI_50x50c.jpg"
-      ],
-      "publishable": false,
-      "evidenceKind": "current_search_card_and_exact_detail",
-      "queryIds": [
-        "kitsilano"
-      ],
-      "approximateLocation": "Kitsilano",
-      "addressPrecision": "neighborhood",
-      "description": "Large bright top floor 2 Bedroom + loft (Could be used as office/extra room) and balcony, for rent in prime Kitsilano area (8th and Vine)\n- Utilities (Hydro and gas) included\n- Hardwood floors\n- Coin laundry\n- No pets (house cats ok)\n- No Smoking or Vaping on property\n- Available Oct 1st\n\n$3500 per month\n\nReferences required",
-      "type": "house",
-      "ac": null,
-      "detailVerified": true
-    },
-    {
-      "source": "Craigslist",
-      "postId": "7964728008",
-      "url": "https://www.craigslist.org/view/d/vancouver-full-house-bedroom-plus-large/7e4BnvLoAnHNoQrCMPHg7m",
-      "title": "$4,800 / 3br - Full House - 3 bedroom plus large basement (Kitsilano)",
-      "address": null,
-      "identityKey": "craigslist::post:7964728008",
-      "rent": 4800,
-      "bedrooms": 3,
-      "bathrooms": 2.5,
-      "sqft": null,
-      "geo": {
-        "lat": 49.2666,
-        "lng": -123.1976
-      },
-      "targetArea": true,
-      "active": true,
-      "postedOrUpdatedAt": "2026-09-15T03:21:47.000Z",
-      "checkedAt": "2026-09-19T11:11:50.399Z",
-      "images": [
-        "https://images.craigslist.org/00y0y_9QoxDSNE4uG_0pO0jm_600x450.jpg",
-        "https://images.craigslist.org/00y0y_9QoxDSNE4uG_0pO0jm_50x50c.jpg",
-        "https://images.craigslist.org/00e0e_eigecxYRpaj_0pO0jm_50x50c.jpg",
-        "https://images.craigslist.org/00g0g_hnDx6ie72VR_0jm0pO_50x50c.jpg",
-        "https://images.craigslist.org/00l0l_bpkWhrGgOhV_0pO0jm_50x50c.jpg",
-        "https://images.craigslist.org/00404_14weXJlorY2_0jm0pO_50x50c.jpg",
-        "https://images.craigslist.org/01111_hEUtXYc2It9_0pO0jm_50x50c.jpg",
-        "https://images.craigslist.org/01111_i7dRx4gekxl_0pO0jm_50x50c.jpg",
-        "https://images.craigslist.org/00909_4RzxBqOC0FY_0pO0jm_50x50c.jpg",
-        "https://images.craigslist.org/00v0v_hW5iwPY18mO_0ak07K_50x50c.jpg",
-        "https://images.craigslist.org/00808_hT7clqIopgm_0ak07K_50x50c.jpg",
-        "https://images.craigslist.org/00V0V_eou0su2VzX9_0ak07K_50x50c.jpg"
-      ],
-      "publishable": false,
-      "evidenceKind": "current_search_card_and_exact_detail",
-      "queryIds": [
-        "kitsilano"
-      ],
-      "approximateLocation": "Kitsilano",
-      "addressPrecision": "neighborhood",
-      "description": "Spacious 3-bedroom, 2.5-bathroom house plus full basement located near Collingwood Street and West 12th Avenue in a convenient Vancouver neighborhood.\n\nThe house is just 3 blocks from Broadway and approximately a 10-minute walk to Jericho Beach. Several bus routes are within walking distance, including the #2, #7, #14, #9, and #99, providing convenient access to UBC, downtown, and other areas of Vancouver.\n\nThe house features:\n\n3 bedrooms\n2.5 bathrooms\nKitchen\nLiving room\nFull basement\nLaundry room\nBack deck\nFront and back gardens\nA great option for a family or responsible tenants looking for a spacious home in a well-connected neighborhood close to shops, transit, and the beach.\n\nPictures are attached.",
-      "type": "house",
-      "ac": null,
-      "detailVerified": true
-    },
-    {
-      "source": "Craigslist",
-      "postId": "7954610190",
-      "url": "https://www.craigslist.org/view/d/vancouver-stunning-furnished-bedroom/9YTC3RaD4975rUf65CCYiT",
-      "title": "$7,750 / 2br - 1800ft2 - STUNNING Furnished 2 BEDROOM + DEN Townhouse in Kits (Kitsilano)",
-      "address": null,
-      "identityKey": "craigslist::post:7954610190",
-      "rent": 7750,
-      "bedrooms": 2,
-      "bathrooms": 2,
-      "sqft": 1800,
-      "geo": {
-        "lat": 49.271551,
-        "lng": -123.165828
-      },
-      "targetArea": true,
-      "active": true,
-      "postedOrUpdatedAt": "2026-09-08T20:12:58.000Z",
-      "checkedAt": "2026-09-19T11:11:50.399Z",
-      "images": [
-        "https://images.craigslist.org/00E0E_e5n8yh4XnBK_0CI0pP_600x450.jpg",
-        "https://images.craigslist.org/00E0E_e5n8yh4XnBK_0CI0pP_50x50c.jpg",
-        "https://images.craigslist.org/00F0F_ami3Gia1OKP_0CI0pP_50x50c.jpg",
-        "https://images.craigslist.org/00A0A_7yBACj7PNqa_0CI0pP_50x50c.jpg",
-        "https://images.craigslist.org/00o0o_7OvSI5jTvOZ_0CI0pP_50x50c.jpg",
-        "https://images.craigslist.org/00z0z_8ORdR9d2UzW_0CI0pP_50x50c.jpg",
-        "https://images.craigslist.org/01515_4gSyVy4L4hy_0CI0pP_50x50c.jpg",
-        "https://images.craigslist.org/00808_9SamaMXEQej_0CI0pP_50x50c.jpg",
-        "https://images.craigslist.org/00Z0Z_et7Es9eWAvf_0CI0pP_50x50c.jpg",
-        "https://images.craigslist.org/00202_c3HrLNQWoEM_0CI0pP_50x50c.jpg",
-        "https://images.craigslist.org/01616_kRfFdzT9TDm_0CI0pP_50x50c.jpg",
-        "https://images.craigslist.org/00a0a_6dPyH58g1la_0CI0pP_50x50c.jpg"
-      ],
-      "publishable": false,
-      "evidenceKind": "current_search_card_and_exact_detail",
-      "queryIds": [
-        "kitsilano"
-      ],
-      "approximateLocation": "York Ave near Stephens Street",
-      "addressPrecision": "intersection",
-      "description": "STUNNING Furnished Two Bedroom, 2 Bathroom TOWNHOUSE in Point Grey!\n\nPrice: $7,750 per month on one year lease\nAvailable: October 1st\nListing Brokerage: REMAX City Realty\nSq Ft.: 1,800\nBedrooms: 2 + Sofabed in Den/Loft\nBathrooms:2\nUtilities Included: Hot Water and Natural Gas\nParking: Available\n\nTenancy Length: Negotiable\n\nAmenities: Private Yard\nIncluded Items:: Gourmet Chef's Kitchen w/ Soft-Close Custom Cabinetry, Stainless appliances, dishwasher, gas fireplace, washer and dryer, Central vacuum, black-out blinds in bedrooms. Units features lots of natural light, hardwood floors, recently painted and fully renovated. Designer furniture and plenty of storage throughout!\nDescription: The townhome that you have been waiting for! This 1,800 sqft 2 bedroom + den home features a modern gourmet kitchen and large bedrooms. Master bedroom has own ensuite with soaker tub! A generous main floor features excellent living space, fireplace, stunning water views and more! One of Vancouver's premier neighbourhoods, this property has superb access to transit, shopping, parks, the beach, excellent schools and more. Move-in Ready! Just bring your suitcase.\nContact: 672-514-8989 to set a viewing today! (Note number is new local Vancouver area code!)\n\n**** Professionally managed and marketed by REMAX City Realty. There are no additional fees or charges to rent an apartment through Proximity Real Estate, and there is no fee to view, apply for or rent any of our suites. We are licensed with the Real Estate Council of British Columbia and simply act as the landlord/marketer for the owner.****\n\n\nREMAX City Realty offers Tenant Rental Finder Services at no charge, visit our website, fill out the search criteria form, and let us get to work for you.\n\nProperty Owners, please feel free to contact Lindy Chow of REMAX City Realty to inquire if there is any renters in our database searching for a rental property which matches your criteria.",
-      "type": "townhouse",
-      "ac": true,
-      "detailVerified": true
-    },
-    {
-      "source": "Craigslist",
-      "postId": "7959192210",
-      "url": "https://www.craigslist.org/view/d/vancouver-kerrisdale-beds-25-baths/o1aCYrYaPXhQfEpZJaD9pP",
-      "title": "$4,680 / 3br - 1271ft2 - Kerrisdale 3 Beds 2.5 Baths 3 Levels Quiet Townhouse @ Bannister Mews (Vancouver)",
-      "address": "6558 Arbutus Street",
-      "identityKey": "craigslist::post:7959192210",
-      "rent": 4680,
-      "bedrooms": 3,
-      "bathrooms": 2.5,
-      "sqft": 1271,
-      "geo": {
-        "lat": 49.226188,
-        "lng": -123.155032
-      },
-      "targetArea": true,
-      "active": true,
-      "postedOrUpdatedAt": "2026-09-18T18:50:11.000Z",
-      "checkedAt": "2026-09-19T11:11:50.399Z",
-      "images": [
-        "https://images.craigslist.org/00R0R_XV0jcKDQvv_0aT07g_600x450.jpg",
-        "https://images.craigslist.org/00R0R_XV0jcKDQvv_0aT07g_50x50c.jpg",
-        "https://images.craigslist.org/00v0v_f4fgZywOyDm_0aT07g_50x50c.jpg",
-        "https://images.craigslist.org/00X0X_8kr5WDK843h_0aT07g_50x50c.jpg",
-        "https://images.craigslist.org/00o0o_bDNMt9SxuBb_0aT07g_50x50c.jpg",
-        "https://images.craigslist.org/01515_dWZi5w6lAhI_0aT07g_50x50c.jpg",
-        "https://images.craigslist.org/00o0o_fbNvOYyuGup_0aT07g_50x50c.jpg",
-        "https://images.craigslist.org/00000_cP0A9ErrkPg_0aT07g_50x50c.jpg",
-        "https://images.craigslist.org/00T0T_jBW9h1sypDM_0aT07g_50x50c.jpg",
-        "https://images.craigslist.org/00B0B_bJ2vCrrVzKw_0aT07g_50x50c.jpg",
-        "https://images.craigslist.org/00606_1ocDSfpHAun_0aT07g_50x50c.jpg",
-        "https://images.craigslist.org/00r0r_liKryjz9ONK_0aT07g_50x50c.jpg"
-      ],
-      "publishable": false,
-      "evidenceKind": "current_search_card_and_exact_detail",
-      "queryIds": [
-        "arbutus"
-      ],
-      "approximateLocation": "Vancouver",
-      "addressPrecision": "exact_civic",
-      "description": "Address: 6558 Arbutus Street, Vancouver\n\nAvailable: September 23, 2026 - long term unfurnished\nBedrooms: 3\nBathrooms: 2.5\nFinished area: 1271 sf\nLevels: 3\nFlooring: hardwood, engineered laminate, tiles mixed\nOutdoor: fenced backyard\nParking: double attached garage (tandem parking)\n\nDeposits: half-month security deposit + fob deposits.\nLease term: minimum 1 year lease.\nMove-in/out fees: as per strata bylaws.\nPets: sorry not this one.\nNo Bidet.\nAbsolutely no smoking please.\nNote: no more than two unrelated occupants are allowed for insurance restrictions reasons.\n\nIncluded items: stainless steel fridge, gas stovetop, oven, dishwasher, microwave, and washer & dryer.\nNot included: strata move-in/move-out fees, electricity, gas, telephone, cable, internet\n\n____________________________________________________________________________\n\nLOCATION: Kerrisdale / SW Marine neighbourhood just a few blocks away from Kerrisdale Village for many popular local businesses and restaurants along Boulevard and W.41st Ave for all your dining, shopping and entertainment needs. Half a block walk to Save-On-Foods at W.49th and West Boulevard. Some of the local favourites include Dollarama, Sen Pho, Oakberry Acai Bowls & Smoothies, Southern Delicacy, Michele Cake Shop, Fryday Chicken, Sandeul Korean, Sandy Farm Market, MACU Tea, Steam Teahouse, Honolulu Coffeee, Baoguette Vietnamese Bistro, Okini Restaurant & Bar, Bean Around the World and Choices Market. 5 minutes' drive to Oakridge Shopping Centre and 15 minutes to UBC. Children walk two blocks to Maple Grove Elementary and Magee Secondary and 6 of the top BC private schools within 15 minutes' drive, including Little Flower Academy, Crofton House, St. George's, York House, West Point Grey and Vancouver College. In your backyard is the popular Arbutus Greenway, which replaces the old train tracks and connects Vancouver Southlands all the way to False Creek waterfront jogging, blading or biking.\n\nFEATURES: Bannister Mews is one of the most di",
-      "type": "townhouse",
-      "ac": null,
-      "detailVerified": true
-    },
-    {
-      "source": "Craigslist",
-      "postId": "7965963048",
-      "url": "https://www.craigslist.org/view/d/vancouver-kerrisdale-furnished-bed-25/s57Jp3N2BMYmHDajNBjKG2",
-      "title": "$8,990 / 3br - 1772ft2 - Kerrisdale Furnished 3 Bed 2.5 Bath 2 Level House w/ Yard & Deck (Vancouver)",
-      "address": null,
-      "identityKey": "craigslist::post:7965963048",
-      "rent": 8990,
-      "bedrooms": 3,
-      "bathrooms": 2,
-      "sqft": 1772,
-      "geo": {
-        "lat": 49.228178,
-        "lng": -123.154206
-      },
-      "targetArea": true,
-      "active": true,
-      "postedOrUpdatedAt": "2026-09-18T18:50:25.000Z",
-      "checkedAt": "2026-09-19T11:11:50.399Z",
-      "images": [
-        "https://images.craigslist.org/00101_8Lj1RrRW6kM_0gw0b1_600x450.jpg",
-        "https://images.craigslist.org/00101_8Lj1RrRW6kM_0gw0b1_50x50c.jpg",
-        "https://images.craigslist.org/00i0i_cuNWLnHhXff_0gw0b1_50x50c.jpg",
-        "https://images.craigslist.org/00f0f_97SOUjBSmb9_0gw0b1_50x50c.jpg",
-        "https://images.craigslist.org/00g0g_4gYpViN0x3D_0gw0b1_50x50c.jpg",
-        "https://images.craigslist.org/00m0m_16ILnP1tqL0_0gw0b1_50x50c.jpg",
-        "https://images.craigslist.org/00808_emDiJjvN0Kq_0gw0b1_50x50c.jpg",
-        "https://images.craigslist.org/01010_f1PWaL5kXlI_0gw0b1_50x50c.jpg",
-        "https://images.craigslist.org/00M0M_6OC5GWH7vlx_0gw0b1_50x50c.jpg",
-        "https://images.craigslist.org/00Z0Z_exIfCjhXqVJ_0gw0b1_50x50c.jpg",
-        "https://images.craigslist.org/00s0s_arSWlcZiGpA_0gw0b1_50x50c.jpg",
-        "https://images.craigslist.org/00t0t_9kNesBky7cG_0gw0b1_50x50c.jpg"
-      ],
-      "publishable": false,
-      "evidenceKind": "current_search_card_and_exact_detail",
-      "queryIds": [
-        "arbutus"
-      ],
-      "approximateLocation": "Vancouver",
-      "addressPrecision": "neighborhood",
-      "description": "Address: 2075 W.48th Avenue, Vancouver\n\nAvailable: October 1, 2026 – fully furnished\nBedrooms: 3 + office\nBathrooms: 2\nFinished area: 1772 sf\nLevels: 2\nFlooring: hardwood, carpets, tiles mixed\nOutdoor: sundeck, front porch, front yard, backyard\nParking: street parking + driveway off the backlane\n\nDeposits: half-month security deposit.\nLease term: minimum 3 month stay.\nPets: pets okay with owners' approval.\nNo Bidet.\nAbsolutely no smoking please.\n\nMost properties include: fully furnished from cutlery to linens, TV, in-suite washer and dryer, fridge, stove, dishwasher, microwave, secure parking, and often utilities, telephone, cable, high speed internet & maid service.\nNot included: long distance telephone, additional cleaning & move-out clean\n\n____________________________________________________________________________\n\nLOCATION: Nestled in the heart of Kerrisdale, this home places you within one of Vancouver's most charming and established neighbourhoods. Just a short stroll away, Kerrisdale Village offers a vibrant mix of local boutiques, cafe's, restaurants, bakeries, fitness studios, services, and grocery options everything you need for day-to-day living. The Arbutus Greenway, located steps from your door, provides an exceptional multi-use pathway perfect for walking, cycling, jogging, or commuting through the West Side. Transit is extremely convenient, with nearby bus routes connecting directly to UBC, Downtown, and SkyTrain stations, making commuting simple and efficient. It's the perfect blend of quiet residential living and easy urban access.\n\nFEATURES: This charming character home offers a warm, cozy feel with a great open flow that's perfect for families. The main floor features spacious living and dining areas with high ceilings, along with a dedicated office and a bathroom for added convenience. The kitchen opens onto a private sundeck and fenced yard, creating an easy indoor outdoor connection ideal for everyday living. Upstairs, you'll find three well-s",
-      "type": "house",
-      "ac": null,
-      "detailVerified": true
+      "relistingUrls": [
+        "https://www.craigslist.org/view/d/vancouver-luxurious-bedroom-furnished/3CCUEFUUCJ6g5ufGmyUwxP"
+      ]
     },
     {
       "source": "Craigslist",
@@ -1107,7 +293,7 @@
       "targetArea": true,
       "active": true,
       "postedOrUpdatedAt": "2026-09-19T10:04:31.000Z",
-      "checkedAt": "2026-09-19T11:11:50.399Z",
+      "checkedAt": "2026-09-19T15:09:23.449Z",
       "images": [
         "https://images.craigslist.org/00g0g_4rGVb0GDyC7_0pO0hd_600x450.jpg",
         "https://images.craigslist.org/00g0g_4rGVb0GDyC7_0pO0hd_50x50c.jpg",
@@ -1132,7 +318,518 @@
       "description": "Unfurnished\nUpper-level mountain views\nSpacious living and dining areas\nFunctional family layout\nPrimary bedroom + flex space upstairs\nTwo additional bedrooms on the main floor\nPet-friendly (subject to approval)\nPrime Location\nNot Included:Gas，Electricity，Internet\n\nUtilities shared with basement tenant:\nMain floor pays 2/3\nBasement pays 1/3",
       "type": "house",
       "ac": null,
-      "detailVerified": true
+      "detailVerified": true,
+      "relistingPostIds": [
+        "7966061406"
+      ],
+      "relistingUrls": [
+        "https://www.craigslist.org/view/d/vancouver-vancouver-west-point-grey/reNvrH4yUPSdTsgXDCZD1e"
+      ]
+    },
+    {
+      "source": "Craigslist",
+      "postId": "7969115448",
+      "url": "https://www.craigslist.org/view/d/vancouver-new-bedrooms-35-bathrooms-2/xrz9rn6HCEMu9FMi36UYPf",
+      "title": "$5,980 / 3br - 1500ft2 - New 3 bedrooms 3.5 bathrooms 1/2 Duplex in Kitsilano (Kitsilano)",
+      "address": null,
+      "identityKey": "craigslist::post:7969115448",
+      "rent": 5980,
+      "bedrooms": 3,
+      "bathrooms": 3.5,
+      "sqft": 1500,
+      "geo": {
+        "lat": 49.2621,
+        "lng": -123.1804
+      },
+      "targetArea": true,
+      "active": true,
+      "postedOrUpdatedAt": "2026-09-19T08:59:15.000Z",
+      "checkedAt": "2026-09-19T15:09:23.449Z",
+      "images": [
+        "https://images.craigslist.org/00q0q_bPnZqZo8ZWF_0t20CI_600x450.jpg",
+        "https://images.craigslist.org/00q0q_bPnZqZo8ZWF_0t20CI_50x50c.jpg",
+        "https://images.craigslist.org/00P0P_bhpaXiTPvCn_0vb0CI_50x50c.jpg",
+        "https://images.craigslist.org/01717_7cdRRHmeGl8_0t10CI_50x50c.jpg",
+        "https://images.craigslist.org/00X0X_8fAXb0mepVn_0t20CI_600x450.jpg",
+        "https://images.craigslist.org/00X0X_8fAXb0mepVn_0t20CI_50x50c.jpg",
+        "https://images.craigslist.org/00d0d_cRtyrtz39fh_0CI0t0_50x50c.jpg",
+        "https://images.craigslist.org/00x0x_gSqPWfWvnL2_0CI0s7_50x50c.jpg",
+        "https://images.craigslist.org/00R0R_iI52BGLtDkD_0t00CI_50x50c.jpg",
+        "https://images.craigslist.org/00K0K_bsQwSpDw4jV_0CI0s3_50x50c.jpg"
+      ],
+      "publishable": false,
+      "evidenceKind": "current_search_card_and_exact_detail",
+      "queryIds": [
+        "kitsilano"
+      ],
+      "approximateLocation": "Kitsilano",
+      "addressPrecision": "neighborhood",
+      "description": "Beautiful newly built duplex completed in 2022, all 3 bedrooms are en-suite.\nExcellent location near the West Broadway commercial corridor, with easy access to supermarkets, banks, restaurants, cafes, and various daily conveniences within walking distance.\n\nSteps to West 4th shopping and Kits Beach\n\nMultiple bus routes nearby provide convenient transportation to different areas of the city. The neighborhood is surrounded by elementary and secondary schools, community facilities, and family-friendly amenities.\n\nEquipped with premium North American luxury brand Thermador stove, refrigerator, and dishwasher. All faucets and shower systems throughout the home are fitted with high-end brand （Brizo ）fixtures. The kitchen features a designer-crafted apron-front Blanco sink made from premium materials.\nAC and HRV systems.\nRadiant floor heating\n\nNo garage, free street parking.\nPerfect for small families or professionals looking for a modern and convenient home.\n\nRequirements:\n\n• Minimum 1-year lease\n• No pets, no smoking\n• Tenant insurance required\n• Credit reference check and referral letter is required\n\nAppointment for viewing.",
+      "type": "duplex",
+      "ac": true,
+      "detailVerified": true,
+      "relistingPostIds": [
+        "7969115448",
+        "7953626877"
+      ],
+      "relistingUrls": [
+        "https://www.craigslist.org/view/d/vancouver-new-bedrooms-35-bathrooms-2/xrz9rn6HCEMu9FMi36UYPf",
+        "https://www.craigslist.org/view/d/vancouver-new-bedrooms-35-bathrooms-2/m7NJbsvPdcDUScq6CgeWJc"
+      ]
+    },
+    {
+      "source": "Craigslist",
+      "postId": "7967911446",
+      "url": "https://www.craigslist.org/view/d/vancouver-fully-furnished-designer-2br/dK4HrSygC6FiEijPJfe35N",
+      "title": "$5,475 / 2br - 850ft2 - Fully Furnished Designer 2BR/2BA Coach House (Arbutus / Kits / UBC / Point Grey)",
+      "address": "3260 W 16 Ave near Blenheim",
+      "identityKey": "craigslist::post:7967911446",
+      "rent": 5475,
+      "bedrooms": 2,
+      "bathrooms": 1.5,
+      "sqft": 850,
+      "geo": {
+        "lat": 49.2646,
+        "lng": -123.1648
+      },
+      "targetArea": true,
+      "active": true,
+      "postedOrUpdatedAt": "2026-09-19T06:14:44.000Z",
+      "checkedAt": "2026-09-19T15:09:23.449Z",
+      "images": [
+        "https://images.craigslist.org/00N0N_78ZMrBVFcbB_0CI0pO_600x450.jpg",
+        "https://images.craigslist.org/00N0N_78ZMrBVFcbB_0CI0pO_50x50c.jpg",
+        "https://images.craigslist.org/00808_ftEZ1Yjx8xr_0jm0t2_50x50c.jpg",
+        "https://images.craigslist.org/00l0l_2hh5fzNMpOU_0CI0pO_50x50c.jpg",
+        "https://images.craigslist.org/00t0t_7qGr1yJ5amx_0CI0pO_50x50c.jpg",
+        "https://images.craigslist.org/00z0z_jjyQ6FNqKw8_0CI0pO_50x50c.jpg",
+        "https://images.craigslist.org/00v0v_1UU3oGcKWX6_0jm0t2_50x50c.jpg",
+        "https://images.craigslist.org/00C0C_6NWXqxP77lK_0jm0t2_50x50c.jpg",
+        "https://images.craigslist.org/00a0a_4nZXOTRlxcj_0jm0t2_50x50c.jpg",
+        "https://images.craigslist.org/00j0j_cQrrHMIM1NT_0CI0pO_50x50c.jpg",
+        "https://images.craigslist.org/00808_KkbhXDoDMX_0jm0t2_50x50c.jpg",
+        "https://images.craigslist.org/00f0f_drNhc2KQejA_0CI0pL_50x50c.jpg"
+      ],
+      "publishable": false,
+      "evidenceKind": "current_search_card_and_exact_detail",
+      "queryIds": [
+        "kitsilano"
+      ],
+      "approximateLocation": "Arbutus / Kits / UBC / Point Grey",
+      "addressPrecision": "exact_civic",
+      "description": "Experience upscale Westside living in this fully furnished, designer-appointed 2-bedroom, 2-bathroom coach house located at W 16th Ave & Blenheim St. Nestled on the vibrant border of Kitsilano, Arbutus, and Point Grey, this private residence offers premium finishes, air conditioning, and a fully equipped home gym.\n\nWhether you are a relocating professional, a visiting academic, or exploring the Lower Mainland, this turn-key home serves as your ultimate luxury Vancouver base.\n\nPremium Features & Interior Amenities\n\n* Chef's Kitchen: Equipped with stainless steel appliances, premium stone countertops, and custom millwork.\n* Climate Control: Stay comfortable year-round with built-in air conditioning (AC).\n* Luxury Millwork: Features elegant custom millwork and high-end built-ins throughout the home.\n* Entertainment & Living: Relax in a living space featuring a comfortable sofa bed (perfect for guests) and two large HD smart TVs.\n* Private Fitness Center: Access a fully equipped home gym complete with a premium functional trainer.\n\nOutdoor Living & Entry\n\n* Private Deck: Includes premium exterior patio furniture, a dining table, and a BBQ for effortless outdoor dining.\n* Serene Entry: Features a private entrance adjacent to a beautifully landscaped, tranquil backyard.\n\nPrime Westside Location\n\n* Neighborhoods: Steps from Kitsilano, Arbutus Ridge, and Point Grey.\n* Proximity to UBC: Minutes away from the University of British Columbia—ideal for faculty, medical professionals, or researchers.\n* Nature & Recreation: Easy access to local beaches, Pacific Spirit Regional Park forest trails, and neighborhood parks.\n* Shopping & Dining: Surrounded by the trendy boutiques, cafes, and restaurants of West 4th, West Broadway, and West 10th Ave.\n* Transit & Travel: Central location with seamless transit options to explore Downtown Vancouver and the entire Lower Mainland.\n\nRental Details & Inclusions\n\n* All-Inclusive Living: Monthly rent includes high-speed Wi-Fi, all utilities, and",
+      "type": "house",
+      "ac": true,
+      "detailVerified": true,
+      "relistingPostIds": [
+        "7967911446"
+      ],
+      "relistingUrls": [
+        "https://www.craigslist.org/view/d/vancouver-fully-furnished-designer-2br/dK4HrSygC6FiEijPJfe35N"
+      ]
+    },
+    {
+      "source": "Craigslist",
+      "postId": "7968890487",
+      "url": "https://www.craigslist.org/view/d/vancouver-furnished-suite-in-kits/kF4GzDKKMuVnewKp6Eh6zP",
+      "title": "$3,600 / 3br - Furnished suite in Kits (Kitsilano)",
+      "address": null,
+      "identityKey": "craigslist::post:7968890487",
+      "rent": 3600,
+      "bedrooms": 3,
+      "bathrooms": 1,
+      "sqft": null,
+      "geo": {
+        "lat": 49.266485,
+        "lng": -123.157281
+      },
+      "targetArea": true,
+      "active": true,
+      "postedOrUpdatedAt": "2026-09-18T21:03:10.000Z",
+      "checkedAt": "2026-09-19T15:09:23.449Z",
+      "images": [
+        "https://images.craigslist.org/00W0W_b8SzGSsys9e_0j10dJ_600x450.jpg",
+        "https://images.craigslist.org/00W0W_b8SzGSsys9e_0j10dJ_50x50c.jpg",
+        "https://images.craigslist.org/00o0o_kAtmMnL39Dv_0iO0oL_50x50c.jpg",
+        "https://images.craigslist.org/00505_6O8a1f2QM5H_0j10ow_50x50c.jpg",
+        "https://images.craigslist.org/00i0i_cZHW1qqjEpu_0j10p4_50x50c.jpg",
+        "https://images.craigslist.org/00G0G_fNoGEosR64L_0j10nn_50x50c.jpg",
+        "https://images.craigslist.org/00c0c_6B8Ttl4yd0Z_0j10k7_50x50c.jpg",
+        "https://images.craigslist.org/00l0l_t4YreAVIVq_0j10pH_50x50c.jpg",
+        "https://images.craigslist.org/00E0E_5aQXOyFySa_0j10iA_50x50c.jpg",
+        "https://images.craigslist.org/00B0B_iN60ajAjrgd_0j10dT_50x50c.jpg",
+        "https://images.craigslist.org/00p0p_d3dmmAuOLDV_0j10dV_50x50c.jpg",
+        "https://images.craigslist.org/00W0W_24ptboPKjgU_0j10eh_50x50c.jpg"
+      ],
+      "publishable": false,
+      "evidenceKind": "current_search_card_and_exact_detail",
+      "queryIds": [
+        "kitsilano"
+      ],
+      "approximateLocation": "Kitsilano",
+      "addressPrecision": "neighborhood",
+      "description": "Available October 1, 2026\n\nBright, comfortable, stylish and affordable 3 bedroom home in an amazing Kitsilano location at 6& Vine ground level\n\nThis is a great option for looking a cool furnished three-bedroom in an awesome location. The home is well furnished and has a large, private south-facing backyard.\n\n$3,600 /month – utilities included ( if shared between three people equally, that’s 1200 a month!)\n\n• 3 bedrooms\n• 1 bathroom\n• Furnished- 3 beds, sectional, TV, Dining table chair, chairs, Kitchen basics, decor…\n• Large south-facing backyard\n• Utilities included\n• Free shared laundry\n• Free street parking\n• Minimum 3-month lease\n• Available October 1, 2026\n\nGreat location if you’re just moving to Vancouver or you’ve been here for a while, you’ll appreciate how close it is to walk to shops and the beach and transit\n\nThe suite offers a lot of space for the price, particularly for anyone who needs three true bedrooms and outdoor space in central Vancouver.\n\nWe are local owners who self-manage the property. We don’t live on site, but we’re nearby and available if anything comes up. We have owned the building for 13 years and know the neighborhood and Neighbours well. I’m a mom of 3 busy kids so we are looking for easygoing Tenants that can care for the property.\n\nA small non shedding Dog may be accepted.\n\nPlease reply with a little information about yourself, who would be living in the home, and your preferred move-in date/length of stay. I have video of the unit I can send as well. I’m also happy to answer any questions or arrange a viewing\n\nFor quickest reply, please text",
+      "type": "rental",
+      "ac": null,
+      "detailVerified": true,
+      "relistingPostIds": [
+        "7968890487"
+      ],
+      "relistingUrls": [
+        "https://www.craigslist.org/view/d/vancouver-furnished-suite-in-kits/kF4GzDKKMuVnewKp6Eh6zP"
+      ]
+    },
+    {
+      "source": "Craigslist",
+      "postId": "7965963048",
+      "url": "https://www.craigslist.org/view/d/vancouver-kerrisdale-furnished-bed-25/s57Jp3N2BMYmHDajNBjKG2",
+      "title": "$8,990 / 3br - 1772ft2 - Kerrisdale Furnished 3 Bed 2.5 Bath 2 Level House w/ Yard & Deck (Vancouver)",
+      "address": null,
+      "identityKey": "craigslist::post:7965963048",
+      "rent": 8990,
+      "bedrooms": 3,
+      "bathrooms": 2,
+      "sqft": 1772,
+      "geo": {
+        "lat": 49.228178,
+        "lng": -123.154206
+      },
+      "targetArea": true,
+      "active": true,
+      "postedOrUpdatedAt": "2026-09-18T18:50:25.000Z",
+      "checkedAt": "2026-09-19T15:09:23.449Z",
+      "images": [
+        "https://images.craigslist.org/00101_8Lj1RrRW6kM_0gw0b1_600x450.jpg",
+        "https://images.craigslist.org/00101_8Lj1RrRW6kM_0gw0b1_50x50c.jpg",
+        "https://images.craigslist.org/00i0i_cuNWLnHhXff_0gw0b1_50x50c.jpg",
+        "https://images.craigslist.org/00f0f_97SOUjBSmb9_0gw0b1_50x50c.jpg",
+        "https://images.craigslist.org/00g0g_4gYpViN0x3D_0gw0b1_50x50c.jpg",
+        "https://images.craigslist.org/00m0m_16ILnP1tqL0_0gw0b1_50x50c.jpg",
+        "https://images.craigslist.org/00808_emDiJjvN0Kq_0gw0b1_50x50c.jpg",
+        "https://images.craigslist.org/01010_f1PWaL5kXlI_0gw0b1_50x50c.jpg",
+        "https://images.craigslist.org/00M0M_6OC5GWH7vlx_0gw0b1_50x50c.jpg",
+        "https://images.craigslist.org/00Z0Z_exIfCjhXqVJ_0gw0b1_50x50c.jpg",
+        "https://images.craigslist.org/00s0s_arSWlcZiGpA_0gw0b1_50x50c.jpg",
+        "https://images.craigslist.org/00t0t_9kNesBky7cG_0gw0b1_50x50c.jpg"
+      ],
+      "publishable": false,
+      "evidenceKind": "current_search_card_and_exact_detail",
+      "queryIds": [
+        "arbutus"
+      ],
+      "approximateLocation": "Vancouver",
+      "addressPrecision": "neighborhood",
+      "description": "Address: 2075 W.48th Avenue, Vancouver\n\nAvailable: October 1, 2026 – fully furnished\nBedrooms: 3 + office\nBathrooms: 2\nFinished area: 1772 sf\nLevels: 2\nFlooring: hardwood, carpets, tiles mixed\nOutdoor: sundeck, front porch, front yard, backyard\nParking: street parking + driveway off the backlane\n\nDeposits: half-month security deposit.\nLease term: minimum 3 month stay.\nPets: pets okay with owners' approval.\nNo Bidet.\nAbsolutely no smoking please.\n\nMost properties include: fully furnished from cutlery to linens, TV, in-suite washer and dryer, fridge, stove, dishwasher, microwave, secure parking, and often utilities, telephone, cable, high speed internet & maid service.\nNot included: long distance telephone, additional cleaning & move-out clean\n\n____________________________________________________________________________\n\nLOCATION: Nestled in the heart of Kerrisdale, this home places you within one of Vancouver's most charming and established neighbourhoods. Just a short stroll away, Kerrisdale Village offers a vibrant mix of local boutiques, cafe's, restaurants, bakeries, fitness studios, services, and grocery options everything you need for day-to-day living. The Arbutus Greenway, located steps from your door, provides an exceptional multi-use pathway perfect for walking, cycling, jogging, or commuting through the West Side. Transit is extremely convenient, with nearby bus routes connecting directly to UBC, Downtown, and SkyTrain stations, making commuting simple and efficient. It's the perfect blend of quiet residential living and easy urban access.\n\nFEATURES: This charming character home offers a warm, cozy feel with a great open flow that's perfect for families. The main floor features spacious living and dining areas with high ceilings, along with a dedicated office and a bathroom for added convenience. The kitchen opens onto a private sundeck and fenced yard, creating an easy indoor outdoor connection ideal for everyday living. Upstairs, you'll find three well-s",
+      "type": "house",
+      "ac": null,
+      "detailVerified": true,
+      "relistingPostIds": [
+        "7965963048"
+      ],
+      "relistingUrls": [
+        "https://www.craigslist.org/view/d/vancouver-kerrisdale-furnished-bed-25/s57Jp3N2BMYmHDajNBjKG2"
+      ]
+    },
+    {
+      "source": "Craigslist",
+      "postId": "7959192210",
+      "url": "https://www.craigslist.org/view/d/vancouver-kerrisdale-beds-25-baths/o1aCYrYaPXhQfEpZJaD9pP",
+      "title": "$4,680 / 3br - 1271ft2 - Kerrisdale 3 Beds 2.5 Baths 3 Levels Quiet Townhouse @ Bannister Mews (Vancouver)",
+      "address": "6558 Arbutus Street",
+      "identityKey": "craigslist::post:7959192210",
+      "rent": 4680,
+      "bedrooms": 3,
+      "bathrooms": 2.5,
+      "sqft": 1271,
+      "geo": {
+        "lat": 49.226188,
+        "lng": -123.155032
+      },
+      "targetArea": true,
+      "active": true,
+      "postedOrUpdatedAt": "2026-09-18T18:50:11.000Z",
+      "checkedAt": "2026-09-19T15:09:23.449Z",
+      "images": [
+        "https://images.craigslist.org/00R0R_XV0jcKDQvv_0aT07g_600x450.jpg",
+        "https://images.craigslist.org/00R0R_XV0jcKDQvv_0aT07g_50x50c.jpg",
+        "https://images.craigslist.org/00v0v_f4fgZywOyDm_0aT07g_50x50c.jpg",
+        "https://images.craigslist.org/00X0X_8kr5WDK843h_0aT07g_50x50c.jpg",
+        "https://images.craigslist.org/00o0o_bDNMt9SxuBb_0aT07g_50x50c.jpg",
+        "https://images.craigslist.org/01515_dWZi5w6lAhI_0aT07g_50x50c.jpg",
+        "https://images.craigslist.org/00o0o_fbNvOYyuGup_0aT07g_50x50c.jpg",
+        "https://images.craigslist.org/00000_cP0A9ErrkPg_0aT07g_50x50c.jpg",
+        "https://images.craigslist.org/00T0T_jBW9h1sypDM_0aT07g_50x50c.jpg",
+        "https://images.craigslist.org/00B0B_bJ2vCrrVzKw_0aT07g_50x50c.jpg",
+        "https://images.craigslist.org/00606_1ocDSfpHAun_0aT07g_50x50c.jpg",
+        "https://images.craigslist.org/00r0r_liKryjz9ONK_0aT07g_50x50c.jpg"
+      ],
+      "publishable": false,
+      "evidenceKind": "current_search_card_and_exact_detail",
+      "queryIds": [
+        "arbutus"
+      ],
+      "approximateLocation": "Vancouver",
+      "addressPrecision": "exact_civic",
+      "description": "Address: 6558 Arbutus Street, Vancouver\n\nAvailable: September 23, 2026 - long term unfurnished\nBedrooms: 3\nBathrooms: 2.5\nFinished area: 1271 sf\nLevels: 3\nFlooring: hardwood, engineered laminate, tiles mixed\nOutdoor: fenced backyard\nParking: double attached garage (tandem parking)\n\nDeposits: half-month security deposit + fob deposits.\nLease term: minimum 1 year lease.\nMove-in/out fees: as per strata bylaws.\nPets: sorry not this one.\nNo Bidet.\nAbsolutely no smoking please.\nNote: no more than two unrelated occupants are allowed for insurance restrictions reasons.\n\nIncluded items: stainless steel fridge, gas stovetop, oven, dishwasher, microwave, and washer & dryer.\nNot included: strata move-in/move-out fees, electricity, gas, telephone, cable, internet\n\n____________________________________________________________________________\n\nLOCATION: Kerrisdale / SW Marine neighbourhood just a few blocks away from Kerrisdale Village for many popular local businesses and restaurants along Boulevard and W.41st Ave for all your dining, shopping and entertainment needs. Half a block walk to Save-On-Foods at W.49th and West Boulevard. Some of the local favourites include Dollarama, Sen Pho, Oakberry Acai Bowls & Smoothies, Southern Delicacy, Michele Cake Shop, Fryday Chicken, Sandeul Korean, Sandy Farm Market, MACU Tea, Steam Teahouse, Honolulu Coffeee, Baoguette Vietnamese Bistro, Okini Restaurant & Bar, Bean Around the World and Choices Market. 5 minutes' drive to Oakridge Shopping Centre and 15 minutes to UBC. Children walk two blocks to Maple Grove Elementary and Magee Secondary and 6 of the top BC private schools within 15 minutes' drive, including Little Flower Academy, Crofton House, St. George's, York House, West Point Grey and Vancouver College. In your backyard is the popular Arbutus Greenway, which replaces the old train tracks and connects Vancouver Southlands all the way to False Creek waterfront jogging, blading or biking.\n\nFEATURES: Bannister Mews is one of the most di",
+      "type": "townhouse",
+      "ac": null,
+      "detailVerified": true,
+      "relistingPostIds": [
+        "7959192210"
+      ],
+      "relistingUrls": [
+        "https://www.craigslist.org/view/d/vancouver-kerrisdale-beds-25-baths/o1aCYrYaPXhQfEpZJaD9pP"
+      ]
+    },
+    {
+      "source": "Craigslist",
+      "postId": "7956031596",
+      "url": "https://www.craigslist.org/view/d/vancouver-top-floor-heart-of-kits-beds/4rFSAuZHRZB2t6XpXGvPR9",
+      "title": "$3,900 / 3br - 1000ft2 - Top Floor Heart of Kits, 3 beds (Vancouver, Kitsilano, UBC,)",
+      "address": null,
+      "identityKey": "craigslist::post:7956031596",
+      "rent": 3900,
+      "bedrooms": 3,
+      "bathrooms": 1,
+      "sqft": 1000,
+      "geo": {
+        "lat": 49.269037,
+        "lng": -123.158112
+      },
+      "targetArea": true,
+      "active": true,
+      "postedOrUpdatedAt": "2026-09-18T16:36:32.000Z",
+      "checkedAt": "2026-09-19T15:09:23.449Z",
+      "images": [
+        "https://images.craigslist.org/00P0P_5AApCehTqd1_1320MM_600x450.jpg",
+        "https://images.craigslist.org/00P0P_5AApCehTqd1_1320MM_50x50c.jpg",
+        "https://images.craigslist.org/00D0D_1vgj6juv9m1_0CI0t2_50x50c.jpg",
+        "https://images.craigslist.org/00A0A_9HeIq8dTDKp_0lG0t2_50x50c.jpg",
+        "https://images.craigslist.org/00X0X_acX5QWYzURh_0t20t2_50x50c.jpg",
+        "https://images.craigslist.org/00u0u_bMLU6Hw4Rsx_0CI0t2_50x50c.jpg",
+        "https://images.craigslist.org/00Q0Q_hzcnPS8cH8K_0CI0t2_50x50c.jpg",
+        "https://images.craigslist.org/00t0t_kvl3ue6Eh00_0CI0t2_50x50c.jpg",
+        "https://images.craigslist.org/00606_9eqzUvf2JBT_0CI0t2_50x50c.jpg",
+        "https://images.craigslist.org/00606_8z5gJK35kCN_0lM0t2_50x50c.jpg",
+        "https://images.craigslist.org/00u0u_cTBqj34qPG5_0lM0t2_50x50c.jpg",
+        "https://images.craigslist.org/00Q0Q_k0tJAtXYxgY_0lM0t2_50x50c.jpg"
+      ],
+      "publishable": false,
+      "evidenceKind": "current_search_card_and_exact_detail",
+      "queryIds": [
+        "kitsilano"
+      ],
+      "approximateLocation": "Vancouver, Kitsilano, UBC,",
+      "addressPrecision": "neighborhood",
+      "description": "Spacious 3 Bedrooms 1 bath, top floor with high ceilings, in a restored, quaint character building\nwith hardwood floors, built in cabinets and window seats\nBedroom with a small balcony and ocean views.\nKitchen with gas stove opening to large back porch.\nlocated one block to Whole Foods and trendy restaurants and shops on 4th Avenue\nonly 3 blocks to Kits Beach, Tennis courts and other amenities.\nHeat and hot water included,\none cat is welcomed,\nTenant insurance required, no sublet or smoking please.\nOne year lease. Available October 1st, 2026",
+      "type": "townhouse",
+      "ac": null,
+      "detailVerified": true,
+      "relistingPostIds": [
+        "7956031596"
+      ],
+      "relistingUrls": [
+        "https://www.craigslist.org/view/d/vancouver-top-floor-heart-of-kits-beds/4rFSAuZHRZB2t6XpXGvPR9"
+      ]
+    },
+    {
+      "source": "Craigslist",
+      "postId": "7964416485",
+      "url": "https://www.craigslist.org/view/d/west-vancouver-quiet-2br-2ba-starting/r1gkAYMThUZC362bYXrXeH",
+      "title": "$3,500 / 2br - 893ft2 - Quiet 2br/2ba starting at $3,500 | Tribeca (Arbutus Ridge)",
+      "address": "2111 West 11th Avenue near Arbutus Street",
+      "identityKey": "craigslist::post:7964416485",
+      "rent": 3500,
+      "bedrooms": 2,
+      "bathrooms": 2,
+      "sqft": 893,
+      "geo": {
+        "lat": 49.26219,
+        "lng": -123.153369
+      },
+      "targetArea": true,
+      "active": true,
+      "postedOrUpdatedAt": "2026-09-17T23:10:06.000Z",
+      "checkedAt": "2026-09-19T15:09:23.449Z",
+      "images": [
+        "https://images.craigslist.org/01616_jLj3OlQV1v_0jm0c6_600x450.jpg",
+        "https://images.craigslist.org/01616_jLj3OlQV1v_0jm0c6_50x50c.jpg",
+        "https://images.craigslist.org/00505_hhrceBfAPn1_0jm0c6_50x50c.jpg",
+        "https://images.craigslist.org/00G0G_1161nx9IgK_0jm0c6_50x50c.jpg",
+        "https://images.craigslist.org/00000_354VhIiOt7u_0jm0c6_50x50c.jpg",
+        "https://images.craigslist.org/00e0e_fcMVJBdjWgj_0jm0c6_50x50c.jpg",
+        "https://images.craigslist.org/00a0a_7MPJEtgaTXG_0jm0c6_50x50c.jpg",
+        "https://images.craigslist.org/00n0n_7YGAm7g7Ymf_0jm0c6_50x50c.jpg",
+        "https://images.craigslist.org/00B0B_7dpw3bfJPt2_0jm0c6_50x50c.jpg",
+        "https://images.craigslist.org/00q0q_eWzxIU1Y3na_0jm0c6_50x50c.jpg",
+        "https://images.craigslist.org/01111_3CdqOjp0rsg_0jm0c6_50x50c.jpg",
+        "https://images.craigslist.org/00O0O_i4BVZw1BrIh_0jm0c6_50x50c.jpg"
+      ],
+      "publishable": false,
+      "evidenceKind": "current_search_card_and_exact_detail",
+      "queryIds": [
+        "kitsilano"
+      ],
+      "approximateLocation": "Arbutus Ridge",
+      "addressPrecision": "exact_civic",
+      "description": "Apartments for Rent in Arbutus Ridge, Vancouver\nTribeca at 2111 West 11th Avenue is a professionally managed rental property located in Vancouver’s sought-after Arbutus Ridge neighbourhood, close to Kitsilano, West Broadway and the Arbutus Greenway. This central Vancouver location offers convenient access to Downtown Vancouver, UBC, Kitsilano Beach and West 4th Avenue, with shopping, dining, recreation and transit nearby.\n\nThe Arbutus Greenway, just a 2-minute walk away, provides a scenic walking and cycling route through the city, while the future Arbutus Station on the Broadway Subway will provide convenient rapid transit access just minutes from the property.\n\nSUITE & BUILDING FEATURES\nSuites feature spacious floorplans, gas fireplaces, dishwashers, in-suite laundry and private decks. Secured underground parking and storage are available for an additional fee, subject to availability.\n\nWALKABLE & CONNECTED LOCATION\nTribeca offers an exceptionally walkable and bike-friendly Arbutus Ridge location, with a Walk Score of 95 (Walker’s Paradise), Bike Score of 93 (Biker’s Paradise) and Transit Score of 72 (Excellent Transit). Shopping, dining, recreation, transit and some of Vancouver’s most popular destinations are all nearby.\n\nNearby amenities and destinations include:\n• Arbutus Greenway (2 min walk)\n• West Broadway shops, cafés & restaurants (5 min walk)\n• Future Arbutus Station – Broadway Subway (5 min walk)\n• Connaught Park (7 min walk)\n• Kitsilano Community Centre (8 min walk)\n• West 4th Avenue Shopping District (12 min walk)\n• Kitsilano Beach & Kitsilano Pool (20 min walk)\n• Downtown Vancouver (10 min drive / 20 min transit)\n• Granville Island (25 min walk)\n• Vanier Park (25 min walk)\n• UBC (15 min drive / 25 min transit)\n\nDisclaimer: Images and virtual tours may depict a similar floor plan and may be virtually staged. Actual suite finishes, features and layouts may vary.\n\nCopy and paste this link into your browser for a 3D virtual tour:\nhttps://my.matterport.co",
+      "type": "rental",
+      "ac": null,
+      "detailVerified": true,
+      "relistingPostIds": [
+        "7964416485"
+      ],
+      "relistingUrls": [
+        "https://www.craigslist.org/view/d/west-vancouver-quiet-2br-2ba-starting/r1gkAYMThUZC362bYXrXeH"
+      ]
+    },
+    {
+      "source": "Craigslist",
+      "postId": "7964413899",
+      "url": "https://www.craigslist.org/view/d/vancouver-ocean-view-2br-2ba-with-den/kZEyBrAFDhJYBcmtaq27m2",
+      "title": "$5,000 / 2br - 979ft2 - Ocean View 2br/2ba with Den | Yorkville North (Kitsilano)",
+      "address": "1888 York Avenue near Cypress Street",
+      "identityKey": "craigslist::post:7964413899",
+      "rent": 5000,
+      "bedrooms": 2,
+      "bathrooms": 2,
+      "sqft": 979,
+      "geo": {
+        "lat": 49.271319,
+        "lng": -123.147469
+      },
+      "targetArea": true,
+      "active": true,
+      "postedOrUpdatedAt": "2026-09-17T23:09:53.000Z",
+      "checkedAt": "2026-09-19T15:09:23.449Z",
+      "images": [
+        "https://images.craigslist.org/00x0x_5rdhaj721wT_0jm0c6_600x450.jpg",
+        "https://images.craigslist.org/00x0x_5rdhaj721wT_0jm0c6_50x50c.jpg",
+        "https://images.craigslist.org/00P0P_5fOwirW1IUx_0jm0c6_50x50c.jpg",
+        "https://images.craigslist.org/00U0U_8zZ28j8N16a_0jm0c6_50x50c.jpg",
+        "https://images.craigslist.org/00O0O_lmi6BsDEfB5_0jm0c6_50x50c.jpg",
+        "https://images.craigslist.org/00N0N_4O2Z4t8DYuk_0jm0c6_50x50c.jpg",
+        "https://images.craigslist.org/00n0n_dKaVNk7k53m_0jm0c6_50x50c.jpg",
+        "https://images.craigslist.org/00707_5mDWRyBpILM_0jm0c6_50x50c.jpg",
+        "https://images.craigslist.org/01010_jtNj0tNKVtF_0jm0c6_50x50c.jpg",
+        "https://images.craigslist.org/01515_5Ia4rcKTSJG_0jm0c6_50x50c.jpg",
+        "https://images.craigslist.org/00Y0Y_2ovpbuUWPLR_0jm0c6_50x50c.jpg",
+        "https://images.craigslist.org/00505_k3idEWV6GRm_0jm0c6_50x50c.jpg"
+      ],
+      "publishable": false,
+      "evidenceKind": "current_search_card_and_exact_detail",
+      "queryIds": [
+        "kitsilano"
+      ],
+      "approximateLocation": "Kitsilano",
+      "addressPrecision": "exact_civic",
+      "description": "Apartment for Rent in Kitsilano, Vancouver\nYorkville North at 1888 York Avenue is a property located in Vancouver’s sought-after Kitsilano neighbourhood, just minutes from Kitsilano Beach and the waterfront. This desirable Westside location offers convenient access to West 4th Avenue, Granville Island, Vanier Park and Downtown Vancouver, with shopping, dining, recreation and transit nearby.\n\nKitsilano Beach and the waterfront are just a short walk from the property, while nearby West 4th Avenue offers a wide selection of shops, cafés, restaurants and everyday conveniences. With beaches, parks, the Seawall and Granville Island all nearby, Yorkville North offers exceptional access to some of Vancouver’s most popular destinations.\n\nSUITE & BUILDING FEATURES\nSuites feature spacious floorplans, in-suite laundry, generous private decks and panoramic views of Burrard Inlet, the city and surrounding mountains. Secured underground parking is also available.\n\nWALKABLE & CONNECTED LOCATION\nYorkville North offers an exceptionally walkable and bike-friendly Kitsilano location, with a Walk Score of 97 (Walker’s Paradise), Bike Score of 99 (Biker’s Paradise) and Transit Score of 72 (Excellent Transit). Shopping, dining, recreation, transit and some of Vancouver’s most popular destinations are all nearby.\n\nNearby amenities and destinations include:\n• Henry Hudson Elementary School (1 min walk)\n• Kitsilano Beach (7 min walk)\n• Kitsilano Pool (10 min walk)\n• West 4th Avenue shops, cafés & restaurants (10 min walk)\n• Whole Foods Market (10 min walk)\n• Vanier Park (12 min walk)\n• Hadden Park (15 min walk)\n• Museum of Vancouver (15 min walk)\n• H.R. MacMillan Space Centre (15 min walk)\n• Granville Island (15 min walk)\n• Downtown Vancouver (10 min drive / 10 min bike)\n\nDisclaimer: Images and virtual tours may depict a similar floor plan and may be virtually staged. Actual suite finishes, features and layouts may vary.\n\nCopy and paste this link into your browser for a 3D virtual tour:\nhttp",
+      "type": "rental",
+      "ac": null,
+      "detailVerified": true,
+      "relistingPostIds": [
+        "7964413899"
+      ],
+      "relistingUrls": [
+        "https://www.craigslist.org/view/d/vancouver-ocean-view-2br-2ba-with-den/kZEyBrAFDhJYBcmtaq27m2"
+      ]
+    },
+    {
+      "source": "Craigslist",
+      "postId": "7960192899",
+      "url": "https://www.craigslist.org/view/d/vancouver-bedrooms-townhome-sasamat/gLhefbadH6fJhGpvNYb7A2",
+      "title": "$5,000 / 3br - 1446ft2 - 3 bedrooms townhome *Sasamat Garden* (Point Grey, Vancouver West)",
+      "address": "4455 w 9th Ave",
+      "identityKey": "craigslist::post:7960192899",
+      "rent": 5000,
+      "bedrooms": 3,
+      "bathrooms": 2,
+      "sqft": 1446,
+      "geo": {
+        "lat": 49.264689,
+        "lng": -123.207715
+      },
+      "targetArea": true,
+      "active": true,
+      "postedOrUpdatedAt": "2026-09-17T23:04:32.000Z",
+      "checkedAt": "2026-09-19T15:09:23.449Z",
+      "images": [
+        "https://images.craigslist.org/00404_cuCXJxUPcyv_0ak074_600x450.jpg",
+        "https://images.craigslist.org/00404_cuCXJxUPcyv_0ak074_50x50c.jpg",
+        "https://images.craigslist.org/00P0P_mHpIS53YwV_0ak06R_50x50c.jpg",
+        "https://images.craigslist.org/00E0E_jInK5Go22Qc_0ak06R_50x50c.jpg",
+        "https://images.craigslist.org/00v0v_eeK6fCkA2Lf_0ak06R_50x50c.jpg",
+        "https://images.craigslist.org/00x0x_btqEkV6WN6l_0ak06R_50x50c.jpg",
+        "https://images.craigslist.org/00X0X_apY46JRHQ6D_0ak06R_50x50c.jpg",
+        "https://images.craigslist.org/00p0p_8diNPzJRxl4_0ak06R_50x50c.jpg",
+        "https://images.craigslist.org/00A0A_1qUiwiXOD4m_0ak06R_50x50c.jpg",
+        "https://images.craigslist.org/00606_3yK9CiFDJAI_0ak06R_50x50c.jpg"
+      ],
+      "publishable": false,
+      "evidenceKind": "current_search_card_and_exact_detail",
+      "queryIds": [
+        "point-grey"
+      ],
+      "approximateLocation": "Point Grey, Vancouver West",
+      "addressPrecision": "exact_civic",
+      "description": "This three-bedroom townhouse at highly sought after Sasamat Gardens in Point Grey is on the market and ready for a family. Granite countertops and stainless steel appliance package complement the kitchen. A lovely west-facing deck accessed by french doors from the living room will allow you to enjoy the afternoon sun. With a master bedroom and ensuite bath on the main floor and two bedrooms up you will be amazed at how well the space has been planned. Massive 362 sqft. storage room and 2 underground parking spots. Within a 2 minute walk to the best that Point Grey has to offer- shopping, dining, transit, parks, great schools, the beach & the forest.\n\nStyle of Home: 3 level townhouse\n\nBedrooms: 3\nBathrooms: 2 full\nKitchens: 1\nParking: 2\nLiving Area: 1446 sf\n\nAvailable October 1st 2026\nOne year fix term minimum\n\nListed by property manager with Royal Pacific Realty.\nPlease call show contact info for more information",
+      "type": "townhouse",
+      "ac": null,
+      "detailVerified": true,
+      "relistingPostIds": [
+        "7960192899"
+      ],
+      "relistingUrls": [
+        "https://www.craigslist.org/view/d/vancouver-bedrooms-townhome-sasamat/gLhefbadH6fJhGpvNYb7A2"
+      ]
+    },
+    {
+      "source": "Craigslist",
+      "postId": "7966491858",
+      "url": "https://www.craigslist.org/view/d/vancouver-stylish-south-facing-2bedroom/msdCcwfzq1tUDpt7KvYhGh",
+      "title": "$3,500 / 2br - 1190ft2 - Stylish South-facing 2Bedroom 2Pkng FURNISHED Townhome in Arbutus Walk",
+      "address": null,
+      "identityKey": "craigslist::post:7966491858",
+      "rent": 3500,
+      "bedrooms": 2,
+      "bathrooms": 2,
+      "sqft": 1190,
+      "geo": {
+        "lat": 49.261196,
+        "lng": -123.156652
+      },
+      "targetArea": true,
+      "active": true,
+      "postedOrUpdatedAt": "2026-09-17T18:54:22.000Z",
+      "checkedAt": "2026-09-19T15:09:23.449Z",
+      "images": [
+        "https://images.craigslist.org/00p0p_1XnMnR4kdZ9_0oN0gv_600x450.jpg",
+        "https://images.craigslist.org/00p0p_1XnMnR4kdZ9_0oN0gv_50x50c.jpg",
+        "https://images.craigslist.org/01717_b41uHIO6NAL_0CI0t2_50x50c.jpg",
+        "https://images.craigslist.org/01212_ibwzpaenXvB_0CI0t2_50x50c.jpg",
+        "https://images.craigslist.org/00g0g_8ZxXDrrPf7U_0kE0fu_50x50c.jpg",
+        "https://images.craigslist.org/00y0y_bjktf9Hi6hn_0nm0hw_50x50c.jpg",
+        "https://images.craigslist.org/00Q0Q_9XjQ0L73CdH_0nm0hw_50x50c.jpg",
+        "https://images.craigslist.org/00H0H_bbYHUWb0Vfv_0kE0fu_50x50c.jpg",
+        "https://images.craigslist.org/00v0v_4wcdhjW0McF_0kE0fu_50x50c.jpg"
+      ],
+      "publishable": false,
+      "evidenceKind": "current_search_card_and_exact_detail",
+      "queryIds": [
+        "kitsilano"
+      ],
+      "approximateLocation": "city of vancouver",
+      "addressPrecision": "neighborhood",
+      "description": "A bright and beautifully upgraded former display suite, New York Style 2 bedroom 2 bathroom Townhome in the heart of Arbutus Walk! Enjoy two private patios, ideal for morning coffee or summer dining, and two secure parking spots—a rare find in the area. Located in one of Vancouver’s most desirable neighborhoods, you're just a short walk to St. John’s School and Kitsilano Secondary, as well as trendy shops, grocery stores, and acclaimed restaurants.\n\nAddress: 22** W 12th Ave, VancouverV6K 4S6\nAvailable: Now\nFurnishing: Furnished\nRent: $3500/Month\nProperty Type: New York Style Townhouse\nBedrooms: 2 Bedrooms\nBathrooms: 2\nFinished area: 1190 sqft\nFlooring: Mixed\nHeating: Baseboard\nParking: 2\nEn-suite Laundry: Yes\nLease term: Minimum 6 months.\nUtilities: not included\nPets: No, sorry\nAbsolutely No Smoking Please, credit / reference check will be done after receiving the application.\nTenant insurance is required\n\nFor viewing appointments, contact Alva show contact info TEXT ONLY!!\nplease include the following information:\n-Your full name.\n-Expect starting date\n-Total number of occupants.\n-Profession/occupation\n\nSutton Group 1st West Realty.",
+      "type": "townhouse",
+      "ac": null,
+      "detailVerified": true,
+      "relistingPostIds": [
+        "7966491858"
+      ],
+      "relistingUrls": [
+        "https://www.craigslist.org/view/d/vancouver-stylish-south-facing-2bedroom/msdCcwfzq1tUDpt7KvYhGh"
+      ]
     },
     {
       "source": "Craigslist",
@@ -1152,7 +849,7 @@
       "targetArea": true,
       "active": true,
       "postedOrUpdatedAt": "2026-09-17T16:10:22.000Z",
-      "checkedAt": "2026-09-19T11:11:50.399Z",
+      "checkedAt": "2026-09-19T15:09:23.449Z",
       "images": [
         "https://images.craigslist.org/00Y0Y_k3PKmKJZ2y9_0uY0kE_600x450.jpg",
         "https://images.craigslist.org/00Y0Y_k3PKmKJZ2y9_0uY0kE_50x50c.jpg",
@@ -1177,140 +874,115 @@
       "description": "Property Details:\n\nProperty ID: 5585 LU\nLocation: 4588 West 2nd Avenue, Vancouver\nRent: $15,000/mo\nAvailability: October 16th\nFurnished: No\nBedroom: 4 Bedroom\nBathroom: 5 Bathroom\nSize of Area: 4,000 sqft\nPet: No\nParking: Detached Garage\nUtilities: Not Included\nLease Term: Minimum lease term 12 months required\n\n\n\nDescription:\nExperience refined West Coast living in this custom-built luxury residence by renowned builder Brandes, quietly tucked in Point Grey’s prestigious North of 4th pocket. Designed around a thoughtful reverse floor plan, the home elevates daily living with an open-concept main floor boasting soaring 11'+ vaulted ceilings and sweeping, uninterrupted water views. A private elevator seamlessly serves all three levels, providing effortless access throughout. Crafted for the culinary enthusiast and entertainer alike, the residence features a chef's kitchen fitted with premium Sub-Zero and Wolf appliances, honed granite counters, custom millwork, an expansive wine cellar, and a private home theater. Step outside to an entertainment-scale rooftop deck complete with a private hot tub and dramatic 360-degree views of the ocean, mountains, and city skyline. Appointed with custom stone, marble, and full high-tech home automation, this unfurnished 4-bedroom, 5-bathroom sanctuary effortlessly blends classic architectural warmth with modern sophistication—all just steps from Spanish Banks, Jericho Beach, UBC, and top-tier school catchments, including Lord Byng Secondary and Queen Mary Elementary.\n\n\n\nPlease reply to this ad to arrange your private viewing or inquire about the house.\nPlease include your personal contact information for us to be able to assist you with your inquiry more promptly.\n\n\n\n\n** Professionally managed and marketed by Vancouver Luxury Realty. VLR does not charge prospective tenants any handling fees, application fees or processing fees. We are fully licensed with the Real Estate Council of British Columbia and simply act as the landlord/mark",
       "type": "house",
       "ac": null,
-      "detailVerified": true
+      "detailVerified": true,
+      "relistingPostIds": [
+        "7966577394"
+      ],
+      "relistingUrls": [
+        "https://www.craigslist.org/view/d/vancouver-point-grey-luxury-4br5ba/jNMfyALkxeDzrj9oAXfxrS"
+      ]
     },
     {
       "source": "Craigslist",
-      "postId": "7960192899",
-      "url": "https://www.craigslist.org/view/d/vancouver-bedrooms-townhome-sasamat/gLhefbadH6fJhGpvNYb7A2",
-      "title": "$5,000 / 3br - 1446ft2 - 3 bedrooms townhome *Sasamat Garden* (Point Grey, Vancouver West)",
-      "address": "4455 w 9th Ave",
-      "identityKey": "craigslist::post:7960192899",
-      "rent": 5000,
+      "postId": "7966577196",
+      "url": "https://www.craigslist.org/view/d/vancouver-charming-fully-furnished-bed/qfdidPDmMprJBNMErSbGeB",
+      "title": "$10,500 / 3br - 1700ft2 - Charming Fully Furnished 3 Bed + 3 Bath Kitsilano House | Oct 1st (Kitsilano)",
+      "address": "3095 W 5th Ave near Balaclava St",
+      "identityKey": "craigslist::post:7966577196",
+      "rent": 10500,
       "bedrooms": 3,
-      "bathrooms": 2,
-      "sqft": 1446,
+      "bathrooms": 3,
+      "sqft": 1700,
       "geo": {
-        "lat": 49.264689,
-        "lng": -123.207715
+        "lat": 49.267553,
+        "lng": -123.173797
       },
       "targetArea": true,
       "active": true,
-      "postedOrUpdatedAt": "2026-09-17T23:04:32.000Z",
-      "checkedAt": "2026-09-19T11:11:50.399Z",
+      "postedOrUpdatedAt": "2026-09-17T16:10:21.000Z",
+      "checkedAt": "2026-09-19T15:09:23.449Z",
       "images": [
-        "https://images.craigslist.org/00404_cuCXJxUPcyv_0ak074_600x450.jpg",
-        "https://images.craigslist.org/00404_cuCXJxUPcyv_0ak074_50x50c.jpg",
-        "https://images.craigslist.org/00P0P_mHpIS53YwV_0ak06R_50x50c.jpg",
-        "https://images.craigslist.org/00E0E_jInK5Go22Qc_0ak06R_50x50c.jpg",
-        "https://images.craigslist.org/00v0v_eeK6fCkA2Lf_0ak06R_50x50c.jpg",
-        "https://images.craigslist.org/00x0x_btqEkV6WN6l_0ak06R_50x50c.jpg",
-        "https://images.craigslist.org/00X0X_apY46JRHQ6D_0ak06R_50x50c.jpg",
-        "https://images.craigslist.org/00p0p_8diNPzJRxl4_0ak06R_50x50c.jpg",
-        "https://images.craigslist.org/00A0A_1qUiwiXOD4m_0ak06R_50x50c.jpg",
-        "https://images.craigslist.org/00606_3yK9CiFDJAI_0ak06R_50x50c.jpg"
+        "https://images.craigslist.org/00o0o_jGuXcZK9yR9_0uY0kE_600x450.jpg",
+        "https://images.craigslist.org/00o0o_jGuXcZK9yR9_0uY0kE_50x50c.jpg",
+        "https://images.craigslist.org/00h0h_d1uOGHfEfvq_0uY0kE_50x50c.jpg",
+        "https://images.craigslist.org/00r0r_luvANMVkrBt_0uY0kE_50x50c.jpg",
+        "https://images.craigslist.org/00m0m_j8Mhm0eozxZ_0uY0kE_50x50c.jpg",
+        "https://images.craigslist.org/00B0B_8V1VQB5zNoK_0uY0kE_50x50c.jpg",
+        "https://images.craigslist.org/00b0b_lCRVGl634Vp_0uY0kE_50x50c.jpg",
+        "https://images.craigslist.org/00R0R_hWJinv16DO4_0uY0kE_50x50c.jpg",
+        "https://images.craigslist.org/00f0f_eYPgfgzS9Lx_0uY0kE_50x50c.jpg",
+        "https://images.craigslist.org/00A0A_fcneZXTywar_0uY0kE_50x50c.jpg",
+        "https://images.craigslist.org/01616_840eydTJKXE_0uY0kE_50x50c.jpg",
+        "https://images.craigslist.org/00J0J_1HyhphRCilF_0uY0kE_50x50c.jpg"
       ],
       "publishable": false,
       "evidenceKind": "current_search_card_and_exact_detail",
       "queryIds": [
-        "point-grey"
+        "kitsilano"
       ],
-      "approximateLocation": "Point Grey, Vancouver West",
+      "approximateLocation": "Kitsilano",
       "addressPrecision": "exact_civic",
-      "description": "This three-bedroom townhouse at highly sought after Sasamat Gardens in Point Grey is on the market and ready for a family. Granite countertops and stainless steel appliance package complement the kitchen. A lovely west-facing deck accessed by french doors from the living room will allow you to enjoy the afternoon sun. With a master bedroom and ensuite bath on the main floor and two bedrooms up you will be amazed at how well the space has been planned. Massive 362 sqft. storage room and 2 underground parking spots. Within a 2 minute walk to the best that Point Grey has to offer- shopping, dining, transit, parks, great schools, the beach & the forest.\n\nStyle of Home: 3 level townhouse\n\nBedrooms: 3\nBathrooms: 2 full\nKitchens: 1\nParking: 2\nLiving Area: 1446 sf\n\nAvailable October 1st 2026\nOne year fix term minimum\n\nListed by property manager with Royal Pacific Realty.\nPlease call show contact info for more information",
-      "type": "townhouse",
-      "ac": null,
-      "detailVerified": true
-    },
-    {
-      "source": "Craigslist",
-      "postId": "7955273821",
-      "url": "https://www.craigslist.org/view/d/vancouver-bedrooms-townhouse/syWsQ6SKfjxQuvjXpHaSJr",
-      "title": "$5,400 / 3br - 1837ft2 - 3 BEDROOMS TOWNHOUSE (Vancouver, Kerrisdale)",
-      "address": null,
-      "identityKey": "craigslist::post:7955273821",
-      "rent": 5400,
-      "bedrooms": 3,
-      "bathrooms": 3.5,
-      "sqft": 1837,
-      "geo": {
-        "lat": 49.237294,
-        "lng": -123.162704
-      },
-      "targetArea": true,
-      "active": true,
-      "postedOrUpdatedAt": "2026-09-15T04:45:10.000Z",
-      "checkedAt": "2026-09-19T11:11:50.399Z",
-      "images": [
-        "https://images.craigslist.org/00b0b_fJ1dKmYpeL7_1320MM_600x450.jpg",
-        "https://images.craigslist.org/00b0b_fJ1dKmYpeL7_1320MM_50x50c.jpg",
-        "https://images.craigslist.org/00101_kWUMRDPGlji_1320MM_50x50c.jpg",
-        "https://images.craigslist.org/00a0a_jUt9xea8hhW_1320MM_50x50c.jpg",
-        "https://images.craigslist.org/01313_kX6Z9ek1cmv_1320MM_50x50c.jpg",
-        "https://images.craigslist.org/00p0p_jgeRQkhejP2_1320MM_50x50c.jpg",
-        "https://images.craigslist.org/00C0C_jxygt2vx10Z_1320MM_50x50c.jpg",
-        "https://images.craigslist.org/00303_h6dymkTNvdm_1320MM_50x50c.jpg",
-        "https://images.craigslist.org/00C0C_jLMAHQ1ADgS_1320MM_50x50c.jpg",
-        "https://images.craigslist.org/00T0T_eJ0ImrvSwZg_1320MM_50x50c.jpg",
-        "https://images.craigslist.org/01515_n5mSuPn1Lv_1320MM_50x50c.jpg",
-        "https://images.craigslist.org/00101_ehl9SZOXNya_1320MM_50x50c.jpg"
-      ],
-      "publishable": false,
-      "evidenceKind": "current_search_card_and_exact_detail",
-      "queryIds": [
-        "point-grey"
-      ],
-      "approximateLocation": "LARCH STREET near W. 39TH AVE",
-      "addressPrecision": "intersection",
-      "description": "Move in Date: Sept 1st, 2026\nFor faster response, please call or text Donna at show contact info\n\n**Bright & spacious 1837 sqft living space.\n**Furnished 3 ensuite Bedrooms, total 3.5 Bathrooms.\n**2 parking space.\n**Insuite Laundry.\n**Close to [Kerrisdale Elementary and Point Grey Sec School].\n**Minutes walk to 41st Ave.\n**Gas fireplace,\n**Prefer someone clean, responsible, and respectful.\n**Credit, employment, previous landlord reference check required.\n**1/2 month damage deposit.\n**No Smoking.\n**No Pets.\n\nPrime central Kerrisdale location. 3 Levels, 3 ensuite Bedrooms townhouse suite on quiet Larch St, with backyard. Bright & spacious on main floor & Living room by a cozy gas fireplace,, Dining room, & Kitchen on main, 3.5 bathrooms, 2 parking space. Close to Point Grey Secondary, Kerrisdale Elementary, (Crofton House School, and St George Private School). & U.B.C. Walk to Community Centre, Shoppers Drug Mart, banks, Starbucks, restaurants, public transit, super market, etc., yet in a very quite and safe neighborhood. Smoke free & Pet free. Long term tenancy. Looking for clean and respectful tenants.\nFor faster response, please call or text Donna at show contact info\n\nLocation: VANCOUVER WESTSIDE, KERRISDALE\nLARCH ST & W. 39TH AVE,",
-      "type": "townhouse",
-      "ac": null,
-      "detailVerified": true
-    },
-    {
-      "source": "Craigslist",
-      "postId": "7952934732",
-      "url": "https://www.craigslist.org/view/d/vancouver-spacious-bedroom-bathroom/gL2xq4PBvnLCxnA33erh6n",
-      "title": "$3,500 / 3br - 1300ft2 - Spacious 3 bedroom 2 bathroom apartment for rent in Kerrisdale HH (Kerrisdale)",
-      "address": "2155 W 38th Avenue",
-      "identityKey": "craigslist::post:7952934732",
-      "rent": 3500,
-      "bedrooms": 3,
-      "bathrooms": 2,
-      "sqft": 1300,
-      "geo": {
-        "lat": 49.237341,
-        "lng": -123.157108
-      },
-      "targetArea": true,
-      "active": true,
-      "postedOrUpdatedAt": "2026-09-07T04:35:34.000Z",
-      "checkedAt": "2026-09-19T11:11:50.399Z",
-      "images": [
-        "https://images.craigslist.org/00p0p_aYFyAMBvlUw_0CI0t2_600x450.jpg",
-        "https://images.craigslist.org/00p0p_aYFyAMBvlUw_0CI0t2_50x50c.jpg",
-        "https://images.craigslist.org/00000_kRwIlOndTNH_0CI0t2_50x50c.jpg",
-        "https://images.craigslist.org/00O0O_1phH5fRxPQt_0CI0t2_50x50c.jpg",
-        "https://images.craigslist.org/00H0H_2IobyTpKJFY_0CI0t2_50x50c.jpg",
-        "https://images.craigslist.org/00D0D_2E8ypjuucsH_0CI0t2_50x50c.jpg",
-        "https://images.craigslist.org/00101_8a1iMFuUCFY_0CI0t2_50x50c.jpg",
-        "https://images.craigslist.org/00q0q_ggFr64ghWWD_0CI0t2_50x50c.jpg",
-        "https://images.craigslist.org/00606_19jn4gkHhAs_0CI0t2_50x50c.jpg",
-        "https://images.craigslist.org/00q0q_7yisdtZQdH2_0CI0t2_50x50c.jpg",
-        "https://images.craigslist.org/00000_9sRGaf7y9Il_0CI0t2_50x50c.jpg",
-        "https://images.craigslist.org/01010_lX6XZeXyGiM_0CI0t2_50x50c.jpg"
-      ],
-      "publishable": false,
-      "evidenceKind": "current_search_card_and_exact_detail",
-      "queryIds": [
-        "point-grey"
-      ],
-      "approximateLocation": "Kerrisdale",
-      "addressPrecision": "exact_civic",
-      "description": "Spacious 3 Bed / 2 Bath Apartment for Rent – Kerrisdale (Hampton House). Please note - shared paid laundry in building; no in unit laundry available.\n\nRent: $3,500/month\nAvailable: ASAP\nAddress: 2155 W 38th Avenue (Hampton House)\nSize: Approx. 1,300 sq ft\nBedrooms: 3\nBathrooms: 2\nFloor: 7th floor\n\nVideo Tour: https://youtu.be/1A9W8_nPdHk?si=82FbdnbYEEfIhhKm\n(similar unit; layout/finishes may vary)\n\nUnit Details:\nUnfurnished\nNo air conditioning\nCoin laundry in building\nHeat & hot water included\nNo storage\nPets: Prefer no pets\n\nParking:\nCovered: $120/month\nUncovered: $80/month\n\nLease Terms:\nMinimum 1-year lease\nTenant insurance required\n\nLocation:\nLocated in the heart of Kerrisdale, just steps to West Boulevard. Close to shops, cafes, restaurants, Kerrisdale Community Centre, Kerrisdale Ice Rink, and Point Grey Secondary School.\n\nTo Apply / Inquire:\nPlease reply with:\n\nYour phone number\nDesired move-in date\nNumber of occupants\nPet details (if any)\nBrief introduction about yourself\n\nListed by Prompton Real Estate Services Inc.\n179 Davie St #201, Vancouver, BC V6Z 2Y1",
+      "description": "Property Details:\n\nProperty ID: 5877\nLocation: 3095 W 5th Avenue, Vancouver\nRent: $10,500/mo\nAvailability: October 1st\nFurnished: Yes\nBedroom: 3 Bedroom\nBathroom: 3 Bathroom\nSize of Area: 1,700 sqft\nPet: No\nParking: Street Parking\nUtilities: Not Included\nLease Term: Minimum lease term 4 months required\n\nDescription:\nSituated on a sun-drenched, south-facing corner lot in the heart of Kitsilano, this beautiful 1,700-square-foot Craftsman-style character home seamlessly blends 1920s architecture with contemporary luxury and picturesque North Shore mountain views. Bathed in natural light through generous windows, the open-concept 3-bedroom, 3-bathroom interior features rich wood flooring, refined architectural millwork, and a chef’s kitchen equipped with top-tier Wolf gas appliances, a Sub-Zero refrigerator, and premium custom finishes ideal for entertaining. Outdoors, the home transitions to a private yard and patio space that captures maximum southern exposure. Beyond the front door, you are surrounded by the best of Vancouver’s Westside: steps from the newly rebuilt General Gordon Elementary, minutes from Kitsilano Secondary, and directly connected to the scenic Kitsilano Bike Path for effortless cycling to UBC or Downtown. The vibrant West 4th Avenue corridor is just around the corner, offering boutique shopping, organic grocers, local cafes, and celebrated neighborhood dining, while the iconic sands and saltwater pool of Kitsilano Beach are only a short stroll away.\n\n\n\nPlease to this ad to arrange your private viewing or inquire about the house.\nPlease include your personal contact information for us to be able to assist you with your inquiry more promptly.\n\n\n\n** Professionally managed and marketed by Vancouver Luxury Realty. VLR does not charge prospective tenants any handling fees, application fees or processing fees. We are fully licensed with the Real Estate Council of British Columbia and simply act as the landlord/marketer for the owner. **\n\n**Any storage loc",
       "type": "house",
       "ac": true,
-      "detailVerified": true
+      "detailVerified": true,
+      "relistingPostIds": [
+        "7966577196"
+      ],
+      "relistingUrls": [
+        "https://www.craigslist.org/view/d/vancouver-charming-fully-furnished-bed/qfdidPDmMprJBNMErSbGeB"
+      ]
+    },
+    {
+      "source": "Craigslist",
+      "postId": "7963109907",
+      "url": "https://www.craigslist.org/view/d/vancouver-kitsilano-bed-den-bath-condo/ojJmUfXer5iQFD5rvcusu5",
+      "title": "$3,650 / 2br - 771ft2 - Kitsilano - 2 Bed + Den 2 Bath Condo; Balcony, In-Suite Laundry (Vancouver)",
+      "address": null,
+      "identityKey": "craigslist::post:7963109907",
+      "rent": 3650,
+      "bedrooms": 2,
+      "bathrooms": 2,
+      "sqft": 771,
+      "geo": {
+        "lat": 49.2603,
+        "lng": -123.146
+      },
+      "targetArea": true,
+      "active": true,
+      "postedOrUpdatedAt": "2026-09-17T16:04:57.000Z",
+      "checkedAt": "2026-09-19T15:09:23.449Z",
+      "images": [
+        "https://images.craigslist.org/00S0S_3nmCt9azPdx_1320MM_600x450.jpg",
+        "https://images.craigslist.org/00S0S_3nmCt9azPdx_1320MM_50x50c.jpg",
+        "https://images.craigslist.org/01616_3M2P3AGTSNH_1320MM_50x50c.jpg",
+        "https://images.craigslist.org/00j0j_bra3yHQ9P6Y_1320MM_50x50c.jpg",
+        "https://images.craigslist.org/00u0u_jOt4ZEgT6QY_1320MM_50x50c.jpg",
+        "https://images.craigslist.org/00A0A_feEJGSX8ISy_1320MM_50x50c.jpg",
+        "https://images.craigslist.org/00T0T_dYCq0hgfpXb_1320MM_50x50c.jpg",
+        "https://images.craigslist.org/00n0n_igaZtUgrwPy_1320MM_50x50c.jpg",
+        "https://images.craigslist.org/00l0l_d1MxPzePU2B_1320MM_50x50c.jpg",
+        "https://images.craigslist.org/00L0L_cG2Idknp47I_1320MM_50x50c.jpg",
+        "https://images.craigslist.org/00T0T_9PqPqEUexRL_1320MM_50x50c.jpg",
+        "https://images.craigslist.org/00W0W_93ofCBkNufy_1320MM_50x50c.jpg"
+      ],
+      "publishable": false,
+      "evidenceKind": "current_search_card_and_exact_detail",
+      "queryIds": [
+        "kitsilano"
+      ],
+      "approximateLocation": "Vancouver",
+      "addressPrecision": "neighborhood",
+      "description": "To book a showing, please copy and paste this link into your browser:\n\nhttps://showmojo.com/ep/l/2c8a09a08d\n\nThis listing is presented by Birds Nest Properties.\n\nKits360\n1777 West 7th Avenue, Vancouver\n7th Floor Condo\n\n2 Bedrooms + Den\n2 Bathrooms\n2 Parking Stall\n1 Storage Locker\n771 sq ft\n\n✓ Unfurnished\n✓ Open-Concept\n✓ In-Suite Laundry\n✓ High-End Appliances\n✓ Balcony\n✓ City Views\n\nSmall pets may be considered.\n\nWelcome home to Kits360, situated in the vibrant Kitsilano area. This condo features an open-concept floor plan with laminate wood flooring throughout, over-height ceilings, and floor-to-ceiling windows that allow natural light and fresh air to flood the home. The solarium provides a versatile space, while the large balcony offers a perfect place to relax and enjoy views of the city. The gourmet kitchen is thoughtfully designed with two-tone cabinetry, high-end appliances, quartz countertops, and an island bar—perfect for everyday living. Residents of Kits360 enjoy access to premium amenities such as a 24-hour concierge, fitness centre, and rooftop terrace with a lounge offering beautiful views of English Bay and Downtown.\n\nNestled in the heart of Vancouver, Kitsilano is in a coveted area within walking distance of gorgeous parks and amazing shopping, cafes and dining options. Stop for some delicious pastries and a coffee at Beaucoup Bakery and Cafe, and then head over to Vanier Park for a stroll along the seawall, or enjoy a day at Kitsilano Beach while enjoying the beautiful water views. Spend a day shopping along West 4th Ave or Granville St and then head down to Granville Island where you can browse the shops and pick up fresh groceries at the Public Market. For public transit, regular bus service stops along West 4th Avenue, Granville Street, and West Broadway for convenient access to the rest of Vancouver.\n\nPlease note: Leases are a minimum of a one-year fixed lease. Strata corporations may charge move-in/move-out fees, which are the direct responsibi",
+      "type": "condo",
+      "ac": null,
+      "detailVerified": true,
+      "relistingPostIds": [
+        "7963109907"
+      ],
+      "relistingUrls": [
+        "https://www.craigslist.org/view/d/vancouver-kitsilano-bed-den-bath-condo/ojJmUfXer5iQFD5rvcusu5"
+      ]
     },
     {
       "source": "Craigslist",
@@ -1330,7 +1002,7 @@
       "targetArea": true,
       "active": true,
       "postedOrUpdatedAt": "2026-09-17T00:56:28.000Z",
-      "checkedAt": "2026-09-19T11:11:50.399Z",
+      "checkedAt": "2026-09-19T15:09:23.449Z",
       "images": [
         "https://images.craigslist.org/00d0d_1HidEZAzuOu_0CI0t2_600x450.jpg",
         "https://images.craigslist.org/00d0d_1HidEZAzuOu_0CI0t2_50x50c.jpg",
@@ -1355,7 +1027,115 @@
       "description": "This spacious 4-bedroom house is located in the highly desirable Dunbar neighbourhood on King Edward Avenue, making it an excellent choice for a group of UBC students or working professionals.\n\nRent: $5,000/month + utilities (utilities average approximately $50/person/month)\nAvailable: Immediately\nLease Term: Minimum 8 months\n\nFeatures\n- Excellent location - Easy 20-minute bus ride to UBC via Bus 25, with nearby access to Bus 2 and Bus 7; convenient transit to Downtown Vancouver; walking distance to Dunbar Village amenities (including Stong's Market, banks, Shoppers Drug Mart, Cafés, restaurants, and other everyday conveniences)\n- 4 spacious, fully furnished bedrooms (including bed frame, mattress, desk, chair, closet/storage space)\n- Fully equipped kitchen with refrigerator, stove, and microwave\n- On-site laundry\n- High-speed Internet included\n- Street parking available\n\nHouse Rules\n- No pets, no smoking/vaping, no drugs or partying\n- Looking for clean, respectful tenants who will help maintain a quiet living environment\n\nIf you're interested, please send us a message introducing your group, including: Your names, school/program, desired move-in date, a little about your group.\n\nWe'd be happy to arrange a viewing!",
       "type": "house",
       "ac": null,
-      "detailVerified": true
+      "detailVerified": true,
+      "relistingPostIds": [
+        "7953521447"
+      ],
+      "relistingUrls": [
+        "https://www.craigslist.org/view/d/vancouver-furnished-bedroom-house-in/daLGxCGiGR9F8ECYtjFrRr"
+      ]
+    },
+    {
+      "source": "Craigslist",
+      "postId": "7954830745",
+      "url": "https://www.craigslist.org/view/d/vancouver-renovated-fully-furnished-bed/9HN52tQkPrX9N8JhUqQnLn",
+      "title": "$4,300 / 2br - 1011ft2 - Renovated Fully furnished 2 bed/2 bath condo West 7th Ave, Kitsilano (Kitsilano)",
+      "address": null,
+      "identityKey": "craigslist::post:7954830745",
+      "rent": 4300,
+      "bedrooms": 2,
+      "bathrooms": 2,
+      "sqft": 1011,
+      "geo": {
+        "lat": 49.265465,
+        "lng": -123.146239
+      },
+      "targetArea": true,
+      "active": true,
+      "postedOrUpdatedAt": "2026-09-16T19:09:25.000Z",
+      "checkedAt": "2026-09-19T15:09:23.449Z",
+      "images": [
+        "https://images.craigslist.org/00a0a_enPB3cuwCIj_0CI0t2_600x450.jpg",
+        "https://images.craigslist.org/00a0a_enPB3cuwCIj_0CI0t2_50x50c.jpg",
+        "https://images.craigslist.org/00F0F_hs3RgyZlwJ_0CI0t2_50x50c.jpg",
+        "https://images.craigslist.org/00k0k_34tMz5DIw9q_0CI0t2_50x50c.jpg",
+        "https://images.craigslist.org/00R0R_cL9wtehC0qg_0CI0t2_50x50c.jpg",
+        "https://images.craigslist.org/00y0y_cpFfPB39e2j_0CI0t2_50x50c.jpg",
+        "https://images.craigslist.org/00707_Fso2UPao1a_0CI0t2_50x50c.jpg",
+        "https://images.craigslist.org/00V0V_in9qb2AWRJU_0CI0t2_50x50c.jpg",
+        "https://images.craigslist.org/00Q0Q_fuVqvUAxPoH_0CI0t2_50x50c.jpg",
+        "https://images.craigslist.org/00808_bUXqBSJ7Brh_0CI0t2_50x50c.jpg",
+        "https://images.craigslist.org/00E0E_dpKROQUoson_0CI0t2_50x50c.jpg",
+        "https://images.craigslist.org/00B0B_eHABS7AmPjS_0CI0t2_50x50c.jpg"
+      ],
+      "publishable": false,
+      "evidenceKind": "current_search_card_and_exact_detail",
+      "queryIds": [
+        "kitsilano"
+      ],
+      "approximateLocation": "Kitsilano",
+      "addressPrecision": "neighborhood",
+      "description": "Beautiful Furnished Kitsilano Home\n\nFully Furnished 2 Bed + Den | 2 Bath | Private Patio\n\n📍 Ground Floor - 1823 W 7th Avenue, Vancouver\n💰 $4,300/month | Available Now\n🏡 6+ month lease | Pets with owner approval\n\n✨ 1,011 sq. ft. of bright living space\n🌿 272 sq. ft. private patio\n🛏️ 2 bedrooms + open den\n🛁 2 full bathrooms\n🚗 Secured parking\n🧺 In-suite laundry\n🔥 Gas fireplace + gas & hot water included\n\nBeautifully renovated and fully furnished, this spacious Kitsilano home features modern finishes, engineered hardwood floors, updated kitchen and bathrooms, custom closets, and a cozy double-sided fireplace.\n\nEnjoy a fantastic location just steps from West 4th Avenue, cafés, restaurants, shopping, transit, and Kitsilano Beach.\n\nContact today to book your private viewing!\n\nElvira Domracheva\nOrca Realty Inc.\nshow contact info",
+      "type": "condo",
+      "ac": null,
+      "detailVerified": true,
+      "relistingPostIds": [
+        "7954830745"
+      ],
+      "relistingUrls": [
+        "https://www.craigslist.org/view/d/vancouver-renovated-fully-furnished-bed/9HN52tQkPrX9N8JhUqQnLn"
+      ]
+    },
+    {
+      "source": "Craigslist",
+      "postId": "7965071439",
+      "url": "https://www.craigslist.org/view/d/vancouver-bed-bath-fourth-mac-kitsilano/eiSLCKTVqsrtPUWpUpJyDN",
+      "title": "$4,350 / 2br - 801ft2 - 2 Bed + 2 Bath @ Fourth + Mac — Kitsilano | Available October 1 (Vancouver)",
+      "address": null,
+      "identityKey": "craigslist::post:7965071439",
+      "rent": 4350,
+      "bedrooms": 2,
+      "bathrooms": 2,
+      "sqft": 801,
+      "geo": {
+        "lat": 49.2646,
+        "lng": -123.1648
+      },
+      "targetArea": true,
+      "active": true,
+      "postedOrUpdatedAt": "2026-09-16T17:28:30.000Z",
+      "checkedAt": "2026-09-19T15:09:23.449Z",
+      "images": [
+        "https://images.craigslist.org/00H0H_aBooG6gbfXq_0ia0du_600x450.jpg",
+        "https://images.craigslist.org/00H0H_aBooG6gbfXq_0ia0du_50x50c.jpg",
+        "https://images.craigslist.org/01616_5y1u2ed2ikT_0cR0gy_50x50c.jpg",
+        "https://images.craigslist.org/00G0G_FtcifFWbJS_0x20m1_50x50c.jpg",
+        "https://images.craigslist.org/00g0g_cKxf1HqS4mD_0x20m1_50x50c.jpg",
+        "https://images.craigslist.org/01717_brSs8WLGzbx_0x20m1_50x50c.jpg",
+        "https://images.craigslist.org/00Z0Z_8QlIijYV87P_0x20m1_50x50c.jpg",
+        "https://images.craigslist.org/00101_5d0cQqFQ14E_0x20m1_50x50c.jpg",
+        "https://images.craigslist.org/00606_8G3MJW0Opxj_0x20m1_50x50c.jpg",
+        "https://images.craigslist.org/00E0E_9KTVVOLIAAt_0x20m1_50x50c.jpg",
+        "https://images.craigslist.org/00o0o_4DErAG485G_0x20m1_50x50c.jpg",
+        "https://images.craigslist.org/00A0A_4u5TVAsKfmk_0x20m1_50x50c.jpg"
+      ],
+      "publishable": false,
+      "evidenceKind": "current_search_card_and_exact_detail",
+      "queryIds": [
+        "kitsilano"
+      ],
+      "approximateLocation": "Fourth Avenue near Macdonald Street",
+      "addressPrecision": "intersection",
+      "description": "Live at Fourth + Mac in this spacious 801 sqft two-bedroom, two-bathroom home featuring city and water views, a private balcony, air conditioning and flexible in-suite storage/worksapce. Located at West 4th Ave and Macdonald Street , Fourth + Mac puts you steps from Fresh Street Market, Shoppers Drug Mart, cafés, restaurants, fitness studios, transit and some of Kitsilano's best beaches.\n\nHome Features\n• City + water views\n• Full size appliance package\n• Individual air conditioning\n• In suite flex room for storage or workspace\n• Private balcony\n• Under cabinet LED lighting\n• Medicine cabinet in bathroom\n• In suite laundry\n\nParking Available for Rent\n\nNeighborhood\n• West 4th retail, restaurants, cafés, fitness studios\n• Easy access to bus routes 44 & 84 (UBC + downtown)\n• Beaches within minutes\n\nBuilding Features\n• Zero carbon operations\n• 100% smoke free\n• Keyless entry + FOB access\n• Professionally managed by Third Space\n• Secure parcel lockers\n• Pet friendly\n• Storage lockers available\n\nAmenities\n• The Hub — lobby + co working space with flexible work areas\n• The Lounge — social lounge with big screen TV, pool table, and outdoor patio\n• The Roof — rooftop with BBQ stations, dining zone, garden plots, play areas, and lounge spaces\n• Dedicated wash room for sandy paws + muddy bikes\n• High speed Wi Fi in most amenity spaces\n\nVideos:\nhttps://youtube.com/@basepoint-x4e?si=PSD7d8IxlrwlAxJ4",
+      "type": "rental",
+      "ac": true,
+      "detailVerified": true,
+      "relistingPostIds": [
+        "7965071439"
+      ],
+      "relistingUrls": [
+        "https://www.craigslist.org/view/d/vancouver-bed-bath-fourth-mac-kitsilano/eiSLCKTVqsrtPUWpUpJyDN"
+      ]
     },
     {
       "source": "Craigslist",
@@ -1375,7 +1155,7 @@
       "targetArea": true,
       "active": true,
       "postedOrUpdatedAt": "2026-09-16T05:11:15.000Z",
-      "checkedAt": "2026-09-19T11:11:50.399Z",
+      "checkedAt": "2026-09-19T15:09:23.449Z",
       "images": [
         "https://images.craigslist.org/00R0R_5D6x8JG8rRh_0gw0t2_600x450.jpg",
         "https://images.craigslist.org/00R0R_5D6x8JG8rRh_0gw0t2_50x50c.jpg",
@@ -1400,7 +1180,363 @@
       "description": "Available: December 1, 2026 or January 1, 2027 – December 31, 2027. Earlier move in possible.\n\nBeautifully Renovated Dunbar Home with Rooftop Views\n\nThis exceptional Dunbar residence on West 22nd Avenue has been extensively renovated from top to bottom, offering 2,953 sq. ft. of upscale modern living space plus over 650 sq. ft. of patios and decks in one of Vancouver's most sought-after neighbourhoods.\n\nThe home features 3 bedrooms, a den, and 2.5 bathrooms, with spacious, light-filled living areas throughout. High-end finishes include engineered hardwood flooring, a large gourmet kitchen with heated slate floors and stainless steel appliances, and spa-inspired bathrooms designed for comfort and luxury.\n\nThe main floor opens onto a private sun deck and fully fenced backyard, ideal for family gatherings, BBQs, and entertaining. A spectacular rooftop patio offers panoramic views of the city skyline and the North Shore Mountains.\n\nConveniently located just minutes from shopping, restaurants, and everyday amenities. Situated within the Lord Byng Secondary, Lord Kitchener Elementary, and St. George’s School catchment areas.\n\nViewing Requests\n\nPlease contact us for additional information or to arrange a viewing. Selected applicants will be invited for a private showing.\n\nWhen requesting a viewing, please include:\n\nYour occupation\nNumber of occupants\nDesired move-in date\n\nReferences are required. Credit checks and proof of income will be requested prior to tenancy approval.",
       "type": "house",
       "ac": null,
-      "detailVerified": true
+      "detailVerified": true,
+      "relistingPostIds": [
+        "7966683435"
+      ],
+      "relistingUrls": [
+        "https://www.craigslist.org/view/d/vancouver-dunbar-3br1den-25ba-whole/tLSgasJf4ubBBzSmjD3enf"
+      ]
+    },
+    {
+      "source": "Craigslist",
+      "postId": "7955273821",
+      "url": "https://www.craigslist.org/view/d/vancouver-bedrooms-townhouse/syWsQ6SKfjxQuvjXpHaSJr",
+      "title": "$5,400 / 3br - 1837ft2 - 3 BEDROOMS TOWNHOUSE (Vancouver, Kerrisdale)",
+      "address": null,
+      "identityKey": "craigslist::post:7955273821",
+      "rent": 5400,
+      "bedrooms": 3,
+      "bathrooms": 3.5,
+      "sqft": 1837,
+      "geo": {
+        "lat": 49.237294,
+        "lng": -123.162704
+      },
+      "targetArea": true,
+      "active": true,
+      "postedOrUpdatedAt": "2026-09-15T04:45:10.000Z",
+      "checkedAt": "2026-09-19T15:09:23.449Z",
+      "images": [
+        "https://images.craigslist.org/00b0b_fJ1dKmYpeL7_1320MM_600x450.jpg",
+        "https://images.craigslist.org/00b0b_fJ1dKmYpeL7_1320MM_50x50c.jpg",
+        "https://images.craigslist.org/00101_kWUMRDPGlji_1320MM_50x50c.jpg",
+        "https://images.craigslist.org/00a0a_jUt9xea8hhW_1320MM_50x50c.jpg",
+        "https://images.craigslist.org/01313_kX6Z9ek1cmv_1320MM_50x50c.jpg",
+        "https://images.craigslist.org/00p0p_jgeRQkhejP2_1320MM_50x50c.jpg",
+        "https://images.craigslist.org/00C0C_jxygt2vx10Z_1320MM_50x50c.jpg",
+        "https://images.craigslist.org/00303_h6dymkTNvdm_1320MM_50x50c.jpg",
+        "https://images.craigslist.org/00C0C_jLMAHQ1ADgS_1320MM_50x50c.jpg",
+        "https://images.craigslist.org/00T0T_eJ0ImrvSwZg_1320MM_50x50c.jpg",
+        "https://images.craigslist.org/01515_n5mSuPn1Lv_1320MM_50x50c.jpg",
+        "https://images.craigslist.org/00101_ehl9SZOXNya_1320MM_50x50c.jpg"
+      ],
+      "publishable": false,
+      "evidenceKind": "current_search_card_and_exact_detail",
+      "queryIds": [
+        "point-grey"
+      ],
+      "approximateLocation": "LARCH STREET near W. 39TH AVE",
+      "addressPrecision": "intersection",
+      "description": "Move in Date: Sept 1st, 2026\nFor faster response, please call or text Donna at show contact info\n\n**Bright & spacious 1837 sqft living space.\n**Furnished 3 ensuite Bedrooms, total 3.5 Bathrooms.\n**2 parking space.\n**Insuite Laundry.\n**Close to [Kerrisdale Elementary and Point Grey Sec School].\n**Minutes walk to 41st Ave.\n**Gas fireplace,\n**Prefer someone clean, responsible, and respectful.\n**Credit, employment, previous landlord reference check required.\n**1/2 month damage deposit.\n**No Smoking.\n**No Pets.\n\nPrime central Kerrisdale location. 3 Levels, 3 ensuite Bedrooms townhouse suite on quiet Larch St, with backyard. Bright & spacious on main floor & Living room by a cozy gas fireplace,, Dining room, & Kitchen on main, 3.5 bathrooms, 2 parking space. Close to Point Grey Secondary, Kerrisdale Elementary, (Crofton House School, and St George Private School). & U.B.C. Walk to Community Centre, Shoppers Drug Mart, banks, Starbucks, restaurants, public transit, super market, etc., yet in a very quite and safe neighborhood. Smoke free & Pet free. Long term tenancy. Looking for clean and respectful tenants.\nFor faster response, please call or text Donna at show contact info\n\nLocation: VANCOUVER WESTSIDE, KERRISDALE\nLARCH ST & W. 39TH AVE,",
+      "type": "townhouse",
+      "ac": null,
+      "detailVerified": true,
+      "relistingPostIds": [
+        "7955273821"
+      ],
+      "relistingUrls": [
+        "https://www.craigslist.org/view/d/vancouver-bedrooms-townhouse/syWsQ6SKfjxQuvjXpHaSJr"
+      ]
+    },
+    {
+      "source": "Craigslist",
+      "postId": "7964728008",
+      "url": "https://www.craigslist.org/view/d/vancouver-full-house-bedroom-plus-large/7e4BnvLoAnHNoQrCMPHg7m",
+      "title": "$4,800 / 3br - Full House - 3 bedroom plus large basement (Kitsilano)",
+      "address": null,
+      "identityKey": "craigslist::post:7964728008",
+      "rent": 4800,
+      "bedrooms": 3,
+      "bathrooms": 2.5,
+      "sqft": null,
+      "geo": {
+        "lat": 49.2666,
+        "lng": -123.1976
+      },
+      "targetArea": true,
+      "active": true,
+      "postedOrUpdatedAt": "2026-09-15T03:21:47.000Z",
+      "checkedAt": "2026-09-19T15:09:23.449Z",
+      "images": [
+        "https://images.craigslist.org/00y0y_9QoxDSNE4uG_0pO0jm_600x450.jpg",
+        "https://images.craigslist.org/00y0y_9QoxDSNE4uG_0pO0jm_50x50c.jpg",
+        "https://images.craigslist.org/00e0e_eigecxYRpaj_0pO0jm_50x50c.jpg",
+        "https://images.craigslist.org/00g0g_hnDx6ie72VR_0jm0pO_50x50c.jpg",
+        "https://images.craigslist.org/00l0l_bpkWhrGgOhV_0pO0jm_50x50c.jpg",
+        "https://images.craigslist.org/00404_14weXJlorY2_0jm0pO_50x50c.jpg",
+        "https://images.craigslist.org/01111_hEUtXYc2It9_0pO0jm_50x50c.jpg",
+        "https://images.craigslist.org/01111_i7dRx4gekxl_0pO0jm_50x50c.jpg",
+        "https://images.craigslist.org/00909_4RzxBqOC0FY_0pO0jm_50x50c.jpg",
+        "https://images.craigslist.org/00v0v_hW5iwPY18mO_0ak07K_50x50c.jpg",
+        "https://images.craigslist.org/00808_hT7clqIopgm_0ak07K_50x50c.jpg",
+        "https://images.craigslist.org/00V0V_eou0su2VzX9_0ak07K_50x50c.jpg"
+      ],
+      "publishable": false,
+      "evidenceKind": "current_search_card_and_exact_detail",
+      "queryIds": [
+        "kitsilano"
+      ],
+      "approximateLocation": "Kitsilano",
+      "addressPrecision": "neighborhood",
+      "description": "Spacious 3-bedroom, 2.5-bathroom house plus full basement located near Collingwood Street and West 12th Avenue in a convenient Vancouver neighborhood.\n\nThe house is just 3 blocks from Broadway and approximately a 10-minute walk to Jericho Beach. Several bus routes are within walking distance, including the #2, #7, #14, #9, and #99, providing convenient access to UBC, downtown, and other areas of Vancouver.\n\nThe house features:\n\n3 bedrooms\n2.5 bathrooms\nKitchen\nLiving room\nFull basement\nLaundry room\nBack deck\nFront and back gardens\nA great option for a family or responsible tenants looking for a spacious home in a well-connected neighborhood close to shops, transit, and the beach.\n\nPictures are attached.",
+      "type": "house",
+      "ac": null,
+      "detailVerified": true,
+      "relistingPostIds": [
+        "7964728008"
+      ],
+      "relistingUrls": [
+        "https://www.craigslist.org/view/d/vancouver-full-house-bedroom-plus-large/7e4BnvLoAnHNoQrCMPHg7m"
+      ]
+    },
+    {
+      "source": "Craigslist",
+      "postId": "7954610190",
+      "url": "https://www.craigslist.org/view/d/vancouver-stunning-furnished-bedroom/9YTC3RaD4975rUf65CCYiT",
+      "title": "$7,750 / 2br - 1800ft2 - STUNNING Furnished 2 BEDROOM + DEN Townhouse in Kits (Kitsilano)",
+      "address": null,
+      "identityKey": "craigslist::post:7954610190",
+      "rent": 7750,
+      "bedrooms": 2,
+      "bathrooms": 2,
+      "sqft": 1800,
+      "geo": {
+        "lat": 49.271551,
+        "lng": -123.165828
+      },
+      "targetArea": true,
+      "active": true,
+      "postedOrUpdatedAt": "2026-09-08T20:12:58.000Z",
+      "checkedAt": "2026-09-19T15:09:23.449Z",
+      "images": [
+        "https://images.craigslist.org/00E0E_e5n8yh4XnBK_0CI0pP_600x450.jpg",
+        "https://images.craigslist.org/00E0E_e5n8yh4XnBK_0CI0pP_50x50c.jpg",
+        "https://images.craigslist.org/00F0F_ami3Gia1OKP_0CI0pP_50x50c.jpg",
+        "https://images.craigslist.org/00A0A_7yBACj7PNqa_0CI0pP_50x50c.jpg",
+        "https://images.craigslist.org/00o0o_7OvSI5jTvOZ_0CI0pP_50x50c.jpg",
+        "https://images.craigslist.org/00z0z_8ORdR9d2UzW_0CI0pP_50x50c.jpg",
+        "https://images.craigslist.org/01515_4gSyVy4L4hy_0CI0pP_50x50c.jpg",
+        "https://images.craigslist.org/00808_9SamaMXEQej_0CI0pP_50x50c.jpg",
+        "https://images.craigslist.org/00Z0Z_et7Es9eWAvf_0CI0pP_50x50c.jpg",
+        "https://images.craigslist.org/00202_c3HrLNQWoEM_0CI0pP_50x50c.jpg",
+        "https://images.craigslist.org/01616_kRfFdzT9TDm_0CI0pP_50x50c.jpg",
+        "https://images.craigslist.org/00a0a_6dPyH58g1la_0CI0pP_50x50c.jpg"
+      ],
+      "publishable": false,
+      "evidenceKind": "current_search_card_and_exact_detail",
+      "queryIds": [
+        "kitsilano"
+      ],
+      "approximateLocation": "York Ave near Stephens Street",
+      "addressPrecision": "intersection",
+      "description": "STUNNING Furnished Two Bedroom, 2 Bathroom TOWNHOUSE in Point Grey!\n\nPrice: $7,750 per month on one year lease\nAvailable: October 1st\nListing Brokerage: REMAX City Realty\nSq Ft.: 1,800\nBedrooms: 2 + Sofabed in Den/Loft\nBathrooms:2\nUtilities Included: Hot Water and Natural Gas\nParking: Available\n\nTenancy Length: Negotiable\n\nAmenities: Private Yard\nIncluded Items:: Gourmet Chef's Kitchen w/ Soft-Close Custom Cabinetry, Stainless appliances, dishwasher, gas fireplace, washer and dryer, Central vacuum, black-out blinds in bedrooms. Units features lots of natural light, hardwood floors, recently painted and fully renovated. Designer furniture and plenty of storage throughout!\nDescription: The townhome that you have been waiting for! This 1,800 sqft 2 bedroom + den home features a modern gourmet kitchen and large bedrooms. Master bedroom has own ensuite with soaker tub! A generous main floor features excellent living space, fireplace, stunning water views and more! One of Vancouver's premier neighbourhoods, this property has superb access to transit, shopping, parks, the beach, excellent schools and more. Move-in Ready! Just bring your suitcase.\nContact: 672-514-8989 to set a viewing today! (Note number is new local Vancouver area code!)\n\n**** Professionally managed and marketed by REMAX City Realty. There are no additional fees or charges to rent an apartment through Proximity Real Estate, and there is no fee to view, apply for or rent any of our suites. We are licensed with the Real Estate Council of British Columbia and simply act as the landlord/marketer for the owner.****\n\n\nREMAX City Realty offers Tenant Rental Finder Services at no charge, visit our website, fill out the search criteria form, and let us get to work for you.\n\nProperty Owners, please feel free to contact Lindy Chow of REMAX City Realty to inquire if there is any renters in our database searching for a rental property which matches your criteria.",
+      "type": "townhouse",
+      "ac": true,
+      "detailVerified": true,
+      "relistingPostIds": [
+        "7954610190"
+      ],
+      "relistingUrls": [
+        "https://www.craigslist.org/view/d/vancouver-stunning-furnished-bedroom/9YTC3RaD4975rUf65CCYiT"
+      ]
+    },
+    {
+      "source": "Craigslist",
+      "postId": "7952934732",
+      "url": "https://www.craigslist.org/view/d/vancouver-spacious-bedroom-bathroom/gL2xq4PBvnLCxnA33erh6n",
+      "title": "$3,500 / 3br - 1300ft2 - Spacious 3 bedroom 2 bathroom apartment for rent in Kerrisdale HH (Kerrisdale)",
+      "address": "2155 W 38th Avenue",
+      "identityKey": "craigslist::post:7952934732",
+      "rent": 3500,
+      "bedrooms": 3,
+      "bathrooms": 2,
+      "sqft": 1300,
+      "geo": {
+        "lat": 49.237341,
+        "lng": -123.157108
+      },
+      "targetArea": true,
+      "active": true,
+      "postedOrUpdatedAt": "2026-09-07T04:35:34.000Z",
+      "checkedAt": "2026-09-19T15:09:23.449Z",
+      "images": [
+        "https://images.craigslist.org/00p0p_aYFyAMBvlUw_0CI0t2_600x450.jpg",
+        "https://images.craigslist.org/00p0p_aYFyAMBvlUw_0CI0t2_50x50c.jpg",
+        "https://images.craigslist.org/00000_kRwIlOndTNH_0CI0t2_50x50c.jpg",
+        "https://images.craigslist.org/00O0O_1phH5fRxPQt_0CI0t2_50x50c.jpg",
+        "https://images.craigslist.org/00H0H_2IobyTpKJFY_0CI0t2_50x50c.jpg",
+        "https://images.craigslist.org/00D0D_2E8ypjuucsH_0CI0t2_50x50c.jpg",
+        "https://images.craigslist.org/00101_8a1iMFuUCFY_0CI0t2_50x50c.jpg",
+        "https://images.craigslist.org/00q0q_ggFr64ghWWD_0CI0t2_50x50c.jpg",
+        "https://images.craigslist.org/00606_19jn4gkHhAs_0CI0t2_50x50c.jpg",
+        "https://images.craigslist.org/00q0q_7yisdtZQdH2_0CI0t2_50x50c.jpg",
+        "https://images.craigslist.org/00000_9sRGaf7y9Il_0CI0t2_50x50c.jpg",
+        "https://images.craigslist.org/01010_lX6XZeXyGiM_0CI0t2_50x50c.jpg"
+      ],
+      "publishable": false,
+      "evidenceKind": "current_search_card_and_exact_detail",
+      "queryIds": [
+        "point-grey"
+      ],
+      "approximateLocation": "Kerrisdale",
+      "addressPrecision": "exact_civic",
+      "description": "Spacious 3 Bed / 2 Bath Apartment for Rent – Kerrisdale (Hampton House). Please note - shared paid laundry in building; no in unit laundry available.\n\nRent: $3,500/month\nAvailable: ASAP\nAddress: 2155 W 38th Avenue (Hampton House)\nSize: Approx. 1,300 sq ft\nBedrooms: 3\nBathrooms: 2\nFloor: 7th floor\n\nVideo Tour: https://youtu.be/1A9W8_nPdHk?si=82FbdnbYEEfIhhKm\n(similar unit; layout/finishes may vary)\n\nUnit Details:\nUnfurnished\nNo air conditioning\nCoin laundry in building\nHeat & hot water included\nNo storage\nPets: Prefer no pets\n\nParking:\nCovered: $120/month\nUncovered: $80/month\n\nLease Terms:\nMinimum 1-year lease\nTenant insurance required\n\nLocation:\nLocated in the heart of Kerrisdale, just steps to West Boulevard. Close to shops, cafes, restaurants, Kerrisdale Community Centre, Kerrisdale Ice Rink, and Point Grey Secondary School.\n\nTo Apply / Inquire:\nPlease reply with:\n\nYour phone number\nDesired move-in date\nNumber of occupants\nPet details (if any)\nBrief introduction about yourself\n\nListed by Prompton Real Estate Services Inc.\n179 Davie St #201, Vancouver, BC V6Z 2Y1",
+      "type": "house",
+      "ac": true,
+      "detailVerified": true,
+      "relistingPostIds": [
+        "7952934732"
+      ],
+      "relistingUrls": [
+        "https://www.craigslist.org/view/d/vancouver-spacious-bedroom-bathroom/gL2xq4PBvnLCxnA33erh6n"
+      ]
+    },
+    {
+      "source": "Craigslist",
+      "postId": "7961932563",
+      "url": "https://www.craigslist.org/view/d/vancouver-furnished-kitsilano-2br/aRKK1rTHU8xtfcY8mLTLBC",
+      "title": "$8,000 / 2br - 1157ft2 - Furnished Kitsilano 2BR | Rooftop Patio + Solarium",
+      "address": null,
+      "identityKey": "craigslist::post:7961932563",
+      "rent": 8000,
+      "bedrooms": 2,
+      "bathrooms": 2,
+      "sqft": 1157,
+      "geo": {
+        "lat": 49.2603,
+        "lng": -123.146
+      },
+      "targetArea": true,
+      "active": true,
+      "postedOrUpdatedAt": "2026-09-06T21:00:40.000Z",
+      "checkedAt": "2026-09-19T15:09:23.449Z",
+      "images": [
+        "https://images.craigslist.org/00V0V_aCa1scEE9g3_0qY0fb_600x450.jpg",
+        "https://images.craigslist.org/00V0V_aCa1scEE9g3_0qY0fb_50x50c.jpg",
+        "https://images.craigslist.org/00202_bztBdLOvVBQ_0qY0fb_50x50c.jpg",
+        "https://images.craigslist.org/00n0n_ibnq63WtzLW_0qY0fb_50x50c.jpg",
+        "https://images.craigslist.org/00101_bYLjQA55QxV_0qY0fb_50x50c.jpg",
+        "https://images.craigslist.org/01515_2u0DMfCW4AO_0qY0fb_50x50c.jpg",
+        "https://images.craigslist.org/00404_1wSuhzF8BeR_0CI0pQ_50x50c.jpg",
+        "https://images.craigslist.org/00l0l_f196attlnJ6_0qY0fb_50x50c.jpg",
+        "https://images.craigslist.org/01212_ar0o2BtXuR_0CI0pQ_50x50c.jpg",
+        "https://images.craigslist.org/00F0F_by29jijoRNi_0CI0pQ_50x50c.jpg",
+        "https://images.craigslist.org/00n0n_16WDUKKYtGk_0CI0pQ_50x50c.jpg",
+        "https://images.craigslist.org/00505_lItu6swkLIo_0CI0pQ_50x50c.jpg"
+      ],
+      "publishable": false,
+      "evidenceKind": "current_search_card_and_exact_detail",
+      "queryIds": [
+        "kitsilano"
+      ],
+      "approximateLocation": "city of vancouver",
+      "addressPrecision": "neighborhood",
+      "description": "Available November 1 for a six-month stay, this fully furnished Kitsilano home offers approximately 1,157 sq ft with 2 bedrooms and 2 bathrooms. The home includes a flexible upper solarium, furnished living areas, work space, artwork throughout, and several outdoor spaces.\n\nLocated near Kits Beach, the seawall, West 4th Avenue, restaurants, cafés, grocery stores, fitness studios, and other neighbourhood amenities.\n\n🏠 About the Home\n\nApprox. 1,157 sq ft\n2 bedrooms\n2 bathrooms\nUpper bedroom/solarium suitable for guests, relaxing, or movie nights\nSkylight and structural glass details\nPrimary bedroom with king-size bed and darkening curtains\nDedicated work-from-home area\nRoche Bobois furnishings\nCanadian and international artwork throughout\nFast TELUS fibre internet\nIn-suite washer and dryer\n\n🌿 Outdoor + Living Areas\n\nCovered lower patio\nUV-filtered covering over the lower patio area\nOutdoor fire feature with seating and entertaining space\nSeparate rooftop patio\nUpper-level fireplace and mini fridge\nBBQ setup\nMultiple areas for outdoor dining, reading, relaxing, or entertaining\n\n🍽 Kitchen\n\nFully furnished and equipped kitchen\nFive-burner cooktop\nDouble ovens\nBuilt-in microwave and dishwasher\nWine refrigeration\nVitamix, kettle, and coffee equipment\nFood processor\nCookware and other kitchen essentials included\n\n🛁 Bathrooms\n\nHeated bathroom flooring\nCustom bathroom finishes\nMulti-directional shower jets\n\n📍 Kitsilano Location\n\nClose to Kits Beach, the seawall, West 4th Avenue, local restaurants, cafés, shopping, fitness options, and neighbourhood markets. The property offers easy access to the waterfront and everyday amenities in a residential setting.\n\n💰 Rental Details\n\n$8,000/month\nFully furnished\nAvailable for 6 months starting November 1, 2026\nNo smoking\n\n📩 If interested, please reply with a brief introduction, your preferred move-in date, number of occupants, parking requirements, and whether you have any pets.",
+      "type": "rental",
+      "ac": null,
+      "detailVerified": true,
+      "relistingPostIds": [
+        "7961932563"
+      ],
+      "relistingUrls": [
+        "https://www.craigslist.org/view/d/vancouver-furnished-kitsilano-2br/aRKK1rTHU8xtfcY8mLTLBC"
+      ]
+    },
+    {
+      "source": "Craigslist",
+      "postId": "7954163334",
+      "url": "https://www.craigslist.org/view/d/vancouver-br-1500-sq-ft-house-kitsilano/gzdTLTMsxUGYW9zVYnXt4Y",
+      "title": "$3,900 / 3br - 1500ft2 - 3,900/3BR-1500 sq. ft. house (Kitsilano) (Kitsilano)",
+      "address": null,
+      "identityKey": "craigslist::post:7954163334",
+      "rent": 3900,
+      "bedrooms": 3,
+      "bathrooms": 1,
+      "sqft": 1500,
+      "geo": {
+        "lat": 49.2603,
+        "lng": -123.146
+      },
+      "targetArea": true,
+      "active": true,
+      "postedOrUpdatedAt": "2026-08-24T22:59:23.000Z",
+      "checkedAt": "2026-09-19T15:09:23.449Z",
+      "images": [
+        "https://images.craigslist.org/00Z0Z_k7sjTiNFcjk_0CI0t2_600x450.jpg",
+        "https://images.craigslist.org/00Z0Z_k7sjTiNFcjk_0CI0t2_50x50c.jpg",
+        "https://images.craigslist.org/00B0B_drEGeHWzUkP_0pO0jm_50x50c.jpg",
+        "https://images.craigslist.org/00B0B_8MBLTSANjvV_0CI0t2_50x50c.jpg",
+        "https://images.craigslist.org/00G0G_eujYPagcLf7_0lM0t2_50x50c.jpg"
+      ],
+      "publishable": false,
+      "evidenceKind": "current_search_card_and_exact_detail",
+      "queryIds": [
+        "kitsilano"
+      ],
+      "approximateLocation": "Kitsilano",
+      "addressPrecision": "neighborhood",
+      "description": "Unfurnished, 3 bedroom house- approx. 1,500 sq. ft., hardwood floors, master bedroom on main floor; 2- bedrooms on upper level, spacious walk-in closets, one bathroom, living room, kitchen, fridge, stove, NO DISHWASHER, washer/dryer, street parking; minutes to Downtown, Yaletown; NO SMOKERS; SORRY, NO PETS; looking for mature and responsible people who are respectful of the property and their neighbours; quiet atmosphere suitable for mature working professionals; MAXIMUM 3 occupants, one Residential Tenancy Agreement. Minimum one year lease.\n\nNo Sublet. No AirBnB. Tenant Insurance required.\n\nRENT: $3,900.00( method of rent payment- post-dated cheques)\n\nSECURITY DEPOSIT: $1,950.00\n\nUTILITIES: tenant is responsible for electricity (BC Hydro) and gas ( Fortis Gas)\n\nAVAILABLE NOW OR SEPTEMBER 1\n\nREFERENCES REQUIRED AND CREDIT CHECK\n\nIf you are interested, please write a short introduction about yourself and your room-mates. Please provide name, age, current address, employment, reason for moving, how long do you need the place. Thank you.",
+      "type": "house",
+      "ac": null,
+      "detailVerified": true,
+      "relistingPostIds": [
+        "7954163334"
+      ],
+      "relistingUrls": [
+        "https://www.craigslist.org/view/d/vancouver-br-1500-sq-ft-house-kitsilano/gzdTLTMsxUGYW9zVYnXt4Y"
+      ]
+    },
+    {
+      "source": "Craigslist",
+      "postId": "7955143177",
+      "url": "https://www.craigslist.org/view/d/vancouver-bedroom-heart-of-kitsilano/uc9wPxbCZSwaNDPNBxpSAu",
+      "title": "$5,695 / 3br - 1050ft2 - 3 bedroom - heart of Kitsilano, 2 blocks from beach! (Kitsilano on the park)",
+      "address": null,
+      "identityKey": "craigslist::post:7955143177",
+      "rent": 5695,
+      "bedrooms": 3,
+      "bathrooms": 1.5,
+      "sqft": 1050,
+      "geo": {
+        "lat": 49.269461,
+        "lng": -123.181678
+      },
+      "targetArea": true,
+      "active": true,
+      "postedOrUpdatedAt": "2026-08-22T14:03:54.000Z",
+      "checkedAt": "2026-09-19T15:09:23.449Z",
+      "images": [
+        "https://images.craigslist.org/00505_9JjEv3eRS29_0CI0pO_600x450.jpg",
+        "https://images.craigslist.org/00505_9JjEv3eRS29_0CI0pO_50x50c.jpg",
+        "https://images.craigslist.org/00A0A_fBd1YifmimS_0CI0pO_50x50c.jpg",
+        "https://images.craigslist.org/00M0M_cFPsvkagv6H_0CI0pO_50x50c.jpg",
+        "https://images.craigslist.org/00B0B_2cz9qsvVCuT_0CI0pO_50x50c.jpg",
+        "https://images.craigslist.org/00J0J_6zQzmHUZEDN_0CI0pO_50x50c.jpg",
+        "https://images.craigslist.org/00k0k_CGRyLXB6oJ_0p50gJ_50x50c.jpg",
+        "https://images.craigslist.org/00E0E_2XkA2E5e6NS_0p50gJ_50x50c.jpg",
+        "https://images.craigslist.org/00404_clDy0IIhEaF_0MM132_50x50c.jpg",
+        "https://images.craigslist.org/00O0O_gfjWtTMAiLE_0MM132_50x50c.jpg",
+        "https://images.craigslist.org/00A0A_8BnHDcovVIk_0MM132_50x50c.jpg",
+        "https://images.craigslist.org/00r0r_gf5q7O1aEG3_0p50gJ_50x50c.jpg"
+      ],
+      "publishable": false,
+      "evidenceKind": "current_search_card_and_exact_detail",
+      "queryIds": [
+        "kitsilano"
+      ],
+      "approximateLocation": "West 3rd. Ave near McDonald Street",
+      "addressPrecision": "intersection",
+      "description": "Beautifully furnished self-contained 1050 square foot garden level apartment in the heart of Kitsilano just 2 blocks from the ocean.\nThis large suite has its own private entrance, yard and outdoor covered patio with garden dining furniture.\nThe suite faces south and west and is located on West 3rd. Ave. near Macdonald. Easy to get to downtown (8 minutes), airport (20 minutes), UBC (10 minutes). Bus stops at 4th and Macdonald providing for easy transportation anywhere.\nThere is a brand new high end Fresh Street Market supermarket just steps from the Manor. There are many restaurants in close proximity and lovely walking parks including the beach.\nThis suite has a beautifully appointed granite kitchen with all appliances, full bathroom and a second two piece ensuite bath. All three bedrooms have a queen size bed with luxurious bedding.\nThere is a 46 inch flat screen TV, high speed fibre optic WIFI, free parking, telephone and laundry facilities. Private parking is available at extra monthly charge of $150.\nThe suite has new flooring, leather sofa, work station and electric fireplace.\nThis is not a high-rise; it is a beautiful Vancouver heritage manor home.\nSpectacular restaurants, shops, sports facilities are all a few steps away. No need for a car, as everything is accessible either on foot, bike, bus, shared car ( EVO) or taxi. It is also on a designated bike path.\n\nIdeal for corporate executives, exchange doctors or professors, new arrivals to Vancouver and vacationers requiring comfortable elegant self contained housing while visiting our lovely city.\nIf you need temporary housing due to renovation or possible insurance claims due to flooding, we provide you a perfect home away from home.\n\nRental terms on monthly basis, 90 day minimum.\nFree street parking as well as private paid parking.\nContact us today.\nEnjoy Vancouver at its best with all its beaches, swimming, biking, restaurants, shops - Great location!",
+      "type": "rental",
+      "ac": null,
+      "detailVerified": true,
+      "relistingPostIds": [
+        "7955143177"
+      ],
+      "relistingUrls": [
+        "https://www.craigslist.org/view/d/vancouver-bedroom-heart-of-kitsilano/uc9wPxbCZSwaNDPNBxpSAu"
+      ]
     }
   ]
 }

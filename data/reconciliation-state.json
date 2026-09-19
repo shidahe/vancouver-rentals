@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-09-19T11:13:09.912Z",
+  "refreshedAt": "2026-09-19T15:10:46.559Z",
   "groups": [
     {
       "identityKey": "1533 maple st::url:69f2e13a0fd5",
@@ -98,24 +98,24 @@
       "result": "candidate_only"
     },
     {
-      "identityKey": "3095 w 5th ave near balaclava st::url:a2e15ddfb19d",
-      "sources": [
-        "craigslist"
-      ],
-      "rents": [
-        10500
-      ],
-      "exactUnit": false,
-      "matchedListingId": null,
-      "result": "candidate_only"
-    },
-    {
       "identityKey": "3260 w 16 ave near blenheim::url:588623515817",
       "sources": [
         "craigslist"
       ],
       "rents": [
         5475
+      ],
+      "exactUnit": false,
+      "matchedListingId": null,
+      "result": "candidate_only"
+    },
+    {
+      "identityKey": "6558 arbutus st::url:ab6d2714b32f",
+      "sources": [
+        "craigslist"
+      ],
+      "rents": [
+        4680
       ],
       "exactUnit": false,
       "matchedListingId": null,
@@ -146,12 +146,12 @@
       "result": "candidate_only"
     },
     {
-      "identityKey": "6558 arbutus st::url:ab6d2714b32f",
+      "identityKey": "4455 w 9th ave::url:27af75d482ae",
       "sources": [
         "craigslist"
       ],
       "rents": [
-        4680
+        5000
       ],
       "exactUnit": false,
       "matchedListingId": null,
@@ -170,12 +170,12 @@
       "result": "candidate_only"
     },
     {
-      "identityKey": "4455 w 9th ave::url:27af75d482ae",
+      "identityKey": "3095 w 5th ave near balaclava st::url:a2e15ddfb19d",
       "sources": [
         "craigslist"
       ],
       "rents": [
-        5000
+        10500
       ],
       "exactUnit": false,
       "matchedListingId": null,
@@ -218,27 +218,39 @@
       "result": "authoritative_mls_reverified"
     },
     {
-      "identityKey": "mls:r3137446",
+      "identityKey": "mls:r3163709",
       "sources": [
         "realtylink mls"
       ],
       "rents": [
-        5850
+        6000
       ],
-      "exactUnit": true,
-      "matchedListingId": "york-103-2535-r3137446",
+      "exactUnit": false,
+      "matchedListingId": "mls-r3163709",
       "result": "authoritative_mls_reverified"
     },
     {
-      "identityKey": "mls:r3151022",
+      "identityKey": "mls:r3161880",
       "sources": [
         "realtylink mls"
       ],
       "rents": [
-        10500
+        8800
       ],
       "exactUnit": false,
-      "matchedListingId": "mls-r3151022",
+      "matchedListingId": "mls-r3161880",
+      "result": "authoritative_mls_reverified"
+    },
+    {
+      "identityKey": "mls:r3151372",
+      "sources": [
+        "realtylink mls"
+      ],
+      "rents": [
+        4800
+      ],
+      "exactUnit": false,
+      "matchedListingId": "mls-r3151372",
       "result": "authoritative_mls_reverified"
     }
   ],
@@ -246,20 +258,48 @@
   "crossVerified": [
     "zumper-16e9ae17cd91",
     "mls-r3150923",
-    "york-103-2535-r3137446",
-    "mls-r3151022"
+    "mls-r3163709",
+    "mls-r3161880",
+    "mls-r3151372"
   ],
   "fingerprintCrossVerified": [],
   "maskedMlsMerged": [],
   "relistedMlsMerged": [],
   "negativeMatches": [],
-  "detailReactivated": [],
-  "mlsMissing": {},
+  "detailReactivated": [
+    "mls-r3161880"
+  ],
+  "mlsMissing": {
+    "R3151022": {
+      "firstMissingAt": "2026-09-19T15:10:46.559Z",
+      "lastMissingAt": "2026-09-19T15:10:46.559Z",
+      "listingId": "mls-r3151022"
+    },
+    "R3161950": {
+      "firstMissingAt": "2026-09-19T15:10:46.559Z",
+      "lastMissingAt": "2026-09-19T15:10:46.559Z",
+      "listingId": "mls-r3161950"
+    },
+    "R3159060": {
+      "firstMissingAt": "2026-09-19T15:10:46.559Z",
+      "lastMissingAt": "2026-09-19T15:10:46.559Z",
+      "listingId": "mls-r3159060"
+    },
+    "R3164628": {
+      "firstMissingAt": "2026-09-19T15:10:46.559Z",
+      "lastMissingAt": "2026-09-19T15:10:46.559Z",
+      "listingId": "mls-r3164628"
+    },
+    "R3149612": {
+      "firstMissingAt": "2026-09-19T15:10:46.559Z",
+      "lastMissingAt": "2026-09-19T15:10:46.559Z",
+      "listingId": "mls-r3149612"
+    }
+  },
   "mlsRemoved": [],
-  "realtylinkSnapshotCount": 4,
+  "realtylinkSnapshotCount": 5,
   "realtylinkSnapshotHighWaterMark": 6,
   "realtylinkSnapshotScope": "rent-3500-beds-2-4-whole-home-westside-v2",
-  "realtylinkRemovalEligible": false,
-  "mlsRemovalSuppressed": "Partial Realtylink snapshot (4 candidates versus previous complete 6); disappearance signals ignored.",
+  "realtylinkRemovalEligible": true,
   "mlsDuplicatesMerged": []
 }

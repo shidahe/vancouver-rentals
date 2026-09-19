@@ -1,0 +1,387 @@
+{
+  "checkedAt": "2026-09-19T15:08:53.183Z",
+  "page": {
+    "source": "Rentals.ca",
+    "url": "https://rentals.ca/vancouver/1850-west-8th-avenue-id532341",
+    "address": "1850 West 8th Avenue, Vancouver, British Columbia V6J 5G3",
+    "addressUnit": null,
+    "geo": {
+      "lat": 49.2643733,
+      "lng": -123.1467431
+    },
+    "targetArea": true,
+    "active": true,
+    "floorplans": [],
+    "single": {
+      "rent": 2000,
+      "beds": 1,
+      "baths": null,
+      "sqft": null
+    },
+    "checkedAt": "2026-09-19T15:08:53.183Z"
+  },
+  "jsonLd": [
+    {
+      "@context": "http://schema.org",
+      "@type": "ApartmentComplex",
+      "url": "https://rentals.ca/vancouver/1850-west-8th-avenue-id532341",
+      "name": "Cypress Court",
+      "description": "**RENTAL PROMOTION 1 MONTH FREE RENT! INQUIRE FOR MORE DETAILS.**\n****RENTAL PROMOTION 1 MONTH FREE RENT! INQUIRE FOR MORE DETAILS.** **\nWelcome to Cypress Court, a well maintained 4 storey building in a quiet Kitsilano neighbourhood! This purpose built rental building is owned and professionally managed by Orr Develoment providing tenants the security and peace of mind of long term tenure.\nCypress court is located in a highly sought after Kitsilano neighbourhood on 8th Avenue close to Burrard Street providing residents the perfect balance of a quiet place to call home while still being just steps away from an abundance of urban amenities. The building is minutes from the 99 B line bus to Skytrain & UBC and the #4 bus to downtown making getting around a breeze. You would be located just a short bike ride from Kits beach and Kits pool, Granville island, Vanier Park and downtown with easy access to both the Burrard Street and Cypress Street bike paths. You will also have easy access to a wide variety of retail stores & restaurants along West 4th Ave or West Broadway Ave including Pallet Coffee, Carlos O'Bryans Pub, Earls Restaurant @ Fir Street, 49th Parallel, Jam Café, Arc'teryx, Lulu Lemon, Cactus Club, Ramen Danbo, Elysian Coffee, 5th Avenue Cinemas, Whole Foods, Shoppers Drug Mart & Greens Organic Grocery etc.\nWALK SCORE 95, BIKE SCORE 93.\nFEATURES & HIGHLIGHTS\n• Abundance of windows making the home feel bright and airy\n• Generous sized balcony\n• Appliances: fridge, hood-fan, dishwasher, stove, laundry on each floor\n• Spacious floorplan with ample storage\n•  LVP flooring throughout units (No Carpets!)\n• Secured parking & storage lockers available\n• Fob access-controlled building entry\n• BUILDING IS COMPLETELY NO SMOKING\n• PETS: up to 2 Cats allowed with pet deposit, SORRY NO DOGS PERMITTED\n***NOTE: IMAGES SHOWN ARE FOR REFERENCE ONLY AND MAY NOT ACCURATELY REPRESENT EACH AVAILABLE UNIT***\nAdditional Information:\n**Additional Information: **\nKeyless entryOutdoor play areaEnsuite bathroomCity viewsBeach nearbyInternet readyPrivate balconyBbqs permittedOutdoor garden, lawn & sitting area\nKeyless entry\nOutdoor play area\nEnsuite bathroom\nCity views\nBeach nearby\nInternet ready\nPrivate balcony\nBbqs permitted\nOutdoor garden, lawn & sitting area",
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 49.2643733,
+        "longitude": -123.1467431
+      },
+      "containedInPlace": {
+        "@type": "City",
+        "url": "",
+        "name": "",
+        "address": {
+          "@type": "PostalAddress",
+          "addressCountry": "CA",
+          "addressRegion": ""
+        }
+      },
+      "containsPlace": [
+        {
+          "@context": "http://schema.org",
+          "@type": "Apartment",
+          "name": "1 Bedroom",
+          "potentialAction": {
+            "@type": "RentAction",
+            "priceSpecification": {
+              "@type": "PriceSpecification",
+              "price": 2395,
+              "priceCurrency": "CAD"
+            }
+          },
+          "floorSize": {
+            "@type": "QuantitativeValue",
+            "unitCode": "FTK",
+            "value": "648.0"
+          }
+        },
+        {
+          "@context": "http://schema.org",
+          "@type": "Apartment",
+          "name": "2 Bedroom",
+          "potentialAction": {
+            "@type": "RentAction",
+            "priceSpecification": {
+              "@type": "PriceSpecification",
+              "price": 3295,
+              "priceCurrency": "CAD"
+            }
+          },
+          "floorSize": {
+            "@type": "QuantitativeValue",
+            "unitCode": "FTK",
+            "value": "848.0"
+          }
+        }
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "CA",
+        "addressLocality": "Vancouver",
+        "addressRegion": "British Columbia",
+        "postalCode": "V6J 5G3",
+        "streetAddress": "1850 West 8th Avenue"
+      },
+      "telephone": "(604) 670-7277",
+      "photo": [
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/532341/apartment-2115755711.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/532341/apartment-2115755711.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/532341/apartment-2115755712.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/532341/apartment-2115755712.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/532341/apartment-2115755713.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/532341/apartment-2115755713.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/532341/apartment-2115755714.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/532341/apartment-2115755714.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/532341/apartment-2115755715.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/532341/apartment-2115755715.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/532341/apartment-2115755716.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/532341/apartment-2115755716.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/532341/apartment-2115755717.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/532341/apartment-2115755717.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/532341/apartment-2115755718.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/532341/apartment-2115755718.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/532341/apartment-2115755719.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/532341/apartment-2115755719.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/532341/apartment-2115755720.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/532341/apartment-2115755720.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/532341/apartment-2115755721.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/532341/apartment-2115755721.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/532341/apartment-2115755722.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/532341/apartment-2115755722.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/532341/apartment-2115755723.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/532341/apartment-2115755723.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/532341/apartment-2115755724.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/532341/apartment-2115755724.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/532341/apartment-2115755725.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/532341/apartment-2115755725.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/532341/apartment-2115755726.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/532341/apartment-2115755726.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/532341/apartment-2115755727.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/532341/apartment-2115755727.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/532341/apartment-2115755728.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/532341/apartment-2115755728.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/532341/apartment-2115755729.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/532341/apartment-2115755729.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/532341/apartment-2115755730.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/532341/apartment-2115755730.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/532341/apartment-2115755731.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/532341/apartment-2115755731.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/532341/apartment-2115755732.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/532341/apartment-2115755732.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/532341/apartment-2241582537.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/532341/apartment-2241582537.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/532341/apartment-2115755733.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/532341/apartment-2115755733.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/532341/apartment-2241582538.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/532341/apartment-2241582538.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/532341/apartment-2115755734.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/532341/apartment-2115755734.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/532341/apartment-2241582539.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/532341/apartment-2241582539.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/532341/apartment-2115755735.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/532341/apartment-2115755735.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/532341/apartment-2241582540.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/532341/apartment-2241582540.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/532341/apartment-2241227982.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/532341/apartment-2241227982.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/532341/apartment-2115755736.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/532341/apartment-2115755736.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/532341/apartment-2241582541.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/532341/apartment-2241582541.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/532341/apartment-2241227983.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/532341/apartment-2241227983.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/532341/apartment-2115755737.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/532341/apartment-2115755737.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/532341/apartment-2241582542.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/532341/apartment-2241582542.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/532341/apartment-2241227984.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/532341/apartment-2241227984.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/532341/apartment-2115755738.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/532341/apartment-2115755738.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/532341/apartment-2241582543.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/532341/apartment-2241582543.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/532341/apartment-2241227985.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/532341/apartment-2241227985.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/532341/apartment-2115755739.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/532341/apartment-2115755739.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/532341/apartment-2241582544.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/532341/apartment-2241582544.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/532341/apartment-2241227986.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/532341/apartment-2241227986.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/532341/apartment-2115755740.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/532341/apartment-2115755740.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/532341/apartment-2241582545.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/532341/apartment-2241582545.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/532341/apartment-2241227987.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/532341/apartment-2241227987.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/532341/apartment-2115755741.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/532341/apartment-2115755741.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/532341/apartment-2241582546.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/532341/apartment-2241582546.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/532341/apartment-2241227988.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/532341/apartment-2241227988.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/532341/apartment-2115755742.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/532341/apartment-2115755742.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/532341/apartment-2241582547.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/532341/apartment-2241582547.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/532341/apartment-2241227989.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/532341/apartment-2241227989.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/532341/apartment-2115755743.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/532341/apartment-2115755743.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/532341/apartment-2241582548.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/532341/apartment-2241582548.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/532341/apartment-2241227990.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/532341/apartment-2241227990.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/532341/apartment-2115755744.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/532341/apartment-2115755744.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/532341/apartment-2241582549.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/532341/apartment-2241582549.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/532341/apartment-2241227991.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/532341/apartment-2241227991.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/532341/apartment-2115755745.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/532341/apartment-2115755745.jpg"
+        }
+      ]
+    }
+  ],
+  "textSample": "Alert\nSave Alert\n\nSimilar listings in\n\nCreate an Alert\nParking Information\nFeatures & Amenities\nUtilities Included\nAbout Cypress Court\n\n**RENTAL PROMOTION 1 MONTH FREE RENT! INQUIRE FOR MORE DETAILS.**\n\nWelcome to Cypress Court, a well maintained 4 storey building in a quiet Kitsilano neighbourhood! This purpose built rental building is owned and professionally managed by Orr Develoment providing tenants the security and peace of mind of long term tenure.\n\nCypress court is located in a highly sought after Kitsilano neighbourhood on 8th Avenue close to Burrard Street providing residents the perfect balance of a quiet place to call home while still being just steps away from an abundance of urban amenities. The building is minutes from the 99 B line bus to Skytrain & UBC and the #4 bus to downtown making getting around a breeze. You would be located just a short bike ride from Kits beach and Kits pool, Granville island, Vanier Park and downtown with easy access to both the Burrard Street and Cypress Street bike paths. You will also have easy access to a wide variety of retail stores & restaurants along West 4th Ave or West Broadway Ave including Pallet Coffee, Carlos O'Bryans Pub, Earls Restaurant @ Fir Street, 49th Parallel, Jam Café, Arc'teryx, Lulu Lemon, Cactus Club, Ramen Danbo, Elysian Coffee, 5th Avenue Cinemas, Whole Foods, Shoppers Drug Mart & Greens Organic Grocery etc.\n\nWALK SCORE 95, BIKE SCORE 93.\n\nFEATURES & HIGHLIGHTS\n\n• Abundance of windows making the home feel bright and airy\n\n• Generous sized balcony\n\n• Appliances: fridge, hood-fan, dishwasher, stove, laundry on each floor\n\n• Spacious floorplan with ample storage\n\n•  LVP flooring throughout units (No Carpets!)\n\n• Secured parking & storage lockers available\n\n• Fob access-controlled building entry\n\n• BUILDING IS COMPLETELY NO SMOKING\n\n• PETS: up to 2 Cats allowed with pet deposit, SORRY NO DOGS PERMITTED\n\n***NOTE: IMAGES SHOWN ARE FOR REFERENCE ONLY AND MAY NOT ACCURATELY REPRESENT EACH AVAILABLE UNIT***\n\n\nAdditional Information:\nKeyless entry\nOutdoor play area\nEnsuite bathroom\nCity views\nBeach nearby\nInternet ready\nPrivate balcony\nBbqs permitted\nOutdoor garden, lawn & sitting area\n\n**RENTAL PROMOTION 1 MONTH FREE RENT! INQUIRE FOR MORE DETAILS.**\n\nWelcome to Cypress Court, a well maintained 4 storey building in a quiet Kitsilano neighbourhood! This purpose built rental building is owned and professionally managed by Orr Develoment providing tenants the security and peace of mind of long term tenure.\n\nCypress court is located in a highly sought after Kitsilano neighbourhood on 8th Avenue close to Burrard Street providing residents the perfect balance of a quiet place to call home while still being just steps away from an abundance of urban amenities. The building is minutes from the 99 B line bus to Skytrain & UBC and the #4 bus to downtown making getting around a breeze. You would be located just a short bike ride from Kits beach and Kits pool, Granville island, Vanier Park and downtown with easy access to both the Burrard Street and Cypress Street bike paths. You will also have easy access to a wide variety of retail stores & restaurants along West 4th Ave or West Broadway Ave including Pallet Coffee, Carlos O'Bryans Pub, Earls Restaurant @ Fir Street, 49th Parallel, Jam Café, Arc'teryx, Lulu Lemon, Cactus Club, Ramen Danbo, Elysian Coffee, 5th Avenue Cinemas, Whole Foods, Shoppers Drug Mart & Greens Organic Grocery etc.\n\nWALK SCORE 95, BIKE SCORE 93.\n\nFEATURES & HIGHLIGHTS\n\n• Abundance of windows making the home feel bright and airy\n\n• Generous sized balcony\n\n• Appliances: fridge, hood-fan, dishwasher, stove, laundry on each floor\n\n• Spacious floorplan with ample storage\n\n•  LVP flooring throughout units (No Carpets!)\n\n• Secured parking & storage lockers available\n\n• Fob access-controlled building entry\n\n• BUILDING IS COMPLETELY NO SMOKING\n\n• PETS: up to 2 Cats allowed with pet deposit, SORRY NO DOGS PERMITTED\n\n***NOTE: IMAGES SHOWN ARE FOR REFERENCE ONLY AND MAY NOT ACCURATELY REPRESENT EACH AVAILABLE UNIT***\n\n\nAdditional Information:\nKeyless entry\nOutdoor play area\nEnsuite bathroom\nCity views\nBeach nearby\nInternet ready\nPrivate balcony\nBbqs permitted\nOutdoor garden, lawn & sitting area\nNeighbourhood Score\nOpen House Dates\nSummary\n\nReport Listing\n\nExplore Similar Rentals\nPopular Rent Searches In Vancouver\nSearch by Amenities\nPet Friendly Apartments In Vancouver\nApartments With A/C In Vancouver\nApartments With Ensuite Laundry In Vancouver\nApartments With Dishwasher In Vancouver\nSearch by Bedrooms\n1 Bedroom Apartments In Vancouver\n2 Bedroom Apartments In Vancouver\n3 Bedroom Apartments In Vancouver\n4 Bedroom Apartments In Vancouver\nSearch by Budget\nApartments Under $1000 In Vancouver\nApartments Under $1250 In Vancouver\nApartments Under $2000 In Vancouver\nApartments Under $2500 In Vancouver\nSee All Rentals in Vancouver\nThis website uses cookies to ensure you get the best experience on our website. By clicking \"Allow All\", you consent to our use of cookies. Privacy Policy ↗\nManage Cookies\nDecline\nAllow All"
+}
