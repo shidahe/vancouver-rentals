@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-09-19T04:49:54.302Z",
+  "refreshedAt": "2026-09-19T11:13:09.912Z",
   "groups": [
     {
       "identityKey": "1533 maple st::url:69f2e13a0fd5",
@@ -67,7 +67,7 @@
         "zumper"
       ],
       "rents": [
-        8000
+        8500
       ],
       "exactUnit": false,
       "matchedListingId": null,
@@ -110,6 +110,18 @@
       "result": "candidate_only"
     },
     {
+      "identityKey": "3260 w 16 ave near blenheim::url:588623515817",
+      "sources": [
+        "craigslist"
+      ],
+      "rents": [
+        5475
+      ],
+      "exactUnit": false,
+      "matchedListingId": null,
+      "result": "candidate_only"
+    },
+    {
       "identityKey": "2111 w 11th ave near arbutus st::url:0ed00aa1e937",
       "sources": [
         "craigslist"
@@ -128,18 +140,6 @@
       ],
       "rents": [
         5000
-      ],
-      "exactUnit": false,
-      "matchedListingId": null,
-      "result": "candidate_only"
-    },
-    {
-      "identityKey": "3260 w 16 ave near blenheim::url:588623515817",
-      "sources": [
-        "craigslist"
-      ],
-      "rents": [
-        5475
       ],
       "exactUnit": false,
       "matchedListingId": null,
@@ -194,15 +194,15 @@
       "result": "candidate_only"
     },
     {
-      "identityKey": "mls:r3137446",
+      "identityKey": "mls:r3160689",
       "sources": [
         "realtylink mls"
       ],
       "rents": [
-        5850
+        4800
       ],
       "exactUnit": true,
-      "matchedListingId": "york-103-2535-r3137446",
+      "matchedListingId": "zumper-16e9ae17cd91",
       "result": "authoritative_mls_reverified"
     },
     {
@@ -218,45 +218,42 @@
       "result": "authoritative_mls_reverified"
     },
     {
-      "identityKey": "mls:r3164628",
+      "identityKey": "mls:r3137446",
       "sources": [
         "realtylink mls"
       ],
       "rents": [
-        5000
+        5850
       ],
-      "exactUnit": false,
-      "matchedListingId": "mls-r3164628",
+      "exactUnit": true,
+      "matchedListingId": "york-103-2535-r3137446",
       "result": "authoritative_mls_reverified"
     },
     {
-      "identityKey": "mls:r3151372",
+      "identityKey": "mls:r3151022",
       "sources": [
         "realtylink mls"
       ],
       "rents": [
-        4800
+        10500
       ],
       "exactUnit": false,
-      "matchedListingId": "mls-r3151372",
+      "matchedListingId": "mls-r3151022",
       "result": "authoritative_mls_reverified"
     }
   ],
   "promoted": [],
   "crossVerified": [
-    "york-103-2535-r3137446",
+    "zumper-16e9ae17cd91",
     "mls-r3150923",
-    "mls-r3164628",
-    "mls-r3151372"
+    "york-103-2535-r3137446",
+    "mls-r3151022"
   ],
   "fingerprintCrossVerified": [],
   "maskedMlsMerged": [],
   "relistedMlsMerged": [],
   "negativeMatches": [],
-  "detailReactivated": [
-    "mls-r3150923",
-    "mls-r3164628"
-  ],
+  "detailReactivated": [],
   "mlsMissing": {},
   "mlsRemoved": [],
   "realtylinkSnapshotCount": 4,
