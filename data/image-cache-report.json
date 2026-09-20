@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-09-20T15:07:04.005Z",
+  "refreshedAt": "2026-09-20T16:20:28.166Z",
   "listings": {
     "york-103-2535-r3137446": {
       "cached": 5,
@@ -99,6 +99,13 @@
       "failures": [],
       "photoPageUrl": "https://realtylink.org/en/townhouse~for-rent~vancouver/263172550"
     },
+    "arbutus-residences-floorplan-2-bedroom-townhouse-den-1340": {
+      "cached": 5,
+      "preserved": 0,
+      "downloaded": 5,
+      "failures": [],
+      "photoPageUrl": "https://www.zumper.com/apartment-buildings/p1117150/arbutus-residences-quilchena-vancouver-bc"
+    },
     "mls-r3161880": {
       "cached": 5,
       "preserved": 5,
@@ -108,10 +115,17 @@
     },
     "mls-r3159060": {
       "cached": 5,
+      "preserved": 5,
+      "downloaded": 0,
+      "failures": [],
+      "photoPageUrl": "https://realtylink.org/en/house~for-rent~vancouver/263180687"
+    },
+    "mls-r3164628": {
+      "cached": 5,
       "preserved": 0,
       "downloaded": 5,
       "failures": [],
-      "photoPageUrl": "https://realtylink.org/en/house~for-rent~vancouver/263180687"
+      "photoPageUrl": "https://realtylink.org/en/house~for-rent~vancouver/263186255"
     },
     "fourth-mac-floorplan-2-bedroom-2-bath-801-4350": {
       "cached": 5,
@@ -122,8 +136,8 @@
     },
     "tennyson-mews-b6": {
       "cached": 5,
-      "preserved": 0,
-      "downloaded": 5,
+      "preserved": 5,
+      "downloaded": 0,
       "failures": [],
       "photoPageUrl": "https://www.craigslist.org/view/d/vancouver-spacious-bedroom-bathroom/xtXNc7msAYRnPakty9VKUc"
     },
@@ -143,20 +157,20 @@
     },
     "mls-r3167417": {
       "cached": 5,
-      "preserved": 0,
-      "downloaded": 5,
+      "preserved": 5,
+      "downloaded": 0,
       "failures": [],
       "photoPageUrl": "https://realtylink.org/en/house~for-rent~vancouver/263189044"
     }
   },
   "totals": {
-    "sourceListings": 21,
-    "cachedListings": 21,
-    "downloaded": 15,
+    "sourceListings": 23,
+    "cachedListings": 23,
+    "downloaded": 10,
     "failed": 0,
-    "preserved": 86,
-    "prunedListings": 5,
-    "prunedIndexImages": 25,
+    "preserved": 101,
+    "prunedListings": 0,
+    "prunedIndexImages": 0,
     "prunedOrphanFiles": 0
   }
 }

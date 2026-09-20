@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-09-20T15:06:15.906Z",
+  "refreshedAt": "2026-09-20T16:19:37.690Z",
   "groups": [
     {
       "identityKey": "1533 maple st::url:69f2e13a0fd5",
@@ -206,30 +206,6 @@
       "result": "candidate_only"
     },
     {
-      "identityKey": "mls:r3150923",
-      "sources": [
-        "realtylink mls"
-      ],
-      "rents": [
-        4680
-      ],
-      "exactUnit": false,
-      "matchedListingId": "mls-r3150923",
-      "result": "authoritative_mls_reverified"
-    },
-    {
-      "identityKey": "mls:r3137446",
-      "sources": [
-        "realtylink mls"
-      ],
-      "rents": [
-        5850
-      ],
-      "exactUnit": true,
-      "matchedListingId": "york-103-2535-r3137446",
-      "result": "authoritative_mls_reverified"
-    },
-    {
       "identityKey": "mls:r3160689",
       "sources": [
         "realtylink mls"
@@ -242,115 +218,37 @@
       "result": "authoritative_mls_reverified"
     },
     {
-      "identityKey": "mls:r3151022",
+      "identityKey": "mls:r3164628",
       "sources": [
         "realtylink mls"
       ],
       "rents": [
-        10500
+        5000
       ],
       "exactUnit": false,
-      "matchedListingId": "mls-r3151022",
+      "matchedListingId": "mls-r3164628",
       "result": "authoritative_mls_reverified"
-    },
-    {
-      "identityKey": "mls:r3161880",
-      "sources": [
-        "realtylink mls"
-      ],
-      "rents": [
-        8800
-      ],
-      "exactUnit": false,
-      "matchedListingId": "mls-r3161880",
-      "result": "authoritative_mls_reverified"
-    },
-    {
-      "identityKey": "mls:r3159060",
-      "sources": [
-        "realtylink mls"
-      ],
-      "rents": [
-        15000
-      ],
-      "exactUnit": false,
-      "matchedListingId": "mls-r3159060",
-      "result": "authoritative_mls_reverified"
-    },
-    {
-      "identityKey": "mls:r3167417",
-      "sources": [
-        "realtylink mls"
-      ],
-      "rents": [
-        6750
-      ],
-      "exactUnit": true,
-      "matchedListingId": null,
-      "result": "auto_published_authoritative_mls"
     }
   ],
-  "promoted": [
-    "mls-r3167417"
-  ],
+  "promoted": [],
   "crossVerified": [
-    "mls-r3150923",
-    "york-103-2535-r3137446",
     "zumper-16e9ae17cd91",
-    "mls-r3151022",
-    "mls-r3161880",
-    "mls-r3159060"
+    "mls-r3164628"
   ],
   "fingerprintCrossVerified": [],
-  "craigslistRelistingsRecovered": [
-    {
-      "listingId": "tennyson-mews-b6",
-      "postId": "7969305882",
-      "sharedPhotoCount": 11
-    }
-  ],
+  "craigslistRelistingsRecovered": [],
   "maskedMlsMerged": [],
   "relistedMlsMerged": [],
   "negativeMatches": [],
   "detailReactivated": [
-    "mls-r3159060"
+    "mls-r3164628"
   ],
-  "mlsMissing": {
-    "R3151372": {
-      "firstMissingAt": "2026-09-20T15:06:15.906Z",
-      "lastMissingAt": "2026-09-20T15:06:15.906Z",
-      "listingId": "mls-r3151372"
-    },
-    "R3158179": {
-      "firstMissingAt": "2026-09-20T15:06:15.906Z",
-      "lastMissingAt": "2026-09-20T15:06:15.906Z",
-      "listingId": "mls-r3158179"
-    },
-    "R3161950": {
-      "firstMissingAt": "2026-09-20T15:06:15.906Z",
-      "lastMissingAt": "2026-09-20T15:06:15.906Z",
-      "listingId": "mls-r3161950"
-    },
-    "R3163709": {
-      "firstMissingAt": "2026-09-20T15:06:15.906Z",
-      "lastMissingAt": "2026-09-20T15:06:15.906Z",
-      "listingId": "mls-r3163709"
-    },
-    "R3164628": {
-      "firstMissingAt": "2026-09-20T15:06:15.906Z",
-      "lastMissingAt": "2026-09-20T15:06:15.906Z",
-      "listingId": "mls-r3164628"
-    },
-    "R3149612": {
-      "firstMissingAt": "2026-09-20T15:06:15.906Z",
-      "lastMissingAt": "2026-09-20T15:06:15.906Z",
-      "listingId": "mls-r3149612"
-    }
-  },
+  "mlsMissing": {},
   "mlsRemoved": [],
-  "realtylinkSnapshotCount": 7,
+  "realtylinkSnapshotCount": 2,
   "realtylinkSnapshotHighWaterMark": 7,
   "realtylinkSnapshotScope": "rent-3500-beds-2-4-whole-home-westside-v2",
-  "realtylinkRemovalEligible": true,
+  "realtylinkRemovalEligible": false,
+  "mlsRemovalSuppressed": "Partial Realtylink snapshot (2 candidates versus previous complete 7); disappearance signals ignored.",
   "mlsDuplicatesMerged": []
 }
