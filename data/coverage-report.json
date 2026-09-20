@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-20T05:07:11.414Z",
+  "generatedAt": "2026-09-20T11:38:54.822Z",
   "coverageReady": true,
   "healthyLaneCount": 3,
   "freshLaneCount": 8,
@@ -9,21 +9,21 @@
     {
       "building": "kits-walk",
       "healthy": true,
-      "checkedAt": "2026-09-20T04:57:48.016Z",
+      "checkedAt": "2026-09-20T11:29:41.191Z",
       "evidenceUrl": "https://www.kitswalkleasing.com/floorplans",
       "sourceOptions": 2
     },
     {
       "building": "larchway-gardens",
       "healthy": true,
-      "checkedAt": "2026-09-20T04:57:48.016Z",
+      "checkedAt": "2026-09-20T11:29:41.191Z",
       "evidenceUrl": "https://quadrealresidential.com/vancouver/larchway-gardens/floorplans/",
       "sourceOptions": 1
     },
     {
       "building": "viridian",
       "healthy": true,
-      "checkedAt": "2026-09-20T04:57:48.016Z",
+      "checkedAt": "2026-09-20T11:29:41.191Z",
       "evidenceUrl": "https://www.zumper.com/apartment-buildings/p510456/viridian-fairview-vancouver-bc",
       "sourceOptions": 2
     }
@@ -36,7 +36,7 @@
       "healthy": true,
       "status": "healthy",
       "detail": "12 fresh live candidates",
-      "refreshedAt": "2026-09-20T05:01:50.769Z"
+      "refreshedAt": "2026-09-20T11:33:40.614Z"
     },
     {
       "id": "craigslist",
@@ -44,7 +44,7 @@
       "healthy": true,
       "status": "healthy",
       "detail": "4/4 regional searches reachable; 28 qualifying candidates parsed",
-      "refreshedAt": "2026-09-20T05:04:56.031Z"
+      "refreshedAt": "2026-09-20T11:36:38.100Z"
     },
     {
       "id": "rentalsca",
@@ -52,7 +52,7 @@
       "healthy": false,
       "status": "degraded",
       "detail": "5/9 regional searches reachable; 0 qualifying candidates parsed; 3 scoped search-only leads retained (2 new, 1 already active, 0 need revalidation); 3 detail pages blocked after 26 discovered URLs; 23 further detail checks suppressed after repeated 403/429",
-      "refreshedAt": "2026-09-20T05:04:39.680Z"
+      "refreshedAt": "2026-09-20T11:36:21.453Z"
     },
     {
       "id": "livrent",
@@ -60,7 +60,7 @@
       "healthy": false,
       "status": "unhealthy",
       "detail": "0/5 searches healthy; 3 blocked searches opened circuit; 2 further checks suppressed",
-      "refreshedAt": "2026-09-20T05:04:55.361Z"
+      "refreshedAt": "2026-09-20T11:36:37.189Z"
     },
     {
       "id": "realtylink",
@@ -69,8 +69,8 @@
       "positiveDiscoveryHealthy": true,
       "status": "degraded",
       "partial": true,
-      "detail": "3/3 searches reachable; 3 current live candidates parsed from a partial snapshot versus complete baseline 3; positive discovery usable, removals suppressed",
-      "refreshedAt": "2026-09-20T05:05:16.118Z"
+      "detail": "3/3 searches reachable; 4 current live candidates parsed from a partial snapshot versus complete baseline 4; positive discovery usable, removals suppressed",
+      "refreshedAt": "2026-09-20T11:36:59.645Z"
     },
     {
       "id": "priority-kits-walk",
@@ -78,7 +78,7 @@
       "healthy": true,
       "status": "healthy",
       "detail": "1/2 official sources usable",
-      "refreshedAt": "2026-09-20T05:06:21.872Z"
+      "refreshedAt": "2026-09-20T11:38:10.140Z"
     },
     {
       "id": "priority-larchway-gardens",
@@ -86,7 +86,7 @@
       "healthy": true,
       "status": "healthy",
       "detail": "2/2 official sources usable",
-      "refreshedAt": "2026-09-20T05:06:21.872Z"
+      "refreshedAt": "2026-09-20T11:38:10.140Z"
     },
     {
       "id": "priority-viridian",
@@ -94,7 +94,7 @@
       "healthy": true,
       "status": "healthy",
       "detail": "1/2 official sources usable",
-      "refreshedAt": "2026-09-20T05:06:21.872Z"
+      "refreshedAt": "2026-09-20T11:38:10.140Z"
     }
   ],
   "warnings": [
@@ -114,7 +114,7 @@
       "severity": "warning",
       "lane": "realtylink",
       "status": "degraded",
-      "detail": "3/3 searches reachable; 3 current live candidates parsed from a partial snapshot versus complete baseline 3; positive discovery usable, removals suppressed"
+      "detail": "3/3 searches reachable; 4 current live candidates parsed from a partial snapshot versus complete baseline 4; positive discovery usable, removals suppressed"
     }
   ],
   "blockers": [],
