@@ -7,6 +7,7 @@ import { verifiedPhotoCandidates } from './listing-photo-candidates.mjs';
 import { parseRealtylinkAirConditioning, parseRealtylinkFloorArea, parseRealtylinkRoomCount } from './realtylink-parser.mjs';
 import { LISTING_SCOPE_VERSION, listingScopeEligible } from './discovery-policy.mjs';
 import { realtylinkSnapshotBaseline, realtylinkSnapshotComplete } from './coverage-policy.mjs';
+import { craigslistSeedRelistingMatch } from './craigslist-seed-relisting.mjs';
 
 const DATA=path.join(process.cwd(),'data');
 const iso=new Date().toISOString(),today=iso.slice(0,10);
@@ -51,6 +52,7 @@ function attachCandidateImages(imageSources,listing,candidate){
 
 const lp=path.join(DATA,'listings.json'),hp=path.join(DATA,'history.json'),ip=path.join(DATA,'image-sources.json');
 const payload=await read(lp,{meta:{},listings:[]}),history=await read(hp,{}),imageSources=await read(ip,{});
+const liveSources=await read(path.join(DATA,'live-sources.json'),{seedCandidates:[]});
 const previousReconciliation=await read(path.join(DATA,'reconciliation-state.json'),{mlsMissing:{}});
 const zumper=await read(path.join(DATA,'candidates.json'),[]);
 const rentals=await read(path.join(DATA,'rentalsca-candidates.json'),{inventories:[]});
@@ -68,7 +70,26 @@ const groups=new Map();
 for(const c of all){if(!usable(c))continue;const k=candidateKey(c);if(!groups.has(k))groups.set(k,[]);groups.get(k).push(c);}
 const listingByKey=new Map();
 for(const x of payload.listings){const canonicalMls=listingMls(x);if(canonicalMls)x.mls=canonicalMls;const k=key(x.address,listingUnit(x),x.url,null,canonicalMls);if(!listingByKey.has(k)||listingByKey.get(k).source==='Zumper live detail')listingByKey.set(k,x);}
-const state={refreshedAt:iso,groups:[],promoted:[],crossVerified:[],fingerprintCrossVerified:[],maskedMlsMerged:[],relistedMlsMerged:[],negativeMatches:[],detailReactivated:[],mlsMissing:{},mlsRemoved:[]};
+const state={refreshedAt:iso,groups:[],promoted:[],crossVerified:[],fingerprintCrossVerified:[],craigslistRelistingsRecovered:[],maskedMlsMerged:[],relistedMlsMerged:[],negativeMatches:[],detailReactivated:[],mlsMissing:{},mlsRemoved:[]};
+
+// Craigslist post IDs and URLs are disposable. Recover a previously verified exact-unit
+// seed only when a fresh detail page repeats the exact civic address and full rental
+// fingerprint and also reuses at least three prior photo assets. Address alone is never
+// enough, so another suite in the same building cannot inherit the old unit identity.
+for(const candidate of craigslist.candidates||[]){
+  const match=craigslistSeedRelistingMatch(candidate,liveSources.seedCandidates||[],payload.listings,imageSources);
+  if(!match)continue;
+  const {listing,seed,sharedPhotoKeys}=match;
+  listing.url=candidate.url;listing.photoPageUrl=candidate.url;listing.rent=Number(candidate.rent);
+  listing.bedrooms=Number(candidate.bedrooms);listing.bathrooms=baths(candidate);listing.sqft=sqft(candidate);
+  listing.type=candidate.type||listing.type;listing.ac=candidate.ac??listing.ac;listing.availabilityStatus='active';
+  listing.status='corrected';listing.removedAt=null;listing.lastChecked=today;listing.verifiedAt=iso;listing.verificationLevel='verified';
+  listing.verificationMethod=`Recovered from current Craigslist repost ${candidate.postId}: exact civic address, rent/bed/bath/sqft fingerprint and ${sharedPhotoKeys.length} prior photo assets matched ${seed.unit}.`;
+  listing.dataNotes='Current repost was rebound to the previously verified exact unit only after conservative address, fact and photo-fingerprint agreement.';
+  attachCandidateImages(imageSources,listing,candidate);
+  (history[listing.id]||=[]).push({date:today,rent:listing.rent,note:`RELISTED: current Craigslist post ${candidate.postId} restored ${seed.unit} after exact address, rental facts and ${sharedPhotoKeys.length} photo assets matched.`});
+  state.craigslistRelistingsRecovered.push({listingId:listing.id,postId:candidate.postId,sharedPhotoCount:sharedPhotoKeys.length});
+}
 
 // A volatile search result page is weaker than a fresh exact MLS detail page.
 // Require identity, explicit current availability and a current rent before the

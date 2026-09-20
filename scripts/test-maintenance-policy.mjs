@@ -14,6 +14,7 @@ import { activeListingContradictedByFreshEvidence } from './evidence-consistency
 import { dedupeMlsRecords } from './mls-dedupe.mjs';
 import { craigslistAddressPrecision, craigslistDetailEvidence, craigslistPostId, craigslistStructuredFacts, dedupeCraigslistRelistings, extractCraigslistDetailUrls, normalizeCraigslistDetailUrl, parseCraigslistSearchCard } from './craigslist-parser.mjs';
 import { classifyRentalsCaSearchLead, parseRentalsCaSearchLeads } from './rentalsca-search-parser.mjs';
+import { craigslistSeedRelistingMatch } from './craigslist-seed-relisting.mjs';
 
 const read = p => fs.readFile(p, 'utf8');
 const activeAdapters = [
@@ -264,6 +265,24 @@ if (findExistingSeedListing([{ id: 'other-yorkville-floorplan', address: yorkvil
 }
 if (findExistingSeedListing([{ id: 'other-1855-floorplan', address: tennysonMewsB6?.address, unit: null }], tennysonMewsB6) !== null) {
   failures.push('Tennyson Mews B6 can be incorrectly merged into an address-level placeholder.');
+}
+const priorTennysonPhotos={
+  'tennyson-mews-b6':{candidates:[
+    'https://images.craigslist.org/00707_8WR1nrwBo3R_0oM0gw_600x450.jpg',
+    'https://images.craigslist.org/00l0l_eDeKjGIkm21_0CI0pO_600x450.jpg',
+    'https://images.craigslist.org/00303_e7StHmr0248_0oM0gw_600x450.jpg'
+  ]}
+};
+const tennysonRepost={source:'Craigslist',postId:'7969305882',active:true,detailVerified:true,addressPrecision:'exact_civic',address:'1855 W 10th Ave near Cypress Street',rent:3600,bedrooms:2,bathrooms:2,sqft:1200,images:[
+  'https://images.craigslist.org/00707_8WR1nrwBo3R_0oM0gw_50x50c.jpg',
+  'https://images.craigslist.org/00l0l_eDeKjGIkm21_0CI0pO_50x50c.jpg',
+  'https://images.craigslist.org/00303_e7StHmr0248_0oM0gw_50x50c.jpg'
+]};
+const removedTennyson=[{id:'tennyson-mews-b6',availabilityStatus:'removed',rent:3600,bedrooms:2,bathrooms:2,sqft:1200}];
+if(craigslistSeedRelistingMatch(tennysonRepost,[tennysonMewsB6],removedTennyson,priorTennysonPhotos)?.sharedPhotoKeys.length!==3||
+   craigslistSeedRelistingMatch({...tennysonRepost,address:'1855 W 10th Ave',images:tennysonRepost.images.slice(0,2)},[tennysonMewsB6],removedTennyson,priorTennysonPhotos)!==null||
+   craigslistSeedRelistingMatch({...tennysonRepost,address:'1885 W 10th Ave'},[tennysonMewsB6],removedTennyson,priorTennysonPhotos)!==null){
+  failures.push('Craigslist exact-unit repost recovery can lose its address, full-fingerprint, or three-photo identity gate.');
 }
 const kitsWalk605 = catalog.seedCandidates?.find(x => x.id === 'rew-kits-walk-605');
 if (!kitsWalk605 || kitsWalk605.unit !== '605' || kitsWalk605.address !== '2075 W 12th Ave, Vancouver, BC' || kitsWalk605.expectedBeds !== 2 || !kitsWalk605.autoPublish || !/\/605-2075-w-12th-avenue-vancouver-bc$/.test(kitsWalk605.url)) {
