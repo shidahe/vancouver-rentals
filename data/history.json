@@ -1886,6 +1886,11 @@
       "date": "2026-09-18",
       "rent": 15000,
       "note": "CORRECTED: restored after exact current MLS detail matched identity, explicit availability and rent."
+    },
+    {
+      "date": "2026-09-20",
+      "rent": 15000,
+      "note": "CORRECTED: restored after exact current MLS detail matched identity, explicit availability and rent."
     }
   ],
   "mls-r3149267": [
@@ -2071,6 +2076,11 @@
       "date": "2026-09-17",
       "rent": 3600,
       "note": "AUTO-REMOVED after direct live verification found explicit unavailable evidence."
+    },
+    {
+      "date": "2026-09-20",
+      "rent": 3600,
+      "note": "RELISTED: current Craigslist post 7969305882 restored B6 after exact address, rental facts and 11 photo assets matched."
     }
   ],
   "yorkville-north-2br-den-979": [
@@ -2126,6 +2136,13 @@
       "date": "2026-09-20",
       "rent": 3995,
       "note": "CORRECTED: restored after exact current MLS detail matched identity, explicit availability and rent."
+    }
+  ],
+  "mls-r3167417": [
+    {
+      "date": "2026-09-20",
+      "rent": 6750,
+      "note": "NEW: live Realtylink MLS R3167417 auto-published."
     }
   ]
 }

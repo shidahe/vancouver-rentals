@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-09-20T11:38:54.778Z",
-  "activeCount": 23,
+  "generatedAt": "2026-09-20T15:07:05.841Z",
+  "activeCount": 21,
   "decisionReady": true,
   "readinessStatus": "finalized",
   "highIssueCount": 0,
   "mediumIssueCount": 0,
-  "infoIssueCount": 39,
+  "infoIssueCount": 36,
   "issues": [
     {
       "severity": "info",
@@ -84,11 +84,6 @@
     },
     {
       "severity": "info",
-      "id": "arbutus-residences-floorplan-2-bedroom-townhouse-den-1340",
-      "issue": "unknown-orientation"
-    },
-    {
-      "severity": "info",
       "id": "zumper-1441677a9e59",
       "issue": "unknown-ac"
     },
@@ -149,32 +144,27 @@
     },
     {
       "severity": "info",
-      "id": "mls-r3161950",
+      "id": "mls-r3159060",
       "issue": "unknown-ac"
     },
     {
       "severity": "info",
-      "id": "mls-r3161950",
-      "issue": "unknown-orientation"
-    },
-    {
-      "severity": "info",
-      "id": "mls-r3163709",
-      "issue": "unknown-orientation"
-    },
-    {
-      "severity": "info",
-      "id": "mls-r3164628",
-      "issue": "unknown-ac"
-    },
-    {
-      "severity": "info",
-      "id": "mls-r3164628",
+      "id": "mls-r3159060",
       "issue": "unknown-orientation"
     },
     {
       "severity": "info",
       "id": "fourth-mac-floorplan-2-bedroom-2-bath-801-4350",
+      "issue": "unknown-orientation"
+    },
+    {
+      "severity": "info",
+      "id": "tennyson-mews-b6",
+      "issue": "unknown-ac"
+    },
+    {
+      "severity": "info",
+      "id": "tennyson-mews-b6",
       "issue": "unknown-orientation"
     },
     {
@@ -194,20 +184,15 @@
     },
     {
       "severity": "info",
-      "id": "mls-r3149612",
-      "issue": "unknown-ac"
-    },
-    {
-      "severity": "info",
-      "id": "mls-r3149612",
+      "id": "mls-r3167417",
       "issue": "unknown-orientation"
     }
   ],
   "readinessChecks": {
     "smokeOk": true,
     "smokeFresh": true,
-    "smokeCheckedAt": "2026-09-20T11:39:00.538Z",
-    "latestDataAt": "2026-09-20T11:38:10.140Z",
+    "smokeCheckedAt": "2026-09-20T15:07:11.481Z",
+    "latestDataAt": "2026-09-20T15:06:19.988Z",
     "coverageReady": true,
     "healthyDiscoveryLanes": 3,
     "coverageWarnings": [
@@ -222,15 +207,9 @@
         "lane": "livrent",
         "status": "unhealthy",
         "detail": "0/5 searches healthy; 3 blocked searches opened circuit; 2 further checks suppressed"
-      },
-      {
-        "severity": "warning",
-        "lane": "realtylink",
-        "status": "degraded",
-        "detail": "3/3 searches reachable; 4 current live candidates parsed from a partial snapshot versus complete baseline 4; positive discovery usable, removals suppressed"
       }
     ]
   },
   "readinessIssues": [],
-  "finalizedAt": "2026-09-20T11:39:00.641Z"
+  "finalizedAt": "2026-09-20T15:07:11.577Z"
 }
