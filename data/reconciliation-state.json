@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-09-20T16:19:37.690Z",
+  "refreshedAt": "2026-09-20T21:00:58.269Z",
   "groups": [
     {
       "identityKey": "1533 maple st::url:69f2e13a0fd5",
@@ -95,18 +95,6 @@
       ],
       "exactUnit": true,
       "matchedListingId": "zumper-e3fb92a991a6",
-      "result": "candidate_only"
-    },
-    {
-      "identityKey": "1855 w 10th ave near cypress st::url:67b09e473e61",
-      "sources": [
-        "craigslist"
-      ],
-      "rents": [
-        3600
-      ],
-      "exactUnit": false,
-      "matchedListingId": null,
       "result": "candidate_only"
     },
     {
@@ -206,6 +194,30 @@
       "result": "candidate_only"
     },
     {
+      "identityKey": "mls:r3137446",
+      "sources": [
+        "realtylink mls"
+      ],
+      "rents": [
+        5850
+      ],
+      "exactUnit": true,
+      "matchedListingId": "york-103-2535-r3137446",
+      "result": "authoritative_mls_reverified"
+    },
+    {
+      "identityKey": "mls:r3150923",
+      "sources": [
+        "realtylink mls"
+      ],
+      "rents": [
+        4680
+      ],
+      "exactUnit": false,
+      "matchedListingId": "mls-r3150923",
+      "result": "authoritative_mls_reverified"
+    },
+    {
       "identityKey": "mls:r3160689",
       "sources": [
         "realtylink mls"
@@ -216,39 +228,26 @@
       "exactUnit": true,
       "matchedListingId": "zumper-16e9ae17cd91",
       "result": "authoritative_mls_reverified"
-    },
-    {
-      "identityKey": "mls:r3164628",
-      "sources": [
-        "realtylink mls"
-      ],
-      "rents": [
-        5000
-      ],
-      "exactUnit": false,
-      "matchedListingId": "mls-r3164628",
-      "result": "authoritative_mls_reverified"
     }
   ],
   "promoted": [],
   "crossVerified": [
-    "zumper-16e9ae17cd91",
-    "mls-r3164628"
+    "york-103-2535-r3137446",
+    "mls-r3150923",
+    "zumper-16e9ae17cd91"
   ],
   "fingerprintCrossVerified": [],
   "craigslistRelistingsRecovered": [],
   "maskedMlsMerged": [],
   "relistedMlsMerged": [],
   "negativeMatches": [],
-  "detailReactivated": [
-    "mls-r3164628"
-  ],
+  "detailReactivated": [],
   "mlsMissing": {},
   "mlsRemoved": [],
-  "realtylinkSnapshotCount": 2,
+  "realtylinkSnapshotCount": 3,
   "realtylinkSnapshotHighWaterMark": 7,
   "realtylinkSnapshotScope": "rent-3500-beds-2-4-whole-home-westside-v2",
   "realtylinkRemovalEligible": false,
-  "mlsRemovalSuppressed": "Partial Realtylink snapshot (2 candidates versus previous complete 7); disappearance signals ignored.",
+  "mlsRemovalSuppressed": "Partial Realtylink snapshot (3 candidates versus previous complete 7); disappearance signals ignored.",
   "mlsDuplicatesMerged": []
 }
