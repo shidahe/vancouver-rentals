@@ -273,16 +273,34 @@ const priorTennysonPhotos={
     'https://images.craigslist.org/00303_e7StHmr0248_0oM0gw_600x450.jpg'
   ]}
 };
-const tennysonRepost={source:'Craigslist',postId:'7969305882',active:true,detailVerified:true,addressPrecision:'exact_civic',address:'1855 W 10th Ave near Cypress Street',rent:3600,bedrooms:2,bathrooms:2,sqft:1200,images:[
+const tennysonRepost={source:'Craigslist',postId:'7969305882',url:'https://www.craigslist.org/view/d/vancouver-spacious-bedroom-bathroom/xtXNc7msAYRnPakty9VKUc',active:true,detailVerified:true,addressPrecision:'exact_civic',address:'1855 W 10th Ave near Cypress Street',rent:3600,bedrooms:2,bathrooms:2,sqft:1200,images:[
   'https://images.craigslist.org/00707_8WR1nrwBo3R_0oM0gw_50x50c.jpg',
   'https://images.craigslist.org/00l0l_eDeKjGIkm21_0CI0pO_50x50c.jpg',
   'https://images.craigslist.org/00303_e7StHmr0248_0oM0gw_50x50c.jpg'
 ]};
-const removedTennyson=[{id:'tennyson-mews-b6',availabilityStatus:'removed',rent:3600,bedrooms:2,bathrooms:2,sqft:1200}];
+const removedTennyson=[{id:'tennyson-mews-b6',url:tennysonMewsB6?.url,availabilityStatus:'removed',rent:3600,bedrooms:2,bathrooms:2,sqft:1200}];
 if(craigslistSeedRelistingMatch(tennysonRepost,[tennysonMewsB6],removedTennyson,priorTennysonPhotos)?.sharedPhotoKeys.length!==3||
    craigslistSeedRelistingMatch({...tennysonRepost,address:'1855 W 10th Ave',images:tennysonRepost.images.slice(0,2)},[tennysonMewsB6],removedTennyson,priorTennysonPhotos)!==null||
    craigslistSeedRelistingMatch({...tennysonRepost,address:'1885 W 10th Ave'},[tennysonMewsB6],removedTennyson,priorTennysonPhotos)!==null){
   failures.push('Craigslist exact-unit repost recovery can lose its address, full-fingerprint, or three-photo identity gate.');
+}
+const coachSeed=catalog.seedCandidates?.find(x=>x.id==='craigslist-w16-coach-house-850');
+const coachPhotos={'w16-coach-house-850':{candidates:[
+  'https://images.craigslist.org/00N0N_78ZMrBVFcbB_0CI0pO_600x450.jpg',
+  'https://images.craigslist.org/00808_ftEZ1Yjx8xr_0jm0t2_600x450.jpg',
+  'https://images.craigslist.org/00l0l_2hh5fzNMpOU_0CI0pO_600x450.jpg'
+]}};
+const coachRepost={source:'Craigslist',postId:'7970140593',url:'https://www.craigslist.org/view/d/vancouver-fully-furnished-designer-2br/8C2uz8FfDLU65ZGsYdTpji',active:true,detailVerified:true,addressPrecision:'exact_civic',address:'3260 W 16 Ave near Blenheim',rent:4975,bedrooms:2,bathrooms:1.5,sqft:850,images:[
+  'https://images.craigslist.org/00N0N_78ZMrBVFcbB_0CI0pO_50x50c.jpg',
+  'https://images.craigslist.org/00808_ftEZ1Yjx8xr_0jm0t2_50x50c.jpg',
+  'https://images.craigslist.org/00l0l_2hh5fzNMpOU_0CI0pO_50x50c.jpg'
+]};
+const activeCoach=[{id:'w16-coach-house-850',url:coachSeed?.url,availabilityStatus:'active',rent:5475,bedrooms:2,bathrooms:1.5,sqft:850}];
+const coachMatch=craigslistSeedRelistingMatch(coachRepost,[coachSeed],activeCoach,coachPhotos);
+if(coachMatch?.priorRent!==5475||coachMatch?.sharedPhotoKeys.length!==3||
+   craigslistSeedRelistingMatch({...coachRepost,rent:3000},[coachSeed],activeCoach,coachPhotos)!==null||
+   craigslistSeedRelistingMatch({...coachRepost,rent:9000},[coachSeed],activeCoach,coachPhotos)!==null){
+  failures.push('A current exact Craigslist repost cannot safely update an active seed price, or its price-range/change guard was weakened.');
 }
 const kitsWalk605 = catalog.seedCandidates?.find(x => x.id === 'rew-kits-walk-605');
 if (!kitsWalk605 || kitsWalk605.unit !== '605' || kitsWalk605.address !== '2075 W 12th Ave, Vancouver, BC' || kitsWalk605.expectedBeds !== 2 || !kitsWalk605.autoPublish || !/\/605-2075-w-12th-avenue-vancouver-bc$/.test(kitsWalk605.url)) {

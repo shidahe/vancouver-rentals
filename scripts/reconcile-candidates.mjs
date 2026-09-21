@@ -79,16 +79,18 @@ const state={refreshedAt:iso,groups:[],promoted:[],crossVerified:[],fingerprintC
 for(const candidate of craigslist.candidates||[]){
   const match=craigslistSeedRelistingMatch(candidate,liveSources.seedCandidates||[],payload.listings,imageSources);
   if(!match)continue;
-  const {listing,seed,sharedPhotoKeys}=match;
+  const {listing,seed,sharedPhotoKeys,priorRent}=match;
+  const wasActive=listing.availabilityStatus==='active',newRent=Number(candidate.rent);
   listing.url=candidate.url;listing.photoPageUrl=candidate.url;listing.rent=Number(candidate.rent);
   listing.bedrooms=Number(candidate.bedrooms);listing.bathrooms=baths(candidate);listing.sqft=sqft(candidate);
   listing.type=candidate.type||listing.type;listing.ac=candidate.ac??listing.ac;listing.availabilityStatus='active';
-  listing.status='corrected';listing.removedAt=null;listing.lastChecked=today;listing.verifiedAt=iso;listing.verificationLevel='verified';
-  listing.verificationMethod=`Recovered from current Craigslist repost ${candidate.postId}: exact civic address, rent/bed/bath/sqft fingerprint and ${sharedPhotoKeys.length} prior photo assets matched ${seed.unit}.`;
+  listing.status=newRent<priorRent?'price_drop':'corrected';listing.priceDrop=newRent<priorRent;listing.removedAt=null;listing.lastChecked=today;listing.verifiedAt=iso;listing.verificationLevel='verified';
+  listing.verificationMethod=`Reconciled to current Craigslist repost ${candidate.postId}: exact civic address, bed/bath/sqft fingerprint and ${sharedPhotoKeys.length} prior photo assets matched ${seed.unit}.`;
   listing.dataNotes='Current repost was rebound to the previously verified exact unit only after conservative address, fact and photo-fingerprint agreement.';
   attachCandidateImages(imageSources,listing,candidate);
-  (history[listing.id]||=[]).push({date:today,rent:listing.rent,note:`RELISTED: current Craigslist post ${candidate.postId} restored ${seed.unit} after exact address, rental facts and ${sharedPhotoKeys.length} photo assets matched.`});
-  state.craigslistRelistingsRecovered.push({listingId:listing.id,postId:candidate.postId,sharedPhotoCount:sharedPhotoKeys.length});
+  const action=wasActive&&newRent!==priorRent?`PRICE UPDATE: $${priorRent} → $${newRent}`:'RELISTED';
+  (history[listing.id]||=[]).push({date:today,rent:listing.rent,note:`${action}: current Craigslist post ${candidate.postId} matched ${seed.unit} by exact address, rental facts and ${sharedPhotoKeys.length} photo assets.`});
+  state.craigslistRelistingsRecovered.push({listingId:listing.id,postId:candidate.postId,sharedPhotoCount:sharedPhotoKeys.length,priorRent,newRent});
 }
 
 // A volatile search result page is weaker than a fresh exact MLS detail page.
