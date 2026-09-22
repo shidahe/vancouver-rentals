@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-09-22T15:34:52.015Z",
+  "refreshedAt": "2026-09-22T15:48:16.901Z",
   "groups": [
     {
       "identityKey": "1533 maple st::url:69f2e13a0fd5",
@@ -218,15 +218,39 @@
       "result": "candidate_only"
     },
     {
-      "identityKey": "mls:r3150923",
+      "identityKey": "mls:r3137446",
       "sources": [
         "realtylink mls"
       ],
       "rents": [
-        4680
+        5850
+      ],
+      "exactUnit": true,
+      "matchedListingId": "york-103-2535-r3137446",
+      "result": "authoritative_mls_reverified"
+    },
+    {
+      "identityKey": "mls:r3160689",
+      "sources": [
+        "realtylink mls"
+      ],
+      "rents": [
+        4800
+      ],
+      "exactUnit": true,
+      "matchedListingId": "zumper-16e9ae17cd91",
+      "result": "authoritative_mls_reverified"
+    },
+    {
+      "identityKey": "mls:r3151022",
+      "sources": [
+        "realtylink mls"
+      ],
+      "rents": [
+        10500
       ],
       "exactUnit": false,
-      "matchedListingId": "mls-r3150923",
+      "matchedListingId": "mls-r3151022",
       "result": "authoritative_mls_reverified"
     },
     {
@@ -244,7 +268,9 @@
   ],
   "promoted": [],
   "crossVerified": [
-    "mls-r3150923",
+    "york-103-2535-r3137446",
+    "zumper-16e9ae17cd91",
+    "mls-r3151022",
     "mls-r3148298"
   ],
   "fingerprintCrossVerified": [],
@@ -253,13 +279,15 @@
   "maskedMlsMerged": [],
   "relistedMlsMerged": [],
   "negativeMatches": [],
-  "detailReactivated": [],
+  "detailReactivated": [
+    "mls-r3151022"
+  ],
   "mlsMissing": {},
   "mlsRemoved": [],
-  "realtylinkSnapshotCount": 2,
+  "realtylinkSnapshotCount": 4,
   "realtylinkSnapshotHighWaterMark": 7,
   "realtylinkSnapshotScope": "rent-3500-beds-2-4-whole-home-westside-v2",
   "realtylinkRemovalEligible": false,
-  "mlsRemovalSuppressed": "Partial Realtylink snapshot (2 candidates versus previous complete 7); disappearance signals ignored.",
+  "mlsRemovalSuppressed": "Partial Realtylink snapshot (4 candidates versus previous complete 7); disappearance signals ignored.",
   "mlsDuplicatesMerged": []
 }

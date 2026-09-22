@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-09-22T15:37:21.912Z",
-  "activeCount": 21,
-  "decisionReady": false,
+  "generatedAt": "2026-09-22T15:49:09.081Z",
+  "activeCount": 23,
+  "decisionReady": true,
   "readinessStatus": "finalized",
   "highIssueCount": 0,
   "mediumIssueCount": 0,
-  "infoIssueCount": 37,
+  "infoIssueCount": 39,
   "issues": [
     {
       "severity": "info",
@@ -84,6 +84,11 @@
     },
     {
       "severity": "info",
+      "id": "arbutus-residences-floorplan-2-bedroom-townhouse-den-1340",
+      "issue": "unknown-orientation"
+    },
+    {
+      "severity": "info",
       "id": "zumper-1441677a9e59",
       "issue": "unknown-ac"
     },
@@ -120,6 +125,11 @@
     {
       "severity": "info",
       "id": "zumper-16e9ae17cd91",
+      "issue": "unknown-orientation"
+    },
+    {
+      "severity": "info",
+      "id": "mls-r3151022",
       "issue": "unknown-orientation"
     },
     {
@@ -196,9 +206,9 @@
   "readinessChecks": {
     "smokeOk": true,
     "smokeFresh": true,
-    "smokeCheckedAt": "2026-09-22T15:37:27.628Z",
-    "latestDataAt": "2026-09-22T15:34:56.079Z",
-    "coverageReady": false,
+    "smokeCheckedAt": "2026-09-22T15:49:14.308Z",
+    "latestDataAt": "2026-09-22T15:48:23.827Z",
+    "coverageReady": true,
     "healthyDiscoveryLanes": 3,
     "coverageWarnings": [
       {
@@ -217,13 +227,7 @@
         "severity": "warning",
         "lane": "realtylink",
         "status": "degraded",
-        "detail": "3/3 searches reachable; 2 current live candidates parsed from a partial snapshot versus complete baseline 2; positive discovery usable, removals suppressed"
-      },
-      {
-        "severity": "warning",
-        "lane": "priority-kits-walk",
-        "status": "unhealthy",
-        "detail": "0/2 official sources usable"
+        "detail": "3/3 searches reachable; 4 current live candidates parsed from a partial snapshot versus complete baseline 4; positive discovery usable, removals suppressed"
       },
       {
         "severity": "warning",
@@ -239,19 +243,6 @@
       }
     ]
   },
-  "readinessIssues": [
-    {
-      "severity": "high",
-      "issue": "discovery-coverage-not-ready",
-      "detail": [
-        {
-          "severity": "high",
-          "issue": "priority-building-official-monitor-unhealthy",
-          "lane": "priority-kits-walk",
-          "detail": "0/2 official sources usable"
-        }
-      ]
-    }
-  ],
-  "finalizedAt": "2026-09-22T15:37:27.732Z"
+  "readinessIssues": [],
+  "finalizedAt": "2026-09-22T15:49:14.379Z"
 }

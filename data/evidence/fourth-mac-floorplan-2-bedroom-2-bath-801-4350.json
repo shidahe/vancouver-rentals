@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-09-22T15:26:07.105Z",
+  "checkedAt": "2026-09-22T15:39:51.691Z",
   "listingId": "fourth-mac-floorplan-2-bedroom-2-bath-801-4350",
   "sourceUrl": "https://www.craigslist.org/view/d/vancouver-bed-bath-fourth-mac-kitsilano/eiSLCKTVqsrtPUWpUpJyDN",
   "ok": true,
@@ -235,59 +235,59 @@
   ],
   "jsonLd": [
     {
-      "@type": "BreadcrumbList",
-      "@context": "https://schema.org",
       "itemListElement": [
         {
-          "name": "craigslist: vancouver, BC",
-          "item": "https://www.craigslist.org/area/vancouver",
           "@type": "ListItem",
+          "item": "https://www.craigslist.org/area/vancouver",
+          "name": "craigslist: vancouver, BC",
           "position": 1
         },
         {
           "position": 2,
-          "@type": "ListItem",
           "item": "https://www.craigslist.org/subarea/van",
-          "name": "vancouver"
+          "name": "vancouver",
+          "@type": "ListItem"
         },
         {
-          "position": 3,
           "@type": "ListItem",
           "item": "https://www.craigslist.org/search/subarea/van?cat=hhh",
-          "name": "housing"
+          "name": "housing",
+          "position": 3
         },
         {
-          "name": "apartments / housing for rent",
           "item": "https://www.craigslist.org/search/subarea/van?cat=apa",
+          "name": "apartments / housing for rent",
           "@type": "ListItem",
           "position": 4
         },
         {
-          "item": "https://www.craigslist.org/view/d/vancouver-bed-bath-fourth-mac-kitsilano/eiSLCKTVqsrtPUWpUpJyDN",
+          "position": 5,
           "name": "2 Bed + 2 Bath @ Fourth + Mac — Kitsilano | Available October 1",
-          "@type": "ListItem",
-          "position": 5
+          "item": "https://www.craigslist.org/view/d/vancouver-bed-bath-fourth-mac-kitsilano/eiSLCKTVqsrtPUWpUpJyDN",
+          "@type": "ListItem"
         }
-      ]
+      ],
+      "@type": "BreadcrumbList",
+      "@context": "https://schema.org"
     },
     {
-      "latitude": "49.264600",
-      "longitude": "-123.164800",
-      "@context": "http://schema.org",
-      "petsAllowed": true,
-      "numberOfBedrooms": "2",
-      "numberOfBathroomsTotal": 2,
+      "name": "2 Bed + 2 Bath @ Fourth + Mac — Kitsilano | Available October 1",
+      "@type": "Apartment",
+      "smokingAllowed": false,
       "address": {
-        "postalCode": "V6K3T2",
-        "streetAddress": "Fourth Avenue",
         "addressRegion": "BC",
         "addressLocality": "Vancouver",
+        "addressCountry": "CA",
         "@type": "PostalAddress",
-        "addressCountry": "CA"
+        "streetAddress": "Fourth Avenue",
+        "postalCode": "V6K3T2"
       },
-      "@type": "Apartment",
-      "name": "2 Bed + 2 Bath @ Fourth + Mac — Kitsilano | Available October 1",
-      "smokingAllowed": false
+      "petsAllowed": true,
+      "@context": "http://schema.org",
+      "longitude": "-123.164800",
+      "numberOfBathroomsTotal": 2,
+      "numberOfBedrooms": "2",
+      "latitude": "49.264600"
     }
   ],
   "images": [
@@ -312,7 +312,7 @@
     "https://images.craigslist.org/00808_dTnd7ZQ0Cml_0hP0dq_50x50c.jpg",
     "https://map5.craigslist.org/t09/13/1292/2803.png"
   ],
-  "elapsedMs": 3387,
+  "elapsedMs": 3330,
   "identityMatch": false,
   "explicitNegative": false,
   "negativePhrase": null,
