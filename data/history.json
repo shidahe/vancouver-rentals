@@ -2077,6 +2077,11 @@
       "date": "2026-09-20",
       "rent": 5000,
       "note": "CORRECTED: restored after exact current MLS detail matched identity, explicit availability and rent."
+    },
+    {
+      "date": "2026-09-22",
+      "rent": 5000,
+      "note": "AUTO-REMOVED after direct live verification found explicit unavailable evidence."
     }
   ],
   "fourth-mac-floorplan-2-bedroom-2-bath-801-4350": [
@@ -2157,6 +2162,11 @@
     },
     {
       "date": "2026-09-21",
+      "rent": 5475,
+      "note": "AUTO live price update from 4975 to 5475."
+    },
+    {
+      "date": "2026-09-22",
       "rent": 5475,
       "note": "AUTO live price update from 4975 to 5475."
     }
