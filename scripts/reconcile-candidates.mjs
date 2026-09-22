@@ -79,13 +79,14 @@ const state={refreshedAt:iso,groups:[],promoted:[],crossVerified:[],fingerprintC
 // weakening address-level identity for multi-unit buildings.
 for(const candidate of craigslist.candidates||[]){
   for(const listing of payload.listings){
-    if(listing.availabilityStatus!=='active'||listingUnit(listing)||!/zumper/i.test(listing.source||'')||
+    if(listing.availabilityStatus!=='active'||listingUnit(listing)||!/(?:zumper|realtylink|mls)/i.test(listing.source||'')||
       !civicAddressMatch(candidate.address,listing.address))continue;
     const evidence=await read(path.join(DATA,'evidence',`${listing.id}.json`),null);
     const match=craigslistCrossSourcePriceMatch(candidate,listing,evidence?.bodyText||'');
     if(!match)continue;
     const {priorRent,newRent,sharedDescriptionTokenCount}=match;
-    listing.source='Craigslist exact detail (cross-verified from prior Zumper listing)';
+    const priorSourceFamily=/zumper/i.test(listing.source||'')?'zumper':'realtylink mls';
+    listing.source='Craigslist exact detail (cross-verified from prior marketplace/MLS listing)';
     listing.url=candidate.url;listing.photoPageUrl=candidate.url;listing.rent=newRent;
     listing.bedrooms=Number(candidate.bedrooms);listing.bathrooms=baths(candidate);listing.sqft=sqft(candidate);
     listing.type=candidate.type||listing.type;listing.ac=candidate.ac??listing.ac;listing.availabilityStatus='active';
@@ -93,7 +94,7 @@ for(const candidate of craigslist.candidates||[]){
     listing.lastChecked=today;listing.verifiedAt=candidate.checkedAt||iso;listing.verificationLevel='verified';
     listing.verificationMethod=`Current Craigslist post ${candidate.postId} matched the prior Zumper home by exact civic address, bed/bath/area facts and ${sharedDescriptionTokenCount} shared description tokens.`;
     listing.dataNotes='Cross-source price updates require exact civic identity, matching rental facts, a bounded price change and substantial description overlap.';
-    listing.evidenceSources=['zumper','craigslist'];attachCandidateImages(imageSources,listing,candidate);
+    listing.evidenceSources=[priorSourceFamily,'craigslist'];attachCandidateImages(imageSources,listing,candidate);
     (history[listing.id]||=[]).push({date:today,rent:newRent,note:`PRICE UPDATE: ${priorRent} → ${newRent}; current Craigslist post ${candidate.postId} matched the prior Zumper description and exact facts.`});
     state.crossSourcePriceUpdates.push({listingId:listing.id,postId:candidate.postId,priorRent,newRent,sharedDescriptionTokenCount});
     break;
