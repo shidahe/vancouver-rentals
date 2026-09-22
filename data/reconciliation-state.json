@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-09-22T05:10:51.527Z",
+  "refreshedAt": "2026-09-22T11:53:02.616Z",
   "groups": [
     {
       "identityKey": "1533 maple st::url:69f2e13a0fd5",
@@ -206,34 +206,47 @@
       "result": "candidate_only"
     },
     {
-      "identityKey": "mls:r3137446",
+      "identityKey": "mls:r3160689",
       "sources": [
         "realtylink mls"
       ],
       "rents": [
-        5850
+        4800
       ],
       "exactUnit": true,
-      "matchedListingId": "york-103-2535-r3137446",
+      "matchedListingId": "zumper-16e9ae17cd91",
       "result": "authoritative_mls_reverified"
     },
     {
-      "identityKey": "mls:r3150923",
+      "identityKey": "mls:r3161880",
       "sources": [
         "realtylink mls"
       ],
       "rents": [
-        4680
+        8800
       ],
       "exactUnit": false,
-      "matchedListingId": "mls-r3150923",
+      "matchedListingId": "mls-r3161880",
+      "result": "authoritative_mls_reverified"
+    },
+    {
+      "identityKey": "mls:r3167417",
+      "sources": [
+        "realtylink mls"
+      ],
+      "rents": [
+        6750
+      ],
+      "exactUnit": true,
+      "matchedListingId": "mls-r3167417",
       "result": "authoritative_mls_reverified"
     }
   ],
   "promoted": [],
   "crossVerified": [
-    "york-103-2535-r3137446",
-    "mls-r3150923"
+    "zumper-16e9ae17cd91",
+    "mls-r3161880",
+    "mls-r3167417"
   ],
   "fingerprintCrossVerified": [],
   "craigslistRelistingsRecovered": [],
@@ -243,10 +256,10 @@
   "detailReactivated": [],
   "mlsMissing": {},
   "mlsRemoved": [],
-  "realtylinkSnapshotCount": 2,
+  "realtylinkSnapshotCount": 3,
   "realtylinkSnapshotHighWaterMark": 7,
   "realtylinkSnapshotScope": "rent-3500-beds-2-4-whole-home-westside-v2",
   "realtylinkRemovalEligible": false,
-  "mlsRemovalSuppressed": "Partial Realtylink snapshot (2 candidates versus previous complete 7); disappearance signals ignored.",
+  "mlsRemovalSuppressed": "Partial Realtylink snapshot (3 candidates versus previous complete 7); disappearance signals ignored.",
   "mlsDuplicatesMerged": []
 }
