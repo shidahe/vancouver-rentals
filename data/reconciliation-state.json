@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-09-22T15:48:16.901Z",
+  "refreshedAt": "2026-09-22T17:09:02.370Z",
   "groups": [
     {
       "identityKey": "1533 maple st::url:69f2e13a0fd5",
@@ -230,6 +230,18 @@
       "result": "authoritative_mls_reverified"
     },
     {
+      "identityKey": "mls:r3150923",
+      "sources": [
+        "realtylink mls"
+      ],
+      "rents": [
+        4680
+      ],
+      "exactUnit": false,
+      "matchedListingId": "mls-r3150923",
+      "result": "authoritative_mls_reverified"
+    },
+    {
       "identityKey": "mls:r3160689",
       "sources": [
         "realtylink mls"
@@ -239,18 +251,6 @@
       ],
       "exactUnit": true,
       "matchedListingId": "zumper-16e9ae17cd91",
-      "result": "authoritative_mls_reverified"
-    },
-    {
-      "identityKey": "mls:r3151022",
-      "sources": [
-        "realtylink mls"
-      ],
-      "rents": [
-        10500
-      ],
-      "exactUnit": false,
-      "matchedListingId": "mls-r3151022",
       "result": "authoritative_mls_reverified"
     },
     {
@@ -269,19 +269,25 @@
   "promoted": [],
   "crossVerified": [
     "york-103-2535-r3137446",
+    "mls-r3150923",
     "zumper-16e9ae17cd91",
-    "mls-r3151022",
     "mls-r3148298"
   ],
   "fingerprintCrossVerified": [],
   "craigslistRelistingsRecovered": [],
-  "crossSourcePriceUpdates": [],
+  "crossSourcePriceUpdates": [
+    {
+      "listingId": "mls-r3151022",
+      "postId": "7966577196",
+      "priorRent": 10500,
+      "newRent": 10500,
+      "sharedDescriptionTokenCount": 82
+    }
+  ],
   "maskedMlsMerged": [],
   "relistedMlsMerged": [],
   "negativeMatches": [],
-  "detailReactivated": [
-    "mls-r3151022"
-  ],
+  "detailReactivated": [],
   "mlsMissing": {},
   "mlsRemoved": [],
   "realtylinkSnapshotCount": 4,
