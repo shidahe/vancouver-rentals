@@ -1,0 +1,831 @@
+{
+  "checkedAt": "2026-09-22T21:30:39.062Z",
+  "page": {
+    "source": "Rentals.ca",
+    "url": "https://rentals.ca/vancouver/4188-yew-street",
+    "address": "2139 Lahb Ave, Vancouver, British Columbia V6J 4R1",
+    "addressUnit": null,
+    "geo": {
+      "lat": 49.2488551,
+      "lng": -123.1545101
+    },
+    "targetArea": true,
+    "active": true,
+    "floorplans": [],
+    "single": {
+      "rent": 2435,
+      "beds": 3.5,
+      "baths": 2.5,
+      "sqft": null
+    },
+    "checkedAt": "2026-09-22T21:30:39.062Z"
+  },
+  "jsonLd": [
+    {
+      "@context": "http://schema.org",
+      "@type": "ApartmentComplex",
+      "url": "https://rentals.ca/vancouver/4188-yew-street",
+      "name": "Arbutus Residences",
+      "description": "The Ultimate Move-In Advantage\n**The Ultimate Move-In Advantage **\nUp to 5 Months Free Rent on Select Suites.\nSign a new lease by October 31, 2026 to unlock these savings*\n*Limited time offer. Subject to specific terms and conditions and may change or be withdrawn without prior notice. The lease must commence on or before October 31, 2026. Contact leasing for details.\n_*Limited time offer. Subject to specific terms and conditions and may change or be withdrawn without prior notice. The lease must commence on or before October 31, 2026. Contact leasing for details. _\nDiscover the ultimate in luxury living atArbutus Residences, a premier collection of homes nestled in one of Vancouver’s most desirable and vibrant neighborhoods. Situated near the picturesque Arbutus Greenway, this exclusive residence offers a perfect blend of peaceful suburban living and convenient urban access. Just minutes away from all of life’s daily amenities, Arbutus Residences is ideally located for those seeking a modern, yet tranquil lifestyle.\n_Arbutus Residences _\nThe architecture of Arbutus Residences reflects the perfect balance of modern luxury and timeless design. These homes boast open-concept layouts that maximize space and natural light, with floor-to-ceiling double-glazed windows offering expansive views of Vancouver’s West End, downtown, and the majestic North Shore Mountains. Thoughtfully designed with sleek, durable laminate wood flooring throughout (except bathrooms), each residence offers a spacious and contemporary living experience.\nFeatures:These residences are equipped with top-of-the-line finishes and energy-efficient features, including:\n**Features: **\nEnergy-Star efficient Blomberg and Samsung kitchen appliancesStainless-steel Kohler pull-down kitchen sink faucet and fixturesStainless-steel double-basin undermount kitchen sinkModern quartz countertops and tile backsplashEuropean-style soft close cabinetry with recessed under-cabinet LED lightingConvenient rotating under-cabinet tray for blind cornersFull-size front-loading Blomberg in-suite washer and dryerConvenient roller-blinds throughout for privacy and light controlOpen-concept living areas designed for maximum space and comfortEfficient heating system for year-round comfortExpansive balconies and patios perfect for outdoor relaxation\nEnergy-Star efficient Blomberg and Samsung kitchen appliances\nStainless-steel Kohler pull-down kitchen sink faucet and fixtures\nStainless-steel double-basin undermount kitchen sink\nModern quartz countertops and tile backsplash\nEuropean-style soft close cabinetry with recessed under-cabinet LED lighting\nConvenient rotating under-cabinet tray for blind corners\nFull-size front-loading Blomberg in-suite washer and dryer\nConvenient roller-blinds throughout for privacy and light control\nOpen-concept living areas designed for maximum space and comfort\nEfficient heating system for year-round comfort\nExpansive balconies and patios perfect for outdoor relaxation\nBuilding and Amenities:Arbutus Residences offers a wealth of amenities designed for both convenience and enjoyment:\n**Building and Amenities: **\nFully equipped indoor fitness gymnasiumChildren’s play area and a tranquil courtyard for familiesGreen roof with planters and a community garden for residents to cultivateBBQ area for social gatherings and outdoor diningGated underground parking for security and easeStunning views of Vancouver West, downtown, and the North Shore MountainsA vibrant shopping plaza featuring Safeway, BC Liquor Store, Bank of Montreal, and more\nFully equipped indoor fitness gymnasium\nChildren’s play area and a tranquil courtyard for families\nGreen roof with planters and a community garden for residents to cultivate\nBBQ area for social gatherings and outdoor dining\nGated underground parking for security and ease\nStunning views of Vancouver West, downtown, and the North Shore Mountains\nA vibrant shopping plaza featuring Safeway, BC Liquor Store, Bank of Montreal, and more\nAdditional Information:\n**Additional Information: **\nOutdoor play areaEnsuite bathroomCity viewsBeach nearbyTransit nearbyRooftop PatioBike StorageRoof Top Garden\nOutdoor play area\nEnsuite bathroom\nCity views\nBeach nearby\nTransit nearby\nRooftop Patio\nBike Storage\nRoof Top Garden",
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 49.2488551,
+        "longitude": -123.1545101
+      },
+      "containedInPlace": {
+        "@type": "City",
+        "url": "",
+        "name": "",
+        "address": {
+          "@type": "PostalAddress",
+          "addressCountry": "CA",
+          "addressRegion": ""
+        }
+      },
+      "containsPlace": [
+        {
+          "@context": "http://schema.org",
+          "@type": "Apartment",
+          "name": "0 Bedroom",
+          "potentialAction": {
+            "@type": "RentAction",
+            "priceSpecification": {
+              "@type": "PriceSpecification",
+              "price": 2435,
+              "priceCurrency": "CAD"
+            }
+          },
+          "floorSize": {
+            "@type": "QuantitativeValue",
+            "unitCode": "FTK",
+            "value": "455.0"
+          }
+        },
+        {
+          "@context": "http://schema.org",
+          "@type": "Apartment",
+          "name": "1.5 Bedroom",
+          "potentialAction": {
+            "@type": "RentAction",
+            "priceSpecification": {
+              "@type": "PriceSpecification",
+              "price": 3340,
+              "priceCurrency": "CAD"
+            }
+          },
+          "floorSize": {
+            "@type": "QuantitativeValue",
+            "unitCode": "FTK",
+            "value": "685.0"
+          }
+        },
+        {
+          "@context": "http://schema.org",
+          "@type": "Apartment",
+          "name": "2.5 Bedroom",
+          "potentialAction": {
+            "@type": "RentAction",
+            "priceSpecification": {
+              "@type": "PriceSpecification",
+              "price": 4110,
+              "priceCurrency": "CAD"
+            }
+          },
+          "floorSize": {
+            "@type": "QuantitativeValue",
+            "unitCode": "FTK",
+            "value": "900.0"
+          }
+        },
+        {
+          "@context": "http://schema.org",
+          "@type": "Apartment",
+          "name": "3.5 Bedroom",
+          "potentialAction": {
+            "@type": "RentAction",
+            "priceSpecification": {
+              "@type": "PriceSpecification",
+              "price": 4945,
+              "priceCurrency": "CAD"
+            }
+          },
+          "floorSize": {
+            "@type": "QuantitativeValue",
+            "unitCode": "FTK",
+            "value": "1090.0"
+          }
+        },
+        {
+          "@context": "http://schema.org",
+          "@type": "Apartment",
+          "name": "2.5 Bedroom",
+          "potentialAction": {
+            "@type": "RentAction",
+            "priceSpecification": {
+              "@type": "PriceSpecification",
+              "price": 5390,
+              "priceCurrency": "CAD"
+            }
+          },
+          "floorSize": {
+            "@type": "QuantitativeValue",
+            "unitCode": "FTK",
+            "value": "1340.0"
+          }
+        }
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "CA",
+        "addressLocality": "Vancouver",
+        "addressRegion": "British Columbia",
+        "postalCode": "V6J 4R1",
+        "streetAddress": "2139 Lahb Ave"
+      },
+      "telephone": "(778) 655-9223",
+      "photo": [
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/468498/apartment-2241716931.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/468498/apartment-2241716931.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/468498/apartment-2241568558.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/468498/apartment-2241568558.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/468498/apartment-2239895076.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/468498/apartment-2239895076.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/468498/apartment-2239895121.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/468498/apartment-2239895121.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/468498/apartment-2239895077.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/468498/apartment-2239895077.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/468498/apartment-2241569240.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/468498/apartment-2241569240.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/468498/apartment-2239895122.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/468498/apartment-2239895122.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/468498/apartment-2239895078.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/468498/apartment-2239895078.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/468498/apartment-2241569238.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/468498/apartment-2241569238.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/468498/apartment-2239895188.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/468498/apartment-2239895188.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/468498/apartment-2239895123.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/468498/apartment-2239895123.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/468498/apartment-2239895079.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/468498/apartment-2239895079.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/468498/apartment-2239895189.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/468498/apartment-2239895189.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/468498/apartment-2239895146.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/468498/apartment-2239895146.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/468498/apartment-2239895124.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/468498/apartment-2239895124.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/468498/apartment-2239895080.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/468498/apartment-2239895080.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/468498/apartment-2241569239.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/468498/apartment-2241569239.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/468498/apartment-2241568557.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/468498/apartment-2241568557.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/468498/apartment-2239895190.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/468498/apartment-2239895190.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/468498/apartment-2239895147.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/468498/apartment-2239895147.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/468498/apartment-2239895125.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/468498/apartment-2239895125.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/468498/apartment-2239895081.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/468498/apartment-2239895081.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/468498/apartment-2239895191.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/468498/apartment-2239895191.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/468498/apartment-2239895168.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/468498/apartment-2239895168.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/468498/apartment-2239895148.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/468498/apartment-2239895148.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/468498/apartment-2239895126.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/468498/apartment-2239895126.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/468498/apartment-2239895101.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/468498/apartment-2239895101.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/468498/apartment-2239895082.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/468498/apartment-2239895082.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/468498/apartment-2239895192.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/468498/apartment-2239895192.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/468498/apartment-2239895169.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/468498/apartment-2239895169.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/468498/apartment-2239895149.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/468498/apartment-2239895149.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/468498/apartment-2239895127.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/468498/apartment-2239895127.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/468498/apartment-2239895102.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/468498/apartment-2239895102.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/468498/apartment-2239895083.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/468498/apartment-2239895083.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/468498/apartment-2239895193.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/468498/apartment-2239895193.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/468498/apartment-2239895170.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/468498/apartment-2239895170.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/468498/apartment-2239895150.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/468498/apartment-2239895150.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/468498/apartment-2239895128.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/468498/apartment-2239895128.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/468498/apartment-2239895103.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/468498/apartment-2239895103.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/468498/apartment-2239895084.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/468498/apartment-2239895084.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/468498/apartment-2239895194.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/468498/apartment-2239895194.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/468498/apartment-2239895171.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/468498/apartment-2239895171.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/468498/apartment-2239895151.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/468498/apartment-2239895151.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/468498/apartment-2239895129.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/468498/apartment-2239895129.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/468498/apartment-2239895104.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/468498/apartment-2239895104.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/468498/apartment-2239895085.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/468498/apartment-2239895085.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/468498/apartment-2239895195.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/468498/apartment-2239895195.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/468498/apartment-2239895172.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/468498/apartment-2239895172.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/468498/apartment-2239895152.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/468498/apartment-2239895152.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/468498/apartment-2239895130.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/468498/apartment-2239895130.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/468498/apartment-2239895105.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/468498/apartment-2239895105.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/468498/apartment-2239895086.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/468498/apartment-2239895086.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/468498/apartment-2239895196.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/468498/apartment-2239895196.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/468498/apartment-2239895173.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/468498/apartment-2239895173.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/468498/apartment-2239895153.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/468498/apartment-2239895153.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/468498/apartment-2239895131.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/468498/apartment-2239895131.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/468498/apartment-2239895106.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/468498/apartment-2239895106.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/468498/apartment-2239895087.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/468498/apartment-2239895087.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/468498/apartment-2239895197.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/468498/apartment-2239895197.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/468498/apartment-2239895174.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/468498/apartment-2239895174.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/468498/apartment-2239895154.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/468498/apartment-2239895154.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/468498/apartment-2239895132.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/468498/apartment-2239895132.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/468498/apartment-2239895107.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/468498/apartment-2239895107.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/468498/apartment-2239895088.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/468498/apartment-2239895088.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/468498/apartment-2239895198.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/468498/apartment-2239895198.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/468498/apartment-2239895175.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/468498/apartment-2239895175.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/468498/apartment-2239895155.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/468498/apartment-2239895155.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/468498/apartment-2239895133.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/468498/apartment-2239895133.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/468498/apartment-2239895108.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/468498/apartment-2239895108.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/468498/apartment-2239895089.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/468498/apartment-2239895089.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/468498/apartment-2239895199.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/468498/apartment-2239895199.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/468498/apartment-2239895176.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/468498/apartment-2239895176.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/468498/apartment-2239895156.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/468498/apartment-2239895156.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/468498/apartment-2239895134.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/468498/apartment-2239895134.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/468498/apartment-2239895109.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/468498/apartment-2239895109.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/468498/apartment-2239895090.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/468498/apartment-2239895090.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/468498/apartment-2239895200.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/468498/apartment-2239895200.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/468498/apartment-2239895177.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/468498/apartment-2239895177.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/468498/apartment-2239895157.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/468498/apartment-2239895157.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/468498/apartment-2239895135.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/468498/apartment-2239895135.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/468498/apartment-2239895110.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/468498/apartment-2239895110.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/468498/apartment-2239895091.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/468498/apartment-2239895091.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/468498/apartment-2239895201.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/468498/apartment-2239895201.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/468498/apartment-2239895178.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/468498/apartment-2239895178.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/468498/apartment-2239895158.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/468498/apartment-2239895158.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/468498/apartment-2239895136.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/468498/apartment-2239895136.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/468498/apartment-2239895111.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/468498/apartment-2239895111.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/468498/apartment-2239895092.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/468498/apartment-2239895092.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/468498/apartment-2239895202.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/468498/apartment-2239895202.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/468498/apartment-2239895179.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/468498/apartment-2239895179.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/468498/apartment-2239895159.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/468498/apartment-2239895159.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/468498/apartment-2239895137.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/468498/apartment-2239895137.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/468498/apartment-2239895112.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/468498/apartment-2239895112.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/468498/apartment-2239895094.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/468498/apartment-2239895094.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/468498/apartment-2239895203.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/468498/apartment-2239895203.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/468498/apartment-2239895180.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/468498/apartment-2239895180.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/468498/apartment-2239895160.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/468498/apartment-2239895160.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/468498/apartment-2239895138.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/468498/apartment-2239895138.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/468498/apartment-2239895113.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/468498/apartment-2239895113.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/468498/apartment-2239895095.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/468498/apartment-2239895095.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/468498/apartment-2239895204.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/468498/apartment-2239895204.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/468498/apartment-2239895181.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/468498/apartment-2239895181.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/468498/apartment-2239895161.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/468498/apartment-2239895161.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/468498/apartment-2239895139.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/468498/apartment-2239895139.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/468498/apartment-2239895114.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/468498/apartment-2239895114.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/468498/apartment-2239895096.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/468498/apartment-2239895096.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/468498/apartment-2239895205.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/468498/apartment-2239895205.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/468498/apartment-2239895182.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/468498/apartment-2239895182.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/468498/apartment-2239895162.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/468498/apartment-2239895162.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/468498/apartment-2239895140.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/468498/apartment-2239895140.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/468498/apartment-2239895115.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/468498/apartment-2239895115.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/468498/apartment-2239895097.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/468498/apartment-2239895097.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/468498/apartment-2239895206.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/468498/apartment-2239895206.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/468498/apartment-2239895183.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/468498/apartment-2239895183.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/468498/apartment-2239895163.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/468498/apartment-2239895163.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/468498/apartment-2239895141.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/468498/apartment-2239895141.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/468498/apartment-2239895116.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/468498/apartment-2239895116.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/468498/apartment-2239895098.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/468498/apartment-2239895098.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/468498/apartment-2239895207.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/468498/apartment-2239895207.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/468498/apartment-2239895184.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/468498/apartment-2239895184.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/468498/apartment-2239895164.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/468498/apartment-2239895164.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/468498/apartment-2239895142.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/468498/apartment-2239895142.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/468498/apartment-2239895117.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/468498/apartment-2239895117.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/468498/apartment-2239895099.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/468498/apartment-2239895099.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/468498/apartment-2240479555.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/468498/apartment-2240479555.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/468498/apartment-2239895208.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/468498/apartment-2239895208.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/468498/apartment-2239895185.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/468498/apartment-2239895185.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/468498/apartment-2239895165.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/468498/apartment-2239895165.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/468498/apartment-2239895143.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/468498/apartment-2239895143.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/468498/apartment-2239895118.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/468498/apartment-2239895118.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/468498/apartment-2240479556.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/468498/apartment-2240479556.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/468498/apartment-2239895209.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/468498/apartment-2239895209.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/468498/apartment-2239895186.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/468498/apartment-2239895186.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/468498/apartment-2239895166.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/468498/apartment-2239895166.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/468498/apartment-2239895144.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/468498/apartment-2239895144.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/468498/apartment-2239895119.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/468498/apartment-2239895119.jpg"
+        }
+      ]
+    }
+  ],
+  "textSample": "Landlords\nRent Report\nBlog\nLogin\nEN\nFR\nPost a Rental\nPost a Rental\nLogin\nCreate Account\nAlerts\nFAQs\nMonthly Rent Report\nCity Rent Trends\nLandlords\nCredit Reports\nCommercial Properties\nRaising the Roof\nCareers\nAbout\nBlog\n Contact us\n Instagram\n Facebook\n Youtube\n LinkedIn\n X\n TikTok\nHome\nBC\nVancouver\nArbutus Ridge\nArbutus Residences\n Favourite\n Alert\n$2435 - $5390\nApartment\n2139 Lahb Ave — Arbutus Residences, Vancouver BC (0-Bedroom to 3.5-Bedroom)\n 0 - 3.5 Bed\n 1 - 2.5 Bath\n Pets\n 455 - 1340 FT²\nUnderground\nGet In Touch\n\nArbutus Residences\n\n Contact Property\n View Phone Number\n Verified\nFeatured\nPromo Available\n3D Tour\n1 / 26\nPhotos\n3D\nTour\nStreet\nSave Alert\n\nSimilar listings in Vancouver\n\nArbutus Ridge Apartments\n\nView on map\n\nPromo Available\nPromotions at Arbutus Residences\nThe Ultimate Move-In AdvantageUp to 5 Months Free Rent on Select Suites.Sign new lease by October 31, 2026 to unlock these savings**Limited time offer. Subject to specific terms and conditions and may change or be withdrawn without prior notice. The lease must commence on or before October 31, 2026. Contact leasing for details.\nValid: Sep 02, 2026 – Oct 31, 2026\nView Promo Details\n\n* Promotions are provided by the landlord. Contact them for full details.\n\nAll0 Bed1 Bed2+ Bed\nFloor Plans\n0 Bedroom\n$2,435\n1 Bath\n455 ft²\nAvailable\n 20\n1.5 Bedroom\n$3,340\n1 Bath\n685 ft²\nAvailable\n 20\n2.5 Bedroom\n2 Units \n$4,110 - $5,390\n3.5 Bedroom\n$4,945\n2 Bath\n1090 ft²\nAvailable\n 22\nParking Information\n\nParking Types\n\nUnderground parking\n\nNo visitor parking\n\nOther Parking Details\n\nParking fee not included in rent\n\nParking Available - Please Inquiry for availability\n\nFeatures & Amenities\n Building Features (9)\n Unit Features (11)\n Nearby (7)\n Other (1)\nVideo Surveillance\nBike Room\nStorage Lockers\nRooftop Deck\nbbq-area-courtyard\nElevator\nGarage\nOn-site Staff\nRecreation Room\nAbout Arbutus Residences\nProperty Type\n\nApartment\n\nProperty Sub-type\n\nApartment\n\nLease Term\n\n1-Year\n\nParking Spots\n\nNo Info\n\nShort-term\n\nNo Info\n\nFurnished\n\nNo\n\nYear Built\n\n2021\n\n# of Floors\n\n9\n\n# of Units\n\n95\n\nListing ID\n\n468498\n\nThe Ultimate Move-In Advantage Up to 5 Months Free Rent on Select Suites. Sign a new lease by October 31, 2026 to unlock these savings* *Limited time offer. Subject to specific terms and conditions and may change or be withdrawn without prior notice. The lease m...\n\nRead More\n\nNeighbourhood Score\nProperty Managed By\n\nArbutus Residences\n\n View Phone Number\nSummary\n\n2139 Lahb Ave is an apartment for rent in Vancouver, BC. It has 5 units. Units have 0 to 3.5 bedrooms. Units have 1 to 2.5 bathrooms.\n\n Report Listing\n\nExplore Similar Rentals\nNo listings match right now. You can set up a search alert below to get notified about similar listings!\nVancouver, BC\n $1,948 - $6,468\n All Apartments\nCreate Alert\nPopular Rent Searches In Vancouver\nSearch by Amenities\nPet Friendly Apartments In Vancouver\nApartments With A/C In Vancouver\nApartments With Ensuite Laundry In Vancouver\nApartments With Dishwasher In Vancouver\nSearch by Bedrooms\n1 Bedroom Apartments In Vancouver\n2 Bedroom Apartments In Vancouver\n3 Bedroom Apartments In Vancouver\n4 Bedroom Apartments In Vancouver\nSearch by Budget\nApartments Under $1000 In Vancouver\nApartments Under $1250 In Vancouver\nApartments Under $2000 In Vancouver\nApartments Under $2500 In Vancouver\nSee All Rentals in Vancouver\nBlog\nPress\nContact\nAbout\nCareers\nFAQs\nTerms\nPrivacy Policy\nSitemap\nPopular Searches\nApartments Near Me\nCondos Near Me\nHouses Near Me\nRooms Near Me\nPopular Cities\nToronto Rentals\nCalgary Rentals\nOttawa Rentals\nEdmonton Rentals\nVancouver Rentals\nHalifax Rentals\nPopular Provinces\nOntario\nBritish Columbia\nAlberta\nQuebec\nNova Scotia\nManitoba\nLandlords\nGet Listed\nMy Listings\nTenant Credit Check\nResources\nRent Report\nCity Rent Trends\nCommercial Properties\nGet the Rentals.ca app\nProud partner of\n\nCopyright © 2026 Rentals.ca Network, Inc. All rights reserved.\n\nManage Cookies\n \nThis website uses cookies to ensure you get the best experience on our website. By clicking \"Allow All\", you consent to our use of cookies. Privacy Policy ↗\nManage Cookies\nDecline\nAllow All"
+}

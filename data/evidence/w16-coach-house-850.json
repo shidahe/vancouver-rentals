@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-09-22T17:00:28.646Z",
+  "checkedAt": "2026-09-22T21:23:40.457Z",
   "listingId": "w16-coach-house-850",
   "sourceUrl": "https://www.craigslist.org/view/d/vancouver-fully-furnished-designer-2br/8C2uz8FfDLU65ZGsYdTpji",
   "ok": true,
@@ -215,58 +215,58 @@
   ],
   "jsonLd": [
     {
-      "@type": "BreadcrumbList",
       "itemListElement": [
         {
-          "item": "https://www.craigslist.org/area/vancouver",
           "@type": "ListItem",
           "name": "craigslist: vancouver, BC",
+          "item": "https://www.craigslist.org/area/vancouver",
           "position": 1
         },
         {
+          "@type": "ListItem",
           "name": "vancouver",
           "position": 2,
-          "@type": "ListItem",
           "item": "https://www.craigslist.org/subarea/van"
         },
         {
-          "position": 3,
+          "@type": "ListItem",
           "name": "housing",
           "item": "https://www.craigslist.org/search/subarea/van?cat=hhh",
-          "@type": "ListItem"
+          "position": 3
         },
         {
-          "name": "apartments / housing for rent",
-          "position": 4,
           "item": "https://www.craigslist.org/search/subarea/van?cat=apa",
-          "@type": "ListItem"
+          "position": 4,
+          "@type": "ListItem",
+          "name": "apartments / housing for rent"
         },
         {
           "item": "https://www.craigslist.org/view/d/vancouver-fully-furnished-designer-2br/8C2uz8FfDLU65ZGsYdTpji",
-          "@type": "ListItem",
+          "position": 5,
           "name": "Fully Furnished Designer 2BR/2BA Coach House",
-          "position": 5
+          "@type": "ListItem"
         }
       ],
-      "@context": "https://schema.org"
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList"
     },
     {
       "numberOfBathroomsTotal": 2,
-      "petsAllowed": true,
       "address": {
-        "addressLocality": "Vancouver",
+        "addressRegion": "BC",
         "@type": "PostalAddress",
         "addressCountry": "CA",
-        "addressRegion": "BC",
         "streetAddress": "3260 W 16 Ave",
+        "addressLocality": "Vancouver",
         "postalCode": "V6K3T2"
       },
-      "latitude": "49.264600",
-      "@type": "House",
-      "longitude": "-123.164800",
       "numberOfBedrooms": "2",
+      "name": "Fully Furnished Designer 2BR/2BA Coach House",
       "@context": "http://schema.org",
-      "name": "Fully Furnished Designer 2BR/2BA Coach House"
+      "@type": "House",
+      "latitude": "49.264600",
+      "petsAllowed": true,
+      "longitude": "-123.164800"
     }
   ],
   "images": [
@@ -289,7 +289,7 @@
     "https://map6.craigslist.org/t09/13/1292/2804.png",
     "https://map7.craigslist.org/t09/13/1293/2804.png"
   ],
-  "elapsedMs": 3113,
+  "elapsedMs": 3161,
   "identityMatch": true,
   "explicitNegative": false,
   "negativePhrase": null,
