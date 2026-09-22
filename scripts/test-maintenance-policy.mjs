@@ -313,6 +313,13 @@ if(w13Match?.priorRent!==4500||w13Match?.newRent!==3500||w13Match?.sharedDescrip
   craigslistCrossSourcePriceMatch({...w13Craigslist,description:'unrelated sparse description'},w13Listing,w13PriorDescription)!==null){
   failures.push('Exact-address cross-source price updates can miss the W 13th case or bypass address, fact, and description-overlap guards.');
 }
+const w2MlsListing={id:'mls-r3159060',source:'Realtylink MLS',availabilityStatus:'active',address:'4588 W 2nd Avenue',unit:null,rent:15000,bedrooms:4,bathrooms:5,sqft:4000,url:'https://realtylink.org/en/house~for-rent~vancouver/263180687'};
+const w2Craigslist={source:'Craigslist',postId:'7970417013',url:'https://www.craigslist.org/view/d/vancouver-point-grey-luxury-4br5ba/iY97UC19ia9rLPGUtQ7tvp',active:true,detailVerified:true,addressPrecision:'exact_civic',address:'4588 W 2nd Ave near Tolmie St',rent:15000,bedrooms:4,bathrooms:5,sqft:4000,description:'Experience refined West Coast living in this custom-built luxury residence by renowned builder Brandes, quietly tucked in Point Grey. The reverse floor plan has water views, vaulted ceilings and a private elevator. The chef kitchen has Sub-Zero and Wolf appliances, custom millwork, a wine cellar and private theater. The rooftop deck has a hot tub and ocean, mountain and city views. This 4-bedroom, 5-bathroom unfurnished residence is near Spanish Banks, Jericho Beach, UBC and Lord Byng.'};
+const w2MlsDescription='Experience refined West Coast living in this custom Brandes luxury home, tucked in Point Grey. A reverse floor plan maximizes water views and vaulted ceilings. A private elevator connects all three levels, leading to a chef kitchen with Sub-Zero and Wolf appliances, custom millwork, a wine cellar and private theater. Relax on the rooftop deck with a hot tub and panoramic ocean, mountain and city views. This 4-bed, 5-bath unfurnished residence is steps from Spanish Banks, Jericho Beach, UBC and Lord Byng.';
+const w2Match=craigslistCrossSourcePriceMatch(w2Craigslist,w2MlsListing,w2MlsDescription);
+if(w2Match?.priorRent!==15000||w2Match?.newRent!==15000||w2Match?.sharedDescriptionTokenCount<18){
+  failures.push('A current exact Craigslist detail cannot refresh the matching stale MLS-backed W 2nd home.');
+}
 const kitsWalk605 = catalog.seedCandidates?.find(x => x.id === 'rew-kits-walk-605');
 if (!kitsWalk605 || kitsWalk605.unit !== '605' || kitsWalk605.address !== '2075 W 12th Ave, Vancouver, BC' || kitsWalk605.expectedBeds !== 2 || !kitsWalk605.autoPublish || !/\/605-2075-w-12th-avenue-vancouver-bc$/.test(kitsWalk605.url)) {
   failures.push('Current Kits Walk Unit 605 exact-detail verification seed is missing or weakened.');
