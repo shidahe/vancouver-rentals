@@ -15,6 +15,7 @@ import { dedupeMlsRecords } from './mls-dedupe.mjs';
 import { craigslistAddressPrecision, craigslistDetailEvidence, craigslistPostId, craigslistStructuredFacts, dedupeCraigslistRelistings, extractCraigslistDetailUrls, normalizeCraigslistDetailUrl, parseCraigslistSearchCard } from './craigslist-parser.mjs';
 import { classifyRentalsCaSearchLead, parseRentalsCaSearchLeads } from './rentalsca-search-parser.mjs';
 import { craigslistSeedRelistingMatch } from './craigslist-seed-relisting.mjs';
+import { craigslistCrossSourcePriceMatch } from './craigslist-cross-source-match.mjs';
 
 const read = p => fs.readFile(p, 'utf8');
 const activeAdapters = [
@@ -301,6 +302,16 @@ if(coachMatch?.priorRent!==5475||coachMatch?.sharedPhotoKeys.length!==3||
    craigslistSeedRelistingMatch({...coachRepost,rent:3000},[coachSeed],activeCoach,coachPhotos)!==null||
    craigslistSeedRelistingMatch({...coachRepost,rent:9000},[coachSeed],activeCoach,coachPhotos)!==null){
   failures.push('A current exact Craigslist repost cannot safely update an active seed price, or its price-range/change guard was weakened.');
+}
+const w13Listing={id:'zumper-1441677a9e59',source:'Zumper live detail',availabilityStatus:'active',address:'2138 West 13th Avenue, Vancouver, BC',unit:null,rent:4500,bedrooms:3,bathrooms:1,sqft:1100,url:'https://www.zumper.com/address/2138-w-13th-ave-vancouver-bc-v6k-2s1-can'};
+const w13Craigslist={source:'Craigslist',postId:'7970403933',url:'https://www.craigslist.org/view/d/vancouver-quiet-comfy-3br-on-tree-lined/qa4oqdVeUxK8VQ9dqYdodr',active:true,detailVerified:true,addressPrecision:'exact_civic',address:'2138 W 13 Ave',rent:3500,bedrooms:3,bathrooms:1,sqft:1100,description:'This is a fully furnished main level home which features 3 furnished bedrooms. Conveniently located just 400m from Arbutus and Broadway, this property is the perfect transit hub for UBC and VGH Downtown. The neighborhood offers easy access to Kitsilano coffee shops, beaches, and restaurants. All utilities are included, and there is free street parking available as well as one laneway spot.'};
+const w13PriorDescription='Available for rental, this fully furnished home features 4 bedrooms, 3 regular bedrooms and 1 small bedroom. Conveniently located just 400m from Arbutus and Broadway, this property is the perfect transit hub for UBC and VGH Downtown. The neighborhood offers easy access to Kitsilano top coffee shops, beaches, and restaurants. All utilities are included, and there is free street parking available as well as one laneway spot.';
+const w13Match=craigslistCrossSourcePriceMatch(w13Craigslist,w13Listing,w13PriorDescription);
+if(w13Match?.priorRent!==4500||w13Match?.newRent!==3500||w13Match?.sharedDescriptionTokenCount<18||
+  craigslistCrossSourcePriceMatch({...w13Craigslist,address:'2136 W 13 Ave'},w13Listing,w13PriorDescription)!==null||
+  craigslistCrossSourcePriceMatch({...w13Craigslist,bathrooms:2},w13Listing,w13PriorDescription)!==null||
+  craigslistCrossSourcePriceMatch({...w13Craigslist,description:'unrelated sparse description'},w13Listing,w13PriorDescription)!==null){
+  failures.push('Exact-address cross-source price updates can miss the W 13th case or bypass address, fact, and description-overlap guards.');
 }
 const kitsWalk605 = catalog.seedCandidates?.find(x => x.id === 'rew-kits-walk-605');
 if (!kitsWalk605 || kitsWalk605.unit !== '605' || kitsWalk605.address !== '2075 W 12th Ave, Vancouver, BC' || kitsWalk605.expectedBeds !== 2 || !kitsWalk605.autoPublish || !/\/605-2075-w-12th-avenue-vancouver-bc$/.test(kitsWalk605.url)) {
