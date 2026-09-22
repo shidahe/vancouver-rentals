@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-09-22T11:44:20.628Z",
+  "checkedAt": "2026-09-22T15:04:39.780Z",
   "source": {
     "id": "rentalsca-quilchena-2br",
     "name": "Rentals.ca Quilchena 2BR",
@@ -8,10 +8,10 @@
     "adapter": "rentalsca-search"
   },
   "ok": true,
-  "status": 403,
+  "status": 429,
   "finalUrl": "https://rentals.ca/vancouver/quilchena/2-bedrooms",
   "title": "Just a moment...",
-  "bodyText": "rentals.ca\nPerforming security verification\n\nThis website uses a security service to protect against malicious bots. This page is displayed while the website verifies you are not a bot.\n\nRay ID: a3f1125a7df47816\nPerformance and Security by Cloudflare\nPrivacy",
+  "bodyText": "rentals.ca\nPerforming security verification\n\nThis website uses a security service to protect against malicious bots. This page is displayed while the website verifies you are not a bot.\n\nRay ID: a3f237bbbecc0da3\nPerformance and Security by Cloudflare\nPrivacy",
   "links": [
     {
       "href": "https://www.cloudflare.com/?utm_source=challenge&utm_campaign=m",
@@ -26,5 +26,5 @@
   "images": [
     "https://rentals.ca/favicon.ico"
   ],
-  "elapsedMs": 3128
+  "elapsedMs": 3143
 }
