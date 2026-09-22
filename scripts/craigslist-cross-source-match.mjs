@@ -15,7 +15,7 @@ function tokens(text){
 export function craigslistCrossSourcePriceMatch(candidate,listing,listingEvidenceText=''){
   if(!candidate||!listing||!/^craigslist$/i.test(candidate.source||'')||candidate.active===false||
     candidate.detailVerified!==true||candidate.addressPrecision!=='exact_civic'||
-    listing.availabilityStatus!=='active'||!/zumper/i.test(listing.source||'')||
+    listing.availabilityStatus!=='active'||!/(?:zumper|realtylink|mls)/i.test(listing.source||'')||
     unit(candidate.unit)||unit(listing.unit)||street(candidate.address)!==street(listing.address)||
     Number(candidate.bedrooms)!==Number(listing.bedrooms)||baths(candidate)!==baths(listing)||
     area(candidate)==null||area(listing)==null||Math.abs(area(candidate)-area(listing))>5)return null;
