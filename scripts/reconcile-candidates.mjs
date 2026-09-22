@@ -8,6 +8,7 @@ import { parseRealtylinkAirConditioning, parseRealtylinkFloorArea, parseRealtyli
 import { LISTING_SCOPE_VERSION, listingScopeEligible } from './discovery-policy.mjs';
 import { realtylinkSnapshotBaseline, realtylinkSnapshotComplete } from './coverage-policy.mjs';
 import { craigslistSeedRelistingMatch } from './craigslist-seed-relisting.mjs';
+import { craigslistCrossSourcePriceMatch } from './craigslist-cross-source-match.mjs';
 
 const DATA=path.join(process.cwd(),'data');
 const iso=new Date().toISOString(),today=iso.slice(0,10);
@@ -70,7 +71,34 @@ const groups=new Map();
 for(const c of all){if(!usable(c))continue;const k=candidateKey(c);if(!groups.has(k))groups.set(k,[]);groups.get(k).push(c);}
 const listingByKey=new Map();
 for(const x of payload.listings){const canonicalMls=listingMls(x);if(canonicalMls)x.mls=canonicalMls;const k=key(x.address,listingUnit(x),x.url,null,canonicalMls);if(!listingByKey.has(k)||listingByKey.get(k).source==='Zumper live detail')listingByKey.set(k,x);}
-const state={refreshedAt:iso,groups:[],promoted:[],crossVerified:[],fingerprintCrossVerified:[],craigslistRelistingsRecovered:[],maskedMlsMerged:[],relistedMlsMerged:[],negativeMatches:[],detailReactivated:[],mlsMissing:{},mlsRemoved:[]};
+const state={refreshedAt:iso,groups:[],promoted:[],crossVerified:[],fingerprintCrossVerified:[],craigslistRelistingsRecovered:[],crossSourcePriceUpdates:[],maskedMlsMerged:[],relistedMlsMerged:[],negativeMatches:[],detailReactivated:[],mlsMissing:{},mlsRemoved:[]};
+
+// A current exact-address Craigslist detail can supersede an older marketplace price
+// only when the bed/bath/area fingerprint and substantial description text also agree.
+// This covers single-address homes whose source URLs differ across marketplaces without
+// weakening address-level identity for multi-unit buildings.
+for(const candidate of craigslist.candidates||[]){
+  for(const listing of payload.listings){
+    if(listing.availabilityStatus!=='active'||listingUnit(listing)||!/zumper/i.test(listing.source||'')||
+      !civicAddressMatch(candidate.address,listing.address))continue;
+    const evidence=await read(path.join(DATA,'evidence',`${listing.id}.json`),null);
+    const match=craigslistCrossSourcePriceMatch(candidate,listing,evidence?.bodyText||'');
+    if(!match)continue;
+    const {priorRent,newRent,sharedDescriptionTokenCount}=match;
+    listing.source='Craigslist exact detail (cross-verified from prior Zumper listing)';
+    listing.url=candidate.url;listing.photoPageUrl=candidate.url;listing.rent=newRent;
+    listing.bedrooms=Number(candidate.bedrooms);listing.bathrooms=baths(candidate);listing.sqft=sqft(candidate);
+    listing.type=candidate.type||listing.type;listing.ac=candidate.ac??listing.ac;listing.availabilityStatus='active';
+    listing.status=newRent<priorRent?'price_drop':'corrected';listing.priceDrop=newRent<priorRent;listing.removedAt=null;
+    listing.lastChecked=today;listing.verifiedAt=candidate.checkedAt||iso;listing.verificationLevel='verified';
+    listing.verificationMethod=`Current Craigslist post ${candidate.postId} matched the prior Zumper home by exact civic address, bed/bath/area facts and ${sharedDescriptionTokenCount} shared description tokens.`;
+    listing.dataNotes='Cross-source price updates require exact civic identity, matching rental facts, a bounded price change and substantial description overlap.';
+    listing.evidenceSources=['zumper','craigslist'];attachCandidateImages(imageSources,listing,candidate);
+    (history[listing.id]||=[]).push({date:today,rent:newRent,note:`PRICE UPDATE: ${priorRent} → ${newRent}; current Craigslist post ${candidate.postId} matched the prior Zumper description and exact facts.`});
+    state.crossSourcePriceUpdates.push({listingId:listing.id,postId:candidate.postId,priorRent,newRent,sharedDescriptionTokenCount});
+    break;
+  }
+}
 
 // Craigslist post IDs and URLs are disposable. Recover a previously verified exact-unit
 // seed only when a fresh detail page repeats the exact civic address and full rental
