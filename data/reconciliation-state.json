@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-09-23T17:15:20.875Z",
+  "refreshedAt": "2026-09-23T21:41:31.217Z",
   "groups": [
     {
       "identityKey": "1533 maple st::url:69f2e13a0fd5",
@@ -98,24 +98,36 @@
       "result": "candidate_only"
     },
     {
-      "identityKey": "3260 w 16 ave near blenheim::url:588623515817",
+      "identityKey": "2111 w 11th ave near arbutus st::url:9380351bf41f",
       "sources": [
         "craigslist"
       ],
       "rents": [
-        5475
+        3550
       ],
       "exactUnit": false,
       "matchedListingId": null,
       "result": "candidate_only"
     },
     {
-      "identityKey": "2111 w 11th ave near arbutus st::url:0ed00aa1e937",
+      "identityKey": "1888 york ave near cypress st::url:919308cdb569",
       "sources": [
         "craigslist"
       ],
       "rents": [
-        3500
+        5000
+      ],
+      "exactUnit": false,
+      "matchedListingId": null,
+      "result": "candidate_only"
+    },
+    {
+      "identityKey": "3260 w 16 ave near blenheim::url:588623515817",
+      "sources": [
+        "craigslist"
+      ],
+      "rents": [
+        5475
       ],
       "exactUnit": false,
       "matchedListingId": null,
@@ -158,18 +170,6 @@
       "result": "candidate_only"
     },
     {
-      "identityKey": "1888 york ave near cypress st::url:919308cdb569",
-      "sources": [
-        "craigslist"
-      ],
-      "rents": [
-        5000
-      ],
-      "exactUnit": false,
-      "matchedListingId": null,
-      "result": "candidate_only"
-    },
-    {
       "identityKey": "3095 w 5th ave near balaclava st::url:a2e15ddfb19d",
       "sources": [
         "craigslist"
@@ -180,18 +180,6 @@
       "exactUnit": false,
       "matchedListingId": null,
       "result": "candidate_only"
-    },
-    {
-      "identityKey": "mls:r3164604",
-      "sources": [
-        "realtylink mls"
-      ],
-      "rents": [
-        5495
-      ],
-      "exactUnit": false,
-      "matchedListingId": "mls-r3164604",
-      "result": "authoritative_mls_reverified"
     },
     {
       "identityKey": "mls:r3160689",
@@ -206,15 +194,15 @@
       "result": "authoritative_mls_reverified"
     },
     {
-      "identityKey": "mls:r3137446",
+      "identityKey": "mls:r3159060",
       "sources": [
         "realtylink mls"
       ],
       "rents": [
-        5850
+        15000
       ],
-      "exactUnit": true,
-      "matchedListingId": "york-103-2535-r3137446",
+      "exactUnit": false,
+      "matchedListingId": "mls-r3159060",
       "result": "authoritative_mls_reverified"
     },
     {
@@ -232,9 +220,8 @@
   ],
   "promoted": [],
   "crossVerified": [
-    "mls-r3164604",
     "zumper-16e9ae17cd91",
-    "york-103-2535-r3137446",
+    "mls-r3159060",
     "mls-r3161880"
   ],
   "fingerprintCrossVerified": [],
@@ -244,14 +231,14 @@
   "relistedMlsMerged": [],
   "negativeMatches": [],
   "detailReactivated": [
-    "mls-r3164604"
+    "mls-r3159060"
   ],
   "mlsMissing": {},
   "mlsRemoved": [],
-  "realtylinkSnapshotCount": 4,
+  "realtylinkSnapshotCount": 3,
   "realtylinkSnapshotHighWaterMark": 7,
   "realtylinkSnapshotScope": "rent-3500-beds-2-4-whole-home-westside-v2",
   "realtylinkRemovalEligible": false,
-  "mlsRemovalSuppressed": "Partial Realtylink snapshot (4 candidates versus previous complete 7); disappearance signals ignored.",
+  "mlsRemovalSuppressed": "Partial Realtylink snapshot (3 candidates versus previous complete 7); disappearance signals ignored.",
   "mlsDuplicatesMerged": []
 }

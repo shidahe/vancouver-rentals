@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-09-23T17:16:13.098Z",
+  "refreshedAt": "2026-09-23T21:42:20.796Z",
   "listings": {
     "york-103-2535-r3137446": {
       "cached": 5,
@@ -137,6 +137,13 @@
       "failures": [],
       "photoPageUrl": "https://realtylink.org/en/house~for-rent~vancouver/263183577"
     },
+    "mls-r3159060": {
+      "cached": 5,
+      "preserved": 0,
+      "downloaded": 5,
+      "failures": [],
+      "photoPageUrl": "https://realtylink.org/en/house~for-rent~vancouver/263180687"
+    },
     "mls-r3163709": {
       "cached": 5,
       "preserved": 5,
@@ -160,8 +167,8 @@
     },
     "mls-r3164604": {
       "cached": 5,
-      "preserved": 0,
-      "downloaded": 5,
+      "preserved": 5,
+      "downloaded": 0,
       "failures": [],
       "photoPageUrl": "https://realtylink.org/en/apartment~for-rent~vancouver/263186231"
     },
@@ -188,11 +195,11 @@
     }
   },
   "totals": {
-    "sourceListings": 24,
-    "cachedListings": 24,
+    "sourceListings": 25,
+    "cachedListings": 25,
     "downloaded": 5,
     "failed": 4,
-    "preserved": 108,
+    "preserved": 113,
     "prunedListings": 0,
     "prunedIndexImages": 0,
     "prunedOrphanFiles": 0
