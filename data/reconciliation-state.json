@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-09-23T11:51:40.487Z",
+  "refreshedAt": "2026-09-23T17:15:20.875Z",
   "groups": [
     {
       "identityKey": "1533 maple st::url:69f2e13a0fd5",
@@ -182,15 +182,15 @@
       "result": "candidate_only"
     },
     {
-      "identityKey": "mls:r3137446",
+      "identityKey": "mls:r3164604",
       "sources": [
         "realtylink mls"
       ],
       "rents": [
-        5850
+        5495
       ],
-      "exactUnit": true,
-      "matchedListingId": "york-103-2535-r3137446",
+      "exactUnit": false,
+      "matchedListingId": "mls-r3164604",
       "result": "authoritative_mls_reverified"
     },
     {
@@ -206,45 +206,52 @@
       "result": "authoritative_mls_reverified"
     },
     {
-      "identityKey": "mls:r3151372",
+      "identityKey": "mls:r3137446",
       "sources": [
         "realtylink mls"
       ],
       "rents": [
-        4800
+        5850
+      ],
+      "exactUnit": true,
+      "matchedListingId": "york-103-2535-r3137446",
+      "result": "authoritative_mls_reverified"
+    },
+    {
+      "identityKey": "mls:r3161880",
+      "sources": [
+        "realtylink mls"
+      ],
+      "rents": [
+        8800
       ],
       "exactUnit": false,
-      "matchedListingId": "mls-r3151372",
+      "matchedListingId": "mls-r3161880",
       "result": "authoritative_mls_reverified"
     }
   ],
   "promoted": [],
   "crossVerified": [
-    "york-103-2535-r3137446",
+    "mls-r3164604",
     "zumper-16e9ae17cd91",
-    "mls-r3151372"
+    "york-103-2535-r3137446",
+    "mls-r3161880"
   ],
   "fingerprintCrossVerified": [],
-  "craigslistRelistingsRecovered": [
-    {
-      "listingId": "w16-coach-house-850",
-      "postId": "7967911446",
-      "sharedPhotoCount": 11,
-      "priorRent": 4975,
-      "newRent": 5475
-    }
-  ],
+  "craigslistRelistingsRecovered": [],
   "crossSourcePriceUpdates": [],
   "maskedMlsMerged": [],
   "relistedMlsMerged": [],
   "negativeMatches": [],
-  "detailReactivated": [],
+  "detailReactivated": [
+    "mls-r3164604"
+  ],
   "mlsMissing": {},
   "mlsRemoved": [],
-  "realtylinkSnapshotCount": 3,
+  "realtylinkSnapshotCount": 4,
   "realtylinkSnapshotHighWaterMark": 7,
   "realtylinkSnapshotScope": "rent-3500-beds-2-4-whole-home-westside-v2",
   "realtylinkRemovalEligible": false,
-  "mlsRemovalSuppressed": "Partial Realtylink snapshot (3 candidates versus previous complete 7); disappearance signals ignored.",
+  "mlsRemovalSuppressed": "Partial Realtylink snapshot (4 candidates versus previous complete 7); disappearance signals ignored.",
   "mlsDuplicatesMerged": []
 }

@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-09-23T11:52:29.016Z",
-  "activeCount": 23,
+  "generatedAt": "2026-09-23T17:16:15.019Z",
+  "activeCount": 24,
   "decisionReady": true,
   "readinessStatus": "finalized",
   "highIssueCount": 0,
   "mediumIssueCount": 0,
-  "infoIssueCount": 38,
+  "infoIssueCount": 40,
   "issues": [
     {
       "severity": "info",
@@ -179,6 +179,16 @@
     },
     {
       "severity": "info",
+      "id": "mls-r3164604",
+      "issue": "unknown-ac"
+    },
+    {
+      "severity": "info",
+      "id": "mls-r3164604",
+      "issue": "unknown-orientation"
+    },
+    {
+      "severity": "info",
       "id": "w16-coach-house-850",
       "issue": "unknown-orientation"
     },
@@ -201,8 +211,8 @@
   "readinessChecks": {
     "smokeOk": true,
     "smokeFresh": true,
-    "smokeCheckedAt": "2026-09-23T11:52:33.946Z",
-    "latestDataAt": "2026-09-23T11:51:44.552Z",
+    "smokeCheckedAt": "2026-09-23T17:16:20.736Z",
+    "latestDataAt": "2026-09-23T17:15:25.302Z",
     "coverageReady": true,
     "healthyDiscoveryLanes": 3,
     "coverageWarnings": [
@@ -210,7 +220,7 @@
         "severity": "warning",
         "lane": "rentalsca",
         "status": "degraded",
-        "detail": "8/9 regional searches reachable; 0 qualifying candidates parsed; 21 scoped search-only leads retained (20 new, 1 already active, 0 need revalidation); 3 detail pages blocked after 96 discovered URLs; 92 further detail checks suppressed after repeated 403/429"
+        "detail": "2/9 regional searches reachable; 0 qualifying candidates parsed; 2 scoped search-only leads retained (1 new, 1 already active, 0 need revalidation); 3 detail pages blocked after 12 discovered URLs; 9 further detail checks suppressed after repeated 403/429"
       },
       {
         "severity": "warning",
@@ -222,10 +232,22 @@
         "severity": "warning",
         "lane": "realtylink",
         "status": "degraded",
-        "detail": "3/3 searches reachable; 3 current live candidates parsed from a partial snapshot versus complete baseline 3; positive discovery usable, removals suppressed"
+        "detail": "3/3 searches reachable; 4 current live candidates parsed from a partial snapshot versus complete baseline 4; positive discovery usable, removals suppressed"
+      },
+      {
+        "severity": "warning",
+        "lane": "priority-viridian-unpriced-unit",
+        "status": "price-unverified",
+        "detail": "Viridian unit 0103 (2BR) is offered for Sep 30, but official rent is withheld; do not publish before verifying rent >= CAD $3,500"
+      },
+      {
+        "severity": "warning",
+        "lane": "priority-viridian-unpriced-unit",
+        "status": "price-unverified",
+        "detail": "Viridian unit 0309 (2BR) is offered for Oct 30, but official rent is withheld; do not publish before verifying rent >= CAD $3,500"
       }
     ]
   },
   "readinessIssues": [],
-  "finalizedAt": "2026-09-23T11:52:34.019Z"
+  "finalizedAt": "2026-09-23T17:16:20.834Z"
 }
