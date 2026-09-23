@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-09-23T04:49:33.626Z",
+  "checkedAt": "2026-09-23T11:43:12.082Z",
   "source": {
     "id": "viridian-zumper",
     "name": "Viridian exact-building fallback",
@@ -333,7 +333,7 @@
           "name": "Zumper",
           "logo": {
             "@type": "ImageObject",
-            "url": "https://d214hhm15p4t1d.cloudfront.net/web-zumper/ee391af33be01837555d5b30a1b09af213cc2063/img/zumper-full-dark.664a5ef8.svg",
+            "url": "https://d214hhm15p4t1d.cloudfront.net/web-zumper/2b0c2c63630d0b44ac32826f1ea477bf7158ddfb/img/zumper-full-dark.664a5ef8.svg",
             "width": 124,
             "height": 42
           }
@@ -607,12 +607,12 @@
   ],
   "images": [
     "https://img.zumpercdn.com/882533249/1280x960?auto=format",
-    "https://d214hhm15p4t1d.cloudfront.net/web-zumper/ee391af33be01837555d5b30a1b09af213cc2063/img/zumperDarkText.664a5ef8.svg",
-    "https://d214hhm15p4t1d.cloudfront.net/web-zumper/ee391af33be01837555d5b30a1b09af213cc2063/img/search.272ccae9.svg",
-    "https://d214hhm15p4t1d.cloudfront.net/web-zumper/ee391af33be01837555d5b30a1b09af213cc2063/img/locationAutocomplete.81057160.svg",
-    "https://d214hhm15p4t1d.cloudfront.net/web-zumper/ee391af33be01837555d5b30a1b09af213cc2063/img/Zipcode.08d98c96.svg",
-    "https://d214hhm15p4t1d.cloudfront.net/web-zumper/ee391af33be01837555d5b30a1b09af213cc2063/img/clock.4213eca3.svg",
-    "https://d214hhm15p4t1d.cloudfront.net/web-zumper/ee391af33be01837555d5b30a1b09af213cc2063/img/alert.1f2bed1b.svg",
+    "https://d214hhm15p4t1d.cloudfront.net/web-zumper/2b0c2c63630d0b44ac32826f1ea477bf7158ddfb/img/zumperDarkText.664a5ef8.svg",
+    "https://d214hhm15p4t1d.cloudfront.net/web-zumper/2b0c2c63630d0b44ac32826f1ea477bf7158ddfb/img/search.272ccae9.svg",
+    "https://d214hhm15p4t1d.cloudfront.net/web-zumper/2b0c2c63630d0b44ac32826f1ea477bf7158ddfb/img/locationAutocomplete.81057160.svg",
+    "https://d214hhm15p4t1d.cloudfront.net/web-zumper/2b0c2c63630d0b44ac32826f1ea477bf7158ddfb/img/Zipcode.08d98c96.svg",
+    "https://d214hhm15p4t1d.cloudfront.net/web-zumper/2b0c2c63630d0b44ac32826f1ea477bf7158ddfb/img/clock.4213eca3.svg",
+    "https://d214hhm15p4t1d.cloudfront.net/web-zumper/2b0c2c63630d0b44ac32826f1ea477bf7158ddfb/img/alert.1f2bed1b.svg",
     "https://img.zumpercdn.com/882533249/1280x960?dpr=1&fit=crop&h=542&q=76&w=991",
     "https://img.zumpercdn.com/882533250/1280x960?dpr=1&fit=crop&h=542&q=76&w=991",
     "https://img.zumpercdn.com/882533251/1280x960?dpr=1&fit=crop&h=542&q=76&w=991",
@@ -627,5 +627,5 @@
     "https://img.zumpercdn.com/882533253/1280x960?dpr=1&fit=crop&h=222&q=76&w=394",
     "https://img.zumpercdn.com/882533254/1280x960?dpr=1&fit=crop&h=222&q=76&w=394"
   ],
-  "elapsedMs": 3570
+  "elapsedMs": 3373
 }
