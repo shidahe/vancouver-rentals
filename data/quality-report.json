@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-09-23T21:42:22.530Z",
-  "activeCount": 25,
+  "generatedAt": "2026-09-24T05:06:26.238Z",
+  "activeCount": 26,
   "decisionReady": true,
   "readinessStatus": "finalized",
   "highIssueCount": 0,
   "mediumIssueCount": 0,
-  "infoIssueCount": 42,
+  "infoIssueCount": 43,
   "issues": [
     {
       "severity": "info",
@@ -80,6 +80,11 @@
     {
       "severity": "info",
       "id": "zumper-75ff287e7a72",
+      "issue": "unknown-orientation"
+    },
+    {
+      "severity": "info",
+      "id": "arbutus-residences-floorplan-2-bedroom-townhouse-den-1340",
       "issue": "unknown-orientation"
     },
     {
@@ -221,16 +226,16 @@
   "readinessChecks": {
     "smokeOk": true,
     "smokeFresh": true,
-    "smokeCheckedAt": "2026-09-23T21:42:28.302Z",
-    "latestDataAt": "2026-09-23T21:41:35.314Z",
+    "smokeCheckedAt": "2026-09-24T05:06:32.330Z",
+    "latestDataAt": "2026-09-24T05:05:36.298Z",
     "coverageReady": true,
     "healthyDiscoveryLanes": 3,
     "coverageWarnings": [
       {
         "severity": "warning",
         "lane": "rentalsca",
-        "status": "unhealthy",
-        "detail": "0/9 regional searches reachable; 0 qualifying candidates parsed"
+        "status": "degraded",
+        "detail": "1/9 regional searches reachable; 0 qualifying candidates parsed; 0 scoped search-only leads retained; 2 detail pages blocked after 2 discovered URLs"
       },
       {
         "severity": "warning",
@@ -242,22 +247,10 @@
         "severity": "warning",
         "lane": "realtylink",
         "status": "degraded",
-        "detail": "3/3 searches reachable; 3 current live candidates parsed from a partial snapshot versus complete baseline 3; positive discovery usable, removals suppressed"
-      },
-      {
-        "severity": "warning",
-        "lane": "priority-viridian-unpriced-unit",
-        "status": "price-unverified",
-        "detail": "Viridian unit 0103 (2BR) is offered for Sep 30, but official rent is withheld; do not publish before verifying rent >= CAD $3,500"
-      },
-      {
-        "severity": "warning",
-        "lane": "priority-viridian-unpriced-unit",
-        "status": "price-unverified",
-        "detail": "Viridian unit 0309 (2BR) is offered for Oct 30, but official rent is withheld; do not publish before verifying rent >= CAD $3,500"
+        "detail": "3/3 searches reachable; 4 current live candidates parsed from a partial snapshot versus complete baseline 4; positive discovery usable, removals suppressed"
       }
     ]
   },
   "readinessIssues": [],
-  "finalizedAt": "2026-09-23T21:42:28.398Z"
+  "finalizedAt": "2026-09-24T05:06:32.434Z"
 }

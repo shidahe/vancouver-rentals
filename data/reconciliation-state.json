@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-09-23T21:41:31.217Z",
+  "refreshedAt": "2026-09-24T05:05:29.566Z",
   "groups": [
     {
       "identityKey": "1533 maple st::url:69f2e13a0fd5",
@@ -67,7 +67,7 @@
         "zumper"
       ],
       "rents": [
-        4800
+        4700
       ],
       "exactUnit": false,
       "matchedListingId": null,
@@ -98,6 +98,30 @@
       "result": "candidate_only"
     },
     {
+      "identityKey": "3260 w 16 ave near blenheim::url:588623515817",
+      "sources": [
+        "craigslist"
+      ],
+      "rents": [
+        4975
+      ],
+      "exactUnit": false,
+      "matchedListingId": null,
+      "result": "candidate_only"
+    },
+    {
+      "identityKey": "4455 w 9th ave::url:27af75d482ae",
+      "sources": [
+        "craigslist"
+      ],
+      "rents": [
+        5000
+      ],
+      "exactUnit": false,
+      "matchedListingId": null,
+      "result": "candidate_only"
+    },
+    {
       "identityKey": "2111 w 11th ave near arbutus st::url:9380351bf41f",
       "sources": [
         "craigslist"
@@ -116,18 +140,6 @@
       ],
       "rents": [
         5000
-      ],
-      "exactUnit": false,
-      "matchedListingId": null,
-      "result": "candidate_only"
-    },
-    {
-      "identityKey": "3260 w 16 ave near blenheim::url:588623515817",
-      "sources": [
-        "craigslist"
-      ],
-      "rents": [
-        5475
       ],
       "exactUnit": false,
       "matchedListingId": null,
@@ -158,18 +170,6 @@
       "result": "candidate_only"
     },
     {
-      "identityKey": "4455 w 9th ave::url:27af75d482ae",
-      "sources": [
-        "craigslist"
-      ],
-      "rents": [
-        5000
-      ],
-      "exactUnit": false,
-      "matchedListingId": null,
-      "result": "candidate_only"
-    },
-    {
       "identityKey": "3095 w 5th ave near balaclava st::url:a2e15ddfb19d",
       "sources": [
         "craigslist"
@@ -187,7 +187,7 @@
         "realtylink mls"
       ],
       "rents": [
-        4800
+        4700
       ],
       "exactUnit": true,
       "matchedListingId": "zumper-16e9ae17cd91",
@@ -216,13 +216,26 @@
       "exactUnit": false,
       "matchedListingId": "mls-r3161880",
       "result": "authoritative_mls_reverified"
+    },
+    {
+      "identityKey": "mls:r3161950",
+      "sources": [
+        "realtylink mls"
+      ],
+      "rents": [
+        4000
+      ],
+      "exactUnit": false,
+      "matchedListingId": "mls-r3161950",
+      "result": "authoritative_mls_reverified"
     }
   ],
   "promoted": [],
   "crossVerified": [
     "zumper-16e9ae17cd91",
     "mls-r3159060",
-    "mls-r3161880"
+    "mls-r3161880",
+    "mls-r3161950"
   ],
   "fingerprintCrossVerified": [],
   "craigslistRelistingsRecovered": [],
@@ -230,15 +243,13 @@
   "maskedMlsMerged": [],
   "relistedMlsMerged": [],
   "negativeMatches": [],
-  "detailReactivated": [
-    "mls-r3159060"
-  ],
+  "detailReactivated": [],
   "mlsMissing": {},
   "mlsRemoved": [],
-  "realtylinkSnapshotCount": 3,
+  "realtylinkSnapshotCount": 4,
   "realtylinkSnapshotHighWaterMark": 7,
   "realtylinkSnapshotScope": "rent-3500-beds-2-4-whole-home-westside-v2",
   "realtylinkRemovalEligible": false,
-  "mlsRemovalSuppressed": "Partial Realtylink snapshot (3 candidates versus previous complete 7); disappearance signals ignored.",
+  "mlsRemovalSuppressed": "Partial Realtylink snapshot (4 candidates versus previous complete 7); disappearance signals ignored.",
   "mlsDuplicatesMerged": []
 }
