@@ -554,6 +554,11 @@
       "date": "2026-09-24",
       "rent": 5390,
       "note": "NEEDS CONFIRMATION: latest purpose-built fallback sources did not confirm the exact configured rent + sqft inventory row."
+    },
+    {
+      "date": "2026-09-25",
+      "rent": 5390,
+      "note": "NEEDS CONFIRMATION: latest purpose-built fallback sources did not confirm the exact configured rent + sqft inventory row."
     }
   ],
   "zumper-2fde865f7e2c": [
@@ -2249,6 +2254,11 @@
       "date": "2026-09-24",
       "rent": 4975,
       "note": "AUTO live price update from 5475 to 4975."
+    },
+    {
+      "date": "2026-09-25",
+      "rent": 4975,
+      "note": "AUTO live price update from 5475 to 4975."
     }
   ],
   "mls-r3149612": [
@@ -2259,6 +2269,11 @@
     },
     {
       "date": "2026-09-20",
+      "rent": 3995,
+      "note": "CORRECTED: restored after exact current MLS detail matched identity, explicit availability and rent."
+    },
+    {
+      "date": "2026-09-25",
       "rent": 3995,
       "note": "CORRECTED: restored after exact current MLS detail matched identity, explicit availability and rent."
     }

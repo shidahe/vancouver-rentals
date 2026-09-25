@@ -1,15 +1,15 @@
 {
-  "refreshedAt": "2026-09-24T21:41:26.737Z",
+  "refreshedAt": "2026-09-25T05:09:22.279Z",
   "mode": "candidate-only",
   "sourceHealth": {
     "rentalsca-kitsilano-2br": {
-      "checkedAt": "2026-09-24T21:41:26.737Z",
+      "checkedAt": "2026-09-25T05:09:22.279Z",
       "status": 403,
       "ok": false,
-      "finalUrl": "https://rentals.ca/vancouver/kitsilano/all-apartments-all-houses/2-bedrooms?__cf_chl_rt_tk=eN6167cXS9DI8Um4OLzQyMUWEMsAesvYVwwqGrH4vuM-1790286086-1.0.1.1-Byf3V09sdS6.dEbDFcLXWohmb9Yc0Rm2sxUnyBm9X4s"
+      "finalUrl": "https://rentals.ca/vancouver/kitsilano/all-apartments-all-houses/2-bedrooms?__cf_chl_rt_tk=JzidznVkwtDVcrRnWmMDoY4.NC.CKqXuKbqPsFqTW6k-1790312962-1.0.1.1-XNuVZFRcMATQBNZJI1.jHT8Ww57CkCOVgN8eyDDzruM"
     },
     "rentalsca-point-grey-2br": {
-      "checkedAt": "2026-09-24T21:41:26.737Z",
+      "checkedAt": "2026-09-25T05:09:22.279Z",
       "status": 200,
       "ok": true,
       "finalUrl": "https://rentals.ca/vancouver/west-point-grey/2-bedrooms",
@@ -22,7 +22,7 @@
       "detailUrlCount": 2
     },
     "rentalsca-arbutus-2br": {
-      "checkedAt": "2026-09-24T21:41:26.737Z",
+      "checkedAt": "2026-09-25T05:09:22.279Z",
       "status": 200,
       "ok": true,
       "finalUrl": "https://rentals.ca/vancouver/arbutus-ridge/2-bedrooms",
@@ -35,57 +35,64 @@
       "detailUrlCount": 9
     },
     "rentalsca-dunbar-2br": {
-      "checkedAt": "2026-09-24T21:41:26.737Z",
-      "status": 429,
-      "ok": false,
-      "finalUrl": "https://rentals.ca/vancouver/dunbar-southlands/2-bedrooms?__cf_chl_rt_tk=qiD.AT0q9Yt.ihNG9MRm2NELSy4NQ2oEM7SWps2LnH4-1790286093-1.0.1.1-BQ4A84dQQHsDL8.vEYrvsZEDDLr6Fv6o_rWLjM40_2k"
+      "checkedAt": "2026-09-25T05:09:22.279Z",
+      "status": 200,
+      "ok": true,
+      "finalUrl": "https://rentals.ca/vancouver/dunbar-southlands/2-bedrooms",
+      "detailLinkCount": 1,
+      "title": "Dunbar-Southlands Vancouver 2 Bedroom Apartments Condos and Houses for Rent",
+      "observedListingCount": 0,
+      "challengeDetected": false,
+      "searchLeadCount": 0,
+      "addressLineCount": 0,
+      "detailUrlCount": 1
     },
     "rentalsca-quilchena-2br": {
-      "checkedAt": "2026-09-24T21:41:26.737Z",
+      "checkedAt": "2026-09-25T05:09:22.279Z",
       "status": 429,
       "ok": false,
-      "finalUrl": "https://rentals.ca/vancouver/quilchena/2-bedrooms?__cf_chl_rt_tk=B1895nhUXFR_71.XKd1IyMRB.aOUfwzxqYBjKxESkIM-1790286093-1.0.1.1-5HpESkB2Wp6kPE6rL2Xx84ugiSypFPzi8DmZomuKdcY"
+      "finalUrl": "https://rentals.ca/vancouver/quilchena/2-bedrooms?__cf_chl_rt_tk=gCa2wDgVTdMAEKgJFAznK3paCN..8xMVYS_XfImnAHM-1790312971-1.0.1.1-vGxGUVnMKyjFo2EdfmIwqlZeYKZGg6GwCamb7.20bfU"
     },
     "rentalsca-kitsilano-3br": {
-      "checkedAt": "2026-09-24T21:41:26.737Z",
+      "checkedAt": "2026-09-25T05:09:22.279Z",
       "status": 429,
       "ok": false,
-      "finalUrl": "https://rentals.ca/vancouver/kitsilano/3-bedrooms?__cf_chl_rt_tk=3bnmHMJ6oJJta0glTtVd1VBh7N8vCDigXehQNYMb5Lc-1790286093-1.0.1.1-JsN30k5wXctGhMswqhFQ.jHJvimaRN9UnZZ1DwigX3c"
+      "finalUrl": "https://rentals.ca/vancouver/kitsilano/3-bedrooms?__cf_chl_rt_tk=xSHHtwZn48Gj9Q1pjJq_adXBbjPF8yjzTmNijCnU668-1790312971-1.0.1.1-vjFk99RFXeyDXlv9D425lprNzE0UcgRj4AEJLl7bqJA"
     },
     "rentalsca-kitsilano-4br": {
-      "checkedAt": "2026-09-24T21:41:26.737Z",
+      "checkedAt": "2026-09-25T05:09:22.279Z",
       "status": 429,
       "ok": false,
-      "finalUrl": "https://rentals.ca/vancouver/kitsilano/4-bedrooms?__cf_chl_rt_tk=ajMjD6Z3rhIhGpZpv2Iu6Rf6rD3FwYZOxSWNasB.f.I-1790286093-1.0.1.1-neLZpuEsZkke43HWR4HbWI4tIIXN3EkebJc6KVtDcnc"
+      "finalUrl": "https://rentals.ca/vancouver/kitsilano/4-bedrooms?__cf_chl_rt_tk=wAzixPdB.DnH.l7akBD0kWrDTL1lCJBA31YJKlAuIZE-1790312971-1.0.1.1-uKeV_OVempC0ROJxapGrbAwA.gfWCN34PM.tUDvhq2M"
     },
     "rentalsca-vancouver-3br": {
-      "checkedAt": "2026-09-24T21:41:26.737Z",
+      "checkedAt": "2026-09-25T05:09:22.279Z",
       "status": 429,
       "ok": false,
-      "finalUrl": "https://rentals.ca/vancouver/3-bedrooms?__cf_chl_rt_tk=.IfQvaD04L7PV1j2u.8yZE1oLv0QKvR6oibWK3OXBso-1790286093-1.0.1.1-ysbCJ_7zXTp0Aewi1nBWmSFxWdoXVVrli434aTBzReA"
+      "finalUrl": "https://rentals.ca/vancouver/3-bedrooms?__cf_chl_rt_tk=NGeLcAtSfU0ce0b36kELATyQEWKr1onQsAse7cfDsZo-1790312971-1.0.1.1-7w.i7hSHwO26tLBP8jv3gODqYCuzDIyj5y5TqXYwZj8"
     },
     "rentalsca-vancouver-4br": {
-      "checkedAt": "2026-09-24T21:41:26.737Z",
+      "checkedAt": "2026-09-25T05:09:22.279Z",
       "status": 429,
       "ok": false,
-      "finalUrl": "https://rentals.ca/vancouver/4-bedrooms?__cf_chl_rt_tk=dl8yZ0fVJyF0aj.Af95X3WBYqxAk6bara.4U87uHlWM-1790286093-1.0.1.1-HIVf43AlyKdihzV3jTUnhD2fJUlFtf35QhKzehSsWtY"
+      "finalUrl": "https://rentals.ca/vancouver/4-bedrooms?__cf_chl_rt_tk=R3AfPdH6gXtOV8ylfIEAxFm2N0YbATK8ePtGXbdBEd8-1790312971-1.0.1.1-W024NCvEVyHtB2c0unZa41Pi1itz3AJuagKHNOv2WEA"
     }
   },
   "diagnostics": {
     "searchResultCount": 9,
     "searchAddressLines": 4,
-    "searchDetailLinks": 7,
+    "searchDetailLinks": 8,
     "searchLeadCount": 2,
     "newSearchLeadCount": 2,
     "representedSearchLeadCount": 0,
     "revalidationSearchLeadCount": 0,
-    "detailUrls": 11,
+    "detailUrls": 12,
     "detailChecked": 3,
     "detailBlocked": 3,
     "detailNotFound": 0,
     "detailErrors": 0,
     "detailParsed": 0,
-    "detailSuppressed": 8,
+    "detailSuppressed": 9,
     "detailCircuitOpen": true
   },
   "searchLeads": [
@@ -99,7 +106,7 @@
       "bathrooms": 2,
       "source": "Rentals.ca search",
       "searchUrl": "https://rentals.ca/vancouver/arbutus-ridge/2-bedrooms",
-      "checkedAt": "2026-09-24T21:41:26.737Z",
+      "checkedAt": "2026-09-25T05:09:22.279Z",
       "publishable": false,
       "evidenceKind": "search_result_lead_only",
       "availabilityVerified": false,
@@ -121,7 +128,7 @@
       "bathrooms": 2,
       "source": "Rentals.ca search",
       "searchUrl": "https://rentals.ca/vancouver/arbutus-ridge/2-bedrooms",
-      "checkedAt": "2026-09-24T21:41:26.737Z",
+      "checkedAt": "2026-09-25T05:09:22.279Z",
       "publishable": false,
       "evidenceKind": "search_result_lead_only",
       "availabilityVerified": false,

@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-09-24T21:44:11.932Z",
+  "generatedAt": "2026-09-25T05:11:46.714Z",
   "activeCount": 27,
   "decisionReady": false,
   "readinessStatus": "finalized",
   "highIssueCount": 1,
   "mediumIssueCount": 0,
-  "infoIssueCount": 45,
+  "infoIssueCount": 46,
   "issues": [
     {
       "severity": "info",
@@ -84,11 +84,6 @@
     },
     {
       "severity": "info",
-      "id": "arbutus-residences-floorplan-2-bedroom-townhouse-den-1340",
-      "issue": "unknown-orientation"
-    },
-    {
-      "severity": "info",
       "id": "zumper-1441677a9e59",
       "issue": "unknown-ac"
     },
@@ -131,6 +126,12 @@
       "severity": "info",
       "id": "mls-r3151022",
       "issue": "unknown-orientation"
+    },
+    {
+      "severity": "high",
+      "id": "mls-r3148298",
+      "issue": "stale-verification",
+      "detail": "Last verified 2.0 days ago"
     },
     {
       "severity": "info",
@@ -183,12 +184,6 @@
       "issue": "unknown-orientation"
     },
     {
-      "severity": "high",
-      "id": "mls-r3163709",
-      "issue": "stale-verification",
-      "detail": "Last verified 2.0 days ago"
-    },
-    {
       "severity": "info",
       "id": "mls-r3163709",
       "issue": "unknown-orientation"
@@ -225,6 +220,16 @@
     },
     {
       "severity": "info",
+      "id": "mls-r3149612",
+      "issue": "unknown-ac"
+    },
+    {
+      "severity": "info",
+      "id": "mls-r3149612",
+      "issue": "unknown-orientation"
+    },
+    {
+      "severity": "info",
       "id": "mls-r3167417",
       "issue": "unknown-orientation"
     },
@@ -242,8 +247,8 @@
   "readinessChecks": {
     "smokeOk": true,
     "smokeFresh": true,
-    "smokeCheckedAt": "2026-09-24T21:44:18.014Z",
-    "latestDataAt": "2026-09-24T21:43:09.366Z",
+    "smokeCheckedAt": "2026-09-25T05:11:52.753Z",
+    "latestDataAt": "2026-09-25T05:11:00.282Z",
     "coverageReady": true,
     "healthyDiscoveryLanes": 3,
     "coverageWarnings": [
@@ -251,7 +256,7 @@
         "severity": "warning",
         "lane": "rentalsca",
         "status": "degraded",
-        "detail": "2/9 regional searches reachable; 0 qualifying candidates parsed; 2 scoped search-only leads retained (2 new, 0 already active, 0 need revalidation); 3 detail pages blocked after 11 discovered URLs; 8 further detail checks suppressed after repeated 403/429"
+        "detail": "3/9 regional searches reachable; 0 qualifying candidates parsed; 2 scoped search-only leads retained (2 new, 0 already active, 0 need revalidation); 3 detail pages blocked after 12 discovered URLs; 9 further detail checks suppressed after repeated 403/429"
       },
       {
         "severity": "warning",
@@ -263,22 +268,10 @@
         "severity": "warning",
         "lane": "realtylink",
         "status": "degraded",
-        "detail": "3/3 searches reachable; 4 current live candidates parsed from a partial snapshot versus complete baseline 4; positive discovery usable, removals suppressed"
-      },
-      {
-        "severity": "warning",
-        "lane": "priority-viridian-unpriced-unit",
-        "status": "price-unverified",
-        "detail": "Viridian unit 0103 (2BR) is offered for Sep 30, but official rent is withheld; do not publish before verifying rent >= CAD $3,500"
-      },
-      {
-        "severity": "warning",
-        "lane": "priority-viridian-unpriced-unit",
-        "status": "price-unverified",
-        "detail": "Viridian unit 0309 (2BR) is offered for Oct 30, but official rent is withheld; do not publish before verifying rent >= CAD $3,500"
+        "detail": "3/3 searches reachable; 5 current live candidates parsed from a partial snapshot versus complete baseline 5; positive discovery usable, removals suppressed"
       }
     ]
   },
   "readinessIssues": [],
-  "finalizedAt": "2026-09-24T21:44:18.132Z"
+  "finalizedAt": "2026-09-25T05:11:52.857Z"
 }
