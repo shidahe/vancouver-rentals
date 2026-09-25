@@ -363,6 +363,11 @@
       "date": "2026-09-03",
       "rent": 3595,
       "note": "AUTO price update from 3590 to 3595 after direct live detail-page verification."
+    },
+    {
+      "date": "2026-09-25",
+      "rent": 3590,
+      "note": "AUTO-HIDDEN: exact marketplace page now offers an availability alert instead of a currently available rental; confirmation required before removal."
     }
   ],
   "zumper-adc0623c7c44": [
@@ -2295,6 +2300,13 @@
       "date": "2026-09-22",
       "rent": 4695,
       "note": "NEW: live Zumper detail auto-published as independent inventory."
+    }
+  ],
+  "mls-r3167237": [
+    {
+      "date": "2026-09-25",
+      "rent": 13000,
+      "note": "NEW: live Realtylink MLS R3167237 auto-published."
     }
   ]
 }
