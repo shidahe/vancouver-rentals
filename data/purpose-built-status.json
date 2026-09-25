@@ -1,16 +1,16 @@
 {
-  "refreshedAt": "2026-09-25T15:05:07.885Z",
+  "refreshedAt": "2026-09-25T17:23:31.053Z",
   "buildings": [
     {
       "building": "Kits Walk",
-      "checkedAt": "2026-09-25T15:05:07.885Z",
+      "checkedAt": "2026-09-25T17:23:31.053Z",
       "observations": [
         {
           "url": "https://rentals.ca/vancouver/kits-walk-by-strand",
-          "httpStatus": 200,
-          "usable": true,
+          "httpStatus": 403,
+          "usable": false,
           "error": null,
-          "reusedEvidence": true
+          "reusedEvidence": false
         }
       ],
       "inventories": [
@@ -35,8 +35,8 @@
           "sourceMatches": [
             {
               "url": "https://rentals.ca/vancouver/kits-walk-by-strand",
-              "httpStatus": 200,
-              "usable": true,
+              "httpStatus": 403,
+              "usable": false,
               "structuredMatch": false,
               "requiredMatched": false,
               "availabilityMatched": false,
@@ -49,7 +49,7 @@
     },
     {
       "building": "Arbutus Residences",
-      "checkedAt": "2026-09-25T15:05:07.885Z",
+      "checkedAt": "2026-09-25T17:23:31.053Z",
       "observations": [
         {
           "url": "https://www.rentfaster.ca/properties/2139-lahb-ave-vancouver-454186",
@@ -184,7 +184,7 @@
     },
     {
       "building": "Fourth + Mac",
-      "checkedAt": "2026-09-25T15:05:07.885Z",
+      "checkedAt": "2026-09-25T17:23:31.053Z",
       "observations": [
         {
           "url": "https://www.craigslist.org/view/d/vancouver-bed-bath-fourth-mac-kitsilano/eiSLCKTVqsrtPUWpUpJyDN",

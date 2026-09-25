@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-09-25T15:05:07.396Z",
+  "refreshedAt": "2026-09-25T17:23:30.600Z",
   "groups": [
     {
       "identityKey": "1533 maple st::url:69f2e13a0fd5",
@@ -23,18 +23,6 @@
       ],
       "exactUnit": false,
       "matchedListingId": "zumper-9157c4798023",
-      "result": "candidate_only"
-    },
-    {
-      "identityKey": "3366 w 26th ave::unit:3",
-      "sources": [
-        "zumper"
-      ],
-      "rents": [
-        3600
-      ],
-      "exactUnit": true,
-      "matchedListingId": "zumper-75ff287e7a72",
       "result": "candidate_only"
     },
     {
@@ -218,15 +206,15 @@
       "result": "authoritative_mls_reverified"
     },
     {
-      "identityKey": "mls:r3151372",
+      "identityKey": "mls:r3161950",
       "sources": [
         "realtylink mls"
       ],
       "rents": [
-        4800
+        4000
       ],
       "exactUnit": false,
-      "matchedListingId": "mls-r3151372",
+      "matchedListingId": "mls-r3161950",
       "result": "authoritative_mls_reverified"
     }
   ],
@@ -234,7 +222,7 @@
   "crossVerified": [
     "zumper-16e9ae17cd91",
     "york-103-2535-r3137446",
-    "mls-r3151372"
+    "mls-r3161950"
   ],
   "fingerprintCrossVerified": [],
   "craigslistRelistingsRecovered": [],
@@ -246,7 +234,7 @@
   "mlsMissing": {},
   "mlsRemoved": [],
   "mlsStaleHidden": [
-    "mls-r3148298"
+    "mls-r3164604"
   ],
   "realtylinkSnapshotCount": 3,
   "realtylinkSnapshotHighWaterMark": 7,

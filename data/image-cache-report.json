@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-09-25T15:06:01.037Z",
+  "refreshedAt": "2026-09-25T17:24:22.438Z",
   "listings": {
     "york-103-2535-r3137446": {
       "cached": 5,
@@ -35,13 +35,6 @@
       "downloaded": 0,
       "failures": [],
       "photoPageUrl": "https://www.zumper.com/address/1533-maple-st-vancouver-bc-v6j-3s2-can"
-    },
-    "zumper-75ff287e7a72": {
-      "cached": 5,
-      "preserved": 5,
-      "downloaded": 0,
-      "failures": [],
-      "photoPageUrl": "https://www.zumper.com/address/3366-w-26th-ave-vancouver-bc-v6s-1n5-can"
     },
     "2268-w-broadway-312-r3153999": {
       "cached": 5,
@@ -165,13 +158,6 @@
       "failures": [],
       "photoPageUrl": "https://www.craigslist.org/view/d/vancouver-ocean-view-2br-2ba-with-den/kZEyBrAFDhJYBcmtaq27m2"
     },
-    "mls-r3164604": {
-      "cached": 5,
-      "preserved": 5,
-      "downloaded": 0,
-      "failures": [],
-      "photoPageUrl": "https://realtylink.org/en/apartment~for-rent~vancouver/263186231"
-    },
     "w16-coach-house-850": {
       "cached": 5,
       "preserved": 5,
@@ -209,13 +195,13 @@
     }
   },
   "totals": {
-    "sourceListings": 27,
-    "cachedListings": 27,
+    "sourceListings": 25,
+    "cachedListings": 25,
     "downloaded": 0,
     "failed": 4,
-    "preserved": 128,
-    "prunedListings": 1,
-    "prunedIndexImages": 5,
+    "preserved": 118,
+    "prunedListings": 2,
+    "prunedIndexImages": 10,
     "prunedOrphanFiles": 0
   }
 }

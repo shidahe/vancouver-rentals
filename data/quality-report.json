@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-09-25T15:06:01.915Z",
-  "activeCount": 27,
-  "decisionReady": true,
+  "generatedAt": "2026-09-25T17:24:23.753Z",
+  "activeCount": 25,
+  "decisionReady": false,
   "readinessStatus": "finalized",
   "highIssueCount": 0,
   "mediumIssueCount": 0,
-  "infoIssueCount": 44,
+  "infoIssueCount": 40,
   "issues": [
     {
       "severity": "info",
@@ -60,16 +60,6 @@
     {
       "severity": "info",
       "id": "zumper-976e340c66a7",
-      "issue": "unknown-orientation"
-    },
-    {
-      "severity": "info",
-      "id": "zumper-75ff287e7a72",
-      "issue": "unknown-ac"
-    },
-    {
-      "severity": "info",
-      "id": "zumper-75ff287e7a72",
       "issue": "unknown-orientation"
     },
     {
@@ -184,16 +174,6 @@
     },
     {
       "severity": "info",
-      "id": "mls-r3164604",
-      "issue": "unknown-ac"
-    },
-    {
-      "severity": "info",
-      "id": "mls-r3164604",
-      "issue": "unknown-orientation"
-    },
-    {
-      "severity": "info",
       "id": "w16-coach-house-850",
       "issue": "unknown-orientation"
     },
@@ -231,16 +211,16 @@
   "readinessChecks": {
     "smokeOk": true,
     "smokeFresh": true,
-    "smokeCheckedAt": "2026-09-25T15:06:08.046Z",
-    "latestDataAt": "2026-09-25T15:05:14.297Z",
-    "coverageReady": true,
+    "smokeCheckedAt": "2026-09-25T17:24:29.421Z",
+    "latestDataAt": "2026-09-25T17:23:37.277Z",
+    "coverageReady": false,
     "healthyDiscoveryLanes": 3,
     "coverageWarnings": [
       {
         "severity": "warning",
         "lane": "rentalsca",
-        "status": "unhealthy",
-        "detail": "0/9 regional searches reachable; 0 qualifying candidates parsed"
+        "status": "degraded",
+        "detail": "2/9 regional searches reachable; 0 qualifying candidates parsed; 2 scoped search-only leads retained (2 new, 0 already active, 0 need revalidation); 3 detail pages blocked after 10 discovered URLs; 7 further detail checks suppressed after repeated 403/429"
       },
       {
         "severity": "warning",
@@ -256,6 +236,34 @@
       }
     ]
   },
-  "readinessIssues": [],
-  "finalizedAt": "2026-09-25T15:06:08.149Z"
+  "readinessIssues": [
+    {
+      "severity": "high",
+      "issue": "discovery-coverage-not-ready",
+      "detail": [
+        {
+          "severity": "high",
+          "issue": "priority-building-inventory-source-unhealthy",
+          "building": "kits-walk",
+          "checkedAt": "2026-09-25T17:15:46.950Z",
+          "evidenceUrl": "https://www.kitswalkleasing.com/floorplans"
+        },
+        {
+          "severity": "high",
+          "issue": "priority-building-inventory-source-unhealthy",
+          "building": "larchway-gardens",
+          "checkedAt": "2026-09-25T17:15:46.950Z",
+          "evidenceUrl": "https://quadrealresidential.com/vancouver/larchway-gardens/floorplans/"
+        },
+        {
+          "severity": "high",
+          "issue": "priority-building-inventory-source-unhealthy",
+          "building": "viridian",
+          "checkedAt": "2026-09-25T17:15:46.950Z",
+          "evidenceUrl": "https://www.rentcafe.com/apartments/bc/vancouver/viridian1/default.aspx"
+        }
+      ]
+    }
+  ],
+  "finalizedAt": "2026-09-25T17:24:29.518Z"
 }
