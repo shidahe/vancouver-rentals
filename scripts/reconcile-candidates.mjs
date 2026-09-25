@@ -71,7 +71,7 @@ const groups=new Map();
 for(const c of all){if(!usable(c))continue;const k=candidateKey(c);if(!groups.has(k))groups.set(k,[]);groups.get(k).push(c);}
 const listingByKey=new Map();
 for(const x of payload.listings){const canonicalMls=listingMls(x);if(canonicalMls)x.mls=canonicalMls;const k=key(x.address,listingUnit(x),x.url,null,canonicalMls);if(!listingByKey.has(k)||listingByKey.get(k).source==='Zumper live detail')listingByKey.set(k,x);}
-const state={refreshedAt:iso,groups:[],promoted:[],crossVerified:[],fingerprintCrossVerified:[],craigslistRelistingsRecovered:[],crossSourcePriceUpdates:[],maskedMlsMerged:[],relistedMlsMerged:[],negativeMatches:[],detailReactivated:[],mlsMissing:{},mlsRemoved:[]};
+const state={refreshedAt:iso,groups:[],promoted:[],crossVerified:[],fingerprintCrossVerified:[],craigslistRelistingsRecovered:[],crossSourcePriceUpdates:[],maskedMlsMerged:[],relistedMlsMerged:[],negativeMatches:[],detailReactivated:[],mlsMissing:{},mlsRemoved:[],mlsStaleHidden:[]};
 
 // A current exact-address Craigslist detail can supersede an older marketplace price
 // only when the bed/bath/area fingerprint and substantial description text also agree.
@@ -168,6 +168,30 @@ for(const x of payload.listings){
     state.detailReactivated.push(x.id);
     (history[x.id]||=[]).push({date:today,rent,note:'CORRECTED: restored after exact current MLS detail matched identity, explicit availability and rent.'});
   }
+}
+
+// A partial Realtylink search snapshot cannot prove disappearance, but it also cannot
+// keep an old MLS card alive indefinitely. When the exact detail was checked and no
+// fresh explicit availability was found, fail closed after 48 hours unless the current
+// authoritative search snapshot contains that MLS number. This hides the card for
+// revalidation without treating a partial snapshot as removal evidence.
+const currentSearchMls=new Set((realtylink.candidates||[]).filter(usable).map(x=>norm(x.mls)).filter(Boolean));
+const MLS_POSITIVE_MAX_AGE_MS=48*60*60*1000;
+for(const x of payload.listings){
+  const mls=listingMls(x);
+  const verifiedAt=Date.parse(x.verifiedAt||'');
+  if(!mls||x.mlsInventoryManaged!==true||x.availabilityStatus!=='active'||positiveMlsDetails.has(x.id)||
+    currentSearchMls.has(norm(mls))||!Number.isFinite(verifiedAt)||Date.now()-verifiedAt<=MLS_POSITIVE_MAX_AGE_MS)continue;
+  const evidence=await read(path.join(DATA,'evidence',`${x.id}.json`),null);
+  const checkedAt=Date.parse(evidence?.checkedAt||'');
+  if(!Number.isFinite(checkedAt)||Date.now()-checkedAt>12*60*60*1000||evidence?.explicitPositive===true)continue;
+  x.availabilityStatus='needs_confirmation';x.status='corrected';x.removedAt=null;x.lastChecked=today;x.verificationLevel='unverified';
+  x.verificationMethod=`Hidden: MLS ${mls} has no fresh positive availability evidence; the current exact detail lacks explicit availability and the partial search snapshot cannot safely preserve it.`;
+  x.dataNotes=`${String(x.dataNotes||'').replace(/\s*Fail-closed after stale MLS positive evidence\.?/gi,'').trim()} Fail-closed after stale MLS positive evidence.`.trim();
+  const note=`AUTO-HIDDEN: MLS ${mls} exceeded 48 hours without fresh positive availability; partial search results are not removal evidence.`;
+  const entries=history[x.id]||=[];
+  if(entries.at(-1)?.note!==note)(history[x.id]||=[]).push({date:today,rent:x.rent??null,note});
+  state.mlsStaleHidden.push(x.id);
 }
 
 // Realtylink may mask one civic-number digit (for example 453x) while a marketplace

@@ -343,6 +343,10 @@ for (const building of ['kits-walk', 'viridian']) {
 if (!source.includes('auto_published_authoritative_mls')) failures.push('Current authoritative MLS inventory cannot auto-publish.');
 if (!source.includes('realtylinkRemovalEligible') || !source.includes('missingAgeMs>=4*60*60*1000') || !source.includes('realtylinkSnapshotComplete')) failures.push('MLS disappearance is not guarded by snapshot completeness and a minimum confirmation interval.');
 if (!source.includes('positiveMlsDetails.has(x.id)') || !source.includes('identity, availability and rent all matched')) failures.push('Fresh exact MLS detail evidence can be overridden by volatile search-result disappearance.');
+if (!source.includes('mlsStaleHidden') || !source.includes('MLS_POSITIVE_MAX_AGE_MS=48*60*60*1000') ||
+    !source.includes('no fresh positive availability evidence') || !source.includes('currentSearchMls.has(norm(mls))')) {
+  failures.push('Stale MLS cards can remain active during partial Realtylink snapshots without current positive availability evidence.');
+}
 if (!source.includes("/realtylink\\.org/i.test(evidence?.sourceUrl||evidence?.finalUrl||'')")) failures.push('Third-party MLS mirrors can be mistaken for authoritative exact Realtylink evidence.');
 if (!source.includes('property is not currently for sale or for rent') || !source.includes('this property is no longer available') || !source.includes('status\\s*\\n\\s*expired')) failures.push('Explicit inactive/expired marketplace evidence is not treated as a strong negative.');
 if(!isRealtylinkListingNotFoundRedirect('https://realtylink.org/en/house~for-rent~vancouver/263179663','https://realtylink.org/en/house~for-rent~vancouver?listingnotfound=263179663&q=abc')||isRealtylinkListingNotFoundRedirect('https://realtylink.org/en/house~for-rent~vancouver/263179663','https://realtylink.org/en/house~for-rent~vancouver?listingnotfound=999'))failures.push('Exact Realtylink listing-not-found redirects are not safely identity-bound.');
