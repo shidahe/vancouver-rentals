@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-09-25T17:15:46.950Z",
+  "checkedAt": "2026-09-25T21:38:01.619Z",
   "source": {
     "id": "rentalsca-quilchena-2br",
     "name": "Rentals.ca Quilchena 2BR",
@@ -7,9 +7,24 @@
     "kind": "marketplace",
     "adapter": "rentalsca-search"
   },
-  "ok": false,
-  "error": "Error: page.goto: Page crashed\nCall log:\n  - navigating to \"https://rentals.ca/vancouver/quilchena/2-bedrooms\", waiting until \"domcontentloaded\"\n",
-  "status": null,
-  "finalUrl": "https://rentals.ca/vancouver/west-point-grey/2-bedrooms",
-  "elapsedMs": 1
+  "ok": true,
+  "status": 429,
+  "finalUrl": "https://rentals.ca/vancouver/quilchena/2-bedrooms",
+  "title": "Just a moment...",
+  "bodyText": "rentals.ca\nPerforming security verification\n\nThis website uses a security service to protect against malicious bots. This page is displayed while the website verifies you are not a bot.\n\nRay ID: a40d3006597d7ce6\nPerformance and Security by Cloudflare\nPrivacy",
+  "links": [
+    {
+      "href": "https://www.cloudflare.com/?utm_source=challenge&utm_campaign=m",
+      "text": "Cloudflare"
+    },
+    {
+      "href": "https://www.cloudflare.com/privacypolicy/",
+      "text": "Privacy"
+    }
+  ],
+  "jsonLd": [],
+  "images": [
+    "https://rentals.ca/favicon.ico"
+  ],
+  "elapsedMs": 3073
 }

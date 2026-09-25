@@ -19,9 +19,16 @@
     "balcony": true,
     "largeWindows": true
   },
-  "discoveredAt": "2026-09-25T17:15:46.950Z",
-  "liveCheckedAt": "2026-09-25T17:15:46.950Z",
-  "liveStatus": null,
-  "error": "Error: page.goto: Page crashed\nCall log:\n  - navigating to \"https://www.craigslist.org/view/d/vancouver-spacious-bedroom-bathroom/uWMbQgQXpdxGrrD5NEfX4J\", waiting until \"domcontentloaded\"\n",
+  "discoveredAt": "2026-09-25T21:38:01.619Z",
+  "liveCheckedAt": "2026-09-25T21:38:01.619Z",
+  "liveStatus": 410,
+  "finalUrl": "https://www.craigslist.org/view/d/vancouver-spacious-bedroom-bathroom/uWMbQgQXpdxGrrD5NEfX4J",
+  "identityMatch": false,
+  "explicitPositive": false,
+  "explicitNegative": true,
+  "negativePhrase": "HTTP 410",
+  "livePrice": null,
+  "liveFacts": {},
+  "pageTextSample": "CL\n\nvancouver, BC >\n\nvancouver >\n\nhousing >\n\napartments / housing for rent\n\npost\naccount\nThis posting has been deleted by its author.\nmore local postings\nview all\nNewly Renovated and Furnished Luxury 1 Bed 1 Den Condo Downtown Van\n🏡 3-Bedroom Upper Home – Fraserview\nUpper Level 3 Bedroom 2 Baths House For Rent\n2 Bd Spacious Suite\nCharming Heritage 1 BR in the heart of Gastown\nUnfurnished Two-Bedroom Residence At Mode, River District\nUnfurnished Two Bedroom Property at The Pacific\nUnfurnished Two-Bedroom Residence At Hyatt Vancouver Alberni\nNew 3 bedroom 3 PERSON Unfurnished basement suite available Now\n3-large Bedroom Garden-Level Suite for Rent – Killarney\nNew 3 bedroom 3 PERSON Furnished basement suite available Now\n$1,400 / 2br - 800ft2\nNew 3 bedroom 3 PERSON FURNISHED basement suite available Now\nNew 2 bedroom 3 PERSON basement suite available Now\nSPACIOUS ALMOST NEW 2 BEDROOM BASEMENT SUITE AVAILABLE Now\nMain & 41st Apartments - 2 Bedroom - Available Now\nClean 2-Bedroom Basement Suite in Convenient South Vancouver\n1 Bedroom For Rent - Shared Living Space - Main Floor\nBRAND NEW LUXURY LIVING AT TWO BURRARD PLACE\nWaterfront Townhome in Prime Yaletown Location\nMOUNT PLEASANT DUPLEX UNIT WITH LARGE SUNNY DECK\nBright 3-Bed Garden Suite for Rent in Cambie Village, Vancouver | Priv\nZephyr Apartments - 2 Bedroom - Available Now\nBright Three Bedroom Laneway Home in East Vancouver\nhelp\nsafety\nprivacy\nterms\nabout\napp\n© 2026 craigslist",
   "autoPublishResult": "blocked_verification_gate"
 }

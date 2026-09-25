@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-09-25T17:15:46.950Z",
+  "checkedAt": "2026-09-25T21:38:01.619Z",
   "source": {
     "id": "arbutus-residences-rentfaster",
     "name": "Arbutus Residences inventory",
@@ -7,9 +7,24 @@
     "kind": "property_manager",
     "adapter": "rentfaster-detail"
   },
-  "ok": false,
-  "error": "Error: page.goto: Page crashed\nCall log:\n  - navigating to \"https://www.rentfaster.ca/properties/2139-lahb-ave-vancouver-454186\", waiting until \"domcontentloaded\"\n",
-  "status": null,
-  "finalUrl": "https://rentals.ca/vancouver/west-point-grey/2-bedrooms",
-  "elapsedMs": 0
+  "ok": true,
+  "status": 403,
+  "finalUrl": "https://www.rentfaster.ca/properties/2139-lahb-ave-vancouver-454186",
+  "title": "Just a moment...",
+  "bodyText": "www.rentfaster.ca\nPerforming security verification\n\nThis website uses a security service to protect against malicious bots. This page is displayed while the website verifies you are not a bot.\n\nRay ID: a40d319e6868e93c\nPerformance and Security by Cloudflare\nPrivacy",
+  "links": [
+    {
+      "href": "https://www.cloudflare.com/?utm_source=challenge&utm_campaign=m",
+      "text": "Cloudflare"
+    },
+    {
+      "href": "https://www.cloudflare.com/privacypolicy/",
+      "text": "Privacy"
+    }
+  ],
+  "jsonLd": [],
+  "images": [
+    "https://www.rentfaster.ca/favicon.ico"
+  ],
+  "elapsedMs": 3155
 }

@@ -21,9 +21,16 @@
     "largeWindows": true,
     "modernInterior": true
   },
-  "discoveredAt": "2026-09-25T17:15:46.950Z",
-  "liveCheckedAt": "2026-09-25T17:15:46.950Z",
-  "liveStatus": null,
-  "error": "Error: page.goto: Page crashed\nCall log:\n  - navigating to \"https://www.rew.ca/rentals/7496804/605-2075-w-12th-avenue-vancouver-bc\", waiting until \"domcontentloaded\"\n",
+  "discoveredAt": "2026-09-25T21:38:01.619Z",
+  "liveCheckedAt": "2026-09-25T21:38:01.619Z",
+  "liveStatus": 403,
+  "finalUrl": "https://www.rew.ca/rentals/7496804/605-2075-w-12th-avenue-vancouver-bc",
+  "identityMatch": false,
+  "explicitPositive": false,
+  "explicitNegative": false,
+  "negativePhrase": null,
+  "livePrice": null,
+  "liveFacts": {},
+  "pageTextSample": "www.rew.ca\nPerforming security verification\n\nThis website uses a security service to protect against malicious bots. This page is displayed while the website verifies you are not a bot.\n\nRay ID: a40d3219ad8d70c5\nPerformance and Security by Cloudflare\nPrivacy",
   "autoPublishResult": "blocked_verification_gate"
 }

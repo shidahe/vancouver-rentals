@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-09-25T17:15:46.950Z",
+  "checkedAt": "2026-09-25T21:38:01.619Z",
   "source": {
     "id": "viridian-zumper",
     "name": "Viridian exact-building fallback",
@@ -7,9 +7,625 @@
     "kind": "marketplace",
     "adapter": "official-floorplans"
   },
-  "ok": false,
-  "error": "Error: page.goto: Page crashed\nCall log:\n  - navigating to \"https://www.zumper.com/apartment-buildings/p510456/viridian-fairview-vancouver-bc\", waiting until \"domcontentloaded\"\n",
-  "status": null,
-  "finalUrl": "https://rentals.ca/vancouver/west-point-grey/2-bedrooms",
-  "elapsedMs": 1
+  "ok": true,
+  "status": 200,
+  "finalUrl": "https://www.zumper.com/apartment-buildings/p510456/viridian-fairview-vancouver-bc",
+  "title": "Viridian Apartments - 1783 14th Ave W Vancouver BC | Zumper",
+  "bodyText": "OVERVIEW\nFLOOR PLANS\nAMENITIES\nPOLICIES AND FEES\nABOUT\nNEIGHBORHOOD\nCheck availability\nAdvertise\nManage rentals\nMarketing Studio\nApartment for rent\nPet friendly\nUPDATED 21 HOURS AGO\nViridian Apartments\n1783 14th Ave W, Vancouver, BC V6J 0H7, CAN\n8.8\nVery Good\nMONTHLY RENT\n$2,725–$3,895\nBEDS\n1–2\nBATHS\n1–2\nSQFT\n437–824\n50 Photos\nView all (50)\nCheck availability\nHighlights\nPet Friendly\nLocation\nUse two fingers to move the map\nUse ⌘ + scroll to zoom the map\nDirections\nStreet view\n1783 14th Ave W, Vancouver, BC V6J 0H7, CAN|Fairview\nVancouver Apartments\nFairview Apartments\nHi! Let’s figure out if this property is right for you.\nAsk me anything\n\nPowered by Zumper AI\n\nContact\n\nManaged by\n\nBGO Living\n\nLeasing office\n\n(778) 654-4792\nAsk a question\nReport this property\nOne sec, gathering the property overview\nFloor plans\n\nLet's explore this property.\n\nWhat sets this place apart?\n\nAre pets allowed?\n\nHelp me set up a tour\n\nAsk Zoe anything\n\nOne sec, gathering the full amenities section\nOne sec, gathering the Policies and fees\nOne sec, gathering the property details\nOne sec, gathering the rent trends section\nOne sec, gathering the affordability calculator\nOne sec, gathering the message form\nOne sec, gathering the detail schools widget\nAdvertisement\nInternet available near Viridian\nOne sec, gathering the similar section\nOne sec, gathering the scores and pois info\nInterested in Viridian?\nSee if it's available now!\nCheck availability\nOne sec, gathering the similar section\nOne sec, gathering the contextual footer\nOne sec, gathering the footer\nBy clicking “Accept Cookies”, you agree to: storing of cookies on your device for site navigation, usage analysis, and marketing efforts. Use of some cookies may be considered a “sale”, “sharing” for behavioral advertising, or “targeted advertising”. You can opt-out by clicking “Customize Settings” and following the instructions. Privacy Policy\nCustomize Settings Reject All Accept Cookies",
+  "links": [
+    {
+      "href": "https://www.zumper.com/apartment-buildings/p510456/viridian-fairview-vancouver-bc",
+      "text": "OVERVIEW"
+    },
+    {
+      "href": "https://www.zumper.com/apartment-buildings/p510456/viridian-fairview-vancouver-bc#floor-plans",
+      "text": "FLOOR PLANS"
+    },
+    {
+      "href": "https://www.zumper.com/apartment-buildings/p510456/viridian-fairview-vancouver-bc#amenities",
+      "text": "AMENITIES"
+    },
+    {
+      "href": "https://www.zumper.com/apartment-buildings/p510456/viridian-fairview-vancouver-bc#policies-and-fees",
+      "text": "POLICIES AND FEES"
+    },
+    {
+      "href": "https://www.zumper.com/apartment-buildings/p510456/viridian-fairview-vancouver-bc#about",
+      "text": "ABOUT"
+    },
+    {
+      "href": "https://www.zumper.com/apartment-buildings/p510456/viridian-fairview-vancouver-bc#neighborhood",
+      "text": "NEIGHBORHOOD"
+    },
+    {
+      "href": "https://www.zumper.com/",
+      "text": ""
+    },
+    {
+      "href": "https://advertise.zumper.com/",
+      "text": "Advertise"
+    },
+    {
+      "href": "https://www.zumper.com/manage",
+      "text": "Manage rentals"
+    },
+    {
+      "href": "https://www.zumper.com/manage/portal",
+      "text": "Marketing Studio"
+    },
+    {
+      "href": "https://www.zumper.com/apartments-for-rent/vancouver-bc",
+      "text": ""
+    },
+    {
+      "href": "",
+      "text": "Very Good"
+    },
+    {
+      "href": "https://www.zumper.com/apartment-buildings/p510456/viridian-fairview-vancouver-bc#rating",
+      "text": "Very Good"
+    },
+    {
+      "href": "https://www.zumper.com/apartments-for-rent/vancouver-bc",
+      "text": ""
+    },
+    {
+      "href": "",
+      "text": "Very Good"
+    },
+    {
+      "href": "https://www.zumper.com/apartment-buildings/p510456/viridian-fairview-vancouver-bc#rating",
+      "text": "Very Good"
+    },
+    {
+      "href": "https://www.mapbox.com/",
+      "text": ""
+    },
+    {
+      "href": "https://www.google.com/maps/dir/?api=1&destination=49.259082210654896,-123.14510560066968&travelmode=driving",
+      "text": "Directions"
+    },
+    {
+      "href": "https://www.google.com/maps/@?api=1&map_action=pano&viewpoint=49.259082210654896,-123.14510560066968",
+      "text": "Street view"
+    },
+    {
+      "href": "tel:7786544792",
+      "text": "(778) 654-4792"
+    },
+    {
+      "href": "https://zumper.com/privacy-policy",
+      "text": "Privacy Policy"
+    },
+    {
+      "href": "https://cookiepedia.co.uk/giving-consent-to-cookies",
+      "text": "More information about your privacy"
+    },
+    {
+      "href": "https://www.onetrust.com/solutions/consent-and-preferences/",
+      "text": ""
+    }
+  ],
+  "jsonLd": [
+    {
+      "@context": "http://schema.org",
+      "address": {
+        "@context": "http://schema.org",
+        "@type": "PostalAddress",
+        "addressLocality": "Vancouver",
+        "addressRegion": "BC",
+        "postalCode": "V6J 0H7",
+        "streetAddress": "1783 14th Ave W",
+        "addressCountry": {
+          "@type": "Country",
+          "name": "CAN"
+        }
+      },
+      "description": "View detailed information about Viridian rental apartments located at 1783 14th Ave W, Vancouver, BC V6J 0H7. See rent prices, lease prices, location information, floor plans and amenities.",
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 49.259082210654896,
+        "longitude": -123.14510560066968
+      },
+      "image": {
+        "contentUrl": "https://img.zumpercdn.com/882533249/1280x960?auto=format",
+        "@type": "ImageObject"
+      },
+      "telephone": "(778) 654-4792",
+      "containedInPlace": {
+        "@context": "http://schema.org",
+        "@type": "City",
+        "name": "Vancouver",
+        "address": "Vancouver BC",
+        "url": "https://www.zumper.com/apartments-for-rent/vancouver-bc"
+      },
+      "name": "Viridian",
+      "@type": "ApartmentComplex",
+      "mainEntityOfPage": "https://www.zumper.com/apartment-buildings/p510456/viridian-fairview-vancouver-bc",
+      "amenityFeature": [
+        {
+          "@type": "LocationFeatureSpecification",
+          "name": "Onsite Laundry",
+          "value": true
+        },
+        {
+          "@type": "LocationFeatureSpecification",
+          "name": "Dishwasher",
+          "value": true
+        },
+        {
+          "@type": "LocationFeatureSpecification",
+          "name": "In-Unit Laundry",
+          "value": true
+        },
+        {
+          "@type": "LocationFeatureSpecification",
+          "name": "On-Site Management",
+          "value": true
+        },
+        {
+          "@type": "LocationFeatureSpecification",
+          "name": "Fitness Center",
+          "value": true
+        },
+        {
+          "@type": "LocationFeatureSpecification",
+          "name": "Residents Lounge",
+          "value": true
+        },
+        {
+          "@type": "LocationFeatureSpecification",
+          "name": "Swimming Pool",
+          "value": true
+        },
+        {
+          "@type": "LocationFeatureSpecification",
+          "name": "Roof Deck",
+          "value": true
+        },
+        {
+          "@type": "LocationFeatureSpecification",
+          "name": "Outdoor Space",
+          "value": true
+        },
+        {
+          "@type": "LocationFeatureSpecification",
+          "name": "Microwave",
+          "value": true
+        },
+        {
+          "@type": "LocationFeatureSpecification",
+          "name": "Stove",
+          "value": true
+        },
+        {
+          "@type": "LocationFeatureSpecification",
+          "name": "Media Lounge",
+          "value": true
+        },
+        {
+          "@type": "LocationFeatureSpecification",
+          "name": "Fridge",
+          "value": true
+        },
+        {
+          "@type": "LocationFeatureSpecification",
+          "name": "Dishwasher Available",
+          "value": true
+        },
+        {
+          "@type": "LocationFeatureSpecification",
+          "name": "Parks Nearby",
+          "value": true
+        },
+        {
+          "@type": "LocationFeatureSpecification",
+          "name": "Bicycle Room",
+          "value": true
+        },
+        {
+          "@type": "LocationFeatureSpecification",
+          "name": "24-7 On-Site Management",
+          "value": true
+        },
+        {
+          "@type": "LocationFeatureSpecification",
+          "name": "Electronic Keyless Entry",
+          "value": true
+        },
+        {
+          "@type": "LocationFeatureSpecification",
+          "name": "Private Dining Area",
+          "value": true
+        },
+        {
+          "@type": "LocationFeatureSpecification",
+          "name": "EV Charging",
+          "value": true
+        },
+        {
+          "@type": "LocationFeatureSpecification",
+          "name": "Swimming Pool and Poolside Sundeck",
+          "value": true
+        },
+        {
+          "@type": "LocationFeatureSpecification",
+          "name": "Exclusive Landscaped Deck, Barbeque and Garden",
+          "value": true
+        },
+        {
+          "@type": "LocationFeatureSpecification",
+          "name": "In-House Pet Spa",
+          "value": true
+        },
+        {
+          "@type": "LocationFeatureSpecification",
+          "name": "Children's Play Gym",
+          "value": true
+        }
+      ]
+    },
+    {
+      "@context": "http://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "item": {
+            "@id": "https://www.zumper.com/",
+            "name": "Homepage"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "item": {
+            "@id": "https://www.zumper.com/apartments-for-rent/vancouver-bc",
+            "name": "Apartments in Vancouver"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "item": {
+            "@id": "https://www.zumper.com/apartments-for-rent/vancouver-bc/fairview",
+            "name": "Fairview"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "item": {
+            "@id": "https://www.zumper.com/apartment-buildings/p510456/viridian-fairview-vancouver-bc",
+            "name": "Viridian"
+          }
+        }
+      ]
+    },
+    {
+      "@context": "http://schema.org",
+      "@type": "Product",
+      "description": "View detailed information about Viridian rental apartments located at 1783 14th Ave W, Vancouver, BC V6J 0H7. See rent prices, lease prices, location information, floor plans and amenities.",
+      "name": "Viridian",
+      "offers": {
+        "@type": "AggregateOffer",
+        "priceCurrency": "CAD",
+        "url": "https://www.zumper.com/apartment-buildings/p510456/viridian-fairview-vancouver-bc",
+        "lowPrice": 2725,
+        "highPrice": 3895,
+        "offerCount": 3
+      },
+      "review": {
+        "@type": "Review",
+        "name": "Viridian review",
+        "author": {
+          "@type": "Organization",
+          "name": "Zumper",
+          "url": "https://zumper.com/"
+        },
+        "reviewBody": "With a solid 8.8 out of 10 overall, Viridian is a great option for renters. While some aspects, like Quality, might not be as distinguished as other properties nearby, Viridian has a number of attractive features—namely its Price— so you can be assured your rent will come with a high standard of living.  ",
+        "description": "Review and Rating",
+        "headline": "Viridian",
+        "thumbnailUrl": "https://img.zumpercdn.com/882533249/1280x960",
+        "publisher": {
+          "@type": "Organization",
+          "name": "Zumper",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://d214hhm15p4t1d.cloudfront.net/web-zumper/4a93a338be37920ddac7f339042bfd6d099029f5/img/zumper-full-dark.664a5ef8.svg",
+            "width": 124,
+            "height": 42
+          }
+        },
+        "reviewRating": {
+          "@type": "Rating",
+          "ratingValue": 8.8,
+          "bestRating": 10,
+          "worstRating": 0
+        }
+      },
+      "image": [
+        {
+          "@type": "ImageObject",
+          "contentUrl": "https://img.zumpercdn.com/882533249/1280x960?auto=format",
+          "url": "https://img.zumpercdn.com/882533249/1280x960?auto=format"
+        },
+        {
+          "@type": "ImageObject",
+          "contentUrl": "https://img.zumpercdn.com/882533250/1280x960?auto=format",
+          "url": "https://img.zumpercdn.com/882533250/1280x960?auto=format"
+        },
+        {
+          "@type": "ImageObject",
+          "contentUrl": "https://img.zumpercdn.com/882533251/1280x960?auto=format",
+          "url": "https://img.zumpercdn.com/882533251/1280x960?auto=format"
+        },
+        {
+          "@type": "ImageObject",
+          "contentUrl": "https://img.zumpercdn.com/882533252/1280x960?auto=format",
+          "url": "https://img.zumpercdn.com/882533252/1280x960?auto=format"
+        },
+        {
+          "@type": "ImageObject",
+          "contentUrl": "https://img.zumpercdn.com/882533253/1280x960?auto=format",
+          "url": "https://img.zumpercdn.com/882533253/1280x960?auto=format"
+        },
+        {
+          "@type": "ImageObject",
+          "contentUrl": "https://img.zumpercdn.com/882533254/1280x960?auto=format",
+          "url": "https://img.zumpercdn.com/882533254/1280x960?auto=format"
+        },
+        {
+          "@type": "ImageObject",
+          "contentUrl": "https://img.zumpercdn.com/882533255/1280x960?auto=format",
+          "url": "https://img.zumpercdn.com/882533255/1280x960?auto=format"
+        },
+        {
+          "@type": "ImageObject",
+          "contentUrl": "https://img.zumpercdn.com/882533256/1280x960?auto=format",
+          "url": "https://img.zumpercdn.com/882533256/1280x960?auto=format"
+        },
+        {
+          "@type": "ImageObject",
+          "contentUrl": "https://img.zumpercdn.com/882533257/1280x960?auto=format",
+          "url": "https://img.zumpercdn.com/882533257/1280x960?auto=format"
+        },
+        {
+          "@type": "ImageObject",
+          "contentUrl": "https://img.zumpercdn.com/882533258/1280x960?auto=format",
+          "url": "https://img.zumpercdn.com/882533258/1280x960?auto=format"
+        },
+        {
+          "@type": "ImageObject",
+          "contentUrl": "https://img.zumpercdn.com/882533259/1280x960?auto=format",
+          "url": "https://img.zumpercdn.com/882533259/1280x960?auto=format"
+        },
+        {
+          "@type": "ImageObject",
+          "contentUrl": "https://img.zumpercdn.com/882533260/1280x960?auto=format",
+          "url": "https://img.zumpercdn.com/882533260/1280x960?auto=format"
+        },
+        {
+          "@type": "ImageObject",
+          "contentUrl": "https://img.zumpercdn.com/882533261/1280x960?auto=format",
+          "url": "https://img.zumpercdn.com/882533261/1280x960?auto=format"
+        },
+        {
+          "@type": "ImageObject",
+          "contentUrl": "https://img.zumpercdn.com/882533262/1280x960?auto=format",
+          "url": "https://img.zumpercdn.com/882533262/1280x960?auto=format"
+        },
+        {
+          "@type": "ImageObject",
+          "contentUrl": "https://img.zumpercdn.com/882533263/1280x960?auto=format",
+          "url": "https://img.zumpercdn.com/882533263/1280x960?auto=format"
+        },
+        {
+          "@type": "ImageObject",
+          "contentUrl": "https://img.zumpercdn.com/882533264/1280x960?auto=format",
+          "url": "https://img.zumpercdn.com/882533264/1280x960?auto=format"
+        },
+        {
+          "@type": "ImageObject",
+          "contentUrl": "https://img.zumpercdn.com/882533265/1280x960?auto=format",
+          "url": "https://img.zumpercdn.com/882533265/1280x960?auto=format"
+        },
+        {
+          "@type": "ImageObject",
+          "contentUrl": "https://img.zumpercdn.com/882533266/1280x960?auto=format",
+          "url": "https://img.zumpercdn.com/882533266/1280x960?auto=format"
+        },
+        {
+          "@type": "ImageObject",
+          "contentUrl": "https://img.zumpercdn.com/882533267/1280x960?auto=format",
+          "url": "https://img.zumpercdn.com/882533267/1280x960?auto=format"
+        },
+        {
+          "@type": "ImageObject",
+          "contentUrl": "https://img.zumpercdn.com/882533268/1280x960?auto=format",
+          "url": "https://img.zumpercdn.com/882533268/1280x960?auto=format"
+        },
+        {
+          "@type": "ImageObject",
+          "contentUrl": "https://img.zumpercdn.com/882533269/1280x960?auto=format",
+          "url": "https://img.zumpercdn.com/882533269/1280x960?auto=format"
+        },
+        {
+          "@type": "ImageObject",
+          "contentUrl": "https://img.zumpercdn.com/882533270/1280x960?auto=format",
+          "url": "https://img.zumpercdn.com/882533270/1280x960?auto=format"
+        },
+        {
+          "@type": "ImageObject",
+          "contentUrl": "https://img.zumpercdn.com/882533271/1280x960?auto=format",
+          "url": "https://img.zumpercdn.com/882533271/1280x960?auto=format"
+        },
+        {
+          "@type": "ImageObject",
+          "contentUrl": "https://img.zumpercdn.com/882533272/1280x960?auto=format",
+          "url": "https://img.zumpercdn.com/882533272/1280x960?auto=format"
+        },
+        {
+          "@type": "ImageObject",
+          "contentUrl": "https://img.zumpercdn.com/882533273/1280x960?auto=format",
+          "url": "https://img.zumpercdn.com/882533273/1280x960?auto=format"
+        },
+        {
+          "@type": "ImageObject",
+          "contentUrl": "https://img.zumpercdn.com/882533274/1280x960?auto=format",
+          "url": "https://img.zumpercdn.com/882533274/1280x960?auto=format"
+        },
+        {
+          "@type": "ImageObject",
+          "contentUrl": "https://img.zumpercdn.com/882533275/1280x960?auto=format",
+          "url": "https://img.zumpercdn.com/882533275/1280x960?auto=format"
+        },
+        {
+          "@type": "ImageObject",
+          "contentUrl": "https://img.zumpercdn.com/882533276/1280x960?auto=format",
+          "url": "https://img.zumpercdn.com/882533276/1280x960?auto=format"
+        },
+        {
+          "@type": "ImageObject",
+          "contentUrl": "https://img.zumpercdn.com/882533277/1280x960?auto=format",
+          "url": "https://img.zumpercdn.com/882533277/1280x960?auto=format"
+        },
+        {
+          "@type": "ImageObject",
+          "contentUrl": "https://img.zumpercdn.com/882533278/1280x960?auto=format",
+          "url": "https://img.zumpercdn.com/882533278/1280x960?auto=format"
+        },
+        {
+          "@type": "ImageObject",
+          "contentUrl": "https://img.zumpercdn.com/882533279/1280x960?auto=format",
+          "url": "https://img.zumpercdn.com/882533279/1280x960?auto=format"
+        },
+        {
+          "@type": "ImageObject",
+          "contentUrl": "https://img.zumpercdn.com/882533280/1280x960?auto=format",
+          "url": "https://img.zumpercdn.com/882533280/1280x960?auto=format"
+        },
+        {
+          "@type": "ImageObject",
+          "contentUrl": "https://img.zumpercdn.com/882533281/1280x960?auto=format",
+          "url": "https://img.zumpercdn.com/882533281/1280x960?auto=format"
+        },
+        {
+          "@type": "ImageObject",
+          "contentUrl": "https://img.zumpercdn.com/882533282/1280x960?auto=format",
+          "url": "https://img.zumpercdn.com/882533282/1280x960?auto=format"
+        },
+        {
+          "@type": "ImageObject",
+          "contentUrl": "https://img.zumpercdn.com/882533283/1280x960?auto=format",
+          "url": "https://img.zumpercdn.com/882533283/1280x960?auto=format"
+        },
+        {
+          "@type": "ImageObject",
+          "contentUrl": "https://img.zumpercdn.com/882533284/1280x960?auto=format",
+          "url": "https://img.zumpercdn.com/882533284/1280x960?auto=format"
+        },
+        {
+          "@type": "ImageObject",
+          "contentUrl": "https://img.zumpercdn.com/882533285/1280x960?auto=format",
+          "url": "https://img.zumpercdn.com/882533285/1280x960?auto=format"
+        },
+        {
+          "@type": "ImageObject",
+          "contentUrl": "https://img.zumpercdn.com/882533286/1280x960?auto=format",
+          "url": "https://img.zumpercdn.com/882533286/1280x960?auto=format"
+        },
+        {
+          "@type": "ImageObject",
+          "contentUrl": "https://img.zumpercdn.com/882533287/1280x960?auto=format",
+          "url": "https://img.zumpercdn.com/882533287/1280x960?auto=format"
+        },
+        {
+          "@type": "ImageObject",
+          "contentUrl": "https://img.zumpercdn.com/882533288/1280x960?auto=format",
+          "url": "https://img.zumpercdn.com/882533288/1280x960?auto=format"
+        },
+        {
+          "@type": "ImageObject",
+          "contentUrl": "https://img.zumpercdn.com/882533289/1280x960?auto=format",
+          "url": "https://img.zumpercdn.com/882533289/1280x960?auto=format"
+        },
+        {
+          "@type": "ImageObject",
+          "contentUrl": "https://img.zumpercdn.com/882533290/1280x960?auto=format",
+          "url": "https://img.zumpercdn.com/882533290/1280x960?auto=format"
+        },
+        {
+          "@type": "ImageObject",
+          "contentUrl": "https://img.zumpercdn.com/882533291/1280x960?auto=format",
+          "url": "https://img.zumpercdn.com/882533291/1280x960?auto=format"
+        },
+        {
+          "@type": "ImageObject",
+          "contentUrl": "https://img.zumpercdn.com/882533292/1280x960?auto=format",
+          "url": "https://img.zumpercdn.com/882533292/1280x960?auto=format"
+        },
+        {
+          "@type": "ImageObject",
+          "contentUrl": "https://img.zumpercdn.com/882533293/1280x960?auto=format",
+          "url": "https://img.zumpercdn.com/882533293/1280x960?auto=format"
+        },
+        {
+          "@type": "ImageObject",
+          "contentUrl": "https://img.zumpercdn.com/882533294/1280x960?auto=format",
+          "url": "https://img.zumpercdn.com/882533294/1280x960?auto=format"
+        },
+        {
+          "@type": "ImageObject",
+          "contentUrl": "https://img.zumpercdn.com/882533295/1280x960?auto=format",
+          "url": "https://img.zumpercdn.com/882533295/1280x960?auto=format"
+        },
+        {
+          "@type": "ImageObject",
+          "contentUrl": "https://img.zumpercdn.com/882533296/1280x960?auto=format",
+          "url": "https://img.zumpercdn.com/882533296/1280x960?auto=format"
+        },
+        {
+          "@type": "ImageObject",
+          "contentUrl": "https://img.zumpercdn.com/882533297/1280x960?auto=format",
+          "url": "https://img.zumpercdn.com/882533297/1280x960?auto=format"
+        },
+        {
+          "@type": "ImageObject",
+          "contentUrl": "https://img.zumpercdn.com/917383904/1280x960?auto=format",
+          "url": "https://img.zumpercdn.com/917383904/1280x960?auto=format"
+        }
+      ]
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "RealEstateListing",
+      "url": "https://www.zumper.com/apartment-buildings/p510456/viridian-fairview-vancouver-bc",
+      "dateModified": "2026-09-25T00:25:02.000Z"
+    }
+  ],
+  "images": [
+    "https://img.zumpercdn.com/882533249/1280x960?auto=format",
+    "https://d214hhm15p4t1d.cloudfront.net/web-zumper/4a93a338be37920ddac7f339042bfd6d099029f5/img/zumperDarkText.664a5ef8.svg",
+    "https://d214hhm15p4t1d.cloudfront.net/web-zumper/4a93a338be37920ddac7f339042bfd6d099029f5/img/search.272ccae9.svg",
+    "https://d214hhm15p4t1d.cloudfront.net/web-zumper/4a93a338be37920ddac7f339042bfd6d099029f5/img/locationAutocomplete.81057160.svg",
+    "https://d214hhm15p4t1d.cloudfront.net/web-zumper/4a93a338be37920ddac7f339042bfd6d099029f5/img/Zipcode.08d98c96.svg",
+    "https://d214hhm15p4t1d.cloudfront.net/web-zumper/4a93a338be37920ddac7f339042bfd6d099029f5/img/clock.4213eca3.svg",
+    "https://d214hhm15p4t1d.cloudfront.net/web-zumper/4a93a338be37920ddac7f339042bfd6d099029f5/img/alert.1f2bed1b.svg",
+    "https://img.zumpercdn.com/882533249/1280x960?dpr=1&fit=crop&h=542&q=76&w=991",
+    "https://img.zumpercdn.com/882533250/1280x960?dpr=1&fit=crop&h=542&q=76&w=991",
+    "https://img.zumpercdn.com/882533251/1280x960?dpr=1&fit=crop&h=542&q=76&w=991",
+    "https://img.zumpercdn.com/882533252/1280x960?dpr=1&fit=crop&h=542&q=76&w=991",
+    "https://img.zumpercdn.com/882533253/1280x960?dpr=1&fit=crop&h=542&q=76&w=991",
+    "https://img.zumpercdn.com/882533254/1280x960?dpr=1&fit=crop&h=542&q=76&w=991",
+    "https://img.zumpercdn.com/882533255/1280x960?dpr=1&fit=crop&h=542&q=76&w=991",
+    "https://img.zumpercdn.com/882533249/1280x960?dpr=1&fit=crop&h=446&q=76&w=792",
+    "https://img.zumpercdn.com/882533250/1280x960?dpr=1&fit=crop&h=222&q=76&w=394",
+    "https://img.zumpercdn.com/882533251/1280x960?dpr=1&fit=crop&h=222&q=76&w=394",
+    "https://img.zumpercdn.com/882533252/1280x960?dpr=1&fit=crop&h=446&q=76&w=792",
+    "https://img.zumpercdn.com/882533253/1280x960?dpr=1&fit=crop&h=222&q=76&w=394",
+    "https://img.zumpercdn.com/882533254/1280x960?dpr=1&fit=crop&h=222&q=76&w=394"
+  ],
+  "elapsedMs": 3497
 }

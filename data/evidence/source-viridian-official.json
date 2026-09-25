@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-09-25T17:15:46.950Z",
+  "checkedAt": "2026-09-25T21:38:01.619Z",
   "source": {
     "id": "viridian-official",
     "name": "Viridian official availability",
@@ -7,9 +7,18 @@
     "kind": "property_manager",
     "adapter": "official-floorplans"
   },
-  "ok": false,
-  "error": "Error: page.goto: Page crashed\nCall log:\n  - navigating to \"https://www.rentcafe.com/apartments/bc/vancouver/viridian1/default.aspx\", waiting until \"domcontentloaded\"\n",
-  "status": null,
-  "finalUrl": "https://rentals.ca/vancouver/west-point-grey/2-bedrooms",
-  "elapsedMs": 0
+  "ok": true,
+  "status": 403,
+  "finalUrl": "https://www.rentcafe.com/apartments/bc/vancouver/viridian1/default.aspx",
+  "title": "Attention Required! | Cloudflare",
+  "bodyText": "Sorry, you have been blocked\nYou are unable to access rentcafe.com\nWhy have I been blocked?\n\nThis website is using a security service to protect itself from online attacks. The action you just performed triggered the security solution. There are several actions that could trigger this block including submitting a certain word or phrase, a SQL command or malformed data.\n\nWhat can I do to resolve this?\n\nYou can email the site owner to let them know you were blocked. Please include what you were doing when this page came up and the Cloudflare Ray ID found at the bottom of this page.\n\nCloudflare Ray ID: a40d313bc9a0c980 • Your IP: Click to reveal • Performance & security by Cloudflare",
+  "links": [
+    {
+      "href": "https://www.cloudflare.com/5xx-error-landing",
+      "text": "Cloudflare"
+    }
+  ],
+  "jsonLd": [],
+  "images": [],
+  "elapsedMs": 3160
 }

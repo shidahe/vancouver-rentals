@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-09-25T17:24:23.753Z",
+  "generatedAt": "2026-09-25T21:47:10.291Z",
   "activeCount": 25,
-  "decisionReady": false,
+  "decisionReady": true,
   "readinessStatus": "finalized",
   "highIssueCount": 0,
   "mediumIssueCount": 0,
-  "infoIssueCount": 40,
+  "infoIssueCount": 41,
   "issues": [
     {
       "severity": "info",
@@ -60,11 +60,6 @@
     {
       "severity": "info",
       "id": "zumper-976e340c66a7",
-      "issue": "unknown-orientation"
-    },
-    {
-      "severity": "info",
-      "id": "arbutus-residences-floorplan-2-bedroom-townhouse-den-1340",
       "issue": "unknown-orientation"
     },
     {
@@ -206,14 +201,24 @@
       "severity": "info",
       "id": "mls-r3167237",
       "issue": "unknown-orientation"
+    },
+    {
+      "severity": "info",
+      "id": "mls-r3165327",
+      "issue": "unknown-ac"
+    },
+    {
+      "severity": "info",
+      "id": "mls-r3165327",
+      "issue": "unknown-orientation"
     }
   ],
   "readinessChecks": {
     "smokeOk": true,
     "smokeFresh": true,
-    "smokeCheckedAt": "2026-09-25T17:24:29.421Z",
-    "latestDataAt": "2026-09-25T17:23:37.277Z",
-    "coverageReady": false,
+    "smokeCheckedAt": "2026-09-25T21:47:16.080Z",
+    "latestDataAt": "2026-09-25T21:46:25.025Z",
+    "coverageReady": true,
     "healthyDiscoveryLanes": 3,
     "coverageWarnings": [
       {
@@ -236,34 +241,6 @@
       }
     ]
   },
-  "readinessIssues": [
-    {
-      "severity": "high",
-      "issue": "discovery-coverage-not-ready",
-      "detail": [
-        {
-          "severity": "high",
-          "issue": "priority-building-inventory-source-unhealthy",
-          "building": "kits-walk",
-          "checkedAt": "2026-09-25T17:15:46.950Z",
-          "evidenceUrl": "https://www.kitswalkleasing.com/floorplans"
-        },
-        {
-          "severity": "high",
-          "issue": "priority-building-inventory-source-unhealthy",
-          "building": "larchway-gardens",
-          "checkedAt": "2026-09-25T17:15:46.950Z",
-          "evidenceUrl": "https://quadrealresidential.com/vancouver/larchway-gardens/floorplans/"
-        },
-        {
-          "severity": "high",
-          "issue": "priority-building-inventory-source-unhealthy",
-          "building": "viridian",
-          "checkedAt": "2026-09-25T17:15:46.950Z",
-          "evidenceUrl": "https://www.rentcafe.com/apartments/bc/vancouver/viridian1/default.aspx"
-        }
-      ]
-    }
-  ],
-  "finalizedAt": "2026-09-25T17:24:29.518Z"
+  "readinessIssues": [],
+  "finalizedAt": "2026-09-25T21:47:16.183Z"
 }
