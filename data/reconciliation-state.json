@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-09-26T16:36:06.045Z",
+  "refreshedAt": "2026-09-26T21:21:32.876Z",
   "groups": [
     {
       "identityKey": "1533 maple st::url:69f2e13a0fd5",
@@ -71,30 +71,6 @@
       ],
       "exactUnit": false,
       "matchedListingId": null,
-      "result": "candidate_only"
-    },
-    {
-      "identityKey": "1462 devonshire crescent::url:1204230a9116",
-      "sources": [
-        "zumper"
-      ],
-      "rents": [
-        8500
-      ],
-      "exactUnit": false,
-      "matchedListingId": null,
-      "result": "candidate_only"
-    },
-    {
-      "identityKey": "4560 w 5th ave::unit:2",
-      "sources": [
-        "zumper"
-      ],
-      "rents": [
-        7999
-      ],
-      "exactUnit": true,
-      "matchedListingId": "zumper-e3fb92a991a6",
       "result": "candidate_only"
     },
     {
@@ -182,15 +158,27 @@
       "result": "candidate_only"
     },
     {
-      "identityKey": "mls:r3160689",
+      "identityKey": "mls:r3162880",
       "sources": [
         "realtylink mls"
       ],
       "rents": [
-        4700
+        4800
       ],
       "exactUnit": true,
-      "matchedListingId": "zumper-16e9ae17cd91",
+      "matchedListingId": "mls-r3162880",
+      "result": "authoritative_mls_reverified"
+    },
+    {
+      "identityKey": "mls:r3137446",
+      "sources": [
+        "realtylink mls"
+      ],
+      "rents": [
+        5850
+      ],
+      "exactUnit": true,
+      "matchedListingId": "york-103-2535-r3137446",
       "result": "authoritative_mls_reverified"
     },
     {
@@ -204,51 +192,13 @@
       "exactUnit": false,
       "matchedListingId": "mls-r3161880",
       "result": "authoritative_mls_reverified"
-    },
-    {
-      "identityKey": "mls:r3151372",
-      "sources": [
-        "realtylink mls"
-      ],
-      "rents": [
-        4800
-      ],
-      "exactUnit": false,
-      "matchedListingId": "mls-r3151372",
-      "result": "authoritative_mls_reverified"
-    },
-    {
-      "identityKey": "mls:r3167417",
-      "sources": [
-        "realtylink mls"
-      ],
-      "rents": [
-        6750
-      ],
-      "exactUnit": true,
-      "matchedListingId": "mls-r3167417",
-      "result": "authoritative_mls_reverified"
-    },
-    {
-      "identityKey": "mls:r3161950",
-      "sources": [
-        "realtylink mls"
-      ],
-      "rents": [
-        4000
-      ],
-      "exactUnit": false,
-      "matchedListingId": "mls-r3161950",
-      "result": "authoritative_mls_reverified"
     }
   ],
   "promoted": [],
   "crossVerified": [
-    "zumper-16e9ae17cd91",
-    "mls-r3161880",
-    "mls-r3151372",
-    "mls-r3167417",
-    "mls-r3161950"
+    "mls-r3162880",
+    "york-103-2535-r3137446",
+    "mls-r3161880"
   ],
   "fingerprintCrossVerified": [],
   "craigslistRelistingsRecovered": [],
@@ -256,16 +206,14 @@
   "maskedMlsMerged": [],
   "relistedMlsMerged": [],
   "negativeMatches": [],
-  "detailReactivated": [
-    "mls-r3161880"
-  ],
+  "detailReactivated": [],
   "mlsMissing": {},
   "mlsRemoved": [],
   "mlsStaleHidden": [],
-  "realtylinkSnapshotCount": 5,
+  "realtylinkSnapshotCount": 3,
   "realtylinkSnapshotHighWaterMark": 7,
   "realtylinkSnapshotScope": "rent-3500-beds-2-4-whole-home-westside-v2",
   "realtylinkRemovalEligible": false,
-  "mlsRemovalSuppressed": "Partial Realtylink snapshot (5 candidates versus previous complete 7); disappearance signals ignored.",
+  "mlsRemovalSuppressed": "Partial Realtylink snapshot (3 candidates versus previous complete 7); disappearance signals ignored.",
   "mlsDuplicatesMerged": []
 }
