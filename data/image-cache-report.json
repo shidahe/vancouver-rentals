@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-09-25T21:47:08.930Z",
+  "refreshedAt": "2026-09-26T05:13:42.652Z",
   "listings": {
     "york-103-2535-r3137446": {
       "cached": 5,
@@ -14,13 +14,6 @@
       "downloaded": 0,
       "failures": [],
       "photoPageUrl": "https://www.arbutusrental.com/search"
-    },
-    "19-greenway-c1-405-3619": {
-      "cached": 3,
-      "preserved": 3,
-      "downloaded": 0,
-      "failures": [],
-      "photoPageUrl": "https://warringtonresidential.com/properties/19-on-the-greenway/"
     },
     "zumper-9157c4798023": {
       "cached": 5,
@@ -109,13 +102,6 @@
       "failures": [],
       "photoPageUrl": "https://realtylink.org/en/apartment~for-rent~vancouver/263182506"
     },
-    "mls-r3161880": {
-      "cached": 5,
-      "preserved": 5,
-      "downloaded": 0,
-      "failures": [],
-      "photoPageUrl": "https://realtylink.org/en/house~for-rent~vancouver/263183507"
-    },
     "mls-r3161950": {
       "cached": 5,
       "preserved": 5,
@@ -188,20 +174,27 @@
     },
     "mls-r3165327": {
       "cached": 5,
+      "preserved": 5,
+      "downloaded": 0,
+      "failures": [],
+      "photoPageUrl": "https://realtylink.org/en/apartment~for-rent~vancouver/263186954"
+    },
+    "mls-r3162880": {
+      "cached": 5,
       "preserved": 0,
       "downloaded": 5,
       "failures": [],
-      "photoPageUrl": "https://realtylink.org/en/apartment~for-rent~vancouver/263186954"
+      "photoPageUrl": "https://realtylink.org/en/apartment~for-rent~vancouver/263184507"
     }
   },
   "totals": {
-    "sourceListings": 25,
-    "cachedListings": 25,
+    "sourceListings": 24,
+    "cachedListings": 24,
     "downloaded": 5,
     "failed": 4,
-    "preserved": 113,
-    "prunedListings": 1,
-    "prunedIndexImages": 5,
+    "preserved": 110,
+    "prunedListings": 2,
+    "prunedIndexImages": 8,
     "prunedOrphanFiles": 0
   }
 }

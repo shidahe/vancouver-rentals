@@ -1,11 +1,11 @@
 {
-  "checkedAt": "2026-09-25T21:47:16.080Z",
+  "checkedAt": "2026-09-26T05:13:48.552Z",
   "ok": true,
   "checkpoints": {
     "render": {
       "title": "Vancouver Westside Rentals",
-      "cards": 25,
-      "shown": 25
+      "cards": 24,
+      "shown": 24
     },
     "stats": {
       "labels": [
@@ -16,34 +16,34 @@
         "Last refreshed"
       ],
       "values": [
-        "25",
+        "24",
         "12",
         "1",
-        "6",
-        "2026-09-25 21:38:01"
+        "7",
+        "2026-09-26 05:04:31"
       ],
-      "html": "<div class=\"stat\"><strong>25</strong><span>Active</span></div><div class=\"stat\"><strong>12</strong><span>New</span></div><div class=\"stat\"><strong>1</strong><span>Price drops</span></div><div class=\"stat\"><strong>6</strong><span>To verify</span></div><div class=\"stat\"><strong>2026-09-25 21:38:01</strong><span>Last refreshed</span></div>"
+      "html": "<div class=\"stat\"><strong>24</strong><span>Active</span></div><div class=\"stat\"><strong>12</strong><span>New</span></div><div class=\"stat\"><strong>1</strong><span>Price drops</span></div><div class=\"stat\"><strong>7</strong><span>To verify</span></div><div class=\"stat\"><strong>2026-09-26 05:04:31</strong><span>Last refreshed</span></div>"
     },
     "map": {
-      "markers": 25,
+      "markers": 24,
       "desktopMapVisible": true
     },
     "filters": "ok",
     "localStorage": {
       "favorite": true,
       "notes": true,
-      "firstId": "19-greenway-c1-405-3619"
+      "firstId": "fourth-mac-floorplan-2-bedroom-2-bath-801-4350"
     },
-    "sourceLink": "https://www.19otgreenway.com/floorplans",
+    "sourceLink": "https://www.craigslist.org/view/d/vancouver-bed-bath-fourth-mac-kitsilano/eiSLCKTVqsrtPUWpUpJyDN",
     "photos": {
-      "total": 25,
-      "loaded": 25,
+      "total": 24,
+      "loaded": 24,
       "fallbacks": 0,
       "bad": []
     },
     "markerPositions": {
-      "total": 25,
-      "unique": 25
+      "total": 24,
+      "unique": 24
     },
     "dataEndpoints": "ok",
     "mobile": "ok",
