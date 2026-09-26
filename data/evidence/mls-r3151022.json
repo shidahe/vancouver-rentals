@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-09-26T11:29:41.287Z",
+  "checkedAt": "2026-09-26T16:27:22.362Z",
   "listingId": "mls-r3151022",
   "sourceUrl": "https://www.craigslist.org/view/d/vancouver-charming-fully-furnished-bed/qfdidPDmMprJBNMErSbGeB",
   "ok": true,
@@ -255,31 +255,30 @@
   ],
   "jsonLd": [
     {
-      "@type": "BreadcrumbList",
       "itemListElement": [
         {
-          "position": 1,
           "item": "https://www.craigslist.org/area/vancouver",
+          "position": 1,
           "@type": "ListItem",
           "name": "craigslist: vancouver, BC"
         },
         {
-          "item": "https://www.craigslist.org/subarea/van",
-          "position": 2,
           "name": "vancouver",
-          "@type": "ListItem"
+          "@type": "ListItem",
+          "position": 2,
+          "item": "https://www.craigslist.org/subarea/van"
         },
         {
-          "name": "housing",
-          "@type": "ListItem",
           "item": "https://www.craigslist.org/search/subarea/van?cat=hhh",
-          "position": 3
+          "position": 3,
+          "@type": "ListItem",
+          "name": "housing"
         },
         {
-          "@type": "ListItem",
           "name": "apartments / housing for rent",
-          "position": 4,
-          "item": "https://www.craigslist.org/search/subarea/van?cat=apa"
+          "@type": "ListItem",
+          "item": "https://www.craigslist.org/search/subarea/van?cat=apa",
+          "position": 4
         },
         {
           "item": "https://www.craigslist.org/view/d/vancouver-charming-fully-furnished-bed/qfdidPDmMprJBNMErSbGeB",
@@ -288,25 +287,26 @@
           "@type": "ListItem"
         }
       ],
+      "@type": "BreadcrumbList",
       "@context": "https://schema.org"
     },
     {
-      "smokingAllowed": false,
-      "latitude": "49.267553",
+      "longitude": "-123.173797",
       "name": "Charming Fully Furnished 3 Bed + 3 Bath Kitsilano House | Oct 1st",
       "address": {
-        "addressCountry": "CA",
-        "addressRegion": "BC",
-        "streetAddress": "3095 W 5th Ave",
-        "addressLocality": "Vancouver",
         "postalCode": "V6K4C2",
-        "@type": "PostalAddress"
+        "@type": "PostalAddress",
+        "streetAddress": "3095 W 5th Ave",
+        "addressRegion": "BC",
+        "addressCountry": "CA",
+        "addressLocality": "Vancouver"
       },
       "numberOfBedrooms": "3",
-      "numberOfBathroomsTotal": 3,
-      "longitude": "-123.173797",
+      "smokingAllowed": false,
       "@type": "House",
-      "@context": "http://schema.org"
+      "@context": "http://schema.org",
+      "numberOfBathroomsTotal": 3,
+      "latitude": "49.267553"
     }
   ],
   "images": [
@@ -331,7 +331,7 @@
     "https://images.craigslist.org/00i0i_iQloUtZC6LR_0uY0kE_50x50c.jpg",
     "https://images.craigslist.org/00u0u_hzyjB5jVpK6_0uY0kE_50x50c.jpg"
   ],
-  "elapsedMs": 3164,
+  "elapsedMs": 3378,
   "identityMatch": true,
   "explicitNegative": false,
   "negativePhrase": null,
