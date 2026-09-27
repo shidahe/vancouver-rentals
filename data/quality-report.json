@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-27T12:16:58.020Z",
+  "generatedAt": "2026-09-27T17:10:08.456Z",
   "activeCount": 22,
   "decisionReady": true,
   "readinessStatus": "finalized",
@@ -196,8 +196,8 @@
   "readinessChecks": {
     "smokeOk": true,
     "smokeFresh": true,
-    "smokeCheckedAt": "2026-09-27T12:17:03.505Z",
-    "latestDataAt": "2026-09-27T12:16:16.115Z",
+    "smokeCheckedAt": "2026-09-27T17:10:14.198Z",
+    "latestDataAt": "2026-09-27T17:09:23.042Z",
     "coverageReady": true,
     "healthyDiscoveryLanes": 3,
     "coverageWarnings": [
@@ -217,10 +217,10 @@
         "severity": "warning",
         "lane": "realtylink",
         "status": "degraded",
-        "detail": "3/3 searches reachable; 3 current live candidates parsed from a partial snapshot versus complete baseline 3; positive discovery usable, removals suppressed"
+        "detail": "3/3 searches reachable; 5 current live candidates parsed from a partial snapshot versus complete baseline 5; positive discovery usable, removals suppressed"
       }
     ]
   },
   "readinessIssues": [],
-  "finalizedAt": "2026-09-27T12:17:03.608Z"
+  "finalizedAt": "2026-09-27T17:10:14.301Z"
 }
