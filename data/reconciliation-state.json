@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-09-27T05:31:11.562Z",
+  "refreshedAt": "2026-09-27T12:16:12.149Z",
   "groups": [
     {
       "identityKey": "1533 maple st::url:69f2e13a0fd5",
@@ -182,47 +182,47 @@
       "result": "candidate_only"
     },
     {
-      "identityKey": "mls:r3160689",
+      "identityKey": "mls:r3137446",
       "sources": [
         "realtylink mls"
       ],
       "rents": [
-        4700
+        5850
       ],
       "exactUnit": true,
-      "matchedListingId": "zumper-16e9ae17cd91",
+      "matchedListingId": "york-103-2535-r3137446",
       "result": "authoritative_mls_reverified"
     },
     {
-      "identityKey": "mls:r3167417",
+      "identityKey": "mls:r3151372",
       "sources": [
         "realtylink mls"
       ],
       "rents": [
-        6750
-      ],
-      "exactUnit": true,
-      "matchedListingId": "mls-r3167417",
-      "result": "authoritative_mls_reverified"
-    },
-    {
-      "identityKey": "mls:r3151022",
-      "sources": [
-        "realtylink mls"
-      ],
-      "rents": [
-        10500
+        4800
       ],
       "exactUnit": false,
-      "matchedListingId": "mls-r3151022",
+      "matchedListingId": "mls-r3151372",
+      "result": "authoritative_mls_reverified"
+    },
+    {
+      "identityKey": "mls:r3161950",
+      "sources": [
+        "realtylink mls"
+      ],
+      "rents": [
+        4000
+      ],
+      "exactUnit": false,
+      "matchedListingId": "mls-r3161950",
       "result": "authoritative_mls_reverified"
     }
   ],
   "promoted": [],
   "crossVerified": [
-    "zumper-16e9ae17cd91",
-    "mls-r3167417",
-    "mls-r3151022"
+    "york-103-2535-r3137446",
+    "mls-r3151372",
+    "mls-r3161950"
   ],
   "fingerprintCrossVerified": [],
   "craigslistRelistingsRecovered": [],
@@ -234,8 +234,7 @@
   "mlsMissing": {},
   "mlsRemoved": [],
   "mlsStaleHidden": [
-    "mls-r3160879",
-    "mls-r3149612"
+    "mls-r3167237"
   ],
   "realtylinkSnapshotCount": 3,
   "realtylinkSnapshotHighWaterMark": 7,
