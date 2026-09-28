@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-09-28T14:02:31.834Z",
+  "checkedAt": "2026-09-28T23:19:33.814Z",
   "listingId": "mls-r3151022",
   "sourceUrl": "https://www.craigslist.org/view/d/vancouver-charming-fully-furnished-bed/qfdidPDmMprJBNMErSbGeB",
   "ok": true,
@@ -258,54 +258,54 @@
       "@type": "BreadcrumbList",
       "itemListElement": [
         {
-          "position": 1,
-          "item": "https://www.craigslist.org/area/vancouver",
           "@type": "ListItem",
+          "item": "https://www.craigslist.org/area/vancouver",
+          "position": 1,
           "name": "craigslist: vancouver, BC"
         },
         {
           "position": 2,
-          "@type": "ListItem",
           "name": "vancouver",
-          "item": "https://www.craigslist.org/subarea/van"
+          "item": "https://www.craigslist.org/subarea/van",
+          "@type": "ListItem"
         },
         {
           "position": 3,
-          "item": "https://www.craigslist.org/search/subarea/van?cat=hhh",
+          "name": "housing",
           "@type": "ListItem",
-          "name": "housing"
+          "item": "https://www.craigslist.org/search/subarea/van?cat=hhh"
         },
         {
           "position": 4,
-          "item": "https://www.craigslist.org/search/subarea/van?cat=apa",
+          "name": "apartments / housing for rent",
           "@type": "ListItem",
-          "name": "apartments / housing for rent"
+          "item": "https://www.craigslist.org/search/subarea/van?cat=apa"
         },
         {
+          "name": "Charming Fully Furnished 3 Bed + 3 Bath Kitsilano House | Oct 1st",
           "position": 5,
           "item": "https://www.craigslist.org/view/d/vancouver-charming-fully-furnished-bed/qfdidPDmMprJBNMErSbGeB",
-          "name": "Charming Fully Furnished 3 Bed + 3 Bath Kitsilano House | Oct 1st",
           "@type": "ListItem"
         }
       ],
       "@context": "https://schema.org"
     },
     {
-      "@type": "House",
       "numberOfBathroomsTotal": 3,
-      "smokingAllowed": false,
-      "numberOfBedrooms": "3",
       "@context": "http://schema.org",
+      "numberOfBedrooms": "3",
       "name": "Charming Fully Furnished 3 Bed + 3 Bath Kitsilano House | Oct 1st",
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Vancouver",
-        "addressCountry": "CA",
-        "addressRegion": "BC",
-        "postalCode": "V6K4C2",
-        "streetAddress": "3095 W 5th Ave"
-      },
       "latitude": "49.267553",
+      "@type": "House",
+      "smokingAllowed": false,
+      "address": {
+        "postalCode": "V6K4C2",
+        "streetAddress": "3095 W 5th Ave",
+        "@type": "PostalAddress",
+        "addressRegion": "BC",
+        "addressLocality": "Vancouver",
+        "addressCountry": "CA"
+      },
       "longitude": "-123.173797"
     }
   ],
@@ -331,7 +331,7 @@
     "https://images.craigslist.org/00i0i_iQloUtZC6LR_0uY0kE_50x50c.jpg",
     "https://images.craigslist.org/00u0u_hzyjB5jVpK6_0uY0kE_50x50c.jpg"
   ],
-  "elapsedMs": 3268,
+  "elapsedMs": 3281,
   "identityMatch": true,
   "explicitNegative": false,
   "negativePhrase": null,

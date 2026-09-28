@@ -584,6 +584,11 @@
       "date": "2026-09-25",
       "rent": 5390,
       "note": "NEEDS CONFIRMATION: latest purpose-built fallback sources did not confirm the exact configured rent + sqft inventory row."
+    },
+    {
+      "date": "2026-09-28",
+      "rent": 5390,
+      "note": "NEEDS CONFIRMATION: latest purpose-built fallback sources did not confirm the exact configured rent + sqft inventory row."
     }
   ],
   "zumper-2fde865f7e2c": [
@@ -2401,6 +2406,18 @@
       "date": "2026-09-26",
       "rent": 4800,
       "note": "NEW: live Realtylink MLS R3162880 auto-published."
+    },
+    {
+      "date": "2026-09-28",
+      "rent": 4800,
+      "note": "AUTO-HIDDEN: MLS R3162880 exceeded 48 hours without fresh positive availability; partial search results are not removal evidence."
+    }
+  ],
+  "kits-walk-floorplan-2-bedroom-811-3675": [
+    {
+      "date": "2026-09-28",
+      "rent": 3675,
+      "note": "First seen in live purpose-built inventory via https://rentals.ca/vancouver/kits-walk-by-strand"
     }
   ]
 }
