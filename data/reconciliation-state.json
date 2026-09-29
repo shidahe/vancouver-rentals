@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-09-29T13:07:29.203Z",
+  "refreshedAt": "2026-09-29T22:31:26.864Z",
   "groups": [
     {
       "identityKey": "1533 maple st::url:69f2e13a0fd5",
@@ -98,6 +98,42 @@
       "result": "candidate_only"
     },
     {
+      "identityKey": "4588 w 2nd ave near tolmie st::url:75b0c64a797c",
+      "sources": [
+        "craigslist"
+      ],
+      "rents": [
+        15000
+      ],
+      "exactUnit": false,
+      "matchedListingId": null,
+      "result": "candidate_only"
+    },
+    {
+      "identityKey": "3095 w 5th ave near balaclava st::url:bec16c58239a",
+      "sources": [
+        "craigslist"
+      ],
+      "rents": [
+        10500
+      ],
+      "exactUnit": false,
+      "matchedListingId": null,
+      "result": "candidate_only"
+    },
+    {
+      "identityKey": "4455 w 9th ave::url:27af75d482ae",
+      "sources": [
+        "craigslist"
+      ],
+      "rents": [
+        5000
+      ],
+      "exactUnit": false,
+      "matchedListingId": null,
+      "result": "candidate_only"
+    },
+    {
       "identityKey": "3260 w 16 ave near blenheim::url:588623515817",
       "sources": [
         "craigslist"
@@ -146,40 +182,16 @@
       "result": "candidate_only"
     },
     {
-      "identityKey": "4588 w 2nd ave near tolmie st::url:97deac0248ca",
+      "identityKey": "mls:r3160879",
       "sources": [
-        "craigslist"
+        "realtylink mls"
       ],
       "rents": [
-        15000
+        3500
       ],
-      "exactUnit": false,
-      "matchedListingId": null,
-      "result": "candidate_only"
-    },
-    {
-      "identityKey": "3095 w 5th ave near balaclava st::url:a2e15ddfb19d",
-      "sources": [
-        "craigslist"
-      ],
-      "rents": [
-        10500
-      ],
-      "exactUnit": false,
-      "matchedListingId": null,
-      "result": "candidate_only"
-    },
-    {
-      "identityKey": "4455 w 9th ave::url:27af75d482ae",
-      "sources": [
-        "craigslist"
-      ],
-      "rents": [
-        5000
-      ],
-      "exactUnit": false,
-      "matchedListingId": null,
-      "result": "candidate_only"
+      "exactUnit": true,
+      "matchedListingId": "mls-r3160879",
+      "result": "authoritative_mls_reverified"
     },
     {
       "identityKey": "mls:r3160689",
@@ -192,24 +204,12 @@
       "exactUnit": true,
       "matchedListingId": "zumper-16e9ae17cd91",
       "result": "authoritative_mls_reverified"
-    },
-    {
-      "identityKey": "mls:r3163709",
-      "sources": [
-        "realtylink mls"
-      ],
-      "rents": [
-        6000
-      ],
-      "exactUnit": false,
-      "matchedListingId": "mls-r3163709",
-      "result": "authoritative_mls_reverified"
     }
   ],
   "promoted": [],
   "crossVerified": [
-    "zumper-16e9ae17cd91",
-    "mls-r3163709"
+    "mls-r3160879",
+    "zumper-16e9ae17cd91"
   ],
   "fingerprintCrossVerified": [],
   "craigslistRelistingsRecovered": [],
@@ -217,11 +217,14 @@
   "maskedMlsMerged": [],
   "relistedMlsMerged": [],
   "negativeMatches": [],
-  "detailReactivated": [],
+  "detailReactivated": [
+    "mls-r3160879"
+  ],
   "mlsMissing": {},
   "mlsRemoved": [],
   "mlsStaleHidden": [
-    "mls-r3151372"
+    "mls-r3161880",
+    "mls-r3161950"
   ],
   "realtylinkSnapshotCount": 2,
   "realtylinkSnapshotHighWaterMark": 7,

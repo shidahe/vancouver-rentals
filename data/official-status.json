@@ -1,12 +1,12 @@
 {
-  "refreshedAt": "2026-09-29T13:07:33.510Z",
+  "refreshedAt": "2026-09-29T22:31:30.977Z",
   "policy": "Fresh explicit official negative announcements override older official website leasing language and all marketplace evidence. Official positive status alone does not prove a specific unit is available.",
   "projects": [
     {
       "id": "arbutus-terrace",
       "buildingName": "Arbutus Terrace",
       "address": "3205 Arbutus St, Vancouver, BC",
-      "checkedAt": "2026-09-29T13:07:33.510Z",
+      "checkedAt": "2026-09-29T22:31:30.977Z",
       "effectiveStatus": "fully_leased",
       "authority": "official_social_post",
       "reason": "Strand official Facebook post states Arbutus Terrace is now fully leased.",
@@ -19,7 +19,7 @@
       "observations": [
         {
           "url": "https://stranddev.com/portfolio/arbutusterrace-rental",
-          "checkedAt": "2026-09-29T13:07:33.510Z",
+          "checkedAt": "2026-09-29T22:31:30.977Z",
           "httpStatus": 200,
           "usable": true,
           "negatives": [],
@@ -31,7 +31,7 @@
         },
         {
           "url": "https://stranddev.com/the-westside-collection",
-          "checkedAt": "2026-09-29T13:07:33.510Z",
+          "checkedAt": "2026-09-29T22:31:30.977Z",
           "httpStatus": 200,
           "usable": true,
           "negatives": [],
@@ -46,7 +46,7 @@
       "id": "arbutus-residences",
       "buildingName": "Arbutus Residences",
       "address": "2139 Lahb Ave, Vancouver, BC",
-      "checkedAt": "2026-09-29T13:07:33.510Z",
+      "checkedAt": "2026-09-29T22:31:30.977Z",
       "effectiveStatus": "leasing",
       "authority": "official_web",
       "reason": "Official page contains current leasing/availability language.",
@@ -54,7 +54,7 @@
       "observations": [
         {
           "url": "https://arbutusresidences.com/contact/",
-          "checkedAt": "2026-09-29T13:07:33.510Z",
+          "checkedAt": "2026-09-29T22:31:30.977Z",
           "httpStatus": 200,
           "usable": true,
           "negatives": [],
@@ -66,7 +66,7 @@
         },
         {
           "url": "https://arbutusresidences2.medianation.ca/virtual-tour/",
-          "checkedAt": "2026-09-29T13:07:33.510Z",
+          "checkedAt": "2026-09-29T22:31:30.977Z",
           "httpStatus": 200,
           "usable": true,
           "negatives": [],
@@ -77,7 +77,7 @@
         },
         {
           "url": "https://www.rentfaster.ca/properties/2139-lahb-ave-vancouver-454186",
-          "checkedAt": "2026-09-29T13:07:33.510Z",
+          "checkedAt": "2026-09-29T22:31:30.977Z",
           "httpStatus": 403,
           "usable": false
         }
@@ -87,7 +87,7 @@
       "id": "the-raven",
       "buildingName": "The Raven",
       "address": "3709 W Broadway, Vancouver, BC",
-      "checkedAt": "2026-09-29T13:07:33.510Z",
+      "checkedAt": "2026-09-29T22:31:30.977Z",
       "effectiveStatus": "leasing",
       "authority": "official_web",
       "reason": "Official page contains current leasing/availability language.",
@@ -95,7 +95,7 @@
       "observations": [
         {
           "url": "https://living.westbankcorp.com/property/the-raven",
-          "checkedAt": "2026-09-29T13:07:33.510Z",
+          "checkedAt": "2026-09-29T22:31:30.977Z",
           "httpStatus": 200,
           "usable": true,
           "negatives": [],
@@ -107,7 +107,7 @@
         },
         {
           "url": "https://living.westbankcorp.com/",
-          "checkedAt": "2026-09-29T13:07:33.510Z",
+          "checkedAt": "2026-09-29T22:31:30.977Z",
           "httpStatus": 200,
           "usable": true,
           "negatives": [],
@@ -122,7 +122,7 @@
       "id": "raphael",
       "buildingName": "Raphael",
       "address": "3668 W 10th Ave, Vancouver, BC",
-      "checkedAt": "2026-09-29T13:07:33.510Z",
+      "checkedAt": "2026-09-29T22:31:30.977Z",
       "effectiveStatus": "fully_leased",
       "authority": "official_web",
       "reason": "Official page contains a strong negative leasing signal.",
@@ -130,7 +130,7 @@
       "observations": [
         {
           "url": "https://www.uniqueaccommodations.com/buildings/the-raphael/",
-          "checkedAt": "2026-09-29T13:07:33.510Z",
+          "checkedAt": "2026-09-29T22:31:30.977Z",
           "httpStatus": 200,
           "usable": true,
           "negatives": [
@@ -148,7 +148,7 @@
       "id": "kits-walk",
       "buildingName": "Kits Walk",
       "address": "2075 W 12th Ave, Vancouver, BC",
-      "checkedAt": "2026-09-29T13:07:33.510Z",
+      "checkedAt": "2026-09-29T22:31:30.977Z",
       "effectiveStatus": "leasing",
       "authority": "official_web",
       "reason": "Official page contains current leasing/availability language.",
@@ -156,13 +156,13 @@
       "observations": [
         {
           "url": "https://www.kitswalkleasing.com/floorplans",
-          "checkedAt": "2026-09-29T13:07:33.510Z",
+          "checkedAt": "2026-09-29T22:31:30.977Z",
           "httpStatus": 403,
           "usable": false
         },
         {
           "url": "https://stranddev.com/portfolio/kitswalk",
-          "checkedAt": "2026-09-29T13:07:33.510Z",
+          "checkedAt": "2026-09-29T22:31:30.977Z",
           "httpStatus": 200,
           "usable": true,
           "negatives": [],
@@ -177,7 +177,7 @@
       "id": "larchway-gardens",
       "buildingName": "Larchway Gardens",
       "address": "2475 W Broadway, Vancouver, BC",
-      "checkedAt": "2026-09-29T13:07:33.510Z",
+      "checkedAt": "2026-09-29T22:31:30.977Z",
       "effectiveStatus": "leasing",
       "authority": "official_web",
       "reason": "Official page contains current leasing/availability language.",
@@ -185,7 +185,7 @@
       "observations": [
         {
           "url": "https://quadrealresidential.com/vancouver/larchway-gardens/",
-          "checkedAt": "2026-09-29T13:07:33.510Z",
+          "checkedAt": "2026-09-29T22:31:30.977Z",
           "httpStatus": 200,
           "usable": true,
           "negatives": [],
@@ -196,14 +196,14 @@
         },
         {
           "url": "https://quadrealresidential.com/vancouver/larchway-gardens/contact/",
-          "checkedAt": "2026-09-29T13:07:33.510Z",
+          "checkedAt": "2026-09-29T22:31:30.977Z",
           "httpStatus": 200,
           "usable": true,
           "negatives": [],
           "positives": [
             "book a tour"
           ],
-          "textSample": "Skip to main content Enable accessibility for low vision Open the accessibility menu Skip to content Masterplan Communities Overview Assembly Park Bayview Village Cloverdale Maplewood Oakridge Park TriCity Central Residential Portfolio All Communities Calgary Cambridge Hamilton Kitchener Greater Toronto Greater Vancouver About News & Insights Contact (604) 913-7366 QuadReal CONNECT Floorplans Amenities Neighbourhood Gallery Contact Book a Tour LARCHWAY GARDENS > CONTACT Contact Larchway Gardens 2475 West Broadway Street Vancouver, BC V6K 2E8 (604) 913-7366 © Mapbox © OpenStreetMap Improve this map Hold Ctrl + scroll to zoom Get in touch FIRST NAME LAST NAME EMAIL PHONE NUMBER MOVE-IN DATE LAYOUT Select Layout 1 Bedroom 2 Bedrooms DO YOU HAVE ANY PETS? Select Pets No Pets Cat(s) Dog(s) Other NOTES By entering my contact information and clicking “SUBMIT”, I consent to be used by QuadReal Property Group Limited Partnership (Park Place, 666 Burrard Street, Suite 800, Vancouver, BC V6C 2X8) (“QuadReal”) for the purpose of responding to my inquiry and to send me commercial electronic messages, including emails and text messages, with news and information regarding its homes, communities, related services and general marketing information. Message frequency varies. Message, carrier and data rates may apply. I may withdraw my consent at any time by following the unsubscribe mechanism set out in the applicable electronic message. I can view QuadReal’s Privacy Policy here for more information on how QuadReal may use my personal information and contact them directly at privacy@quadreal.com for more details. Submit Address 2475 West Broadway Street Vancouver, BC V6K 2E8 (604) 913-7366 Floorplans Amenities Neighbourhood Gallery Contact Rent with us Own with us Masterplan Communities Residential Portfolio About News & Insights Contact Stay up to date Join our mailing list to receive future updates, news, and insights. Subscribe QuadReal CONNECT © 2026 QuadReal and the Quadrant Logo are trademarks of QuadReal Property Group Limited Partnership. All rights reserved. Illustrations are Artists' concept. Prices and specifications are subject to change without notice. E.&O.E. QuadReal Residential Properties UK Accessibility Legal We use essential cookies to help us keep our site running, understand and improve its performance, and save any settings you select. With your consent by clicking \"Accept all Cookies\" or through cookies settings, we use cookies or similar technologie"
+          "textSample": "Skip to main content Enable accessibility for low vision Open the accessibility menu Skip to content Masterplan Communities Overview Assembly Park Bayview Village Cloverdale Maplewood Oakridge Park TriCity Central Residential Portfolio All Communities Calgary Cambridge Hamilton Kitchener Greater Toronto Greater Vancouver About News & Insights Contact (604) 913-7366 QuadReal CONNECT Floorplans Amenities Neighbourhood Gallery Contact Book a Tour LARCHWAY GARDENS > CONTACT Contact Larchway Gardens 2475 West Broadway Street Vancouver, BC V6K 2E8 (604) 913-7366 © Mapbox © OpenStreetMap Improve this map Hold Ctrl + scroll to zoom Get in touch FIRST NAME LAST NAME EMAIL PHONE NUMBER MOVE-IN DATE LAYOUT Select Layout 1 Bedroom 2 Bedrooms DO YOU HAVE ANY PETS? Select Pets No Pets Cat(s) Dog(s) Other NOTES By entering my contact information and clicking “SUBMIT”, I consent to be used by QuadReal Property Group Limited Partnership (Park Place, 666 Burrard Street, Suite 800, Vancouver, BC V6C 2X8) (“QuadReal”) for the purpose of responding to my inquiry and to send me commercial electronic messages, including emails and text messages, with news and information regarding its homes, communities, related services and general marketing information. Message frequency varies. Message, carrier and data rates may apply. I may withdraw my consent at any time by following the unsubscribe mechanism set out in the applicable electronic message. I can view QuadReal’s Privacy Policy here for more information on how QuadReal may use my personal information and contact them directly at privacy@quadreal.com for more details. Submit Address 2475 West Broadway Street Vancouver, BC V6K 2E8 (604) 913-7366 Floorplans Amenities Neighbourhood Gallery Contact Rent with us Own with us Masterplan Communities Residential Portfolio About News & Insights Contact Stay up to date Join our mailing list to receive future updates, news, and insights. Subscribe QuadReal CONNECT © 2026 QuadReal and the Quadrant Logo are trademarks of QuadReal Property Group Limited Partnership. All rights reserved. Illustrations are Artists' concept. Prices and specifications are subject to change without notice. E.&O.E. QuadReal Residential Properties UK Accessibility Legal"
         }
       ]
     },
@@ -211,7 +211,7 @@
       "id": "viridian",
       "buildingName": "Viridian",
       "address": "1783 W 14th Ave, Vancouver, BC",
-      "checkedAt": "2026-09-29T13:07:33.510Z",
+      "checkedAt": "2026-09-29T22:31:30.977Z",
       "effectiveStatus": "leasing",
       "authority": "official_web",
       "reason": "Official page contains current leasing/availability language.",
@@ -219,18 +219,18 @@
       "observations": [
         {
           "url": "https://www.rentviridian.com/",
-          "checkedAt": "2026-09-29T13:07:33.510Z",
+          "checkedAt": "2026-09-29T22:31:30.977Z",
           "httpStatus": 200,
           "usable": true,
           "negatives": [],
           "positives": [
             "now renting"
           ],
-          "textSample": "Press Alt+1 for screen-reader mode, Alt+0 to cancel Accessibility Screen-Reader Guide, Feedback, and Issue Reporting | New window Viridian Logo AVAILABILITYAMENITIESLIFESTYLEARTWORKNEIGHBOURHOODGALLERYCONTACT US BOOK A TOUR The Fine Art Of City Living Now Renting Our Boutique Rental Homes A Well-Designed Life Starts Here South Granville has always been a neighbourhood designed to celebrate the good life. It’s a desirable locale that brings together Vancouver’s brightest and best in art, cuisine and design, tucked beneath trees planted generations ago. Viridian rises above the dappled green backdrop of West 14th and Burrard, offering stunning boutique one, two and three-bedroom rental homes. The experience is nothing short of exceptional, offering custom curated art, resort like amenities and designer suites to elevate your everyday living. A Picture Perfect Lifestyle Stylish Amenities Thoughtfully designed amenities to make city living calm, comfortable and convenient. LEARN MORE Elevated Lifestyle Experience an unparalleled rental experience, complete with a dedicated on-site team that elevates every aspect of your daily life. LEARN MORE Designer Suites Boutique rental suites that offer open-concept living, with an island kitchen and a terrace for outdoor living. LEARN MORE Stylish Amenities Thoughtfully designed amenities to make city living calm, comfortable and convenient. LEARN MORE Elevated Lifestyle Experience an unparalleled rental experience, complete with a dedicated on-site team that elevates every aspect of your daily life. LEARN MORE Designer Suites Boutique rental suites that offer open-concept living, with an island kitchen and a terrace for outdoor living. LEARN MORE Stylish Amenities Thoughtfully designed amenities to make city living calm, comfortable and convenient. LEARN MORE 1 2 3 Authentic and Eclectic Urban Living South Granville is home to the finest food and beverage, from the venerable Meinhardt’s to beloved bars, bistros and burgers. Culture is around every leafy corner. Your new home joins an island of calm in Vancouver, where storied lawn tennis and bowling clubs rub green shoulders with pretty pocket parks. And when mood strikes, the beach or downtown are just minutes away. EXPLORE THE NEIGHBOURHOOD Custom Designed Cabinetry With Warm or Cool Palettes Open-Concept Layouts Sweeping Views Custom Designed Cabinetry With Warm or Cool Palettes Floor-to-Ceiling Windows Fireside Co-Working and Media Lounge, with Private Dining Area P"
+          "textSample": "Viridian Logo AVAILABILITYAMENITIESLIFESTYLEARTWORKNEIGHBOURHOODGALLERYCONTACT US BOOK A TOUR The Fine Art Of City Living Now Renting Our Boutique Rental Homes A Well-Designed Life Starts Here South Granville has always been a neighbourhood designed to celebrate the good life. It’s a desirable locale that brings together Vancouver’s brightest and best in art, cuisine and design, tucked beneath trees planted generations ago. Viridian rises above the dappled green backdrop of West 14th and Burrard, offering stunning boutique one, two and three-bedroom rental homes. The experience is nothing short of exceptional, offering custom curated art, resort like amenities and designer suites to elevate your everyday living. A Picture Perfect Lifestyle Stylish Amenities Thoughtfully designed amenities to make city living calm, comfortable and convenient. LEARN MORE Elevated Lifestyle Experience an unparalleled rental experience, complete with a dedicated on-site team that elevates every aspect of your daily life. LEARN MORE Designer Suites Boutique rental suites that offer open-concept living, with an island kitchen and a terrace for outdoor living. LEARN MORE Stylish Amenities Thoughtfully designed amenities to make city living calm, comfortable and convenient. LEARN MORE Elevated Lifestyle Experience an unparalleled rental experience, complete with a dedicated on-site team that elevates every aspect of your daily life. LEARN MORE Designer Suites Boutique rental suites that offer open-concept living, with an island kitchen and a terrace for outdoor living. LEARN MORE Stylish Amenities Thoughtfully designed amenities to make city living calm, comfortable and convenient. LEARN MORE 1 2 3 Authentic and Eclectic Urban Living South Granville is home to the finest food and beverage, from the venerable Meinhardt’s to beloved bars, bistros and burgers. Culture is around every leafy corner. Your new home joins an island of calm in Vancouver, where storied lawn tennis and bowling clubs rub green shoulders with pretty pocket parks. And when mood strikes, the beach or downtown are just minutes away. EXPLORE THE NEIGHBOURHOOD Custom Designed Cabinetry With Warm or Cool Palettes Open-Concept Layouts Sweeping Views Custom Designed Cabinetry With Warm or Cool Palettes Floor-to-Ceiling Windows Fireside Co-Working and Media Lounge, with Private Dining Area Professionally Designed Fitness Studio Outdoor Swimming Pool and Sun Deck Viridian Logo 1783 West 14th Avenue, Vancouver V6J 0H7, C"
         },
         {
           "url": "https://www.rentcafe.com/apartments/bc/vancouver/viridian1/default.aspx",
-          "checkedAt": "2026-09-29T13:07:33.510Z",
+          "checkedAt": "2026-09-29T22:31:30.977Z",
           "httpStatus": 403,
           "usable": false
         }
@@ -240,7 +240,7 @@
       "id": "19-greenway",
       "buildingName": "19 on the Greenway",
       "address": "3619 Arbutus St, Vancouver, BC",
-      "checkedAt": "2026-09-29T13:07:33.510Z",
+      "checkedAt": "2026-09-29T22:31:30.977Z",
       "effectiveStatus": "unknown",
       "authority": "none",
       "reason": "No decisive official signal.",
@@ -248,7 +248,7 @@
       "observations": [
         {
           "url": "https://www.19otgreenway.com/floorplans",
-          "checkedAt": "2026-09-29T13:07:33.510Z",
+          "checkedAt": "2026-09-29T22:31:30.977Z",
           "httpStatus": 403,
           "usable": false
         }
@@ -258,7 +258,7 @@
       "id": "the-elms",
       "buildingName": "The Elms",
       "address": "5828 Granville St, Vancouver, BC",
-      "checkedAt": "2026-09-29T13:07:33.510Z",
+      "checkedAt": "2026-09-29T22:31:30.977Z",
       "effectiveStatus": "leasing",
       "authority": "official_web",
       "reason": "Official page contains current leasing/availability language.",
@@ -266,18 +266,18 @@
       "observations": [
         {
           "url": "https://stranddev.com/portfolio/theelms",
-          "checkedAt": "2026-09-29T13:07:33.510Z",
+          "checkedAt": "2026-09-29T22:31:30.977Z",
           "httpStatus": 200,
           "usable": true,
           "negatives": [],
           "positives": [
             "now renting"
           ],
-          "textSample": "Portfolio About Approach Team Impact History Contact The Elms Vancouver, BC Now Renting Anchored in the heart of one of Vancouver’s most desirable neighbourhoods, The Elms offers thoughtfully designed residences paired with an elevated collection of amenities, including an expansive rooftop terrace with sauna. This connected community introduces a new chapter of rental living to Vancouver’s coveted Westside. info@renttheelms.com | 236.471.5540 RENT NOW Homes Amenities Plans & Features Neighbourhood Gallery Register YOUR HOME Homes are crafted with open layouts that make daily living effortless. High-quality, stylish flooring offers both durability and a modern look, while the kitchens are equipped with well-crafted cabinetry, sleek surfaces, and contemporary appliances for a clean, cohesive feel. Large windows bring in abundant natural light, adding to the sense of openness and comfort throughout to enhance everyday living. RENT NOW RENT THE ELMS Enjoy thoughtfully curated amenities designed to elevate life at home. Unwind on the rooftop terrace, relax and rejuvenate in the sauna, or clean up your pets at the convenient dog wash station. Everyday tasks are easier with secure parcel lockers, while children have their own dedicated play area to explore. Grow something of your own in the community garden plots or gather with friends in the rooftop entertainment lounge—everything you need, right where you live. 1 Rooftop Terrace 2 Sauna 3 Dog Wash Station 4 Secure Package Parcel Lockers 5 Children's Play Area 6 Community Garden Plots 7 Entertainment Lounge 8 Bike Repair Station 9 EV Parking PLANS & FEATURES URBAN ONE BED + DEN | STARTING FROM $2,238/MONTH* ONE BED + DEN | STARTING FROM $2395/MONTH* TWO BED + DEN | STARTING FROM $3,295/MONTH* TWO BED TOWNHOME | STARTING FROM $3,395/MONTH* VIEW FEATURE SHEET NEIGHBOURHOOD In the prestigious neighbourhood nestled between the charm of Kerrisdale and the elegance of Shaughnessy, The Elms is just minutes from Kerrisdale’s boutique shops and the vibrant centre of Oakridge. With convenient access to downtown, UBC, and YVR, and surrounded by some of Vancouver’s most beautiful parks and established schools, this location places the best of the Westside within easy reach. © Mapbox © OpenStreetMap Improve this map THE ELMS | 5828 GRANVILLE STREET GALLERY REGISTER After registering, you will receive details on how to book your tour, along with pricing and floorplan availability. A member of our Leasing Team will be in touc"
+          "textSample": "Portfolio About Approach Team Impact History Contact The Elms Vancouver, BC Now Renting Anchored in the heart of one of Vancouver’s most desirable neighbourhoods, The Elms offers thoughtfully designed residences paired with an elevated collection of amenities, including an expansive rooftop terrace with sauna. This connected community introduces a new chapter of rental living to Vancouver’s coveted Westside. info@renttheelms.com | 236.471.5540 RENT NOW Homes Amenities Plans & Features Neighbourhood Gallery Register YOUR HOME Homes are crafted with open layouts that make daily living effortless. High-quality, stylish flooring offers both durability and a modern look, while the kitchens are equipped with well-crafted cabinetry, sleek surfaces, and contemporary appliances for a clean, cohesive feel. Large windows bring in abundant natural light, adding to the sense of openness and comfort throughout to enhance everyday living. RENT NOW RENT THE ELMS Enjoy thoughtfully curated amenities designed to elevate life at home. Unwind on the rooftop terrace, relax and rejuvenate in the sauna, or clean up your pets at the convenient dog wash station. Everyday tasks are easier with secure parcel lockers, while children have their own dedicated play area to explore. Grow something of your own in the community garden plots or gather with friends in the rooftop entertainment lounge—everything you need, right where you live. 1 Rooftop Terrace 2 Sauna 3 Dog Wash Station 4 Secure Package Parcel Lockers 5 Children's Play Area 6 Community Garden Plots 7 Entertainment Lounge 8 Bike Repair Station 9 EV Parking PLANS & FEATURES URBAN ONE BED + DEN | STARTING FROM $2,265/MONTH* ONE BED + DEN | STARTING FROM $2395/MONTH* TWO BED + DEN | STARTING FROM $3,255/MONTH* TWO BED TOWNHOME | STARTING FROM $3,485/MONTH* VIEW FEATURE SHEET NEIGHBOURHOOD In the prestigious neighbourhood nestled between the charm of Kerrisdale and the elegance of Shaughnessy, The Elms is just minutes from Kerrisdale’s boutique shops and the vibrant centre of Oakridge. With convenient access to downtown, UBC, and YVR, and surrounded by some of Vancouver’s most beautiful parks and established schools, this location places the best of the Westside within easy reach. © Mapbox © OpenStreetMap Improve this map THE ELMS | 5828 GRANVILLE STREET GALLERY REGISTER After registering, you will receive details on how to book your tour, along with pricing and floorplan availability. A member of our Leasing Team will be in touc"
         },
         {
           "url": "https://rentals.ca/vancouver/the-elms",
-          "checkedAt": "2026-09-29T13:07:33.510Z",
+          "checkedAt": "2026-09-29T22:31:30.977Z",
           "httpStatus": 403,
           "usable": false
         }
@@ -287,7 +287,7 @@
       "id": "the-dunbar",
       "buildingName": "The Dunbar",
       "address": "6019 Dunbar St, Vancouver, BC",
-      "checkedAt": "2026-09-29T13:07:33.510Z",
+      "checkedAt": "2026-09-29T22:31:30.977Z",
       "effectiveStatus": "leasing",
       "authority": "official_web",
       "reason": "Official page contains current leasing/availability language.",
@@ -295,18 +295,18 @@
       "observations": [
         {
           "url": "https://stranddev.com/portfolio/thedunbar",
-          "checkedAt": "2026-09-29T13:07:33.510Z",
+          "checkedAt": "2026-09-29T22:31:30.977Z",
           "httpStatus": 200,
           "usable": true,
           "negatives": [],
           "positives": [
             "now renting"
           ],
-          "textSample": "Portfolio About Approach Team Impact History Contact The Dunbar Vancouver, BC Now Renting The Dunbar is a rare offering of boutique, purpose-built rental homes in one of Vancouver’s most coveted neighbourhoods featuring urban, one, and two bedroom homes. With pet-friendly residences, elevated amenities, and effortless connection to the Westside and beyond. info@rentthedunbar.com | 236.466.0687. RENT NOW Homes Amenities Plans & Features Neighbourhood Gallery Register YOUR HOME Open-concept layouts are thoughtfully planned to support both everyday living and easy entertaining. Durable flooring pairs modern style with long-lasting function, while kitchens feature contemporary cabinetry, sleek countertops, and reliable appliances for a clean and cohesive finish. Generous windows fill each home with natural light, enhancing the overall sense of space and comfort. RENT NOW RENT THE DUNBAR Access elevated amenities at The Dunbar, providing convenience right at home. Entertain and wind down while enjoying stunning views from the rooftop terrace, stay active in the large, fully-equipped fitness centre, or enjoy the multi-purpose entertainment space complete with a full kitchen and co-working area, perfect for events, studying, or remote work. 1 Rooftop Terrace 2 Fitness Centre 3 Dog Wash Station 4 Sauna 5 Bike Repair and Wash Station 6 Secure Package Parcel Lockers 7 Entertainment Lounge 8 Children's Play Area 9 Community Garden Plots PLANS & FEATURES TWO BED + DEN | STARTING FROM $3,203/MONTH* VIEW FEATURE SHEET NEIGHBOURHOOD Nestled in a tree-lined neighbourhood, this thoughtfully designed community is seamlessly connected to the city’s most desirable destinations—just minutes from UBC, Pacific Spirit Park, and the shops and cafés of Kerrisdale and Dunbar-Southlands. Surrounded by top schools, golf courses, and everyday conveniences, The Dunbar is where lifestyle, learning, and leisure meet. © Mapbox © OpenStreetMap Improve this map THE DUNBAR | 6019 DUNBAR STREET, VANCOUVER GALLERY REGISTER After registering, you will receive details on how to book your tour, along with pricing and floorplan availability. A member of our Leasing Team will be in touch shortly. What bedroom types are you interested in? I want to move in: How did you hear about us? Please confirm your consent to receive email communication from Strand including information about upcoming developments, VIP early access and special offers. * I agree to the terms and conditions. SUBMIT VIEW MORE PROJE"
+          "textSample": "Portfolio About Approach Team Impact History Contact The Dunbar Vancouver, BC Now Renting The Dunbar is a rare offering of boutique, purpose-built rental homes in one of Vancouver’s most coveted neighbourhoods featuring urban, one, and two bedroom homes. With pet-friendly residences, elevated amenities, and effortless connection to the Westside and beyond. info@rentthedunbar.com | 236.466.0687. RENT NOW Homes Amenities Plans & Features Neighbourhood Gallery Register YOUR HOME Open-concept layouts are thoughtfully planned to support both everyday living and easy entertaining. Durable flooring pairs modern style with long-lasting function, while kitchens feature contemporary cabinetry, sleek countertops, and reliable appliances for a clean and cohesive finish. Generous windows fill each home with natural light, enhancing the overall sense of space and comfort. RENT NOW RENT THE DUNBAR Access elevated amenities at The Dunbar, providing convenience right at home. Entertain and wind down while enjoying stunning views from the rooftop terrace, stay active in the large, fully-equipped fitness centre, or enjoy the multi-purpose entertainment space complete with a full kitchen and co-working area, perfect for events, studying, or remote work. 1 Rooftop Terrace 2 Fitness Centre 3 Dog Wash Station 4 Sauna 5 Bike Repair and Wash Station 6 Secure Package Parcel Lockers 7 Entertainment Lounge 8 Children's Play Area 9 Community Garden Plots PLANS & FEATURES ONE BED + DEN | STARTING FROM $2,750/MONTH TWO BED + DEN | STARTING FROM $3,208/MONTH* VIEW FEATURE SHEET NEIGHBOURHOOD Nestled in a tree-lined neighbourhood, this thoughtfully designed community is seamlessly connected to the city’s most desirable destinations—just minutes from UBC, Pacific Spirit Park, and the shops and cafés of Kerrisdale and Dunbar-Southlands. Surrounded by top schools, golf courses, and everyday conveniences, The Dunbar is where lifestyle, learning, and leisure meet. © Mapbox © OpenStreetMap Improve this map THE DUNBAR | 6019 DUNBAR STREET, VANCOUVER GALLERY REGISTER After registering, you will receive details on how to book your tour, along with pricing and floorplan availability. A member of our Leasing Team will be in touch shortly. What bedroom types are you interested in? I want to move in: How did you hear about us? Please confirm your consent to receive email communication from Strand including information about upcoming developments, VIP early access and special offers. * I agree to the t"
         },
         {
           "url": "https://rentals.ca/vancouver/the-dunbar",
-          "checkedAt": "2026-09-29T13:07:33.510Z",
+          "checkedAt": "2026-09-29T22:31:30.977Z",
           "httpStatus": 403,
           "usable": false
         }
