@@ -1,9 +1,9 @@
 {
-  "refreshedAt": "2026-09-28T23:28:26.595Z",
+  "refreshedAt": "2026-09-29T05:56:29.448Z",
   "buildings": [
     {
       "building": "Kits Walk",
-      "checkedAt": "2026-09-28T23:28:26.595Z",
+      "checkedAt": "2026-09-29T05:56:29.448Z",
       "observations": [
         {
           "url": "https://rentals.ca/vancouver/kits-walk-by-strand",
@@ -81,7 +81,7 @@
     },
     {
       "building": "Arbutus Residences",
-      "checkedAt": "2026-09-28T23:28:26.595Z",
+      "checkedAt": "2026-09-29T05:56:29.448Z",
       "observations": [
         {
           "url": "https://www.rentfaster.ca/properties/2139-lahb-ave-vancouver-454186",
@@ -99,8 +99,8 @@
         },
         {
           "url": "https://www.zumper.com/apartment-buildings/p1117150/arbutus-residences-quilchena-vancouver-bc",
-          "httpStatus": 429,
-          "usable": false,
+          "httpStatus": 200,
+          "usable": true,
           "error": null,
           "reusedEvidence": false
         }
@@ -149,11 +149,11 @@
             },
             {
               "url": "https://www.zumper.com/apartment-buildings/p1117150/arbutus-residences-quilchena-vancouver-bc",
-              "httpStatus": 429,
-              "usable": false,
+              "httpStatus": 200,
+              "usable": true,
               "structuredMatch": false,
               "requiredMatched": false,
-              "availabilityMatched": false,
+              "availabilityMatched": true,
               "fullyLeased": false,
               "verified": false
             }
@@ -177,8 +177,8 @@
             "Available",
             "1 unit available"
           ],
-          "verified": false,
-          "verifiedSource": null,
+          "verified": true,
+          "verifiedSource": "https://www.zumper.com/apartment-buildings/p1117150/arbutus-residences-quilchena-vancouver-bc",
           "sourceMatches": [
             {
               "url": "https://www.rentfaster.ca/properties/2139-lahb-ave-vancouver-454186",
@@ -202,13 +202,13 @@
             },
             {
               "url": "https://www.zumper.com/apartment-buildings/p1117150/arbutus-residences-quilchena-vancouver-bc",
-              "httpStatus": 429,
-              "usable": false,
+              "httpStatus": 200,
+              "usable": true,
               "structuredMatch": false,
-              "requiredMatched": false,
-              "availabilityMatched": false,
+              "requiredMatched": true,
+              "availabilityMatched": true,
               "fullyLeased": false,
-              "verified": false
+              "verified": true
             }
           ]
         }
@@ -216,7 +216,7 @@
     },
     {
       "building": "Fourth + Mac",
-      "checkedAt": "2026-09-28T23:28:26.595Z",
+      "checkedAt": "2026-09-29T05:56:29.448Z",
       "observations": [
         {
           "url": "https://www.craigslist.org/view/d/vancouver-bed-bath-fourth-mac-kitsilano/eiSLCKTVqsrtPUWpUpJyDN",

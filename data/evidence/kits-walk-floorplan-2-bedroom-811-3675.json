@@ -1,0 +1,34 @@
+{
+  "checkedAt": "2026-09-29T05:48:17.234Z",
+  "listingId": "kits-walk-floorplan-2-bedroom-811-3675",
+  "sourceUrl": "https://rentals.ca/vancouver/kits-walk-by-strand",
+  "ok": true,
+  "status": 403,
+  "finalUrl": "https://rentals.ca/vancouver/kits-walk-by-strand",
+  "title": "Just a moment...",
+  "bodyText": "rentals.ca\nPerforming security verification\n\nThis website uses a security service to protect against malicious bots. This page is displayed while the website verifies you are not a bot.\n\nRay ID: a428b51bdfe93929\nPerformance and Security by Cloudflare\nPrivacy",
+  "links": [
+    {
+      "href": "https://www.cloudflare.com/?utm_source=challenge&utm_campaign=m",
+      "text": "Cloudflare"
+    },
+    {
+      "href": "https://www.cloudflare.com/privacypolicy/",
+      "text": "Privacy"
+    }
+  ],
+  "jsonLd": [],
+  "images": [
+    "https://rentals.ca/favicon.ico"
+  ],
+  "elapsedMs": 3137,
+  "identityMatch": false,
+  "explicitNegative": false,
+  "negativePhrase": null,
+  "negativeNeedsConfirmation": false,
+  "explicitPositive": false,
+  "positivePhrase": null,
+  "extractedRent": null,
+  "exactFloorplanMatch": null,
+  "facts": {}
+}
