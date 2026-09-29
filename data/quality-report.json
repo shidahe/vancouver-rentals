@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-09-29T05:57:19.067Z",
-  "activeCount": 23,
+  "generatedAt": "2026-09-29T13:08:16.713Z",
+  "activeCount": 21,
   "decisionReady": true,
   "readinessStatus": "finalized",
   "highIssueCount": 0,
   "mediumIssueCount": 0,
-  "infoIssueCount": 38,
+  "infoIssueCount": 36,
   "issues": [
     {
       "severity": "info",
@@ -59,11 +59,6 @@
     },
     {
       "severity": "info",
-      "id": "arbutus-residences-floorplan-2-bedroom-townhouse-den-1340",
-      "issue": "unknown-orientation"
-    },
-    {
-      "severity": "info",
       "id": "zumper-1441677a9e59",
       "issue": "unknown-ac"
     },
@@ -105,11 +100,6 @@
     {
       "severity": "info",
       "id": "mls-r3151022",
-      "issue": "unknown-orientation"
-    },
-    {
-      "severity": "info",
-      "id": "mls-r3151372",
       "issue": "unknown-orientation"
     },
     {
@@ -201,16 +191,16 @@
   "readinessChecks": {
     "smokeOk": true,
     "smokeFresh": true,
-    "smokeCheckedAt": "2026-09-29T05:57:24.788Z",
-    "latestDataAt": "2026-09-29T05:56:35.613Z",
+    "smokeCheckedAt": "2026-09-29T13:08:21.759Z",
+    "latestDataAt": "2026-09-29T13:07:33.510Z",
     "coverageReady": true,
     "healthyDiscoveryLanes": 3,
     "coverageWarnings": [
       {
         "severity": "warning",
         "lane": "rentalsca",
-        "status": "unhealthy",
-        "detail": "0/9 regional searches reachable; 0 qualifying candidates parsed"
+        "status": "degraded",
+        "detail": "8/9 regional searches reachable; 0 qualifying candidates parsed; 21 scoped search-only leads retained (19 new, 2 already active, 0 need revalidation); 3 detail pages blocked after 99 discovered URLs; 95 further detail checks suppressed after repeated 403/429"
       },
       {
         "severity": "warning",
@@ -222,10 +212,22 @@
         "severity": "warning",
         "lane": "realtylink",
         "status": "degraded",
-        "detail": "3/3 searches reachable; 4 current live candidates parsed from a partial snapshot versus complete baseline 4; positive discovery usable, removals suppressed"
+        "detail": "3/3 searches reachable; 2 current live candidates parsed from a partial snapshot versus complete baseline 2; positive discovery usable, removals suppressed"
+      },
+      {
+        "severity": "warning",
+        "lane": "priority-viridian-unpriced-unit",
+        "status": "price-unverified",
+        "detail": "Viridian unit 0103 (2BR) is offered for Sep 30, but official rent is withheld; do not publish before verifying rent >= CAD $3,500"
+      },
+      {
+        "severity": "warning",
+        "lane": "priority-viridian-unpriced-unit",
+        "status": "price-unverified",
+        "detail": "Viridian unit 0309 (2BR) is offered for Oct 30, but official rent is withheld; do not publish before verifying rent >= CAD $3,500"
       }
     ]
   },
   "readinessIssues": [],
-  "finalizedAt": "2026-09-29T05:57:24.886Z"
+  "finalizedAt": "2026-09-29T13:08:21.834Z"
 }

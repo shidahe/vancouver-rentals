@@ -1,17 +1,17 @@
 {
-  "refreshedAt": "2026-09-29T05:55:11.375Z",
+  "refreshedAt": "2026-09-29T13:06:11.341Z",
   "mode": "candidate-only",
   "sourceHealth": {
     "kitsilano": {
-      "checkedAt": "2026-09-29T05:55:11.375Z",
+      "checkedAt": "2026-09-29T13:06:11.341Z",
       "status": 200,
       "ok": true,
       "finalUrl": "https://www.craigslist.org/search/subarea/van?cat=apa&min_bedrooms=2&query=kitsilano",
-      "anchorCount": 246,
-      "detailLinkCount": 224,
-      "embeddedDetailLinkCount": 112,
-      "resultContainerCount": 114,
-      "postIdCount": 112,
+      "anchorCount": 244,
+      "detailLinkCount": 222,
+      "embeddedDetailLinkCount": 111,
+      "resultContainerCount": 111,
+      "postIdCount": 111,
       "hrefShapeSamples": [
         "www.craigslist.org/subarea/van",
         "www.craigslist.org/favorites",
@@ -23,13 +23,13 @@
         "www.craigslist.org/about/prohibited",
         "www.craigslist.org/about/recalled_items",
         "www.craigslist.org/about/help/safety/scams",
-        "www.craigslist.org/view/d/vancouver-bed-bath-suite-in-kitsilano/pgaKgohEVcAQVU9cbYC6js",
-        "www.craigslist.org/view/d/vancouver-bed-bath-suite-in-kitsilano/cWAFdzZ6z4ngtR9uFH5P8K"
+        "www.craigslist.org/view/d/vancouver-bed-bath-basement-kitsilano/8bBiFmgqAUnLLVse9rnqZT",
+        "www.craigslist.org/view/d/vancouver-bed-bath-suite-in-kitsilano/pgaKgohEVcAQVU9cbYC6js"
       ],
       "title": "vancouver apartments / housing for rent \"kitsilano\" - craigslist"
     },
     "arbutus": {
-      "checkedAt": "2026-09-29T05:55:11.375Z",
+      "checkedAt": "2026-09-29T13:06:11.341Z",
       "status": 200,
       "ok": true,
       "finalUrl": "https://www.craigslist.org/search/subarea/van?cat=apa&min_bedrooms=2&query=arbutus",
@@ -55,7 +55,7 @@
       "title": "vancouver apartments / housing for rent \"arbutus\" - craigslist"
     },
     "point-grey": {
-      "checkedAt": "2026-09-29T05:55:11.375Z",
+      "checkedAt": "2026-09-29T13:06:11.341Z",
       "status": 200,
       "ok": true,
       "finalUrl": "https://www.craigslist.org/search/subarea/van?cat=apa&min_bedrooms=2&query=point%20grey",
@@ -75,21 +75,21 @@
         "www.craigslist.org/about/prohibited",
         "www.craigslist.org/about/recalled_items",
         "www.craigslist.org/about/help/safety/scams",
-        "www.craigslist.org/view/d/vancouver-spacious-bed-bath-apartment/1QrH6acAs7Y9bNFaBgoYkH",
-        "www.craigslist.org/view/d/vancouver-true-waterfront-living-with/oGgMe5t1qTUbgLhgGAsjSQ"
+        "www.craigslist.org/view/d/vancouver-vancouver-west-point-grey/reNvrH4yUPSdTsgXDCZD1e",
+        "www.craigslist.org/view/d/vancouver-spacious-bed-bath-apartment/1QrH6acAs7Y9bNFaBgoYkH"
       ],
       "title": "vancouver apartments / housing for rent \"point grey\" - craigslist"
     },
     "dunbar": {
-      "checkedAt": "2026-09-29T05:55:11.375Z",
+      "checkedAt": "2026-09-29T13:06:11.341Z",
       "status": 200,
       "ok": true,
       "finalUrl": "https://www.craigslist.org/search/subarea/van?cat=apa&min_bedrooms=2&query=dunbar",
-      "anchorCount": 206,
-      "detailLinkCount": 184,
-      "embeddedDetailLinkCount": 92,
-      "resultContainerCount": 93,
-      "postIdCount": 92,
+      "anchorCount": 200,
+      "detailLinkCount": 178,
+      "embeddedDetailLinkCount": 89,
+      "resultContainerCount": 90,
+      "postIdCount": 89,
       "hrefShapeSamples": [
         "www.craigslist.org/subarea/van",
         "www.craigslist.org/favorites",
@@ -101,32 +101,186 @@
         "www.craigslist.org/about/prohibited",
         "www.craigslist.org/about/recalled_items",
         "www.craigslist.org/about/help/safety/scams",
-        "www.craigslist.org/view/d/vancouver-dunbar-3br1den-25ba-whole/tLSgasJf4ubBBzSmjD3enf",
-        "www.craigslist.org/view/d/vancouver-bedroom-legal-suite-for-rent/9wWPmAoEb8zDsRYZVyzaHD"
+        "www.craigslist.org/view/d/vancouver-bedroom-no-living-room-garden/vooQTyYPEX76rbfHU9mdwi",
+        "www.craigslist.org/view/d/vancouver-dunbar-3br1den-25ba-whole/tLSgasJf4ubBBzSmjD3enf"
       ],
       "title": "vancouver apartments / housing for rent \"dunbar\" - craigslist"
     }
   },
   "diagnostics": {
-    "discoveredDetailUrls": 278,
-    "searchCards": 360,
-    "uniqueSearchCards": 278,
+    "discoveredDetailUrls": 276,
+    "searchCards": 354,
+    "uniqueSearchCards": 276,
     "missingRentOrBedrooms": 100,
-    "outOfScope": 129,
+    "outOfScope": 128,
     "outOfArea": 21,
-    "searchAccepted": 31,
-    "detailChecks": 31,
-    "detailVerified": 28,
+    "searchAccepted": 29,
+    "detailChecks": 29,
+    "detailVerified": 27,
     "detailNegative": 0,
     "detailIdentityMismatch": 0,
     "detailStale": 0,
     "detailErrors": 0,
     "exactAddresses": 7,
     "relistingsMerged": 1,
-    "accepted": 27,
+    "accepted": 26,
     "errors": 0
   },
   "candidates": [
+    {
+      "source": "Craigslist",
+      "postId": "7966061406",
+      "url": "https://www.craigslist.org/view/d/vancouver-vancouver-west-point-grey/reNvrH4yUPSdTsgXDCZD1e",
+      "title": "$3,850 / 3br - 1332ft2 - Vancouver West Point Grey 3 Bedrooms House (Vancouver)",
+      "address": null,
+      "identityKey": "craigslist::post:7966061406",
+      "rent": 3850,
+      "bedrooms": 3,
+      "bathrooms": 1,
+      "sqft": 1332,
+      "geo": {
+        "lat": 49.2666,
+        "lng": -123.1976
+      },
+      "targetArea": true,
+      "active": true,
+      "postedOrUpdatedAt": "2026-09-29T12:20:46.000Z",
+      "checkedAt": "2026-09-29T13:06:11.341Z",
+      "images": [
+        "https://images.craigslist.org/00g0g_4rGVb0GDyC7_0pO0hd_600x450.jpg",
+        "https://images.craigslist.org/00g0g_4rGVb0GDyC7_0pO0hd_50x50c.jpg",
+        "https://images.craigslist.org/00R0R_68cqPfvidQh_0pO0hd_50x50c.jpg",
+        "https://images.craigslist.org/00v0v_f93flUmx9lg_0pO0hd_50x50c.jpg",
+        "https://images.craigslist.org/01616_2vBwilL56av_0pO0hd_50x50c.jpg",
+        "https://images.craigslist.org/00404_h1AjB9HbIcO_0pO0hd_50x50c.jpg",
+        "https://images.craigslist.org/00z0z_d3qlnlIQPTy_0pO0hd_50x50c.jpg",
+        "https://images.craigslist.org/00808_cIm7rdN7mjl_0pO0hd_50x50c.jpg",
+        "https://images.craigslist.org/00L0L_h2f8B56gyLx_0pO0hd_50x50c.jpg",
+        "https://images.craigslist.org/00n0n_1P9AF6OBabr_0pO0hd_50x50c.jpg",
+        "https://images.craigslist.org/00q0q_9qGcmtLrJhQ_0pO0hd_50x50c.jpg",
+        "https://images.craigslist.org/01212_6ZC4JnYZgJT_0pO0hd_50x50c.jpg"
+      ],
+      "publishable": false,
+      "evidenceKind": "current_search_card_and_exact_detail",
+      "queryIds": [
+        "point-grey"
+      ],
+      "approximateLocation": "Vancouver West Point Grey 3 Bedrooms House",
+      "addressPrecision": "neighborhood",
+      "description": "Unfurnished\nUpper-level mountain views\nSpacious living and dining areas\nFunctional family layout\nPrimary bedroom + flex space upstairs\nTwo additional bedrooms on the main floor\nPet-friendly (subject to approval)\nPrime Location\nNot Included:Gas，Electricity，Internet\n\nUtilities shared with basement tenant:\nMain floor pays 2/3\nBasement pays 1/3",
+      "type": "house",
+      "ac": null,
+      "detailVerified": true,
+      "relistingPostIds": [
+        "7966061406"
+      ],
+      "relistingUrls": [
+        "https://www.craigslist.org/view/d/vancouver-vancouver-west-point-grey/reNvrH4yUPSdTsgXDCZD1e"
+      ]
+    },
+    {
+      "source": "Craigslist",
+      "postId": "7973597007",
+      "url": "https://www.craigslist.org/view/d/vancouver-new-bedrooms-35-bathrooms-2/un3AcaXxZx4T8o1ciPJS4h",
+      "title": "$5,980 / 3br - 1500ft2 - New 3 bedrooms 3.5 bathrooms 1/2 Duplex in Kitsilano (Kitsilano)",
+      "address": null,
+      "identityKey": "craigslist::post:7973597007",
+      "rent": 5980,
+      "bedrooms": 3,
+      "bathrooms": 3.5,
+      "sqft": 1500,
+      "geo": {
+        "lat": 49.2621,
+        "lng": -123.1804
+      },
+      "targetArea": true,
+      "active": true,
+      "postedOrUpdatedAt": "2026-09-29T11:58:05.000Z",
+      "checkedAt": "2026-09-29T13:06:11.341Z",
+      "images": [
+        "https://images.craigslist.org/00X0X_8fAXb0mepVn_0t20CI_600x450.jpg",
+        "https://images.craigslist.org/00X0X_8fAXb0mepVn_0t20CI_50x50c.jpg",
+        "https://images.craigslist.org/00q0q_bPnZqZo8ZWF_0t20CI_50x50c.jpg",
+        "https://images.craigslist.org/00P0P_bhpaXiTPvCn_0vb0CI_50x50c.jpg",
+        "https://images.craigslist.org/00x0x_kPM2bZdo3PA_0CI0s7_50x50c.jpg",
+        "https://images.craigslist.org/01313_hb2PjQ4lSu3_0t00CI_50x50c.jpg",
+        "https://images.craigslist.org/00k0k_8mHIzbE9hS4_0t10CI_50x50c.jpg",
+        "https://images.craigslist.org/00q0q_bPnZqZo8ZWF_0t20CI_600x450.jpg",
+        "https://images.craigslist.org/01717_7cdRRHmeGl8_0t10CI_50x50c.jpg",
+        "https://images.craigslist.org/00G0G_7dOnXw9S9XV_0t10CI_50x50c.jpg",
+        "https://images.craigslist.org/01616_gYsr1GR5DSZ_0CI0t1_50x50c.jpg"
+      ],
+      "publishable": false,
+      "evidenceKind": "current_search_card_and_exact_detail",
+      "queryIds": [
+        "kitsilano"
+      ],
+      "approximateLocation": "Kitsilano",
+      "addressPrecision": "neighborhood",
+      "description": "Beautiful newly built duplex completed in 2022, all 3 bedrooms are en-suite.\nExcellent location near the West Broadway commercial corridor, with easy access to supermarkets, banks, restaurants, cafes, and various daily conveniences within walking distance.\n\nSteps to West 4th shopping and Kits Beach\n\nMultiple bus routes nearby provide convenient transportation to different areas of the city. The neighborhood is surrounded by elementary and secondary schools, community facilities, and family-friendly amenities.\n\nEquipped with premium North American luxury brand Thermador stove, refrigerator, and dishwasher. All faucets and shower systems throughout the home are fitted with high-end brand （Brizo ）fixtures. The kitchen features a designer-crafted apron-front Blanco sink made from premium materials.\nAC and HRV systems.\nRadiant floor heating\n\nNo garage, street parking.\nPerfect for small families or professionals looking for a modern and convenient home.\n\nRequirements:\n\n• Minimum 1-year lease\n• No pets, no smoking\n• Tenant insurance required\n• Credit reference check and referral letter is required\n\nAppointment for viewing.",
+      "type": "duplex",
+      "ac": true,
+      "detailVerified": true,
+      "relistingPostIds": [
+        "7973597007",
+        "7969115448"
+      ],
+      "relistingUrls": [
+        "https://www.craigslist.org/view/d/vancouver-new-bedrooms-35-bathrooms-2/un3AcaXxZx4T8o1ciPJS4h",
+        "https://www.craigslist.org/view/d/vancouver-new-bedrooms-35-bathrooms-2/xrz9rn6HCEMu9FMi36UYPf"
+      ]
+    },
+    {
+      "source": "Craigslist",
+      "postId": "7967911446",
+      "url": "https://www.craigslist.org/view/d/vancouver-fully-furnished-designer-2br/dK4HrSygC6FiEijPJfe35N",
+      "title": "$4,975 / 2br - 850ft2 - Fully Furnished Designer 2BR/2BA Coach House (Arbutus / Kits / UBC / Point Grey)",
+      "address": "3260 W 16 Ave near Blenheim",
+      "identityKey": "craigslist::post:7967911446",
+      "rent": 4975,
+      "bedrooms": 2,
+      "bathrooms": 1.5,
+      "sqft": 850,
+      "geo": {
+        "lat": 49.2646,
+        "lng": -123.1648
+      },
+      "targetArea": true,
+      "active": true,
+      "postedOrUpdatedAt": "2026-09-29T06:15:15.000Z",
+      "checkedAt": "2026-09-29T13:06:11.341Z",
+      "images": [
+        "https://images.craigslist.org/00N0N_78ZMrBVFcbB_0CI0pO_600x450.jpg",
+        "https://images.craigslist.org/00N0N_78ZMrBVFcbB_0CI0pO_50x50c.jpg",
+        "https://images.craigslist.org/00808_ftEZ1Yjx8xr_0jm0t2_50x50c.jpg",
+        "https://images.craigslist.org/00l0l_2hh5fzNMpOU_0CI0pO_50x50c.jpg",
+        "https://images.craigslist.org/00t0t_7qGr1yJ5amx_0CI0pO_50x50c.jpg",
+        "https://images.craigslist.org/00z0z_jjyQ6FNqKw8_0CI0pO_50x50c.jpg",
+        "https://images.craigslist.org/00v0v_1UU3oGcKWX6_0jm0t2_50x50c.jpg",
+        "https://images.craigslist.org/00C0C_6NWXqxP77lK_0jm0t2_50x50c.jpg",
+        "https://images.craigslist.org/00a0a_4nZXOTRlxcj_0jm0t2_50x50c.jpg",
+        "https://images.craigslist.org/00j0j_cQrrHMIM1NT_0CI0pO_50x50c.jpg",
+        "https://images.craigslist.org/00808_KkbhXDoDMX_0jm0t2_50x50c.jpg",
+        "https://images.craigslist.org/00f0f_drNhc2KQejA_0CI0pL_50x50c.jpg"
+      ],
+      "publishable": false,
+      "evidenceKind": "current_search_card_and_exact_detail",
+      "queryIds": [
+        "kitsilano"
+      ],
+      "approximateLocation": "Arbutus / Kits / UBC / Point Grey",
+      "addressPrecision": "exact_civic",
+      "description": "Experience upscale Westside living in this fully furnished, designer-appointed 2-bedroom, 2-bathroom coach house located at W 16th Ave & Blenheim St. Nestled on the vibrant border of Kitsilano, Arbutus, and Point Grey, this private residence offers premium finishes, air conditioning, and a fully equipped home gym.\n\nWhether you are a relocating professional, a visiting academic, or exploring the Lower Mainland, this turn-key home serves as your ultimate luxury Vancouver base.\n\nPremium Features & Interior Amenities\n\n* Chef's Kitchen: Equipped with stainless steel appliances, premium stone countertops, and custom millwork.\n* Climate Control: Stay comfortable year-round with built-in air conditioning (AC).\n* Luxury Millwork: Features elegant custom millwork and high-end built-ins throughout the home.\n* Entertainment & Living: Relax in a living space featuring a comfortable sofa bed (perfect for guests) and two large HD smart TVs.\n* Private Fitness Center: Access a fully equipped home gym complete with a premium functional trainer.\n\nOutdoor Living & Entry\n\n* Private Deck: Includes premium exterior patio furniture, a dining table, and a BBQ for effortless outdoor dining.\n* Serene Entry: Features a private entrance adjacent to a beautifully landscaped, tranquil backyard.\n\nPrime Westside Location\n\n* Neighborhoods: Steps from Kitsilano, Arbutus Ridge, and Point Grey.\n* Proximity to UBC: Minutes away from the University of British Columbia—ideal for faculty, medical professionals, or researchers.\n* Nature & Recreation: Easy access to local beaches, Pacific Spirit Regional Park forest trails, and neighborhood parks.\n* Shopping & Dining: Surrounded by the trendy boutiques, cafes, and restaurants of West 4th, West Broadway, and West 10th Ave.\n* Transit & Travel: Central location with seamless transit options to explore Downtown Vancouver and the entire Lower Mainland.\n\nRental Details & Inclusions\n\n* All-Inclusive Living: Monthly rent includes high-speed Wi-Fi, all utilities, and",
+      "type": "house",
+      "ac": true,
+      "detailVerified": true,
+      "relistingPostIds": [
+        "7967911446"
+      ],
+      "relistingUrls": [
+        "https://www.craigslist.org/view/d/vancouver-fully-furnished-designer-2br/dK4HrSygC6FiEijPJfe35N"
+      ]
+    },
     {
       "source": "Craigslist",
       "postId": "7965963048",
@@ -145,7 +299,7 @@
       "targetArea": true,
       "active": true,
       "postedOrUpdatedAt": "2026-09-29T05:47:58.000Z",
-      "checkedAt": "2026-09-29T05:55:11.375Z",
+      "checkedAt": "2026-09-29T13:06:11.341Z",
       "images": [
         "https://images.craigslist.org/00101_8Lj1RrRW6kM_0gw0b1_600x450.jpg",
         "https://images.craigslist.org/00101_8Lj1RrRW6kM_0gw0b1_50x50c.jpg",
@@ -196,7 +350,7 @@
       "targetArea": true,
       "active": true,
       "postedOrUpdatedAt": "2026-09-29T04:51:55.000Z",
-      "checkedAt": "2026-09-29T05:55:11.375Z",
+      "checkedAt": "2026-09-29T13:06:11.341Z",
       "images": [
         "https://images.craigslist.org/00R0R_5D6x8JG8rRh_0gw0t2_600x450.jpg",
         "https://images.craigslist.org/00R0R_5D6x8JG8rRh_0gw0t2_50x50c.jpg",
@@ -247,7 +401,7 @@
       "targetArea": true,
       "active": true,
       "postedOrUpdatedAt": "2026-09-29T03:05:47.000Z",
-      "checkedAt": "2026-09-29T05:55:11.375Z",
+      "checkedAt": "2026-09-29T13:06:11.341Z",
       "images": [
         "https://images.craigslist.org/00Z0Z_50uIv6nfJRw_0t20CI_600x450.jpg",
         "https://images.craigslist.org/00Z0Z_50uIv6nfJRw_0t20CI_50x50c.jpg",
@@ -280,58 +434,6 @@
     },
     {
       "source": "Craigslist",
-      "postId": "7973597007",
-      "url": "https://www.craigslist.org/view/d/vancouver-new-bedrooms-35-bathrooms-2/un3AcaXxZx4T8o1ciPJS4h",
-      "title": "$5,980 / 3br - 1500ft2 - New 3 bedrooms 3.5 bathrooms 1/2 Duplex in Kitsilano (Kitsilano)",
-      "address": null,
-      "identityKey": "craigslist::post:7973597007",
-      "rent": 5980,
-      "bedrooms": 3,
-      "bathrooms": 3.5,
-      "sqft": 1500,
-      "geo": {
-        "lat": 49.2621,
-        "lng": -123.1804
-      },
-      "targetArea": true,
-      "active": true,
-      "postedOrUpdatedAt": "2026-09-29T02:52:05.000Z",
-      "checkedAt": "2026-09-29T05:55:11.375Z",
-      "images": [
-        "https://images.craigslist.org/00X0X_8fAXb0mepVn_0t20CI_600x450.jpg",
-        "https://images.craigslist.org/00X0X_8fAXb0mepVn_0t20CI_50x50c.jpg",
-        "https://images.craigslist.org/00q0q_bPnZqZo8ZWF_0t20CI_50x50c.jpg",
-        "https://images.craigslist.org/00P0P_bhpaXiTPvCn_0vb0CI_50x50c.jpg",
-        "https://images.craigslist.org/00x0x_kPM2bZdo3PA_0CI0s7_50x50c.jpg",
-        "https://images.craigslist.org/01313_hb2PjQ4lSu3_0t00CI_50x50c.jpg",
-        "https://images.craigslist.org/00k0k_8mHIzbE9hS4_0t10CI_50x50c.jpg",
-        "https://images.craigslist.org/00q0q_bPnZqZo8ZWF_0t20CI_600x450.jpg",
-        "https://images.craigslist.org/01717_7cdRRHmeGl8_0t10CI_50x50c.jpg",
-        "https://images.craigslist.org/00G0G_7dOnXw9S9XV_0t10CI_50x50c.jpg",
-        "https://images.craigslist.org/01616_gYsr1GR5DSZ_0CI0t1_50x50c.jpg"
-      ],
-      "publishable": false,
-      "evidenceKind": "current_search_card_and_exact_detail",
-      "queryIds": [
-        "kitsilano"
-      ],
-      "approximateLocation": "Kitsilano",
-      "addressPrecision": "neighborhood",
-      "description": "Beautiful newly built duplex completed in 2022, all 3 bedrooms are en-suite.\nExcellent location near the West Broadway commercial corridor, with easy access to supermarkets, banks, restaurants, cafes, and various daily conveniences within walking distance.\n\nSteps to West 4th shopping and Kits Beach\n\nMultiple bus routes nearby provide convenient transportation to different areas of the city. The neighborhood is surrounded by elementary and secondary schools, community facilities, and family-friendly amenities.\n\nEquipped with premium North American luxury brand Thermador stove, refrigerator, and dishwasher. All faucets and shower systems throughout the home are fitted with high-end brand （Brizo ）fixtures. The kitchen features a designer-crafted apron-front Blanco sink made from premium materials.\nAC and HRV systems.\nRadiant floor heating\n\nNo garage, street parking.\nPerfect for small families or professionals looking for a modern and convenient home.\n\nRequirements:\n\n• Minimum 1-year lease\n• No pets, no smoking\n• Tenant insurance required\n• Credit reference check and referral letter is required\n\nAppointment for viewing.",
-      "type": "duplex",
-      "ac": true,
-      "detailVerified": true,
-      "relistingPostIds": [
-        "7973597007",
-        "7969115448"
-      ],
-      "relistingUrls": [
-        "https://www.craigslist.org/view/d/vancouver-new-bedrooms-35-bathrooms-2/un3AcaXxZx4T8o1ciPJS4h",
-        "https://www.craigslist.org/view/d/vancouver-new-bedrooms-35-bathrooms-2/xrz9rn6HCEMu9FMi36UYPf"
-      ]
-    },
-    {
-      "source": "Craigslist",
       "postId": "7972424670",
       "url": "https://www.craigslist.org/view/d/vancouver-kitsilano-bed-den-bath-condo/bTzTbY9XydW6mvkq3taxBS",
       "title": "$4,200 / 2br - 773ft2 - Kitsilano - 2 Bed + Den 2 Bath Condo; Private Balcony, Views, Parking (Kitsilano, Vancouver)",
@@ -348,7 +450,7 @@
       "targetArea": true,
       "active": true,
       "postedOrUpdatedAt": "2026-09-28T20:04:36.000Z",
-      "checkedAt": "2026-09-29T05:55:11.375Z",
+      "checkedAt": "2026-09-29T13:06:11.341Z",
       "images": [
         "https://images.craigslist.org/00505_7t3Rn5fvF2c_0pO0hc_600x450.jpg",
         "https://images.craigslist.org/00505_7t3Rn5fvF2c_0pO0hc_50x50c.jpg",
@@ -399,7 +501,7 @@
       "targetArea": true,
       "active": true,
       "postedOrUpdatedAt": "2026-09-28T17:47:58.000Z",
-      "checkedAt": "2026-09-29T05:55:11.375Z",
+      "checkedAt": "2026-09-29T13:06:11.341Z",
       "images": [
         "https://images.craigslist.org/00j0j_hvQzGupZGf6_1320MM_600x450.jpg",
         "https://images.craigslist.org/00j0j_hvQzGupZGf6_1320MM_50x50c.jpg",
@@ -450,7 +552,7 @@
       "targetArea": true,
       "active": true,
       "postedOrUpdatedAt": "2026-09-28T15:59:24.000Z",
-      "checkedAt": "2026-09-29T05:55:11.375Z",
+      "checkedAt": "2026-09-29T13:06:11.341Z",
       "images": [
         "https://images.craigslist.org/00101_3Kt4zGjMpUA_0jm0c6_600x450.jpg",
         "https://images.craigslist.org/00101_3Kt4zGjMpUA_0jm0c6_50x50c.jpg",
@@ -501,7 +603,7 @@
       "targetArea": true,
       "active": true,
       "postedOrUpdatedAt": "2026-09-28T15:59:22.000Z",
-      "checkedAt": "2026-09-29T05:55:11.375Z",
+      "checkedAt": "2026-09-29T13:06:11.341Z",
       "images": [
         "https://images.craigslist.org/00x0x_5rdhaj721wT_0jm0c6_600x450.jpg",
         "https://images.craigslist.org/00x0x_5rdhaj721wT_0jm0c6_50x50c.jpg",
@@ -552,7 +654,7 @@
       "targetArea": true,
       "active": true,
       "postedOrUpdatedAt": "2026-09-28T03:44:46.000Z",
-      "checkedAt": "2026-09-29T05:55:11.375Z",
+      "checkedAt": "2026-09-29T13:06:11.341Z",
       "images": [
         "https://images.craigslist.org/00606_j5ld9CEBOPv_0CI0t2_600x450.jpg",
         "https://images.craigslist.org/00606_j5ld9CEBOPv_0CI0t2_50x50c.jpg",
@@ -603,7 +705,7 @@
       "targetArea": true,
       "active": true,
       "postedOrUpdatedAt": "2026-09-28T01:49:21.000Z",
-      "checkedAt": "2026-09-29T05:55:11.375Z",
+      "checkedAt": "2026-09-29T13:06:11.341Z",
       "images": [
         "https://images.craigslist.org/00H0H_aBooG6gbfXq_0ia0du_600x450.jpg",
         "https://images.craigslist.org/00H0H_aBooG6gbfXq_0ia0du_50x50c.jpg",
@@ -654,7 +756,7 @@
       "targetArea": true,
       "active": true,
       "postedOrUpdatedAt": "2026-09-28T01:42:12.000Z",
-      "checkedAt": "2026-09-29T05:55:11.375Z",
+      "checkedAt": "2026-09-29T13:06:11.341Z",
       "images": [
         "https://images.craigslist.org/00a0a_cOF4R0kbKjE_0cU08B_600x450.jpg",
         "https://images.craigslist.org/00a0a_cOF4R0kbKjE_0cU08B_50x50c.jpg",
@@ -705,7 +807,7 @@
       "targetArea": true,
       "active": true,
       "postedOrUpdatedAt": "2026-09-27T19:15:52.000Z",
-      "checkedAt": "2026-09-29T05:55:11.375Z",
+      "checkedAt": "2026-09-29T13:06:11.341Z",
       "images": [
         "https://images.craigslist.org/00S0S_5E9sc8yt9va_0hq0bI_600x450.jpg",
         "https://images.craigslist.org/00S0S_5E9sc8yt9va_0hq0bI_50x50c.jpg",
@@ -755,7 +857,7 @@
       "targetArea": true,
       "active": true,
       "postedOrUpdatedAt": "2026-09-27T15:44:31.000Z",
-      "checkedAt": "2026-09-29T05:55:11.375Z",
+      "checkedAt": "2026-09-29T13:06:11.341Z",
       "images": [
         "https://images.craigslist.org/00808_fvUZG0FiQOA_0k20pP_600x450.jpg",
         "https://images.craigslist.org/00808_fvUZG0FiQOA_0k20pP_50x50c.jpg",
@@ -790,57 +892,6 @@
     },
     {
       "source": "Craigslist",
-      "postId": "7966061406",
-      "url": "https://www.craigslist.org/view/d/vancouver-vancouver-west-point-grey/reNvrH4yUPSdTsgXDCZD1e",
-      "title": "$3,850 / 3br - 1332ft2 - Vancouver West Point Grey 3 Bedrooms House (Vancouver)",
-      "address": null,
-      "identityKey": "craigslist::post:7966061406",
-      "rent": 3850,
-      "bedrooms": 3,
-      "bathrooms": 1,
-      "sqft": 1332,
-      "geo": {
-        "lat": 49.2666,
-        "lng": -123.1976
-      },
-      "targetArea": true,
-      "active": true,
-      "postedOrUpdatedAt": "2026-09-27T00:36:12.000Z",
-      "checkedAt": "2026-09-29T05:55:11.375Z",
-      "images": [
-        "https://images.craigslist.org/00g0g_4rGVb0GDyC7_0pO0hd_600x450.jpg",
-        "https://images.craigslist.org/00g0g_4rGVb0GDyC7_0pO0hd_50x50c.jpg",
-        "https://images.craigslist.org/00R0R_68cqPfvidQh_0pO0hd_50x50c.jpg",
-        "https://images.craigslist.org/00v0v_f93flUmx9lg_0pO0hd_50x50c.jpg",
-        "https://images.craigslist.org/01616_2vBwilL56av_0pO0hd_50x50c.jpg",
-        "https://images.craigslist.org/00404_h1AjB9HbIcO_0pO0hd_50x50c.jpg",
-        "https://images.craigslist.org/00z0z_d3qlnlIQPTy_0pO0hd_50x50c.jpg",
-        "https://images.craigslist.org/00808_cIm7rdN7mjl_0pO0hd_50x50c.jpg",
-        "https://images.craigslist.org/00L0L_h2f8B56gyLx_0pO0hd_50x50c.jpg",
-        "https://images.craigslist.org/00n0n_1P9AF6OBabr_0pO0hd_50x50c.jpg",
-        "https://images.craigslist.org/00q0q_9qGcmtLrJhQ_0pO0hd_50x50c.jpg",
-        "https://images.craigslist.org/01212_6ZC4JnYZgJT_0pO0hd_50x50c.jpg"
-      ],
-      "publishable": false,
-      "evidenceKind": "current_search_card_and_exact_detail",
-      "queryIds": [
-        "point-grey"
-      ],
-      "approximateLocation": "Vancouver West Point Grey 3 Bedrooms House",
-      "addressPrecision": "neighborhood",
-      "description": "Unfurnished\nUpper-level mountain views\nSpacious living and dining areas\nFunctional family layout\nPrimary bedroom + flex space upstairs\nTwo additional bedrooms on the main floor\nPet-friendly (subject to approval)\nPrime Location\nNot Included:Gas，Electricity，Internet\n\nUtilities shared with basement tenant:\nMain floor pays 2/3\nBasement pays 1/3",
-      "type": "house",
-      "ac": null,
-      "detailVerified": true,
-      "relistingPostIds": [
-        "7966061406"
-      ],
-      "relistingUrls": [
-        "https://www.craigslist.org/view/d/vancouver-vancouver-west-point-grey/reNvrH4yUPSdTsgXDCZD1e"
-      ]
-    },
-    {
-      "source": "Craigslist",
       "postId": "7973207196",
       "url": "https://www.craigslist.org/view/d/vancouver-br-family-house-in-point-grey/inS3JdZfFLt5GkwHfmFwaY",
       "title": "$6,000 / 3br - 2636ft2 - 3 Br Family House in Point Grey with OCEAN AND MOUNTAIN VIEWS (4410 West 3 Avenue)",
@@ -857,7 +908,7 @@
       "targetArea": true,
       "active": true,
       "postedOrUpdatedAt": "2026-09-26T14:25:59.000Z",
-      "checkedAt": "2026-09-29T05:55:11.375Z",
+      "checkedAt": "2026-09-29T13:06:11.341Z",
       "images": [
         "https://images.craigslist.org/01414_a6JcqjghJ3l_0ak06S_600x450.jpg",
         "https://images.craigslist.org/01414_a6JcqjghJ3l_0ak06S_50x50c.jpg",
@@ -908,7 +959,7 @@
       "targetArea": true,
       "active": true,
       "postedOrUpdatedAt": "2026-09-26T14:14:09.000Z",
-      "checkedAt": "2026-09-29T05:55:11.375Z",
+      "checkedAt": "2026-09-29T13:06:11.341Z",
       "images": [
         "https://images.craigslist.org/00c0c_jI6maH6Pk5V_08g05v_600x450.jpg",
         "https://images.craigslist.org/00c0c_jI6maH6Pk5V_08g05v_50x50c.jpg",
@@ -959,7 +1010,7 @@
       "targetArea": true,
       "active": true,
       "postedOrUpdatedAt": "2026-09-26T14:14:05.000Z",
-      "checkedAt": "2026-09-29T05:55:11.375Z",
+      "checkedAt": "2026-09-29T13:06:11.341Z",
       "images": [
         "https://images.craigslist.org/00c0c_jI6maH6Pk5V_08g05v_600x450.jpg",
         "https://images.craigslist.org/00c0c_jI6maH6Pk5V_08g05v_50x50c.jpg",
@@ -1010,7 +1061,7 @@
       "targetArea": true,
       "active": true,
       "postedOrUpdatedAt": "2026-09-25T22:55:21.000Z",
-      "checkedAt": "2026-09-29T05:55:11.375Z",
+      "checkedAt": "2026-09-29T13:06:11.341Z",
       "images": [
         "https://images.craigslist.org/00W0W_b8SzGSsys9e_0j10dJ_600x450.jpg",
         "https://images.craigslist.org/00W0W_b8SzGSsys9e_0j10dJ_50x50c.jpg",
@@ -1061,7 +1112,7 @@
       "targetArea": true,
       "active": true,
       "postedOrUpdatedAt": "2026-09-24T16:17:29.000Z",
-      "checkedAt": "2026-09-29T05:55:11.375Z",
+      "checkedAt": "2026-09-29T13:06:11.341Z",
       "images": [
         "https://images.craigslist.org/00Y0Y_k3PKmKJZ2y9_0uY0kE_600x450.jpg",
         "https://images.craigslist.org/00Y0Y_k3PKmKJZ2y9_0uY0kE_50x50c.jpg",
@@ -1112,7 +1163,7 @@
       "targetArea": true,
       "active": true,
       "postedOrUpdatedAt": "2026-09-24T16:17:15.000Z",
-      "checkedAt": "2026-09-29T05:55:11.375Z",
+      "checkedAt": "2026-09-29T13:06:11.341Z",
       "images": [
         "https://images.craigslist.org/00o0o_jGuXcZK9yR9_0uY0kE_600x450.jpg",
         "https://images.craigslist.org/00o0o_jGuXcZK9yR9_0uY0kE_50x50c.jpg",
@@ -1147,108 +1198,6 @@
     },
     {
       "source": "Craigslist",
-      "postId": "7967911446",
-      "url": "https://www.craigslist.org/view/d/vancouver-fully-furnished-designer-2br/dK4HrSygC6FiEijPJfe35N",
-      "title": "$4,975 / 2br - 850ft2 - Fully Furnished Designer 2BR/2BA Coach House (Arbutus / Kits / UBC / Point Grey)",
-      "address": "3260 W 16 Ave near Blenheim",
-      "identityKey": "craigslist::post:7967911446",
-      "rent": 4975,
-      "bedrooms": 2,
-      "bathrooms": 1.5,
-      "sqft": 850,
-      "geo": {
-        "lat": 49.2646,
-        "lng": -123.1648
-      },
-      "targetArea": true,
-      "active": true,
-      "postedOrUpdatedAt": "2026-09-24T04:21:07.000Z",
-      "checkedAt": "2026-09-29T05:55:11.375Z",
-      "images": [
-        "https://images.craigslist.org/00N0N_78ZMrBVFcbB_0CI0pO_600x450.jpg",
-        "https://images.craigslist.org/00N0N_78ZMrBVFcbB_0CI0pO_50x50c.jpg",
-        "https://images.craigslist.org/00808_ftEZ1Yjx8xr_0jm0t2_50x50c.jpg",
-        "https://images.craigslist.org/00l0l_2hh5fzNMpOU_0CI0pO_50x50c.jpg",
-        "https://images.craigslist.org/00t0t_7qGr1yJ5amx_0CI0pO_50x50c.jpg",
-        "https://images.craigslist.org/00z0z_jjyQ6FNqKw8_0CI0pO_50x50c.jpg",
-        "https://images.craigslist.org/00v0v_1UU3oGcKWX6_0jm0t2_50x50c.jpg",
-        "https://images.craigslist.org/00C0C_6NWXqxP77lK_0jm0t2_50x50c.jpg",
-        "https://images.craigslist.org/00a0a_4nZXOTRlxcj_0jm0t2_50x50c.jpg",
-        "https://images.craigslist.org/00j0j_cQrrHMIM1NT_0CI0pO_50x50c.jpg",
-        "https://images.craigslist.org/00808_KkbhXDoDMX_0jm0t2_50x50c.jpg",
-        "https://images.craigslist.org/00f0f_drNhc2KQejA_0CI0pL_50x50c.jpg"
-      ],
-      "publishable": false,
-      "evidenceKind": "current_search_card_and_exact_detail",
-      "queryIds": [
-        "kitsilano"
-      ],
-      "approximateLocation": "Arbutus / Kits / UBC / Point Grey",
-      "addressPrecision": "exact_civic",
-      "description": "Experience upscale Westside living in this fully furnished, designer-appointed 2-bedroom, 2-bathroom coach house located at W 16th Ave & Blenheim St. Nestled on the vibrant border of Kitsilano, Arbutus, and Point Grey, this private residence offers premium finishes, air conditioning, and a fully equipped home gym.\n\nWhether you are a relocating professional, a visiting academic, or exploring the Lower Mainland, this turn-key home serves as your ultimate luxury Vancouver base.\n\nPremium Features & Interior Amenities\n\n* Chef's Kitchen: Equipped with stainless steel appliances, premium stone countertops, and custom millwork.\n* Climate Control: Stay comfortable year-round with built-in air conditioning (AC).\n* Luxury Millwork: Features elegant custom millwork and high-end built-ins throughout the home.\n* Entertainment & Living: Relax in a living space featuring a comfortable sofa bed (perfect for guests) and two large HD smart TVs.\n* Private Fitness Center: Access a fully equipped home gym complete with a premium functional trainer.\n\nOutdoor Living & Entry\n\n* Private Deck: Includes premium exterior patio furniture, a dining table, and a BBQ for effortless outdoor dining.\n* Serene Entry: Features a private entrance adjacent to a beautifully landscaped, tranquil backyard.\n\nPrime Westside Location\n\n* Neighborhoods: Steps from Kitsilano, Arbutus Ridge, and Point Grey.\n* Proximity to UBC: Minutes away from the University of British Columbia—ideal for faculty, medical professionals, or researchers.\n* Nature & Recreation: Easy access to local beaches, Pacific Spirit Regional Park forest trails, and neighborhood parks.\n* Shopping & Dining: Surrounded by the trendy boutiques, cafes, and restaurants of West 4th, West Broadway, and West 10th Ave.\n* Transit & Travel: Central location with seamless transit options to explore Downtown Vancouver and the entire Lower Mainland.\n\nRental Details & Inclusions\n\n* All-Inclusive Living: Monthly rent includes high-speed Wi-Fi, all utilities, and",
-      "type": "house",
-      "ac": true,
-      "detailVerified": true,
-      "relistingPostIds": [
-        "7967911446"
-      ],
-      "relistingUrls": [
-        "https://www.craigslist.org/view/d/vancouver-fully-furnished-designer-2br/dK4HrSygC6FiEijPJfe35N"
-      ]
-    },
-    {
-      "source": "Craigslist",
-      "postId": "7953521447",
-      "url": "https://www.craigslist.org/view/d/vancouver-furnished-bedroom-house-in/daLGxCGiGR9F8ECYtjFrRr",
-      "title": "$5,000 / 4br - Furnished 4-Bedroom House in Dunbar (Dunbar)",
-      "address": null,
-      "identityKey": "craigslist::post:7953521447",
-      "rent": 5000,
-      "bedrooms": 4,
-      "bathrooms": 2,
-      "sqft": null,
-      "geo": {
-        "lat": 49.2497,
-        "lng": -123.166
-      },
-      "targetArea": true,
-      "active": true,
-      "postedOrUpdatedAt": "2026-09-23T23:06:26.000Z",
-      "checkedAt": "2026-09-29T05:55:11.375Z",
-      "images": [
-        "https://images.craigslist.org/00d0d_1HidEZAzuOu_0CI0t2_600x450.jpg",
-        "https://images.craigslist.org/00d0d_1HidEZAzuOu_0CI0t2_50x50c.jpg",
-        "https://images.craigslist.org/00s0s_feZyoFn0p90_0t20CI_50x50c.jpg",
-        "https://images.craigslist.org/00w0w_8gojBLO6sZ2_0CI0t2_50x50c.jpg",
-        "https://images.craigslist.org/00h0h_jJulbanAE0n_0CI0t2_50x50c.jpg",
-        "https://images.craigslist.org/00Y0Y_14rQdZAxOc6_0CI0t2_50x50c.jpg",
-        "https://images.craigslist.org/00j0j_eY8WIj0Bxj3_0CI0t2_50x50c.jpg",
-        "https://images.craigslist.org/00F0F_aLa4VEUXTB3_1320AA_50x50c.jpg",
-        "https://images.craigslist.org/00I0I_8JlYW0nDeJn_0CI0t2_50x50c.jpg",
-        "https://images.craigslist.org/00f0f_absXqVcOryw_0t20CI_50x50c.jpg",
-        "https://images.craigslist.org/00j0j_3PirQt6EyN7_0CI0t2_50x50c.jpg",
-        "https://images.craigslist.org/01010_aEDPL5hmBdU_1320AA_50x50c.jpg"
-      ],
-      "publishable": false,
-      "evidenceKind": "current_search_card_and_exact_detail",
-      "queryIds": [
-        "dunbar"
-      ],
-      "approximateLocation": "Dunbar",
-      "addressPrecision": "neighborhood",
-      "description": "This spacious 4-bedroom house is located in the highly desirable Dunbar neighbourhood on King Edward Avenue, making it an excellent choice for a group of UBC students or working professionals.\n\nRent: $5,000/month + utilities (utilities average approximately $50/person/month)\nAvailable: Immediately\nLease Term: Minimum 8 months\n\nFeatures\n- Excellent location - Easy 20-minute bus ride to UBC via Bus 25, with nearby access to Bus 2 and Bus 7; convenient transit to Downtown Vancouver; walking distance to Dunbar Village amenities (including Stong's Market, banks, Shoppers Drug Mart, Cafés, restaurants, and other everyday conveniences)\n- 4 spacious, fully furnished bedrooms (including bed frame, mattress, desk, chair, closet/storage space)\n- Fully equipped kitchen with refrigerator, stove, and microwave\n- On-site laundry\n- High-speed Internet included\n- Street parking available\n\nHouse Rules\n- No pets, no smoking/vaping, no drugs or partying\n- Looking for clean, respectful tenants who will help maintain a quiet living environment\n\nIf you're interested, please send us a message introducing your group, including: Your names, school/program, desired move-in date, a little about your group.\n\nWe'd be happy to arrange a viewing!",
-      "type": "house",
-      "ac": null,
-      "detailVerified": true,
-      "relistingPostIds": [
-        "7953521447"
-      ],
-      "relistingUrls": [
-        "https://www.craigslist.org/view/d/vancouver-furnished-bedroom-house-in/daLGxCGiGR9F8ECYtjFrRr"
-      ]
-    },
-    {
-      "source": "Craigslist",
       "postId": "7960192899",
       "url": "https://www.craigslist.org/view/d/vancouver-bedrooms-townhome-sasamat/gLhefbadH6fJhGpvNYb7A2",
       "title": "$5,000 / 3br - 1446ft2 - 3 bedrooms townhome *Sasamat Garden* (Point Grey, Vancouver West)",
@@ -1265,7 +1214,7 @@
       "targetArea": true,
       "active": true,
       "postedOrUpdatedAt": "2026-09-23T22:12:00.000Z",
-      "checkedAt": "2026-09-29T05:55:11.375Z",
+      "checkedAt": "2026-09-29T13:06:11.341Z",
       "images": [
         "https://images.craigslist.org/00404_cuCXJxUPcyv_0ak074_600x450.jpg",
         "https://images.craigslist.org/00404_cuCXJxUPcyv_0ak074_50x50c.jpg",
@@ -1314,7 +1263,7 @@
       "targetArea": true,
       "active": true,
       "postedOrUpdatedAt": "2026-09-21T23:42:18.000Z",
-      "checkedAt": "2026-09-29T05:55:11.375Z",
+      "checkedAt": "2026-09-29T13:06:11.341Z",
       "images": [
         "https://images.craigslist.org/00Z0Z_k7sjTiNFcjk_0CI0t2_600x450.jpg",
         "https://images.craigslist.org/00Z0Z_k7sjTiNFcjk_0CI0t2_50x50c.jpg",
@@ -1358,7 +1307,7 @@
       "targetArea": true,
       "active": true,
       "postedOrUpdatedAt": "2026-09-15T04:45:10.000Z",
-      "checkedAt": "2026-09-29T05:55:11.375Z",
+      "checkedAt": "2026-09-29T13:06:11.341Z",
       "images": [
         "https://images.craigslist.org/00b0b_fJ1dKmYpeL7_1320MM_600x450.jpg",
         "https://images.craigslist.org/00b0b_fJ1dKmYpeL7_1320MM_50x50c.jpg",
@@ -1409,7 +1358,7 @@
       "targetArea": true,
       "active": true,
       "postedOrUpdatedAt": "2026-09-15T03:21:47.000Z",
-      "checkedAt": "2026-09-29T05:55:11.375Z",
+      "checkedAt": "2026-09-29T13:06:11.341Z",
       "images": [
         "https://images.craigslist.org/00y0y_9QoxDSNE4uG_0pO0jm_600x450.jpg",
         "https://images.craigslist.org/00y0y_9QoxDSNE4uG_0pO0jm_50x50c.jpg",
@@ -1460,7 +1409,7 @@
       "targetArea": true,
       "active": true,
       "postedOrUpdatedAt": "2026-08-22T14:03:54.000Z",
-      "checkedAt": "2026-09-29T05:55:11.375Z",
+      "checkedAt": "2026-09-29T13:06:11.341Z",
       "images": [
         "https://images.craigslist.org/00505_9JjEv3eRS29_0CI0pO_600x450.jpg",
         "https://images.craigslist.org/00505_9JjEv3eRS29_0CI0pO_50x50c.jpg",
