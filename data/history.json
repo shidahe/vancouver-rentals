@@ -594,6 +594,11 @@
       "date": "2026-09-29",
       "rent": 5390,
       "note": "NEEDS CONFIRMATION: latest purpose-built fallback sources did not confirm the exact configured rent + sqft inventory row."
+    },
+    {
+      "date": "2026-09-30",
+      "rent": 5390,
+      "note": "NEEDS CONFIRMATION: latest purpose-built fallback sources did not confirm the exact configured rent + sqft inventory row."
     }
   ],
   "zumper-2fde865f7e2c": [
@@ -690,6 +695,11 @@
       "date": "2026-09-02",
       "rent": 7999,
       "note": "NEW: live Zumper detail auto-published as independent inventory."
+    },
+    {
+      "date": "2026-09-30",
+      "rent": 7999,
+      "note": "AUTO-HIDDEN: exact marketplace page now offers an availability alert instead of a currently available rental; confirmation required before removal."
     }
   ],
   "zumper-c0c663d5d7eb": [
@@ -1058,6 +1068,11 @@
       "date": "2026-09-29",
       "rent": 10500,
       "note": "AUTO-REMOVED after direct live verification found explicit unavailable evidence."
+    },
+    {
+      "date": "2026-09-30",
+      "rent": 10500,
+      "note": "CORRECTED: restored after exact current MLS detail matched identity, explicit availability and rent."
     }
   ],
   "mls-r3150923": [
@@ -2468,6 +2483,13 @@
       "date": "2026-09-28",
       "rent": 3675,
       "note": "First seen in live purpose-built inventory via https://rentals.ca/vancouver/kits-walk-by-strand"
+    }
+  ],
+  "mls-r3170701": [
+    {
+      "date": "2026-09-30",
+      "rent": 7000,
+      "note": "NEW: live Realtylink MLS R3170701 auto-published."
     }
   ]
 }
