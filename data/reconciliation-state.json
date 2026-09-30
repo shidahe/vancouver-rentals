@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-09-30T12:49:28.530Z",
+  "refreshedAt": "2026-09-30T22:28:55.678Z",
   "groups": [
     {
       "identityKey": "1533 maple st::url:69f2e13a0fd5",
@@ -182,49 +182,35 @@
       "result": "authoritative_mls_reverified"
     },
     {
-      "identityKey": "mls:r3167417",
+      "identityKey": "mls:r3137446",
       "sources": [
         "realtylink mls"
       ],
       "rents": [
-        6750
+        5850
       ],
       "exactUnit": true,
-      "matchedListingId": "mls-r3167417",
+      "matchedListingId": "york-103-2535-r3137446",
       "result": "authoritative_mls_reverified"
     },
     {
-      "identityKey": "mls:r3170701",
+      "identityKey": "mls:r3161880",
       "sources": [
         "realtylink mls"
       ],
       "rents": [
-        7000
+        8800
       ],
       "exactUnit": false,
-      "matchedListingId": null,
-      "result": "auto_published_authoritative_mls"
-    },
-    {
-      "identityKey": "mls:r3151022",
-      "sources": [
-        "realtylink mls"
-      ],
-      "rents": [
-        10500
-      ],
-      "exactUnit": false,
-      "matchedListingId": "mls-r3151022",
+      "matchedListingId": "mls-r3161880",
       "result": "authoritative_mls_reverified"
     }
   ],
-  "promoted": [
-    "mls-r3170701"
-  ],
+  "promoted": [],
   "crossVerified": [
     "zumper-16e9ae17cd91",
-    "mls-r3167417",
-    "mls-r3151022"
+    "york-103-2535-r3137446",
+    "mls-r3161880"
   ],
   "fingerprintCrossVerified": [],
   "craigslistRelistingsRecovered": [],
@@ -233,15 +219,15 @@
   "relistedMlsMerged": [],
   "negativeMatches": [],
   "detailReactivated": [
-    "mls-r3151022"
+    "mls-r3161880"
   ],
   "mlsMissing": {},
   "mlsRemoved": [],
   "mlsStaleHidden": [],
-  "realtylinkSnapshotCount": 4,
+  "realtylinkSnapshotCount": 3,
   "realtylinkSnapshotHighWaterMark": 7,
   "realtylinkSnapshotScope": "rent-3500-beds-2-4-whole-home-westside-v2",
   "realtylinkRemovalEligible": false,
-  "mlsRemovalSuppressed": "Partial Realtylink snapshot (4 candidates versus previous complete 7); disappearance signals ignored.",
+  "mlsRemovalSuppressed": "Partial Realtylink snapshot (3 candidates versus previous complete 7); disappearance signals ignored.",
   "mlsDuplicatesMerged": []
 }
