@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-10-01T13:31:57.100Z",
+  "refreshedAt": "2026-10-01T22:53:49.083Z",
   "groups": [
     {
       "identityKey": "1533 maple st::url:69f2e13a0fd5",
@@ -86,42 +86,6 @@
       "result": "candidate_only"
     },
     {
-      "identityKey": "2111 w 11th ave near arbutus st::url:9380351bf41f",
-      "sources": [
-        "craigslist"
-      ],
-      "rents": [
-        3550
-      ],
-      "exactUnit": false,
-      "matchedListingId": null,
-      "result": "candidate_only"
-    },
-    {
-      "identityKey": "1888 york ave near cypress st::url:919308cdb569",
-      "sources": [
-        "craigslist"
-      ],
-      "rents": [
-        5000
-      ],
-      "exactUnit": false,
-      "matchedListingId": null,
-      "result": "candidate_only"
-    },
-    {
-      "identityKey": "2172 w 14th ave::url:8c59916e991a",
-      "sources": [
-        "craigslist"
-      ],
-      "rents": [
-        4800
-      ],
-      "exactUnit": false,
-      "matchedListingId": null,
-      "result": "candidate_only"
-    },
-    {
       "identityKey": "4588 w 2nd ave near tolmie st::url:75b0c64a797c",
       "sources": [
         "craigslist"
@@ -158,6 +122,42 @@
       "result": "candidate_only"
     },
     {
+      "identityKey": "2111 w 11th ave near arbutus st::url:9380351bf41f",
+      "sources": [
+        "craigslist"
+      ],
+      "rents": [
+        3550
+      ],
+      "exactUnit": false,
+      "matchedListingId": null,
+      "result": "candidate_only"
+    },
+    {
+      "identityKey": "1888 york ave near cypress st::url:919308cdb569",
+      "sources": [
+        "craigslist"
+      ],
+      "rents": [
+        5000
+      ],
+      "exactUnit": false,
+      "matchedListingId": null,
+      "result": "candidate_only"
+    },
+    {
+      "identityKey": "2172 w 14th ave::url:8c59916e991a",
+      "sources": [
+        "craigslist"
+      ],
+      "rents": [
+        4800
+      ],
+      "exactUnit": false,
+      "matchedListingId": null,
+      "result": "candidate_only"
+    },
+    {
       "identityKey": "3260 w 16 ave near blenheim::url:588623515817",
       "sources": [
         "craigslist"
@@ -168,18 +168,6 @@
       "exactUnit": false,
       "matchedListingId": null,
       "result": "candidate_only"
-    },
-    {
-      "identityKey": "mls:r3160689",
-      "sources": [
-        "realtylink mls"
-      ],
-      "rents": [
-        4500
-      ],
-      "exactUnit": true,
-      "matchedListingId": "zumper-16e9ae17cd91",
-      "result": "authoritative_mls_reverified"
     },
     {
       "identityKey": "mls:r3137446",
@@ -194,15 +182,15 @@
       "result": "authoritative_mls_reverified"
     },
     {
-      "identityKey": "mls:r3163709",
+      "identityKey": "mls:r3160689",
       "sources": [
         "realtylink mls"
       ],
       "rents": [
-        6000
+        4500
       ],
-      "exactUnit": false,
-      "matchedListingId": "mls-r3163709",
+      "exactUnit": true,
+      "matchedListingId": "zumper-16e9ae17cd91",
       "result": "authoritative_mls_reverified"
     },
     {
@@ -232,9 +220,8 @@
   ],
   "promoted": [],
   "crossVerified": [
-    "zumper-16e9ae17cd91",
     "york-103-2535-r3137446",
-    "mls-r3163709",
+    "zumper-16e9ae17cd91",
     "mls-r3167417",
     "mls-r3161880"
   ],
@@ -247,11 +234,13 @@
   "detailReactivated": [],
   "mlsMissing": {},
   "mlsRemoved": [],
-  "mlsStaleHidden": [],
-  "realtylinkSnapshotCount": 5,
+  "mlsStaleHidden": [
+    "mls-r3160879"
+  ],
+  "realtylinkSnapshotCount": 4,
   "realtylinkSnapshotHighWaterMark": 7,
   "realtylinkSnapshotScope": "rent-3500-beds-2-4-whole-home-westside-v2",
   "realtylinkRemovalEligible": false,
-  "mlsRemovalSuppressed": "Partial Realtylink snapshot (5 candidates versus previous complete 7); disappearance signals ignored.",
+  "mlsRemovalSuppressed": "Partial Realtylink snapshot (4 candidates versus previous complete 7); disappearance signals ignored.",
   "mlsDuplicatesMerged": []
 }
