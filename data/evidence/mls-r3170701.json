@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-10-01T06:02:30.630Z",
+  "checkedAt": "2026-10-01T13:23:57.057Z",
   "listingId": "mls-r3170701",
   "sourceUrl": "https://realtylink.org/en/house~for-rent~vancouver/263192328",
   "ok": true,
@@ -115,30 +115,6 @@
     {
       "href": "https://maps.google.com/maps?q=49.25394,-123.17705&layer=c&cbll=49.25394,-123.17705&cbp=12,173.33,,0,5&iframe=true&width=950&height=490&hl=en",
       "text": "Street View"
-    },
-    {
-      "href": "",
-      "text": "Facebook"
-    },
-    {
-      "href": "",
-      "text": "LinkedIn"
-    },
-    {
-      "href": "",
-      "text": "X"
-    },
-    {
-      "href": "",
-      "text": "Pinterest"
-    },
-    {
-      "href": "",
-      "text": "Email"
-    },
-    {
-      "href": "",
-      "text": "Copy link"
     },
     {
       "href": "https://realtylink.org/en/print/property/263192328",
@@ -407,6 +383,30 @@
     {
       "href": "https://realtylink.org/en/properties~for-sale~campbell-river",
       "text": "Campbell River"
+    },
+    {
+      "href": "https://realtylink.org/en/properties~for-sale~comox",
+      "text": "Comox"
+    },
+    {
+      "href": "https://realtylink.org/en/properties~for-sale~duncan",
+      "text": "Duncan"
+    },
+    {
+      "href": "https://realtylink.org/en/properties~for-sale~nanaimo",
+      "text": "Nanaimo"
+    },
+    {
+      "href": "https://realtylink.org/en/properties~for-sale~parksville",
+      "text": "Parksville"
+    },
+    {
+      "href": "https://realtylink.org/en/properties~for-sale~qualicum-beach",
+      "text": "Qualicum"
+    },
+    {
+      "href": "https://realtylink.org/en/properties~for-sale~port-alberni",
+      "text": "Port Alberni"
     }
   ],
   "jsonLd": [],
@@ -414,17 +414,15 @@
     "https://media.realtylink.org/images/consumersite/property/263192328/561cff5f09c647b0974a3ad3eaf6789c.jpeg?width=480&height=360&fit=cover",
     "https://cdn.realtylink.org/public/bc/consumersite/images/logos/logo-realtylink-v2.svg",
     "https://media.realtylink.org/images/consumersite/member/1V74023/90ea48345c9946fdb98e8909f68f7a4e.jpeg?width=190&height=220&fit=pad",
-    "https://media.realtylink.org/images/consumersite/member/1V74023/f41e17d6e4df4336bdae42d49eb89de1.jpeg?width=120&height=90&fit=pad",
     "https://media.realtylink.org/images/consumersite/property/263192328/561cff5f09c647b0974a3ad3eaf6789c.jpeg?width=640&height=480&fit=cover",
     "https://media.realtylink.org/images/consumersite/property/263192328/19a3c1aa69c24d36bafa9ad091f3af2c.jpeg?width=320&height=240&fit=cover",
     "https://media.realtylink.org/images/consumersite/property/263192328/6692603114ef45c8b7094157beb99872.jpeg?width=320&height=240&fit=cover",
     "https://media.realtylink.org/images/consumersite/property/263192328/9745653bdd2d4849bea9d0c70aa8d0aa.jpeg?width=320&height=240&fit=cover",
     "https://media.realtylink.org/images/consumersite/property/263192328/79713e3e62da4e3599876c8a510a09cc.jpeg?width=320&height=240&fit=cover",
     "https://media.realtylink.org/images/consumersite/member/1V74023/90ea48345c9946fdb98e8909f68f7a4e.jpeg?width=190&height=220&fit=cover",
-    "https://media.realtylink.org/images/consumersite/member/1V74023/f41e17d6e4df4336bdae42d49eb89de1.jpeg?width=120&height=90&fit=contain",
     "https://cdn.realtylink.org/public/bc/consumersite/images/logos/powered-by-centris.svg"
   ],
-  "elapsedMs": 4424,
+  "elapsedMs": 3411,
   "identityMatch": true,
   "explicitNegative": false,
   "negativePhrase": null,

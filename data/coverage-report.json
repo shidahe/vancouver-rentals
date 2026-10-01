@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-01T06:11:31.728Z",
+  "generatedAt": "2026-10-01T13:32:47.072Z",
   "coverageReady": true,
   "healthyLaneCount": 3,
   "freshLaneCount": 8,
@@ -9,21 +9,21 @@
     {
       "building": "kits-walk",
       "healthy": true,
-      "checkedAt": "2026-10-01T06:02:30.630Z",
-      "evidenceUrl": "https://www.kitswalkleasing.com/floorplans",
+      "checkedAt": "2026-10-01T13:23:57.057Z",
+      "evidenceUrl": "https://www.zumper.com/apartment-buildings/p481389/kits-walk-by-strand-kitsilano-vancouver-bc",
       "sourceOptions": 2
     },
     {
       "building": "larchway-gardens",
       "healthy": true,
-      "checkedAt": "2026-10-01T06:02:30.630Z",
+      "checkedAt": "2026-10-01T13:23:57.057Z",
       "evidenceUrl": "https://quadrealresidential.com/vancouver/larchway-gardens/floorplans/",
       "sourceOptions": 1
     },
     {
       "building": "viridian",
       "healthy": true,
-      "checkedAt": "2026-10-01T06:02:30.630Z",
+      "checkedAt": "2026-10-01T13:23:57.057Z",
       "evidenceUrl": "https://www.rentcafe.com/apartments/bc/vancouver/viridian1/default.aspx",
       "sourceOptions": 2
     }
@@ -45,7 +45,7 @@
       "healthy": true,
       "status": "healthy",
       "detail": "11 fresh live candidates",
-      "refreshedAt": "2026-10-01T06:06:29.627Z"
+      "refreshedAt": "2026-10-01T13:27:49.545Z"
     },
     {
       "id": "craigslist",
@@ -53,7 +53,7 @@
       "healthy": true,
       "status": "healthy",
       "detail": "4/4 regional searches reachable; 29 qualifying candidates parsed",
-      "refreshedAt": "2026-10-01T06:09:13.784Z"
+      "refreshedAt": "2026-10-01T13:30:36.457Z"
     },
     {
       "id": "rentalsca",
@@ -61,7 +61,7 @@
       "healthy": false,
       "status": "unhealthy",
       "detail": "0/9 regional searches reachable; 0 qualifying candidates parsed",
-      "refreshedAt": "2026-10-01T06:09:12.231Z"
+      "refreshedAt": "2026-10-01T13:30:35.047Z"
     },
     {
       "id": "livrent",
@@ -69,7 +69,7 @@
       "healthy": false,
       "status": "unhealthy",
       "detail": "0/5 searches healthy; 3 blocked searches opened circuit; 2 further checks suppressed",
-      "refreshedAt": "2026-10-01T06:09:13.174Z"
+      "refreshedAt": "2026-10-01T13:30:35.882Z"
     },
     {
       "id": "realtylink",
@@ -78,8 +78,8 @@
       "positiveDiscoveryHealthy": true,
       "status": "degraded",
       "partial": true,
-      "detail": "3/3 searches reachable; 4 current live candidates parsed from a partial snapshot versus complete baseline 4; positive discovery usable, removals suppressed",
-      "refreshedAt": "2026-10-01T06:09:33.697Z"
+      "detail": "3/3 searches reachable; 5 current live candidates parsed from a partial snapshot versus complete baseline 5; positive discovery usable, removals suppressed",
+      "refreshedAt": "2026-10-01T13:30:56.777Z"
     },
     {
       "id": "priority-kits-walk",
@@ -87,7 +87,7 @@
       "healthy": true,
       "status": "healthy",
       "detail": "1/2 official sources usable",
-      "refreshedAt": "2026-10-01T06:10:41.853Z"
+      "refreshedAt": "2026-10-01T13:32:00.826Z"
     },
     {
       "id": "priority-larchway-gardens",
@@ -95,7 +95,7 @@
       "healthy": true,
       "status": "healthy",
       "detail": "2/2 official sources usable",
-      "refreshedAt": "2026-10-01T06:10:41.853Z"
+      "refreshedAt": "2026-10-01T13:32:00.826Z"
     },
     {
       "id": "priority-viridian",
@@ -103,7 +103,7 @@
       "healthy": true,
       "status": "healthy",
       "detail": "1/2 official sources usable",
-      "refreshedAt": "2026-10-01T06:10:41.853Z"
+      "refreshedAt": "2026-10-01T13:32:00.826Z"
     }
   ],
   "warnings": [
@@ -123,7 +123,7 @@
       "severity": "warning",
       "lane": "realtylink",
       "status": "degraded",
-      "detail": "3/3 searches reachable; 4 current live candidates parsed from a partial snapshot versus complete baseline 4; positive discovery usable, removals suppressed"
+      "detail": "3/3 searches reachable; 5 current live candidates parsed from a partial snapshot versus complete baseline 5; positive discovery usable, removals suppressed"
     },
     {
       "severity": "warning",
