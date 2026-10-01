@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-09-30T22:29:46.431Z",
+  "refreshedAt": "2026-10-01T06:11:30.856Z",
   "listings": {
     "york-103-2535-r3137446": {
       "cached": 5,
@@ -59,8 +59,8 @@
     },
     "arbutus-residences-floorplan-2-bedroom-townhouse-den-1340": {
       "cached": 5,
-      "preserved": 0,
-      "downloaded": 5,
+      "preserved": 5,
+      "downloaded": 0,
       "failures": [],
       "photoPageUrl": "https://www.zumper.com/apartment-buildings/p1117150/arbutus-residences-quilchena-vancouver-bc"
     },
@@ -73,17 +73,17 @@
     },
     "mls-r3161880": {
       "cached": 5,
-      "preserved": 0,
-      "downloaded": 5,
-      "failures": [],
-      "photoPageUrl": "https://realtylink.org/en/house~for-rent~vancouver/263183507"
-    },
-    "mls-r3159060": {
-      "cached": 5,
       "preserved": 5,
       "downloaded": 0,
       "failures": [],
-      "photoPageUrl": "https://realtylink.org/en/house~for-rent~vancouver/263180687"
+      "photoPageUrl": "https://realtylink.org/en/house~for-rent~vancouver/263183507"
+    },
+    "mls-r3161950": {
+      "cached": 5,
+      "preserved": 0,
+      "downloaded": 5,
+      "failures": [],
+      "photoPageUrl": "https://realtylink.org/en/house~for-rent~vancouver/263183577"
     },
     "mls-r3163709": {
       "cached": 5,
@@ -127,12 +127,12 @@
       "failures": [],
       "photoPageUrl": "https://www.zumper.com/address/4101-yew-st-vancouver-bc-v6l-3b7-can"
     },
-    "mls-r3165327": {
+    "mls-r3162880": {
       "cached": 5,
-      "preserved": 5,
-      "downloaded": 0,
+      "preserved": 0,
+      "downloaded": 5,
       "failures": [],
-      "photoPageUrl": "https://realtylink.org/en/apartment~for-rent~vancouver/263186954"
+      "photoPageUrl": "https://realtylink.org/en/apartment~for-rent~vancouver/263184507"
     },
     "kits-walk-floorplan-2-bedroom-811-3675": {
       "cached": 5,
@@ -164,8 +164,8 @@
     "downloaded": 10,
     "failed": 2,
     "preserved": 92,
-    "prunedListings": 1,
-    "prunedIndexImages": 5,
+    "prunedListings": 2,
+    "prunedIndexImages": 10,
     "prunedOrphanFiles": 0
   }
 }

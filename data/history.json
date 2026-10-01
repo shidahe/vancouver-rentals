@@ -95,6 +95,11 @@
       "date": "2026-09-26",
       "rent": 4050,
       "note": "Auto-hidden: exact live detail was not reverified within 48 hours."
+    },
+    {
+      "date": "2026-10-01",
+      "rent": 4050,
+      "note": "REMOVED: exact live detail did not return during the seven-day confirmation window."
     }
   ],
   "2268-w-broadway-312-r3153999": [
@@ -2009,6 +2014,11 @@
       "date": "2026-09-29",
       "rent": 4000,
       "note": "AUTO-HIDDEN: MLS R3161950 exceeded 48 hours without fresh positive availability; partial search results are not removal evidence."
+    },
+    {
+      "date": "2026-10-01",
+      "rent": 4000,
+      "note": "CORRECTED: restored after exact current MLS detail matched identity, explicit availability and rent."
     }
   ],
   "mls-r3159060": [
@@ -2086,6 +2096,11 @@
       "date": "2026-09-23",
       "rent": 15000,
       "note": "CORRECTED: restored after exact current MLS detail matched identity, explicit availability and rent."
+    },
+    {
+      "date": "2026-10-01",
+      "rent": 15000,
+      "note": "AUTO-HIDDEN: MLS R3159060 exceeded 48 hours without fresh positive availability; partial search results are not removal evidence."
     }
   ],
   "mls-r3149267": [
@@ -2409,6 +2424,11 @@
       "date": "2026-09-30",
       "rent": 4975,
       "note": "AUTO live price update from 5475 to 4975."
+    },
+    {
+      "date": "2026-10-01",
+      "rent": 4975,
+      "note": "AUTO live price update from 5475 to 4975."
     }
   ],
   "mls-r3149612": [
@@ -2479,6 +2499,11 @@
       "date": "2026-09-29",
       "rent": 4350,
       "note": "CORRECTED: restored after exact current MLS detail matched identity, explicit availability and rent."
+    },
+    {
+      "date": "2026-10-01",
+      "rent": 4350,
+      "note": "AUTO-HIDDEN: MLS R3165327 exceeded 48 hours without fresh positive availability; partial search results are not removal evidence."
     }
   ],
   "mls-r3162880": [
@@ -2491,6 +2516,11 @@
       "date": "2026-09-28",
       "rent": 4800,
       "note": "AUTO-HIDDEN: MLS R3162880 exceeded 48 hours without fresh positive availability; partial search results are not removal evidence."
+    },
+    {
+      "date": "2026-10-01",
+      "rent": 4800,
+      "note": "CORRECTED: restored after exact current MLS detail matched identity, explicit availability and rent."
     }
   ],
   "kits-walk-floorplan-2-bedroom-811-3675": [
