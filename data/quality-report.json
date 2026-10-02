@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-10-02T05:52:49.457Z",
-  "activeCount": 19,
+  "generatedAt": "2026-10-02T12:51:20.168Z",
+  "activeCount": 20,
   "decisionReady": true,
   "readinessStatus": "finalized",
   "highIssueCount": 0,
   "mediumIssueCount": 0,
-  "infoIssueCount": 33,
+  "infoIssueCount": 34,
   "issues": [
     {
       "severity": "info",
@@ -55,6 +55,11 @@
     {
       "severity": "info",
       "id": "zumper-976e340c66a7",
+      "issue": "unknown-orientation"
+    },
+    {
+      "severity": "info",
+      "id": "arbutus-residences-floorplan-2-bedroom-townhouse-den-1340",
       "issue": "unknown-orientation"
     },
     {
@@ -176,16 +181,16 @@
   "readinessChecks": {
     "smokeOk": true,
     "smokeFresh": true,
-    "smokeCheckedAt": "2026-10-02T05:52:55.031Z",
-    "latestDataAt": "2026-10-02T05:52:00.271Z",
+    "smokeCheckedAt": "2026-10-02T12:51:25.607Z",
+    "latestDataAt": "2026-10-02T12:50:35.036Z",
     "coverageReady": true,
     "healthyDiscoveryLanes": 3,
     "coverageWarnings": [
       {
         "severity": "warning",
         "lane": "rentalsca",
-        "status": "unhealthy",
-        "detail": "0/9 regional searches reachable; 0 qualifying candidates parsed"
+        "status": "degraded",
+        "detail": "4/9 regional searches reachable; 0 qualifying candidates parsed; 16 scoped search-only leads retained (16 new, 0 already active, 0 need revalidation); 3 detail pages blocked after 78 discovered URLs; 75 further detail checks suppressed after repeated 403/429"
       },
       {
         "severity": "warning",
@@ -197,10 +202,10 @@
         "severity": "warning",
         "lane": "realtylink",
         "status": "degraded",
-        "detail": "3/3 searches reachable; 4 current live candidates parsed from a partial snapshot versus complete baseline 4; positive discovery usable, removals suppressed"
+        "detail": "3/3 searches reachable; 2 current live candidates parsed from a partial snapshot versus complete baseline 2; positive discovery usable, removals suppressed"
       }
     ]
   },
   "readinessIssues": [],
-  "finalizedAt": "2026-10-02T05:52:55.120Z"
+  "finalizedAt": "2026-10-02T12:51:25.711Z"
 }

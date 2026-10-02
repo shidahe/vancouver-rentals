@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-10-02T05:51:55.992Z",
+  "refreshedAt": "2026-10-02T12:50:27.800Z",
   "groups": [
     {
       "identityKey": "1533 maple st::url:69f2e13a0fd5",
@@ -86,6 +86,18 @@
       "result": "candidate_only"
     },
     {
+      "identityKey": "2172 w 14th ave::url:8c59916e991a",
+      "sources": [
+        "craigslist"
+      ],
+      "rents": [
+        4800
+      ],
+      "exactUnit": false,
+      "matchedListingId": null,
+      "result": "candidate_only"
+    },
+    {
       "identityKey": "4588 w 2nd ave near tolmie st::url:75b0c64a797c",
       "sources": [
         "craigslist"
@@ -146,18 +158,6 @@
       "result": "candidate_only"
     },
     {
-      "identityKey": "2172 w 14th ave::url:8c59916e991a",
-      "sources": [
-        "craigslist"
-      ],
-      "rents": [
-        4800
-      ],
-      "exactUnit": false,
-      "matchedListingId": null,
-      "result": "candidate_only"
-    },
-    {
       "identityKey": "3260 w 16 ave near blenheim::url:588623515817",
       "sources": [
         "craigslist"
@@ -182,48 +182,22 @@
       "result": "authoritative_mls_reverified"
     },
     {
-      "identityKey": "mls:r3160689",
+      "identityKey": "mls:r3167417",
       "sources": [
         "realtylink mls"
       ],
       "rents": [
-        4500
+        6750
       ],
       "exactUnit": true,
-      "matchedListingId": "zumper-16e9ae17cd91",
-      "result": "authoritative_mls_reverified"
-    },
-    {
-      "identityKey": "mls:r3163709",
-      "sources": [
-        "realtylink mls"
-      ],
-      "rents": [
-        6000
-      ],
-      "exactUnit": false,
-      "matchedListingId": "mls-r3163709",
-      "result": "authoritative_mls_reverified"
-    },
-    {
-      "identityKey": "mls:r3170701",
-      "sources": [
-        "realtylink mls"
-      ],
-      "rents": [
-        7000
-      ],
-      "exactUnit": false,
-      "matchedListingId": "mls-r3170701",
+      "matchedListingId": "mls-r3167417",
       "result": "authoritative_mls_reverified"
     }
   ],
   "promoted": [],
   "crossVerified": [
     "york-103-2535-r3137446",
-    "zumper-16e9ae17cd91",
-    "mls-r3163709",
-    "mls-r3170701"
+    "mls-r3167417"
   ],
   "fingerprintCrossVerified": [],
   "craigslistRelistingsRecovered": [],
@@ -235,10 +209,10 @@
   "mlsMissing": {},
   "mlsRemoved": [],
   "mlsStaleHidden": [],
-  "realtylinkSnapshotCount": 4,
+  "realtylinkSnapshotCount": 2,
   "realtylinkSnapshotHighWaterMark": 7,
   "realtylinkSnapshotScope": "rent-3500-beds-2-4-whole-home-westside-v2",
   "realtylinkRemovalEligible": false,
-  "mlsRemovalSuppressed": "Partial Realtylink snapshot (4 candidates versus previous complete 7); disappearance signals ignored.",
+  "mlsRemovalSuppressed": "Partial Realtylink snapshot (2 candidates versus previous complete 7); disappearance signals ignored.",
   "mlsDuplicatesMerged": []
 }
