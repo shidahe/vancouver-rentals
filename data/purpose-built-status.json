@@ -1,16 +1,16 @@
 {
-  "refreshedAt": "2026-10-03T11:52:05.888Z",
+  "refreshedAt": "2026-10-03T16:33:44.984Z",
   "buildings": [
     {
       "building": "Kits Walk",
-      "checkedAt": "2026-10-03T11:52:05.888Z",
+      "checkedAt": "2026-10-03T16:33:44.984Z",
       "observations": [
         {
           "url": "https://rentals.ca/vancouver/kits-walk-by-strand",
-          "httpStatus": 200,
-          "usable": true,
+          "httpStatus": 403,
+          "usable": false,
           "error": null,
-          "reusedEvidence": true
+          "reusedEvidence": false
         }
       ],
       "inventories": [
@@ -35,45 +35,13 @@
           "sourceMatches": [
             {
               "url": "https://rentals.ca/vancouver/kits-walk-by-strand",
-              "httpStatus": 200,
-              "usable": true,
+              "httpStatus": 403,
+              "usable": false,
               "structuredMatch": false,
               "requiredMatched": false,
-              "availabilityMatched": true,
+              "availabilityMatched": false,
               "fullyLeased": false,
               "verified": false
-            }
-          ]
-        },
-        {
-          "key": "2-bedroom-811-3675",
-          "label": "2 Bedroom · 811 sqft · $3,675",
-          "bedrooms": 2,
-          "bathrooms": 2,
-          "sqft": 811,
-          "rent": 3675,
-          "unit": null,
-          "requiredSignals": [
-            "3,675",
-            "811"
-          ],
-          "availabilitySignals": [
-            "move-in ready",
-            "book a tour today"
-          ],
-          "dynamicallyDiscovered": true,
-          "verified": true,
-          "verifiedSource": "https://rentals.ca/vancouver/kits-walk-by-strand",
-          "sourceMatches": [
-            {
-              "url": "https://rentals.ca/vancouver/kits-walk-by-strand",
-              "httpStatus": 200,
-              "usable": true,
-              "structuredMatch": true,
-              "requiredMatched": true,
-              "availabilityMatched": true,
-              "fullyLeased": false,
-              "verified": true
             }
           ]
         }
@@ -81,7 +49,7 @@
     },
     {
       "building": "Arbutus Residences",
-      "checkedAt": "2026-10-03T11:52:05.888Z",
+      "checkedAt": "2026-10-03T16:33:44.984Z",
       "observations": [
         {
           "url": "https://www.rentfaster.ca/properties/2139-lahb-ave-vancouver-454186",
@@ -216,7 +184,7 @@
     },
     {
       "building": "Fourth + Mac",
-      "checkedAt": "2026-10-03T11:52:05.888Z",
+      "checkedAt": "2026-10-03T16:33:44.984Z",
       "observations": [
         {
           "url": "https://www.craigslist.org/view/d/vancouver-bed-bath-fourth-mac-kitsilano/eiSLCKTVqsrtPUWpUpJyDN",
