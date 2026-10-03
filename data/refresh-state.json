@@ -1,8 +1,8 @@
 {
-  "refreshedAt": "2026-10-03T05:23:06.929Z",
+  "refreshedAt": "2026-10-03T11:44:08.815Z",
   "listings": {
     "arbutus-residences-315-2den-900": {
-      "checkedAt": "2026-10-03T05:23:06.929Z",
+      "checkedAt": "2026-10-03T11:44:08.815Z",
       "ok": false,
       "status": 403,
       "finalUrl": "https://www.rentfaster.ca/properties/2139-lahb-ave-vancouver-454186",
@@ -17,22 +17,20 @@
       "blockedReason": "HTTP 403"
     },
     "york-103-2535-r3137446": {
-      "checkedAt": "2026-10-03T05:23:06.929Z",
-      "ok": false,
-      "status": 403,
+      "checkedAt": "2026-10-03T11:44:08.815Z",
+      "ok": true,
+      "status": 200,
       "finalUrl": "https://www.zolo.ca/vancouver-real-estate/2535-york-avenue/103",
       "consecutiveFailures": 0,
-      "identityMatch": false,
+      "identityMatch": true,
       "explicitNegative": false,
       "negativeNeedsConfirmation": false,
       "softNegativeFirstSeenAt": null,
-      "explicitPositive": false,
-      "extractedRent": null,
-      "usableEvidence": false,
-      "blockedReason": "HTTP 403"
+      "explicitPositive": true,
+      "extractedRent": 5850
     },
     "solo-2228-marstrand": {
-      "checkedAt": "2026-10-03T05:23:06.929Z",
+      "checkedAt": "2026-10-03T11:44:08.815Z",
       "ok": true,
       "status": 200,
       "finalUrl": "https://www.arbutusrental.com/properties/%243%2C500-%2F-2br---2bed-2bath-apartment-for-rent-%28vancouver%29-",
@@ -44,21 +42,8 @@
       "explicitPositive": true,
       "extractedRent": 3500
     },
-    "2268-w-broadway-312-r3153999": {
-      "checkedAt": "2026-10-03T05:23:06.929Z",
-      "ok": true,
-      "status": 200,
-      "finalUrl": "https://www.zolo.ca/vancouver-real-estate/2268-west-broadway-avenue/312",
-      "consecutiveFailures": 0,
-      "identityMatch": true,
-      "explicitNegative": true,
-      "negativeNeedsConfirmation": false,
-      "softNegativeFirstSeenAt": null,
-      "explicitPositive": false,
-      "extractedRent": 3600
-    },
     "zumper-9157c4798023": {
-      "checkedAt": "2026-10-03T05:23:06.929Z",
+      "checkedAt": "2026-10-03T11:44:08.815Z",
       "ok": true,
       "status": 200,
       "finalUrl": "https://www.zumper.com/address/2406-w-8th-ave-vancouver-bc-v6k-2b1-can",
@@ -71,7 +56,7 @@
       "extractedRent": 3800
     },
     "zumper-976e340c66a7": {
-      "checkedAt": "2026-10-03T05:23:06.929Z",
+      "checkedAt": "2026-10-03T11:44:08.815Z",
       "ok": true,
       "status": 200,
       "finalUrl": "https://www.zumper.com/address/1533-maple-st-vancouver-bc-v6j-3s2-can",
@@ -84,7 +69,7 @@
       "extractedRent": 4500
     },
     "zumper-1441677a9e59": {
-      "checkedAt": "2026-10-03T05:23:06.929Z",
+      "checkedAt": "2026-10-03T11:44:08.815Z",
       "ok": true,
       "status": 200,
       "finalUrl": "https://www.zumper.com/address/2138-w-13th-ave-vancouver-bc-v6k-2s1-can",
@@ -97,7 +82,7 @@
       "extractedRent": 4500
     },
     "zumper-3b3c85746b5c": {
-      "checkedAt": "2026-10-03T05:23:06.929Z",
+      "checkedAt": "2026-10-03T11:44:08.815Z",
       "ok": true,
       "status": 200,
       "finalUrl": "https://www.zumper.com/address/2249-w-33rd-ave-vancouver-bc-v6m-1c1-can",
@@ -110,7 +95,7 @@
       "extractedRent": 4300
     },
     "zumper-16e9ae17cd91": {
-      "checkedAt": "2026-10-03T05:23:06.929Z",
+      "checkedAt": "2026-10-03T11:44:08.815Z",
       "ok": true,
       "status": 200,
       "finalUrl": "https://www.zumper.com/address/3349-dunbar-st-vancouver-bc-v6s-2b9-can",
@@ -123,7 +108,7 @@
       "extractedRent": 4500
     },
     "mls-r3151372": {
-      "checkedAt": "2026-10-03T05:23:06.929Z",
+      "checkedAt": "2026-10-03T11:44:08.815Z",
       "ok": true,
       "status": 200,
       "finalUrl": "https://realtylink.org/en/house~for-rent~vancouver/263172999",
@@ -136,7 +121,7 @@
       "extractedRent": null
     },
     "mls-r3158179": {
-      "checkedAt": "2026-10-03T05:23:06.929Z",
+      "checkedAt": "2026-10-03T11:44:08.815Z",
       "ok": true,
       "status": 200,
       "finalUrl": "https://realtylink.org/en/apartment~for-rent~vancouver/263179806",
@@ -149,7 +134,7 @@
       "extractedRent": 5995
     },
     "mls-r3160879": {
-      "checkedAt": "2026-10-03T05:23:06.929Z",
+      "checkedAt": "2026-10-03T11:44:08.815Z",
       "ok": true,
       "status": 200,
       "finalUrl": "https://realtylink.org/en/apartment~for-rent~vancouver/263182506",
@@ -162,7 +147,7 @@
       "extractedRent": 3500
     },
     "mls-r3161880": {
-      "checkedAt": "2026-10-03T05:23:06.929Z",
+      "checkedAt": "2026-10-03T11:44:08.815Z",
       "ok": true,
       "status": 200,
       "finalUrl": "https://realtylink.org/en/house~for-rent~vancouver/263183507",
@@ -175,7 +160,7 @@
       "extractedRent": 8800
     },
     "mls-r3161950": {
-      "checkedAt": "2026-10-03T05:23:06.929Z",
+      "checkedAt": "2026-10-03T11:44:08.815Z",
       "ok": true,
       "status": 200,
       "finalUrl": "https://realtylink.org/en/house~for-rent~vancouver/263183577",
@@ -188,7 +173,7 @@
       "extractedRent": 4000
     },
     "mls-r3159060": {
-      "checkedAt": "2026-10-03T05:23:06.929Z",
+      "checkedAt": "2026-10-03T11:44:08.815Z",
       "ok": true,
       "status": 200,
       "finalUrl": "https://realtylink.org/en/house~for-rent~vancouver/263180687",
@@ -201,7 +186,7 @@
       "extractedRent": 15000
     },
     "mls-r3163709": {
-      "checkedAt": "2026-10-03T05:23:06.929Z",
+      "checkedAt": "2026-10-03T11:44:08.815Z",
       "ok": true,
       "status": 200,
       "finalUrl": "https://realtylink.org/en/house~for-rent~vancouver/263185336",
@@ -214,7 +199,7 @@
       "extractedRent": 6000
     },
     "fourth-mac-floorplan-2-bedroom-2-bath-801-4350": {
-      "checkedAt": "2026-10-03T05:23:06.929Z",
+      "checkedAt": "2026-10-03T11:44:08.815Z",
       "ok": true,
       "status": 200,
       "finalUrl": "https://www.craigslist.org/view/d/vancouver-bed-bath-fourth-mac-kitsilano/eiSLCKTVqsrtPUWpUpJyDN",
@@ -227,7 +212,7 @@
       "extractedRent": null
     },
     "yorkville-north-2br-den-979": {
-      "checkedAt": "2026-10-03T05:23:06.929Z",
+      "checkedAt": "2026-10-03T11:44:08.815Z",
       "ok": true,
       "status": 200,
       "finalUrl": "https://www.craigslist.org/view/d/vancouver-ocean-view-2br-2ba-with-den/kZEyBrAFDhJYBcmtaq27m2",
@@ -240,7 +225,7 @@
       "extractedRent": 5000
     },
     "mls-r3164604": {
-      "checkedAt": "2026-10-03T05:23:06.929Z",
+      "checkedAt": "2026-10-03T11:44:08.815Z",
       "ok": true,
       "status": 200,
       "finalUrl": "https://realtylink.org/en/apartment~for-rent~vancouver/263186231",
@@ -253,7 +238,7 @@
       "extractedRent": 5495
     },
     "w16-coach-house-850": {
-      "checkedAt": "2026-10-03T05:23:06.929Z",
+      "checkedAt": "2026-10-03T11:44:08.815Z",
       "ok": true,
       "status": 200,
       "finalUrl": "https://www.craigslist.org/view/d/vancouver-fully-furnished-designer-2br/dK4HrSygC6FiEijPJfe35N",
@@ -266,7 +251,7 @@
       "extractedRent": 4975
     },
     "mls-r3167417": {
-      "checkedAt": "2026-10-03T05:23:06.929Z",
+      "checkedAt": "2026-10-03T11:44:08.815Z",
       "ok": true,
       "status": 200,
       "finalUrl": "https://realtylink.org/en/house~for-rent~vancouver/263189044",
@@ -279,7 +264,7 @@
       "extractedRent": 6750
     },
     "zumper-6f8b3ff2b9fd": {
-      "checkedAt": "2026-10-03T05:23:06.929Z",
+      "checkedAt": "2026-10-03T11:44:08.815Z",
       "ok": true,
       "status": 200,
       "finalUrl": "https://www.zumper.com/address/4101-yew-st-vancouver-bc-v6l-3b7-can",
@@ -292,7 +277,7 @@
       "extractedRent": 4695
     },
     "mls-r3167237": {
-      "checkedAt": "2026-10-03T05:23:06.929Z",
+      "checkedAt": "2026-10-03T11:44:08.815Z",
       "ok": true,
       "status": 200,
       "finalUrl": "https://realtylink.org/en/apartment~for-rent~vancouver/263188864",
@@ -305,7 +290,7 @@
       "extractedRent": 13000
     },
     "mls-r3165327": {
-      "checkedAt": "2026-10-03T05:23:06.929Z",
+      "checkedAt": "2026-10-03T11:44:08.815Z",
       "ok": true,
       "status": 200,
       "finalUrl": "https://realtylink.org/en/apartment~for-rent~vancouver/263186954",
@@ -318,7 +303,7 @@
       "extractedRent": 4350
     },
     "mls-r3162880": {
-      "checkedAt": "2026-10-03T05:23:06.929Z",
+      "checkedAt": "2026-10-03T11:44:08.815Z",
       "ok": true,
       "status": 200,
       "finalUrl": "https://realtylink.org/en/apartment~for-rent~vancouver/263184507",
@@ -331,7 +316,7 @@
       "extractedRent": 4650
     },
     "kits-walk-floorplan-2-bedroom-811-3675": {
-      "checkedAt": "2026-10-03T05:23:06.929Z",
+      "checkedAt": "2026-10-03T11:44:08.815Z",
       "ok": false,
       "status": 403,
       "finalUrl": "https://rentals.ca/vancouver/kits-walk-by-strand",
@@ -346,7 +331,7 @@
       "blockedReason": "HTTP 403"
     },
     "mls-r3170701": {
-      "checkedAt": "2026-10-03T05:23:06.929Z",
+      "checkedAt": "2026-10-03T11:44:08.815Z",
       "ok": true,
       "status": 200,
       "finalUrl": "https://realtylink.org/en/house~for-rent~vancouver/263192328",
@@ -361,7 +346,7 @@
   },
   "sources": {
     "zumper-kitsilano-2br": {
-      "checkedAt": "2026-10-03T05:23:06.929Z",
+      "checkedAt": "2026-10-03T11:44:08.815Z",
       "ok": true,
       "status": 200,
       "finalUrl": "https://www.zumper.com/apartments-for-rent/vancouver-bc/kitsilano/2-beds",
@@ -369,7 +354,7 @@
       "usableEvidence": true
     },
     "zumper-point-grey-2br": {
-      "checkedAt": "2026-10-03T05:23:06.929Z",
+      "checkedAt": "2026-10-03T11:44:08.815Z",
       "ok": true,
       "status": 200,
       "finalUrl": "https://www.zumper.com/apartments-for-rent/vancouver-bc/west-point-grey/2-beds",
@@ -377,7 +362,7 @@
       "usableEvidence": true
     },
     "zumper-dunbar-2br": {
-      "checkedAt": "2026-10-03T05:23:06.929Z",
+      "checkedAt": "2026-10-03T11:44:08.815Z",
       "ok": true,
       "status": 200,
       "finalUrl": "https://www.zumper.com/apartments-for-rent/vancouver-bc/dunbar/2-beds",
@@ -385,7 +370,7 @@
       "usableEvidence": true
     },
     "zumper-arbutus-2br": {
-      "checkedAt": "2026-10-03T05:23:06.929Z",
+      "checkedAt": "2026-10-03T11:44:08.815Z",
       "ok": true,
       "status": 200,
       "finalUrl": "https://www.zumper.com/apartments-for-rent/vancouver-bc/arbutus/2-beds",
@@ -393,7 +378,7 @@
       "usableEvidence": true
     },
     "zumper-quilchena-2br": {
-      "checkedAt": "2026-10-03T05:23:06.929Z",
+      "checkedAt": "2026-10-03T11:44:08.815Z",
       "ok": true,
       "status": 200,
       "finalUrl": "https://www.zumper.com/apartments-for-rent/vancouver-bc/quilchena/2-beds",
@@ -401,7 +386,7 @@
       "usableEvidence": true
     },
     "zumper-kitsilano-3br": {
-      "checkedAt": "2026-10-03T05:23:06.929Z",
+      "checkedAt": "2026-10-03T11:44:08.815Z",
       "ok": true,
       "status": 200,
       "finalUrl": "https://www.zumper.com/apartments-for-rent/vancouver-bc/kitsilano/3-beds",
@@ -409,7 +394,7 @@
       "usableEvidence": true
     },
     "zumper-kitsilano-4br": {
-      "checkedAt": "2026-10-03T05:23:06.929Z",
+      "checkedAt": "2026-10-03T11:44:08.815Z",
       "ok": true,
       "status": 200,
       "finalUrl": "https://www.zumper.com/apartments-for-rent/vancouver-bc/kitsilano/4+beds",
@@ -417,7 +402,7 @@
       "usableEvidence": true
     },
     "zumper-westside-3br": {
-      "checkedAt": "2026-10-03T05:23:06.929Z",
+      "checkedAt": "2026-10-03T11:44:08.815Z",
       "ok": true,
       "status": 200,
       "finalUrl": "https://www.zumper.com/apartments-for-rent/vancouver-bc/3-beds",
@@ -425,7 +410,7 @@
       "usableEvidence": true
     },
     "zumper-westside-4br": {
-      "checkedAt": "2026-10-03T05:23:06.929Z",
+      "checkedAt": "2026-10-03T11:44:08.815Z",
       "ok": true,
       "status": 200,
       "finalUrl": "https://www.zumper.com/apartments-for-rent/vancouver-bc/4+beds",
@@ -433,7 +418,7 @@
       "usableEvidence": true
     },
     "rentalsca-kitsilano-2br": {
-      "checkedAt": "2026-10-03T05:23:06.929Z",
+      "checkedAt": "2026-10-03T11:44:08.815Z",
       "ok": true,
       "status": 200,
       "finalUrl": "https://rentals.ca/vancouver/kitsilano/all-apartments-all-houses/2-bedrooms",
@@ -441,7 +426,7 @@
       "usableEvidence": true
     },
     "rentalsca-point-grey-2br": {
-      "checkedAt": "2026-10-03T05:23:06.929Z",
+      "checkedAt": "2026-10-03T11:44:08.815Z",
       "ok": true,
       "status": 200,
       "finalUrl": "https://rentals.ca/vancouver/west-point-grey/2-bedrooms",
@@ -449,7 +434,7 @@
       "usableEvidence": true
     },
     "rentalsca-arbutus-2br": {
-      "checkedAt": "2026-10-03T05:23:06.929Z",
+      "checkedAt": "2026-10-03T11:44:08.815Z",
       "ok": false,
       "status": 429,
       "finalUrl": "https://rentals.ca/vancouver/arbutus-ridge/2-bedrooms",
@@ -458,7 +443,7 @@
       "blockedReason": "HTTP 429"
     },
     "rentalsca-dunbar-2br": {
-      "checkedAt": "2026-10-03T05:23:06.929Z",
+      "checkedAt": "2026-10-03T11:44:08.815Z",
       "ok": false,
       "status": 429,
       "finalUrl": "https://rentals.ca/vancouver/dunbar-southlands/2-bedrooms",
@@ -467,7 +452,7 @@
       "blockedReason": "HTTP 429"
     },
     "rentalsca-quilchena-2br": {
-      "checkedAt": "2026-10-03T05:23:06.929Z",
+      "checkedAt": "2026-10-03T11:44:08.815Z",
       "ok": false,
       "status": 429,
       "finalUrl": "https://rentals.ca/vancouver/quilchena/2-bedrooms",
@@ -476,7 +461,7 @@
       "blockedReason": "HTTP 429"
     },
     "rentalsca-kitsilano-3br": {
-      "checkedAt": "2026-10-03T05:23:06.929Z",
+      "checkedAt": "2026-10-03T11:44:08.815Z",
       "ok": false,
       "status": 429,
       "finalUrl": "https://rentals.ca/vancouver/kitsilano/3-bedrooms",
@@ -485,7 +470,7 @@
       "blockedReason": "HTTP 429"
     },
     "rentalsca-kitsilano-4br": {
-      "checkedAt": "2026-10-03T05:23:06.929Z",
+      "checkedAt": "2026-10-03T11:44:08.815Z",
       "ok": false,
       "status": 429,
       "finalUrl": "https://rentals.ca/vancouver/kitsilano/4-bedrooms",
@@ -494,7 +479,7 @@
       "blockedReason": "HTTP 429"
     },
     "rentalsca-vancouver-3br": {
-      "checkedAt": "2026-10-03T05:23:06.929Z",
+      "checkedAt": "2026-10-03T11:44:08.815Z",
       "ok": false,
       "status": 429,
       "finalUrl": "https://rentals.ca/vancouver/3-bedrooms",
@@ -503,7 +488,7 @@
       "blockedReason": "HTTP 429"
     },
     "rentalsca-vancouver-4br": {
-      "checkedAt": "2026-10-03T05:23:06.929Z",
+      "checkedAt": "2026-10-03T11:44:08.815Z",
       "ok": false,
       "status": 429,
       "finalUrl": "https://rentals.ca/vancouver/4-bedrooms",
@@ -512,7 +497,7 @@
       "blockedReason": "HTTP 429"
     },
     "livrent-vancouver-2br": {
-      "checkedAt": "2026-10-03T05:23:06.929Z",
+      "checkedAt": "2026-10-03T11:44:08.815Z",
       "ok": false,
       "status": 403,
       "finalUrl": "https://liv.rent/rental-listings/city/vancouver/2-bedroom",
@@ -521,7 +506,7 @@
       "blockedReason": "HTTP 403"
     },
     "livrent-vancouver-2br2ba": {
-      "checkedAt": "2026-10-03T05:23:06.929Z",
+      "checkedAt": "2026-10-03T11:44:08.815Z",
       "ok": false,
       "status": 403,
       "finalUrl": "https://liv.rent/rental-listings/city/vancouver/2-bedroom-2-bath",
@@ -530,7 +515,7 @@
       "blockedReason": "HTTP 403"
     },
     "livrent-vancouver-3br": {
-      "checkedAt": "2026-10-03T05:23:06.929Z",
+      "checkedAt": "2026-10-03T11:44:08.815Z",
       "ok": false,
       "status": 403,
       "finalUrl": "https://liv.rent/rental-listings/city/vancouver/3-bedroom",
@@ -539,7 +524,7 @@
       "blockedReason": "HTTP 403"
     },
     "livrent-vancouver-4br": {
-      "checkedAt": "2026-10-03T05:23:06.929Z",
+      "checkedAt": "2026-10-03T11:44:08.815Z",
       "ok": false,
       "status": 403,
       "finalUrl": "https://liv.rent/rental-listings/city/vancouver/4-bedroom",
@@ -548,7 +533,7 @@
       "blockedReason": "HTTP 403"
     },
     "livrent-all-fallback": {
-      "checkedAt": "2026-10-03T05:23:06.929Z",
+      "checkedAt": "2026-10-03T11:44:08.815Z",
       "ok": false,
       "status": 403,
       "finalUrl": "https://liv.rent/rental-listings",
@@ -557,7 +542,7 @@
       "blockedReason": "HTTP 403"
     },
     "rentfaster-vancouver": {
-      "checkedAt": "2026-10-03T05:23:06.929Z",
+      "checkedAt": "2026-10-03T11:44:08.815Z",
       "ok": true,
       "status": 200,
       "finalUrl": "https://www.rentfaster.ca/bc/vancouver/rentals/",
@@ -565,7 +550,7 @@
       "usableEvidence": true
     },
     "kits-walk-official": {
-      "checkedAt": "2026-10-03T05:23:06.929Z",
+      "checkedAt": "2026-10-03T11:44:08.815Z",
       "ok": false,
       "status": 403,
       "finalUrl": "https://www.kitswalkleasing.com/floorplans",
@@ -574,7 +559,7 @@
       "blockedReason": "HTTP 403"
     },
     "kits-walk-zumper": {
-      "checkedAt": "2026-10-03T05:23:06.929Z",
+      "checkedAt": "2026-10-03T11:44:08.815Z",
       "ok": true,
       "status": 200,
       "finalUrl": "https://www.zumper.com/apartment-buildings/p481389/kits-walk-by-strand-kitsilano-vancouver-bc",
@@ -582,7 +567,7 @@
       "usableEvidence": true
     },
     "kits-walk-rentalsca": {
-      "checkedAt": "2026-10-03T05:23:06.929Z",
+      "checkedAt": "2026-10-03T11:44:08.815Z",
       "ok": true,
       "status": 200,
       "finalUrl": "https://rentals.ca/vancouver/kits-walk-by-strand",
@@ -590,7 +575,7 @@
       "usableEvidence": true
     },
     "larchway-official": {
-      "checkedAt": "2026-10-03T05:23:06.929Z",
+      "checkedAt": "2026-10-03T11:44:08.815Z",
       "ok": true,
       "status": 200,
       "finalUrl": "https://quadrealresidential.com/vancouver/larchway-gardens/floorplans/",
@@ -598,7 +583,7 @@
       "usableEvidence": true
     },
     "viridian-official": {
-      "checkedAt": "2026-10-03T05:23:06.929Z",
+      "checkedAt": "2026-10-03T11:44:08.815Z",
       "ok": false,
       "status": 403,
       "finalUrl": "https://www.rentcafe.com/apartments/bc/vancouver/viridian1/default.aspx",
@@ -607,7 +592,7 @@
       "blockedReason": "HTTP 403"
     },
     "viridian-zumper": {
-      "checkedAt": "2026-10-03T05:23:06.929Z",
+      "checkedAt": "2026-10-03T11:44:08.815Z",
       "ok": true,
       "status": 200,
       "finalUrl": "https://www.zumper.com/apartment-buildings/p510456/viridian-fairview-vancouver-bc",
@@ -615,7 +600,7 @@
       "usableEvidence": true
     },
     "arbutus-terrace-official": {
-      "checkedAt": "2026-10-03T05:23:06.929Z",
+      "checkedAt": "2026-10-03T11:44:08.815Z",
       "ok": true,
       "status": 200,
       "finalUrl": "https://stranddev.com/portfolio/arbutusterrace-rental",
@@ -623,7 +608,7 @@
       "usableEvidence": true
     },
     "arbutus-residences-rentfaster": {
-      "checkedAt": "2026-10-03T05:23:06.929Z",
+      "checkedAt": "2026-10-03T11:44:08.815Z",
       "ok": false,
       "status": 403,
       "finalUrl": "https://www.rentfaster.ca/properties/2139-lahb-ave-vancouver-454186",
@@ -632,7 +617,7 @@
       "blockedReason": "HTTP 403"
     },
     "homax-arbutus": {
-      "checkedAt": "2026-10-03T05:23:06.929Z",
+      "checkedAt": "2026-10-03T11:44:08.815Z",
       "ok": true,
       "status": 200,
       "finalUrl": "https://www.arbutusrental.com/search",
@@ -640,7 +625,7 @@
       "usableEvidence": true
     },
     "19-greenway-official": {
-      "checkedAt": "2026-10-03T05:23:06.929Z",
+      "checkedAt": "2026-10-03T11:44:08.815Z",
       "ok": false,
       "status": 403,
       "finalUrl": "https://www.19otgreenway.com/floorplans",

@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-10-03T05:31:43.687Z",
-  "activeCount": 19,
+  "generatedAt": "2026-10-03T11:52:53.520Z",
+  "activeCount": 17,
   "decisionReady": true,
   "readinessStatus": "finalized",
   "highIssueCount": 0,
   "mediumIssueCount": 0,
-  "infoIssueCount": 32,
+  "infoIssueCount": 28,
   "issues": [
     {
       "severity": "info",
@@ -89,16 +89,6 @@
     },
     {
       "severity": "info",
-      "id": "mls-r3161950",
-      "issue": "unknown-ac"
-    },
-    {
-      "severity": "info",
-      "id": "mls-r3161950",
-      "issue": "unknown-orientation"
-    },
-    {
-      "severity": "info",
       "id": "mls-r3163709",
       "issue": "unknown-orientation"
     },
@@ -139,16 +129,6 @@
     },
     {
       "severity": "info",
-      "id": "mls-r3162880",
-      "issue": "unknown-ac"
-    },
-    {
-      "severity": "info",
-      "id": "mls-r3162880",
-      "issue": "unknown-orientation"
-    },
-    {
-      "severity": "info",
       "id": "kits-walk-floorplan-2-bedroom-811-3675",
       "issue": "unknown-ac"
     },
@@ -171,16 +151,16 @@
   "readinessChecks": {
     "smokeOk": true,
     "smokeFresh": true,
-    "smokeCheckedAt": "2026-10-03T05:31:48.771Z",
-    "latestDataAt": "2026-10-03T05:30:59.180Z",
+    "smokeCheckedAt": "2026-10-03T11:52:59.001Z",
+    "latestDataAt": "2026-10-03T11:52:12.224Z",
     "coverageReady": true,
     "healthyDiscoveryLanes": 3,
     "coverageWarnings": [
       {
         "severity": "warning",
         "lane": "rentalsca",
-        "status": "unhealthy",
-        "detail": "0/9 regional searches reachable; 0 qualifying candidates parsed"
+        "status": "degraded",
+        "detail": "1/9 regional searches reachable; 0 qualifying candidates parsed; 3 scoped search-only leads retained (1 new, 2 already active, 0 need revalidation); 3 detail pages blocked after 14 discovered URLs; 11 further detail checks suppressed after repeated 403/429"
       },
       {
         "severity": "warning",
@@ -197,5 +177,5 @@
     ]
   },
   "readinessIssues": [],
-  "finalizedAt": "2026-10-03T05:31:48.854Z"
+  "finalizedAt": "2026-10-03T11:52:59.104Z"
 }

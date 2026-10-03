@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-10-03T05:30:52.488Z",
+  "refreshedAt": "2026-10-03T11:52:05.428Z",
   "groups": [
     {
       "identityKey": "1533 maple st::url:69f2e13a0fd5",
@@ -182,22 +182,22 @@
       "result": "authoritative_mls_reverified"
     },
     {
-      "identityKey": "mls:r3170701",
+      "identityKey": "mls:r3160689",
       "sources": [
         "realtylink mls"
       ],
       "rents": [
-        7000
+        4500
       ],
-      "exactUnit": false,
-      "matchedListingId": "mls-r3170701",
+      "exactUnit": true,
+      "matchedListingId": "zumper-16e9ae17cd91",
       "result": "authoritative_mls_reverified"
     }
   ],
   "promoted": [],
   "crossVerified": [
     "york-103-2535-r3137446",
-    "mls-r3170701"
+    "zumper-16e9ae17cd91"
   ],
   "fingerprintCrossVerified": [],
   "craigslistRelistingsRecovered": [],
@@ -208,7 +208,10 @@
   "detailReactivated": [],
   "mlsMissing": {},
   "mlsRemoved": [],
-  "mlsStaleHidden": [],
+  "mlsStaleHidden": [
+    "mls-r3161950",
+    "mls-r3162880"
+  ],
   "realtylinkSnapshotCount": 2,
   "realtylinkSnapshotHighWaterMark": 7,
   "realtylinkSnapshotScope": "rent-3500-beds-2-4-whole-home-westside-v2",
