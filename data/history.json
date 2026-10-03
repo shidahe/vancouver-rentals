@@ -107,6 +107,11 @@
       "date": "2026-08-19",
       "rent": 3600,
       "note": "NEW CANDIDATE: MLS R3153999, 2BR+den/2BA, 820 sqft, parking, Sep 1. Hidden pending direct Hello Rent/brokerage confirmation."
+    },
+    {
+      "date": "2026-10-03",
+      "rent": 3600,
+      "note": "AUTO-REMOVED after direct live verification found explicit unavailable evidence."
     }
   ],
   "cypress-1070-r3129917": [
@@ -2447,6 +2452,11 @@
     },
     {
       "date": "2026-10-02",
+      "rent": 4975,
+      "note": "AUTO live price update from 5475 to 4975."
+    },
+    {
+      "date": "2026-10-03",
       "rent": 4975,
       "note": "AUTO live price update from 5475 to 4975."
     }

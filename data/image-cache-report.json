@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-10-02T22:27:16.158Z",
+  "refreshedAt": "2026-10-03T05:31:43.023Z",
   "listings": {
     "york-103-2535-r3137446": {
       "cached": 5,
@@ -29,13 +29,6 @@
       "failures": [],
       "photoPageUrl": "https://www.zumper.com/address/1533-maple-st-vancouver-bc-v6j-3s2-can"
     },
-    "2268-w-broadway-312-r3153999": {
-      "cached": 5,
-      "preserved": 5,
-      "downloaded": 0,
-      "failures": [],
-      "photoPageUrl": "https://realtylink.org/en/apartment~for-rent~vancouver/263175626"
-    },
     "zumper-1441677a9e59": {
       "cached": 5,
       "preserved": 5,
@@ -55,7 +48,14 @@
       "preserved": 5,
       "downloaded": 0,
       "failures": [],
-      "photoPageUrl": "https://realtylink.org/en/townhouse~for-rent~vancouver/263182316"
+      "photoPageUrl": "https://www.zumper.com/address/3349-dunbar-st-vancouver-bc-v6s-2b9-can"
+    },
+    "arbutus-residences-floorplan-2-bedroom-townhouse-den-1340": {
+      "cached": 5,
+      "preserved": 0,
+      "downloaded": 5,
+      "failures": [],
+      "photoPageUrl": "https://www.zumper.com/apartment-buildings/p1117150/arbutus-residences-quilchena-vancouver-bc"
     },
     "mls-r3161880": {
       "cached": 5,
@@ -147,9 +147,9 @@
   "totals": {
     "sourceListings": 19,
     "cachedListings": 19,
-    "downloaded": 0,
+    "downloaded": 5,
     "failed": 2,
-    "preserved": 92,
+    "preserved": 87,
     "prunedListings": 1,
     "prunedIndexImages": 5,
     "prunedOrphanFiles": 0

@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-10-02T22:27:16.604Z",
+  "generatedAt": "2026-10-03T05:31:43.687Z",
   "activeCount": 19,
   "decisionReady": true,
   "readinessStatus": "finalized",
   "highIssueCount": 0,
   "mediumIssueCount": 0,
-  "infoIssueCount": 33,
+  "infoIssueCount": 32,
   "issues": [
     {
       "severity": "info",
@@ -29,16 +29,6 @@
     },
     {
       "severity": "info",
-      "id": "2268-w-broadway-312-r3153999",
-      "issue": "unknown-ac"
-    },
-    {
-      "severity": "info",
-      "id": "2268-w-broadway-312-r3153999",
-      "issue": "unknown-orientation"
-    },
-    {
-      "severity": "info",
       "id": "zumper-9157c4798023",
       "issue": "unknown-ac"
     },
@@ -55,6 +45,11 @@
     {
       "severity": "info",
       "id": "zumper-976e340c66a7",
+      "issue": "unknown-orientation"
+    },
+    {
+      "severity": "info",
+      "id": "arbutus-residences-floorplan-2-bedroom-townhouse-den-1340",
       "issue": "unknown-orientation"
     },
     {
@@ -176,16 +171,16 @@
   "readinessChecks": {
     "smokeOk": true,
     "smokeFresh": true,
-    "smokeCheckedAt": "2026-10-02T22:27:22.159Z",
-    "latestDataAt": "2026-10-02T22:26:30.166Z",
+    "smokeCheckedAt": "2026-10-03T05:31:48.771Z",
+    "latestDataAt": "2026-10-03T05:30:59.180Z",
     "coverageReady": true,
     "healthyDiscoveryLanes": 3,
     "coverageWarnings": [
       {
         "severity": "warning",
         "lane": "rentalsca",
-        "status": "degraded",
-        "detail": "1/9 regional searches reachable; 0 qualifying candidates parsed; 0 scoped search-only leads retained; 2 detail pages blocked after 2 discovered URLs"
+        "status": "unhealthy",
+        "detail": "0/9 regional searches reachable; 0 qualifying candidates parsed"
       },
       {
         "severity": "warning",
@@ -197,10 +192,10 @@
         "severity": "warning",
         "lane": "realtylink",
         "status": "degraded",
-        "detail": "3/3 searches reachable; 4 current live candidates parsed from a partial snapshot versus complete baseline 4; positive discovery usable, removals suppressed"
+        "detail": "3/3 searches reachable; 2 current live candidates parsed from a partial snapshot versus complete baseline 2; positive discovery usable, removals suppressed"
       }
     ]
   },
   "readinessIssues": [],
-  "finalizedAt": "2026-10-02T22:27:22.258Z"
+  "finalizedAt": "2026-10-03T05:31:48.854Z"
 }
