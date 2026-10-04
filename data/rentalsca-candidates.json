@@ -1,80 +1,110 @@
 {
-  "refreshedAt": "2026-10-04T06:05:12.842Z",
+  "refreshedAt": "2026-10-04T12:33:07.304Z",
   "mode": "candidate-only",
   "sourceHealth": {
     "rentalsca-kitsilano-2br": {
-      "checkedAt": "2026-10-04T06:05:12.842Z",
+      "checkedAt": "2026-10-04T12:33:07.304Z",
       "status": 403,
       "ok": false,
-      "finalUrl": "https://rentals.ca/vancouver/kitsilano/all-apartments-all-houses/2-bedrooms?__cf_chl_rt_tk=MURYG3vI37LKz48ohNFIuj9QEVfT6HCY6ewR5UhWX1M-1791093913-1.0.1.1-zuxal07G7ZH7AkR9Cn3NrjGrJX6VKQwH9x_B1KcB.Wc"
+      "finalUrl": "https://rentals.ca/vancouver/kitsilano/all-apartments-all-houses/2-bedrooms?__cf_chl_rt_tk=zvJIWiAfp9OUmwBoMe01LdXJUK2hKmRoObWXhpIW1Rs-1791117187-1.0.1.1-uw0w2EmKrcSI7V1yMbsyfbKmcYHrPXJwVNrrlcJAVHM"
     },
     "rentalsca-point-grey-2br": {
-      "checkedAt": "2026-10-04T06:05:12.842Z",
-      "status": 403,
-      "ok": false,
-      "finalUrl": "https://rentals.ca/vancouver/west-point-grey/2-bedrooms?__cf_chl_rt_tk=pYNlYXznpZco7d6CLdxKgMvlCuHLF6sueAgrlVwD9c0-1791093913-1.0.1.1-cz3TOGZ5gySyslxzsOquZQjqQTWICBCyY4b.CZZYIuw"
+      "checkedAt": "2026-10-04T12:33:07.304Z",
+      "status": 200,
+      "ok": true,
+      "finalUrl": "https://rentals.ca/vancouver/west-point-grey/2-bedrooms",
+      "detailLinkCount": 3,
+      "title": "West Point Grey Vancouver 2 Bedroom Apartments Condos and Houses for Rent",
+      "observedListingCount": 3,
+      "challengeDetected": false,
+      "searchLeadCount": 2,
+      "addressLineCount": 2,
+      "detailUrlCount": 4
     },
     "rentalsca-arbutus-2br": {
-      "checkedAt": "2026-10-04T06:05:12.842Z",
+      "checkedAt": "2026-10-04T12:33:07.304Z",
       "status": 403,
       "ok": false,
-      "finalUrl": "https://rentals.ca/vancouver/arbutus-ridge/2-bedrooms?__cf_chl_rt_tk=p.KqMYtmr3TUpErqLQyZEUJhPeta8yFb8f.uKMnG5X0-1791093913-1.0.1.1-KXWD86vhRm21lXlO3OcJKVbkpFCCpWyQnvQWofSM5lo"
+      "finalUrl": "https://rentals.ca/vancouver/arbutus-ridge/2-bedrooms?__cf_chl_rt_tk=ESdMfVphRv0oTWVQ4nQAQwoFcEvdy3nLDEIcVy0ejO8-1791117190-1.0.1.1-EDU0Y32xwD3wFPrPWK1XYsdioSa8TyVOQ93sYMr74Vo"
     },
     "rentalsca-dunbar-2br": {
-      "checkedAt": "2026-10-04T06:05:12.842Z",
+      "checkedAt": "2026-10-04T12:33:07.304Z",
       "status": 403,
       "ok": false,
-      "finalUrl": "https://rentals.ca/vancouver/dunbar-southlands/2-bedrooms?__cf_chl_rt_tk=BI3CFsoiroUMIXoLeeHpll8REG7IVLfgHMgObwSTkuM-1791093913-1.0.1.1-LK.Fr6pnWGBunMgDPTIaqht2bEptEpWhJcwY474Tyz0"
+      "finalUrl": "https://rentals.ca/vancouver/dunbar-southlands/2-bedrooms?__cf_chl_rt_tk=GM_VgglPMPjF8LG8qFiVVYiNKf0MmBeehYRHMRmbYec-1791117190-1.0.1.1-p_8wZ3DLy3EBRy9JxJepmmIpd9HWsVyKMImoBu9JTb0"
     },
     "rentalsca-quilchena-2br": {
-      "checkedAt": "2026-10-04T06:05:12.842Z",
+      "checkedAt": "2026-10-04T12:33:07.304Z",
       "status": 403,
       "ok": false,
-      "finalUrl": "https://rentals.ca/vancouver/quilchena/2-bedrooms?__cf_chl_rt_tk=Ri_MOyMC3FKJvKTSrllzLs_QMdPPmeoRxCxHXJvDDYM-1791093913-1.0.1.1-2Pl.Q_msEy1h3IUZOhhU4S7sYDcDkgyR1hdwp0mbOsM"
+      "finalUrl": "https://rentals.ca/vancouver/quilchena/2-bedrooms?__cf_chl_rt_tk=H0ld_xHc2kudF6V.9igHCAvU_CzP17f4m4CBy..2gvo-1791117190-1.0.1.1-gfSG91SJPKoARLe.Q62aP5e.iuUugWAxJPZgb5rjuwc"
     },
     "rentalsca-kitsilano-3br": {
-      "checkedAt": "2026-10-04T06:05:12.842Z",
+      "checkedAt": "2026-10-04T12:33:07.304Z",
       "status": 403,
       "ok": false,
-      "finalUrl": "https://rentals.ca/vancouver/kitsilano/3-bedrooms?__cf_chl_rt_tk=kWElq4PUsWyjX5r7tYzrNcd9ZpSeSu7vxxPR76vLhSw-1791093913-1.0.1.1-6.DG0VBT96NjuDZGn6WrtaSRhVAPBNaUgSKpFZvO9AA"
+      "finalUrl": "https://rentals.ca/vancouver/kitsilano/3-bedrooms?__cf_chl_rt_tk=9ppm6ut5dAvjavVOfIUsQp7EyDrfiW7lePIIGWmiDaQ-1791117190-1.0.1.1-LWCZvDsi_3e9Tgmef7DljGNR707B9fPq9_dmkWaM9qI"
     },
     "rentalsca-kitsilano-4br": {
-      "checkedAt": "2026-10-04T06:05:12.842Z",
+      "checkedAt": "2026-10-04T12:33:07.304Z",
       "status": 403,
       "ok": false,
-      "finalUrl": "https://rentals.ca/vancouver/kitsilano/4-bedrooms?__cf_chl_rt_tk=XK3n2Tn79MDXR6nipW37emy23HVyVehjakQjSF2dtAs-1791093913-1.0.1.1-qpLEhxTPI3O9rR1vElK3juhCZYtY95tQPn7IX9rZ4yQ"
+      "finalUrl": "https://rentals.ca/vancouver/kitsilano/4-bedrooms?__cf_chl_rt_tk=zPBifMTSxyYf0cpiGR1GFuN_4fNT27T8MDYTuZALOFM-1791117190-1.0.1.1-sIx5tsX7OaRMs5lMTpgCEluUDmexq9okjaLaZoaOSYk"
     },
     "rentalsca-vancouver-3br": {
-      "checkedAt": "2026-10-04T06:05:12.842Z",
+      "checkedAt": "2026-10-04T12:33:07.304Z",
       "status": 403,
       "ok": false,
-      "finalUrl": "https://rentals.ca/vancouver/3-bedrooms?__cf_chl_rt_tk=oaqw4tfr6SjwGARF3DqpS4gOYawlcsoU0YihVbCvEhA-1791093913-1.0.1.1-xzQgSdwV4VM2qmbd1Awn8daJUZ131xv6oxBVPgaCcQY"
+      "finalUrl": "https://rentals.ca/vancouver/3-bedrooms?__cf_chl_rt_tk=zQ0WqDFdzbD1vLVMv9k2LTXyWE19G2PgM34SGClnj7Q-1791117190-1.0.1.1-Al7y_YfnHoCBlcxwfxaKwwmLja1rrwIgw2Mzh2Cg5wE"
     },
     "rentalsca-vancouver-4br": {
-      "checkedAt": "2026-10-04T06:05:12.842Z",
+      "checkedAt": "2026-10-04T12:33:07.304Z",
       "status": 403,
       "ok": false,
-      "finalUrl": "https://rentals.ca/vancouver/4-bedrooms?__cf_chl_rt_tk=wqEFdTLtayg9bI8DX98D481_XWRRN.g72E2q5UrF6i4-1791093913-1.0.1.1-Vre.dq8wJFelSeBGZ__wzXn6OXPxXOU.xyTGGtOmcHI"
+      "finalUrl": "https://rentals.ca/vancouver/4-bedrooms?__cf_chl_rt_tk=_5oZT6QTqKOVUqD_Q0dRGQbl58zfI3ePdhNN.zBqUoU-1791117190-1.0.1.1-y0ct_0uG61CPYp_O2fswjMYv2meeAPwuYjZ3T9QcMwY"
     }
   },
   "diagnostics": {
-    "searchResultCount": 0,
-    "searchAddressLines": 0,
-    "searchDetailLinks": 0,
-    "searchLeadCount": 0,
-    "newSearchLeadCount": 0,
+    "searchResultCount": 3,
+    "searchAddressLines": 2,
+    "searchDetailLinks": 3,
+    "searchLeadCount": 1,
+    "newSearchLeadCount": 1,
     "representedSearchLeadCount": 0,
     "revalidationSearchLeadCount": 0,
-    "detailUrls": 0,
-    "detailChecked": 0,
-    "detailBlocked": 0,
+    "detailUrls": 4,
+    "detailChecked": 3,
+    "detailBlocked": 3,
     "detailNotFound": 0,
     "detailErrors": 0,
     "detailParsed": 0,
-    "detailSuppressed": 0,
-    "detailCircuitOpen": false
+    "detailSuppressed": 1,
+    "detailCircuitOpen": true
   },
-  "searchLeads": [],
+  "searchLeads": [
+    {
+      "identityKey": "4769 belmont, vancouver, bc::3900::3900::2::2",
+      "address": "4769 Belmont, Vancouver, BC",
+      "rentMin": 3900,
+      "rentMax": 3900,
+      "bedroomMin": 2,
+      "bedroomMax": 2,
+      "bathrooms": 1,
+      "source": "Rentals.ca search",
+      "searchUrl": "https://rentals.ca/vancouver/west-point-grey/2-bedrooms",
+      "checkedAt": "2026-10-04T12:33:07.304Z",
+      "publishable": false,
+      "evidenceKind": "search_result_lead_only",
+      "availabilityVerified": false,
+      "url": "https://rentals.ca/vancouver/4769-belmont",
+      "leadStatus": "new_unverified_address",
+      "addressMatchOnly": false,
+      "matchingListingCount": 0,
+      "matchedListingIds": [],
+      "matchedListingId": null,
+      "matchedAvailabilityStatus": null
+    }
+  ],
   "pages": [],
   "inventories": []
 }
