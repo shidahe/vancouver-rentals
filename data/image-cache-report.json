@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-10-04T12:35:41.985Z",
+  "refreshedAt": "2026-10-04T21:40:58.029Z",
   "listings": {
     "york-103-2535-r3137446": {
       "cached": 5,
@@ -48,12 +48,12 @@
       "preserved": 5,
       "downloaded": 0,
       "failures": [],
-      "photoPageUrl": "https://www.zumper.com/address/3349-dunbar-st-vancouver-bc-v6s-2b9-can"
+      "photoPageUrl": "https://realtylink.org/en/townhouse~for-rent~vancouver/263182316"
     },
     "mls-r3161880": {
       "cached": 5,
-      "preserved": 0,
-      "downloaded": 5,
+      "preserved": 5,
+      "downloaded": 0,
       "failures": [],
       "photoPageUrl": "https://realtylink.org/en/house~for-rent~vancouver/263183507"
     },
@@ -106,6 +106,13 @@
       "failures": [],
       "photoPageUrl": "https://www.zumper.com/address/4101-yew-st-vancouver-bc-v6l-3b7-can"
     },
+    "mls-r3162880": {
+      "cached": 5,
+      "preserved": 0,
+      "downloaded": 5,
+      "failures": [],
+      "photoPageUrl": "https://realtylink.org/en/apartment~for-rent~vancouver/263184507"
+    },
     "kits-walk-floorplan-2-bedroom-811-3675": {
       "cached": 5,
       "preserved": 5,
@@ -128,14 +135,21 @@
         }
       ],
       "photoPageUrl": "https://realtylink.org/en/house~for-rent~vancouver/263192328"
+    },
+    "zumper-f3c25cb7e83b": {
+      "cached": 5,
+      "preserved": 0,
+      "downloaded": 5,
+      "failures": [],
+      "photoPageUrl": "https://www.zumper.com/address/4759-vy-dr-vancouver-bc-v6j-5m2-can"
     }
   },
   "totals": {
-    "sourceListings": 17,
-    "cachedListings": 17,
-    "downloaded": 5,
+    "sourceListings": 19,
+    "cachedListings": 19,
+    "downloaded": 10,
     "failed": 2,
-    "preserved": 77,
+    "preserved": 82,
     "prunedListings": 0,
     "prunedIndexImages": 0,
     "prunedOrphanFiles": 0

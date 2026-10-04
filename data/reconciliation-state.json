@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-10-04T12:34:35.881Z",
+  "refreshedAt": "2026-10-04T21:40:09.700Z",
   "groups": [
     {
       "identityKey": "1533 maple st::url:69f2e13a0fd5",
@@ -23,6 +23,18 @@
       ],
       "exactUnit": false,
       "matchedListingId": "zumper-9157c4798023",
+      "result": "candidate_only"
+    },
+    {
+      "identityKey": "4759 valley dr::unit:4xx",
+      "sources": [
+        "zumper"
+      ],
+      "rents": [
+        3500
+      ],
+      "exactUnit": true,
+      "matchedListingId": "zumper-f3c25cb7e83b",
       "result": "candidate_only"
     },
     {
@@ -158,6 +170,18 @@
       "result": "candidate_only"
     },
     {
+      "identityKey": "mls:r3162880",
+      "sources": [
+        "realtylink mls"
+      ],
+      "rents": [
+        4650
+      ],
+      "exactUnit": true,
+      "matchedListingId": "mls-r3162880",
+      "result": "authoritative_mls_reverified"
+    },
+    {
       "identityKey": "mls:r3137446",
       "sources": [
         "realtylink mls"
@@ -167,6 +191,18 @@
       ],
       "exactUnit": true,
       "matchedListingId": "york-103-2535-r3137446",
+      "result": "authoritative_mls_reverified"
+    },
+    {
+      "identityKey": "mls:r3160689",
+      "sources": [
+        "realtylink mls"
+      ],
+      "rents": [
+        4500
+      ],
+      "exactUnit": true,
+      "matchedListingId": "zumper-16e9ae17cd91",
       "result": "authoritative_mls_reverified"
     },
     {
@@ -196,7 +232,9 @@
   ],
   "promoted": [],
   "crossVerified": [
+    "mls-r3162880",
     "york-103-2535-r3137446",
+    "zumper-16e9ae17cd91",
     "mls-r3161880",
     "mls-r3170701"
   ],
@@ -207,15 +245,15 @@
   "relistedMlsMerged": [],
   "negativeMatches": [],
   "detailReactivated": [
-    "mls-r3161880"
+    "mls-r3162880"
   ],
   "mlsMissing": {},
   "mlsRemoved": [],
   "mlsStaleHidden": [],
-  "realtylinkSnapshotCount": 3,
+  "realtylinkSnapshotCount": 5,
   "realtylinkSnapshotHighWaterMark": 7,
   "realtylinkSnapshotScope": "rent-3500-beds-2-4-whole-home-westside-v2",
   "realtylinkRemovalEligible": false,
-  "mlsRemovalSuppressed": "Partial Realtylink snapshot (3 candidates versus previous complete 7); disappearance signals ignored.",
+  "mlsRemovalSuppressed": "Partial Realtylink snapshot (5 candidates versus previous complete 7); disappearance signals ignored.",
   "mlsDuplicatesMerged": []
 }
