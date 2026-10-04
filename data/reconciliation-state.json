@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-10-03T21:29:19.061Z",
+  "refreshedAt": "2026-10-04T06:06:37.940Z",
   "groups": [
     {
       "identityKey": "1533 maple st::url:69f2e13a0fd5",
@@ -158,6 +158,18 @@
       "result": "candidate_only"
     },
     {
+      "identityKey": "mls:r3137446",
+      "sources": [
+        "realtylink mls"
+      ],
+      "rents": [
+        5850
+      ],
+      "exactUnit": true,
+      "matchedListingId": "york-103-2535-r3137446",
+      "result": "authoritative_mls_reverified"
+    },
+    {
       "identityKey": "mls:r3160689",
       "sources": [
         "realtylink mls"
@@ -180,12 +192,26 @@
       "exactUnit": false,
       "matchedListingId": "mls-r3159060",
       "result": "authoritative_mls_reverified"
+    },
+    {
+      "identityKey": "mls:r3163709",
+      "sources": [
+        "realtylink mls"
+      ],
+      "rents": [
+        6000
+      ],
+      "exactUnit": false,
+      "matchedListingId": "mls-r3163709",
+      "result": "authoritative_mls_reverified"
     }
   ],
   "promoted": [],
   "crossVerified": [
+    "york-103-2535-r3137446",
     "zumper-16e9ae17cd91",
-    "mls-r3159060"
+    "mls-r3159060",
+    "mls-r3163709"
   ],
   "fingerprintCrossVerified": [],
   "craigslistRelistingsRecovered": [],
@@ -193,16 +219,16 @@
   "maskedMlsMerged": [],
   "relistedMlsMerged": [],
   "negativeMatches": [],
-  "detailReactivated": [
-    "mls-r3159060"
-  ],
+  "detailReactivated": [],
   "mlsMissing": {},
   "mlsRemoved": [],
-  "mlsStaleHidden": [],
-  "realtylinkSnapshotCount": 2,
+  "mlsStaleHidden": [
+    "mls-r3161880"
+  ],
+  "realtylinkSnapshotCount": 4,
   "realtylinkSnapshotHighWaterMark": 7,
   "realtylinkSnapshotScope": "rent-3500-beds-2-4-whole-home-westside-v2",
   "realtylinkRemovalEligible": false,
-  "mlsRemovalSuppressed": "Partial Realtylink snapshot (2 candidates versus previous complete 7); disappearance signals ignored.",
+  "mlsRemovalSuppressed": "Partial Realtylink snapshot (4 candidates versus previous complete 7); disappearance signals ignored.",
   "mlsDuplicatesMerged": []
 }

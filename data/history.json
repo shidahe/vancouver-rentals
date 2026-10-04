@@ -1957,6 +1957,11 @@
       "date": "2026-09-30",
       "rent": 8800,
       "note": "CORRECTED: restored after exact current MLS detail matched identity, explicit availability and rent."
+    },
+    {
+      "date": "2026-10-04",
+      "rent": 8800,
+      "note": "AUTO-HIDDEN: MLS R3161880 exceeded 48 hours without fresh positive availability; partial search results are not removal evidence."
     }
   ],
   "mls-r3161950": [
@@ -2472,6 +2477,11 @@
     },
     {
       "date": "2026-10-03",
+      "rent": 4975,
+      "note": "AUTO live price update from 5475 to 4975."
+    },
+    {
+      "date": "2026-10-04",
       "rent": 4975,
       "note": "AUTO live price update from 5475 to 4975."
     }

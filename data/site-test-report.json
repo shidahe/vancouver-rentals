@@ -1,11 +1,11 @@
 {
-  "checkedAt": "2026-10-03T21:30:16.857Z",
+  "checkedAt": "2026-10-04T06:07:27.349Z",
   "ok": true,
   "checkpoints": {
     "render": {
       "title": "Vancouver Westside Rentals",
-      "cards": 17,
-      "shown": 17
+      "cards": 16,
+      "shown": 16
     },
     "stats": {
       "labels": [
@@ -16,16 +16,16 @@
         "Last refreshed"
       ],
       "values": [
-        "17",
+        "16",
         "9",
         "1",
-        "10",
-        "2026-10-03 21:21:30"
+        "11",
+        "2026-10-04 05:58:55"
       ],
-      "html": "<div class=\"stat\"><strong>17</strong><span>Active</span></div><div class=\"stat\"><strong>9</strong><span>New</span></div><div class=\"stat\"><strong>1</strong><span>Price drops</span></div><div class=\"stat\"><strong>10</strong><span>To verify</span></div><div class=\"stat\"><strong>2026-10-03 21:21:30</strong><span>Last refreshed</span></div>"
+      "html": "<div class=\"stat\"><strong>16</strong><span>Active</span></div><div class=\"stat\"><strong>9</strong><span>New</span></div><div class=\"stat\"><strong>1</strong><span>Price drops</span></div><div class=\"stat\"><strong>11</strong><span>To verify</span></div><div class=\"stat\"><strong>2026-10-04 05:58:55</strong><span>Last refreshed</span></div>"
     },
     "map": {
-      "markers": 17,
+      "markers": 16,
       "desktopMapVisible": true
     },
     "filters": "ok",
@@ -36,14 +36,14 @@
     },
     "sourceLink": "https://www.craigslist.org/view/d/vancouver-bed-bath-fourth-mac-kitsilano/eiSLCKTVqsrtPUWpUpJyDN",
     "photos": {
-      "total": 17,
-      "loaded": 17,
+      "total": 16,
+      "loaded": 16,
       "fallbacks": 0,
       "bad": []
     },
     "markerPositions": {
-      "total": 17,
-      "unique": 17
+      "total": 16,
+      "unique": 16
     },
     "dataEndpoints": "ok",
     "mobile": "ok",
