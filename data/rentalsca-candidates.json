@@ -1,139 +1,80 @@
 {
-  "refreshedAt": "2026-10-04T21:38:45.592Z",
+  "refreshedAt": "2026-10-05T05:54:08.342Z",
   "mode": "candidate-only",
   "sourceHealth": {
     "rentalsca-kitsilano-2br": {
-      "checkedAt": "2026-10-04T21:38:45.592Z",
+      "checkedAt": "2026-10-05T05:54:08.342Z",
       "status": 403,
       "ok": false,
-      "finalUrl": "https://rentals.ca/vancouver/kitsilano/all-apartments-all-houses/2-bedrooms?__cf_chl_rt_tk=wdP_nd5uXW9XAWfFknMrlLqmdvL_zcoC1SZGEgGr1xM-1791149925-1.0.1.1-RpPCwskrzPJxkuZNrmOYROm_8GiKE20PC1MA7C_UKsU"
+      "finalUrl": "https://rentals.ca/vancouver/kitsilano/all-apartments-all-houses/2-bedrooms?__cf_chl_rt_tk=9S9GOmMwoLW09cw_AxlWisFS0Q5U33CtIxNzg1Mc1iU-1791179648-1.0.1.1-CbW1nJLDckIzRW5avudxp4h6GvWslB2SCtkkdAoD_jM"
     },
     "rentalsca-point-grey-2br": {
-      "checkedAt": "2026-10-04T21:38:45.592Z",
-      "status": 200,
-      "ok": true,
-      "finalUrl": "https://rentals.ca/vancouver/west-point-grey/2-bedrooms",
-      "detailLinkCount": 3,
-      "title": "West Point Grey Vancouver 2 Bedroom Apartments Condos and Houses for Rent",
-      "observedListingCount": 3,
-      "challengeDetected": false,
-      "searchLeadCount": 2,
-      "addressLineCount": 2,
-      "detailUrlCount": 4
+      "checkedAt": "2026-10-05T05:54:08.342Z",
+      "status": 403,
+      "ok": false,
+      "finalUrl": "https://rentals.ca/vancouver/west-point-grey/2-bedrooms?__cf_chl_rt_tk=WVtOfwZ2KBA_dKiBHGtVvq3V3Wh1Hxj0la_yxBvTlLw-1791179648-1.0.1.1-IMBObznh6piXS4VLOkT0OhhcmpKWgqlDVxVDHMRkjsQ"
     },
     "rentalsca-arbutus-2br": {
-      "checkedAt": "2026-10-04T21:38:45.592Z",
-      "status": 200,
-      "ok": true,
-      "finalUrl": "https://rentals.ca/vancouver/arbutus-ridge/2-bedrooms",
-      "detailLinkCount": 5,
-      "title": "Arbutus Ridge Vancouver 2 Bedroom Apartments Condos and Houses for Rent",
-      "observedListingCount": 9,
-      "challengeDetected": false,
-      "searchLeadCount": 4,
-      "addressLineCount": 4,
-      "detailUrlCount": 9
+      "checkedAt": "2026-10-05T05:54:08.342Z",
+      "status": 403,
+      "ok": false,
+      "finalUrl": "https://rentals.ca/vancouver/arbutus-ridge/2-bedrooms?__cf_chl_rt_tk=2aUtgd2IXbCOPC3F2RB2PtFSkaY6XzdUSCgOQml.668-1791179648-1.0.1.1-zTIDn1wLZY1jF3eZmKTwZi3eAhH9onOgrNTYIOmD6ik"
     },
     "rentalsca-dunbar-2br": {
-      "checkedAt": "2026-10-04T21:38:45.592Z",
-      "status": 429,
+      "checkedAt": "2026-10-05T05:54:08.342Z",
+      "status": 403,
       "ok": false,
-      "finalUrl": "https://rentals.ca/vancouver/dunbar-southlands/2-bedrooms?__cf_chl_rt_tk=fm54aP6nuMYb2YR4e0pCYdVdzPBpiI5JSCs9LJcUdKI-1791149932-1.0.1.1-RlmqQU8GHAvQ6vyBJvOsI9c27LrBMFON9zK9zmtdwb0"
+      "finalUrl": "https://rentals.ca/vancouver/dunbar-southlands/2-bedrooms?__cf_chl_rt_tk=dj2gfQYeCXWYe504N_2MDUKrZJiOy8CeKwibumILWPQ-1791179648-1.0.1.1-sH1QkrE56raQ71T9ZsZpNl.5apsga7JUKjJRry.Wg1E"
     },
     "rentalsca-quilchena-2br": {
-      "checkedAt": "2026-10-04T21:38:45.592Z",
-      "status": 429,
+      "checkedAt": "2026-10-05T05:54:08.342Z",
+      "status": 403,
       "ok": false,
-      "finalUrl": "https://rentals.ca/vancouver/quilchena/2-bedrooms?__cf_chl_rt_tk=E_KNCzk2PyG7tTDundWXZOdbaMMz1U5CulFFKTsbFwA-1791149932-1.0.1.1-Pv.B0by9an5w8981p3_Yf_zvdukpcOdyuu1iM.fFn.I"
+      "finalUrl": "https://rentals.ca/vancouver/quilchena/2-bedrooms?__cf_chl_rt_tk=AxzMemMYmX4aFYgbgGmCF2Ylppre5X8DE5uQImSMKWk-1791179648-1.0.1.1-1oOaCDoCA23Okp5zuSowVPVgYxv..OT90bsl6TKQQlI"
     },
     "rentalsca-kitsilano-3br": {
-      "checkedAt": "2026-10-04T21:38:45.592Z",
-      "status": 429,
+      "checkedAt": "2026-10-05T05:54:08.342Z",
+      "status": 403,
       "ok": false,
-      "finalUrl": "https://rentals.ca/vancouver/kitsilano/3-bedrooms?__cf_chl_rt_tk=jtS1LLrlTwZjpEH2HXsT9LAS6vJmEnGsTFnOyxcv_kk-1791149932-1.0.1.1-xusft2kX1oGqf2WLZAGSvyGW_ufCUXLtSH41TaKtbrY"
+      "finalUrl": "https://rentals.ca/vancouver/kitsilano/3-bedrooms?__cf_chl_rt_tk=Uxx0v.mDz8XJoiveFX9a0igqIKV3UMtBO5KiCkGaUH0-1791179648-1.0.1.1-J8ctexAbWewX97welYUnOM4iE9bjlv4N9ZQulWcLk18"
     },
     "rentalsca-kitsilano-4br": {
-      "checkedAt": "2026-10-04T21:38:45.592Z",
-      "status": 429,
+      "checkedAt": "2026-10-05T05:54:08.342Z",
+      "status": 403,
       "ok": false,
-      "finalUrl": "https://rentals.ca/vancouver/kitsilano/4-bedrooms?__cf_chl_rt_tk=jwwYujh1ZShxNsNuXmGj0m89D6TYGdMYSmS6wd858Ww-1791149932-1.0.1.1-9qIhmkm4QWGH.HDR9dJQdBrThkluh6Od5Td31WgkIj0"
+      "finalUrl": "https://rentals.ca/vancouver/kitsilano/4-bedrooms?__cf_chl_rt_tk=GJcBtQnoqVEMH87d1Q6yMrO4ziwzxHuPbAgkOLImgds-1791179648-1.0.1.1-b50rlb_J2URpgTn7LG_qZqaSWhfOvg4SswvAZuEYv5c"
     },
     "rentalsca-vancouver-3br": {
-      "checkedAt": "2026-10-04T21:38:45.592Z",
-      "status": 429,
+      "checkedAt": "2026-10-05T05:54:08.342Z",
+      "status": 403,
       "ok": false,
-      "finalUrl": "https://rentals.ca/vancouver/3-bedrooms?__cf_chl_rt_tk=LrPGu78m9Kz39Y.ao4kYvPCzZVBakCFzWy4f13pHE24-1791149932-1.0.1.1-31Qu6AkFdcsfMUIwqJovXkRMRpBg__tvj.Jeo_v6a.k"
+      "finalUrl": "https://rentals.ca/vancouver/3-bedrooms?__cf_chl_rt_tk=gtefXh8YPZ2JEbRuwV5D9YUfpb6jljqxBrrGFfScFIg-1791179648-1.0.1.1-6Z.paH6bjTqcejU0tO_zGu.cj2LUMbILtVgEa5FFCJA"
     },
     "rentalsca-vancouver-4br": {
-      "checkedAt": "2026-10-04T21:38:45.592Z",
-      "status": 429,
+      "checkedAt": "2026-10-05T05:54:08.342Z",
+      "status": 403,
       "ok": false,
-      "finalUrl": "https://rentals.ca/vancouver/4-bedrooms?__cf_chl_rt_tk=gnZImu.k5XX1_DP4aDXAexVrdofEN15STwgYIv665nM-1791149932-1.0.1.1-BYIDn0uZ8WsEXH8oXerIYN9cUrIQTZEy6.yanj1UOCM"
+      "finalUrl": "https://rentals.ca/vancouver/4-bedrooms?__cf_chl_rt_tk=P1tx.LdeMnHdRmCVGS53G5Aup.pJ9Z2lNx1UpP3g39U-1791179648-1.0.1.1-1qT0dihdbQnIjR6F_0OH0.XBr3Czouj01zVdNI0mcjk"
     }
   },
   "diagnostics": {
-    "searchResultCount": 12,
-    "searchAddressLines": 6,
-    "searchDetailLinks": 8,
-    "searchLeadCount": 2,
-    "newSearchLeadCount": 2,
+    "searchResultCount": 0,
+    "searchAddressLines": 0,
+    "searchDetailLinks": 0,
+    "searchLeadCount": 0,
+    "newSearchLeadCount": 0,
     "representedSearchLeadCount": 0,
     "revalidationSearchLeadCount": 0,
-    "detailUrls": 13,
-    "detailChecked": 3,
-    "detailBlocked": 3,
+    "detailUrls": 0,
+    "detailChecked": 0,
+    "detailBlocked": 0,
     "detailNotFound": 0,
     "detailErrors": 0,
     "detailParsed": 0,
-    "detailSuppressed": 10,
-    "detailCircuitOpen": true
+    "detailSuppressed": 0,
+    "detailCircuitOpen": false
   },
-  "searchLeads": [
-    {
-      "identityKey": "4769 belmont, vancouver, bc::3900::3900::2::2",
-      "address": "4769 Belmont, Vancouver, BC",
-      "rentMin": 3900,
-      "rentMax": 3900,
-      "bedroomMin": 2,
-      "bedroomMax": 2,
-      "bathrooms": 1,
-      "source": "Rentals.ca search",
-      "searchUrl": "https://rentals.ca/vancouver/west-point-grey/2-bedrooms",
-      "checkedAt": "2026-10-04T21:38:45.592Z",
-      "publishable": false,
-      "evidenceKind": "search_result_lead_only",
-      "availabilityVerified": false,
-      "url": "https://rentals.ca/vancouver/4769-belmont",
-      "leadStatus": "new_unverified_address",
-      "addressMatchOnly": false,
-      "matchingListingCount": 0,
-      "matchedListingIds": [],
-      "matchedListingId": null,
-      "matchedAvailabilityStatus": null
-    },
-    {
-      "identityKey": "2083 west 33rd avenue, vancouver, bc::3500::3500::2::2",
-      "address": "2083 West 33rd Avenue, Vancouver, BC",
-      "rentMin": 3500,
-      "rentMax": 3500,
-      "bedroomMin": 2,
-      "bedroomMax": 2,
-      "bathrooms": 2,
-      "source": "Rentals.ca search",
-      "searchUrl": "https://rentals.ca/vancouver/arbutus-ridge/2-bedrooms",
-      "checkedAt": "2026-10-04T21:38:45.592Z",
-      "publishable": false,
-      "evidenceKind": "search_result_lead_only",
-      "availabilityVerified": false,
-      "url": "https://rentals.ca/vancouver/2083-west-33rd-avenue",
-      "leadStatus": "new_unverified_address",
-      "addressMatchOnly": false,
-      "matchingListingCount": 0,
-      "matchedListingIds": [],
-      "matchedListingId": null,
-      "matchedAvailabilityStatus": null
-    }
-  ],
+  "searchLeads": [],
   "pages": [],
   "inventories": []
 }

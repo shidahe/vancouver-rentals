@@ -1,9 +1,9 @@
 {
-  "refreshedAt": "2026-10-04T21:38:53.942Z",
+  "refreshedAt": "2026-10-05T05:54:10.107Z",
   "mode": "candidate-only",
   "sourceHealth": {
     "kitsilano": {
-      "checkedAt": "2026-10-04T21:38:53.942Z",
+      "checkedAt": "2026-10-05T05:54:10.107Z",
       "status": 200,
       "ok": true,
       "finalUrl": "https://www.craigslist.org/search/subarea/van?cat=apa&min_bedrooms=2&query=kitsilano",
@@ -23,13 +23,13 @@
         "www.craigslist.org/about/prohibited",
         "www.craigslist.org/about/recalled_items",
         "www.craigslist.org/about/help/safety/scams",
-        "www.craigslist.org/view/d/vancouver-heart-of-kitsilano/111yPSpmZwe3dPTiuBrdQe",
-        "www.craigslist.org/view/d/vancouver-bedroom-furnished-suite-for/uECHirUj9A1YFEQahxoYMJ"
+        "www.craigslist.org/view/d/vancouver-furnished-two-floor-laneway/cAAyKaAssp1VL3YVxdgrRw",
+        "www.craigslist.org/view/d/vancouver-oct-15th-kitsilano/gimwAPv7YqCX6rpUe2epUW"
       ],
       "title": "vancouver apartments / housing for rent \"kitsilano\" - craigslist"
     },
     "arbutus": {
-      "checkedAt": "2026-10-04T21:38:53.942Z",
+      "checkedAt": "2026-10-05T05:54:10.107Z",
       "status": 200,
       "ok": true,
       "finalUrl": "https://www.craigslist.org/search/subarea/van?cat=apa&min_bedrooms=2&query=arbutus",
@@ -49,13 +49,13 @@
         "www.craigslist.org/about/prohibited",
         "www.craigslist.org/about/recalled_items",
         "www.craigslist.org/about/help/safety/scams",
-        "www.craigslist.org/view/d/vancouver-vancouver-west-arbutus/iGRwpENh2oF5BMYq3DZ6kb",
+        "www.craigslist.org/view/d/vancouver-recently-renovated-2br-1ba/5eDp7qNJZYADGxPMkKFzmR",
         "www.craigslist.org/view/d/vancouver-vancouver-west-arbutus/6z1S56t1zjDEf3xgJRe4vE"
       ],
       "title": "vancouver apartments / housing for rent \"arbutus\" - craigslist"
     },
     "point-grey": {
-      "checkedAt": "2026-10-04T21:38:53.942Z",
+      "checkedAt": "2026-10-05T05:54:10.107Z",
       "status": 200,
       "ok": true,
       "finalUrl": "https://www.craigslist.org/search/subarea/van?cat=apa&min_bedrooms=2&query=point%20grey",
@@ -75,21 +75,21 @@
         "www.craigslist.org/about/prohibited",
         "www.craigslist.org/about/recalled_items",
         "www.craigslist.org/about/help/safety/scams",
-        "www.craigslist.org/view/d/vancouver-point-grey-2br-garden-level/o4CtFFWk4GUP4P3KXrG59n",
-        "www.craigslist.org/view/d/vancouver-ground-floor-home-for-rent-in/oCXiHde79mVDwcDRDBmXnh"
+        "www.craigslist.org/view/d/vancouver-bed-bath-house-for-rent-in/9x1dTF1XWwSw3vEfhQRuup",
+        "www.craigslist.org/view/d/vancouver-point-grey-2br-garden-level/o4CtFFWk4GUP4P3KXrG59n"
       ],
       "title": "vancouver apartments / housing for rent \"point grey\" - craigslist"
     },
     "dunbar": {
-      "checkedAt": "2026-10-04T21:38:53.942Z",
+      "checkedAt": "2026-10-05T05:54:10.107Z",
       "status": 200,
       "ok": true,
       "finalUrl": "https://www.craigslist.org/search/subarea/van?cat=apa&min_bedrooms=2&query=dunbar",
-      "anchorCount": 194,
-      "detailLinkCount": 172,
-      "embeddedDetailLinkCount": 86,
+      "anchorCount": 196,
+      "detailLinkCount": 174,
+      "embeddedDetailLinkCount": 87,
       "resultContainerCount": 87,
-      "postIdCount": 86,
+      "postIdCount": 87,
       "hrefShapeSamples": [
         "www.craigslist.org/subarea/van",
         "www.craigslist.org/favorites",
@@ -101,8 +101,8 @@
         "www.craigslist.org/about/prohibited",
         "www.craigslist.org/about/recalled_items",
         "www.craigslist.org/about/help/safety/scams",
-        "www.craigslist.org/view/d/vancouver-executive-kits-beach-apartment/6uq7VBj2qgPM5w1YKNfmGv",
-        "www.craigslist.org/view/d/vancouver-bright-furnished-dunbar/siiRxnqCzEbdMcvAJXTMY7"
+        "www.craigslist.org/view/d/vancouver-dunbar-5b-2b-house-for-rent/3jDPmnt6tBAh64e3WxzYs1",
+        "www.craigslist.org/view/d/vancouver-executive-kits-beach-apartment/6uq7VBj2qgPM5w1YKNfmGv"
       ],
       "title": "vancouver apartments / housing for rent \"dunbar\" - craigslist"
     }
@@ -129,6 +129,57 @@
   "candidates": [
     {
       "source": "Craigslist",
+      "postId": "7965963048",
+      "url": "https://www.craigslist.org/view/d/vancouver-kerrisdale-furnished-bed-25/s57Jp3N2BMYmHDajNBjKG2",
+      "title": "$7,990 / 3br - 1772ft2 - Kerrisdale Furnished 3 Bed 2.5 Bath 2 Level House w/ Yard & Deck (Vancouver)",
+      "address": null,
+      "identityKey": "craigslist::post:7965963048",
+      "rent": 7990,
+      "bedrooms": 3,
+      "bathrooms": 2,
+      "sqft": 1772,
+      "geo": {
+        "lat": 49.228178,
+        "lng": -123.154206
+      },
+      "targetArea": true,
+      "active": true,
+      "postedOrUpdatedAt": "2026-10-05T05:04:17.000Z",
+      "checkedAt": "2026-10-05T05:54:10.107Z",
+      "images": [
+        "https://images.craigslist.org/00101_8Lj1RrRW6kM_0gw0b1_600x450.jpg",
+        "https://images.craigslist.org/00101_8Lj1RrRW6kM_0gw0b1_50x50c.jpg",
+        "https://images.craigslist.org/00i0i_cuNWLnHhXff_0gw0b1_50x50c.jpg",
+        "https://images.craigslist.org/00f0f_97SOUjBSmb9_0gw0b1_50x50c.jpg",
+        "https://images.craigslist.org/00g0g_4gYpViN0x3D_0gw0b1_50x50c.jpg",
+        "https://images.craigslist.org/00m0m_16ILnP1tqL0_0gw0b1_50x50c.jpg",
+        "https://images.craigslist.org/00808_emDiJjvN0Kq_0gw0b1_50x50c.jpg",
+        "https://images.craigslist.org/01010_f1PWaL5kXlI_0gw0b1_50x50c.jpg",
+        "https://images.craigslist.org/00M0M_6OC5GWH7vlx_0gw0b1_50x50c.jpg",
+        "https://images.craigslist.org/00Z0Z_exIfCjhXqVJ_0gw0b1_50x50c.jpg",
+        "https://images.craigslist.org/00s0s_arSWlcZiGpA_0gw0b1_50x50c.jpg",
+        "https://images.craigslist.org/00t0t_9kNesBky7cG_0gw0b1_50x50c.jpg"
+      ],
+      "publishable": false,
+      "evidenceKind": "current_search_card_and_exact_detail",
+      "queryIds": [
+        "arbutus"
+      ],
+      "approximateLocation": "Vancouver",
+      "addressPrecision": "neighborhood",
+      "description": "Address: 2075 W.48th Avenue, Vancouver\n\nAvailable: October 1, 2026 – fully furnished\nBedrooms: 3 + office\nBathrooms: 2\nFinished area: 1772 sf\nLevels: 2\nFlooring: hardwood, carpets, tiles mixed\nOutdoor: sundeck, front porch, front yard, backyard\nParking: street parking + driveway off the backlane\n\nDeposits: half-month security deposit.\nLease term: minimum 3 month stay.\nPets: pets okay with owners' approval.\nNo Bidet.\nAbsolutely no smoking please.\n\nMost properties include: fully furnished from cutlery to linens, TV, in-suite washer and dryer, fridge, stove, dishwasher, microwave, secure parking, and often utilities, telephone, cable, high speed internet & maid service.\nNot included: long distance telephone, additional cleaning & move-out clean\n\n____________________________________________________________________________\n\nLOCATION: Nestled in the heart of Kerrisdale, this home places you within one of Vancouver's most charming and established neighbourhoods. Just a short stroll away, Kerrisdale Village offers a vibrant mix of local boutiques, cafe's, restaurants, bakeries, fitness studios, services, and grocery options everything you need for day-to-day living. The Arbutus Greenway, located steps from your door, provides an exceptional multi-use pathway perfect for walking, cycling, jogging, or commuting through the West Side. Transit is extremely convenient, with nearby bus routes connecting directly to UBC, Downtown, and SkyTrain stations, making commuting simple and efficient. It's the perfect blend of quiet residential living and easy urban access.\n\nFEATURES: This charming character home offers a warm, cozy feel with a great open flow that's perfect for families. The main floor features spacious living and dining areas with high ceilings, along with a dedicated office and a bathroom for added convenience. The kitchen opens onto a private sundeck and fenced yard, creating an easy indoor outdoor connection ideal for everyday living. Upstairs, you'll find three well-s",
+      "type": "house",
+      "ac": null,
+      "detailVerified": true,
+      "relistingPostIds": [
+        "7965963048"
+      ],
+      "relistingUrls": [
+        "https://www.craigslist.org/view/d/vancouver-kerrisdale-furnished-bed-25/s57Jp3N2BMYmHDajNBjKG2"
+      ]
+    },
+    {
+      "source": "Craigslist",
       "postId": "7971254349",
       "url": "https://www.craigslist.org/view/d/vancouver-heart-of-kitsilano/111yPSpmZwe3dPTiuBrdQe",
       "title": "$3,600 / 3br - Heart of Kitsilano, 2Bedrooms+Office, (Vancouver, Kitsilano, UBC,)",
@@ -145,7 +196,7 @@
       "targetArea": true,
       "active": true,
       "postedOrUpdatedAt": "2026-10-04T19:55:00.000Z",
-      "checkedAt": "2026-10-04T21:38:53.942Z",
+      "checkedAt": "2026-10-05T05:54:10.107Z",
       "images": [
         "https://images.craigslist.org/00j0j_hvQzGupZGf6_1320MM_600x450.jpg",
         "https://images.craigslist.org/00j0j_hvQzGupZGf6_1320MM_50x50c.jpg",
@@ -196,7 +247,7 @@
       "targetArea": true,
       "active": true,
       "postedOrUpdatedAt": "2026-10-04T14:39:56.000Z",
-      "checkedAt": "2026-10-04T21:38:53.942Z",
+      "checkedAt": "2026-10-05T05:54:10.107Z",
       "images": [
         "https://images.craigslist.org/00a0a_cOF4R0kbKjE_0cU08B_600x450.jpg",
         "https://images.craigslist.org/00a0a_cOF4R0kbKjE_0cU08B_50x50c.jpg",
@@ -247,7 +298,7 @@
       "targetArea": true,
       "active": true,
       "postedOrUpdatedAt": "2026-10-04T14:39:40.000Z",
-      "checkedAt": "2026-10-04T21:38:53.942Z",
+      "checkedAt": "2026-10-05T05:54:10.107Z",
       "images": [
         "https://images.craigslist.org/00c0c_jI6maH6Pk5V_08g05v_600x450.jpg",
         "https://images.craigslist.org/00c0c_jI6maH6Pk5V_08g05v_50x50c.jpg",
@@ -298,7 +349,7 @@
       "targetArea": true,
       "active": true,
       "postedOrUpdatedAt": "2026-10-04T14:39:36.000Z",
-      "checkedAt": "2026-10-04T21:38:53.942Z",
+      "checkedAt": "2026-10-05T05:54:10.107Z",
       "images": [
         "https://images.craigslist.org/00c0c_jI6maH6Pk5V_08g05v_600x450.jpg",
         "https://images.craigslist.org/00c0c_jI6maH6Pk5V_08g05v_50x50c.jpg",
@@ -349,7 +400,7 @@
       "targetArea": true,
       "active": true,
       "postedOrUpdatedAt": "2026-10-04T03:43:50.000Z",
-      "checkedAt": "2026-10-04T21:38:53.942Z",
+      "checkedAt": "2026-10-05T05:54:10.107Z",
       "images": [
         "https://images.craigslist.org/00o0o_89ybSRl9Swp_0CI0t2_600x450.jpg",
         "https://images.craigslist.org/00o0o_89ybSRl9Swp_0CI0t2_50x50c.jpg",
@@ -400,7 +451,7 @@
       "targetArea": true,
       "active": true,
       "postedOrUpdatedAt": "2026-10-03T16:55:08.000Z",
-      "checkedAt": "2026-10-04T21:38:53.942Z",
+      "checkedAt": "2026-10-05T05:54:10.107Z",
       "images": [
         "https://images.craigslist.org/01414_a6JcqjghJ3l_0ak06S_600x450.jpg",
         "https://images.craigslist.org/01414_a6JcqjghJ3l_0ak06S_50x50c.jpg",
@@ -451,7 +502,7 @@
       "targetArea": true,
       "active": true,
       "postedOrUpdatedAt": "2026-10-03T12:23:56.000Z",
-      "checkedAt": "2026-10-04T21:38:53.942Z",
+      "checkedAt": "2026-10-05T05:54:10.107Z",
       "images": [
         "https://images.craigslist.org/00X0X_8fAXb0mepVn_0t20CI_600x450.jpg",
         "https://images.craigslist.org/00X0X_8fAXb0mepVn_0t20CI_50x50c.jpg",
@@ -503,7 +554,7 @@
       "targetArea": true,
       "active": true,
       "postedOrUpdatedAt": "2026-10-02T20:17:57.000Z",
-      "checkedAt": "2026-10-04T21:38:53.942Z",
+      "checkedAt": "2026-10-05T05:54:10.107Z",
       "images": [
         "https://images.craigslist.org/01111_5aBZW7iUBcq_0CI0pO_600x450.jpg",
         "https://images.craigslist.org/01111_5aBZW7iUBcq_0CI0pO_50x50c.jpg",
@@ -538,57 +589,6 @@
     },
     {
       "source": "Craigslist",
-      "postId": "7965963048",
-      "url": "https://www.craigslist.org/view/d/vancouver-kerrisdale-furnished-bed-25/s57Jp3N2BMYmHDajNBjKG2",
-      "title": "$8,990 / 3br - 1772ft2 - Kerrisdale Furnished 3 Bed 2.5 Bath 2 Level House w/ Yard & Deck (Vancouver)",
-      "address": null,
-      "identityKey": "craigslist::post:7965963048",
-      "rent": 8990,
-      "bedrooms": 3,
-      "bathrooms": 2,
-      "sqft": 1772,
-      "geo": {
-        "lat": 49.228178,
-        "lng": -123.154206
-      },
-      "targetArea": true,
-      "active": true,
-      "postedOrUpdatedAt": "2026-10-02T18:21:21.000Z",
-      "checkedAt": "2026-10-04T21:38:53.942Z",
-      "images": [
-        "https://images.craigslist.org/00101_8Lj1RrRW6kM_0gw0b1_600x450.jpg",
-        "https://images.craigslist.org/00101_8Lj1RrRW6kM_0gw0b1_50x50c.jpg",
-        "https://images.craigslist.org/00i0i_cuNWLnHhXff_0gw0b1_50x50c.jpg",
-        "https://images.craigslist.org/00f0f_97SOUjBSmb9_0gw0b1_50x50c.jpg",
-        "https://images.craigslist.org/00g0g_4gYpViN0x3D_0gw0b1_50x50c.jpg",
-        "https://images.craigslist.org/00m0m_16ILnP1tqL0_0gw0b1_50x50c.jpg",
-        "https://images.craigslist.org/00808_emDiJjvN0Kq_0gw0b1_50x50c.jpg",
-        "https://images.craigslist.org/01010_f1PWaL5kXlI_0gw0b1_50x50c.jpg",
-        "https://images.craigslist.org/00M0M_6OC5GWH7vlx_0gw0b1_50x50c.jpg",
-        "https://images.craigslist.org/00Z0Z_exIfCjhXqVJ_0gw0b1_50x50c.jpg",
-        "https://images.craigslist.org/00s0s_arSWlcZiGpA_0gw0b1_50x50c.jpg",
-        "https://images.craigslist.org/00t0t_9kNesBky7cG_0gw0b1_50x50c.jpg"
-      ],
-      "publishable": false,
-      "evidenceKind": "current_search_card_and_exact_detail",
-      "queryIds": [
-        "arbutus"
-      ],
-      "approximateLocation": "Vancouver",
-      "addressPrecision": "neighborhood",
-      "description": "Address: 2075 W.48th Avenue, Vancouver\n\nAvailable: October 1, 2026 – fully furnished\nBedrooms: 3 + office\nBathrooms: 2\nFinished area: 1772 sf\nLevels: 2\nFlooring: hardwood, carpets, tiles mixed\nOutdoor: sundeck, front porch, front yard, backyard\nParking: street parking + driveway off the backlane\n\nDeposits: half-month security deposit.\nLease term: minimum 3 month stay.\nPets: pets okay with owners' approval.\nNo Bidet.\nAbsolutely no smoking please.\n\nMost properties include: fully furnished from cutlery to linens, TV, in-suite washer and dryer, fridge, stove, dishwasher, microwave, secure parking, and often utilities, telephone, cable, high speed internet & maid service.\nNot included: long distance telephone, additional cleaning & move-out clean\n\n____________________________________________________________________________\n\nLOCATION: Nestled in the heart of Kerrisdale, this home places you within one of Vancouver's most charming and established neighbourhoods. Just a short stroll away, Kerrisdale Village offers a vibrant mix of local boutiques, cafe's, restaurants, bakeries, fitness studios, services, and grocery options everything you need for day-to-day living. The Arbutus Greenway, located steps from your door, provides an exceptional multi-use pathway perfect for walking, cycling, jogging, or commuting through the West Side. Transit is extremely convenient, with nearby bus routes connecting directly to UBC, Downtown, and SkyTrain stations, making commuting simple and efficient. It's the perfect blend of quiet residential living and easy urban access.\n\nFEATURES: This charming character home offers a warm, cozy feel with a great open flow that's perfect for families. The main floor features spacious living and dining areas with high ceilings, along with a dedicated office and a bathroom for added convenience. The kitchen opens onto a private sundeck and fenced yard, creating an easy indoor outdoor connection ideal for everyday living. Upstairs, you'll find three well-s",
-      "type": "house",
-      "ac": null,
-      "detailVerified": true,
-      "relistingPostIds": [
-        "7965963048"
-      ],
-      "relistingUrls": [
-        "https://www.craigslist.org/view/d/vancouver-kerrisdale-furnished-bed-25/s57Jp3N2BMYmHDajNBjKG2"
-      ]
-    },
-    {
-      "source": "Craigslist",
       "postId": "7974074856",
       "url": "https://www.craigslist.org/view/d/vancouver-spacious-kitsilano-character/9HCRhfGuowFLTL1egVYJVW",
       "title": "$4,800 / 4br - SPACIOUS KITSILANO CHARACTER HOUSE - 4BR / 3BA - Close to UBC & Broadwa​y (Vancouver)",
@@ -605,7 +605,7 @@
       "targetArea": true,
       "active": true,
       "postedOrUpdatedAt": "2026-10-02T07:56:26.000Z",
-      "checkedAt": "2026-10-04T21:38:53.942Z",
+      "checkedAt": "2026-10-05T05:54:10.107Z",
       "images": [
         "https://images.craigslist.org/00606_j5ld9CEBOPv_0CI0t2_600x450.jpg",
         "https://images.craigslist.org/00606_j5ld9CEBOPv_0CI0t2_50x50c.jpg",
@@ -656,7 +656,7 @@
       "targetArea": true,
       "active": true,
       "postedOrUpdatedAt": "2026-10-01T21:49:21.000Z",
-      "checkedAt": "2026-10-04T21:38:53.942Z",
+      "checkedAt": "2026-10-05T05:54:10.107Z",
       "images": [
         "https://images.craigslist.org/00505_fc07bV1J49b_0CI0t2_600x450.jpg",
         "https://images.craigslist.org/00505_fc07bV1J49b_0CI0t2_50x50c.jpg",
@@ -707,7 +707,7 @@
       "targetArea": true,
       "active": true,
       "postedOrUpdatedAt": "2026-10-01T20:34:20.000Z",
-      "checkedAt": "2026-10-04T21:38:53.942Z",
+      "checkedAt": "2026-10-05T05:54:10.107Z",
       "images": [
         "https://images.craigslist.org/00H0H_aBooG6gbfXq_0ia0du_600x450.jpg",
         "https://images.craigslist.org/00H0H_aBooG6gbfXq_0ia0du_50x50c.jpg",
@@ -758,7 +758,7 @@
       "targetArea": true,
       "active": true,
       "postedOrUpdatedAt": "2026-10-01T18:47:03.000Z",
-      "checkedAt": "2026-10-04T21:38:53.942Z",
+      "checkedAt": "2026-10-05T05:54:10.107Z",
       "images": [
         "https://images.craigslist.org/00Y0Y_k3PKmKJZ2y9_0uY0kE_600x450.jpg",
         "https://images.craigslist.org/00Y0Y_k3PKmKJZ2y9_0uY0kE_50x50c.jpg",
@@ -809,7 +809,7 @@
       "targetArea": true,
       "active": true,
       "postedOrUpdatedAt": "2026-10-01T18:47:02.000Z",
-      "checkedAt": "2026-10-04T21:38:53.942Z",
+      "checkedAt": "2026-10-05T05:54:10.107Z",
       "images": [
         "https://images.craigslist.org/00o0o_jGuXcZK9yR9_0uY0kE_600x450.jpg",
         "https://images.craigslist.org/00o0o_jGuXcZK9yR9_0uY0kE_50x50c.jpg",
@@ -860,7 +860,7 @@
       "targetArea": true,
       "active": true,
       "postedOrUpdatedAt": "2026-10-01T18:19:06.000Z",
-      "checkedAt": "2026-10-04T21:38:53.942Z",
+      "checkedAt": "2026-10-05T05:54:10.107Z",
       "images": [
         "https://images.craigslist.org/00a0a_f17vafd3ut_0CI0t2_600x450.jpg",
         "https://images.craigslist.org/00a0a_f17vafd3ut_0CI0t2_50x50c.jpg",
@@ -911,7 +911,7 @@
       "targetArea": true,
       "active": true,
       "postedOrUpdatedAt": "2026-10-01T17:16:20.000Z",
-      "checkedAt": "2026-10-04T21:38:53.942Z",
+      "checkedAt": "2026-10-05T05:54:10.107Z",
       "images": [
         "https://images.craigslist.org/00404_cuCXJxUPcyv_0ak074_600x450.jpg",
         "https://images.craigslist.org/00404_cuCXJxUPcyv_0ak074_50x50c.jpg",
@@ -960,7 +960,7 @@
       "targetArea": true,
       "active": true,
       "postedOrUpdatedAt": "2026-10-01T01:48:16.000Z",
-      "checkedAt": "2026-10-04T21:38:53.942Z",
+      "checkedAt": "2026-10-05T05:54:10.107Z",
       "images": [
         "https://images.craigslist.org/00101_3Kt4zGjMpUA_0jm0c6_600x450.jpg",
         "https://images.craigslist.org/00101_3Kt4zGjMpUA_0jm0c6_50x50c.jpg",
@@ -1011,7 +1011,7 @@
       "targetArea": true,
       "active": true,
       "postedOrUpdatedAt": "2026-10-01T01:37:45.000Z",
-      "checkedAt": "2026-10-04T21:38:53.942Z",
+      "checkedAt": "2026-10-05T05:54:10.107Z",
       "images": [
         "https://images.craigslist.org/00x0x_5rdhaj721wT_0jm0c6_600x450.jpg",
         "https://images.craigslist.org/00x0x_5rdhaj721wT_0jm0c6_50x50c.jpg",
@@ -1062,7 +1062,7 @@
       "targetArea": true,
       "active": true,
       "postedOrUpdatedAt": "2026-09-29T20:17:46.000Z",
-      "checkedAt": "2026-10-04T21:38:53.942Z",
+      "checkedAt": "2026-10-05T05:54:10.107Z",
       "images": [
         "https://images.craigslist.org/00n0n_ibnq63WtzLW_0qY0fb_600x450.jpg",
         "https://images.craigslist.org/00n0n_ibnq63WtzLW_0qY0fb_50x50c.jpg",
@@ -1113,7 +1113,7 @@
       "targetArea": true,
       "active": true,
       "postedOrUpdatedAt": "2026-09-29T06:15:15.000Z",
-      "checkedAt": "2026-10-04T21:38:53.942Z",
+      "checkedAt": "2026-10-05T05:54:10.107Z",
       "images": [
         "https://images.craigslist.org/00N0N_78ZMrBVFcbB_0CI0pO_600x450.jpg",
         "https://images.craigslist.org/00N0N_78ZMrBVFcbB_0CI0pO_50x50c.jpg",
@@ -1164,7 +1164,7 @@
       "targetArea": true,
       "active": true,
       "postedOrUpdatedAt": "2026-09-29T04:51:55.000Z",
-      "checkedAt": "2026-10-04T21:38:53.942Z",
+      "checkedAt": "2026-10-05T05:54:10.107Z",
       "images": [
         "https://images.craigslist.org/00R0R_5D6x8JG8rRh_0gw0t2_600x450.jpg",
         "https://images.craigslist.org/00R0R_5D6x8JG8rRh_0gw0t2_50x50c.jpg",
@@ -1215,7 +1215,7 @@
       "targetArea": true,
       "active": true,
       "postedOrUpdatedAt": "2026-09-27T19:15:52.000Z",
-      "checkedAt": "2026-10-04T21:38:53.942Z",
+      "checkedAt": "2026-10-05T05:54:10.107Z",
       "images": [
         "https://images.craigslist.org/00S0S_5E9sc8yt9va_0hq0bI_600x450.jpg",
         "https://images.craigslist.org/00S0S_5E9sc8yt9va_0hq0bI_50x50c.jpg",
@@ -1265,7 +1265,7 @@
       "targetArea": true,
       "active": true,
       "postedOrUpdatedAt": "2026-09-15T04:45:10.000Z",
-      "checkedAt": "2026-10-04T21:38:53.942Z",
+      "checkedAt": "2026-10-05T05:54:10.107Z",
       "images": [
         "https://images.craigslist.org/00b0b_fJ1dKmYpeL7_1320MM_600x450.jpg",
         "https://images.craigslist.org/00b0b_fJ1dKmYpeL7_1320MM_50x50c.jpg",
@@ -1316,7 +1316,7 @@
       "targetArea": true,
       "active": true,
       "postedOrUpdatedAt": "2026-09-15T03:21:47.000Z",
-      "checkedAt": "2026-10-04T21:38:53.942Z",
+      "checkedAt": "2026-10-05T05:54:10.107Z",
       "images": [
         "https://images.craigslist.org/00y0y_9QoxDSNE4uG_0pO0jm_600x450.jpg",
         "https://images.craigslist.org/00y0y_9QoxDSNE4uG_0pO0jm_50x50c.jpg",
@@ -1367,7 +1367,7 @@
       "targetArea": true,
       "active": true,
       "postedOrUpdatedAt": "2026-08-22T14:03:54.000Z",
-      "checkedAt": "2026-10-04T21:38:53.942Z",
+      "checkedAt": "2026-10-05T05:54:10.107Z",
       "images": [
         "https://images.craigslist.org/00505_9JjEv3eRS29_0CI0pO_600x450.jpg",
         "https://images.craigslist.org/00505_9JjEv3eRS29_0CI0pO_50x50c.jpg",
