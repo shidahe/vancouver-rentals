@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-10-05T14:56:42.954Z",
-  "activeCount": 21,
+  "generatedAt": "2026-10-05T15:26:36.866Z",
+  "activeCount": 24,
   "decisionReady": true,
   "readinessStatus": "finalized",
   "highIssueCount": 0,
   "mediumIssueCount": 0,
-  "infoIssueCount": 37,
+  "infoIssueCount": 42,
   "issues": [
     {
       "severity": "info",
@@ -45,6 +45,11 @@
     {
       "severity": "info",
       "id": "zumper-976e340c66a7",
+      "issue": "unknown-orientation"
+    },
+    {
+      "severity": "info",
+      "id": "arbutus-residences-floorplan-2-bedroom-townhouse-den-1340",
       "issue": "unknown-orientation"
     },
     {
@@ -129,6 +134,16 @@
     },
     {
       "severity": "info",
+      "id": "mls-r3164604",
+      "issue": "unknown-ac"
+    },
+    {
+      "severity": "info",
+      "id": "mls-r3164604",
+      "issue": "unknown-orientation"
+    },
+    {
+      "severity": "info",
       "id": "w16-coach-house-850",
       "issue": "unknown-orientation"
     },
@@ -191,13 +206,23 @@
       "severity": "info",
       "id": "zumper-f3c25cb7e83b",
       "issue": "unknown-orientation"
+    },
+    {
+      "severity": "info",
+      "id": "mls-r3172212",
+      "issue": "unknown-ac"
+    },
+    {
+      "severity": "info",
+      "id": "mls-r3172212",
+      "issue": "unknown-orientation"
     }
   ],
   "readinessChecks": {
     "smokeOk": true,
     "smokeFresh": true,
-    "smokeCheckedAt": "2026-10-05T14:56:48.759Z",
-    "latestDataAt": "2026-10-05T14:55:55.082Z",
+    "smokeCheckedAt": "2026-10-05T15:26:42.061Z",
+    "latestDataAt": "2026-10-05T15:25:46.317Z",
     "coverageReady": true,
     "healthyDiscoveryLanes": 3,
     "coverageWarnings": [
@@ -205,7 +230,7 @@
         "severity": "warning",
         "lane": "rentalsca",
         "status": "degraded",
-        "detail": "1/9 regional searches reachable; 0 qualifying candidates parsed; 1 scoped search-only leads retained (1 new, 0 already active, 0 need revalidation); 3 detail pages blocked after 4 discovered URLs; 1 further detail checks suppressed after repeated 403/429"
+        "detail": "3/9 regional searches reachable; 0 qualifying candidates parsed; 2 scoped search-only leads retained (2 new, 0 already active, 0 need revalidation); 3 detail pages blocked after 15 discovered URLs; 12 further detail checks suppressed after repeated 403/429"
       },
       {
         "severity": "warning",
@@ -222,5 +247,5 @@
     ]
   },
   "readinessIssues": [],
-  "finalizedAt": "2026-10-05T14:56:48.842Z"
+  "finalizedAt": "2026-10-05T15:26:42.149Z"
 }

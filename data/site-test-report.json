@@ -1,11 +1,11 @@
 {
-  "checkedAt": "2026-10-05T14:56:48.759Z",
+  "checkedAt": "2026-10-05T15:26:42.061Z",
   "ok": true,
   "checkpoints": {
     "render": {
       "title": "Vancouver Westside Rentals",
-      "cards": 21,
-      "shown": 21
+      "cards": 24,
+      "shown": 24
     },
     "stats": {
       "labels": [
@@ -16,34 +16,34 @@
         "Last refreshed"
       ],
       "values": [
-        "21",
-        "10",
+        "24",
+        "11",
         "2",
-        "7",
-        "2026-10-05 14:47:55"
+        "5",
+        "2026-10-05 15:17:42"
       ],
-      "html": "<div class=\"stat\"><strong>21</strong><span>Active</span></div><div class=\"stat\"><strong>10</strong><span>New</span></div><div class=\"stat\"><strong>2</strong><span>Price drops</span></div><div class=\"stat\"><strong>7</strong><span>To verify</span></div><div class=\"stat\"><strong>2026-10-05 14:47:55</strong><span>Last refreshed</span></div>"
+      "html": "<div class=\"stat\"><strong>24</strong><span>Active</span></div><div class=\"stat\"><strong>11</strong><span>New</span></div><div class=\"stat\"><strong>2</strong><span>Price drops</span></div><div class=\"stat\"><strong>5</strong><span>To verify</span></div><div class=\"stat\"><strong>2026-10-05 15:17:42</strong><span>Last refreshed</span></div>"
     },
     "map": {
-      "markers": 21,
+      "markers": 24,
       "desktopMapVisible": true
     },
     "filters": "ok",
     "localStorage": {
       "favorite": true,
       "notes": true,
-      "firstId": "fourth-mac-floorplan-2-bedroom-2-bath-801-4350"
+      "firstId": "arbutus-residences-floorplan-2-bedroom-townhouse-den-1340"
     },
-    "sourceLink": "https://www.craigslist.org/view/d/vancouver-bed-bath-fourth-mac-kitsilano/eiSLCKTVqsrtPUWpUpJyDN",
+    "sourceLink": "https://www.zumper.com/apartment-buildings/p1117150/arbutus-residences-quilchena-vancouver-bc",
     "photos": {
-      "total": 21,
-      "loaded": 21,
+      "total": 24,
+      "loaded": 24,
       "fallbacks": 0,
       "bad": []
     },
     "markerPositions": {
-      "total": 21,
-      "unique": 21
+      "total": 24,
+      "unique": 24
     },
     "dataEndpoints": "ok",
     "mobile": "ok",

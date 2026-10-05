@@ -2395,6 +2395,11 @@
       "date": "2026-09-25",
       "rent": 5495,
       "note": "AUTO-HIDDEN: MLS R3164604 exceeded 48 hours without fresh positive availability; partial search results are not removal evidence."
+    },
+    {
+      "date": "2026-10-05",
+      "rent": 5495,
+      "note": "CORRECTED: restored after exact current MLS detail matched identity, explicit availability and rent."
     }
   ],
   "mls-r3166264": [
@@ -2642,6 +2647,13 @@
       "date": "2026-10-04",
       "rent": 3500,
       "note": "NEW: live Zumper detail auto-published as independent inventory."
+    }
+  ],
+  "mls-r3172212": [
+    {
+      "date": "2026-10-05",
+      "rent": 6300,
+      "note": "NEW: live Realtylink MLS R3172212 auto-published."
     }
   ]
 }
