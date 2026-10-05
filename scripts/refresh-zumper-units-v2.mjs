@@ -4,6 +4,7 @@ import crypto from 'node:crypto';
 import { chromium } from 'playwright';
 import { listingScopeEligible } from './discovery-policy.mjs';
 import { hasCurrentMarketplaceAvailability } from './listing-availability.mjs';
+import { zumperPetFriendly } from './zumper-pet-policy.mjs';
 
 const DATA = path.join(process.cwd(), 'data');
 const EVIDENCE = path.join(DATA, 'evidence');
@@ -100,7 +101,7 @@ function extract(ld, text, url) {
   const add = x => { const u = typeof x === 'string' ? x : x?.contentUrl || x?.url; if (/^https?:/i.test(u || '') && !images.includes(u)) images.push(u); };
   all.forEach(x => Array.isArray(x.image) ? x.image.forEach(add) : add(x.image));
   const live = hasCurrentMarketplaceAvailability(text);
-  return {url,address,unit,rent,bedrooms,bathrooms,sqft,exactGeo,images:images.slice(0,16),live,description:desc.slice(0,6000),orientation:orient(desc),ac:/air conditioning|air conditioned|central a\/c|central ac/i.test(desc)?true:null,parking:/assigned parking|parking included|parking spot|one parking|1 parking/i.test(desc)?true:null,petFriendly:home?.petsAllowed===true||/pet friendly|pets allowed/i.test(desc)?true:null,balcony:/balcony|private patio|patio/i.test(desc)?true:null,largeWindows:/large windows|floor.to.ceiling windows|sun.drenched|naturally bright/i.test(desc)?true:null,modernInterior:/miele|fisher\s*&\s*paykel|caesarstone|quartz|renovated|waterfall island|modern/i.test(desc)?true:null};
+  return {url,address,unit,rent,bedrooms,bathrooms,sqft,exactGeo,images:images.slice(0,16),live,description:desc.slice(0,6000),orientation:orient(desc),ac:/air conditioning|air conditioned|central a\/c|central ac/i.test(desc)?true:null,parking:/assigned parking|parking included|parking spot|one parking|1 parking/i.test(desc)?true:null,petFriendly:zumperPetFriendly(home,desc),balcony:/balcony|private patio|patio/i.test(desc)?true:null,largeWindows:/large windows|floor.to.ceiling windows|sun.drenched|naturally bright/i.test(desc)?true:null,modernInterior:/miele|fisher\s*&\s*paykel|caesarstone|quartz|renovated|waterfall island|modern/i.test(desc)?true:null};
 }
 
 const lp = path.join(DATA,'listings.json'), hp = path.join(DATA,'history.json'), sp = path.join(DATA,'live-sources.json'), ip = path.join(DATA,'image-sources.json'), cp = path.join(DATA,'candidates.json');
@@ -174,6 +175,7 @@ for(const c of found){
     const old=x.rent;
     x.lastChecked=today; x.verifiedAt=iso; x.availabilityStatus='active'; x.verificationLevel='verified'; x.lat=c.exactGeo.lat; x.lng=c.exactGeo.lng;
     if (!x.unit && c.unit) x.unit=c.unit;
+    if (c.petFriendly !== null) x.petFriendly=c.petFriendly;
     if(old!==c.rent && (x.source==='Zumper live detail' || x.rent==null)) {x.rent=c.rent;x.status=c.rent<old?'price_drop':'unchanged';x.priceDrop=c.rent<old;(history[x.id]||=[]).push({date:today,rent:c.rent,note:`AUTO Zumper live price update $${old} → $${c.rent}.`});}
     x.verificationMethod = `${x.verificationMethod || ''} Cross-verified by live Zumper detail on ${today}.`.trim();
   }

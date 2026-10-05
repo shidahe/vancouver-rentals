@@ -16,6 +16,7 @@ import { craigslistAddressPrecision, craigslistDetailEvidence, craigslistPostId,
 import { classifyRentalsCaSearchLead, parseRentalsCaSearchLeads } from './rentalsca-search-parser.mjs';
 import { craigslistSeedRelistingMatch } from './craigslist-seed-relisting.mjs';
 import { craigslistCrossSourcePriceMatch } from './craigslist-cross-source-match.mjs';
+import { zumperPetFriendly } from './zumper-pet-policy.mjs';
 
 const read = p => fs.readFile(p, 'utf8');
 const activeAdapters = [
@@ -43,6 +44,12 @@ const qualityAuditSource = await read('scripts/audit-data-quality.mjs');
 const readinessFinalizerSource = await read('scripts/finalize-readiness.mjs');
 
 const failures = [];
+const valleyDrivePetPolicy = 'Lease Requirement:\n- No smoking, No pets\nOne sec, gathering the Nearby Pet Friendly';
+if (zumperPetFriendly({ petsAllowed: true }, valleyDrivePetPolicy) !== false ||
+    zumperPetFriendly({}, 'One sec, gathering the Nearby Pet Friendly') !== null ||
+    zumperPetFriendly({}, 'Pets allowed with restrictions') !== true) {
+  failures.push('Zumper unit pet policy can be overridden by structured or generic nearby-pet metadata.');
+}
 if(!qualityAuditSource.includes("decisionReady:false")||!qualityAuditSource.includes("readinessStatus:'pending_finalization'")||
    !readinessFinalizerSource.includes("readinessStatus='finalized'")) failures.push('A standalone quality audit can claim decision readiness before browser, freshness, and coverage checks are finalized.');
 if(refreshWorkflow.indexOf('id: readiness')<0||refreshWorkflow.indexOf('id: freshness')<refreshWorkflow.indexOf('id: readiness')) failures.push('The runtime freshness guard runs before the current quality report is finalized.');
