@@ -44,6 +44,12 @@ const qualityAuditSource = await read('scripts/audit-data-quality.mjs');
 const readinessFinalizerSource = await read('scripts/finalize-readiness.mjs');
 
 const failures = [];
+const realtylinkRefreshSource = await read('scripts/refresh-realtylink.mjs');
+if (!realtylinkRefreshSource.includes('townhouse~for-rent~vancouver-west') ||
+    !realtylinkRefreshSource.includes('house~for-rent~vancouver-west') ||
+    !listingScopeEligible({rent:6250,bedrooms:4,address:'1955 W 1st Avenue'}, 'Entire top-floor unfurnished character triplex in Kitsilano')) {
+  failures.push('R3142789 / 1955 W 1st regression: capped city-wide Realtylink search or 4BR scope can hide an eligible Westside rental.');
+}
 const valleyDrivePetPolicy = 'Lease Requirement:\n- No smoking, No pets\nOne sec, gathering the Nearby Pet Friendly';
 if (zumperPetFriendly({ petsAllowed: true }, valleyDrivePetPolicy) !== false ||
     zumperPetFriendly({}, 'One sec, gathering the Nearby Pet Friendly') !== null ||
