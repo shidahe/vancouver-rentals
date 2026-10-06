@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-10-06T00:15:08.191Z",
+  "refreshedAt": "2026-10-06T15:06:38.585Z",
   "listings": {
     "york-103-2535-r3137446": {
       "cached": 5,
@@ -50,13 +50,6 @@
       "failures": [],
       "photoPageUrl": "https://realtylink.org/en/townhouse~for-rent~vancouver/263182316"
     },
-    "arbutus-residences-floorplan-2-bedroom-townhouse-den-1340": {
-      "cached": 5,
-      "preserved": 5,
-      "downloaded": 0,
-      "failures": [],
-      "photoPageUrl": "https://www.zumper.com/apartment-buildings/p1117150/arbutus-residences-quilchena-vancouver-bc"
-    },
     "mls-r3161950": {
       "cached": 5,
       "preserved": 5,
@@ -64,12 +57,12 @@
       "failures": [],
       "photoPageUrl": "https://realtylink.org/en/house~for-rent~vancouver/263183577"
     },
-    "mls-r3159060": {
+    "mls-r3163709": {
       "cached": 5,
-      "preserved": 5,
-      "downloaded": 0,
+      "preserved": 0,
+      "downloaded": 5,
       "failures": [],
-      "photoPageUrl": "https://realtylink.org/en/house~for-rent~vancouver/263180687"
+      "photoPageUrl": "https://realtylink.org/en/house~for-rent~vancouver/263185336"
     },
     "fourth-mac-floorplan-2-bedroom-2-bath-801-4350": {
       "cached": 5,
@@ -92,13 +85,6 @@
       "failures": [],
       "photoPageUrl": "https://www.craigslist.org/view/d/vancouver-fully-furnished-designer-2br/dK4HrSygC6FiEijPJfe35N"
     },
-    "mls-r3167417": {
-      "cached": 5,
-      "preserved": 0,
-      "downloaded": 5,
-      "failures": [],
-      "photoPageUrl": "https://realtylink.org/en/house~for-rent~vancouver/263189044"
-    },
     "zumper-6f8b3ff2b9fd": {
       "cached": 5,
       "preserved": 5,
@@ -106,28 +92,19 @@
       "failures": [],
       "photoPageUrl": "https://www.zumper.com/address/4101-yew-st-vancouver-bc-v6l-3b7-can"
     },
+    "mls-r3162880": {
+      "cached": 5,
+      "preserved": 0,
+      "downloaded": 5,
+      "failures": [],
+      "photoPageUrl": "https://realtylink.org/en/apartment~for-rent~vancouver/263184507"
+    },
     "kits-walk-floorplan-2-bedroom-811-3675": {
       "cached": 5,
       "preserved": 5,
       "downloaded": 0,
       "failures": [],
       "photoPageUrl": "https://rentals.ca/vancouver/kits-walk-by-strand"
-    },
-    "mls-r3170701": {
-      "cached": 4,
-      "preserved": 4,
-      "downloaded": 0,
-      "failures": [
-        {
-          "url": "https://media.realtylink.org/images/consumersite/property/263192328/9745653bdd2d4849bea9d0c70aa8d0aa.jpeg?width=320&height=240&fit=cover",
-          "error": "not a usable image (image/jpeg, 7867 bytes)"
-        },
-        {
-          "url": "https://media.realtylink.org/images/consumersite/property/263192328/561cff5f09c647b0974a3ad3eaf6789c.jpeg?width=480&height=360&fit=cover",
-          "error": "HTTP 400"
-        }
-      ],
-      "photoPageUrl": "https://realtylink.org/en/house~for-rent~vancouver/263192328"
     },
     "zumper-f3c25cb7e83b": {
       "cached": 5,
@@ -142,16 +119,23 @@
       "downloaded": 0,
       "failures": [],
       "photoPageUrl": "https://realtylink.org/en/house~for-rent~vancouver/263193839"
+    },
+    "zumper-86435797c322": {
+      "cached": 5,
+      "preserved": 0,
+      "downloaded": 5,
+      "failures": [],
+      "photoPageUrl": "https://www.zumper.com/address/2688-vine-st-vancouver-bc-v6k-4t6-can"
     }
   },
   "totals": {
-    "sourceListings": 19,
-    "cachedListings": 19,
-    "downloaded": 5,
-    "failed": 2,
-    "preserved": 87,
-    "prunedListings": 6,
-    "prunedIndexImages": 27,
+    "sourceListings": 18,
+    "cachedListings": 18,
+    "downloaded": 15,
+    "failed": 0,
+    "preserved": 73,
+    "prunedListings": 4,
+    "prunedIndexImages": 19,
     "prunedOrphanFiles": 0
   }
 }

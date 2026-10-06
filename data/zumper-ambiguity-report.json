@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-06T03:03:10.718Z",
-  "checkedCount": 6,
+  "generatedAt": "2026-10-06T15:04:31.274Z",
+  "checkedCount": 5,
   "quarantinedCount": 0,
   "checked": [
     {
@@ -21,8 +21,8 @@
       "identityKey": "4101 yew st::url:7af73c32128d",
       "url": "https://www.zumper.com/address/4101-yew-st-vancouver-bc-v6l-3b7-can",
       "ambiguous": false,
-      "lowPrice": 4695,
-      "highPrice": 4695
+      "lowPrice": 4400,
+      "highPrice": 4400
     },
     {
       "identityKey": "2138 w 13th ave::url:5b518c4d35f2",
@@ -37,13 +37,6 @@
       "ambiguous": false,
       "lowPrice": 4500,
       "highPrice": 4500
-    },
-    {
-      "identityKey": "1592 nanton ave::url:b36b22c8f46d",
-      "url": "https://www.zumper.com/address/1592-nanton-ave-vancouver-bc-v6j-2x2-can",
-      "ambiguous": false,
-      "lowPrice": 8500,
-      "highPrice": 8500
     }
   ],
   "quarantined": []

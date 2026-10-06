@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-10-06T00:15:09.001Z",
-  "activeCount": 19,
+  "generatedAt": "2026-10-06T15:06:40.557Z",
+  "activeCount": 18,
   "decisionReady": true,
   "readinessStatus": "finalized",
   "highIssueCount": 0,
   "mediumIssueCount": 0,
-  "infoIssueCount": 34,
+  "infoIssueCount": 33,
   "issues": [
     {
       "severity": "info",
@@ -49,11 +49,6 @@
     },
     {
       "severity": "info",
-      "id": "arbutus-residences-floorplan-2-bedroom-townhouse-den-1340",
-      "issue": "unknown-orientation"
-    },
-    {
-      "severity": "info",
       "id": "zumper-1441677a9e59",
       "issue": "unknown-ac"
     },
@@ -94,12 +89,7 @@
     },
     {
       "severity": "info",
-      "id": "mls-r3159060",
-      "issue": "unknown-ac"
-    },
-    {
-      "severity": "info",
-      "id": "mls-r3159060",
+      "id": "mls-r3163709",
       "issue": "unknown-orientation"
     },
     {
@@ -124,11 +114,6 @@
     },
     {
       "severity": "info",
-      "id": "mls-r3167417",
-      "issue": "unknown-orientation"
-    },
-    {
-      "severity": "info",
       "id": "zumper-6f8b3ff2b9fd",
       "issue": "unknown-ac"
     },
@@ -139,22 +124,22 @@
     },
     {
       "severity": "info",
-      "id": "kits-walk-floorplan-2-bedroom-811-3675",
+      "id": "mls-r3162880",
       "issue": "unknown-ac"
     },
     {
       "severity": "info",
-      "id": "kits-walk-floorplan-2-bedroom-811-3675",
+      "id": "mls-r3162880",
       "issue": "unknown-orientation"
     },
     {
       "severity": "info",
-      "id": "mls-r3170701",
+      "id": "kits-walk-floorplan-2-bedroom-811-3675",
       "issue": "unknown-ac"
     },
     {
       "severity": "info",
-      "id": "mls-r3170701",
+      "id": "kits-walk-floorplan-2-bedroom-811-3675",
       "issue": "unknown-orientation"
     },
     {
@@ -175,22 +160,32 @@
     {
       "severity": "info",
       "id": "mls-r3172212",
+      "issue": "unknown-orientation"
+    },
+    {
+      "severity": "info",
+      "id": "zumper-86435797c322",
+      "issue": "unknown-ac"
+    },
+    {
+      "severity": "info",
+      "id": "zumper-86435797c322",
       "issue": "unknown-orientation"
     }
   ],
   "readinessChecks": {
     "smokeOk": true,
     "smokeFresh": true,
-    "smokeCheckedAt": "2026-10-06T00:15:14.567Z",
-    "latestDataAt": "2026-10-06T00:14:22.696Z",
+    "smokeCheckedAt": "2026-10-06T15:06:45.349Z",
+    "latestDataAt": "2026-10-06T15:05:50.694Z",
     "coverageReady": true,
     "healthyDiscoveryLanes": 3,
     "coverageWarnings": [
       {
         "severity": "warning",
         "lane": "rentalsca",
-        "status": "degraded",
-        "detail": "1/9 regional searches reachable; 0 qualifying candidates parsed; 1 scoped search-only leads retained (1 new, 0 already active, 0 need revalidation); 3 detail pages blocked after 4 discovered URLs; 1 further detail checks suppressed after repeated 403/429"
+        "status": "unhealthy",
+        "detail": "0/9 regional searches reachable; 0 qualifying candidates parsed"
       },
       {
         "severity": "warning",
@@ -201,5 +196,5 @@
     ]
   },
   "readinessIssues": [],
-  "finalizedAt": "2026-10-06T00:15:14.677Z"
+  "finalizedAt": "2026-10-06T15:06:45.435Z"
 }

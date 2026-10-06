@@ -61,11 +61,6 @@
       "date": "2026-08-20",
       "rent": 3795,
       "note": "OFFICIAL STATUS: Arbutus Terrace marked fully leased; removed from active inventory. Strand official Facebook post states Arbutus Terrace is now fully leased."
-    },
-    {
-      "date": "2026-10-06",
-      "rent": 3795,
-      "note": "REMOVED: Strand official Facebook post states Arbutus Terrace is now fully leased."
     }
   ],
   "treo-2688-vine-r3142696": [
@@ -627,6 +622,11 @@
     },
     {
       "date": "2026-10-03",
+      "rent": 5390,
+      "note": "NEEDS CONFIRMATION: latest purpose-built fallback sources did not confirm the exact configured rent + sqft inventory row."
+    },
+    {
+      "date": "2026-10-06",
       "rent": 5390,
       "note": "NEEDS CONFIRMATION: latest purpose-built fallback sources did not confirm the exact configured rent + sqft inventory row."
     }
@@ -1666,6 +1666,11 @@
       "date": "2026-10-05",
       "rent": 4800,
       "note": "CORRECTED: restored after exact current MLS detail matched identity, explicit availability and rent."
+    },
+    {
+      "date": "2026-10-06",
+      "rent": 4800,
+      "note": "AUTO-REMOVED: MLS R3151372 absent from two consecutive healthy inventory snapshots."
     }
   ],
   "mls-r3158179": [
@@ -1733,6 +1738,11 @@
       "date": "2026-09-19",
       "rent": 5995,
       "note": "CORRECTED: restored after exact current MLS detail matched identity, explicit availability and rent."
+    },
+    {
+      "date": "2026-10-06",
+      "rent": 5995,
+      "note": "AUTO-REMOVED after direct live verification found explicit unavailable evidence."
     }
   ],
   "mls-r2907080": [
@@ -1873,6 +1883,11 @@
       "date": "2026-10-01",
       "rent": 3500,
       "note": "AUTO-HIDDEN: MLS R3160879 exceeded 48 hours without fresh positive availability; partial search results are not removal evidence."
+    },
+    {
+      "date": "2026-10-06",
+      "rent": 3500,
+      "note": "AUTO-REMOVED: MLS R3160879 absent from two consecutive healthy inventory snapshots."
     }
   ],
   "mls-r3161908": [
@@ -1977,6 +1992,11 @@
       "date": "2026-10-04",
       "rent": 8800,
       "note": "CORRECTED: restored after exact current MLS detail matched identity, explicit availability and rent."
+    },
+    {
+      "date": "2026-10-06",
+      "rent": 8800,
+      "note": "AUTO-REMOVED: MLS R3161880 absent from two consecutive healthy inventory snapshots."
     }
   ],
   "mls-r3161950": [
@@ -2290,6 +2310,11 @@
       "date": "2026-09-22",
       "rent": 6000,
       "note": "CORRECTED: restored after exact current MLS detail matched identity, explicit availability and rent."
+    },
+    {
+      "date": "2026-10-06",
+      "rent": 6000,
+      "note": "CORRECTED: restored after exact current MLS detail matched identity, explicit availability and rent."
     }
   ],
   "mls-r3164628": [
@@ -2405,6 +2430,11 @@
       "date": "2026-10-05",
       "rent": 5495,
       "note": "CORRECTED: restored after exact current MLS detail matched identity, explicit availability and rent."
+    },
+    {
+      "date": "2026-10-06",
+      "rent": 5495,
+      "note": "AUTO-REMOVED: MLS R3164604 absent from two consecutive healthy inventory snapshots."
     }
   ],
   "mls-r3166264": [
@@ -2575,6 +2605,11 @@
       "date": "2026-09-22",
       "rent": 4695,
       "note": "NEW: live Zumper detail auto-published as independent inventory."
+    },
+    {
+      "date": "2026-10-06",
+      "rent": 4400,
+      "note": "AUTO Zumper live price update $4695 → $4400."
     }
   ],
   "mls-r3167237": [
@@ -2587,6 +2622,11 @@
       "date": "2026-09-27",
       "rent": 13000,
       "note": "AUTO-HIDDEN: MLS R3167237 exceeded 48 hours without fresh positive availability; partial search results are not removal evidence."
+    },
+    {
+      "date": "2026-10-06",
+      "rent": 13000,
+      "note": "AUTO-REMOVED: MLS R3167237 absent from two consecutive healthy inventory snapshots."
     }
   ],
   "mls-r3165327": [
@@ -2614,6 +2654,11 @@
       "date": "2026-10-05",
       "rent": 4350,
       "note": "CORRECTED: restored after exact current MLS detail matched identity, explicit availability and rent."
+    },
+    {
+      "date": "2026-10-06",
+      "rent": 4350,
+      "note": "AUTO-REMOVED: MLS R3165327 absent from two consecutive healthy inventory snapshots."
     }
   ],
   "mls-r3162880": [
@@ -2639,6 +2684,11 @@
     },
     {
       "date": "2026-10-04",
+      "rent": 4650,
+      "note": "CORRECTED: restored after exact current MLS detail matched identity, explicit availability and rent."
+    },
+    {
+      "date": "2026-10-06",
       "rent": 4650,
       "note": "CORRECTED: restored after exact current MLS detail matched identity, explicit availability and rent."
     }
@@ -2669,6 +2719,13 @@
       "date": "2026-10-05",
       "rent": 6300,
       "note": "NEW: live Realtylink MLS R3172212 auto-published."
+    }
+  ],
+  "zumper-86435797c322": [
+    {
+      "date": "2026-10-06",
+      "rent": 5950,
+      "note": "NEW: live Zumper detail auto-published as independent inventory."
     }
   ]
 }

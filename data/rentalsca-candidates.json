@@ -1,205 +1,80 @@
 {
-  "refreshedAt": "2026-10-06T03:03:11.212Z",
+  "refreshedAt": "2026-10-06T15:04:31.601Z",
   "mode": "candidate-only",
   "sourceHealth": {
     "rentalsca-kitsilano-2br": {
-      "checkedAt": "2026-10-06T03:03:11.212Z",
+      "checkedAt": "2026-10-06T15:04:31.601Z",
       "status": 403,
       "ok": false,
-      "finalUrl": "https://rentals.ca/vancouver/kitsilano/all-apartments-all-houses/2-bedrooms?__cf_chl_rt_tk=098ePGZjmWBDInm0qdTx8hxP1iGgvOMNTqtZDwe4.Pk-1791255791-1.0.1.1-TE6.AavcmuoIOFuwIs5FGDaUJ.MMWJTLX_zNsyisIps"
+      "finalUrl": "https://rentals.ca/vancouver/kitsilano/all-apartments-all-houses/2-bedrooms?__cf_chl_rt_tk=RTC0PNhr8lQ0KhvwNYm5sAZvfH5M864uxFCQMiQrexs-1791299071-1.0.1.1-_79j4qiv83XL7xze8Xz._W8m6hVhiN6N5GdccblOrYA"
     },
     "rentalsca-point-grey-2br": {
-      "checkedAt": "2026-10-06T03:03:11.212Z",
+      "checkedAt": "2026-10-06T15:04:31.601Z",
       "status": 403,
       "ok": false,
-      "finalUrl": "https://rentals.ca/vancouver/west-point-grey/2-bedrooms?__cf_chl_rt_tk=3T4aNEqQLld6vfFuz4htlt9Tt3jqVNxwm4xMXD56Sng-1791255791-1.0.1.1-gjFLfS8_47cu8CI9ebkJn8aEszK6WdK83rPu3W2GKBw"
+      "finalUrl": "https://rentals.ca/vancouver/west-point-grey/2-bedrooms?__cf_chl_rt_tk=DrkzelxgzKQc3C4Lx66H8RcI7EpqHypPDVjQYfVz9gE-1791299071-1.0.1.1-6wURUMlQ34eY7d2vojv5wxoqOCNmIP2hH50Z3tbSECA"
     },
     "rentalsca-arbutus-2br": {
-      "checkedAt": "2026-10-06T03:03:11.212Z",
-      "status": 200,
-      "ok": true,
-      "finalUrl": "https://rentals.ca/vancouver/arbutus-ridge/2-bedrooms",
-      "detailLinkCount": 4,
-      "title": "Arbutus Ridge Vancouver 2 Bedroom Apartments Condos and Houses for Rent",
-      "observedListingCount": 8,
-      "challengeDetected": false,
-      "searchLeadCount": 3,
-      "addressLineCount": 3,
-      "detailUrlCount": 7
+      "checkedAt": "2026-10-06T15:04:31.601Z",
+      "status": 403,
+      "ok": false,
+      "finalUrl": "https://rentals.ca/vancouver/arbutus-ridge/2-bedrooms?__cf_chl_rt_tk=3Ewr9zsyLT_2st1D0MMPt.PptALeBLx9sFm0Y.MeDm8-1791299071-1.0.1.1-zeuWeoGaFw0axTZF9oWipFT5Lp5qgN_D2e454Hg563A"
     },
     "rentalsca-dunbar-2br": {
-      "checkedAt": "2026-10-06T03:03:11.212Z",
+      "checkedAt": "2026-10-06T15:04:31.601Z",
       "status": 403,
       "ok": false,
-      "finalUrl": "https://rentals.ca/vancouver/dunbar-southlands/2-bedrooms?__cf_chl_rt_tk=RKmSl9LwuTHZcRhD723_ljx09Y.mMFHBugGd59mJA5A-1791255794-1.0.1.1-Vgj9LfopDvyVAG2GNExkG6iZnIGhMTb.irEn4fFSVTs"
+      "finalUrl": "https://rentals.ca/vancouver/dunbar-southlands/2-bedrooms?__cf_chl_rt_tk=0E.j2z3cYbfuFKpF9zmbQCJEQxz0S96Z7RKyJFnMvZg-1791299071-1.0.1.1-1JDwIQ73lNAPMpVnyKWeZLYC7j4qEZhJTDZ2ceO5fW4"
     },
     "rentalsca-quilchena-2br": {
-      "checkedAt": "2026-10-06T03:03:11.212Z",
+      "checkedAt": "2026-10-06T15:04:31.601Z",
       "status": 403,
       "ok": false,
-      "finalUrl": "https://rentals.ca/vancouver/quilchena/2-bedrooms?__cf_chl_rt_tk=BUZVLHh0IOzcThLx235QnH3LA3E9t4b6DSx0uXSFhLQ-1791255794-1.0.1.1-VsHF3CJQxLZbnpC8c9t3AY2KzGaGIqV0NcnDpSiT98g"
+      "finalUrl": "https://rentals.ca/vancouver/quilchena/2-bedrooms?__cf_chl_rt_tk=BliUHp.BUVTswdD1UesmLK5c8dcsx1ou6UFx_6sXqJo-1791299072-1.0.1.1-rbVIMVzF6.YJZVsiFMufDY0CR4PPDY.crmyTjTF3CyU"
     },
     "rentalsca-kitsilano-3br": {
-      "checkedAt": "2026-10-06T03:03:11.212Z",
+      "checkedAt": "2026-10-06T15:04:31.601Z",
       "status": 403,
       "ok": false,
-      "finalUrl": "https://rentals.ca/vancouver/kitsilano/3-bedrooms?__cf_chl_rt_tk=48Cb0XREEOtdVEEQPWzxSXjLISDSg29L6hXEsEQEoGU-1791255795-1.0.1.1-JsAAzbBn9FpgCLCz67RG8MRmDjIfw_H6Yw95Er_jLtw"
+      "finalUrl": "https://rentals.ca/vancouver/kitsilano/3-bedrooms?__cf_chl_rt_tk=K67KEAXA3AIXsvP2WcOG53S.FfsWLm72cd.uLlrxwYk-1791299072-1.0.1.1-Jzf3swH.mmm9p1q01oQMxcDn.haoHNt1LbGhWLmSjTs"
     },
     "rentalsca-kitsilano-4br": {
-      "checkedAt": "2026-10-06T03:03:11.212Z",
+      "checkedAt": "2026-10-06T15:04:31.601Z",
       "status": 403,
       "ok": false,
-      "finalUrl": "https://rentals.ca/vancouver/kitsilano/4-bedrooms?__cf_chl_rt_tk=QLXh3KiiSUDpXDkuB.VHO5KiZbjODbJFYiYQ1XV6i2o-1791255795-1.0.1.1-SDzFid2agGSdLZkPyMxveorYlW6JF9ndGUDykFY98tc"
+      "finalUrl": "https://rentals.ca/vancouver/kitsilano/4-bedrooms?__cf_chl_rt_tk=C6c8ULQCSSiCTZwCda_MbMMnBFfkl7ECLV8BXsu.fBY-1791299072-1.0.1.1-TnkODRVlqj9LHH_A4oG7tFq1Wi4V5fzqcQ_U70gOasg"
     },
     "rentalsca-vancouver-3br": {
-      "checkedAt": "2026-10-06T03:03:11.212Z",
+      "checkedAt": "2026-10-06T15:04:31.601Z",
       "status": 403,
       "ok": false,
-      "finalUrl": "https://rentals.ca/vancouver/3-bedrooms?__cf_chl_rt_tk=wx3EIRlubTPbpMZNqmX21jhObC1xUhlP2dHrUkE3qrs-1791255795-1.0.1.1-.CZktyatUPG3.1aMU6X86tSnnXbnaZktmZQmRQL4w00"
+      "finalUrl": "https://rentals.ca/vancouver/3-bedrooms?__cf_chl_rt_tk=_uUFjD_azsLNUC8ruXs7Vjg2Pzm_RCoCxCSRBMCCHY8-1791299072-1.0.1.1-98bOaf9hWUA_6i_HM6TxjXIrx4PC8W4dasuh6smqE7w"
     },
     "rentalsca-vancouver-4br": {
-      "checkedAt": "2026-10-06T03:03:11.212Z",
-      "status": 200,
-      "ok": true,
-      "finalUrl": "https://rentals.ca/vancouver/4-bedrooms",
-      "detailLinkCount": 34,
-      "title": "Vancouver 4 Bedroom Apartments Condos and Houses for Rent",
-      "observedListingCount": 303,
-      "challengeDetected": false,
-      "searchLeadCount": 5,
-      "addressLineCount": 11,
-      "detailUrlCount": 43
+      "checkedAt": "2026-10-06T15:04:31.601Z",
+      "status": 403,
+      "ok": false,
+      "finalUrl": "https://rentals.ca/vancouver/4-bedrooms?__cf_chl_rt_tk=jUlOSQPH8GlNPSxyBiIMXZivGakSAOlakpEb3_4YASA-1791299072-1.0.1.1-emFAsNx56vHXkIsskUOpXe5CIW6xzqtpVRRZkAUqG7A"
     }
   },
   "diagnostics": {
-    "searchResultCount": 311,
-    "searchAddressLines": 14,
-    "searchDetailLinks": 38,
-    "searchLeadCount": 5,
-    "newSearchLeadCount": 5,
+    "searchResultCount": 0,
+    "searchAddressLines": 0,
+    "searchDetailLinks": 0,
+    "searchLeadCount": 0,
+    "newSearchLeadCount": 0,
     "representedSearchLeadCount": 0,
     "revalidationSearchLeadCount": 0,
-    "detailUrls": 50,
-    "detailChecked": 3,
-    "detailBlocked": 3,
+    "detailUrls": 0,
+    "detailChecked": 0,
+    "detailBlocked": 0,
     "detailNotFound": 0,
     "detailErrors": 0,
     "detailParsed": 0,
-    "detailSuppressed": 47,
-    "detailCircuitOpen": true
+    "detailSuppressed": 0,
+    "detailCircuitOpen": false
   },
-  "searchLeads": [
-    {
-      "identityKey": "6173 nelson avenue, vancouver, bc::15000::15000::4::4",
-      "address": "6173 Nelson Avenue, Vancouver, BC",
-      "rentMin": 15000,
-      "rentMax": 15000,
-      "bedroomMin": 4,
-      "bedroomMax": 4,
-      "bathrooms": 4,
-      "source": "Rentals.ca search",
-      "searchUrl": "https://rentals.ca/vancouver/4-bedrooms",
-      "checkedAt": "2026-10-06T03:03:11.212Z",
-      "publishable": false,
-      "evidenceKind": "search_result_lead_only",
-      "availabilityVerified": false,
-      "url": "https://rentals.ca/vancouver/6173-nelson-avenue",
-      "leadStatus": "new_unverified_address",
-      "addressMatchOnly": false,
-      "matchingListingCount": 0,
-      "matchedListingIds": [],
-      "matchedListingId": null,
-      "matchedAvailabilityStatus": null
-    },
-    {
-      "identityKey": "4460 ross crescent, vancouver, bc::20000::20000::4::4",
-      "address": "4460 Ross Crescent, Vancouver, BC",
-      "rentMin": 20000,
-      "rentMax": 20000,
-      "bedroomMin": 4,
-      "bedroomMax": 4,
-      "bathrooms": null,
-      "source": "Rentals.ca search",
-      "searchUrl": "https://rentals.ca/vancouver/4-bedrooms",
-      "checkedAt": "2026-10-06T03:03:11.212Z",
-      "publishable": false,
-      "evidenceKind": "search_result_lead_only",
-      "availabilityVerified": false,
-      "url": "https://rentals.ca/vancouver/4460-ross-crescent",
-      "leadStatus": "new_unverified_address",
-      "addressMatchOnly": false,
-      "matchingListingCount": 0,
-      "matchedListingIds": [],
-      "matchedListingId": null,
-      "matchedAvailabilityStatus": null
-    },
-    {
-      "identityKey": "135 west 12th avenue, vancouver, bc::3900::3900::4::4",
-      "address": "135 West 12th Avenue, Vancouver, BC",
-      "rentMin": 3900,
-      "rentMax": 3900,
-      "bedroomMin": 4,
-      "bedroomMax": 4,
-      "bathrooms": 2,
-      "source": "Rentals.ca search",
-      "searchUrl": "https://rentals.ca/vancouver/4-bedrooms",
-      "checkedAt": "2026-10-06T03:03:11.212Z",
-      "publishable": false,
-      "evidenceKind": "search_result_lead_only",
-      "availabilityVerified": false,
-      "url": "https://rentals.ca/vancouver/135-west-12th-avenue",
-      "leadStatus": "new_unverified_address",
-      "addressMatchOnly": false,
-      "matchingListingCount": 0,
-      "matchedListingIds": [],
-      "matchedListingId": null,
-      "matchedAvailabilityStatus": null
-    },
-    {
-      "identityKey": "845 braeside street, vancouver, bc::12000::12000::4::4",
-      "address": "845 Braeside Street, Vancouver, BC",
-      "rentMin": 12000,
-      "rentMax": 12000,
-      "bedroomMin": 4,
-      "bedroomMax": 4,
-      "bathrooms": 4,
-      "source": "Rentals.ca search",
-      "searchUrl": "https://rentals.ca/vancouver/4-bedrooms",
-      "checkedAt": "2026-10-06T03:03:11.212Z",
-      "publishable": false,
-      "evidenceKind": "search_result_lead_only",
-      "availabilityVerified": false,
-      "url": "https://rentals.ca/vancouver/845-braeside-street",
-      "leadStatus": "new_unverified_address",
-      "addressMatchOnly": false,
-      "matchingListingCount": 0,
-      "matchedListingIds": [],
-      "matchedListingId": null,
-      "matchedAvailabilityStatus": null
-    },
-    {
-      "identityKey": "8885 lawrence way, vancouver, bc::25000::25000::4::4",
-      "address": "8885 Lawrence Way, Vancouver, BC",
-      "rentMin": 25000,
-      "rentMax": 25000,
-      "bedroomMin": 4,
-      "bedroomMax": 4,
-      "bathrooms": 5,
-      "source": "Rentals.ca search",
-      "searchUrl": "https://rentals.ca/vancouver/4-bedrooms",
-      "checkedAt": "2026-10-06T03:03:11.212Z",
-      "publishable": false,
-      "evidenceKind": "search_result_lead_only",
-      "availabilityVerified": false,
-      "url": "https://rentals.ca/vancouver/8885-lawrence-way",
-      "leadStatus": "new_unverified_address",
-      "addressMatchOnly": false,
-      "matchingListingCount": 0,
-      "matchedListingIds": [],
-      "matchedListingId": null,
-      "matchedAvailabilityStatus": null
-    }
-  ],
+  "searchLeads": [],
   "pages": [],
   "inventories": []
 }
