@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-10-06T15:06:40.557Z",
+  "generatedAt": "2026-10-06T18:33:47.778Z",
   "activeCount": 18,
   "decisionReady": true,
   "readinessStatus": "finalized",
   "highIssueCount": 0,
   "mediumIssueCount": 0,
-  "infoIssueCount": 33,
+  "infoIssueCount": 31,
   "issues": [
     {
       "severity": "info",
@@ -79,17 +79,7 @@
     },
     {
       "severity": "info",
-      "id": "mls-r3161950",
-      "issue": "unknown-ac"
-    },
-    {
-      "severity": "info",
-      "id": "mls-r3161950",
-      "issue": "unknown-orientation"
-    },
-    {
-      "severity": "info",
-      "id": "mls-r3163709",
+      "id": "mls-r3161880",
       "issue": "unknown-orientation"
     },
     {
@@ -114,6 +104,11 @@
     },
     {
       "severity": "info",
+      "id": "mls-r3167417",
+      "issue": "unknown-orientation"
+    },
+    {
+      "severity": "info",
       "id": "zumper-6f8b3ff2b9fd",
       "issue": "unknown-ac"
     },
@@ -124,12 +119,7 @@
     },
     {
       "severity": "info",
-      "id": "mls-r3162880",
-      "issue": "unknown-ac"
-    },
-    {
-      "severity": "info",
-      "id": "mls-r3162880",
+      "id": "mls-r3167237",
       "issue": "unknown-orientation"
     },
     {
@@ -176,16 +166,16 @@
   "readinessChecks": {
     "smokeOk": true,
     "smokeFresh": true,
-    "smokeCheckedAt": "2026-10-06T15:06:45.349Z",
-    "latestDataAt": "2026-10-06T15:05:50.694Z",
+    "smokeCheckedAt": "2026-10-06T18:33:52.990Z",
+    "latestDataAt": "2026-10-06T18:33:01.254Z",
     "coverageReady": true,
     "healthyDiscoveryLanes": 3,
     "coverageWarnings": [
       {
         "severity": "warning",
         "lane": "rentalsca",
-        "status": "unhealthy",
-        "detail": "0/9 regional searches reachable; 0 qualifying candidates parsed"
+        "status": "degraded",
+        "detail": "1/9 regional searches reachable; 0 qualifying candidates parsed; 1 scoped search-only leads retained (1 new, 0 already active, 0 need revalidation); 3 detail pages blocked after 4 discovered URLs; 1 further detail checks suppressed after repeated 403/429"
       },
       {
         "severity": "warning",
@@ -196,5 +186,5 @@
     ]
   },
   "readinessIssues": [],
-  "finalizedAt": "2026-10-06T15:06:45.435Z"
+  "finalizedAt": "2026-10-06T18:33:53.077Z"
 }
