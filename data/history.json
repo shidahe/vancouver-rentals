@@ -2628,6 +2628,11 @@
       "date": "2026-10-06",
       "rent": 6750,
       "note": "CORRECTED: restored after exact current MLS detail matched identity, explicit availability and rent."
+    },
+    {
+      "date": "2026-10-07",
+      "rent": 6750,
+      "note": "CORRECTED: restored after exact current MLS detail matched identity, explicit availability and rent."
     }
   ],
   "zumper-6f8b3ff2b9fd": [
@@ -2662,6 +2667,11 @@
       "date": "2026-10-06",
       "rent": 13000,
       "note": "CORRECTED: restored after exact current MLS detail matched identity, explicit availability and rent."
+    },
+    {
+      "date": "2026-10-07",
+      "rent": 13000,
+      "note": "AUTO-REMOVED: MLS R3167237 absent from two consecutive healthy inventory snapshots."
     }
   ],
   "mls-r3165327": [
@@ -2757,6 +2767,11 @@
       "date": "2026-10-04",
       "rent": 3500,
       "note": "NEW: live Zumper detail auto-published as independent inventory."
+    },
+    {
+      "date": "2026-10-07",
+      "rent": 3500,
+      "note": "AUTO-HIDDEN: exact marketplace page now offers an availability alert instead of a currently available rental; confirmation required before removal."
     }
   ],
   "mls-r3172212": [
@@ -2778,6 +2793,13 @@
       "date": "2026-10-07",
       "rent": 5695,
       "note": "NEW: live Zumper detail auto-published as independent inventory."
+    }
+  ],
+  "mls-r3169522": [
+    {
+      "date": "2026-10-07",
+      "rent": 4500,
+      "note": "NEW: live Realtylink MLS R3169522 auto-published."
     }
   ]
 }
