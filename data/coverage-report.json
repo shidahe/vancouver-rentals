@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-06T18:33:47.816Z",
+  "generatedAt": "2026-10-07T06:14:13.462Z",
   "coverageReady": true,
   "healthyLaneCount": 3,
   "freshLaneCount": 8,
@@ -9,21 +9,21 @@
     {
       "building": "kits-walk",
       "healthy": true,
-      "checkedAt": "2026-10-06T18:25:33.236Z",
+      "checkedAt": "2026-10-07T06:05:25.454Z",
       "evidenceUrl": "https://www.zumper.com/apartment-buildings/p481389/kits-walk-by-strand-kitsilano-vancouver-bc",
       "sourceOptions": 2
     },
     {
       "building": "larchway-gardens",
       "healthy": true,
-      "checkedAt": "2026-10-06T18:25:33.236Z",
+      "checkedAt": "2026-10-07T06:05:25.454Z",
       "evidenceUrl": "https://quadrealresidential.com/vancouver/larchway-gardens/floorplans/",
       "sourceOptions": 1
     },
     {
       "building": "viridian",
       "healthy": true,
-      "checkedAt": "2026-10-06T18:25:33.236Z",
+      "checkedAt": "2026-10-07T06:05:25.454Z",
       "evidenceUrl": "https://www.zumper.com/apartment-buildings/p510456/viridian-fairview-vancouver-bc",
       "sourceOptions": 2
     }
@@ -36,23 +36,23 @@
       "healthy": true,
       "status": "healthy",
       "detail": "11 fresh live candidates",
-      "refreshedAt": "2026-10-06T18:29:10.298Z"
+      "refreshedAt": "2026-10-07T06:09:11.365Z"
     },
     {
       "id": "craigslist",
       "kind": "independent-classifieds",
       "healthy": true,
       "status": "healthy",
-      "detail": "4/4 regional searches reachable; 23 qualifying candidates parsed",
-      "refreshedAt": "2026-10-06T18:31:39.638Z"
+      "detail": "4/4 regional searches reachable; 24 qualifying candidates parsed",
+      "refreshedAt": "2026-10-07T06:11:53.930Z"
     },
     {
       "id": "rentalsca",
       "kind": "broad-marketplace",
       "healthy": false,
       "status": "degraded",
-      "detail": "1/9 regional searches reachable; 0 qualifying candidates parsed; 1 scoped search-only leads retained (1 new, 0 already active, 0 need revalidation); 3 detail pages blocked after 4 discovered URLs; 1 further detail checks suppressed after repeated 403/429",
-      "refreshedAt": "2026-10-06T18:31:34.457Z"
+      "detail": "3/9 regional searches reachable; 0 qualifying candidates parsed; 1 scoped search-only leads retained (1 new, 0 already active, 0 need revalidation); 3 detail pages blocked after 16 discovered URLs; 13 further detail checks suppressed after repeated 403/429",
+      "refreshedAt": "2026-10-07T06:11:41.661Z"
     },
     {
       "id": "livrent",
@@ -60,7 +60,7 @@
       "healthy": false,
       "status": "unhealthy",
       "detail": "0/5 searches healthy; 3 blocked searches opened circuit; 2 further checks suppressed",
-      "refreshedAt": "2026-10-06T18:31:38.830Z"
+      "refreshedAt": "2026-10-07T06:11:53.032Z"
     },
     {
       "id": "realtylink",
@@ -69,8 +69,8 @@
       "positiveDiscoveryHealthy": true,
       "status": "healthy",
       "partial": false,
-      "detail": "3/3 searches reachable; 6 live candidates parsed",
-      "refreshedAt": "2026-10-06T18:31:58.112Z"
+      "detail": "3/3 searches reachable; 7 live candidates parsed",
+      "refreshedAt": "2026-10-07T06:12:13.344Z"
     },
     {
       "id": "priority-kits-walk",
@@ -78,7 +78,7 @@
       "healthy": true,
       "status": "healthy",
       "detail": "1/2 official sources usable",
-      "refreshedAt": "2026-10-06T18:33:01.254Z"
+      "refreshedAt": "2026-10-07T06:13:20.027Z"
     },
     {
       "id": "priority-larchway-gardens",
@@ -86,7 +86,7 @@
       "healthy": true,
       "status": "healthy",
       "detail": "2/2 official sources usable",
-      "refreshedAt": "2026-10-06T18:33:01.254Z"
+      "refreshedAt": "2026-10-07T06:13:20.027Z"
     },
     {
       "id": "priority-viridian",
@@ -94,7 +94,7 @@
       "healthy": true,
       "status": "healthy",
       "detail": "1/2 official sources usable",
-      "refreshedAt": "2026-10-06T18:33:01.254Z"
+      "refreshedAt": "2026-10-07T06:13:20.027Z"
     }
   ],
   "warnings": [
@@ -102,7 +102,7 @@
       "severity": "warning",
       "lane": "rentalsca",
       "status": "degraded",
-      "detail": "1/9 regional searches reachable; 0 qualifying candidates parsed; 1 scoped search-only leads retained (1 new, 0 already active, 0 need revalidation); 3 detail pages blocked after 4 discovered URLs; 1 further detail checks suppressed after repeated 403/429"
+      "detail": "3/9 regional searches reachable; 0 qualifying candidates parsed; 1 scoped search-only leads retained (1 new, 0 already active, 0 need revalidation); 3 detail pages blocked after 16 discovered URLs; 13 further detail checks suppressed after repeated 403/429"
     },
     {
       "severity": "warning",

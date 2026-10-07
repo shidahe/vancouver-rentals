@@ -1671,6 +1671,11 @@
       "date": "2026-10-06",
       "rent": 4800,
       "note": "AUTO-REMOVED: MLS R3151372 absent from two consecutive healthy inventory snapshots."
+    },
+    {
+      "date": "2026-10-07",
+      "rent": 4800,
+      "note": "CORRECTED: restored after exact current MLS detail matched identity, explicit availability and rent."
     }
   ],
   "mls-r3158179": [
@@ -2099,6 +2104,11 @@
       "date": "2026-10-05",
       "rent": 4000,
       "note": "CORRECTED: restored after exact current MLS detail matched identity, explicit availability and rent."
+    },
+    {
+      "date": "2026-10-07",
+      "rent": 4000,
+      "note": "CORRECTED: restored after exact current MLS detail matched identity, explicit availability and rent."
     }
   ],
   "mls-r3159060": [
@@ -2186,6 +2196,11 @@
       "date": "2026-10-03",
       "rent": 15000,
       "note": "CORRECTED: restored after exact current MLS detail matched identity, explicit availability and rent."
+    },
+    {
+      "date": "2026-10-07",
+      "rent": 15000,
+      "note": "AUTO-REMOVED: MLS R3159060 absent from two consecutive healthy inventory snapshots."
     }
   ],
   "mls-r3149267": [
@@ -2318,6 +2333,11 @@
     },
     {
       "date": "2026-10-06",
+      "rent": 6000,
+      "note": "CORRECTED: restored after exact current MLS detail matched identity, explicit availability and rent."
+    },
+    {
+      "date": "2026-10-07",
       "rent": 6000,
       "note": "CORRECTED: restored after exact current MLS detail matched identity, explicit availability and rent."
     }
@@ -2554,6 +2574,11 @@
       "date": "2026-10-06",
       "rent": 4975,
       "note": "AUTO live price update from 5475 to 4975."
+    },
+    {
+      "date": "2026-10-07",
+      "rent": 4975,
+      "note": "AUTO live price update from 5475 to 4975."
     }
   ],
   "mls-r3149612": [
@@ -2701,6 +2726,11 @@
       "date": "2026-10-06",
       "rent": 4650,
       "note": "CORRECTED: restored after exact current MLS detail matched identity, explicit availability and rent."
+    },
+    {
+      "date": "2026-10-07",
+      "rent": 4650,
+      "note": "AUTO-REMOVED: MLS R3162880 absent from two consecutive healthy inventory snapshots."
     }
   ],
   "kits-walk-floorplan-2-bedroom-811-3675": [
@@ -2715,6 +2745,11 @@
       "date": "2026-09-30",
       "rent": 7000,
       "note": "NEW: live Realtylink MLS R3170701 auto-published."
+    },
+    {
+      "date": "2026-10-07",
+      "rent": 7000,
+      "note": "AUTO-REMOVED: MLS R3170701 absent from two consecutive healthy inventory snapshots."
     }
   ],
   "zumper-f3c25cb7e83b": [
@@ -2735,6 +2770,13 @@
     {
       "date": "2026-10-06",
       "rent": 5950,
+      "note": "NEW: live Zumper detail auto-published as independent inventory."
+    }
+  ],
+  "zumper-8a4ac6a75244": [
+    {
+      "date": "2026-10-07",
+      "rent": 5695,
       "note": "NEW: live Zumper detail auto-published as independent inventory."
     }
   ]

@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-10-06T18:33:47.778Z",
-  "activeCount": 18,
+  "generatedAt": "2026-10-07T06:14:13.421Z",
+  "activeCount": 20,
   "decisionReady": true,
   "readinessStatus": "finalized",
   "highIssueCount": 0,
   "mediumIssueCount": 0,
-  "infoIssueCount": 31,
+  "infoIssueCount": 34,
   "issues": [
     {
       "severity": "info",
@@ -79,7 +79,27 @@
     },
     {
       "severity": "info",
+      "id": "mls-r3151372",
+      "issue": "unknown-orientation"
+    },
+    {
+      "severity": "info",
       "id": "mls-r3161880",
+      "issue": "unknown-orientation"
+    },
+    {
+      "severity": "info",
+      "id": "mls-r3161950",
+      "issue": "unknown-ac"
+    },
+    {
+      "severity": "info",
+      "id": "mls-r3161950",
+      "issue": "unknown-orientation"
+    },
+    {
+      "severity": "info",
+      "id": "mls-r3163709",
       "issue": "unknown-orientation"
     },
     {
@@ -104,22 +124,12 @@
     },
     {
       "severity": "info",
-      "id": "mls-r3167417",
-      "issue": "unknown-orientation"
-    },
-    {
-      "severity": "info",
       "id": "zumper-6f8b3ff2b9fd",
       "issue": "unknown-ac"
     },
     {
       "severity": "info",
       "id": "zumper-6f8b3ff2b9fd",
-      "issue": "unknown-orientation"
-    },
-    {
-      "severity": "info",
-      "id": "mls-r3167237",
       "issue": "unknown-orientation"
     },
     {
@@ -161,13 +171,18 @@
       "severity": "info",
       "id": "zumper-86435797c322",
       "issue": "unknown-orientation"
+    },
+    {
+      "severity": "info",
+      "id": "zumper-8a4ac6a75244",
+      "issue": "unknown-ac"
     }
   ],
   "readinessChecks": {
     "smokeOk": true,
     "smokeFresh": true,
-    "smokeCheckedAt": "2026-10-06T18:33:52.990Z",
-    "latestDataAt": "2026-10-06T18:33:01.254Z",
+    "smokeCheckedAt": "2026-10-07T06:14:19.053Z",
+    "latestDataAt": "2026-10-07T06:13:20.027Z",
     "coverageReady": true,
     "healthyDiscoveryLanes": 3,
     "coverageWarnings": [
@@ -175,7 +190,7 @@
         "severity": "warning",
         "lane": "rentalsca",
         "status": "degraded",
-        "detail": "1/9 regional searches reachable; 0 qualifying candidates parsed; 1 scoped search-only leads retained (1 new, 0 already active, 0 need revalidation); 3 detail pages blocked after 4 discovered URLs; 1 further detail checks suppressed after repeated 403/429"
+        "detail": "3/9 regional searches reachable; 0 qualifying candidates parsed; 1 scoped search-only leads retained (1 new, 0 already active, 0 need revalidation); 3 detail pages blocked after 16 discovered URLs; 13 further detail checks suppressed after repeated 403/429"
       },
       {
         "severity": "warning",
@@ -186,5 +201,5 @@
     ]
   },
   "readinessIssues": [],
-  "finalizedAt": "2026-10-06T18:33:53.077Z"
+  "finalizedAt": "2026-10-07T06:14:19.152Z"
 }
