@@ -44,6 +44,9 @@ const qualityAuditSource = await read('scripts/audit-data-quality.mjs');
 const readinessFinalizerSource = await read('scripts/finalize-readiness.mjs');
 
 const failures = [];
+if (!refreshWorkflow.includes("cron: '17 14 * * *'") || refreshWorkflow.includes('*/6')) {
+  failures.push('Rental refresh schedule must remain daily so MLS disappearance confirmation spans daily observations.');
+}
 const realtylinkRefreshSource = await read('scripts/refresh-realtylink.mjs');
 const realtylinkSearchDeclaration = realtylinkRefreshSource
   .split('\n')
