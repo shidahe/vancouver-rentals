@@ -12,3 +12,11 @@ export function zumperPetFriendly(home, description = '') {
   if (home?.petsAllowed === true || POSITIVE_PET_POLICY.test(listingText)) return true;
   return null;
 }
+
+export function zumperPropertyType(home, pageText = '') {
+  const schemaType = String(home?.['@type'] || '').toLowerCase();
+  if (schemaType === 'singlefamilyresidence' || schemaType === 'house') return 'house';
+  if (schemaType === 'apartment') return 'condo';
+  if (/\bhouse for rent\b/i.test(String(pageText))) return 'house';
+  return 'condo';
+}

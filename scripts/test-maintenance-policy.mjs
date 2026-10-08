@@ -16,7 +16,7 @@ import { craigslistAddressPrecision, craigslistDetailEvidence, craigslistPostId,
 import { classifyRentalsCaSearchLead, parseRentalsCaSearchLeads } from './rentalsca-search-parser.mjs';
 import { craigslistSeedRelistingMatch } from './craigslist-seed-relisting.mjs';
 import { craigslistCrossSourcePriceMatch } from './craigslist-cross-source-match.mjs';
-import { zumperPetFriendly } from './zumper-pet-policy.mjs';
+import { zumperPetFriendly, zumperPropertyType } from './zumper-pet-policy.mjs';
 
 const read = p => fs.readFile(p, 'utf8');
 const activeAdapters = [
@@ -69,6 +69,12 @@ if (zumperPetFriendly({ petsAllowed: true }, valleyDrivePetPolicy) !== false ||
     zumperPetFriendly({}, 'One sec, gathering the Nearby Pet Friendly') !== null ||
     zumperPetFriendly({}, 'Pets allowed with restrictions') !== true) {
   failures.push('Zumper unit pet policy can be overridden by structured or generic nearby-pet metadata.');
+}
+if (zumperPropertyType({'@type':'SingleFamilyResidence'}, 'House for rent') !== 'house' ||
+    zumperPropertyType({'@type':'House'}, '') !== 'house' ||
+    zumperPropertyType({'@type':'Apartment'}, 'Apartment for rent') !== 'condo' ||
+    zumperPropertyType({}, 'House for rent · 4 beds · 2 baths') !== 'house') {
+  failures.push('Zumper SingleFamilyResidence inventory such as 2000 W 43rd can be mislabeled as a condo.');
 }
 if(!qualityAuditSource.includes("decisionReady:false")||!qualityAuditSource.includes("readinessStatus:'pending_finalization'")||
    !readinessFinalizerSource.includes("readinessStatus='finalized'")) failures.push('A standalone quality audit can claim decision readiness before browser, freshness, and coverage checks are finalized.');
