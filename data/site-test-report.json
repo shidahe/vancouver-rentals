@@ -1,11 +1,11 @@
 {
-  "checkedAt": "2026-10-08T15:00:41.799Z",
+  "checkedAt": "2026-10-08T15:10:24.291Z",
   "ok": true,
   "checkpoints": {
     "render": {
       "title": "Vancouver Westside Rentals",
-      "cards": 21,
-      "shown": 21
+      "cards": 20,
+      "shown": 20
     },
     "stats": {
       "labels": [
@@ -16,34 +16,34 @@
         "Last refreshed"
       ],
       "values": [
-        "21",
+        "20",
         "12",
         "2",
-        "3",
-        "2026-10-08 14:52:18"
+        "5",
+        "2026-10-08 15:01:36"
       ],
-      "html": "<div class=\"stat\"><strong>21</strong><span>Active</span></div><div class=\"stat\"><strong>12</strong><span>New</span></div><div class=\"stat\"><strong>2</strong><span>Price drops</span></div><div class=\"stat\"><strong>3</strong><span>To verify</span></div><div class=\"stat\"><strong>2026-10-08 14:52:18</strong><span>Last refreshed</span></div>"
+      "html": "<div class=\"stat\"><strong>20</strong><span>Active</span></div><div class=\"stat\"><strong>12</strong><span>New</span></div><div class=\"stat\"><strong>2</strong><span>Price drops</span></div><div class=\"stat\"><strong>5</strong><span>To verify</span></div><div class=\"stat\"><strong>2026-10-08 15:01:36</strong><span>Last refreshed</span></div>"
     },
     "map": {
-      "markers": 21,
+      "markers": 20,
       "desktopMapVisible": true
     },
     "filters": "ok",
     "localStorage": {
       "favorite": true,
       "notes": true,
-      "firstId": "fourth-mac-floorplan-2-bedroom-2-bath-801-4350"
+      "firstId": "arbutus-residences-floorplan-2-bedroom-townhouse-den-1340"
     },
-    "sourceLink": "https://www.craigslist.org/view/d/vancouver-bed-bath-fourth-mac-kitsilano/eiSLCKTVqsrtPUWpUpJyDN",
+    "sourceLink": "https://www.zumper.com/apartment-buildings/p1117150/arbutus-residences-quilchena-vancouver-bc",
     "photos": {
-      "total": 21,
-      "loaded": 21,
+      "total": 20,
+      "loaded": 20,
       "fallbacks": 0,
       "bad": []
     },
     "markerPositions": {
-      "total": 21,
-      "unique": 21
+      "total": 20,
+      "unique": 20
     },
     "dataEndpoints": "ok",
     "mobile": "ok",
