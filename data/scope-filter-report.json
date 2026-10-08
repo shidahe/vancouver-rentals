@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-10-07T13:38:43.999Z",
+  "generatedAt": "2026-10-08T15:00:35.180Z",
   "policy": "Only CAD $3,500+ entire-home rentals with 2–4 bedrooms in the Vancouver Westside target area are eligible. Fairview, West End, Downtown, Yaletown, Mount Pleasant, Riley Park, Olympic Village and South Cambie are excluded, as are house shares and separately rented portions of houses.",
-  "activeCount": 19,
-  "excludedCount": 38,
-  "exclusionEventsToday": 0,
+  "activeCount": 21,
+  "excludedCount": 39,
+  "exclusionEventsToday": 1,
   "countsByReason": {
     "monthly rent below CAD $3,500": 24,
-    "house share or separately rented portion of a house": 4,
+    "house share or separately rented portion of a house": 5,
     "five or more bedrooms": 8,
     "outside the Vancouver Westside target area": 2
   },
@@ -90,6 +90,11 @@
       "id": "zumper-289dc426c15b",
       "reason": "monthly rent below CAD $3,500",
       "wasActive": false
+    },
+    {
+      "id": "zumper-1441677a9e59",
+      "reason": "house share or separately rented portion of a house",
+      "wasActive": true
     },
     {
       "id": "zumper-c0c663d5d7eb",

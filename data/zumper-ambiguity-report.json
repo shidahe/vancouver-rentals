@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-07T13:36:28.479Z",
+  "generatedAt": "2026-10-08T14:58:04.884Z",
   "checkedCount": 5,
   "quarantinedCount": 0,
   "checked": [
@@ -25,18 +25,18 @@
       "highPrice": 4400
     },
     {
-      "identityKey": "2138 w 13th ave::url:5b518c4d35f2",
-      "url": "https://www.zumper.com/address/2138-w-13th-ave-vancouver-bc-v6k-2s1-can",
-      "ambiguous": false,
-      "lowPrice": 4500,
-      "highPrice": 4500
-    },
-    {
       "identityKey": "3349 dunbar st::url:fa963040c813",
       "url": "https://www.zumper.com/address/3349-dunbar-st-vancouver-bc-v6s-2b9-can",
       "ambiguous": false,
       "lowPrice": 4500,
       "highPrice": 4500
+    },
+    {
+      "identityKey": "2000 w 43rd ave::url:daba7b758265",
+      "url": "https://www.zumper.com/address/2000-w-43rd-ave-vancouver-bc-v6m-2c9-can",
+      "ambiguous": false,
+      "lowPrice": 5000,
+      "highPrice": 5000
     }
   ],
   "quarantined": []

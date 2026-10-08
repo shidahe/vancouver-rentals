@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-10-07T13:38:44.044Z",
+  "refreshedAt": "2026-10-08T15:00:35.219Z",
   "listings": {
     "york-103-2535-r3137446": {
       "cached": 5,
@@ -29,13 +29,6 @@
       "failures": [],
       "photoPageUrl": "https://www.zumper.com/address/1533-maple-st-vancouver-bc-v6j-3s2-can"
     },
-    "zumper-1441677a9e59": {
-      "cached": 5,
-      "preserved": 5,
-      "downloaded": 0,
-      "failures": [],
-      "photoPageUrl": "https://www.zumper.com/address/2138-w-13th-ave-vancouver-bc-v6k-2s1-can"
-    },
     "zumper-3b3c85746b5c": {
       "cached": 5,
       "preserved": 5,
@@ -49,6 +42,30 @@
       "downloaded": 0,
       "failures": [],
       "photoPageUrl": "https://realtylink.org/en/townhouse~for-rent~vancouver/263182316"
+    },
+    "mls-r3151372": {
+      "cached": 2,
+      "preserved": 0,
+      "downloaded": 2,
+      "failures": [
+        {
+          "url": "https://media.realtylink.org/images/consumersite/property/263172999/f30edfe3c49c4660ba9111ae7e98814b.jpeg?width=320&height=240&fit=cover",
+          "error": "not a usable image (image/jpeg, 6584 bytes)"
+        },
+        {
+          "url": "https://media.realtylink.org/images/consumersite/property/263172999/dbad0a90c3ff4d6a81393b40751ce33a.jpeg?width=320&height=240&fit=cover",
+          "error": "not a usable image (image/jpeg, 7504 bytes)"
+        },
+        {
+          "url": "https://media.realtylink.org/images/consumersite/property/263172999/714b4bbc2050493b867e77ca36123841.jpeg?width=320&height=240&fit=cover",
+          "error": "not a usable image (image/jpeg, 7118 bytes)"
+        },
+        {
+          "url": "https://media.realtylink.org/images/consumersite/property/263172999/c5424aa8ec754c5dbde8b458e950da3a.jpeg?width=480&height=360&fit=cover",
+          "error": "HTTP 400"
+        }
+      ],
+      "photoPageUrl": "https://realtylink.org/en/house~for-rent~vancouver/263172999"
     },
     "mls-r3161880": {
       "cached": 5,
@@ -87,8 +104,8 @@
     },
     "mls-r3167417": {
       "cached": 5,
-      "preserved": 0,
-      "downloaded": 5,
+      "preserved": 5,
+      "downloaded": 0,
       "failures": [],
       "photoPageUrl": "https://realtylink.org/en/house~for-rent~vancouver/263189044"
     },
@@ -129,20 +146,34 @@
     },
     "mls-r3169522": {
       "cached": 5,
+      "preserved": 5,
+      "downloaded": 0,
+      "failures": [],
+      "photoPageUrl": "https://realtylink.org/en/apartment~for-rent~vancouver/263191149"
+    },
+    "zumper-dd642aebb4f6": {
+      "cached": 5,
       "preserved": 0,
       "downloaded": 5,
       "failures": [],
-      "photoPageUrl": "https://realtylink.org/en/apartment~for-rent~vancouver/263191149"
+      "photoPageUrl": "https://www.zumper.com/address/2000-w-43rd-ave-vancouver-bc-v6m-2c9-can"
+    },
+    "mls-r3173479": {
+      "cached": 5,
+      "preserved": 0,
+      "downloaded": 5,
+      "failures": [],
+      "photoPageUrl": "https://realtylink.org/en/house~for-rent~vancouver/263195106"
     }
   },
   "totals": {
-    "sourceListings": 19,
-    "cachedListings": 19,
-    "downloaded": 10,
-    "failed": 0,
-    "preserved": 83,
-    "prunedListings": 3,
-    "prunedIndexImages": 12,
+    "sourceListings": 21,
+    "cachedListings": 21,
+    "downloaded": 12,
+    "failed": 4,
+    "preserved": 88,
+    "prunedListings": 1,
+    "prunedIndexImages": 5,
     "prunedOrphanFiles": 0
   }
 }

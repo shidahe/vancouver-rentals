@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-10-07T13:37:55.061Z",
+  "refreshedAt": "2026-10-08T14:59:24.832Z",
   "groups": [
     {
       "identityKey": "1533 maple st::url:69f2e13a0fd5",
@@ -50,18 +50,6 @@
       "result": "candidate_only"
     },
     {
-      "identityKey": "2138 w 13th ave::url:5b518c4d35f2",
-      "sources": [
-        "zumper"
-      ],
-      "rents": [
-        4500
-      ],
-      "exactUnit": false,
-      "matchedListingId": "zumper-1441677a9e59",
-      "result": "candidate_only"
-    },
-    {
       "identityKey": "2688 vine st::unit:111",
       "sources": [
         "zumper"
@@ -83,6 +71,18 @@
       ],
       "exactUnit": false,
       "matchedListingId": null,
+      "result": "candidate_only"
+    },
+    {
+      "identityKey": "2000 w 43rd ave::url:daba7b758265",
+      "sources": [
+        "zumper"
+      ],
+      "rents": [
+        5000
+      ],
+      "exactUnit": false,
+      "matchedListingId": "zumper-dd642aebb4f6",
       "result": "candidate_only"
     },
     {
@@ -170,18 +170,6 @@
       "result": "candidate_only"
     },
     {
-      "identityKey": "mls:r3169522",
-      "sources": [
-        "realtylink mls"
-      ],
-      "rents": [
-        4500
-      ],
-      "exactUnit": true,
-      "matchedListingId": null,
-      "result": "auto_published_authoritative_mls"
-    },
-    {
       "identityKey": "mls:r3137446",
       "sources": [
         "realtylink mls"
@@ -206,39 +194,15 @@
       "result": "authoritative_mls_reverified"
     },
     {
-      "identityKey": "mls:r3172212",
+      "identityKey": "mls:r3151372",
       "sources": [
         "realtylink mls"
       ],
       "rents": [
-        6300
+        4800
       ],
       "exactUnit": false,
-      "matchedListingId": "mls-r3172212",
-      "result": "authoritative_mls_reverified"
-    },
-    {
-      "identityKey": "mls:r3163709",
-      "sources": [
-        "realtylink mls"
-      ],
-      "rents": [
-        6000
-      ],
-      "exactUnit": false,
-      "matchedListingId": "mls-r3163709",
-      "result": "authoritative_mls_reverified"
-    },
-    {
-      "identityKey": "mls:r3167417",
-      "sources": [
-        "realtylink mls"
-      ],
-      "rents": [
-        6750
-      ],
-      "exactUnit": true,
-      "matchedListingId": "mls-r3167417",
+      "matchedListingId": "mls-r3151372",
       "result": "authoritative_mls_reverified"
     },
     {
@@ -252,17 +216,27 @@
       "exactUnit": false,
       "matchedListingId": "mls-r3161880",
       "result": "authoritative_mls_reverified"
+    },
+    {
+      "identityKey": "mls:r3173479",
+      "sources": [
+        "realtylink mls"
+      ],
+      "rents": [
+        4200
+      ],
+      "exactUnit": true,
+      "matchedListingId": null,
+      "result": "auto_published_authoritative_mls"
     }
   ],
   "promoted": [
-    "mls-r3169522"
+    "mls-r3173479"
   ],
   "crossVerified": [
     "york-103-2535-r3137446",
     "zumper-16e9ae17cd91",
-    "mls-r3172212",
-    "mls-r3163709",
-    "mls-r3167417",
+    "mls-r3151372",
     "mls-r3161880"
   ],
   "fingerprintCrossVerified": [],
@@ -272,32 +246,15 @@
   "relistedMlsMerged": [],
   "negativeMatches": [],
   "detailReactivated": [
-    "mls-r3167417"
+    "mls-r3151372"
   ],
-  "mlsMissing": {
-    "R3151372": {
-      "firstMissingAt": "2026-10-07T13:37:55.061Z",
-      "lastMissingAt": "2026-10-07T13:37:55.061Z",
-      "listingId": "mls-r3151372"
-    },
-    "R3161950": {
-      "firstMissingAt": "2026-10-07T13:37:55.061Z",
-      "lastMissingAt": "2026-10-07T13:37:55.061Z",
-      "listingId": "mls-r3161950"
-    },
-    "R3167237": {
-      "firstMissingAt": "2026-10-07T06:13:15.727Z",
-      "lastMissingAt": "2026-10-07T13:37:55.061Z",
-      "listingId": "mls-r3167237"
-    }
-  },
-  "mlsRemoved": [
-    "mls-r3167237"
-  ],
+  "mlsMissing": {},
+  "mlsRemoved": [],
   "mlsStaleHidden": [],
-  "realtylinkSnapshotCount": 7,
+  "realtylinkSnapshotCount": 5,
   "realtylinkSnapshotHighWaterMark": 7,
   "realtylinkSnapshotScope": "rent-3500-beds-2-4-whole-home-westside-v2",
-  "realtylinkRemovalEligible": true,
+  "realtylinkRemovalEligible": false,
+  "mlsRemovalSuppressed": "Partial Realtylink snapshot (5 candidates versus previous complete 7); disappearance signals ignored.",
   "mlsDuplicatesMerged": []
 }
