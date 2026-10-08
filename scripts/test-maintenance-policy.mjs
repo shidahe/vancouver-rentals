@@ -47,6 +47,12 @@ const failures = [];
 if (!refreshWorkflow.includes("cron: '17 14 * * *'") || refreshWorkflow.includes('*/6')) {
   failures.push('Rental refresh schedule must remain daily so MLS disappearance confirmation spans daily observations.');
 }
+if (!refreshWorkflow.includes('for attempt in 1 2 3 4') ||
+    !refreshWorkflow.includes('git pull --rebase origin main') ||
+    !refreshWorkflow.includes('sleep $((attempt * 5))') ||
+    !refreshWorkflow.includes('Unable to publish validated rental data after four attempts.')) {
+  failures.push('A transient GitHub push failure can discard a fully validated live inventory refresh.');
+}
 const realtylinkRefreshSource = await read('scripts/refresh-realtylink.mjs');
 const realtylinkSearchDeclaration = realtylinkRefreshSource
   .split('\n')
