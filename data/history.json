@@ -629,6 +629,11 @@
       "date": "2026-10-06",
       "rent": 5390,
       "note": "NEEDS CONFIRMATION: latest purpose-built fallback sources did not confirm the exact configured rent + sqft inventory row."
+    },
+    {
+      "date": "2026-10-08",
+      "rent": 5390,
+      "note": "NEEDS CONFIRMATION: latest purpose-built fallback sources did not confirm the exact configured rent + sqft inventory row."
     }
   ],
   "zumper-2fde865f7e2c": [
@@ -2866,6 +2871,13 @@
       "date": "2026-10-08",
       "rent": 5600,
       "note": "NEW: live Realtylink MLS R3173233 auto-published."
+    }
+  ],
+  "mls-r3173689": [
+    {
+      "date": "2026-10-08",
+      "rent": 4600,
+      "note": "NEW: live Realtylink MLS R3173689 auto-published."
     }
   ]
 }
