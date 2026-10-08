@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-10-08T15:10:18.816Z",
-  "activeCount": 20,
+  "generatedAt": "2026-10-08T15:27:36.311Z",
+  "activeCount": 22,
   "decisionReady": true,
   "readinessStatus": "finalized",
   "highIssueCount": 0,
   "mediumIssueCount": 0,
-  "infoIssueCount": 34,
+  "infoIssueCount": 38,
   "issues": [
     {
       "severity": "info",
@@ -74,12 +74,17 @@
     },
     {
       "severity": "info",
-      "id": "mls-r3161950",
+      "id": "mls-r3161880",
+      "issue": "unknown-orientation"
+    },
+    {
+      "severity": "info",
+      "id": "mls-r3159060",
       "issue": "unknown-ac"
     },
     {
       "severity": "info",
-      "id": "mls-r3161950",
+      "id": "mls-r3159060",
       "issue": "unknown-orientation"
     },
     {
@@ -104,11 +109,6 @@
     },
     {
       "severity": "info",
-      "id": "mls-r3167417",
-      "issue": "unknown-orientation"
-    },
-    {
-      "severity": "info",
       "id": "zumper-6f8b3ff2b9fd",
       "issue": "unknown-ac"
     },
@@ -119,12 +119,32 @@
     },
     {
       "severity": "info",
+      "id": "mls-r3165327",
+      "issue": "unknown-ac"
+    },
+    {
+      "severity": "info",
+      "id": "mls-r3165327",
+      "issue": "unknown-orientation"
+    },
+    {
+      "severity": "info",
       "id": "kits-walk-floorplan-2-bedroom-811-3675",
       "issue": "unknown-ac"
     },
     {
       "severity": "info",
       "id": "kits-walk-floorplan-2-bedroom-811-3675",
+      "issue": "unknown-orientation"
+    },
+    {
+      "severity": "info",
+      "id": "mls-r3170701",
+      "issue": "unknown-ac"
+    },
+    {
+      "severity": "info",
+      "id": "mls-r3170701",
       "issue": "unknown-orientation"
     },
     {
@@ -181,16 +201,16 @@
   "readinessChecks": {
     "smokeOk": true,
     "smokeFresh": true,
-    "smokeCheckedAt": "2026-10-08T15:10:24.291Z",
-    "latestDataAt": "2026-10-08T15:09:23.434Z",
+    "smokeCheckedAt": "2026-10-08T15:27:41.893Z",
+    "latestDataAt": "2026-10-08T15:26:10.022Z",
     "coverageReady": true,
     "healthyDiscoveryLanes": 3,
     "coverageWarnings": [
       {
         "severity": "warning",
         "lane": "rentalsca",
-        "status": "degraded",
-        "detail": "2/9 regional searches reachable; 0 qualifying candidates parsed; 4 scoped search-only leads retained (2 new, 2 already active, 0 need revalidation); 3 detail pages blocked after 15 discovered URLs; 12 further detail checks suppressed after repeated 403/429"
+        "status": "unhealthy",
+        "detail": "0/9 regional searches reachable; 0 qualifying candidates parsed"
       },
       {
         "severity": "warning",
@@ -213,5 +233,5 @@
     ]
   },
   "readinessIssues": [],
-  "finalizedAt": "2026-10-08T15:10:24.396Z"
+  "finalizedAt": "2026-10-08T15:27:41.991Z"
 }
