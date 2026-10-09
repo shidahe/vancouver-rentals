@@ -37,6 +37,7 @@ const imageCacheWorkflow = await read('.github/workflows/cache-listing-images.ym
 const refreshWorkflow = await read('.github/workflows/refresh-listings.yml');
 const catalog = JSON.parse(await read('data/live-sources.json'));
 const officialWatch = JSON.parse(await read('data/official-watch.json'));
+const imageSources = JSON.parse(await read('data/image-sources.json'));
 const indexHtml = await read('index.html');
 const siteTestSource = await read('scripts/test-site.mjs');
 const imageCacheSource = await read('scripts/cache-listing-images.mjs');
@@ -63,6 +64,10 @@ if (!realtylinkSearchDeclaration ||
     !realtylinkSearchDeclaration.includes('house~for-rent~vancouver-west') ||
     !listingScopeEligible({rent:6250,bedrooms:4,address:'1955 W 1st Avenue'}, 'Entire top-floor unfurnished character triplex in Kitsilano')) {
   failures.push('R3142789 / 1955 W 1st regression: executable Westside Realtylink search or 4BR scope can hide an eligible rental.');
+}
+const r3173689Photos=imageSources['mls-r3173689'];
+if (!r3173689Photos || !/R3173689/i.test(r3173689Photos.photoPageUrl || '') || (r3173689Photos.candidates || []).length < 3) {
+  failures.push('R3173689 / 3093 W 29th can publish without any exact-identity photo fallback.');
 }
 const valleyDrivePetPolicy = 'Lease Requirement:\n- No smoking, No pets\nOne sec, gathering the Nearby Pet Friendly';
 if (zumperPetFriendly({ petsAllowed: true }, valleyDrivePetPolicy) !== false ||
