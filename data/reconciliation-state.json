@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-10-08T20:04:54.122Z",
+  "refreshedAt": "2026-10-09T15:05:14.932Z",
   "groups": [
     {
       "identityKey": "1533 maple st::url:69f2e13a0fd5",
@@ -86,6 +86,18 @@
       "result": "candidate_only"
     },
     {
+      "identityKey": "4455 w 9th ave::url:27af75d482ae",
+      "sources": [
+        "craigslist"
+      ],
+      "rents": [
+        5000
+      ],
+      "exactUnit": false,
+      "matchedListingId": null,
+      "result": "candidate_only"
+    },
+    {
       "identityKey": "2475 w 4th ave near larch st::url:943dac01c7d6",
       "sources": [
         "craigslist"
@@ -146,18 +158,6 @@
       "result": "candidate_only"
     },
     {
-      "identityKey": "4455 w 9th ave::url:27af75d482ae",
-      "sources": [
-        "craigslist"
-      ],
-      "rents": [
-        5000
-      ],
-      "exactUnit": false,
-      "matchedListingId": null,
-      "result": "candidate_only"
-    },
-    {
       "identityKey": "2111 w 11th ave near arbutus st::url:9380351bf41f",
       "sources": [
         "craigslist"
@@ -182,18 +182,6 @@
       "result": "candidate_only"
     },
     {
-      "identityKey": "mls:r3137446",
-      "sources": [
-        "realtylink mls"
-      ],
-      "rents": [
-        5850
-      ],
-      "exactUnit": true,
-      "matchedListingId": "york-103-2535-r3137446",
-      "result": "authoritative_mls_reverified"
-    },
-    {
       "identityKey": "mls:r3160689",
       "sources": [
         "realtylink mls"
@@ -206,50 +194,61 @@
       "result": "authoritative_mls_reverified"
     },
     {
-      "identityKey": "mls:r3173689",
+      "identityKey": "mls:r3137446",
       "sources": [
         "realtylink mls"
       ],
       "rents": [
-        4600
+        5850
       ],
-      "exactUnit": false,
-      "matchedListingId": null,
-      "result": "auto_published_authoritative_mls"
-    },
-    {
-      "identityKey": "mls:r3161880",
-      "sources": [
-        "realtylink mls"
-      ],
-      "rents": [
-        8800
-      ],
-      "exactUnit": false,
-      "matchedListingId": "mls-r3161880",
+      "exactUnit": true,
+      "matchedListingId": "york-103-2535-r3137446",
       "result": "authoritative_mls_reverified"
     },
     {
-      "identityKey": "mls:r3161950",
+      "identityKey": "mls:r3159060",
       "sources": [
         "realtylink mls"
       ],
       "rents": [
-        4000
+        15000
       ],
       "exactUnit": false,
-      "matchedListingId": "mls-r3161950",
+      "matchedListingId": "mls-r3159060",
+      "result": "authoritative_mls_reverified"
+    },
+    {
+      "identityKey": "mls:r3163709",
+      "sources": [
+        "realtylink mls"
+      ],
+      "rents": [
+        6000
+      ],
+      "exactUnit": false,
+      "matchedListingId": "mls-r3163709",
+      "result": "authoritative_mls_reverified"
+    },
+    {
+      "identityKey": "mls:r3173479",
+      "sources": [
+        "realtylink mls"
+      ],
+      "rents": [
+        3900
+      ],
+      "exactUnit": true,
+      "matchedListingId": "mls-r3173479",
       "result": "authoritative_mls_reverified"
     }
   ],
-  "promoted": [
-    "mls-r3173689"
-  ],
+  "promoted": [],
   "crossVerified": [
-    "york-103-2535-r3137446",
     "zumper-16e9ae17cd91",
-    "mls-r3161880",
-    "mls-r3161950"
+    "york-103-2535-r3137446",
+    "mls-r3159060",
+    "mls-r3163709",
+    "mls-r3173479"
   ],
   "fingerprintCrossVerified": [],
   "craigslistRelistingsRecovered": [],
@@ -258,7 +257,7 @@
   "relistedMlsMerged": [],
   "negativeMatches": [],
   "detailReactivated": [
-    "mls-r3161950"
+    "mls-r3163709"
   ],
   "mlsMissing": {},
   "mlsRemoved": [],
