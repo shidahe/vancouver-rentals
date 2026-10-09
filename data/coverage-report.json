@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-09T15:06:13.482Z",
+  "generatedAt": "2026-10-09T19:41:25.387Z",
   "coverageReady": true,
   "healthyLaneCount": 3,
   "freshLaneCount": 8,
@@ -9,51 +9,34 @@
     {
       "building": "kits-walk",
       "healthy": true,
-      "checkedAt": "2026-10-09T14:57:21.084Z",
-      "evidenceUrl": "https://www.kitswalkleasing.com/floorplans",
+      "checkedAt": "2026-10-09T19:32:35.810Z",
+      "evidenceUrl": "https://www.zumper.com/apartment-buildings/p481389/kits-walk-by-strand-kitsilano-vancouver-bc",
       "sourceOptions": 2
     },
     {
       "building": "larchway-gardens",
       "healthy": true,
-      "checkedAt": "2026-10-09T14:57:21.084Z",
+      "checkedAt": "2026-10-09T19:32:35.810Z",
       "evidenceUrl": "https://quadrealresidential.com/vancouver/larchway-gardens/floorplans/",
       "sourceOptions": 1
     },
     {
       "building": "viridian",
       "healthy": true,
-      "checkedAt": "2026-10-09T14:57:21.084Z",
-      "evidenceUrl": "https://www.rentcafe.com/apartments/bc/vancouver/viridian1/default.aspx",
+      "checkedAt": "2026-10-09T19:32:35.810Z",
+      "evidenceUrl": "https://www.zumper.com/apartment-buildings/p510456/viridian-fairview-vancouver-bc",
       "sourceOptions": 2
     }
   ],
-  "inventoryGaps": [
-    {
-      "building": "viridian",
-      "unit": "0103",
-      "bedrooms": 2,
-      "availability": "Now",
-      "reason": "official-price-unverified",
-      "evidenceUrl": "https://www.rentcafe.com/apartments/bc/vancouver/viridian1/default.aspx"
-    },
-    {
-      "building": "viridian",
-      "unit": "0309",
-      "bedrooms": 2,
-      "availability": "Oct 30",
-      "reason": "official-price-unverified",
-      "evidenceUrl": "https://www.rentcafe.com/apartments/bc/vancouver/viridian1/default.aspx"
-    }
-  ],
+  "inventoryGaps": [],
   "lanes": [
     {
       "id": "zumper",
       "kind": "broad-marketplace",
       "healthy": true,
       "status": "healthy",
-      "detail": "11 fresh live candidates",
-      "refreshedAt": "2026-10-09T15:01:23.666Z"
+      "detail": "12 fresh live candidates",
+      "refreshedAt": "2026-10-09T19:36:38.315Z"
     },
     {
       "id": "craigslist",
@@ -61,15 +44,15 @@
       "healthy": true,
       "status": "healthy",
       "detail": "4/4 regional searches reachable; 23 qualifying candidates parsed",
-      "refreshedAt": "2026-10-09T15:03:50.909Z"
+      "refreshedAt": "2026-10-09T19:39:11.746Z"
     },
     {
       "id": "rentalsca",
       "kind": "broad-marketplace",
       "healthy": false,
-      "status": "unhealthy",
-      "detail": "0/9 regional searches reachable; 0 qualifying candidates parsed",
-      "refreshedAt": "2026-10-09T15:03:49.174Z"
+      "status": "degraded",
+      "detail": "1/9 regional searches reachable; 0 qualifying candidates parsed; 1 scoped search-only leads retained (1 new, 0 already active, 0 need revalidation); 3 detail pages blocked after 4 discovered URLs; 1 further detail checks suppressed after repeated 403/429",
+      "refreshedAt": "2026-10-09T19:39:06.615Z"
     },
     {
       "id": "livrent",
@@ -77,17 +60,17 @@
       "healthy": false,
       "status": "unhealthy",
       "detail": "0/5 searches healthy; 3 blocked searches opened circuit; 2 further checks suppressed",
-      "refreshedAt": "2026-10-09T15:03:50.155Z"
+      "refreshedAt": "2026-10-09T19:39:11.040Z"
     },
     {
       "id": "realtylink",
       "kind": "mls-rental",
-      "healthy": false,
+      "healthy": true,
       "positiveDiscoveryHealthy": true,
-      "status": "degraded",
-      "partial": true,
-      "detail": "3/3 searches reachable; 5 current live candidates parsed from a partial snapshot versus complete baseline 5; positive discovery usable, removals suppressed",
-      "refreshedAt": "2026-10-09T15:04:08.504Z"
+      "status": "healthy",
+      "partial": false,
+      "detail": "3/3 searches reachable; 9 live candidates parsed",
+      "refreshedAt": "2026-10-09T19:39:29.889Z"
     },
     {
       "id": "priority-kits-walk",
@@ -95,7 +78,7 @@
       "healthy": true,
       "status": "healthy",
       "detail": "1/2 official sources usable",
-      "refreshedAt": "2026-10-09T15:05:21.959Z"
+      "refreshedAt": "2026-10-09T19:40:37.609Z"
     },
     {
       "id": "priority-larchway-gardens",
@@ -103,7 +86,7 @@
       "healthy": true,
       "status": "healthy",
       "detail": "2/2 official sources usable",
-      "refreshedAt": "2026-10-09T15:05:21.959Z"
+      "refreshedAt": "2026-10-09T19:40:37.609Z"
     },
     {
       "id": "priority-viridian",
@@ -111,39 +94,21 @@
       "healthy": true,
       "status": "healthy",
       "detail": "1/2 official sources usable",
-      "refreshedAt": "2026-10-09T15:05:21.959Z"
+      "refreshedAt": "2026-10-09T19:40:37.609Z"
     }
   ],
   "warnings": [
     {
       "severity": "warning",
       "lane": "rentalsca",
-      "status": "unhealthy",
-      "detail": "0/9 regional searches reachable; 0 qualifying candidates parsed"
+      "status": "degraded",
+      "detail": "1/9 regional searches reachable; 0 qualifying candidates parsed; 1 scoped search-only leads retained (1 new, 0 already active, 0 need revalidation); 3 detail pages blocked after 4 discovered URLs; 1 further detail checks suppressed after repeated 403/429"
     },
     {
       "severity": "warning",
       "lane": "livrent",
       "status": "unhealthy",
       "detail": "0/5 searches healthy; 3 blocked searches opened circuit; 2 further checks suppressed"
-    },
-    {
-      "severity": "warning",
-      "lane": "realtylink",
-      "status": "degraded",
-      "detail": "3/3 searches reachable; 5 current live candidates parsed from a partial snapshot versus complete baseline 5; positive discovery usable, removals suppressed"
-    },
-    {
-      "severity": "warning",
-      "lane": "priority-viridian-unpriced-unit",
-      "status": "price-unverified",
-      "detail": "Viridian unit 0103 (2BR) is offered for Now, but official rent is withheld; do not publish before verifying rent >= CAD $3,500"
-    },
-    {
-      "severity": "warning",
-      "lane": "priority-viridian-unpriced-unit",
-      "status": "price-unverified",
-      "detail": "Viridian unit 0309 (2BR) is offered for Oct 30, but official rent is withheld; do not publish before verifying rent >= CAD $3,500"
     }
   ],
   "blockers": [],

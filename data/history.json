@@ -146,6 +146,11 @@
       "date": "2026-08-19",
       "rent": 5850,
       "note": "Multiple brokerage/IDX pages still show R3137446 Active under Vancouver Luxury Realty"
+    },
+    {
+      "date": "2026-10-09",
+      "rent": 5500,
+      "note": "MLS price update $5850 → $5500."
     }
   ],
   "solo-2228-marstrand": [
@@ -632,6 +637,11 @@
     },
     {
       "date": "2026-10-08",
+      "rent": 5390,
+      "note": "NEEDS CONFIRMATION: latest purpose-built fallback sources did not confirm the exact configured rent + sqft inventory row."
+    },
+    {
+      "date": "2026-10-09",
       "rent": 5390,
       "note": "NEEDS CONFIRMATION: latest purpose-built fallback sources did not confirm the exact configured rent + sqft inventory row."
     }
@@ -2678,6 +2688,11 @@
       "date": "2026-10-07",
       "rent": 6750,
       "note": "CORRECTED: restored after exact current MLS detail matched identity, explicit availability and rent."
+    },
+    {
+      "date": "2026-10-09",
+      "rent": 6750,
+      "note": "CORRECTED: restored after exact current MLS detail matched identity, explicit availability and rent."
     }
   ],
   "zumper-6f8b3ff2b9fd": [
@@ -2888,6 +2903,20 @@
       "date": "2026-10-08",
       "rent": 4600,
       "note": "NEW: live Realtylink MLS R3173689 auto-published."
+    }
+  ],
+  "zumper-62baa86fc229": [
+    {
+      "date": "2026-10-09",
+      "rent": 4000,
+      "note": "NEW: live Zumper detail auto-published as independent inventory."
+    }
+  ],
+  "kits-walk-floorplan-2-bedroom-811-3595": [
+    {
+      "date": "2026-10-09",
+      "rent": 3595,
+      "note": "First seen in live purpose-built inventory via https://rentals.ca/vancouver/kits-walk-by-strand"
     }
   ]
 }
