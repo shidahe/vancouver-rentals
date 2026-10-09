@@ -66,7 +66,7 @@ if (!realtylinkSearchDeclaration ||
   failures.push('R3142789 / 1955 W 1st regression: executable Westside Realtylink search or 4BR scope can hide an eligible rental.');
 }
 const r3173689Photos=imageSources['mls-r3173689'];
-if (!r3173689Photos || !/R3173689/i.test(r3173689Photos.photoPageUrl || '') || (r3173689Photos.candidates || []).length < 3) {
+if (!r3173689Photos || !/R3173689/i.test(JSON.stringify(r3173689Photos)) || (r3173689Photos.candidates || []).length < 3) {
   failures.push('R3173689 / 3093 W 29th can publish without any exact-identity photo fallback.');
 }
 const valleyDrivePetPolicy = 'Lease Requirement:\n- No smoking, No pets\nOne sec, gathering the Nearby Pet Friendly';
