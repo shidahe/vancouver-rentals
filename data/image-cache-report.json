@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-10-10T15:14:23.033Z",
+  "refreshedAt": "2026-10-10T18:42:46.658Z",
   "listings": {
     "york-103-2535-r3137446": {
       "cached": 5,
@@ -52,10 +52,17 @@
       ],
       "photoPageUrl": "https://realtylink.org/en/townhouse~for-rent~vancouver/263182316"
     },
+    "arbutus-residences-floorplan-2-bedroom-townhouse-den-1340": {
+      "cached": 5,
+      "preserved": 0,
+      "downloaded": 5,
+      "failures": [],
+      "photoPageUrl": "https://www.zumper.com/apartment-buildings/p1117150/arbutus-residences-quilchena-vancouver-bc"
+    },
     "mls-r3151372": {
       "cached": 2,
-      "preserved": 0,
-      "downloaded": 2,
+      "preserved": 2,
+      "downloaded": 0,
       "failures": [
         {
           "url": "https://media.realtylink.org/images/consumersite/property/263172999/f30edfe3c49c4660ba9111ae7e98814b.jpeg?width=320&height=240&fit=cover",
@@ -131,6 +138,20 @@
       "downloaded": 0,
       "failures": [],
       "photoPageUrl": "https://www.zumper.com/address/4101-yew-st-vancouver-bc-v6l-3b7-can"
+    },
+    "mls-r3165327": {
+      "cached": 5,
+      "preserved": 0,
+      "downloaded": 5,
+      "failures": [],
+      "photoPageUrl": "https://realtylink.org/en/apartment~for-rent~vancouver/263186954"
+    },
+    "mls-r3162880": {
+      "cached": 5,
+      "preserved": 0,
+      "downloaded": 5,
+      "failures": [],
+      "photoPageUrl": "https://realtylink.org/en/apartment~for-rent~vancouver/263184507"
     },
     "kits-walk-floorplan-2-bedroom-811-3675": {
       "cached": 5,
@@ -210,6 +231,13 @@
       ],
       "photoPageUrl": "https://realtylink.org/en/house~for-rent~vancouver/263194860"
     },
+    "mls-r3173689": {
+      "cached": 5,
+      "preserved": 0,
+      "downloaded": 5,
+      "failures": [],
+      "photoPageUrl": "https://realtylink.org/en/house~for-rent~vancouver/263195316"
+    },
     "kits-walk-floorplan-2-bedroom-811-3595": {
       "cached": 5,
       "preserved": 5,
@@ -219,13 +247,13 @@
     }
   },
   "totals": {
-    "sourceListings": 24,
-    "cachedListings": 24,
-    "downloaded": 2,
+    "sourceListings": 28,
+    "cachedListings": 28,
+    "downloaded": 20,
     "failed": 11,
-    "preserved": 109,
-    "prunedListings": 1,
-    "prunedIndexImages": 5,
+    "preserved": 111,
+    "prunedListings": 0,
+    "prunedIndexImages": 0,
     "prunedOrphanFiles": 0
   }
 }
