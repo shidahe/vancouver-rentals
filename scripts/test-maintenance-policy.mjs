@@ -65,6 +65,11 @@ if (!realtylinkSearchDeclaration ||
     !listingScopeEligible({rent:6250,bedrooms:4,address:'1955 W 1st Avenue'}, 'Entire top-floor unfurnished character triplex in Kitsilano')) {
   failures.push('R3142789 / 1955 W 1st regression: executable Westside Realtylink search or 4BR scope can hide an eligible rental.');
 }
+const w13UpperPortion={rent:4000,bedrooms:4,address:'2485 West 13th Avenue #Upper, Vancouver, BC V6K 2S7'};
+if (listingScopeEligible(w13UpperPortion, 'House close to UBC with lots of rooms') ||
+    !isHouseShareText(w13UpperPortion.address)) {
+  failures.push('2485 W 13th #Upper regression: an explicitly separate upper-house portion can publish as an entire home.');
+}
 const r3173689Photos=imageSources['mls-r3173689'];
 if (!r3173689Photos || !/R3173689/i.test(JSON.stringify(r3173689Photos)) || (r3173689Photos.candidates || []).length < 3) {
   failures.push('R3173689 / 3093 W 29th can publish without any exact-identity photo fallback.');

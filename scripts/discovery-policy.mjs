@@ -17,6 +17,7 @@ export function rentEligible(value) {
 
 export function isHouseShareText(value = '') {
   const text = String(value);
+  if (/(?:#|\bunit\s+)(?:upper|lower|main|basement)\b/i.test(text)) return true;
   return /\b(?:private\s+room|room\s+for\s+rent|shared\s+(?:kitchen|bathroom|accommodation|household)|roommate\s+wanted|looking\s+for\s+(?:a\s+)?roommate)\b/i.test(text) ||
     /(?:^|\n)(?:house\s+for\s+rent\s*\n)?(?:main|upper|lower|ground)(?:\s+floor|\s+level)?\s+\d{3,5}\b/im.test(text) ||
     /\b(?:basement|upper|lower|main|ground|first|second)[-\s]+(?:floor|level)?\s*(?:suite|unit)\b/i.test(text) ||
