@@ -3968,14 +3968,16 @@
       "url": "https://www.zumper.com/address/2485-w-13th-ave-vancouver-bc-v6k-2s7-can",
       "photoPageUrl": "https://www.zumper.com/address/2485-w-13th-ave-vancouver-bc-v6k-2s7-can",
       "firstSeen": "2026-10-09",
-      "lastChecked": "2026-10-09",
+      "lastChecked": "2026-10-10",
       "verifiedAt": "2026-10-09T19:36:38.315Z",
-      "verificationLevel": "verified",
-      "verificationMethod": "AUTO-PUBLISHED from exact live Zumper detail; 2485 w 13th ave upper::url:6b2608dd93ef",
-      "availabilityStatus": "active",
-      "status": "new",
+      "verificationLevel": "excluded_by_scope",
+      "verificationMethod": "Excluded by user search scope: house share or separately rented portion of a house.",
+      "availabilityStatus": "excluded",
+      "status": "excluded",
       "priceDrop": false,
-      "dataNotes": "Independent inventory identity: canonical address + exact detail URL (unit not public)."
+      "dataNotes": "Independent inventory identity: canonical address + exact detail URL (unit not public).",
+      "scopeExclusionReason": "house share or separately rented portion of a house",
+      "rentalScope": "shared_house"
     },
     {
       "id": "kits-walk-floorplan-2-bedroom-811-3595",
