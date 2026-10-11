@@ -99,6 +99,13 @@ if (zumperPropertyType({'@type':'SingleFamilyResidence'}, 'House for rent') !== 
 if(!qualityAuditSource.includes("decisionReady:false")||!qualityAuditSource.includes("readinessStatus:'pending_finalization'")||
    !readinessFinalizerSource.includes("readinessStatus='finalized'")) failures.push('A standalone quality audit can claim decision readiness before browser, freshness, and coverage checks are finalized.');
 if(refreshWorkflow.indexOf('id: readiness')<0||refreshWorkflow.indexOf('id: freshness')<refreshWorkflow.indexOf('id: readiness')) failures.push('The runtime freshness guard runs before the current quality report is finalized.');
+const publicationGateIndex=refreshWorkflow.indexOf('name: Block publication when the fresh site is not decision-ready');
+const validatedCommitIndex=refreshWorkflow.indexOf('name: Commit refreshed rental data, cached images, and validation reports');
+if(publicationGateIndex<0||validatedCommitIndex<0||publicationGateIndex>validatedCommitIndex||
+   !refreshWorkflow.includes("name: Commit refreshed rental data, cached images, and validation reports\n        if: success()")||
+   refreshWorkflow.includes("name: Commit refreshed rental data, cached images, and validation reports\n        if: always()")){
+  failures.push('A non-decision-ready refresh can be committed and deployed before the workflow fails.');
+}
 if(!source.includes('if(consecutiveBlocked>=3)')||!source.includes('diagnostics.searchesSuppressed=searchSources.length-diagnostics.searchesChecked')||!coverageSource.includes('blocked searches opened circuit'))failures.push('liv.rent repeated 403/429 search suppression or its coverage diagnostic can silently regress.');
 if(realtylinkSnapshotBaseline({previousBaseline:6,currentCount:5,sameScope:true})!==6||
    realtylinkSnapshotBaseline({previousBaseline:6,currentCount:4,sameScope:true})!==6||
