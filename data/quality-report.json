@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-10-11T15:39:20.314Z",
-  "activeCount": 19,
+  "generatedAt": "2026-10-11T19:02:53.010Z",
+  "activeCount": 23,
   "decisionReady": true,
   "readinessStatus": "finalized",
   "highIssueCount": 0,
   "mediumIssueCount": 0,
-  "infoIssueCount": 33,
+  "infoIssueCount": 38,
   "issues": [
     {
       "severity": "info",
@@ -49,6 +49,11 @@
     },
     {
       "severity": "info",
+      "id": "arbutus-residences-floorplan-2-bedroom-townhouse-den-1340",
+      "issue": "unknown-orientation"
+    },
+    {
+      "severity": "info",
       "id": "zumper-3b3c85746b5c",
       "issue": "unknown-ac"
     },
@@ -70,6 +75,21 @@
     {
       "severity": "info",
       "id": "mls-r3151372",
+      "issue": "unknown-orientation"
+    },
+    {
+      "severity": "info",
+      "id": "mls-r3161880",
+      "issue": "unknown-orientation"
+    },
+    {
+      "severity": "info",
+      "id": "mls-r3161950",
+      "issue": "unknown-ac"
+    },
+    {
+      "severity": "info",
+      "id": "mls-r3161950",
       "issue": "unknown-orientation"
     },
     {
@@ -100,6 +120,11 @@
     {
       "severity": "info",
       "id": "w16-coach-house-850",
+      "issue": "unknown-orientation"
+    },
+    {
+      "severity": "info",
+      "id": "mls-r3167417",
       "issue": "unknown-orientation"
     },
     {
@@ -176,8 +201,8 @@
   "readinessChecks": {
     "smokeOk": true,
     "smokeFresh": true,
-    "smokeCheckedAt": "2026-10-11T15:39:25.769Z",
-    "latestDataAt": "2026-10-11T15:38:35.576Z",
+    "smokeCheckedAt": "2026-10-11T19:02:58.613Z",
+    "latestDataAt": "2026-10-11T19:02:05.248Z",
     "coverageReady": true,
     "healthyDiscoveryLanes": 3,
     "coverageWarnings": [
@@ -185,16 +210,22 @@
         "severity": "warning",
         "lane": "rentalsca",
         "status": "degraded",
-        "detail": "1/9 regional searches reachable; 0 qualifying candidates parsed; 0 scoped search-only leads retained; 2 detail pages blocked after 2 discovered URLs"
+        "detail": "4/9 regional searches reachable; 0 qualifying candidates parsed; 0 scoped search-only leads retained; 3 detail pages blocked after 11 discovered URLs; 8 further detail checks suppressed after repeated 403/429"
       },
       {
         "severity": "warning",
         "lane": "livrent",
         "status": "unhealthy",
         "detail": "0/5 searches healthy; 3 blocked searches opened circuit; 2 further checks suppressed"
+      },
+      {
+        "severity": "warning",
+        "lane": "realtylink",
+        "status": "degraded",
+        "detail": "3/3 searches reachable; 6 current live candidates parsed from a partial snapshot versus complete baseline 6; positive discovery usable, removals suppressed"
       }
     ]
   },
   "readinessIssues": [],
-  "finalizedAt": "2026-10-11T15:39:25.866Z"
+  "finalizedAt": "2026-10-11T19:02:58.719Z"
 }
