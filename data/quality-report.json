@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-10-11T15:10:15.807Z",
-  "activeCount": 27,
-  "decisionReady": false,
+  "generatedAt": "2026-10-11T15:22:56.614Z",
+  "activeCount": 19,
+  "decisionReady": true,
   "readinessStatus": "finalized",
-  "highIssueCount": 1,
+  "highIssueCount": 0,
   "mediumIssueCount": 0,
-  "infoIssueCount": 45,
+  "infoIssueCount": 34,
   "issues": [
     {
       "severity": "info",
@@ -49,11 +49,6 @@
     },
     {
       "severity": "info",
-      "id": "arbutus-residences-floorplan-2-bedroom-townhouse-den-1340",
-      "issue": "unknown-orientation"
-    },
-    {
-      "severity": "info",
       "id": "zumper-3b3c85746b5c",
       "issue": "unknown-ac"
     },
@@ -70,26 +65,6 @@
     {
       "severity": "info",
       "id": "zumper-16e9ae17cd91",
-      "issue": "unknown-orientation"
-    },
-    {
-      "severity": "info",
-      "id": "mls-r3151372",
-      "issue": "unknown-orientation"
-    },
-    {
-      "severity": "info",
-      "id": "mls-r3161880",
-      "issue": "unknown-orientation"
-    },
-    {
-      "severity": "info",
-      "id": "mls-r3161950",
-      "issue": "unknown-ac"
-    },
-    {
-      "severity": "info",
-      "id": "mls-r3161950",
       "issue": "unknown-orientation"
     },
     {
@@ -119,11 +94,6 @@
     },
     {
       "severity": "info",
-      "id": "mls-r3167417",
-      "issue": "unknown-orientation"
-    },
-    {
-      "severity": "info",
       "id": "zumper-6f8b3ff2b9fd",
       "issue": "unknown-ac"
     },
@@ -131,32 +101,6 @@
       "severity": "info",
       "id": "zumper-6f8b3ff2b9fd",
       "issue": "unknown-orientation"
-    },
-    {
-      "severity": "info",
-      "id": "mls-r3165327",
-      "issue": "unknown-ac"
-    },
-    {
-      "severity": "info",
-      "id": "mls-r3165327",
-      "issue": "unknown-orientation"
-    },
-    {
-      "severity": "info",
-      "id": "mls-r3162880",
-      "issue": "unknown-ac"
-    },
-    {
-      "severity": "info",
-      "id": "mls-r3162880",
-      "issue": "unknown-orientation"
-    },
-    {
-      "severity": "high",
-      "id": "kits-walk-floorplan-2-bedroom-811-3675",
-      "issue": "stale-verification",
-      "detail": "Last verified 2.0 days ago"
     },
     {
       "severity": "info",
@@ -205,6 +149,16 @@
     },
     {
       "severity": "info",
+      "id": "mls-r3169522",
+      "issue": "unknown-ac"
+    },
+    {
+      "severity": "info",
+      "id": "mls-r3169522",
+      "issue": "unknown-orientation"
+    },
+    {
+      "severity": "info",
       "id": "zumper-dd642aebb4f6",
       "issue": "unknown-ac"
     },
@@ -215,58 +169,37 @@
     },
     {
       "severity": "info",
-      "id": "mls-r3173479",
-      "issue": "unknown-orientation"
-    },
-    {
-      "severity": "info",
       "id": "mls-r3173233",
       "issue": "unknown-ac"
     },
     {
       "severity": "info",
       "id": "mls-r3173233",
-      "issue": "unknown-orientation"
-    },
-    {
-      "severity": "info",
-      "id": "kits-walk-floorplan-2-bedroom-811-3595",
-      "issue": "unknown-ac"
-    },
-    {
-      "severity": "info",
-      "id": "kits-walk-floorplan-2-bedroom-811-3595",
       "issue": "unknown-orientation"
     }
   ],
   "readinessChecks": {
     "smokeOk": true,
     "smokeFresh": true,
-    "smokeCheckedAt": "2026-10-11T15:10:21.719Z",
-    "latestDataAt": "2026-10-11T15:09:25.493Z",
+    "smokeCheckedAt": "2026-10-11T15:23:01.390Z",
+    "latestDataAt": "2026-10-11T15:22:06.829Z",
     "coverageReady": true,
     "healthyDiscoveryLanes": 3,
     "coverageWarnings": [
       {
         "severity": "warning",
         "lane": "rentalsca",
-        "status": "unhealthy",
-        "detail": "0/9 regional searches reachable; 0 qualifying candidates parsed"
+        "status": "degraded",
+        "detail": "3/9 regional searches reachable; 0 qualifying candidates parsed; 10 scoped search-only leads retained (10 new, 0 already active, 0 need revalidation); 3 detail pages blocked after 56 discovered URLs; 53 further detail checks suppressed after repeated 403/429"
       },
       {
         "severity": "warning",
         "lane": "livrent",
         "status": "unhealthy",
         "detail": "0/5 searches healthy; 3 blocked searches opened circuit; 2 further checks suppressed"
-      },
-      {
-        "severity": "warning",
-        "lane": "realtylink",
-        "status": "degraded",
-        "detail": "3/3 searches reachable; 5 current live candidates parsed from a partial snapshot versus complete baseline 5; positive discovery usable, removals suppressed"
       }
     ]
   },
   "readinessIssues": [],
-  "finalizedAt": "2026-10-11T15:10:21.822Z"
+  "finalizedAt": "2026-10-11T15:23:01.473Z"
 }

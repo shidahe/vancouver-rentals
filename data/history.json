@@ -644,6 +644,11 @@
       "date": "2026-10-09",
       "rent": 5390,
       "note": "NEEDS CONFIRMATION: latest purpose-built fallback sources did not confirm the exact configured rent + sqft inventory row."
+    },
+    {
+      "date": "2026-10-11",
+      "rent": 5390,
+      "note": "NEEDS CONFIRMATION: latest purpose-built fallback sources did not confirm the exact configured rent + sqft inventory row."
     }
   ],
   "zumper-2fde865f7e2c": [
@@ -2905,6 +2910,11 @@
       "date": "2026-10-07",
       "rent": 4500,
       "note": "NEW: live Realtylink MLS R3169522 auto-published."
+    },
+    {
+      "date": "2026-10-11",
+      "rent": 4500,
+      "note": "CORRECTED: restored after exact current MLS detail matched identity, explicit availability and rent."
     }
   ],
   "zumper-dd642aebb4f6": [
@@ -2967,6 +2977,11 @@
       "date": "2026-10-11",
       "rent": 3595,
       "note": "MERGED into kits-walk-floorplan-2-bedroom-811-3675: same building, bedrooms, bathrooms and sqft; current rent is $3595."
+    },
+    {
+      "date": "2026-10-11",
+      "rent": 3595,
+      "note": "MERGED into kits-walk-floorplan-2-bedroom-811-3675: same building, bedrooms, bathrooms and sqft; current rent is 3595."
     }
   ]
 }
