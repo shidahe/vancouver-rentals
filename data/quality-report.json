@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-10-10T18:42:47.804Z",
-  "activeCount": 28,
-  "decisionReady": true,
+  "generatedAt": "2026-10-11T15:10:15.807Z",
+  "activeCount": 27,
+  "decisionReady": false,
   "readinessStatus": "finalized",
-  "highIssueCount": 0,
+  "highIssueCount": 1,
   "mediumIssueCount": 0,
-  "infoIssueCount": 47,
+  "infoIssueCount": 45,
   "issues": [
     {
       "severity": "info",
@@ -153,6 +153,12 @@
       "issue": "unknown-orientation"
     },
     {
+      "severity": "high",
+      "id": "kits-walk-floorplan-2-bedroom-811-3675",
+      "issue": "stale-verification",
+      "detail": "Last verified 2.0 days ago"
+    },
+    {
       "severity": "info",
       "id": "kits-walk-floorplan-2-bedroom-811-3675",
       "issue": "unknown-ac"
@@ -224,16 +230,6 @@
     },
     {
       "severity": "info",
-      "id": "mls-r3173689",
-      "issue": "unknown-ac"
-    },
-    {
-      "severity": "info",
-      "id": "mls-r3173689",
-      "issue": "unknown-orientation"
-    },
-    {
-      "severity": "info",
       "id": "kits-walk-floorplan-2-bedroom-811-3595",
       "issue": "unknown-ac"
     },
@@ -246,16 +242,16 @@
   "readinessChecks": {
     "smokeOk": true,
     "smokeFresh": true,
-    "smokeCheckedAt": "2026-10-10T18:42:55.450Z",
-    "latestDataAt": "2026-10-10T18:42:01.248Z",
+    "smokeCheckedAt": "2026-10-11T15:10:21.719Z",
+    "latestDataAt": "2026-10-11T15:09:25.493Z",
     "coverageReady": true,
     "healthyDiscoveryLanes": 3,
     "coverageWarnings": [
       {
         "severity": "warning",
         "lane": "rentalsca",
-        "status": "degraded",
-        "detail": "1/9 regional searches reachable; 0 qualifying candidates parsed; 0 scoped search-only leads retained; 2 detail pages blocked after 2 discovered URLs"
+        "status": "unhealthy",
+        "detail": "0/9 regional searches reachable; 0 qualifying candidates parsed"
       },
       {
         "severity": "warning",
@@ -267,10 +263,10 @@
         "severity": "warning",
         "lane": "realtylink",
         "status": "degraded",
-        "detail": "3/3 searches reachable; 6 current live candidates parsed from a partial snapshot versus complete baseline 6; positive discovery usable, removals suppressed"
+        "detail": "3/3 searches reachable; 5 current live candidates parsed from a partial snapshot versus complete baseline 5; positive discovery usable, removals suppressed"
       }
     ]
   },
   "readinessIssues": [],
-  "finalizedAt": "2026-10-10T18:42:55.560Z"
+  "finalizedAt": "2026-10-11T15:10:21.822Z"
 }
