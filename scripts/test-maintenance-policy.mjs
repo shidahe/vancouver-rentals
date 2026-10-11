@@ -70,9 +70,12 @@ if (listingScopeEligible(w13UpperPortion, 'House close to UBC with lots of rooms
     !isHouseShareText(w13UpperPortion.address)) {
   failures.push('2485 W 13th #Upper regression: an explicitly separate upper-house portion can publish as an entire home.');
 }
-const r3173689Photos=imageSources['mls-r3173689'];
-if (!r3173689Photos || !/R3173689/i.test(JSON.stringify(r3173689Photos)) || (r3173689Photos.candidates || []).length < 3) {
-  failures.push('R3173689 / 3093 W 29th can publish without any exact-identity photo fallback.');
+const r3173689Portion={mls:'R3173689',rent:4600,bedrooms:4,address:'Main House 3093 29th Avenue, Vancouver, BC'};
+const r3173689Evidence='Laundry is shared with basement tenants.';
+if (listingScopeEligible(r3173689Portion, r3173689Evidence) ||
+    !isHouseShareText(r3173689Portion.address) ||
+    !isHouseShareText(r3173689Evidence)) {
+  failures.push('R3173689 / Main House 3093 W 29th regression: a main-house portion sharing laundry with basement tenants can publish as an entire home.');
 }
 const valleyDrivePetPolicy = 'Lease Requirement:\n- No smoking, No pets\nOne sec, gathering the Nearby Pet Friendly';
 if (zumperPetFriendly({ petsAllowed: true }, valleyDrivePetPolicy) !== false ||

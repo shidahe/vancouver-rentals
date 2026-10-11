@@ -3930,18 +3930,19 @@
       "url": "https://realtylink.org/en/house~for-rent~vancouver/263195316",
       "photoPageUrl": "https://realtylink.org/en/house~for-rent~vancouver/263195316",
       "firstSeen": "2026-10-08",
-      "lastChecked": "2026-10-10",
+      "lastChecked": "2026-10-11",
       "verifiedAt": "2026-10-10T18:41:54.714Z",
-      "verificationLevel": "verified",
-      "verificationMethod": "Reverified in current authoritative Realtylink MLS inventory R3173689.",
-      "availabilityStatus": "active",
-      "status": "corrected",
+      "verificationLevel": "excluded_by_scope",
+      "verificationMethod": "Excluded by user search scope: house share or separately rented portion of a house.",
+      "availabilityStatus": "excluded",
+      "status": "excluded",
       "priceDrop": false,
       "evidenceSources": [
         "realtylink mls"
       ],
-      "dataNotes": "MLS number is the canonical identity; disappearance from the current MLS inventory triggers fail-closed revalidation.",
-      "removedAt": null
+      "dataNotes": "Current exact listing identifies this as the Main House and states that laundry is shared with basement tenants; excluded from whole-home inventory.",
+      "scopeExclusionReason": "house share or separately rented portion of a house",
+      "rentalScope": "shared_house"
     },
     {
       "id": "zumper-62baa86fc229",
