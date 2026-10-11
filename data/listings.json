@@ -3526,11 +3526,11 @@
     {
       "id": "kits-walk-floorplan-2-bedroom-811-3675",
       "buildingName": "Kits Walk",
-      "unit": "2 Bedroom · 811 sqft · $3,675",
+      "unit": "2 Bedroom · 811 sqft · $3,595",
       "address": "2075 W 12th Ave, Vancouver, BC V6J 2G3",
       "neighborhood": "Kitsilano",
       "type": "purpose-built",
-      "rent": 3675,
+      "rent": 3595,
       "effectiveRent": null,
       "bedrooms": 2,
       "bathrooms": 2,
@@ -3547,17 +3547,18 @@
       "lng": -123.1522117,
       "source": "Kits Walk live inventory",
       "url": "https://rentals.ca/vancouver/kits-walk-by-strand",
-      "status": "new",
+      "status": "corrected",
       "availabilityStatus": "active",
       "firstSeen": "2026-09-28",
-      "lastChecked": "2026-10-09",
-      "verifiedAt": "2026-10-09T15:05:15.397Z",
+      "lastChecked": "2026-10-11",
+      "verifiedAt": "2026-10-11T15:09:18.835Z",
       "verificationLevel": "primary-live",
       "verificationMethod": "Exact floorplan/unit inventory confirmed on https://rentals.ca/vancouver/kits-walk-by-strand",
       "dataNotes": "Live purpose-built floorplan inventory; public unit number not exposed. Tracked independently by floorplan + rent + sqft.",
       "officialStatus": "leasing",
       "officialStatusAuthority": "official_web",
-      "officialStatusReason": "Official page contains current leasing/availability language."
+      "officialStatusReason": "Official page contains current leasing/availability language.",
+      "priceDrop": true
     },
     {
       "id": "mls-r3170701",
@@ -4007,17 +4008,18 @@
       "lng": -123.1522117,
       "source": "Kits Walk live inventory",
       "url": "https://rentals.ca/vancouver/kits-walk-by-strand",
-      "status": "new",
-      "availabilityStatus": "active",
+      "status": "corrected",
+      "availabilityStatus": "removed",
       "firstSeen": "2026-10-09",
       "lastChecked": "2026-10-11",
       "verifiedAt": "2026-10-11T15:09:18.835Z",
-      "verificationLevel": "primary-live",
-      "verificationMethod": "Exact floorplan/unit inventory confirmed on https://rentals.ca/vancouver/kits-walk-by-strand",
+      "verificationLevel": "merged_duplicate",
+      "verificationMethod": "Merged into kits-walk-floorplan-2-bedroom-811-3675: same purpose-built floorplan identity; rent is an updateable fact, not identity.",
       "dataNotes": "Live purpose-built floorplan inventory; public unit number not exposed. Tracked independently by floorplan + rent + sqft.",
       "officialStatus": "leasing",
       "officialStatusAuthority": "official_web",
-      "officialStatusReason": "Official page contains current leasing/availability language."
+      "officialStatusReason": "Official page contains current leasing/availability language.",
+      "removedAt": "2026-10-11"
     }
   ]
 }

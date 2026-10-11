@@ -3,6 +3,7 @@ import path from 'node:path';
 import { chromium } from 'playwright';
 import { verifiedPhotoCandidates } from './listing-photo-candidates.mjs';
 import { discoveredStructuredInventories, structuredRentalInventories } from './priority-inventory-policy.mjs';
+import { samePurposeBuiltFloorplanIdentity } from './purposebuilt-floorplan-evidence.mjs';
 
 const DATA=path.join(process.cwd(),'data');
 const read=async(p,d)=>{try{return JSON.parse(await fs.readFile(p,'utf8'))}catch{return d}};
@@ -82,9 +83,12 @@ for(const b of cfg.buildings||[]){
     const verified=!!verifiedSource;
     buildingEvidence.inventories.push({...inv,verified,verifiedSource:verifiedSource?.url||null,sourceMatches});
 
+    const floorplanMatches=(inv.unit?[]:db.listings.filter(l=>samePurposeBuiltFloorplanIdentity(l,inv,b.name)))
+      .sort((a,z)=>String(a.firstSeen||'').localeCompare(String(z.firstSeen||''))||String(a.id).localeCompare(String(z.id)));
     let listing=db.listings.find(l=>
-      (inv.unit&&String(l.unit||'').replace(/^#/,'').startsWith(String(inv.unit))&&norm(l.buildingName||'').includes(norm(b.name))) ||
-      (norm(l.buildingName||'')===norm(b.name)&&Number(l.rent)===Number(inv.rent)&&Math.abs(Number(l.sqft||0)-Number(inv.sqft))<=5)
+      inv.unit&&String(l.unit||'').replace(/^#/,'').startsWith(String(inv.unit))&&norm(l.buildingName||'').includes(norm(b.name))
+    ) || floorplanMatches[0] || db.listings.find(l=>
+      norm(l.buildingName||'')===norm(b.name)&&Number(l.rent)===Number(inv.rent)&&Math.abs(Number(l.sqft||0)-Number(inv.sqft))<=5
     );
 
     // A building/multi-unit page saying that some apartment is available is not enough to keep a
@@ -124,7 +128,20 @@ for(const b of cfg.buildings||[]){
         history[listing.id]=history[listing.id]||[];history[listing.id].push({date:day,rent:inv.rent,note:`Live purpose-built inventory price update from ${listing.rent}`});
         listing.priceDrop=Number(inv.rent)<Number(listing.rent);listing.rent=inv.rent;
       }
+      if(!inv.unit) listing.unit=inv.label;
       Object.assign(listing,{availabilityStatus:'active',lastChecked:day,verifiedAt:now,verificationLevel:'primary-live',verificationMethod:`Exact floorplan/unit inventory confirmed on ${verifiedSource.url}`});
+    }
+
+    for(const duplicate of floorplanMatches.filter(x=>x.id!==listing.id)){
+      duplicate.availabilityStatus='removed';
+      duplicate.status='corrected';
+      duplicate.lastChecked=day;
+      duplicate.removedAt=day;
+      duplicate.verificationLevel='merged_duplicate';
+      duplicate.verificationMethod=`Merged into ${listing.id}: same purpose-built floorplan identity; rent is an updateable fact, not identity.`;
+      history[duplicate.id] ||= [];
+      const note=`MERGED into ${listing.id}: same building, bedrooms, bathrooms and sqft; current rent is ${inv.rent}.`;
+      if(!history[duplicate.id].some(h=>h.date===day&&h.note===note)) history[duplicate.id].push({date:day,rent:duplicate.rent,note});
     }
 
     const verifiedObservation=observations.find(x=>x.url===verifiedSource.url);

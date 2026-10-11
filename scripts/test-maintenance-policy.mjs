@@ -8,7 +8,7 @@ import { dedupeHistoryEvents, pruneExcludedScopeChurn } from './history-policy.m
 import { verifiedPhotoCandidates } from './listing-photo-candidates.mjs';
 import { isRealtylinkListingNotFoundRedirect, isTargetWestsideCoordinate, parseRealtylinkAirConditioning, parseRealtylinkCoordinateValues, parseRealtylinkCoordinates, parseRealtylinkFloorArea, parseRealtylinkRoomCount } from './realtylink-parser.mjs';
 import { craigslistLaneHealth, marketplaceLaneHealth, rentalscaLaneHealth, realtylinkLaneHealth, realtylinkSnapshotBaseline, realtylinkSnapshotComplete } from './coverage-policy.mjs';
-import { exactPurposeBuiltFloorplanEvidence } from './purposebuilt-floorplan-evidence.mjs';
+import { exactPurposeBuiltFloorplanEvidence, samePurposeBuiltFloorplanIdentity } from './purposebuilt-floorplan-evidence.mjs';
 import { hasCurrentMarketplaceAvailability, softNegativeDisposition, softUnavailablePrompt } from './listing-availability.mjs';
 import { activeListingContradictedByFreshEvidence } from './evidence-consistency.mjs';
 import { dedupeMlsRecords } from './mls-dedupe.mjs';
@@ -69,6 +69,13 @@ const w13UpperPortion={rent:4000,bedrooms:4,address:'2485 West 13th Avenue #Uppe
 if (listingScopeEligible(w13UpperPortion, 'House close to UBC with lots of rooms') ||
     !isHouseShareText(w13UpperPortion.address)) {
   failures.push('2485 W 13th #Upper regression: an explicitly separate upper-house portion can publish as an entire home.');
+}
+const kitsWalk3675={id:'kits-walk-floorplan-2-bedroom-811-3675',buildingName:'Kits Walk',unit:'2 Bedroom · 811 sqft · $3,675',bedrooms:2,bathrooms:2,sqft:811,rent:3675};
+const kitsWalk3595={key:'2-bedroom-811-3595',label:'2 Bedroom · 811 sqft · $3,595',bedrooms:2,bathrooms:2,sqft:811,rent:3595,unit:null};
+if (!samePurposeBuiltFloorplanIdentity(kitsWalk3675,kitsWalk3595,'Kits Walk') ||
+    samePurposeBuiltFloorplanIdentity({...kitsWalk3675,sqft:741},kitsWalk3595,'Kits Walk') ||
+    samePurposeBuiltFloorplanIdentity({...kitsWalk3675,unit:'605'},kitsWalk3595,'Kits Walk')) {
+  failures.push('Kits Walk 811 sqft price changes can create duplicate floorplan cards instead of updating the existing identity.');
 }
 const r3173689Portion={mls:'R3173689',rent:4600,bedrooms:4,address:'Main House 3093 29th Avenue, Vancouver, BC'};
 const r3173689Evidence='Laundry is shared with basement tenants.';

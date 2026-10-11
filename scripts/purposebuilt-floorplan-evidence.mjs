@@ -20,3 +20,16 @@ export function exactPurposeBuiltFloorplanEvidence(text, listing = {}) {
   if (rent !== expectedRent || sqft !== expectedSqft || !available) return null;
   return { label, rent, sqft, segment };
 }
+
+const normalizedIdentityText = value => String(value || '').toLowerCase().replace(/[^a-z0-9]+/g, ' ').trim();
+const exactPublicUnit = value => /^#?\d+[a-z]?$/i.test(String(value || '').trim());
+
+export function samePurposeBuiltFloorplanIdentity(listing = {}, inventory = {}, buildingName = '') {
+  if (inventory.unit || exactPublicUnit(listing.unit)) return false;
+  return normalizedIdentityText(listing.buildingName) === normalizedIdentityText(buildingName) &&
+    Number(listing.bedrooms) === Number(inventory.bedrooms) &&
+    Number(listing.bathrooms) === Number(inventory.bathrooms) &&
+    Number.isFinite(Number(listing.sqft)) &&
+    Number.isFinite(Number(inventory.sqft)) &&
+    Math.abs(Number(listing.sqft) - Number(inventory.sqft)) <= 5;
+}
