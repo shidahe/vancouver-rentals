@@ -30,7 +30,7 @@ const countTotal=obj=>Object.keys(obj||{}).length;
 const rlHealth=Array.isArray(realtylink.health)?realtylink.health:[];
 const rlReachable=rlHealth.filter(x=>x.status>=200&&x.status<400).length;
 const rlCandidates=Array.isArray(realtylink.candidates)?realtylink.candidates.length:0;
-const rlLane=realtylinkLaneHealth({reachable:rlReachable,total:rlHealth.length,candidates:rlCandidates,previousCompleteCount:reconciliation.realtylinkSnapshotCount||0,removalEligible:reconciliation.realtylinkRemovalEligible,suppression:reconciliation.mlsRemovalSuppressed});
+const rlLane=realtylinkLaneHealth({reachable:rlReachable,total:rlHealth.length,candidates:rlCandidates,previousCompleteCount:reconciliation.realtylinkSnapshotHighWaterMark||reconciliation.realtylinkSnapshotCount||0,removalEligible:reconciliation.realtylinkRemovalEligible,suppression:reconciliation.mlsRemovalSuppressed});
 const rentalscaCandidates=Array.isArray(rentalsca.inventories)?rentalsca.inventories.filter(x=>listingScopeEligible({rent:x.rent,bedrooms:x.bedrooms},x.floorplan||x.address||'')):[];
 const rentalscaLane=rentalscaLaneHealth({reachable:countOk(rentalsca.sourceHealth),total:countTotal(rentalsca.sourceHealth),candidates:rentalscaCandidates.length,diagnostics:rentalsca.diagnostics});
 const craigslistLane=craigslistLaneHealth({reachable:countOk(craigslist.sourceHealth),total:countTotal(craigslist.sourceHealth),candidates:Array.isArray(craigslist.candidates)?craigslist.candidates.length:0,sourceHealth:craigslist.sourceHealth});

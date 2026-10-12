@@ -98,6 +98,7 @@ if (zumperPropertyType({'@type':'SingleFamilyResidence'}, 'House for rent') !== 
 }
 if(!qualityAuditSource.includes("decisionReady:false")||!qualityAuditSource.includes("readinessStatus:'pending_finalization'")||
    !readinessFinalizerSource.includes("readinessStatus='finalized'")) failures.push('A standalone quality audit can claim decision readiness before browser, freshness, and coverage checks are finalized.');
+if(!coverageSource.includes('previousCompleteCount:reconciliation.realtylinkSnapshotHighWaterMark||reconciliation.realtylinkSnapshotCount||0')) failures.push('Realtylink partial-snapshot diagnostics can report the current count as the complete baseline instead of the same-scope high-water mark.');
 if(refreshWorkflow.indexOf('id: readiness')<0||refreshWorkflow.indexOf('id: freshness')<refreshWorkflow.indexOf('id: readiness')) failures.push('The runtime freshness guard runs before the current quality report is finalized.');
 const publicationGateIndex=refreshWorkflow.indexOf('name: Block publication when the fresh site is not decision-ready');
 const validatedCommitIndex=refreshWorkflow.indexOf('name: Commit refreshed rental data, cached images, and validation reports');
