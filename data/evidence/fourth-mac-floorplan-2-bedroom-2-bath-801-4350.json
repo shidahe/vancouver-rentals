@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-10-12T14:55:55.041Z",
+  "checkedAt": "2026-10-12T22:08:17.360Z",
   "listingId": "fourth-mac-floorplan-2-bedroom-2-bath-801-4350",
   "sourceUrl": "https://www.craigslist.org/view/d/vancouver-bed-bath-fourth-mac-kitsilano/eiSLCKTVqsrtPUWpUpJyDN",
   "ok": true,
@@ -259,11 +259,10 @@
   ],
   "jsonLd": [
     {
-      "@context": "https://schema.org",
       "itemListElement": [
         {
-          "name": "craigslist: vancouver, BC",
           "item": "https://www.craigslist.org/area/vancouver",
+          "name": "craigslist: vancouver, BC",
           "position": 1,
           "@type": "ListItem"
         },
@@ -280,38 +279,39 @@
           "@type": "ListItem"
         },
         {
+          "position": 4,
           "name": "apartments / housing for rent",
           "item": "https://www.craigslist.org/search/subarea/van?cat=apa",
-          "position": 4,
           "@type": "ListItem"
         },
         {
-          "@type": "ListItem",
-          "item": "https://www.craigslist.org/view/d/vancouver-bed-bath-fourth-mac-kitsilano/eiSLCKTVqsrtPUWpUpJyDN",
           "name": "2 Bed + 2 Bath @ Fourth + Mac — Kitsilano | Available October 1",
-          "position": 5
+          "position": 5,
+          "item": "https://www.craigslist.org/view/d/vancouver-bed-bath-fourth-mac-kitsilano/eiSLCKTVqsrtPUWpUpJyDN",
+          "@type": "ListItem"
         }
       ],
+      "@context": "https://schema.org",
       "@type": "BreadcrumbList"
     },
     {
-      "@type": "Apartment",
-      "address": {
-        "streetAddress": "Fourth Avenue",
-        "@type": "PostalAddress",
-        "addressCountry": "CA",
-        "addressLocality": "Vancouver",
-        "addressRegion": "BC",
-        "postalCode": "V6K3T2"
-      },
-      "numberOfBedrooms": "2",
-      "petsAllowed": true,
       "smokingAllowed": false,
       "name": "2 Bed + 2 Bath @ Fourth + Mac — Kitsilano | Available October 1",
       "latitude": "49.264600",
       "@context": "http://schema.org",
+      "numberOfBathroomsTotal": 2,
       "longitude": "-123.164800",
-      "numberOfBathroomsTotal": 2
+      "@type": "Apartment",
+      "address": {
+        "addressCountry": "CA",
+        "@type": "PostalAddress",
+        "streetAddress": "Fourth Avenue",
+        "postalCode": "V6K3T2",
+        "addressRegion": "BC",
+        "addressLocality": "Vancouver"
+      },
+      "numberOfBedrooms": "2",
+      "petsAllowed": true
     }
   ],
   "images": [
@@ -336,7 +336,7 @@
     "https://images.craigslist.org/00707_h0AcrfE2gBi_0gw0oM_50x50c.jpg",
     "https://images.craigslist.org/00t0t_3BVDkrAtkax_0x20m1_50x50c.jpg"
   ],
-  "elapsedMs": 3219,
+  "elapsedMs": 3581,
   "identityMatch": false,
   "explicitNegative": false,
   "negativePhrase": null,

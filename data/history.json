@@ -649,6 +649,11 @@
       "date": "2026-10-11",
       "rent": 5390,
       "note": "NEEDS CONFIRMATION: latest purpose-built fallback sources did not confirm the exact configured rent + sqft inventory row."
+    },
+    {
+      "date": "2026-10-12",
+      "rent": 5390,
+      "note": "NEEDS CONFIRMATION: latest purpose-built fallback sources did not confirm the exact configured rent + sqft inventory row."
     }
   ],
   "zumper-2fde865f7e2c": [
@@ -2269,6 +2274,11 @@
     },
     {
       "date": "2026-10-08",
+      "rent": 15000,
+      "note": "CORRECTED: restored after exact current MLS detail matched identity, explicit availability and rent."
+    },
+    {
+      "date": "2026-10-12",
       "rent": 15000,
       "note": "CORRECTED: restored after exact current MLS detail matched identity, explicit availability and rent."
     }

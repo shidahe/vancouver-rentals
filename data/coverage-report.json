@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-12T15:04:45.929Z",
+  "generatedAt": "2026-10-12T22:16:50.478Z",
   "coverageReady": true,
   "healthyLaneCount": 3,
   "freshLaneCount": 8,
@@ -9,21 +9,21 @@
     {
       "building": "kits-walk",
       "healthy": true,
-      "checkedAt": "2026-10-12T14:55:55.041Z",
+      "checkedAt": "2026-10-12T22:08:17.360Z",
       "evidenceUrl": "https://www.zumper.com/apartment-buildings/p481389/kits-walk-by-strand-kitsilano-vancouver-bc",
       "sourceOptions": 2
     },
     {
       "building": "larchway-gardens",
       "healthy": true,
-      "checkedAt": "2026-10-12T14:55:55.041Z",
+      "checkedAt": "2026-10-12T22:08:17.360Z",
       "evidenceUrl": "https://quadrealresidential.com/vancouver/larchway-gardens/floorplans/",
       "sourceOptions": 1
     },
     {
       "building": "viridian",
       "healthy": true,
-      "checkedAt": "2026-10-12T14:55:55.041Z",
+      "checkedAt": "2026-10-12T22:08:17.360Z",
       "evidenceUrl": "https://www.zumper.com/apartment-buildings/p510456/viridian-fairview-vancouver-bc",
       "sourceOptions": 2
     }
@@ -36,7 +36,7 @@
       "healthy": true,
       "status": "healthy",
       "detail": "11 fresh live candidates",
-      "refreshedAt": "2026-10-12T14:59:59.011Z"
+      "refreshedAt": "2026-10-12T22:12:21.783Z"
     },
     {
       "id": "craigslist",
@@ -44,7 +44,7 @@
       "healthy": true,
       "status": "healthy",
       "detail": "4/4 regional searches reachable; 28 qualifying candidates parsed",
-      "refreshedAt": "2026-10-12T15:02:29.316Z"
+      "refreshedAt": "2026-10-12T22:14:54.499Z"
     },
     {
       "id": "rentalsca",
@@ -52,7 +52,7 @@
       "healthy": false,
       "status": "degraded",
       "detail": "1/9 regional searches reachable; 0 qualifying candidates parsed; 0 scoped search-only leads retained; 2 detail pages blocked after 2 discovered URLs",
-      "refreshedAt": "2026-10-12T15:02:24.359Z"
+      "refreshedAt": "2026-10-12T22:14:49.438Z"
     },
     {
       "id": "livrent",
@@ -60,7 +60,7 @@
       "healthy": false,
       "status": "unhealthy",
       "detail": "0/5 searches healthy; 3 blocked searches opened circuit; 2 further checks suppressed",
-      "refreshedAt": "2026-10-12T15:02:28.294Z"
+      "refreshedAt": "2026-10-12T22:14:53.544Z"
     },
     {
       "id": "realtylink",
@@ -70,7 +70,7 @@
       "status": "degraded",
       "partial": true,
       "detail": "3/3 searches reachable; 4 current live candidates parsed from a partial snapshot versus complete baseline 9; positive discovery usable, removals suppressed",
-      "refreshedAt": "2026-10-12T15:02:49.345Z"
+      "refreshedAt": "2026-10-12T22:15:14.686Z"
     },
     {
       "id": "priority-kits-walk",
@@ -78,7 +78,7 @@
       "healthy": true,
       "status": "healthy",
       "detail": "1/2 official sources usable",
-      "refreshedAt": "2026-10-12T15:03:58.721Z"
+      "refreshedAt": "2026-10-12T22:16:19.875Z"
     },
     {
       "id": "priority-larchway-gardens",
@@ -86,7 +86,7 @@
       "healthy": true,
       "status": "healthy",
       "detail": "2/2 official sources usable",
-      "refreshedAt": "2026-10-12T15:03:58.721Z"
+      "refreshedAt": "2026-10-12T22:16:19.875Z"
     },
     {
       "id": "priority-viridian",
@@ -94,7 +94,7 @@
       "healthy": true,
       "status": "healthy",
       "detail": "1/2 official sources usable",
-      "refreshedAt": "2026-10-12T15:03:58.721Z"
+      "refreshedAt": "2026-10-12T22:16:19.875Z"
     }
   ],
   "warnings": [
