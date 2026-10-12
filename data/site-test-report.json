@@ -1,11 +1,11 @@
 {
-  "checkedAt": "2026-10-11T19:02:58.613Z",
+  "checkedAt": "2026-10-12T15:04:51.168Z",
   "ok": true,
   "checkpoints": {
     "render": {
       "title": "Vancouver Westside Rentals",
-      "cards": 23,
-      "shown": 23
+      "cards": 22,
+      "shown": 22
     },
     "stats": {
       "labels": [
@@ -16,16 +16,16 @@
         "Last refreshed"
       ],
       "values": [
-        "23",
+        "22",
         "10",
         "4",
         "8",
-        "2026-10-11 18:53:52"
+        "2026-10-12 14:55:55"
       ],
-      "html": "<div class=\"stat\"><strong>23</strong><span>Active</span></div><div class=\"stat\"><strong>10</strong><span>New</span></div><div class=\"stat\"><strong>4</strong><span>Price drops</span></div><div class=\"stat\"><strong>8</strong><span>To verify</span></div><div class=\"stat\"><strong>2026-10-11 18:53:52</strong><span>Last refreshed</span></div>"
+      "html": "<div class=\"stat\"><strong>22</strong><span>Active</span></div><div class=\"stat\"><strong>10</strong><span>New</span></div><div class=\"stat\"><strong>4</strong><span>Price drops</span></div><div class=\"stat\"><strong>8</strong><span>To verify</span></div><div class=\"stat\"><strong>2026-10-12 14:55:55</strong><span>Last refreshed</span></div>"
     },
     "map": {
-      "markers": 23,
+      "markers": 22,
       "desktopMapVisible": true
     },
     "filters": "ok",
@@ -36,14 +36,14 @@
     },
     "sourceLink": "https://www.zumper.com/apartment-buildings/p1117150/arbutus-residences-quilchena-vancouver-bc",
     "photos": {
-      "total": 23,
-      "loaded": 23,
+      "total": 22,
+      "loaded": 22,
       "fallbacks": 0,
       "bad": []
     },
     "markerPositions": {
-      "total": 23,
-      "unique": 23
+      "total": 22,
+      "unique": 22
     },
     "dataEndpoints": "ok",
     "mobile": "ok",

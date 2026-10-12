@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-10-11T19:02:53.010Z",
-  "activeCount": 23,
+  "generatedAt": "2026-10-12T15:04:45.894Z",
+  "activeCount": 22,
   "decisionReady": true,
   "readinessStatus": "finalized",
   "highIssueCount": 0,
   "mediumIssueCount": 0,
-  "infoIssueCount": 38,
+  "infoIssueCount": 36,
   "issues": [
     {
       "severity": "info",
@@ -80,16 +80,6 @@
     {
       "severity": "info",
       "id": "mls-r3161880",
-      "issue": "unknown-orientation"
-    },
-    {
-      "severity": "info",
-      "id": "mls-r3161950",
-      "issue": "unknown-ac"
-    },
-    {
-      "severity": "info",
-      "id": "mls-r3161950",
       "issue": "unknown-orientation"
     },
     {
@@ -201,8 +191,8 @@
   "readinessChecks": {
     "smokeOk": true,
     "smokeFresh": true,
-    "smokeCheckedAt": "2026-10-11T19:02:58.613Z",
-    "latestDataAt": "2026-10-11T19:02:05.248Z",
+    "smokeCheckedAt": "2026-10-12T15:04:51.168Z",
+    "latestDataAt": "2026-10-12T15:03:58.721Z",
     "coverageReady": true,
     "healthyDiscoveryLanes": 3,
     "coverageWarnings": [
@@ -210,7 +200,7 @@
         "severity": "warning",
         "lane": "rentalsca",
         "status": "degraded",
-        "detail": "4/9 regional searches reachable; 0 qualifying candidates parsed; 0 scoped search-only leads retained; 3 detail pages blocked after 11 discovered URLs; 8 further detail checks suppressed after repeated 403/429"
+        "detail": "1/9 regional searches reachable; 0 qualifying candidates parsed; 0 scoped search-only leads retained; 2 detail pages blocked after 2 discovered URLs"
       },
       {
         "severity": "warning",
@@ -222,10 +212,10 @@
         "severity": "warning",
         "lane": "realtylink",
         "status": "degraded",
-        "detail": "3/3 searches reachable; 6 current live candidates parsed from a partial snapshot versus complete baseline 6; positive discovery usable, removals suppressed"
+        "detail": "3/3 searches reachable; 4 current live candidates parsed from a partial snapshot versus complete baseline 9; positive discovery usable, removals suppressed"
       }
     ]
   },
   "readinessIssues": [],
-  "finalizedAt": "2026-10-11T19:02:58.719Z"
+  "finalizedAt": "2026-10-12T15:04:51.260Z"
 }
