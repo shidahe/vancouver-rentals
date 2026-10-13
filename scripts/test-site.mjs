@@ -56,7 +56,8 @@ try {
   assert(refreshedIndex >= 0, 'Last refreshed stat did not render');
   const expectedRefreshed = await page.evaluate(async () => {
     const payload = await (await fetch('data/listings.json')).json();
-    return new Intl.DateTimeFormat('en-CA', { timeZone: 'America/Vancouver', month: 'short', day: 'numeric', hour: 'numeric', minute: '2-digit', timeZoneName: 'short' }).format(new Date(payload.meta.lastRefreshed));
+    const latest = payload.meta?.lastAutomatedRefresh || payload.meta?.lastZumperUnitRefresh || payload.meta?.lastRefreshed;
+    return new Intl.DateTimeFormat('en-CA', { timeZone: 'America/Vancouver', month: 'short', day: 'numeric', hour: 'numeric', minute: '2-digit', timeZoneName: 'short' }).format(new Date(latest));
   });
   assert(statValues[refreshedIndex] === expectedRefreshed, `Last refreshed value "${statValues[refreshedIndex]}" did not match Vancouver-local metadata time "${expectedRefreshed}"`);
   assert(/P(?:S|D)T$/.test(statValues[refreshedIndex]), `Last refreshed time lacks an explicit Vancouver timezone: ${statValues[refreshedIndex]}`);
