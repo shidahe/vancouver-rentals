@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-10-13T15:19:59.587Z",
+  "refreshedAt": "2026-10-13T20:23:32.988Z",
   "listings": {
     "york-103-2535-r3137446": {
       "cached": 5,
@@ -90,6 +90,13 @@
       "failures": [],
       "photoPageUrl": "https://realtylink.org/en/house~for-rent~vancouver/263180687"
     },
+    "mls-r3163709": {
+      "cached": 5,
+      "preserved": 0,
+      "downloaded": 5,
+      "failures": [],
+      "photoPageUrl": "https://realtylink.org/en/house~for-rent~vancouver/263185336"
+    },
     "fourth-mac-floorplan-2-bedroom-2-bath-801-4350": {
       "cached": 5,
       "preserved": 5,
@@ -103,13 +110,6 @@
       "downloaded": 0,
       "failures": [],
       "photoPageUrl": "https://www.craigslist.org/view/d/vancouver-ocean-view-2br-2ba-with-den/kZEyBrAFDhJYBcmtaq27m2"
-    },
-    "mls-r3164604": {
-      "cached": 5,
-      "preserved": 5,
-      "downloaded": 0,
-      "failures": [],
-      "photoPageUrl": "https://realtylink.org/en/apartment~for-rent~vancouver/263186231"
     },
     "w16-coach-house-850": {
       "cached": 5,
@@ -193,16 +193,23 @@
         }
       ],
       "photoPageUrl": "https://realtylink.org/en/house~for-rent~vancouver/263194860"
+    },
+    "mls-r3174425": {
+      "cached": 5,
+      "preserved": 0,
+      "downloaded": 5,
+      "failures": [],
+      "photoPageUrl": "https://realtylink.org/en/house~for-rent~vancouver/263196052"
     }
   },
   "totals": {
-    "sourceListings": 22,
-    "cachedListings": 22,
-    "downloaded": 0,
+    "sourceListings": 23,
+    "cachedListings": 23,
+    "downloaded": 10,
     "failed": 9,
-    "preserved": 102,
-    "prunedListings": 0,
-    "prunedIndexImages": 0,
+    "preserved": 97,
+    "prunedListings": 1,
+    "prunedIndexImages": 5,
     "prunedOrphanFiles": 0
   }
 }

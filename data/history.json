@@ -2425,6 +2425,11 @@
       "date": "2026-10-09",
       "rent": 6000,
       "note": "CORRECTED: restored after exact current MLS detail matched identity, explicit availability and rent."
+    },
+    {
+      "date": "2026-10-13",
+      "rent": 6000,
+      "note": "CORRECTED: restored after exact current MLS detail matched identity, explicit availability and rent."
     }
   ],
   "mls-r3164628": [
@@ -2550,6 +2555,11 @@
       "date": "2026-10-11",
       "rent": 5495,
       "note": "CORRECTED: restored after exact current MLS detail matched identity, explicit availability and rent."
+    },
+    {
+      "date": "2026-10-13",
+      "rent": 5495,
+      "note": "AUTO-HIDDEN: MLS R3164604 exceeded 48 hours without fresh positive availability; partial search results are not removal evidence."
     }
   ],
   "mls-r3166264": [
@@ -3047,6 +3057,13 @@
       "date": "2026-10-13",
       "rent": 3595,
       "note": "MERGED into kits-walk-floorplan-2-bedroom-811-3675: same building, bedrooms, bathrooms and sqft; current rent is 3595."
+    }
+  ],
+  "mls-r3174425": [
+    {
+      "date": "2026-10-13",
+      "rent": 14500,
+      "note": "NEW: live Realtylink MLS R3174425 auto-published."
     }
   ]
 }

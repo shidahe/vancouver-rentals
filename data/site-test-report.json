@@ -1,11 +1,11 @@
 {
-  "checkedAt": "2026-10-13T15:20:06.469Z",
+  "checkedAt": "2026-10-13T20:23:43.043Z",
   "ok": true,
   "checkpoints": {
     "render": {
       "title": "Vancouver Westside Rentals",
-      "cards": 22,
-      "shown": 22
+      "cards": 23,
+      "shown": 23
     },
     "stats": {
       "labels": [
@@ -16,21 +16,21 @@
         "Last refreshed"
       ],
       "values": [
-        "22",
-        "10",
+        "23",
+        "11",
         "4",
         "8",
-        "Oct 13, 8:11 a.m. PDT"
+        "Oct 13, 1:15 p.m. PDT"
       ],
-      "html": "<div class=\"stat\"><strong>22</strong><span>Active</span></div><div class=\"stat\"><strong>10</strong><span>New</span></div><div class=\"stat\"><strong>4</strong><span>Price drops</span></div><div class=\"stat\"><strong>8</strong><span>To verify</span></div><div class=\"stat\"><strong>Oct 13, 8:11 a.m. PDT</strong><span>Last refreshed</span></div>",
+      "html": "<div class=\"stat\"><strong>23</strong><span>Active</span></div><div class=\"stat\"><strong>11</strong><span>New</span></div><div class=\"stat\"><strong>4</strong><span>Price drops</span></div><div class=\"stat\"><strong>8</strong><span>To verify</span></div><div class=\"stat\"><strong>Oct 13, 1:15 p.m. PDT</strong><span>Last refreshed</span></div>",
       "refreshedAt": {
-        "displayed": "Oct 13, 8:11 a.m. PDT",
-        "expected": "Oct 13, 8:11 a.m. PDT",
+        "displayed": "Oct 13, 1:15 p.m. PDT",
+        "expected": "Oct 13, 1:15 p.m. PDT",
         "timezone": "America/Vancouver"
       }
     },
     "map": {
-      "markers": 22,
+      "markers": 23,
       "desktopMapVisible": true
     },
     "filters": "ok",
@@ -41,14 +41,14 @@
     },
     "sourceLink": "https://www.craigslist.org/view/d/vancouver-bed-bath-fourth-mac-kitsilano/eiSLCKTVqsrtPUWpUpJyDN",
     "photos": {
-      "total": 22,
-      "loaded": 22,
+      "total": 23,
+      "loaded": 23,
       "fallbacks": 0,
       "bad": []
     },
     "markerPositions": {
-      "total": 22,
-      "unique": 22
+      "total": 23,
+      "unique": 23
     },
     "dataEndpoints": "ok",
     "mobile": "ok",
