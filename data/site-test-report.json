@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-10-13T15:10:44.243Z",
+  "checkedAt": "2026-10-13T15:20:06.469Z",
   "ok": true,
   "checkpoints": {
     "render": {
@@ -20,12 +20,12 @@
         "10",
         "4",
         "8",
-        "Oct 12, 3:08 p.m. PDT"
+        "Oct 13, 8:11 a.m. PDT"
       ],
-      "html": "<div class=\"stat\"><strong>22</strong><span>Active</span></div><div class=\"stat\"><strong>10</strong><span>New</span></div><div class=\"stat\"><strong>4</strong><span>Price drops</span></div><div class=\"stat\"><strong>8</strong><span>To verify</span></div><div class=\"stat\"><strong>Oct 12, 3:08 p.m. PDT</strong><span>Last refreshed</span></div>",
+      "html": "<div class=\"stat\"><strong>22</strong><span>Active</span></div><div class=\"stat\"><strong>10</strong><span>New</span></div><div class=\"stat\"><strong>4</strong><span>Price drops</span></div><div class=\"stat\"><strong>8</strong><span>To verify</span></div><div class=\"stat\"><strong>Oct 13, 8:11 a.m. PDT</strong><span>Last refreshed</span></div>",
       "refreshedAt": {
-        "displayed": "Oct 12, 3:08 p.m. PDT",
-        "expected": "Oct 12, 3:08 p.m. PDT",
+        "displayed": "Oct 13, 8:11 a.m. PDT",
+        "expected": "Oct 13, 8:11 a.m. PDT",
         "timezone": "America/Vancouver"
       }
     },
