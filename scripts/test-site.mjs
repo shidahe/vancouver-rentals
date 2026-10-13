@@ -52,6 +52,15 @@ try {
   const statValues = await page.locator('#stats .stat strong').allTextContents();
   report.checkpoints.stats = { labels: statLabels, values: statValues, html: await page.locator('#stats').innerHTML() };
   assert(statLabels.includes('Active') && statLabels.includes('New'), `Stats header did not render expected labels: ${JSON.stringify(statLabels)}`);
+  const refreshedIndex = statLabels.indexOf('Last refreshed');
+  assert(refreshedIndex >= 0, 'Last refreshed stat did not render');
+  const expectedRefreshed = await page.evaluate(async () => {
+    const payload = await (await fetch('data/listings.json')).json();
+    return new Intl.DateTimeFormat('en-CA', { timeZone: 'America/Vancouver', month: 'short', day: 'numeric', hour: 'numeric', minute: '2-digit', timeZoneName: 'short' }).format(new Date(payload.meta.lastRefreshed));
+  });
+  assert(statValues[refreshedIndex] === expectedRefreshed, `Last refreshed value "${statValues[refreshedIndex]}" did not match Vancouver-local metadata time "${expectedRefreshed}"`);
+  assert(/P(?:S|D)T$/.test(statValues[refreshedIndex]), `Last refreshed time lacks an explicit Vancouver timezone: ${statValues[refreshedIndex]}`);
+  report.checkpoints.stats.refreshedAt = { displayed: statValues[refreshedIndex], expected: expectedRefreshed, timezone: 'America/Vancouver' };
 
   const markers = await page.locator('.leaflet-marker-icon.price-marker').count();
   const desktopMapVisible = await page.locator('#map').isVisible();
