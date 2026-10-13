@@ -1,6 +1,6 @@
 {
-  "checkedAt": "2026-10-13T15:08:03.008Z",
-  "ok": false,
+  "checkedAt": "2026-10-13T15:10:44.243Z",
+  "ok": true,
   "checkpoints": {
     "render": {
       "title": "Vancouver Westside Rentals",
@@ -20,10 +20,43 @@
         "10",
         "4",
         "8",
-        "2026-10-12 22:08:17"
+        "Oct 12, 3:08 p.m. PDT"
       ],
-      "html": "<div class=\"stat\"><strong>22</strong><span>Active</span></div><div class=\"stat\"><strong>10</strong><span>New</span></div><div class=\"stat\"><strong>4</strong><span>Price drops</span></div><div class=\"stat\"><strong>8</strong><span>To verify</span></div><div class=\"stat\"><strong>2026-10-12 22:08:17</strong><span>Last refreshed</span></div>"
+      "html": "<div class=\"stat\"><strong>22</strong><span>Active</span></div><div class=\"stat\"><strong>10</strong><span>New</span></div><div class=\"stat\"><strong>4</strong><span>Price drops</span></div><div class=\"stat\"><strong>8</strong><span>To verify</span></div><div class=\"stat\"><strong>Oct 12, 3:08 p.m. PDT</strong><span>Last refreshed</span></div>",
+      "refreshedAt": {
+        "displayed": "Oct 12, 3:08 p.m. PDT",
+        "expected": "Oct 12, 3:08 p.m. PDT",
+        "timezone": "America/Vancouver"
+      }
+    },
+    "map": {
+      "markers": 22,
+      "desktopMapVisible": true
+    },
+    "filters": "ok",
+    "localStorage": {
+      "favorite": true,
+      "notes": true,
+      "firstId": "fourth-mac-floorplan-2-bedroom-2-bath-801-4350"
+    },
+    "sourceLink": "https://www.craigslist.org/view/d/vancouver-bed-bath-fourth-mac-kitsilano/eiSLCKTVqsrtPUWpUpJyDN",
+    "photos": {
+      "total": 22,
+      "loaded": 22,
+      "fallbacks": 0,
+      "bad": []
+    },
+    "markerPositions": {
+      "total": 22,
+      "unique": 22
+    },
+    "dataEndpoints": "ok",
+    "mobile": "ok",
+    "browserHealth": {
+      "consoleErrors": [],
+      "failedRequests": [],
+      "fatalHttpResponses": [],
+      "recoverableImageHttpResponses": []
     }
-  },
-  "error": "Error: Last refreshed value \"2026-10-12 22:08:17\" did not match Vancouver-local metadata time \"Aug 19, 11:12 a.m. PDT\"\n    at assert (file:///home/runner/work/vancouver-rentals/vancouver-rentals/scripts/test-site.mjs:10:50)\n    at file:///home/runner/work/vancouver-rentals/vancouver-rentals/scripts/test-site.mjs:61:3"
+  }
 }
