@@ -69,7 +69,7 @@ try {
     const today = Date.UTC(parts.year, parts.month - 1, parts.day) / 86400000;
     const recent = payload.listings.filter(l => {
       const availability = l.availabilityStatus || (l.status === 'removed' ? 'removed' : 'active');
-      if (availability !== 'active' || !/^\\d{4}-\\d{2}-\\d{2}$/.test(l.firstSeen || '')) return false;
+      if (availability !== 'active' || !/^\d{4}-\d{2}-\d{2}$/.test(l.firstSeen || '')) return false;
       const age = today - Date.parse(`${l.firstSeen}T00:00:00Z`) / 86400000;
       return age >= 0 && age < 7;
     });
