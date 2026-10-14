@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-13T20:23:35.327Z",
+  "generatedAt": "2026-10-14T15:13:06.418Z",
   "activeCount": 23,
   "decisionReady": true,
   "readinessStatus": "finalized",
@@ -45,6 +45,11 @@
     {
       "severity": "info",
       "id": "zumper-976e340c66a7",
+      "issue": "unknown-orientation"
+    },
+    {
+      "severity": "info",
+      "id": "arbutus-residences-floorplan-2-bedroom-townhouse-den-1340",
       "issue": "unknown-orientation"
     },
     {
@@ -129,11 +134,6 @@
     },
     {
       "severity": "info",
-      "id": "mls-r3167237",
-      "issue": "unknown-orientation"
-    },
-    {
-      "severity": "info",
       "id": "kits-walk-floorplan-2-bedroom-811-3675",
       "issue": "unknown-ac"
     },
@@ -201,16 +201,16 @@
   "readinessChecks": {
     "smokeOk": true,
     "smokeFresh": true,
-    "smokeCheckedAt": "2026-10-13T20:23:43.043Z",
-    "latestDataAt": "2026-10-13T20:23:03.825Z",
+    "smokeCheckedAt": "2026-10-14T15:13:12.714Z",
+    "latestDataAt": "2026-10-14T15:12:20.728Z",
     "coverageReady": true,
     "healthyDiscoveryLanes": 3,
     "coverageWarnings": [
       {
         "severity": "warning",
         "lane": "rentalsca",
-        "status": "unhealthy",
-        "detail": "0/9 regional searches reachable; 0 qualifying candidates parsed"
+        "status": "degraded",
+        "detail": "1/9 regional searches reachable; 0 qualifying candidates parsed; 1 scoped search-only leads retained (1 new, 0 already active, 0 need revalidation); 3 detail pages blocked after 4 discovered URLs; 1 further detail checks suppressed after repeated 403/429"
       },
       {
         "severity": "warning",
@@ -222,7 +222,7 @@
         "severity": "warning",
         "lane": "realtylink",
         "status": "degraded",
-        "detail": "3/3 searches reachable; 6 current live candidates parsed from a partial snapshot versus complete baseline 9; positive discovery usable, removals suppressed"
+        "detail": "3/3 searches reachable; 4 current live candidates parsed from a partial snapshot versus complete baseline 9; positive discovery usable, removals suppressed"
       },
       {
         "severity": "warning",
@@ -239,5 +239,5 @@
     ]
   },
   "readinessIssues": [],
-  "finalizedAt": "2026-10-13T20:23:43.129Z"
+  "finalizedAt": "2026-10-14T15:13:12.820Z"
 }

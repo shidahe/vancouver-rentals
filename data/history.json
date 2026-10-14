@@ -2560,6 +2560,11 @@
       "date": "2026-10-13",
       "rent": 5495,
       "note": "AUTO-HIDDEN: MLS R3164604 exceeded 48 hours without fresh positive availability; partial search results are not removal evidence."
+    },
+    {
+      "date": "2026-10-14",
+      "rent": 5495,
+      "note": "AUTO-REMOVED after direct live verification found explicit unavailable evidence."
     }
   ],
   "mls-r3166264": [
@@ -2709,6 +2714,11 @@
       "date": "2026-10-13",
       "rent": 4975,
       "note": "AUTO live price update from 5475 to 4975."
+    },
+    {
+      "date": "2026-10-14",
+      "rent": 4975,
+      "note": "AUTO live price update from 5475 to 4975."
     }
   ],
   "mls-r3149612": [
@@ -2817,6 +2827,11 @@
       "date": "2026-10-11",
       "rent": 13000,
       "note": "CORRECTED: restored after exact current MLS detail matched identity, explicit availability and rent."
+    },
+    {
+      "date": "2026-10-14",
+      "rent": 13000,
+      "note": "AUTO-HIDDEN: MLS R3167237 exceeded 48 hours without fresh positive availability; partial search results are not removal evidence."
     }
   ],
   "mls-r3165327": [
@@ -3055,6 +3070,11 @@
     },
     {
       "date": "2026-10-13",
+      "rent": 3595,
+      "note": "MERGED into kits-walk-floorplan-2-bedroom-811-3675: same building, bedrooms, bathrooms and sqft; current rent is 3595."
+    },
+    {
+      "date": "2026-10-14",
       "rent": 3595,
       "note": "MERGED into kits-walk-floorplan-2-bedroom-811-3675: same building, bedrooms, bathrooms and sqft; current rent is 3595."
     }
