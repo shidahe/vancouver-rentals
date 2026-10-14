@@ -1,6 +1,6 @@
 {
-  "checkedAt": "2026-10-13T20:23:43.043Z",
-  "ok": true,
+  "checkedAt": "2026-10-14T15:01:48.209Z",
+  "ok": false,
   "checkpoints": {
     "render": {
       "title": "Vancouver Westside Rentals",
@@ -10,53 +10,25 @@
     "stats": {
       "labels": [
         "Active",
-        "New",
+        "New 7d",
         "Price drops",
         "To verify",
         "Last refreshed"
       ],
       "values": [
         "23",
-        "11",
+        "3",
         "4",
         "8",
         "Oct 13, 1:15 p.m. PDT"
       ],
-      "html": "<div class=\"stat\"><strong>23</strong><span>Active</span></div><div class=\"stat\"><strong>11</strong><span>New</span></div><div class=\"stat\"><strong>4</strong><span>Price drops</span></div><div class=\"stat\"><strong>8</strong><span>To verify</span></div><div class=\"stat\"><strong>Oct 13, 1:15 p.m. PDT</strong><span>Last refreshed</span></div>",
+      "html": "<div class=\"stat\"><strong>23</strong><span>Active</span></div><div class=\"stat\"><strong>3</strong><span>New 7d</span></div><div class=\"stat\"><strong>4</strong><span>Price drops</span></div><div class=\"stat\"><strong>8</strong><span>To verify</span></div><div class=\"stat\"><strong>Oct 13, 1:15 p.m. PDT</strong><span>Last refreshed</span></div>",
       "refreshedAt": {
         "displayed": "Oct 13, 1:15 p.m. PDT",
         "expected": "Oct 13, 1:15 p.m. PDT",
         "timezone": "America/Vancouver"
       }
-    },
-    "map": {
-      "markers": 23,
-      "desktopMapVisible": true
-    },
-    "filters": "ok",
-    "localStorage": {
-      "favorite": true,
-      "notes": true,
-      "firstId": "fourth-mac-floorplan-2-bedroom-2-bath-801-4350"
-    },
-    "sourceLink": "https://www.craigslist.org/view/d/vancouver-bed-bath-fourth-mac-kitsilano/eiSLCKTVqsrtPUWpUpJyDN",
-    "photos": {
-      "total": 23,
-      "loaded": 23,
-      "fallbacks": 0,
-      "bad": []
-    },
-    "markerPositions": {
-      "total": 23,
-      "unique": 23
-    },
-    "dataEndpoints": "ok",
-    "mobile": "ok",
-    "browserHealth": {
-      "consoleErrors": [],
-      "failedRequests": [],
-      "fatalHttpResponses": [],
-      "recoverableImageHttpResponses": []
     }
-  }
+  },
+  "error": "Error: New 7d stat 3 != firstSeen-derived count 0\n    at assert (file:///home/runner/work/vancouver-rentals/vancouver-rentals/scripts/test-site.mjs:10:50)\n    at file:///home/runner/work/vancouver-rentals/vancouver-rentals/scripts/test-site.mjs:80:3"
 }
