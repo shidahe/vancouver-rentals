@@ -51,7 +51,7 @@ try {
   const statLabels = await page.locator('#stats .stat span').allTextContents();
   const statValues = await page.locator('#stats .stat strong').allTextContents();
   report.checkpoints.stats = { labels: statLabels, values: statValues, html: await page.locator('#stats').innerHTML() };
-  assert(statLabels.includes('Active') && statLabels.includes('New'), `Stats header did not render expected labels: ${JSON.stringify(statLabels)}`);
+  assert(statLabels.includes('Active') && statLabels.includes('New 7d'), `Stats header did not render expected labels: ${JSON.stringify(statLabels)}`);
   const refreshedIndex = statLabels.indexOf('Last refreshed');
   assert(refreshedIndex >= 0, 'Last refreshed stat did not render');
   const expectedRefreshed = await page.evaluate(async () => {
@@ -62,6 +62,24 @@ try {
   assert(statValues[refreshedIndex] === expectedRefreshed, `Last refreshed value "${statValues[refreshedIndex]}" did not match Vancouver-local metadata time "${expectedRefreshed}"`);
   assert(/P(?:S|D)T$/.test(statValues[refreshedIndex]), `Last refreshed time lacks an explicit Vancouver timezone: ${statValues[refreshedIndex]}`);
   report.checkpoints.stats.refreshedAt = { displayed: statValues[refreshedIndex], expected: expectedRefreshed, timezone: 'America/Vancouver' };
+  const recentIndex = statLabels.indexOf('New 7d');
+  const recentAudit = await page.evaluate(async () => {
+    const payload = await (await fetch(`data/listings.json?t=${Date.now()}`, { cache: 'no-store' })).json();
+    const parts = Object.fromEntries(new Intl.DateTimeFormat('en-CA', { timeZone: 'America/Vancouver', year: 'numeric', month: '2-digit', day: '2-digit' }).formatToParts(new Date()).filter(x => x.type !== 'literal').map(x => [x.type, Number(x.value)]));
+    const today = Date.UTC(parts.year, parts.month - 1, parts.day) / 86400000;
+    const recent = payload.listings.filter(l => {
+      const availability = l.availabilityStatus || (l.status === 'removed' ? 'removed' : 'active');
+      if (availability !== 'active' || !/^\\d{4}-\\d{2}-\\d{2}$/.test(l.firstSeen || '')) return false;
+      const age = today - Date.parse(`${l.firstSeen}T00:00:00Z`) / 86400000;
+      return age >= 0 && age < 7;
+    });
+    const recentIds = new Set(recent.map(l => l.id));
+    const badgeIds = [...document.querySelectorAll('.listing-card')].filter(card => card.querySelector('.badge.new')).map(card => card.dataset.id);
+    return { expectedCount: recent.length, badgeIds, staleBadgeIds: badgeIds.filter(id => !recentIds.has(id)) };
+  });
+  assert(Number(statValues[recentIndex]) === recentAudit.expectedCount, `New 7d stat ${statValues[recentIndex]} != firstSeen-derived count ${recentAudit.expectedCount}`);
+  assert(recentAudit.staleBadgeIds.length === 0, `Stale listings retained NEW badges: ${recentAudit.staleBadgeIds.join(', ')}`);
+  report.checkpoints.stats.newSevenDays = recentAudit;
 
   const markers = await page.locator('.leaflet-marker-icon.price-marker').count();
   const desktopMapVisible = await page.locator('#map').isVisible();
