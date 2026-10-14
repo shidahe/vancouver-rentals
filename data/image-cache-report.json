@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-10-14T15:13:05.319Z",
+  "refreshedAt": "2026-10-14T18:48:34.069Z",
   "listings": {
     "york-103-2535-r3137446": {
       "cached": 5,
@@ -37,27 +37,11 @@
       "photoPageUrl": "https://www.zumper.com/address/2249-w-33rd-ave-vancouver-bc-v6m-1c1-can"
     },
     "zumper-16e9ae17cd91": {
-      "cached": 4,
-      "preserved": 4,
-      "downloaded": 0,
-      "failures": [
-        {
-          "url": "https://media.realtylink.org/images/consumersite/property/263182316/9ff90dbf374c4802a4347969a0cae1e6.jpeg?width=320&height=240&fit=cover",
-          "error": "not a usable image (image/jpeg, 7500 bytes)"
-        },
-        {
-          "url": "https://media.realtylink.org/images/consumersite/property/263182316/00c50dbb1e294023bf398ae25ce0d515.jpeg?width=480&height=360&fit=cover",
-          "error": "HTTP 400"
-        }
-      ],
-      "photoPageUrl": "https://realtylink.org/en/townhouse~for-rent~vancouver/263182316"
-    },
-    "arbutus-residences-floorplan-2-bedroom-townhouse-den-1340": {
       "cached": 5,
-      "preserved": 0,
-      "downloaded": 5,
+      "preserved": 4,
+      "downloaded": 1,
       "failures": [],
-      "photoPageUrl": "https://www.zumper.com/apartment-buildings/p1117150/arbutus-residences-quilchena-vancouver-bc"
+      "photoPageUrl": "https://www.zumper.com/address/3349-dunbar-st-vancouver-bc-v6s-2b9-can"
     },
     "mls-r3151372": {
       "cached": 2,
@@ -146,6 +130,22 @@
       "failures": [],
       "photoPageUrl": "https://rentals.ca/vancouver/kits-walk-by-strand"
     },
+    "mls-r3170701": {
+      "cached": 4,
+      "preserved": 0,
+      "downloaded": 4,
+      "failures": [
+        {
+          "url": "https://media.realtylink.org/images/consumersite/property/263192328/9745653bdd2d4849bea9d0c70aa8d0aa.jpeg?width=320&height=240&fit=cover",
+          "error": "not a usable image (image/jpeg, 7867 bytes)"
+        },
+        {
+          "url": "https://media.realtylink.org/images/consumersite/property/263192328/561cff5f09c647b0974a3ad3eaf6789c.jpeg?width=480&height=360&fit=cover",
+          "error": "HTTP 400"
+        }
+      ],
+      "photoPageUrl": "https://realtylink.org/en/house~for-rent~vancouver/263192328"
+    },
     "mls-r3172212": {
       "cached": 5,
       "preserved": 5,
@@ -166,6 +166,13 @@
       "downloaded": 0,
       "failures": [],
       "photoPageUrl": "https://www.zumper.com/address/2814-w-3rd-ave-vancouver-bc-v6k-1m7-can"
+    },
+    "mls-r3169522": {
+      "cached": 5,
+      "preserved": 0,
+      "downloaded": 5,
+      "failures": [],
+      "photoPageUrl": "https://realtylink.org/en/apartment~for-rent~vancouver/263191149"
     },
     "zumper-dd642aebb4f6": {
       "cached": 5,
@@ -203,9 +210,9 @@
     }
   },
   "totals": {
-    "sourceListings": 23,
-    "cachedListings": 23,
-    "downloaded": 5,
+    "sourceListings": 24,
+    "cachedListings": 24,
+    "downloaded": 10,
     "failed": 9,
     "preserved": 102,
     "prunedListings": 1,
