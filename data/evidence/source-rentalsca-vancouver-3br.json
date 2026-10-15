@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-10-14T18:39:48.069Z",
+  "checkedAt": "2026-10-15T14:53:44.802Z",
   "source": {
     "id": "rentalsca-vancouver-3br",
     "name": "Rentals.ca Vancouver 3BR",
@@ -8,10 +8,10 @@
     "adapter": "rentalsca-search"
   },
   "ok": true,
-  "status": 429,
+  "status": 403,
   "finalUrl": "https://rentals.ca/vancouver/3-bedrooms",
   "title": "Just a moment...",
-  "bodyText": "rentals.ca\nPerforming security verification\n\nThis website uses a security service to protect against malicious bots. This page is displayed while the website verifies you are not a bot.\n\nRay ID: a4a8b93e7b9aa0fb\nPerformance and Security by Cloudflare\nPrivacy",
+  "bodyText": "rentals.ca\nPerforming security verification\n\nThis website uses a security service to protect against malicious bots. This page is displayed while the website verifies you are not a bot.\n\nRay ID: a4afab80bab2b650\nPerformance and Security by Cloudflare\nPrivacy",
   "links": [
     {
       "href": "https://www.cloudflare.com/?utm_source=challenge&utm_campaign=m",
@@ -26,5 +26,5 @@
   "images": [
     "https://rentals.ca/favicon.ico"
   ],
-  "elapsedMs": 3082
+  "elapsedMs": 3105
 }
