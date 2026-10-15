@@ -34,6 +34,11 @@
       "date": "2026-09-03",
       "rent": 3340,
       "note": "AUTO price update from 4110 to 3340 after direct live detail-page verification."
+    },
+    {
+      "date": "2026-10-15",
+      "rent": 4110,
+      "note": "REMOVED: exact live detail did not return during the seven-day confirmation window."
     }
   ],
   "arbutus-terrace-unit6-2den": [
@@ -2842,6 +2847,11 @@
       "date": "2026-10-14",
       "rent": 13000,
       "note": "AUTO-HIDDEN: MLS R3167237 exceeded 48 hours without fresh positive availability; partial search results are not removal evidence."
+    },
+    {
+      "date": "2026-10-15",
+      "rent": 13000,
+      "note": "CORRECTED: restored after exact current MLS detail matched identity, explicit availability and rent."
     }
   ],
   "mls-r3165327": [
@@ -3029,6 +3039,11 @@
       "date": "2026-10-08",
       "rent": 4200,
       "note": "NEW: live Realtylink MLS R3173479 auto-published."
+    },
+    {
+      "date": "2026-10-15",
+      "rent": 3900,
+      "note": "CORRECTED: restored after exact current MLS detail matched identity, explicit availability and rent."
     }
   ],
   "mls-r3173233": [
@@ -3095,6 +3110,11 @@
     },
     {
       "date": "2026-10-14",
+      "rent": 3595,
+      "note": "MERGED into kits-walk-floorplan-2-bedroom-811-3675: same building, bedrooms, bathrooms and sqft; current rent is 3595."
+    },
+    {
+      "date": "2026-10-15",
       "rent": 3595,
       "note": "MERGED into kits-walk-floorplan-2-bedroom-811-3675: same building, bedrooms, bathrooms and sqft; current rent is 3595."
     }

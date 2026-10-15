@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-10-15T15:01:32.558Z",
+  "refreshedAt": "2026-10-15T18:25:03.664Z",
   "groups": [
     {
       "identityKey": "1533 maple st::url:69f2e13a0fd5",
@@ -206,6 +206,18 @@
       "result": "candidate_only"
     },
     {
+      "identityKey": "mls:r3167237",
+      "sources": [
+        "realtylink mls"
+      ],
+      "rents": [
+        13000
+      ],
+      "exactUnit": true,
+      "matchedListingId": "mls-r3167237",
+      "result": "authoritative_mls_reverified"
+    },
+    {
       "identityKey": "mls:r3137446",
       "sources": [
         "realtylink mls"
@@ -230,27 +242,39 @@
       "result": "authoritative_mls_reverified"
     },
     {
-      "identityKey": "mls:r3151372",
+      "identityKey": "mls:r3173479",
       "sources": [
         "realtylink mls"
       ],
       "rents": [
-        4800
+        3900
       ],
-      "exactUnit": false,
-      "matchedListingId": "mls-r3151372",
+      "exactUnit": true,
+      "matchedListingId": "mls-r3173479",
       "result": "authoritative_mls_reverified"
     },
     {
-      "identityKey": "mls:r3174425",
+      "identityKey": "mls:r3163709",
       "sources": [
         "realtylink mls"
       ],
       "rents": [
-        14500
+        5800
       ],
       "exactUnit": false,
-      "matchedListingId": "mls-r3174425",
+      "matchedListingId": "mls-r3163709",
+      "result": "authoritative_mls_reverified"
+    },
+    {
+      "identityKey": "mls:r3172212",
+      "sources": [
+        "realtylink mls"
+      ],
+      "rents": [
+        6300
+      ],
+      "exactUnit": false,
+      "matchedListingId": "mls-r3172212",
       "result": "authoritative_mls_reverified"
     },
     {
@@ -276,16 +300,31 @@
       "exactUnit": false,
       "matchedListingId": "mls-r3170701",
       "result": "authoritative_mls_reverified"
+    },
+    {
+      "identityKey": "mls:r3159060",
+      "sources": [
+        "realtylink mls"
+      ],
+      "rents": [
+        15000
+      ],
+      "exactUnit": false,
+      "matchedListingId": "mls-r3159060",
+      "result": "authoritative_mls_reverified"
     }
   ],
   "promoted": [],
   "crossVerified": [
+    "mls-r3167237",
     "york-103-2535-r3137446",
     "zumper-16e9ae17cd91",
-    "mls-r3151372",
-    "mls-r3174425",
+    "mls-r3173479",
+    "mls-r3163709",
+    "mls-r3172212",
     "mls-r3161880",
-    "mls-r3170701"
+    "mls-r3170701",
+    "mls-r3159060"
   ],
   "fingerprintCrossVerified": [],
   "craigslistRelistingsRecovered": [],
@@ -293,14 +332,47 @@
   "maskedMlsMerged": [],
   "relistedMlsMerged": [],
   "negativeMatches": [],
-  "detailReactivated": [],
-  "mlsMissing": {},
+  "detailReactivated": [
+    "mls-r3167237",
+    "mls-r3173479"
+  ],
+  "mlsMissing": {
+    "R3151372": {
+      "firstMissingAt": "2026-10-15T18:25:03.664Z",
+      "lastMissingAt": "2026-10-15T18:25:03.664Z",
+      "listingId": "mls-r3151372"
+    },
+    "R3167417": {
+      "firstMissingAt": "2026-10-15T18:25:03.664Z",
+      "lastMissingAt": "2026-10-15T18:25:03.664Z",
+      "listingId": "mls-r3167417"
+    },
+    "R3165327": {
+      "firstMissingAt": "2026-10-15T18:25:03.664Z",
+      "lastMissingAt": "2026-10-15T18:25:03.664Z",
+      "listingId": "mls-r3165327"
+    },
+    "R3162880": {
+      "firstMissingAt": "2026-10-15T18:25:03.664Z",
+      "lastMissingAt": "2026-10-15T18:25:03.664Z",
+      "listingId": "mls-r3162880"
+    },
+    "R3169522": {
+      "firstMissingAt": "2026-10-15T18:25:03.664Z",
+      "lastMissingAt": "2026-10-15T18:25:03.664Z",
+      "listingId": "mls-r3169522"
+    },
+    "R3174425": {
+      "firstMissingAt": "2026-10-15T18:25:03.664Z",
+      "lastMissingAt": "2026-10-15T18:25:03.664Z",
+      "listingId": "mls-r3174425"
+    }
+  },
   "mlsRemoved": [],
   "mlsStaleHidden": [],
-  "realtylinkSnapshotCount": 6,
+  "realtylinkSnapshotCount": 9,
   "realtylinkSnapshotHighWaterMark": 9,
   "realtylinkSnapshotScope": "rent-3500-beds-2-4-whole-home-westside-v2",
-  "realtylinkRemovalEligible": false,
-  "mlsRemovalSuppressed": "Partial Realtylink snapshot (6 candidates versus previous complete 9); disappearance signals ignored.",
+  "realtylinkRemovalEligible": true,
   "mlsDuplicatesMerged": []
 }

@@ -1,11 +1,11 @@
 {
-  "checkedAt": "2026-10-15T15:02:29.508Z",
+  "checkedAt": "2026-10-15T18:26:06.622Z",
   "ok": true,
   "checkpoints": {
     "render": {
       "title": "Vancouver Westside Rentals",
-      "cards": 25,
-      "shown": 25
+      "cards": 23,
+      "shown": 23
     },
     "stats": {
       "labels": [
@@ -16,28 +16,26 @@
         "Last refreshed"
       ],
       "values": [
-        "25",
-        "1",
-        "4",
-        "5",
-        "Oct 15, 7:53 a.m. PDT"
+        "23",
+        "0",
+        "6",
+        "6",
+        "Oct 15, 11:16 a.m. PDT"
       ],
-      "html": "<div class=\"stat\"><strong>25</strong><span>Active</span></div><div class=\"stat\"><strong>1</strong><span>New 7d</span></div><div class=\"stat\"><strong>4</strong><span>Price drops</span></div><div class=\"stat\"><strong>5</strong><span>To verify</span></div><div class=\"stat\"><strong>Oct 15, 7:53 a.m. PDT</strong><span>Last refreshed</span></div>",
+      "html": "<div class=\"stat\"><strong>23</strong><span>Active</span></div><div class=\"stat\"><strong>0</strong><span>New 7d</span></div><div class=\"stat\"><strong>6</strong><span>Price drops</span></div><div class=\"stat\"><strong>6</strong><span>To verify</span></div><div class=\"stat\"><strong>Oct 15, 11:16 a.m. PDT</strong><span>Last refreshed</span></div>",
       "refreshedAt": {
-        "displayed": "Oct 15, 7:53 a.m. PDT",
-        "expected": "Oct 15, 7:53 a.m. PDT",
+        "displayed": "Oct 15, 11:16 a.m. PDT",
+        "expected": "Oct 15, 11:16 a.m. PDT",
         "timezone": "America/Vancouver"
       },
       "newSevenDays": {
-        "expectedCount": 1,
-        "badgeIds": [
-          "mls-r3174425"
-        ],
+        "expectedCount": 0,
+        "badgeIds": [],
         "staleBadgeIds": []
       }
     },
     "map": {
-      "markers": 25,
+      "markers": 23,
       "desktopMapVisible": true
     },
     "filters": "ok",
@@ -48,14 +46,14 @@
     },
     "sourceLink": "https://www.zumper.com/apartment-buildings/p1117150/arbutus-residences-quilchena-vancouver-bc",
     "photos": {
-      "total": 25,
-      "loaded": 25,
+      "total": 23,
+      "loaded": 23,
       "fallbacks": 0,
       "bad": []
     },
     "markerPositions": {
-      "total": 25,
-      "unique": 25
+      "total": 23,
+      "unique": 23
     },
     "dataEndpoints": "ok",
     "mobile": "ok",

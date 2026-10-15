@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-10-15T15:02:24.181Z",
-  "activeCount": 25,
+  "generatedAt": "2026-10-15T18:26:00.753Z",
+  "activeCount": 23,
   "decisionReady": true,
   "readinessStatus": "finalized",
   "highIssueCount": 0,
   "mediumIssueCount": 0,
-  "infoIssueCount": 42,
+  "infoIssueCount": 38,
   "issues": [
     {
       "severity": "info",
@@ -74,11 +74,6 @@
     },
     {
       "severity": "info",
-      "id": "mls-r3151372",
-      "issue": "unknown-orientation"
-    },
-    {
-      "severity": "info",
       "id": "mls-r3161880",
       "issue": "unknown-orientation"
     },
@@ -119,17 +114,17 @@
     },
     {
       "severity": "info",
-      "id": "mls-r3167417",
-      "issue": "unknown-orientation"
-    },
-    {
-      "severity": "info",
       "id": "zumper-6f8b3ff2b9fd",
       "issue": "unknown-ac"
     },
     {
       "severity": "info",
       "id": "zumper-6f8b3ff2b9fd",
+      "issue": "unknown-orientation"
+    },
+    {
+      "severity": "info",
+      "id": "mls-r3167237",
       "issue": "unknown-orientation"
     },
     {
@@ -179,16 +174,6 @@
     },
     {
       "severity": "info",
-      "id": "mls-r3169522",
-      "issue": "unknown-ac"
-    },
-    {
-      "severity": "info",
-      "id": "mls-r3169522",
-      "issue": "unknown-orientation"
-    },
-    {
-      "severity": "info",
       "id": "zumper-dd642aebb4f6",
       "issue": "unknown-ac"
     },
@@ -199,53 +184,42 @@
     },
     {
       "severity": "info",
-      "id": "mls-r3173233",
-      "issue": "unknown-ac"
-    },
-    {
-      "severity": "info",
-      "id": "mls-r3173233",
+      "id": "mls-r3173479",
       "issue": "unknown-orientation"
     },
     {
       "severity": "info",
-      "id": "mls-r3174425",
+      "id": "mls-r3173233",
       "issue": "unknown-ac"
     },
     {
       "severity": "info",
-      "id": "mls-r3174425",
+      "id": "mls-r3173233",
       "issue": "unknown-orientation"
     }
   ],
   "readinessChecks": {
     "smokeOk": true,
     "smokeFresh": true,
-    "smokeCheckedAt": "2026-10-15T15:02:29.508Z",
-    "latestDataAt": "2026-10-15T15:01:39.690Z",
+    "smokeCheckedAt": "2026-10-15T18:26:06.622Z",
+    "latestDataAt": "2026-10-15T18:25:10.687Z",
     "coverageReady": true,
     "healthyDiscoveryLanes": 3,
     "coverageWarnings": [
       {
         "severity": "warning",
         "lane": "rentalsca",
-        "status": "unhealthy",
-        "detail": "0/9 regional searches reachable; 0 qualifying candidates parsed"
+        "status": "degraded",
+        "detail": "2/9 regional searches reachable; 0 qualifying candidates parsed; 4 scoped search-only leads retained (2 new, 2 already active, 0 need revalidation); 3 detail pages blocked after 15 discovered URLs; 12 further detail checks suppressed after repeated 403/429"
       },
       {
         "severity": "warning",
         "lane": "livrent",
         "status": "unhealthy",
         "detail": "0/5 searches healthy; 3 blocked searches opened circuit; 2 further checks suppressed"
-      },
-      {
-        "severity": "warning",
-        "lane": "realtylink",
-        "status": "degraded",
-        "detail": "3/3 searches reachable; 6 current live candidates parsed from a partial snapshot versus complete baseline 9; positive discovery usable, removals suppressed"
       }
     ]
   },
   "readinessIssues": [],
-  "finalizedAt": "2026-10-15T15:02:29.597Z"
+  "finalizedAt": "2026-10-15T18:26:06.734Z"
 }
