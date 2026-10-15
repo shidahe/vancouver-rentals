@@ -84,6 +84,14 @@ export function craigslistAddressPrecision(value = '') {
   return null;
 }
 
+export function craigslistTitleCivicAddress(value = '') {
+  const title = String(value).replace(/\s+/g, ' ').trim();
+  const match = title.match(/\b(\d{2,5}\s+(?:(?:w|west|e|east)\s+)?(?:\d+(?:st|nd|rd|th)?|[a-z][a-z.'-]+)(?:\s+[a-z][a-z.'-]+){0,2}\s+(?:ave(?:nue)?|st(?:reet)?|rd|road|dr(?:ive)?|blvd|boulevard|pl(?:ace)?|way|cres(?:cent)?))\b/i);
+  if (!match) return null;
+  const address = match[1].replace(/\s+/g, ' ').trim();
+  return craigslistAddressPrecision(address) === 'exact_civic' ? address : null;
+}
+
 export function parseCraigslistSearchCard(card = {}, base = 'https://vancouver.craigslist.org') {
   const url = normalizeCraigslistDetailUrl(card.href || card.url, base);
   if (!url) return null;
@@ -147,6 +155,9 @@ export function craigslistDetailEvidence(detail = {}) {
   const explicitNegative = /this posting has been deleted by its author|this posting has expired|flagged for removal/i.test(text);
   const status = Number(detail.status);
   const explicitPositive = !!parsed && status >= 200 && status < 400 && identityMatch && !explicitNegative && !!parsed.rent && !!parsed.bedrooms;
+  const mapAddress = craigslistAddressPrecision(detail.address) ? String(detail.address).replace(/\s+/g, ' ').trim() : null;
+  const titleAddress = craigslistTitleCivicAddress(detail.title);
+  const address = mapAddress || titleAddress;
   return {
     ...parsed,
     ...structuredFacts,
@@ -154,8 +165,8 @@ export function craigslistDetailEvidence(detail = {}) {
     identityMatch,
     explicitNegative,
     explicitPositive,
-    address: craigslistAddressPrecision(detail.address) ? String(detail.address).replace(/\s+/g, ' ').trim() : null,
-    addressPrecision: craigslistAddressPrecision(detail.address),
+    address,
+    addressPrecision: craigslistAddressPrecision(address),
     images: [...new Set((detail.images || []).filter(x => /^https?:\/\//i.test(String(x))))]
   };
 }
