@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-10-15T18:25:58.834Z",
+  "refreshedAt": "2026-10-16T15:05:36.143Z",
   "listings": {
     "york-103-2535-r3137446": {
       "cached": 5,
@@ -42,13 +42,6 @@
       "downloaded": 0,
       "failures": [],
       "photoPageUrl": "https://realtylink.org/en/townhouse~for-rent~vancouver/263182316"
-    },
-    "arbutus-residences-floorplan-2-bedroom-townhouse-den-1340": {
-      "cached": 5,
-      "preserved": 5,
-      "downloaded": 0,
-      "failures": [],
-      "photoPageUrl": "https://www.zumper.com/apartment-buildings/p1117150/arbutus-residences-quilchena-vancouver-bc"
     },
     "mls-r3161880": {
       "cached": 5,
@@ -101,8 +94,8 @@
     },
     "mls-r3167237": {
       "cached": 5,
-      "preserved": 0,
-      "downloaded": 5,
+      "preserved": 5,
+      "downloaded": 0,
       "failures": [],
       "photoPageUrl": "https://realtylink.org/en/apartment~for-rent~vancouver/263188864"
     },
@@ -159,8 +152,8 @@
     },
     "mls-r3173479": {
       "cached": 5,
-      "preserved": 0,
-      "downloaded": 5,
+      "preserved": 5,
+      "downloaded": 0,
       "failures": [],
       "photoPageUrl": "https://realtylink.org/en/house~for-rent~vancouver/263195106"
     },
@@ -186,13 +179,13 @@
     }
   },
   "totals": {
-    "sourceListings": 23,
-    "cachedListings": 23,
-    "downloaded": 10,
+    "sourceListings": 22,
+    "cachedListings": 22,
+    "downloaded": 0,
     "failed": 5,
-    "preserved": 100,
-    "prunedListings": 4,
-    "prunedIndexImages": 17,
+    "preserved": 105,
+    "prunedListings": 1,
+    "prunedIndexImages": 5,
     "prunedOrphanFiles": 0
   }
 }

@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-10-15T18:26:00.753Z",
-  "activeCount": 23,
+  "generatedAt": "2026-10-16T15:05:36.789Z",
+  "activeCount": 22,
   "decisionReady": true,
   "readinessStatus": "finalized",
   "highIssueCount": 0,
   "mediumIssueCount": 0,
-  "infoIssueCount": 38,
+  "infoIssueCount": 37,
   "issues": [
     {
       "severity": "info",
@@ -45,11 +45,6 @@
     {
       "severity": "info",
       "id": "zumper-976e340c66a7",
-      "issue": "unknown-orientation"
-    },
-    {
-      "severity": "info",
-      "id": "arbutus-residences-floorplan-2-bedroom-townhouse-den-1340",
       "issue": "unknown-orientation"
     },
     {
@@ -201,8 +196,8 @@
   "readinessChecks": {
     "smokeOk": true,
     "smokeFresh": true,
-    "smokeCheckedAt": "2026-10-15T18:26:06.622Z",
-    "latestDataAt": "2026-10-15T18:25:10.687Z",
+    "smokeCheckedAt": "2026-10-16T15:05:42.608Z",
+    "latestDataAt": "2026-10-16T15:04:45.343Z",
     "coverageReady": true,
     "healthyDiscoveryLanes": 3,
     "coverageWarnings": [
@@ -210,16 +205,22 @@
         "severity": "warning",
         "lane": "rentalsca",
         "status": "degraded",
-        "detail": "2/9 regional searches reachable; 0 qualifying candidates parsed; 4 scoped search-only leads retained (2 new, 2 already active, 0 need revalidation); 3 detail pages blocked after 15 discovered URLs; 12 further detail checks suppressed after repeated 403/429"
+        "detail": "6/9 regional searches reachable; 0 qualifying candidates parsed; 15 scoped search-only leads retained (15 new, 0 already active, 0 need revalidation); 3 detail pages blocked after 80 discovered URLs; 76 further detail checks suppressed after repeated 403/429"
       },
       {
         "severity": "warning",
         "lane": "livrent",
         "status": "unhealthy",
         "detail": "0/5 searches healthy; 3 blocked searches opened circuit; 2 further checks suppressed"
+      },
+      {
+        "severity": "warning",
+        "lane": "realtylink",
+        "status": "degraded",
+        "detail": "3/3 searches reachable; 5 current live candidates parsed from a partial snapshot versus complete baseline 9; positive discovery usable, removals suppressed"
       }
     ]
   },
   "readinessIssues": [],
-  "finalizedAt": "2026-10-15T18:26:06.734Z"
+  "finalizedAt": "2026-10-16T15:05:42.714Z"
 }

@@ -1,0 +1,249 @@
+{
+  "checkedAt": "2026-10-16T15:02:51.906Z",
+  "page": {
+    "source": "Rentals.ca",
+    "url": "https://rentals.ca/vancouver/4769-belmont-avenue",
+    "address": "4769 Belmont, Vancouver, British Columbia V6T 1A8",
+    "addressUnit": null,
+    "geo": {
+      "lat": 49.27551,
+      "lng": -123.21776
+    },
+    "targetArea": false,
+    "active": true,
+    "floorplans": [],
+    "single": {
+      "rent": 3900,
+      "beds": 1,
+      "baths": 2,
+      "sqft": 672
+    },
+    "checkedAt": "2026-10-16T15:02:51.906Z"
+  },
+  "jsonLd": [
+    {
+      "@context": "http://schema.org",
+      "@type": "House",
+      "url": "https://rentals.ca/vancouver/4769-belmont-avenue",
+      "name": "4769 Belmont Avenue",
+      "description": "Available: November 1st, 2026\nAvailable: November 1st, 2026\nPrice: $3900 per month (unfurnished). Utilities not included\nPrice: $3900 per month (unfurnished). Utilities not included\nAddress: 4769 Belmont Avenue\nAddress: 4769 Belmont Avenue\nSize: 672sqft\nSize: 672sqft\nBedrooms: 2\nBedrooms: 2\nBathrooms: 1\nBathrooms: 1\nPet Friendly: Yes (small pet considered)\nPet Friendly: Yes (small pet considered)\nParking: Yes (private driveway)\nParking: Yes (private driveway)\nStorage: Yes\nStorage: Yes\nREQUIREMENTS:\nREQUIREMENTS:\n•          No smoking or short term rentals (including Airbnb)\n•          No smoking or short term rentals (including Airbnb)\n•          Lease: Minimum 1 year term, with option to extend\n•          Lease: Minimum 1 year term, with option to extend\n•          Security Deposit: Half month rent\n•          Security Deposit: Half month rent\n•          Pet deposit: Half month’s rent (if applicable)\n•          Pet deposit: Half month’s rent (if applicable)\n•          Tenant insurance required\n•          Tenant insurance required\n•          References and credit check required\n•          References and credit check required\nHOW TO APPLY:\nHOW TO APPLY:\nTo schedule a viewing, please contact by email with information about yourself as per below:\nTo schedule a viewing, please contact by email with information about yourself as per below:\n1.         How many people will be living here\n1.         How many people will be living here\n2.         Job of all occupants and yearly income\n2.         Job of all occupants and yearly income\n3.         Relationship of all occupants\n3.         Relationship of all occupants\n4.         How many pets (if any) and what kind (please include a photo).\n4.         How many pets (if any) and what kind (please include a photo).\n5.         Reason for moving\n5.         Reason for moving\n6.         Desired move date\n6.         Desired move date\nProfessionally managed by Macdonald Commercial R.ES. Ltd\nProfessionally managed by Macdonald Commercial R.ES. Ltd\nAdditional Information:\n**Additional Information: **\nWaterfront viewsBeach nearbyViewOvenLaminated floorsUnfurnishedGarden Maintenance includedOpen Living & Dining RoomA private outdoor oasisFloor to ceiling windowsBlindsno move in/move out feeUtilities: Not IncludedModern DesignElectric HeatingLarge driveway\nWaterfront views\nBeach nearby\nView\nOven\nLaminated floors\nUnfurnished\nGarden Maintenance included\nOpen Living & Dining Room\nA private outdoor oasis\nFloor to ceiling windows\nBlinds\nno move in/move out fee\nUtilities: Not Included\nModern Design\nElectric Heating\nLarge driveway",
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 49.27551,
+        "longitude": -123.21776
+      },
+      "containedInPlace": {
+        "@type": "City",
+        "url": "",
+        "name": "",
+        "address": {
+          "@type": "PostalAddress",
+          "addressCountry": "CA",
+          "addressRegion": ""
+        }
+      },
+      "containsPlace": [
+        {
+          "@context": "http://schema.org",
+          "@type": "Accommodation",
+          "name": "2 Bedroom",
+          "potentialAction": {
+            "@type": "RentAction",
+            "priceSpecification": {
+              "@type": "PriceSpecification",
+              "price": 3900,
+              "priceCurrency": "CAD"
+            }
+          },
+          "floorSize": {
+            "@type": "QuantitativeValue",
+            "unitCode": "FTK",
+            "value": "672.0"
+          }
+        }
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "CA",
+        "addressLocality": "Vancouver",
+        "addressRegion": "British Columbia",
+        "postalCode": "V6T 1A8",
+        "streetAddress": "4769 Belmont"
+      },
+      "telephone": "(236) 304-0802",
+      "photo": [
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/1003582/house-2242033160.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/1003582/house-2242033160.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/1003582/house-2242033143.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/1003582/house-2242033143.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/1003582/house-2242033161.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/1003582/house-2242033161.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/1003582/house-2242033144.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/1003582/house-2242033144.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/1003582/house-2242033162.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/1003582/house-2242033162.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/1003582/house-2242033145.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/1003582/house-2242033145.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/1003582/house-2242033163.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/1003582/house-2242033163.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/1003582/house-2242033146.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/1003582/house-2242033146.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/1003582/house-2242033164.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/1003582/house-2242033164.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/1003582/house-2242033147.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/1003582/house-2242033147.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/1003582/house-2242033165.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/1003582/house-2242033165.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/1003582/house-2242033148.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/1003582/house-2242033148.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/1003582/house-2242033166.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/1003582/house-2242033166.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/1003582/house-2242033149.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/1003582/house-2242033149.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/1003582/house-2242033167.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/1003582/house-2242033167.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/1003582/house-2242033150.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/1003582/house-2242033150.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/1003582/house-2242033168.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/1003582/house-2242033168.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/1003582/house-2242033151.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/1003582/house-2242033151.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/1003582/house-2242033169.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/1003582/house-2242033169.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/1003582/house-2242033152.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/1003582/house-2242033152.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/1003582/house-2242033170.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/1003582/house-2242033170.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/1003582/house-2242033153.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/1003582/house-2242033153.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/1003582/house-2242033171.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/1003582/house-2242033171.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/1003582/house-2242033154.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/1003582/house-2242033154.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/1003582/house-2242033172.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/1003582/house-2242033172.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/1003582/house-2242033155.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/1003582/house-2242033155.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/1003582/house-2242033173.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/1003582/house-2242033173.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/1003582/house-2242033156.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/1003582/house-2242033156.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/1003582/house-2242033174.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/1003582/house-2242033174.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/1003582/house-2242033157.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/1003582/house-2242033157.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/1003582/house-2242033175.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/1003582/house-2242033175.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/1003582/house-2242033158.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/1003582/house-2242033158.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/1003582/house-2242033176.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/1003582/house-2242033176.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/1003582/house-2242033159.jpg",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/1003582/house-2242033159.jpg"
+        }
+      ]
+    }
+  ],
+  "textSample": "Alert\nSave Alert\n\nSimilar listings in\n\nCreate an Alert\nParking Information\nFeatures & Amenities\nUtilities Included\nAbout 4769 Belmont Avenue\n\nAvailable: November 1st, 2026\n\nPrice: $3900 per month (unfurnished). Utilities not included\n\nAddress: 4769 Belmont Avenue\n\nSize: 672sqft\n\nBedrooms: 2\n\nBathrooms: 1\n\nPet Friendly: Yes (small pet considered)\n\nParking: Yes (private driveway)\n\nStorage: Yes\n\nREQUIREMENTS:\n\n•          No smoking or short term rentals (including Airbnb)\n\n•          Lease: Minimum 1 year term, with option to extend\n\n•          Security Deposit: Half month rent\n\n•          Pet deposit: Half month’s rent (if applicable)\n\n•          Tenant insurance required\n\n•          References and credit check required\n\nHOW TO APPLY:\n\nTo schedule a viewing, please contact by email with information about yourself as per below:\n\n1.         How many people will be living here\n\n2.         Job of all occupants and yearly income\n\n3.         Relationship of all occupants\n\n4.         How many pets (if any) and what kind (please include a photo).\n\n5.         Reason for moving\n\n6.         Desired move date\n\nProfessionally managed by Macdonald Commercial R.ES. Ltd\n\n\nAdditional Information:\nWaterfront views\nBeach nearby\nView\nOven\nLaminated floors\nUnfurnished\nGarden Maintenance included\nOpen Living & Dining Room\nA private outdoor oasis\nFloor to ceiling windows\nBlinds\nno move in/move out fee\nUtilities: Not Included\nModern Design\nElectric Heating\nLarge driveway\n\nAvailable: November 1st, 2026\n\nPrice: $3900 per month (unfurnished). Utilities not included\n\nAddress: 4769 Belmont Avenue\n\nSize: 672sqft\n\nBedrooms: 2\n\nBathrooms: 1\n\nPet Friendly: Yes (small pet considered)\n\nParking: Yes (private driveway)\n\nStorage: Yes\n\nREQUIREMENTS:\n\n•          No smoking or short term rentals (including Airbnb)\n\n•          Lease: Minimum 1 year term, with option to extend\n\n•          Security Deposit: Half month rent\n\n•          Pet deposit: Half month’s rent (if applicable)\n\n•          Tenant insurance required\n\n•          References and credit check required\n\nHOW TO APPLY:\n\nTo schedule a viewing, please contact by email with information about yourself as per below:\n\n1.         How many people will be living here\n\n2.         Job of all occupants and yearly income\n\n3.         Relationship of all occupants\n\n4.         How many pets (if any) and what kind (please include a photo).\n\n5.         Reason for moving\n\n6.         Desired move date\n\nProfessionally managed by Macdonald Commercial R.ES. Ltd\n\n\nAdditional Information:\nWaterfront views\nBeach nearby\nView\nOven\nLaminated floors\nUnfurnished\nGarden Maintenance included\nOpen Living & Dining Room\nA private outdoor oasis\nFloor to ceiling windows\nBlinds\nno move in/move out fee\nUtilities: Not Included\nModern Design\nElectric Heating\nLarge driveway\nNeighbourhood Score\nOpen House Dates\nSummary\n\nReport Listing\n\nExplore Similar Rentals\nPopular Rent Searches In Vancouver\nSearch by Amenities\nPet Friendly Apartments In Vancouver\nApartments With A/C In Vancouver\nApartments With Ensuite Laundry In Vancouver\nApartments With Dishwasher In Vancouver\nSearch by Bedrooms\n1 Bedroom Apartments In Vancouver\n2 Bedroom Apartments In Vancouver\n3 Bedroom Apartments In Vancouver\n4 Bedroom Apartments In Vancouver\nSearch by Budget\nApartments Under $1000 In Vancouver\nApartments Under $1250 In Vancouver\nApartments Under $2000 In Vancouver\nApartments Under $2500 In Vancouver\nSee All Rentals in Vancouver\nThis website uses cookies to ensure you get the best experience on our website. By clicking \"Allow All\", you consent to our use of cookies. Privacy Policy ↗\nManage Cookies\nDecline\nAllow All"
+}

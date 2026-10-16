@@ -1,11 +1,11 @@
 {
-  "checkedAt": "2026-10-15T18:26:06.622Z",
+  "checkedAt": "2026-10-16T15:05:42.608Z",
   "ok": true,
   "checkpoints": {
     "render": {
       "title": "Vancouver Westside Rentals",
-      "cards": 23,
-      "shown": 23
+      "cards": 22,
+      "shown": 22
     },
     "stats": {
       "labels": [
@@ -16,16 +16,16 @@
         "Last refreshed"
       ],
       "values": [
-        "23",
+        "22",
         "0",
         "6",
-        "6",
-        "Oct 15, 11:16 a.m. PDT"
+        "7",
+        "Oct 16, 7:56 a.m. PDT"
       ],
-      "html": "<div class=\"stat\"><strong>23</strong><span>Active</span></div><div class=\"stat\"><strong>0</strong><span>New 7d</span></div><div class=\"stat\"><strong>6</strong><span>Price drops</span></div><div class=\"stat\"><strong>6</strong><span>To verify</span></div><div class=\"stat\"><strong>Oct 15, 11:16 a.m. PDT</strong><span>Last refreshed</span></div>",
+      "html": "<div class=\"stat\"><strong>22</strong><span>Active</span></div><div class=\"stat\"><strong>0</strong><span>New 7d</span></div><div class=\"stat\"><strong>6</strong><span>Price drops</span></div><div class=\"stat\"><strong>7</strong><span>To verify</span></div><div class=\"stat\"><strong>Oct 16, 7:56 a.m. PDT</strong><span>Last refreshed</span></div>",
       "refreshedAt": {
-        "displayed": "Oct 15, 11:16 a.m. PDT",
-        "expected": "Oct 15, 11:16 a.m. PDT",
+        "displayed": "Oct 16, 7:56 a.m. PDT",
+        "expected": "Oct 16, 7:56 a.m. PDT",
         "timezone": "America/Vancouver"
       },
       "newSevenDays": {
@@ -35,25 +35,25 @@
       }
     },
     "map": {
-      "markers": 23,
+      "markers": 22,
       "desktopMapVisible": true
     },
     "filters": "ok",
     "localStorage": {
       "favorite": true,
       "notes": true,
-      "firstId": "arbutus-residences-floorplan-2-bedroom-townhouse-den-1340"
+      "firstId": "fourth-mac-floorplan-2-bedroom-2-bath-801-4350"
     },
-    "sourceLink": "https://www.zumper.com/apartment-buildings/p1117150/arbutus-residences-quilchena-vancouver-bc",
+    "sourceLink": "https://www.craigslist.org/view/d/vancouver-bed-bath-fourth-mac-kitsilano/eiSLCKTVqsrtPUWpUpJyDN",
     "photos": {
-      "total": 23,
-      "loaded": 23,
+      "total": 22,
+      "loaded": 22,
       "fallbacks": 0,
       "bad": []
     },
     "markerPositions": {
-      "total": 23,
-      "unique": 23
+      "total": 22,
+      "unique": 22
     },
     "dataEndpoints": "ok",
     "mobile": "ok",
