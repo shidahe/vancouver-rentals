@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-10-16T15:05:36.143Z",
+  "refreshedAt": "2026-10-16T18:11:24.120Z",
   "listings": {
     "york-103-2535-r3137446": {
       "cached": 5,
@@ -55,7 +55,7 @@
       "preserved": 5,
       "downloaded": 0,
       "failures": [],
-      "photoPageUrl": "https://realtylink.org/en/house~for-rent~vancouver/263180687"
+      "photoPageUrl": "https://www.craigslist.org/view/d/vancouver-point-grey-luxury-4br5ba/aJgN2o2my1nS6BNgEH2UjY"
     },
     "mls-r3163709": {
       "cached": 5,
@@ -176,16 +176,23 @@
         }
       ],
       "photoPageUrl": "https://realtylink.org/en/house~for-rent~vancouver/263194860"
+    },
+    "mls-r3175848": {
+      "cached": 5,
+      "preserved": 0,
+      "downloaded": 5,
+      "failures": [],
+      "photoPageUrl": "https://realtylink.org/en/house~for-rent~vancouver/263197475"
     }
   },
   "totals": {
-    "sourceListings": 22,
-    "cachedListings": 22,
-    "downloaded": 0,
+    "sourceListings": 23,
+    "cachedListings": 23,
+    "downloaded": 5,
     "failed": 5,
     "preserved": 105,
-    "prunedListings": 1,
-    "prunedIndexImages": 5,
+    "prunedListings": 0,
+    "prunedIndexImages": 0,
     "prunedOrphanFiles": 0
   }
 }

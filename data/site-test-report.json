@@ -1,11 +1,11 @@
 {
-  "checkedAt": "2026-10-16T15:05:42.608Z",
+  "checkedAt": "2026-10-16T18:11:30.777Z",
   "ok": true,
   "checkpoints": {
     "render": {
       "title": "Vancouver Westside Rentals",
-      "cards": 22,
-      "shown": 22
+      "cards": 23,
+      "shown": 23
     },
     "stats": {
       "labels": [
@@ -16,26 +16,28 @@
         "Last refreshed"
       ],
       "values": [
-        "22",
-        "0",
+        "23",
+        "1",
         "6",
         "7",
-        "Oct 16, 7:56 a.m. PDT"
+        "Oct 16, 11:02 a.m. PDT"
       ],
-      "html": "<div class=\"stat\"><strong>22</strong><span>Active</span></div><div class=\"stat\"><strong>0</strong><span>New 7d</span></div><div class=\"stat\"><strong>6</strong><span>Price drops</span></div><div class=\"stat\"><strong>7</strong><span>To verify</span></div><div class=\"stat\"><strong>Oct 16, 7:56 a.m. PDT</strong><span>Last refreshed</span></div>",
+      "html": "<div class=\"stat\"><strong>23</strong><span>Active</span></div><div class=\"stat\"><strong>1</strong><span>New 7d</span></div><div class=\"stat\"><strong>6</strong><span>Price drops</span></div><div class=\"stat\"><strong>7</strong><span>To verify</span></div><div class=\"stat\"><strong>Oct 16, 11:02 a.m. PDT</strong><span>Last refreshed</span></div>",
       "refreshedAt": {
-        "displayed": "Oct 16, 7:56 a.m. PDT",
-        "expected": "Oct 16, 7:56 a.m. PDT",
+        "displayed": "Oct 16, 11:02 a.m. PDT",
+        "expected": "Oct 16, 11:02 a.m. PDT",
         "timezone": "America/Vancouver"
       },
       "newSevenDays": {
-        "expectedCount": 0,
-        "badgeIds": [],
+        "expectedCount": 1,
+        "badgeIds": [
+          "mls-r3175848"
+        ],
         "staleBadgeIds": []
       }
     },
     "map": {
-      "markers": 22,
+      "markers": 23,
       "desktopMapVisible": true
     },
     "filters": "ok",
@@ -46,14 +48,14 @@
     },
     "sourceLink": "https://www.craigslist.org/view/d/vancouver-bed-bath-fourth-mac-kitsilano/eiSLCKTVqsrtPUWpUpJyDN",
     "photos": {
-      "total": 22,
-      "loaded": 22,
+      "total": 23,
+      "loaded": 23,
       "fallbacks": 0,
       "bad": []
     },
     "markerPositions": {
-      "total": 22,
-      "unique": 22
+      "total": 23,
+      "unique": 23
     },
     "dataEndpoints": "ok",
     "mobile": "ok",

@@ -2296,6 +2296,11 @@
       "date": "2026-10-12",
       "rent": 15000,
       "note": "CORRECTED: restored after exact current MLS detail matched identity, explicit availability and rent."
+    },
+    {
+      "date": "2026-10-16",
+      "rent": 15000,
+      "note": "PRICE UPDATE: 15000 → 15000; current Craigslist post 7982921004 matched the prior Zumper description and exact facts."
     }
   ],
   "mls-r3149267": [
@@ -3139,6 +3144,13 @@
       "date": "2026-10-13",
       "rent": 14500,
       "note": "NEW: live Realtylink MLS R3174425 auto-published."
+    }
+  ],
+  "mls-r3175848": [
+    {
+      "date": "2026-10-16",
+      "rent": 5500,
+      "note": "NEW: live Realtylink MLS R3175848 auto-published."
     }
   ]
 }
