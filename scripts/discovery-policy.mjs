@@ -20,6 +20,7 @@ export function isHouseShareText(value = '') {
   if (/(?:#|\bunit\s+)(?:upper|lower|main|basement)\b/i.test(text)) return true;
   if (/\b(?:main|upper|lower|basement)\s+house\b/i.test(text)) return true;
   if (/\bshared\s+with\s+(?:the\s+)?(?:basement|upper|lower|main)(?:[-\s]+(?:suite|unit))?\s+tenants?\b/i.test(text)) return true;
+  if (/\b(?:another|a|an)\s+self[-\s]*contained\s+(?:rental\s+)?(?:suite|unit)\s+(?:on|in)\s+the\s+(?:upper|lower|main|basement|ground)\s+(?:floor|level)\b/i.test(text)) return true;
   return /\b(?:private\s+room|room\s+for\s+rent|shared\s+(?:kitchen|bathroom|accommodation|household)|roommate\s+wanted|looking\s+for\s+(?:a\s+)?roommate)\b/i.test(text) ||
     /(?:^|\n)(?:house\s+for\s+rent\s*\n)?(?:main|upper|lower|ground)(?:\s+floor|\s+level)?\s+\d{3,5}\b/im.test(text) ||
     /\b(?:basement|upper|lower|main|ground|first|second)[-\s]+(?:floor|level)?\s*(?:suite|unit)\b/i.test(text) ||
@@ -44,4 +45,22 @@ export function listingScopeEligible(listing, evidenceText = '') {
     isTargetRentalAreaText(areaText) &&
     listing?.rentalScope !== 'shared_house' &&
     !isHouseShareText(scopeText);
+}
+
+export function matchingCrossSourceHousePortionEvidence(listing, candidates = []) {
+  const listingLat = Number(listing?.lat ?? listing?.geo?.lat);
+  const listingLng = Number(listing?.lng ?? listing?.geo?.lng);
+  const listingSqft = Number(listing?.sqft);
+  if (!Number.isFinite(listingLat) || !Number.isFinite(listingLng) || !Number.isFinite(listingSqft)) return '';
+  const match = candidates.find(candidate => {
+    if (candidate?.active === false || candidate?.detailVerified !== true || !isHouseShareText(candidate?.description || '')) return false;
+    if (Number(candidate.rent) !== Number(listing?.rent) || Number(candidate.bedrooms) !== Number(listing?.bedrooms)) return false;
+    const candidateSqft = Number(candidate.sqft);
+    const candidateLat = Number(candidate?.geo?.lat ?? candidate?.lat);
+    const candidateLng = Number(candidate?.geo?.lng ?? candidate?.lng);
+    if (!Number.isFinite(candidateSqft) || Math.abs(candidateSqft - listingSqft) > 5) return false;
+    if (!Number.isFinite(candidateLat) || !Number.isFinite(candidateLng)) return false;
+    return Math.abs(candidateLat - listingLat) <= 0.0004 && Math.abs(candidateLng - listingLng) <= 0.0004;
+  });
+  return match?.description || '';
 }

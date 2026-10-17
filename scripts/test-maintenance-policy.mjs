@@ -2,7 +2,7 @@ import fs from 'node:fs/promises';
 import { civicAddressMatch, exactAddressUnitIdentity, findExistingSeedListing, listingMls, maskedCivicAddressMatch, mlsIdentity } from './inventory-identity.mjs';
 import { firstLikelyRent, parseFacts } from './listing-parser.mjs';
 import { isAutoManagedListing, isStalePendingAutoListing } from './stale-auto-policy.mjs';
-import { bedroomEligible, isHouseShareText, isTargetRentalAreaText, LISTING_SCOPE_VERSION, listingScopeEligible, rentEligible } from './discovery-policy.mjs';
+import { bedroomEligible, isHouseShareText, isTargetRentalAreaText, LISTING_SCOPE_VERSION, listingScopeEligible, matchingCrossSourceHousePortionEvidence, rentEligible } from './discovery-policy.mjs';
 import { aggregateUnitCount, discoveredStructuredInventories, priorityInventoryEvidenceHealthy, rentCafeExactUnits, rentCafeUnpricedUnits, structuredRentalInventories } from './priority-inventory-policy.mjs';
 import { dedupeHistoryEvents, pruneExcludedScopeChurn } from './history-policy.mjs';
 import { verifiedPhotoCandidates } from './listing-photo-candidates.mjs';
@@ -83,6 +83,16 @@ if (listingScopeEligible(r3173689Portion, r3173689Evidence) ||
     !isHouseShareText(r3173689Portion.address) ||
     !isHouseShareText(r3173689Evidence)) {
   failures.push('R3173689 / Main House 3093 W 29th regression: a main-house portion sharing laundry with basement tenants can publish as an entire home.');
+}
+const r3175848Listing={mls:'R3175848',rent:5500,bedrooms:4,bathrooms:2,sqft:1753,address:'2945 W 12 Avenue',lat:49.26165,lng:-123.17111};
+const r3175848Craigslist={rent:5500,bedrooms:4,bathrooms:2.5,sqft:1753,geo:{lat:49.261419,lng:-123.171096},active:true,detailVerified:true,description:'Please note this home does feature another self contained rental suite on the upper level'};
+const r3175848CrossSourceText=matchingCrossSourceHousePortionEvidence(r3175848Listing,[r3175848Craigslist]);
+if (!r3175848CrossSourceText ||
+    !isHouseShareText(r3175848CrossSourceText) ||
+    listingScopeEligible(r3175848Listing,r3175848CrossSourceText) ||
+    matchingCrossSourceHousePortionEvidence({...r3175848Listing,rent:5600},[r3175848Craigslist]) ||
+    matchingCrossSourceHousePortionEvidence({...r3175848Listing,lat:49.27},[r3175848Craigslist])) {
+  failures.push('R3175848 / 2945 W 12 regression: precise current cross-source evidence can fail to exclude a separately rented house portion.');
 }
 const valleyDrivePetPolicy = 'Lease Requirement:\n- No smoking, No pets\nOne sec, gathering the Nearby Pet Friendly';
 if (zumperPetFriendly({ petsAllowed: true }, valleyDrivePetPolicy) !== false ||

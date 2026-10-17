@@ -1,6 +1,6 @@
 import fs from 'node:fs/promises';
 import path from 'node:path';
-import { bedroomEligible, isHouseShareText, isTargetRentalAreaText, rentEligible } from './discovery-policy.mjs';
+import { bedroomEligible, isHouseShareText, isTargetRentalAreaText, matchingCrossSourceHousePortionEvidence, rentEligible } from './discovery-policy.mjs';
 
 const DATA=path.join(process.cwd(),'data');
 const EVIDENCE=path.join(DATA,'evidence');
@@ -8,6 +8,7 @@ const read=async(p,d)=>{try{return JSON.parse(await fs.readFile(p,'utf8'))}catch
 const write=(p,x)=>fs.writeFile(p,JSON.stringify(x,null,2)+'\n');
 const db=await read(path.join(DATA,'listings.json'),{meta:{},listings:[]});
 const history=await read(path.join(DATA,'history.json'),{});
+const craigslist=await read(path.join(DATA,'craigslist-candidates.json'),{candidates:[]});
 const today=new Date().toISOString().slice(0,10);
 const files=await fs.readdir(EVIDENCE).catch(()=>[]);
 const evidenceCache=new Map();
@@ -44,7 +45,9 @@ async function evidenceText(listing){
 
 const excluded=[];
 for(const listing of db.listings||[]){
-  const text=await evidenceText(listing);
+  const directText=await evidenceText(listing);
+  const crossSourceText=matchingCrossSourceHousePortionEvidence(listing,craigslist.candidates||[]);
+  const text=[directText,crossSourceText].filter(Boolean).join('\n');
   let reason=null;
   if(!rentEligible(listing.rent))reason='monthly rent below CAD $3,500';
   else if(!bedroomEligible(listing.bedrooms))reason=Number(listing.bedrooms)>=5?'five or more bedrooms':'outside the 2–4 bedroom scope';
