@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-10-17T15:06:42.102Z",
+  "refreshedAt": "2026-10-17T15:17:33.991Z",
   "listings": {
     "york-103-2535-r3137446": {
       "cached": 5,
@@ -87,8 +87,8 @@
     },
     "mls-r3167417": {
       "cached": 5,
-      "preserved": 0,
-      "downloaded": 5,
+      "preserved": 5,
+      "downloaded": 0,
       "failures": [],
       "photoPageUrl": "https://realtylink.org/en/house~for-rent~vancouver/263189044"
     },
@@ -105,6 +105,13 @@
       "downloaded": 0,
       "failures": [],
       "photoPageUrl": "https://realtylink.org/en/apartment~for-rent~vancouver/263188864"
+    },
+    "mls-r3162880": {
+      "cached": 5,
+      "preserved": 0,
+      "downloaded": 5,
+      "failures": [],
+      "photoPageUrl": "https://realtylink.org/en/apartment~for-rent~vancouver/263184507"
     },
     "kits-walk-floorplan-2-bedroom-811-3675": {
       "cached": 5,
@@ -186,27 +193,27 @@
     },
     "mls-r3174425": {
       "cached": 5,
-      "preserved": 0,
-      "downloaded": 5,
-      "failures": [],
-      "photoPageUrl": "https://realtylink.org/en/house~for-rent~vancouver/263196052"
-    },
-    "mls-r3175848": {
-      "cached": 5,
       "preserved": 5,
       "downloaded": 0,
       "failures": [],
-      "photoPageUrl": "https://realtylink.org/en/house~for-rent~vancouver/263197475"
+      "photoPageUrl": "https://realtylink.org/en/house~for-rent~vancouver/263196052"
+    },
+    "mls-r3175318": {
+      "cached": 5,
+      "preserved": 0,
+      "downloaded": 5,
+      "failures": [],
+      "photoPageUrl": "https://realtylink.org/en/house~for-rent~vancouver/263196945"
     }
   },
   "totals": {
-    "sourceListings": 25,
-    "cachedListings": 25,
+    "sourceListings": 26,
+    "cachedListings": 26,
     "downloaded": 10,
     "failed": 5,
-    "preserved": 110,
-    "prunedListings": 0,
-    "prunedIndexImages": 0,
+    "preserved": 115,
+    "prunedListings": 1,
+    "prunedIndexImages": 5,
     "prunedOrphanFiles": 0
   }
 }

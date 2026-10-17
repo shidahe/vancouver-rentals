@@ -1,11 +1,11 @@
 {
-  "checkedAt": "2026-10-17T15:06:47.988Z",
+  "checkedAt": "2026-10-17T15:17:40.954Z",
   "ok": true,
   "checkpoints": {
     "render": {
       "title": "Vancouver Westside Rentals",
-      "cards": 25,
-      "shown": 25
+      "cards": 26,
+      "shown": 26
     },
     "stats": {
       "labels": [
@@ -16,29 +16,29 @@
         "Last refreshed"
       ],
       "values": [
-        "25",
+        "26",
         "2",
-        "6",
-        "5",
-        "Oct 17, 7:57 a.m. PDT"
+        "7",
+        "4",
+        "Oct 17, 8:09 a.m. PDT"
       ],
-      "html": "<div class=\"stat\"><strong>25</strong><span>Active</span></div><div class=\"stat\"><strong>2</strong><span>New 7d</span></div><div class=\"stat\"><strong>6</strong><span>Price drops</span></div><div class=\"stat\"><strong>5</strong><span>To verify</span></div><div class=\"stat\"><strong>Oct 17, 7:57 a.m. PDT</strong><span>Last refreshed</span></div>",
+      "html": "<div class=\"stat\"><strong>26</strong><span>Active</span></div><div class=\"stat\"><strong>2</strong><span>New 7d</span></div><div class=\"stat\"><strong>7</strong><span>Price drops</span></div><div class=\"stat\"><strong>4</strong><span>To verify</span></div><div class=\"stat\"><strong>Oct 17, 8:09 a.m. PDT</strong><span>Last refreshed</span></div>",
       "refreshedAt": {
-        "displayed": "Oct 17, 7:57 a.m. PDT",
-        "expected": "Oct 17, 7:57 a.m. PDT",
+        "displayed": "Oct 17, 8:09 a.m. PDT",
+        "expected": "Oct 17, 8:09 a.m. PDT",
         "timezone": "America/Vancouver"
       },
       "newSevenDays": {
         "expectedCount": 2,
         "badgeIds": [
-          "mls-r3174425",
-          "mls-r3175848"
+          "mls-r3175318",
+          "mls-r3174425"
         ],
         "staleBadgeIds": []
       }
     },
     "map": {
-      "markers": 25,
+      "markers": 26,
       "desktopMapVisible": true
     },
     "filters": "ok",
@@ -49,14 +49,14 @@
     },
     "sourceLink": "https://www.craigslist.org/view/d/vancouver-bed-bath-fourth-mac-kitsilano/eiSLCKTVqsrtPUWpUpJyDN",
     "photos": {
-      "total": 25,
-      "loaded": 25,
+      "total": 26,
+      "loaded": 26,
       "fallbacks": 0,
       "bad": []
     },
     "markerPositions": {
-      "total": 25,
-      "unique": 25
+      "total": 26,
+      "unique": 26
     },
     "dataEndpoints": "ok",
     "mobile": "ok",

@@ -2961,6 +2961,11 @@
       "date": "2026-10-10",
       "rent": 4650,
       "note": "CORRECTED: restored after exact current MLS detail matched identity, explicit availability and rent."
+    },
+    {
+      "date": "2026-10-17",
+      "rent": 4650,
+      "note": "CORRECTED: restored after exact current MLS detail matched identity, explicit availability and rent."
     }
   ],
   "kits-walk-floorplan-2-bedroom-811-3675": [
@@ -3171,6 +3176,18 @@
       "date": "2026-10-16",
       "rent": 5500,
       "note": "NEW: live Realtylink MLS R3175848 auto-published."
+    },
+    {
+      "date": "2026-10-17",
+      "rent": 5500,
+      "note": "EXCLUDED: house share or separately rented portion of a house."
+    }
+  ],
+  "mls-r3175318": [
+    {
+      "date": "2026-10-17",
+      "rent": 4000,
+      "note": "NEW: live Realtylink MLS R3175318 auto-published."
     }
   ]
 }

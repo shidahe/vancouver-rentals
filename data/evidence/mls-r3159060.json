@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-10-17T14:57:54.477Z",
+  "checkedAt": "2026-10-17T15:09:17.296Z",
   "listingId": "mls-r3159060",
   "sourceUrl": "https://www.craigslist.org/view/d/vancouver-point-grey-luxury-4br5ba/aJgN2o2my1nS6BNgEH2UjY",
   "ok": true,
@@ -248,12 +248,13 @@
   "jsonLd": [
     {
       "@type": "BreadcrumbList",
+      "@context": "https://schema.org",
       "itemListElement": [
         {
-          "item": "https://www.craigslist.org/area/vancouver",
           "@type": "ListItem",
-          "name": "craigslist: vancouver, BC",
-          "position": 1
+          "item": "https://www.craigslist.org/area/vancouver",
+          "position": 1,
+          "name": "craigslist: vancouver, BC"
         },
         {
           "position": 2,
@@ -262,43 +263,42 @@
           "item": "https://www.craigslist.org/subarea/van"
         },
         {
-          "@type": "ListItem",
-          "item": "https://www.craigslist.org/search/subarea/van?cat=hhh",
+          "name": "housing",
           "position": 3,
-          "name": "housing"
+          "item": "https://www.craigslist.org/search/subarea/van?cat=hhh",
+          "@type": "ListItem"
         },
         {
           "@type": "ListItem",
           "item": "https://www.craigslist.org/search/subarea/van?cat=apa",
-          "position": 4,
-          "name": "apartments / housing for rent"
+          "name": "apartments / housing for rent",
+          "position": 4
         },
         {
-          "@type": "ListItem",
-          "item": "https://www.craigslist.org/view/d/vancouver-point-grey-luxury-4br5ba/aJgN2o2my1nS6BNgEH2UjY",
           "position": 5,
-          "name": "Point Grey Luxury | 4BR+5BA | Elevator, Rooftop Deck & HotTub | Now"
+          "name": "Point Grey Luxury | 4BR+5BA | Elevator, Rooftop Deck & HotTub | Now",
+          "@type": "ListItem",
+          "item": "https://www.craigslist.org/view/d/vancouver-point-grey-luxury-4br5ba/aJgN2o2my1nS6BNgEH2UjY"
         }
-      ],
-      "@context": "https://schema.org"
+      ]
     },
     {
+      "@context": "http://schema.org",
+      "latitude": "49.271397",
       "name": "Point Grey Luxury | 4BR+5BA | Elevator, Rooftop Deck & HotTub | Now",
-      "smokingAllowed": false,
       "numberOfBedrooms": "4",
+      "smokingAllowed": false,
+      "numberOfBathroomsTotal": 5,
+      "longitude": "-123.211569",
       "address": {
         "addressRegion": "BC",
         "addressLocality": "Vancouver",
-        "postalCode": "V6R4L8",
         "addressCountry": "CA",
+        "@type": "PostalAddress",
         "streetAddress": "4588 W 2nd Ave",
-        "@type": "PostalAddress"
+        "postalCode": "V6R4L8"
       },
-      "@context": "http://schema.org",
-      "longitude": "-123.211569",
-      "numberOfBathroomsTotal": 5,
-      "@type": "House",
-      "latitude": "49.271397"
+      "@type": "House"
     }
   ],
   "images": [
@@ -323,7 +323,7 @@
     "https://images.craigslist.org/00R0R_6V6qRtoaJpd_0uY0kE_50x50c.jpg",
     "https://images.craigslist.org/00606_9kdSrPINoni_0uY0kE_50x50c.jpg"
   ],
-  "elapsedMs": 3505,
+  "elapsedMs": 3314,
   "identityMatch": true,
   "explicitNegative": false,
   "negativePhrase": null,
