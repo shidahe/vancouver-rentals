@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-10-16T18:11:24.120Z",
+  "refreshedAt": "2026-10-17T15:06:42.102Z",
   "listings": {
     "york-103-2535-r3137446": {
       "cached": 5,
@@ -84,6 +84,13 @@
       "downloaded": 0,
       "failures": [],
       "photoPageUrl": "https://www.craigslist.org/view/d/vancouver-fully-furnished-designer-2br/dK4HrSygC6FiEijPJfe35N"
+    },
+    "mls-r3167417": {
+      "cached": 5,
+      "preserved": 0,
+      "downloaded": 5,
+      "failures": [],
+      "photoPageUrl": "https://realtylink.org/en/house~for-rent~vancouver/263189044"
     },
     "zumper-6f8b3ff2b9fd": {
       "cached": 5,
@@ -177,20 +184,27 @@
       ],
       "photoPageUrl": "https://realtylink.org/en/house~for-rent~vancouver/263194860"
     },
-    "mls-r3175848": {
+    "mls-r3174425": {
       "cached": 5,
       "preserved": 0,
       "downloaded": 5,
+      "failures": [],
+      "photoPageUrl": "https://realtylink.org/en/house~for-rent~vancouver/263196052"
+    },
+    "mls-r3175848": {
+      "cached": 5,
+      "preserved": 5,
+      "downloaded": 0,
       "failures": [],
       "photoPageUrl": "https://realtylink.org/en/house~for-rent~vancouver/263197475"
     }
   },
   "totals": {
-    "sourceListings": 23,
-    "cachedListings": 23,
-    "downloaded": 5,
+    "sourceListings": 25,
+    "cachedListings": 25,
+    "downloaded": 10,
     "failed": 5,
-    "preserved": 105,
+    "preserved": 110,
     "prunedListings": 0,
     "prunedIndexImages": 0,
     "prunedOrphanFiles": 0

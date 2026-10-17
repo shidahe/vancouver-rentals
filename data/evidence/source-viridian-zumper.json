@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-10-16T18:02:39.568Z",
+  "checkedAt": "2026-10-17T14:57:54.477Z",
   "source": {
     "id": "viridian-zumper",
     "name": "Viridian exact-building fallback",
@@ -329,7 +329,7 @@
           "name": "Zumper",
           "logo": {
             "@type": "ImageObject",
-            "url": "https://d214hhm15p4t1d.cloudfront.net/web-zumper/3db4adb810f5d6ab04a5a3b1a5db4e77f3ddb7f8/img/zumper-full-dark.664a5ef8.svg",
+            "url": "https://d214hhm15p4t1d.cloudfront.net/web-zumper/8cb831b181ca63d19a829927c7b6a37ea3edb1a4/img/zumper-full-dark.664a5ef8.svg",
             "width": 124,
             "height": 42
           }
@@ -603,13 +603,12 @@
   ],
   "images": [
     "https://img.zumpercdn.com/882533249/1280x960?auto=format",
-    "https://d214hhm15p4t1d.cloudfront.net/web-zumper/3db4adb810f5d6ab04a5a3b1a5db4e77f3ddb7f8/img/zumperDarkText.664a5ef8.svg",
-    "https://d214hhm15p4t1d.cloudfront.net/web-zumper/3db4adb810f5d6ab04a5a3b1a5db4e77f3ddb7f8/img/search.272ccae9.svg",
-    "https://d214hhm15p4t1d.cloudfront.net/web-zumper/3db4adb810f5d6ab04a5a3b1a5db4e77f3ddb7f8/img/locationAutocomplete.81057160.svg",
-    "https://d214hhm15p4t1d.cloudfront.net/web-zumper/3db4adb810f5d6ab04a5a3b1a5db4e77f3ddb7f8/img/Zipcode.08d98c96.svg",
-    "https://d214hhm15p4t1d.cloudfront.net/web-zumper/3db4adb810f5d6ab04a5a3b1a5db4e77f3ddb7f8/img/clock.4213eca3.svg",
-    "https://d214hhm15p4t1d.cloudfront.net/web-zumper/3db4adb810f5d6ab04a5a3b1a5db4e77f3ddb7f8/img/alert.1f2bed1b.svg",
-    "https://d214hhm15p4t1d.cloudfront.net/web-zumper/3db4adb810f5d6ab04a5a3b1a5db4e77f3ddb7f8/img/tooltipQuestion.b17f7e04.svg",
+    "https://d214hhm15p4t1d.cloudfront.net/web-zumper/8cb831b181ca63d19a829927c7b6a37ea3edb1a4/img/zumperDarkText.664a5ef8.svg",
+    "https://d214hhm15p4t1d.cloudfront.net/web-zumper/8cb831b181ca63d19a829927c7b6a37ea3edb1a4/img/search.272ccae9.svg",
+    "https://d214hhm15p4t1d.cloudfront.net/web-zumper/8cb831b181ca63d19a829927c7b6a37ea3edb1a4/img/locationAutocomplete.81057160.svg",
+    "https://d214hhm15p4t1d.cloudfront.net/web-zumper/8cb831b181ca63d19a829927c7b6a37ea3edb1a4/img/Zipcode.08d98c96.svg",
+    "https://d214hhm15p4t1d.cloudfront.net/web-zumper/8cb831b181ca63d19a829927c7b6a37ea3edb1a4/img/clock.4213eca3.svg",
+    "https://d214hhm15p4t1d.cloudfront.net/web-zumper/8cb831b181ca63d19a829927c7b6a37ea3edb1a4/img/alert.1f2bed1b.svg",
     "https://img.zumpercdn.com/882533249/1280x960?dpr=1&fit=crop&h=542&q=76&w=991",
     "https://img.zumpercdn.com/882533250/1280x960?dpr=1&fit=crop&h=542&q=76&w=991",
     "https://img.zumpercdn.com/882533251/1280x960?dpr=1&fit=crop&h=542&q=76&w=991",
@@ -621,7 +620,8 @@
     "https://img.zumpercdn.com/882533250/1280x960?dpr=1&fit=crop&h=222&q=76&w=394",
     "https://img.zumpercdn.com/882533251/1280x960?dpr=1&fit=crop&h=222&q=76&w=394",
     "https://img.zumpercdn.com/882533252/1280x960?dpr=1&fit=crop&h=446&q=76&w=792",
-    "https://img.zumpercdn.com/882533253/1280x960?dpr=1&fit=crop&h=222&q=76&w=394"
+    "https://img.zumpercdn.com/882533253/1280x960?dpr=1&fit=crop&h=222&q=76&w=394",
+    "https://img.zumpercdn.com/882533254/1280x960?dpr=1&fit=crop&h=222&q=76&w=394"
   ],
-  "elapsedMs": 3219
+  "elapsedMs": 3380
 }
