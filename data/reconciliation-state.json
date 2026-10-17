@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-10-17T15:16:41.320Z",
+  "refreshedAt": "2026-10-17T17:17:43.578Z",
   "groups": [
     {
       "identityKey": "1533 maple st::url:69f2e13a0fd5",
@@ -83,6 +83,18 @@
       ],
       "exactUnit": false,
       "matchedListingId": null,
+      "result": "candidate_only"
+    },
+    {
+      "identityKey": "2000 w 43rd ave::url:daba7b758265",
+      "sources": [
+        "zumper"
+      ],
+      "rents": [
+        5000
+      ],
+      "exactUnit": false,
+      "matchedListingId": "zumper-dd642aebb4f6",
       "result": "candidate_only"
     },
     {
@@ -242,16 +254,16 @@
       "result": "candidate_only"
     },
     {
-      "identityKey": "mls:r3162880",
+      "identityKey": "mls:r3176251",
       "sources": [
         "realtylink mls"
       ],
       "rents": [
-        4650
+        4250
       ],
-      "exactUnit": true,
-      "matchedListingId": "mls-r3162880",
-      "result": "authoritative_mls_reverified"
+      "exactUnit": false,
+      "matchedListingId": null,
+      "result": "auto_published_authoritative_mls"
     },
     {
       "identityKey": "mls:r3160689",
@@ -266,27 +278,15 @@
       "result": "authoritative_mls_reverified"
     },
     {
-      "identityKey": "mls:r3167417",
+      "identityKey": "mls:r3137446",
       "sources": [
         "realtylink mls"
       ],
       "rents": [
-        6750
+        5500
       ],
       "exactUnit": true,
-      "matchedListingId": "mls-r3167417",
-      "result": "authoritative_mls_reverified"
-    },
-    {
-      "identityKey": "mls:r3173233",
-      "sources": [
-        "realtylink mls"
-      ],
-      "rents": [
-        6000
-      ],
-      "exactUnit": false,
-      "matchedListingId": "mls-r3173233",
+      "matchedListingId": "york-103-2535-r3137446",
       "result": "authoritative_mls_reverified"
     },
     {
@@ -298,31 +298,95 @@
         4000
       ],
       "exactUnit": false,
-      "matchedListingId": null,
-      "result": "auto_published_authoritative_mls"
+      "matchedListingId": "mls-r3175318",
+      "result": "authoritative_mls_reverified"
     },
     {
-      "identityKey": "mls:r3174425",
+      "identityKey": "mls:r3173479",
       "sources": [
         "realtylink mls"
       ],
       "rents": [
-        14500
+        3900
+      ],
+      "exactUnit": true,
+      "matchedListingId": "mls-r3173479",
+      "result": "authoritative_mls_reverified"
+    },
+    {
+      "identityKey": "mls:r3161880",
+      "sources": [
+        "realtylink mls"
+      ],
+      "rents": [
+        8800
       ],
       "exactUnit": false,
-      "matchedListingId": "mls-r3174425",
+      "matchedListingId": "mls-r3161880",
+      "result": "authoritative_mls_reverified"
+    },
+    {
+      "identityKey": "mls:r3151372",
+      "sources": [
+        "realtylink mls"
+      ],
+      "rents": [
+        4800
+      ],
+      "exactUnit": false,
+      "matchedListingId": "mls-r3151372",
+      "result": "authoritative_mls_reverified"
+    },
+    {
+      "identityKey": "mls:r3159060",
+      "sources": [
+        "realtylink mls"
+      ],
+      "rents": [
+        15000
+      ],
+      "exactUnit": false,
+      "matchedListingId": "mls-r3159060",
+      "result": "authoritative_mls_reverified"
+    },
+    {
+      "identityKey": "mls:r3175848",
+      "sources": [
+        "realtylink mls"
+      ],
+      "rents": [
+        5500
+      ],
+      "exactUnit": false,
+      "matchedListingId": "mls-r3175848",
+      "result": "authoritative_mls_reverified"
+    },
+    {
+      "identityKey": "mls:r3170701",
+      "sources": [
+        "realtylink mls"
+      ],
+      "rents": [
+        6000
+      ],
+      "exactUnit": false,
+      "matchedListingId": "mls-r3170701",
       "result": "authoritative_mls_reverified"
     }
   ],
   "promoted": [
-    "mls-r3175318"
+    "mls-r3176251"
   ],
   "crossVerified": [
-    "mls-r3162880",
     "zumper-16e9ae17cd91",
-    "mls-r3167417",
-    "mls-r3173233",
-    "mls-r3174425"
+    "york-103-2535-r3137446",
+    "mls-r3175318",
+    "mls-r3173479",
+    "mls-r3161880",
+    "mls-r3151372",
+    "mls-r3159060",
+    "mls-r3175848",
+    "mls-r3170701"
   ],
   "fingerprintCrossVerified": [],
   "craigslistRelistingsRecovered": [],
@@ -331,15 +395,50 @@
   "relistedMlsMerged": [],
   "negativeMatches": [],
   "detailReactivated": [
-    "mls-r3162880"
+    "mls-r3151372"
   ],
-  "mlsMissing": {},
+  "mlsMissing": {
+    "R3163709": {
+      "firstMissingAt": "2026-10-17T17:17:43.578Z",
+      "lastMissingAt": "2026-10-17T17:17:43.578Z",
+      "listingId": "mls-r3163709"
+    },
+    "R3167417": {
+      "firstMissingAt": "2026-10-17T17:17:43.578Z",
+      "lastMissingAt": "2026-10-17T17:17:43.578Z",
+      "listingId": "mls-r3167417"
+    },
+    "R3167237": {
+      "firstMissingAt": "2026-10-17T17:17:43.578Z",
+      "lastMissingAt": "2026-10-17T17:17:43.578Z",
+      "listingId": "mls-r3167237"
+    },
+    "R3165327": {
+      "firstMissingAt": "2026-10-17T17:17:43.578Z",
+      "lastMissingAt": "2026-10-17T17:17:43.578Z",
+      "listingId": "mls-r3165327"
+    },
+    "R3162880": {
+      "firstMissingAt": "2026-10-17T17:17:43.578Z",
+      "lastMissingAt": "2026-10-17T17:17:43.578Z",
+      "listingId": "mls-r3162880"
+    },
+    "R3169522": {
+      "firstMissingAt": "2026-10-17T17:17:43.578Z",
+      "lastMissingAt": "2026-10-17T17:17:43.578Z",
+      "listingId": "mls-r3169522"
+    },
+    "R3174425": {
+      "firstMissingAt": "2026-10-17T17:17:43.578Z",
+      "lastMissingAt": "2026-10-17T17:17:43.578Z",
+      "listingId": "mls-r3174425"
+    }
+  },
   "mlsRemoved": [],
   "mlsStaleHidden": [],
-  "realtylinkSnapshotCount": 6,
-  "realtylinkSnapshotHighWaterMark": 9,
+  "realtylinkSnapshotCount": 10,
+  "realtylinkSnapshotHighWaterMark": 10,
   "realtylinkSnapshotScope": "rent-3500-beds-2-4-whole-home-westside-v2",
-  "realtylinkRemovalEligible": false,
-  "mlsRemovalSuppressed": "Partial Realtylink snapshot (6 candidates versus previous complete 9); disappearance signals ignored.",
+  "realtylinkRemovalEligible": true,
   "mlsDuplicatesMerged": []
 }

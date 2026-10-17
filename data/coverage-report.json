@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-17T15:17:35.084Z",
+  "generatedAt": "2026-10-17T17:18:29.531Z",
   "coverageReady": true,
   "healthyLaneCount": 3,
   "freshLaneCount": 8,
@@ -9,21 +9,21 @@
     {
       "building": "kits-walk",
       "healthy": true,
-      "checkedAt": "2026-10-17T15:09:17.296Z",
-      "evidenceUrl": "https://www.zumper.com/apartment-buildings/p481389/kits-walk-by-strand-kitsilano-vancouver-bc",
+      "checkedAt": "2026-10-17T17:09:22.496Z",
+      "evidenceUrl": "https://www.kitswalkleasing.com/floorplans",
       "sourceOptions": 2
     },
     {
       "building": "larchway-gardens",
       "healthy": true,
-      "checkedAt": "2026-10-17T15:09:17.296Z",
+      "checkedAt": "2026-10-17T17:09:22.496Z",
       "evidenceUrl": "https://quadrealresidential.com/vancouver/larchway-gardens/floorplans/",
       "sourceOptions": 1
     },
     {
       "building": "viridian",
       "healthy": true,
-      "checkedAt": "2026-10-17T15:09:17.296Z",
+      "checkedAt": "2026-10-17T17:09:22.496Z",
       "evidenceUrl": "https://www.zumper.com/apartment-buildings/p510456/viridian-fairview-vancouver-bc",
       "sourceOptions": 2
     }
@@ -35,8 +35,8 @@
       "kind": "broad-marketplace",
       "healthy": true,
       "status": "healthy",
-      "detail": "11 fresh live candidates",
-      "refreshedAt": "2026-10-17T15:13:10.429Z"
+      "detail": "12 fresh live candidates",
+      "refreshedAt": "2026-10-17T17:13:30.746Z"
     },
     {
       "id": "craigslist",
@@ -44,15 +44,15 @@
       "healthy": true,
       "status": "healthy",
       "detail": "4/4 regional searches reachable; 29 qualifying candidates parsed",
-      "refreshedAt": "2026-10-17T15:15:16.853Z"
+      "refreshedAt": "2026-10-17T17:16:22.041Z"
     },
     {
       "id": "rentalsca",
       "kind": "broad-marketplace",
       "healthy": false,
       "status": "degraded",
-      "detail": "6/9 regional searches reachable; 0 qualifying candidates parsed; 5 scoped search-only leads retained (5 new, 0 already active, 0 need revalidation); 3 detail pages blocked after 67 discovered URLs; 64 further detail checks suppressed after repeated 403/429",
-      "refreshedAt": "2026-10-17T15:14:56.336Z"
+      "detail": "7/9 regional searches reachable; 0 qualifying candidates parsed; 15 scoped search-only leads retained (13 new, 2 already active, 0 need revalidation); 3 detail pages blocked after 77 discovered URLs; 74 further detail checks suppressed after repeated 403/429",
+      "refreshedAt": "2026-10-17T17:15:59.034Z"
     },
     {
       "id": "livrent",
@@ -60,17 +60,17 @@
       "healthy": false,
       "status": "unhealthy",
       "detail": "0/5 searches healthy; 3 blocked searches opened circuit; 2 further checks suppressed",
-      "refreshedAt": "2026-10-17T15:15:16.147Z"
+      "refreshedAt": "2026-10-17T17:16:21.063Z"
     },
     {
       "id": "realtylink",
       "kind": "mls-rental",
-      "healthy": false,
+      "healthy": true,
       "positiveDiscoveryHealthy": true,
-      "status": "degraded",
-      "partial": true,
-      "detail": "3/3 searches reachable; 6 current live candidates parsed from a partial snapshot versus complete baseline 9; positive discovery usable, removals suppressed",
-      "refreshedAt": "2026-10-17T15:15:37.737Z"
+      "status": "healthy",
+      "partial": false,
+      "detail": "3/3 searches reachable; 10 live candidates parsed",
+      "refreshedAt": "2026-10-17T17:16:43.597Z"
     },
     {
       "id": "priority-kits-walk",
@@ -78,15 +78,15 @@
       "healthy": true,
       "status": "healthy",
       "detail": "1/2 official sources usable",
-      "refreshedAt": "2026-10-17T15:16:45.703Z"
+      "refreshedAt": "2026-10-17T17:17:47.916Z"
     },
     {
       "id": "priority-larchway-gardens",
       "kind": "priority-official",
       "healthy": true,
       "status": "healthy",
-      "detail": "2/2 official sources usable",
-      "refreshedAt": "2026-10-17T15:16:45.703Z"
+      "detail": "1/2 official sources usable",
+      "refreshedAt": "2026-10-17T17:17:47.916Z"
     },
     {
       "id": "priority-viridian",
@@ -94,7 +94,7 @@
       "healthy": true,
       "status": "healthy",
       "detail": "1/2 official sources usable",
-      "refreshedAt": "2026-10-17T15:16:45.703Z"
+      "refreshedAt": "2026-10-17T17:17:47.916Z"
     }
   ],
   "warnings": [
@@ -102,19 +102,13 @@
       "severity": "warning",
       "lane": "rentalsca",
       "status": "degraded",
-      "detail": "6/9 regional searches reachable; 0 qualifying candidates parsed; 5 scoped search-only leads retained (5 new, 0 already active, 0 need revalidation); 3 detail pages blocked after 67 discovered URLs; 64 further detail checks suppressed after repeated 403/429"
+      "detail": "7/9 regional searches reachable; 0 qualifying candidates parsed; 15 scoped search-only leads retained (13 new, 2 already active, 0 need revalidation); 3 detail pages blocked after 77 discovered URLs; 74 further detail checks suppressed after repeated 403/429"
     },
     {
       "severity": "warning",
       "lane": "livrent",
       "status": "unhealthy",
       "detail": "0/5 searches healthy; 3 blocked searches opened circuit; 2 further checks suppressed"
-    },
-    {
-      "severity": "warning",
-      "lane": "realtylink",
-      "status": "degraded",
-      "detail": "3/3 searches reachable; 6 current live candidates parsed from a partial snapshot versus complete baseline 9; positive discovery usable, removals suppressed"
     }
   ],
   "blockers": [],

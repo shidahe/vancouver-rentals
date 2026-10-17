@@ -1,11 +1,11 @@
 {
-  "checkedAt": "2026-10-17T15:17:40.954Z",
+  "checkedAt": "2026-10-17T17:18:35.307Z",
   "ok": true,
   "checkpoints": {
     "render": {
       "title": "Vancouver Westside Rentals",
-      "cards": 26,
-      "shown": 26
+      "cards": 23,
+      "shown": 23
     },
     "stats": {
       "labels": [
@@ -16,29 +16,29 @@
         "Last refreshed"
       ],
       "values": [
-        "26",
+        "23",
         "2",
-        "7",
-        "4",
-        "Oct 17, 8:09 a.m. PDT"
+        "6",
+        "8",
+        "Oct 17, 10:09 a.m. PDT"
       ],
-      "html": "<div class=\"stat\"><strong>26</strong><span>Active</span></div><div class=\"stat\"><strong>2</strong><span>New 7d</span></div><div class=\"stat\"><strong>7</strong><span>Price drops</span></div><div class=\"stat\"><strong>4</strong><span>To verify</span></div><div class=\"stat\"><strong>Oct 17, 8:09 a.m. PDT</strong><span>Last refreshed</span></div>",
+      "html": "<div class=\"stat\"><strong>23</strong><span>Active</span></div><div class=\"stat\"><strong>2</strong><span>New 7d</span></div><div class=\"stat\"><strong>6</strong><span>Price drops</span></div><div class=\"stat\"><strong>8</strong><span>To verify</span></div><div class=\"stat\"><strong>Oct 17, 10:09 a.m. PDT</strong><span>Last refreshed</span></div>",
       "refreshedAt": {
-        "displayed": "Oct 17, 8:09 a.m. PDT",
-        "expected": "Oct 17, 8:09 a.m. PDT",
+        "displayed": "Oct 17, 10:09 a.m. PDT",
+        "expected": "Oct 17, 10:09 a.m. PDT",
         "timezone": "America/Vancouver"
       },
       "newSevenDays": {
         "expectedCount": 2,
         "badgeIds": [
           "mls-r3175318",
-          "mls-r3174425"
+          "mls-r3176251"
         ],
         "staleBadgeIds": []
       }
     },
     "map": {
-      "markers": 26,
+      "markers": 23,
       "desktopMapVisible": true
     },
     "filters": "ok",
@@ -49,14 +49,14 @@
     },
     "sourceLink": "https://www.craigslist.org/view/d/vancouver-bed-bath-fourth-mac-kitsilano/eiSLCKTVqsrtPUWpUpJyDN",
     "photos": {
-      "total": 26,
-      "loaded": 26,
+      "total": 23,
+      "loaded": 23,
       "fallbacks": 0,
       "bad": []
     },
     "markerPositions": {
-      "total": 26,
-      "unique": 26
+      "total": 23,
+      "unique": 23
     },
     "dataEndpoints": "ok",
     "mobile": "ok",
