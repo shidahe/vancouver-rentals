@@ -43,6 +43,7 @@ const siteTestSource = await read('scripts/test-site.mjs');
 const imageCacheSource = await read('scripts/cache-listing-images.mjs');
 const qualityAuditSource = await read('scripts/audit-data-quality.mjs');
 const readinessFinalizerSource = await read('scripts/finalize-readiness.mjs');
+const scopeCrossSourceEvidence = JSON.parse(await read('data/scope-cross-source-evidence.json'));
 
 const failures = [];
 if (!refreshWorkflow.includes("cron: '17 14 * * *'") || refreshWorkflow.includes('*/6')) {
@@ -85,9 +86,10 @@ if (listingScopeEligible(r3173689Portion, r3173689Evidence) ||
   failures.push('R3173689 / Main House 3093 W 29th regression: a main-house portion sharing laundry with basement tenants can publish as an entire home.');
 }
 const r3175848Listing={mls:'R3175848',rent:5500,bedrooms:4,bathrooms:2,sqft:1753,address:'2945 W 12 Avenue',lat:49.26165,lng:-123.17111};
-const r3175848Craigslist={rent:5500,bedrooms:4,bathrooms:2.5,sqft:1753,geo:{lat:49.261419,lng:-123.171096},active:true,detailVerified:true,description:'Please note this home does feature another self contained rental suite on the upper level'};
+const r3175848Craigslist=scopeCrossSourceEvidence.records.find(item=>item.listingId==='mls-r3175848');
 const r3175848CrossSourceText=matchingCrossSourceHousePortionEvidence(r3175848Listing,[r3175848Craigslist]);
-if (!r3175848CrossSourceText ||
+if (!r3175848Craigslist || r3175848Craigslist.identityVerified!==true ||
+    !r3175848CrossSourceText ||
     !isHouseShareText(r3175848CrossSourceText) ||
     listingScopeEligible(r3175848Listing,r3175848CrossSourceText) ||
     matchingCrossSourceHousePortionEvidence({...r3175848Listing,rent:5600},[r3175848Craigslist]) ||

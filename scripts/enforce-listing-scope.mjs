@@ -9,6 +9,7 @@ const write=(p,x)=>fs.writeFile(p,JSON.stringify(x,null,2)+'\n');
 const db=await read(path.join(DATA,'listings.json'),{meta:{},listings:[]});
 const history=await read(path.join(DATA,'history.json'),{});
 const craigslist=await read(path.join(DATA,'craigslist-candidates.json'),{candidates:[]});
+const persistedScopeEvidence=await read(path.join(DATA,'scope-cross-source-evidence.json'),{records:[]});
 const today=new Date().toISOString().slice(0,10);
 const files=await fs.readdir(EVIDENCE).catch(()=>[]);
 const evidenceCache=new Map();
@@ -46,7 +47,8 @@ async function evidenceText(listing){
 const excluded=[];
 for(const listing of db.listings||[]){
   const directText=await evidenceText(listing);
-  const crossSourceText=matchingCrossSourceHousePortionEvidence(listing,craigslist.candidates||[]);
+  const persistedScopeText=(persistedScopeEvidence.records||[]).find(item=>item.listingId===listing.id&&item.identityVerified===true&&isHouseShareText(item.description||''))?.description||'';
+  const crossSourceText=persistedScopeText||matchingCrossSourceHousePortionEvidence(listing,craigslist.candidates||[]);
   const text=[directText,crossSourceText].filter(Boolean).join('\n');
   let reason=null;
   if(!rentEligible(listing.rent))reason='monthly rent below CAD $3,500';

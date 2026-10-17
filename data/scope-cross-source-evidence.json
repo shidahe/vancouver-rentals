@@ -1,0 +1,25 @@
+{
+  "records": [
+    {
+      "listingId": "mls-r3175848",
+      "mls": "R3175848",
+      "source": "Craigslist",
+      "sourceUrl": "https://www.craigslist.org/view/d/vancouver-kitsilano-bedroom-home-for/2H4sPNT5rtvjLn6XGN9mXp",
+      "postId": "7984160811",
+      "observedAt": "2026-10-17T15:10:00.000Z",
+      "identityVerified": true,
+      "identityBasis": "exact rent, bedrooms, sqft and coordinates within 40 metres of current MLS inventory",
+      "rent": 5500,
+      "bedrooms": 4,
+      "bathrooms": 2.5,
+      "sqft": 1753,
+      "geo": {
+        "lat": 49.261419,
+        "lng": -123.171096
+      },
+      "active": true,
+      "detailVerified": true,
+      "description": "Please note this home does feature another self contained rental suite on the upper level"
+    }
+  ]
+}
