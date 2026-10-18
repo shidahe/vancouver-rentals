@@ -49,6 +49,9 @@ const failures = [];
 if (!refreshWorkflow.includes("cron: '17 14 * * *'") || refreshWorkflow.includes('*/6')) {
   failures.push('Rental refresh schedule must remain daily so MLS disappearance confirmation spans daily observations.');
 }
+if (!refreshWorkflow.includes("- 'data/scope-cross-source-evidence.json'")) {
+  failures.push('Persisted exact cross-source scope evidence changes do not trigger a full validated refresh.');
+}
 if (!refreshWorkflow.includes('for attempt in 1 2 3 4') ||
     !refreshWorkflow.includes('git pull --rebase origin main') ||
     !refreshWorkflow.includes('sleep $((attempt * 5))') ||

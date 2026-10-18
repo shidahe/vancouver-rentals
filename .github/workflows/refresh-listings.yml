@@ -49,6 +49,7 @@ on:
       - 'data/purpose-built-watch.json'
       - 'data/automation-policy.json'
       - 'data/manual-overrides.json'
+      - 'data/scope-cross-source-evidence.json'
       - 'data/official-watch.json'
       - 'package.json'
       - '.github/workflows/refresh-listings.yml'
