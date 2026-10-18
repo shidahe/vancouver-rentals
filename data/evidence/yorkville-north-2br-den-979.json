@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-10-18T15:04:02.161Z",
+  "checkedAt": "2026-10-18T17:21:29.822Z",
   "listingId": "yorkville-north-2br-den-979",
   "sourceUrl": "https://www.craigslist.org/view/d/vancouver-ocean-view-2br-2ba-with-den/kZEyBrAFDhJYBcmtaq27m2",
   "ok": true,
@@ -231,54 +231,54 @@
       "itemListElement": [
         {
           "item": "https://www.craigslist.org/area/vancouver",
-          "name": "craigslist: vancouver, BC",
           "@type": "ListItem",
+          "name": "craigslist: vancouver, BC",
           "position": 1
         },
         {
+          "name": "vancouver",
           "position": 2,
           "item": "https://www.craigslist.org/subarea/van",
-          "name": "vancouver",
           "@type": "ListItem"
         },
         {
           "position": 3,
-          "item": "https://www.craigslist.org/search/subarea/van?cat=hhh",
           "name": "housing",
+          "@type": "ListItem",
+          "item": "https://www.craigslist.org/search/subarea/van?cat=hhh"
+        },
+        {
+          "name": "apartments / housing for rent",
+          "position": 4,
+          "item": "https://www.craigslist.org/search/subarea/van?cat=apa",
           "@type": "ListItem"
         },
         {
-          "position": 4,
-          "name": "apartments / housing for rent",
-          "@type": "ListItem",
-          "item": "https://www.craigslist.org/search/subarea/van?cat=apa"
-        },
-        {
           "position": 5,
-          "item": "https://www.craigslist.org/view/d/vancouver-ocean-view-2br-2ba-with-den/kZEyBrAFDhJYBcmtaq27m2",
+          "name": "Ocean View 2br/2ba with Den | Yorkville North",
           "@type": "ListItem",
-          "name": "Ocean View 2br/2ba with Den | Yorkville North"
+          "item": "https://www.craigslist.org/view/d/vancouver-ocean-view-2br-2ba-with-den/kZEyBrAFDhJYBcmtaq27m2"
         }
       ],
       "@type": "BreadcrumbList"
     },
     {
-      "name": "Ocean View 2br/2ba with Den | Yorkville North",
-      "numberOfBathroomsTotal": 2,
-      "numberOfBedrooms": "2",
-      "@context": "http://schema.org",
-      "@type": "Apartment",
       "petsAllowed": true,
+      "numberOfBathroomsTotal": 2,
       "longitude": "-123.147469",
+      "numberOfBedrooms": "2",
       "address": {
-        "addressCountry": "CA",
         "addressRegion": "BC",
         "addressLocality": "Vancouver",
-        "postalCode": "V6J5B8",
+        "addressCountry": "CA",
         "@type": "PostalAddress",
-        "streetAddress": "1888 York Avenue"
+        "streetAddress": "1888 York Avenue",
+        "postalCode": "V6J5B8"
       },
-      "latitude": "49.271319"
+      "@context": "http://schema.org",
+      "@type": "Apartment",
+      "latitude": "49.271319",
+      "name": "Ocean View 2br/2ba with Den | Yorkville North"
     }
   ],
   "images": [
@@ -303,7 +303,7 @@
     "https://images.craigslist.org/00o0o_155wr74CsjC_0jm0c6_50x50c.jpg",
     "https://map4.craigslist.org/t09/14/2587/5607.png"
   ],
-  "elapsedMs": 3132,
+  "elapsedMs": 3120,
   "identityMatch": true,
   "explicitNegative": false,
   "negativePhrase": null,

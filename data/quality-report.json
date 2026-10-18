@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-10-18T15:12:53.441Z",
-  "activeCount": 19,
+  "generatedAt": "2026-10-18T17:30:43.351Z",
+  "activeCount": 21,
   "decisionReady": true,
   "readinessStatus": "finalized",
   "highIssueCount": 0,
   "mediumIssueCount": 0,
-  "infoIssueCount": 32,
+  "infoIssueCount": 36,
   "issues": [
     {
       "severity": "info",
@@ -74,7 +74,17 @@
     },
     {
       "severity": "info",
-      "id": "mls-r3151372",
+      "id": "mls-r3159060",
+      "issue": "unknown-ac"
+    },
+    {
+      "severity": "info",
+      "id": "mls-r3159060",
+      "issue": "unknown-orientation"
+    },
+    {
+      "severity": "info",
+      "id": "mls-r3163709",
       "issue": "unknown-orientation"
     },
     {
@@ -105,6 +115,11 @@
     {
       "severity": "info",
       "id": "zumper-6f8b3ff2b9fd",
+      "issue": "unknown-orientation"
+    },
+    {
+      "severity": "info",
+      "id": "mls-r3167237",
       "issue": "unknown-orientation"
     },
     {
@@ -154,11 +169,6 @@
     },
     {
       "severity": "info",
-      "id": "mls-r3173479",
-      "issue": "unknown-orientation"
-    },
-    {
-      "severity": "info",
       "id": "mls-r3173233",
       "issue": "unknown-ac"
     },
@@ -166,13 +176,23 @@
       "severity": "info",
       "id": "mls-r3173233",
       "issue": "unknown-orientation"
+    },
+    {
+      "severity": "info",
+      "id": "mls-r3174425",
+      "issue": "unknown-ac"
+    },
+    {
+      "severity": "info",
+      "id": "mls-r3174425",
+      "issue": "unknown-orientation"
     }
   ],
   "readinessChecks": {
     "smokeOk": true,
     "smokeFresh": true,
-    "smokeCheckedAt": "2026-10-18T15:12:58.976Z",
-    "latestDataAt": "2026-10-18T15:12:10.872Z",
+    "smokeCheckedAt": "2026-10-18T17:30:49.235Z",
+    "latestDataAt": "2026-10-18T17:29:56.336Z",
     "coverageReady": true,
     "healthyDiscoveryLanes": 3,
     "coverageWarnings": [
@@ -191,5 +211,5 @@
     ]
   },
   "readinessIssues": [],
-  "finalizedAt": "2026-10-18T15:12:59.073Z"
+  "finalizedAt": "2026-10-18T17:30:49.339Z"
 }
