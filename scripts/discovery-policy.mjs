@@ -1,9 +1,9 @@
 export const MIN_DISCOVERY_BEDROOMS = 2;
 export const MAX_DISCOVERY_BEDROOMS = 4;
 export const MIN_DISCOVERY_RENT = 3500;
-export const LISTING_SCOPE_VERSION = 'rent-3500-beds-2-4-whole-home-westside-v2';
+export const LISTING_SCOPE_VERSION = 'rent-3500-beds-2-4-whole-home-westside-v3';
 
-const OUT_OF_SCOPE_AREA = /\b(?:Fairview(?:\s+VW)?|West\s+End(?:\s+VW)?|Downtown(?:\s+Vancouver)?|Yaletown|Mount\s+Pleasant|Riley\s+Park|Olympic\s+Village|South\s+Cambie)\b/i;
+const OUT_OF_SCOPE_AREA = /\b(?:Fairview(?:\s+VW)?|False\s+Creek|West\s+End(?:\s+VW)?|Downtown(?:\s+Vancouver)?|Yaletown|Mount\s+Pleasant|Riley\s+Park|Olympic\s+Village|South\s+Cambie)\b/i;
 
 export function bedroomEligible(value) {
   const bedrooms = Number(value);

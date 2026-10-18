@@ -4176,17 +4176,18 @@
       "url": "https://realtylink.org/en/apartment~for-rent~vancouver/263197878",
       "photoPageUrl": "https://realtylink.org/en/apartment~for-rent~vancouver/263197878",
       "firstSeen": "2026-10-17",
-      "lastChecked": "2026-10-17",
+      "lastChecked": "2026-10-18",
       "verifiedAt": "2026-10-17T17:17:43.578Z",
-      "verificationLevel": "verified",
-      "verificationMethod": "AUTO-PUBLISHED from current authoritative MLS inventory R3176251.",
-      "availabilityStatus": "active",
-      "status": "new",
+      "verificationLevel": "excluded_by_scope",
+      "verificationMethod": "Excluded by user search scope: outside the Vancouver Westside target area.",
+      "availabilityStatus": "excluded",
+      "status": "excluded",
       "priceDrop": false,
       "evidenceSources": [
         "realtylink mls"
       ],
-      "dataNotes": "MLS number is the canonical identity; disappearance from the current MLS inventory triggers fail-closed revalidation."
+      "dataNotes": "MLS number is the canonical identity; disappearance from the current MLS inventory triggers fail-closed revalidation.",
+      "scopeExclusionReason": "outside the Vancouver Westside target area"
     }
   ]
 }

@@ -77,7 +77,7 @@ for(const listing of db.listings||[]){
 }
 
 db.meta||={};
-db.meta.searchScope='Only CAD $3,500+ entire-home rentals with 2–4 bedrooms in the Vancouver Westside target area are eligible. Fairview, West End, Downtown, Yaletown, Mount Pleasant, Riley Park, Olympic Village and South Cambie are excluded, as are house shares and separately rented portions of houses.';
+db.meta.searchScope='Only CAD $3,500+ entire-home rentals with 2–4 bedrooms in the Vancouver Westside target area are eligible. Fairview, False Creek, West End, Downtown, Yaletown, Mount Pleasant, Riley Park, Olympic Village and South Cambie are excluded, as are house shares and separately rented portions of houses.';
 await write(path.join(DATA,'listings.json'),db);
 await write(path.join(DATA,'history.json'),history);
 const countsByReason={};
