@@ -44,6 +44,7 @@ const imageCacheSource = await read('scripts/cache-listing-images.mjs');
 const qualityAuditSource = await read('scripts/audit-data-quality.mjs');
 const readinessFinalizerSource = await read('scripts/finalize-readiness.mjs');
 const scopeCrossSourceEvidence = JSON.parse(await read('data/scope-cross-source-evidence.json'));
+const automationPolicy = JSON.parse(await read('data/automation-policy.json'));
 
 const failures = [];
 if (!refreshWorkflow.includes("cron: '17 14 * * *'") || refreshWorkflow.includes('*/6')) {
@@ -494,6 +495,10 @@ if (!source.includes('relistedMlsMerged') || !source.includes('MLS RELIST: ${old
 }
 if (!source.includes('rawSqft>=200&&rawSqft<=15000') || !source.includes('implausible-sqft')) {
   failures.push('Implausible Realtylink floor areas are not normalized and audited.');
+}
+const vine111Repair = automationPolicy.canonicalFieldRepairs?.['zumper-86435797c322'];
+if (vine111Repair?.bathrooms !== 2.5 || vine111Repair?.type !== 'townhouse') {
+  failures.push('Unit 111 at 2688 Vine can regress to the rounded 2BA marketplace fact instead of the current exact-unit 2.5BA evidence.');
 }
 if (!source.includes("media\\.realtylink\\.org\\/images\\/consumersite\\/property") || !source.includes('attachCandidateImages(imageSources')) {
   failures.push('Verified Realtylink inventory does not feed listing photos into the image cache.');

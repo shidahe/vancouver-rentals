@@ -1,5 +1,5 @@
 {
-  "version": 4,
+  "version": 5,
   "autoPriceListingIds": [
     "waterloo-2477-zumper"
   ],
@@ -24,6 +24,10 @@
       "balcony": true,
       "largeWindows": true,
       "modernInterior": true
+    },
+    "zumper-86435797c322": {
+      "bathrooms": 2.5,
+      "type": "townhouse"
     }
   }
 }
