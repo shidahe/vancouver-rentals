@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-10-19T15:21:31.592Z",
+  "refreshedAt": "2026-10-19T15:33:02.752Z",
   "groups": [
     {
       "identityKey": "1533 maple st::url:69f2e13a0fd5",
@@ -232,30 +232,6 @@
       "result": "authoritative_mls_reverified"
     },
     {
-      "identityKey": "mls:r3175848",
-      "sources": [
-        "realtylink mls"
-      ],
-      "rents": [
-        5500
-      ],
-      "exactUnit": false,
-      "matchedListingId": "mls-r3175848",
-      "result": "authoritative_mls_reverified"
-    },
-    {
-      "identityKey": "mls:r3167417",
-      "sources": [
-        "realtylink mls"
-      ],
-      "rents": [
-        6750
-      ],
-      "exactUnit": true,
-      "matchedListingId": "mls-r3167417",
-      "result": "authoritative_mls_reverified"
-    },
-    {
       "identityKey": "mls:r3175318",
       "sources": [
         "realtylink mls"
@@ -266,6 +242,18 @@
       "exactUnit": false,
       "matchedListingId": "mls-r3175318",
       "result": "authoritative_mls_reverified"
+    },
+    {
+      "identityKey": "mls:r3151372",
+      "sources": [
+        "realtylink mls"
+      ],
+      "rents": [
+        4800
+      ],
+      "exactUnit": false,
+      "matchedListingId": "mls-r3151372",
+      "result": "authoritative_mls_reverified"
     }
   ],
   "promoted": [],
@@ -273,9 +261,8 @@
     "zumper-86435797c322",
     "zumper-16e9ae17cd91",
     "york-103-2535-r3137446",
-    "mls-r3175848",
-    "mls-r3167417",
-    "mls-r3175318"
+    "mls-r3175318",
+    "mls-r3151372"
   ],
   "fingerprintCrossVerified": [],
   "craigslistRelistingsRecovered": [],
@@ -284,16 +271,23 @@
   "relistedMlsMerged": [],
   "negativeMatches": [],
   "detailReactivated": [
-    "mls-r3167417",
-    "mls-r3175318"
+    "mls-r3151372"
   ],
   "mlsMissing": {},
   "mlsRemoved": [],
   "mlsStaleHidden": [],
-  "realtylinkSnapshotCount": 5,
+  "realtylinkSnapshotCount": 4,
   "realtylinkSnapshotHighWaterMark": 8,
   "realtylinkSnapshotScope": "rent-3500-beds-2-4-whole-home-westside-v3",
   "realtylinkRemovalEligible": false,
-  "mlsRemovalSuppressed": "Partial Realtylink snapshot (5 candidates versus previous complete 8); disappearance signals ignored.",
-  "mlsDuplicatesMerged": []
+  "mlsRemovalSuppressed": "Partial Realtylink snapshot (4 candidates versus previous complete 8); disappearance signals ignored.",
+  "mlsDuplicatesMerged": [],
+  "canonicalFieldRepairsApplied": [
+    {
+      "listingId": "zumper-86435797c322",
+      "fields": [
+        "type"
+      ]
+    }
+  ]
 }
