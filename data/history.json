@@ -669,6 +669,11 @@
       "date": "2026-10-16",
       "rent": 5390,
       "note": "NEEDS CONFIRMATION: latest purpose-built fallback sources did not confirm the exact configured rent + sqft inventory row."
+    },
+    {
+      "date": "2026-10-19",
+      "rent": 5390,
+      "note": "NEEDS CONFIRMATION: latest purpose-built fallback sources did not confirm the exact configured rent + sqft inventory row."
     }
   ],
   "zumper-2fde865f7e2c": [
@@ -894,6 +899,11 @@
       "date": "2026-09-02",
       "rent": 4300,
       "note": "NEW: live Zumper detail auto-published as independent inventory."
+    },
+    {
+      "date": "2026-10-19",
+      "rent": 4300,
+      "note": "Auto-hidden: exact live detail was not reverified within 48 hours."
     }
   ],
   "kits-walk-unit-605": [
@@ -2774,6 +2784,11 @@
       "date": "2026-10-18",
       "rent": 4975,
       "note": "AUTO live price update from 5475 to 4975."
+    },
+    {
+      "date": "2026-10-19",
+      "rent": 4975,
+      "note": "AUTO live price update from 5475 to 4975."
     }
   ],
   "mls-r3149612": [
@@ -3025,6 +3040,11 @@
       "date": "2026-10-14",
       "rent": 7000,
       "note": "CORRECTED: restored after exact current MLS detail matched identity, explicit availability and rent."
+    },
+    {
+      "date": "2026-10-19",
+      "rent": 6000,
+      "note": "CORRECTED: restored after exact current MLS detail matched identity, explicit availability and rent."
     }
   ],
   "zumper-f3c25cb7e83b": [
@@ -3185,6 +3205,11 @@
     },
     {
       "date": "2026-10-18",
+      "rent": 3595,
+      "note": "MERGED into kits-walk-floorplan-2-bedroom-811-3675: same building, bedrooms, bathrooms and sqft; current rent is 3595."
+    },
+    {
+      "date": "2026-10-19",
       "rent": 3595,
       "note": "MERGED into kits-walk-floorplan-2-bedroom-811-3675: same building, bedrooms, bathrooms and sqft; current rent is 3595."
     }
