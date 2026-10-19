@@ -12,7 +12,7 @@ import { exactPurposeBuiltFloorplanEvidence, samePurposeBuiltFloorplanIdentity }
 import { hasCurrentMarketplaceAvailability, softNegativeDisposition, softUnavailablePrompt } from './listing-availability.mjs';
 import { activeListingContradictedByFreshEvidence } from './evidence-consistency.mjs';
 import { dedupeMlsRecords } from './mls-dedupe.mjs';
-import { craigslistAddressPrecision, craigslistDescriptionCivicAddress, craigslistDetailEvidence, craigslistPostId, craigslistTitleCivicAddress, craigslistStructuredFacts, dedupeCraigslistRelistings, extractCraigslistDetailUrls, normalizeCraigslistDetailUrl, parseCraigslistSearchCard } from './craigslist-parser.mjs';
+import { craigslistAddressPrecision, craigslistDescriptionCivicAddress, craigslistDescriptionUnit, craigslistDetailEvidence, craigslistPostId, craigslistTitleCivicAddress, craigslistStructuredFacts, dedupeCraigslistRelistings, extractCraigslistDetailUrls, normalizeCraigslistDetailUrl, parseCraigslistSearchCard } from './craigslist-parser.mjs';
 import { classifyRentalsCaSearchLead, parseRentalsCaSearchLeads } from './rentalsca-search-parser.mjs';
 import { craigslistSeedRelistingMatch } from './craigslist-seed-relisting.mjs';
 import { craigslistCrossSourcePriceMatch } from './craigslist-cross-source-match.mjs';
@@ -204,6 +204,8 @@ if(craigslistTitleAddress!=='4410 West 3 Avenue'||craigslistTitleCivicAddress('$
 const craigslistDescriptionAddress=craigslistDescriptionCivicAddress('Luxury apartment\n2F - 2118 West 15 Ave, Vancouver\nAvailable November 1');
 const craigslistDescriptionEvidence=craigslistDetailEvidence({url:craigslistCurrent,status:200,expectedPostId:'7984050711',title:'$4,800 / 2br - 1325ft2 - Luxury Living in Arbutus Ridge',text:'2BR / 2.5Ba 1325ft2\n2F - 2118 West 15 Ave, Vancouver\navailable nov 1\npost id: 7984050711'});
 if(craigslistDescriptionAddress!=='2118 West 15 Ave #2F'||craigslistDescriptionCivicAddress('Walk two blocks to 2118 West 15 Ave for groceries')!==null||craigslistDescriptionCivicAddress('Near West 15 Avenue and Arbutus Street')!==null||craigslistDescriptionEvidence.address!=='2118 West 15 Ave #2F'||craigslistDescriptionEvidence.addressPrecision!=='exact_civic') failures.push('Craigslist exact civic address lines in descriptions cannot safely enter unit-level identity reconciliation when map and title addresses are absent.');
+const craigslistInlineUnitEvidence=craigslistDetailEvidence({url:craigslistCurrent,status:200,expectedPostId:'7978714221',title:'$5,950 / 3br - 1478ft2 - Park-side townhome',address:'2688 Vine St',text:'$5,950 / 3br - 1478ft2\n3BR / 2.5Ba 1478ft2\nFeatures: Enjoy park side living at 111–2688 Vine Street with Kits Beach nearby.\npost id: 7978714221'});
+if(craigslistInlineUnitEvidence.address!=='2688 Vine St'||craigslistInlineUnitEvidence.unit!=='111'||craigslistDescriptionUnit('Tour suite 111–2688 Vine Street','2688 Vine St')!=='111'||craigslistDescriptionUnit('Tour suite 111–2688 Vine Street','2118 West 15 Ave')!==null) failures.push('An inline Craigslist unit cannot be recovered conservatively from prose that exactly matches the map civic address.');
 const reconciliationSource=await fs.readFile('scripts/reconcile-candidates.mjs','utf8');
 if(!reconciliationSource.includes("x.ac=parseRealtylinkAirConditioning(evidence.bodyText)")||
   !reconciliationSource.includes("Date.now()-checkedAt>12*60*60*1000"))failures.push('Reconciliation no longer refreshes Realtylink AC from recent identity-matched detail evidence.');

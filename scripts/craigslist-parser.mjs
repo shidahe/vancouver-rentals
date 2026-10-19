@@ -1,3 +1,5 @@
+import { civicAddressMatch } from './inventory-identity.mjs';
+
 export function normalizeCraigslistDetailUrl(raw, base = 'https://vancouver.craigslist.org') {
   try {
     const url = new URL(String(raw || ''), base);
@@ -104,6 +106,23 @@ export function craigslistDescriptionCivicAddress(value = '') {
   return null;
 }
 
+// Craigslist's map pin often exposes only the building civic address while the
+// seller gives the exact unit inline in prose (for example, "at 111–2688 Vine
+// Street"). Accept that unit only when the accompanying civic address matches
+// the exact map address. This prevents unrelated landmarks or nearby addresses
+// in the description from changing inventory identity.
+export function craigslistDescriptionUnit(value = '', exactMapAddress = '') {
+  if (craigslistAddressPrecision(exactMapAddress) !== 'exact_civic') return null;
+  const text = String(value || '').replace(/\s+/g, ' ');
+  const pattern = /(?:^|[^a-z0-9])(?:(?:unit|suite|apt(?:artment)?)\s*#?\s*)?([a-z0-9][a-z0-9-]{0,7})\s*[-–—]\s*(\d{2,5}\s+(?:(?:w|west|e|east)\s+)?(?:\d+(?:st|nd|rd|th)?|[a-z][a-z.'-]+)(?:\s+[a-z][a-z.'-]+){0,2}\s+(?:ave(?:nue)?|st(?:reet)?|rd|road|dr(?:ive)?|blvd|boulevard|pl(?:ace)?|way|cres(?:cent)?))\b/ig;
+  for (const match of text.matchAll(pattern)) {
+    const unit = match[1].toUpperCase();
+    const civic = match[2].replace(/\s+/g, ' ').trim();
+    if (/\d/.test(unit) && civicAddressMatch(civic, exactMapAddress)) return unit;
+  }
+  return null;
+}
+
 export function parseCraigslistSearchCard(card = {}, base = 'https://vancouver.craigslist.org') {
   const url = normalizeCraigslistDetailUrl(card.href || card.url, base);
   if (!url) return null;
@@ -171,6 +190,7 @@ export function craigslistDetailEvidence(detail = {}) {
   const titleAddress = craigslistTitleCivicAddress(detail.title);
   const descriptionAddress = craigslistDescriptionCivicAddress(detail.text);
   const address = mapAddress || titleAddress || descriptionAddress;
+  const unit = mapAddress ? craigslistDescriptionUnit(detail.text, mapAddress) : null;
   return {
     ...parsed,
     ...structuredFacts,
@@ -179,6 +199,7 @@ export function craigslistDetailEvidence(detail = {}) {
     explicitNegative,
     explicitPositive,
     address,
+    unit,
     addressPrecision: craigslistAddressPrecision(address),
     images: [...new Set((detail.images || []).filter(x => /^https?:\/\//i.test(String(x))))]
   };
