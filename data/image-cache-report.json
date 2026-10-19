@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-10-19T15:08:57.169Z",
+  "refreshedAt": "2026-10-19T15:22:16.362Z",
   "listings": {
     "york-103-2535-r3137446": {
       "cached": 5,
@@ -45,6 +45,13 @@
       ],
       "photoPageUrl": "https://realtylink.org/en/townhouse~for-rent~vancouver/263182316"
     },
+    "arbutus-residences-floorplan-2-bedroom-townhouse-den-1340": {
+      "cached": 5,
+      "preserved": 0,
+      "downloaded": 5,
+      "failures": [],
+      "photoPageUrl": "https://www.zumper.com/apartment-buildings/p1117150/arbutus-residences-quilchena-vancouver-bc"
+    },
     "mls-r3159060": {
       "cached": 5,
       "preserved": 5,
@@ -80,6 +87,13 @@
       "failures": [],
       "photoPageUrl": "https://www.craigslist.org/view/d/vancouver-fully-furnished-designer-2br/dK4HrSygC6FiEijPJfe35N"
     },
+    "mls-r3167417": {
+      "cached": 5,
+      "preserved": 0,
+      "downloaded": 5,
+      "failures": [],
+      "photoPageUrl": "https://realtylink.org/en/house~for-rent~vancouver/263189044"
+    },
     "zumper-6f8b3ff2b9fd": {
       "cached": 5,
       "preserved": 5,
@@ -103,8 +117,8 @@
     },
     "mls-r3170701": {
       "cached": 4,
-      "preserved": 0,
-      "downloaded": 4,
+      "preserved": 4,
+      "downloaded": 0,
       "failures": [
         {
           "url": "https://media.realtylink.org/images/consumersite/property/263192328/9745653bdd2d4849bea9d0c70aa8d0aa.jpeg?width=320&height=240&fit=cover",
@@ -171,16 +185,23 @@
       "downloaded": 0,
       "failures": [],
       "photoPageUrl": "https://realtylink.org/en/house~for-rent~vancouver/263196052"
+    },
+    "mls-r3175318": {
+      "cached": 5,
+      "preserved": 0,
+      "downloaded": 5,
+      "failures": [],
+      "photoPageUrl": "https://realtylink.org/en/house~for-rent~vancouver/263196945"
     }
   },
   "totals": {
-    "sourceListings": 20,
-    "cachedListings": 20,
-    "downloaded": 4,
+    "sourceListings": 23,
+    "cachedListings": 23,
+    "downloaded": 15,
     "failed": 7,
-    "preserved": 90,
-    "prunedListings": 2,
-    "prunedIndexImages": 10,
+    "preserved": 94,
+    "prunedListings": 0,
+    "prunedIndexImages": 0,
     "prunedOrphanFiles": 0
   }
 }

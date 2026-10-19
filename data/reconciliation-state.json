@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-10-19T15:08:08.632Z",
+  "refreshedAt": "2026-10-19T15:21:31.592Z",
   "groups": [
     {
       "identityKey": "1533 maple st::url:69f2e13a0fd5",
@@ -220,51 +220,51 @@
       "result": "authoritative_mls_reverified"
     },
     {
-      "identityKey": "mls:r3172212",
+      "identityKey": "mls:r3137446",
       "sources": [
         "realtylink mls"
       ],
       "rents": [
-        6300
+        5500
       ],
-      "exactUnit": false,
-      "matchedListingId": "mls-r3172212",
+      "exactUnit": true,
+      "matchedListingId": "york-103-2535-r3137446",
       "result": "authoritative_mls_reverified"
     },
     {
-      "identityKey": "mls:r3170701",
+      "identityKey": "mls:r3175848",
       "sources": [
         "realtylink mls"
       ],
       "rents": [
-        6000
+        5500
       ],
       "exactUnit": false,
-      "matchedListingId": "mls-r3170701",
+      "matchedListingId": "mls-r3175848",
       "result": "authoritative_mls_reverified"
     },
     {
-      "identityKey": "mls:r3163709",
+      "identityKey": "mls:r3167417",
       "sources": [
         "realtylink mls"
       ],
       "rents": [
-        5800
+        6750
       ],
-      "exactUnit": false,
-      "matchedListingId": "mls-r3163709",
+      "exactUnit": true,
+      "matchedListingId": "mls-r3167417",
       "result": "authoritative_mls_reverified"
     },
     {
-      "identityKey": "mls:r3174425",
+      "identityKey": "mls:r3175318",
       "sources": [
         "realtylink mls"
       ],
       "rents": [
-        14500
+        4000
       ],
       "exactUnit": false,
-      "matchedListingId": "mls-r3174425",
+      "matchedListingId": "mls-r3175318",
       "result": "authoritative_mls_reverified"
     }
   ],
@@ -272,10 +272,10 @@
   "crossVerified": [
     "zumper-86435797c322",
     "zumper-16e9ae17cd91",
-    "mls-r3172212",
-    "mls-r3170701",
-    "mls-r3163709",
-    "mls-r3174425"
+    "york-103-2535-r3137446",
+    "mls-r3175848",
+    "mls-r3167417",
+    "mls-r3175318"
   ],
   "fingerprintCrossVerified": [],
   "craigslistRelistingsRecovered": [],
@@ -284,7 +284,8 @@
   "relistedMlsMerged": [],
   "negativeMatches": [],
   "detailReactivated": [
-    "mls-r3170701"
+    "mls-r3167417",
+    "mls-r3175318"
   ],
   "mlsMissing": {},
   "mlsRemoved": [],
