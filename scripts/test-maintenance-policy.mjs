@@ -500,6 +500,9 @@ const vine111Repair = automationPolicy.canonicalFieldRepairs?.['zumper-86435797c
 if (vine111Repair?.bathrooms !== 2.5 || vine111Repair?.type !== 'townhouse') {
   failures.push('Unit 111 at 2688 Vine can regress to the rounded 2BA marketplace fact instead of the current exact-unit 2.5BA evidence.');
 }
+if (!source.includes('state.canonicalFieldRepairsApplied=[]') || !source.includes('automationPolicy.canonicalFieldRepairs')) {
+  failures.push('Reviewed canonical unit facts are not reapplied after all live discovery and reconciliation adapters.');
+}
 if (!source.includes("media\\.realtylink\\.org\\/images\\/consumersite\\/property") || !source.includes('attachCandidateImages(imageSources')) {
   failures.push('Verified Realtylink inventory does not feed listing photos into the image cache.');
 }

@@ -55,6 +55,7 @@ const lp=path.join(DATA,'listings.json'),hp=path.join(DATA,'history.json'),ip=pa
 const payload=await read(lp,{meta:{},listings:[]}),history=await read(hp,{}),imageSources=await read(ip,{});
 const liveSources=await read(path.join(DATA,'live-sources.json'),{seedCandidates:[]});
 const previousReconciliation=await read(path.join(DATA,'reconciliation-state.json'),{mlsMissing:{}});
+const automationPolicy=await read(path.join(DATA,'automation-policy.json'),{canonicalFieldRepairs:{}});
 const zumper=await read(path.join(DATA,'candidates.json'),[]);
 const rentals=await read(path.join(DATA,'rentalsca-candidates.json'),{inventories:[]});
 const liv=await read(path.join(DATA,'livrent-candidates.json'),{candidates:[]});
@@ -375,6 +376,17 @@ for(const listing of payload.listings){const previous=uniqueListings.get(listing
 const mlsDeduped=dedupeMlsRecords([...uniqueListings.values()],history,imageSources);
 payload.listings=mlsDeduped.listings;
 state.mlsDuplicatesMerged=mlsDeduped.merged;
+state.canonicalFieldRepairsApplied=[];
+// Some aggregate marketplaces round or flatten exact-unit facts. Reapply the
+// reviewed canonical repairs after every discovery adapter and reconciliation
+// step so a later source pass cannot overwrite stronger exact-unit evidence.
+for(const [id,fields] of Object.entries(automationPolicy.canonicalFieldRepairs||{})){
+  const listing=payload.listings.find(x=>x.id===id);
+  if(!listing)continue;
+  const changed=Object.entries(fields).filter(([key,value])=>listing[key]!==value).map(([key])=>key);
+  for(const [key,value] of Object.entries(fields))listing[key]=value;
+  if(changed.length)state.canonicalFieldRepairsApplied.push({listingId:id,fields:changed});
+}
 payload.meta ||= {};payload.meta.lastCrossSourceReconciliation=iso;payload.meta.reconciliationPolicy='Discover whole-home rentals at CAD $3,500+ with 2–4 bedrooms. Exact address+unit candidates may auto-publish after two independent live source families agree; current authoritative Realtylink MLS records may publish by MLS number. Address-only cross-source fingerprints never auto-publish. Explicit Rented evidence removes immediately; MLS disappearance only counts on sufficiently complete same-scope Realtylink snapshots, and removal requires a second complete confirmation at least four hours after the first miss.';
 await write(lp,payload);await write(hp,history);await write(ip,imageSources);await write(path.join(DATA,'reconciliation-state.json'),state);
 console.log(`Reconciliation: ${state.crossVerified.length} exact existing, ${state.fingerprintCrossVerified.length} strict-fingerprint existing, ${state.promoted.length} new exact units promoted, ${state.negativeMatches.length} removed.`);
