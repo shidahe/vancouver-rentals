@@ -1,105 +1,91 @@
 {
-  "refreshedAt": "2026-10-19T15:31:32.376Z",
+  "refreshedAt": "2026-10-19T20:01:21.086Z",
   "mode": "candidate-only",
   "sourceHealth": {
     "rentalsca-kitsilano-2br": {
-      "checkedAt": "2026-10-19T15:31:32.376Z",
+      "checkedAt": "2026-10-19T20:01:21.086Z",
       "status": 403,
       "ok": false,
-      "finalUrl": "https://rentals.ca/vancouver/kitsilano/all-apartments-all-houses/2-bedrooms?__cf_chl_rt_tk=hOnypu2sJAsxDDysPTQ1HP9kGIitjppT1WEf8C8bN.U-1792423892-1.0.1.1-c7Py.Q91IV9qknwcy8RcNcd5oxK8KX0.vTD_OMK8y18"
+      "finalUrl": "https://rentals.ca/vancouver/kitsilano/all-apartments-all-houses/2-bedrooms?__cf_chl_rt_tk=irQdFD3sKBGlTgn_m9xX5cTSfBqz6Ju9_r6Q6BVrvNE-1792440081-1.0.1.1-tncHiaWNQDM20rUxYXyJucaBlqiGnbnQD.Y8xdDMPo8"
     },
     "rentalsca-point-grey-2br": {
-      "checkedAt": "2026-10-19T15:31:32.376Z",
+      "checkedAt": "2026-10-19T20:01:21.086Z",
       "status": 200,
       "ok": true,
       "finalUrl": "https://rentals.ca/vancouver/west-point-grey/2-bedrooms",
-      "detailLinkCount": 3,
+      "detailLinkCount": 4,
       "title": "West Point Grey Vancouver 2 Bedroom Apartments Condos and Houses for Rent",
-      "observedListingCount": 3,
+      "observedListingCount": 4,
       "challengeDetected": false,
-      "searchLeadCount": 2,
-      "addressLineCount": 2,
-      "detailUrlCount": 4
+      "searchLeadCount": 3,
+      "addressLineCount": 3,
+      "detailUrlCount": 5
     },
     "rentalsca-arbutus-2br": {
-      "checkedAt": "2026-10-19T15:31:32.376Z",
-      "status": 200,
-      "ok": true,
-      "finalUrl": "https://rentals.ca/vancouver/arbutus-ridge/2-bedrooms",
-      "detailLinkCount": 2,
-      "title": "Arbutus Ridge Vancouver 2 Bedroom Apartments Condos and Houses for Rent",
-      "observedListingCount": 6,
-      "challengeDetected": false,
-      "searchLeadCount": 2,
-      "addressLineCount": 2,
-      "detailUrlCount": 4
+      "checkedAt": "2026-10-19T20:01:21.086Z",
+      "status": 403,
+      "ok": false,
+      "finalUrl": "https://rentals.ca/vancouver/arbutus-ridge/2-bedrooms?__cf_chl_rt_tk=zIqJA_9mnC3.O5RBXttuFgq.16MLLFCTH955Ulhvw1c-1792440084-1.0.1.1-1ZXiPP2LEs79Zh1kBWDxpvw6mRhk6rMlobUguA16F6U"
     },
     "rentalsca-dunbar-2br": {
-      "checkedAt": "2026-10-19T15:31:32.376Z",
-      "status": 200,
-      "ok": true,
-      "finalUrl": "https://rentals.ca/vancouver/dunbar-southlands/2-bedrooms",
-      "detailLinkCount": 2,
-      "title": "Dunbar-Southlands Vancouver 2 Bedroom Apartments Condos and Houses for Rent",
-      "observedListingCount": 3,
-      "challengeDetected": false,
-      "searchLeadCount": 1,
-      "addressLineCount": 1,
-      "detailUrlCount": 3
+      "checkedAt": "2026-10-19T20:01:21.086Z",
+      "status": 403,
+      "ok": false,
+      "finalUrl": "https://rentals.ca/vancouver/dunbar-southlands/2-bedrooms?__cf_chl_rt_tk=9HHigRPDrwM42FYxB1X3Co4MitNxV02HPrM_2kwnjHk-1792440084-1.0.1.1-Tq7Y3M09peVWkZCtAXv.U.6PtTLBkSL8k0FU6kgenQE"
     },
     "rentalsca-quilchena-2br": {
-      "checkedAt": "2026-10-19T15:31:32.376Z",
-      "status": 403,
+      "checkedAt": "2026-10-19T20:01:21.086Z",
+      "status": 404,
       "ok": false,
-      "finalUrl": "https://rentals.ca/vancouver/quilchena/2-bedrooms?__cf_chl_rt_tk=r7qhSu99i.yJ.bAgbg.XyBkRxXw3u_MD7NpARxFhs6w-1792423901-1.0.1.1-WxCcuD5gqXzTJAvf2LZDUoGNdDKZfZiCpfVZooor66o"
+      "finalUrl": "https://rentals.ca/vancouver/quilchena/2-bedrooms"
     },
     "rentalsca-kitsilano-3br": {
-      "checkedAt": "2026-10-19T15:31:32.376Z",
-      "status": 403,
-      "ok": false,
-      "finalUrl": "https://rentals.ca/vancouver/kitsilano/3-bedrooms?__cf_chl_rt_tk=WmA0T.CJrCJXLWwcl4.QySdmvE9thT9XfyCLQ4dZMnE-1792423901-1.0.1.1-7vFuEuOMTvBe1BcpEV4GgHF.DQG3Rgfz67RQqqD67Q4"
-    },
-    "rentalsca-kitsilano-4br": {
-      "checkedAt": "2026-10-19T15:31:32.376Z",
-      "status": 403,
-      "ok": false,
-      "finalUrl": "https://rentals.ca/vancouver/kitsilano/4-bedrooms?__cf_chl_rt_tk=uq1DYb7FHeTSrdiJxt2PxO0CoKlHaG4u3pVNfLNrWsY-1792423901-1.0.1.1-2Mg6G2o7MWSxKkd4fnZVm6vF3_8OspK3a4kMXC9dpws"
-    },
-    "rentalsca-vancouver-3br": {
-      "checkedAt": "2026-10-19T15:31:32.376Z",
-      "status": 403,
-      "ok": false,
-      "finalUrl": "https://rentals.ca/vancouver/3-bedrooms?__cf_chl_rt_tk=jYCE2of2RG1FHFGnCyPchtaoEr1rZwoAo4_0GFAnUiQ-1792423901-1.0.1.1-nGIGPTK4meTcWEFzonYFqcO1BpGXF6HcuFJ.bDeMI84"
-    },
-    "rentalsca-vancouver-4br": {
-      "checkedAt": "2026-10-19T15:31:32.376Z",
+      "checkedAt": "2026-10-19T20:01:21.086Z",
       "status": 200,
       "ok": true,
-      "finalUrl": "https://rentals.ca/vancouver/4-bedrooms",
-      "detailLinkCount": 31,
-      "title": "Vancouver 4 Bedroom Apartments Condos and Houses for Rent",
+      "finalUrl": "https://rentals.ca/vancouver/kitsilano/3-bedrooms",
+      "detailLinkCount": 4,
+      "title": "Kitsilano Vancouver 3 Bedroom Apartments Condos and Houses for Rent",
       "observedListingCount": 0,
       "challengeDetected": false,
       "searchLeadCount": 0,
       "addressLineCount": 0,
-      "detailUrlCount": 31
+      "detailUrlCount": 4
+    },
+    "rentalsca-kitsilano-4br": {
+      "checkedAt": "2026-10-19T20:01:21.086Z",
+      "status": 429,
+      "ok": false,
+      "finalUrl": "https://rentals.ca/vancouver/kitsilano/4-bedrooms?__cf_chl_rt_tk=7952SsfMW5tPYrwfBAjYtrcvM_6xXA_t0TgzUqTLW7M-1792440087-1.0.1.1-J9jfqInXrO_MPiJu3eqNWsW1vq2sm9j38j9kq6JXKwo"
+    },
+    "rentalsca-vancouver-3br": {
+      "checkedAt": "2026-10-19T20:01:21.086Z",
+      "status": 429,
+      "ok": false,
+      "finalUrl": "https://rentals.ca/vancouver/3-bedrooms?__cf_chl_rt_tk=eFTnOSS9y2WB0Cod8cVAXcPPsTS3mokGOnbmWzzLWpk-1792440087-1.0.1.1-oj4N6usxz3WZTB1acWQ7RflU4vnTIO_F.QyH398aB3M"
+    },
+    "rentalsca-vancouver-4br": {
+      "checkedAt": "2026-10-19T20:01:21.086Z",
+      "status": 429,
+      "ok": false,
+      "finalUrl": "https://rentals.ca/vancouver/4-bedrooms?__cf_chl_rt_tk=Ca7xYddmduE0X6o5gH1aRq95yigj0EsjXxJFdF8wIbc-1792440088-1.0.1.1-wwk00__lTmzBXG_EEE9tYckxuFBzCEP6rodATTHO6Q4"
     }
   },
   "diagnostics": {
-    "searchResultCount": 12,
-    "searchAddressLines": 5,
-    "searchDetailLinks": 38,
-    "searchLeadCount": 2,
-    "newSearchLeadCount": 2,
+    "searchResultCount": 4,
+    "searchAddressLines": 3,
+    "searchDetailLinks": 8,
+    "searchLeadCount": 1,
+    "newSearchLeadCount": 1,
     "representedSearchLeadCount": 0,
     "revalidationSearchLeadCount": 0,
-    "detailUrls": 42,
+    "detailUrls": 9,
     "detailChecked": 3,
     "detailBlocked": 3,
     "detailNotFound": 0,
     "detailErrors": 0,
     "detailParsed": 0,
-    "detailSuppressed": 39,
+    "detailSuppressed": 6,
     "detailCircuitOpen": true
   },
   "searchLeads": [
@@ -113,33 +99,11 @@
       "bathrooms": 1,
       "source": "Rentals.ca search",
       "searchUrl": "https://rentals.ca/vancouver/west-point-grey/2-bedrooms",
-      "checkedAt": "2026-10-19T15:31:32.376Z",
+      "checkedAt": "2026-10-19T20:01:21.086Z",
       "publishable": false,
       "evidenceKind": "search_result_lead_only",
       "availabilityVerified": false,
       "url": "https://rentals.ca/vancouver/4769-belmont",
-      "leadStatus": "new_unverified_address",
-      "addressMatchOnly": false,
-      "matchingListingCount": 0,
-      "matchedListingIds": [],
-      "matchedListingId": null,
-      "matchedAvailabilityStatus": null
-    },
-    {
-      "identityKey": "2008 quilchena place, vancouver, bc::3650::3650::2::2",
-      "address": "2008 Quilchena Place, Vancouver, BC",
-      "rentMin": 3650,
-      "rentMax": 3650,
-      "bedroomMin": 2,
-      "bedroomMax": 2,
-      "bathrooms": 2,
-      "source": "Rentals.ca search",
-      "searchUrl": "https://rentals.ca/vancouver/arbutus-ridge/2-bedrooms",
-      "checkedAt": "2026-10-19T15:31:32.376Z",
-      "publishable": false,
-      "evidenceKind": "search_result_lead_only",
-      "availabilityVerified": false,
-      "url": "https://rentals.ca/vancouver/2008-quilchena-place",
       "leadStatus": "new_unverified_address",
       "addressMatchOnly": false,
       "matchingListingCount": 0,

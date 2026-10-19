@@ -1,11 +1,11 @@
 {
-  "checkedAt": "2026-10-19T15:34:11.067Z",
+  "checkedAt": "2026-10-19T20:03:54.575Z",
   "ok": true,
   "checkpoints": {
     "render": {
       "title": "Vancouver Westside Rentals",
-      "cards": 23,
-      "shown": 23
+      "cards": 21,
+      "shown": 21
     },
     "stats": {
       "labels": [
@@ -16,47 +16,48 @@
         "Last refreshed"
       ],
       "values": [
-        "23",
-        "2",
-        "6",
-        "6",
-        "Oct 19, 8:25 a.m. PDT"
+        "21",
+        "3",
+        "5",
+        "9",
+        "Oct 19, 12:54 p.m. PDT"
       ],
-      "html": "<div class=\"stat\"><strong>23</strong><span>Active</span></div><div class=\"stat\"><strong>2</strong><span>New 7d</span></div><div class=\"stat\"><strong>6</strong><span>Price drops</span></div><div class=\"stat\"><strong>6</strong><span>To verify</span></div><div class=\"stat\"><strong>Oct 19, 8:25 a.m. PDT</strong><span>Last refreshed</span></div>",
+      "html": "<div class=\"stat\"><strong>21</strong><span>Active</span></div><div class=\"stat\"><strong>3</strong><span>New 7d</span></div><div class=\"stat\"><strong>5</strong><span>Price drops</span></div><div class=\"stat\"><strong>9</strong><span>To verify</span></div><div class=\"stat\"><strong>Oct 19, 12:54 p.m. PDT</strong><span>Last refreshed</span></div>",
       "refreshedAt": {
-        "displayed": "Oct 19, 8:25 a.m. PDT",
-        "expected": "Oct 19, 8:25 a.m. PDT",
+        "displayed": "Oct 19, 12:54 p.m. PDT",
+        "expected": "Oct 19, 12:54 p.m. PDT",
         "timezone": "America/Vancouver"
       },
       "newSevenDays": {
-        "expectedCount": 2,
+        "expectedCount": 3,
         "badgeIds": [
           "mls-r3175318",
-          "mls-r3174425"
+          "mls-r3174425",
+          "zumper-3d502587bbc4"
         ],
         "staleBadgeIds": []
       }
     },
     "map": {
-      "markers": 23,
+      "markers": 21,
       "desktopMapVisible": true
     },
     "filters": "ok",
     "localStorage": {
       "favorite": true,
       "notes": true,
-      "firstId": "fourth-mac-floorplan-2-bedroom-2-bath-801-4350"
+      "firstId": "arbutus-residences-floorplan-2-bedroom-townhouse-den-1340"
     },
-    "sourceLink": "https://www.craigslist.org/view/d/vancouver-bed-bath-fourth-mac-kitsilano/eiSLCKTVqsrtPUWpUpJyDN",
+    "sourceLink": "https://www.zumper.com/apartment-buildings/p1117150/arbutus-residences-quilchena-vancouver-bc",
     "photos": {
-      "total": 23,
-      "loaded": 23,
+      "total": 21,
+      "loaded": 21,
       "fallbacks": 0,
       "bad": []
     },
     "markerPositions": {
-      "total": 23,
-      "unique": 23
+      "total": 21,
+      "unique": 21
     },
     "dataEndpoints": "ok",
     "mobile": "ok",

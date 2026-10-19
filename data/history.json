@@ -3117,6 +3117,11 @@
       "date": "2026-10-08",
       "rent": 5000,
       "note": "NEW: live Zumper detail auto-published as independent inventory."
+    },
+    {
+      "date": "2026-10-19",
+      "rent": 5000,
+      "note": "MLS R3175599 attached; masked-address duplicate merged after exact fact agreement."
     }
   ],
   "mls-r3173479": [
@@ -3127,6 +3132,11 @@
     },
     {
       "date": "2026-10-15",
+      "rent": 3900,
+      "note": "CORRECTED: restored after exact current MLS detail matched identity, explicit availability and rent."
+    },
+    {
+      "date": "2026-10-19",
       "rent": 3900,
       "note": "CORRECTED: restored after exact current MLS detail matched identity, explicit availability and rent."
     }
@@ -3285,6 +3295,13 @@
       "date": "2026-10-18",
       "rent": 4250,
       "note": "EXCLUDED: outside the Vancouver Westside target area."
+    }
+  ],
+  "zumper-3d502587bbc4": [
+    {
+      "date": "2026-10-19",
+      "rent": 5250,
+      "note": "NEW: live Zumper detail auto-published as independent inventory."
     }
   ]
 }
