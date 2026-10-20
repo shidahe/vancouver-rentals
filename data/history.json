@@ -1941,6 +1941,11 @@
       "date": "2026-09-16",
       "rent": 3600,
       "note": "REMOVED: exact live detail did not return during the seven-day confirmation window."
+    },
+    {
+      "date": "2026-10-20",
+      "rent": 3650,
+      "note": "Live purpose-built inventory price update from 3600"
     }
   ],
   "mls-r3160879": [
@@ -2361,6 +2366,11 @@
       "date": "2026-10-20",
       "rent": 15000,
       "note": "CORRECTED: restored after exact current MLS detail matched identity, explicit availability and rent."
+    },
+    {
+      "date": "2026-10-20",
+      "rent": 15000,
+      "note": "AUTO-REMOVED after direct live verification found explicit unavailable evidence."
     }
   ],
   "mls-r3149267": [
@@ -2923,6 +2933,11 @@
       "date": "2026-10-20",
       "rent": 6750,
       "note": "AUTO-REMOVED: MLS R3167417 absent from two consecutive healthy inventory snapshots."
+    },
+    {
+      "date": "2026-10-20",
+      "rent": 6750,
+      "note": "CORRECTED: restored after exact current MLS detail matched identity, explicit availability and rent."
     }
   ],
   "zumper-6f8b3ff2b9fd": [
@@ -3241,6 +3256,11 @@
       "date": "2026-10-08",
       "rent": 5600,
       "note": "NEW: live Realtylink MLS R3173233 auto-published."
+    },
+    {
+      "date": "2026-10-20",
+      "rent": 6000,
+      "note": "AUTO-REMOVED after direct live verification found explicit unavailable evidence."
     }
   ],
   "mls-r3173689": [
@@ -3419,6 +3439,20 @@
       "date": "2026-10-20",
       "rent": 3600,
       "note": "NEW: live Realtylink MLS R3172081 auto-published."
+    }
+  ],
+  "zumper-1754927f090e": [
+    {
+      "date": "2026-10-20",
+      "rent": 6000,
+      "note": "NEW: live Zumper detail auto-published as independent inventory."
+    }
+  ],
+  "mls-r3175865": [
+    {
+      "date": "2026-10-20",
+      "rent": 4000,
+      "note": "NEW: live Realtylink MLS R3175865 auto-published."
     }
   ]
 }

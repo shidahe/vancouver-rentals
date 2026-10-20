@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-10-20T15:30:24.083Z",
+  "refreshedAt": "2026-10-20T18:37:19.035Z",
   "listings": {
     "york-103-2535-r3137446": {
       "cached": 5,
@@ -38,8 +38,8 @@
     },
     "mls-r3151372": {
       "cached": 2,
-      "preserved": 0,
-      "downloaded": 2,
+      "preserved": 2,
+      "downloaded": 0,
       "failures": [
         {
           "url": "https://media.realtylink.org/images/consumersite/property/263172999/f30edfe3c49c4660ba9111ae7e98814b.jpeg?width=320&height=240&fit=cover",
@@ -60,19 +60,12 @@
       ],
       "photoPageUrl": "https://realtylink.org/en/house~for-rent~vancouver/263172999"
     },
-    "mls-r3159060": {
-      "cached": 5,
-      "preserved": 5,
-      "downloaded": 0,
-      "failures": [],
-      "photoPageUrl": "https://realtylink.org/en/house~for-rent~vancouver/263180687"
-    },
-    "mls-r3163709": {
+    "kits-walk-floorplan-2-bedroom-741-3600": {
       "cached": 5,
       "preserved": 0,
       "downloaded": 5,
       "failures": [],
-      "photoPageUrl": "https://realtylink.org/en/house~for-rent~vancouver/263185336"
+      "photoPageUrl": "https://rentals.ca/vancouver/kits-walk-by-strand"
     },
     "fourth-mac-floorplan-2-bedroom-2-bath-801-4350": {
       "cached": 5,
@@ -95,19 +88,19 @@
       "failures": [],
       "photoPageUrl": "https://www.craigslist.org/view/d/vancouver-fully-furnished-designer-2br/dK4HrSygC6FiEijPJfe35N"
     },
+    "mls-r3167417": {
+      "cached": 5,
+      "preserved": 0,
+      "downloaded": 5,
+      "failures": [],
+      "photoPageUrl": "https://realtylink.org/en/house~for-rent~vancouver/263189044"
+    },
     "zumper-6f8b3ff2b9fd": {
       "cached": 5,
       "preserved": 5,
       "downloaded": 0,
       "failures": [],
       "photoPageUrl": "https://www.zumper.com/address/4101-yew-st-vancouver-bc-v6l-3b7-can"
-    },
-    "mls-r3165327": {
-      "cached": 5,
-      "preserved": 0,
-      "downloaded": 5,
-      "failures": [],
-      "photoPageUrl": "https://realtylink.org/en/apartment~for-rent~vancouver/263186954"
     },
     "kits-walk-floorplan-2-bedroom-811-3675": {
       "cached": 5,
@@ -144,49 +137,36 @@
       "failures": [],
       "photoPageUrl": "https://www.zumper.com/address/2000-w-43rd-ave-vancouver-bc-v6m-2c9-can"
     },
-    "mls-r3173233": {
-      "cached": 3,
-      "preserved": 3,
-      "downloaded": 0,
-      "failures": [
-        {
-          "url": "https://media.realtylink.org/images/consumersite/property/263194860/da4fb41b509f409ea964081dc7f600d5.jpeg?width=320&height=240&fit=cover",
-          "error": "not a usable image (image/jpeg, 6877 bytes)"
-        },
-        {
-          "url": "https://media.realtylink.org/images/consumersite/property/263194860/c4cb8ee4cc564a6bb493f3bb789deb8b.jpeg?width=320&height=240&fit=cover",
-          "error": "not a usable image (image/jpeg, 5906 bytes)"
-        },
-        {
-          "url": "https://media.realtylink.org/images/consumersite/property/263194860/6d94e89d2c5a4120b3b158daa4c25351.jpeg?width=480&height=360&fit=cover",
-          "error": "HTTP 400"
-        }
-      ],
-      "photoPageUrl": "https://realtylink.org/en/house~for-rent~vancouver/263194860"
-    },
-    "mls-r3174425": {
-      "cached": 5,
-      "preserved": 5,
-      "downloaded": 0,
-      "failures": [],
-      "photoPageUrl": "https://realtylink.org/en/house~for-rent~vancouver/263196052"
-    },
     "zumper-3d502587bbc4": {
       "cached": 5,
       "preserved": 5,
       "downloaded": 0,
       "failures": [],
       "photoPageUrl": "https://www.zumper.com/address/1969-w-43rd-ave-vancouver-bc-v6m-2c7-can"
+    },
+    "zumper-1754927f090e": {
+      "cached": 5,
+      "preserved": 0,
+      "downloaded": 5,
+      "failures": [],
+      "photoPageUrl": "https://www.zumper.com/address/3000-w-44th-ave-vancouver-bc-v6n-3k6-can"
+    },
+    "mls-r3175865": {
+      "cached": 5,
+      "preserved": 0,
+      "downloaded": 5,
+      "failures": [],
+      "photoPageUrl": "https://realtylink.org/en/house~for-rent~vancouver/263197492"
     }
   },
   "totals": {
-    "sourceListings": 21,
-    "cachedListings": 21,
-    "downloaded": 12,
-    "failed": 7,
-    "preserved": 86,
-    "prunedListings": 1,
-    "prunedIndexImages": 5,
+    "sourceListings": 20,
+    "cachedListings": 20,
+    "downloaded": 20,
+    "failed": 4,
+    "preserved": 75,
+    "prunedListings": 5,
+    "prunedIndexImages": 23,
     "prunedOrphanFiles": 0
   }
 }

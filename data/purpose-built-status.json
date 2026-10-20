@@ -1,9 +1,9 @@
 {
-  "refreshedAt": "2026-10-20T15:29:34.409Z",
+  "refreshedAt": "2026-10-20T18:36:09.913Z",
   "buildings": [
     {
       "building": "Kits Walk",
-      "checkedAt": "2026-10-20T15:29:34.409Z",
+      "checkedAt": "2026-10-20T18:36:09.913Z",
       "observations": [
         {
           "url": "https://rentals.ca/vancouver/kits-walk-by-strand",
@@ -39,9 +39,41 @@
               "usable": true,
               "structuredMatch": false,
               "requiredMatched": false,
-              "availabilityMatched": false,
+              "availabilityMatched": true,
               "fullyLeased": false,
               "verified": false
+            }
+          ]
+        },
+        {
+          "key": "2-bedroom-741-3650",
+          "label": "2 Bedroom · 741 sqft · $3,650",
+          "bedrooms": 2,
+          "bathrooms": 2,
+          "sqft": 741,
+          "rent": 3650,
+          "unit": null,
+          "requiredSignals": [
+            "3,650",
+            "741"
+          ],
+          "availabilitySignals": [
+            "move-in ready",
+            "book a tour today"
+          ],
+          "dynamicallyDiscovered": true,
+          "verified": true,
+          "verifiedSource": "https://rentals.ca/vancouver/kits-walk-by-strand",
+          "sourceMatches": [
+            {
+              "url": "https://rentals.ca/vancouver/kits-walk-by-strand",
+              "httpStatus": 200,
+              "usable": true,
+              "structuredMatch": true,
+              "requiredMatched": true,
+              "availabilityMatched": true,
+              "fullyLeased": false,
+              "verified": true
             }
           ]
         }
@@ -49,7 +81,7 @@
     },
     {
       "building": "Arbutus Residences",
-      "checkedAt": "2026-10-20T15:29:34.409Z",
+      "checkedAt": "2026-10-20T18:36:09.913Z",
       "observations": [
         {
           "url": "https://www.rentfaster.ca/properties/2139-lahb-ave-vancouver-454186",
@@ -184,7 +216,7 @@
     },
     {
       "building": "Fourth + Mac",
-      "checkedAt": "2026-10-20T15:29:34.409Z",
+      "checkedAt": "2026-10-20T18:36:09.913Z",
       "observations": [
         {
           "url": "https://www.craigslist.org/view/d/vancouver-bed-bath-fourth-mac-kitsilano/eiSLCKTVqsrtPUWpUpJyDN",

@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-10-20T15:29:33.874Z",
+  "refreshedAt": "2026-10-20T18:36:09.356Z",
   "groups": [
     {
       "identityKey": "3349 dunbar st::url:fa963040c813",
@@ -35,6 +35,18 @@
       ],
       "exactUnit": false,
       "matchedListingId": "zumper-3d502587bbc4",
+      "result": "candidate_only"
+    },
+    {
+      "identityKey": "3000 w 44th ave::url:e02801d5a772",
+      "sources": [
+        "zumper"
+      ],
+      "rents": [
+        6000
+      ],
+      "exactUnit": false,
+      "matchedListingId": "zumper-1754927f090e",
       "result": "candidate_only"
     },
     {
@@ -82,6 +94,18 @@
       ],
       "rents": [
         5000
+      ],
+      "exactUnit": false,
+      "matchedListingId": null,
+      "result": "candidate_only"
+    },
+    {
+      "identityKey": "4588 w 2nd ave near tolmie st::url:28f49cb02b98",
+      "sources": [
+        "craigslist"
+      ],
+      "rents": [
+        15000
       ],
       "exactUnit": false,
       "matchedListingId": null,
@@ -148,18 +172,6 @@
       "result": "candidate_only"
     },
     {
-      "identityKey": "4588 w 2nd ave near tolmie st::url:fe6355b11e56",
-      "sources": [
-        "craigslist"
-      ],
-      "rents": [
-        15000
-      ],
-      "exactUnit": false,
-      "matchedListingId": null,
-      "result": "candidate_only"
-    },
-    {
       "identityKey": "2475 w 4th ave near larch st::url:943dac01c7d6",
       "sources": [
         "craigslist"
@@ -220,15 +232,15 @@
       "result": "candidate_only"
     },
     {
-      "identityKey": "mls:r3165327",
+      "identityKey": "mls:r3137446",
       "sources": [
         "realtylink mls"
       ],
       "rents": [
-        4350
+        5500
       ],
       "exactUnit": true,
-      "matchedListingId": "mls-r3165327",
+      "matchedListingId": "york-103-2535-r3137446",
       "result": "authoritative_mls_reverified"
     },
     {
@@ -244,18 +256,6 @@
       "result": "authoritative_mls_reverified"
     },
     {
-      "identityKey": "mls:r3137446",
-      "sources": [
-        "realtylink mls"
-      ],
-      "rents": [
-        5500
-      ],
-      "exactUnit": true,
-      "matchedListingId": "york-103-2535-r3137446",
-      "result": "authoritative_mls_reverified"
-    },
-    {
       "identityKey": "mls:r3151372",
       "sources": [
         "realtylink mls"
@@ -268,65 +268,65 @@
       "result": "authoritative_mls_reverified"
     },
     {
-      "identityKey": "mls:r3174425",
+      "identityKey": "mls:r3175865",
       "sources": [
         "realtylink mls"
       ],
       "rents": [
-        14500
+        4000
       ],
       "exactUnit": false,
-      "matchedListingId": "mls-r3174425",
+      "matchedListingId": null,
+      "result": "auto_published_authoritative_mls"
+    },
+    {
+      "identityKey": "mls:r3172212",
+      "sources": [
+        "realtylink mls"
+      ],
+      "rents": [
+        6300
+      ],
+      "exactUnit": false,
+      "matchedListingId": "mls-r3172212",
       "result": "authoritative_mls_reverified"
     },
     {
-      "identityKey": "mls:r3173233",
+      "identityKey": "mls:r3167417",
       "sources": [
         "realtylink mls"
       ],
       "rents": [
-        6000
+        6750
       ],
-      "exactUnit": false,
-      "matchedListingId": "mls-r3173233",
+      "exactUnit": true,
+      "matchedListingId": "mls-r3167417",
       "result": "authoritative_mls_reverified"
     },
     {
-      "identityKey": "mls:r3159060",
+      "identityKey": "mls:r3175848",
       "sources": [
         "realtylink mls"
       ],
       "rents": [
-        15000
+        5500
       ],
       "exactUnit": false,
-      "matchedListingId": "mls-r3159060",
-      "result": "authoritative_mls_reverified"
-    },
-    {
-      "identityKey": "mls:r3163709",
-      "sources": [
-        "realtylink mls"
-      ],
-      "rents": [
-        5800
-      ],
-      "exactUnit": false,
-      "matchedListingId": "mls-r3163709",
+      "matchedListingId": "mls-r3175848",
       "result": "authoritative_mls_reverified"
     }
   ],
-  "promoted": [],
+  "promoted": [
+    "mls-r3175865"
+  ],
   "crossVerified": [
     "zumper-86435797c322",
-    "mls-r3165327",
-    "zumper-16e9ae17cd91",
     "york-103-2535-r3137446",
+    "zumper-16e9ae17cd91",
     "mls-r3151372",
-    "mls-r3174425",
-    "mls-r3173233",
-    "mls-r3159060",
-    "mls-r3163709"
+    "mls-r3172212",
+    "mls-r3167417",
+    "mls-r3175848"
   ],
   "fingerprintCrossVerified": [],
   "craigslistRelistingsRecovered": [],
@@ -335,30 +335,43 @@
   "relistedMlsMerged": [],
   "negativeMatches": [],
   "detailReactivated": [
-    "mls-r3151372",
-    "mls-r3163709",
-    "mls-r3165327"
+    "mls-r3167417"
   ],
   "mlsMissing": {
+    "R3163709": {
+      "firstMissingAt": "2026-10-20T18:36:09.356Z",
+      "lastMissingAt": "2026-10-20T18:36:09.356Z",
+      "listingId": "mls-r3163709"
+    },
+    "R3165327": {
+      "firstMissingAt": "2026-10-20T18:36:09.356Z",
+      "lastMissingAt": "2026-10-20T18:36:09.356Z",
+      "listingId": "mls-r3165327"
+    },
     "R3173479": {
       "firstMissingAt": "2026-10-20T15:20:05.086Z",
-      "lastMissingAt": "2026-10-20T15:29:33.874Z",
+      "lastMissingAt": "2026-10-20T18:36:09.356Z",
       "listingId": "mls-r3173479"
+    },
+    "R3174425": {
+      "firstMissingAt": "2026-10-20T18:36:09.356Z",
+      "lastMissingAt": "2026-10-20T18:36:09.356Z",
+      "listingId": "mls-r3174425"
     },
     "R3175318": {
       "firstMissingAt": "2026-10-20T15:07:30.715Z",
-      "lastMissingAt": "2026-10-20T15:29:33.874Z",
+      "lastMissingAt": "2026-10-20T18:36:09.356Z",
       "listingId": "mls-r3175318"
     },
     "R3172081": {
       "firstMissingAt": "2026-10-20T15:29:33.874Z",
-      "lastMissingAt": "2026-10-20T15:29:33.874Z",
+      "lastMissingAt": "2026-10-20T18:36:09.356Z",
       "listingId": "mls-r3172081"
     }
   },
   "mlsRemoved": [],
   "mlsStaleHidden": [],
-  "realtylinkSnapshotCount": 8,
+  "realtylinkSnapshotCount": 7,
   "realtylinkSnapshotHighWaterMark": 8,
   "realtylinkSnapshotScope": "rent-3500-beds-2-4-whole-home-westside-v3",
   "realtylinkRemovalEligible": true,

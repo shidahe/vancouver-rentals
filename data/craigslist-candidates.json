@@ -1,17 +1,17 @@
 {
-  "refreshedAt": "2026-10-20T15:28:00.822Z",
+  "refreshedAt": "2026-10-20T18:34:39.389Z",
   "mode": "candidate-only",
   "sourceHealth": {
     "kitsilano": {
-      "checkedAt": "2026-10-20T15:28:00.822Z",
+      "checkedAt": "2026-10-20T18:34:39.389Z",
       "status": 200,
       "ok": true,
       "finalUrl": "https://www.craigslist.org/search/subarea/van?cat=apa&min_bedrooms=2&query=kitsilano",
-      "anchorCount": 308,
-      "detailLinkCount": 286,
-      "embeddedDetailLinkCount": 143,
-      "resultContainerCount": 144,
-      "postIdCount": 143,
+      "anchorCount": 304,
+      "detailLinkCount": 282,
+      "embeddedDetailLinkCount": 141,
+      "resultContainerCount": 141,
+      "postIdCount": 141,
       "hrefShapeSamples": [
         "www.craigslist.org/subarea/van",
         "www.craigslist.org/favorites",
@@ -23,21 +23,21 @@
         "www.craigslist.org/about/prohibited",
         "www.craigslist.org/about/recalled_items",
         "www.craigslist.org/about/help/safety/scams",
-        "www.craigslist.org/view/d/vancouver-luxurious-bedroom-furnished/8GvmVajeVrpbZ33zuxQXi2",
-        "www.craigslist.org/view/d/vancouver-bedroom-furnished-apartment/p1ipqysect8HRKCdJiZ5tc"
+        "www.craigslist.org/view/d/vancouver-kitsilano-bed-bath-main-floor/3NfMmiraAjzwoaYrdHupLZ",
+        "www.craigslist.org/view/d/vancouver-luxurious-bedroom-furnished/8GvmVajeVrpbZ33zuxQXi2"
       ],
       "title": "vancouver apartments / housing for rent \"kitsilano\" - craigslist"
     },
     "arbutus": {
-      "checkedAt": "2026-10-20T15:28:00.822Z",
+      "checkedAt": "2026-10-20T18:34:39.389Z",
       "status": 200,
       "ok": true,
       "finalUrl": "https://www.craigslist.org/search/subarea/van?cat=apa&min_bedrooms=2&query=arbutus",
-      "anchorCount": 186,
-      "detailLinkCount": 164,
-      "embeddedDetailLinkCount": 82,
-      "resultContainerCount": 84,
-      "postIdCount": 82,
+      "anchorCount": 184,
+      "detailLinkCount": 162,
+      "embeddedDetailLinkCount": 81,
+      "resultContainerCount": 81,
+      "postIdCount": 81,
       "hrefShapeSamples": [
         "www.craigslist.org/subarea/van",
         "www.craigslist.org/favorites",
@@ -55,7 +55,7 @@
       "title": "vancouver apartments / housing for rent \"arbutus\" - craigslist"
     },
     "point-grey": {
-      "checkedAt": "2026-10-20T15:28:00.822Z",
+      "checkedAt": "2026-10-20T18:34:39.389Z",
       "status": 200,
       "ok": true,
       "finalUrl": "https://www.craigslist.org/search/subarea/van?cat=apa&min_bedrooms=2&query=point%20grey",
@@ -75,21 +75,21 @@
         "www.craigslist.org/about/prohibited",
         "www.craigslist.org/about/recalled_items",
         "www.craigslist.org/about/help/safety/scams",
-        "www.craigslist.org/view/d/vancouver-uniqueaccommodationscom/w1L649pdYEqYSe6sLZWVtv",
-        "www.craigslist.org/view/d/vancouver-point-grey-two-bedroom/ooyW3i1NdEQ1Y8td43ar22"
+        "www.craigslist.org/view/d/vancouver-point-grey-3bd4ba-net-zero/r9Zgs6TXUfZrfUphr3fFmu",
+        "www.craigslist.org/view/d/vancouver-point-grey-luxury-4br5ba/1HGLMxMNfnCTm9WiY8BS2L"
       ],
       "title": "vancouver apartments / housing for rent \"point grey\" - craigslist"
     },
     "dunbar": {
-      "checkedAt": "2026-10-20T15:28:00.822Z",
+      "checkedAt": "2026-10-20T18:34:39.389Z",
       "status": 200,
       "ok": true,
       "finalUrl": "https://www.craigslist.org/search/subarea/van?cat=apa&min_bedrooms=2&query=dunbar",
-      "anchorCount": 214,
-      "detailLinkCount": 192,
-      "embeddedDetailLinkCount": 96,
-      "resultContainerCount": 96,
-      "postIdCount": 96,
+      "anchorCount": 216,
+      "detailLinkCount": 194,
+      "embeddedDetailLinkCount": 97,
+      "resultContainerCount": 99,
+      "postIdCount": 97,
       "hrefShapeSamples": [
         "www.craigslist.org/subarea/van",
         "www.craigslist.org/favorites",
@@ -101,19 +101,19 @@
         "www.craigslist.org/about/prohibited",
         "www.craigslist.org/about/recalled_items",
         "www.craigslist.org/about/help/safety/scams",
-        "www.craigslist.org/view/d/vancouver-ubc-dunbar-bright-bedroom/iaL2w2EA6mTQ6c35MAgytW",
-        "www.craigslist.org/view/d/vancouver-rooms-share-at-br-suite-in/svNkUGoH9BA6rRX7pSKHce"
+        "www.craigslist.org/view/d/vancouver-dunbar-3br1den-25ba-whole/tLSgasJf4ubBBzSmjD3enf",
+        "www.craigslist.org/view/d/vancouver-luxury-dunbar-home-bed-45/aJXTBqhreSgoDyN4Lpw3yT"
       ],
       "title": "vancouver apartments / housing for rent \"dunbar\" - craigslist"
     }
   },
   "diagnostics": {
-    "discoveredDetailUrls": 318,
-    "searchCards": 423,
-    "uniqueSearchCards": 318,
-    "missingRentOrBedrooms": 112,
-    "outOfScope": 153,
-    "outOfArea": 23,
+    "discoveredDetailUrls": 317,
+    "searchCards": 420,
+    "uniqueSearchCards": 317,
+    "missingRentOrBedrooms": 113,
+    "outOfScope": 152,
+    "outOfArea": 22,
     "searchAccepted": 34,
     "detailChecks": 34,
     "detailVerified": 30,
@@ -127,6 +127,162 @@
     "errors": 0
   },
   "candidates": [
+    {
+      "source": "Craigslist",
+      "postId": "7966683435",
+      "url": "https://www.craigslist.org/view/d/vancouver-dunbar-3br1den-25ba-whole/tLSgasJf4ubBBzSmjD3enf",
+      "title": "$6,398 / 3br - 2953ft2 - Dunbar 3Br+1Den/2.5Ba Whole House for Rent, Lord Byng Catchment (Vancouver)",
+      "address": null,
+      "identityKey": "craigslist::post:7966683435",
+      "rent": 6398,
+      "bedrooms": 3,
+      "bathrooms": 2.5,
+      "sqft": 2953,
+      "geo": {
+        "lat": 49.253108,
+        "lng": -123.179569
+      },
+      "targetArea": true,
+      "active": true,
+      "postedOrUpdatedAt": "2026-10-20T18:23:37.000Z",
+      "checkedAt": "2026-10-20T18:34:39.389Z",
+      "images": [
+        "https://images.craigslist.org/00R0R_5D6x8JG8rRh_0gw0t2_600x450.jpg",
+        "https://images.craigslist.org/00R0R_5D6x8JG8rRh_0gw0t2_50x50c.jpg",
+        "https://images.craigslist.org/00V0V_jcHpiIPQMt1_0lM0t2_50x50c.jpg",
+        "https://images.craigslist.org/00M0M_3Y3Zle2L2au_0CI0t2_50x50c.jpg",
+        "https://images.craigslist.org/00u0u_8SeZLQx9m7N_0CI0t2_50x50c.jpg",
+        "https://images.craigslist.org/00U0U_7pz6h8qYc3x_0CI0t2_50x50c.jpg",
+        "https://images.craigslist.org/00V0V_6qAMR6cWHAy_0CI0t2_50x50c.jpg",
+        "https://images.craigslist.org/00g0g_6FpOKVzVY7a_0su0kI_50x50c.jpg",
+        "https://images.craigslist.org/00d0d_7Y6jion91dl_0vK0kI_50x50c.jpg",
+        "https://images.craigslist.org/00Q0Q_fZlCaINhCIh_0vF0kI_50x50c.jpg",
+        "https://images.craigslist.org/00n0n_1nLEWg0GZYR_0vM0kI_50x50c.jpg",
+        "https://images.craigslist.org/00R0R_4LTxPdbWzW_0vj0kI_50x50c.jpg"
+      ],
+      "publishable": false,
+      "evidenceKind": "current_search_card_and_exact_detail",
+      "queryIds": [
+        "dunbar"
+      ],
+      "unit": null,
+      "approximateLocation": "W 22nd Ave near Blenheim",
+      "addressPrecision": "intersection",
+      "description": "Available: December 1, 2026 or January 1, 2027 – December 31, 2027. Earlier move in possible.\n\nBeautifully Renovated Dunbar Home with Rooftop Views\n\nThis exceptional Dunbar residence on West 22nd Avenue has been extensively renovated from top to bottom, offering 2,953 sq. ft. of upscale modern living space plus over 650 sq. ft. of patios and decks in one of Vancouver's most sought-after neighbourhoods.\n\nThe home features 3 bedrooms, a den, and 2.5 bathrooms, with spacious, light-filled living areas throughout. High-end finishes include engineered hardwood flooring, a large gourmet kitchen with heated slate floors and stainless steel appliances, and spa-inspired bathrooms designed for comfort and luxury.\n\nThe main floor opens onto a private sun deck and fully fenced backyard, ideal for family gatherings, BBQs, and entertaining. A spectacular rooftop patio offers panoramic views of the city skyline and the North Shore Mountains.\n\nConveniently located just minutes from shopping, restaurants, and everyday amenities. Situated within the Lord Byng Secondary, Lord Kitchener Elementary, and St. George’s School catchment areas.\n\nViewing Requests\n\nPlease contact us for additional information or to arrange a viewing. Selected applicants will be invited for a private showing.\n\nWhen requesting a viewing, please include:\n\nYour occupation\nNumber of occupants\nDesired move-in date\n\nReferences are required. Credit checks and proof of income will be requested prior to tenancy approval.",
+      "type": "house",
+      "ac": null,
+      "detailVerified": true,
+      "relistingPostIds": [
+        "7966683435"
+      ],
+      "relistingUrls": [
+        "https://www.craigslist.org/view/d/vancouver-dunbar-3br1den-25ba-whole/tLSgasJf4ubBBzSmjD3enf"
+      ]
+    },
+    {
+      "source": "Craigslist",
+      "postId": "7986821355",
+      "url": "https://www.craigslist.org/view/d/vancouver-point-grey-luxury-4br5ba/1HGLMxMNfnCTm9WiY8BS2L",
+      "title": "$15,000 / 4br - 4000ft2 - Point Grey Luxury | 4BR+5BA | Elevator, Rooftop Deck & HotTub | Now (West Point Grey)",
+      "address": "4588 W 2nd Ave near Tolmie St",
+      "identityKey": "craigslist::post:7986821355",
+      "rent": 15000,
+      "bedrooms": 4,
+      "bathrooms": 5,
+      "sqft": 4000,
+      "geo": {
+        "lat": 49.271397,
+        "lng": -123.211569
+      },
+      "targetArea": true,
+      "active": true,
+      "postedOrUpdatedAt": "2026-10-20T17:14:36.000Z",
+      "checkedAt": "2026-10-20T18:34:39.389Z",
+      "images": [
+        "https://images.craigslist.org/00Y0Y_k3PKmKJZ2y9_0uY0kE_600x450.jpg",
+        "https://images.craigslist.org/00Y0Y_k3PKmKJZ2y9_0uY0kE_50x50c.jpg",
+        "https://images.craigslist.org/00O0O_gONcztBOFOP_0uY0kE_50x50c.jpg",
+        "https://images.craigslist.org/00o0o_jNonsG65qwQ_0uY0kE_50x50c.jpg",
+        "https://images.craigslist.org/00B0B_lmI9VMIFtqf_0uY0kE_50x50c.jpg",
+        "https://images.craigslist.org/00l0l_I9MeCP0UiM_0uY0kE_50x50c.jpg",
+        "https://images.craigslist.org/00r0r_6j2v0Ko5tMx_0uY0kE_50x50c.jpg",
+        "https://images.craigslist.org/01717_3CTfUIcSwOu_0uY0kE_50x50c.jpg",
+        "https://images.craigslist.org/00Y0Y_kz20zIupXTe_0uY0kE_50x50c.jpg",
+        "https://images.craigslist.org/00f0f_56evGqorAtN_0uY0kE_50x50c.jpg",
+        "https://images.craigslist.org/00P0P_g8z9vURCNnK_0uY0kE_50x50c.jpg",
+        "https://images.craigslist.org/00M0M_7eIOq0Ei4h_0uY0kE_50x50c.jpg"
+      ],
+      "publishable": false,
+      "evidenceKind": "current_search_card_and_exact_detail",
+      "queryIds": [
+        "point-grey"
+      ],
+      "unit": null,
+      "approximateLocation": "West Point Grey",
+      "addressPrecision": "exact_civic",
+      "description": "Property Details:\n\nProperty ID: 5585 LU\nLocation: 4588 West 2nd Avenue, Vancouver\nRent: $15,000/mo\nAvailability: Now\nFurnished: No\nBedroom: 4 Bedroom\nBathroom: 5 Bathroom\nSize of Area: 4,000 sqft\nPet: No\nParking: Detached Garage\nUtilities: Not Included\nLease Term: Minimum lease term 12 months required\n\n\n\nDescription:\nExperience refined West Coast living in this custom-built luxury residence by renowned builder Brandes, quietly tucked in Point Grey’s prestigious North of 4th pocket. Designed around a thoughtful reverse floor plan, the home elevates daily living with an open-concept main floor boasting soaring 11'+ vaulted ceilings and sweeping, uninterrupted water views. A private elevator seamlessly serves all three levels, providing effortless access throughout. Crafted for the culinary enthusiast and entertainer alike, the residence features a chef's kitchen fitted with premium Sub-Zero and Wolf appliances, honed granite counters, custom millwork, an expansive wine cellar, and a private home theater. Step outside to an entertainment-scale rooftop deck complete with a private hot tub and dramatic 360-degree views of the ocean, mountains, and city skyline. Appointed with custom stone, marble, and full high-tech home automation, this unfurnished 4-bedroom, 5-bathroom sanctuary effortlessly blends classic architectural warmth with modern sophistication—all just steps from Spanish Banks, Jericho Beach, UBC, and top-tier school catchments, including Lord Byng Secondary and Queen Mary Elementary.\n\n\n\nPlease reply to this ad to arrange your private viewing or inquire about the house.\nPlease include your personal contact information for us to be able to assist you with your inquiry more promptly.\n\n\n\n\n** Professionally managed and marketed by Vancouver Luxury Realty. VLR does not charge prospective tenants any handling fees, application fees or processing fees. We are fully licensed with the Real Estate Council of British Columbia and simply act as the landlord/marketer for ",
+      "type": "house",
+      "ac": null,
+      "detailVerified": true,
+      "relistingPostIds": [
+        "7986821355"
+      ],
+      "relistingUrls": [
+        "https://www.craigslist.org/view/d/vancouver-point-grey-luxury-4br5ba/1HGLMxMNfnCTm9WiY8BS2L"
+      ]
+    },
+    {
+      "source": "Craigslist",
+      "postId": "7980996570",
+      "url": "https://www.craigslist.org/view/d/vancouver-shaughnessy-large-heritage/edhwhcr93u1tyBUQqEjbuH",
+      "title": "$6,250 / 4br - 3643ft2 - Shaughnessy Large Heritage 3 Levels 4 Beds Home of w/ Yards & Patio (Vancouver)",
+      "address": null,
+      "identityKey": "craigslist::post:7980996570",
+      "rent": 6250,
+      "bedrooms": 4,
+      "bathrooms": 2,
+      "sqft": 3643,
+      "geo": {
+        "lat": 49.2603,
+        "lng": -123.146
+      },
+      "targetArea": true,
+      "active": true,
+      "postedOrUpdatedAt": "2026-10-20T16:58:49.000Z",
+      "checkedAt": "2026-10-20T18:34:39.389Z",
+      "images": [
+        "https://images.craigslist.org/00n0n_1phCjCoywhU_0jA0b1_600x450.jpg",
+        "https://images.craigslist.org/00n0n_1phCjCoywhU_0jA0b1_50x50c.jpg",
+        "https://images.craigslist.org/00v0v_hBIT6aTIFcg_0gw0b1_50x50c.jpg",
+        "https://images.craigslist.org/00x0x_9JXQPwJxms2_0gw0b1_50x50c.jpg",
+        "https://images.craigslist.org/00Z0Z_llWve5yjqCJ_0gw0b1_50x50c.jpg",
+        "https://images.craigslist.org/00P0P_7qSwJdkydh3_0gw0b1_50x50c.jpg",
+        "https://images.craigslist.org/00r0r_e0hxF6RE9Eg_0gw0b1_50x50c.jpg",
+        "https://images.craigslist.org/01313_1gVlMMbfClJ_0gw0b1_50x50c.jpg",
+        "https://images.craigslist.org/00R0R_ehNyRp5H1VM_0gw0b1_50x50c.jpg",
+        "https://images.craigslist.org/00W0W_ccFr6psWJJV_0gw0b1_50x50c.jpg",
+        "https://images.craigslist.org/00i0i_bWUxpAER0np_0gw0b1_50x50c.jpg",
+        "https://images.craigslist.org/00q0q_lnMSTD0mYYi_0gw0b1_50x50c.jpg"
+      ],
+      "publishable": false,
+      "evidenceKind": "current_search_card_and_exact_detail",
+      "queryIds": [
+        "arbutus"
+      ],
+      "unit": null,
+      "approximateLocation": "Vancouver",
+      "addressPrecision": "neighborhood",
+      "description": "Address: 4xxx Angxx Drive, Vancouver\n\nAvailable: November 7, 2026 - long term unfurnished\nBedrooms: 4\nBathrooms: 2\nFinished area: 3643 sf\nLot size: 80 x 147\nLevels: 3\nFireplaces: 1; wood burning\nFlooring: hardwood, carpets, tiles mixed\nOutdoor: patio, front yard, backyard\nParking: carport\n\nDeposits: half-month security deposit.\nLease term: minimum 1 year lease.\nPets: pets okay with owners' approval.\nNo Bidet.\nAbsolutely no smoking please.\n\nIncluded items: fridge, stove, dishwasher, washer, dryer\nNot included: electricity, gas, telephone, cable, internet\n\n____________________________________________________________________________\n\nLOCATION: Central location in one of the most coveted pockets of Shaughnessy. Enjoy being in the heart of the Westside, steps from Quilchena Park and the Arbutus Greenway, Prestigiously located on an impressive 11,871 sq. ft. corner lot (80' x 147').\n\nFEATURES: EXTRAORDINARY HERITAGE HOME IN THE HEART OF SHAUGHNESSY. This well-maintained family home offers timeless charm & quality, w/ spacious living areas, three bedrooms upstairs, including an expansive primary bedroom w/ private balcony, and a versatile lower level. The main floor offers formal living & dining areas, a cozy family room with functioning wood burning Fireplace& Bright kitchen opening to a great room & large & private South-East backyard. This beautiful home is bathed in sunlight a perfect setting for outdoor gatherings.\n\nFilled with timeless charm, character and natural light, this 3,643 sq. ft. home offers spacious living and plenty of room for family life. The main floor features elegant living and dining rooms, a cozy family room with a functioning wood-burning fireplace, and a kitchen that opens to a wonderful great room and a large, private southeast-facing backyard's perfect for kids, pets and summer gatherings.\n\nUpstairs are three bedrooms, including an expansive primary suite with its own private balcony. A versatile lower level adds even more space for family, gue",
+      "type": "house",
+      "ac": null,
+      "detailVerified": true,
+      "relistingPostIds": [
+        "7980996570"
+      ],
+      "relistingUrls": [
+        "https://www.craigslist.org/view/d/vancouver-shaughnessy-large-heritage/edhwhcr93u1tyBUQqEjbuH"
+      ]
+    },
     {
       "source": "Craigslist",
       "postId": "7986657777",
@@ -145,7 +301,7 @@
       "targetArea": true,
       "active": true,
       "postedOrUpdatedAt": "2026-10-20T12:59:00.000Z",
-      "checkedAt": "2026-10-20T15:28:00.822Z",
+      "checkedAt": "2026-10-20T18:34:39.389Z",
       "images": [
         "https://images.craigslist.org/00c0c_jI6maH6Pk5V_08g05v_600x450.jpg",
         "https://images.craigslist.org/00c0c_jI6maH6Pk5V_08g05v_50x50c.jpg",
@@ -197,7 +353,7 @@
       "targetArea": true,
       "active": true,
       "postedOrUpdatedAt": "2026-10-20T12:55:10.000Z",
-      "checkedAt": "2026-10-20T15:28:00.822Z",
+      "checkedAt": "2026-10-20T18:34:39.389Z",
       "images": [
         "https://images.craigslist.org/00c0c_jI6maH6Pk5V_08g05v_600x450.jpg",
         "https://images.craigslist.org/00c0c_jI6maH6Pk5V_08g05v_50x50c.jpg",
@@ -249,7 +405,7 @@
       "targetArea": true,
       "active": true,
       "postedOrUpdatedAt": "2026-10-19T20:38:08.000Z",
-      "checkedAt": "2026-10-20T15:28:00.822Z",
+      "checkedAt": "2026-10-20T18:34:39.389Z",
       "images": [
         "https://images.craigslist.org/00505_7t3Rn5fvF2c_0pO0hc_600x450.jpg",
         "https://images.craigslist.org/00505_7t3Rn5fvF2c_0pO0hc_50x50c.jpg",
@@ -301,7 +457,7 @@
       "targetArea": true,
       "active": true,
       "postedOrUpdatedAt": "2026-10-19T18:28:51.000Z",
-      "checkedAt": "2026-10-20T15:28:00.822Z",
+      "checkedAt": "2026-10-20T18:34:39.389Z",
       "images": [
         "https://images.craigslist.org/01212_19Q8R9HOfR6_0nh0fx_600x450.jpg",
         "https://images.craigslist.org/01212_19Q8R9HOfR6_0nh0fx_50x50c.jpg",
@@ -348,7 +504,7 @@
       "targetArea": true,
       "active": true,
       "postedOrUpdatedAt": "2026-10-19T17:04:02.000Z",
-      "checkedAt": "2026-10-20T15:28:00.822Z",
+      "checkedAt": "2026-10-20T18:34:39.389Z",
       "images": [
         "https://images.craigslist.org/00404_cuCXJxUPcyv_0ak074_600x450.jpg",
         "https://images.craigslist.org/00404_cuCXJxUPcyv_0ak074_50x50c.jpg",
@@ -398,7 +554,7 @@
       "targetArea": true,
       "active": true,
       "postedOrUpdatedAt": "2026-10-19T16:14:21.000Z",
-      "checkedAt": "2026-10-20T15:28:00.822Z",
+      "checkedAt": "2026-10-20T18:34:39.389Z",
       "images": [
         "https://images.craigslist.org/00j0j_lG1C3UJy4lr_0jm0ew_600x450.jpg",
         "https://images.craigslist.org/00j0j_lG1C3UJy4lr_0jm0ew_50x50c.jpg",
@@ -450,7 +606,7 @@
       "targetArea": true,
       "active": true,
       "postedOrUpdatedAt": "2026-10-19T08:58:29.000Z",
-      "checkedAt": "2026-10-20T15:28:00.822Z",
+      "checkedAt": "2026-10-20T18:34:39.389Z",
       "images": [
         "https://images.craigslist.org/00101_8Lj1RrRW6kM_0gw0b1_600x450.jpg",
         "https://images.craigslist.org/00101_8Lj1RrRW6kM_0gw0b1_50x50c.jpg",
@@ -502,7 +658,7 @@
       "targetArea": true,
       "active": true,
       "postedOrUpdatedAt": "2026-10-19T01:54:24.000Z",
-      "checkedAt": "2026-10-20T15:28:00.822Z",
+      "checkedAt": "2026-10-20T18:34:39.389Z",
       "images": [
         "https://images.craigslist.org/00q0q_bPnZqZo8ZWF_0t20CI_600x450.jpg",
         "https://images.craigslist.org/00q0q_bPnZqZo8ZWF_0t20CI_50x50c.jpg",
@@ -548,7 +704,7 @@
       "targetArea": true,
       "active": true,
       "postedOrUpdatedAt": "2026-10-19T00:51:19.000Z",
-      "checkedAt": "2026-10-20T15:28:00.822Z",
+      "checkedAt": "2026-10-20T18:34:39.389Z",
       "images": [
         "https://images.craigslist.org/00U0U_kPDLePXF6Wk_0jh0es_600x450.jpg",
         "https://images.craigslist.org/00U0U_kPDLePXF6Wk_0jh0es_50x50c.jpg",
@@ -600,7 +756,7 @@
       "targetArea": true,
       "active": true,
       "postedOrUpdatedAt": "2026-10-18T16:21:00.000Z",
-      "checkedAt": "2026-10-20T15:28:00.822Z",
+      "checkedAt": "2026-10-20T18:34:39.389Z",
       "images": [
         "https://images.craigslist.org/00H0H_aBooG6gbfXq_0ia0du_600x450.jpg",
         "https://images.craigslist.org/00H0H_aBooG6gbfXq_0ia0du_50x50c.jpg",
@@ -652,7 +808,7 @@
       "targetArea": true,
       "active": true,
       "postedOrUpdatedAt": "2026-10-18T02:09:31.000Z",
-      "checkedAt": "2026-10-20T15:28:00.822Z",
+      "checkedAt": "2026-10-20T18:34:39.389Z",
       "images": [
         "https://images.craigslist.org/00Z0Z_k7sjTiNFcjk_0CI0t2_600x450.jpg",
         "https://images.craigslist.org/00Z0Z_k7sjTiNFcjk_0CI0t2_50x50c.jpg",
@@ -697,7 +853,7 @@
       "targetArea": true,
       "active": true,
       "postedOrUpdatedAt": "2026-10-18T01:44:41.000Z",
-      "checkedAt": "2026-10-20T15:28:00.822Z",
+      "checkedAt": "2026-10-20T18:34:39.389Z",
       "images": [
         "https://images.craigslist.org/00h0h_6MtMSv7SRMX_0CI0t2_600x450.jpg",
         "https://images.craigslist.org/00h0h_6MtMSv7SRMX_0CI0t2_50x50c.jpg",
@@ -749,7 +905,7 @@
       "targetArea": true,
       "active": true,
       "postedOrUpdatedAt": "2026-10-17T21:23:39.000Z",
-      "checkedAt": "2026-10-20T15:28:00.822Z",
+      "checkedAt": "2026-10-20T18:34:39.389Z",
       "images": [
         "https://images.craigslist.org/00o0o_89ssWZaAMPX_0gw0b0_600x450.jpg",
         "https://images.craigslist.org/00o0o_89ssWZaAMPX_0gw0b0_50x50c.jpg",
@@ -785,58 +941,6 @@
     },
     {
       "source": "Craigslist",
-      "postId": "7980996570",
-      "url": "https://www.craigslist.org/view/d/vancouver-shaughnessy-large-heritage/edhwhcr93u1tyBUQqEjbuH",
-      "title": "$6,250 / 4br - 3643ft2 - Shaughnessy Large Heritage 3 Levels 4 Beds Home of w/ Yards & Patio (Vancouver)",
-      "address": null,
-      "identityKey": "craigslist::post:7980996570",
-      "rent": 6250,
-      "bedrooms": 4,
-      "bathrooms": 2,
-      "sqft": 3643,
-      "geo": {
-        "lat": 49.2603,
-        "lng": -123.146
-      },
-      "targetArea": true,
-      "active": true,
-      "postedOrUpdatedAt": "2026-10-17T16:35:30.000Z",
-      "checkedAt": "2026-10-20T15:28:00.822Z",
-      "images": [
-        "https://images.craigslist.org/00n0n_1phCjCoywhU_0jA0b1_600x450.jpg",
-        "https://images.craigslist.org/00n0n_1phCjCoywhU_0jA0b1_50x50c.jpg",
-        "https://images.craigslist.org/00v0v_hBIT6aTIFcg_0gw0b1_50x50c.jpg",
-        "https://images.craigslist.org/00x0x_9JXQPwJxms2_0gw0b1_50x50c.jpg",
-        "https://images.craigslist.org/00Z0Z_llWve5yjqCJ_0gw0b1_50x50c.jpg",
-        "https://images.craigslist.org/00P0P_7qSwJdkydh3_0gw0b1_50x50c.jpg",
-        "https://images.craigslist.org/00r0r_e0hxF6RE9Eg_0gw0b1_50x50c.jpg",
-        "https://images.craigslist.org/01313_1gVlMMbfClJ_0gw0b1_50x50c.jpg",
-        "https://images.craigslist.org/00R0R_ehNyRp5H1VM_0gw0b1_50x50c.jpg",
-        "https://images.craigslist.org/00W0W_ccFr6psWJJV_0gw0b1_50x50c.jpg",
-        "https://images.craigslist.org/00i0i_bWUxpAER0np_0gw0b1_50x50c.jpg",
-        "https://images.craigslist.org/00q0q_lnMSTD0mYYi_0gw0b1_50x50c.jpg"
-      ],
-      "publishable": false,
-      "evidenceKind": "current_search_card_and_exact_detail",
-      "queryIds": [
-        "arbutus"
-      ],
-      "unit": null,
-      "approximateLocation": "Vancouver",
-      "addressPrecision": "neighborhood",
-      "description": "Address: 4xxx Angxx Drive, Vancouver\n\nAvailable: November 7, 2026 - long term unfurnished\nBedrooms: 4\nBathrooms: 2\nFinished area: 3643 sf\nLot size: 80 x 147\nLevels: 3\nFireplaces: 1; wood burning\nFlooring: hardwood, carpets, tiles mixed\nOutdoor: patio, front yard, backyard\nParking: carport\n\nDeposits: half-month security deposit.\nLease term: minimum 1 year lease.\nPets: pets okay with owners' approval.\nNo Bidet.\nAbsolutely no smoking please.\n\nIncluded items: fridge, stove, dishwasher, washer, dryer\nNot included: electricity, gas, telephone, cable, internet\n\n____________________________________________________________________________\n\nLOCATION: Central location in one of the most coveted pockets of Shaughnessy. Enjoy being in the heart of the Westside, steps from Quilchena Park and the Arbutus Greenway, Prestigiously located on an impressive 11,871 sq. ft. corner lot (80' x 147').\n\nFEATURES: EXTRAORDINARY HERITAGE HOME IN THE HEART OF SHAUGHNESSY. This well-maintained family home offers timeless charm & quality, w/ spacious living areas, three bedrooms upstairs, including an expansive primary bedroom w/ private balcony, and a versatile lower level. The main floor offers formal living & dining areas, a cozy family room with functioning wood burning Fireplace& Bright kitchen opening to a great room & large & private South-East backyard. This beautiful home is bathed in sunlight a perfect setting for outdoor gatherings.\n\nFilled with timeless charm, character and natural light, this 3,643 sq. ft. home offers spacious living and plenty of room for family life. The main floor features elegant living and dining rooms, a cozy family room with a functioning wood-burning fireplace, and a kitchen that opens to a wonderful great room and a large, private southeast-facing backyard's perfect for kids, pets and summer gatherings.\n\nUpstairs are three bedrooms, including an expansive primary suite with its own private balcony. A versatile lower level adds even more space for family, gue",
-      "type": "house",
-      "ac": null,
-      "detailVerified": true,
-      "relistingPostIds": [
-        "7980996570"
-      ],
-      "relistingUrls": [
-        "https://www.craigslist.org/view/d/vancouver-shaughnessy-large-heritage/edhwhcr93u1tyBUQqEjbuH"
-      ]
-    },
-    {
-      "source": "Craigslist",
       "postId": "7980922329",
       "url": "https://www.craigslist.org/view/d/vancouver-fully-furnished-2br-kitsilano/qcGxi85JnhaGPdiaDhQHBY",
       "title": "$4,250 / 2br - 900ft2 - Fully Furnished 2BR Kitsilano Garden Suite – 90+ Days – Utilities Incl (Kitsilano)",
@@ -853,7 +957,7 @@
       "targetArea": true,
       "active": true,
       "postedOrUpdatedAt": "2026-10-16T22:21:20.000Z",
-      "checkedAt": "2026-10-20T15:28:00.822Z",
+      "checkedAt": "2026-10-20T18:34:39.389Z",
       "images": [
         "https://images.craigslist.org/00000_bB35LEabGAx_08I08I_600x450.jpg",
         "https://images.craigslist.org/00000_bB35LEabGAx_08I08I_50x50c.jpg",
@@ -889,58 +993,6 @@
     },
     {
       "source": "Craigslist",
-      "postId": "7982921004",
-      "url": "https://www.craigslist.org/view/d/vancouver-point-grey-luxury-4br5ba/aJgN2o2my1nS6BNgEH2UjY",
-      "title": "$15,000 / 4br - 4000ft2 - Point Grey Luxury | 4BR+5BA | Elevator, Rooftop Deck & HotTub | Now (West Point Grey)",
-      "address": "4588 W 2nd Ave near Tolmie St",
-      "identityKey": "craigslist::post:7982921004",
-      "rent": 15000,
-      "bedrooms": 4,
-      "bathrooms": 5,
-      "sqft": 4000,
-      "geo": {
-        "lat": 49.271397,
-        "lng": -123.211569
-      },
-      "targetArea": true,
-      "active": true,
-      "postedOrUpdatedAt": "2026-10-16T16:56:43.000Z",
-      "checkedAt": "2026-10-20T15:28:00.822Z",
-      "images": [
-        "https://images.craigslist.org/00Y0Y_k3PKmKJZ2y9_0uY0kE_600x450.jpg",
-        "https://images.craigslist.org/00Y0Y_k3PKmKJZ2y9_0uY0kE_50x50c.jpg",
-        "https://images.craigslist.org/00O0O_gONcztBOFOP_0uY0kE_50x50c.jpg",
-        "https://images.craigslist.org/00o0o_jNonsG65qwQ_0uY0kE_50x50c.jpg",
-        "https://images.craigslist.org/00B0B_lmI9VMIFtqf_0uY0kE_50x50c.jpg",
-        "https://images.craigslist.org/00l0l_I9MeCP0UiM_0uY0kE_50x50c.jpg",
-        "https://images.craigslist.org/00r0r_6j2v0Ko5tMx_0uY0kE_50x50c.jpg",
-        "https://images.craigslist.org/01717_3CTfUIcSwOu_0uY0kE_50x50c.jpg",
-        "https://images.craigslist.org/00Y0Y_kz20zIupXTe_0uY0kE_50x50c.jpg",
-        "https://images.craigslist.org/00f0f_56evGqorAtN_0uY0kE_50x50c.jpg",
-        "https://images.craigslist.org/00P0P_g8z9vURCNnK_0uY0kE_50x50c.jpg",
-        "https://images.craigslist.org/00M0M_7eIOq0Ei4h_0uY0kE_50x50c.jpg"
-      ],
-      "publishable": false,
-      "evidenceKind": "current_search_card_and_exact_detail",
-      "queryIds": [
-        "point-grey"
-      ],
-      "unit": null,
-      "approximateLocation": "West Point Grey",
-      "addressPrecision": "exact_civic",
-      "description": "Property Details:\n\nProperty ID: 5585 LU\nLocation: 4588 West 2nd Avenue, Vancouver\nRent: $15,000/mo\nAvailability: Now\nFurnished: No\nBedroom: 4 Bedroom\nBathroom: 5 Bathroom\nSize of Area: 4,000 sqft\nPet: No\nParking: Detached Garage\nUtilities: Not Included\nLease Term: Minimum lease term 12 months required\n\n\n\nDescription:\nExperience refined West Coast living in this custom-built luxury residence by renowned builder Brandes, quietly tucked in Point Grey’s prestigious North of 4th pocket. Designed around a thoughtful reverse floor plan, the home elevates daily living with an open-concept main floor boasting soaring 11'+ vaulted ceilings and sweeping, uninterrupted water views. A private elevator seamlessly serves all three levels, providing effortless access throughout. Crafted for the culinary enthusiast and entertainer alike, the residence features a chef's kitchen fitted with premium Sub-Zero and Wolf appliances, honed granite counters, custom millwork, an expansive wine cellar, and a private home theater. Step outside to an entertainment-scale rooftop deck complete with a private hot tub and dramatic 360-degree views of the ocean, mountains, and city skyline. Appointed with custom stone, marble, and full high-tech home automation, this unfurnished 4-bedroom, 5-bathroom sanctuary effortlessly blends classic architectural warmth with modern sophistication—all just steps from Spanish Banks, Jericho Beach, UBC, and top-tier school catchments, including Lord Byng Secondary and Queen Mary Elementary.\n\n\n\nPlease reply to this ad to arrange your private viewing or inquire about the house.\nPlease include your personal contact information for us to be able to assist you with your inquiry more promptly.\n\n\n\n\n** Professionally managed and marketed by Vancouver Luxury Realty. VLR does not charge prospective tenants any handling fees, application fees or processing fees. We are fully licensed with the Real Estate Council of British Columbia and simply act as the landlord/marketer for ",
-      "type": "house",
-      "ac": null,
-      "detailVerified": true,
-      "relistingPostIds": [
-        "7982921004"
-      ],
-      "relistingUrls": [
-        "https://www.craigslist.org/view/d/vancouver-point-grey-luxury-4br5ba/aJgN2o2my1nS6BNgEH2UjY"
-      ]
-    },
-    {
-      "source": "Craigslist",
       "postId": "7975108776",
       "url": "https://www.craigslist.org/view/d/vancouver-bedroom-townhouse-for-rent-in/bkU8i4GdVGRKp62JHCPV3E",
       "title": "$4,900 / 3br - 2334ft2 - 3 Bedroom Townhouse for Rent in Arbutus Area (Vancouver)",
@@ -957,7 +1009,7 @@
       "targetArea": true,
       "active": true,
       "postedOrUpdatedAt": "2026-10-15T21:55:23.000Z",
-      "checkedAt": "2026-10-20T15:28:00.822Z",
+      "checkedAt": "2026-10-20T18:34:39.389Z",
       "images": [
         "https://images.craigslist.org/00505_fc07bV1J49b_0CI0t2_600x450.jpg",
         "https://images.craigslist.org/00505_fc07bV1J49b_0CI0t2_50x50c.jpg",
@@ -1022,7 +1074,7 @@
       "targetArea": true,
       "active": true,
       "postedOrUpdatedAt": "2026-10-15T19:06:22.000Z",
-      "checkedAt": "2026-10-20T15:28:00.822Z",
+      "checkedAt": "2026-10-20T18:34:39.389Z",
       "images": [
         "https://images.craigslist.org/00j0j_hvQzGupZGf6_1320MM_600x450.jpg",
         "https://images.craigslist.org/00j0j_hvQzGupZGf6_1320MM_50x50c.jpg",
@@ -1074,7 +1126,7 @@
       "targetArea": true,
       "active": true,
       "postedOrUpdatedAt": "2026-10-15T05:12:33.000Z",
-      "checkedAt": "2026-10-20T15:28:00.822Z",
+      "checkedAt": "2026-10-20T18:34:39.389Z",
       "images": [
         "https://images.craigslist.org/01616_eg4V5HxUa2l_07K0ak_600x450.jpg",
         "https://images.craigslist.org/01616_eg4V5HxUa2l_07K0ak_50x50c.jpg",
@@ -1126,7 +1178,7 @@
       "targetArea": true,
       "active": true,
       "postedOrUpdatedAt": "2026-10-14T03:10:51.000Z",
-      "checkedAt": "2026-10-20T15:28:00.822Z",
+      "checkedAt": "2026-10-20T18:34:39.389Z",
       "images": [
         "https://images.craigslist.org/00o0o_89ybSRl9Swp_0CI0t2_600x450.jpg",
         "https://images.craigslist.org/00o0o_89ybSRl9Swp_0CI0t2_50x50c.jpg",
@@ -1178,7 +1230,7 @@
       "targetArea": true,
       "active": true,
       "postedOrUpdatedAt": "2026-10-14T00:04:06.000Z",
-      "checkedAt": "2026-10-20T15:28:00.822Z",
+      "checkedAt": "2026-10-20T18:34:39.389Z",
       "images": [
         "https://images.craigslist.org/00z0z_5fcNS4XJGAv_0jm0c6_600x450.jpg",
         "https://images.craigslist.org/00z0z_5fcNS4XJGAv_0jm0c6_50x50c.jpg",
@@ -1228,7 +1280,7 @@
       "targetArea": true,
       "active": true,
       "postedOrUpdatedAt": "2026-10-14T00:04:04.000Z",
-      "checkedAt": "2026-10-20T15:28:00.822Z",
+      "checkedAt": "2026-10-20T18:34:39.389Z",
       "images": [
         "https://images.craigslist.org/00101_3Kt4zGjMpUA_0jm0c6_600x450.jpg",
         "https://images.craigslist.org/00101_3Kt4zGjMpUA_0jm0c6_50x50c.jpg",
@@ -1280,7 +1332,7 @@
       "targetArea": true,
       "active": true,
       "postedOrUpdatedAt": "2026-10-14T00:04:02.000Z",
-      "checkedAt": "2026-10-20T15:28:00.822Z",
+      "checkedAt": "2026-10-20T18:34:39.389Z",
       "images": [
         "https://images.craigslist.org/00x0x_5rdhaj721wT_0jm0c6_600x450.jpg",
         "https://images.craigslist.org/00x0x_5rdhaj721wT_0jm0c6_50x50c.jpg",
@@ -1316,58 +1368,6 @@
     },
     {
       "source": "Craigslist",
-      "postId": "7966683435",
-      "url": "https://www.craigslist.org/view/d/vancouver-dunbar-3br1den-25ba-whole/tLSgasJf4ubBBzSmjD3enf",
-      "title": "$6,398 / 3br - 2953ft2 - Dunbar 3Br+1Den/2.5Ba Whole House for Rent, Lord Byng Catchment (Vancouver)",
-      "address": null,
-      "identityKey": "craigslist::post:7966683435",
-      "rent": 6398,
-      "bedrooms": 3,
-      "bathrooms": 2.5,
-      "sqft": 2953,
-      "geo": {
-        "lat": 49.253108,
-        "lng": -123.179569
-      },
-      "targetArea": true,
-      "active": true,
-      "postedOrUpdatedAt": "2026-10-13T17:03:18.000Z",
-      "checkedAt": "2026-10-20T15:28:00.822Z",
-      "images": [
-        "https://images.craigslist.org/00R0R_5D6x8JG8rRh_0gw0t2_600x450.jpg",
-        "https://images.craigslist.org/00R0R_5D6x8JG8rRh_0gw0t2_50x50c.jpg",
-        "https://images.craigslist.org/00V0V_jcHpiIPQMt1_0lM0t2_50x50c.jpg",
-        "https://images.craigslist.org/00M0M_3Y3Zle2L2au_0CI0t2_50x50c.jpg",
-        "https://images.craigslist.org/00u0u_8SeZLQx9m7N_0CI0t2_50x50c.jpg",
-        "https://images.craigslist.org/00U0U_7pz6h8qYc3x_0CI0t2_50x50c.jpg",
-        "https://images.craigslist.org/00V0V_6qAMR6cWHAy_0CI0t2_50x50c.jpg",
-        "https://images.craigslist.org/00g0g_6FpOKVzVY7a_0su0kI_50x50c.jpg",
-        "https://images.craigslist.org/00d0d_7Y6jion91dl_0vK0kI_50x50c.jpg",
-        "https://images.craigslist.org/00Q0Q_fZlCaINhCIh_0vF0kI_50x50c.jpg",
-        "https://images.craigslist.org/00n0n_1nLEWg0GZYR_0vM0kI_50x50c.jpg",
-        "https://images.craigslist.org/00R0R_4LTxPdbWzW_0vj0kI_50x50c.jpg"
-      ],
-      "publishable": false,
-      "evidenceKind": "current_search_card_and_exact_detail",
-      "queryIds": [
-        "dunbar"
-      ],
-      "unit": null,
-      "approximateLocation": "W 22nd Ave near Blenheim",
-      "addressPrecision": "intersection",
-      "description": "Available: December 1, 2026 or January 1, 2027 – December 31, 2027. Earlier move in possible.\n\nBeautifully Renovated Dunbar Home with Rooftop Views\n\nThis exceptional Dunbar residence on West 22nd Avenue has been extensively renovated from top to bottom, offering 2,953 sq. ft. of upscale modern living space plus over 650 sq. ft. of patios and decks in one of Vancouver's most sought-after neighbourhoods.\n\nThe home features 3 bedrooms, a den, and 2.5 bathrooms, with spacious, light-filled living areas throughout. High-end finishes include engineered hardwood flooring, a large gourmet kitchen with heated slate floors and stainless steel appliances, and spa-inspired bathrooms designed for comfort and luxury.\n\nThe main floor opens onto a private sun deck and fully fenced backyard, ideal for family gatherings, BBQs, and entertaining. A spectacular rooftop patio offers panoramic views of the city skyline and the North Shore Mountains.\n\nConveniently located just minutes from shopping, restaurants, and everyday amenities. Situated within the Lord Byng Secondary, Lord Kitchener Elementary, and St. George’s School catchment areas.\n\nViewing Requests\n\nPlease contact us for additional information or to arrange a viewing. Selected applicants will be invited for a private showing.\n\nWhen requesting a viewing, please include:\n\nYour occupation\nNumber of occupants\nDesired move-in date\n\nReferences are required. Credit checks and proof of income will be requested prior to tenancy approval.",
-      "type": "house",
-      "ac": null,
-      "detailVerified": true,
-      "relistingPostIds": [
-        "7966683435"
-      ],
-      "relistingUrls": [
-        "https://www.craigslist.org/view/d/vancouver-dunbar-3br1den-25ba-whole/tLSgasJf4ubBBzSmjD3enf"
-      ]
-    },
-    {
-      "source": "Craigslist",
       "postId": "7975068201",
       "url": "https://www.craigslist.org/view/d/vancouver-kitsilano-2br-home-private/bdP4XEamJHZYcAfgyeKzCv",
       "title": "$6,900 / 2br - 1800ft2 - Kitsilano 2BR Home | Private Rooftop + Upper Solarium",
@@ -1384,7 +1384,7 @@
       "targetArea": true,
       "active": true,
       "postedOrUpdatedAt": "2026-10-12T23:26:56.000Z",
-      "checkedAt": "2026-10-20T15:28:00.822Z",
+      "checkedAt": "2026-10-20T18:34:39.389Z",
       "images": [
         "https://images.craigslist.org/00n0n_ibnq63WtzLW_0qY0fb_600x450.jpg",
         "https://images.craigslist.org/00n0n_ibnq63WtzLW_0qY0fb_50x50c.jpg",
@@ -1436,7 +1436,7 @@
       "targetArea": true,
       "active": true,
       "postedOrUpdatedAt": "2026-10-11T19:53:07.000Z",
-      "checkedAt": "2026-10-20T15:28:00.822Z",
+      "checkedAt": "2026-10-20T18:34:39.389Z",
       "images": [
         "https://images.craigslist.org/00x0x_9kVneM0MQS3_0x20oM_600x450.jpg",
         "https://images.craigslist.org/00x0x_9kVneM0MQS3_0x20oM_50x50c.jpg",
@@ -1488,7 +1488,7 @@
       "targetArea": true,
       "active": true,
       "postedOrUpdatedAt": "2026-10-07T20:22:12.000Z",
-      "checkedAt": "2026-10-20T15:28:00.822Z",
+      "checkedAt": "2026-10-20T18:34:39.389Z",
       "images": [
         "https://images.craigslist.org/00g0g_fOrzUH0Fajg_0Ck0t2_600x450.jpg",
         "https://images.craigslist.org/00g0g_fOrzUH0Fajg_0Ck0t2_50x50c.jpg",
@@ -1540,7 +1540,7 @@
       "targetArea": true,
       "active": true,
       "postedOrUpdatedAt": "2026-10-07T06:11:47.000Z",
-      "checkedAt": "2026-10-20T15:28:00.822Z",
+      "checkedAt": "2026-10-20T18:34:39.389Z",
       "images": [
         "https://images.craigslist.org/00N0N_78ZMrBVFcbB_0CI0pO_600x450.jpg",
         "https://images.craigslist.org/00N0N_78ZMrBVFcbB_0CI0pO_50x50c.jpg",
@@ -1592,7 +1592,7 @@
       "targetArea": true,
       "active": true,
       "postedOrUpdatedAt": "2026-10-07T03:22:57.000Z",
-      "checkedAt": "2026-10-20T15:28:00.822Z",
+      "checkedAt": "2026-10-20T18:34:39.389Z",
       "images": [
         "https://images.craigslist.org/00y0y_9QoxDSNE4uG_0pO0jm_600x450.jpg",
         "https://images.craigslist.org/00y0y_9QoxDSNE4uG_0pO0jm_50x50c.jpg",
