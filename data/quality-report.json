@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-10-20T15:08:25.788Z",
-  "activeCount": 18,
+  "generatedAt": "2026-10-20T15:20:49.847Z",
+  "activeCount": 19,
   "decisionReady": true,
   "readinessStatus": "finalized",
   "highIssueCount": 0,
   "mediumIssueCount": 0,
-  "infoIssueCount": 32,
+  "infoIssueCount": 35,
   "issues": [
     {
       "severity": "info",
@@ -55,6 +55,16 @@
     {
       "severity": "info",
       "id": "zumper-16e9ae17cd91",
+      "issue": "unknown-orientation"
+    },
+    {
+      "severity": "info",
+      "id": "mls-r3159060",
+      "issue": "unknown-ac"
+    },
+    {
+      "severity": "info",
+      "id": "mls-r3159060",
       "issue": "unknown-orientation"
     },
     {
@@ -134,17 +144,22 @@
     },
     {
       "severity": "info",
-      "id": "mls-r3173479",
-      "issue": "unknown-orientation"
-    },
-    {
-      "severity": "info",
       "id": "mls-r3173233",
       "issue": "unknown-ac"
     },
     {
       "severity": "info",
       "id": "mls-r3173233",
+      "issue": "unknown-orientation"
+    },
+    {
+      "severity": "info",
+      "id": "mls-r3174425",
+      "issue": "unknown-ac"
+    },
+    {
+      "severity": "info",
+      "id": "mls-r3174425",
       "issue": "unknown-orientation"
     },
     {
@@ -171,8 +186,8 @@
   "readinessChecks": {
     "smokeOk": true,
     "smokeFresh": true,
-    "smokeCheckedAt": "2026-10-20T15:08:31.212Z",
-    "latestDataAt": "2026-10-20T15:07:34.640Z",
+    "smokeCheckedAt": "2026-10-20T15:20:55.410Z",
+    "latestDataAt": "2026-10-20T15:20:09.227Z",
     "coverageReady": true,
     "healthyDiscoveryLanes": 3,
     "coverageWarnings": [
@@ -180,7 +195,7 @@
         "severity": "warning",
         "lane": "rentalsca",
         "status": "degraded",
-        "detail": "3/9 regional searches reachable; 0 qualifying candidates parsed; 3 scoped search-only leads retained (3 new, 0 already active, 0 need revalidation); 3 detail pages blocked after 12 discovered URLs; 9 further detail checks suppressed after repeated 403/429"
+        "detail": "3/9 regional searches reachable; 0 qualifying candidates parsed; 2 scoped search-only leads retained (2 new, 0 already active, 0 need revalidation); 3 detail pages blocked after 33 discovered URLs; 30 further detail checks suppressed after repeated 403/429"
       },
       {
         "severity": "warning",
@@ -191,5 +206,5 @@
     ]
   },
   "readinessIssues": [],
-  "finalizedAt": "2026-10-20T15:08:31.310Z"
+  "finalizedAt": "2026-10-20T15:20:55.516Z"
 }

@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-10-20T14:59:09.415Z",
+  "checkedAt": "2026-10-20T15:12:08.042Z",
   "source": {
     "id": "viridian-official",
     "name": "Viridian official availability",
@@ -10,15 +10,21 @@
   "ok": true,
   "status": 403,
   "finalUrl": "https://www.rentcafe.com/apartments/bc/vancouver/viridian1/default.aspx",
-  "title": "Attention Required! | Cloudflare",
-  "bodyText": "Sorry, you have been blocked\nYou are unable to access rentcafe.com\nWhy have I been blocked?\n\nThis website is using a security service to protect itself from online attacks. The action you just performed triggered the security solution. There are several actions that could trigger this block including submitting a certain word or phrase, a SQL command or malformed data.\n\nWhat can I do to resolve this?\n\nYou can email the site owner to let them know you were blocked. Please include what you were doing when this page came up and the Cloudflare Ray ID found at the bottom of this page.\n\nCloudflare Ray ID: a4d8e7680c487ab2 • Your IP: Click to reveal • Performance & security by Cloudflare",
+  "title": "Just a moment...",
+  "bodyText": "www.rentcafe.com\nPerforming security verification\n\nThis website uses a security service to protect against malicious bots. This page is displayed while the website verifies you are not a bot.\n\nRay ID: a4d8f9c40fbcb41c\nPerformance and Security by Cloudflare\nPrivacy",
   "links": [
     {
-      "href": "https://www.cloudflare.com/5xx-error-landing",
+      "href": "https://www.cloudflare.com/?utm_source=challenge&utm_campaign=m",
       "text": "Cloudflare"
+    },
+    {
+      "href": "https://www.cloudflare.com/privacypolicy/",
+      "text": "Privacy"
     }
   ],
   "jsonLd": [],
-  "images": [],
-  "elapsedMs": 3151
+  "images": [
+    "https://www.rentcafe.com/favicon.ico"
+  ],
+  "elapsedMs": 3198
 }
