@@ -16,7 +16,7 @@ import { craigslistAddressPrecision, craigslistDescriptionCivicAddress, craigsli
 import { classifyRentalsCaSearchLead, parseRentalsCaSearchLeads } from './rentalsca-search-parser.mjs';
 import { craigslistSeedRelistingMatch } from './craigslist-seed-relisting.mjs';
 import { craigslistCrossSourcePriceMatch } from './craigslist-cross-source-match.mjs';
-import { zumperPetFriendly, zumperPropertyType } from './zumper-pet-policy.mjs';
+import { zumperPetFriendly, zumperPropertyType, zumperRoomCount } from './zumper-pet-policy.mjs';
 
 const read = p => fs.readFile(p, 'utf8');
 const activeAdapters = [
@@ -111,6 +111,13 @@ if (zumperPropertyType({'@type':'SingleFamilyResidence'}, 'House for rent') !== 
     zumperPropertyType({'@type':'Apartment'}, 'Apartment for rent') !== 'condo' ||
     zumperPropertyType({}, 'House for rent · 4 beds · 2 baths') !== 'house') {
   failures.push('Zumper SingleFamilyResidence inventory such as 2000 W 43rd can be mislabeled as a condo.');
+}
+const w43AdvertiserDescription='Offer: 4BR + 1.5Bath Single House with GARAGE (2534 sqf)';
+if (zumperRoomCount(w43AdvertiserDescription, '4 bed, 1 bath house', '4 bed, 1 bath', 'bedroom') !== 4 ||
+    zumperRoomCount(w43AdvertiserDescription, '4 bed, 1 bath house', '4 bed, 1 bath', 'bathroom') !== 1.5 ||
+    !source.includes("for (const field of ['bedrooms','bathrooms','sqft'])") ||
+    !source.includes('CORRECTED from exact current Zumper advertiser facts')) {
+  failures.push('Zumper advertiser facts such as 1969 W 43rd 1.5BA can be rounded down by generated SEO text or fail to refresh an active card.');
 }
 if(!qualityAuditSource.includes("decisionReady:false")||!qualityAuditSource.includes("readinessStatus:'pending_finalization'")||
    !readinessFinalizerSource.includes("readinessStatus='finalized'")) failures.push('A standalone quality audit can claim decision readiness before browser, freshness, and coverage checks are finalized.');

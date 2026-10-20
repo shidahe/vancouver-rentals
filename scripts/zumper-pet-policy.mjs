@@ -20,3 +20,17 @@ export function zumperPropertyType(home, pageText = '') {
   if (/\bhouse for rent\b/i.test(String(pageText))) return 'house';
   return 'condo';
 }
+
+export function zumperRoomCount(homeDescription = '', pageText = '', productDescription = '', kind = 'bedroom') {
+  const label = kind === 'bathroom' ? '(?:bathrooms?|baths?|ba)' : '(?:bedrooms?|beds?|br)';
+  const pattern = new RegExp(`\\b([1-5](?:\\.5)?)\\s*${label}\\b`, 'i');
+
+  // The residence description is supplied by the advertiser and can retain a
+  // half bath that Zumper's generated Product/SEO summary rounds down (for
+  // example, "1 bath" versus the listing's "1.5Bath").
+  for (const source of [homeDescription, pageText, productDescription]) {
+    const match = String(source || '').match(pattern);
+    if (match) return Number(match[1]);
+  }
+  return null;
+}
