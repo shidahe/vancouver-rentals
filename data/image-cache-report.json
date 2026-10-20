@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-10-19T20:03:46.993Z",
+  "refreshedAt": "2026-10-20T15:08:25.139Z",
   "listings": {
     "york-103-2535-r3137446": {
       "cached": 5,
@@ -31,24 +31,10 @@
     },
     "zumper-16e9ae17cd91": {
       "cached": 5,
-      "preserved": 4,
-      "downloaded": 1,
-      "failures": [],
-      "photoPageUrl": "https://www.zumper.com/address/3349-dunbar-st-vancouver-bc-v6s-2b9-can"
-    },
-    "arbutus-residences-floorplan-2-bedroom-townhouse-den-1340": {
-      "cached": 5,
-      "preserved": 0,
-      "downloaded": 5,
-      "failures": [],
-      "photoPageUrl": "https://www.zumper.com/apartment-buildings/p1117150/arbutus-residences-quilchena-vancouver-bc"
-    },
-    "mls-r3159060": {
-      "cached": 5,
       "preserved": 5,
       "downloaded": 0,
       "failures": [],
-      "photoPageUrl": "https://realtylink.org/en/house~for-rent~vancouver/263180687"
+      "photoPageUrl": "https://www.zumper.com/address/3349-dunbar-st-vancouver-bc-v6s-2b9-can"
     },
     "fourth-mac-floorplan-2-bedroom-2-bath-801-4350": {
       "cached": 5,
@@ -111,12 +97,12 @@
       "preserved": 5,
       "downloaded": 0,
       "failures": [],
-      "photoPageUrl": "https://realtylink.org/en/house~for-rent~vancouver/263197226"
+      "photoPageUrl": "https://www.zumper.com/address/2000-w-43rd-ave-vancouver-bc-v6m-2c9-can"
     },
     "mls-r3173479": {
       "cached": 5,
-      "preserved": 0,
-      "downloaded": 5,
+      "preserved": 5,
+      "downloaded": 0,
       "failures": [],
       "photoPageUrl": "https://realtylink.org/en/house~for-rent~vancouver/263195106"
     },
@@ -140,36 +126,29 @@
       ],
       "photoPageUrl": "https://realtylink.org/en/house~for-rent~vancouver/263194860"
     },
-    "mls-r3174425": {
-      "cached": 5,
-      "preserved": 5,
-      "downloaded": 0,
-      "failures": [],
-      "photoPageUrl": "https://realtylink.org/en/house~for-rent~vancouver/263196052"
-    },
-    "mls-r3175318": {
-      "cached": 5,
-      "preserved": 5,
-      "downloaded": 0,
-      "failures": [],
-      "photoPageUrl": "https://realtylink.org/en/house~for-rent~vancouver/263196945"
-    },
     "zumper-3d502587bbc4": {
+      "cached": 5,
+      "preserved": 5,
+      "downloaded": 0,
+      "failures": [],
+      "photoPageUrl": "https://www.zumper.com/address/1969-w-43rd-ave-vancouver-bc-v6m-2c7-can"
+    },
+    "mls-r3172081": {
       "cached": 5,
       "preserved": 0,
       "downloaded": 5,
       "failures": [],
-      "photoPageUrl": "https://www.zumper.com/address/1969-w-43rd-ave-vancouver-bc-v6m-2c7-can"
+      "photoPageUrl": "https://realtylink.org/en/house~for-rent~vancouver/263193708"
     }
   },
   "totals": {
-    "sourceListings": 21,
-    "cachedListings": 21,
-    "downloaded": 16,
+    "sourceListings": 18,
+    "cachedListings": 18,
+    "downloaded": 5,
     "failed": 3,
-    "preserved": 85,
-    "prunedListings": 5,
-    "prunedIndexImages": 21,
+    "preserved": 81,
+    "prunedListings": 4,
+    "prunedIndexImages": 20,
     "prunedOrphanFiles": 0
   }
 }
