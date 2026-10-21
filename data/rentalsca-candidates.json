@@ -1,15 +1,15 @@
 {
-  "refreshedAt": "2026-10-21T15:12:21.551Z",
+  "refreshedAt": "2026-10-21T18:43:39.013Z",
   "mode": "candidate-only",
   "sourceHealth": {
     "rentalsca-kitsilano-2br": {
-      "checkedAt": "2026-10-21T15:12:21.551Z",
+      "checkedAt": "2026-10-21T18:43:39.013Z",
       "status": 403,
       "ok": false,
-      "finalUrl": "https://rentals.ca/vancouver/kitsilano/all-apartments-all-houses?__cf_chl_rt_tk=mt6XkPfF3P1Q4Zugtiz7q872ji9Dz.qeyhNmTgtlO4c-1792595541-1.0.1.1-SGFsdsI58mQfdrTSdQ.1ECyECPehSTNktP3dXdohAVE"
+      "finalUrl": "https://rentals.ca/vancouver/kitsilano/all-apartments-all-houses?__cf_chl_rt_tk=IHUp9tBN4qXlt2ktO_3ZoejtMxBtYNbIUJ3M6VacSx4-1792608219-1.0.1.1-jt1WZATuPeJyei.RsiJxu3y6pSdP9XRVK_y3chlGSFo"
     },
     "rentalsca-point-grey-2br": {
-      "checkedAt": "2026-10-21T15:12:21.551Z",
+      "checkedAt": "2026-10-21T18:43:39.013Z",
       "status": 200,
       "ok": true,
       "finalUrl": "https://rentals.ca/vancouver/west-point-grey",
@@ -22,7 +22,7 @@
       "detailUrlCount": 13
     },
     "rentalsca-arbutus-2br": {
-      "checkedAt": "2026-10-21T15:12:21.551Z",
+      "checkedAt": "2026-10-21T18:43:39.013Z",
       "status": 200,
       "ok": true,
       "finalUrl": "https://rentals.ca/vancouver/arbutus-ridge",
@@ -30,62 +30,76 @@
       "title": "Rentals.ca Arbutus Ridge Vancouver Apartments, Condos and Houses For Rent",
       "observedListingCount": 12,
       "challengeDetected": false,
-      "searchLeadCount": 5,
+      "searchLeadCount": 4,
       "addressLineCount": 5,
       "detailUrlCount": 10
     },
     "rentalsca-dunbar-2br": {
-      "checkedAt": "2026-10-21T15:12:21.551Z",
-      "status": 403,
-      "ok": false,
-      "finalUrl": "https://rentals.ca/vancouver/dunbar-southlands?__cf_chl_rt_tk=tz7ckY_HXLdc.3rwI.WgioromJPg1wJHLEDJSS3d9e4-1792595547-1.0.1.1-wUVOE6d59EL292kNFeIYprA4.QGFzwdZ3TgEZuu9pQU"
+      "checkedAt": "2026-10-21T18:43:39.013Z",
+      "status": 200,
+      "ok": true,
+      "finalUrl": "https://rentals.ca/vancouver/dunbar-southlands",
+      "detailLinkCount": 9,
+      "title": "Rentals.ca Dunbar-Southlands Vancouver Apartments, Condos and Houses For Rent",
+      "observedListingCount": 11,
+      "challengeDetected": false,
+      "searchLeadCount": 1,
+      "addressLineCount": 1,
+      "detailUrlCount": 10
     },
     "rentalsca-quilchena-2br": {
-      "checkedAt": "2026-10-21T15:12:21.551Z",
+      "checkedAt": "2026-10-21T18:43:39.013Z",
       "status": 404,
       "ok": false,
       "finalUrl": "https://rentals.ca/vancouver/quilchena"
     },
     "rentalsca-kitsilano-3br": {
-      "checkedAt": "2026-10-21T15:12:21.551Z",
-      "status": 429,
+      "checkedAt": "2026-10-21T18:43:39.013Z",
+      "status": 403,
       "ok": false,
-      "finalUrl": "https://rentals.ca/vancouver/kitsilano/3-bedrooms?__cf_chl_rt_tk=DYrCR3F3d03WwfE38vnaZM6oXnriuQ26FlcDvwXWdjk-1792595554-1.0.1.1-3RT5_bxm3TmKpJ6afYuqLwnOqM67Ev2SWcksKwpVlmA"
+      "finalUrl": "https://rentals.ca/vancouver/kitsilano/3-bedrooms?__cf_chl_rt_tk=o6on3_4oPxgVFv2b7Q7LOjdGBvBnjFohJv0QiSkLRXI-1792608228-1.0.1.1-_vuAgg242SYnAXPZH.YClDcsMp_yAk6TtuIKBGhgq4w"
     },
     "rentalsca-kitsilano-4br": {
-      "checkedAt": "2026-10-21T15:12:21.551Z",
-      "status": 429,
+      "checkedAt": "2026-10-21T18:43:39.013Z",
+      "status": 403,
       "ok": false,
-      "finalUrl": "https://rentals.ca/vancouver/kitsilano/4-bedrooms?__cf_chl_rt_tk=x1poQ4Wy9UHCRQ9aeu9f0IYPkFnt9X_ucky9uKcdqtE-1792595554-1.0.1.1-gDY8uvlwiuGqFbDxkQAu_sh1qRmdLIu4aSurlXVfo.4"
+      "finalUrl": "https://rentals.ca/vancouver/kitsilano/4-bedrooms?__cf_chl_rt_tk=WEPzN7zpfnVPpLShNgUtVGCf80ifO3Ryk88NGGJFkjo-1792608228-1.0.1.1-nJOLSevXuplX6OgsR8IVSAKjUo7Gacuzil66lhJ96Lc"
     },
     "rentalsca-vancouver-3br": {
-      "checkedAt": "2026-10-21T15:12:21.551Z",
-      "status": 429,
+      "checkedAt": "2026-10-21T18:43:39.013Z",
+      "status": 403,
       "ok": false,
-      "finalUrl": "https://rentals.ca/vancouver/3-bedrooms?__cf_chl_rt_tk=cZEiwxs_Ah7OBt3U8I3JHkPhuWHi23u6hxvq50gQ0QI-1792595554-1.0.1.1-HOghJ.w2VkhTA6HcvJkOgPdNbiRM0Ba17feE1Q9Srek"
+      "finalUrl": "https://rentals.ca/vancouver/3-bedrooms?__cf_chl_rt_tk=g_yRYBI5ThjlD5xJ26fK0CMoWOmwo2UoCCh.E98uWRM-1792608228-1.0.1.1-QDA0ViHP6xVYUtwQDAZa.0GOjJsjnRxARJccqjRaMP4"
     },
     "rentalsca-vancouver-4br": {
-      "checkedAt": "2026-10-21T15:12:21.551Z",
-      "status": 429,
-      "ok": false,
-      "finalUrl": "https://rentals.ca/vancouver/4-bedrooms?__cf_chl_rt_tk=pHQb6HO3hqGScQHw0fFLU5J5tcAu4tjCIjjS3DOD8.A-1792595554-1.0.1.1-aCegAH8v_Yw8r8PST49BJY9iiAYLeq1siTR1ILJ0PnA"
+      "checkedAt": "2026-10-21T18:43:39.013Z",
+      "status": 200,
+      "ok": true,
+      "finalUrl": "https://rentals.ca/vancouver/4-bedrooms",
+      "detailLinkCount": 30,
+      "title": "Vancouver 4 Bedroom Apartments Condos and Houses for Rent",
+      "observedListingCount": 334,
+      "challengeDetected": false,
+      "searchLeadCount": 1,
+      "addressLineCount": 3,
+      "detailUrlCount": 32
     }
   },
   "diagnostics": {
-    "searchResultCount": 21,
-    "searchAddressLines": 11,
-    "searchDetailLinks": 18,
+    "searchResultCount": 366,
+    "searchAddressLines": 15,
+    "searchDetailLinks": 57,
     "searchLeadCount": 3,
     "newSearchLeadCount": 3,
     "representedSearchLeadCount": 0,
     "revalidationSearchLeadCount": 0,
-    "detailUrls": 23,
+    "detailUrls": 65,
     "detailChecked": 3,
     "detailBlocked": 3,
     "detailNotFound": 0,
     "detailErrors": 0,
     "detailParsed": 0,
-    "detailSuppressed": 20,
+    "detailSuppressed": 62,
     "detailCircuitOpen": true
   },
   "searchLeads": [
@@ -99,7 +113,7 @@
       "bathrooms": 1,
       "source": "Rentals.ca search",
       "searchUrl": "https://rentals.ca/vancouver/west-point-grey",
-      "checkedAt": "2026-10-21T15:12:21.551Z",
+      "checkedAt": "2026-10-21T18:43:39.013Z",
       "publishable": false,
       "evidenceKind": "search_result_lead_only",
       "availabilityVerified": false,
@@ -118,10 +132,10 @@
       "rentMax": 3650,
       "bedroomMin": 2,
       "bedroomMax": 2,
-      "bathrooms": 1,
+      "bathrooms": 2,
       "source": "Rentals.ca search",
       "searchUrl": "https://rentals.ca/vancouver/arbutus-ridge",
-      "checkedAt": "2026-10-21T15:12:21.551Z",
+      "checkedAt": "2026-10-21T18:43:39.013Z",
       "publishable": false,
       "evidenceKind": "search_result_lead_only",
       "availabilityVerified": false,
@@ -134,20 +148,20 @@
       "matchedAvailabilityStatus": null
     },
     {
-      "identityKey": "4888 trafalgar street, vancouver, bc::8900::8900::3::3",
-      "address": "4888 Trafalgar Street, Vancouver, BC",
-      "rentMin": 8900,
-      "rentMax": 8900,
-      "bedroomMin": 3,
-      "bedroomMax": 3,
+      "identityKey": "135 west 12th avenue, vancouver, bc::3900::3900::4::4",
+      "address": "135 West 12th Avenue, Vancouver, BC",
+      "rentMin": 3900,
+      "rentMax": 3900,
+      "bedroomMin": 4,
+      "bedroomMax": 4,
       "bathrooms": 2,
       "source": "Rentals.ca search",
-      "searchUrl": "https://rentals.ca/vancouver/arbutus-ridge",
-      "checkedAt": "2026-10-21T15:12:21.551Z",
+      "searchUrl": "https://rentals.ca/vancouver/4-bedrooms",
+      "checkedAt": "2026-10-21T18:43:39.013Z",
       "publishable": false,
       "evidenceKind": "search_result_lead_only",
       "availabilityVerified": false,
-      "url": "https://rentals.ca/vancouver/4888-trafalgar-street",
+      "url": "https://rentals.ca/vancouver/135-west-12th-avenue",
       "leadStatus": "new_unverified_address",
       "addressMatchOnly": false,
       "matchingListingCount": 0,
