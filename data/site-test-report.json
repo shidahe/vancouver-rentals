@@ -1,11 +1,11 @@
 {
-  "checkedAt": "2026-10-20T18:37:28.843Z",
+  "checkedAt": "2026-10-21T15:14:57.028Z",
   "ok": true,
   "checkpoints": {
     "render": {
       "title": "Vancouver Westside Rentals",
-      "cards": 20,
-      "shown": 20
+      "cards": 19,
+      "shown": 19
     },
     "stats": {
       "labels": [
@@ -16,30 +16,29 @@
         "Last refreshed"
       ],
       "values": [
-        "20",
-        "3",
+        "19",
+        "2",
+        "5",
         "4",
-        "8",
-        "Oct 20, 11:27 a.m. PDT"
+        "Oct 21, 8:04 a.m. PDT"
       ],
-      "html": "<div class=\"stat\"><strong>20</strong><span>Active</span></div><div class=\"stat\"><strong>3</strong><span>New 7d</span></div><div class=\"stat\"><strong>4</strong><span>Price drops</span></div><div class=\"stat\"><strong>8</strong><span>To verify</span></div><div class=\"stat\"><strong>Oct 20, 11:27 a.m. PDT</strong><span>Last refreshed</span></div>",
+      "html": "<div class=\"stat\"><strong>19</strong><span>Active</span></div><div class=\"stat\"><strong>2</strong><span>New 7d</span></div><div class=\"stat\"><strong>5</strong><span>Price drops</span></div><div class=\"stat\"><strong>4</strong><span>To verify</span></div><div class=\"stat\"><strong>Oct 21, 8:04 a.m. PDT</strong><span>Last refreshed</span></div>",
       "refreshedAt": {
-        "displayed": "Oct 20, 11:27 a.m. PDT",
-        "expected": "Oct 20, 11:27 a.m. PDT",
+        "displayed": "Oct 21, 8:04 a.m. PDT",
+        "expected": "Oct 21, 8:04 a.m. PDT",
         "timezone": "America/Vancouver"
       },
       "newSevenDays": {
-        "expectedCount": 3,
+        "expectedCount": 2,
         "badgeIds": [
           "zumper-1754927f090e",
-          "zumper-3d502587bbc4",
-          "mls-r3175865"
+          "zumper-3d502587bbc4"
         ],
         "staleBadgeIds": []
       }
     },
     "map": {
-      "markers": 20,
+      "markers": 19,
       "desktopMapVisible": true
     },
     "filters": "ok",
@@ -50,14 +49,14 @@
     },
     "sourceLink": "https://www.craigslist.org/view/d/vancouver-bed-bath-fourth-mac-kitsilano/eiSLCKTVqsrtPUWpUpJyDN",
     "photos": {
-      "total": 20,
-      "loaded": 20,
+      "total": 19,
+      "loaded": 19,
       "fallbacks": 0,
       "bad": []
     },
     "markerPositions": {
-      "total": 20,
-      "unique": 20
+      "total": 19,
+      "unique": 19
     },
     "dataEndpoints": "ok",
     "mobile": "ok",

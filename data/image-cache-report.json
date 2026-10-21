@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-10-20T18:37:19.035Z",
+  "refreshedAt": "2026-10-21T15:14:51.052Z",
   "listings": {
     "york-103-2535-r3137446": {
       "cached": 5,
@@ -16,95 +16,80 @@
       "photoPageUrl": "https://www.arbutusrental.com/search"
     },
     "zumper-9157c4798023": {
-      "cached": 5,
-      "preserved": 5,
+      "cached": 8,
+      "preserved": 8,
       "downloaded": 0,
       "failures": [],
       "photoPageUrl": "https://www.zumper.com/address/2406-w-8th-ave-vancouver-bc-v6k-2b1-can"
     },
     "zumper-976e340c66a7": {
-      "cached": 5,
-      "preserved": 5,
+      "cached": 8,
+      "preserved": 8,
       "downloaded": 0,
       "failures": [],
       "photoPageUrl": "https://www.zumper.com/address/1533-maple-st-vancouver-bc-v6j-3s2-can"
     },
     "zumper-16e9ae17cd91": {
-      "cached": 5,
-      "preserved": 5,
-      "downloaded": 0,
-      "failures": [],
-      "photoPageUrl": "https://realtylink.org/en/townhouse~for-rent~vancouver/263182316"
-    },
-    "mls-r3151372": {
-      "cached": 2,
-      "preserved": 2,
+      "cached": 4,
+      "preserved": 4,
       "downloaded": 0,
       "failures": [
         {
-          "url": "https://media.realtylink.org/images/consumersite/property/263172999/f30edfe3c49c4660ba9111ae7e98814b.jpeg?width=320&height=240&fit=cover",
-          "error": "not a usable image (image/jpeg, 6584 bytes)"
+          "url": "https://media.realtylink.org/images/consumersite/property/263182316/9ff90dbf374c4802a4347969a0cae1e6.jpeg?width=320&height=240&fit=cover",
+          "error": "not a usable image (image/jpeg, 7500 bytes)"
         },
         {
-          "url": "https://media.realtylink.org/images/consumersite/property/263172999/dbad0a90c3ff4d6a81393b40751ce33a.jpeg?width=320&height=240&fit=cover",
-          "error": "not a usable image (image/jpeg, 7504 bytes)"
-        },
-        {
-          "url": "https://media.realtylink.org/images/consumersite/property/263172999/714b4bbc2050493b867e77ca36123841.jpeg?width=320&height=240&fit=cover",
-          "error": "not a usable image (image/jpeg, 7118 bytes)"
-        },
-        {
-          "url": "https://media.realtylink.org/images/consumersite/property/263172999/c5424aa8ec754c5dbde8b458e950da3a.jpeg?width=480&height=360&fit=cover",
+          "url": "https://media.realtylink.org/images/consumersite/property/263182316/00c50dbb1e294023bf398ae25ce0d515.jpeg?width=480&height=360&fit=cover",
           "error": "HTTP 400"
         }
       ],
-      "photoPageUrl": "https://realtylink.org/en/house~for-rent~vancouver/263172999"
+      "photoPageUrl": "https://realtylink.org/en/townhouse~for-rent~vancouver/263182316"
     },
     "kits-walk-floorplan-2-bedroom-741-3600": {
-      "cached": 5,
-      "preserved": 0,
-      "downloaded": 5,
+      "cached": 8,
+      "preserved": 8,
+      "downloaded": 0,
       "failures": [],
       "photoPageUrl": "https://rentals.ca/vancouver/kits-walk-by-strand"
     },
     "fourth-mac-floorplan-2-bedroom-2-bath-801-4350": {
-      "cached": 5,
-      "preserved": 5,
+      "cached": 8,
+      "preserved": 8,
       "downloaded": 0,
       "failures": [],
       "photoPageUrl": "https://www.craigslist.org/view/d/vancouver-bed-bath-fourth-mac-kitsilano/eiSLCKTVqsrtPUWpUpJyDN"
     },
     "yorkville-north-2br-den-979": {
-      "cached": 5,
-      "preserved": 5,
+      "cached": 8,
+      "preserved": 8,
       "downloaded": 0,
       "failures": [],
       "photoPageUrl": "https://www.craigslist.org/view/d/vancouver-ocean-view-2br-2ba-with-den/kZEyBrAFDhJYBcmtaq27m2"
     },
     "w16-coach-house-850": {
-      "cached": 5,
-      "preserved": 5,
+      "cached": 8,
+      "preserved": 8,
       "downloaded": 0,
       "failures": [],
       "photoPageUrl": "https://www.craigslist.org/view/d/vancouver-fully-furnished-designer-2br/dK4HrSygC6FiEijPJfe35N"
     },
-    "mls-r3167417": {
-      "cached": 5,
-      "preserved": 0,
-      "downloaded": 5,
-      "failures": [],
-      "photoPageUrl": "https://realtylink.org/en/house~for-rent~vancouver/263189044"
-    },
     "zumper-6f8b3ff2b9fd": {
-      "cached": 5,
-      "preserved": 5,
+      "cached": 8,
+      "preserved": 8,
       "downloaded": 0,
       "failures": [],
       "photoPageUrl": "https://www.zumper.com/address/4101-yew-st-vancouver-bc-v6l-3b7-can"
     },
-    "kits-walk-floorplan-2-bedroom-811-3675": {
+    "mls-r3165327": {
       "cached": 5,
       "preserved": 5,
+      "downloaded": 0,
+      "failures": [],
+      "photoPageUrl": "https://realtylink.org/en/apartment~for-rent~vancouver/263186954"
+    },
+    "kits-walk-floorplan-2-bedroom-811-3675": {
+      "cached": 8,
+      "preserved": 8,
       "downloaded": 0,
       "failures": [],
       "photoPageUrl": "https://rentals.ca/vancouver/kits-walk-by-strand"
@@ -117,56 +102,56 @@
       "photoPageUrl": "https://realtylink.org/en/house~for-rent~vancouver/263193839"
     },
     "zumper-86435797c322": {
-      "cached": 5,
-      "preserved": 5,
+      "cached": 8,
+      "preserved": 8,
       "downloaded": 0,
       "failures": [],
       "photoPageUrl": "https://www.zumper.com/address/2688-vine-st-vancouver-bc-v6k-4t6-can"
     },
     "zumper-8a4ac6a75244": {
-      "cached": 5,
-      "preserved": 5,
+      "cached": 8,
+      "preserved": 8,
       "downloaded": 0,
       "failures": [],
       "photoPageUrl": "https://www.zumper.com/address/2814-w-3rd-ave-vancouver-bc-v6k-1m7-can"
     },
     "zumper-dd642aebb4f6": {
+      "cached": 8,
+      "preserved": 8,
+      "downloaded": 0,
+      "failures": [],
+      "photoPageUrl": "https://realtylink.org/en/house~for-rent~vancouver/263197226"
+    },
+    "mls-r3174425": {
       "cached": 5,
       "preserved": 5,
       "downloaded": 0,
       "failures": [],
-      "photoPageUrl": "https://www.zumper.com/address/2000-w-43rd-ave-vancouver-bc-v6m-2c9-can"
+      "photoPageUrl": "https://realtylink.org/en/house~for-rent~vancouver/263196052"
     },
     "zumper-3d502587bbc4": {
-      "cached": 5,
-      "preserved": 5,
+      "cached": 8,
+      "preserved": 8,
       "downloaded": 0,
       "failures": [],
       "photoPageUrl": "https://www.zumper.com/address/1969-w-43rd-ave-vancouver-bc-v6m-2c7-can"
     },
     "zumper-1754927f090e": {
-      "cached": 5,
-      "preserved": 0,
-      "downloaded": 5,
+      "cached": 8,
+      "preserved": 8,
+      "downloaded": 0,
       "failures": [],
       "photoPageUrl": "https://www.zumper.com/address/3000-w-44th-ave-vancouver-bc-v6n-3k6-can"
-    },
-    "mls-r3175865": {
-      "cached": 5,
-      "preserved": 0,
-      "downloaded": 5,
-      "failures": [],
-      "photoPageUrl": "https://realtylink.org/en/house~for-rent~vancouver/263197492"
     }
   },
   "totals": {
-    "sourceListings": 20,
-    "cachedListings": 20,
-    "downloaded": 20,
-    "failed": 4,
-    "preserved": 75,
-    "prunedListings": 5,
-    "prunedIndexImages": 23,
-    "prunedOrphanFiles": 0
+    "sourceListings": 19,
+    "cachedListings": 19,
+    "downloaded": 0,
+    "failed": 2,
+    "preserved": 131,
+    "prunedListings": 77,
+    "prunedIndexImages": 473,
+    "prunedOrphanFiles": 40
   }
 }

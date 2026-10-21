@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-10-20T18:36:09.356Z",
+  "refreshedAt": "2026-10-21T15:13:55.975Z",
   "groups": [
     {
       "identityKey": "3349 dunbar st::url:fa963040c813",
@@ -64,16 +64,14 @@
     {
       "identityKey": "2688 vine st::unit:111",
       "sources": [
-        "zumper",
-        "craigslist"
+        "zumper"
       ],
       "rents": [
-        5950,
         5950
       ],
       "exactUnit": true,
       "matchedListingId": "zumper-86435797c322",
-      "result": "cross_verified_existing"
+      "result": "candidate_only"
     },
     {
       "identityKey": "1078 nicola st::url:14ca0bb47fe4",
@@ -91,6 +89,42 @@
       "identityKey": "2000 w 43rd ave::url:daba7b758265",
       "sources": [
         "zumper"
+      ],
+      "rents": [
+        4800
+      ],
+      "exactUnit": false,
+      "matchedListingId": null,
+      "result": "candidate_only"
+    },
+    {
+      "identityKey": "2475 w 4th ave near larch st::url:943dac01c7d6",
+      "sources": [
+        "craigslist"
+      ],
+      "rents": [
+        3600
+      ],
+      "exactUnit": false,
+      "matchedListingId": null,
+      "result": "candidate_only"
+    },
+    {
+      "identityKey": "2111 w 11th ave near arbutus st::url:598bf3bcd5e7",
+      "sources": [
+        "craigslist"
+      ],
+      "rents": [
+        3500
+      ],
+      "exactUnit": false,
+      "matchedListingId": null,
+      "result": "candidate_only"
+    },
+    {
+      "identityKey": "1888 york ave near cypress st::url:919308cdb569",
+      "sources": [
+        "craigslist"
       ],
       "rents": [
         5000
@@ -172,42 +206,6 @@
       "result": "candidate_only"
     },
     {
-      "identityKey": "2475 w 4th ave near larch st::url:943dac01c7d6",
-      "sources": [
-        "craigslist"
-      ],
-      "rents": [
-        3600
-      ],
-      "exactUnit": false,
-      "matchedListingId": null,
-      "result": "candidate_only"
-    },
-    {
-      "identityKey": "2111 w 11th ave near arbutus st::url:9380351bf41f",
-      "sources": [
-        "craigslist"
-      ],
-      "rents": [
-        3550
-      ],
-      "exactUnit": false,
-      "matchedListingId": null,
-      "result": "candidate_only"
-    },
-    {
-      "identityKey": "1888 york ave near cypress st::url:919308cdb569",
-      "sources": [
-        "craigslist"
-      ],
-      "rents": [
-        5000
-      ],
-      "exactUnit": false,
-      "matchedListingId": null,
-      "result": "candidate_only"
-    },
-    {
       "identityKey": "3000 w 17th ave::url:411612dab027",
       "sources": [
         "craigslist"
@@ -232,15 +230,15 @@
       "result": "candidate_only"
     },
     {
-      "identityKey": "mls:r3137446",
+      "identityKey": "mls:r3165327",
       "sources": [
         "realtylink mls"
       ],
       "rents": [
-        5500
+        4350
       ],
       "exactUnit": true,
-      "matchedListingId": "york-103-2535-r3137446",
+      "matchedListingId": "mls-r3165327",
       "result": "authoritative_mls_reverified"
     },
     {
@@ -256,15 +254,27 @@
       "result": "authoritative_mls_reverified"
     },
     {
-      "identityKey": "mls:r3151372",
+      "identityKey": "mls:r3137446",
       "sources": [
         "realtylink mls"
       ],
       "rents": [
-        4800
+        5500
+      ],
+      "exactUnit": true,
+      "matchedListingId": "york-103-2535-r3137446",
+      "result": "authoritative_mls_reverified"
+    },
+    {
+      "identityKey": "mls:r3174425",
+      "sources": [
+        "realtylink mls"
+      ],
+      "rents": [
+        14500
       ],
       "exactUnit": false,
-      "matchedListingId": "mls-r3151372",
+      "matchedListingId": "mls-r3174425",
       "result": "authoritative_mls_reverified"
     },
     {
@@ -276,57 +286,30 @@
         4000
       ],
       "exactUnit": false,
-      "matchedListingId": null,
-      "result": "auto_published_authoritative_mls"
-    },
-    {
-      "identityKey": "mls:r3172212",
-      "sources": [
-        "realtylink mls"
-      ],
-      "rents": [
-        6300
-      ],
-      "exactUnit": false,
-      "matchedListingId": "mls-r3172212",
+      "matchedListingId": "mls-r3175865",
       "result": "authoritative_mls_reverified"
     },
     {
-      "identityKey": "mls:r3167417",
+      "identityKey": "mls:r3175599",
       "sources": [
         "realtylink mls"
       ],
       "rents": [
-        6750
-      ],
-      "exactUnit": true,
-      "matchedListingId": "mls-r3167417",
-      "result": "authoritative_mls_reverified"
-    },
-    {
-      "identityKey": "mls:r3175848",
-      "sources": [
-        "realtylink mls"
-      ],
-      "rents": [
-        5500
+        4800
       ],
       "exactUnit": false,
-      "matchedListingId": "mls-r3175848",
+      "matchedListingId": "zumper-dd642aebb4f6",
       "result": "authoritative_mls_reverified"
     }
   ],
-  "promoted": [
-    "mls-r3175865"
-  ],
+  "promoted": [],
   "crossVerified": [
-    "zumper-86435797c322",
-    "york-103-2535-r3137446",
+    "mls-r3165327",
     "zumper-16e9ae17cd91",
-    "mls-r3151372",
-    "mls-r3172212",
-    "mls-r3167417",
-    "mls-r3175848"
+    "york-103-2535-r3137446",
+    "mls-r3174425",
+    "mls-r3175865",
+    "zumper-dd642aebb4f6"
   ],
   "fingerprintCrossVerified": [],
   "craigslistRelistingsRecovered": [],
@@ -335,43 +318,49 @@
   "relistedMlsMerged": [],
   "negativeMatches": [],
   "detailReactivated": [
-    "mls-r3167417"
+    "mls-r3165327",
+    "mls-r3174425"
   ],
   "mlsMissing": {
+    "R3151372": {
+      "firstMissingAt": "2026-10-21T15:13:55.975Z",
+      "lastMissingAt": "2026-10-21T15:13:55.975Z",
+      "listingId": "mls-r3151372"
+    },
     "R3163709": {
       "firstMissingAt": "2026-10-20T18:36:09.356Z",
-      "lastMissingAt": "2026-10-20T18:36:09.356Z",
+      "lastMissingAt": "2026-10-21T15:13:55.975Z",
       "listingId": "mls-r3163709"
     },
-    "R3165327": {
-      "firstMissingAt": "2026-10-20T18:36:09.356Z",
-      "lastMissingAt": "2026-10-20T18:36:09.356Z",
-      "listingId": "mls-r3165327"
+    "R3167417": {
+      "firstMissingAt": "2026-10-21T15:13:55.975Z",
+      "lastMissingAt": "2026-10-21T15:13:55.975Z",
+      "listingId": "mls-r3167417"
     },
     "R3173479": {
       "firstMissingAt": "2026-10-20T15:20:05.086Z",
-      "lastMissingAt": "2026-10-20T18:36:09.356Z",
+      "lastMissingAt": "2026-10-21T15:13:55.975Z",
       "listingId": "mls-r3173479"
-    },
-    "R3174425": {
-      "firstMissingAt": "2026-10-20T18:36:09.356Z",
-      "lastMissingAt": "2026-10-20T18:36:09.356Z",
-      "listingId": "mls-r3174425"
     },
     "R3175318": {
       "firstMissingAt": "2026-10-20T15:07:30.715Z",
-      "lastMissingAt": "2026-10-20T18:36:09.356Z",
+      "lastMissingAt": "2026-10-21T15:13:55.975Z",
       "listingId": "mls-r3175318"
     },
     "R3172081": {
       "firstMissingAt": "2026-10-20T15:29:33.874Z",
-      "lastMissingAt": "2026-10-20T18:36:09.356Z",
+      "lastMissingAt": "2026-10-21T15:13:55.975Z",
       "listingId": "mls-r3172081"
     }
   },
-  "mlsRemoved": [],
+  "mlsRemoved": [
+    "mls-r3163709",
+    "mls-r3173479",
+    "mls-r3175318",
+    "mls-r3172081"
+  ],
   "mlsStaleHidden": [],
-  "realtylinkSnapshotCount": 7,
+  "realtylinkSnapshotCount": 6,
   "realtylinkSnapshotHighWaterMark": 8,
   "realtylinkSnapshotScope": "rent-3500-beds-2-4-whole-home-westside-v3",
   "realtylinkRemovalEligible": true,
