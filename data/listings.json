@@ -4342,17 +4342,19 @@
       "url": "https://realtylink.org/en/house~for-rent~vancouver/263197492",
       "photoPageUrl": "https://realtylink.org/en/house~for-rent~vancouver/263197492",
       "firstSeen": "2026-10-20",
-      "lastChecked": "2026-10-20",
+      "lastChecked": "2026-10-21",
       "verifiedAt": "2026-10-20T18:36:09.356Z",
-      "verificationLevel": "verified",
-      "verificationMethod": "AUTO-PUBLISHED from current authoritative MLS inventory R3175865.",
-      "availabilityStatus": "active",
-      "status": "new",
+      "verificationLevel": "excluded_by_scope",
+      "verificationMethod": "Excluded by user search scope: house share or separately rented portion of a house.",
+      "availabilityStatus": "excluded",
+      "status": "excluded",
       "priceDrop": false,
       "evidenceSources": [
         "realtylink mls"
       ],
-      "dataNotes": "MLS number is the canonical identity; disappearance from the current MLS inventory triggers fail-closed revalidation."
+      "dataNotes": "MLS number is the canonical identity; disappearance from the current MLS inventory triggers fail-closed revalidation.",
+      "scopeExclusionReason": "house share or separately rented portion of a house",
+      "rentalScope": "shared_house"
     }
   ]
 }

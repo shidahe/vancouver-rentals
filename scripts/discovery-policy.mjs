@@ -64,3 +64,34 @@ export function matchingCrossSourceHousePortionEvidence(listing, candidates = []
   });
   return match?.description || '';
 }
+
+const canonicalPropertyAddress = value => String(value || '')
+  .toLowerCase()
+  .replace(/\b(?:west|w)\b/g, 'w')
+  .replace(/\b(?:east|e)\b/g, 'e')
+  .replace(/\b(\d+)(?:st|nd|rd|th)\b/g, '$1')
+  .replace(/\bavenue\b/g, 'ave')
+  .replace(/\bstreet\b/g, 'st')
+  .replace(/[^a-z0-9]+/g, ' ')
+  .trim();
+
+// Some houses are marketed as two independently rented portions under
+// different MLS numbers. Once precise evidence establishes that the property
+// itself is partitioned, every current listing at the same civic address and
+// coordinates is a house portion even when its rent/bed/sqft fingerprint differs.
+export function matchingPartitionedHousePropertyEvidence(listing, records = []) {
+  const listingAddress = canonicalPropertyAddress(listing?.address);
+  const listingLat = Number(listing?.lat ?? listing?.geo?.lat);
+  const listingLng = Number(listing?.lng ?? listing?.geo?.lng);
+  if (!listingAddress || !Number.isFinite(listingLat) || !Number.isFinite(listingLng)) return '';
+  const match = records.find(record => {
+    if (record?.propertyScope !== 'partitioned_house' || record?.identityVerified !== true ||
+        record?.active === false || !isHouseShareText(record?.description || '')) return false;
+    if (canonicalPropertyAddress(record.propertyAddress) !== listingAddress) return false;
+    const recordLat = Number(record?.geo?.lat ?? record?.lat);
+    const recordLng = Number(record?.geo?.lng ?? record?.lng);
+    return Number.isFinite(recordLat) && Number.isFinite(recordLng) &&
+      Math.abs(recordLat - listingLat) <= 0.0004 && Math.abs(recordLng - listingLng) <= 0.0004;
+  });
+  return match?.description || '';
+}

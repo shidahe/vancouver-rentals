@@ -2,7 +2,7 @@ import fs from 'node:fs/promises';
 import { civicAddressMatch, exactAddressUnitIdentity, findExistingSeedListing, listingMls, maskedCivicAddressMatch, mlsIdentity } from './inventory-identity.mjs';
 import { firstLikelyRent, parseFacts } from './listing-parser.mjs';
 import { isAutoManagedListing, isStalePendingAutoListing } from './stale-auto-policy.mjs';
-import { bedroomEligible, isHouseShareText, isTargetRentalAreaText, LISTING_SCOPE_VERSION, listingScopeEligible, matchingCrossSourceHousePortionEvidence, rentEligible } from './discovery-policy.mjs';
+import { bedroomEligible, isHouseShareText, isTargetRentalAreaText, LISTING_SCOPE_VERSION, listingScopeEligible, matchingCrossSourceHousePortionEvidence, matchingPartitionedHousePropertyEvidence, rentEligible } from './discovery-policy.mjs';
 import { aggregateUnitCount, discoveredStructuredInventories, priorityInventoryEvidenceHealthy, rentCafeExactUnits, rentCafeUnpricedUnits, structuredRentalInventories } from './priority-inventory-policy.mjs';
 import { dedupeHistoryEvents, pruneExcludedScopeChurn } from './history-policy.mjs';
 import { verifiedPhotoCandidates } from './listing-photo-candidates.mjs';
@@ -92,13 +92,19 @@ if (listingScopeEligible(r3173689Portion, r3173689Evidence) ||
 const r3175848Listing={mls:'R3175848',rent:5500,bedrooms:4,bathrooms:2,sqft:1753,address:'2945 W 12 Avenue',lat:49.26165,lng:-123.17111};
 const r3175848Craigslist=scopeCrossSourceEvidence.records.find(item=>item.listingId==='mls-r3175848');
 const r3175848CrossSourceText=matchingCrossSourceHousePortionEvidence(r3175848Listing,[r3175848Craigslist]);
+const r3175865UpperPortion={mls:'R3175865',rent:4000,bedrooms:2,bathrooms:1,sqft:1181,address:'2945 W 12th Avenue',lat:49.26163,lng:-123.17113};
+const r3175865PropertyText=matchingPartitionedHousePropertyEvidence(r3175865UpperPortion,scopeCrossSourceEvidence.records);
 if (!r3175848Craigslist || r3175848Craigslist.identityVerified!==true ||
     !r3175848CrossSourceText ||
     !isHouseShareText(r3175848CrossSourceText) ||
     listingScopeEligible(r3175848Listing,r3175848CrossSourceText) ||
     matchingCrossSourceHousePortionEvidence({...r3175848Listing,rent:5600},[r3175848Craigslist]) ||
-    matchingCrossSourceHousePortionEvidence({...r3175848Listing,lat:49.27},[r3175848Craigslist])) {
-  failures.push('R3175848 / 2945 W 12 regression: precise current cross-source evidence can fail to exclude a separately rented house portion.');
+    matchingCrossSourceHousePortionEvidence({...r3175848Listing,lat:49.27},[r3175848Craigslist]) ||
+    !r3175865PropertyText ||
+    listingScopeEligible(r3175865UpperPortion,r3175865PropertyText) ||
+    matchingPartitionedHousePropertyEvidence({...r3175865UpperPortion,address:'2947 W 12th Avenue'},scopeCrossSourceEvidence.records) ||
+    matchingPartitionedHousePropertyEvidence({...r3175865UpperPortion,lat:49.27},scopeCrossSourceEvidence.records)) {
+  failures.push('2945 W 12 regression: precise property-level evidence can fail to exclude separately rented portions under a different MLS number.');
 }
 const valleyDrivePetPolicy = 'Lease Requirement:\n- No smoking, No pets\nOne sec, gathering the Nearby Pet Friendly';
 if (zumperPetFriendly({ petsAllowed: true }, valleyDrivePetPolicy) !== false ||

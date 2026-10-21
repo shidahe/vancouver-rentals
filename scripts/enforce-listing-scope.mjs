@@ -1,6 +1,6 @@
 import fs from 'node:fs/promises';
 import path from 'node:path';
-import { bedroomEligible, isHouseShareText, isTargetRentalAreaText, matchingCrossSourceHousePortionEvidence, rentEligible } from './discovery-policy.mjs';
+import { bedroomEligible, isHouseShareText, isTargetRentalAreaText, matchingCrossSourceHousePortionEvidence, matchingPartitionedHousePropertyEvidence, rentEligible } from './discovery-policy.mjs';
 
 const DATA=path.join(process.cwd(),'data');
 const EVIDENCE=path.join(DATA,'evidence');
@@ -47,7 +47,8 @@ async function evidenceText(listing){
 const excluded=[];
 for(const listing of db.listings||[]){
   const directText=await evidenceText(listing);
-  const persistedScopeText=(persistedScopeEvidence.records||[]).find(item=>item.listingId===listing.id&&item.identityVerified===true&&isHouseShareText(item.description||''))?.description||'';
+  const persistedScopeText=(persistedScopeEvidence.records||[]).find(item=>item.listingId===listing.id&&item.identityVerified===true&&isHouseShareText(item.description||''))?.description||
+    matchingPartitionedHousePropertyEvidence(listing,persistedScopeEvidence.records||[]);
   const crossSourceText=persistedScopeText||matchingCrossSourceHousePortionEvidence(listing,craigslist.candidates||[]);
   const text=[directText,crossSourceText].filter(Boolean).join('\n');
   let reason=null;
