@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-10-22T15:18:36.371Z",
+  "refreshedAt": "2026-10-22T18:39:47.565Z",
   "groups": [
     {
       "identityKey": "3349 dunbar st::url:fa963040c813",
@@ -98,6 +98,42 @@
       "result": "candidate_only"
     },
     {
+      "identityKey": "4588 w 2nd ave near tolmie st::url:28f49cb02b98",
+      "sources": [
+        "craigslist"
+      ],
+      "rents": [
+        15000
+      ],
+      "exactUnit": false,
+      "matchedListingId": null,
+      "result": "candidate_only"
+    },
+    {
+      "identityKey": "4455 w 9th ave::url:a00848ac2e03",
+      "sources": [
+        "craigslist"
+      ],
+      "rents": [
+        4800
+      ],
+      "exactUnit": false,
+      "matchedListingId": null,
+      "result": "candidate_only"
+    },
+    {
+      "identityKey": "2118 w 15 ave 2f::url:4fa954a05948",
+      "sources": [
+        "craigslist"
+      ],
+      "rents": [
+        4800
+      ],
+      "exactUnit": false,
+      "matchedListingId": null,
+      "result": "candidate_only"
+    },
+    {
       "identityKey": "1777 w 7th ave::url:a8a11c9029d0",
       "sources": [
         "craigslist"
@@ -134,48 +170,12 @@
       "result": "candidate_only"
     },
     {
-      "identityKey": "4588 w 2nd ave near tolmie st::url:28f49cb02b98",
-      "sources": [
-        "craigslist"
-      ],
-      "rents": [
-        15000
-      ],
-      "exactUnit": false,
-      "matchedListingId": null,
-      "result": "candidate_only"
-    },
-    {
       "identityKey": "3750 w 17th ave::url:34bd5c762614",
       "sources": [
         "craigslist"
       ],
       "rents": [
         3600
-      ],
-      "exactUnit": false,
-      "matchedListingId": null,
-      "result": "candidate_only"
-    },
-    {
-      "identityKey": "4455 w 9th ave::url:a00848ac2e03",
-      "sources": [
-        "craigslist"
-      ],
-      "rents": [
-        4800
-      ],
-      "exactUnit": false,
-      "matchedListingId": null,
-      "result": "candidate_only"
-    },
-    {
-      "identityKey": "2118 w 15 ave 2f::url:19ae5f1ccfb2",
-      "sources": [
-        "craigslist"
-      ],
-      "rents": [
-        4800
       ],
       "exactUnit": false,
       "matchedListingId": null,
@@ -230,15 +230,15 @@
       "result": "authoritative_mls_reverified"
     },
     {
-      "identityKey": "mls:r3151372",
+      "identityKey": "mls:r3175318",
       "sources": [
         "realtylink mls"
       ],
       "rents": [
-        4800
+        4000
       ],
       "exactUnit": false,
-      "matchedListingId": "mls-r3151372",
+      "matchedListingId": "mls-r3175318",
       "result": "authoritative_mls_reverified"
     },
     {
@@ -254,6 +254,30 @@
       "result": "authoritative_mls_reverified"
     },
     {
+      "identityKey": "mls:r3173479",
+      "sources": [
+        "realtylink mls"
+      ],
+      "rents": [
+        3900
+      ],
+      "exactUnit": true,
+      "matchedListingId": "mls-r3173479",
+      "result": "authoritative_mls_reverified"
+    },
+    {
+      "identityKey": "mls:r3159060",
+      "sources": [
+        "realtylink mls"
+      ],
+      "rents": [
+        15000
+      ],
+      "exactUnit": false,
+      "matchedListingId": "mls-r3159060",
+      "result": "authoritative_mls_reverified"
+    },
+    {
       "identityKey": "mls:r3167417",
       "sources": [
         "realtylink mls"
@@ -263,18 +287,6 @@
       ],
       "exactUnit": true,
       "matchedListingId": "mls-r3167417",
-      "result": "authoritative_mls_reverified"
-    },
-    {
-      "identityKey": "mls:r3175599",
-      "sources": [
-        "realtylink mls"
-      ],
-      "rents": [
-        4800
-      ],
-      "exactUnit": false,
-      "matchedListingId": "zumper-dd642aebb4f6",
       "result": "authoritative_mls_reverified"
     },
     {
@@ -288,16 +300,30 @@
       "exactUnit": false,
       "matchedListingId": "mls-r3172212",
       "result": "authoritative_mls_reverified"
+    },
+    {
+      "identityKey": "mls:r3175599",
+      "sources": [
+        "realtylink mls"
+      ],
+      "rents": [
+        4800
+      ],
+      "exactUnit": false,
+      "matchedListingId": "zumper-dd642aebb4f6",
+      "result": "authoritative_mls_reverified"
     }
   ],
   "promoted": [],
   "crossVerified": [
     "zumper-16e9ae17cd91",
-    "mls-r3151372",
+    "mls-r3175318",
     "mls-r3172081",
+    "mls-r3173479",
+    "mls-r3159060",
     "mls-r3167417",
-    "zumper-dd642aebb4f6",
-    "mls-r3172212"
+    "mls-r3172212",
+    "zumper-dd642aebb4f6"
   ],
   "fingerprintCrossVerified": [],
   "craigslistRelistingsRecovered": [],
@@ -306,23 +332,30 @@
   "relistedMlsMerged": [],
   "negativeMatches": [],
   "detailReactivated": [
-    "mls-r3167417"
+    "mls-r3159060",
+    "mls-r3173479",
+    "mls-r3175318"
   ],
   "mlsMissing": {
+    "R3151372": {
+      "firstMissingAt": "2026-10-22T18:39:47.565Z",
+      "lastMissingAt": "2026-10-22T18:39:47.565Z",
+      "listingId": "mls-r3151372"
+    },
     "R3165327": {
       "firstMissingAt": "2026-10-22T15:18:36.371Z",
-      "lastMissingAt": "2026-10-22T15:18:36.371Z",
+      "lastMissingAt": "2026-10-22T18:39:47.565Z",
       "listingId": "mls-r3165327"
     },
     "R3174425": {
       "firstMissingAt": "2026-10-22T15:18:36.371Z",
-      "lastMissingAt": "2026-10-22T15:18:36.371Z",
+      "lastMissingAt": "2026-10-22T18:39:47.565Z",
       "listingId": "mls-r3174425"
     }
   },
   "mlsRemoved": [],
   "mlsStaleHidden": [],
-  "realtylinkSnapshotCount": 6,
+  "realtylinkSnapshotCount": 8,
   "realtylinkSnapshotHighWaterMark": 8,
   "realtylinkSnapshotScope": "rent-3500-beds-2-4-whole-home-westside-v3",
   "realtylinkRemovalEligible": true,

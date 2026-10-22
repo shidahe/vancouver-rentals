@@ -2391,6 +2391,11 @@
       "date": "2026-10-20",
       "rent": 15000,
       "note": "AUTO-REMOVED after direct live verification found explicit unavailable evidence."
+    },
+    {
+      "date": "2026-10-22",
+      "rent": 15000,
+      "note": "CORRECTED: restored after exact current MLS detail matched identity, explicit availability and rent."
     }
   ],
   "mls-r3149267": [
@@ -3319,6 +3324,11 @@
       "date": "2026-10-21",
       "rent": 3900,
       "note": "AUTO-REMOVED: MLS R3173479 absent from two consecutive healthy inventory snapshots."
+    },
+    {
+      "date": "2026-10-22",
+      "rent": 3900,
+      "note": "CORRECTED: restored after exact current MLS detail matched identity, explicit availability and rent."
     }
   ],
   "mls-r3173233": [
@@ -3488,6 +3498,11 @@
       "date": "2026-10-21",
       "rent": 4000,
       "note": "AUTO-REMOVED: MLS R3175318 absent from two consecutive healthy inventory snapshots."
+    },
+    {
+      "date": "2026-10-22",
+      "rent": 4000,
+      "note": "CORRECTED: restored after exact current MLS detail matched identity, explicit availability and rent."
     }
   ],
   "mls-r3176251": [

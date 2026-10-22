@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-10-22T15:19:27.151Z",
-  "activeCount": 19,
+  "generatedAt": "2026-10-22T18:40:41.872Z",
+  "activeCount": 21,
   "decisionReady": true,
   "readinessStatus": "finalized",
   "highIssueCount": 0,
   "mediumIssueCount": 0,
-  "infoIssueCount": 32,
+  "infoIssueCount": 36,
   "issues": [
     {
       "severity": "info",
@@ -54,17 +54,22 @@
     },
     {
       "severity": "info",
-      "id": "mls-r3151372",
-      "issue": "unknown-orientation"
-    },
-    {
-      "severity": "info",
       "id": "kits-walk-floorplan-2-bedroom-741-3600",
       "issue": "unknown-ac"
     },
     {
       "severity": "info",
       "id": "kits-walk-floorplan-2-bedroom-741-3600",
+      "issue": "unknown-orientation"
+    },
+    {
+      "severity": "info",
+      "id": "mls-r3159060",
+      "issue": "unknown-ac"
+    },
+    {
+      "severity": "info",
+      "id": "mls-r3159060",
       "issue": "unknown-orientation"
     },
     {
@@ -139,6 +144,21 @@
     },
     {
       "severity": "info",
+      "id": "mls-r3173479",
+      "issue": "unknown-orientation"
+    },
+    {
+      "severity": "info",
+      "id": "mls-r3175318",
+      "issue": "unknown-ac"
+    },
+    {
+      "severity": "info",
+      "id": "mls-r3175318",
+      "issue": "unknown-orientation"
+    },
+    {
+      "severity": "info",
       "id": "zumper-3d502587bbc4",
       "issue": "unknown-ac"
     },
@@ -171,8 +191,8 @@
   "readinessChecks": {
     "smokeOk": true,
     "smokeFresh": true,
-    "smokeCheckedAt": "2026-10-22T15:19:32.231Z",
-    "latestDataAt": "2026-10-22T15:18:42.994Z",
+    "smokeCheckedAt": "2026-10-22T18:40:47.449Z",
+    "latestDataAt": "2026-10-22T18:39:54.722Z",
     "coverageReady": true,
     "healthyDiscoveryLanes": 3,
     "coverageWarnings": [
@@ -180,16 +200,28 @@
         "severity": "warning",
         "lane": "rentalsca",
         "status": "degraded",
-        "detail": "3/9 regional searches reachable; 0 qualifying candidates parsed; 11 scoped search-only leads retained (11 new, 0 already active, 0 need revalidation); 3 detail pages blocked after 70 discovered URLs; 67 further detail checks suppressed after repeated 403/429"
+        "detail": "6/9 regional searches reachable; 0 qualifying candidates parsed; 15 scoped search-only leads retained (15 new, 0 already active, 0 need revalidation); 3 detail pages blocked after 85 discovered URLs; 82 further detail checks suppressed after repeated 403/429"
       },
       {
         "severity": "warning",
         "lane": "livrent",
         "status": "unhealthy",
         "detail": "0/5 searches healthy; 3 blocked searches opened circuit; 2 further checks suppressed"
+      },
+      {
+        "severity": "warning",
+        "lane": "priority-viridian-unpriced-unit",
+        "status": "price-unverified",
+        "detail": "Viridian unit 0103 (2BR) is offered for Now, but official rent is withheld; do not publish before verifying rent >= CAD $3,500"
+      },
+      {
+        "severity": "warning",
+        "lane": "priority-viridian-unpriced-unit",
+        "status": "price-unverified",
+        "detail": "Viridian unit 0309 (2BR) is offered for Oct 30, but official rent is withheld; do not publish before verifying rent >= CAD $3,500"
       }
     ]
   },
   "readinessIssues": [],
-  "finalizedAt": "2026-10-22T15:19:32.328Z"
+  "finalizedAt": "2026-10-22T18:40:47.563Z"
 }

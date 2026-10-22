@@ -1,11 +1,11 @@
 {
-  "checkedAt": "2026-10-22T15:19:32.231Z",
+  "checkedAt": "2026-10-22T18:40:47.449Z",
   "ok": true,
   "checkpoints": {
     "render": {
       "title": "Vancouver Westside Rentals",
-      "cards": 19,
-      "shown": 19
+      "cards": 21,
+      "shown": 21
     },
     "stats": {
       "labels": [
@@ -16,21 +16,22 @@
         "Last refreshed"
       ],
       "values": [
-        "19",
-        "3",
+        "21",
         "4",
-        "3",
-        "Oct 22, 8:10 a.m. PDT"
+        "5",
+        "4",
+        "Oct 22, 11:31 a.m. PDT"
       ],
-      "html": "<div class=\"stat\"><strong>19</strong><span>Active</span></div><div class=\"stat\"><strong>3</strong><span>New 7d</span></div><div class=\"stat\"><strong>4</strong><span>Price drops</span></div><div class=\"stat\"><strong>3</strong><span>To verify</span></div><div class=\"stat\"><strong>Oct 22, 8:10 a.m. PDT</strong><span>Last refreshed</span></div>",
+      "html": "<div class=\"stat\"><strong>21</strong><span>Active</span></div><div class=\"stat\"><strong>4</strong><span>New 7d</span></div><div class=\"stat\"><strong>5</strong><span>Price drops</span></div><div class=\"stat\"><strong>4</strong><span>To verify</span></div><div class=\"stat\"><strong>Oct 22, 11:31 a.m. PDT</strong><span>Last refreshed</span></div>",
       "refreshedAt": {
-        "displayed": "Oct 22, 8:10 a.m. PDT",
-        "expected": "Oct 22, 8:10 a.m. PDT",
+        "displayed": "Oct 22, 11:31 a.m. PDT",
+        "expected": "Oct 22, 11:31 a.m. PDT",
         "timezone": "America/Vancouver"
       },
       "newSevenDays": {
-        "expectedCount": 3,
+        "expectedCount": 4,
         "badgeIds": [
+          "mls-r3175318",
           "zumper-1754927f090e",
           "zumper-3d502587bbc4",
           "mls-r3172081"
@@ -39,7 +40,7 @@
       }
     },
     "map": {
-      "markers": 19,
+      "markers": 21,
       "desktopMapVisible": true
     },
     "filters": "ok",
@@ -50,14 +51,14 @@
     },
     "sourceLink": "https://www.zumper.com/apartment-buildings/p1117150/arbutus-residences-quilchena-vancouver-bc",
     "photos": {
-      "total": 19,
-      "loaded": 19,
+      "total": 21,
+      "loaded": 21,
       "fallbacks": 0,
       "bad": []
     },
     "markerPositions": {
-      "total": 19,
-      "unique": 19
+      "total": 21,
+      "unique": 21
     },
     "dataEndpoints": "ok",
     "mobile": "ok",
