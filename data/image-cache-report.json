@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-10-21T18:46:01.020Z",
+  "refreshedAt": "2026-10-22T15:19:25.743Z",
   "listings": {
     "solo-2228-marstrand": {
       "cached": 3,
@@ -24,15 +24,27 @@
     },
     "zumper-16e9ae17cd91": {
       "cached": 5,
-      "preserved": 4,
-      "downloaded": 1,
+      "preserved": 5,
+      "downloaded": 0,
       "failures": [],
-      "photoPageUrl": "https://www.zumper.com/address/3349-dunbar-st-vancouver-bc-v6s-2b9-can"
+      "photoPageUrl": "https://realtylink.org/en/townhouse~for-rent~vancouver/263182316"
+    },
+    "arbutus-residences-floorplan-2-bedroom-townhouse-den-1340": {
+      "cached": 5,
+      "preserved": 0,
+      "downloaded": 5,
+      "failures": [
+        {
+          "url": "https://img.zumpercdn.com/882527203/1280x960?dpr=1&fit=crop&h=222&q=76&w=394",
+          "error": "not a usable image (image/webp, 7396 bytes)"
+        }
+      ],
+      "photoPageUrl": "https://www.zumper.com/apartment-buildings/p1117150/arbutus-residences-quilchena-vancouver-bc"
     },
     "mls-r3151372": {
       "cached": 2,
-      "preserved": 0,
-      "downloaded": 2,
+      "preserved": 2,
+      "downloaded": 0,
       "failures": [
         {
           "url": "https://media.realtylink.org/images/consumersite/property/263172999/f30edfe3c49c4660ba9111ae7e98814b.jpeg?width=320&height=240&fit=cover",
@@ -74,19 +86,19 @@
       "failures": [],
       "photoPageUrl": "https://www.craigslist.org/view/d/vancouver-fully-furnished-designer-2br/dK4HrSygC6FiEijPJfe35N"
     },
+    "mls-r3167417": {
+      "cached": 5,
+      "preserved": 0,
+      "downloaded": 5,
+      "failures": [],
+      "photoPageUrl": "https://realtylink.org/en/house~for-rent~vancouver/263189044"
+    },
     "zumper-6f8b3ff2b9fd": {
       "cached": 5,
       "preserved": 5,
       "downloaded": 0,
       "failures": [],
       "photoPageUrl": "https://www.zumper.com/address/4101-yew-st-vancouver-bc-v6l-3b7-can"
-    },
-    "mls-r3165327": {
-      "cached": 5,
-      "preserved": 5,
-      "downloaded": 0,
-      "failures": [],
-      "photoPageUrl": "https://realtylink.org/en/apartment~for-rent~vancouver/263186954"
     },
     "kits-walk-floorplan-2-bedroom-811-3675": {
       "cached": 5,
@@ -121,14 +133,7 @@
       "preserved": 5,
       "downloaded": 0,
       "failures": [],
-      "photoPageUrl": "https://www.zumper.com/address/2000-w-43rd-ave-vancouver-bc-v6m-2c9-can"
-    },
-    "mls-r3174425": {
-      "cached": 5,
-      "preserved": 5,
-      "downloaded": 0,
-      "failures": [],
-      "photoPageUrl": "https://realtylink.org/en/house~for-rent~vancouver/263196052"
+      "photoPageUrl": "https://realtylink.org/en/house~for-rent~vancouver/263197226"
     },
     "zumper-3d502587bbc4": {
       "cached": 5,
@@ -139,8 +144,8 @@
     },
     "mls-r3172081": {
       "cached": 5,
-      "preserved": 0,
-      "downloaded": 5,
+      "preserved": 5,
+      "downloaded": 0,
       "failures": [],
       "photoPageUrl": "https://realtylink.org/en/house~for-rent~vancouver/263193708"
     },
@@ -155,9 +160,9 @@
   "totals": {
     "sourceListings": 19,
     "cachedListings": 19,
-    "downloaded": 8,
-    "failed": 4,
-    "preserved": 82,
+    "downloaded": 10,
+    "failed": 5,
+    "preserved": 80,
     "prunedListings": 2,
     "prunedIndexImages": 10,
     "prunedOrphanFiles": 0

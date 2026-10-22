@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-10-21T18:46:02.000Z",
+  "generatedAt": "2026-10-22T15:19:27.151Z",
   "activeCount": 19,
   "decisionReady": true,
   "readinessStatus": "finalized",
   "highIssueCount": 0,
   "mediumIssueCount": 0,
-  "infoIssueCount": 34,
+  "infoIssueCount": 32,
   "issues": [
     {
       "severity": "info",
@@ -35,6 +35,11 @@
     {
       "severity": "info",
       "id": "zumper-976e340c66a7",
+      "issue": "unknown-orientation"
+    },
+    {
+      "severity": "info",
+      "id": "arbutus-residences-floorplan-2-bedroom-townhouse-den-1340",
       "issue": "unknown-orientation"
     },
     {
@@ -74,22 +79,17 @@
     },
     {
       "severity": "info",
-      "id": "zumper-6f8b3ff2b9fd",
-      "issue": "unknown-ac"
-    },
-    {
-      "severity": "info",
-      "id": "zumper-6f8b3ff2b9fd",
+      "id": "mls-r3167417",
       "issue": "unknown-orientation"
     },
     {
       "severity": "info",
-      "id": "mls-r3165327",
+      "id": "zumper-6f8b3ff2b9fd",
       "issue": "unknown-ac"
     },
     {
       "severity": "info",
-      "id": "mls-r3165327",
+      "id": "zumper-6f8b3ff2b9fd",
       "issue": "unknown-orientation"
     },
     {
@@ -139,16 +139,6 @@
     },
     {
       "severity": "info",
-      "id": "mls-r3174425",
-      "issue": "unknown-ac"
-    },
-    {
-      "severity": "info",
-      "id": "mls-r3174425",
-      "issue": "unknown-orientation"
-    },
-    {
-      "severity": "info",
       "id": "zumper-3d502587bbc4",
       "issue": "unknown-ac"
     },
@@ -181,8 +171,8 @@
   "readinessChecks": {
     "smokeOk": true,
     "smokeFresh": true,
-    "smokeCheckedAt": "2026-10-21T18:46:07.618Z",
-    "latestDataAt": "2026-10-21T18:45:14.642Z",
+    "smokeCheckedAt": "2026-10-22T15:19:32.231Z",
+    "latestDataAt": "2026-10-22T15:18:42.994Z",
     "coverageReady": true,
     "healthyDiscoveryLanes": 3,
     "coverageWarnings": [
@@ -190,22 +180,16 @@
         "severity": "warning",
         "lane": "rentalsca",
         "status": "degraded",
-        "detail": "4/9 regional searches reachable; 0 qualifying candidates parsed; 3 scoped search-only leads retained (3 new, 0 already active, 0 need revalidation); 3 detail pages blocked after 65 discovered URLs; 62 further detail checks suppressed after repeated 403/429"
+        "detail": "3/9 regional searches reachable; 0 qualifying candidates parsed; 11 scoped search-only leads retained (11 new, 0 already active, 0 need revalidation); 3 detail pages blocked after 70 discovered URLs; 67 further detail checks suppressed after repeated 403/429"
       },
       {
         "severity": "warning",
         "lane": "livrent",
         "status": "unhealthy",
         "detail": "0/5 searches healthy; 3 blocked searches opened circuit; 2 further checks suppressed"
-      },
-      {
-        "severity": "warning",
-        "lane": "realtylink",
-        "status": "degraded",
-        "detail": "3/3 searches reachable; 4 current live candidates parsed from a partial snapshot versus complete baseline 8; positive discovery usable, removals suppressed"
       }
     ]
   },
   "readinessIssues": [],
-  "finalizedAt": "2026-10-21T18:46:07.721Z"
+  "finalizedAt": "2026-10-22T15:19:32.328Z"
 }

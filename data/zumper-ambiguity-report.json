@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-21T18:43:38.484Z",
+  "generatedAt": "2026-10-22T15:17:09.138Z",
   "checkedCount": 6,
   "quarantinedCount": 0,
   "checked": [
@@ -25,6 +25,13 @@
       "highPrice": 5250
     },
     {
+      "identityKey": "2000 w 43rd ave::url:daba7b758265",
+      "url": "https://www.zumper.com/address/2000-w-43rd-ave-vancouver-bc-v6m-2c9-can",
+      "ambiguous": false,
+      "lowPrice": 4800,
+      "highPrice": 4800
+    },
+    {
       "identityKey": "3000 w 44th ave::url:e02801d5a772",
       "url": "https://www.zumper.com/address/3000-w-44th-ave-vancouver-bc-v6n-3k6-can",
       "ambiguous": false,
@@ -37,13 +44,6 @@
       "ambiguous": false,
       "lowPrice": 4600,
       "highPrice": 4600
-    },
-    {
-      "identityKey": "2000 w 43rd ave::url:daba7b758265",
-      "url": "https://www.zumper.com/address/2000-w-43rd-ave-vancouver-bc-v6m-2c9-can",
-      "ambiguous": false,
-      "lowPrice": 4800,
-      "highPrice": 4800
     }
   ],
   "quarantined": []
