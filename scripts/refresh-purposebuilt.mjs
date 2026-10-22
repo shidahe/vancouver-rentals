@@ -3,7 +3,7 @@ import path from 'node:path';
 import { chromium } from 'playwright';
 import { verifiedPhotoCandidates } from './listing-photo-candidates.mjs';
 import { discoveredStructuredInventories, structuredRentalInventories } from './priority-inventory-policy.mjs';
-import { samePurposeBuiltFloorplanIdentity } from './purposebuilt-floorplan-evidence.mjs';
+import { purposeBuiltFloorplanId, samePurposeBuiltFloorplanIdentity } from './purposebuilt-floorplan-evidence.mjs';
 
 const DATA=path.join(process.cwd(),'data');
 const read=async(p,d)=>{try{return JSON.parse(await fs.readFile(p,'utf8'))}catch{return d}};
@@ -111,7 +111,8 @@ for(const b of cfg.buildings||[]){
     }
 
     if(!listing){
-      const id=`${slug(b.name)}-${inv.unit?`unit-${slug(inv.unit)}`:`floorplan-${slug(inv.key)}`}`;
+      const id=purposeBuiltFloorplanId(b.name,inv);
+      if(!id) throw new Error(`Cannot create stable purpose-built identity for ${b.name}: ${JSON.stringify(inv)}`);
       listing={
         id,buildingName:b.name,unit:inv.unit||inv.label,address:b.address,neighborhood:b.neighborhood,type:'purpose-built',
         rent:inv.rent,effectiveRent:null,bedrooms:inv.bedrooms,bathrooms:inv.bathrooms,sqft:inv.sqft,
@@ -141,7 +142,7 @@ for(const b of cfg.buildings||[]){
       duplicate.verificationMethod=`Merged into ${listing.id}: same purpose-built floorplan identity; rent is an updateable fact, not identity.`;
       history[duplicate.id] ||= [];
       const note=`MERGED into ${listing.id}: same building, bedrooms, bathrooms and sqft; current rent is ${inv.rent}.`;
-      if(!history[duplicate.id].some(h=>h.date===day&&h.note===note)) history[duplicate.id].push({date:day,rent:duplicate.rent,note});
+      if(!history[duplicate.id].some(h=>String(h.note||'').startsWith(`MERGED into ${listing.id}: same building, bedrooms, bathrooms and sqft;`))) history[duplicate.id].push({date:day,rent:duplicate.rent,note});
     }
 
     const verifiedObservation=observations.find(x=>x.url===verifiedSource.url);
@@ -154,7 +155,7 @@ for(const b of cfg.buildings||[]){
 }
 await browser.close();
 db.meta.lastPurposeBuiltRefresh=now;
-db.meta.purposeBuiltPolicy='Purpose-built buildings are expanded into independent unit/floorplan inventory. Exact unit is preferred; when a public unit number is absent, floorplan + rent + sqft is a temporary independent inventory identity. Multiple independent live source URLs are tried so one blocked marketplace cannot hide inventory. Building-level leasing language alone never creates or preserves a listing: watched inventory without an exact current match is hidden as needs_confirmation until exact evidence returns.';
+db.meta.purposeBuiltPolicy='Purpose-built buildings are expanded into independent unit/floorplan inventory. Exact unit is preferred; when a public unit number is absent, building + bedroom/bathroom count + sqft is the stable floorplan identity and rent remains an updateable fact. Multiple independent live source URLs are tried so one blocked marketplace cannot hide inventory. Building-level leasing language alone never creates or preserves a listing: watched inventory without an exact current match is hidden as needs_confirmation until exact evidence returns.';
 await write(path.join(DATA,'purpose-built-status.json'),{refreshedAt:now,buildings:evidence});
 await write(path.join(DATA,'listings.json'),db);
 await write(path.join(DATA,'history.json'),history);

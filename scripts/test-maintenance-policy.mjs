@@ -8,7 +8,7 @@ import { dedupeHistoryEvents, pruneExcludedScopeChurn } from './history-policy.m
 import { verifiedPhotoCandidates } from './listing-photo-candidates.mjs';
 import { isRealtylinkListingNotFoundRedirect, isTargetWestsideCoordinate, parseRealtylinkAirConditioning, parseRealtylinkCoordinateValues, parseRealtylinkCoordinates, parseRealtylinkFloorArea, parseRealtylinkRoomCount } from './realtylink-parser.mjs';
 import { craigslistLaneHealth, marketplaceLaneHealth, rentalscaLaneHealth, realtylinkLaneHealth, realtylinkSnapshotBaseline, realtylinkSnapshotComplete } from './coverage-policy.mjs';
-import { exactPurposeBuiltFloorplanEvidence, samePurposeBuiltFloorplanIdentity } from './purposebuilt-floorplan-evidence.mjs';
+import { exactPurposeBuiltFloorplanEvidence, purposeBuiltFloorplanId, samePurposeBuiltFloorplanIdentity } from './purposebuilt-floorplan-evidence.mjs';
 import { hasCurrentMarketplaceAvailability, softNegativeDisposition, softUnavailablePrompt } from './listing-availability.mjs';
 import { activeListingContradictedByFreshEvidence } from './evidence-consistency.mjs';
 import { dedupeMlsRecords } from './mls-dedupe.mjs';
@@ -78,6 +78,8 @@ if (listingScopeEligible(w13UpperPortion, 'House close to UBC with lots of rooms
 const kitsWalk3675={id:'kits-walk-floorplan-2-bedroom-811-3675',buildingName:'Kits Walk',unit:'2 Bedroom · 811 sqft · $3,675',bedrooms:2,bathrooms:2,sqft:811,rent:3675};
 const kitsWalk3595={key:'2-bedroom-811-3595',label:'2 Bedroom · 811 sqft · $3,595',bedrooms:2,bathrooms:2,sqft:811,rent:3595,unit:null};
 if (!samePurposeBuiltFloorplanIdentity(kitsWalk3675,kitsWalk3595,'Kits Walk') ||
+    purposeBuiltFloorplanId('Kits Walk',kitsWalk3675)!==purposeBuiltFloorplanId('Kits Walk',kitsWalk3595) ||
+    purposeBuiltFloorplanId('Kits Walk',kitsWalk3595)===purposeBuiltFloorplanId('Kits Walk',{...kitsWalk3595,sqft:741}) ||
     samePurposeBuiltFloorplanIdentity({...kitsWalk3675,sqft:741},kitsWalk3595,'Kits Walk') ||
     samePurposeBuiltFloorplanIdentity({...kitsWalk3675,unit:'605'},kitsWalk3595,'Kits Walk')) {
   failures.push('Kits Walk 811 sqft price changes can create duplicate floorplan cards instead of updating the existing identity.');
@@ -348,7 +350,7 @@ if(!purposeBuiltSource.includes('structuredRentalInventories')||!purposeBuiltSou
 if(!purposeBuiltWatch.buildings?.find(x=>x.id==='kits-walk')?.evidenceSourceIds?.includes('kits-walk-rentalsca')) failures.push('Kits Walk cannot reuse fresh aggregate evidence.');
 if(!purposeBuiltSource.includes('freshEvidence')||!purposeBuiltSource.includes('reusedEvidence:true')) failures.push('Purpose-built verifier repeats requests instead of reusing fresh evidence.');
 if(!purposeBuiltWatch.buildings?.find(x=>x.id==='kits-walk')?.discoverStructuredInventories) failures.push('Kits Walk structured inventory cannot be discovered dynamically.');
-if(!purposeBuiltSource.includes('discoveredStructuredInventories')||!purposeBuiltSource.includes('exactUnit')) failures.push('Dynamic purpose-built discovery or exact-unit protection is missing.');
+if(!purposeBuiltSource.includes('discoveredStructuredInventories')||!purposeBuiltSource.includes('exactUnit')||!purposeBuiltSource.includes('purposeBuiltFloorplanId(b.name,inv)')) failures.push('Dynamic purpose-built discovery, stable floorplan identity, or exact-unit protection is missing.');
 if(!source.includes("x.type === 'purpose-built' && !/^#?\\d+[A-Za-z]?$/")) failures.push('Generic detail verification can override stricter address-level purpose-built inventory validation.');
 if(!source.includes('if (evidence.explicitPositive) {')||!source.includes("listing.verificationLevel = 'verified';")) failures.push('A loading detail URL can refresh verifiedAt without current positive availability evidence.');
 if(!source.includes('const isRealtylink = /realtylink\\.org/i')||!source.includes('!isRealtylink && weakForRent')) failures.push('A stale Realtylink detail page can use its static for-rent title as current availability evidence.');

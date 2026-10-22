@@ -23,6 +23,21 @@ export function exactPurposeBuiltFloorplanEvidence(text, listing = {}) {
 
 const normalizedIdentityText = value => String(value || '').toLowerCase().replace(/[^a-z0-9]+/g, ' ').trim();
 const exactPublicUnit = value => /^#?\d+[a-z]?$/i.test(String(value || '').trim());
+const identitySlug = value => normalizedIdentityText(value).replace(/\s+/g, '-');
+
+// Rent is intentionally excluded: it is a mutable listing fact, not a
+// floorplan identity. Using marketplace keys that contain rent causes a price
+// change to manufacture a second record for the same public floorplan.
+export function purposeBuiltFloorplanId(buildingName = '', inventory = {}) {
+  const building = identitySlug(buildingName);
+  if (!building) return '';
+  if (exactPublicUnit(inventory.unit)) return `${building}-unit-${identitySlug(inventory.unit)}`;
+  const bedrooms = Number(inventory.bedrooms);
+  const bathrooms = Number(inventory.bathrooms);
+  const sqft = Number(inventory.sqft);
+  if (!Number.isFinite(bedrooms) || !Number.isFinite(bathrooms) || !Number.isFinite(sqft)) return '';
+  return `${building}-floorplan-${bedrooms}-bedroom-${bathrooms}-bath-${Math.round(sqft)}`;
+}
 
 export function samePurposeBuiltFloorplanIdentity(listing = {}, inventory = {}, buildingName = '') {
   if (inventory.unit || exactPublicUnit(listing.unit)) return false;
