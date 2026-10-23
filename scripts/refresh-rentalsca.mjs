@@ -2,7 +2,7 @@ import fs from 'node:fs/promises';
 import path from 'node:path';
 import crypto from 'node:crypto';
 import { chromium } from 'playwright';
-import { isTargetRentalAreaText, listingScopeEligible } from './discovery-policy.mjs';
+import { isTargetRentalSearchAddress, listingScopeEligible } from './discovery-policy.mjs';
 import { classifyRentalsCaSearchLead, parseRentalsCaSearchLeads } from './rentalsca-search-parser.mjs';
 
 const DATA=path.join(process.cwd(),'data');
@@ -52,7 +52,7 @@ const listingCatalog=await read(path.join(DATA,'listings.json'),{listings:[]});
 const browser=await chromium.launch({headless:true});
 const context=await browser.newContext({locale:'en-CA',timezoneId:'America/Vancouver',viewport:{width:1440,height:1200},userAgent:'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 Chrome/126 Safari/537.36'});
 const page=await context.newPage(),detailUrls=new Set(),sourceHealth={},searchLeadMap=new Map();
-const diagnostics={searchResultCount:0,searchAddressLines:0,searchDetailLinks:0,searchLeadCount:0,newSearchLeadCount:0,representedSearchLeadCount:0,revalidationSearchLeadCount:0,detailUrls:0,detailChecked:0,detailBlocked:0,detailNotFound:0,detailErrors:0,detailParsed:0,detailSuppressed:0,detailCircuitOpen:false};
+const diagnostics={searchResultCount:0,searchAddressLines:0,searchDetailLinks:0,searchLeadCount:0,searchLeadOutOfArea:0,newSearchLeadCount:0,representedSearchLeadCount:0,revalidationSearchLeadCount:0,detailUrls:0,detailChecked:0,detailBlocked:0,detailNotFound:0,detailErrors:0,detailParsed:0,detailSuppressed:0,detailCircuitOpen:false};
 for(const s of (sources.discovery||[]).filter(x=>x.adapter==='rentalsca-search')){
   try{
     const r=await page.goto(s.url,{waitUntil:'domcontentloaded',timeout:45000}),status=r?.status()??null;sourceHealth[s.id]={checkedAt:iso,status,ok:!!r&&status<400,finalUrl:page.url()};if(!r||status>=400)continue;
@@ -71,7 +71,7 @@ for(const s of (sources.discovery||[]).filter(x=>x.adapter==='rentalsca-search')
     const neighborhoodSearch=/rentalsca-(?:kitsilano|point-grey|arbutus|dunbar|quilchena)-/i.test(s.id);
     for(const lead of searchLeads){
       if(lead.rentMin<3500||lead.bedroomMax<2||lead.bedroomMin>4)continue;
-      if(!neighborhoodSearch&&!isTargetRentalAreaText(lead.address))continue;
+      if(!neighborhoodSearch&&!isTargetRentalSearchAddress(lead.address)){diagnostics.searchLeadOutOfArea++;continue;}
       searchLeadMap.set(lead.identityKey,{...lead,source:'Rentals.ca search',searchUrl:s.url,checkedAt:iso,publishable:false,evidenceKind:'search_result_lead_only',availabilityVerified:false});
     }
     sourceHealth[s.id].searchLeadCount=searchLeads.length;

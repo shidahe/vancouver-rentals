@@ -37,6 +37,22 @@ export function isTargetRentalAreaText(value = '') {
   return !OUT_OF_SCOPE_AREA.test(String(value));
 }
 
+// Broad Vancouver search pages sometimes expose only a civic address, without
+// a neighbourhood or coordinates. Keep Westside recall high while preventing
+// obviously out-of-scope East Vancouver and central-city cards from filling
+// the manual revalidation queue. Exact detail pages still use coordinates and
+// remain authoritative.
+export function isTargetRentalSearchAddress(value = '') {
+  const address = String(value).replace(/\s+/g, ' ').trim();
+  if (!address || !isTargetRentalAreaText(address)) return false;
+  if (/\b(?:east|e)\s+\d+(?:st|nd|rd|th)?\s+(?:avenue|ave)\b/i.test(address)) return false;
+  if (/\b(?:Joyce|Davie|Pendrell|Prince\s+Albert)\s+(?:Street|St)\b/i.test(address)) return false;
+  if (/\bGranville\s+(?:Street|St)\b/i.test(address)) return false;
+  const westAvenue = address.match(/^\s*(\d{1,5})\s+(?:west|w)\s+\d+(?:st|nd|rd|th)?\s+(?:avenue|ave)\b/i);
+  if (westAvenue && Number(westAvenue[1]) < 1800) return false;
+  return true;
+}
+
 export function listingScopeEligible(listing, evidenceText = '') {
   const scopeText = [evidenceText, listing?.description, listing?.address, listing?.unit, listing?.buildingName].filter(Boolean).join('\n');
   const areaText = [listing?.address, listing?.neighborhood].filter(Boolean).join('\n');

@@ -34,8 +34,10 @@ export function rentalscaLaneHealth({ reachable = 0, total = 0, candidates = 0, 
   const newLeads=Number(diagnostics.newSearchLeadCount||0);
   const representedLeads=Number(diagnostics.representedSearchLeadCount||0);
   const revalidationLeads=Number(diagnostics.revalidationSearchLeadCount||0);
+  const outOfAreaLeads=Number(diagnostics.searchLeadOutOfArea||0);
   const leadBreakdown=leads?` (${newLeads} new, ${representedLeads} already active, ${revalidationLeads} need revalidation)`:'';
-  if(blocked>0)return {...lane,detail:`${lane.detail}; ${leads} scoped search-only leads retained${leadBreakdown}; ${blocked} detail pages blocked after ${urls} discovered URLs${diagnostics.detailCircuitOpen?`; ${Number(diagnostics.detailSuppressed||0)} further detail checks suppressed after repeated 403/429`:''}`};
+  const scopeBreakdown=outOfAreaLeads?`; ${outOfAreaLeads} obvious out-of-area search leads rejected`:'';
+  if(blocked>0)return {...lane,detail:`${lane.detail}; ${leads} scoped search-only leads retained${leadBreakdown}${scopeBreakdown}; ${blocked} detail pages blocked after ${urls} discovered URLs${diagnostics.detailCircuitOpen?`; ${Number(diagnostics.detailSuppressed||0)} further detail checks suppressed after repeated 403/429`:''}`};
   if(observed>0&&urls===0)return {...lane,structureMismatch:true,detail:`${lane.detail}; parser structure mismatch (${observed} visible search results, 0 detail URLs)`};
   if(observed>0)return {...lane,detail:`${lane.detail}; ${observed} visible search results, ${urls} detail URLs, ${Number(diagnostics.detailParsed||0)} parsed details`};
   return lane;
