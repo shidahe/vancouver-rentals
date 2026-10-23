@@ -694,6 +694,11 @@
       "date": "2026-10-20",
       "rent": 5390,
       "note": "NEEDS CONFIRMATION: latest purpose-built fallback sources did not confirm the exact configured rent + sqft inventory row."
+    },
+    {
+      "date": "2026-10-23",
+      "rent": 5390,
+      "note": "NEEDS CONFIRMATION: latest purpose-built fallback sources did not confirm the exact configured rent + sqft inventory row."
     }
   ],
   "zumper-2fde865f7e2c": [
@@ -1966,6 +1971,16 @@
       "date": "2026-10-22",
       "rent": 3650,
       "note": "NEEDS CONFIRMATION: latest purpose-built fallback sources did not confirm the exact configured rent + sqft inventory row."
+    },
+    {
+      "date": "2026-10-23",
+      "rent": 3650,
+      "note": "NEEDS CONFIRMATION: latest purpose-built fallback sources did not confirm the exact configured rent + sqft inventory row."
+    },
+    {
+      "date": "2026-10-23",
+      "rent": 3800,
+      "note": "Live purpose-built inventory price update from 3650"
     }
   ],
   "mls-r3160879": [
@@ -2396,6 +2411,11 @@
       "date": "2026-10-22",
       "rent": 15000,
       "note": "CORRECTED: restored after exact current MLS detail matched identity, explicit availability and rent."
+    },
+    {
+      "date": "2026-10-23",
+      "rent": 15000,
+      "note": "AUTO-REMOVED after direct live verification found explicit unavailable evidence."
     }
   ],
   "mls-r3149267": [
@@ -2565,6 +2585,11 @@
       "date": "2026-10-21",
       "rent": 5800,
       "note": "AUTO-REMOVED: MLS R3163709 absent from two consecutive healthy inventory snapshots."
+    },
+    {
+      "date": "2026-10-23",
+      "rent": 5800,
+      "note": "CORRECTED: restored after exact current MLS detail matched identity, explicit availability and rent."
     }
   ],
   "mls-r3164628": [
@@ -2897,6 +2922,11 @@
     },
     {
       "date": "2026-10-22",
+      "rent": 4975,
+      "note": "AUTO live price update from 5475 to 4975."
+    },
+    {
+      "date": "2026-10-23",
       "rent": 4975,
       "note": "AUTO live price update from 5475 to 4975."
     }
@@ -3454,6 +3484,11 @@
       "date": "2026-10-21",
       "rent": 14500,
       "note": "CORRECTED: restored after exact current MLS detail matched identity, explicit availability and rent."
+    },
+    {
+      "date": "2026-10-23",
+      "rent": 14500,
+      "note": "CORRECTED: restored after exact current MLS detail matched identity, explicit availability and rent."
     }
   ],
   "mls-r3175848": [
@@ -3479,6 +3514,11 @@
     },
     {
       "date": "2026-10-20",
+      "rent": 5500,
+      "note": "EXCLUDED: house share or separately rented portion of a house."
+    },
+    {
+      "date": "2026-10-23",
       "rent": 5500,
       "note": "EXCLUDED: house share or separately rented portion of a house."
     }

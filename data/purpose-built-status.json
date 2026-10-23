@@ -1,9 +1,9 @@
 {
-  "refreshedAt": "2026-10-22T18:39:48.061Z",
+  "refreshedAt": "2026-10-23T15:25:08.873Z",
   "buildings": [
     {
       "building": "Kits Walk",
-      "checkedAt": "2026-10-22T18:39:48.061Z",
+      "checkedAt": "2026-10-23T15:25:08.873Z",
       "observations": [
         {
           "url": "https://rentals.ca/vancouver/kits-walk-by-strand",
@@ -46,15 +46,15 @@
           ]
         },
         {
-          "key": "2-bedroom-741-3650",
-          "label": "2 Bedroom · 741 sqft · $3,650",
+          "key": "2-bedroom-741-3800",
+          "label": "2 Bedroom · 741 sqft · $3,800",
           "bedrooms": 2,
           "bathrooms": 2,
           "sqft": 741,
-          "rent": 3650,
+          "rent": 3800,
           "unit": null,
           "requiredSignals": [
-            "3,650",
+            "3,800",
             "741"
           ],
           "availabilitySignals": [
@@ -81,7 +81,7 @@
     },
     {
       "building": "Arbutus Residences",
-      "checkedAt": "2026-10-22T18:39:48.061Z",
+      "checkedAt": "2026-10-23T15:25:08.873Z",
       "observations": [
         {
           "url": "https://www.rentfaster.ca/properties/2139-lahb-ave-vancouver-454186",
@@ -99,8 +99,8 @@
         },
         {
           "url": "https://www.zumper.com/apartment-buildings/p1117150/arbutus-residences-quilchena-vancouver-bc",
-          "httpStatus": 200,
-          "usable": true,
+          "httpStatus": 429,
+          "usable": false,
           "error": null,
           "reusedEvidence": false
         }
@@ -149,11 +149,11 @@
             },
             {
               "url": "https://www.zumper.com/apartment-buildings/p1117150/arbutus-residences-quilchena-vancouver-bc",
-              "httpStatus": 200,
-              "usable": true,
+              "httpStatus": 429,
+              "usable": false,
               "structuredMatch": false,
               "requiredMatched": false,
-              "availabilityMatched": true,
+              "availabilityMatched": false,
               "fullyLeased": false,
               "verified": false
             }
@@ -177,8 +177,8 @@
             "Available",
             "1 unit available"
           ],
-          "verified": true,
-          "verifiedSource": "https://www.zumper.com/apartment-buildings/p1117150/arbutus-residences-quilchena-vancouver-bc",
+          "verified": false,
+          "verifiedSource": null,
           "sourceMatches": [
             {
               "url": "https://www.rentfaster.ca/properties/2139-lahb-ave-vancouver-454186",
@@ -202,13 +202,13 @@
             },
             {
               "url": "https://www.zumper.com/apartment-buildings/p1117150/arbutus-residences-quilchena-vancouver-bc",
-              "httpStatus": 200,
-              "usable": true,
+              "httpStatus": 429,
+              "usable": false,
               "structuredMatch": false,
-              "requiredMatched": true,
-              "availabilityMatched": true,
+              "requiredMatched": false,
+              "availabilityMatched": false,
               "fullyLeased": false,
-              "verified": true
+              "verified": false
             }
           ]
         }
@@ -216,7 +216,7 @@
     },
     {
       "building": "Fourth + Mac",
-      "checkedAt": "2026-10-22T18:39:48.061Z",
+      "checkedAt": "2026-10-23T15:25:08.873Z",
       "observations": [
         {
           "url": "https://www.craigslist.org/view/d/vancouver-bed-bath-fourth-mac-kitsilano/eiSLCKTVqsrtPUWpUpJyDN",
