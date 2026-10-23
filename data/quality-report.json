@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-10-23T15:56:27.793Z",
-  "activeCount": 21,
+  "generatedAt": "2026-10-23T18:34:55.075Z",
+  "activeCount": 23,
   "decisionReady": true,
   "readinessStatus": "finalized",
   "highIssueCount": 0,
   "mediumIssueCount": 0,
-  "infoIssueCount": 36,
+  "infoIssueCount": 39,
   "issues": [
     {
       "severity": "info",
@@ -39,6 +39,11 @@
     },
     {
       "severity": "info",
+      "id": "arbutus-residences-floorplan-2-bedroom-townhouse-den-1340",
+      "issue": "unknown-orientation"
+    },
+    {
+      "severity": "info",
       "id": "zumper-16e9ae17cd91",
       "issue": "unknown-ac"
     },
@@ -50,6 +55,16 @@
     {
       "severity": "info",
       "id": "mls-r3151372",
+      "issue": "unknown-orientation"
+    },
+    {
+      "severity": "info",
+      "id": "kits-walk-floorplan-2-bedroom-741-3600",
+      "issue": "unknown-ac"
+    },
+    {
+      "severity": "info",
+      "id": "kits-walk-floorplan-2-bedroom-741-3600",
       "issue": "unknown-orientation"
     },
     {
@@ -191,8 +206,8 @@
   "readinessChecks": {
     "smokeOk": true,
     "smokeFresh": true,
-    "smokeCheckedAt": "2026-10-23T15:56:33.606Z",
-    "latestDataAt": "2026-10-23T15:55:19.885Z",
+    "smokeCheckedAt": "2026-10-23T18:35:00.755Z",
+    "latestDataAt": "2026-10-23T18:33:20.738Z",
     "coverageReady": true,
     "healthyDiscoveryLanes": 3,
     "coverageWarnings": [
@@ -200,16 +215,34 @@
         "severity": "warning",
         "lane": "rentalsca",
         "status": "degraded",
-        "detail": "2/9 regional searches reachable; 0 qualifying candidates parsed; 3 scoped search-only leads retained (3 new, 0 already active, 0 need revalidation); 3 detail pages blocked after 23 discovered URLs; 20 further detail checks suppressed after repeated 403/429"
+        "detail": "2/9 regional searches reachable; 0 qualifying candidates parsed; 1 scoped search-only leads retained (1 new, 0 already active, 0 need revalidation); 3 detail pages blocked after 23 discovered URLs; 20 further detail checks suppressed after repeated 403/429"
       },
       {
         "severity": "warning",
         "lane": "livrent",
         "status": "unhealthy",
         "detail": "0/5 searches healthy; 3 blocked searches opened circuit; 2 further checks suppressed"
+      },
+      {
+        "severity": "warning",
+        "lane": "realtylink",
+        "status": "degraded",
+        "detail": "3/3 searches reachable; 4 current live candidates parsed from a partial snapshot versus complete baseline 10; positive discovery usable, removals suppressed"
+      },
+      {
+        "severity": "warning",
+        "lane": "priority-viridian-unpriced-unit",
+        "status": "price-unverified",
+        "detail": "Viridian unit 0103 (2BR) is offered for Now, but official rent is withheld; do not publish before verifying rent >= CAD $3,500"
+      },
+      {
+        "severity": "warning",
+        "lane": "priority-viridian-unpriced-unit",
+        "status": "price-unverified",
+        "detail": "Viridian unit 0309 (2BR) is offered for Oct 30, but official rent is withheld; do not publish before verifying rent >= CAD $3,500"
       }
     ]
   },
   "readinessIssues": [],
-  "finalizedAt": "2026-10-23T15:56:33.694Z"
+  "finalizedAt": "2026-10-23T18:35:00.859Z"
 }
