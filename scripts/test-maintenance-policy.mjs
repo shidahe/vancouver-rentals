@@ -9,7 +9,7 @@ import { verifiedPhotoCandidates } from './listing-photo-candidates.mjs';
 import { isRealtylinkListingNotFoundRedirect, isTargetWestsideCoordinate, parseRealtylinkAirConditioning, parseRealtylinkCoordinateValues, parseRealtylinkCoordinates, parseRealtylinkFloorArea, parseRealtylinkRoomCount } from './realtylink-parser.mjs';
 import { craigslistLaneHealth, marketplaceLaneHealth, rentalscaLaneHealth, realtylinkLaneHealth, realtylinkSnapshotBaseline, realtylinkSnapshotComplete } from './coverage-policy.mjs';
 import { exactPurposeBuiltFloorplanEvidence, purposeBuiltFloorplanId, samePurposeBuiltFloorplanIdentity } from './purposebuilt-floorplan-evidence.mjs';
-import { hasCurrentMarketplaceAvailability, softNegativeDisposition, softUnavailablePrompt } from './listing-availability.mjs';
+import { hasCurrentMarketplaceAvailability, isAuxiliaryNegativeForMls, softNegativeDisposition, softUnavailablePrompt } from './listing-availability.mjs';
 import { activeListingContradictedByFreshEvidence } from './evidence-consistency.mjs';
 import { dedupeMlsRecords } from './mls-dedupe.mjs';
 import { craigslistAddressPrecision, craigslistDescriptionCivicAddress, craigslistDescriptionUnit, craigslistDetailEvidence, craigslistPostId, craigslistTitleCivicAddress, craigslistStructuredFacts, dedupeCraigslistRelistings, extractCraigslistDetailUrls, normalizeCraigslistDetailUrl, parseCraigslistSearchCard } from './craigslist-parser.mjs';
@@ -152,6 +152,14 @@ if(!activeListingContradictedByFreshEvidence(contradictionListing,contradictionE
    activeListingContradictedByFreshEvidence({...contradictionListing,verifiedAt:'2026-09-13T20:59:00Z'},contradictionEvidence,contradictionNow)||
    activeListingContradictedByFreshEvidence(contradictionListing,{...contradictionEvidence,identityMatch:false},contradictionNow)){
   failures.push('Fresh exact negative evidence cannot reliably block a later adapter from republishing the listing.');
+}
+const auxiliaryMlsListing={...contradictionListing,mls:'R3159060',mlsInventoryManaged:true,url:'https://www.craigslist.org/view/d/vancouver-point-grey-luxury-4br5ba/7982921004'};
+const auxiliaryMlsNegative={...contradictionEvidence,sourceUrl:auxiliaryMlsListing.url};
+if(!isAuxiliaryNegativeForMls(auxiliaryMlsListing,auxiliaryMlsNegative)||
+   isAuxiliaryNegativeForMls(auxiliaryMlsListing,{...auxiliaryMlsNegative,sourceUrl:'https://realtylink.org/en/house~for-rent~vancouver/263180687'})||
+   isAuxiliaryNegativeForMls({...auxiliaryMlsListing,mlsInventoryManaged:false},auxiliaryMlsNegative)||
+   activeListingContradictedByFreshEvidence(auxiliaryMlsListing,auxiliaryMlsNegative,contradictionNow)){
+  failures.push('R3159060 regression: a vanished auxiliary Craigslist repost can bypass the authoritative MLS hide-and-confirm lifecycle.');
 }
 const unavailableAlertFixture = 'MONTHLY RENT - BEDS 2 BATHS 3 SQFT 1,100 Alert me when this rental is available. We\u2019ll let you know when this property is available. *Available: August 1, 2026';
 if (!softUnavailablePrompt(unavailableAlertFixture) || softUnavailablePrompt('Available immediately. Request a tour today.')) {
@@ -458,6 +466,7 @@ if (!source.includes("/realtylink\\.org/i.test(evidence?.sourceUrl||evidence?.fi
 if (!source.includes('property is not currently for sale or for rent') || !source.includes('this property is no longer available') || !source.includes('status\\s*\\n\\s*expired')) failures.push('Explicit inactive/expired marketplace evidence is not treated as a strong negative.');
 if(!isRealtylinkListingNotFoundRedirect('https://realtylink.org/en/house~for-rent~vancouver/263179663','https://realtylink.org/en/house~for-rent~vancouver?listingnotfound=263179663&q=abc')||isRealtylinkListingNotFoundRedirect('https://realtylink.org/en/house~for-rent~vancouver/263179663','https://realtylink.org/en/house~for-rent~vancouver?listingnotfound=999'))failures.push('Exact Realtylink listing-not-found redirects are not safely identity-bound.');
 if (!source.includes('premature MLS removal rolled back')) failures.push('Recent removals made by the old back-to-back MLS rule are not repaired.');
+if (!source.includes('auxiliaryMlsRemovalsRolledBack') || !source.includes('auxiliary marketplace evidence cannot terminally remove MLS')) failures.push('Recent MLS removals caused by disposable auxiliary marketplace links are not rolled back to hidden confirmation.');
 if (!source.includes('rolledBackMls.has(x.mls)') || !source.includes('previousReconciliation.realtylinkSnapshotScope===realtylinkScope&&!rolledBackMls.has(x.mls)')) failures.push('MLS missing evidence can survive a scope change or immediately re-remove a rolled-back listing.');
 if (/bedrooms\s*:\s*c\.bedrooms\s*\|\|\s*2/.test(source)) failures.push('Unknown candidate bedrooms are still defaulted to 2BR.');
 if (!source.includes('mlsInventoryManaged!==true')) failures.push('MLS search disappearance is not limited to feed-managed inventory.');

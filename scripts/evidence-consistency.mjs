@@ -1,6 +1,8 @@
 const ACTIVE = 'active';
 const MAX_EVIDENCE_AGE_MS = 24 * 60 * 60 * 1000;
 
+import { isAuxiliaryNegativeForMls } from './listing-availability.mjs';
+
 const normalizedUrl = value => {
   try {
     const url = new URL(String(value || ''));
@@ -18,6 +20,7 @@ const normalizedUrl = value => {
 export function activeListingContradictedByFreshEvidence(listing, evidence, nowMs = Date.now()) {
   if (!listing || (listing.availabilityStatus || listing.status) !== ACTIVE) return false;
   if (!evidence?.identityMatch || !evidence?.explicitNegative) return false;
+  if (isAuxiliaryNegativeForMls(listing, evidence)) return false;
 
   const checkedAt = Date.parse(evidence.checkedAt || '');
   if (!Number.isFinite(checkedAt) || nowMs - checkedAt > MAX_EVIDENCE_AGE_MS) return false;

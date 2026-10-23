@@ -9,6 +9,7 @@ import { LISTING_SCOPE_VERSION, listingScopeEligible } from './discovery-policy.
 import { realtylinkSnapshotBaseline, realtylinkSnapshotComplete } from './coverage-policy.mjs';
 import { craigslistSeedRelistingMatch } from './craigslist-seed-relisting.mjs';
 import { craigslistCrossSourcePriceMatch } from './craigslist-cross-source-match.mjs';
+import { isAuxiliaryNegativeForMls } from './listing-availability.mjs';
 
 const DATA=path.join(process.cwd(),'data');
 const iso=new Date().toISOString(),today=iso.slice(0,10);
@@ -72,7 +73,23 @@ const groups=new Map();
 for(const c of all){if(!usable(c))continue;const k=candidateKey(c);if(!groups.has(k))groups.set(k,[]);groups.get(k).push(c);}
 const listingByKey=new Map();
 for(const x of payload.listings){const canonicalMls=listingMls(x);if(canonicalMls)x.mls=canonicalMls;const k=key(x.address,listingUnit(x),x.url,null,canonicalMls);if(!listingByKey.has(k)||listingByKey.get(k).source==='Zumper live detail')listingByKey.set(k,x);}
-const state={refreshedAt:iso,groups:[],promoted:[],crossVerified:[],fingerprintCrossVerified:[],craigslistRelistingsRecovered:[],crossSourcePriceUpdates:[],maskedMlsMerged:[],relistedMlsMerged:[],negativeMatches:[],detailReactivated:[],mlsMissing:{},mlsRemoved:[],mlsStaleHidden:[]};
+const state={refreshedAt:iso,groups:[],promoted:[],crossVerified:[],fingerprintCrossVerified:[],craigslistRelistingsRecovered:[],crossSourcePriceUpdates:[],maskedMlsMerged:[],relistedMlsMerged:[],negativeMatches:[],detailReactivated:[],auxiliaryMlsRemovalsRolledBack:[],mlsMissing:{},mlsRemoved:[],mlsStaleHidden:[]};
+
+// Repair recent terminal removals created when a disposable marketplace repost
+// was serving as the detail URL for an MLS-managed identity. Keep the listing
+// hidden, then let current Realtylink evidence or the normal consecutive
+// complete-snapshot policy make the authoritative decision.
+for(const x of payload.listings){
+  if(x.mlsInventoryManaged!==true||x.availabilityStatus!=='removed'||
+    !/^Automated live check found explicit unavailable evidence/.test(x.verificationMethod||''))continue;
+  const evidence=await read(path.join(DATA,'evidence',`${x.id}.json`),null);
+  const checkedAt=Date.parse(evidence?.checkedAt||'');
+  if(!Number.isFinite(checkedAt)||Date.now()-checkedAt>48*60*60*1000||!isAuxiliaryNegativeForMls(x,evidence))continue;
+  x.availabilityStatus='needs_confirmation';x.status='corrected';x.removedAt=null;x.verificationLevel='unverified';x.lastChecked=today;
+  x.verificationMethod=`Removal rolled back: auxiliary marketplace evidence cannot terminally remove MLS ${x.mls}; awaiting authoritative Realtylink confirmation.`;
+  (history[x.id]||=[]).push({date:today,rent:x.rent??null,note:`CORRECTED: auxiliary marketplace removal rolled back; MLS ${x.mls} remains hidden pending authoritative confirmation.`});
+  state.auxiliaryMlsRemovalsRolledBack.push(x.id);
+}
 
 // A current exact-address Craigslist detail can supersede an older marketplace price
 // only when the bed/bath/area fingerprint and substantial description text also agree.

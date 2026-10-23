@@ -6,7 +6,7 @@ import { findExistingSeedListing } from './inventory-identity.mjs';
 import { verifiedPhotoCandidates } from './listing-photo-candidates.mjs';
 import { isRealtylinkListingNotFoundRedirect, parseRealtylinkFloorArea, parseRealtylinkRoomCount } from './realtylink-parser.mjs';
 import { exactPurposeBuiltFloorplanEvidence } from './purposebuilt-floorplan-evidence.mjs';
-import { softNegativeDisposition, softUnavailablePrompt } from './listing-availability.mjs';
+import { isAuxiliaryNegativeForMls, softNegativeDisposition, softUnavailablePrompt } from './listing-availability.mjs';
 import { craigslistStructuredFacts } from './craigslist-parser.mjs';
 
 const ROOT = process.cwd();
@@ -240,17 +240,22 @@ for (const listing of payload.listings.filter(x =>
 
   if (evidence.explicitNegative) {
     const softNegativeAction = softNegativeDisposition(evidence.negativeNeedsConfirmation, prev, now.getTime());
-    if (softNegativeAction === 'hide') {
+    const auxiliaryMlsNegative = isAuxiliaryNegativeForMls(listing, evidence);
+    if (softNegativeAction === 'hide' || auxiliaryMlsNegative) {
       const wasActive = listing.availabilityStatus === 'active';
       listing.availabilityStatus = 'needs_confirmation';
       listing.status = 'corrected';
       listing.removedAt = null;
       listing.lastChecked = today;
       listing.verificationLevel = 'unverified';
-      listing.verificationMethod = `Hidden after the exact marketplace page switched to an availability-alert prompt (${evidence.negativePhrase}); awaiting a second check at least four hours later.`;
+      listing.verificationMethod = auxiliaryMlsNegative
+        ? `Hidden after an auxiliary marketplace link became unavailable (${evidence.negativePhrase}); canonical MLS removal still requires authoritative Realtylink confirmation.`
+        : `Hidden after the exact marketplace page switched to an availability-alert prompt (${evidence.negativePhrase}); awaiting a second check at least four hours later.`;
       if (wasActive) {
         history[listing.id] ||= [];
-        history[listing.id].push({ date: today, rent: listing.rent ?? null, note: 'AUTO-HIDDEN: exact marketplace page now offers an availability alert instead of a currently available rental; confirmation required before removal.' });
+        history[listing.id].push({ date: today, rent: listing.rent ?? null, note: auxiliaryMlsNegative
+          ? `AUTO-HIDDEN: auxiliary marketplace link became unavailable; MLS ${listing.mls} requires authoritative confirmation before removal.`
+          : 'AUTO-HIDDEN: exact marketplace page now offers an availability alert instead of a currently available rental; confirmation required before removal.' });
       }
       continue;
     }

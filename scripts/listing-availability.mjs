@@ -20,6 +20,17 @@ export function softNegativeDisposition(isSoftNegative, previous = {}, nowMs = D
   return confirmed ? 'remove' : 'hide';
 }
 
+// MLS-managed inventory has an authoritative lifecycle of its own. A linked
+// marketplace repost disappearing is useful negative evidence for that repost,
+// but it must not terminally remove the canonical MLS identity. Hide the card
+// immediately and let current Realtylink evidence restore it, or let the
+// consecutive complete-snapshot policy confirm removal.
+export function isAuxiliaryNegativeForMls(listing, evidence) {
+  if (listing?.mlsInventoryManaged !== true || !listing?.mls || !evidence?.explicitNegative) return false;
+  const evidenceUrl = String(evidence.sourceUrl || evidence.finalUrl || listing.url || '');
+  return !/realtylink\.org/i.test(evidenceUrl);
+}
+
 export function hasCurrentMarketplaceAvailability(text) {
   const value = String(text || '');
   const positive = /currently on market|check availability|request tour|for rent/i.test(value);
