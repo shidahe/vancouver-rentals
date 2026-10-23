@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-10-23T15:26:15.572Z",
+  "checkedAt": "2026-10-23T15:56:33.606Z",
   "ok": true,
   "checkpoints": {
     "render": {
@@ -17,21 +17,20 @@
       ],
       "values": [
         "21",
-        "4",
-        "6",
-        "4",
-        "Oct 23, 8:16 a.m. PDT"
+        "3",
+        "7",
+        "7",
+        "Oct 23, 8:48 a.m. PDT"
       ],
-      "html": "<div class=\"stat\"><strong>21</strong><span>Active</span></div><div class=\"stat\"><strong>4</strong><span>New 7d</span></div><div class=\"stat\"><strong>6</strong><span>Price drops</span></div><div class=\"stat\"><strong>4</strong><span>To verify</span></div><div class=\"stat\"><strong>Oct 23, 8:16 a.m. PDT</strong><span>Last refreshed</span></div>",
+      "html": "<div class=\"stat\"><strong>21</strong><span>Active</span></div><div class=\"stat\"><strong>3</strong><span>New 7d</span></div><div class=\"stat\"><strong>7</strong><span>Price drops</span></div><div class=\"stat\"><strong>7</strong><span>To verify</span></div><div class=\"stat\"><strong>Oct 23, 8:48 a.m. PDT</strong><span>Last refreshed</span></div>",
       "refreshedAt": {
-        "displayed": "Oct 23, 8:16 a.m. PDT",
-        "expected": "Oct 23, 8:16 a.m. PDT",
+        "displayed": "Oct 23, 8:48 a.m. PDT",
+        "expected": "Oct 23, 8:48 a.m. PDT",
         "timezone": "America/Vancouver"
       },
       "newSevenDays": {
-        "expectedCount": 4,
+        "expectedCount": 3,
         "badgeIds": [
-          "mls-r3175318",
           "zumper-1754927f090e",
           "zumper-3d502587bbc4",
           "mls-r3172081"

@@ -1801,6 +1801,11 @@
       "date": "2026-10-21",
       "rent": 4800,
       "note": "CORRECTED: restored after exact current MLS detail matched identity, explicit availability and rent."
+    },
+    {
+      "date": "2026-10-23",
+      "rent": 4800,
+      "note": "CORRECTED: restored after exact current MLS detail matched identity, explicit availability and rent."
     }
   ],
   "mls-r3158179": [
@@ -2416,6 +2421,11 @@
       "date": "2026-10-23",
       "rent": 15000,
       "note": "AUTO-REMOVED after direct live verification found explicit unavailable evidence."
+    },
+    {
+      "date": "2026-10-23",
+      "rent": 15000,
+      "note": "CORRECTED: auxiliary marketplace removal rolled back; MLS R3159060 remains hidden pending authoritative confirmation."
     }
   ],
   "mls-r3149267": [
@@ -3235,6 +3245,11 @@
       "date": "2026-10-20",
       "rent": 6000,
       "note": "AUTO-REMOVED: MLS R3170701 absent from two consecutive healthy inventory snapshots."
+    },
+    {
+      "date": "2026-10-23",
+      "rent": 6000,
+      "note": "CORRECTED: restored after exact current MLS detail matched identity, explicit availability and rent."
     }
   ],
   "zumper-f3c25cb7e83b": [
@@ -3315,6 +3330,11 @@
       "date": "2026-10-20",
       "rent": 4500,
       "note": "AUTO-REMOVED: MLS R3169522 absent from two consecutive healthy inventory snapshots."
+    },
+    {
+      "date": "2026-10-23",
+      "rent": 4500,
+      "note": "CORRECTED: restored after exact current MLS detail matched identity, explicit availability and rent."
     }
   ],
   "zumper-dd642aebb4f6": [
