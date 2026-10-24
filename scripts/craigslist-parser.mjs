@@ -81,14 +81,14 @@ const numberFrom = (pattern, value) => {
 export function craigslistAddressPrecision(value = '') {
   const address = String(value).replace(/\s+/g, ' ').trim();
   if (!address || /^(?:google\s+map|map|show\s+on\s+map)\b/i.test(address)) return null;
-  if (/\b\d{2,5}\s+(?:(?:w|west|e|east)\s+)?(?:\d+(?:st|nd|rd|th)?|[a-z][a-z.'-]+)(?:\s+[a-z][a-z.'-]+){0,3}\s+(?:ave(?:nue)?|st(?:reet)?|rd|road|dr(?:ive)?|blvd|boulevard|pl(?:ace)?|way|cres(?:cent)?)\b/i.test(address)) return 'exact_civic';
+  if (/\b\d{2,5}\s+(?:(?:w|west|e|east)\.?\s*)?(?:\d+(?:st|nd|rd|th)?|[a-z][a-z.'-]+)(?:\s+[a-z][a-z.'-]+){0,3}\s+(?:ave(?:nue)?|st(?:reet)?|rd|road|dr(?:ive)?|blvd|boulevard|pl(?:ace)?|way|cres(?:cent)?)\b/i.test(address)) return 'exact_civic';
   if (/\b(?:near|at|&|and)\b/i.test(address) && /\b(?:ave(?:nue)?|st(?:reet)?|rd|road|dr(?:ive)?|blvd|boulevard|way)\b/i.test(address)) return 'intersection';
   return null;
 }
 
 export function craigslistTitleCivicAddress(value = '') {
   const title = String(value).replace(/\s+/g, ' ').trim();
-  const match = title.match(/\b(\d{2,5}\s+(?:(?:w|west|e|east)\s+)?(?:\d+(?:st|nd|rd|th)?|[a-z][a-z.'-]+)(?:\s+[a-z][a-z.'-]+){0,2}\s+(?:ave(?:nue)?|st(?:reet)?|rd|road|dr(?:ive)?|blvd|boulevard|pl(?:ace)?|way|cres(?:cent)?))\b/i);
+  const match = title.match(/\b(\d{2,5}\s+(?:(?:w|west|e|east)\.?\s*)?(?:\d+(?:st|nd|rd|th)?|[a-z][a-z.'-]+)(?:\s+[a-z][a-z.'-]+){0,2}\s+(?:ave(?:nue)?|st(?:reet)?|rd|road|dr(?:ive)?|blvd|boulevard|pl(?:ace)?|way|cres(?:cent)?))\b/i);
   if (!match) return null;
   const address = match[1].replace(/\s+/g, ' ').trim();
   return craigslistAddressPrecision(address) === 'exact_civic' ? address : null;
@@ -97,7 +97,7 @@ export function craigslistTitleCivicAddress(value = '') {
 export function craigslistDescriptionCivicAddress(value = '') {
   for (const rawLine of String(value || '').split(/\r?\n/)) {
     const line = rawLine.replace(/\s+/g, ' ').trim();
-    const match = line.match(/^(?:(?:address|location)\s*:\s*)?(?:(?:(?:unit|suite|apt(?:artment)?)\s*|#\s*)?([a-z0-9][a-z0-9-]{0,7})\s*[-–—]\s*)?(\d{2,5}\s+(?:(?:w|west|e|east)\s+)?(?:\d+(?:st|nd|rd|th)?|[a-z][a-z.'-]+)(?:\s+[a-z][a-z.'-]+){0,2}\s+(?:ave(?:nue)?|st(?:reet)?|rd|road|dr(?:ive)?|blvd|boulevard|pl(?:ace)?|way|cres(?:cent)?))(?:\s*,\s*(?:vancouver)(?:\s*,?\s*(?:bc|british columbia))?(?:\s+[a-z]\d[a-z]\s*\d[a-z]\d)?)?$/i);
+    const match = line.match(/^(?:(?:address|location)\s*:\s*)?(?:(?:(?:unit|suite|apt(?:artment)?)\s*|#\s*)?([a-z0-9][a-z0-9-]{0,7})\s*[-–—]\s*)?(\d{2,5}\s+(?:(?:w|west|e|east)\.?\s*)?(?:\d+(?:st|nd|rd|th)?|[a-z][a-z.'-]+)(?:\s+[a-z][a-z.'-]+){0,2}\s+(?:ave(?:nue)?|st(?:reet)?|rd|road|dr(?:ive)?|blvd|boulevard|pl(?:ace)?|way|cres(?:cent)?))(?:\s*,\s*(?:vancouver)(?:\s*,?\s*(?:bc|british columbia))?(?:\s+[a-z]\d[a-z]\s*\d[a-z]\d)?)?$/i);
     if (!match) continue;
     const civic = match[2].replace(/\s+/g, ' ').trim();
     if (craigslistAddressPrecision(civic) !== 'exact_civic') continue;
@@ -114,7 +114,7 @@ export function craigslistDescriptionCivicAddress(value = '') {
 export function craigslistDescriptionUnit(value = '', exactMapAddress = '') {
   if (craigslistAddressPrecision(exactMapAddress) !== 'exact_civic') return null;
   const text = String(value || '').replace(/\s+/g, ' ');
-  const pattern = /(?:^|[^a-z0-9])(?:(?:unit|suite|apt(?:artment)?)\s*#?\s*)?([a-z0-9][a-z0-9-]{0,7})\s*[-–—]\s*(\d{2,5}\s+(?:(?:w|west|e|east)\s+)?(?:\d+(?:st|nd|rd|th)?|[a-z][a-z.'-]+)(?:\s+[a-z][a-z.'-]+){0,2}\s+(?:ave(?:nue)?|st(?:reet)?|rd|road|dr(?:ive)?|blvd|boulevard|pl(?:ace)?|way|cres(?:cent)?))\b/ig;
+  const pattern = /(?:^|[^a-z0-9])(?:(?:unit|suite|apt(?:artment)?)\s*#?\s*)?([a-z0-9][a-z0-9-]{0,7})\s*[-–—]\s*(\d{2,5}\s+(?:(?:w|west|e|east)\.?\s*)?(?:\d+(?:st|nd|rd|th)?|[a-z][a-z.'-]+)(?:\s+[a-z][a-z.'-]+){0,2}\s+(?:ave(?:nue)?|st(?:reet)?|rd|road|dr(?:ive)?|blvd|boulevard|pl(?:ace)?|way|cres(?:cent)?))\b/ig;
   for (const match of text.matchAll(pattern)) {
     const unit = match[1].toUpperCase();
     const civic = match[2].replace(/\s+/g, ' ').trim();
