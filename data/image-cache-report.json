@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-10-24T15:05:30.021Z",
+  "refreshedAt": "2026-10-24T15:20:19.308Z",
   "listings": {
     "solo-2228-marstrand": {
       "cached": 3,
@@ -160,6 +160,13 @@
       "failures": [],
       "photoPageUrl": "https://realtylink.org/en/house~for-rent~vancouver/263196052"
     },
+    "mls-r3175318": {
+      "cached": 5,
+      "preserved": 0,
+      "downloaded": 5,
+      "failures": [],
+      "photoPageUrl": "https://realtylink.org/en/house~for-rent~vancouver/263196945"
+    },
     "zumper-3d502587bbc4": {
       "cached": 5,
       "preserved": 5,
@@ -183,13 +190,13 @@
     }
   },
   "totals": {
-    "sourceListings": 22,
-    "cachedListings": 22,
-    "downloaded": 0,
+    "sourceListings": 23,
+    "cachedListings": 23,
+    "downloaded": 5,
     "failed": 6,
     "preserved": 104,
-    "prunedListings": 1,
-    "prunedIndexImages": 5,
+    "prunedListings": 0,
+    "prunedIndexImages": 0,
     "prunedOrphanFiles": 0
   }
 }

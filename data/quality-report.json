@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-10-24T15:05:30.610Z",
-  "activeCount": 22,
+  "generatedAt": "2026-10-24T15:20:20.006Z",
+  "activeCount": 23,
   "decisionReady": true,
   "readinessStatus": "finalized",
   "highIssueCount": 0,
   "mediumIssueCount": 0,
-  "infoIssueCount": 38,
+  "infoIssueCount": 40,
   "issues": [
     {
       "severity": "info",
@@ -169,6 +169,16 @@
     },
     {
       "severity": "info",
+      "id": "mls-r3175318",
+      "issue": "unknown-ac"
+    },
+    {
+      "severity": "info",
+      "id": "mls-r3175318",
+      "issue": "unknown-orientation"
+    },
+    {
+      "severity": "info",
       "id": "zumper-3d502587bbc4",
       "issue": "unknown-ac"
     },
@@ -201,8 +211,8 @@
   "readinessChecks": {
     "smokeOk": true,
     "smokeFresh": true,
-    "smokeCheckedAt": "2026-10-24T15:05:36.373Z",
-    "latestDataAt": "2026-10-24T15:04:43.526Z",
+    "smokeCheckedAt": "2026-10-24T15:20:25.936Z",
+    "latestDataAt": "2026-10-24T15:19:33.632Z",
     "coverageReady": true,
     "healthyDiscoveryLanes": 3,
     "coverageWarnings": [
@@ -222,10 +232,22 @@
         "severity": "warning",
         "lane": "realtylink",
         "status": "degraded",
-        "detail": "3/3 searches reachable; 3 current live candidates parsed from a partial snapshot versus complete baseline 10; positive discovery usable, removals suppressed"
+        "detail": "3/3 searches reachable; 2 current live candidates parsed from a partial snapshot versus complete baseline 10; positive discovery usable, removals suppressed"
+      },
+      {
+        "severity": "warning",
+        "lane": "priority-viridian-unpriced-unit",
+        "status": "price-unverified",
+        "detail": "Viridian unit 0103 (2BR) is offered for Now, but official rent is withheld; do not publish before verifying rent >= CAD $3,500"
+      },
+      {
+        "severity": "warning",
+        "lane": "priority-viridian-unpriced-unit",
+        "status": "price-unverified",
+        "detail": "Viridian unit 0309 (2BR) is offered for Oct 30, but official rent is withheld; do not publish before verifying rent >= CAD $3,500"
       }
     ]
   },
   "readinessIssues": [],
-  "finalizedAt": "2026-10-24T15:05:36.478Z"
+  "finalizedAt": "2026-10-24T15:20:26.039Z"
 }

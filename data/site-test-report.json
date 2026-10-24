@@ -1,11 +1,11 @@
 {
-  "checkedAt": "2026-10-24T15:10:56.424Z",
+  "checkedAt": "2026-10-24T15:20:25.936Z",
   "ok": true,
   "checkpoints": {
     "render": {
       "title": "Vancouver Westside Rentals",
-      "cards": 22,
-      "shown": 22
+      "cards": 23,
+      "shown": 23
     },
     "stats": {
       "labels": [
@@ -16,16 +16,16 @@
         "Last refreshed"
       ],
       "values": [
-        "22",
+        "23",
         "3",
-        "7",
-        "5",
-        "Oct 24, 7:56 a.m. PDT"
+        "8",
+        "4",
+        "Oct 24, 8:11 a.m. PDT"
       ],
-      "html": "<div class=\"stat\"><strong>22</strong><span>Active</span></div><div class=\"stat\"><strong>3</strong><span>New 7d</span></div><div class=\"stat\"><strong>7</strong><span>Price drops</span></div><div class=\"stat\"><strong>5</strong><span>To verify</span></div><div class=\"stat\"><strong>Oct 24, 7:56 a.m. PDT</strong><span>Last refreshed</span></div>",
+      "html": "<div class=\"stat\"><strong>23</strong><span>Active</span></div><div class=\"stat\"><strong>3</strong><span>New 7d</span></div><div class=\"stat\"><strong>8</strong><span>Price drops</span></div><div class=\"stat\"><strong>4</strong><span>To verify</span></div><div class=\"stat\"><strong>Oct 24, 8:11 a.m. PDT</strong><span>Last refreshed</span></div>",
       "refreshedAt": {
-        "displayed": "Oct 24, 7:56 a.m. PDT",
-        "expected": "Oct 24, 7:56 a.m. PDT",
+        "displayed": "Oct 24, 8:11 a.m. PDT",
+        "expected": "Oct 24, 8:11 a.m. PDT",
         "timezone": "America/Vancouver"
       },
       "newSevenDays": {
@@ -39,7 +39,7 @@
       }
     },
     "map": {
-      "markers": 22,
+      "markers": 23,
       "desktopMapVisible": true
     },
     "filters": "ok",
@@ -50,14 +50,14 @@
     },
     "sourceLink": "https://www.craigslist.org/view/d/vancouver-bed-bath-fourth-mac-kitsilano/eiSLCKTVqsrtPUWpUpJyDN",
     "photos": {
-      "total": 22,
-      "loaded": 22,
+      "total": 23,
+      "loaded": 23,
       "fallbacks": 0,
       "bad": []
     },
     "markerPositions": {
-      "total": 22,
-      "unique": 22
+      "total": 23,
+      "unique": 23
     },
     "dataEndpoints": "ok",
     "mobile": "ok",
