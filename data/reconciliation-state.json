@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-10-23T18:33:13.774Z",
+  "refreshedAt": "2026-10-24T15:04:39.216Z",
   "groups": [
     {
       "identityKey": "3349 dunbar st::url:fa963040c813",
@@ -86,6 +86,30 @@
       "result": "candidate_only"
     },
     {
+      "identityKey": "1777 w 7th ave::url:a9679b09464a",
+      "sources": [
+        "craigslist"
+      ],
+      "rents": [
+        4100
+      ],
+      "exactUnit": false,
+      "matchedListingId": null,
+      "result": "candidate_only"
+    },
+    {
+      "identityKey": "2075 w 48th ave::url:f2318970062d",
+      "sources": [
+        "craigslist"
+      ],
+      "rents": [
+        7990
+      ],
+      "exactUnit": false,
+      "matchedListingId": null,
+      "result": "candidate_only"
+    },
+    {
       "identityKey": "3720 w 8th ave 203::url:c04817b23a34",
       "sources": [
         "craigslist"
@@ -128,18 +152,6 @@
       ],
       "rents": [
         4800
-      ],
-      "exactUnit": false,
-      "matchedListingId": null,
-      "result": "candidate_only"
-    },
-    {
-      "identityKey": "1777 w 7th ave::url:a8a11c9029d0",
-      "sources": [
-        "craigslist"
-      ],
-      "rents": [
-        4100
       ],
       "exactUnit": false,
       "matchedListingId": null,
@@ -218,48 +230,35 @@
       "result": "authoritative_mls_reverified"
     },
     {
-      "identityKey": "mls:r3175599",
+      "identityKey": "mls:r3170701",
       "sources": [
         "realtylink mls"
       ],
       "rents": [
-        4800
+        6000
       ],
       "exactUnit": false,
-      "matchedListingId": "zumper-dd642aebb4f6",
+      "matchedListingId": "mls-r3170701",
       "result": "authoritative_mls_reverified"
     },
     {
-      "identityKey": "mls:r3175865",
+      "identityKey": "mls:r3163709",
       "sources": [
         "realtylink mls"
       ],
       "rents": [
-        4000
+        5800
       ],
       "exactUnit": false,
-      "matchedListingId": "mls-r3175865",
-      "result": "authoritative_mls_reverified"
-    },
-    {
-      "identityKey": "mls:r3172081",
-      "sources": [
-        "realtylink mls"
-      ],
-      "rents": [
-        3600
-      ],
-      "exactUnit": false,
-      "matchedListingId": "mls-r3172081",
+      "matchedListingId": "mls-r3163709",
       "result": "authoritative_mls_reverified"
     }
   ],
   "promoted": [],
   "crossVerified": [
     "zumper-16e9ae17cd91",
-    "zumper-dd642aebb4f6",
-    "mls-r3175865",
-    "mls-r3172081"
+    "mls-r3170701",
+    "mls-r3163709"
   ],
   "fingerprintCrossVerified": [],
   "craigslistRelistingsRecovered": [],
@@ -272,11 +271,11 @@
   "mlsMissing": {},
   "mlsRemoved": [],
   "mlsStaleHidden": [],
-  "realtylinkSnapshotCount": 4,
+  "realtylinkSnapshotCount": 3,
   "realtylinkSnapshotHighWaterMark": 10,
   "realtylinkSnapshotScope": "rent-3500-beds-2-4-whole-home-westside-v3",
   "realtylinkRemovalEligible": false,
-  "mlsRemovalSuppressed": "Partial Realtylink snapshot (4 candidates versus previous complete 10); disappearance signals ignored.",
+  "mlsRemovalSuppressed": "Partial Realtylink snapshot (3 candidates versus previous complete 10); disappearance signals ignored.",
   "mlsDuplicatesMerged": [],
   "canonicalFieldRepairsApplied": []
 }
