@@ -41,7 +41,7 @@ for (const listing of afterPayload.listings) {
     listing.status = before.status;
     listing.priceDrop = before.priceDrop;
     const hist = afterHistory[listing.id] || [];
-    afterHistory[listing.id] = hist.filter(h => !(h.date === today && /^AUTO price update/i.test(h.note || '')));
+    afterHistory[listing.id] = hist.filter(h => !(h.date === today && /^AUTO(?: live)? price update/i.test(h.note || '')));
   }
 }
 
