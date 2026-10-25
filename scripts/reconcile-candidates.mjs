@@ -4,7 +4,7 @@ import crypto from 'node:crypto';
 import { civicAddressMatch, exactAddressUnitIdentity, listingMls, mlsIdentity } from './inventory-identity.mjs';
 import { dedupeMlsRecords } from './mls-dedupe.mjs';
 import { verifiedPhotoCandidates } from './listing-photo-candidates.mjs';
-import { parseRealtylinkAirConditioning, parseRealtylinkFloorArea, parseRealtylinkRoomCount } from './realtylink-parser.mjs';
+import { parseRealtylinkAirConditioning, parseRealtylinkFloorArea, parseRealtylinkPetFriendly, parseRealtylinkRoomCount } from './realtylink-parser.mjs';
 import { LISTING_SCOPE_VERSION, listingScopeEligible } from './discovery-policy.mjs';
 import { realtylinkSnapshotBaseline, realtylinkSnapshotComplete } from './coverage-policy.mjs';
 import { craigslistSeedRelistingMatch } from './craigslist-seed-relisting.mjs';
@@ -161,6 +161,7 @@ for(const x of payload.listings){
     Number(evidence.status)<200||Number(evidence.status)>=400||!evidence.identityMatch||
     !Number.isFinite(checkedAt)||Date.now()-checkedAt>12*60*60*1000)continue;
   x.ac=parseRealtylinkAirConditioning(evidence.bodyText);
+  x.petFriendly=parseRealtylinkPetFriendly(evidence.bodyText);
 }
 for(const x of payload.listings){
   const mls=listingMls(x);
@@ -180,7 +181,7 @@ for(const x of payload.listings){
   x.rent=rent;
   const bathrooms=parseRealtylinkRoomCount(evidence.bodyText,'bathroom');
   const area=parseRealtylinkFloorArea(evidence.bodyText);
-  if(beds!=null)x.bedrooms=beds;if(bathrooms!=null)x.bathrooms=bathrooms;if(area!=null)x.sqft=area;x.ac=parseRealtylinkAirConditioning(evidence.bodyText);
+  if(beds!=null)x.bedrooms=beds;if(bathrooms!=null)x.bathrooms=bathrooms;if(area!=null)x.sqft=area;x.ac=parseRealtylinkAirConditioning(evidence.bodyText);x.petFriendly=parseRealtylinkPetFriendly(evidence.bodyText);
   if(rent<oldRent){x.status='price_drop';x.priceDrop=true;}else if(!wasActive)x.status='corrected';
   if(!wasActive){
     state.detailReactivated.push(x.id);
@@ -277,7 +278,7 @@ for(const [k,items] of groups){
     const oldRent=Number(listing.rent),newRent=Number(authoritativeMls.rent);
     listing.availabilityStatus='active';listing.verificationLevel='verified';listing.lastChecked=today;listing.verifiedAt=iso;
     listing.verificationMethod=`Reverified in current authoritative Realtylink MLS inventory ${authoritativeMls.mls}.`;
-    listing.bedrooms=Number(authoritativeMls.bedrooms);listing.bathrooms=baths(authoritativeMls);listing.sqft=sqft(authoritativeMls);
+    listing.bedrooms=Number(authoritativeMls.bedrooms);listing.bathrooms=baths(authoritativeMls);listing.sqft=sqft(authoritativeMls);if('petFriendly' in authoritativeMls)listing.petFriendly=authoritativeMls.petFriendly;
     listing.unit=unitToken(authoritativeMls.unit)||listing.unit||null;
     if(listing.source==='Realtylink MLS')listing.address=authoritativeMls.address;
     attachCandidateImages(imageSources,listing,authoritativeMls);

@@ -6,7 +6,7 @@ import { bedroomEligible, isHouseShareText, isTargetRentalAreaText, isTargetRent
 import { aggregateUnitCount, discoveredStructuredInventories, priorityInventoryEvidenceHealthy, rentCafeExactUnits, rentCafeUnpricedUnits, structuredRentalInventories } from './priority-inventory-policy.mjs';
 import { dedupeHistoryEvents, pruneExcludedScopeChurn } from './history-policy.mjs';
 import { verifiedPhotoCandidates } from './listing-photo-candidates.mjs';
-import { isRealtylinkListingNotFoundRedirect, isTargetWestsideCoordinate, parseRealtylinkAirConditioning, parseRealtylinkCoordinateValues, parseRealtylinkCoordinates, parseRealtylinkFloorArea, parseRealtylinkRoomCount } from './realtylink-parser.mjs';
+import { isRealtylinkListingNotFoundRedirect, isTargetWestsideCoordinate, parseRealtylinkAirConditioning, parseRealtylinkCoordinateValues, parseRealtylinkCoordinates, parseRealtylinkFloorArea, parseRealtylinkPetFriendly, parseRealtylinkRoomCount } from './realtylink-parser.mjs';
 import { craigslistLaneHealth, marketplaceLaneHealth, rentalscaLaneHealth, realtylinkLaneHealth, realtylinkSnapshotBaseline, realtylinkSnapshotComplete } from './coverage-policy.mjs';
 import { exactPurposeBuiltFloorplanEvidence, purposeBuiltFloorplanId, samePurposeBuiltFloorplanIdentity } from './purposebuilt-floorplan-evidence.mjs';
 import { hasCurrentMarketplaceAvailability, isAuxiliaryNegativeForMls, softNegativeDisposition, softUnavailablePrompt } from './listing-availability.mjs';
@@ -177,6 +177,7 @@ if (softNegativeDisposition(true, {}, Date.parse('2026-09-13T18:00:00Z')) !== 'h
   failures.push('Soft marketplace negative evidence does not follow the four-hour hide-then-confirm rule.');
 }
 if(parseRealtylinkAirConditioning('Forced-air heating')!==null||parseRealtylinkAirConditioning('Cooling Features\nAir Conditioning')!==true||parseRealtylinkAirConditioning('No air conditioning')!==false)failures.push('Realtylink AC omission is still being misreported as confirmed no AC.');
+if(parseRealtylinkPetFriendly('Pets upon approval.')!==true||parseRealtylinkPetFriendly('Pets are considered by the landlord.')!==true||parseRealtylinkPetFriendly('No pets permitted.')!==false||parseRealtylinkPetFriendly('Garage included.')!==null)failures.push('Realtylink pet policy cannot preserve positive, negative and unknown states.');
 const inventoryNow=Date.parse('2026-09-13T00:00:00Z');
 if(!priorityInventoryEvidenceHealthy({ok:true,status:200,checkedAt:'2026-09-12T23:00:00Z',bodyText:'Kits Walk Floor Plans',source:{url:'https://www.kitswalkleasing.com/floorplans'}},/kits walk/i,inventoryNow,12,/kitswalkleasing\.com\/floorplans/i)||
    priorityInventoryEvidenceHealthy({ok:true,status:403,checkedAt:'2026-09-12T23:00:00Z',bodyText:'Kits Walk Floor Plans',source:{url:'https://www.kitswalkleasing.com/floorplans'}},/kits walk/i,inventoryNow,12,/kitswalkleasing\.com\/floorplans/i)||
@@ -242,7 +243,7 @@ if(craigslistDescriptionAddress!=='2118 West 15 Ave #2F'||craigslistDescriptionC
 const craigslistInlineUnitEvidence=craigslistDetailEvidence({url:craigslistCurrent,status:200,expectedPostId:'7978714221',title:'$5,950 / 3br - 1478ft2 - Park-side townhome',address:'2688 Vine St',text:'$5,950 / 3br - 1478ft2\n3BR / 2.5Ba 1478ft2\nFeatures: Enjoy park side living at 111–2688 Vine Street with Kits Beach nearby.\npost id: 7978714221'});
 if(craigslistInlineUnitEvidence.address!=='2688 Vine St'||craigslistInlineUnitEvidence.unit!=='111'||craigslistDescriptionUnit('Tour suite 111–2688 Vine Street','2688 Vine St')!=='111'||craigslistDescriptionUnit('Tour suite 111–2688 Vine Street','2118 West 15 Ave')!==null) failures.push('An inline Craigslist unit cannot be recovered conservatively from prose that exactly matches the map civic address.');
 const reconciliationSource=await fs.readFile('scripts/reconcile-candidates.mjs','utf8');
-if(!reconciliationSource.includes("x.ac=parseRealtylinkAirConditioning(evidence.bodyText)")||
+if(!reconciliationSource.includes("x.ac=parseRealtylinkAirConditioning(evidence.bodyText)")||!reconciliationSource.includes("x.petFriendly=parseRealtylinkPetFriendly(evidence.bodyText)")||
   !reconciliationSource.includes("Date.now()-checkedAt>12*60*60*1000"))failures.push('Reconciliation no longer refreshes Realtylink AC from recent identity-matched detail evidence.');
 if(!reconciliationSource.includes("c.detailVerified===true&&c.addressPrecision==='exact_civic'")||!reconciliationSource.includes('items.every(c=>c.publishable!==false)')) failures.push('Unverified Craigslist addresses can cross-verify inventory or candidate-only records can be auto-published.');
 const duplicateMlsHistory={legacy:[{date:'2026-09-08',rent:4950,note:'legacy'}],canonical:[{date:'2026-09-09',rent:4950,note:'canonical'}]};

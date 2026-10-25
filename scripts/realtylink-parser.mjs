@@ -37,6 +37,13 @@ export function parseRealtylinkAirConditioning(text) {
   return null;
 }
 
+export function parseRealtylinkPetFriendly(text) {
+  const value=String(text||'');
+  if(/\bno pets?\b|\bpets? (?:are )?not (?:allowed|permitted)\b|\bno animals?\b/i.test(value))return false;
+  if(/\bpets? (?:upon|with) (?:owner(?:'s)? |landlord(?:'s)? )?approval\b|\bpets? (?:are )?(?:allowed|permitted|welcome|considered)\b|\bpet[- ]friendly\b/i.test(value))return true;
+  return null;
+}
+
 export function isRealtylinkListingNotFoundRedirect(sourceUrl, finalUrl) {
   try {
     const source=new URL(sourceUrl);
