@@ -2451,6 +2451,11 @@
       "date": "2026-10-23",
       "rent": 15000,
       "note": "CORRECTED: auxiliary marketplace removal rolled back; MLS R3159060 remains hidden pending authoritative confirmation."
+    },
+    {
+      "date": "2026-10-25",
+      "rent": 15000,
+      "note": "CORRECTED: restored after exact current MLS detail matched identity, explicit availability and rent."
     }
   ],
   "mls-r3149267": [

@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-10-25T15:17:30.593Z",
+  "refreshedAt": "2026-10-25T15:29:31.152Z",
   "listings": {
     "solo-2228-marstrand": {
       "cached": 3,
@@ -60,6 +60,13 @@
       "failures": [],
       "photoPageUrl": "https://rentals.ca/vancouver/kits-walk-by-strand"
     },
+    "mls-r3159060": {
+      "cached": 5,
+      "preserved": 0,
+      "downloaded": 5,
+      "failures": [],
+      "photoPageUrl": "https://realtylink.org/en/house~for-rent~vancouver/263180687"
+    },
     "mls-r3163709": {
       "cached": 5,
       "preserved": 5,
@@ -90,8 +97,8 @@
     },
     "mls-r3167237": {
       "cached": 5,
-      "preserved": 0,
-      "downloaded": 5,
+      "preserved": 5,
+      "downloaded": 0,
       "failures": [],
       "photoPageUrl": "https://realtylink.org/en/apartment~for-rent~vancouver/263188864"
     },
@@ -137,7 +144,7 @@
       "preserved": 5,
       "downloaded": 0,
       "failures": [],
-      "photoPageUrl": "https://www.zumper.com/address/2000-w-43rd-ave-vancouver-bc-v6m-2c9-can"
+      "photoPageUrl": "https://realtylink.org/en/house~for-rent~vancouver/263197226"
     },
     "mls-r3173479": {
       "cached": 5,
@@ -190,13 +197,13 @@
     }
   },
   "totals": {
-    "sourceListings": 23,
-    "cachedListings": 23,
+    "sourceListings": 24,
+    "cachedListings": 24,
     "downloaded": 5,
     "failed": 6,
-    "preserved": 104,
-    "prunedListings": 3,
-    "prunedIndexImages": 15,
+    "preserved": 109,
+    "prunedListings": 0,
+    "prunedIndexImages": 0,
     "prunedOrphanFiles": 0
   }
 }
