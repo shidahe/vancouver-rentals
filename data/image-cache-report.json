@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-10-24T17:35:06.982Z",
+  "refreshedAt": "2026-10-25T15:17:30.593Z",
   "listings": {
     "solo-2228-marstrand": {
       "cached": 3,
@@ -28,18 +28,6 @@
       "downloaded": 0,
       "failures": [],
       "photoPageUrl": "https://realtylink.org/en/townhouse~for-rent~vancouver/263182316"
-    },
-    "arbutus-residences-floorplan-2-bedroom-townhouse-den-1340": {
-      "cached": 5,
-      "preserved": 0,
-      "downloaded": 5,
-      "failures": [
-        {
-          "url": "https://img.zumpercdn.com/882527203/1280x960?dpr=1&fit=crop&h=222&q=76&w=394",
-          "error": "not a usable image (image/webp, 7396 bytes)"
-        }
-      ],
-      "photoPageUrl": "https://www.zumper.com/apartment-buildings/p1117150/arbutus-residences-quilchena-vancouver-bc"
     },
     "mls-r3151372": {
       "cached": 2,
@@ -100,6 +88,13 @@
       "failures": [],
       "photoPageUrl": "https://www.zumper.com/address/4101-yew-st-vancouver-bc-v6l-3b7-can"
     },
+    "mls-r3167237": {
+      "cached": 5,
+      "preserved": 0,
+      "downloaded": 5,
+      "failures": [],
+      "photoPageUrl": "https://realtylink.org/en/apartment~for-rent~vancouver/263188864"
+    },
     "kits-walk-floorplan-2-bedroom-811-3675": {
       "cached": 5,
       "preserved": 5,
@@ -130,26 +125,12 @@
       "failures": [],
       "photoPageUrl": "https://realtylink.org/en/house~for-rent~vancouver/263193839"
     },
-    "zumper-86435797c322": {
-      "cached": 5,
-      "preserved": 5,
-      "downloaded": 0,
-      "failures": [],
-      "photoPageUrl": "https://www.zumper.com/address/2688-vine-st-vancouver-bc-v6k-4t6-can"
-    },
     "zumper-8a4ac6a75244": {
       "cached": 5,
       "preserved": 5,
       "downloaded": 0,
       "failures": [],
       "photoPageUrl": "https://www.zumper.com/address/2814-w-3rd-ave-vancouver-bc-v6k-1m7-can"
-    },
-    "mls-r3169522": {
-      "cached": 5,
-      "preserved": 5,
-      "downloaded": 0,
-      "failures": [],
-      "photoPageUrl": "https://realtylink.org/en/apartment~for-rent~vancouver/263191149"
     },
     "zumper-dd642aebb4f6": {
       "cached": 5,
@@ -202,20 +183,20 @@
     },
     "mls-r3177685": {
       "cached": 5,
-      "preserved": 0,
-      "downloaded": 5,
+      "preserved": 5,
+      "downloaded": 0,
       "failures": [],
       "photoPageUrl": "https://realtylink.org/en/house~for-rent~vancouver/263199312"
     }
   },
   "totals": {
-    "sourceListings": 25,
-    "cachedListings": 25,
-    "downloaded": 10,
-    "failed": 7,
-    "preserved": 109,
-    "prunedListings": 0,
-    "prunedIndexImages": 0,
+    "sourceListings": 23,
+    "cachedListings": 23,
+    "downloaded": 5,
+    "failed": 6,
+    "preserved": 104,
+    "prunedListings": 3,
+    "prunedIndexImages": 15,
     "prunedOrphanFiles": 0
   }
 }

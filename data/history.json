@@ -704,6 +704,11 @@
       "date": "2026-10-24",
       "rent": 5390,
       "note": "NEEDS CONFIRMATION: latest purpose-built fallback sources did not confirm the exact configured rent + sqft inventory row."
+    },
+    {
+      "date": "2026-10-25",
+      "rent": 5390,
+      "note": "NEEDS CONFIRMATION: latest purpose-built fallback sources did not confirm the exact configured rent + sqft inventory row."
     }
   ],
   "zumper-2fde865f7e2c": [
@@ -2001,6 +2006,11 @@
       "date": "2026-10-24",
       "rent": 3800,
       "note": "NEEDS CONFIRMATION: latest purpose-built fallback sources did not confirm the exact configured rent + sqft inventory row."
+    },
+    {
+      "date": "2026-10-25",
+      "rent": 3800,
+      "note": "NEEDS CONFIRMATION: latest purpose-built fallback sources did not confirm the exact configured rent + sqft inventory row."
     }
   ],
   "mls-r3160879": [
@@ -2947,6 +2957,11 @@
       "date": "2026-10-20",
       "rent": 13000,
       "note": "AUTO-REMOVED: MLS R3167237 absent from two consecutive healthy inventory snapshots."
+    },
+    {
+      "date": "2026-10-25",
+      "rent": 13000,
+      "note": "CORRECTED: restored after exact current MLS detail matched identity, explicit availability and rent."
     }
   ],
   "mls-r3165327": [
@@ -3151,6 +3166,11 @@
       "date": "2026-10-22",
       "rent": 5950,
       "note": "CORRECTED from exact current Zumper advertiser facts: bathrooms 2.5 → 3."
+    },
+    {
+      "date": "2026-10-25",
+      "rent": 5950,
+      "note": "Auto-hidden: exact live detail was not reverified within 48 hours."
     }
   ],
   "zumper-8a4ac6a75244": [
@@ -3190,6 +3210,11 @@
       "date": "2026-10-23",
       "rent": 4500,
       "note": "CORRECTED: restored after exact current MLS detail matched identity, explicit availability and rent."
+    },
+    {
+      "date": "2026-10-25",
+      "rent": 4500,
+      "note": "AUTO-REMOVED after direct live verification found explicit unavailable evidence."
     }
   ],
   "zumper-dd642aebb4f6": [
@@ -3396,6 +3421,11 @@
       "date": "2026-10-23",
       "rent": 5500,
       "note": "EXCLUDED: house share or separately rented portion of a house."
+    },
+    {
+      "date": "2026-10-25",
+      "rent": 5500,
+      "note": "EXCLUDED: house share or separately rented portion of a house."
     }
   ],
   "mls-r3175318": [
@@ -3486,6 +3516,11 @@
     },
     {
       "date": "2026-10-23",
+      "rent": 4000,
+      "note": "EXCLUDED: house share or separately rented portion of a house."
+    },
+    {
+      "date": "2026-10-25",
       "rent": 4000,
       "note": "EXCLUDED: house share or separately rented portion of a house."
     }
