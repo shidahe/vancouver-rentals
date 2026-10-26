@@ -369,6 +369,19 @@ const kitsWalk3600 = purposeBuiltWatch.buildings?.find(x=>x.id==='kits-walk')?.i
 if(!kitsWalk3600||kitsWalk3600.bedrooms!==2||kitsWalk3600.bathrooms!==2) failures.push('Verified Kits Walk $3,600 / 741 sqft floorplan is not tracked.');
 if(!purposeBuiltSource.includes('structuredRentalInventories')||!purposeBuiltSource.includes('structuredMatch')) failures.push('Purpose-built verifier cannot match exact structured inventory rows.');
 if(!purposeBuiltWatch.buildings?.find(x=>x.id==='kits-walk')?.evidenceSourceIds?.includes('kits-walk-rentalsca')) failures.push('Kits Walk cannot reuse fresh aggregate evidence.');
+for (const expected of [
+  { id: 'the-raven', sourceId: 'the-raven-rentfaster', unit: '101', beds: 3, rent: 6995, sqft: 1200 },
+  { id: 'westward', sourceId: 'westward-rentfaster', unit: '104', beds: 3, rent: 4995, sqft: 932 }
+]) {
+  const building = purposeBuiltWatch.buildings?.find(x => x.id === expected.id);
+  const inventory = building?.inventories?.find(x => String(x.unit) === expected.unit);
+  const source = catalog.discovery?.find(x => x.id === expected.sourceId);
+  if (!building || !source || !building.evidenceSourceIds?.includes(expected.sourceId) ||
+      Number(inventory?.bedrooms) !== expected.beds || Number(inventory?.rent) !== expected.rent || Number(inventory?.sqft) !== expected.sqft ||
+      !building.urls?.some(x => /rew\.ca\/rentals\//.test(x))) {
+    failures.push(`${expected.id} exact 3BR purpose-built discovery can regress or lose its independent current-detail fallback.`);
+  }
+}
 if(!purposeBuiltSource.includes('freshEvidence')||!purposeBuiltSource.includes('reusedEvidence:true')) failures.push('Purpose-built verifier repeats requests instead of reusing fresh evidence.');
 if(!purposeBuiltWatch.buildings?.find(x=>x.id==='kits-walk')?.discoverStructuredInventories) failures.push('Kits Walk structured inventory cannot be discovered dynamically.');
 if(!purposeBuiltSource.includes('discoveredStructuredInventories')||!purposeBuiltSource.includes('exactUnit')||!purposeBuiltSource.includes('purposeBuiltFloorplanId(b.name,inv)')) failures.push('Dynamic purpose-built discovery, stable floorplan identity, or exact-unit protection is missing.');

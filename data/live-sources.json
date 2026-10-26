@@ -27,6 +27,8 @@
     {"id":"livrent-all-fallback","name":"liv.rent all listings fallback","url":"https://liv.rent/rental-listings","kind":"marketplace","adapter":"livrent-search"},
 
     {"id":"rentfaster-vancouver","name":"RentFaster Vancouver","url":"https://www.rentfaster.ca/bc/vancouver/rentals/","kind":"marketplace","adapter":"generic-search"},
+    {"id":"the-raven-rentfaster","name":"The Raven current floorplans","url":"https://www.rentfaster.ca/properties/3709-west-broadway-vancouver-688597","kind":"property_manager","adapter":"rentfaster-detail"},
+    {"id":"westward-rentfaster","name":"Westward current floorplans","url":"https://www.rentfaster.ca/properties/2355-w-49th-avenue-vancouver-bc-v6m-0g1-vancouver-755998","kind":"property_manager","adapter":"rentfaster-detail"},
     {"id":"kits-walk-official","name":"Kits Walk official availability","url":"https://www.kitswalkleasing.com/floorplans","kind":"official","adapter":"official-floorplans"},
     {"id":"kits-walk-zumper","name":"Kits Walk exact-building fallback","url":"https://www.zumper.com/apartment-buildings/p481389/kits-walk-by-strand-kitsilano-vancouver-bc","kind":"marketplace","adapter":"official-floorplans"},
     {"id":"kits-walk-rentalsca","name":"Kits Walk Rentals.ca aggregate inventory","url":"https://rentals.ca/vancouver/kits-walk-by-strand","kind":"marketplace","adapter":"official-floorplans"},

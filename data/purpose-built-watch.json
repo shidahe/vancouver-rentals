@@ -1,6 +1,72 @@
 {
   "buildings": [
     {
+      "id": "the-raven",
+      "name": "The Raven",
+      "address": "3709 W Broadway, Vancouver, BC V6R 2B9",
+      "neighborhood": "West Point Grey",
+      "urls": [
+        "https://www.rentfaster.ca/properties/3709-west-broadway-vancouver-688597",
+        "https://www.rew.ca/rentals/7599800/101-3709-west-broadway-vancouver-bc"
+      ],
+      "evidenceSourceIds": ["the-raven-rentfaster"],
+      "lat": 49.26409,
+      "lng": -123.18579,
+      "buildingYear": 2026,
+      "ac": true,
+      "parking": null,
+      "petFriendly": true,
+      "balcony": null,
+      "largeWindows": true,
+      "modernInterior": true,
+      "inventories": [
+        {
+          "key": "unit-101-3-bedroom-1200-6995",
+          "label": "Unit 101 · 3 Bedroom · 1,200 sqft · $6,995",
+          "bedrooms": 3,
+          "bathrooms": 3,
+          "sqft": 1200,
+          "rent": 6995,
+          "unit": "101",
+          "requiredSignals": ["6,995", "1,200", "101"],
+          "availabilitySignals": ["Immediate", "Available Now", "Available", "1 unit"]
+        }
+      ]
+    },
+    {
+      "id": "westward",
+      "name": "Westward",
+      "address": "2355 W 49th Ave, Vancouver, BC V6M 0G1",
+      "neighborhood": "Kerrisdale",
+      "urls": [
+        "https://www.rentfaster.ca/properties/2355-w-49th-avenue-vancouver-bc-v6m-0g1-vancouver-755998",
+        "https://www.rew.ca/rentals/7347814/104-2355-w-49th-vancouver-avenue-bc-vancouver-bc"
+      ],
+      "evidenceSourceIds": ["westward-rentfaster"],
+      "lat": 49.22661,
+      "lng": -123.15967,
+      "buildingYear": 2026,
+      "ac": true,
+      "parking": true,
+      "petFriendly": true,
+      "balcony": null,
+      "largeWindows": true,
+      "modernInterior": true,
+      "inventories": [
+        {
+          "key": "unit-104-3-bedroom-932-4995",
+          "label": "Unit 104 · 3 Bedroom · 932 sqft · $4,995",
+          "bedrooms": 3,
+          "bathrooms": 2,
+          "sqft": 932,
+          "rent": 4995,
+          "unit": "104",
+          "requiredSignals": ["4,995", "932", "104"],
+          "availabilitySignals": ["Immediate", "Available Now", "Available", "1 unit"]
+        }
+      ]
+    },
+    {
       "id": "kits-walk",
       "name": "Kits Walk",
       "address": "2075 W 12th Ave, Vancouver, BC V6J 2G3",
