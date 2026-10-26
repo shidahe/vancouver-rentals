@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-10-25T17:46:59.958Z",
+  "refreshedAt": "2026-10-26T15:08:29.730Z",
   "listings": {
     "solo-2228-marstrand": {
       "cached": 3,
@@ -29,6 +29,37 @@
       "failures": [],
       "photoPageUrl": "https://realtylink.org/en/townhouse~for-rent~vancouver/263182316"
     },
+    "mls-r3151372": {
+      "cached": 2,
+      "preserved": 0,
+      "downloaded": 2,
+      "failures": [
+        {
+          "url": "https://media.realtylink.org/images/consumersite/property/263172999/f30edfe3c49c4660ba9111ae7e98814b.jpeg?width=320&height=240&fit=cover",
+          "error": "not a usable image (image/jpeg, 6584 bytes)"
+        },
+        {
+          "url": "https://media.realtylink.org/images/consumersite/property/263172999/dbad0a90c3ff4d6a81393b40751ce33a.jpeg?width=320&height=240&fit=cover",
+          "error": "not a usable image (image/jpeg, 7504 bytes)"
+        },
+        {
+          "url": "https://media.realtylink.org/images/consumersite/property/263172999/714b4bbc2050493b867e77ca36123841.jpeg?width=320&height=240&fit=cover",
+          "error": "not a usable image (image/jpeg, 7118 bytes)"
+        },
+        {
+          "url": "https://media.realtylink.org/images/consumersite/property/263172999/c5424aa8ec754c5dbde8b458e950da3a.jpeg?width=480&height=360&fit=cover",
+          "error": "HTTP 400"
+        }
+      ],
+      "photoPageUrl": "https://realtylink.org/en/house~for-rent~vancouver/263172999"
+    },
+    "kits-walk-floorplan-2-bedroom-741-3600": {
+      "cached": 5,
+      "preserved": 0,
+      "downloaded": 5,
+      "failures": [],
+      "photoPageUrl": "https://rentals.ca/vancouver/kits-walk-by-strand"
+    },
     "mls-r3163709": {
       "cached": 5,
       "preserved": 5,
@@ -52,8 +83,8 @@
     },
     "mls-r3167417": {
       "cached": 5,
-      "preserved": 0,
-      "downloaded": 5,
+      "preserved": 5,
+      "downloaded": 0,
       "failures": [],
       "photoPageUrl": "https://realtylink.org/en/house~for-rent~vancouver/263189044"
     },
@@ -73,8 +104,8 @@
     },
     "mls-r3162880": {
       "cached": 5,
-      "preserved": 0,
-      "downloaded": 5,
+      "preserved": 5,
+      "downloaded": 0,
       "failures": [],
       "photoPageUrl": "https://realtylink.org/en/apartment~for-rent~vancouver/263184507"
     },
@@ -84,22 +115,6 @@
       "downloaded": 0,
       "failures": [],
       "photoPageUrl": "https://rentals.ca/vancouver/kits-walk-by-strand"
-    },
-    "mls-r3170701": {
-      "cached": 4,
-      "preserved": 4,
-      "downloaded": 0,
-      "failures": [
-        {
-          "url": "https://media.realtylink.org/images/consumersite/property/263192328/9745653bdd2d4849bea9d0c70aa8d0aa.jpeg?width=320&height=240&fit=cover",
-          "error": "not a usable image (image/jpeg, 7867 bytes)"
-        },
-        {
-          "url": "https://media.realtylink.org/images/consumersite/property/263192328/561cff5f09c647b0974a3ad3eaf6789c.jpeg?width=480&height=360&fit=cover",
-          "error": "HTTP 400"
-        }
-      ],
-      "photoPageUrl": "https://realtylink.org/en/house~for-rent~vancouver/263192328"
     },
     "mls-r3172212": {
       "cached": 5,
@@ -120,7 +135,7 @@
       "preserved": 5,
       "downloaded": 0,
       "failures": [],
-      "photoPageUrl": "https://www.zumper.com/address/2000-w-43rd-ave-vancouver-bc-v6m-2c9-can"
+      "photoPageUrl": "https://realtylink.org/en/house~for-rent~vancouver/263197226"
     },
     "mls-r3173479": {
       "cached": 5,
@@ -163,16 +178,23 @@
       "downloaded": 0,
       "failures": [],
       "photoPageUrl": "https://realtylink.org/en/house~for-rent~vancouver/263199312"
+    },
+    "westward-unit-104": {
+      "cached": 5,
+      "preserved": 0,
+      "downloaded": 5,
+      "failures": [],
+      "photoPageUrl": "https://www.rentfaster.ca/properties/2355-w-49th-avenue-vancouver-bc-v6m-0g1-vancouver-755998"
     }
   },
   "totals": {
-    "sourceListings": 22,
-    "cachedListings": 22,
-    "downloaded": 10,
-    "failed": 2,
-    "preserved": 97,
-    "prunedListings": 4,
-    "prunedIndexImages": 17,
+    "sourceListings": 24,
+    "cachedListings": 24,
+    "downloaded": 12,
+    "failed": 4,
+    "preserved": 103,
+    "prunedListings": 1,
+    "prunedIndexImages": 4,
     "prunedOrphanFiles": 0
   }
 }

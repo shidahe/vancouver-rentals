@@ -1,16 +1,148 @@
 {
-  "refreshedAt": "2026-10-25T17:46:10.112Z",
+  "refreshedAt": "2026-10-26T15:07:43.247Z",
   "buildings": [
     {
-      "building": "Kits Walk",
-      "checkedAt": "2026-10-25T17:46:10.112Z",
+      "building": "The Raven",
+      "checkedAt": "2026-10-26T15:07:43.247Z",
       "observations": [
         {
-          "url": "https://rentals.ca/vancouver/kits-walk-by-strand",
+          "url": "https://www.rentfaster.ca/properties/3709-west-broadway-vancouver-688597",
+          "httpStatus": 200,
+          "usable": true,
+          "error": null,
+          "reusedEvidence": true
+        },
+        {
+          "url": "https://www.rew.ca/rentals/7599800/101-3709-west-broadway-vancouver-bc",
           "httpStatus": 403,
           "usable": false,
           "error": null,
           "reusedEvidence": false
+        }
+      ],
+      "inventories": [
+        {
+          "key": "unit-101-3-bedroom-1200-6995",
+          "label": "Unit 101 · 3 Bedroom · 1,200 sqft · $6,995",
+          "bedrooms": 3,
+          "bathrooms": 3,
+          "sqft": 1200,
+          "rent": 6995,
+          "unit": "101",
+          "requiredSignals": [
+            "6,995",
+            "1,200",
+            "101"
+          ],
+          "availabilitySignals": [
+            "Immediate",
+            "Available Now",
+            "Available",
+            "1 unit"
+          ],
+          "verified": false,
+          "verifiedSource": null,
+          "sourceMatches": [
+            {
+              "url": "https://www.rentfaster.ca/properties/3709-west-broadway-vancouver-688597",
+              "httpStatus": 200,
+              "usable": true,
+              "structuredMatch": false,
+              "requiredMatched": false,
+              "availabilityMatched": true,
+              "fullyLeased": false,
+              "verified": false
+            },
+            {
+              "url": "https://www.rew.ca/rentals/7599800/101-3709-west-broadway-vancouver-bc",
+              "httpStatus": 403,
+              "usable": false,
+              "structuredMatch": false,
+              "requiredMatched": false,
+              "availabilityMatched": false,
+              "fullyLeased": false,
+              "verified": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "building": "Westward",
+      "checkedAt": "2026-10-26T15:07:43.247Z",
+      "observations": [
+        {
+          "url": "https://www.rentfaster.ca/properties/2355-w-49th-avenue-vancouver-bc-v6m-0g1-vancouver-755998",
+          "httpStatus": 200,
+          "usable": true,
+          "error": null,
+          "reusedEvidence": true
+        },
+        {
+          "url": "https://www.rew.ca/rentals/7347814/104-2355-w-49th-vancouver-avenue-bc-vancouver-bc",
+          "httpStatus": 403,
+          "usable": false,
+          "error": null,
+          "reusedEvidence": false
+        }
+      ],
+      "inventories": [
+        {
+          "key": "unit-104-3-bedroom-932-4995",
+          "label": "Unit 104 · 3 Bedroom · 932 sqft · $4,995",
+          "bedrooms": 3,
+          "bathrooms": 2,
+          "sqft": 932,
+          "rent": 4995,
+          "unit": "104",
+          "requiredSignals": [
+            "4,995",
+            "932",
+            "104"
+          ],
+          "availabilitySignals": [
+            "Immediate",
+            "Available Now",
+            "Available",
+            "1 unit"
+          ],
+          "verified": true,
+          "verifiedSource": "https://www.rentfaster.ca/properties/2355-w-49th-avenue-vancouver-bc-v6m-0g1-vancouver-755998",
+          "sourceMatches": [
+            {
+              "url": "https://www.rentfaster.ca/properties/2355-w-49th-avenue-vancouver-bc-v6m-0g1-vancouver-755998",
+              "httpStatus": 200,
+              "usable": true,
+              "structuredMatch": false,
+              "requiredMatched": true,
+              "availabilityMatched": true,
+              "fullyLeased": false,
+              "verified": true
+            },
+            {
+              "url": "https://www.rew.ca/rentals/7347814/104-2355-w-49th-vancouver-avenue-bc-vancouver-bc",
+              "httpStatus": 403,
+              "usable": false,
+              "structuredMatch": false,
+              "requiredMatched": false,
+              "availabilityMatched": false,
+              "fullyLeased": false,
+              "verified": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "building": "Kits Walk",
+      "checkedAt": "2026-10-26T15:07:43.247Z",
+      "observations": [
+        {
+          "url": "https://rentals.ca/vancouver/kits-walk-by-strand",
+          "httpStatus": 200,
+          "usable": true,
+          "error": null,
+          "reusedEvidence": true
         }
       ],
       "inventories": [
@@ -35,13 +167,45 @@
           "sourceMatches": [
             {
               "url": "https://rentals.ca/vancouver/kits-walk-by-strand",
-              "httpStatus": 403,
-              "usable": false,
+              "httpStatus": 200,
+              "usable": true,
               "structuredMatch": false,
               "requiredMatched": false,
-              "availabilityMatched": false,
+              "availabilityMatched": true,
               "fullyLeased": false,
               "verified": false
+            }
+          ]
+        },
+        {
+          "key": "2-bedroom-741-3800",
+          "label": "2 Bedroom · 741 sqft · $3,800",
+          "bedrooms": 2,
+          "bathrooms": 2,
+          "sqft": 741,
+          "rent": 3800,
+          "unit": null,
+          "requiredSignals": [
+            "3,800",
+            "741"
+          ],
+          "availabilitySignals": [
+            "move-in ready",
+            "book a tour today"
+          ],
+          "dynamicallyDiscovered": true,
+          "verified": true,
+          "verifiedSource": "https://rentals.ca/vancouver/kits-walk-by-strand",
+          "sourceMatches": [
+            {
+              "url": "https://rentals.ca/vancouver/kits-walk-by-strand",
+              "httpStatus": 200,
+              "usable": true,
+              "structuredMatch": true,
+              "requiredMatched": true,
+              "availabilityMatched": true,
+              "fullyLeased": false,
+              "verified": true
             }
           ]
         }
@@ -49,7 +213,7 @@
     },
     {
       "building": "Arbutus Residences",
-      "checkedAt": "2026-10-25T17:46:10.112Z",
+      "checkedAt": "2026-10-26T15:07:43.247Z",
       "observations": [
         {
           "url": "https://www.rentfaster.ca/properties/2139-lahb-ave-vancouver-454186",
@@ -184,7 +348,7 @@
     },
     {
       "building": "Fourth + Mac",
-      "checkedAt": "2026-10-25T17:46:10.112Z",
+      "checkedAt": "2026-10-26T15:07:43.247Z",
       "observations": [
         {
           "url": "https://www.craigslist.org/view/d/vancouver-bed-bath-fourth-mac-kitsilano/eiSLCKTVqsrtPUWpUpJyDN",

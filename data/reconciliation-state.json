@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-10-25T17:46:09.800Z",
+  "refreshedAt": "2026-10-26T15:07:42.719Z",
   "groups": [
     {
       "identityKey": "3349 dunbar st::url:fa963040c813",
@@ -11,18 +11,6 @@
       ],
       "exactUnit": false,
       "matchedListingId": null,
-      "result": "candidate_only"
-    },
-    {
-      "identityKey": "4101 yew st::url:7af73c32128d",
-      "sources": [
-        "zumper"
-      ],
-      "rents": [
-        4400
-      ],
-      "exactUnit": false,
-      "matchedListingId": "zumper-6f8b3ff2b9fd",
       "result": "candidate_only"
     },
     {
@@ -86,24 +74,24 @@
       "result": "candidate_only"
     },
     {
-      "identityKey": "1777 w 7th ave::url:a9679b09464a",
+      "identityKey": "2075 w 48th ave::url:9f9769f7d738",
       "sources": [
         "craigslist"
       ],
       "rents": [
-        4100
+        7990
       ],
       "exactUnit": false,
       "matchedListingId": null,
       "result": "candidate_only"
     },
     {
-      "identityKey": "2075 w 48th ave::url:f2318970062d",
+      "identityKey": "1777 w 7th ave::url:a9679b09464a",
       "sources": [
         "craigslist"
       ],
       "rents": [
-        7990
+        4100
       ],
       "exactUnit": false,
       "matchedListingId": null,
@@ -170,18 +158,6 @@
       "result": "candidate_only"
     },
     {
-      "identityKey": "2111 w 11th ave near arbutus st::url:598bf3bcd5e7",
-      "sources": [
-        "craigslist"
-      ],
-      "rents": [
-        3500
-      ],
-      "exactUnit": false,
-      "matchedListingId": null,
-      "result": "candidate_only"
-    },
-    {
       "identityKey": "3750 w 17th ave::url:34bd5c762614",
       "sources": [
         "craigslist"
@@ -218,18 +194,6 @@
       "result": "candidate_only"
     },
     {
-      "identityKey": "mls:r3162880",
-      "sources": [
-        "realtylink mls"
-      ],
-      "rents": [
-        4650
-      ],
-      "exactUnit": true,
-      "matchedListingId": "mls-r3162880",
-      "result": "authoritative_mls_reverified"
-    },
-    {
       "identityKey": "mls:r3160689",
       "sources": [
         "realtylink mls"
@@ -242,15 +206,27 @@
       "result": "authoritative_mls_reverified"
     },
     {
-      "identityKey": "mls:r3173479",
+      "identityKey": "mls:r3175599",
       "sources": [
         "realtylink mls"
       ],
       "rents": [
-        3900
+        4800
       ],
-      "exactUnit": true,
-      "matchedListingId": "mls-r3173479",
+      "exactUnit": false,
+      "matchedListingId": "zumper-dd642aebb4f6",
+      "result": "authoritative_mls_reverified"
+    },
+    {
+      "identityKey": "mls:r3151372",
+      "sources": [
+        "realtylink mls"
+      ],
+      "rents": [
+        4800
+      ],
+      "exactUnit": false,
+      "matchedListingId": "mls-r3151372",
       "result": "authoritative_mls_reverified"
     },
     {
@@ -266,18 +242,6 @@
       "result": "authoritative_mls_reverified"
     },
     {
-      "identityKey": "mls:r3175318",
-      "sources": [
-        "realtylink mls"
-      ],
-      "rents": [
-        4000
-      ],
-      "exactUnit": false,
-      "matchedListingId": "mls-r3175318",
-      "result": "authoritative_mls_reverified"
-    },
-    {
       "identityKey": "mls:r3177685",
       "sources": [
         "realtylink mls"
@@ -288,16 +252,28 @@
       "exactUnit": false,
       "matchedListingId": "mls-r3177685",
       "result": "authoritative_mls_reverified"
+    },
+    {
+      "identityKey": "mls:r3163709",
+      "sources": [
+        "realtylink mls"
+      ],
+      "rents": [
+        5800
+      ],
+      "exactUnit": false,
+      "matchedListingId": "mls-r3163709",
+      "result": "authoritative_mls_reverified"
     }
   ],
   "promoted": [],
   "crossVerified": [
-    "mls-r3162880",
     "zumper-16e9ae17cd91",
-    "mls-r3173479",
+    "zumper-dd642aebb4f6",
+    "mls-r3151372",
     "mls-r3167417",
-    "mls-r3175318",
-    "mls-r3177685"
+    "mls-r3177685",
+    "mls-r3163709"
   ],
   "fingerprintCrossVerified": [],
   "craigslistRelistingsRecovered": [],
@@ -306,15 +282,13 @@
   "relistedMlsMerged": [],
   "negativeMatches": [],
   "detailReactivated": [
-    "mls-r3167417",
-    "mls-r3162880"
+    "mls-r3151372"
   ],
   "auxiliaryMlsRemovalsRolledBack": [],
   "mlsMissing": {},
   "mlsRemoved": [],
   "mlsStaleHidden": [
-    "mls-r3151372",
-    "mls-r3174425"
+    "mls-r3170701"
   ],
   "realtylinkSnapshotCount": 6,
   "realtylinkSnapshotHighWaterMark": 10,

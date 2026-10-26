@@ -1826,6 +1826,11 @@
       "date": "2026-10-25",
       "rent": 4800,
       "note": "AUTO-HIDDEN: MLS R3151372 exceeded 48 hours without fresh positive availability; partial search results are not removal evidence."
+    },
+    {
+      "date": "2026-10-26",
+      "rent": 4800,
+      "note": "CORRECTED: restored after exact current MLS detail matched identity, explicit availability and rent."
     }
   ],
   "mls-r3158179": [
@@ -3145,6 +3150,11 @@
       "date": "2026-10-23",
       "rent": 6000,
       "note": "CORRECTED: restored after exact current MLS detail matched identity, explicit availability and rent."
+    },
+    {
+      "date": "2026-10-26",
+      "rent": 6000,
+      "note": "AUTO-HIDDEN: MLS R3170701 exceeded 48 hours without fresh positive availability; partial search results are not removal evidence."
     }
   ],
   "zumper-f3c25cb7e83b": [
@@ -3560,6 +3570,13 @@
       "date": "2026-10-24",
       "rent": 8500,
       "note": "NEW: live Realtylink MLS R3177685 auto-published."
+    }
+  ],
+  "westward-unit-104": [
+    {
+      "date": "2026-10-26",
+      "rent": 4995,
+      "note": "First seen in live purpose-built inventory via https://www.rentfaster.ca/properties/2355-w-49th-avenue-vancouver-bc-v6m-0g1-vancouver-755998"
     }
   ]
 }
