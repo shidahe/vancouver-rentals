@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-10-26T15:07:42.719Z",
+  "refreshedAt": "2026-10-26T20:16:16.703Z",
   "groups": [
     {
       "identityKey": "3349 dunbar st::url:fa963040c813",
@@ -74,12 +74,12 @@
       "result": "candidate_only"
     },
     {
-      "identityKey": "2075 w 48th ave::url:9f9769f7d738",
+      "identityKey": "3750 w 17th ave::url:34bd5c762614",
       "sources": [
         "craigslist"
       ],
       "rents": [
-        7990
+        3600
       ],
       "exactUnit": false,
       "matchedListingId": null,
@@ -91,7 +91,67 @@
         "craigslist"
       ],
       "rents": [
-        4100
+        3950
+      ],
+      "exactUnit": false,
+      "matchedListingId": null,
+      "result": "candidate_only"
+    },
+    {
+      "identityKey": "4455 w 9th ave::url:a00848ac2e03",
+      "sources": [
+        "craigslist"
+      ],
+      "rents": [
+        4500
+      ],
+      "exactUnit": false,
+      "matchedListingId": null,
+      "result": "candidate_only"
+    },
+    {
+      "identityKey": "2475 w 4th ave near larch st::url:19d1ae4c8f78",
+      "sources": [
+        "craigslist"
+      ],
+      "rents": [
+        3600
+      ],
+      "exactUnit": false,
+      "matchedListingId": null,
+      "result": "candidate_only"
+    },
+    {
+      "identityKey": "2111 w 11th ave near arbutus st::url:c00c863f9d18",
+      "sources": [
+        "craigslist"
+      ],
+      "rents": [
+        3500
+      ],
+      "exactUnit": false,
+      "matchedListingId": null,
+      "result": "candidate_only"
+    },
+    {
+      "identityKey": "2118 w 15 ave 2f::url:4c9c7396d772",
+      "sources": [
+        "craigslist"
+      ],
+      "rents": [
+        4800
+      ],
+      "exactUnit": false,
+      "matchedListingId": null,
+      "result": "candidate_only"
+    },
+    {
+      "identityKey": "2075 w 48th ave::url:9f9769f7d738",
+      "sources": [
+        "craigslist"
+      ],
+      "rents": [
+        7990
       ],
       "exactUnit": false,
       "matchedListingId": null,
@@ -116,54 +176,6 @@
       ],
       "rents": [
         15000
-      ],
-      "exactUnit": false,
-      "matchedListingId": null,
-      "result": "candidate_only"
-    },
-    {
-      "identityKey": "4455 w 9th ave::url:a00848ac2e03",
-      "sources": [
-        "craigslist"
-      ],
-      "rents": [
-        4800
-      ],
-      "exactUnit": false,
-      "matchedListingId": null,
-      "result": "candidate_only"
-    },
-    {
-      "identityKey": "2118 w 15 ave 2f::url:4fa954a05948",
-      "sources": [
-        "craigslist"
-      ],
-      "rents": [
-        4800
-      ],
-      "exactUnit": false,
-      "matchedListingId": null,
-      "result": "candidate_only"
-    },
-    {
-      "identityKey": "2475 w 4th ave near larch st::url:943dac01c7d6",
-      "sources": [
-        "craigslist"
-      ],
-      "rents": [
-        3600
-      ],
-      "exactUnit": false,
-      "matchedListingId": null,
-      "result": "candidate_only"
-    },
-    {
-      "identityKey": "3750 w 17th ave::url:34bd5c762614",
-      "sources": [
-        "craigslist"
-      ],
-      "rents": [
-        3600
       ],
       "exactUnit": false,
       "matchedListingId": null,
@@ -206,30 +218,6 @@
       "result": "authoritative_mls_reverified"
     },
     {
-      "identityKey": "mls:r3175599",
-      "sources": [
-        "realtylink mls"
-      ],
-      "rents": [
-        4800
-      ],
-      "exactUnit": false,
-      "matchedListingId": "zumper-dd642aebb4f6",
-      "result": "authoritative_mls_reverified"
-    },
-    {
-      "identityKey": "mls:r3151372",
-      "sources": [
-        "realtylink mls"
-      ],
-      "rents": [
-        4800
-      ],
-      "exactUnit": false,
-      "matchedListingId": "mls-r3151372",
-      "result": "authoritative_mls_reverified"
-    },
-    {
       "identityKey": "mls:r3167417",
       "sources": [
         "realtylink mls"
@@ -242,38 +230,49 @@
       "result": "authoritative_mls_reverified"
     },
     {
-      "identityKey": "mls:r3177685",
+      "identityKey": "mls:r3175599",
       "sources": [
         "realtylink mls"
       ],
       "rents": [
-        8500
+        4800
       ],
       "exactUnit": false,
-      "matchedListingId": "mls-r3177685",
+      "matchedListingId": "zumper-dd642aebb4f6",
       "result": "authoritative_mls_reverified"
     },
     {
-      "identityKey": "mls:r3163709",
+      "identityKey": "mls:r3170701",
       "sources": [
         "realtylink mls"
       ],
       "rents": [
-        5800
+        6000
       ],
       "exactUnit": false,
-      "matchedListingId": "mls-r3163709",
+      "matchedListingId": "mls-r3170701",
+      "result": "authoritative_mls_reverified"
+    },
+    {
+      "identityKey": "mls:r3172081",
+      "sources": [
+        "realtylink mls"
+      ],
+      "rents": [
+        3600
+      ],
+      "exactUnit": false,
+      "matchedListingId": "mls-r3172081",
       "result": "authoritative_mls_reverified"
     }
   ],
   "promoted": [],
   "crossVerified": [
     "zumper-16e9ae17cd91",
-    "zumper-dd642aebb4f6",
-    "mls-r3151372",
     "mls-r3167417",
-    "mls-r3177685",
-    "mls-r3163709"
+    "zumper-dd642aebb4f6",
+    "mls-r3170701",
+    "mls-r3172081"
   ],
   "fingerprintCrossVerified": [],
   "craigslistRelistingsRecovered": [],
@@ -282,19 +281,17 @@
   "relistedMlsMerged": [],
   "negativeMatches": [],
   "detailReactivated": [
-    "mls-r3151372"
+    "mls-r3170701"
   ],
   "auxiliaryMlsRemovalsRolledBack": [],
   "mlsMissing": {},
   "mlsRemoved": [],
-  "mlsStaleHidden": [
-    "mls-r3170701"
-  ],
-  "realtylinkSnapshotCount": 6,
+  "mlsStaleHidden": [],
+  "realtylinkSnapshotCount": 5,
   "realtylinkSnapshotHighWaterMark": 10,
   "realtylinkSnapshotScope": "rent-3500-beds-2-4-whole-home-westside-v3",
   "realtylinkRemovalEligible": false,
-  "mlsRemovalSuppressed": "Partial Realtylink snapshot (6 candidates versus previous complete 10); disappearance signals ignored.",
+  "mlsRemovalSuppressed": "Partial Realtylink snapshot (5 candidates versus previous complete 10); disappearance signals ignored.",
   "mlsDuplicatesMerged": [],
   "canonicalFieldRepairsApplied": []
 }

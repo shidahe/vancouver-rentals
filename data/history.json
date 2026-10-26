@@ -2021,6 +2021,11 @@
       "date": "2026-10-25",
       "rent": 3800,
       "note": "NEEDS CONFIRMATION: latest purpose-built fallback sources did not confirm the exact configured rent + sqft inventory row."
+    },
+    {
+      "date": "2026-10-26",
+      "rent": 3800,
+      "note": "NEEDS CONFIRMATION: latest purpose-built fallback sources did not confirm the exact configured rent + sqft inventory row."
     }
   ],
   "mls-r3160879": [
@@ -3155,6 +3160,11 @@
       "date": "2026-10-26",
       "rent": 6000,
       "note": "AUTO-HIDDEN: MLS R3170701 exceeded 48 hours without fresh positive availability; partial search results are not removal evidence."
+    },
+    {
+      "date": "2026-10-26",
+      "rent": 6000,
+      "note": "CORRECTED: restored after exact current MLS detail matched identity, explicit availability and rent."
     }
   ],
   "zumper-f3c25cb7e83b": [
@@ -3577,6 +3587,11 @@
       "date": "2026-10-26",
       "rent": 4995,
       "note": "First seen in live purpose-built inventory via https://www.rentfaster.ca/properties/2355-w-49th-avenue-vancouver-bc-v6m-0g1-vancouver-755998"
+    },
+    {
+      "date": "2026-10-26",
+      "rent": 4995,
+      "note": "NEEDS CONFIRMATION: latest purpose-built fallback sources did not confirm the exact configured rent + sqft inventory row."
     }
   ]
 }
