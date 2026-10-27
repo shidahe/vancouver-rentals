@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-10-26T20:17:19.377Z",
+  "checkedAt": "2026-10-27T15:10:10.672Z",
   "ok": true,
   "checkpoints": {
     "render": {
@@ -20,20 +20,20 @@
         "3",
         "9",
         "5",
-        "Oct 26, 1:07 p.m. PDT"
+        "Oct 27, 8:00 a.m. PDT"
       ],
-      "html": "<div class=\"stat\"><strong>25</strong><span>Active</span></div><div class=\"stat\"><strong>3</strong><span>New 7d</span></div><div class=\"stat\"><strong>9</strong><span>Price drops</span></div><div class=\"stat\"><strong>5</strong><span>To verify</span></div><div class=\"stat\"><strong>Oct 26, 1:07 p.m. PDT</strong><span>Last refreshed</span></div>",
+      "html": "<div class=\"stat\"><strong>25</strong><span>Active</span></div><div class=\"stat\"><strong>3</strong><span>New 7d</span></div><div class=\"stat\"><strong>9</strong><span>Price drops</span></div><div class=\"stat\"><strong>5</strong><span>To verify</span></div><div class=\"stat\"><strong>Oct 27, 8:00 a.m. PDT</strong><span>Last refreshed</span></div>",
       "refreshedAt": {
-        "displayed": "Oct 26, 1:07 p.m. PDT",
-        "expected": "Oct 26, 1:07 p.m. PDT",
+        "displayed": "Oct 27, 8:00 a.m. PDT",
+        "expected": "Oct 27, 8:00 a.m. PDT",
         "timezone": "America/Vancouver"
       },
       "newSevenDays": {
         "expectedCount": 3,
         "badgeIds": [
-          "zumper-1754927f090e",
-          "mls-r3177685",
-          "mls-r3172081"
+          "westward-unit-104",
+          "the-raven-unit-101",
+          "mls-r3177685"
         ],
         "staleBadgeIds": []
       }
@@ -46,9 +46,9 @@
     "localStorage": {
       "favorite": true,
       "notes": true,
-      "firstId": "arbutus-residences-floorplan-2-bedroom-townhouse-den-1340"
+      "firstId": "westward-unit-104"
     },
-    "sourceLink": "https://www.zumper.com/apartment-buildings/p1117150/arbutus-residences-quilchena-vancouver-bc",
+    "sourceLink": "https://www.rentfaster.ca/properties/2355-w-49th-avenue-vancouver-bc-v6m-0g1-vancouver-755998",
     "photos": {
       "total": 25,
       "loaded": 25,

@@ -709,6 +709,11 @@
       "date": "2026-10-25",
       "rent": 5390,
       "note": "NEEDS CONFIRMATION: latest purpose-built fallback sources did not confirm the exact configured rent + sqft inventory row."
+    },
+    {
+      "date": "2026-10-27",
+      "rent": 5390,
+      "note": "NEEDS CONFIRMATION: latest purpose-built fallback sources did not confirm the exact configured rent + sqft inventory row."
     }
   ],
   "zumper-2fde865f7e2c": [
@@ -2026,6 +2031,11 @@
       "date": "2026-10-26",
       "rent": 3800,
       "note": "NEEDS CONFIRMATION: latest purpose-built fallback sources did not confirm the exact configured rent + sqft inventory row."
+    },
+    {
+      "date": "2026-10-27",
+      "rent": 3800,
+      "note": "NEEDS CONFIRMATION: latest purpose-built fallback sources did not confirm the exact configured rent + sqft inventory row."
     }
   ],
   "mls-r3160879": [
@@ -2709,6 +2719,11 @@
       "date": "2026-09-14",
       "rent": 4350,
       "note": "First seen in live purpose-built inventory via https://www.craigslist.org/view/d/vancouver-bed-bath-fourth-mac-kitsilano/eiSLCKTVqsrtPUWpUpJyDN"
+    },
+    {
+      "date": "2026-10-27",
+      "rent": 4350,
+      "note": "AUTO-REMOVED after direct live verification found explicit unavailable evidence."
     }
   ],
   "tennyson-mews-b6": [
@@ -3476,6 +3491,11 @@
       "date": "2026-10-25",
       "rent": 5500,
       "note": "EXCLUDED: house share or separately rented portion of a house."
+    },
+    {
+      "date": "2026-10-27",
+      "rent": 5500,
+      "note": "EXCLUDED: house share or separately rented portion of a house."
     }
   ],
   "mls-r3175318": [
@@ -3573,6 +3593,11 @@
       "date": "2026-10-25",
       "rent": 4000,
       "note": "EXCLUDED: house share or separately rented portion of a house."
+    },
+    {
+      "date": "2026-10-27",
+      "rent": 4000,
+      "note": "EXCLUDED: house share or separately rented portion of a house."
     }
   ],
   "mls-r3177685": [
@@ -3592,6 +3617,13 @@
       "date": "2026-10-26",
       "rent": 4995,
       "note": "NEEDS CONFIRMATION: latest purpose-built fallback sources did not confirm the exact configured rent + sqft inventory row."
+    }
+  ],
+  "the-raven-unit-101": [
+    {
+      "date": "2026-10-27",
+      "rent": 6995,
+      "note": "First seen in live purpose-built inventory via https://www.rentfaster.ca/properties/3709-west-broadway-vancouver-688597"
     }
   ]
 }

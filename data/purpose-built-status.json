@@ -1,9 +1,9 @@
 {
-  "refreshedAt": "2026-10-26T20:16:17.108Z",
+  "refreshedAt": "2026-10-27T15:09:16.157Z",
   "buildings": [
     {
       "building": "The Raven",
-      "checkedAt": "2026-10-26T20:16:17.108Z",
+      "checkedAt": "2026-10-27T15:09:16.157Z",
       "observations": [
         {
           "url": "https://www.rentfaster.ca/properties/3709-west-broadway-vancouver-688597",
@@ -40,18 +40,18 @@
             "Available",
             "1 unit"
           ],
-          "verified": false,
-          "verifiedSource": null,
+          "verified": true,
+          "verifiedSource": "https://www.rentfaster.ca/properties/3709-west-broadway-vancouver-688597",
           "sourceMatches": [
             {
               "url": "https://www.rentfaster.ca/properties/3709-west-broadway-vancouver-688597",
               "httpStatus": 200,
               "usable": true,
-              "structuredMatch": false,
-              "requiredMatched": false,
+              "structuredMatch": true,
+              "requiredMatched": true,
               "availabilityMatched": true,
               "fullyLeased": false,
-              "verified": false
+              "verified": true
             },
             {
               "url": "https://www.rew.ca/rentals/7599800/101-3709-west-broadway-vancouver-bc",
@@ -69,14 +69,14 @@
     },
     {
       "building": "Westward",
-      "checkedAt": "2026-10-26T20:16:17.108Z",
+      "checkedAt": "2026-10-27T15:09:16.157Z",
       "observations": [
         {
           "url": "https://www.rentfaster.ca/properties/2355-w-49th-avenue-vancouver-bc-v6m-0g1-vancouver-755998",
-          "httpStatus": 403,
-          "usable": false,
+          "httpStatus": 200,
+          "usable": true,
           "error": null,
-          "reusedEvidence": false
+          "reusedEvidence": true
         },
         {
           "url": "https://www.rew.ca/rentals/7347814/104-2355-w-49th-vancouver-avenue-bc-vancouver-bc",
@@ -106,18 +106,18 @@
             "Available",
             "1 unit"
           ],
-          "verified": false,
-          "verifiedSource": null,
+          "verified": true,
+          "verifiedSource": "https://www.rentfaster.ca/properties/2355-w-49th-avenue-vancouver-bc-v6m-0g1-vancouver-755998",
           "sourceMatches": [
             {
               "url": "https://www.rentfaster.ca/properties/2355-w-49th-avenue-vancouver-bc-v6m-0g1-vancouver-755998",
-              "httpStatus": 403,
-              "usable": false,
-              "structuredMatch": false,
-              "requiredMatched": false,
-              "availabilityMatched": false,
+              "httpStatus": 200,
+              "usable": true,
+              "structuredMatch": true,
+              "requiredMatched": true,
+              "availabilityMatched": true,
               "fullyLeased": false,
-              "verified": false
+              "verified": true
             },
             {
               "url": "https://www.rew.ca/rentals/7347814/104-2355-w-49th-vancouver-avenue-bc-vancouver-bc",
@@ -135,7 +135,7 @@
     },
     {
       "building": "Kits Walk",
-      "checkedAt": "2026-10-26T20:16:17.108Z",
+      "checkedAt": "2026-10-27T15:09:16.157Z",
       "observations": [
         {
           "url": "https://rentals.ca/vancouver/kits-walk-by-strand",
@@ -213,7 +213,7 @@
     },
     {
       "building": "Arbutus Residences",
-      "checkedAt": "2026-10-26T20:16:17.108Z",
+      "checkedAt": "2026-10-27T15:09:16.157Z",
       "observations": [
         {
           "url": "https://www.rentfaster.ca/properties/2139-lahb-ave-vancouver-454186",
@@ -231,8 +231,8 @@
         },
         {
           "url": "https://www.zumper.com/apartment-buildings/p1117150/arbutus-residences-quilchena-vancouver-bc",
-          "httpStatus": 200,
-          "usable": true,
+          "httpStatus": 429,
+          "usable": false,
           "error": null,
           "reusedEvidence": false
         }
@@ -281,11 +281,11 @@
             },
             {
               "url": "https://www.zumper.com/apartment-buildings/p1117150/arbutus-residences-quilchena-vancouver-bc",
-              "httpStatus": 200,
-              "usable": true,
+              "httpStatus": 429,
+              "usable": false,
               "structuredMatch": false,
               "requiredMatched": false,
-              "availabilityMatched": true,
+              "availabilityMatched": false,
               "fullyLeased": false,
               "verified": false
             }
@@ -309,8 +309,8 @@
             "Available",
             "1 unit available"
           ],
-          "verified": true,
-          "verifiedSource": "https://www.zumper.com/apartment-buildings/p1117150/arbutus-residences-quilchena-vancouver-bc",
+          "verified": false,
+          "verifiedSource": null,
           "sourceMatches": [
             {
               "url": "https://www.rentfaster.ca/properties/2139-lahb-ave-vancouver-454186",
@@ -334,13 +334,13 @@
             },
             {
               "url": "https://www.zumper.com/apartment-buildings/p1117150/arbutus-residences-quilchena-vancouver-bc",
-              "httpStatus": 200,
-              "usable": true,
+              "httpStatus": 429,
+              "usable": false,
               "structuredMatch": false,
-              "requiredMatched": true,
-              "availabilityMatched": true,
+              "requiredMatched": false,
+              "availabilityMatched": false,
               "fullyLeased": false,
-              "verified": true
+              "verified": false
             }
           ]
         }
@@ -348,12 +348,12 @@
     },
     {
       "building": "Fourth + Mac",
-      "checkedAt": "2026-10-26T20:16:17.108Z",
+      "checkedAt": "2026-10-27T15:09:16.157Z",
       "observations": [
         {
           "url": "https://www.craigslist.org/view/d/vancouver-bed-bath-fourth-mac-kitsilano/eiSLCKTVqsrtPUWpUpJyDN",
-          "httpStatus": 200,
-          "usable": true,
+          "httpStatus": 410,
+          "usable": false,
           "error": null,
           "reusedEvidence": false
         },
@@ -390,18 +390,18 @@
             "available october 1",
             "check availability"
           ],
-          "verified": true,
-          "verifiedSource": "https://www.craigslist.org/view/d/vancouver-bed-bath-fourth-mac-kitsilano/eiSLCKTVqsrtPUWpUpJyDN",
+          "verified": false,
+          "verifiedSource": null,
           "sourceMatches": [
             {
               "url": "https://www.craigslist.org/view/d/vancouver-bed-bath-fourth-mac-kitsilano/eiSLCKTVqsrtPUWpUpJyDN",
-              "httpStatus": 200,
-              "usable": true,
+              "httpStatus": 410,
+              "usable": false,
               "structuredMatch": false,
-              "requiredMatched": true,
-              "availabilityMatched": true,
+              "requiredMatched": false,
+              "availabilityMatched": false,
               "fullyLeased": false,
-              "verified": true
+              "verified": false
             },
             {
               "url": "https://liv.rent/building/52105/fourth--mac-apartment-building-1960-macdonald-street-vancouver-bc",

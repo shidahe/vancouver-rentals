@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-26T20:17:13.981Z",
+  "generatedAt": "2026-10-27T15:10:04.762Z",
   "activeCount": 25,
   "decisionReady": true,
   "readinessStatus": "finalized",
@@ -39,11 +39,6 @@
     },
     {
       "severity": "info",
-      "id": "arbutus-residences-floorplan-2-bedroom-townhouse-den-1340",
-      "issue": "unknown-orientation"
-    },
-    {
-      "severity": "info",
       "id": "zumper-16e9ae17cd91",
       "issue": "unknown-ac"
     },
@@ -70,11 +65,6 @@
     {
       "severity": "info",
       "id": "mls-r3163709",
-      "issue": "unknown-orientation"
-    },
-    {
-      "severity": "info",
-      "id": "fourth-mac-floorplan-2-bedroom-2-bath-801-4350",
       "issue": "unknown-orientation"
     },
     {
@@ -211,13 +201,23 @@
       "severity": "info",
       "id": "mls-r3177685",
       "issue": "unknown-orientation"
+    },
+    {
+      "severity": "info",
+      "id": "westward-unit-104",
+      "issue": "unknown-orientation"
+    },
+    {
+      "severity": "info",
+      "id": "the-raven-unit-101",
+      "issue": "unknown-orientation"
     }
   ],
   "readinessChecks": {
     "smokeOk": true,
     "smokeFresh": true,
-    "smokeCheckedAt": "2026-10-26T20:17:19.377Z",
-    "latestDataAt": "2026-10-26T20:16:23.840Z",
+    "smokeCheckedAt": "2026-10-27T15:10:10.672Z",
+    "latestDataAt": "2026-10-27T15:09:17.796Z",
     "coverageReady": true,
     "healthyDiscoveryLanes": 3,
     "coverageWarnings": [
@@ -225,7 +225,7 @@
         "severity": "warning",
         "lane": "rentalsca",
         "status": "degraded",
-        "detail": "2/9 regional searches reachable; 0 qualifying candidates parsed; 2 scoped search-only leads retained (2 new, 0 already active, 0 need revalidation); 3 detail pages blocked after 23 discovered URLs; 20 further detail checks suppressed after repeated 403/429"
+        "detail": "3/9 regional searches reachable; 0 qualifying candidates parsed; 5 scoped search-only leads retained (5 new, 0 already active, 0 need revalidation); 3 detail pages blocked after 27 discovered URLs; 24 further detail checks suppressed after repeated 403/429"
       },
       {
         "severity": "warning",
@@ -242,5 +242,5 @@
     ]
   },
   "readinessIssues": [],
-  "finalizedAt": "2026-10-26T20:17:19.471Z"
+  "finalizedAt": "2026-10-27T15:10:10.767Z"
 }
