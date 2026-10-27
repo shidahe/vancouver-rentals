@@ -3007,6 +3007,11 @@
       "date": "2026-10-25",
       "rent": 13000,
       "note": "CORRECTED: restored after exact current MLS detail matched identity, explicit availability and rent."
+    },
+    {
+      "date": "2026-10-27",
+      "rent": 13000,
+      "note": "AUTO-HIDDEN: MLS R3167237 exceeded 48 hours without fresh positive availability; partial search results are not removal evidence."
     }
   ],
   "mls-r3165327": [
@@ -3121,6 +3126,11 @@
       "date": "2026-10-25",
       "rent": 4650,
       "note": "CORRECTED: restored after exact current MLS detail matched identity, explicit availability and rent."
+    },
+    {
+      "date": "2026-10-27",
+      "rent": 4650,
+      "note": "AUTO-HIDDEN: MLS R3162880 exceeded 48 hours without fresh positive availability; partial search results are not removal evidence."
     }
   ],
   "kits-walk-floorplan-2-bedroom-811-3675": [
@@ -3454,6 +3464,11 @@
       "date": "2026-10-25",
       "rent": 14500,
       "note": "AUTO-HIDDEN: MLS R3174425 exceeded 48 hours without fresh positive availability; partial search results are not removal evidence."
+    },
+    {
+      "date": "2026-10-27",
+      "rent": 14500,
+      "note": "CORRECTED: restored after exact current MLS detail matched identity, explicit availability and rent."
     }
   ],
   "mls-r3175848": [
@@ -3615,6 +3630,11 @@
     },
     {
       "date": "2026-10-26",
+      "rent": 4995,
+      "note": "NEEDS CONFIRMATION: latest purpose-built fallback sources did not confirm the exact configured rent + sqft inventory row."
+    },
+    {
+      "date": "2026-10-27",
       "rent": 4995,
       "note": "NEEDS CONFIRMATION: latest purpose-built fallback sources did not confirm the exact configured rent + sqft inventory row."
     }

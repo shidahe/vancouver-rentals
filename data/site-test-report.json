@@ -1,11 +1,11 @@
 {
-  "checkedAt": "2026-10-27T15:10:10.672Z",
+  "checkedAt": "2026-10-27T19:35:42.417Z",
   "ok": true,
   "checkpoints": {
     "render": {
       "title": "Vancouver Westside Rentals",
-      "cards": 25,
-      "shown": 25
+      "cards": 24,
+      "shown": 24
     },
     "stats": {
       "labels": [
@@ -16,22 +16,21 @@
         "Last refreshed"
       ],
       "values": [
-        "25",
-        "3",
-        "9",
-        "5",
-        "Oct 27, 8:00 a.m. PDT"
+        "24",
+        "2",
+        "8",
+        "6",
+        "Oct 27, 12:26 p.m. PDT"
       ],
-      "html": "<div class=\"stat\"><strong>25</strong><span>Active</span></div><div class=\"stat\"><strong>3</strong><span>New 7d</span></div><div class=\"stat\"><strong>9</strong><span>Price drops</span></div><div class=\"stat\"><strong>5</strong><span>To verify</span></div><div class=\"stat\"><strong>Oct 27, 8:00 a.m. PDT</strong><span>Last refreshed</span></div>",
+      "html": "<div class=\"stat\"><strong>24</strong><span>Active</span></div><div class=\"stat\"><strong>2</strong><span>New 7d</span></div><div class=\"stat\"><strong>8</strong><span>Price drops</span></div><div class=\"stat\"><strong>6</strong><span>To verify</span></div><div class=\"stat\"><strong>Oct 27, 12:26 p.m. PDT</strong><span>Last refreshed</span></div>",
       "refreshedAt": {
-        "displayed": "Oct 27, 8:00 a.m. PDT",
-        "expected": "Oct 27, 8:00 a.m. PDT",
+        "displayed": "Oct 27, 12:26 p.m. PDT",
+        "expected": "Oct 27, 12:26 p.m. PDT",
         "timezone": "America/Vancouver"
       },
       "newSevenDays": {
-        "expectedCount": 3,
+        "expectedCount": 2,
         "badgeIds": [
-          "westward-unit-104",
           "the-raven-unit-101",
           "mls-r3177685"
         ],
@@ -39,25 +38,25 @@
       }
     },
     "map": {
-      "markers": 25,
+      "markers": 24,
       "desktopMapVisible": true
     },
     "filters": "ok",
     "localStorage": {
       "favorite": true,
       "notes": true,
-      "firstId": "westward-unit-104"
+      "firstId": "arbutus-residences-floorplan-2-bedroom-townhouse-den-1340"
     },
-    "sourceLink": "https://www.rentfaster.ca/properties/2355-w-49th-avenue-vancouver-bc-v6m-0g1-vancouver-755998",
+    "sourceLink": "https://www.zumper.com/apartment-buildings/p1117150/arbutus-residences-quilchena-vancouver-bc",
     "photos": {
-      "total": 25,
-      "loaded": 25,
+      "total": 24,
+      "loaded": 24,
       "fallbacks": 0,
       "bad": []
     },
     "markerPositions": {
-      "total": 25,
-      "unique": 25
+      "total": 24,
+      "unique": 24
     },
     "dataEndpoints": "ok",
     "mobile": "ok",
