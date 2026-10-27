@@ -56,14 +56,26 @@ export function structuredRentalInventories(jsonLd = []) {
       return;
     }
     if (typeof value !== 'object') return;
-    const price = Number(value.potentialAction?.priceSpecification?.price ?? value.offers?.price);
+    // RentFaster emits exact unit rows as Apartment -> RentAction with the
+    // monthly rent directly on `potentialAction.price`. Other providers put
+    // it inside a priceSpecification or Offer, so accept all three forms.
+    const price = Number(value.potentialAction?.priceSpecification?.price ?? value.potentialAction?.price ?? value.offers?.price);
     const sqft = Number(value.floorSize?.value);
     const name = String(value.name || '');
-    const bedrooms = Number(name.match(/\b([1-9]\d?)\s*(?:bedroom|bed|br)\b/i)?.[1]);
+    const description = String(value.description || '');
+    const bedrooms = Number(value.numberOfBedrooms ?? `${name} ${description}`.match(/\b([1-9]\d?)\s*(?:bedroom|bed|br)\b/i)?.[1]);
+    const fullBathrooms = Number(value.numberOfFullBathrooms);
+    const partialBathrooms = Number(value.numberOfPartialBathrooms);
+    const bathrooms = Number.isFinite(fullBathrooms)
+      ? fullBathrooms + (Number.isFinite(partialBathrooms) ? partialBathrooms * 0.5 : 0)
+      : null;
+    const unit = name.match(/\bunit\s*#?\s*([0-9]{1,5}[a-z]?)\b/i)?.[1] || null;
+    const availability = (Array.isArray(value.additionalProperty) ? value.additionalProperty : [])
+      .find(item => /availability date/i.test(String(item?.name || '')))?.value ?? null;
     if (Number.isFinite(price) && rentEligible(price) && price <= 15000 &&
         Number.isFinite(sqft) && sqft >= 200 && sqft <= 15000 && bedroomEligible(bedrooms)) {
-      const key = `${bedrooms}:${price}:${sqft}`;
-      if (!rows.some(row => row.key === key)) rows.push({ key, name, bedrooms, rent: price, sqft });
+      const key = `${unit || ''}:${bedrooms}:${price}:${sqft}`;
+      if (!rows.some(row => row.key === key)) rows.push({ key, name, unit, bedrooms, bathrooms, rent: price, sqft, availability });
     }
     for (const child of Object.values(value)) visit(child);
   };
@@ -76,10 +88,10 @@ export function discoveredStructuredInventories(jsonLd = [], defaults = {}) {
     key: `${row.bedrooms}-bedroom-${Math.round(row.sqft)}-${Math.round(row.rent)}`,
     label: `${row.name || `${row.bedrooms} Bedroom`} · ${Math.round(row.sqft)} sqft · $${Math.round(row.rent).toLocaleString('en-CA')}`,
     bedrooms: row.bedrooms,
-    bathrooms: defaults.bathrooms ?? null,
+    bathrooms: row.bathrooms ?? defaults.bathrooms ?? null,
     sqft: row.sqft,
     rent: row.rent,
-    unit: null,
+    unit: row.unit,
     requiredSignals: [Math.round(row.rent).toLocaleString('en-CA'), String(Math.round(row.sqft))],
     availabilitySignals: defaults.availabilitySignals || [],
     dynamicallyDiscovered: true

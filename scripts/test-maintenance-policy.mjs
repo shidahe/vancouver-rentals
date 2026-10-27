@@ -304,6 +304,18 @@ const structuredKitsWalk=structuredRentalInventories(kitsWalkStructuredFixture);
 if(structuredKitsWalk.length!==2||!structuredKitsWalk.some(x=>x.rent===3600&&x.bedrooms===2&&x.sqft===741)) failures.push('Exact structured Kits Walk floorplan inventory is not parsed.');
 const discoveredKitsWalk=discoveredStructuredInventories(kitsWalkStructuredFixture,{bathrooms:2,availabilitySignals:['move-in ready']});
 if(discoveredKitsWalk.length!==2||!discoveredKitsWalk.some(x=>x.key==='2-bedroom-741-3650'&&x.bathrooms===2&&x.dynamicallyDiscovered&&x.availabilitySignals.includes('move-in ready'))) failures.push('Structured Kits Walk inventory cannot become tracked dynamic floorplans.');
+const rentFasterApartmentFixture=[{
+  '@type':'ItemPage',
+  mainEntity:{containsPlace:[{
+    '@type':'Apartment',name:'Unit  101',description:'3 Bedroom TownHome',numberOfBedrooms:3,
+    numberOfFullBathrooms:3,numberOfPartialBathrooms:0,
+    floorSize:{value:1200,unitCode:'FTK'},potentialAction:{'@type':'RentAction',price:'6995.00',priceCurrency:'CAD'},
+    additionalProperty:[{name:'Square Feet',value:'1200'},{name:'Availability Date',value:'Immediate'}]
+  }]}
+}];
+const rentFasterRows=structuredRentalInventories(rentFasterApartmentFixture);
+const discoveredRaven=discoveredStructuredInventories(rentFasterApartmentFixture,{availabilitySignals:['Immediate']});
+if(rentFasterRows.length!==1||rentFasterRows[0].unit!=='101'||rentFasterRows[0].bedrooms!==3||rentFasterRows[0].bathrooms!==3||rentFasterRows[0].rent!==6995||rentFasterRows[0].sqft!==1200||rentFasterRows[0].availability!=='Immediate'||discoveredRaven[0]?.unit!=='101')failures.push('RentFaster RentAction JSON-LD cannot recover exact unit, rent, bedroom, bathroom, area and availability fields.');
 const staleFixture = { availabilityStatus: 'active', source: 'REW / Rent Sync', verificationMethod: 'Automated live browser check matched listing identity and current availability wording.' };
 if (!isAutoManagedListing(staleFixture)) failures.push('Non-Zumper exact-detail inventory bypasses stale expiry.');
 if (isAutoManagedListing({ ...staleFixture, mlsInventoryManaged: true })) failures.push('Authoritative MLS-feed inventory is incorrectly handled by generic stale expiry.');
