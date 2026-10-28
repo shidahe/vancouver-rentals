@@ -45,11 +45,11 @@
       "id": "realtor-highbury-place-203-r3175899",
       "listingId": "mls-r3175899",
       "mls": "R3175899",
-      "source": "Latitude Realty RentCafe / MLS R3175899",
-      "url": "https://www.rentcafe.com/single-family/bc/vancouver/203-3720-w-8th-avenue-203/default.aspx",
+      "source": "Craigslist / Latitude Realty / MLS R3175899",
+      "url": "https://www.craigslist.org/view/d/vancouver-bed-bath-apartment-at/s4HJHvnhSvtepoZicZoZam",
       "supportingUrls": [
-        "https://www.realtor.ca/real-estate/30408620/203-3720-w-8th-avenue-vancouver",
-        "https://www.craigslist.org/view/d/vancouver-bed-bath-apartment-at/s4HJHvnhSvtepoZicZoZam"
+        "https://www.rentcafe.com/single-family/bc/vancouver/203-3720-w-8th-avenue-203/default.aspx",
+        "https://www.realtor.ca/real-estate/30408620/203-3720-w-8th-avenue-vancouver"
       ],
       "buildingName": "Highbury Place",
       "unit": "203",
@@ -63,7 +63,7 @@
         "bathrooms": 2,
         "sqft": 1046,
         "parking": true,
-        "petFriendly": true,
+        "petFriendly": false,
         "balcony": true,
         "largeWindows": true
       }

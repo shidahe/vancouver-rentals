@@ -39,7 +39,9 @@ const catalog = JSON.parse(await read('data/live-sources.json'));
 const highbury203 = catalog.seedCandidates?.find(x => x.id === 'realtor-highbury-place-203-r3175899');
 if (highbury203?.listingId !== 'mls-r3175899' || highbury203?.mls !== 'R3175899' || highbury203?.unit !== '203' ||
     highbury203?.expectedBeds !== 2 || highbury203?.hints?.bathrooms !== 2 || highbury203?.hints?.sqft !== 1046 || !highbury203?.autoPublish ||
-    !/rentcafe\.com\/single-family\/bc\/vancouver\/203-3720-w-8th-avenue-203/i.test(highbury203?.url || '') || highbury203?.supportingUrls?.length !== 2) {
+    !/craigslist\.org\/view\/d\/vancouver-bed-bath-apartment-at\/s4HJHvnhSvtepoZicZoZam/i.test(highbury203?.url || '') || highbury203?.supportingUrls?.length !== 2 ||
+    !highbury203.supportingUrls.some(url => /rentcafe\.com\/single-family\/bc\/vancouver\/203-3720-w-8th-avenue-203/i.test(url)) ||
+    !highbury203.supportingUrls.some(url => /realtor\.ca\/real-estate\/30408620/i.test(url)) || highbury203?.hints?.petFriendly !== false) {
   failures.push('Highbury Place #203 exact IDX regression seed is missing or no longer preserves its MLS identity and current 2BR facts.');
 }
 const refreshListingsSource=await fs.readFile('scripts/refresh-listings.mjs','utf8');
