@@ -1,199 +1,81 @@
 {
-  "refreshedAt": "2026-10-28T15:36:25.758Z",
+  "refreshedAt": "2026-10-28T19:39:54.858Z",
   "mode": "candidate-only",
   "sourceHealth": {
     "rentalsca-kitsilano-2br": {
-      "checkedAt": "2026-10-28T15:36:25.758Z",
-      "status": 200,
-      "ok": true,
-      "finalUrl": "https://rentals.ca/vancouver/kitsilano/all-apartments-all-houses",
-      "detailLinkCount": 17,
-      "title": "Kitsilano Vancouver BC Apartments and Houses for Rent",
-      "observedListingCount": 20,
-      "challengeDetected": false,
-      "searchLeadCount": 15,
-      "addressLineCount": 15,
-      "detailUrlCount": 29
+      "checkedAt": "2026-10-28T19:39:54.858Z",
+      "status": 403,
+      "ok": false,
+      "finalUrl": "https://rentals.ca/vancouver/kitsilano/all-apartments-all-houses?__cf_chl_rt_tk=J5ec7y1LlHpyZSdbehX7__31Whz7NVlst8Q5chgn7Zw-1793216395-1.0.1.1-BR.vNbLqEK0njIH0hmcVgB8zMcgdAurhTR4pCLg6qxM"
     },
     "rentalsca-point-grey-2br": {
-      "checkedAt": "2026-10-28T15:36:25.758Z",
-      "status": 200,
-      "ok": true,
-      "finalUrl": "https://rentals.ca/vancouver/west-point-grey",
-      "detailLinkCount": 8,
-      "title": "Rentals.ca West Point Grey Vancouver Apartments, Condos and Houses For Rent",
-      "observedListingCount": 7,
-      "challengeDetected": false,
-      "searchLeadCount": 5,
-      "addressLineCount": 5,
-      "detailUrlCount": 10
+      "checkedAt": "2026-10-28T19:39:54.858Z",
+      "status": 403,
+      "ok": false,
+      "finalUrl": "https://rentals.ca/vancouver/west-point-grey?__cf_chl_rt_tk=PPrzGcs3FdBG6G0oX_Q4Q.3vHwvru0tB3o6vVXmHR.8-1793216395-1.0.1.1-wvstrlukJ7DscEqiEAWzxeamkC8rkjOBYTu4By4L60M"
     },
     "rentalsca-arbutus-2br": {
-      "checkedAt": "2026-10-28T15:36:25.758Z",
-      "status": 200,
-      "ok": true,
-      "finalUrl": "https://rentals.ca/vancouver/arbutus-ridge",
-      "detailLinkCount": 10,
-      "title": "Rentals.ca Arbutus Ridge Vancouver Apartments, Condos and Houses For Rent",
-      "observedListingCount": 0,
-      "challengeDetected": false,
-      "searchLeadCount": 0,
-      "addressLineCount": 0,
-      "detailUrlCount": 10
+      "checkedAt": "2026-10-28T19:39:54.858Z",
+      "status": 403,
+      "ok": false,
+      "finalUrl": "https://rentals.ca/vancouver/arbutus-ridge?__cf_chl_rt_tk=Be3i1Nfnr5tD6IY58s19XTghu8Q3LIbZx.lGThi.7Wc-1793216395-1.0.1.1-4EIAb_E.Rwolniwq6z3UlLxPhGWwTDUtK4MdLroAkCk"
     },
     "rentalsca-dunbar-2br": {
-      "checkedAt": "2026-10-28T15:36:25.758Z",
-      "status": 429,
+      "checkedAt": "2026-10-28T19:39:54.858Z",
+      "status": 403,
       "ok": false,
-      "finalUrl": "https://rentals.ca/vancouver/dunbar-southlands?__cf_chl_rt_tk=cMy9dfXobGpw.VGYgfLAP0cYxcja2sgLCJ_e1pLo00g-1793201795-1.0.1.1-X_U2X409W5UDf4Tppsx7vMLklBxzncimFxr6Unc80SM"
+      "finalUrl": "https://rentals.ca/vancouver/dunbar-southlands?__cf_chl_rt_tk=5FY3wWDBeMFBGXEt1w.OKcNt6ysxCBh.iJ_OIp.MNqE-1793216395-1.0.1.1-KOngfVviCl9.a01q3RRcmasbCoTGTZTRDXmgB31ufNg"
     },
     "rentalsca-quilchena-2br": {
-      "checkedAt": "2026-10-28T15:36:25.758Z",
-      "status": 429,
+      "checkedAt": "2026-10-28T19:39:54.858Z",
+      "status": 404,
       "ok": false,
-      "finalUrl": "https://rentals.ca/vancouver/quilchena?__cf_chl_rt_tk=B4IXPX962OpdP.MVIz6KjS7WiGRMuuoGnyG2pieRGD0-1793201795-1.0.1.1-H9njRgdkWXFAcnC3f0_5UxqYtAqKaE_Q84zgeTceiKs"
+      "finalUrl": "https://rentals.ca/vancouver/quilchena"
     },
     "rentalsca-kitsilano-3br": {
-      "checkedAt": "2026-10-28T15:36:25.758Z",
-      "status": 429,
+      "checkedAt": "2026-10-28T19:39:54.858Z",
+      "status": 403,
       "ok": false,
-      "finalUrl": "https://rentals.ca/vancouver/kitsilano/3-bedrooms?__cf_chl_rt_tk=3fJ.qKtmmlAMBJAyxHSa7qLGKUrDa7iHhHIIs1RDSEo-1793201795-1.0.1.1-q_cCvTRrZuXf81009AmWfBerrBBBeloYmY5MVHrFUTk"
+      "finalUrl": "https://rentals.ca/vancouver/kitsilano/3-bedrooms?__cf_chl_rt_tk=JHa8YQ7InU4dbfU2siJJq8SJ0Q97gyXhMbifPsOqs6w-1793216395-1.0.1.1-QHbr8QIcAUvMccFz6l18Znas1UYFVKo7Lcq4mK_ocMs"
     },
     "rentalsca-kitsilano-4br": {
-      "checkedAt": "2026-10-28T15:36:25.758Z",
-      "status": 429,
+      "checkedAt": "2026-10-28T19:39:54.858Z",
+      "status": 403,
       "ok": false,
-      "finalUrl": "https://rentals.ca/vancouver/kitsilano/4-bedrooms?__cf_chl_rt_tk=84E4COeViC9yLcJht55QAFXnbOinQoCfiOg4zcvUBZo-1793201796-1.0.1.1-n7nRNn1aih1SQAxOzNsvSfU6IAh.Vq9PZCsqrynJkLE"
+      "finalUrl": "https://rentals.ca/vancouver/kitsilano/4-bedrooms?__cf_chl_rt_tk=Q70Gg7hChF6FZUmBZvOwa_g9QUPRKBHIzXAAMjUSn4c-1793216395-1.0.1.1-CGgBO2FBiPswsJzk4ODEDeISjKC.XajSD1M2MLYCnys"
     },
     "rentalsca-vancouver-3br": {
-      "checkedAt": "2026-10-28T15:36:25.758Z",
-      "status": 429,
+      "checkedAt": "2026-10-28T19:39:54.858Z",
+      "status": 403,
       "ok": false,
-      "finalUrl": "https://rentals.ca/vancouver/3-bedrooms?__cf_chl_rt_tk=lGmZhlOcCWpF5xsp8B6t6FxhJc3chYTgaQSf82PpJto-1793201796-1.0.1.1-_tSdrnj41n_.6.0Kuo0wPEx3m7jx7VsgH3UZ9qatEEk"
+      "finalUrl": "https://rentals.ca/vancouver/3-bedrooms?__cf_chl_rt_tk=0GfA9E9tPsum44FxLPh8DpNnGma2MGdf4DOz_Xv29h4-1793216395-1.0.1.1-bFGH_X2O7aLC0WyxIkMMN3OzBLfV36eGJj6u73hUflY"
     },
     "rentalsca-vancouver-4br": {
-      "checkedAt": "2026-10-28T15:36:25.758Z",
-      "status": 429,
+      "checkedAt": "2026-10-28T19:39:54.858Z",
+      "status": 403,
       "ok": false,
-      "finalUrl": "https://rentals.ca/vancouver/4-bedrooms?__cf_chl_rt_tk=.TEgj_Ryl4E9UC05kzLWXz5TVOMZRaBKtRT39tIBvSk-1793201796-1.0.1.1-5kDDhrZpSfgxC5amgHi7DdDXBm9VQzB1.OHO0HtmjmQ"
+      "finalUrl": "https://rentals.ca/vancouver/4-bedrooms?__cf_chl_rt_tk=FYYEkaSiQidAoXJOkNx4Uat7AOERLg8boGrAHKaPJsw-1793216395-1.0.1.1-GGQ.tIBBgeoy_oKWryMQNywqLxQP1B3o1Xp5t1MUZgo"
     }
   },
   "diagnostics": {
-    "searchResultCount": 27,
-    "searchAddressLines": 20,
-    "searchDetailLinks": 35,
-    "searchLeadCount": 4,
+    "searchResultCount": 0,
+    "searchAddressLines": 0,
+    "searchDetailLinks": 0,
+    "searchLeadCount": 0,
     "searchLeadOutOfArea": 0,
-    "newSearchLeadCount": 2,
-    "representedSearchLeadCount": 1,
-    "revalidationSearchLeadCount": 1,
-    "detailUrls": 49,
-    "detailChecked": 3,
-    "detailBlocked": 3,
+    "newSearchLeadCount": 0,
+    "representedSearchLeadCount": 0,
+    "revalidationSearchLeadCount": 0,
+    "detailUrls": 0,
+    "detailChecked": 0,
+    "detailBlocked": 0,
     "detailNotFound": 0,
     "detailErrors": 0,
     "detailParsed": 0,
-    "detailSuppressed": 46,
-    "detailCircuitOpen": true
+    "detailSuppressed": 0,
+    "detailCircuitOpen": false
   },
-  "searchLeads": [
-    {
-      "identityKey": "1960 macdonald street, vancouver, bc::4350::4350::2::2",
-      "address": "1960 Macdonald Street, Vancouver, BC",
-      "rentMin": 4350,
-      "rentMax": 4350,
-      "bedroomMin": 2,
-      "bedroomMax": 2,
-      "bathrooms": 2,
-      "source": "Rentals.ca search",
-      "searchUrl": "https://rentals.ca/vancouver/kitsilano/all-apartments-all-houses",
-      "checkedAt": "2026-10-28T15:36:25.758Z",
-      "publishable": false,
-      "evidenceKind": "search_result_lead_only",
-      "availabilityVerified": false,
-      "url": "https://rentals.ca/vancouver/1960-macdonald-street",
-      "leadStatus": "needs_detail_revalidation",
-      "addressMatchOnly": true,
-      "matchingListingCount": 1,
-      "matchedListingIds": [
-        "fourth-mac-floorplan-2-bedroom-2-bath-801-4350"
-      ],
-      "matchedListingId": "fourth-mac-floorplan-2-bedroom-2-bath-801-4350",
-      "matchedAvailabilityStatus": "removed"
-    },
-    {
-      "identityKey": "2075 w 12th avenue, vancouver, bc::3675::3675::2::2",
-      "address": "2075 W 12th Avenue, Vancouver, BC",
-      "rentMin": 3675,
-      "rentMax": 3675,
-      "bedroomMin": 2,
-      "bedroomMax": 2,
-      "bathrooms": 2,
-      "source": "Rentals.ca search",
-      "searchUrl": "https://rentals.ca/vancouver/kitsilano/all-apartments-all-houses",
-      "checkedAt": "2026-10-28T15:36:25.758Z",
-      "publishable": false,
-      "evidenceKind": "search_result_lead_only",
-      "availabilityVerified": false,
-      "url": "https://rentals.ca/vancouver/2075-w-12th-avenue",
-      "leadStatus": "represented_active_address",
-      "addressMatchOnly": true,
-      "matchingListingCount": 5,
-      "matchedListingIds": [
-        "kits-walk-2br-flex-616",
-        "kits-walk-unit-605",
-        "kits-walk-floorplan-2-bedroom-741-3600",
-        "kits-walk-floorplan-2-bedroom-811-3675",
-        "kits-walk-floorplan-2-bedroom-811-3595"
-      ],
-      "matchedListingId": "kits-walk-floorplan-2-bedroom-741-3600",
-      "matchedAvailabilityStatus": "active"
-    },
-    {
-      "identityKey": "2319 dunbar street, vancouver, bc::4000::4000::3::3",
-      "address": "2319 Dunbar Street, Vancouver, BC",
-      "rentMin": 4000,
-      "rentMax": 4000,
-      "bedroomMin": 3,
-      "bedroomMax": 3,
-      "bathrooms": 1.5,
-      "source": "Rentals.ca search",
-      "searchUrl": "https://rentals.ca/vancouver/kitsilano/all-apartments-all-houses",
-      "checkedAt": "2026-10-28T15:36:25.758Z",
-      "publishable": false,
-      "evidenceKind": "search_result_lead_only",
-      "availabilityVerified": false,
-      "url": "https://rentals.ca/vancouver/2319-dunbar-street",
-      "leadStatus": "new_unverified_address",
-      "addressMatchOnly": false,
-      "matchingListingCount": 0,
-      "matchedListingIds": [],
-      "matchedListingId": null,
-      "matchedAvailabilityStatus": null
-    },
-    {
-      "identityKey": "2800 west 3rd avenue, vancouver, bc::5695::5695::3::3",
-      "address": "2800 West 3rd Avenue, Vancouver, BC",
-      "rentMin": 5695,
-      "rentMax": 5695,
-      "bedroomMin": 3,
-      "bedroomMax": 3,
-      "bathrooms": 1.5,
-      "source": "Rentals.ca search",
-      "searchUrl": "https://rentals.ca/vancouver/kitsilano/all-apartments-all-houses",
-      "checkedAt": "2026-10-28T15:36:25.758Z",
-      "publishable": false,
-      "evidenceKind": "search_result_lead_only",
-      "availabilityVerified": false,
-      "url": "https://rentals.ca/vancouver/2800-west-3rd-avenue",
-      "leadStatus": "new_unverified_address",
-      "addressMatchOnly": false,
-      "matchingListingCount": 0,
-      "matchedListingIds": [],
-      "matchedListingId": null,
-      "matchedAvailabilityStatus": null
-    }
-  ],
+  "searchLeads": [],
   "pages": [],
   "inventories": []
 }

@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-10-28T15:38:08.611Z",
+  "refreshedAt": "2026-10-28T19:41:13.528Z",
   "groups": [
     {
       "identityKey": "3349 dunbar st::url:fa963040c813",
@@ -86,6 +86,42 @@
       "result": "candidate_only"
     },
     {
+      "identityKey": "4455 w 9th ave::url:a00848ac2e03",
+      "sources": [
+        "craigslist"
+      ],
+      "rents": [
+        4500
+      ],
+      "exactUnit": false,
+      "matchedListingId": null,
+      "result": "candidate_only"
+    },
+    {
+      "identityKey": "2475 w 4th ave near larch st::url:19d1ae4c8f78",
+      "sources": [
+        "craigslist"
+      ],
+      "rents": [
+        3600
+      ],
+      "exactUnit": false,
+      "matchedListingId": null,
+      "result": "candidate_only"
+    },
+    {
+      "identityKey": "2111 w 11th ave near arbutus st::url:c00c863f9d18",
+      "sources": [
+        "craigslist"
+      ],
+      "rents": [
+        3500
+      ],
+      "exactUnit": false,
+      "matchedListingId": null,
+      "result": "candidate_only"
+    },
+    {
       "identityKey": "4588 w 2nd ave near tolmie st::url:8f6de7d97480",
       "sources": [
         "craigslist"
@@ -128,42 +164,6 @@
       ],
       "rents": [
         3950
-      ],
-      "exactUnit": false,
-      "matchedListingId": null,
-      "result": "candidate_only"
-    },
-    {
-      "identityKey": "4455 w 9th ave::url:a00848ac2e03",
-      "sources": [
-        "craigslist"
-      ],
-      "rents": [
-        4500
-      ],
-      "exactUnit": false,
-      "matchedListingId": null,
-      "result": "candidate_only"
-    },
-    {
-      "identityKey": "2475 w 4th ave near larch st::url:19d1ae4c8f78",
-      "sources": [
-        "craigslist"
-      ],
-      "rents": [
-        3600
-      ],
-      "exactUnit": false,
-      "matchedListingId": null,
-      "result": "candidate_only"
-    },
-    {
-      "identityKey": "2111 w 11th ave near arbutus st::url:c00c863f9d18",
-      "sources": [
-        "craigslist"
-      ],
-      "rents": [
-        3500
       ],
       "exactUnit": false,
       "matchedListingId": null,
@@ -218,60 +218,48 @@
       "result": "candidate_only"
     },
     {
-      "identityKey": "mls:r3175899",
+      "identityKey": "mls:r3167417",
       "sources": [
         "realtylink mls"
       ],
       "rents": [
-        3500
+        6750
       ],
       "exactUnit": true,
-      "matchedListingId": "mls-r3175899",
+      "matchedListingId": "mls-r3167417",
       "result": "authoritative_mls_reverified"
     },
     {
-      "identityKey": "mls:r3160689",
+      "identityKey": "mls:r3170701",
       "sources": [
         "realtylink mls"
       ],
       "rents": [
-        4300
-      ],
-      "exactUnit": true,
-      "matchedListingId": "zumper-16e9ae17cd91",
-      "result": "authoritative_mls_reverified"
-    },
-    {
-      "identityKey": "mls:r3172212",
-      "sources": [
-        "realtylink mls"
-      ],
-      "rents": [
-        6300
+        6000
       ],
       "exactUnit": false,
-      "matchedListingId": "mls-r3172212",
+      "matchedListingId": "mls-r3170701",
       "result": "authoritative_mls_reverified"
     },
     {
-      "identityKey": "mls:r3163709",
+      "identityKey": "mls:r3179104",
       "sources": [
         "realtylink mls"
       ],
       "rents": [
-        5800
+        15000
       ],
       "exactUnit": false,
-      "matchedListingId": "mls-r3163709",
-      "result": "authoritative_mls_reverified"
+      "matchedListingId": null,
+      "result": "auto_published_authoritative_mls"
     }
   ],
-  "promoted": [],
+  "promoted": [
+    "mls-r3179104"
+  ],
   "crossVerified": [
-    "mls-r3175899",
-    "zumper-16e9ae17cd91",
-    "mls-r3172212",
-    "mls-r3163709"
+    "mls-r3167417",
+    "mls-r3170701"
   ],
   "fingerprintCrossVerified": [],
   "craigslistRelistingsRecovered": [],
@@ -280,17 +268,17 @@
   "relistedMlsMerged": [],
   "negativeMatches": [],
   "detailReactivated": [
-    "mls-r3163709"
+    "mls-r3167417"
   ],
   "auxiliaryMlsRemovalsRolledBack": [],
   "mlsMissing": {},
   "mlsRemoved": [],
   "mlsStaleHidden": [],
-  "realtylinkSnapshotCount": 4,
+  "realtylinkSnapshotCount": 3,
   "realtylinkSnapshotHighWaterMark": 10,
   "realtylinkSnapshotScope": "rent-3500-beds-2-4-whole-home-westside-v3",
   "realtylinkRemovalEligible": false,
-  "mlsRemovalSuppressed": "Partial Realtylink snapshot (4 candidates versus previous complete 10); disappearance signals ignored.",
+  "mlsRemovalSuppressed": "Partial Realtylink snapshot (3 candidates versus previous complete 10); disappearance signals ignored.",
   "mlsDuplicatesMerged": [],
   "canonicalFieldRepairsApplied": []
 }
