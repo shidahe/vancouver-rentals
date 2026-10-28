@@ -42,6 +42,29 @@
   ],
   "seedCandidates": [
     {
+      "id": "realtor-highbury-place-203-r3175899",
+      "listingId": "mls-r3175899",
+      "mls": "R3175899",
+      "source": "REALTOR.ca MLS/IDX",
+      "url": "https://www.realtor.ca/real-estate/30408620/203-3720-w-8th-avenue-vancouver",
+      "buildingName": "Highbury Place",
+      "unit": "203",
+      "address": "3720 W 8th Ave, Vancouver, BC V6R 1Z3",
+      "neighborhood": "West Point Grey",
+      "type": "condo",
+      "expectedBeds": 2,
+      "autoPublish": true,
+      "hints": {
+        "bedrooms": 2,
+        "bathrooms": 2,
+        "sqft": 1046,
+        "parking": true,
+        "petFriendly": true,
+        "balcony": true,
+        "largeWindows": true
+      }
+    },
+    {
       "id":"craigslist-yorkville-north-2br-den-979","listingId":"yorkville-north-2br-den-979","source":"Craigslist / Zumper","url":"https://www.craigslist.org/view/d/vancouver-ocean-view-2br-2ba-with-den/kZEyBrAFDhJYBcmtaq27m2","buildingName":"Yorkville North","unit":"2BR+Den · 979 sqft","address":"1888 York Avenue, Vancouver, BC V6J 5A7","neighborhood":"Kitsilano","type":"purpose-built","expectedBeds":2,"autoPublish":true,
       "hints":{"bedrooms":2,"bathrooms":2,"sqft":979,"parking":true,"petFriendly":true,"balcony":true,"largeWindows":true}
     },

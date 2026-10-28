@@ -365,6 +365,14 @@ for (const seed of sources.seedCandidates || []) {
     const geo = existing?.lat && existing?.lng ? { lat: existing.lat, lng: existing.lng } : await geocodeVancouver(seed.address);
     if (geo) {
       if (existing) {
+        if (seed.mls) {
+          existing.mls = seed.mls;
+          // This listing is continuously verified from its exact IDX detail
+          // page, not inferred from the completeness of Realtylink search
+          // results. Keep the MLS number as canonical identity without making
+          // a partial Realtylink snapshot responsible for its lifecycle.
+          existing.mlsInventoryManaged = false;
+        }
         const oldRent = existing.rent;
         existing.rent = livePrice;
         existing.bedrooms = facts.bedrooms ?? existing.bedrooms;
@@ -392,6 +400,8 @@ for (const seed of sources.seedCandidates || []) {
         const id = seed.listingId || `auto-${seed.id}`;
         const listing = {
           id,
+          mls: seed.mls || undefined,
+          mlsInventoryManaged: seed.mls ? false : undefined,
           buildingName: seed.buildingName || null,
           unit: seed.unit || null,
           address: seed.address,

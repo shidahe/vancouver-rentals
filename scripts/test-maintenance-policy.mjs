@@ -36,6 +36,14 @@ const scopeSource = await read('scripts/enforce-listing-scope.mjs');
 const imageCacheWorkflow = await read('.github/workflows/cache-listing-images.yml');
 const refreshWorkflow = await read('.github/workflows/refresh-listings.yml');
 const catalog = JSON.parse(await read('data/live-sources.json'));
+const highbury203 = catalog.seedCandidates?.find(x => x.id === 'realtor-highbury-place-203-r3175899');
+if (highbury203?.listingId !== 'mls-r3175899' || highbury203?.mls !== 'R3175899' || highbury203?.unit !== '203' ||
+    highbury203?.expectedBeds !== 2 || highbury203?.hints?.bathrooms !== 2 || highbury203?.hints?.sqft !== 1046 || !highbury203?.autoPublish) {
+  failures.push('Highbury Place #203 exact IDX regression seed is missing or no longer preserves its MLS identity and current 2BR facts.');
+}
+const refreshListingsSource=await fs.readFile('scripts/refresh-listings.mjs','utf8');
+if(!refreshListingsSource.includes('existing.mls = seed.mls')||!refreshListingsSource.includes('mls: seed.mls || undefined')||
+   !refreshListingsSource.includes('mlsInventoryManaged: seed.mls ? false : undefined')) failures.push('Exact IDX seeds no longer retain MLS as canonical identity without inheriting partial-Realtylink lifecycle semantics.');
 const officialWatch = JSON.parse(await read('data/official-watch.json'));
 const imageSources = JSON.parse(await read('data/image-sources.json'));
 const indexHtml = await read('index.html');
