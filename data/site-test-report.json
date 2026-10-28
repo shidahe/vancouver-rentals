@@ -1,11 +1,11 @@
 {
-  "checkedAt": "2026-10-28T15:11:13.954Z",
+  "checkedAt": "2026-10-28T15:24:05.161Z",
   "ok": true,
   "checkpoints": {
     "render": {
       "title": "Vancouver Westside Rentals",
-      "cards": 22,
-      "shown": 22
+      "cards": 18,
+      "shown": 18
     },
     "stats": {
       "labels": [
@@ -16,16 +16,16 @@
         "Last refreshed"
       ],
       "values": [
-        "22",
+        "18",
         "2",
-        "9",
-        "8",
-        "Oct 28, 8:01 a.m. PDT"
+        "7",
+        "12",
+        "Oct 28, 8:14 a.m. PDT"
       ],
-      "html": "<div class=\"stat\"><strong>22</strong><span>Active</span></div><div class=\"stat\"><strong>2</strong><span>New 7d</span></div><div class=\"stat\"><strong>9</strong><span>Price drops</span></div><div class=\"stat\"><strong>8</strong><span>To verify</span></div><div class=\"stat\"><strong>Oct 28, 8:01 a.m. PDT</strong><span>Last refreshed</span></div>",
+      "html": "<div class=\"stat\"><strong>18</strong><span>Active</span></div><div class=\"stat\"><strong>2</strong><span>New 7d</span></div><div class=\"stat\"><strong>7</strong><span>Price drops</span></div><div class=\"stat\"><strong>12</strong><span>To verify</span></div><div class=\"stat\"><strong>Oct 28, 8:14 a.m. PDT</strong><span>Last refreshed</span></div>",
       "refreshedAt": {
-        "displayed": "Oct 28, 8:01 a.m. PDT",
-        "expected": "Oct 28, 8:01 a.m. PDT",
+        "displayed": "Oct 28, 8:14 a.m. PDT",
+        "expected": "Oct 28, 8:14 a.m. PDT",
         "timezone": "America/Vancouver"
       },
       "newSevenDays": {
@@ -38,7 +38,7 @@
       }
     },
     "map": {
-      "markers": 22,
+      "markers": 18,
       "desktopMapVisible": true
     },
     "filters": "ok",
@@ -49,14 +49,14 @@
     },
     "sourceLink": "https://www.rentfaster.ca/properties/2355-w-49th-avenue-vancouver-bc-v6m-0g1-vancouver-755998",
     "photos": {
-      "total": 22,
-      "loaded": 22,
+      "total": 18,
+      "loaded": 18,
       "fallbacks": 0,
       "bad": []
     },
     "markerPositions": {
-      "total": 22,
-      "unique": 22
+      "total": 18,
+      "unique": 18
     },
     "dataEndpoints": "ok",
     "mobile": "ok",

@@ -1846,6 +1846,11 @@
       "date": "2026-10-28",
       "rent": 4800,
       "note": "AUTO-HIDDEN: MLS R3151372 exceeded 48 hours without fresh positive availability; partial search results are not removal evidence."
+    },
+    {
+      "date": "2026-10-28",
+      "rent": 4800,
+      "note": "CORRECTED: restored after exact current MLS detail matched identity, explicit availability and rent."
     }
   ],
   "mls-r3158179": [
@@ -3322,6 +3327,11 @@
       "date": "2026-10-21",
       "rent": 4800,
       "note": "MLS price update $5000 → $4800."
+    },
+    {
+      "date": "2026-10-28",
+      "rent": 4500,
+      "note": "MLS price update $4800 → $4500."
     }
   ],
   "mls-r3173479": [
@@ -3529,6 +3539,11 @@
     },
     {
       "date": "2026-10-27",
+      "rent": 5500,
+      "note": "EXCLUDED: house share or separately rented portion of a house."
+    },
+    {
+      "date": "2026-10-28",
       "rent": 5500,
       "note": "EXCLUDED: house share or separately rented portion of a house."
     }

@@ -2,8 +2,12 @@
   "id": "realtor-highbury-place-203-r3175899",
   "listingId": "mls-r3175899",
   "mls": "R3175899",
-  "source": "REALTOR.ca MLS/IDX",
-  "url": "https://www.realtor.ca/real-estate/30408620/203-3720-w-8th-avenue-vancouver",
+  "source": "Latitude Realty RentCafe / MLS R3175899",
+  "url": "https://www.rentcafe.com/single-family/bc/vancouver/203-3720-w-8th-avenue-203/default.aspx",
+  "supportingUrls": [
+    "https://www.realtor.ca/real-estate/30408620/203-3720-w-8th-avenue-vancouver",
+    "https://www.craigslist.org/view/d/vancouver-bed-bath-apartment-at/s4HJHvnhSvtepoZicZoZam"
+  ],
   "buildingName": "Highbury Place",
   "unit": "203",
   "address": "3720 W 8th Ave, Vancouver, BC V6R 1Z3",
@@ -20,16 +24,16 @@
     "balcony": true,
     "largeWindows": true
   },
-  "discoveredAt": "2026-10-28T15:01:21.031Z",
-  "liveCheckedAt": "2026-10-28T15:01:21.031Z",
+  "discoveredAt": "2026-10-28T15:14:33.844Z",
+  "liveCheckedAt": "2026-10-28T15:14:33.844Z",
   "liveStatus": 403,
-  "finalUrl": "https://www.realtor.ca/real-estate/30408620/203-3720-w-8th-avenue-vancouver",
+  "finalUrl": "https://www.rentcafe.com/single-family/bc/vancouver/203-3720-w-8th-avenue-203/default.aspx",
   "identityMatch": false,
   "explicitPositive": false,
   "explicitNegative": false,
   "negativePhrase": null,
   "livePrice": null,
   "liveFacts": {},
-  "pageTextSample": "Performing security verification / Vérification de sécurité en cours\n\nThis website uses a security service to protect against malicious bots. This page is displayed while the website verifies you are not a bot.\n\n\n\n\nCe site utilise un service de sécurité pour se protéger contre les robots malveillants. Cette page s'affiche pendant que le site vérifie que vous n'êtes pas un robot.\n\nRay ID: a51ad6e14e1ed7a0",
+  "pageTextSample": "Sorry, you have been blocked\nYou are unable to access rentcafe.com\nWhy have I been blocked?\n\nThis website is using a security service to protect itself from online attacks. The action you just performed triggered the security solution. There are several actions that could trigger this block including submitting a certain word or phrase, a SQL command or malformed data.\n\nWhat can I do to resolve this?\n\nYou can email the site owner to let them know you were blocked. Please include what you were doing when this page came up and the Cloudflare Ray ID found at the bottom of this page.\n\nCloudflare Ray ID: a51ae9cd78a7acee • Your IP: Click to reveal • Performance & security by Cloudflare",
   "autoPublishResult": "blocked_verification_gate"
 }
