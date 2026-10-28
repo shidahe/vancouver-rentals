@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-10-28T15:23:04.480Z",
+  "refreshedAt": "2026-10-28T15:38:08.611Z",
   "groups": [
     {
       "identityKey": "3349 dunbar st::url:fa963040c813",
@@ -218,6 +218,18 @@
       "result": "candidate_only"
     },
     {
+      "identityKey": "mls:r3175899",
+      "sources": [
+        "realtylink mls"
+      ],
+      "rents": [
+        3500
+      ],
+      "exactUnit": true,
+      "matchedListingId": "mls-r3175899",
+      "result": "authoritative_mls_reverified"
+    },
+    {
       "identityKey": "mls:r3160689",
       "sources": [
         "realtylink mls"
@@ -227,66 +239,6 @@
       ],
       "exactUnit": true,
       "matchedListingId": "zumper-16e9ae17cd91",
-      "result": "authoritative_mls_reverified"
-    },
-    {
-      "identityKey": "mls:r3170701",
-      "sources": [
-        "realtylink mls"
-      ],
-      "rents": [
-        6000
-      ],
-      "exactUnit": false,
-      "matchedListingId": "mls-r3170701",
-      "result": "authoritative_mls_reverified"
-    },
-    {
-      "identityKey": "mls:r3175865",
-      "sources": [
-        "realtylink mls"
-      ],
-      "rents": [
-        4000
-      ],
-      "exactUnit": false,
-      "matchedListingId": "mls-r3175865",
-      "result": "authoritative_mls_reverified"
-    },
-    {
-      "identityKey": "mls:r3175848",
-      "sources": [
-        "realtylink mls"
-      ],
-      "rents": [
-        5500
-      ],
-      "exactUnit": false,
-      "matchedListingId": "mls-r3175848",
-      "result": "authoritative_mls_reverified"
-    },
-    {
-      "identityKey": "mls:r3175318",
-      "sources": [
-        "realtylink mls"
-      ],
-      "rents": [
-        4000
-      ],
-      "exactUnit": false,
-      "matchedListingId": "mls-r3175318",
-      "result": "authoritative_mls_reverified"
-    },
-    {
-      "identityKey": "mls:r3175599",
-      "sources": [
-        "realtylink mls"
-      ],
-      "rents": [
-        4500
-      ],
-      "exactUnit": false,
-      "matchedListingId": "zumper-dd642aebb4f6",
       "result": "authoritative_mls_reverified"
     },
     {
@@ -302,28 +254,24 @@
       "result": "authoritative_mls_reverified"
     },
     {
-      "identityKey": "mls:r3151372",
+      "identityKey": "mls:r3163709",
       "sources": [
         "realtylink mls"
       ],
       "rents": [
-        4800
+        5800
       ],
       "exactUnit": false,
-      "matchedListingId": "mls-r3151372",
+      "matchedListingId": "mls-r3163709",
       "result": "authoritative_mls_reverified"
     }
   ],
   "promoted": [],
   "crossVerified": [
+    "mls-r3175899",
     "zumper-16e9ae17cd91",
-    "mls-r3170701",
-    "mls-r3175865",
-    "mls-r3175848",
-    "mls-r3175318",
-    "zumper-dd642aebb4f6",
     "mls-r3172212",
-    "mls-r3151372"
+    "mls-r3163709"
   ],
   "fingerprintCrossVerified": [],
   "craigslistRelistingsRecovered": [],
@@ -332,67 +280,17 @@
   "relistedMlsMerged": [],
   "negativeMatches": [],
   "detailReactivated": [
-    "mls-r3151372"
+    "mls-r3163709"
   ],
   "auxiliaryMlsRemovalsRolledBack": [],
-  "mlsMissing": {
-    "R3159060": {
-      "firstMissingAt": "2026-10-28T15:23:04.480Z",
-      "lastMissingAt": "2026-10-28T15:23:04.480Z",
-      "listingId": "mls-r3159060"
-    },
-    "R3163709": {
-      "firstMissingAt": "2026-10-28T15:23:04.480Z",
-      "lastMissingAt": "2026-10-28T15:23:04.480Z",
-      "listingId": "mls-r3163709"
-    },
-    "R3167417": {
-      "firstMissingAt": "2026-10-28T15:23:04.480Z",
-      "lastMissingAt": "2026-10-28T15:23:04.480Z",
-      "listingId": "mls-r3167417"
-    },
-    "R3167237": {
-      "firstMissingAt": "2026-10-28T15:23:04.480Z",
-      "lastMissingAt": "2026-10-28T15:23:04.480Z",
-      "listingId": "mls-r3167237"
-    },
-    "R3165327": {
-      "firstMissingAt": "2026-10-28T15:23:04.480Z",
-      "lastMissingAt": "2026-10-28T15:23:04.480Z",
-      "listingId": "mls-r3165327"
-    },
-    "R3162880": {
-      "firstMissingAt": "2026-10-28T15:23:04.480Z",
-      "lastMissingAt": "2026-10-28T15:23:04.480Z",
-      "listingId": "mls-r3162880"
-    },
-    "R3173479": {
-      "firstMissingAt": "2026-10-28T15:23:04.480Z",
-      "lastMissingAt": "2026-10-28T15:23:04.480Z",
-      "listingId": "mls-r3173479"
-    },
-    "R3174425": {
-      "firstMissingAt": "2026-10-28T15:23:04.480Z",
-      "lastMissingAt": "2026-10-28T15:23:04.480Z",
-      "listingId": "mls-r3174425"
-    },
-    "R3172081": {
-      "firstMissingAt": "2026-10-28T15:23:04.480Z",
-      "lastMissingAt": "2026-10-28T15:23:04.480Z",
-      "listingId": "mls-r3172081"
-    },
-    "R3177685": {
-      "firstMissingAt": "2026-10-28T15:23:04.480Z",
-      "lastMissingAt": "2026-10-28T15:23:04.480Z",
-      "listingId": "mls-r3177685"
-    }
-  },
+  "mlsMissing": {},
   "mlsRemoved": [],
   "mlsStaleHidden": [],
-  "realtylinkSnapshotCount": 8,
+  "realtylinkSnapshotCount": 4,
   "realtylinkSnapshotHighWaterMark": 10,
   "realtylinkSnapshotScope": "rent-3500-beds-2-4-whole-home-westside-v3",
-  "realtylinkRemovalEligible": true,
+  "realtylinkRemovalEligible": false,
+  "mlsRemovalSuppressed": "Partial Realtylink snapshot (4 candidates versus previous complete 10); disappearance signals ignored.",
   "mlsDuplicatesMerged": [],
   "canonicalFieldRepairsApplied": []
 }

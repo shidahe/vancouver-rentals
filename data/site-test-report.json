@@ -1,11 +1,11 @@
 {
-  "checkedAt": "2026-10-28T15:24:05.161Z",
+  "checkedAt": "2026-10-28T15:39:15.563Z",
   "ok": true,
   "checkpoints": {
     "render": {
       "title": "Vancouver Westside Rentals",
-      "cards": 18,
-      "shown": 18
+      "cards": 20,
+      "shown": 20
     },
     "stats": {
       "labels": [
@@ -16,29 +16,30 @@
         "Last refreshed"
       ],
       "values": [
-        "18",
-        "2",
-        "7",
-        "12",
-        "Oct 28, 8:14 a.m. PDT"
+        "20",
+        "3",
+        "8",
+        "11",
+        "Oct 28, 8:29 a.m. PDT"
       ],
-      "html": "<div class=\"stat\"><strong>18</strong><span>Active</span></div><div class=\"stat\"><strong>2</strong><span>New 7d</span></div><div class=\"stat\"><strong>7</strong><span>Price drops</span></div><div class=\"stat\"><strong>12</strong><span>To verify</span></div><div class=\"stat\"><strong>Oct 28, 8:14 a.m. PDT</strong><span>Last refreshed</span></div>",
+      "html": "<div class=\"stat\"><strong>20</strong><span>Active</span></div><div class=\"stat\"><strong>3</strong><span>New 7d</span></div><div class=\"stat\"><strong>8</strong><span>Price drops</span></div><div class=\"stat\"><strong>11</strong><span>To verify</span></div><div class=\"stat\"><strong>Oct 28, 8:29 a.m. PDT</strong><span>Last refreshed</span></div>",
       "refreshedAt": {
-        "displayed": "Oct 28, 8:14 a.m. PDT",
-        "expected": "Oct 28, 8:14 a.m. PDT",
+        "displayed": "Oct 28, 8:29 a.m. PDT",
+        "expected": "Oct 28, 8:29 a.m. PDT",
         "timezone": "America/Vancouver"
       },
       "newSevenDays": {
-        "expectedCount": 2,
+        "expectedCount": 3,
         "badgeIds": [
           "westward-unit-104",
-          "the-raven-unit-101"
+          "the-raven-unit-101",
+          "mls-r3175899"
         ],
         "staleBadgeIds": []
       }
     },
     "map": {
-      "markers": 18,
+      "markers": 20,
       "desktopMapVisible": true
     },
     "filters": "ok",
@@ -49,14 +50,14 @@
     },
     "sourceLink": "https://www.rentfaster.ca/properties/2355-w-49th-avenue-vancouver-bc-v6m-0g1-vancouver-755998",
     "photos": {
-      "total": 18,
-      "loaded": 18,
+      "total": 20,
+      "loaded": 20,
       "fallbacks": 0,
       "bad": []
     },
     "markerPositions": {
-      "total": 18,
-      "unique": 18
+      "total": 20,
+      "unique": 20
     },
     "dataEndpoints": "ok",
     "mobile": "ok",

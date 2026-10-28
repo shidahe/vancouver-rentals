@@ -1,11 +1,11 @@
 {
-  "generatedAt": "2026-10-28T15:23:59.540Z",
-  "activeCount": 18,
+  "generatedAt": "2026-10-28T15:39:09.590Z",
+  "activeCount": 20,
   "decisionReady": true,
   "readinessStatus": "finalized",
   "highIssueCount": 0,
   "mediumIssueCount": 0,
-  "infoIssueCount": 31,
+  "infoIssueCount": 34,
   "issues": [
     {
       "severity": "info",
@@ -60,6 +60,11 @@
     {
       "severity": "info",
       "id": "kits-walk-floorplan-2-bedroom-741-3600",
+      "issue": "unknown-orientation"
+    },
+    {
+      "severity": "info",
+      "id": "mls-r3163709",
       "issue": "unknown-orientation"
     },
     {
@@ -161,13 +166,23 @@
       "severity": "info",
       "id": "the-raven-unit-101",
       "issue": "unknown-orientation"
+    },
+    {
+      "severity": "info",
+      "id": "mls-r3175899",
+      "issue": "unknown-ac"
+    },
+    {
+      "severity": "info",
+      "id": "mls-r3175899",
+      "issue": "unknown-orientation"
     }
   ],
   "readinessChecks": {
     "smokeOk": true,
     "smokeFresh": true,
-    "smokeCheckedAt": "2026-10-28T15:24:05.161Z",
-    "latestDataAt": "2026-10-28T15:23:06.857Z",
+    "smokeCheckedAt": "2026-10-28T15:39:15.563Z",
+    "latestDataAt": "2026-10-28T15:38:10.949Z",
     "coverageReady": true,
     "healthyDiscoveryLanes": 3,
     "coverageWarnings": [
@@ -175,16 +190,34 @@
         "severity": "warning",
         "lane": "rentalsca",
         "status": "degraded",
-        "detail": "3/9 regional searches reachable; 0 qualifying candidates parsed; 2 scoped search-only leads retained (2 new, 0 already active, 0 need revalidation); 3 detail pages blocked after 25 discovered URLs; 22 further detail checks suppressed after repeated 403/429"
+        "detail": "3/9 regional searches reachable; 0 qualifying candidates parsed; 4 scoped search-only leads retained (2 new, 1 already active, 1 need revalidation); 3 detail pages blocked after 49 discovered URLs; 46 further detail checks suppressed after repeated 403/429"
       },
       {
         "severity": "warning",
         "lane": "livrent",
         "status": "unhealthy",
         "detail": "0/5 searches healthy; 3 blocked searches opened circuit; 2 further checks suppressed"
+      },
+      {
+        "severity": "warning",
+        "lane": "realtylink",
+        "status": "degraded",
+        "detail": "3/3 searches reachable; 4 current live candidates parsed from a partial snapshot versus complete baseline 10; positive discovery usable, removals suppressed"
+      },
+      {
+        "severity": "warning",
+        "lane": "priority-viridian-unpriced-unit",
+        "status": "price-unverified",
+        "detail": "Viridian unit 0103 (2BR) is offered for Now, but official rent is withheld; do not publish before verifying rent >= CAD $3,500"
+      },
+      {
+        "severity": "warning",
+        "lane": "priority-viridian-unpriced-unit",
+        "status": "price-unverified",
+        "detail": "Viridian unit 0309 (2BR) is offered for Oct 30, but official rent is withheld; do not publish before verifying rent >= CAD $3,500"
       }
     ]
   },
   "readinessIssues": [],
-  "finalizedAt": "2026-10-28T15:24:05.265Z"
+  "finalizedAt": "2026-10-28T15:39:15.673Z"
 }

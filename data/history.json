@@ -2685,6 +2685,11 @@
       "date": "2026-10-23",
       "rent": 5800,
       "note": "CORRECTED: restored after exact current MLS detail matched identity, explicit availability and rent."
+    },
+    {
+      "date": "2026-10-28",
+      "rent": 5800,
+      "note": "CORRECTED: restored after exact current MLS detail matched identity, explicit availability and rent."
     }
   ],
   "mls-r3164628": [
@@ -3689,6 +3694,13 @@
       "date": "2026-10-27",
       "rent": 6995,
       "note": "First seen in live purpose-built inventory via https://www.rentfaster.ca/properties/3709-west-broadway-vancouver-688597"
+    }
+  ],
+  "mls-r3175899": [
+    {
+      "date": "2026-10-28",
+      "rent": 3500,
+      "note": "AUTO-PUBLISHED after strict live detail-page verification."
     }
   ]
 }

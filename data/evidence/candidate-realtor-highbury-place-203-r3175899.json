@@ -2,11 +2,11 @@
   "id": "realtor-highbury-place-203-r3175899",
   "listingId": "mls-r3175899",
   "mls": "R3175899",
-  "source": "Latitude Realty RentCafe / MLS R3175899",
-  "url": "https://www.rentcafe.com/single-family/bc/vancouver/203-3720-w-8th-avenue-203/default.aspx",
+  "source": "Craigslist / Latitude Realty / MLS R3175899",
+  "url": "https://www.craigslist.org/view/d/vancouver-bed-bath-apartment-at/s4HJHvnhSvtepoZicZoZam",
   "supportingUrls": [
-    "https://www.realtor.ca/real-estate/30408620/203-3720-w-8th-avenue-vancouver",
-    "https://www.craigslist.org/view/d/vancouver-bed-bath-apartment-at/s4HJHvnhSvtepoZicZoZam"
+    "https://www.rentcafe.com/single-family/bc/vancouver/203-3720-w-8th-avenue-203/default.aspx",
+    "https://www.realtor.ca/real-estate/30408620/203-3720-w-8th-avenue-vancouver"
   ],
   "buildingName": "Highbury Place",
   "unit": "203",
@@ -20,20 +20,37 @@
     "bathrooms": 2,
     "sqft": 1046,
     "parking": true,
-    "petFriendly": true,
+    "petFriendly": false,
     "balcony": true,
     "largeWindows": true
   },
-  "discoveredAt": "2026-10-28T15:14:33.844Z",
-  "liveCheckedAt": "2026-10-28T15:14:33.844Z",
-  "liveStatus": 403,
-  "finalUrl": "https://www.rentcafe.com/single-family/bc/vancouver/203-3720-w-8th-avenue-203/default.aspx",
-  "identityMatch": false,
-  "explicitPositive": false,
+  "discoveredAt": "2026-10-28T15:29:18.503Z",
+  "liveCheckedAt": "2026-10-28T15:29:18.503Z",
+  "liveStatus": 200,
+  "finalUrl": "https://www.craigslist.org/view/d/vancouver-bed-bath-apartment-at/s4HJHvnhSvtepoZicZoZam",
+  "identityMatch": true,
+  "explicitPositive": true,
   "explicitNegative": false,
   "negativePhrase": null,
-  "livePrice": null,
-  "liveFacts": {},
-  "pageTextSample": "Sorry, you have been blocked\nYou are unable to access rentcafe.com\nWhy have I been blocked?\n\nThis website is using a security service to protect itself from online attacks. The action you just performed triggered the security solution. There are several actions that could trigger this block including submitting a certain word or phrase, a SQL command or malformed data.\n\nWhat can I do to resolve this?\n\nYou can email the site owner to let them know you were blocked. Please include what you were doing when this page came up and the Cloudflare Ray ID found at the bottom of this page.\n\nCloudflare Ray ID: a51ae9cd78a7acee • Your IP: Click to reveal • Performance & security by Cloudflare",
-  "autoPublishResult": "blocked_verification_gate"
+  "livePrice": 3500,
+  "liveFacts": {
+    "bedrooms": 2,
+    "bathrooms": 2,
+    "sqft": null,
+    "buildingYear": null,
+    "ac": null,
+    "parking": true,
+    "petFriendly": null,
+    "orientation": null,
+    "balcony": true,
+    "largeWindows": null,
+    "modernInterior": null
+  },
+  "pageTextSample": "CL\n\nvancouver, BC >\n\nvancouver >\n\nhousing >\n\napartments / housing for rent\n\npost\naccount\nreply \nfavorite\n \nhide\n \n⚐\nflag\n \n\nshare\n\nPosted 13 days ago\n\nprint\n$3,500 / 2br - 1046ft2 - 2 Bed 2 Bath Apartment at Highbury Place in Point Grey Vancouver (Vancouver Point Grey)\n© craigslist - Map data © OpenStreetMap\n2BR / 2Ba 1046ft2\nrent period: monthly\napartment\nw/d in unit\nattached garage\nno smoking\nWelcome to this spacious 2 Bed 2 Bath home at Highbury Place, conveniently located near Alma Street and West 8th Avenue on Vancouver’s West Side. Over 1,000 sq ft of living space, a functional layout, and bedrooms separated for added privacy, this home is a great fit for professionals, couples, or small families looking for space and convenience.\n\nHome Highlights\n\n✔ 2 Bedrooms + 2 Bathrooms\n✔ Approx. 1,046 sq ft of living space\n✔ Functional and spacious layout\n✔ Separated bedrooms for added privacy\n✔ Cozy fireplace in the living room\n✔ Good-sized private balcony\n✔ In-suite laundry\n✔ 1 parking stall included\n✔ 1 storage locker included\n✔ Unfurnished\n✔ Move-in ready\n\nEnjoy easy access to neighbourhood shops, restaurants, parks, and transit, with UBC just a short commute away:\n\nLocal cafés, restaurants and shops along West Broadway and Alma Street within walking distance\nAlmond Park and McBride Park ~4 min walk\nJericho Beach ~10 min drive\nWest Point Grey Community Centre ~5 min drive\nUniversity of British Columbia (UBC) ~10 min drive\nPacific Spirit Regional Park ~10 min drive\nKitsilano shops and restaurants ~10 min drive\nDowntown Vancouver ~15-20 min drive\n\nSchool Catchment\n\nBayview Community Elementary\nKitsilano Secondary\n\nRental Details\n\n* Available November 1\n* Minimum one-year lease\n* Credit check required\n* Reference check required\n* Tenant insurance required\n* No pets\n* No smoking\n\nLocation: 203-3720 W 8th Avenue, Vancouver, BC\n\nHow to Inquire\n\nTo arrange a viewing, please include:\n\n* A brief introduction about yourself\n* Your ideal move-in date\n* Whether you will be living alone or with another occupant\n* Whether you have a pet\n* Your availability to view the unit\n\nProfessionally managed by LATitude Realty Inc.\n\npost id: 7984225494\n\n \n\nposted: 13 days ago\n\n \n\nupdated: a day ago\n\n \n\n♥ best of [?]\n\nhelp\nsafety\nprivacy\nterms\nabout\napp\n© 2026 craigslist",
+  "autoPublishResult": "published",
+  "geocode": {
+    "lat": 49.2649929,
+    "lng": -123.1863688,
+    "displayName": "3720, West 8th Avenue, West Point Grey, Vancouver, Metro Vancouver Regional District, British Columbia, V6R 2G5, Canada"
+  }
 }
