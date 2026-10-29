@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-10-28T19:41:13.528Z",
+  "refreshedAt": "2026-10-29T15:04:56.948Z",
   "groups": [
     {
       "identityKey": "3349 dunbar st::url:fa963040c813",
@@ -50,18 +50,6 @@
       "result": "candidate_only"
     },
     {
-      "identityKey": "3000 w 44th ave::url:e02801d5a772",
-      "sources": [
-        "zumper"
-      ],
-      "rents": [
-        6000
-      ],
-      "exactUnit": false,
-      "matchedListingId": "zumper-1754927f090e",
-      "result": "candidate_only"
-    },
-    {
       "identityKey": "w 3rd ave macdonald st::unit:7",
       "sources": [
         "zumper"
@@ -80,6 +68,42 @@
       ],
       "rents": [
         4600
+      ],
+      "exactUnit": false,
+      "matchedListingId": null,
+      "result": "candidate_only"
+    },
+    {
+      "identityKey": "2075 w 48th ave::url:9f9769f7d738",
+      "sources": [
+        "craigslist"
+      ],
+      "rents": [
+        7990
+      ],
+      "exactUnit": false,
+      "matchedListingId": null,
+      "result": "candidate_only"
+    },
+    {
+      "identityKey": "1777 w 7th ave::url:a9679b09464a",
+      "sources": [
+        "craigslist"
+      ],
+      "rents": [
+        3950
+      ],
+      "exactUnit": false,
+      "matchedListingId": null,
+      "result": "candidate_only"
+    },
+    {
+      "identityKey": "1883 trimble st::url:83b56d5e4982",
+      "sources": [
+        "craigslist"
+      ],
+      "rents": [
+        13000
       ],
       "exactUnit": false,
       "matchedListingId": null,
@@ -158,36 +182,12 @@
       "result": "candidate_only"
     },
     {
-      "identityKey": "1777 w 7th ave::url:a9679b09464a",
-      "sources": [
-        "craigslist"
-      ],
-      "rents": [
-        3950
-      ],
-      "exactUnit": false,
-      "matchedListingId": null,
-      "result": "candidate_only"
-    },
-    {
       "identityKey": "2118 w 15 ave 2f::url:4c9c7396d772",
       "sources": [
         "craigslist"
       ],
       "rents": [
         4800
-      ],
-      "exactUnit": false,
-      "matchedListingId": null,
-      "result": "candidate_only"
-    },
-    {
-      "identityKey": "2075 w 48th ave::url:9f9769f7d738",
-      "sources": [
-        "craigslist"
-      ],
-      "rents": [
-        7990
       ],
       "exactUnit": false,
       "matchedListingId": null,
@@ -218,67 +218,88 @@
       "result": "candidate_only"
     },
     {
-      "identityKey": "mls:r3167417",
+      "identityKey": "mls:r3160689",
       "sources": [
         "realtylink mls"
       ],
       "rents": [
-        6750
+        4300
       ],
       "exactUnit": true,
-      "matchedListingId": "mls-r3167417",
+      "matchedListingId": "zumper-16e9ae17cd91",
       "result": "authoritative_mls_reverified"
     },
     {
-      "identityKey": "mls:r3170701",
+      "identityKey": "mls:r3173479",
       "sources": [
         "realtylink mls"
       ],
       "rents": [
-        6000
+        3900
       ],
-      "exactUnit": false,
-      "matchedListingId": "mls-r3170701",
+      "exactUnit": true,
+      "matchedListingId": "mls-r3173479",
       "result": "authoritative_mls_reverified"
     },
     {
-      "identityKey": "mls:r3179104",
+      "identityKey": "mls:r3174425",
       "sources": [
         "realtylink mls"
       ],
       "rents": [
-        15000
+        14500
       ],
       "exactUnit": false,
-      "matchedListingId": null,
-      "result": "auto_published_authoritative_mls"
+      "matchedListingId": "mls-r3174425",
+      "result": "authoritative_mls_reverified"
     }
   ],
-  "promoted": [
-    "mls-r3179104"
-  ],
+  "promoted": [],
   "crossVerified": [
-    "mls-r3167417",
-    "mls-r3170701"
+    "zumper-16e9ae17cd91",
+    "mls-r3173479",
+    "mls-r3174425"
   ],
   "fingerprintCrossVerified": [],
   "craigslistRelistingsRecovered": [],
-  "crossSourcePriceUpdates": [],
+  "crossSourcePriceUpdates": [
+    {
+      "listingId": "mls-r3179104",
+      "postId": "7991000502",
+      "priorRent": 15000,
+      "newRent": 15000,
+      "sharedDescriptionTokenCount": 81
+    }
+  ],
   "maskedMlsMerged": [],
   "relistedMlsMerged": [],
+  "wholeHomeMlsRelistsMerged": [
+    {
+      "previousMls": "R3159060",
+      "currentMls": "R3179104",
+      "kept": "mls-r3159060"
+    }
+  ],
   "negativeMatches": [],
   "detailReactivated": [
-    "mls-r3167417"
+    "mls-r3173479",
+    "mls-r3174425"
   ],
   "auxiliaryMlsRemovalsRolledBack": [],
   "mlsMissing": {},
   "mlsRemoved": [],
   "mlsStaleHidden": [],
-  "realtylinkSnapshotCount": 3,
+  "realtylinkSnapshotCount": 5,
   "realtylinkSnapshotHighWaterMark": 10,
   "realtylinkSnapshotScope": "rent-3500-beds-2-4-whole-home-westside-v3",
   "realtylinkRemovalEligible": false,
-  "mlsRemovalSuppressed": "Partial Realtylink snapshot (3 candidates versus previous complete 10); disappearance signals ignored.",
-  "mlsDuplicatesMerged": [],
+  "mlsRemovalSuppressed": "Partial Realtylink snapshot (5 candidates versus previous complete 10); disappearance signals ignored.",
+  "mlsDuplicatesMerged": [
+    {
+      "mls": "R3179104",
+      "kept": "mls-r3159060",
+      "removed": "mls-r3179104"
+    }
+  ],
   "canonicalFieldRepairsApplied": []
 }

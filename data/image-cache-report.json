@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-10-28T19:42:03.671Z",
+  "refreshedAt": "2026-10-29T15:05:46.577Z",
   "listings": {
     "solo-2228-marstrand": {
       "cached": 3,
@@ -27,7 +27,7 @@
       "preserved": 5,
       "downloaded": 0,
       "failures": [],
-      "photoPageUrl": "https://www.zumper.com/address/3349-dunbar-st-vancouver-bc-v6s-2b9-can"
+      "photoPageUrl": "https://realtylink.org/en/townhouse~for-rent~vancouver/263182316"
     },
     "mls-r3151372": {
       "cached": 2,
@@ -60,6 +60,34 @@
       "failures": [],
       "photoPageUrl": "https://rentals.ca/vancouver/kits-walk-by-strand"
     },
+    "mls-r3159060": {
+      "cached": 0,
+      "preserved": 0,
+      "downloaded": 0,
+      "failures": [
+        {
+          "url": "https://media.realtylink.org/images/consumersite/property/263180687/e7fb7e25c13d4a8b890fa301484f952c.jpeg?width=640&height=480&fit=cover",
+          "error": "HTTP 404"
+        },
+        {
+          "url": "https://media.realtylink.org/images/consumersite/property/263180687/ddc8b52c7b7c418b9f5fdfd379be1b9f.jpeg?width=320&height=240&fit=cover",
+          "error": "HTTP 404"
+        },
+        {
+          "url": "https://media.realtylink.org/images/consumersite/property/263180687/98e613cc834647e9b0538a342f32c126.jpeg?width=320&height=240&fit=cover",
+          "error": "HTTP 404"
+        },
+        {
+          "url": "https://media.realtylink.org/images/consumersite/property/263180687/2b3b912b97804dc9ab3829afb07b0e6a.jpeg?width=320&height=240&fit=cover",
+          "error": "HTTP 404"
+        },
+        {
+          "url": "https://media.realtylink.org/images/consumersite/property/263180687/e00965e4795f48dd9fb9fda11a89d4b3.jpeg?width=320&height=240&fit=cover",
+          "error": "HTTP 404"
+        }
+      ],
+      "photoPageUrl": "https://realtylink.org/en/house~for-rent~vancouver/263180687"
+    },
     "mls-r3163709": {
       "cached": 5,
       "preserved": 5,
@@ -76,8 +104,8 @@
     },
     "mls-r3167417": {
       "cached": 5,
-      "preserved": 0,
-      "downloaded": 5,
+      "preserved": 5,
+      "downloaded": 0,
       "failures": [],
       "photoPageUrl": "https://realtylink.org/en/house~for-rent~vancouver/263189044"
     },
@@ -132,6 +160,20 @@
       "failures": [],
       "photoPageUrl": "https://www.zumper.com/address/2000-w-43rd-ave-vancouver-bc-v6m-2c9-can"
     },
+    "mls-r3173479": {
+      "cached": 5,
+      "preserved": 0,
+      "downloaded": 5,
+      "failures": [],
+      "photoPageUrl": "https://realtylink.org/en/house~for-rent~vancouver/263195106"
+    },
+    "mls-r3174425": {
+      "cached": 5,
+      "preserved": 0,
+      "downloaded": 5,
+      "failures": [],
+      "photoPageUrl": "https://realtylink.org/en/house~for-rent~vancouver/263196052"
+    },
     "mls-r3175318": {
       "cached": 5,
       "preserved": 5,
@@ -146,13 +188,6 @@
       "failures": [],
       "photoPageUrl": "https://www.zumper.com/address/1969-w-43rd-ave-vancouver-bc-v6m-2c7-can"
     },
-    "zumper-1754927f090e": {
-      "cached": 5,
-      "preserved": 5,
-      "downloaded": 0,
-      "failures": [],
-      "photoPageUrl": "https://www.zumper.com/address/3000-w-44th-ave-vancouver-bc-v6n-3k6-can"
-    },
     "westward-unit-104": {
       "cached": 5,
       "preserved": 5,
@@ -160,29 +195,34 @@
       "failures": [],
       "photoPageUrl": "https://www.rentfaster.ca/properties/2355-w-49th-avenue-vancouver-bc-v6m-0g1-vancouver-755998"
     },
-    "mls-r3175899": {
-      "cached": 5,
-      "preserved": 4,
-      "downloaded": 1,
-      "failures": [],
-      "photoPageUrl": "https://www.craigslist.org/view/d/vancouver-bed-bath-apartment-at/s4HJHvnhSvtepoZicZoZam"
-    },
-    "mls-r3179104": {
+    "the-raven-unit-101": {
       "cached": 5,
       "preserved": 0,
       "downloaded": 5,
+      "failures": [
+        {
+          "url": "https://rf-images-prod-bcdn.rentfaster.ca/landlords/1190839/thumb-588.jpg",
+          "error": "not a usable image (image/jpeg, 2543 bytes)"
+        }
+      ],
+      "photoPageUrl": "https://www.rentfaster.ca/properties/3709-west-broadway-vancouver-688597"
+    },
+    "mls-r3175899": {
+      "cached": 5,
+      "preserved": 5,
+      "downloaded": 0,
       "failures": [],
-      "photoPageUrl": "https://realtylink.org/en/house~for-rent~vancouver/263200731"
+      "photoPageUrl": "https://www.craigslist.org/view/d/vancouver-bed-bath-apartment-at/s4HJHvnhSvtepoZicZoZam"
     }
   },
   "totals": {
-    "sourceListings": 21,
-    "cachedListings": 21,
-    "downloaded": 11,
-    "failed": 6,
-    "preserved": 88,
-    "prunedListings": 1,
-    "prunedIndexImages": 5,
+    "sourceListings": 23,
+    "cachedListings": 22,
+    "downloaded": 15,
+    "failed": 13,
+    "preserved": 89,
+    "prunedListings": 2,
+    "prunedIndexImages": 10,
     "prunedOrphanFiles": 0
   }
 }

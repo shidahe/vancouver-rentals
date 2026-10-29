@@ -1,0 +1,152 @@
+{
+  "checkedAt": "2026-10-29T15:03:23.467Z",
+  "page": {
+    "source": "Rentals.ca",
+    "url": "https://rentals.ca/vancouver/roomies-1382929",
+    "address": "West 11th Avenue, Vancouver, British Columbia V6K 2M6",
+    "addressUnit": null,
+    "geo": {
+      "lat": 49.26197,
+      "lng": -123.17231
+    },
+    "targetArea": true,
+    "active": true,
+    "floorplans": [],
+    "single": {
+      "rent": 2000,
+      "beds": 1,
+      "baths": 3,
+      "sqft": null
+    },
+    "checkedAt": "2026-10-29T15:03:23.467Z"
+  },
+  "jsonLd": [
+    {
+      "@context": "http://schema.org",
+      "@type": "Accommodation",
+      "url": "https://rentals.ca/vancouver/roomies-1382929",
+      "name": "West 11th Avenue",
+      "description": "Additional:\nLGBT friendlyStudent friendlyBills includedAvailable on: 2026-10-01\nLGBT friendly\nStudent friendly\nBills included\nAvailable on: 2026-10-01",
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 49.26197,
+        "longitude": -123.17231
+      },
+      "containedInPlace": {
+        "@type": "City",
+        "url": "",
+        "name": "",
+        "address": {
+          "@type": "PostalAddress",
+          "addressCountry": "CA",
+          "addressRegion": ""
+        }
+      },
+      "containsPlace": [
+        {
+          "@context": "http://schema.org",
+          "@type": "Accommodation",
+          "name": "8 Bedroom",
+          "potentialAction": {
+            "@type": "RentAction",
+            "priceSpecification": {
+              "@type": "PriceSpecification",
+              "price": 1350,
+              "priceCurrency": "CAD"
+            }
+          }
+        }
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "CA",
+        "addressLocality": "Vancouver",
+        "addressRegion": "British Columbia",
+        "postalCode": "V6K 2M6",
+        "streetAddress": "West 11th Avenue"
+      },
+      "telephone": "None",
+      "photo": [
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/1382929/room-2241573386.jpg",
+          "caption": "Bedroom with bed, small window, TV, guitar, and shelves against white walls and sloped ceiling.",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/1382929/room-2241573386.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/1382929/room-2241573387.jpg",
+          "caption": "Cozy room corner with hanging coats, slanted ceiling, and open closet containing clothes and items.",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/1382929/room-2241573387.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/1382929/room-2145120818.jpg",
+          "caption": "Single-family house entrance with front stairs, lawn, and blue sky with sun and clouds.",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/1382929/room-2145120818.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/1382929/room-2145120821.jpg",
+          "caption": "White two-story house with exterior stairs leading to an upper deck under clear blue sky.",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/1382929/room-2145120821.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/1382929/room-2145120822.jpg",
+          "caption": "A living room featuring a patterned couch, armchair, wall-mounted TV, and fireplace under ceiling lights.",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/1382929/room-2145120822.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/1382929/room-2145120825.jpg",
+          "caption": "Compact bathroom showing toilet, sink with faucet, shower with glass door, and window.",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/1382929/room-2145120825.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/1382929/room-2240210211.jpg",
+          "caption": "Kitchen with white cabinets, black dishwasher, stove, microwave, and a door with window panes leading outside.",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/1382929/room-2240210211.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/1382929/room-2240210210.jpg",
+          "caption": "Cozy indoor room with red walls, chairs, plants on a table, and windows showing houses outside.",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/1382929/room-2240210210.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/1382929/room-2240210214.jpg",
+          "caption": "Dining room with round wooden table, four ornate chairs with orange cushions, large windows showing outdoors, and red walls.",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/1382929/room-2240210214.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/1382929/room-2145120824.jpg",
+          "caption": "Room featuring bicycles, exercise equipment, storage bins, window with blinds, and a closed door.",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/1382929/room-2145120824.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/1382929/room-2240210212.jpg",
+          "caption": "Kitchen interior with white cabinets, stove, dishwasher, sink, and window with outdoor view.",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/1382929/room-2240210212.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/1382929/room-2240210213.jpg",
+          "caption": "Living room with patterned sofa, office desks, chairs, and window with curtain.",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/1382929/room-2240210213.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/1382929/room-2145120826.jpg",
+          "caption": "Bathroom interior with white countertop, sink, toilet, large mirror, tiled floor, and towels.",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/1382929/room-2145120826.jpg"
+        }
+      ]
+    }
+  ],
+  "textSample": "Landlords\nRent Report\nBlog\nLogin\nEN\nFR\nPost a Rental\nPost a Rental\nLogin\nCreate Account\nAlerts\nFAQs\nMonthly Rent Report\nCity Rent Trends\nLandlords\nCredit Reports\nCommercial Properties\nRaising the Roof\nCareers\nAbout\nBlog\n Contact us\n Instagram\n Facebook\n Youtube\n LinkedIn\n X\n TikTok\nHome\nBC\nVancouver\nKitsilano\nWest 11th Avenue\n Favourite\n Alert\n$1350\nRoom\nWest 11th Avenue — West 11th Avenue, Vancouver BC (8-Bedroom)\n\n 7 hours ago\n\n 8 Bed\n 3 Bath\nNo info\nGet In Touch\n Contact Property\n Verified\n1 / 13\nPhotos\nStreet\nSave Alert\n\nSimilar listings in Vancouver\n\nKitsilano Rooms\n\nView on map\n\nFloor Plans\n8 Bedroom\n$1,350\n3 Bath\nFURNISHED\nParking Information\n\nNo information available\n\nFeatures & Amenities\n Unit Features (1)\nFurnished\nUtilities Included\n Internet / WiFi\nAbout West 11th Avenue\nProperty Type\n\nRoom\n\nProperty Sub-type\n\nRoom\n\nLease Term\n\n1-Year\n\nParking Spots\n\nNo Info\n\nShort-term\n\nNo Info\n\nFurnished\n\nYes\n\nYear Built\n\nNo Info\n\n# of Floors\n\nNo Info\n\n# of Units\n\nNo Info\n\nListing ID\n\n1382929\n\nWe are in a century old house in the heart of Kitsilano! \r\n2 min walk from west broadway with tons of little coffee shop, good restaurant and great markets. \r\n\nIt's a 8 bedroom house, we just moved in 3 month ago and the 7 of us are furnishing it as we go and ma...\n\nRead More\n\nMy Commute\n\nWest 11th Avenue, Vancouver, BC\n\nEnter a location to view travel times.\nCalculate\n\nYou can compare 3 places at a time.\n\nNeighbourhood Score\nSummary\n\nApartment It has 1 unit. Units have 8 bedrooms. Units have 3 bathrooms. Internet / Wifi is a utility included in the rent price.\n\n Report Listing\n\nExplore Similar Rentals\nNo listings match right now. You can set up a search alert below to get notified about similar listings!\nVancouver, BC\n $1,024 - $1,620\n Rooms\n 8+ Beds\nCreate Alert\nPopular Rent Searches In Vancouver\nSearch by Amenities\nPet Friendly Apartments In Vancouver\nApartments With A/C In Vancouver\nApartments With Ensuite Laundry In Vancouver\nApartments With Dishwasher In Vancouver\nSearch by Bedrooms\n1 Bedroom Apartments In Vancouver\n2 Bedroom Apartments In Vancouver\n3 Bedroom Apartments In Vancouver\n4 Bedroom Apartments In Vancouver\nSearch by Budget\nApartments Under $1000 In Vancouver\nApartments Under $1250 In Vancouver\nApartments Under $2000 In Vancouver\nApartments Under $2500 In Vancouver\nSee All Rentals in Vancouver\nBlog\nPress\nContact\nAbout\nCareers\nFAQs\nTerms\nPrivacy Policy\nSitemap\nPopular Searches\nApartments Near Me\nCondos Near Me\nHouses Near Me\nRooms Near Me\nPopular Cities\nToronto Rentals\nCalgary Rentals\nOttawa Rentals\nEdmonton Rentals\nVancouver Rentals\nHalifax Rentals\nPopular Provinces\nOntario\nBritish Columbia\nAlberta\nQuebec\nNova Scotia\nManitoba\nLandlords\nGet Listed\nMy Listings\nTenant Credit Check\nResources\nRent Report\nCity Rent Trends\nCommercial Properties\nGet the Rentals.ca app\nProud partner of\n\nCopyright © 2026 Rentals.ca Network, Inc. All rights reserved.\n\nManage Cookies\n \nThis website uses cookies to ensure you get the best experience on our website. By clicking \"Allow All\", you consent to our use of cookies. Privacy Policy ↗\nManage Cookies\nDecline\nAllow All"
+}
