@@ -273,15 +273,18 @@ for(const candidate of [...payload.listings]){
 // let the final MLS deduper absorb any feed-created row for the new MLS.
 const mergeWholeHomeRelisting=(sibling,candidate)=>{
   const oldMls=listingMls(sibling),currentMls=listingMls(candidate);
+  const inheritedMedia=candidate?.id?imageSources[candidate.id]:null;
+  const currentMlsUrl=/realtylink\.org/i.test(inheritedMedia?.photoPageUrl||'')?inheritedMedia.photoPageUrl:candidate.url;
   sibling.marketplaceUrl ||= sibling.url;
   sibling.previousMls=[...new Set([...(sibling.previousMls||[]),oldMls].filter(Boolean))];
   sibling.mls=currentMls;sibling.mlsInventoryManaged=true;sibling.unit=null;sibling.lastChecked=today;sibling.verifiedAt=iso;
-  sibling.source='Current Realtylink MLS + prior listing history';sibling.url=candidate.url;sibling.photoPageUrl=candidate.url;
+  sibling.source='Current Realtylink MLS + prior listing history';sibling.url=currentMlsUrl;sibling.photoPageUrl=currentMlsUrl;
   sibling.rent=Number(candidate.rent);sibling.bedrooms=Number(candidate.bedrooms);sibling.bathrooms=baths(candidate);sibling.sqft=sqft(candidate);
   sibling.ac=candidate.ac??sibling.ac;sibling.parking=candidate.parking??sibling.parking;sibling.petFriendly=candidate.petFriendly??sibling.petFriendly;
   sibling.availabilityStatus='active';sibling.status='corrected';sibling.removedAt=null;sibling.verificationLevel='verified';
   sibling.verificationMethod=`Reverified as current MLS relisting ${currentMls}; exact detached-home address and full rental fingerprint match former MLS ${oldMls}.`;
   sibling.evidenceSources=[...new Set([...(sibling.evidenceSources||[]),'realtylink mls'])];
+  if(inheritedMedia)imageSources[sibling.id]={...inheritedMedia,candidates:[...(inheritedMedia.candidates||[])]};
   attachCandidateImages(imageSources,sibling,candidate);listingByKey.set(mlsIdentity(currentMls),sibling);
   (history[sibling.id]||=[]).push({date:today,rent:sibling.rent,note:`MLS RELIST: ${oldMls} → ${currentMls}; exact detached-home address and full rental fingerprint retained as one inventory record.`});
   state.wholeHomeMlsRelistsMerged.push({previousMls:oldMls,currentMls,kept:sibling.id});

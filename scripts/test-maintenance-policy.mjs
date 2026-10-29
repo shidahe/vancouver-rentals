@@ -576,7 +576,8 @@ if (!exactAddressUnitIdentity(
 if (!source.includes('relistedMlsMerged') || !source.includes('MLS RELIST: ${oldMls} → ${candidate.mls}') || !source.includes('for(const candidate of [...payload.listings])')) {
   failures.push('A replacement MLS for the same address and unit can still publish a duplicate card.');
 }
-if (!source.includes('wholeHomeMlsRelistsMerged') || !source.includes('wholeHomeMlsRelistMatch') || !source.includes('exact detached-home address and full rental fingerprint')) {
+if (!source.includes('wholeHomeMlsRelistsMerged') || !source.includes('wholeHomeMlsRelistMatch') || !source.includes('exact detached-home address and full rental fingerprint') ||
+    !source.includes('imageSources[candidate.id]') || !source.includes("/realtylink\\.org/i.test(inheritedMedia?.photoPageUrl||'')")) {
   failures.push('A replacement MLS for the same detached home can still split inventory history into parallel identities.');
 }
 if (!source.includes('rawSqft>=200&&rawSqft<=15000') || !source.includes('implausible-sqft')) {
