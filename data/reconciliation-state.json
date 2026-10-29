@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-10-29T15:23:47.301Z",
+  "refreshedAt": "2026-10-29T19:49:04.513Z",
   "groups": [
     {
       "identityKey": "3349 dunbar st::url:fa963040c813",
@@ -230,86 +230,26 @@
       "result": "authoritative_mls_reverified"
     },
     {
-      "identityKey": "mls:r3172212",
+      "identityKey": "mls:r3163709",
       "sources": [
         "realtylink mls"
       ],
       "rents": [
-        6300
+        5800
       ],
       "exactUnit": false,
-      "matchedListingId": "mls-r3172212",
-      "result": "authoritative_mls_reverified"
-    },
-    {
-      "identityKey": "mls:r3174425",
-      "sources": [
-        "realtylink mls"
-      ],
-      "rents": [
-        14500
-      ],
-      "exactUnit": false,
-      "matchedListingId": "mls-r3174425",
-      "result": "authoritative_mls_reverified"
-    },
-    {
-      "identityKey": "mls:r3175318",
-      "sources": [
-        "realtylink mls"
-      ],
-      "rents": [
-        4000
-      ],
-      "exactUnit": false,
-      "matchedListingId": "mls-r3175318",
-      "result": "authoritative_mls_reverified"
-    },
-    {
-      "identityKey": "mls:r3151372",
-      "sources": [
-        "realtylink mls"
-      ],
-      "rents": [
-        4800
-      ],
-      "exactUnit": false,
-      "matchedListingId": "mls-r3151372",
-      "result": "authoritative_mls_reverified"
-    },
-    {
-      "identityKey": "mls:r3175599",
-      "sources": [
-        "realtylink mls"
-      ],
-      "rents": [
-        4500
-      ],
-      "exactUnit": false,
-      "matchedListingId": "zumper-dd642aebb4f6",
+      "matchedListingId": "mls-r3163709",
       "result": "authoritative_mls_reverified"
     }
   ],
   "promoted": [],
   "crossVerified": [
     "zumper-16e9ae17cd91",
-    "mls-r3172212",
-    "mls-r3174425",
-    "mls-r3175318",
-    "mls-r3151372",
-    "zumper-dd642aebb4f6"
+    "mls-r3163709"
   ],
   "fingerprintCrossVerified": [],
   "craigslistRelistingsRecovered": [],
-  "crossSourcePriceUpdates": [
-    {
-      "listingId": "mls-r3159060",
-      "postId": "7991000502",
-      "priorRent": 15000,
-      "newRent": 15000,
-      "sharedDescriptionTokenCount": 81
-    }
-  ],
+  "crossSourcePriceUpdates": [],
   "maskedMlsMerged": [],
   "relistedMlsMerged": [],
   "wholeHomeMlsRelistsMerged": [],
@@ -319,11 +259,11 @@
   "mlsMissing": {},
   "mlsRemoved": [],
   "mlsStaleHidden": [],
-  "realtylinkSnapshotCount": 6,
+  "realtylinkSnapshotCount": 2,
   "realtylinkSnapshotHighWaterMark": 10,
   "realtylinkSnapshotScope": "rent-3500-beds-2-4-whole-home-westside-v3",
   "realtylinkRemovalEligible": false,
-  "mlsRemovalSuppressed": "Partial Realtylink snapshot (6 candidates versus previous complete 10); disappearance signals ignored.",
+  "mlsRemovalSuppressed": "Partial Realtylink snapshot (2 candidates versus previous complete 10); disappearance signals ignored.",
   "mlsDuplicatesMerged": [],
   "canonicalFieldRepairsApplied": []
 }

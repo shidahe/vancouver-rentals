@@ -3301,6 +3301,11 @@
       "date": "2026-10-25",
       "rent": 5950,
       "note": "Auto-hidden: exact live detail was not reverified within 48 hours."
+    },
+    {
+      "date": "2026-10-29",
+      "rent": 5950,
+      "note": "REMOVED: exact live detail did not return during the seven-day confirmation window."
     }
   ],
   "zumper-8a4ac6a75244": [
@@ -3671,6 +3676,11 @@
       "date": "2026-10-29",
       "rent": 6000,
       "note": "AUTO-HIDDEN: exact marketplace page now offers an availability alert instead of a currently available rental; confirmation required before removal."
+    },
+    {
+      "date": "2026-10-29",
+      "rent": 6000,
+      "note": "AUTO-REMOVED after direct live verification found explicit unavailable evidence."
     }
   ],
   "mls-r3175865": [
