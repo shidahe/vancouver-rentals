@@ -284,7 +284,7 @@ const mergeWholeHomeRelisting=(sibling,candidate)=>{
   sibling.availabilityStatus='active';sibling.status='corrected';sibling.removedAt=null;sibling.verificationLevel='verified';
   sibling.verificationMethod=`Reverified as current MLS relisting ${currentMls}; exact detached-home address and full rental fingerprint match former MLS ${oldMls}.`;
   sibling.evidenceSources=[...new Set([...(sibling.evidenceSources||[]),'realtylink mls'])];
-  if(inheritedMedia)imageSources[sibling.id]={...inheritedMedia,candidates:[...(inheritedMedia.candidates||[])]};
+  if(inheritedMedia?.candidates?.length)imageSources[sibling.id]={...inheritedMedia,candidates:[...inheritedMedia.candidates]};
   attachCandidateImages(imageSources,sibling,candidate);listingByKey.set(mlsIdentity(currentMls),sibling);
   (history[sibling.id]||=[]).push({date:today,rent:sibling.rent,note:`MLS RELIST: ${oldMls} → ${currentMls}; exact detached-home address and full rental fingerprint retained as one inventory record.`});
   state.wholeHomeMlsRelistsMerged.push({previousMls:oldMls,currentMls,kept:sibling.id});
