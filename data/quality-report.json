@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-29T15:05:49.312Z",
+  "generatedAt": "2026-10-29T15:24:36.283Z",
   "activeCount": 23,
   "decisionReady": true,
   "readinessStatus": "finalized",
@@ -201,8 +201,8 @@
   "readinessChecks": {
     "smokeOk": true,
     "smokeFresh": true,
-    "smokeCheckedAt": "2026-10-29T15:05:55.329Z",
-    "latestDataAt": "2026-10-29T15:04:59.057Z",
+    "smokeCheckedAt": "2026-10-29T15:24:41.448Z",
+    "latestDataAt": "2026-10-29T15:23:49.478Z",
     "coverageReady": true,
     "healthyDiscoveryLanes": 3,
     "coverageWarnings": [
@@ -210,7 +210,7 @@
         "severity": "warning",
         "lane": "rentalsca",
         "status": "degraded",
-        "detail": "1/9 regional searches reachable; 0 qualifying candidates parsed; 1 visible search results, 1 detail URLs, 1 parsed details"
+        "detail": "4/9 regional searches reachable; 0 qualifying candidates parsed; 6 scoped search-only leads retained (4 new, 1 already active, 1 need revalidation); 3 detail pages blocked after 64 discovered URLs; 61 further detail checks suppressed after repeated 403/429"
       },
       {
         "severity": "warning",
@@ -222,10 +222,22 @@
         "severity": "warning",
         "lane": "realtylink",
         "status": "degraded",
-        "detail": "3/3 searches reachable; 5 current live candidates parsed from a partial snapshot versus complete baseline 10; positive discovery usable, removals suppressed"
+        "detail": "3/3 searches reachable; 6 current live candidates parsed from a partial snapshot versus complete baseline 10; positive discovery usable, removals suppressed"
+      },
+      {
+        "severity": "warning",
+        "lane": "priority-viridian-unpriced-unit",
+        "status": "price-unverified",
+        "detail": "Viridian unit 0103 (2BR) is offered for Now, but official rent is withheld; do not publish before verifying rent >= CAD $3,500"
+      },
+      {
+        "severity": "warning",
+        "lane": "priority-viridian-unpriced-unit",
+        "status": "price-unverified",
+        "detail": "Viridian unit 0309 (2BR) is offered for Oct 30, but official rent is withheld; do not publish before verifying rent >= CAD $3,500"
       }
     ]
   },
   "readinessIssues": [],
-  "finalizedAt": "2026-10-29T15:05:55.431Z"
+  "finalizedAt": "2026-10-29T15:24:41.542Z"
 }
