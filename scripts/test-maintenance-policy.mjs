@@ -17,6 +17,7 @@ import { classifyRentalsCaSearchLead, parseRentalsCaSearchLeads } from './rental
 import { craigslistSeedRelistingMatch } from './craigslist-seed-relisting.mjs';
 import { craigslistCrossSourcePriceMatch } from './craigslist-cross-source-match.mjs';
 import { zumperPetFriendly, zumperPropertyType, zumperRoomCount } from './zumper-pet-policy.mjs';
+import { wholeHomeMlsRelistMatch } from './mls-relisting.mjs';
 
 const read = p => fs.readFile(p, 'utf8');
 const activeAdapters = [
@@ -472,6 +473,15 @@ if(w13Match?.priorRent!==4500||w13Match?.newRent!==3500||w13Match?.sharedDescrip
   failures.push('Exact-address cross-source price updates can miss the W 13th case or bypass address, fact, and description-overlap guards.');
 }
 const w2MlsListing={id:'mls-r3159060',source:'Realtylink MLS',availabilityStatus:'active',address:'4588 W 2nd Avenue',unit:null,rent:15000,bedrooms:4,bathrooms:5,sqft:4000,url:'https://realtylink.org/en/house~for-rent~vancouver/263180687'};
+const w2CurrentMls={id:'mls-r3179104',mls:'R3179104',source:'Realtylink MLS',availabilityStatus:'active',address:'4588 W 2nd Avenue, Vancouver, BC',unit:null,type:'house',rent:15000,bedrooms:4,bathrooms:5,sqft:4000,url:'https://realtylink.org/en/house~for-rent~vancouver/263200731'};
+const w2PriorMls={...w2MlsListing,mls:'R3159060',type:'house'};
+if(!wholeHomeMlsRelistMatch(w2PriorMls,w2CurrentMls)||
+  wholeHomeMlsRelistMatch(w2PriorMls,{...w2CurrentMls,address:'4586 W 2nd Avenue'})||
+  wholeHomeMlsRelistMatch({...w2PriorMls,type:'condo'},w2CurrentMls)||
+  wholeHomeMlsRelistMatch(w2PriorMls,{...w2CurrentMls,bathrooms:4})||
+  wholeHomeMlsRelistMatch({...w2PriorMls,unit:'1'},w2CurrentMls)){
+  failures.push('Detached-house MLS relisting identity can miss R3159060 → R3179104 or bypass address, type, unit and full-fingerprint guards.');
+}
 const w2Craigslist={source:'Craigslist',postId:'7970417013',url:'https://www.craigslist.org/view/d/vancouver-point-grey-luxury-4br5ba/iY97UC19ia9rLPGUtQ7tvp',active:true,detailVerified:true,addressPrecision:'exact_civic',address:'4588 W 2nd Ave near Tolmie St',rent:15000,bedrooms:4,bathrooms:5,sqft:4000,description:'Experience refined West Coast living in this custom-built luxury residence by renowned builder Brandes, quietly tucked in Point Grey. The reverse floor plan has water views, vaulted ceilings and a private elevator. The chef kitchen has Sub-Zero and Wolf appliances, custom millwork, a wine cellar and private theater. The rooftop deck has a hot tub and ocean, mountain and city views. This 4-bedroom, 5-bathroom unfurnished residence is near Spanish Banks, Jericho Beach, UBC and Lord Byng.'};
 const w2MlsDescription='Experience refined West Coast living in this custom Brandes luxury home, tucked in Point Grey. A reverse floor plan maximizes water views and vaulted ceilings. A private elevator connects all three levels, leading to a chef kitchen with Sub-Zero and Wolf appliances, custom millwork, a wine cellar and private theater. Relax on the rooftop deck with a hot tub and panoramic ocean, mountain and city views. This 4-bed, 5-bath unfurnished residence is steps from Spanish Banks, Jericho Beach, UBC and Lord Byng.';
 const w2Match=craigslistCrossSourcePriceMatch(w2Craigslist,w2MlsListing,w2MlsDescription);
@@ -565,6 +575,9 @@ if (!exactAddressUnitIdentity(
 )) failures.push('Exact-unit MLS relist identity cannot distinguish a replacement MLS from a neighboring suite.');
 if (!source.includes('relistedMlsMerged') || !source.includes('MLS RELIST: ${oldMls} → ${candidate.mls}') || !source.includes('for(const candidate of [...payload.listings])')) {
   failures.push('A replacement MLS for the same address and unit can still publish a duplicate card.');
+}
+if (!source.includes('wholeHomeMlsRelistsMerged') || !source.includes('wholeHomeMlsRelistMatch') || !source.includes('exact detached-home address and full rental fingerprint')) {
+  failures.push('A replacement MLS for the same detached home can still split inventory history into parallel identities.');
 }
 if (!source.includes('rawSqft>=200&&rawSqft<=15000') || !source.includes('implausible-sqft')) {
   failures.push('Implausible Realtylink floor areas are not normalized and audited.');

@@ -10,6 +10,7 @@ import { realtylinkSnapshotBaseline, realtylinkSnapshotComplete } from './covera
 import { craigslistSeedRelistingMatch } from './craigslist-seed-relisting.mjs';
 import { craigslistCrossSourcePriceMatch } from './craigslist-cross-source-match.mjs';
 import { isAuxiliaryNegativeForMls } from './listing-availability.mjs';
+import { wholeHomeMlsRelistMatch } from './mls-relisting.mjs';
 
 const DATA=path.join(process.cwd(),'data');
 const iso=new Date().toISOString(),today=iso.slice(0,10);
@@ -73,7 +74,7 @@ const groups=new Map();
 for(const c of all){if(!usable(c))continue;const k=candidateKey(c);if(!groups.has(k))groups.set(k,[]);groups.get(k).push(c);}
 const listingByKey=new Map();
 for(const x of payload.listings){const canonicalMls=listingMls(x);if(canonicalMls)x.mls=canonicalMls;const k=key(x.address,listingUnit(x),x.url,null,canonicalMls);if(!listingByKey.has(k)||listingByKey.get(k).source==='Zumper live detail')listingByKey.set(k,x);}
-const state={refreshedAt:iso,groups:[],promoted:[],crossVerified:[],fingerprintCrossVerified:[],craigslistRelistingsRecovered:[],crossSourcePriceUpdates:[],maskedMlsMerged:[],relistedMlsMerged:[],negativeMatches:[],detailReactivated:[],auxiliaryMlsRemovalsRolledBack:[],mlsMissing:{},mlsRemoved:[],mlsStaleHidden:[]};
+const state={refreshedAt:iso,groups:[],promoted:[],crossVerified:[],fingerprintCrossVerified:[],craigslistRelistingsRecovered:[],crossSourcePriceUpdates:[],maskedMlsMerged:[],relistedMlsMerged:[],wholeHomeMlsRelistsMerged:[],negativeMatches:[],detailReactivated:[],auxiliaryMlsRemovalsRolledBack:[],mlsMissing:{},mlsRemoved:[],mlsStaleHidden:[]};
 
 // Repair recent terminal removals created when a disposable marketplace repost
 // was serving as the detail URL for an MLS-managed identity. Keep the listing
@@ -264,6 +265,36 @@ for(const candidate of [...payload.listings]){
   if(candidate.availabilityStatus!=='active'||!candidate.mlsInventoryManaged||!listingMls(candidate)||!unitToken(candidate.unit))continue;
   const sibling=payload.listings.find(x=>x!==candidate&&x.availabilityStatus==='active'&&listingMls(x)!==listingMls(candidate)&&exactAddressUnitIdentity(x,candidate));
   if(sibling)mergeExactUnitRelisting(sibling,candidate);
+}
+
+// Detached homes have no unit token, so a replacement MLS needs a stricter
+// fingerprint than suites: exact civic address plus identical rent, bedrooms,
+// bathrooms and floor area. Preserve the established card/history identity and
+// let the final MLS deduper absorb any feed-created row for the new MLS.
+const mergeWholeHomeRelisting=(sibling,candidate)=>{
+  const oldMls=listingMls(sibling),currentMls=listingMls(candidate);
+  sibling.marketplaceUrl ||= sibling.url;
+  sibling.previousMls=[...new Set([...(sibling.previousMls||[]),oldMls].filter(Boolean))];
+  sibling.mls=currentMls;sibling.mlsInventoryManaged=true;sibling.unit=null;sibling.lastChecked=today;sibling.verifiedAt=iso;
+  sibling.source='Current Realtylink MLS + prior listing history';sibling.url=candidate.url;sibling.photoPageUrl=candidate.url;
+  sibling.rent=Number(candidate.rent);sibling.bedrooms=Number(candidate.bedrooms);sibling.bathrooms=baths(candidate);sibling.sqft=sqft(candidate);
+  sibling.ac=candidate.ac??sibling.ac;sibling.parking=candidate.parking??sibling.parking;sibling.petFriendly=candidate.petFriendly??sibling.petFriendly;
+  sibling.availabilityStatus='active';sibling.status='corrected';sibling.removedAt=null;sibling.verificationLevel='verified';
+  sibling.verificationMethod=`Reverified as current MLS relisting ${currentMls}; exact detached-home address and full rental fingerprint match former MLS ${oldMls}.`;
+  sibling.evidenceSources=[...new Set([...(sibling.evidenceSources||[]),'realtylink mls'])];
+  attachCandidateImages(imageSources,sibling,candidate);listingByKey.set(mlsIdentity(currentMls),sibling);
+  (history[sibling.id]||=[]).push({date:today,rent:sibling.rent,note:`MLS RELIST: ${oldMls} → ${currentMls}; exact detached-home address and full rental fingerprint retained as one inventory record.`});
+  state.wholeHomeMlsRelistsMerged.push({previousMls:oldMls,currentMls,kept:sibling.id});
+};
+for(const candidate of realtylink.candidates||[]){
+  if(!usable(candidate)||!listingMls(candidate)||unitToken(candidate.unit))continue;
+  const sibling=payload.listings.find(x=>x!==candidate&&!['removed','excluded'].includes(x.availabilityStatus)&&wholeHomeMlsRelistMatch(x,candidate));
+  if(sibling)mergeWholeHomeRelisting(sibling,candidate);
+}
+for(const candidate of [...payload.listings]){
+  if(candidate.availabilityStatus!=='active'||!candidate.mlsInventoryManaged||!listingMls(candidate)||unitToken(candidate.unit))continue;
+  const sibling=payload.listings.find(x=>x!==candidate&&!['removed','excluded'].includes(x.availabilityStatus)&&wholeHomeMlsRelistMatch(x,candidate));
+  if(sibling)mergeWholeHomeRelisting(sibling,candidate);
 }
 
 for(const [k,items] of groups){
