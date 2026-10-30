@@ -13,7 +13,7 @@ import { hasCurrentMarketplaceAvailability, isAuxiliaryNegativeForMls, softNegat
 import { activeListingContradictedByFreshEvidence } from './evidence-consistency.mjs';
 import { dedupeMlsRecords } from './mls-dedupe.mjs';
 import { craigslistAddressPrecision, craigslistDescriptionCivicAddress, craigslistDescriptionUnit, craigslistDetailEvidence, craigslistPostId, craigslistTitleCivicAddress, craigslistStructuredFacts, dedupeCraigslistRelistings, extractCraigslistDetailUrls, normalizeCraigslistDetailUrl, parseCraigslistSearchCard } from './craigslist-parser.mjs';
-import { classifyRentalsCaSearchLead, parseRentalsCaSearchLeads } from './rentalsca-search-parser.mjs';
+import { classifyRentalsCaSearchLead, parseRentalsCaSearchLeads, rentalsCaSearchLeadScopeEligible } from './rentalsca-search-parser.mjs';
 import { craigslistSeedRelistingMatch } from './craigslist-seed-relisting.mjs';
 import { craigslistCrossSourcePriceMatch } from './craigslist-cross-source-match.mjs';
 import { zumperPetFriendly, zumperPropertyType, zumperRoomCount } from './zumper-pet-policy.mjs';
@@ -202,6 +202,8 @@ if(!priorityInventoryEvidenceHealthy({ok:true,status:200,checkedAt:'2026-09-12T2
    !coverageSource.includes('viridianInventoryEvidence.find')) failures.push('Viridian exact-building fallback can regress when RentCafe is blocked.');
 const rentalscaSearchLeads=parseRentalsCaSearchLeads('$3,600 – $3,650\n2 Bed\n2 Bath\n2075 W 12th Avenue, Vancouver, BC\n$2,195 – $3,455\n0–2 Bed\n1 Bath\n1370 Senakw Lane, Vancouver, BC');
 if(rentalscaSearchLeads.length!==2||rentalscaSearchLeads[0].rentMin!==3600||rentalscaSearchLeads[0].rentMax!==3650||rentalscaSearchLeads[0].bedroomMin!==2||rentalscaSearchLeads[0].bedroomMax!==2||rentalscaSearchLeads[0].bathrooms!==2||rentalscaSearchLeads[1].bedroomMin!==0||rentalscaSearchLeads[1].bedroomMax!==2)failures.push('Rentals.ca visible search-result rent/bed/bath/address leads do not parse safely.');
+const rentalscaScopeFixture=parseRentalsCaSearchLeads('$1,275\nRoom\n3 BED\n2 BATH\nWest 22nd Avenue, Vancouver, BC\n$8,900\nHouse\n5 BED\n7 BATH\n4425 FT²\n4888 Trafalgar Street, Vancouver, BC\n$3,650\nBasement\n2 BED\n2 BATH\n1000 FT²\n2008 Quilchena Place, Vancouver, BC');
+if(rentalscaScopeFixture[0]?.bedroomMin!==5||rentalscaScopeFixture[0]?.bedroomMax!==5||rentalscaScopeFixture[0]?.bathrooms!==7||rentalscaScopeFixture[0]?.rentalType!=='House'||rentalsCaSearchLeadScopeEligible(rentalscaScopeFixture[1]))failures.push('Rentals.ca high-bedroom cards can inherit adjacent facts or basement/room search leads can enter the whole-home review queue.');
 for(const address of ['4769 Belmont, Vancouver, BC','2008 Quilchena Place, Vancouver, BC','2319 Dunbar Street, Vancouver, BC','2800 West 3rd Avenue, Vancouver, BC','3709 West Broadway, Vancouver, BC','2355 W 49th Avenue, Vancouver, BC']){
   if(!isTargetRentalSearchAddress(address))failures.push(`Westside Rentals.ca search lead was discarded: ${address}`);
 }
@@ -343,6 +345,7 @@ for (const pattern of [/bedrooms\s*===\s*2/, /beds\s*!==\s*2/, /max_bedrooms=2/]
 for (const lane of ['zumper-kitsilano-4br', 'rentalsca-kitsilano-4br', 'livrent-vancouver-4br']) {
   if (!catalog.discovery.some(x => x.id === lane)) failures.push(`Missing 4BR discovery lane: ${lane}`);
 }
+if(!catalog.discovery.some(x=>x.id==='rentalsca-vancouver-all'&&x.url==='https://rentals.ca/vancouver')||catalog.discovery.some(x=>x.id==='rentalsca-quilchena-2br'||x.url==='https://rentals.ca/vancouver/quilchena'))failures.push('Rentals.ca broad 2BR+ fallback can regress to the permanently dead Quilchena route.');
 for (const building of ['kits-walk', 'larchway-gardens', 'viridian']) {
   const project = officialWatch.projects.some(x => x.id === building);
   const source = catalog.discovery.some(x => x.id.startsWith(building.replace('-gardens', '')) && ['official', 'property_manager'].includes(x.kind));

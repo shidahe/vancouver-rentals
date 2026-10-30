@@ -12,16 +12,27 @@ export function parseRentalsCaSearchLeads(text=''){
     const context=lines.slice(Math.max(previousAddress+1,i-8),i).join(' | ');
     previousAddress=i;
     const rentMatch=context.match(/\$\s*([0-9][0-9,]{2,})(?:\s*[–—-]\s*\$?\s*([0-9][0-9,]{2,}))?/);
-    const bedMatch=context.match(/(?:([0-4](?:\.5)?)\s*[–—-]\s*)?([1-4](?:\.5)?)\s*(?:Bed|Bedroom)s?\b/i);
-    const bathMatch=context.match(/([1-5](?:\.5)?)\s*(?:Bath|Bathroom)s?\b/i);
+    // Parse the card exactly as rendered, including inventory outside our 2–4BR
+    // scope. Capping this regex at four makes a 5BR card skip its own facts and
+    // accidentally inherit a preceding card's 3BR value from the context window.
+    const bedMatches=[...context.matchAll(/(?:([0-9](?:\.5)?)\s*[–—-]\s*)?([0-9](?:\.5)?)\s*(?:Bed|Bedroom)s?\b/gi)];
+    const bathMatches=[...context.matchAll(/([0-9](?:\.5)?)\s*(?:Bath|Bathroom)s?\b/gi)];
+    const bedMatch=bedMatches.at(-1);
+    const bathMatch=bathMatches.at(-1);
+    const rentalTypes=[...context.matchAll(/(?:^|\|)\s*(Apartment|Condo|House|Town\s*House|Townhouse|Basement|Room)\s*(?=\||$)/gi)];
+    const rentalType=rentalTypes.at(-1)?.[1]?.replace(/\s+/g,' ').trim()||null;
     if(!rentMatch||!bedMatch)continue;
     const rentMin=amount(rentMatch[1]),rentMax=amount(rentMatch[2])||rentMin;
     const bedroomMin=Number(bedMatch[1]??bedMatch[2]),bedroomMax=Number(bedMatch[2]);
     if(!rentMin||!Number.isFinite(bedroomMax))continue;
     const key=`${address.toLowerCase()}::${rentMin}::${rentMax}::${bedroomMin}::${bedroomMax}`;
-    if(!leads.some(x=>x.identityKey===key))leads.push({identityKey:key,address,rentMin,rentMax,bedroomMin,bedroomMax,bathrooms:bathMatch?Number(bathMatch[1]):null});
+    if(!leads.some(x=>x.identityKey===key))leads.push({identityKey:key,address,rentMin,rentMax,bedroomMin,bedroomMax,bathrooms:bathMatch?Number(bathMatch[1]):null,rentalType});
   }
   return leads;
+}
+
+export function rentalsCaSearchLeadScopeEligible(lead={}){
+  return !/^(?:basement|room)$/i.test(String(lead.rentalType||''));
 }
 
 export function classifyRentalsCaSearchLead(lead={},listings=[]){

@@ -14,7 +14,7 @@
     {"id":"rentalsca-point-grey-2br","name":"Rentals.ca West Point Grey 2BR+ discovery","url":"https://rentals.ca/vancouver/west-point-grey","kind":"marketplace","adapter":"rentalsca-search"},
     {"id":"rentalsca-arbutus-2br","name":"Rentals.ca Arbutus Ridge 2BR+ discovery","url":"https://rentals.ca/vancouver/arbutus-ridge","kind":"marketplace","adapter":"rentalsca-search"},
     {"id":"rentalsca-dunbar-2br","name":"Rentals.ca Dunbar-Southlands 2BR+ discovery","url":"https://rentals.ca/vancouver/dunbar-southlands","kind":"marketplace","adapter":"rentalsca-search"},
-    {"id":"rentalsca-quilchena-2br","name":"Rentals.ca Quilchena 2BR+ discovery","url":"https://rentals.ca/vancouver/quilchena","kind":"marketplace","adapter":"rentalsca-search"},
+    {"id":"rentalsca-vancouver-all","name":"Rentals.ca Vancouver 2BR+ broad discovery fallback","url":"https://rentals.ca/vancouver","kind":"marketplace","adapter":"rentalsca-search"},
     {"id":"rentalsca-kitsilano-3br","name":"Rentals.ca Kitsilano 3BR","url":"https://rentals.ca/vancouver/kitsilano/3-bedrooms","kind":"marketplace","adapter":"rentalsca-search"},
     {"id":"rentalsca-kitsilano-4br","name":"Rentals.ca Kitsilano 4BR+","url":"https://rentals.ca/vancouver/kitsilano/4-bedrooms","kind":"marketplace","adapter":"rentalsca-search"},
     {"id":"rentalsca-vancouver-3br","name":"Rentals.ca Vancouver 3BR","url":"https://rentals.ca/vancouver/3-bedrooms","kind":"marketplace","adapter":"rentalsca-search"},

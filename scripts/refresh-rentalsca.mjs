@@ -3,7 +3,7 @@ import path from 'node:path';
 import crypto from 'node:crypto';
 import { chromium } from 'playwright';
 import { isTargetRentalSearchAddress, listingScopeEligible } from './discovery-policy.mjs';
-import { classifyRentalsCaSearchLead, parseRentalsCaSearchLeads } from './rentalsca-search-parser.mjs';
+import { classifyRentalsCaSearchLead, parseRentalsCaSearchLeads, rentalsCaSearchLeadScopeEligible } from './rentalsca-search-parser.mjs';
 
 const DATA=path.join(process.cwd(),'data');
 const EVIDENCE=path.join(DATA,'evidence');
@@ -71,6 +71,7 @@ for(const s of (sources.discovery||[]).filter(x=>x.adapter==='rentalsca-search')
     const neighborhoodSearch=/rentalsca-(?:kitsilano|point-grey|arbutus|dunbar|quilchena)-/i.test(s.id);
     for(const lead of searchLeads){
       if(lead.rentMin<3500||lead.bedroomMax<2||lead.bedroomMin>4)continue;
+      if(!rentalsCaSearchLeadScopeEligible(lead))continue;
       if(!neighborhoodSearch&&!isTargetRentalSearchAddress(lead.address)){diagnostics.searchLeadOutOfArea++;continue;}
       searchLeadMap.set(lead.identityKey,{...lead,source:'Rentals.ca search',searchUrl:s.url,checkedAt:iso,publishable:false,evidenceKind:'search_result_lead_only',availabilityVerified:false});
     }

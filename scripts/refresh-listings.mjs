@@ -128,7 +128,10 @@ async function visit(page, url) {
       elapsedMs: Date.now() - started
     };
   } catch (error) {
-    return { ok: false, error: String(error), status: response?.status() ?? null, finalUrl: page.url(), elapsedMs: Date.now() - started };
+    // page.url() can still point at the previous source when navigation times
+    // out before committing. Persist the requested URL so lane diagnostics do
+    // not attribute a Rentals.ca failure to an unrelated prior Zumper page.
+    return { ok: false, error: String(error), status: response?.status() ?? null, finalUrl: url, elapsedMs: Date.now() - started };
   }
 }
 
