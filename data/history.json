@@ -413,6 +413,16 @@
       "date": "2026-09-25",
       "rent": 3590,
       "note": "AUTO-REMOVED after direct live verification found explicit unavailable evidence."
+    },
+    {
+      "date": "2026-10-30",
+      "rent": 3688,
+      "note": "CORRECTED from exact current Zumper advertiser facts: bathrooms 1 → 2."
+    },
+    {
+      "date": "2026-10-30",
+      "rent": 3688,
+      "note": "AUTO Zumper live price update $3590 → $3688."
     }
   ],
   "zumper-adc0623c7c44": [
@@ -717,6 +727,11 @@
     },
     {
       "date": "2026-10-28",
+      "rent": 5390,
+      "note": "NEEDS CONFIRMATION: latest purpose-built fallback sources did not confirm the exact configured rent + sqft inventory row."
+    },
+    {
+      "date": "2026-10-30",
       "rent": 5390,
       "note": "NEEDS CONFIRMATION: latest purpose-built fallback sources did not confirm the exact configured rent + sqft inventory row."
     }
@@ -3599,6 +3614,11 @@
     },
     {
       "date": "2026-10-28",
+      "rent": 5500,
+      "note": "EXCLUDED: house share or separately rented portion of a house."
+    },
+    {
+      "date": "2026-10-30",
       "rent": 5500,
       "note": "EXCLUDED: house share or separately rented portion of a house."
     }

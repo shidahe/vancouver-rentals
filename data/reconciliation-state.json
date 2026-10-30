@@ -1,6 +1,18 @@
 {
-  "refreshedAt": "2026-10-30T15:07:50.371Z",
+  "refreshedAt": "2026-10-30T19:28:32.384Z",
   "groups": [
+    {
+      "identityKey": "4326 w 10th ave::unit:4326",
+      "sources": [
+        "zumper"
+      ],
+      "rents": [
+        3688
+      ],
+      "exactUnit": true,
+      "matchedListingId": "zumper-2e85ffb3f678",
+      "result": "candidate_only"
+    },
     {
       "identityKey": "3349 dunbar st::url:fa963040c813",
       "sources": [
@@ -50,24 +62,48 @@
       "result": "candidate_only"
     },
     {
-      "identityKey": "w 3rd ave macdonald st::unit:7",
-      "sources": [
-        "zumper"
-      ],
-      "rents": [
-        5695
-      ],
-      "exactUnit": true,
-      "matchedListingId": "zumper-8a4ac6a75244",
-      "result": "candidate_only"
-    },
-    {
       "identityKey": "1078 nicola st::url:14ca0bb47fe4",
       "sources": [
         "zumper"
       ],
       "rents": [
         4600
+      ],
+      "exactUnit": false,
+      "matchedListingId": null,
+      "result": "candidate_only"
+    },
+    {
+      "identityKey": "2475 w 4th ave near larch st::url:19d1ae4c8f78",
+      "sources": [
+        "craigslist"
+      ],
+      "rents": [
+        3600
+      ],
+      "exactUnit": false,
+      "matchedListingId": null,
+      "result": "candidate_only"
+    },
+    {
+      "identityKey": "2111 w 11th ave near arbutus st::url:c00c863f9d18",
+      "sources": [
+        "craigslist"
+      ],
+      "rents": [
+        3500
+      ],
+      "exactUnit": false,
+      "matchedListingId": null,
+      "result": "candidate_only"
+    },
+    {
+      "identityKey": "4588 w 2nd ave near tolmie st::url:8f6de7d97480",
+      "sources": [
+        "craigslist"
+      ],
+      "rents": [
+        15000
       ],
       "exactUnit": false,
       "matchedListingId": null,
@@ -116,54 +152,6 @@
       ],
       "rents": [
         13000
-      ],
-      "exactUnit": false,
-      "matchedListingId": null,
-      "result": "candidate_only"
-    },
-    {
-      "identityKey": "4455 w 9th ave::url:a00848ac2e03",
-      "sources": [
-        "craigslist"
-      ],
-      "rents": [
-        4500
-      ],
-      "exactUnit": false,
-      "matchedListingId": null,
-      "result": "candidate_only"
-    },
-    {
-      "identityKey": "2475 w 4th ave near larch st::url:19d1ae4c8f78",
-      "sources": [
-        "craigslist"
-      ],
-      "rents": [
-        3600
-      ],
-      "exactUnit": false,
-      "matchedListingId": null,
-      "result": "candidate_only"
-    },
-    {
-      "identityKey": "2111 w 11th ave near arbutus st::url:c00c863f9d18",
-      "sources": [
-        "craigslist"
-      ],
-      "rents": [
-        3500
-      ],
-      "exactUnit": false,
-      "matchedListingId": null,
-      "result": "candidate_only"
-    },
-    {
-      "identityKey": "4588 w 2nd ave near tolmie st::url:8f6de7d97480",
-      "sources": [
-        "craigslist"
-      ],
-      "rents": [
-        15000
       ],
       "exactUnit": false,
       "matchedListingId": null,
@@ -230,27 +218,27 @@
       "result": "authoritative_mls_reverified"
     },
     {
-      "identityKey": "mls:r3175865",
+      "identityKey": "mls:r3174425",
       "sources": [
         "realtylink mls"
       ],
       "rents": [
-        4000
+        14500
       ],
       "exactUnit": false,
-      "matchedListingId": "mls-r3175865",
+      "matchedListingId": "mls-r3174425",
       "result": "authoritative_mls_reverified"
     },
     {
-      "identityKey": "mls:r3177685",
+      "identityKey": "mls:r3175848",
       "sources": [
         "realtylink mls"
       ],
       "rents": [
-        8500
+        5500
       ],
       "exactUnit": false,
-      "matchedListingId": "mls-r3177685",
+      "matchedListingId": "mls-r3175848",
       "result": "authoritative_mls_reverified"
     },
     {
@@ -276,41 +264,15 @@
       "exactUnit": false,
       "matchedListingId": "mls-r3151372",
       "result": "authoritative_mls_reverified"
-    },
-    {
-      "identityKey": "mls:r3175318",
-      "sources": [
-        "realtylink mls"
-      ],
-      "rents": [
-        4000
-      ],
-      "exactUnit": false,
-      "matchedListingId": "mls-r3175318",
-      "result": "authoritative_mls_reverified"
-    },
-    {
-      "identityKey": "mls:r3179104",
-      "sources": [
-        "realtylink mls"
-      ],
-      "rents": [
-        15000
-      ],
-      "exactUnit": false,
-      "matchedListingId": "mls-r3159060",
-      "result": "authoritative_mls_reverified"
     }
   ],
   "promoted": [],
   "crossVerified": [
     "zumper-16e9ae17cd91",
-    "mls-r3175865",
-    "mls-r3177685",
+    "mls-r3174425",
+    "mls-r3175848",
     "zumper-dd642aebb4f6",
-    "mls-r3151372",
-    "mls-r3175318",
-    "mls-r3159060"
+    "mls-r3151372"
   ],
   "fingerprintCrossVerified": [],
   "craigslistRelistingsRecovered": [],
@@ -319,18 +281,16 @@
   "relistedMlsMerged": [],
   "wholeHomeMlsRelistsMerged": [],
   "negativeMatches": [],
-  "detailReactivated": [
-    "mls-r3177685"
-  ],
+  "detailReactivated": [],
   "auxiliaryMlsRemovalsRolledBack": [],
   "mlsMissing": {},
   "mlsRemoved": [],
   "mlsStaleHidden": [],
-  "realtylinkSnapshotCount": 7,
+  "realtylinkSnapshotCount": 6,
   "realtylinkSnapshotHighWaterMark": 10,
   "realtylinkSnapshotScope": "rent-3500-beds-2-4-whole-home-westside-v3",
   "realtylinkRemovalEligible": false,
-  "mlsRemovalSuppressed": "Partial Realtylink snapshot (7 candidates versus previous complete 10); disappearance signals ignored.",
+  "mlsRemovalSuppressed": "Partial Realtylink snapshot (6 candidates versus previous complete 10); disappearance signals ignored.",
   "mlsDuplicatesMerged": [],
   "canonicalFieldRepairsApplied": []
 }
