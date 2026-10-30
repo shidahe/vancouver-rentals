@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-10-29T19:49:04.513Z",
+  "refreshedAt": "2026-10-30T15:07:50.371Z",
   "groups": [
     {
       "identityKey": "3349 dunbar st::url:fa963040c813",
@@ -31,7 +31,7 @@
         "zumper"
       ],
       "rents": [
-        5250
+        5000
       ],
       "exactUnit": false,
       "matchedListingId": "zumper-3d502587bbc4",
@@ -68,6 +68,18 @@
       ],
       "rents": [
         4600
+      ],
+      "exactUnit": false,
+      "matchedListingId": null,
+      "result": "candidate_only"
+    },
+    {
+      "identityKey": "2118 w 15 ave 2f::url:2956c512e838",
+      "sources": [
+        "craigslist"
+      ],
+      "rents": [
+        4800
       ],
       "exactUnit": false,
       "matchedListingId": null,
@@ -182,18 +194,6 @@
       "result": "candidate_only"
     },
     {
-      "identityKey": "2118 w 15 ave 2f::url:4c9c7396d772",
-      "sources": [
-        "craigslist"
-      ],
-      "rents": [
-        4800
-      ],
-      "exactUnit": false,
-      "matchedListingId": null,
-      "result": "candidate_only"
-    },
-    {
       "identityKey": "3000 w 17th ave::url:411612dab027",
       "sources": [
         "craigslist"
@@ -230,22 +230,87 @@
       "result": "authoritative_mls_reverified"
     },
     {
-      "identityKey": "mls:r3163709",
+      "identityKey": "mls:r3175865",
       "sources": [
         "realtylink mls"
       ],
       "rents": [
-        5800
+        4000
       ],
       "exactUnit": false,
-      "matchedListingId": "mls-r3163709",
+      "matchedListingId": "mls-r3175865",
+      "result": "authoritative_mls_reverified"
+    },
+    {
+      "identityKey": "mls:r3177685",
+      "sources": [
+        "realtylink mls"
+      ],
+      "rents": [
+        8500
+      ],
+      "exactUnit": false,
+      "matchedListingId": "mls-r3177685",
+      "result": "authoritative_mls_reverified"
+    },
+    {
+      "identityKey": "mls:r3175599",
+      "sources": [
+        "realtylink mls"
+      ],
+      "rents": [
+        4500
+      ],
+      "exactUnit": false,
+      "matchedListingId": "zumper-dd642aebb4f6",
+      "result": "authoritative_mls_reverified"
+    },
+    {
+      "identityKey": "mls:r3151372",
+      "sources": [
+        "realtylink mls"
+      ],
+      "rents": [
+        4800
+      ],
+      "exactUnit": false,
+      "matchedListingId": "mls-r3151372",
+      "result": "authoritative_mls_reverified"
+    },
+    {
+      "identityKey": "mls:r3175318",
+      "sources": [
+        "realtylink mls"
+      ],
+      "rents": [
+        4000
+      ],
+      "exactUnit": false,
+      "matchedListingId": "mls-r3175318",
+      "result": "authoritative_mls_reverified"
+    },
+    {
+      "identityKey": "mls:r3179104",
+      "sources": [
+        "realtylink mls"
+      ],
+      "rents": [
+        15000
+      ],
+      "exactUnit": false,
+      "matchedListingId": "mls-r3159060",
       "result": "authoritative_mls_reverified"
     }
   ],
   "promoted": [],
   "crossVerified": [
     "zumper-16e9ae17cd91",
-    "mls-r3163709"
+    "mls-r3175865",
+    "mls-r3177685",
+    "zumper-dd642aebb4f6",
+    "mls-r3151372",
+    "mls-r3175318",
+    "mls-r3159060"
   ],
   "fingerprintCrossVerified": [],
   "craigslistRelistingsRecovered": [],
@@ -254,16 +319,18 @@
   "relistedMlsMerged": [],
   "wholeHomeMlsRelistsMerged": [],
   "negativeMatches": [],
-  "detailReactivated": [],
+  "detailReactivated": [
+    "mls-r3177685"
+  ],
   "auxiliaryMlsRemovalsRolledBack": [],
   "mlsMissing": {},
   "mlsRemoved": [],
   "mlsStaleHidden": [],
-  "realtylinkSnapshotCount": 2,
+  "realtylinkSnapshotCount": 7,
   "realtylinkSnapshotHighWaterMark": 10,
   "realtylinkSnapshotScope": "rent-3500-beds-2-4-whole-home-westside-v3",
   "realtylinkRemovalEligible": false,
-  "mlsRemovalSuppressed": "Partial Realtylink snapshot (2 candidates versus previous complete 10); disappearance signals ignored.",
+  "mlsRemovalSuppressed": "Partial Realtylink snapshot (7 candidates versus previous complete 10); disappearance signals ignored.",
   "mlsDuplicatesMerged": [],
   "canonicalFieldRepairsApplied": []
 }
