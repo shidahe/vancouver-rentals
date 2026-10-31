@@ -49,8 +49,10 @@ export function zumperRoomCount(homeDescription = '', pageText = '', productDesc
 
 export function zumperUnitToken(description = '', street = '') {
   const text = String(description || '');
-  const match = text.match(/\b(?:unit|suite|apt)\s+(?:#\s*)?([A-Za-z0-9-]*\d[A-Za-z0-9-]*)\b/i) ||
-    text.match(/#\s*([A-Za-z0-9-]*\d[A-Za-z0-9-]*)\b/i);
+  // A bare hash may be a transit route (for example "#99 B-Line"), not a
+  // unit. Hash-only unit identifiers are accepted from the structured street
+  // address by splitStreetAndUnit; free text must include an explicit label.
+  const match = text.match(/\b(?:unit|suite|apt)\s+(?:#\s*)?([A-Za-z0-9-]*\d[A-Za-z0-9-]*)\b/i);
   const token = match?.[1]?.toUpperCase() || null;
   const civic = String(street || '').trim().match(/^(\d{2,5})\b/)?.[1] || null;
   return token && token !== civic ? token : null;

@@ -114,10 +114,9 @@ for (let i = payload.listings.length - 1; i >= 0; i--) {
     delete history[x.id]; delete imageSources[x.id]; payload.listings.splice(i,1); continue;
   }
   const split = splitStreetAndUnit(String(x.address || '').split(',')[0]);
-  const civic = split.street.match(/^(\d{2,5})\b/)?.[1] || null;
-  if (x.unit && unitToken(x.unit) === civic && /unit not public/i.test(String(x.dataNotes || ''))) {
+  if (x.unit && /unit not public/i.test(String(x.dataNotes || ''))) {
     x.unit = null;
-    (history[x.id] ||= []).push({date:today,rent:x.rent??null,note:'CORRECTED: civic street number was incorrectly stored as a unit token; restored URL-level identity.'});
+    (history[x.id] ||= []).push({date:today,rent:x.rent??null,note:'CORRECTED: unverified free-text token was incorrectly stored as a unit; restored URL-level identity pending a structured address unit.'});
   }
   if (!x.unit && split.unit) x.unit = split.unit;
   if (split.street) x.address = `${split.street}, Vancouver, BC`;
