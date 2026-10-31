@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-10-31T15:07:27.719Z",
+  "refreshedAt": "2026-10-31T15:19:19.347Z",
   "listings": {
     "solo-2228-marstrand": {
       "cached": 3,
@@ -106,15 +106,15 @@
     },
     "mls-r3167237": {
       "cached": 5,
-      "preserved": 0,
-      "downloaded": 5,
+      "preserved": 5,
+      "downloaded": 0,
       "failures": [],
       "photoPageUrl": "https://realtylink.org/en/apartment~for-rent~vancouver/263188864"
     },
     "mls-r3162880": {
       "cached": 5,
-      "preserved": 0,
-      "downloaded": 5,
+      "preserved": 5,
+      "downloaded": 0,
       "failures": [],
       "photoPageUrl": "https://realtylink.org/en/apartment~for-rent~vancouver/263184507"
     },
@@ -181,6 +181,18 @@
       "failures": [],
       "photoPageUrl": "https://www.rentfaster.ca/properties/2355-w-49th-avenue-vancouver-bc-v6m-0g1-vancouver-755998"
     },
+    "the-raven-unit-101": {
+      "cached": 5,
+      "preserved": 0,
+      "downloaded": 5,
+      "failures": [
+        {
+          "url": "https://rf-images-prod-bcdn.rentfaster.ca/landlords/1190839/thumb-588.jpg",
+          "error": "not a usable image (image/jpeg, 2543 bytes)"
+        }
+      ],
+      "photoPageUrl": "https://www.rentfaster.ca/properties/3709-west-broadway-vancouver-688597"
+    },
     "mls-r3175899": {
       "cached": 5,
       "preserved": 5,
@@ -190,13 +202,13 @@
     }
   },
   "totals": {
-    "sourceListings": 23,
-    "cachedListings": 23,
-    "downloaded": 10,
-    "failed": 6,
-    "preserved": 99,
-    "prunedListings": 4,
-    "prunedIndexImages": 19,
+    "sourceListings": 24,
+    "cachedListings": 24,
+    "downloaded": 5,
+    "failed": 7,
+    "preserved": 109,
+    "prunedListings": 0,
+    "prunedIndexImages": 0,
     "prunedOrphanFiles": 0
   }
 }

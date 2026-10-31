@@ -328,6 +328,11 @@
       "date": "2026-09-04",
       "rent": 2950,
       "note": "EXCLUDED: monthly rent below CAD $3,500."
+    },
+    {
+      "date": "2026-10-31",
+      "rent": 2950,
+      "note": "CORRECTED: unverified free-text token was incorrectly stored as a unit; restored URL-level identity pending a structured address unit."
     }
   ],
   "zumper-9157c4798023": [
@@ -433,6 +438,11 @@
       "date": "2026-10-31",
       "rent": 3688,
       "note": "CORRECTED from exact current Zumper advertiser facts: bathrooms 2 → 1."
+    },
+    {
+      "date": "2026-10-31",
+      "rent": 3688,
+      "note": "CORRECTED: unverified free-text token was incorrectly stored as a unit; restored URL-level identity pending a structured address unit."
     }
   ],
   "zumper-adc0623c7c44": [
@@ -462,6 +472,11 @@
       "date": "2026-09-26",
       "rent": 3600,
       "note": "AUTO-REMOVED after direct live verification found explicit unavailable evidence."
+    },
+    {
+      "date": "2026-10-31",
+      "rent": 3600,
+      "note": "CORRECTED: unverified free-text token was incorrectly stored as a unit; restored URL-level identity pending a structured address unit."
     }
   ],
   "zumper-a0bd98e76c8f": [
@@ -3050,6 +3065,11 @@
       "date": "2026-10-06",
       "rent": 4400,
       "note": "AUTO Zumper live price update $4695 → $4400."
+    },
+    {
+      "date": "2026-10-31",
+      "rent": 4400,
+      "note": "CORRECTED: unverified free-text token was incorrectly stored as a unit; restored URL-level identity pending a structured address unit."
     }
   ],
   "mls-r3167237": [

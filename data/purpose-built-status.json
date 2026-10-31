@@ -1,16 +1,16 @@
 {
-  "refreshedAt": "2026-10-31T15:06:51.695Z",
+  "refreshedAt": "2026-10-31T15:18:38.515Z",
   "buildings": [
     {
       "building": "The Raven",
-      "checkedAt": "2026-10-31T15:06:51.695Z",
+      "checkedAt": "2026-10-31T15:18:38.515Z",
       "observations": [
         {
           "url": "https://www.rentfaster.ca/properties/3709-west-broadway-vancouver-688597",
-          "httpStatus": 403,
-          "usable": false,
+          "httpStatus": 200,
+          "usable": true,
           "error": null,
-          "reusedEvidence": false
+          "reusedEvidence": true
         },
         {
           "url": "https://www.rew.ca/rentals/7599800/101-3709-west-broadway-vancouver-bc",
@@ -40,18 +40,18 @@
             "Available",
             "1 unit"
           ],
-          "verified": false,
-          "verifiedSource": null,
+          "verified": true,
+          "verifiedSource": "https://www.rentfaster.ca/properties/3709-west-broadway-vancouver-688597",
           "sourceMatches": [
             {
               "url": "https://www.rentfaster.ca/properties/3709-west-broadway-vancouver-688597",
-              "httpStatus": 403,
-              "usable": false,
-              "structuredMatch": false,
-              "requiredMatched": false,
-              "availabilityMatched": false,
+              "httpStatus": 200,
+              "usable": true,
+              "structuredMatch": true,
+              "requiredMatched": true,
+              "availabilityMatched": true,
               "fullyLeased": false,
-              "verified": false
+              "verified": true
             },
             {
               "url": "https://www.rew.ca/rentals/7599800/101-3709-west-broadway-vancouver-bc",
@@ -69,7 +69,7 @@
     },
     {
       "building": "Westward",
-      "checkedAt": "2026-10-31T15:06:51.695Z",
+      "checkedAt": "2026-10-31T15:18:38.515Z",
       "observations": [
         {
           "url": "https://www.rentfaster.ca/properties/2355-w-49th-avenue-vancouver-bc-v6m-0g1-vancouver-755998",
@@ -135,7 +135,7 @@
     },
     {
       "building": "Kits Walk",
-      "checkedAt": "2026-10-31T15:06:51.695Z",
+      "checkedAt": "2026-10-31T15:18:38.515Z",
       "observations": [
         {
           "url": "https://rentals.ca/vancouver/kits-walk-by-strand",
@@ -213,7 +213,7 @@
     },
     {
       "building": "Arbutus Residences",
-      "checkedAt": "2026-10-31T15:06:51.695Z",
+      "checkedAt": "2026-10-31T15:18:38.515Z",
       "observations": [
         {
           "url": "https://www.rentfaster.ca/properties/2139-lahb-ave-vancouver-454186",
@@ -348,7 +348,7 @@
     },
     {
       "building": "Fourth + Mac",
-      "checkedAt": "2026-10-31T15:06:51.695Z",
+      "checkedAt": "2026-10-31T15:18:38.515Z",
       "observations": [
         {
           "url": "https://www.craigslist.org/view/d/vancouver-bed-bath-fourth-mac-kitsilano/eiSLCKTVqsrtPUWpUpJyDN",

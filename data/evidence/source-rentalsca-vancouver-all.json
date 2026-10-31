@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-10-31T14:59:25.633Z",
+  "checkedAt": "2026-10-31T15:10:11.321Z",
   "source": {
     "id": "rentalsca-vancouver-all",
     "name": "Rentals.ca Vancouver 2BR+ broad discovery fallback",
@@ -8,23 +8,689 @@
     "adapter": "rentalsca-search"
   },
   "ok": true,
-  "status": 429,
+  "status": 200,
   "finalUrl": "https://rentals.ca/vancouver",
-  "title": "Just a moment...",
-  "bodyText": "rentals.ca\nPerforming security verification\n\nThis website uses a security service to protect against malicious bots. This page is displayed while the website verifies you are not a bot.\n\nRay ID: a5338992fe29acee\nPerformance and Security by Cloudflare\nPrivacy",
+  "title": "Apartments for Rent in Vancouver, BC | Rentals.ca",
+  "bodyText": "This website uses cookies to ensure you get the best experience on our website. By clicking \"Allow All\", you consent to our use of cookies. Privacy Policy ↗\nManage Cookies\nDecline\nAllow All",
   "links": [
     {
-      "href": "https://www.cloudflare.com/?utm_source=challenge&utm_campaign=m",
-      "text": "Cloudflare"
+      "href": "https://rentals.ca/",
+      "text": ""
     },
     {
-      "href": "https://www.cloudflare.com/privacypolicy/",
-      "text": "Privacy"
+      "href": "https://rentals.ca/landlords",
+      "text": "Landlords"
+    },
+    {
+      "href": "https://rentals.ca/national-rent-report",
+      "text": "Rent Report"
+    },
+    {
+      "href": "https://rentals.ca/blog",
+      "text": "Blog"
+    },
+    {
+      "href": "https://rentals.ca/login",
+      "text": "Login"
+    },
+    {
+      "href": "https://rentals.ca/manage/listing",
+      "text": "Post a Rental"
+    },
+    {
+      "href": "https://rentals.ca/fr/vancouver",
+      "text": "Français (FR)"
+    },
+    {
+      "href": "https://rentals.ca/",
+      "text": "Home"
+    },
+    {
+      "href": "https://rentals.ca/british-columbia",
+      "text": "BC"
+    },
+    {
+      "href": "https://rentals.ca/vancouver/the-windsor",
+      "text": ""
+    },
+    {
+      "href": "https://rentals.ca/vancouver/cascades-below-market",
+      "text": ""
+    },
+    {
+      "href": "https://rentals.ca/north-vancouver/international-plaza",
+      "text": ""
+    },
+    {
+      "href": "https://rentals.ca/north-vancouver/langara-gardens",
+      "text": ""
+    },
+    {
+      "href": "https://rentals.ca/vancouver/ren",
+      "text": ""
+    },
+    {
+      "href": "https://rentals.ca/vancouver/revolve",
+      "text": ""
+    },
+    {
+      "href": "https://rentals.ca/vancouver/signal",
+      "text": ""
+    },
+    {
+      "href": "https://rentals.ca/north-vancouver/carrie",
+      "text": ""
+    },
+    {
+      "href": "https://rentals.ca/vancouver/the-raven",
+      "text": ""
+    },
+    {
+      "href": "https://rentals.ca/vancouver/1580-haro",
+      "text": ""
+    },
+    {
+      "href": "https://rentals.ca/surrey/the-alden",
+      "text": ""
+    },
+    {
+      "href": "https://rentals.ca/vancouver/1644-nelson-st",
+      "text": ""
+    },
+    {
+      "href": "https://rentals.ca/richmond/camellia",
+      "text": ""
+    },
+    {
+      "href": "https://rentals.ca/vancouver/1661-davie-street-id1073092",
+      "text": ""
+    },
+    {
+      "href": "https://rentals.ca/vancouver/archetype",
+      "text": ""
+    },
+    {
+      "href": "https://rentals.ca/vancouver/twin-lakes-townhomes",
+      "text": ""
+    },
+    {
+      "href": "https://rentals.ca/vancouver/the-bower",
+      "text": ""
+    },
+    {
+      "href": "https://rentals.ca/coquitlam/55one",
+      "text": ""
+    },
+    {
+      "href": "https://rentals.ca/vancouver/westward",
+      "text": ""
+    },
+    {
+      "href": "https://rentals.ca/north-vancouver/126-e-21st-st",
+      "text": ""
+    },
+    {
+      "href": "https://rentals.ca/north-vancouver/1441-st-georges-avenue",
+      "text": ""
+    },
+    {
+      "href": "https://rentals.ca/vancouver/haro-apartments",
+      "text": ""
+    },
+    {
+      "href": "https://rentals.ca/vancouver/1600-l-beach-avenue",
+      "text": ""
+    },
+    {
+      "href": "https://rentals.ca/richmond/3488-ketcheson-court",
+      "text": ""
+    },
+    {
+      "href": "https://rentals.ca/north-vancouver/elevation-residences",
+      "text": ""
+    },
+    {
+      "href": "",
+      "text": "Prev"
+    },
+    {
+      "href": "",
+      "text": "1"
+    },
+    {
+      "href": "https://rentals.ca/vancouver?p=2",
+      "text": "2"
+    },
+    {
+      "href": "https://rentals.ca/vancouver?p=2",
+      "text": "Next"
+    },
+    {
+      "href": "https://rentals.ca/canmore",
+      "text": "Canmore, AB"
+    },
+    {
+      "href": "https://rentals.ca/north-vancouver",
+      "text": "North Vancouver, BC"
+    },
+    {
+      "href": "https://rentals.ca/pickering",
+      "text": "Pickering, ON"
+    },
+    {
+      "href": "https://rentals.ca/richmond",
+      "text": "Richmond, BC"
+    },
+    {
+      "href": "https://rentals.ca/market-trends/vancouver",
+      "text": "Explore"
+    },
+    {
+      "href": "https://rentals.ca/vancouver#housing-market",
+      "text": "Housing Market"
+    },
+    {
+      "href": "https://rentals.ca/vancouver#apartment-hunting",
+      "text": "Apartment Hunting"
+    },
+    {
+      "href": "https://rentals.ca/vancouver#residents",
+      "text": "Residents"
+    },
+    {
+      "href": "https://rentals.ca/vancouver#neighbourhood",
+      "text": "Neighbourhood"
+    },
+    {
+      "href": "https://rentals.ca/vancouver#life-style",
+      "text": "Life & Style"
+    },
+    {
+      "href": "",
+      "text": ""
+    },
+    {
+      "href": "",
+      "text": ""
+    },
+    {
+      "href": "https://rentals.ca/vancouver/1-bedrooms",
+      "text": "1-bedroom"
+    },
+    {
+      "href": "https://rentals.ca/vancouver/2-bedrooms",
+      "text": "2-bedroom"
+    },
+    {
+      "href": "https://rentals.ca/vancouver/3-bedrooms",
+      "text": "3-bedroom"
+    },
+    {
+      "href": "https://rentals.ca/vancouver/apartments",
+      "text": "Vancouver apartments for rent"
+    },
+    {
+      "href": "https://rentals.ca/vancouver/basement",
+      "text": "Vancouver basement apartments for rent"
+    },
+    {
+      "href": "https://rentals.ca/Vancouver/townhouse",
+      "text": "Vancouver townhouses for rent"
+    },
+    {
+      "href": "https://rentals.ca/Vancouver/house",
+      "text": "Vancouver houses for rent"
+    },
+    {
+      "href": "https://rentals.ca/vancouver/private-room",
+      "text": "find rooms for rent in Vancouver"
+    },
+    {
+      "href": "https://rentals.ca/vancouver/condos",
+      "text": "Vancouver condos for rent"
+    },
+    {
+      "href": "https://rentals.ca/vancouver/wheelchair-accessible",
+      "text": "Vancouver wheelchair accessible apartments for rent"
+    },
+    {
+      "href": "https://rentals.ca/vancouver/pool",
+      "text": "Vancouver apartments for rent with a pool"
+    },
+    {
+      "href": "https://rentals.ca/vancouver/gym-fitness-center",
+      "text": "Vancouver apartments with a gym"
+    },
+    {
+      "href": "https://rentals.ca/vancouver/fireplace",
+      "text": "Vancouver apartments for rent with fireplaces"
+    },
+    {
+      "href": "https://rentals.ca/vancouver/dishwasher",
+      "text": "Vancouver apartments with a dishwasher"
+    },
+    {
+      "href": "https://rentals.ca/vancouver/balcony",
+      "text": "Vancouver apartments for rent with a balcony"
+    },
+    {
+      "href": "https://rentals.ca/vancouver/air-conditioning",
+      "text": "Vancouver apartments with air conditioning"
+    },
+    {
+      "href": "https://rentals.ca/vancouver/washer-dryer",
+      "text": "Vancouver apartments with a washer and dryer"
+    },
+    {
+      "href": "https://rentals.ca/vancouver/pet-friendly",
+      "text": "pet friendly rentals in Vancouver"
+    },
+    {
+      "href": "https://rentals.ca/vancouver/furnished",
+      "text": "Furnished apartments for rent in Vancouver"
+    },
+    {
+      "href": "https://rentals.ca/vancouver/short-term",
+      "text": "Short term rentals in Vancouver"
+    },
+    {
+      "href": "https://rentals.ca/vancouver/corporate-housing",
+      "text": "Vancouver corporate housing"
+    },
+    {
+      "href": "https://rentals.ca/vancouver/student-housing",
+      "text": "Student Housing in Vancouver"
+    },
+    {
+      "href": "https://rentals.ca/vancouver/cheap",
+      "text": "cheap apartments for rent in Vancouver"
+    },
+    {
+      "href": "https://rentals.ca/vancouver/luxury",
+      "text": "luxury apartments in Vancouver"
+    },
+    {
+      "href": "",
+      "text": ""
+    },
+    {
+      "href": "",
+      "text": ""
+    },
+    {
+      "href": "",
+      "text": ""
+    },
+    {
+      "href": "https://rentals.ca/vancouver/studios",
+      "text": "Studio apartments in Vancouver"
+    },
+    {
+      "href": "https://rentals.ca/vancouver/1-bedrooms",
+      "text": "1 bedroom rentals in Vancouver"
+    },
+    {
+      "href": "https://rentals.ca/vancouver/2-bedrooms",
+      "text": "2 bedroom rentals in Vancouver"
+    },
+    {
+      "href": "https://rentals.ca/vancouver/3-bedrooms",
+      "text": "3 bedroom rentals in Vancouver"
+    },
+    {
+      "href": "https://rentals.ca/vancouver/4-bedrooms",
+      "text": "4 bedroom rentals in Vancouver"
+    },
+    {
+      "href": "https://rentals.ca/vancouver/rooms",
+      "text": "Rooms for rent in Vancouver"
+    },
+    {
+      "href": "https://rentals.ca/vancouver/apartments",
+      "text": "Apartments for rent in Vancouver"
+    },
+    {
+      "href": "https://rentals.ca/vancouver/condos",
+      "text": "Condos for rent in Vancouver"
+    },
+    {
+      "href": "https://rentals.ca/vancouver/houses",
+      "text": "Houses for rent in Vancouver"
+    },
+    {
+      "href": "https://rentals.ca/vancouver/town-houses",
+      "text": "Townhomes for rent in Vancouver"
+    },
+    {
+      "href": "https://rentals.ca/vancouver/basements",
+      "text": "Basement apartments in Vancouver"
+    },
+    {
+      "href": "https://rentals.ca/vancouver/pet-friendly",
+      "text": "Pet-friendly rentals in Vancouver"
+    },
+    {
+      "href": "https://rentals.ca/vancouver/furnished",
+      "text": "Furnished rentals in Vancouver"
+    },
+    {
+      "href": "https://rentals.ca/vancouver/washer-dryer",
+      "text": "Rentals with a washer & dryer in Vancouver"
+    },
+    {
+      "href": "https://rentals.ca/vancouver/pool",
+      "text": "Rentals with a pool in Vancouver"
+    },
+    {
+      "href": "https://rentals.ca/vancouver/air-conditioning",
+      "text": "Rentals with air conditioning in Vancouver"
+    },
+    {
+      "href": "https://rentals.ca/vancouver/wheelchair-accessible",
+      "text": "Wheelchair-accessible rentals in Vancouver"
+    },
+    {
+      "href": "https://rentals.ca/vancouver/under-1000",
+      "text": "Vancouver rentals under $1,000"
+    },
+    {
+      "href": "https://rentals.ca/vancouver/under-1250",
+      "text": "Vancouver rentals under $1,250"
+    },
+    {
+      "href": "https://rentals.ca/vancouver/under-1500",
+      "text": "Vancouver rentals under $1,500"
+    },
+    {
+      "href": "https://rentals.ca/vancouver/under-1750",
+      "text": "Vancouver rentals under $1,750"
+    },
+    {
+      "href": "https://rentals.ca/vancouver/under-2000",
+      "text": "Vancouver rentals under $2,000"
+    },
+    {
+      "href": "https://rentals.ca/vancouver/under-2250",
+      "text": "Vancouver rentals under $2,250"
+    },
+    {
+      "href": "https://rentals.ca/vancouver/downtown",
+      "text": "Downtown"
+    },
+    {
+      "href": "https://rentals.ca/vancouver/west-end",
+      "text": "West End"
+    },
+    {
+      "href": "https://rentals.ca/vancouver/kensington-cedar-cottage",
+      "text": "Kensington-Cedar Cottage"
+    },
+    {
+      "href": "https://rentals.ca/vancouver/marpole",
+      "text": "Marpole"
+    },
+    {
+      "href": "https://rentals.ca/vancouver/renfrew-collingwood",
+      "text": "Renfrew-Collingwood"
+    },
+    {
+      "href": "https://rentals.ca/vancouver/mount-pleasant",
+      "text": "Mount Pleasant"
+    },
+    {
+      "href": "https://rentals.ca/burnaby",
+      "text": "Burnaby"
+    },
+    {
+      "href": "https://rentals.ca/richmond",
+      "text": "Richmond"
+    },
+    {
+      "href": "https://rentals.ca/north-vancouver",
+      "text": "North Vancouver"
+    },
+    {
+      "href": "https://rentals.ca/new-westminster",
+      "text": "New Westminster"
+    },
+    {
+      "href": "https://rentals.ca/surrey",
+      "text": "Surrey"
+    },
+    {
+      "href": "https://rentals.ca/langley",
+      "text": "Langley"
+    },
+    {
+      "href": "https://rentals.ca/vancouver/short-term",
+      "text": "Short-term rentals in Vancouver"
+    },
+    {
+      "href": "https://rentals.ca/vancouver/luxury",
+      "text": "Luxury rentals in Vancouver"
+    },
+    {
+      "href": "https://rentals.ca/vancouver/sublet",
+      "text": "Sublets in Vancouver"
+    },
+    {
+      "href": "https://rentals.ca/vancouver/corporate-housing",
+      "text": "Corporate housing in Vancouver"
+    },
+    {
+      "href": "https://rentals.ca/vancouver/student-housing",
+      "text": "Student housing in Vancouver"
+    },
+    {
+      "href": "https://rentals.ca/vancouver/co-op-housing",
+      "text": "Co-op housing in Vancouver"
+    },
+    {
+      "href": "https://rentals.ca/",
+      "text": "Home"
+    },
+    {
+      "href": "https://rentals.ca/blog",
+      "text": "Blog"
+    },
+    {
+      "href": "https://press.rentals.ca/",
+      "text": "Press"
+    },
+    {
+      "href": "https://rentals.ca/contact",
+      "text": "Contact"
+    },
+    {
+      "href": "https://rentals.ca/about-us",
+      "text": "About"
+    },
+    {
+      "href": "https://ats.rippling.com/rentsync_careers/jobs",
+      "text": "Careers"
+    },
+    {
+      "href": "https://rentals.ca/faq",
+      "text": "FAQs"
+    },
+    {
+      "href": "https://rentals.ca/terms",
+      "text": "Terms"
+    },
+    {
+      "href": "https://rentals.ca/privacy",
+      "text": "Privacy Policy"
+    },
+    {
+      "href": "https://rentals.ca/sitemap",
+      "text": "Sitemap"
+    },
+    {
+      "href": "https://rentals.ca/toronto",
+      "text": "Toronto Rentals"
+    },
+    {
+      "href": "https://rentals.ca/calgary",
+      "text": "Calgary Rentals"
+    },
+    {
+      "href": "https://rentals.ca/ottawa",
+      "text": "Ottawa Rentals"
+    },
+    {
+      "href": "https://rentals.ca/edmonton",
+      "text": "Edmonton Rentals"
+    },
+    {
+      "href": "https://rentals.ca/vancouver",
+      "text": "Vancouver Rentals"
+    },
+    {
+      "href": "https://rentals.ca/halifax",
+      "text": "Halifax Rentals"
+    },
+    {
+      "href": "https://rentals.ca/ontario",
+      "text": "Ontario"
+    },
+    {
+      "href": "https://rentals.ca/british-columbia",
+      "text": "British Columbia"
+    },
+    {
+      "href": "https://rentals.ca/alberta",
+      "text": "Alberta"
+    },
+    {
+      "href": "https://rentals.ca/quebec",
+      "text": "Quebec"
+    },
+    {
+      "href": "https://rentals.ca/nova-scotia",
+      "text": "Nova Scotia"
+    },
+    {
+      "href": "https://rentals.ca/manitoba",
+      "text": "Manitoba"
+    },
+    {
+      "href": "https://rentals.ca/landlords",
+      "text": "Get Listed"
+    },
+    {
+      "href": "https://rentals.ca/manage/listings",
+      "text": "My Listings"
+    },
+    {
+      "href": "https://rentals.ca/credit-reports",
+      "text": "Tenant Credit Check"
+    },
+    {
+      "href": "https://rentals.ca/national-rent-report",
+      "text": "Rent Report"
+    },
+    {
+      "href": "https://rentals.ca/market-trends",
+      "text": "City Rent Trends"
+    },
+    {
+      "href": "https://www.spacelist.ca/listings/?utm_source=rentals&utm_medium=website&utm_campaign=test",
+      "text": "Commercial Properties"
+    },
+    {
+      "href": "https://apps.apple.com/ca/app/rentals-ca-apartment-finder/id1475449043",
+      "text": "Download on the App Store"
+    },
+    {
+      "href": "https://play.google.com/store/apps/details?id=com.rentalsca&hl=en",
+      "text": "Get it on Google Play"
+    },
+    {
+      "href": "https://www.basketball.ca/",
+      "text": "Canada Basketball"
+    },
+    {
+      "href": "https://rentals.ca/raising-the-roof/",
+      "text": "Raising The Roof"
     }
   ],
-  "jsonLd": [],
-  "images": [
-    "https://rentals.ca/favicon.ico"
+  "jsonLd": [
+    {
+      "@context": "http://schema.org",
+      "@type": "SearchResultsPage",
+      "lastReviewed": "2026-10-31"
+    },
+    {
+      "@context": "http://schema.org",
+      "@type": "City",
+      "name": "Vancouver",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Vancouver",
+        "addressRegion": "BC",
+        "addressCountry": "CA"
+      }
+    },
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How much is the average rent in Vancouver, BC?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "As of September 2026, the average rent in Vancouver, BC is $2754 per month."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How much is the average rent for a 1 bedroom in Vancouver, BC?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "As of September 2026, the average rent for a 1 bedroom in Vancouver, BC is $2373 per month."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How much is the average rent for a 2 bedroom in Vancouver, BC?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "As of September 2026, the average rent for a 2 bedroom in Vancouver, BC is $3271 per month."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How much is the average rent for a 3 bedroom in Vancouver, BC?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "As of September 2026, the average rent for a 3 bedroom in Vancouver, BC is $3974 per month."
+          }
+        }
+      ]
+    }
   ],
-  "elapsedMs": 3086
+  "images": [
+    "https://images.rentals.ca/images/vancouver_apartment_rentals_rental_housing_dow.width-585.jpg",
+    "https://rentals.ca/static/fe/img/primary-rentalsca-white.svg",
+    "https://images.rentals.ca/property-pictures/small/vancouver-bc/776005/apartment-2239911955.jpg",
+    "https://images.rentals.ca/property-pictures/small/vancouver-bc/1417768/apartment-2240020499.jpg",
+    "https://images.rentals.ca/property-pictures/small/north-vancouver-bc/1080298/apartment-2239952436.jpg",
+    "https://images.rentals.ca/property-pictures/small/vancouver-bc/1032990/apartment-2241118093.jpg",
+    "https://images.rentals.ca/property-pictures/small/vancouver-bc/1072559/apartment-2239939578.jpg",
+    "https://images.rentals.ca/property-pictures/small/vancouver-bc/935573/apartment-2239987735.jpg",
+    "https://images.rentals.ca/property-pictures/small/vancouver-bc/1043176/apartment-2239935067.jpg",
+    "https://images.rentals.ca/property-pictures/small/north-vancouver-bc/1377285/apartment-2239993707.jpg",
+    "https://assets.rentsync.com/westbank/images/gallery/1152/1792779487425_20260922_-_Ravens-13.jpg",
+    "https://assets.rentsync.com/interrent_reit/images/gallery/1152/1793128273989_Modern_Neutral_Kitchen_Dining_Nook.png",
+    "https://images.rentals.ca/property-pictures/small/surrey-bc/1174788/apartment-2239977195.jpg",
+    "https://images.rentals.ca/property-pictures/small/vancouver-bc/495192/apartment-2239910579.jpg",
+    "https://images.rentals.ca/property-pictures/small/richmond-bc/1084824/apartment-2241118120.jpg",
+    "https://images.rentals.ca/property-pictures/small/vancouver-bc/1073092/apartment-2239939714.jpg",
+    "https://images.rentals.ca/property-pictures/small/vancouver-bc/1057105/apartment-2239936853.jpg",
+    "https://images.rentals.ca/property-pictures/small/vancouver-bc/1515226/apartment-2241387363.jpg",
+    "https://assets.rentsync.com/intracorp/images/gallery/1152/1793391729918_1.png",
+    "https://images.rentals.ca/property-pictures/small/coquitlam-bc/728881/apartment-2239871804.jpg"
+  ],
+  "elapsedMs": 3252
 }

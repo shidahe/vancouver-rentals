@@ -1,15 +1,15 @@
 {
-  "refreshedAt": "2026-10-31T15:06:51.384Z",
+  "refreshedAt": "2026-10-31T15:18:37.982Z",
   "groups": [
     {
-      "identityKey": "4326 w 10th ave::unit:99",
+      "identityKey": "4326 w 10th ave::url:e98ee8eee638",
       "sources": [
         "zumper"
       ],
       "rents": [
         3688
       ],
-      "exactUnit": true,
+      "exactUnit": false,
       "matchedListingId": "zumper-2e85ffb3f678",
       "result": "candidate_only"
     },
@@ -26,15 +26,51 @@
       "result": "candidate_only"
     },
     {
-      "identityKey": "4101 yew st::unit:dream38",
+      "identityKey": "4101 yew st::url:7af73c32128d",
       "sources": [
         "zumper"
       ],
       "rents": [
         4400
       ],
-      "exactUnit": true,
+      "exactUnit": false,
       "matchedListingId": "zumper-6f8b3ff2b9fd",
+      "result": "candidate_only"
+    },
+    {
+      "identityKey": "1969 w 43rd ave::url:13871f2f9c28",
+      "sources": [
+        "zumper"
+      ],
+      "rents": [
+        5000
+      ],
+      "exactUnit": false,
+      "matchedListingId": "zumper-3d502587bbc4",
+      "result": "candidate_only"
+    },
+    {
+      "identityKey": "2000 w 43rd ave::url:daba7b758265",
+      "sources": [
+        "zumper"
+      ],
+      "rents": [
+        4500
+      ],
+      "exactUnit": false,
+      "matchedListingId": null,
+      "result": "candidate_only"
+    },
+    {
+      "identityKey": "1078 nicola st::url:14ca0bb47fe4",
+      "sources": [
+        "zumper"
+      ],
+      "rents": [
+        4600
+      ],
+      "exactUnit": false,
+      "matchedListingId": null,
       "result": "candidate_only"
     },
     {
@@ -170,18 +206,6 @@
       "result": "candidate_only"
     },
     {
-      "identityKey": "mls:r3162880",
-      "sources": [
-        "realtylink mls"
-      ],
-      "rents": [
-        4650
-      ],
-      "exactUnit": true,
-      "matchedListingId": "mls-r3162880",
-      "result": "authoritative_mls_reverified"
-    },
-    {
       "identityKey": "mls:r3167237",
       "sources": [
         "realtylink mls"
@@ -206,24 +230,36 @@
       "result": "authoritative_mls_reverified"
     },
     {
-      "identityKey": "mls:r3179104",
+      "identityKey": "mls:r3175599",
       "sources": [
         "realtylink mls"
       ],
       "rents": [
-        15000
+        4500
       ],
       "exactUnit": false,
-      "matchedListingId": "mls-r3159060",
+      "matchedListingId": "zumper-dd642aebb4f6",
+      "result": "authoritative_mls_reverified"
+    },
+    {
+      "identityKey": "mls:r3151372",
+      "sources": [
+        "realtylink mls"
+      ],
+      "rents": [
+        4800
+      ],
+      "exactUnit": false,
+      "matchedListingId": "mls-r3151372",
       "result": "authoritative_mls_reverified"
     }
   ],
   "promoted": [],
   "crossVerified": [
-    "mls-r3162880",
     "mls-r3167237",
     "zumper-16e9ae17cd91",
-    "mls-r3159060"
+    "zumper-dd642aebb4f6",
+    "mls-r3151372"
   ],
   "fingerprintCrossVerified": [],
   "craigslistRelistingsRecovered": [],
@@ -232,18 +268,11 @@
   "relistedMlsMerged": [],
   "wholeHomeMlsRelistsMerged": [],
   "negativeMatches": [],
-  "detailReactivated": [
-    "mls-r3167237",
-    "mls-r3162880"
-  ],
+  "detailReactivated": [],
   "auxiliaryMlsRemovalsRolledBack": [],
   "mlsMissing": {},
   "mlsRemoved": [],
-  "mlsStaleHidden": [
-    "mls-r3167417",
-    "mls-r3170701",
-    "mls-r3173479"
-  ],
+  "mlsStaleHidden": [],
   "realtylinkSnapshotCount": 4,
   "realtylinkSnapshotHighWaterMark": 10,
   "realtylinkSnapshotScope": "rent-3500-beds-2-4-whole-home-westside-v3",
