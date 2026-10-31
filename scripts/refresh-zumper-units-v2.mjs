@@ -178,7 +178,8 @@ for(const c of found){
       x.dataNotes='MLS number and unit are durable identity facts; current availability is independently verified on the marketplace detail page.';
     }
     const old=x.rent;
-    x.lastChecked=today; x.verifiedAt=iso; x.availabilityStatus='active'; x.verificationLevel='verified'; x.lat=c.exactGeo.lat; x.lng=c.exactGeo.lng;
+    x.lastChecked=today; x.verifiedAt=iso; x.availabilityStatus='active'; x.removedAt=null; x.verificationLevel='verified'; x.lat=c.exactGeo.lat; x.lng=c.exactGeo.lng;
+    x.dataNotes=String(x.dataNotes||'').replace(/\s*AUTO-REMOVED \d{4}-\d{2}-\d{2}:[^.]*\.?/gi,'').trim();
     if(wasInactive){x.status='corrected';x.removedAt=null;(history[x.id]||=[]).push({date:today,rent:c.rent,note:'RELISTED: exact current Zumper detail again shows active availability.'});}
     if (!x.unit && c.unit) x.unit=c.unit;
     if (c.petFriendly !== null) x.petFriendly=c.petFriendly;

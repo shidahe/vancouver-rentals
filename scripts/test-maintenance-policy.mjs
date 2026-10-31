@@ -147,6 +147,9 @@ if(zumperRoomCount('Fully renovated suite in a 12-suite apartment building.',w10
    zumperUnitToken('Excellent transit via #99 B-Line and #14.','4326 West 10th Avenue')!==null||
    zumperUnitToken('Apartment, Suite 101, at 4326 West 10th Avenue','4326 West 10th Avenue')!=='101'||
    !source.includes("unit not public")||!source.includes('RELISTED: exact current Zumper detail'))failures.push('4326 W 10th regression: nearby-card bathrooms, civic-number unit parsing, apartment type or clean relisting evidence can regress.');
+if(!source.includes("x.availabilityStatus='active'; x.removedAt=null")||
+   !purposeBuiltSource.includes("availabilityStatus:'active',removedAt:null")||
+   !source.includes("existing.removedAt = null")) failures.push('Reactivated marketplace, purpose-built, or seeded listings can remain internally marked removed.');
 if(!qualityAuditSource.includes("decisionReady:false")||!qualityAuditSource.includes("readinessStatus:'pending_finalization'")||
    !readinessFinalizerSource.includes("readinessStatus='finalized'")) failures.push('A standalone quality audit can claim decision readiness before browser, freshness, and coverage checks are finalized.');
 if(!coverageSource.includes('previousCompleteCount:reconciliation.realtylinkSnapshotHighWaterMark||reconciliation.realtylinkSnapshotCount||0')) failures.push('Realtylink partial-snapshot diagnostics can report the current count as the complete baseline instead of the same-scope high-water mark.');

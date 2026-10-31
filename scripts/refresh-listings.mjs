@@ -391,6 +391,7 @@ for (const seed of sources.seedCandidates || []) {
         existing.modernInterior = facts.modernInterior ?? existing.modernInterior;
         existing.lat = geo.lat; existing.lng = geo.lng;
         existing.availabilityStatus = 'active';
+        existing.removedAt = null;
         existing.lastChecked = today; existing.verifiedAt = iso;
         existing.verificationMethod = 'AUTO-PUBLISHED/verified from exact live detail page with identity, current availability wording, price, bedrooms and Vancouver geocode.';
         if (oldRent && oldRent !== livePrice) {

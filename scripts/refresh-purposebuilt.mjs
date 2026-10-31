@@ -130,7 +130,7 @@ for(const b of cfg.buildings||[]){
         listing.priceDrop=Number(inv.rent)<Number(listing.rent);listing.rent=inv.rent;
       }
       if(!inv.unit) listing.unit=inv.label;
-      Object.assign(listing,{availabilityStatus:'active',lastChecked:day,verifiedAt:now,verificationLevel:'primary-live',verificationMethod:`Exact floorplan/unit inventory confirmed on ${verifiedSource.url}`});
+      Object.assign(listing,{availabilityStatus:'active',removedAt:null,lastChecked:day,verifiedAt:now,verificationLevel:'primary-live',verificationMethod:`Exact floorplan/unit inventory confirmed on ${verifiedSource.url}`});
     }
 
     for(const duplicate of floorplanMatches.filter(x=>x.id!==listing.id)){
