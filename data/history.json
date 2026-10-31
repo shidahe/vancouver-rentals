@@ -3325,6 +3325,11 @@
       "date": "2026-10-31",
       "rent": 6000,
       "note": "AUTO-HIDDEN: MLS R3170701 exceeded 48 hours without fresh positive availability; partial search results are not removal evidence."
+    },
+    {
+      "date": "2026-10-31",
+      "rent": 6000,
+      "note": "CORRECTED: restored after exact current MLS detail matched identity, explicit availability and rent."
     }
   ],
   "zumper-f3c25cb7e83b": [
@@ -3679,6 +3684,11 @@
     },
     {
       "date": "2026-10-30",
+      "rent": 5500,
+      "note": "EXCLUDED: house share or separately rented portion of a house."
+    },
+    {
+      "date": "2026-10-31",
       "rent": 5500,
       "note": "EXCLUDED: house share or separately rented portion of a house."
     }

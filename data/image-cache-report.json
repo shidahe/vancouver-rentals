@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-10-31T15:19:19.347Z",
+  "refreshedAt": "2026-10-31T15:31:38.935Z",
   "listings": {
     "solo-2228-marstrand": {
       "cached": 3,
@@ -125,6 +125,22 @@
       "failures": [],
       "photoPageUrl": "https://rentals.ca/vancouver/kits-walk-by-strand"
     },
+    "mls-r3170701": {
+      "cached": 4,
+      "preserved": 0,
+      "downloaded": 4,
+      "failures": [
+        {
+          "url": "https://media.realtylink.org/images/consumersite/property/263192328/9745653bdd2d4849bea9d0c70aa8d0aa.jpeg?width=320&height=240&fit=cover",
+          "error": "not a usable image (image/jpeg, 7867 bytes)"
+        },
+        {
+          "url": "https://media.realtylink.org/images/consumersite/property/263192328/561cff5f09c647b0974a3ad3eaf6789c.jpeg?width=480&height=360&fit=cover",
+          "error": "HTTP 400"
+        }
+      ],
+      "photoPageUrl": "https://realtylink.org/en/house~for-rent~vancouver/263192328"
+    },
     "mls-r3172212": {
       "cached": 5,
       "preserved": 5,
@@ -183,14 +199,9 @@
     },
     "the-raven-unit-101": {
       "cached": 5,
-      "preserved": 0,
-      "downloaded": 5,
-      "failures": [
-        {
-          "url": "https://rf-images-prod-bcdn.rentfaster.ca/landlords/1190839/thumb-588.jpg",
-          "error": "not a usable image (image/jpeg, 2543 bytes)"
-        }
-      ],
+      "preserved": 5,
+      "downloaded": 0,
+      "failures": [],
       "photoPageUrl": "https://www.rentfaster.ca/properties/3709-west-broadway-vancouver-688597"
     },
     "mls-r3175899": {
@@ -202,11 +213,11 @@
     }
   },
   "totals": {
-    "sourceListings": 24,
-    "cachedListings": 24,
-    "downloaded": 5,
-    "failed": 7,
-    "preserved": 109,
+    "sourceListings": 25,
+    "cachedListings": 25,
+    "downloaded": 4,
+    "failed": 8,
+    "preserved": 114,
     "prunedListings": 0,
     "prunedIndexImages": 0,
     "prunedOrphanFiles": 0
