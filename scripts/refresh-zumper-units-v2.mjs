@@ -4,7 +4,7 @@ import crypto from 'node:crypto';
 import { chromium } from 'playwright';
 import { listingScopeEligible } from './discovery-policy.mjs';
 import { hasCurrentMarketplaceAvailability } from './listing-availability.mjs';
-import { zumperPetFriendly, zumperPropertyType, zumperRoomCount } from './zumper-pet-policy.mjs';
+import { zumperPetFriendly, zumperPropertyType, zumperRoomCount, zumperUnitToken } from './zumper-pet-policy.mjs';
 
 const DATA = path.join(process.cwd(), 'data');
 const EVIDENCE = path.join(DATA, 'evidence');
@@ -87,7 +87,7 @@ function extract(ld, text, url) {
   const split = splitStreetAndUnit(rawStreet);
   const desc = [product?.description, home?.description, text].filter(Boolean).join('\n');
   let unit = split.unit;
-  if (!unit) unit = unitToken(desc.match(/\b(?:unit|suite|apt|#)\s*([A-Za-z0-9-]*\d[A-Za-z0-9-]*)\b/i)?.[1]);
+  if (!unit) unit = unitToken(zumperUnitToken(desc, split.street));
   const address = `${split.street}, ${a.addressLocality || 'Vancouver'}, ${a.addressRegion || 'BC'}${a.postalCode && a.postalCode !== 'None' ? ` ${a.postalCode}` : ''}`;
   const offer = Array.isArray(product?.offers) ? product.offers[0] : product?.offers;
   const rent = money(offer?.lowPrice) || money(offer?.price) || money(offer?.highPrice);
@@ -114,6 +114,11 @@ for (let i = payload.listings.length - 1; i >= 0; i--) {
     delete history[x.id]; delete imageSources[x.id]; payload.listings.splice(i,1); continue;
   }
   const split = splitStreetAndUnit(String(x.address || '').split(',')[0]);
+  const civic = split.street.match(/^(\d{2,5})\b/)?.[1] || null;
+  if (x.unit && unitToken(x.unit) === civic && /unit not public/i.test(String(x.dataNotes || ''))) {
+    x.unit = null;
+    (history[x.id] ||= []).push({date:today,rent:x.rent??null,note:'CORRECTED: civic street number was incorrectly stored as a unit token; restored URL-level identity.'});
+  }
   if (!x.unit && split.unit) x.unit = split.unit;
   if (split.street) x.address = `${split.street}, Vancouver, BC`;
 }
@@ -160,6 +165,7 @@ for(const c of found){
     x={id,buildingName:null,unit:c.unit||null,address:c.address,neighborhood:/kitsilano/i.test(c.description)?'Kitsilano':/point grey/i.test(c.description)?'Point Grey':/dunbar/i.test(c.description)?'Dunbar':/arbutus/i.test(c.description)?'Arbutus Ridge':'Vancouver West',lat:c.exactGeo.lat,lng:c.exactGeo.lng,type:c.type,rent:c.rent,effectiveRent:null,bedrooms:c.bedrooms,bathrooms:c.bathrooms,sqft:c.sqft,ac:c.ac,parking:c.parking,petFriendly:c.petFriendly,buildingYear:null,orientation:c.orientation,balcony:c.balcony,largeWindows:c.largeWindows,modernInterior:c.modernInterior,source:'Zumper live detail',url:c.url,photoPageUrl:c.url,firstSeen:today,lastChecked:today,verifiedAt:iso,verificationLevel:'verified',verificationMethod:`AUTO-PUBLISHED from exact live Zumper detail; ${c.identityKey}`,availabilityStatus:'active',status:'new',priceDrop:false,dataNotes:c.unit?'Independent unit identity: canonical address + unit.':'Independent inventory identity: canonical address + exact detail URL (unit not public).'};
     payload.listings.push(x); byKey.set(c.identityKey,x); byUrl.set(c.url,x); history[id]=[{date:today,rent:c.rent,note:'NEW: live Zumper detail auto-published as independent inventory.'}];
   } else {
+    const wasInactive=x.availabilityStatus!=='active';
     const mergedMls = !x.mls && payload.listings.find(y =>
       y.availabilityStatus === 'removed' && y.mls &&
       String(y.verificationMethod||'').startsWith(`MERGED into ${x.id}:`)
@@ -174,6 +180,7 @@ for(const c of found){
     }
     const old=x.rent;
     x.lastChecked=today; x.verifiedAt=iso; x.availabilityStatus='active'; x.verificationLevel='verified'; x.lat=c.exactGeo.lat; x.lng=c.exactGeo.lng;
+    if(wasInactive){x.status='corrected';x.removedAt=null;(history[x.id]||=[]).push({date:today,rent:c.rent,note:'RELISTED: exact current Zumper detail again shows active availability.'});}
     if (!x.unit && c.unit) x.unit=c.unit;
     if (c.petFriendly !== null) x.petFriendly=c.petFriendly;
     if (c.type) x.type=c.type;
@@ -189,7 +196,9 @@ for(const c of found){
       }
     }
     if(old!==c.rent && (x.source==='Zumper live detail' || x.rent==null)) {x.rent=c.rent;x.status=c.rent<old?'price_drop':'unchanged';x.priceDrop=c.rent<old;(history[x.id]||=[]).push({date:today,rent:c.rent,note:`AUTO Zumper live price update $${old} → $${c.rent}.`});}
-    x.verificationMethod = `${x.verificationMethod || ''} Cross-verified by live Zumper detail on ${today}.`.trim();
+    x.verificationMethod = wasInactive
+      ? `Reactivated from exact current Zumper detail with current rent and availability on ${today}.`
+      : `${x.verificationMethod || ''} Cross-verified by live Zumper detail on ${today}.`.trim();
   }
   if(c.images.length) imageSources[x.id]={referer:c.url,photoPageUrl:c.url,candidates:c.images.slice(0,8)};
 }
