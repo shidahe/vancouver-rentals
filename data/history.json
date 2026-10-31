@@ -423,6 +423,16 @@
       "date": "2026-10-30",
       "rent": 3688,
       "note": "AUTO Zumper live price update $3590 → $3688."
+    },
+    {
+      "date": "2026-10-31",
+      "rent": 3688,
+      "note": "CORRECTED: civic street number was incorrectly stored as a unit token; restored URL-level identity."
+    },
+    {
+      "date": "2026-10-31",
+      "rent": 3688,
+      "note": "CORRECTED from exact current Zumper advertiser facts: bathrooms 2 → 1."
     }
   ],
   "zumper-adc0623c7c44": [
@@ -2086,6 +2096,11 @@
       "date": "2026-10-30",
       "rent": 3675,
       "note": "NEEDS CONFIRMATION: latest purpose-built fallback sources did not confirm the exact configured rent + sqft inventory row."
+    },
+    {
+      "date": "2026-10-31",
+      "rent": 3675,
+      "note": "NEEDS CONFIRMATION: latest purpose-built fallback sources did not confirm the exact configured rent + sqft inventory row."
     }
   ],
   "mls-r3160879": [
@@ -3018,6 +3033,11 @@
       "date": "2026-10-28",
       "rent": 6750,
       "note": "CORRECTED: restored after exact current MLS detail matched identity, explicit availability and rent."
+    },
+    {
+      "date": "2026-10-31",
+      "rent": 6750,
+      "note": "AUTO-HIDDEN: MLS R3167417 exceeded 48 hours without fresh positive availability; partial search results are not removal evidence."
     }
   ],
   "zumper-6f8b3ff2b9fd": [
@@ -3092,6 +3112,11 @@
       "date": "2026-10-27",
       "rent": 13000,
       "note": "AUTO-HIDDEN: MLS R3167237 exceeded 48 hours without fresh positive availability; partial search results are not removal evidence."
+    },
+    {
+      "date": "2026-10-31",
+      "rent": 13000,
+      "note": "CORRECTED: restored after exact current MLS detail matched identity, explicit availability and rent."
     }
   ],
   "mls-r3165327": [
@@ -3211,6 +3236,11 @@
       "date": "2026-10-27",
       "rent": 4650,
       "note": "AUTO-HIDDEN: MLS R3162880 exceeded 48 hours without fresh positive availability; partial search results are not removal evidence."
+    },
+    {
+      "date": "2026-10-31",
+      "rent": 4650,
+      "note": "CORRECTED: restored after exact current MLS detail matched identity, explicit availability and rent."
     }
   ],
   "kits-walk-floorplan-2-bedroom-811-3675": [
@@ -3270,6 +3300,11 @@
       "date": "2026-10-26",
       "rent": 6000,
       "note": "CORRECTED: restored after exact current MLS detail matched identity, explicit availability and rent."
+    },
+    {
+      "date": "2026-10-31",
+      "rent": 6000,
+      "note": "AUTO-HIDDEN: MLS R3170701 exceeded 48 hours without fresh positive availability; partial search results are not removal evidence."
     }
   ],
   "zumper-f3c25cb7e83b": [
@@ -3424,6 +3459,11 @@
       "date": "2026-10-29",
       "rent": 3900,
       "note": "CORRECTED: restored after exact current MLS detail matched identity, explicit availability and rent."
+    },
+    {
+      "date": "2026-10-31",
+      "rent": 3900,
+      "note": "AUTO-HIDDEN: MLS R3173479 exceeded 48 hours without fresh positive availability; partial search results are not removal evidence."
     }
   ],
   "mls-r3173233": [
@@ -3797,6 +3837,11 @@
     },
     {
       "date": "2026-10-28",
+      "rent": 6995,
+      "note": "NEEDS CONFIRMATION: latest purpose-built fallback sources did not confirm the exact configured rent + sqft inventory row."
+    },
+    {
+      "date": "2026-10-31",
       "rent": 6995,
       "note": "NEEDS CONFIRMATION: latest purpose-built fallback sources did not confirm the exact configured rent + sqft inventory row."
     }

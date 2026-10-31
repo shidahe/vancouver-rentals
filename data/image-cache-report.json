@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-10-30T19:29:06.356Z",
+  "refreshedAt": "2026-10-31T15:07:27.719Z",
   "listings": {
     "solo-2228-marstrand": {
       "cached": 3,
@@ -24,8 +24,8 @@
     },
     "zumper-2e85ffb3f678": {
       "cached": 5,
-      "preserved": 0,
-      "downloaded": 5,
+      "preserved": 5,
+      "downloaded": 0,
       "failures": [],
       "photoPageUrl": "https://www.zumper.com/address/4326-w-10th-ave-vancouver-bc-v6r-none-can"
     },
@@ -97,13 +97,6 @@
       "failures": [],
       "photoPageUrl": "https://www.craigslist.org/view/d/vancouver-fully-furnished-designer-2br/dK4HrSygC6FiEijPJfe35N"
     },
-    "mls-r3167417": {
-      "cached": 5,
-      "preserved": 5,
-      "downloaded": 0,
-      "failures": [],
-      "photoPageUrl": "https://realtylink.org/en/house~for-rent~vancouver/263189044"
-    },
     "zumper-6f8b3ff2b9fd": {
       "cached": 5,
       "preserved": 5,
@@ -111,28 +104,26 @@
       "failures": [],
       "photoPageUrl": "https://www.zumper.com/address/4101-yew-st-vancouver-bc-v6l-3b7-can"
     },
+    "mls-r3167237": {
+      "cached": 5,
+      "preserved": 0,
+      "downloaded": 5,
+      "failures": [],
+      "photoPageUrl": "https://realtylink.org/en/apartment~for-rent~vancouver/263188864"
+    },
+    "mls-r3162880": {
+      "cached": 5,
+      "preserved": 0,
+      "downloaded": 5,
+      "failures": [],
+      "photoPageUrl": "https://realtylink.org/en/apartment~for-rent~vancouver/263184507"
+    },
     "kits-walk-floorplan-2-bedroom-811-3675": {
       "cached": 5,
       "preserved": 5,
       "downloaded": 0,
       "failures": [],
       "photoPageUrl": "https://rentals.ca/vancouver/kits-walk-by-strand"
-    },
-    "mls-r3170701": {
-      "cached": 4,
-      "preserved": 4,
-      "downloaded": 0,
-      "failures": [
-        {
-          "url": "https://media.realtylink.org/images/consumersite/property/263192328/9745653bdd2d4849bea9d0c70aa8d0aa.jpeg?width=320&height=240&fit=cover",
-          "error": "not a usable image (image/jpeg, 7867 bytes)"
-        },
-        {
-          "url": "https://media.realtylink.org/images/consumersite/property/263192328/561cff5f09c647b0974a3ad3eaf6789c.jpeg?width=480&height=360&fit=cover",
-          "error": "HTTP 400"
-        }
-      ],
-      "photoPageUrl": "https://realtylink.org/en/house~for-rent~vancouver/263192328"
     },
     "mls-r3172212": {
       "cached": 5,
@@ -154,13 +145,6 @@
       "downloaded": 0,
       "failures": [],
       "photoPageUrl": "https://realtylink.org/en/house~for-rent~vancouver/263197226"
-    },
-    "mls-r3173479": {
-      "cached": 5,
-      "preserved": 5,
-      "downloaded": 0,
-      "failures": [],
-      "photoPageUrl": "https://realtylink.org/en/house~for-rent~vancouver/263195106"
     },
     "mls-r3174425": {
       "cached": 5,
@@ -197,13 +181,6 @@
       "failures": [],
       "photoPageUrl": "https://www.rentfaster.ca/properties/2355-w-49th-avenue-vancouver-bc-v6m-0g1-vancouver-755998"
     },
-    "the-raven-unit-101": {
-      "cached": 5,
-      "preserved": 5,
-      "downloaded": 0,
-      "failures": [],
-      "photoPageUrl": "https://www.rentfaster.ca/properties/3709-west-broadway-vancouver-688597"
-    },
     "mls-r3175899": {
       "cached": 5,
       "preserved": 5,
@@ -213,13 +190,13 @@
     }
   },
   "totals": {
-    "sourceListings": 25,
-    "cachedListings": 25,
-    "downloaded": 5,
-    "failed": 8,
-    "preserved": 113,
-    "prunedListings": 1,
-    "prunedIndexImages": 5,
+    "sourceListings": 23,
+    "cachedListings": 23,
+    "downloaded": 10,
+    "failed": 6,
+    "preserved": 99,
+    "prunedListings": 4,
+    "prunedIndexImages": 19,
     "prunedOrphanFiles": 0
   }
 }
