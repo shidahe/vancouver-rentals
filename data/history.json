@@ -443,6 +443,11 @@
       "date": "2026-10-31",
       "rent": 3688,
       "note": "CORRECTED: unverified free-text token was incorrectly stored as a unit; restored URL-level identity pending a structured address unit."
+    },
+    {
+      "date": "2026-10-31",
+      "rent": 3690,
+      "note": "AUTO Zumper live price update $3688 → $3690."
     }
   ],
   "zumper-adc0623c7c44": [
@@ -3489,6 +3494,11 @@
       "date": "2026-10-31",
       "rent": 3900,
       "note": "AUTO-HIDDEN: MLS R3173479 exceeded 48 hours without fresh positive availability; partial search results are not removal evidence."
+    },
+    {
+      "date": "2026-10-31",
+      "rent": 3900,
+      "note": "CORRECTED: restored after exact current MLS detail matched identity, explicit availability and rent."
     }
   ],
   "mls-r3173233": [
