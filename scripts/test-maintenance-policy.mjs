@@ -629,9 +629,14 @@ if (!automationPolicy.autoPriceListingIds?.includes('w16-coach-house-850')) {
   failures.push('The exact single-unit Coach House source cannot publish its current verified price.');
 }
 const refreshSafeSource = await fs.readFile(new URL('./refresh-safe.mjs', import.meta.url), 'utf8');
+const enforceScopeSource = await fs.readFile(new URL('./enforce-listing-scope.mjs', import.meta.url), 'utf8');
 if (!refreshSafeSource.includes('/^AUTO(?: live)? price update/i') ||
     !refreshSafeSource.includes("before.availabilityStatus === 'active'")) {
   failures.push('Rejected live price changes can leave misleading history events behind.');
+}
+if (!enforceScopeSource.includes('delete listing.scopeExclusionReason') ||
+    !enforceScopeSource.includes("listing.verificationLevel==='excluded_by_scope'")) {
+  failures.push('A corrected active listing can retain contradictory stale scope-exclusion metadata.');
 }
 if (!source.includes("media\\.realtylink\\.org\\/images\\/consumersite\\/property") || !source.includes('attachCandidateImages(imageSources')) {
   failures.push('Verified Realtylink inventory does not feed listing photos into the image cache.');

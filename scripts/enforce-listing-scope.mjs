@@ -56,7 +56,17 @@ for(const listing of db.listings||[]){
   else if(!bedroomEligible(listing.bedrooms))reason=Number(listing.bedrooms)>=5?'five or more bedrooms':'outside the 2–4 bedroom scope';
   else if(!isTargetRentalAreaText([listing.address,listing.neighborhood].filter(Boolean).join('\n')))reason='outside the Vancouver Westside target area';
   else if(listing.rentalScope==='shared_house'||isHouseShareText([listing.address,listing.unit,text].filter(Boolean).join('\n')))reason='house share or separately rented portion of a house';
-  if(!reason)continue;
+  if(!reason){
+    // A listing can move back into scope after an exact-unit parser corrects a
+    // stale aggregate rent or bedroom count. Do not leave exclusion metadata
+    // attached to a currently active, eligible record: it is contradictory
+    // evidence for downstream audits and user-facing diagnostics.
+    if(listing.availabilityStatus==='active'){
+      delete listing.scopeExclusionReason;
+      if(listing.verificationLevel==='excluded_by_scope')listing.verificationLevel='verified';
+    }
+    continue;
+  }
   const wasActive=listing.availabilityStatus==='active';
   if(listing.availabilityStatus==='excluded'&&listing.scopeExclusionReason===reason){
     excluded.push({id:listing.id,reason,wasActive:false});
