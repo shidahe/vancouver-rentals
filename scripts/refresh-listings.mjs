@@ -95,7 +95,7 @@ function classify(text, item, jsonLd = [], httpStatus = null, finalUrl = null) {
     negativeNeedsConfirmation: !!softNegative && !hardHttpGone && !exactNotFoundRedirect,
     explicitPositive: idMatch && !!positive && !negative,
     positivePhrase: positive ? String(positive) : null,
-    extractedRent: idMatch ? exactFloorplan?.rent ?? firstLikelyRent(text, jsonLd) : null,
+    extractedRent: idMatch ? exactFloorplan?.rent ?? firstLikelyRent(text, jsonLd, item.unit) : null,
     exactFloorplanMatch: exactFloorplan ? { label: exactFloorplan.label, rent: exactFloorplan.rent, sqft: exactFloorplan.sqft } : null,
     facts: idMatch ? facts : {}
   };

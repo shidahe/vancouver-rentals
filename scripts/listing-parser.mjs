@@ -7,7 +7,22 @@ export function moneyMatches(text = '') {
     .filter(value => value >= 2500 && value <= 12000);
 }
 
-export function firstLikelyRent(text = '', jsonLd = []) {
+export function firstLikelyRent(text = '', jsonLd = [], unit = '') {
+  const token = String(unit || '').trim().replace(/^#/, '');
+  if (/^(?=[A-Za-z0-9-]*\d)[A-Za-z0-9-]{1,12}$/.test(token)) {
+    const escaped = token.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+    const lines = String(text).split(/\r?\n/).map(line => line.trim()).filter(Boolean);
+    const start = lines.findIndex(line => new RegExp(`^(?:unit|suite|apt|#)?\\s*${escaped}$`, 'i').test(line));
+    if (start >= 0) {
+      for (const line of lines.slice(start + 1, start + 18)) {
+        const match = line.match(/^\$\s?([0-9]{1,2}(?:,[0-9]{3})?)(?:\s|$)/);
+        if (!match) continue;
+        const amount = Number(match[1].replace(',', ''));
+        if (amount >= 2500 && amount <= 12000) return amount;
+      }
+    }
+  }
+
   const structured = [];
   const walk = value => {
     if (!value) return;

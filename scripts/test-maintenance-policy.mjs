@@ -176,7 +176,9 @@ Request tour
 1 Bath
 $2,700`;
 if (zumperUnitRent(kitsCourtMultiUnit, '313') !== 3600 ||
-    zumperUnitRent(kitsCourtMultiUnit, '999') !== null) {
+    zumperUnitRent(kitsCourtMultiUnit, '999') !== null ||
+    firstLikelyRent(kitsCourtMultiUnit, [{offers:{lowPrice:2700,highPrice:3600}}], '313') !== 3600 ||
+    !source.includes('explicitlyOutOfScope(x.listingAreaText)')) {
   failures.push('Zumper exact-unit rent is not isolated from a multi-unit AggregateOffer.');
 }
 if(!source.includes('if(consecutiveBlocked>=3)')||!source.includes('diagnostics.searchesSuppressed=searchSources.length-diagnostics.searchesChecked')||!coverageSource.includes('blocked searches opened circuit'))failures.push('liv.rent repeated 403/429 search suppression or its coverage diagnostic can silently regress.');

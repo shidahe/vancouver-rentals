@@ -101,7 +101,8 @@ function extract(ld, text, url) {
   const add = x => { const u = typeof x === 'string' ? x : x?.contentUrl || x?.url; if (/^https?:/i.test(u || '') && !images.includes(u)) images.push(u); };
   all.forEach(x => Array.isArray(x.image) ? x.image.forEach(add) : add(x.image));
   const live = hasCurrentMarketplaceAvailability(text);
-  return {url,address,unit,rent,bedrooms,bathrooms,sqft,exactGeo,images:images.slice(0,16),live,description:desc.slice(0,6000),type:zumperPropertyType(home,text),orientation:orient(desc),ac:/air conditioning|air conditioned|central a\/c|central ac/i.test(desc)?true:null,parking:/assigned parking|parking included|parking spot|one parking|1 parking/i.test(desc)?true:null,petFriendly:zumperPetFriendly(home,desc),balcony:/balcony|private patio|patio/i.test(desc)?true:null,largeWindows:/large windows|floor.to.ceiling windows|sun.drenched|naturally bright/i.test(desc)?true:null,modernInterior:/miele|fisher\s*&\s*paykel|caesarstone|quartz|renovated|waterfall island|modern/i.test(desc)?true:null};
+  const listingAreaText = [address, home?.description, product?.description].filter(Boolean).join('\n');
+  return {url,address,unit,rent,bedrooms,bathrooms,sqft,exactGeo,images:images.slice(0,16),live,description:desc.slice(0,6000),listingAreaText,type:zumperPropertyType(home,text),orientation:orient(desc),ac:/air conditioning|air conditioned|central a\/c|central ac/i.test(desc)?true:null,parking:/assigned parking|parking included|parking spot|one parking|1 parking/i.test(desc)?true:null,petFriendly:zumperPetFriendly(home,desc),balcony:/balcony|private patio|patio/i.test(desc)?true:null,largeWindows:/large windows|floor.to.ceiling windows|sun.drenched|naturally bright/i.test(desc)?true:null,modernInterior:/miele|fisher\s*&\s*paykel|caesarstone|quartz|renovated|waterfall island|modern/i.test(desc)?true:null};
 }
 
 const lp = path.join(DATA,'listings.json'), hp = path.join(DATA,'history.json'), sp = path.join(DATA,'live-sources.json'), ip = path.join(DATA,'image-sources.json'), cp = path.join(DATA,'candidates.json');
@@ -139,7 +140,7 @@ for(const url of [...urls].slice(0,120)) {
     const raws=await page.locator('script[type="application/ld+json"]').evaluateAll(ns=>ns.map(n=>n.textContent||'').slice(0,50));
     const ld=[]; for(const raw of raws){try{ld.push(JSON.parse(raw))}catch{}}
     const x=extract(ld,text,url);
-    if(!x||!x.live||!listingScopeEligible(x,x.description)||!targetArea(x.exactGeo)||explicitlyOutOfScope(x.description)) continue;
+    if(!x||!x.live||!listingScopeEligible(x,x.description)||!targetArea(x.exactGeo)||explicitlyOutOfScope(x.listingAreaText)) continue;
     x.identityKey=identityKey(x); found.push(x);
     await write(path.join(EVIDENCE,`zumper-v3-${hash(x.identityKey)}.json`),{checkedAt:iso,identityKey:x.identityKey,facts:x,jsonLd:ld.slice(0,8)});
   } catch {}
