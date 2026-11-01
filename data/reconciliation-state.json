@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-11-01T16:23:45.203Z",
+  "refreshedAt": "2026-11-01T16:35:24.860Z",
   "groups": [
     {
       "identityKey": "4326 w 10th ave::url:e98ee8eee638",
@@ -230,30 +230,6 @@
       "result": "authoritative_mls_reverified"
     },
     {
-      "identityKey": "mls:r3172212",
-      "sources": [
-        "realtylink mls"
-      ],
-      "rents": [
-        6300
-      ],
-      "exactUnit": false,
-      "matchedListingId": "mls-r3172212",
-      "result": "authoritative_mls_reverified"
-    },
-    {
-      "identityKey": "mls:r3151372",
-      "sources": [
-        "realtylink mls"
-      ],
-      "rents": [
-        4800
-      ],
-      "exactUnit": false,
-      "matchedListingId": "mls-r3151372",
-      "result": "authoritative_mls_reverified"
-    },
-    {
       "identityKey": "mls:r3163709",
       "sources": [
         "realtylink mls"
@@ -266,25 +242,36 @@
       "result": "authoritative_mls_reverified"
     },
     {
-      "identityKey": "mls:r3174425",
+      "identityKey": "mls:r3175318",
       "sources": [
         "realtylink mls"
       ],
       "rents": [
-        14500
+        4000
       ],
       "exactUnit": false,
-      "matchedListingId": "mls-r3174425",
+      "matchedListingId": "mls-r3175318",
+      "result": "authoritative_mls_reverified"
+    },
+    {
+      "identityKey": "mls:r3175848",
+      "sources": [
+        "realtylink mls"
+      ],
+      "rents": [
+        5500
+      ],
+      "exactUnit": false,
+      "matchedListingId": "mls-r3175848",
       "result": "authoritative_mls_reverified"
     }
   ],
   "promoted": [],
   "crossVerified": [
     "zumper-16e9ae17cd91",
-    "mls-r3172212",
-    "mls-r3151372",
     "mls-r3163709",
-    "mls-r3174425"
+    "mls-r3175318",
+    "mls-r3175848"
   ],
   "fingerprintCrossVerified": [],
   "craigslistRelistingsRecovered": [],
@@ -298,11 +285,11 @@
   "mlsMissing": {},
   "mlsRemoved": [],
   "mlsStaleHidden": [],
-  "realtylinkSnapshotCount": 5,
+  "realtylinkSnapshotCount": 4,
   "realtylinkSnapshotHighWaterMark": 10,
   "realtylinkSnapshotScope": "rent-3500-beds-2-4-whole-home-westside-v3",
   "realtylinkRemovalEligible": false,
-  "mlsRemovalSuppressed": "Partial Realtylink snapshot (5 candidates versus previous complete 10); disappearance signals ignored.",
+  "mlsRemovalSuppressed": "Partial Realtylink snapshot (4 candidates versus previous complete 10); disappearance signals ignored.",
   "mlsDuplicatesMerged": [],
   "canonicalFieldRepairsApplied": []
 }

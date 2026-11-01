@@ -3721,6 +3721,11 @@
       "date": "2026-10-31",
       "rent": 5500,
       "note": "EXCLUDED: house share or separately rented portion of a house."
+    },
+    {
+      "date": "2026-11-01",
+      "rent": 5500,
+      "note": "EXCLUDED: house share or separately rented portion of a house."
     }
   ],
   "mls-r3175318": [
@@ -3928,6 +3933,11 @@
       "date": "2026-11-01",
       "rent": 2700,
       "note": "EXCLUDED: monthly rent below CAD $3,500."
+    },
+    {
+      "date": "2026-11-01",
+      "rent": 3600,
+      "note": "AUTO live price update from 2700 to 3600."
     }
   ]
 }
