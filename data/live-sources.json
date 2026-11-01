@@ -87,6 +87,10 @@
     {
       "id":"zumper-2477-waterloo","listingId":"waterloo-2477-zumper","source":"Zumper","url":"https://www.zumper.com/address/2477-waterloo-st-vancouver-bc-v6r-3h4-can","address":"2477 Waterloo St, Vancouver, BC V6R 3H4","neighborhood":"Kitsilano","type":"condo","expectedBeds":2,"userObservedPrice":4950,"autoPublish":true,
       "hints":{"bedrooms":2,"bathrooms":2.5,"sqft":1100,"ac":true,"parking":true,"petFriendly":true,"orientation":"E","balcony":true,"buildingYear":2010,"largeWindows":true,"modernInterior":true}
+    },
+    {
+      "id":"zumper-kits-court-313","listingId":"zumper-0116ae25a82f","source":"Zumper","url":"https://www.zumper.com/address/2475-4th-ave-w-vancouver-bc-v6k-1p4-can","address":"2475 4th Ave W, Vancouver, BC V6K 1P4","unit":"313","neighborhood":"Kitsilano","type":"condo","expectedBeds":2,"autoPublish":true,
+      "hints":{"bedrooms":2,"bathrooms":1,"sqft":790,"parking":true,"petFriendly":true,"balcony":true,"largeWindows":true,"modernInterior":true}
     }
   ]
 }

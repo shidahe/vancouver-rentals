@@ -57,3 +57,24 @@ export function zumperUnitToken(description = '', street = '') {
   const civic = String(street || '').trim().match(/^(\d{2,5})\b/)?.[1] || null;
   return token && token !== civic ? token : null;
 }
+
+export function zumperUnitRent(pageText = '', unit = '') {
+  const token = String(unit || '').trim().replace(/^#/, '');
+  if (!token || !/^(?=[A-Za-z0-9-]*\d)[A-Za-z0-9-]{1,12}$/.test(token)) return null;
+
+  const lines = String(pageText || '').split(/\r?\n/).map(line => line.trim()).filter(Boolean);
+  const unitLine = new RegExp(`^(?:unit|suite|apt|#)?\\s*${token.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}$`, 'i');
+  const start = lines.findIndex(line => unitLine.test(line));
+  if (start < 0) return null;
+
+  // Zumper address pages can contain several live units. Restrict the price
+  // lookup to the selected unit card so AggregateOffer.lowPrice from another
+  // unit cannot suppress a qualifying 2BR+ inventory.
+  for (const line of lines.slice(start + 1, start + 18)) {
+    const match = line.match(/^\$([0-9]{1,2}(?:,[0-9]{3})?)(?:\s|$)/);
+    if (!match) continue;
+    const rent = Number(match[1].replace(',', ''));
+    return rent >= 2500 && rent <= 12000 ? rent : null;
+  }
+  return null;
+}

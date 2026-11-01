@@ -4,7 +4,7 @@ import crypto from 'node:crypto';
 import { chromium } from 'playwright';
 import { listingScopeEligible } from './discovery-policy.mjs';
 import { hasCurrentMarketplaceAvailability } from './listing-availability.mjs';
-import { zumperPetFriendly, zumperPropertyType, zumperRoomCount, zumperUnitToken } from './zumper-pet-policy.mjs';
+import { zumperPetFriendly, zumperPropertyType, zumperRoomCount, zumperUnitRent, zumperUnitToken } from './zumper-pet-policy.mjs';
 
 const DATA = path.join(process.cwd(), 'data');
 const EVIDENCE = path.join(DATA, 'evidence');
@@ -90,7 +90,7 @@ function extract(ld, text, url) {
   if (!unit) unit = unitToken(zumperUnitToken(desc, split.street));
   const address = `${split.street}, ${a.addressLocality || 'Vancouver'}, ${a.addressRegion || 'BC'}${a.postalCode && a.postalCode !== 'None' ? ` ${a.postalCode}` : ''}`;
   const offer = Array.isArray(product?.offers) ? product.offers[0] : product?.offers;
-  const rent = money(offer?.lowPrice) || money(offer?.price) || money(offer?.highPrice);
+  const rent = zumperUnitRent(text, unit) || money(offer?.price) || money(offer?.lowPrice) || money(offer?.highPrice);
   const bedrooms = zumperRoomCount(home?.description, text, product?.description, 'bedroom');
   const bathrooms = zumperRoomCount(home?.description, text, product?.description, 'bathroom');
   const sqft = Number(String(home?.floorSize || '').match(/([0-9]{3,4})/)?.[1] || desc.match(/\b([7-9][0-9]{2}|1[0-9]{3}|2[0-9]{3})\s*(?:sq\.?\s*ft|sqft|sqt|ft²|square feet)\b/i)?.[1] || 0) || null;

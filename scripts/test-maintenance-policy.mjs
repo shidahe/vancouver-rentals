@@ -16,7 +16,7 @@ import { craigslistAddressPrecision, craigslistDescriptionCivicAddress, craigsli
 import { classifyRentalsCaSearchLead, parseRentalsCaSearchLeads, rentalsCaSearchLeadScopeEligible } from './rentalsca-search-parser.mjs';
 import { craigslistSeedRelistingMatch } from './craigslist-seed-relisting.mjs';
 import { craigslistCrossSourcePriceMatch } from './craigslist-cross-source-match.mjs';
-import { zumperPetFriendly, zumperPropertyType, zumperRoomCount, zumperUnitToken } from './zumper-pet-policy.mjs';
+import { zumperPetFriendly, zumperPropertyType, zumperRoomCount, zumperUnitRent, zumperUnitToken } from './zumper-pet-policy.mjs';
 import { wholeHomeMlsRelistMatch } from './mls-relisting.mjs';
 
 const read = p => fs.readFile(p, 'utf8');
@@ -160,6 +160,24 @@ if(publicationGateIndex<0||validatedCommitIndex<0||publicationGateIndex>validate
    !refreshWorkflow.includes("name: Commit refreshed rental data, cached images, and validation reports\n        if: success()")||
    refreshWorkflow.includes("name: Commit refreshed rental data, cached images, and validation reports\n        if: always()")){
   failures.push('A non-decision-ready refresh can be committed and deployed before the workflow fails.');
+}
+
+const kitsCourtMultiUnit = `Units
+2475 4th Ave W Vancouver, BC
+New Listing
+313
+Our team has verified this company
+2 Beds
+1 Bath
+$3,600
+Request tour
+1 Bed, 1 Bath
+1 Bed
+1 Bath
+$2,700`;
+if (zumperUnitRent(kitsCourtMultiUnit, '313') !== 3600 ||
+    zumperUnitRent(kitsCourtMultiUnit, '999') !== null) {
+  failures.push('Zumper exact-unit rent is not isolated from a multi-unit AggregateOffer.');
 }
 if(!source.includes('if(consecutiveBlocked>=3)')||!source.includes('diagnostics.searchesSuppressed=searchSources.length-diagnostics.searchesChecked')||!coverageSource.includes('blocked searches opened circuit'))failures.push('liv.rent repeated 403/429 search suppression or its coverage diagnostic can silently regress.');
 if(realtylinkSnapshotBaseline({previousBaseline:6,currentCount:5,sameScope:true})!==6||
