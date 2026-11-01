@@ -82,7 +82,7 @@ function classify(text, item, jsonLd = [], httpStatus = null, finalUrl = null) {
   const positive = strongPositive || (!isRealtylink && weakForRent ? /for rent/i : null);
   const hardHttpGone = [404, 410].includes(httpStatus);
   const exactNotFoundRedirect = isRealtylinkListingNotFoundRedirect(item.url, finalUrl);
-  const facts=parseFacts(text);
+  const facts=parseFacts(text, item.unit);
   if(/realtylink\.org/i.test(item.url||'')){
     facts.bedrooms=parseRealtylinkRoomCount(text,'bedroom')??facts.bedrooms;
     facts.bathrooms=parseRealtylinkRoomCount(text,'bathroom')??facts.bathrooms;

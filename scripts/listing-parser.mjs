@@ -51,11 +51,19 @@ export function firstLikelyRent(text = '', jsonLd = [], unit = '') {
   return moneyMatches(text)[0] ?? null;
 }
 
-export function parseFacts(text = '') {
+export function parseFacts(text = '', unit = '') {
+  let factText = String(text);
+  const token = String(unit || '').trim().replace(/^#/, '');
+  if (/^(?=[A-Za-z0-9-]*\d)[A-Za-z0-9-]{1,12}$/.test(token)) {
+    const escaped = token.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+    const lines = factText.split(/\r?\n/).map(line => line.trim()).filter(Boolean);
+    const start = lines.findIndex(line => new RegExp(`^(?:unit|suite|apt|#)?\\s*${escaped}$`, 'i').test(line));
+    if (start >= 0) factText = lines.slice(start + 1, start + 18).join('\n');
+  }
   // Browser innerText can collapse adjacent responsive fields into strings such as
   // "2 Bed2 Bath741 SqftAvailable". Restore those visual boundaries before parsing
   // so a later building description cannot override the exact unit summary.
-  const spaced = text
+  const spaced = factText
     .replace(/([a-z])([A-Z])/g, '$1 $2')
     .replace(/([A-Za-z])(\d)/g, '$1 $2');
   const beds = spaced.match(/\b([1-5](?:\.5)?)\s*(?:bedrooms?|beds?|br)\b/i) || spaced.match(/\b(two|three|four|five)\s+bedrooms?\b/i);

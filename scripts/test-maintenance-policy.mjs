@@ -178,6 +178,7 @@ $2,700`;
 if (zumperUnitRent(kitsCourtMultiUnit, '313') !== 3600 ||
     zumperUnitRent(kitsCourtMultiUnit, '999') !== null ||
     firstLikelyRent(kitsCourtMultiUnit, [{offers:{lowPrice:2700,highPrice:3600}}], '313') !== 3600 ||
+    parseFacts(kitsCourtMultiUnit, '313').bathrooms !== 1 ||
     !source.includes('explicitlyOutOfScope(x.listingAreaText)')) {
   failures.push('Zumper exact-unit rent is not isolated from a multi-unit AggregateOffer.');
 }
@@ -628,7 +629,8 @@ if (!automationPolicy.autoPriceListingIds?.includes('w16-coach-house-850')) {
   failures.push('The exact single-unit Coach House source cannot publish its current verified price.');
 }
 const refreshSafeSource = await fs.readFile(new URL('./refresh-safe.mjs', import.meta.url), 'utf8');
-if (!refreshSafeSource.includes('/^AUTO(?: live)? price update/i')) {
+if (!refreshSafeSource.includes('/^AUTO(?: live)? price update/i') ||
+    !refreshSafeSource.includes("before.availabilityStatus === 'active'")) {
   failures.push('Rejected live price changes can leave misleading history events behind.');
 }
 if (!source.includes("media\\.realtylink\\.org\\/images\\/consumersite\\/property") || !source.includes('attachCandidateImages(imageSources')) {

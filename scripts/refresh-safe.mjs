@@ -36,7 +36,10 @@ for (const listing of afterPayload.listings) {
     check.blockedReason = `HTTP ${check.status}`;
   }
 
-  if (!allowPrice.has(listing.id) && before.rent != null && listing.rent !== before.rent) {
+  // Protect verified active inventory from unapproved price churn. A hidden or
+  // excluded record may still carry a bad parser value; exact current seed
+  // evidence must be able to correct that value before safe reactivation.
+  if (before.availabilityStatus === 'active' && !allowPrice.has(listing.id) && before.rent != null && listing.rent !== before.rent) {
     listing.rent = before.rent;
     listing.status = before.status;
     listing.priceDrop = before.priceDrop;
