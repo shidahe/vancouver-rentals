@@ -3068,6 +3068,11 @@
       "date": "2026-10-31",
       "rent": 6750,
       "note": "AUTO-HIDDEN: MLS R3167417 exceeded 48 hours without fresh positive availability; partial search results are not removal evidence."
+    },
+    {
+      "date": "2026-11-01",
+      "rent": 6750,
+      "note": "CORRECTED: restored after exact current MLS detail matched identity, explicit availability and rent."
     }
   ],
   "zumper-6f8b3ff2b9fd": [
@@ -3519,6 +3524,11 @@
       "date": "2026-10-31",
       "rent": 3900,
       "note": "CORRECTED: restored after exact current MLS detail matched identity, explicit availability and rent."
+    },
+    {
+      "date": "2026-11-01",
+      "rent": 3900,
+      "note": "CORRECTED: restored after exact current MLS detail matched identity, explicit availability and rent."
     }
   ],
   "mls-r3173233": [
@@ -3943,6 +3953,13 @@
       "date": "2026-11-01",
       "rent": 3600,
       "note": "AUTO live price update from 2700 to 3600."
+    }
+  ],
+  "mls-r3179518": [
+    {
+      "date": "2026-11-01",
+      "rent": 7000,
+      "note": "NEW: live Realtylink MLS R3179518 auto-published."
     }
   ]
 }
