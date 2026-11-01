@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-10-31T18:41:27.536Z",
+  "refreshedAt": "2026-11-01T16:11:53.599Z",
   "groups": [
     {
       "identityKey": "4326 w 10th ave::url:e98ee8eee638",
@@ -62,12 +62,60 @@
       "result": "candidate_only"
     },
     {
+      "identityKey": "3000 w 44th ave::url:e02801d5a772",
+      "sources": [
+        "zumper"
+      ],
+      "rents": [
+        6000
+      ],
+      "exactUnit": false,
+      "matchedListingId": "zumper-1754927f090e",
+      "result": "candidate_only"
+    },
+    {
       "identityKey": "1078 nicola st::url:14ca0bb47fe4",
       "sources": [
         "zumper"
       ],
       "rents": [
         4600
+      ],
+      "exactUnit": false,
+      "matchedListingId": null,
+      "result": "candidate_only"
+    },
+    {
+      "identityKey": "2565 maple st::url:0e7c34c6cc33",
+      "sources": [
+        "craigslist"
+      ],
+      "rents": [
+        4800
+      ],
+      "exactUnit": false,
+      "matchedListingId": null,
+      "result": "candidate_only"
+    },
+    {
+      "identityKey": "3720 w 8th ave 203::url:c04817b23a34",
+      "sources": [
+        "craigslist"
+      ],
+      "rents": [
+        3500
+      ],
+      "exactUnit": false,
+      "matchedListingId": null,
+      "result": "candidate_only"
+    },
+    {
+      "identityKey": "2075 w 48th ave::url:9f9769f7d738",
+      "sources": [
+        "craigslist"
+      ],
+      "rents": [
+        7990
       ],
       "exactUnit": false,
       "matchedListingId": null,
@@ -122,18 +170,6 @@
       "result": "candidate_only"
     },
     {
-      "identityKey": "2075 w 48th ave::url:9f9769f7d738",
-      "sources": [
-        "craigslist"
-      ],
-      "rents": [
-        7990
-      ],
-      "exactUnit": false,
-      "matchedListingId": null,
-      "result": "candidate_only"
-    },
-    {
       "identityKey": "1777 w 7th ave::url:a9679b09464a",
       "sources": [
         "craigslist"
@@ -152,18 +188,6 @@
       ],
       "rents": [
         13000
-      ],
-      "exactUnit": false,
-      "matchedListingId": null,
-      "result": "candidate_only"
-    },
-    {
-      "identityKey": "3720 w 8th ave 203::url:c04817b23a34",
-      "sources": [
-        "craigslist"
-      ],
-      "rents": [
-        3500
       ],
       "exactUnit": false,
       "matchedListingId": null,
@@ -194,18 +218,6 @@
       "result": "candidate_only"
     },
     {
-      "identityKey": "3260 w 16 ave near blenheim::url:588623515817",
-      "sources": [
-        "craigslist"
-      ],
-      "rents": [
-        4975
-      ],
-      "exactUnit": false,
-      "matchedListingId": null,
-      "result": "candidate_only"
-    },
-    {
       "identityKey": "mls:r3160689",
       "sources": [
         "realtylink mls"
@@ -215,30 +227,6 @@
       ],
       "exactUnit": true,
       "matchedListingId": "zumper-16e9ae17cd91",
-      "result": "authoritative_mls_reverified"
-    },
-    {
-      "identityKey": "mls:r3174425",
-      "sources": [
-        "realtylink mls"
-      ],
-      "rents": [
-        14500
-      ],
-      "exactUnit": false,
-      "matchedListingId": "mls-r3174425",
-      "result": "authoritative_mls_reverified"
-    },
-    {
-      "identityKey": "mls:r3173479",
-      "sources": [
-        "realtylink mls"
-      ],
-      "rents": [
-        3900
-      ],
-      "exactUnit": true,
-      "matchedListingId": "mls-r3173479",
       "result": "authoritative_mls_reverified"
     },
     {
@@ -254,51 +242,36 @@
       "result": "authoritative_mls_reverified"
     },
     {
-      "identityKey": "mls:r3177685",
+      "identityKey": "mls:r3163709",
       "sources": [
         "realtylink mls"
       ],
       "rents": [
-        8500
+        5800
       ],
       "exactUnit": false,
-      "matchedListingId": "mls-r3177685",
+      "matchedListingId": "mls-r3163709",
       "result": "authoritative_mls_reverified"
     },
     {
-      "identityKey": "mls:r3172212",
+      "identityKey": "mls:r3151372",
       "sources": [
         "realtylink mls"
       ],
       "rents": [
-        6300
+        4800
       ],
       "exactUnit": false,
-      "matchedListingId": "mls-r3172212",
-      "result": "authoritative_mls_reverified"
-    },
-    {
-      "identityKey": "mls:r3175848",
-      "sources": [
-        "realtylink mls"
-      ],
-      "rents": [
-        5500
-      ],
-      "exactUnit": false,
-      "matchedListingId": "mls-r3175848",
+      "matchedListingId": "mls-r3151372",
       "result": "authoritative_mls_reverified"
     }
   ],
   "promoted": [],
   "crossVerified": [
     "zumper-16e9ae17cd91",
-    "mls-r3174425",
-    "mls-r3173479",
     "zumper-dd642aebb4f6",
-    "mls-r3177685",
-    "mls-r3172212",
-    "mls-r3175848"
+    "mls-r3163709",
+    "mls-r3151372"
   ],
   "fingerprintCrossVerified": [],
   "craigslistRelistingsRecovered": [],
@@ -307,18 +280,16 @@
   "relistedMlsMerged": [],
   "wholeHomeMlsRelistsMerged": [],
   "negativeMatches": [],
-  "detailReactivated": [
-    "mls-r3173479"
-  ],
+  "detailReactivated": [],
   "auxiliaryMlsRemovalsRolledBack": [],
   "mlsMissing": {},
   "mlsRemoved": [],
   "mlsStaleHidden": [],
-  "realtylinkSnapshotCount": 7,
+  "realtylinkSnapshotCount": 4,
   "realtylinkSnapshotHighWaterMark": 10,
   "realtylinkSnapshotScope": "rent-3500-beds-2-4-whole-home-westside-v3",
   "realtylinkRemovalEligible": false,
-  "mlsRemovalSuppressed": "Partial Realtylink snapshot (7 candidates versus previous complete 10); disappearance signals ignored.",
+  "mlsRemovalSuppressed": "Partial Realtylink snapshot (4 candidates versus previous complete 10); disappearance signals ignored.",
   "mlsDuplicatesMerged": [],
   "canonicalFieldRepairsApplied": []
 }

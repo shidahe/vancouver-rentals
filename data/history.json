@@ -2121,6 +2121,11 @@
       "date": "2026-10-31",
       "rent": 3675,
       "note": "NEEDS CONFIRMATION: latest purpose-built fallback sources did not confirm the exact configured rent + sqft inventory row."
+    },
+    {
+      "date": "2026-11-01",
+      "rent": 3675,
+      "note": "NEEDS CONFIRMATION: latest purpose-built fallback sources did not confirm the exact configured rent + sqft inventory row."
     }
   ],
   "mls-r3160879": [
@@ -2954,6 +2959,11 @@
       "date": "2026-10-24",
       "rent": 4975,
       "note": "AUTO live price update from 5475 to 4975."
+    },
+    {
+      "date": "2026-11-01",
+      "rent": 4975,
+      "note": "AUTO-REMOVED after direct live verification found explicit unavailable evidence."
     }
   ],
   "mls-r3149612": [
@@ -3335,6 +3345,11 @@
       "date": "2026-10-31",
       "rent": 6000,
       "note": "CORRECTED: restored after exact current MLS detail matched identity, explicit availability and rent."
+    },
+    {
+      "date": "2026-11-01",
+      "rent": 6000,
+      "note": "AUTO-REMOVED after direct live verification found explicit unavailable evidence."
     }
   ],
   "zumper-f3c25cb7e83b": [
@@ -3403,6 +3418,11 @@
       "date": "2026-10-20",
       "rent": 5695,
       "note": "CORRECTED from exact current Zumper advertiser facts: bathrooms 1 → 3."
+    },
+    {
+      "date": "2026-11-01",
+      "rent": 5695,
+      "note": "Auto-hidden: exact live detail was not reverified within 48 hours."
     }
   ],
   "mls-r3169522": [
@@ -3796,6 +3816,11 @@
       "date": "2026-10-29",
       "rent": 6000,
       "note": "AUTO-REMOVED after direct live verification found explicit unavailable evidence."
+    },
+    {
+      "date": "2026-11-01",
+      "rent": 6000,
+      "note": "RELISTED: exact current Zumper detail again shows active availability."
     }
   ],
   "mls-r3175865": [
@@ -3891,6 +3916,18 @@
       "date": "2026-10-28",
       "rent": 3500,
       "note": "AUTO-PUBLISHED after strict live detail-page verification."
+    }
+  ],
+  "zumper-0116ae25a82f": [
+    {
+      "date": "2026-11-01",
+      "rent": 2700,
+      "note": "AUTO-PUBLISHED after strict live detail-page verification."
+    },
+    {
+      "date": "2026-11-01",
+      "rent": 2700,
+      "note": "EXCLUDED: monthly rent below CAD $3,500."
     }
   ]
 }
