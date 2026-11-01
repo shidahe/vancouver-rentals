@@ -19,15 +19,15 @@
     "largeWindows": true,
     "modernInterior": true
   },
-  "discoveredAt": "2026-11-01T16:03:19.029Z",
-  "liveCheckedAt": "2026-11-01T16:03:19.029Z",
+  "discoveredAt": "2026-11-01T16:15:36.996Z",
+  "liveCheckedAt": "2026-11-01T16:15:36.996Z",
   "liveStatus": 200,
   "finalUrl": "https://www.zumper.com/address/2475-4th-ave-w-vancouver-bc-v6k-1p4-can",
   "identityMatch": true,
   "explicitPositive": true,
   "explicitNegative": false,
   "negativePhrase": null,
-  "livePrice": 2700,
+  "livePrice": 3600,
   "liveFacts": {
     "bedrooms": 2,
     "bathrooms": 2,
@@ -45,7 +45,6 @@
   "autoPublishResult": "published",
   "geocode": {
     "lat": 49.2684802,
-    "lng": -123.1672552,
-    "displayName": "The Diving Locker, 2475, West 4th Avenue, Kitsilano, Vancouver, Metro Vancouver Regional District, British Columbia, V6K 1P9, Canada"
+    "lng": -123.1672552
   }
 }
