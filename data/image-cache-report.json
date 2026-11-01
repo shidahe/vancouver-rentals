@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-11-01T16:36:08.879Z",
+  "refreshedAt": "2026-11-01T16:47:47.415Z",
   "listings": {
     "solo-2228-marstrand": {
       "cached": 3,
@@ -47,14 +47,9 @@
     },
     "arbutus-residences-floorplan-2-bedroom-townhouse-den-1340": {
       "cached": 5,
-      "preserved": 0,
-      "downloaded": 5,
-      "failures": [
-        {
-          "url": "https://img.zumpercdn.com/882527203/1280x960?dpr=1&fit=crop&h=222&q=76&w=394",
-          "error": "not a usable image (image/webp, 7396 bytes)"
-        }
-      ],
+      "preserved": 5,
+      "downloaded": 0,
+      "failures": [],
       "photoPageUrl": "https://www.zumper.com/apartment-buildings/p1117150/arbutus-residences-quilchena-vancouver-bc"
     },
     "mls-r3151372": {
@@ -88,40 +83,12 @@
       "failures": [],
       "photoPageUrl": "https://rentals.ca/vancouver/kits-walk-by-strand"
     },
-    "mls-r3159060": {
-      "cached": 5,
-      "preserved": 5,
-      "downloaded": 0,
-      "failures": [],
-      "photoPageUrl": "https://realtylink.org/en/house~for-rent~vancouver/263200731"
-    },
-    "mls-r3163709": {
-      "cached": 5,
-      "preserved": 5,
-      "downloaded": 0,
-      "failures": [],
-      "photoPageUrl": "https://realtylink.org/en/house~for-rent~vancouver/263185336"
-    },
     "zumper-6f8b3ff2b9fd": {
       "cached": 5,
       "preserved": 5,
       "downloaded": 0,
       "failures": [],
       "photoPageUrl": "https://www.zumper.com/address/4101-yew-st-vancouver-bc-v6l-3b7-can"
-    },
-    "mls-r3167237": {
-      "cached": 5,
-      "preserved": 5,
-      "downloaded": 0,
-      "failures": [],
-      "photoPageUrl": "https://realtylink.org/en/apartment~for-rent~vancouver/263188864"
-    },
-    "mls-r3162880": {
-      "cached": 5,
-      "preserved": 5,
-      "downloaded": 0,
-      "failures": [],
-      "photoPageUrl": "https://realtylink.org/en/apartment~for-rent~vancouver/263184507"
     },
     "kits-walk-floorplan-2-bedroom-811-3675": {
       "cached": 5,
@@ -144,26 +111,12 @@
       "failures": [],
       "photoPageUrl": "https://www.zumper.com/address/2000-w-43rd-ave-vancouver-bc-v6m-2c9-can"
     },
-    "mls-r3173479": {
-      "cached": 5,
-      "preserved": 5,
-      "downloaded": 0,
-      "failures": [],
-      "photoPageUrl": "https://realtylink.org/en/house~for-rent~vancouver/263195106"
-    },
     "mls-r3174425": {
       "cached": 5,
       "preserved": 5,
       "downloaded": 0,
       "failures": [],
       "photoPageUrl": "https://realtylink.org/en/house~for-rent~vancouver/263196052"
-    },
-    "mls-r3175318": {
-      "cached": 5,
-      "preserved": 5,
-      "downloaded": 0,
-      "failures": [],
-      "photoPageUrl": "https://realtylink.org/en/house~for-rent~vancouver/263196945"
     },
     "zumper-3d502587bbc4": {
       "cached": 5,
@@ -209,8 +162,8 @@
     },
     "zumper-0116ae25a82f": {
       "cached": 1,
-      "preserved": 0,
-      "downloaded": 1,
+      "preserved": 1,
+      "downloaded": 0,
       "failures": [
         {
           "url": "https://img.zumpercdn.com/932871552/1280x960?h=425&w=480&fit=crop&dpr=1&q=76",
@@ -229,13 +182,13 @@
     }
   },
   "totals": {
-    "sourceListings": 26,
-    "cachedListings": 26,
-    "downloaded": 6,
-    "failed": 10,
-    "preserved": 114,
-    "prunedListings": 0,
-    "prunedIndexImages": 0,
+    "sourceListings": 20,
+    "cachedListings": 20,
+    "downloaded": 0,
+    "failed": 9,
+    "preserved": 90,
+    "prunedListings": 6,
+    "prunedIndexImages": 30,
     "prunedOrphanFiles": 0
   }
 }

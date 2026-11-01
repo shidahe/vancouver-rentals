@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-11-01T16:35:24.860Z",
+  "refreshedAt": "2026-11-01T16:47:07.247Z",
   "groups": [
     {
       "identityKey": "4326 w 10th ave::url:e98ee8eee638",
@@ -230,19 +230,43 @@
       "result": "authoritative_mls_reverified"
     },
     {
-      "identityKey": "mls:r3163709",
+      "identityKey": "mls:r3151372",
       "sources": [
         "realtylink mls"
       ],
       "rents": [
-        5800
+        4800
       ],
       "exactUnit": false,
-      "matchedListingId": "mls-r3163709",
+      "matchedListingId": "mls-r3151372",
       "result": "authoritative_mls_reverified"
     },
     {
-      "identityKey": "mls:r3175318",
+      "identityKey": "mls:r3172212",
+      "sources": [
+        "realtylink mls"
+      ],
+      "rents": [
+        6300
+      ],
+      "exactUnit": false,
+      "matchedListingId": "mls-r3172212",
+      "result": "authoritative_mls_reverified"
+    },
+    {
+      "identityKey": "mls:r3174425",
+      "sources": [
+        "realtylink mls"
+      ],
+      "rents": [
+        14500
+      ],
+      "exactUnit": false,
+      "matchedListingId": "mls-r3174425",
+      "result": "authoritative_mls_reverified"
+    },
+    {
+      "identityKey": "mls:r3175865",
       "sources": [
         "realtylink mls"
       ],
@@ -250,7 +274,7 @@
         4000
       ],
       "exactUnit": false,
-      "matchedListingId": "mls-r3175318",
+      "matchedListingId": "mls-r3175865",
       "result": "authoritative_mls_reverified"
     },
     {
@@ -264,14 +288,29 @@
       "exactUnit": false,
       "matchedListingId": "mls-r3175848",
       "result": "authoritative_mls_reverified"
+    },
+    {
+      "identityKey": "mls:r3177685",
+      "sources": [
+        "realtylink mls"
+      ],
+      "rents": [
+        8500
+      ],
+      "exactUnit": false,
+      "matchedListingId": "mls-r3177685",
+      "result": "authoritative_mls_reverified"
     }
   ],
   "promoted": [],
   "crossVerified": [
     "zumper-16e9ae17cd91",
-    "mls-r3163709",
-    "mls-r3175318",
-    "mls-r3175848"
+    "mls-r3151372",
+    "mls-r3172212",
+    "mls-r3174425",
+    "mls-r3175865",
+    "mls-r3175848",
+    "mls-r3177685"
   ],
   "fingerprintCrossVerified": [],
   "craigslistRelistingsRecovered": [],
@@ -282,14 +321,54 @@
   "negativeMatches": [],
   "detailReactivated": [],
   "auxiliaryMlsRemovalsRolledBack": [],
-  "mlsMissing": {},
+  "mlsMissing": {
+    "R3179104": {
+      "firstMissingAt": "2026-11-01T16:47:07.247Z",
+      "lastMissingAt": "2026-11-01T16:47:07.247Z",
+      "listingId": "mls-r3159060"
+    },
+    "R3163709": {
+      "firstMissingAt": "2026-11-01T16:47:07.247Z",
+      "lastMissingAt": "2026-11-01T16:47:07.247Z",
+      "listingId": "mls-r3163709"
+    },
+    "R3167417": {
+      "firstMissingAt": "2026-11-01T16:47:07.247Z",
+      "lastMissingAt": "2026-11-01T16:47:07.247Z",
+      "listingId": "mls-r3167417"
+    },
+    "R3167237": {
+      "firstMissingAt": "2026-11-01T16:47:07.247Z",
+      "lastMissingAt": "2026-11-01T16:47:07.247Z",
+      "listingId": "mls-r3167237"
+    },
+    "R3165327": {
+      "firstMissingAt": "2026-11-01T16:47:07.247Z",
+      "lastMissingAt": "2026-11-01T16:47:07.247Z",
+      "listingId": "mls-r3165327"
+    },
+    "R3162880": {
+      "firstMissingAt": "2026-11-01T16:47:07.247Z",
+      "lastMissingAt": "2026-11-01T16:47:07.247Z",
+      "listingId": "mls-r3162880"
+    },
+    "R3173479": {
+      "firstMissingAt": "2026-11-01T16:47:07.247Z",
+      "lastMissingAt": "2026-11-01T16:47:07.247Z",
+      "listingId": "mls-r3173479"
+    },
+    "R3175318": {
+      "firstMissingAt": "2026-11-01T16:47:07.247Z",
+      "lastMissingAt": "2026-11-01T16:47:07.247Z",
+      "listingId": "mls-r3175318"
+    }
+  },
   "mlsRemoved": [],
   "mlsStaleHidden": [],
-  "realtylinkSnapshotCount": 4,
+  "realtylinkSnapshotCount": 8,
   "realtylinkSnapshotHighWaterMark": 10,
   "realtylinkSnapshotScope": "rent-3500-beds-2-4-whole-home-westside-v3",
-  "realtylinkRemovalEligible": false,
-  "mlsRemovalSuppressed": "Partial Realtylink snapshot (4 candidates versus previous complete 10); disappearance signals ignored.",
+  "realtylinkRemovalEligible": true,
   "mlsDuplicatesMerged": [],
   "canonicalFieldRepairsApplied": []
 }
