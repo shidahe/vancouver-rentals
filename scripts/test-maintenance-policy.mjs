@@ -630,6 +630,8 @@ if (!automationPolicy.autoPriceListingIds?.includes('w16-coach-house-850')) {
 }
 const refreshSafeSource = await fs.readFile(new URL('./refresh-safe.mjs', import.meta.url), 'utf8');
 const appSource = await fs.readFile(new URL('../app.js', import.meta.url), 'utf8');
+const uiImageCacheSource = await fs.readFile(new URL('../image-cache.js', import.meta.url), 'utf8');
+const photoResilienceSource = await fs.readFile(new URL('../photo-resilience.js', import.meta.url), 'utf8');
 const enforceScopeSource = await fs.readFile(new URL('./enforce-listing-scope.mjs', import.meta.url), 'utf8');
 if (!refreshSafeSource.includes('/^AUTO(?: live)? price update/i') ||
     !refreshSafeSource.includes("before.availabilityStatus === 'active'")) {
@@ -641,6 +643,9 @@ if (!enforceScopeSource.includes('delete listing.scopeExclusionReason') ||
 }
 if (!appSource.includes("message='No source photo is available'") ||
     !appSource.includes("linkLabel='Open source listing ↗'") ||
+    !uiImageCacheSource.includes("cacheLoaded ? 'No source photo is available'") ||
+    !uiImageCacheSource.includes('photo-placeholder photo-fallback') ||
+    !photoResilienceSource.includes("fallbackPhotoMarkup(l, 'Embedded photos could not be loaded', photoLabel(l))") ||
     !siteTestSource.includes('misleadingNoPhotoFallbacks')) {
   failures.push('Listings with no source photo can misleadingly claim that photos are available.');
 }

@@ -22,7 +22,7 @@
       img.style.display = 'none';
       if (nav) nav.style.display = 'none';
       if (!wrap.querySelector('.photo-fallback')) {
-        wrap.insertAdjacentHTML('afterbegin', fallbackPhotoMarkup(l, 'Embedded photos could not be loaded'));
+        wrap.insertAdjacentHTML('afterbegin', fallbackPhotoMarkup(l, 'Embedded photos could not be loaded', photoLabel(l)));
       }
     };
 
