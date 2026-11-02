@@ -19,7 +19,7 @@ window.LOCAL_IMAGE_CACHE = {};
     const target = l.photoPageUrl || l.url || '#';
     const message = cacheLoaded ? 'No source photo is available' : 'Loading photos…';
     const linkLabel = cacheLoaded ? 'Open source listing ↗' : 'Open source ↗';
-    return `<div class="photo-wrap"><div class="photo-placeholder photo-fallback"><strong>${l.buildingName || 'Rental listing'}</strong><span>${message}</span><a class="source-link photo-source-link" href="${target}" target="_blank" rel="noopener noreferrer">${linkLabel}</a></div></div>`;
+    return `<div class="photo-wrap"><div class="photo-placeholder photo-fallback"><strong>${l.buildingName || 'Rental listing'}</strong><span>${message}</span><a class="photo-source-link" href="${target}" target="_blank" rel="noopener noreferrer">${linkLabel}</a></div></div>`;
   };
 
   try {

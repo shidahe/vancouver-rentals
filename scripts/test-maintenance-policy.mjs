@@ -645,6 +645,8 @@ if (!appSource.includes("message='No source photo is available'") ||
     !appSource.includes("linkLabel='Open source listing ↗'") ||
     !uiImageCacheSource.includes("cacheLoaded ? 'No source photo is available'") ||
     !uiImageCacheSource.includes('photo-placeholder photo-fallback') ||
+    uiImageCacheSource.includes('class="source-link photo-source-link"') ||
+    !uiImageCacheSource.includes('class="photo-source-link"') ||
     !photoResilienceSource.includes("fallbackPhotoMarkup(l, 'Embedded photos could not be loaded', photoLabel(l))") ||
     !siteTestSource.includes('misleadingNoPhotoFallbacks')) {
   failures.push('Listings with no source photo can misleadingly claim that photos are available.');
