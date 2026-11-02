@@ -135,11 +135,13 @@ try {
   const photoAudit = await page.locator('.listing-card').evaluateAll(cards => cards.map(card => {
     const img = card.querySelector('.listing-photo');
     const fallback = card.querySelector('.photo-source-link');
-    return { id: card.dataset.id, hasImg: !!img, imgOk: !!img && img.complete && img.naturalWidth > 0, fallback: fallback?.getAttribute('href') || null };
+    return { id: card.dataset.id, hasImg: !!img, imgOk: !!img && img.complete && img.naturalWidth > 0, fallback: fallback?.getAttribute('href') || null, fallbackText: card.querySelector('.photo-fallback span')?.textContent?.trim() || null, fallbackLinkText: fallback?.textContent?.trim() || null };
   }));
   const badPhotos = photoAudit.filter(x => !x.imgOk && !(x.fallback && /^https:\/\//.test(x.fallback)));
+  const misleadingNoPhotoFallbacks = photoAudit.filter(x => !x.hasImg && x.fallback && (x.fallbackText !== 'No source photo is available' || x.fallbackLinkText !== 'Open source listing ↗'));
   report.checkpoints.photos = { total: photoAudit.length, loaded: photoAudit.filter(x => x.imgOk).length, fallbacks: photoAudit.filter(x => !x.imgOk && x.fallback).length, bad: badPhotos };
   assert(badPhotos.length === 0, `Listings with neither working image nor source fallback: ${JSON.stringify(badPhotos)}`);
+  assert(misleadingNoPhotoFallbacks.length === 0, `Listings without source photos use misleading fallback copy: ${JSON.stringify(misleadingNoPhotoFallbacks)}`);
 
   const markerTransforms = await page.locator('.leaflet-marker-icon.price-marker').evaluateAll(ms => ms.map(m => m.style.transform));
   const uniqueMarkerPositions = new Set(markerTransforms).size;

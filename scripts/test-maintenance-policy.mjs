@@ -629,6 +629,7 @@ if (!automationPolicy.autoPriceListingIds?.includes('w16-coach-house-850')) {
   failures.push('The exact single-unit Coach House source cannot publish its current verified price.');
 }
 const refreshSafeSource = await fs.readFile(new URL('./refresh-safe.mjs', import.meta.url), 'utf8');
+const appSource = await fs.readFile(new URL('../app.js', import.meta.url), 'utf8');
 const enforceScopeSource = await fs.readFile(new URL('./enforce-listing-scope.mjs', import.meta.url), 'utf8');
 if (!refreshSafeSource.includes('/^AUTO(?: live)? price update/i') ||
     !refreshSafeSource.includes("before.availabilityStatus === 'active'")) {
@@ -637,6 +638,11 @@ if (!refreshSafeSource.includes('/^AUTO(?: live)? price update/i') ||
 if (!enforceScopeSource.includes('delete listing.scopeExclusionReason') ||
     !enforceScopeSource.includes("listing.verificationLevel==='excluded_by_scope'")) {
   failures.push('A corrected active listing can retain contradictory stale scope-exclusion metadata.');
+}
+if (!appSource.includes("message='No source photo is available'") ||
+    !appSource.includes("linkLabel='Open source listing ↗'") ||
+    !siteTestSource.includes('misleadingNoPhotoFallbacks')) {
+  failures.push('Listings with no source photo can misleadingly claim that photos are available.');
 }
 if (!source.includes("media\\.realtylink\\.org\\/images\\/consumersite\\/property") || !source.includes('attachCandidateImages(imageSources')) {
   failures.push('Verified Realtylink inventory does not feed listing photos into the image cache.');
