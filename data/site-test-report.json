@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-11-02T16:03:21.153Z",
+  "checkedAt": "2026-11-02T16:17:31.523Z",
   "ok": false,
   "checkpoints": {
     "render": {
@@ -57,5 +57,5 @@
       "bad": []
     }
   },
-  "error": "Error: Listings without source photos use misleading fallback copy: [{\"id\":\"mls-r3179518\",\"hasImg\":false,\"imgOk\":false,\"fallback\":\"https://realtylink.org/en/house~for-rent~vancouver/263201145\",\"fallbackText\":null,\"fallbackLinkText\":\"Realtylink MLS ↗\"}]\n    at assert (file:///home/runner/work/vancouver-rentals/vancouver-rentals/scripts/test-site.mjs:10:50)\n    at file:///home/runner/work/vancouver-rentals/vancouver-rentals/scripts/test-site.mjs:144:3\n    at runNextTicks (node:internal/process/task_queues:64:5)\n    at process.processImmediate (node:internal/timers:452:9)\n    at process.callbackTrampoline (node:internal/async_hooks:130:17)"
+  "error": "Error: Listings without source photos use misleading fallback copy: [{\"id\":\"mls-r3179518\",\"hasImg\":false,\"imgOk\":false,\"fallback\":\"https://realtylink.org/en/house~for-rent~vancouver/263201145\",\"fallbackText\":\"No source photo is available\",\"fallbackLinkText\":\"Realtylink MLS ↗\"}]\n    at assert (file:///home/runner/work/vancouver-rentals/vancouver-rentals/scripts/test-site.mjs:10:50)\n    at file:///home/runner/work/vancouver-rentals/vancouver-rentals/scripts/test-site.mjs:144:3\n    at runNextTicks (node:internal/process/task_queues:64:5)\n    at process.processImmediate (node:internal/timers:452:9)\n    at process.callbackTrampoline (node:internal/async_hooks:130:17)"
 }
