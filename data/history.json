@@ -2606,6 +2606,11 @@
       "date": "2026-10-29",
       "rent": 15000,
       "note": "MERGED duplicate record mls-r3179104 under canonical MLS R3179104."
+    },
+    {
+      "date": "2026-11-02",
+      "rent": 15000,
+      "note": "AUTO-HIDDEN: auxiliary marketplace link became unavailable; MLS R3179104 requires authoritative confirmation before removal."
     }
   ],
   "mls-r3149267": [
@@ -3756,6 +3761,11 @@
       "date": "2026-11-01",
       "rent": 5500,
       "note": "EXCLUDED: house share or separately rented portion of a house."
+    },
+    {
+      "date": "2026-11-02",
+      "rent": 5500,
+      "note": "EXCLUDED: house share or separately rented portion of a house."
     }
   ],
   "mls-r3175318": [
@@ -3781,6 +3791,11 @@
     },
     {
       "date": "2026-10-24",
+      "rent": 4000,
+      "note": "CORRECTED: restored after exact current MLS detail matched identity, explicit availability and rent."
+    },
+    {
+      "date": "2026-11-02",
       "rent": 4000,
       "note": "CORRECTED: restored after exact current MLS detail matched identity, explicit availability and rent."
     }

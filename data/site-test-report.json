@@ -1,11 +1,11 @@
 {
-  "checkedAt": "2026-11-02T16:40:45.252Z",
+  "checkedAt": "2026-11-02T22:56:02.910Z",
   "ok": true,
   "checkpoints": {
     "render": {
       "title": "Vancouver Westside Rentals",
-      "cards": 23,
-      "shown": 23
+      "cards": 24,
+      "shown": 24
     },
     "stats": {
       "labels": [
@@ -16,16 +16,16 @@
         "Last refreshed"
       ],
       "values": [
-        "23",
+        "24",
         "4",
         "7",
-        "6",
-        "Nov 2, 8:30 a.m. PST"
+        "5",
+        "Nov 2, 2:46 p.m. PST"
       ],
-      "html": "<div class=\"stat\"><strong>23</strong><span>Active</span></div><div class=\"stat\"><strong>4</strong><span>New 7d</span></div><div class=\"stat\"><strong>7</strong><span>Price drops</span></div><div class=\"stat\"><strong>6</strong><span>To verify</span></div><div class=\"stat\"><strong>Nov 2, 8:30 a.m. PST</strong><span>Last refreshed</span></div>",
+      "html": "<div class=\"stat\"><strong>24</strong><span>Active</span></div><div class=\"stat\"><strong>4</strong><span>New 7d</span></div><div class=\"stat\"><strong>7</strong><span>Price drops</span></div><div class=\"stat\"><strong>5</strong><span>To verify</span></div><div class=\"stat\"><strong>Nov 2, 2:46 p.m. PST</strong><span>Last refreshed</span></div>",
       "refreshedAt": {
-        "displayed": "Nov 2, 8:30 a.m. PST",
-        "expected": "Nov 2, 8:30 a.m. PST",
+        "displayed": "Nov 2, 2:46 p.m. PST",
+        "expected": "Nov 2, 2:46 p.m. PST",
         "timezone": "America/Vancouver"
       },
       "newSevenDays": {
@@ -40,25 +40,25 @@
       }
     },
     "map": {
-      "markers": 23,
+      "markers": 24,
       "desktopMapVisible": true
     },
     "filters": "ok",
     "localStorage": {
       "favorite": true,
       "notes": true,
-      "firstId": "westward-unit-104"
+      "firstId": "arbutus-residences-floorplan-2-bedroom-townhouse-den-1340"
     },
-    "sourceLink": "https://www.rentfaster.ca/properties/2355-w-49th-avenue-vancouver-bc-v6m-0g1-vancouver-755998",
+    "sourceLink": "https://www.zumper.com/apartment-buildings/p1117150/arbutus-residences-quilchena-vancouver-bc",
     "photos": {
-      "total": 23,
-      "loaded": 22,
+      "total": 24,
+      "loaded": 23,
       "fallbacks": 1,
       "bad": []
     },
     "markerPositions": {
-      "total": 23,
-      "unique": 23
+      "total": 24,
+      "unique": 24
     },
     "dataEndpoints": "ok",
     "mobile": "ok",

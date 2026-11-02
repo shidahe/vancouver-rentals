@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-11-02T16:30:20.547Z",
+  "checkedAt": "2026-11-02T22:46:41.372Z",
   "listingId": "mls-r3175899",
   "sourceUrl": "https://www.craigslist.org/view/d/vancouver-bed-bath-apartment-at/s4HJHvnhSvtepoZicZoZam",
   "ok": true,
@@ -195,58 +195,58 @@
   ],
   "jsonLd": [
     {
-      "@context": "https://schema.org",
-      "@type": "BreadcrumbList",
       "itemListElement": [
         {
+          "@type": "ListItem",
           "position": 1,
-          "item": "https://www.craigslist.org/area/vancouver",
-          "@type": "ListItem",
-          "name": "craigslist: vancouver, BC"
+          "name": "craigslist: vancouver, BC",
+          "item": "https://www.craigslist.org/area/vancouver"
         },
         {
+          "@type": "ListItem",
           "item": "https://www.craigslist.org/subarea/van",
-          "position": 2,
-          "@type": "ListItem",
-          "name": "vancouver"
+          "name": "vancouver",
+          "position": 2
         },
         {
           "@type": "ListItem",
-          "name": "housing",
           "position": 3,
-          "item": "https://www.craigslist.org/search/subarea/van?cat=hhh"
+          "item": "https://www.craigslist.org/search/subarea/van?cat=hhh",
+          "name": "housing"
         },
         {
-          "name": "apartments / housing for rent",
-          "@type": "ListItem",
           "position": 4,
-          "item": "https://www.craigslist.org/search/subarea/van?cat=apa"
+          "name": "apartments / housing for rent",
+          "item": "https://www.craigslist.org/search/subarea/van?cat=apa",
+          "@type": "ListItem"
         },
         {
           "@type": "ListItem",
-          "name": "2 Bed 2 Bath Apartment at Highbury Place in Point Grey Vancouver",
           "position": 5,
+          "name": "2 Bed 2 Bath Apartment at Highbury Place in Point Grey Vancouver",
           "item": "https://www.craigslist.org/view/d/vancouver-bed-bath-apartment-at/s4HJHvnhSvtepoZicZoZam"
         }
-      ]
+      ],
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList"
     },
     {
+      "smokingAllowed": false,
+      "numberOfBedrooms": "2",
+      "numberOfBathroomsTotal": 2,
+      "@context": "http://schema.org",
       "@type": "Apartment",
+      "name": "2 Bed 2 Bath Apartment at Highbury Place in Point Grey Vancouver",
+      "latitude": "49.266600",
+      "longitude": "-123.197600",
       "address": {
         "addressCountry": "CA",
+        "postalCode": "V6R",
         "streetAddress": "",
         "addressRegion": "BC",
-        "postalCode": "V6R",
         "addressLocality": "Vancouver",
         "@type": "PostalAddress"
-      },
-      "numberOfBathroomsTotal": 2,
-      "latitude": "49.266600",
-      "smokingAllowed": false,
-      "name": "2 Bed 2 Bath Apartment at Highbury Place in Point Grey Vancouver",
-      "numberOfBedrooms": "2",
-      "longitude": "-123.197600",
-      "@context": "http://schema.org"
+      }
     }
   ],
   "images": [
@@ -270,7 +270,7 @@
     "https://map5.craigslist.org/t09/13/1291/2804.png",
     "https://map7.craigslist.org/t09/13/1293/2804.png"
   ],
-  "elapsedMs": 3119,
+  "elapsedMs": 3134,
   "identityMatch": true,
   "explicitNegative": false,
   "negativePhrase": null,

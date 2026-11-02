@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-11-02T16:38:51.788Z",
+  "refreshedAt": "2026-11-02T22:55:07.040Z",
   "groups": [
     {
       "identityKey": "4326 w 10th ave::url:e98ee8eee638",
@@ -50,18 +50,6 @@
       "result": "candidate_only"
     },
     {
-      "identityKey": "3000 w 44th ave::url:e02801d5a772",
-      "sources": [
-        "zumper"
-      ],
-      "rents": [
-        6000
-      ],
-      "exactUnit": false,
-      "matchedListingId": "zumper-1754927f090e",
-      "result": "candidate_only"
-    },
-    {
       "identityKey": "1078 nicola st::url:14ca0bb47fe4",
       "sources": [
         "zumper"
@@ -74,12 +62,84 @@
       "result": "candidate_only"
     },
     {
+      "identityKey": "3000 w 44th ave::url:e02801d5a772",
+      "sources": [
+        "zumper"
+      ],
+      "rents": [
+        6000
+      ],
+      "exactUnit": false,
+      "matchedListingId": "zumper-1754927f090e",
+      "result": "candidate_only"
+    },
+    {
       "identityKey": "2000 w 43rd ave::url:daba7b758265",
       "sources": [
         "zumper"
       ],
       "rents": [
         4500
+      ],
+      "exactUnit": false,
+      "matchedListingId": null,
+      "result": "candidate_only"
+    },
+    {
+      "identityKey": "2118 w 15 ave 2f::url:058dade452c9",
+      "sources": [
+        "craigslist"
+      ],
+      "rents": [
+        4800
+      ],
+      "exactUnit": false,
+      "matchedListingId": null,
+      "result": "candidate_only"
+    },
+    {
+      "identityKey": "1883 trimble st::url:83b56d5e4982",
+      "sources": [
+        "craigslist"
+      ],
+      "rents": [
+        13000
+      ],
+      "exactUnit": false,
+      "matchedListingId": null,
+      "result": "candidate_only"
+    },
+    {
+      "identityKey": "3750 w 17th ave::url:34bd5c762614",
+      "sources": [
+        "craigslist"
+      ],
+      "rents": [
+        3600
+      ],
+      "exactUnit": false,
+      "matchedListingId": null,
+      "result": "candidate_only"
+    },
+    {
+      "identityKey": "1777 w 7th ave::url:a9679b09464a",
+      "sources": [
+        "craigslist"
+      ],
+      "rents": [
+        3950
+      ],
+      "exactUnit": false,
+      "matchedListingId": null,
+      "result": "candidate_only"
+    },
+    {
+      "identityKey": "4588 w 2nd ave near tolmie st::url:66a0468c77c2",
+      "sources": [
+        "craigslist"
+      ],
+      "rents": [
+        15000
       ],
       "exactUnit": false,
       "matchedListingId": null,
@@ -158,66 +218,6 @@
       "result": "candidate_only"
     },
     {
-      "identityKey": "4588 w 2nd ave near tolmie st::url:8f6de7d97480",
-      "sources": [
-        "craigslist"
-      ],
-      "rents": [
-        15000
-      ],
-      "exactUnit": false,
-      "matchedListingId": null,
-      "result": "candidate_only"
-    },
-    {
-      "identityKey": "2118 w 15 ave 2f::url:2956c512e838",
-      "sources": [
-        "craigslist"
-      ],
-      "rents": [
-        4800
-      ],
-      "exactUnit": false,
-      "matchedListingId": null,
-      "result": "candidate_only"
-    },
-    {
-      "identityKey": "1777 w 7th ave::url:a9679b09464a",
-      "sources": [
-        "craigslist"
-      ],
-      "rents": [
-        3950
-      ],
-      "exactUnit": false,
-      "matchedListingId": null,
-      "result": "candidate_only"
-    },
-    {
-      "identityKey": "1883 trimble st::url:83b56d5e4982",
-      "sources": [
-        "craigslist"
-      ],
-      "rents": [
-        13000
-      ],
-      "exactUnit": false,
-      "matchedListingId": null,
-      "result": "candidate_only"
-    },
-    {
-      "identityKey": "3750 w 17th ave::url:34bd5c762614",
-      "sources": [
-        "craigslist"
-      ],
-      "rents": [
-        3600
-      ],
-      "exactUnit": false,
-      "matchedListingId": null,
-      "result": "candidate_only"
-    },
-    {
       "identityKey": "3000 w 17th ave::url:411612dab027",
       "sources": [
         "craigslist"
@@ -242,61 +242,74 @@
       "result": "authoritative_mls_reverified"
     },
     {
-      "identityKey": "mls:r3179104",
+      "identityKey": "mls:r3175599",
       "sources": [
         "realtylink mls"
       ],
       "rents": [
-        15000
+        4500
       ],
       "exactUnit": false,
-      "matchedListingId": "mls-r3159060",
+      "matchedListingId": "zumper-dd642aebb4f6",
       "result": "authoritative_mls_reverified"
     },
     {
-      "identityKey": "mls:r3163709",
+      "identityKey": "mls:r3175848",
       "sources": [
         "realtylink mls"
       ],
       "rents": [
-        5800
+        5500
       ],
       "exactUnit": false,
-      "matchedListingId": "mls-r3163709",
+      "matchedListingId": "mls-r3175848",
       "result": "authoritative_mls_reverified"
     },
     {
-      "identityKey": "mls:r3177685",
+      "identityKey": "mls:r3175318",
       "sources": [
         "realtylink mls"
       ],
       "rents": [
-        8500
+        4000
       ],
       "exactUnit": false,
-      "matchedListingId": "mls-r3177685",
+      "matchedListingId": "mls-r3175318",
       "result": "authoritative_mls_reverified"
     },
     {
-      "identityKey": "mls:r3151372",
+      "identityKey": "mls:r3167417",
       "sources": [
         "realtylink mls"
       ],
       "rents": [
-        4800
+        6750
+      ],
+      "exactUnit": true,
+      "matchedListingId": "mls-r3167417",
+      "result": "authoritative_mls_reverified"
+    },
+    {
+      "identityKey": "mls:r3174425",
+      "sources": [
+        "realtylink mls"
+      ],
+      "rents": [
+        14500
       ],
       "exactUnit": false,
-      "matchedListingId": "mls-r3151372",
+      "matchedListingId": "mls-r3174425",
       "result": "authoritative_mls_reverified"
     }
   ],
   "promoted": [],
   "crossVerified": [
     "zumper-16e9ae17cd91",
-    "mls-r3159060",
-    "mls-r3163709",
-    "mls-r3177685",
-    "mls-r3151372"
+    "zumper-dd642aebb4f6",
+    "mls-r3175848",
+    "mls-r3175318",
+    "mls-r3167417",
+    "mls-r3174425"
   ],
   "fingerprintCrossVerified": [],
   "craigslistRelistingsRecovered": [],
@@ -306,17 +319,17 @@
   "wholeHomeMlsRelistsMerged": [],
   "negativeMatches": [],
   "detailReactivated": [
-    "mls-r3163709"
+    "mls-r3175318"
   ],
   "auxiliaryMlsRemovalsRolledBack": [],
   "mlsMissing": {},
   "mlsRemoved": [],
   "mlsStaleHidden": [],
-  "realtylinkSnapshotCount": 5,
+  "realtylinkSnapshotCount": 6,
   "realtylinkSnapshotHighWaterMark": 10,
   "realtylinkSnapshotScope": "rent-3500-beds-2-4-whole-home-westside-v3",
   "realtylinkRemovalEligible": false,
-  "mlsRemovalSuppressed": "Partial Realtylink snapshot (5 candidates versus previous complete 10); disappearance signals ignored.",
+  "mlsRemovalSuppressed": "Partial Realtylink snapshot (6 candidates versus previous complete 10); disappearance signals ignored.",
   "mlsDuplicatesMerged": [],
   "canonicalFieldRepairsApplied": []
 }
