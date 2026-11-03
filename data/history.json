@@ -769,6 +769,11 @@
       "date": "2026-11-02",
       "rent": 5390,
       "note": "NEEDS CONFIRMATION: latest purpose-built fallback sources did not confirm the exact configured rent + sqft inventory row."
+    },
+    {
+      "date": "2026-11-03",
+      "rent": 5390,
+      "note": "NEEDS CONFIRMATION: latest purpose-built fallback sources did not confirm the exact configured rent + sqft inventory row."
     }
   ],
   "zumper-2fde865f7e2c": [
@@ -2136,6 +2141,11 @@
       "date": "2026-11-02",
       "rent": 3675,
       "note": "NEEDS CONFIRMATION: latest purpose-built fallback sources did not confirm the exact configured rent + sqft inventory row."
+    },
+    {
+      "date": "2026-11-03",
+      "rent": 3675,
+      "note": "NEEDS CONFIRMATION: latest purpose-built fallback sources did not confirm the exact configured rent + sqft inventory row."
     }
   ],
   "mls-r3160879": [
@@ -3448,6 +3458,21 @@
       "date": "2026-11-01",
       "rent": 5695,
       "note": "Auto-hidden: exact live detail was not reverified within 48 hours."
+    },
+    {
+      "date": "2026-11-03",
+      "rent": 4595,
+      "note": "RELISTED: exact current Zumper detail again shows active availability."
+    },
+    {
+      "date": "2026-11-03",
+      "rent": 4595,
+      "note": "CORRECTED from exact current Zumper advertiser facts: bedrooms 3 → 2, bathrooms 3 → 1, sqft 1050 → 950."
+    },
+    {
+      "date": "2026-11-03",
+      "rent": 4595,
+      "note": "AUTO Zumper live price update $5695 → $4595."
     }
   ],
   "mls-r3169522": [
@@ -3995,6 +4020,13 @@
       "date": "2026-11-01",
       "rent": 7000,
       "note": "NEW: live Realtylink MLS R3179518 auto-published."
+    }
+  ],
+  "the-ridge-unit-202": [
+    {
+      "date": "2026-11-03",
+      "rent": 4800,
+      "note": "AUTO-PUBLISHED after strict live detail-page verification."
     }
   ]
 }

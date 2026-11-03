@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-11-02T22:46:41.372Z",
+  "checkedAt": "2026-11-03T15:59:23.394Z",
   "listingId": "zumper-dd642aebb4f6",
   "sourceUrl": "https://realtylink.org/en/house~for-rent~vancouver/263197226",
   "ok": true,
@@ -422,13 +422,13 @@
     "https://media.realtylink.org/images/consumersite/member/1V83783/c21d4300a19740139d07b8ace158ec1b.jpeg?width=190&height=220&fit=cover",
     "https://cdn.realtylink.org/public/bc/consumersite/images/logos/powered-by-centris.svg"
   ],
-  "elapsedMs": 3559,
+  "elapsedMs": 3495,
   "identityMatch": true,
   "explicitNegative": false,
   "negativePhrase": null,
   "negativeNeedsConfirmation": false,
-  "explicitPositive": false,
-  "positivePhrase": null,
+  "explicitPositive": true,
+  "positivePhrase": "/available\\s*[:\\-]?\\s*(?:immediately|[a-z]{3,9}\\s+\\d{1,2})/i",
   "extractedRent": 4500,
   "exactFloorplanMatch": null,
   "facts": {
