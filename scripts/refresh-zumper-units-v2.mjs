@@ -4,7 +4,7 @@ import crypto from 'node:crypto';
 import { chromium } from 'playwright';
 import { listingScopeEligible } from './discovery-policy.mjs';
 import { hasCurrentMarketplaceAvailability } from './listing-availability.mjs';
-import { zumperPetFriendly, zumperPropertyType, zumperRoomCount, zumperUnitRent, zumperUnitToken } from './zumper-pet-policy.mjs';
+import { zumperPetFriendly, zumperPropertyType, zumperRoomCount, zumperUnitCards, zumperUnitRent, zumperUnitToken } from './zumper-pet-policy.mjs';
 
 const DATA = path.join(process.cwd(), 'data');
 const EVIDENCE = path.join(DATA, 'evidence');
@@ -90,10 +90,13 @@ function extract(ld, text, url) {
   if (!unit) unit = unitToken(zumperUnitToken(desc, split.street));
   const address = `${split.street}, ${a.addressLocality || 'Vancouver'}, ${a.addressRegion || 'BC'}${a.postalCode && a.postalCode !== 'None' ? ` ${a.postalCode}` : ''}`;
   const offer = Array.isArray(product?.offers) ? product.offers[0] : product?.offers;
-  const rent = zumperUnitRent(text, unit) || money(offer?.price) || money(offer?.lowPrice) || money(offer?.highPrice);
-  const bedrooms = zumperRoomCount(home?.description, text, product?.description, 'bedroom');
-  const bathrooms = zumperRoomCount(home?.description, text, product?.description, 'bathroom');
-  const sqft = Number(String(home?.floorSize || '').match(/([0-9]{3,4})/)?.[1] || desc.match(/\b([7-9][0-9]{2}|1[0-9]{3}|2[0-9]{3})\s*(?:sq\.?\s*ft|sqft|sqt|ft²|square feet)\b/i)?.[1] || 0) || null;
+  const unitCards = zumperUnitCards(text);
+  const exactCard = unit ? unitCards.find(card => card.unit === unit) : null;
+  if (unit && unitCards.length > 1 && !exactCard) return null;
+  const rent = exactCard?.rent || zumperUnitRent(text, unit) || money(offer?.price) || money(offer?.lowPrice) || money(offer?.highPrice);
+  const bedrooms = exactCard?.bedrooms || zumperRoomCount(home?.description, text, product?.description, 'bedroom');
+  const bathrooms = exactCard?.bathrooms || zumperRoomCount(home?.description, text, product?.description, 'bathroom');
+  const sqft = exactCard?.sqft || Number(String(home?.floorSize || '').match(/([0-9]{3,4})/)?.[1] || desc.match(/\b([7-9][0-9]{2}|1[0-9]{3}|2[0-9]{3})\s*(?:sq\.?\s*ft|sqft|sqt|ft²|square feet)\b/i)?.[1] || 0) || null;
   const geo = home?.geo || all.find(x => x.geo)?.geo;
   const lat = Number(geo?.latitude), lng = Number(geo?.longitude);
   const exactGeo = Number.isFinite(lat) && Number.isFinite(lng) ? {lat,lng} : null;
@@ -102,7 +105,7 @@ function extract(ld, text, url) {
   all.forEach(x => Array.isArray(x.image) ? x.image.forEach(add) : add(x.image));
   const live = hasCurrentMarketplaceAvailability(text);
   const listingAreaText = [address, home?.description, product?.description].filter(Boolean).join('\n');
-  return {url,address,unit,rent,bedrooms,bathrooms,sqft,exactGeo,images:images.slice(0,16),live,description:desc.slice(0,6000),listingAreaText,type:zumperPropertyType(home,text),orientation:orient(desc),ac:/air conditioning|air conditioned|central a\/c|central ac/i.test(desc)?true:null,parking:/assigned parking|parking included|parking spot|one parking|1 parking/i.test(desc)?true:null,petFriendly:zumperPetFriendly(home,desc),balcony:/balcony|private patio|patio/i.test(desc)?true:null,largeWindows:/large windows|floor.to.ceiling windows|sun.drenched|naturally bright/i.test(desc)?true:null,modernInterior:/miele|fisher\s*&\s*paykel|caesarstone|quartz|renovated|waterfall island|modern/i.test(desc)?true:null};
+  return {url,address,unit,rent,bedrooms,bathrooms,sqft,unitCards,exactGeo,images:images.slice(0,16),live,description:desc.slice(0,6000),listingAreaText,type:zumperPropertyType(home,text),orientation:orient(desc),ac:/air conditioning|air conditioned|central a\/c|central ac/i.test(desc)?true:null,parking:/assigned parking|parking included|parking spot|one parking|1 parking/i.test(desc)?true:null,petFriendly:zumperPetFriendly(home,desc),balcony:/balcony|private patio|patio/i.test(desc)?true:null,largeWindows:/large windows|floor.to.ceiling windows|sun.drenched|naturally bright/i.test(desc)?true:null,modernInterior:/miele|fisher\s*&\s*paykel|caesarstone|quartz|renovated|waterfall island|modern/i.test(desc)?true:null};
 }
 
 const lp = path.join(DATA,'listings.json'), hp = path.join(DATA,'history.json'), sp = path.join(DATA,'live-sources.json'), ip = path.join(DATA,'image-sources.json'), cp = path.join(DATA,'candidates.json');
@@ -139,10 +142,16 @@ for(const url of [...urls].slice(0,120)) {
     const text=await page.locator('body').innerText({timeout:10000});
     const raws=await page.locator('script[type="application/ld+json"]').evaluateAll(ns=>ns.map(n=>n.textContent||'').slice(0,50));
     const ld=[]; for(const raw of raws){try{ld.push(JSON.parse(raw))}catch{}}
-    const x=extract(ld,text,url);
-    if(!x||!x.live||!listingScopeEligible(x,x.description)||!targetArea(x.exactGeo)||explicitlyOutOfScope(x.listingAreaText)) continue;
-    x.identityKey=identityKey(x); found.push(x);
-    await write(path.join(EVIDENCE,`zumper-v3-${hash(x.identityKey)}.json`),{checkedAt:iso,identityKey:x.identityKey,facts:x,jsonLd:ld.slice(0,8)});
+    const base=extract(ld,text,url);
+    if(!base||!base.live||!targetArea(base.exactGeo)||explicitlyOutOfScope(base.listingAreaText)) continue;
+    const inventories=!base.unit&&base.unitCards.length>1
+      ? base.unitCards.map(card=>({...base,...card,unitCards:undefined}))
+      : [base];
+    for(const x of inventories){
+      if(!listingScopeEligible(x,x.description)) continue;
+      x.identityKey=identityKey(x); found.push(x);
+      await write(path.join(EVIDENCE,`zumper-v3-${hash(x.identityKey)}.json`),{checkedAt:iso,identityKey:x.identityKey,facts:x,jsonLd:ld.slice(0,8)});
+    }
   } catch {}
 }
 await browser.close();
@@ -159,7 +168,9 @@ for(const c of found){
   // An authoritative source can add a previously hidden unit/MLS identity to a
   // URL-only marketplace listing. Keep matching the same exact detail URL so a
   // later Zumper refresh cannot recreate the old ID and discard stronger facts.
-  let x=byKey.get(c.identityKey)||byUrl.get(c.url);
+  const urlMatch=byUrl.get(c.url);
+  const exactUrlMatch=!c.unit||!listingUnit(urlMatch)||listingUnit(urlMatch)===c.unit ? urlMatch : null;
+  let x=byKey.get(c.identityKey)||exactUrlMatch;
   const id=x?.id||`zumper-${hash(c.identityKey)}`;
   if(!x){
     x={id,buildingName:null,unit:c.unit||null,address:c.address,neighborhood:/kitsilano/i.test(c.description)?'Kitsilano':/point grey/i.test(c.description)?'Point Grey':/dunbar/i.test(c.description)?'Dunbar':/arbutus/i.test(c.description)?'Arbutus Ridge':'Vancouver West',lat:c.exactGeo.lat,lng:c.exactGeo.lng,type:c.type,rent:c.rent,effectiveRent:null,bedrooms:c.bedrooms,bathrooms:c.bathrooms,sqft:c.sqft,ac:c.ac,parking:c.parking,petFriendly:c.petFriendly,buildingYear:null,orientation:c.orientation,balcony:c.balcony,largeWindows:c.largeWindows,modernInterior:c.modernInterior,source:'Zumper live detail',url:c.url,photoPageUrl:c.url,firstSeen:today,lastChecked:today,verifiedAt:iso,verificationLevel:'verified',verificationMethod:`AUTO-PUBLISHED from exact live Zumper detail; ${c.identityKey}`,availabilityStatus:'active',status:'new',priceDrop:false,dataNotes:c.unit?'Independent unit identity: canonical address + unit.':'Independent inventory identity: canonical address + exact detail URL (unit not public).'};

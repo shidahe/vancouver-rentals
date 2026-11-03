@@ -58,6 +58,23 @@ export function zumperUnitToken(description = '', street = '') {
   return token && token !== civic ? token : null;
 }
 
+export function zumperUnitCards(pageText = '') {
+  const lines = String(pageText || '').split(/\r?\n/).map(line => line.trim()).filter(Boolean);
+  const cards = new Map();
+  for (let index = 0; index < lines.length; index += 1) {
+    const unit = lines[index].match(/^#?((?=[A-Za-z0-9-]*\d)[A-Za-z0-9-]{1,12})$/)?.[1]?.toUpperCase();
+    if (!unit) continue;
+    const block = lines.slice(index + 1, index + 14).join('\n');
+    const bedrooms = Number(block.match(/\b([1-5](?:\.5)?)\s*(?:bedrooms?|beds?|br)\b/i)?.[1] || 0) || null;
+    const bathrooms = Number(block.match(/\b([1-5](?:\.5)?)\s*(?:bathrooms?|baths?|ba)\b/i)?.[1] || 0) || null;
+    const sqft = Number((block.match(/\b([0-9]{1,2}(?:,[0-9]{3})|[0-9]{3,4})\s*(?:sq\.?\s*ft|sqft|ft²|square feet)\b/i)?.[1] || '').replace(',', '')) || null;
+    const rent = Number((block.match(/(?:^|\n)\$\s*([0-9]{1,2}(?:,[0-9]{3})?)(?:\s|$)/)?.[1] || '').replace(',', '')) || null;
+    if (!bedrooms || !bathrooms || !sqft || rent < 2500 || rent > 12000) continue;
+    cards.set(unit, { unit, rent, bedrooms, bathrooms, sqft });
+  }
+  return [...cards.values()];
+}
+
 export function zumperUnitRent(pageText = '', unit = '') {
   const token = String(unit || '').trim().replace(/^#/, '');
   if (!token || !/^(?=[A-Za-z0-9-]*\d)[A-Za-z0-9-]{1,12}$/.test(token)) return null;

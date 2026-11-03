@@ -16,7 +16,7 @@ import { craigslistAddressPrecision, craigslistDescriptionCivicAddress, craigsli
 import { classifyRentalsCaSearchLead, parseRentalsCaSearchLeads, rentalsCaSearchLeadScopeEligible } from './rentalsca-search-parser.mjs';
 import { craigslistSeedRelistingMatch } from './craigslist-seed-relisting.mjs';
 import { craigslistCrossSourcePriceMatch } from './craigslist-cross-source-match.mjs';
-import { zumperPetFriendly, zumperPropertyType, zumperRoomCount, zumperUnitRent, zumperUnitToken } from './zumper-pet-policy.mjs';
+import { zumperPetFriendly, zumperPropertyType, zumperRoomCount, zumperUnitCards, zumperUnitRent, zumperUnitToken } from './zumper-pet-policy.mjs';
 import { wholeHomeMlsRelistMatch } from './mls-relisting.mjs';
 
 const read = p => fs.readFile(p, 'utf8');
@@ -37,6 +37,7 @@ const scopeSource = await read('scripts/enforce-listing-scope.mjs');
 const imageCacheWorkflow = await read('.github/workflows/cache-listing-images.yml');
 const refreshWorkflow = await read('.github/workflows/refresh-listings.yml');
 const catalog = JSON.parse(await read('data/live-sources.json'));
+const failures = [];
 const highbury203 = catalog.seedCandidates?.find(x => x.id === 'realtor-highbury-place-203-r3175899');
 if (highbury203?.listingId !== 'mls-r3175899' || highbury203?.mls !== 'R3175899' || highbury203?.unit !== '203' ||
     highbury203?.expectedBeds !== 2 || highbury203?.hints?.bathrooms !== 2 || highbury203?.hints?.sqft !== 1046 || !highbury203?.autoPublish ||
@@ -73,7 +74,6 @@ const readinessFinalizerSource = await read('scripts/finalize-readiness.mjs');
 const scopeCrossSourceEvidence = JSON.parse(await read('data/scope-cross-source-evidence.json'));
 const automationPolicy = JSON.parse(await read('data/automation-policy.json'));
 
-const failures = [];
 if (!refreshWorkflow.includes("cron: '17 14 * * *'") || refreshWorkflow.includes('*/6')) {
   failures.push('Rental refresh schedule must remain daily so MLS disappearance confirmation spans daily observations.');
 }
@@ -194,8 +194,36 @@ if (zumperUnitRent(kitsCourtMultiUnit, '313') !== 3600 ||
     zumperUnitRent(kitsCourtMultiUnit, '999') !== null ||
     firstLikelyRent(kitsCourtMultiUnit, [{offers:{lowPrice:2700,highPrice:3600}}], '313') !== 3600 ||
     parseFacts(kitsCourtMultiUnit, '313').bathrooms !== 1 ||
-    !source.includes('explicitlyOutOfScope(x.listingAreaText)')) {
+    !source.includes('explicitlyOutOfScope(base.listingAreaText)')) {
   failures.push('Zumper exact-unit rent is not isolated from a multi-unit AggregateOffer.');
+}
+const westThirdMultiUnit = `Units
+2814 West 3rd Avenue, Vancouver, BC
+NEW LISTING
+3
+1 Bed
+1 Bath
+525 sqft
+$3,495
+NEW LISTING
+5
+2 Beds
+1 Bath
+950 sqft
+$4,595
+NEW LISTING
+7
+3 Beds
+1.5 Baths
+1,050 sqft
+$5,595`;
+const westThirdCards = zumperUnitCards(westThirdMultiUnit);
+if (JSON.stringify(westThirdCards) !== JSON.stringify([
+  {unit:'3',rent:3495,bedrooms:1,bathrooms:1,sqft:525},
+  {unit:'5',rent:4595,bedrooms:2,bathrooms:1,sqft:950},
+  {unit:'7',rent:5595,bedrooms:3,bathrooms:1.5,sqft:1050}
+]) || !source.includes('listingUnit(urlMatch)===c.unit')) {
+  failures.push('2814 W 3rd regression: a multi-unit Zumper page can bind Unit 5 facts to Unit 7 or suppress an eligible exact unit.');
 }
 if(!source.includes('if(consecutiveBlocked>=3)')||!source.includes('diagnostics.searchesSuppressed=searchSources.length-diagnostics.searchesChecked')||!coverageSource.includes('blocked searches opened circuit'))failures.push('liv.rent repeated 403/429 search suppression or its coverage diagnostic can silently regress.');
 if(realtylinkSnapshotBaseline({previousBaseline:6,currentCount:5,sameScope:true})!==6||
@@ -672,7 +700,8 @@ if (!source.includes("media\\.realtylink\\.org\\/images\\/consumersite\\/propert
 if (!source.includes('listing.sqft=sqft(authoritativeMls)') || !source.includes('uniqueListings')) {
   failures.push('Authoritative Realtylink fact refresh or duplicate-ID cleanup is missing.');
 }
-if (!source.includes('byKey.get(c.identityKey)||byUrl.get(c.url)')) {
+if (!source.includes('byKey.get(c.identityKey)||exactUrlMatch') ||
+    !source.includes('listingUnit(urlMatch)===c.unit')) {
   failures.push('A URL-only marketplace refresh can discard a stronger MLS unit identity.');
 }
 if (!source.includes('MERGED into ${x.id}:') || !source.includes('x.mlsInventoryManaged=false')) {
