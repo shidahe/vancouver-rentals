@@ -677,7 +677,8 @@ const uiImageCacheSource = await fs.readFile(new URL('../image-cache.js', import
 const photoResilienceSource = await fs.readFile(new URL('../photo-resilience.js', import.meta.url), 'utf8');
 const enforceScopeSource = await fs.readFile(new URL('./enforce-listing-scope.mjs', import.meta.url), 'utf8');
 if (!appSource.includes('function markerCoordinate(listing,data)') ||
-    !appSource.includes('L.marker(markerCoordinate(l,data)')) {
+    !appSource.includes('function collisionFreeMarkerCoordinate(listing,data,occupied)') ||
+    !appSource.includes('L.marker(collisionFreeMarkerCoordinate(l,data,occupied)')) {
   failures.push('Exact units sharing one building coordinate can collapse into an unclickable overlapping map marker.');
 }
 if (!refreshSafeSource.includes('/^AUTO(?: live)? price update/i') ||
