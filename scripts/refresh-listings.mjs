@@ -43,7 +43,7 @@ const strongPositivePatterns = [
   /now renting/i,
   /check availability/i,
   /request (?:a )?tour/i,
-  /available\s+(?:immediately|[a-z]{3,9}\s+\d{1,2})/i
+  /available\s*[:\-]?\s*(?:immediately|[a-z]{3,9}\s+\d{1,2})/i
 ];
 
 function identityTokens(item) {

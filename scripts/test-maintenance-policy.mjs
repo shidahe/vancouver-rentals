@@ -45,7 +45,22 @@ if (highbury203?.listingId !== 'mls-r3175899' || highbury203?.mls !== 'R3175899'
     !highbury203.supportingUrls.some(url => /realtor\.ca\/real-estate\/30408620/i.test(url)) || highbury203?.hints?.petFriendly !== false) {
   failures.push('Highbury Place #203 exact IDX regression seed is missing or no longer preserves its MLS identity and current 2BR facts.');
 }
+const theRidge202 = catalog.seedCandidates?.find(x => x.id === 'noble-the-ridge-202');
+if (theRidge202?.listingId !== 'the-ridge-unit-202' || theRidge202?.unit !== '202' || theRidge202?.expectedBeds !== 2 ||
+    !theRidge202?.autoPublish || theRidge202?.hints?.bathrooms !== 2.5 || theRidge202?.hints?.sqft !== 1325 ||
+    theRidge202?.hints?.ac !== true || theRidge202?.hints?.parking !== 2 || theRidge202?.hints?.petFriendly !== true ||
+    !/noblehomes\.ca\/en\/listing_detail\/c43e8984-7b57-e711-8121-e0071b6ad011/i.test(theRidge202?.url || '') ||
+    !theRidge202?.supportingUrls?.some(url => /craigslist\.org\/view\/d\/vancouver-luxury-living-in-spacious\/qdUgEivJQPATZatgVhczt4/i.test(url))) {
+  failures.push('The Ridge #202 official-property-manager seed can regress and leave a repeatedly discovered current 2BR home unpublished.');
+}
 const refreshListingsSource=await fs.readFile('scripts/refresh-listings.mjs','utf8');
+const theRidgeOfficialFixture = 'Unit 202 2118 West 15th Avenue $4,800/month Available: Nov 1, 2026 2 Bedrooms 2.5 Bathrooms 1,325 sq.ft 2 Parking Pets allowed A/C';
+const theRidgeOfficialFacts = parseFacts(theRidgeOfficialFixture, '202');
+if (firstLikelyRent(theRidgeOfficialFixture, [], '202') !== 4800 || theRidgeOfficialFacts.bedrooms !== 2 ||
+    theRidgeOfficialFacts.bathrooms !== 2.5 || theRidgeOfficialFacts.sqft !== 1325 || theRidgeOfficialFacts.petFriendly !== true ||
+    !refreshListingsSource.includes('/available\\s*[:\\-]?\\s*(?:immediately|[a-z]{3,9}\\s+\\d{1,2})/i')) {
+  failures.push(`The Ridge #202 official page facts or colon-delimited availability parse incorrectly: rent=${firstLikelyRent(theRidgeOfficialFixture, [], '202')}, facts=${JSON.stringify(theRidgeOfficialFacts)}`);
+}
 if(!refreshListingsSource.includes('existing.mls = seed.mls')||!refreshListingsSource.includes('mls: seed.mls || undefined')||
    !refreshListingsSource.includes('mlsInventoryManaged: seed.mls ? false : undefined')) failures.push('Exact IDX seeds no longer retain MLS as canonical identity without inheriting partial-Realtylink lifecycle semantics.');
 const officialWatch = JSON.parse(await read('data/official-watch.json'));

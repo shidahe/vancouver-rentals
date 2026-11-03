@@ -68,14 +68,14 @@ export function parseFacts(text = '', unit = '') {
     .replace(/([A-Za-z])(\d)/g, '$1 $2');
   const beds = spaced.match(/\b([1-5](?:\.5)?)\s*(?:bedrooms?|beds?|br)\b/i) || spaced.match(/\b(two|three|four|five)\s+bedrooms?\b/i);
   const baths = spaced.match(/\b([1-5](?:\.5)?)\s*(?:bathrooms?|baths?|ba)\b/i);
-  const sqft = spaced.match(/\b([3-9][0-9]{2}|[1-9][0-9]{3})\s*(?:sq\.?\s*ft|sqft|ft²|square feet)\b/i);
+  const sqft = spaced.match(/\b([1-9][0-9]?,[0-9]{3}|[3-9][0-9]{2}|[1-9][0-9]{3})\s*(?:sq\.?\s*ft|sqft|ft²|square feet)\b/i);
   const year = spaced.match(/(?:year built|built in|built)\s*[:\-]?\s*(19[5-9][0-9]|20[0-2][0-9])/i);
   const orientation = spaced.match(/\b(north(?:east|west)?|south(?:east|west)?|east|west)[- ]facing\b/i)?.[1] || null;
   const wordNum = value => ({ two: 2, three: 3, four: 4, five: 5 }[value] ?? Number(value));
   return {
     bedrooms: beds ? wordNum(beds[1].toLowerCase()) : null,
     bathrooms: baths ? Number(baths[1]) : null,
-    sqft: sqft ? Number(sqft[1]) : null,
+    sqft: sqft ? Number(sqft[1].replace(',', '')) : null,
     buildingYear: year ? Number(year[1]) : null,
     ac: /\b(?:air conditioning|air conditioned|central ac|central a\/c)\b/i.test(spaced) ? true : null,
     parking: /\b(?:assigned parking|parking included|1 parking|one parking|parking spot)\b/i.test(spaced) ? true : null,
