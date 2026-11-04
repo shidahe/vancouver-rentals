@@ -685,10 +685,11 @@ if (!appSource.includes('function scheduleMarkerCollisionRepair()') ||
     !appSource.includes("state.map.on('zoomend moveend',scheduleMarkerCollisionRepair)") ||
     !appSource.includes('requestAnimationFrame(()=>requestAnimationFrame(()=>{') ||
     !appSource.includes('setTimeout(resolveRenderedMarkerCollisions,120)') ||
-    !appSource.includes("element.style.transform.replace(/ translate\\\\(-?\\\\d+px, -?\\\\d+px\\\\)$/,'')") ||
+    !appSource.includes("document.querySelectorAll('.leaflet-marker-icon.price-marker')") ||
+    !appSource.includes("element.style.transform.replace(/ translate\\(-?\\d+px, -?\\d+px\\)$/,'')") ||
     !appSource.includes('element.style.transform=`${base} translate(') ||
     !appSource.includes('scheduleMarkerCollisionRepair()}')) {
-  failures.push('Map markers do not idempotently repair final Leaflet-rendered pixel collisions after layout settles.');
+  failures.push('Map markers do not idempotently repair every rendered Leaflet marker after layout settles.');
 }
 if (!refreshSafeSource.includes('/^AUTO(?: live)? price update/i') ||
     !refreshSafeSource.includes("before.availabilityStatus === 'active'")) {
