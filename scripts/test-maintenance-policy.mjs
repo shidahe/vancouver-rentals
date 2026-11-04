@@ -683,10 +683,12 @@ if (!appSource.includes('function markerCoordinate(listing,data)') ||
 }
 if (!appSource.includes('function scheduleMarkerCollisionRepair()') ||
     !appSource.includes("state.map.on('zoomend moveend',scheduleMarkerCollisionRepair)") ||
-    !appSource.includes('requestAnimationFrame(()=>{') ||
-    !appSource.includes('element.style.transform=`${key} translate(') ||
+    !appSource.includes('requestAnimationFrame(()=>requestAnimationFrame(()=>{') ||
+    !appSource.includes('setTimeout(resolveRenderedMarkerCollisions,120)') ||
+    !appSource.includes("element.style.transform.replace(/ translate\\\\(-?\\\\d+px, -?\\\\d+px\\\\)$/,'')") ||
+    !appSource.includes('element.style.transform=`${base} translate(') ||
     !appSource.includes('scheduleMarkerCollisionRepair()}')) {
-  failures.push('Map markers do not verify and repair final Leaflet-rendered pixel collisions.');
+  failures.push('Map markers do not idempotently repair final Leaflet-rendered pixel collisions after layout settles.');
 }
 if (!refreshSafeSource.includes('/^AUTO(?: live)? price update/i') ||
     !refreshSafeSource.includes("before.availabilityStatus === 'active'")) {
