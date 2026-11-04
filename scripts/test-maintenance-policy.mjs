@@ -678,8 +678,10 @@ const photoResilienceSource = await fs.readFile(new URL('../photo-resilience.js'
 const enforceScopeSource = await fs.readFile(new URL('./enforce-listing-scope.mjs', import.meta.url), 'utf8');
 if (!appSource.includes('function markerCoordinate(listing,data)') ||
     !appSource.includes('function collisionFreeMarkerCoordinate(listing,data,occupied)') ||
+    !appSource.includes('existing.distanceTo(point)<18') ||
+    !appSource.includes('const occupied=[];') ||
     !appSource.includes('L.marker(collisionFreeMarkerCoordinate(l,data,occupied)')) {
-  failures.push('Exact units sharing one building coordinate can collapse into an unclickable overlapping map marker.');
+  failures.push('Exact or nearby units can collapse into unclickable overlapping map markers instead of maintaining 18px separation.');
 }
 if (!appSource.includes('function scheduleMarkerCollisionRepair()') ||
     !appSource.includes("state.map.on('zoomend moveend',scheduleMarkerCollisionRepair)") ||
