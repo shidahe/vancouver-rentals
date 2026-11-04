@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-11-03T17:06:38.667Z",
+  "checkedAt": "2026-11-04T16:26:07.295Z",
   "ok": true,
   "checkpoints": {
     "render": {
@@ -17,22 +17,21 @@
       ],
       "values": [
         "26",
-        "4",
+        "3",
         "8",
         "4",
         "Nov 3, 7:59 a.m. PST"
       ],
-      "html": "<div class=\"stat\"><strong>26</strong><span>Active</span></div><div class=\"stat\"><strong>4</strong><span>New 7d</span></div><div class=\"stat\"><strong>8</strong><span>Price drops</span></div><div class=\"stat\"><strong>4</strong><span>To verify</span></div><div class=\"stat\"><strong>Nov 3, 7:59 a.m. PST</strong><span>Last refreshed</span></div>",
+      "html": "<div class=\"stat\"><strong>26</strong><span>Active</span></div><div class=\"stat\"><strong>3</strong><span>New 7d</span></div><div class=\"stat\"><strong>8</strong><span>Price drops</span></div><div class=\"stat\"><strong>4</strong><span>To verify</span></div><div class=\"stat\"><strong>Nov 3, 7:59 a.m. PST</strong><span>Last refreshed</span></div>",
       "refreshedAt": {
         "displayed": "Nov 3, 7:59 a.m. PST",
         "expected": "Nov 3, 7:59 a.m. PST",
         "timezone": "America/Vancouver"
       },
       "newSevenDays": {
-        "expectedCount": 4,
+        "expectedCount": 3,
         "badgeIds": [
           "the-ridge-unit-202",
-          "mls-r3175899",
           "mls-r3179518",
           "zumper-0116ae25a82f"
         ],
