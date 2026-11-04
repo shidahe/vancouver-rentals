@@ -681,9 +681,11 @@ if (!appSource.includes('function markerCoordinate(listing,data)') ||
     !appSource.includes('L.marker(collisionFreeMarkerCoordinate(l,data,occupied)')) {
   failures.push('Exact units sharing one building coordinate can collapse into an unclickable overlapping map marker.');
 }
-if (!appSource.includes('function resolveRenderedMarkerCollisions()') ||
-    !appSource.includes('element.style.transform') ||
-    !appSource.includes('resolveRenderedMarkerCollisions()}')) {
+if (!appSource.includes('function scheduleMarkerCollisionRepair()') ||
+    !appSource.includes("state.map.on('zoomend moveend',scheduleMarkerCollisionRepair)") ||
+    !appSource.includes('requestAnimationFrame(()=>{') ||
+    !appSource.includes('element.style.transform=`${key} translate(') ||
+    !appSource.includes('scheduleMarkerCollisionRepair()}')) {
   failures.push('Map markers do not verify and repair final Leaflet-rendered pixel collisions.');
 }
 if (!refreshSafeSource.includes('/^AUTO(?: live)? price update/i') ||
