@@ -681,6 +681,11 @@ if (!appSource.includes('function markerCoordinate(listing,data)') ||
     !appSource.includes('L.marker(collisionFreeMarkerCoordinate(l,data,occupied)')) {
   failures.push('Exact units sharing one building coordinate can collapse into an unclickable overlapping map marker.');
 }
+if (!appSource.includes('function resolveRenderedMarkerCollisions()') ||
+    !appSource.includes('element.style.transform') ||
+    !appSource.includes('resolveRenderedMarkerCollisions()}')) {
+  failures.push('Map markers do not verify and repair final Leaflet-rendered pixel collisions.');
+}
 if (!refreshSafeSource.includes('/^AUTO(?: live)? price update/i') ||
     !refreshSafeSource.includes("before.availabilityStatus === 'active'")) {
   failures.push('Rejected live price changes can leave misleading history events behind.');
