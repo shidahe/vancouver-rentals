@@ -391,6 +391,7 @@ for (const seed of sources.seedCandidates || []) {
         existing.sunlightEvidence = facts.sunlightEvidence ?? existing.sunlightEvidence;
         existing.orientationEvidence = facts.orientationEvidence ?? existing.orientationEvidence;
         existing.viewQuality = facts.viewQuality ?? existing.viewQuality;
+        existing.privateTerraceSqft = facts.privateTerraceSqft ?? existing.privateTerraceSqft;
         existing.balcony = facts.balcony ?? existing.balcony;
         existing.buildingYear = facts.buildingYear ?? existing.buildingYear;
         existing.largeWindows = facts.largeWindows ?? existing.largeWindows;
@@ -433,6 +434,7 @@ for (const seed of sources.seedCandidates || []) {
           sunlightEvidence: facts.sunlightEvidence ?? null,
           orientationEvidence: facts.orientationEvidence ?? null,
           viewQuality: facts.viewQuality ?? null,
+          privateTerraceSqft: facts.privateTerraceSqft ?? null,
           balcony: facts.balcony ?? null,
           largeWindows: facts.largeWindows ?? null,
           modernInterior: facts.modernInterior ?? null,
