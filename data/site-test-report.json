@@ -1,11 +1,20 @@
 {
-  "checkedAt": "2026-11-04T17:38:54.210Z",
+  "checkedAt": "2026-11-05T06:47:01.466Z",
   "ok": true,
   "checkpoints": {
     "render": {
-      "title": "Vancouver Westside Rentals",
-      "cards": 26,
-      "shown": 26
+      "title": "Kitsilano & Downtown Vancouver Rentals",
+      "cards": 3,
+      "shown": 3
+    },
+    "hardScope": {
+      "visibleIds": [
+        "kits-maple-2565-penthouse",
+        "mls-r3167681",
+        "mls-r3169921"
+      ],
+      "bad": [],
+      "hasDowntown": true
     },
     "stats": {
       "labels": [
@@ -16,13 +25,13 @@
         "Last refreshed"
       ],
       "values": [
-        "26",
         "3",
-        "8",
-        "4",
+        "3",
+        "0",
+        "0",
         "Nov 3, 7:59 a.m. PST"
       ],
-      "html": "<div class=\"stat\"><strong>26</strong><span>Active</span></div><div class=\"stat\"><strong>3</strong><span>New 7d</span></div><div class=\"stat\"><strong>8</strong><span>Price drops</span></div><div class=\"stat\"><strong>4</strong><span>To verify</span></div><div class=\"stat\"><strong>Nov 3, 7:59 a.m. PST</strong><span>Last refreshed</span></div>",
+      "html": "<div class=\"stat\"><strong>3</strong><span>Active</span></div><div class=\"stat\"><strong>3</strong><span>New 7d</span></div><div class=\"stat\"><strong>0</strong><span>Price drops</span></div><div class=\"stat\"><strong>0</strong><span>To verify</span></div><div class=\"stat\"><strong>Nov 3, 7:59 a.m. PST</strong><span>Last refreshed</span></div>",
       "refreshedAt": {
         "displayed": "Nov 3, 7:59 a.m. PST",
         "expected": "Nov 3, 7:59 a.m. PST",
@@ -31,33 +40,33 @@
       "newSevenDays": {
         "expectedCount": 3,
         "badgeIds": [
-          "the-ridge-unit-202",
-          "mls-r3179518",
-          "zumper-0116ae25a82f"
+          "kits-maple-2565-penthouse",
+          "mls-r3167681",
+          "mls-r3169921"
         ],
         "staleBadgeIds": []
       }
     },
     "map": {
-      "markers": 26,
+      "markers": 3,
       "desktopMapVisible": true
     },
     "filters": "ok",
     "localStorage": {
       "favorite": true,
       "notes": true,
-      "firstId": "westward-unit-104"
+      "firstId": "kits-maple-2565-penthouse"
     },
-    "sourceLink": "https://www.rentfaster.ca/properties/2355-w-49th-avenue-vancouver-bc-v6m-0g1-vancouver-755998",
+    "sourceLink": "https://www.craigslist.org/view/d/vancouver-rare-penthouse-with-private/h5bh2hpcqoXSPVRz7zvtLg",
     "photos": {
-      "total": 26,
-      "loaded": 25,
-      "fallbacks": 1,
+      "total": 3,
+      "loaded": 0,
+      "fallbacks": 3,
       "bad": []
     },
     "markerPositions": {
-      "total": 26,
-      "unique": 26
+      "total": 3,
+      "unique": 3
     },
     "dataEndpoints": "ok",
     "mobile": "ok",
