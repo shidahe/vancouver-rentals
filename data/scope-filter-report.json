@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-11-05T06:28:59.636Z",
+  "generatedAt": "2026-11-05T06:44:18.757Z",
   "policy": "Only CAD $4,000–$6,000 entire-home rentals with 2–4 bedrooms, at least 2 bathrooms, confirmed AC, and verified sunlight or a non-north exposure in Kitsilano / Vancouver Westside / Downtown are published. Unknown sun exposure and exclusively north-facing units are excluded pending verification.",
-  "activeCount": 2,
+  "activeCount": 3,
   "excludedCount": 119,
   "exclusionEventsToday": 26,
   "countsByReason": {
@@ -37,7 +37,7 @@
     {
       "id": "solo-2228-marstrand",
       "reason": "monthly rent outside CAD $4,000–$6,000",
-      "wasActive": true
+      "wasActive": false
     },
     {
       "id": "19-greenway-c1-405-3619",
@@ -102,7 +102,7 @@
     {
       "id": "zumper-9157c4798023",
       "reason": "monthly rent outside CAD $4,000–$6,000",
-      "wasActive": true
+      "wasActive": false
     },
     {
       "id": "zumper-6e03d092610a",
@@ -112,7 +112,7 @@
     {
       "id": "zumper-976e340c66a7",
       "reason": "air conditioning not confirmed",
-      "wasActive": true
+      "wasActive": false
     },
     {
       "id": "zumper-40e7a81ead7b",
@@ -122,7 +122,7 @@
     {
       "id": "zumper-2e85ffb3f678",
       "reason": "monthly rent outside CAD $4,000–$6,000",
-      "wasActive": true
+      "wasActive": false
     },
     {
       "id": "zumper-adc0623c7c44",
@@ -247,7 +247,7 @@
     {
       "id": "zumper-16e9ae17cd91",
       "reason": "air conditioning not confirmed",
-      "wasActive": true
+      "wasActive": false
     },
     {
       "id": "mls-r3160936",
@@ -342,7 +342,7 @@
     {
       "id": "mls-r3151372",
       "reason": "direct sunlight or non-north exposure not verified",
-      "wasActive": true
+      "wasActive": false
     },
     {
       "id": "mls-r3158179",
@@ -367,7 +367,7 @@
     {
       "id": "kits-walk-floorplan-2-bedroom-741-3600",
       "reason": "monthly rent outside CAD $4,000–$6,000",
-      "wasActive": true
+      "wasActive": false
     },
     {
       "id": "mls-r3160879",
@@ -392,7 +392,7 @@
     {
       "id": "mls-r3159060",
       "reason": "monthly rent outside CAD $4,000–$6,000",
-      "wasActive": true
+      "wasActive": false
     },
     {
       "id": "mls-r3149267",
@@ -402,7 +402,7 @@
     {
       "id": "mls-r3163709",
       "reason": "direct sunlight or non-north exposure not verified",
-      "wasActive": true
+      "wasActive": false
     },
     {
       "id": "mls-r3164628",
@@ -447,12 +447,12 @@
     {
       "id": "mls-r3167417",
       "reason": "monthly rent outside CAD $4,000–$6,000",
-      "wasActive": true
+      "wasActive": false
     },
     {
       "id": "zumper-6f8b3ff2b9fd",
       "reason": "air conditioning not confirmed",
-      "wasActive": true
+      "wasActive": false
     },
     {
       "id": "mls-r3167237",
@@ -472,7 +472,7 @@
     {
       "id": "kits-walk-floorplan-2-bedroom-811-3675",
       "reason": "monthly rent outside CAD $4,000–$6,000",
-      "wasActive": true
+      "wasActive": false
     },
     {
       "id": "mls-r3170701",
@@ -487,7 +487,7 @@
     {
       "id": "mls-r3172212",
       "reason": "monthly rent outside CAD $4,000–$6,000",
-      "wasActive": true
+      "wasActive": false
     },
     {
       "id": "zumper-86435797c322",
@@ -497,7 +497,7 @@
     {
       "id": "zumper-8a4ac6a75244",
       "reason": "fewer than two verified bathrooms",
-      "wasActive": true
+      "wasActive": false
     },
     {
       "id": "mls-r3169522",
@@ -507,7 +507,7 @@
     {
       "id": "zumper-dd642aebb4f6",
       "reason": "air conditioning not confirmed",
-      "wasActive": true
+      "wasActive": false
     },
     {
       "id": "mls-r3173479",
@@ -537,7 +537,7 @@
     {
       "id": "mls-r3174425",
       "reason": "monthly rent outside CAD $4,000–$6,000",
-      "wasActive": true
+      "wasActive": false
     },
     {
       "id": "mls-r3175848",
@@ -547,7 +547,7 @@
     {
       "id": "mls-r3175318",
       "reason": "air conditioning not confirmed",
-      "wasActive": true
+      "wasActive": false
     },
     {
       "id": "mls-r3176251",
@@ -557,7 +557,7 @@
     {
       "id": "zumper-3d502587bbc4",
       "reason": "fewer than two verified bathrooms",
-      "wasActive": true
+      "wasActive": false
     },
     {
       "id": "mls-r3172081",
@@ -567,7 +567,7 @@
     {
       "id": "zumper-1754927f090e",
       "reason": "air conditioning not confirmed",
-      "wasActive": true
+      "wasActive": false
     },
     {
       "id": "mls-r3175865",
@@ -577,37 +577,37 @@
     {
       "id": "mls-r3177685",
       "reason": "monthly rent outside CAD $4,000–$6,000",
-      "wasActive": true
+      "wasActive": false
     },
     {
       "id": "westward-unit-104",
       "reason": "direct sunlight or non-north exposure not verified",
-      "wasActive": true
+      "wasActive": false
     },
     {
       "id": "the-raven-unit-101",
       "reason": "monthly rent outside CAD $4,000–$6,000",
-      "wasActive": true
+      "wasActive": false
     },
     {
       "id": "mls-r3175899",
       "reason": "monthly rent outside CAD $4,000–$6,000",
-      "wasActive": true
+      "wasActive": false
     },
     {
       "id": "zumper-0116ae25a82f",
       "reason": "monthly rent outside CAD $4,000–$6,000",
-      "wasActive": true
+      "wasActive": false
     },
     {
       "id": "mls-r3179518",
       "reason": "monthly rent outside CAD $4,000–$6,000",
-      "wasActive": true
+      "wasActive": false
     },
     {
       "id": "the-ridge-unit-202",
       "reason": "direct sunlight or non-north exposure not verified",
-      "wasActive": true
+      "wasActive": false
     }
   ]
 }

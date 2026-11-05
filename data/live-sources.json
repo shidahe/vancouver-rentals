@@ -66,8 +66,9 @@
       "hints":{"bedrooms":2,"bathrooms":2,"sqft":1264,"parking":true,"largeWindows":true,"viewQuality":"panoramic","orientation":"SE"}
     },
     {
-      "id":"rew-alberni-kengo-kuma-1504","listingId":"watch-west-end-kengo-kuma-1504","mls":"R3169921","source":"REW / VIRANI","url":"https://www.rew.ca/rentals/7567091/1504-1568-alberni-street-vancouver-bc","buildingName":"Alberni by Kengo Kuma","unit":"1504","address":"1568 Alberni Street, Vancouver, BC V6G 0E3","neighborhood":"West End / Coal Harbour","type":"condo","expectedBeds":2,"autoPublish":false,
-      "hints":{"bedrooms":2,"bathrooms":2,"sqft":901,"ac":true,"parking":true,"largeWindows":true,"modernInterior":true,"viewQuality":"panoramic"}
+      "id":"rew-alberni-kengo-kuma-1504","listingId":"mls-r3169921","mls":"R3169921","source":"REW / VIRANI","url":"https://www.rew.ca/rentals/7567091/1504-1568-alberni-street-vancouver-bc","buildingName":"Alberni by Kengo Kuma","unit":"1504","address":"1568 Alberni Street, Vancouver, BC V6G 0E3","neighborhood":"West End / Coal Harbour","type":"condo","expectedBeds":2,"autoPublish":true,
+      "geo":{"lat":49.2899769,"lng":-123.1312497},
+      "hints":{"bedrooms":2,"bathrooms":2,"sqft":901,"ac":true,"parking":true,"orientation":"SE","orientationEvidence":"Exact unit 1504 historical MLS R3114272 reports south/southeast exposure","buildingYear":2023,"balcony":true,"largeWindows":true,"modernInterior":true,"viewQuality":"partial"}
     },
     {
       "id": "realtor-highbury-place-203-r3175899",
