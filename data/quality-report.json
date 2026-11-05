@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-11-05T06:44:18.858Z",
+  "generatedAt": "2026-11-05T06:57:55.658Z",
   "activeCount": 3,
-  "decisionReady": false,
-  "readinessStatus": "pending_finalization",
+  "decisionReady": true,
+  "readinessStatus": "finalized",
   "highIssueCount": 0,
   "mediumIssueCount": 0,
   "infoIssueCount": 1,
@@ -12,5 +12,35 @@
       "id": "kits-maple-2565-penthouse",
       "issue": "unknown-orientation"
     }
-  ]
+  ],
+  "readinessChecks": {
+    "smokeOk": true,
+    "smokeFresh": true,
+    "smokeCheckedAt": "2026-11-05T06:58:00.400Z",
+    "latestDataAt": "2026-11-05T06:57:14.758Z",
+    "coverageReady": true,
+    "healthyDiscoveryLanes": 3,
+    "coverageWarnings": [
+      {
+        "severity": "warning",
+        "lane": "rentalsca",
+        "status": "degraded",
+        "detail": "1/12 regional searches reachable; 0 qualifying candidates parsed; 0 scoped search-only leads retained; 3 detail pages blocked after 14 discovered URLs; 11 further detail checks suppressed after repeated 403/429"
+      },
+      {
+        "severity": "warning",
+        "lane": "livrent",
+        "status": "unhealthy",
+        "detail": "0/5 searches healthy; 3 blocked searches opened circuit; 2 further checks suppressed"
+      },
+      {
+        "severity": "warning",
+        "lane": "priority-kits-walk-inventory",
+        "status": "incomplete",
+        "detail": "Aggregate inventory reports 2 units; 0 exact unit/floorplan inventories are verified"
+      }
+    ]
+  },
+  "readinessIssues": [],
+  "finalizedAt": "2026-11-05T06:58:00.490Z"
 }

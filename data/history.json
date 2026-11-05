@@ -234,6 +234,11 @@
       "date": "2026-08-20",
       "rent": 4500,
       "note": "OFFICIAL STATUS: Raphael marked fully leased; removed from active inventory. Official page contains a strong negative leasing signal."
+    },
+    {
+      "date": "2026-11-05",
+      "rent": 4500,
+      "note": "OFFICIAL STATUS: Raphael marked fully leased; removed from active inventory. Official page contains a strong negative leasing signal."
     }
   ],
   "raven-410-3709-wbroadway": [
@@ -1088,6 +1093,11 @@
       "date": "2026-11-05",
       "rent": 4300,
       "note": "EXCLUDED: air conditioning not confirmed."
+    },
+    {
+      "date": "2026-11-05",
+      "rent": 4300,
+      "note": "RELISTED: exact current Zumper detail again shows active availability."
     }
   ],
   "mls-r3160936": [
@@ -3175,6 +3185,11 @@
       "date": "2026-11-05",
       "rent": 4400,
       "note": "EXCLUDED: air conditioning not confirmed."
+    },
+    {
+      "date": "2026-11-05",
+      "rent": 4400,
+      "note": "RELISTED: exact current Zumper detail again shows active availability."
     }
   ],
   "mls-r3167237": [
@@ -3299,6 +3314,16 @@
       "date": "2026-10-21",
       "rent": 4350,
       "note": "CORRECTED: restored after exact current MLS detail matched identity, explicit availability and rent."
+    },
+    {
+      "date": "2026-11-05",
+      "rent": 4350,
+      "note": "CORRECTED: restored after exact current MLS detail matched identity, explicit availability and rent."
+    },
+    {
+      "date": "2026-11-05",
+      "rent": 4350,
+      "note": "EXCLUDED: air conditioning not confirmed."
     }
   ],
   "mls-r3162880": [
@@ -3602,6 +3627,11 @@
       "date": "2026-11-05",
       "rent": 4500,
       "note": "EXCLUDED: air conditioning not confirmed."
+    },
+    {
+      "date": "2026-11-05",
+      "rent": 4500,
+      "note": "RELISTED: exact current Zumper detail again shows active availability."
     }
   ],
   "mls-r3173479": [
@@ -3871,6 +3901,11 @@
       "date": "2026-11-02",
       "rent": 5500,
       "note": "EXCLUDED: house share or separately rented portion of a house."
+    },
+    {
+      "date": "2026-11-05",
+      "rent": 5500,
+      "note": "EXCLUDED: house share or separately rented portion of a house."
     }
   ],
   "mls-r3175318": [
@@ -3942,6 +3977,11 @@
       "date": "2026-11-05",
       "rent": 5000,
       "note": "EXCLUDED: fewer than two verified bathrooms."
+    },
+    {
+      "date": "2026-11-05",
+      "rent": 5000,
+      "note": "RELISTED: exact current Zumper detail again shows active availability."
     }
   ],
   "mls-r3172081": [
@@ -3991,6 +4031,11 @@
       "date": "2026-11-05",
       "rent": 6000,
       "note": "EXCLUDED: air conditioning not confirmed."
+    },
+    {
+      "date": "2026-11-05",
+      "rent": 6000,
+      "note": "RELISTED: exact current Zumper detail again shows active availability."
     }
   ],
   "mls-r3175865": [
@@ -4156,6 +4201,66 @@
     {
       "date": "2026-11-05",
       "rent": 4800,
+      "note": "EXCLUDED: direct sunlight or non-north exposure not verified."
+    }
+  ],
+  "zumper-686463710384": [
+    {
+      "date": "2026-11-05",
+      "rent": 4595,
+      "note": "NEW: live Zumper detail auto-published as independent inventory."
+    },
+    {
+      "date": "2026-11-05",
+      "rent": 4595,
+      "note": "EXCLUDED: fewer than two verified bathrooms."
+    }
+  ],
+  "mls-r3165947": [
+    {
+      "date": "2026-11-05",
+      "rent": 5600,
+      "note": "NEW: live Realtylink MLS R3165947 auto-published."
+    },
+    {
+      "date": "2026-11-05",
+      "rent": 5600,
+      "note": "EXCLUDED: air conditioning not confirmed."
+    }
+  ],
+  "mls-r3179217": [
+    {
+      "date": "2026-11-05",
+      "rent": 4980,
+      "note": "NEW: live Realtylink MLS R3179217 auto-published."
+    },
+    {
+      "date": "2026-11-05",
+      "rent": 4980,
+      "note": "EXCLUDED: direct sunlight or non-north exposure not verified."
+    }
+  ],
+  "mls-r3180739": [
+    {
+      "date": "2026-11-05",
+      "rent": 4800,
+      "note": "NEW: live Realtylink MLS R3180739 auto-published."
+    },
+    {
+      "date": "2026-11-05",
+      "rent": 4800,
+      "note": "EXCLUDED: air conditioning not confirmed."
+    }
+  ],
+  "mls-r3175898": [
+    {
+      "date": "2026-11-05",
+      "rent": 4150,
+      "note": "NEW: live Realtylink MLS R3175898 auto-published."
+    },
+    {
+      "date": "2026-11-05",
+      "rent": 4150,
       "note": "EXCLUDED: direct sunlight or non-north exposure not verified."
     }
   ]

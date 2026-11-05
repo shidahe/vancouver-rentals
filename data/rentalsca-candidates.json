@@ -1,151 +1,106 @@
 {
-  "refreshedAt": "2026-11-03T16:06:22.813Z",
+  "refreshedAt": "2026-11-05T06:54:59.348Z",
   "mode": "candidate-only",
   "sourceHealth": {
     "rentalsca-kitsilano-2br": {
-      "checkedAt": "2026-11-03T16:06:22.813Z",
+      "checkedAt": "2026-11-05T06:54:59.348Z",
       "status": 403,
       "ok": false,
-      "finalUrl": "https://rentals.ca/vancouver/kitsilano/all-apartments-all-houses?__cf_chl_rt_tk=463huqGno9sDGiH9tziT0SOaOWPfCuwtNpVVA16Hc0o-1793721983-1.0.1.1-zIPZz._lAM9K.k6JwjH7oYiGwVhwB_8JuE35W1zez38"
+      "finalUrl": "https://rentals.ca/vancouver/kitsilano/all-apartments-all-houses?__cf_chl_rt_tk=KOC0KhlYhlO84I6Uve4kKQge0.ZoQ0mXyIjdfEcRdzw-1793861699-1.0.1.1-oJlhyKDviIxdEK4OSoQ0VWlShLqjnTYeoxUNcAB9jxw"
     },
     "rentalsca-point-grey-2br": {
-      "checkedAt": "2026-11-03T16:06:22.813Z",
+      "checkedAt": "2026-11-05T06:54:59.348Z",
       "status": 200,
       "ok": true,
       "finalUrl": "https://rentals.ca/vancouver/west-point-grey",
-      "detailLinkCount": 10,
+      "detailLinkCount": 12,
       "title": "Rentals.ca West Point Grey Vancouver Apartments, Condos and Houses For Rent",
-      "observedListingCount": 9,
+      "observedListingCount": 11,
       "challengeDetected": false,
-      "searchLeadCount": 6,
-      "addressLineCount": 6,
-      "detailUrlCount": 12
+      "searchLeadCount": 8,
+      "addressLineCount": 8,
+      "detailUrlCount": 14
     },
     "rentalsca-arbutus-2br": {
-      "checkedAt": "2026-11-03T16:06:22.813Z",
-      "status": 200,
-      "ok": true,
-      "finalUrl": "https://rentals.ca/vancouver/arbutus-ridge",
-      "detailLinkCount": 13,
-      "title": "Rentals.ca Arbutus Ridge Vancouver Apartments, Condos and Houses For Rent",
-      "observedListingCount": 18,
-      "challengeDetected": false,
-      "searchLeadCount": 7,
-      "addressLineCount": 7,
-      "detailUrlCount": 17
+      "checkedAt": "2026-11-05T06:54:59.348Z",
+      "status": 403,
+      "ok": false,
+      "finalUrl": "https://rentals.ca/vancouver/arbutus-ridge?__cf_chl_rt_tk=gDFuSeS3K6lxXhkcwCR1KcvxGsWRMbOG7448LrIoibE-1793861703-1.0.1.1-ZmXNQYElA0FRgL3zYqFwSDs67c5foXvEDQkA9lCgr3g"
     },
     "rentalsca-dunbar-2br": {
-      "checkedAt": "2026-11-03T16:06:22.813Z",
-      "status": 200,
-      "ok": true,
-      "finalUrl": "https://rentals.ca/vancouver/dunbar-southlands",
-      "detailLinkCount": 9,
-      "title": "Rentals.ca Dunbar-Southlands Vancouver Apartments, Condos and Houses For Rent",
-      "observedListingCount": 10,
-      "challengeDetected": false,
-      "searchLeadCount": 1,
-      "addressLineCount": 1,
-      "detailUrlCount": 10
+      "checkedAt": "2026-11-05T06:54:59.348Z",
+      "status": 403,
+      "ok": false,
+      "finalUrl": "https://rentals.ca/vancouver/dunbar-southlands?__cf_chl_rt_tk=hJIong0lAIDHbwCrkb5U06y7t3kAm3CeDvfqkzCuELA-1793861703-1.0.1.1-UAz6NOnxfJwUQAW9TxFiYdp.jPh3gIad_1tFEH78iFg"
     },
     "rentalsca-vancouver-all": {
-      "checkedAt": "2026-11-03T16:06:22.813Z",
-      "status": 429,
+      "checkedAt": "2026-11-05T06:54:59.348Z",
+      "status": 403,
       "ok": false,
-      "finalUrl": "https://rentals.ca/vancouver?__cf_chl_rt_tk=YJftd9XZYduJ2psaiqeRqy7bFOXqiYgCj3S7BD8gZUI-1793721992-1.0.1.1-NMiX1CXge0JrmnMVhRaeJ5SkMc7pa1CMYE1puSxPefs"
+      "finalUrl": "https://rentals.ca/vancouver?__cf_chl_rt_tk=VynvfNDpqCzP284PPVifrrF5WHSRExjIg9yj.QNZFVs-1793861703-1.0.1.1-3CbOLEQZO6SCXIsDMqhHvQYLq9_wrDp2jl8kZh4p05Q"
     },
     "rentalsca-kitsilano-3br": {
-      "checkedAt": "2026-11-03T16:06:22.813Z",
-      "status": 429,
+      "checkedAt": "2026-11-05T06:54:59.348Z",
+      "status": 403,
       "ok": false,
-      "finalUrl": "https://rentals.ca/vancouver/kitsilano/3-bedrooms?__cf_chl_rt_tk=igzcEneLy7Yq_a623dOTudP.795QqH7d5jj8WH9INus-1793721993-1.0.1.1-.3vFbDoo2NbrA6u7c5VBqrYbu7tQr.nXKvjvk6gZBHM"
+      "finalUrl": "https://rentals.ca/vancouver/kitsilano/3-bedrooms?__cf_chl_rt_tk=DMwRPCE3r7745dnjgNDfTPXJx39mplMOI_329oZ9aYk-1793861703-1.0.1.1-YlgmDqGXRYzLyXwA09aF_LNfxKNuO.H7bxINjU6Bocs"
     },
     "rentalsca-kitsilano-4br": {
-      "checkedAt": "2026-11-03T16:06:22.813Z",
-      "status": 429,
+      "checkedAt": "2026-11-05T06:54:59.348Z",
+      "status": 403,
       "ok": false,
-      "finalUrl": "https://rentals.ca/vancouver/kitsilano/4-bedrooms?__cf_chl_rt_tk=o3U6iEMDMWDyJOGz7YUKrfm46JZ0xGWqIjkgsOTZbfQ-1793721993-1.0.1.1-QaOTnm5YNqx02WFaiY0XUf0rr.n32AXwVZEymwEJB1I"
+      "finalUrl": "https://rentals.ca/vancouver/kitsilano/4-bedrooms?__cf_chl_rt_tk=hu90HFOMaHb0OnWE.oCiLIEh8OTPtJ790VWch1lb0.Q-1793861703-1.0.1.1-8ZHEaV2NUGmYJwf1FUO.x0LOKuzYcsqmPE3u0HKp1dY"
     },
     "rentalsca-vancouver-3br": {
-      "checkedAt": "2026-11-03T16:06:22.813Z",
-      "status": 429,
+      "checkedAt": "2026-11-05T06:54:59.348Z",
+      "status": 403,
       "ok": false,
-      "finalUrl": "https://rentals.ca/vancouver/3-bedrooms?__cf_chl_rt_tk=WEu1JSrdyJ_rUu8ECe1JJJMb4tPXJG8hltpQ1WIDGFI-1793721993-1.0.1.1-AaAL4LHfDVRcINSXd.FQV1Av.MQvnccu2E5XJrU8OzU"
+      "finalUrl": "https://rentals.ca/vancouver/3-bedrooms?__cf_chl_rt_tk=606r7UP0YTw6ufN6.XFYKGl9uladNxZ5fjv1Ajh6w9A-1793861703-1.0.1.1-wZHKFKVBp5mrLWy_e8AHmj.aAi3T1tl85yEls.SCjw0"
     },
     "rentalsca-vancouver-4br": {
-      "checkedAt": "2026-11-03T16:06:22.813Z",
-      "status": 429,
+      "checkedAt": "2026-11-05T06:54:59.348Z",
+      "status": 403,
       "ok": false,
-      "finalUrl": "https://rentals.ca/vancouver/4-bedrooms?__cf_chl_rt_tk=1JElIOOurTs3rJFvf.33EqXFILMryNpQZFDXZqFoDfQ-1793721993-1.0.1.1-Vvc2hm08bMvCtOW_hrscp6kNr9PXLd4wVH7xoBgkn80"
+      "finalUrl": "https://rentals.ca/vancouver/4-bedrooms?__cf_chl_rt_tk=EN3x3unwL5jbq5qEjbBXLxgadYS_gljTJwhZ9Rlrxkg-1793861703-1.0.1.1-Z.1nXiLs9snWhpopO3X86AuxsNrWYXw9acuXTi5KrgQ"
+    },
+    "rentalsca-downtown-2br": {
+      "checkedAt": "2026-11-05T06:54:59.348Z",
+      "status": 403,
+      "ok": false,
+      "finalUrl": "https://rentals.ca/vancouver/downtown?__cf_chl_rt_tk=IZwfNVrzAlBa_oD4FTHQ.coktgqSsbo3fHOiCbZTpuk-1793861703-1.0.1.1-EQB17_rYzmQ0ZK.KauNDBSMSsrtvLo0cmKaoGRRGFZU"
+    },
+    "rentalsca-yaletown-2br": {
+      "checkedAt": "2026-11-05T06:54:59.348Z",
+      "status": 403,
+      "ok": false,
+      "finalUrl": "https://rentals.ca/vancouver/yaletown?__cf_chl_rt_tk=ELQ8rn60RSRg_yL8wGS5v3.y4iiZ5lUg8up_yDmkbUw-1793861703-1.0.1.1-btKf_eQGVYMd7GpiR1kIzlvydCX6h.DjI2UOPhNH728"
+    },
+    "rentalsca-coal-harbour-2br": {
+      "checkedAt": "2026-11-05T06:54:59.348Z",
+      "status": 403,
+      "ok": false,
+      "finalUrl": "https://rentals.ca/vancouver/coal-harbour?__cf_chl_rt_tk=JMngSCbUi6kMmKHFoWFKiSbfoawV7PZNRpsSBv_r45A-1793861703-1.0.1.1-JtJgZF7OUVG5xDjTuJRNDrUOrn6p.RE3NRFz5PLNPuE"
     }
   },
   "diagnostics": {
-    "searchResultCount": 37,
-    "searchAddressLines": 14,
-    "searchDetailLinks": 32,
-    "searchLeadCount": 2,
+    "searchResultCount": 11,
+    "searchAddressLines": 8,
+    "searchDetailLinks": 12,
+    "searchLeadCount": 0,
     "searchLeadOutOfArea": 0,
-    "newSearchLeadCount": 1,
-    "representedSearchLeadCount": 1,
+    "newSearchLeadCount": 0,
+    "representedSearchLeadCount": 0,
     "revalidationSearchLeadCount": 0,
-    "detailUrls": 39,
+    "detailUrls": 14,
     "detailChecked": 3,
     "detailBlocked": 3,
     "detailNotFound": 0,
     "detailErrors": 0,
     "detailParsed": 0,
-    "detailSuppressed": 36,
+    "detailSuppressed": 11,
     "detailCircuitOpen": true
   },
-  "searchLeads": [
-    {
-      "identityKey": "4326 west 10th avenue, vancouver, bc::3690::3690::2::2",
-      "address": "4326 West 10th Avenue, Vancouver, BC",
-      "rentMin": 3690,
-      "rentMax": 3690,
-      "bedroomMin": 2,
-      "bedroomMax": 2,
-      "bathrooms": 1,
-      "rentalType": "Apartment",
-      "source": "Rentals.ca search",
-      "searchUrl": "https://rentals.ca/vancouver/west-point-grey",
-      "checkedAt": "2026-11-03T16:06:22.813Z",
-      "publishable": false,
-      "evidenceKind": "search_result_lead_only",
-      "availabilityVerified": false,
-      "url": "https://rentals.ca/vancouver/4326-west-10th-avenue",
-      "leadStatus": "represented_active_address",
-      "addressMatchOnly": true,
-      "matchingListingCount": 1,
-      "matchedListingIds": [
-        "zumper-2e85ffb3f678"
-      ],
-      "matchedListingId": "zumper-2e85ffb3f678",
-      "matchedAvailabilityStatus": "active"
-    },
-    {
-      "identityKey": "2140 mcmullen avenue, vancouver, bc::4500::4500::3::3",
-      "address": "2140 McMullen Avenue, Vancouver, BC",
-      "rentMin": 4500,
-      "rentMax": 4500,
-      "bedroomMin": 3,
-      "bedroomMax": 3,
-      "bathrooms": 2.5,
-      "rentalType": "Town House",
-      "source": "Rentals.ca search",
-      "searchUrl": "https://rentals.ca/vancouver/arbutus-ridge",
-      "checkedAt": "2026-11-03T16:06:22.813Z",
-      "publishable": false,
-      "evidenceKind": "search_result_lead_only",
-      "availabilityVerified": false,
-      "url": "https://rentals.ca/vancouver/2140-mcmullen-avenue",
-      "leadStatus": "new_unverified_address",
-      "addressMatchOnly": false,
-      "matchingListingCount": 0,
-      "matchedListingIds": [],
-      "matchedListingId": null,
-      "matchedAvailabilityStatus": null
-    }
-  ],
+  "searchLeads": [],
   "pages": [],
   "inventories": []
 }

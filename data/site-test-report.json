@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-11-05T06:47:01.466Z",
+  "checkedAt": "2026-11-05T06:58:00.400Z",
   "ok": true,
   "checkpoints": {
     "render": {
@@ -29,12 +29,12 @@
         "3",
         "0",
         "0",
-        "Nov 3, 7:59 a.m. PST"
+        "Nov 4, 10:49 p.m. PST"
       ],
-      "html": "<div class=\"stat\"><strong>3</strong><span>Active</span></div><div class=\"stat\"><strong>3</strong><span>New 7d</span></div><div class=\"stat\"><strong>0</strong><span>Price drops</span></div><div class=\"stat\"><strong>0</strong><span>To verify</span></div><div class=\"stat\"><strong>Nov 3, 7:59 a.m. PST</strong><span>Last refreshed</span></div>",
+      "html": "<div class=\"stat\"><strong>3</strong><span>Active</span></div><div class=\"stat\"><strong>3</strong><span>New 7d</span></div><div class=\"stat\"><strong>0</strong><span>Price drops</span></div><div class=\"stat\"><strong>0</strong><span>To verify</span></div><div class=\"stat\"><strong>Nov 4, 10:49 p.m. PST</strong><span>Last refreshed</span></div>",
       "refreshedAt": {
-        "displayed": "Nov 3, 7:59 a.m. PST",
-        "expected": "Nov 3, 7:59 a.m. PST",
+        "displayed": "Nov 4, 10:49 p.m. PST",
+        "expected": "Nov 4, 10:49 p.m. PST",
         "timezone": "America/Vancouver"
       },
       "newSevenDays": {
@@ -60,8 +60,8 @@
     "sourceLink": "https://www.craigslist.org/view/d/vancouver-rare-penthouse-with-private/h5bh2hpcqoXSPVRz7zvtLg",
     "photos": {
       "total": 3,
-      "loaded": 0,
-      "fallbacks": 3,
+      "loaded": 2,
+      "fallbacks": 1,
       "bad": []
     },
     "markerPositions": {

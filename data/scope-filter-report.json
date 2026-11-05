@@ -1,17 +1,17 @@
 {
-  "generatedAt": "2026-11-05T06:44:18.757Z",
+  "generatedAt": "2026-11-05T06:57:54.670Z",
   "policy": "Only CAD $4,000–$6,000 entire-home rentals with 2–4 bedrooms, at least 2 bathrooms, confirmed AC, and verified sunlight or a non-north exposure in Kitsilano / Vancouver Westside / Downtown are published. Unknown sun exposure and exclusively north-facing units are excluded pending verification.",
   "activeCount": 3,
-  "excludedCount": 119,
-  "exclusionEventsToday": 26,
+  "excludedCount": 124,
+  "exclusionEventsToday": 33,
   "countsByReason": {
-    "direct sunlight or non-north exposure not verified": 8,
+    "direct sunlight or non-north exposure not verified": 10,
     "monthly rent outside CAD $4,000–$6,000": 68,
-    "air conditioning not confirmed": 30,
-    "fewer than two verified bathrooms": 7,
+    "air conditioning not confirmed": 31,
+    "fewer than two verified bathrooms": 8,
+    "house share or separately rented portion of a house": 4,
     "five or more bedrooms": 1,
-    "outside Kitsilano / Vancouver Westside / Downtown target area": 2,
-    "house share or separately rented portion of a house": 3
+    "outside Kitsilano / Vancouver Westside / Downtown target area": 2
   },
   "excluded": [
     {
@@ -211,7 +211,7 @@
     },
     {
       "id": "zumper-284446d281ee",
-      "reason": "air conditioning not confirmed",
+      "reason": "house share or separately rented portion of a house",
       "wasActive": false
     },
     {
@@ -247,7 +247,7 @@
     {
       "id": "zumper-16e9ae17cd91",
       "reason": "air conditioning not confirmed",
-      "wasActive": false
+      "wasActive": true
     },
     {
       "id": "mls-r3160936",
@@ -342,7 +342,7 @@
     {
       "id": "mls-r3151372",
       "reason": "direct sunlight or non-north exposure not verified",
-      "wasActive": false
+      "wasActive": true
     },
     {
       "id": "mls-r3158179",
@@ -452,7 +452,7 @@
     {
       "id": "zumper-6f8b3ff2b9fd",
       "reason": "air conditioning not confirmed",
-      "wasActive": false
+      "wasActive": true
     },
     {
       "id": "mls-r3167237",
@@ -462,7 +462,7 @@
     {
       "id": "mls-r3165327",
       "reason": "air conditioning not confirmed",
-      "wasActive": false
+      "wasActive": true
     },
     {
       "id": "mls-r3162880",
@@ -507,7 +507,7 @@
     {
       "id": "zumper-dd642aebb4f6",
       "reason": "air conditioning not confirmed",
-      "wasActive": false
+      "wasActive": true
     },
     {
       "id": "mls-r3173479",
@@ -542,7 +542,7 @@
     {
       "id": "mls-r3175848",
       "reason": "house share or separately rented portion of a house",
-      "wasActive": false
+      "wasActive": true
     },
     {
       "id": "mls-r3175318",
@@ -557,7 +557,7 @@
     {
       "id": "zumper-3d502587bbc4",
       "reason": "fewer than two verified bathrooms",
-      "wasActive": false
+      "wasActive": true
     },
     {
       "id": "mls-r3172081",
@@ -567,7 +567,7 @@
     {
       "id": "zumper-1754927f090e",
       "reason": "air conditioning not confirmed",
-      "wasActive": false
+      "wasActive": true
     },
     {
       "id": "mls-r3175865",
@@ -582,7 +582,7 @@
     {
       "id": "westward-unit-104",
       "reason": "direct sunlight or non-north exposure not verified",
-      "wasActive": false
+      "wasActive": true
     },
     {
       "id": "the-raven-unit-101",
@@ -592,12 +592,12 @@
     {
       "id": "mls-r3175899",
       "reason": "monthly rent outside CAD $4,000–$6,000",
-      "wasActive": false
+      "wasActive": true
     },
     {
       "id": "zumper-0116ae25a82f",
       "reason": "monthly rent outside CAD $4,000–$6,000",
-      "wasActive": false
+      "wasActive": true
     },
     {
       "id": "mls-r3179518",
@@ -607,7 +607,32 @@
     {
       "id": "the-ridge-unit-202",
       "reason": "direct sunlight or non-north exposure not verified",
-      "wasActive": false
+      "wasActive": true
+    },
+    {
+      "id": "zumper-686463710384",
+      "reason": "fewer than two verified bathrooms",
+      "wasActive": true
+    },
+    {
+      "id": "mls-r3165947",
+      "reason": "air conditioning not confirmed",
+      "wasActive": true
+    },
+    {
+      "id": "mls-r3179217",
+      "reason": "direct sunlight or non-north exposure not verified",
+      "wasActive": true
+    },
+    {
+      "id": "mls-r3180739",
+      "reason": "air conditioning not confirmed",
+      "wasActive": true
+    },
+    {
+      "id": "mls-r3175898",
+      "reason": "direct sunlight or non-north exposure not verified",
+      "wasActive": true
     }
   ]
 }
