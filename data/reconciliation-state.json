@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-11-05T16:09:31.880Z",
+  "refreshedAt": "2026-11-05T16:21:52.183Z",
   "groups": [
     {
       "identityKey": "3349 dunbar st::url:fa963040c813",
@@ -47,6 +47,30 @@
       ],
       "exactUnit": true,
       "matchedListingId": "zumper-686463710384",
+      "result": "candidate_only"
+    },
+    {
+      "identityKey": "3000 w 44th ave::url:e02801d5a772",
+      "sources": [
+        "zumper"
+      ],
+      "rents": [
+        6000
+      ],
+      "exactUnit": false,
+      "matchedListingId": "zumper-1754927f090e",
+      "result": "candidate_only"
+    },
+    {
+      "identityKey": "2000 w 43rd ave::url:daba7b758265",
+      "sources": [
+        "zumper"
+      ],
+      "rents": [
+        4500
+      ],
+      "exactUnit": false,
+      "matchedListingId": null,
       "result": "candidate_only"
     },
     {
@@ -494,24 +518,12 @@
       "result": "candidate_only"
     },
     {
-      "identityKey": "mls:r3181005",
+      "identityKey": "mls:r3175047",
       "sources": [
         "realtylink mls"
       ],
       "rents": [
-        4200
-      ],
-      "exactUnit": true,
-      "matchedListingId": null,
-      "result": "auto_published_authoritative_mls"
-    },
-    {
-      "identityKey": "mls:r3076892",
-      "sources": [
-        "realtylink mls"
-      ],
-      "rents": [
-        4950
+        4995
       ],
       "exactUnit": true,
       "matchedListingId": null,
@@ -530,18 +542,6 @@
       "result": "authoritative_mls_reverified"
     },
     {
-      "identityKey": "mls:r3175118",
-      "sources": [
-        "realtylink mls"
-      ],
-      "rents": [
-        5500
-      ],
-      "exactUnit": true,
-      "matchedListingId": null,
-      "result": "auto_published_authoritative_mls"
-    },
-    {
       "identityKey": "mls:r3180739",
       "sources": [
         "realtylink mls"
@@ -551,18 +551,6 @@
       ],
       "exactUnit": false,
       "matchedListingId": "mls-r3180739",
-      "result": "authoritative_mls_reverified"
-    },
-    {
-      "identityKey": "mls:r3175599",
-      "sources": [
-        "realtylink mls"
-      ],
-      "rents": [
-        4500
-      ],
-      "exactUnit": false,
-      "matchedListingId": "zumper-dd642aebb4f6",
       "result": "authoritative_mls_reverified"
     },
     {
@@ -590,12 +578,12 @@
       "result": "authoritative_mls_reverified"
     },
     {
-      "identityKey": "mls:r3178905",
+      "identityKey": "mls:r3175906",
       "sources": [
         "realtylink mls"
       ],
       "rents": [
-        4350
+        6000
       ],
       "exactUnit": true,
       "matchedListingId": null,
@@ -603,15 +591,12 @@
     }
   ],
   "promoted": [
-    "mls-r3181005",
-    "mls-r3076892",
-    "mls-r3175118",
-    "mls-r3178905"
+    "mls-r3175047",
+    "mls-r3175906"
   ],
   "crossVerified": [
     "zumper-16e9ae17cd91",
     "mls-r3180739",
-    "zumper-dd642aebb4f6",
     "mls-r3163709",
     "mls-r3151372"
   ],
@@ -629,16 +614,21 @@
     "mls-r3165947",
     "mls-r3179217",
     "mls-r3180739",
-    "mls-r3175898"
+    "mls-r3175898",
+    "mls-r3181005",
+    "mls-r3076892",
+    "mls-r3175118",
+    "mls-r3178905"
   ],
   "auxiliaryMlsRemovalsRolledBack": [],
   "mlsMissing": {},
   "mlsRemoved": [],
   "mlsStaleHidden": [],
-  "realtylinkSnapshotCount": 9,
+  "realtylinkSnapshotCount": 6,
   "realtylinkSnapshotHighWaterMark": 9,
   "realtylinkSnapshotScope": "rent-4000-6000-beds-2-4-baths-2-sunlight-kits-downtown-v4",
-  "realtylinkRemovalEligible": true,
+  "realtylinkRemovalEligible": false,
+  "mlsRemovalSuppressed": "Partial Realtylink snapshot (6 candidates versus previous complete 9); disappearance signals ignored.",
   "mlsDuplicatesMerged": [],
   "canonicalFieldRepairsApplied": []
 }

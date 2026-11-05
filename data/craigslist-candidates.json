@@ -1,9 +1,9 @@
 {
-  "refreshedAt": "2026-11-05T16:07:21.893Z",
+  "refreshedAt": "2026-11-05T16:19:48.842Z",
   "mode": "candidate-only",
   "sourceHealth": {
     "kitsilano": {
-      "checkedAt": "2026-11-05T16:07:21.893Z",
+      "checkedAt": "2026-11-05T16:19:48.842Z",
       "status": 200,
       "ok": true,
       "finalUrl": "https://www.craigslist.org/search/subarea/van?cat=apa&min_bedrooms=2&query=kitsilano",
@@ -29,15 +29,15 @@
       "title": "vancouver apartments / housing for rent \"kitsilano\" - craigslist"
     },
     "arbutus": {
-      "checkedAt": "2026-11-05T16:07:21.893Z",
+      "checkedAt": "2026-11-05T16:19:48.842Z",
       "status": 200,
       "ok": true,
       "finalUrl": "https://www.craigslist.org/search/subarea/van?cat=apa&min_bedrooms=2&query=arbutus",
-      "anchorCount": 178,
-      "detailLinkCount": 156,
-      "embeddedDetailLinkCount": 78,
+      "anchorCount": 176,
+      "detailLinkCount": 154,
+      "embeddedDetailLinkCount": 77,
       "resultContainerCount": 78,
-      "postIdCount": 78,
+      "postIdCount": 77,
       "hrefShapeSamples": [
         "www.craigslist.org/subarea/van",
         "www.craigslist.org/favorites",
@@ -55,7 +55,7 @@
       "title": "vancouver apartments / housing for rent \"arbutus\" - craigslist"
     },
     "point-grey": {
-      "checkedAt": "2026-11-05T16:07:21.893Z",
+      "checkedAt": "2026-11-05T16:19:48.842Z",
       "status": 200,
       "ok": true,
       "finalUrl": "https://www.craigslist.org/search/subarea/van?cat=apa&min_bedrooms=2&query=point%20grey",
@@ -81,7 +81,7 @@
       "title": "vancouver apartments / housing for rent \"point grey\" - craigslist"
     },
     "dunbar": {
-      "checkedAt": "2026-11-05T16:07:21.893Z",
+      "checkedAt": "2026-11-05T16:19:48.842Z",
       "status": 200,
       "ok": true,
       "finalUrl": "https://www.craigslist.org/search/subarea/van?cat=apa&min_bedrooms=2&query=dunbar",
@@ -107,7 +107,7 @@
       "title": "vancouver apartments / housing for rent \"dunbar\" - craigslist"
     },
     "downtown": {
-      "checkedAt": "2026-11-05T16:07:21.893Z",
+      "checkedAt": "2026-11-05T16:19:48.842Z",
       "status": 200,
       "ok": true,
       "finalUrl": "https://www.craigslist.org/search/subarea/van?cat=apa&min_bedrooms=2&query=downtown",
@@ -133,15 +133,15 @@
       "title": "vancouver apartments / housing for rent \"downtown\" - craigslist"
     },
     "west-end": {
-      "checkedAt": "2026-11-05T16:07:21.893Z",
+      "checkedAt": "2026-11-05T16:19:48.842Z",
       "status": 200,
       "ok": true,
       "finalUrl": "https://www.craigslist.org/search/subarea/van?cat=apa&min_bedrooms=2&query=west%20end",
-      "anchorCount": 370,
-      "detailLinkCount": 348,
-      "embeddedDetailLinkCount": 174,
+      "anchorCount": 366,
+      "detailLinkCount": 344,
+      "embeddedDetailLinkCount": 172,
       "resultContainerCount": 174,
-      "postIdCount": 174,
+      "postIdCount": 172,
       "hrefShapeSamples": [
         "www.craigslist.org/subarea/van",
         "www.craigslist.org/favorites",
@@ -159,7 +159,7 @@
       "title": "vancouver apartments / housing for rent \"west end\" - craigslist"
     },
     "yaletown": {
-      "checkedAt": "2026-11-05T16:07:21.893Z",
+      "checkedAt": "2026-11-05T16:19:48.842Z",
       "status": 200,
       "ok": true,
       "finalUrl": "https://www.craigslist.org/search/subarea/van?cat=apa&min_bedrooms=2&query=yaletown",
@@ -185,15 +185,15 @@
       "title": "vancouver apartments / housing for rent \"yaletown\" - craigslist"
     },
     "coal-harbour": {
-      "checkedAt": "2026-11-05T16:07:21.893Z",
+      "checkedAt": "2026-11-05T16:19:48.842Z",
       "status": 200,
       "ok": true,
       "finalUrl": "https://www.craigslist.org/search/subarea/van?cat=apa&min_bedrooms=2&query=coal%20harbour",
-      "anchorCount": 214,
-      "detailLinkCount": 192,
-      "embeddedDetailLinkCount": 96,
+      "anchorCount": 212,
+      "detailLinkCount": 190,
+      "embeddedDetailLinkCount": 95,
       "resultContainerCount": 96,
-      "postIdCount": 96,
+      "postIdCount": 95,
       "hrefShapeSamples": [
         "www.craigslist.org/subarea/van",
         "www.craigslist.org/favorites",
@@ -212,11 +212,11 @@
     }
   },
   "diagnostics": {
-    "discoveredDetailUrls": 835,
+    "discoveredDetailUrls": 832,
     "searchCards": 1105,
-    "uniqueSearchCards": 835,
-    "missingRentOrBedrooms": 292,
-    "outOfScope": 461,
+    "uniqueSearchCards": 832,
+    "missingRentOrBedrooms": 290,
+    "outOfScope": 460,
     "outOfArea": 23,
     "searchAccepted": 64,
     "detailChecks": 64,
@@ -249,7 +249,7 @@
       "targetArea": true,
       "active": true,
       "postedOrUpdatedAt": "2026-11-05T10:21:27.000Z",
-      "checkedAt": "2026-11-05T16:07:21.893Z",
+      "checkedAt": "2026-11-05T16:19:48.842Z",
       "images": [
         "https://images.craigslist.org/00b0b_bjb2T0UCgHA_0CI0pi_600x450.jpg",
         "https://images.craigslist.org/00b0b_bjb2T0UCgHA_0CI0pi_50x50c.jpg",
@@ -301,7 +301,7 @@
       "targetArea": true,
       "active": true,
       "postedOrUpdatedAt": "2026-11-05T10:21:20.000Z",
-      "checkedAt": "2026-11-05T16:07:21.893Z",
+      "checkedAt": "2026-11-05T16:19:48.842Z",
       "images": [
         "https://images.craigslist.org/00D0D_ZbTv51WHld_0jm0cU_600x450.jpg",
         "https://images.craigslist.org/00D0D_ZbTv51WHld_0jm0cU_50x50c.jpg",
@@ -353,7 +353,7 @@
       "targetArea": true,
       "active": true,
       "postedOrUpdatedAt": "2026-11-05T07:11:50.000Z",
-      "checkedAt": "2026-11-05T16:07:21.893Z",
+      "checkedAt": "2026-11-05T16:19:48.842Z",
       "images": [
         "https://images.craigslist.org/00o0o_bdNWXfyOPWU_0oM0gw_600x450.jpg",
         "https://images.craigslist.org/00o0o_bdNWXfyOPWU_0oM0gw_50x50c.jpg",
@@ -405,7 +405,7 @@
       "targetArea": true,
       "active": true,
       "postedOrUpdatedAt": "2026-11-05T04:34:02.000Z",
-      "checkedAt": "2026-11-05T16:07:21.893Z",
+      "checkedAt": "2026-11-05T16:19:48.842Z",
       "images": [
         "https://images.craigslist.org/01616_1HDDESkDZLb_0CI0pO_600x450.jpg",
         "https://images.craigslist.org/01616_1HDDESkDZLb_0CI0pO_50x50c.jpg",
@@ -457,7 +457,7 @@
       "targetArea": true,
       "active": true,
       "postedOrUpdatedAt": "2026-11-05T01:13:54.000Z",
-      "checkedAt": "2026-11-05T16:07:21.893Z",
+      "checkedAt": "2026-11-05T16:19:48.842Z",
       "images": [
         "https://images.craigslist.org/01010_hSQdFXuH7dU_0lM0t2_600x450.jpg",
         "https://images.craigslist.org/01010_hSQdFXuH7dU_0lM0t2_50x50c.jpg",
@@ -509,7 +509,7 @@
       "targetArea": true,
       "active": true,
       "postedOrUpdatedAt": "2026-11-05T00:18:26.000Z",
-      "checkedAt": "2026-11-05T16:07:21.893Z",
+      "checkedAt": "2026-11-05T16:19:48.842Z",
       "images": [
         "https://images.craigslist.org/00L0L_g6R58pEkF34_0CI0pO_600x450.jpg",
         "https://images.craigslist.org/00L0L_g6R58pEkF34_0CI0pO_50x50c.jpg",
@@ -561,7 +561,7 @@
       "targetArea": true,
       "active": true,
       "postedOrUpdatedAt": "2026-11-04T23:45:54.000Z",
-      "checkedAt": "2026-11-05T16:07:21.893Z",
+      "checkedAt": "2026-11-05T16:19:48.842Z",
       "images": [
         "https://images.craigslist.org/00E0E_l5nkUHTqr8C_0CI0pO_600x450.jpg",
         "https://images.craigslist.org/00E0E_l5nkUHTqr8C_0CI0pO_50x50c.jpg",
@@ -613,7 +613,7 @@
       "targetArea": true,
       "active": true,
       "postedOrUpdatedAt": "2026-11-04T23:14:36.000Z",
-      "checkedAt": "2026-11-05T16:07:21.893Z",
+      "checkedAt": "2026-11-05T16:19:48.842Z",
       "images": [
         "https://images.craigslist.org/00Q0Q_UY0yoFL5o1_0rx0kE_600x450.jpg",
         "https://images.craigslist.org/00Q0Q_UY0yoFL5o1_0rx0kE_50x50c.jpg",
@@ -665,7 +665,7 @@
       "targetArea": true,
       "active": true,
       "postedOrUpdatedAt": "2026-11-04T22:03:27.000Z",
-      "checkedAt": "2026-11-05T16:07:21.893Z",
+      "checkedAt": "2026-11-05T16:19:48.842Z",
       "images": [
         "https://images.craigslist.org/00a0a_3vb2kTjvNbD_0BO0t2_600x450.jpg",
         "https://images.craigslist.org/00a0a_3vb2kTjvNbD_0BO0t2_50x50c.jpg",
@@ -717,7 +717,7 @@
       "targetArea": true,
       "active": true,
       "postedOrUpdatedAt": "2026-11-04T21:56:45.000Z",
-      "checkedAt": "2026-11-05T16:07:21.893Z",
+      "checkedAt": "2026-11-05T16:19:48.842Z",
       "images": [
         "https://images.craigslist.org/00000_4NWg0wY23lp_0CI0t2_600x450.jpg",
         "https://images.craigslist.org/00000_4NWg0wY23lp_0CI0t2_50x50c.jpg",
@@ -769,7 +769,7 @@
       "targetArea": true,
       "active": true,
       "postedOrUpdatedAt": "2026-11-04T21:53:59.000Z",
-      "checkedAt": "2026-11-05T16:07:21.893Z",
+      "checkedAt": "2026-11-05T16:19:48.842Z",
       "images": [
         "https://images.craigslist.org/00h0h_iZXbB0UTAow_0q70hq_600x450.jpg",
         "https://images.craigslist.org/00h0h_iZXbB0UTAow_0q70hq_50x50c.jpg",
@@ -821,7 +821,7 @@
       "targetArea": true,
       "active": true,
       "postedOrUpdatedAt": "2026-11-04T21:52:48.000Z",
-      "checkedAt": "2026-11-05T16:07:21.893Z",
+      "checkedAt": "2026-11-05T16:19:48.842Z",
       "images": [
         "https://images.craigslist.org/00R0R_4b1FtW3Lw32_0ww0oo_600x450.jpg",
         "https://images.craigslist.org/00R0R_4b1FtW3Lw32_0ww0oo_50x50c.jpg",
@@ -873,7 +873,7 @@
       "targetArea": true,
       "active": true,
       "postedOrUpdatedAt": "2026-11-04T21:07:47.000Z",
-      "checkedAt": "2026-11-05T16:07:21.893Z",
+      "checkedAt": "2026-11-05T16:19:48.842Z",
       "images": [
         "https://images.craigslist.org/00z0z_aMFcpR2xD6b_0gw0b0_600x450.jpg",
         "https://images.craigslist.org/00z0z_aMFcpR2xD6b_0gw0b0_50x50c.jpg",
@@ -925,7 +925,7 @@
       "targetArea": true,
       "active": true,
       "postedOrUpdatedAt": "2026-11-04T18:43:42.000Z",
-      "checkedAt": "2026-11-05T16:07:21.893Z",
+      "checkedAt": "2026-11-05T16:19:48.842Z",
       "images": [
         "https://images.craigslist.org/00F0F_aKzubksVSWh_0wg0oc_600x450.jpg",
         "https://images.craigslist.org/00F0F_aKzubksVSWh_0wg0oc_50x50c.jpg",
@@ -977,7 +977,7 @@
       "targetArea": true,
       "active": true,
       "postedOrUpdatedAt": "2026-11-04T17:32:50.000Z",
-      "checkedAt": "2026-11-05T16:07:21.893Z",
+      "checkedAt": "2026-11-05T16:19:48.842Z",
       "images": [
         "https://images.craigslist.org/00Y0Y_el7yCc4rRih_0CI0lM_600x450.jpg",
         "https://images.craigslist.org/00Y0Y_el7yCc4rRih_0CI0lM_50x50c.jpg",
@@ -1029,7 +1029,7 @@
       "targetArea": true,
       "active": true,
       "postedOrUpdatedAt": "2026-11-04T16:56:54.000Z",
-      "checkedAt": "2026-11-05T16:07:21.893Z",
+      "checkedAt": "2026-11-05T16:19:48.842Z",
       "images": [
         "https://images.craigslist.org/00E0E_10G2xvrWtmK_0hw0nm_600x450.jpg",
         "https://images.craigslist.org/00E0E_10G2xvrWtmK_0hw0nm_50x50c.jpg",
@@ -1081,7 +1081,7 @@
       "targetArea": true,
       "active": true,
       "postedOrUpdatedAt": "2026-11-04T16:50:25.000Z",
-      "checkedAt": "2026-11-05T16:07:21.893Z",
+      "checkedAt": "2026-11-05T16:19:48.842Z",
       "images": [
         "https://images.craigslist.org/00u0u_axmcDQDabUt_0pg0gd_600x450.jpg",
         "https://images.craigslist.org/00u0u_axmcDQDabUt_0pg0gd_50x50c.jpg",
@@ -1133,7 +1133,7 @@
       "targetArea": true,
       "active": true,
       "postedOrUpdatedAt": "2026-11-04T15:45:05.000Z",
-      "checkedAt": "2026-11-05T16:07:21.893Z",
+      "checkedAt": "2026-11-05T16:19:48.842Z",
       "images": [
         "https://images.craigslist.org/00U0U_gGKeMnh7ibW_0x20m1_600x450.jpg",
         "https://images.craigslist.org/00U0U_gGKeMnh7ibW_0x20m1_50x50c.jpg",
@@ -1185,7 +1185,7 @@
       "targetArea": true,
       "active": true,
       "postedOrUpdatedAt": "2026-11-04T00:46:48.000Z",
-      "checkedAt": "2026-11-05T16:07:21.893Z",
+      "checkedAt": "2026-11-05T16:19:48.842Z",
       "images": [
         "https://images.craigslist.org/00k0k_j2G2xPydgaU_03J04Q_600x450.jpg",
         "https://images.craigslist.org/00k0k_j2G2xPydgaU_03J04Q_50x50c.jpg",
@@ -1237,7 +1237,7 @@
       "targetArea": true,
       "active": true,
       "postedOrUpdatedAt": "2026-11-04T00:42:59.000Z",
-      "checkedAt": "2026-11-05T16:07:21.893Z",
+      "checkedAt": "2026-11-05T16:19:48.842Z",
       "images": [
         "https://images.craigslist.org/00F0F_f9ZcKDcgfHN_0jm0cU_600x450.jpg",
         "https://images.craigslist.org/00F0F_f9ZcKDcgfHN_0jm0cU_50x50c.jpg",
@@ -1289,7 +1289,7 @@
       "targetArea": true,
       "active": true,
       "postedOrUpdatedAt": "2026-11-04T00:20:13.000Z",
-      "checkedAt": "2026-11-05T16:07:21.893Z",
+      "checkedAt": "2026-11-05T16:19:48.842Z",
       "images": [
         "https://images.craigslist.org/00c0c_jI6maH6Pk5V_08g05v_600x450.jpg",
         "https://images.craigslist.org/00c0c_jI6maH6Pk5V_08g05v_50x50c.jpg",
@@ -1341,7 +1341,7 @@
       "targetArea": true,
       "active": true,
       "postedOrUpdatedAt": "2026-11-03T22:02:40.000Z",
-      "checkedAt": "2026-11-05T16:07:21.893Z",
+      "checkedAt": "2026-11-05T16:19:48.842Z",
       "images": [
         "https://images.craigslist.org/00606_bI0Xnf4Q67z_0CI0pO_600x450.jpg",
         "https://images.craigslist.org/00606_bI0Xnf4Q67z_0CI0pO_50x50c.jpg",
@@ -1393,7 +1393,7 @@
       "targetArea": true,
       "active": true,
       "postedOrUpdatedAt": "2026-11-03T21:51:46.000Z",
-      "checkedAt": "2026-11-05T16:07:21.893Z",
+      "checkedAt": "2026-11-05T16:19:48.842Z",
       "images": [
         "https://images.craigslist.org/00L0L_2dl9IJbeu8r_0jm0cU_600x450.jpg",
         "https://images.craigslist.org/00L0L_2dl9IJbeu8r_0jm0cU_50x50c.jpg",
@@ -1445,7 +1445,7 @@
       "targetArea": true,
       "active": true,
       "postedOrUpdatedAt": "2026-11-03T19:02:49.000Z",
-      "checkedAt": "2026-11-05T16:07:21.893Z",
+      "checkedAt": "2026-11-05T16:19:48.842Z",
       "images": [
         "https://images.craigslist.org/00J0J_crvwH7dK00s_0CI0pN_600x450.jpg",
         "https://images.craigslist.org/00J0J_crvwH7dK00s_0CI0pN_50x50c.jpg",
@@ -1497,7 +1497,7 @@
       "targetArea": true,
       "active": true,
       "postedOrUpdatedAt": "2026-11-03T16:49:34.000Z",
-      "checkedAt": "2026-11-05T16:07:21.893Z",
+      "checkedAt": "2026-11-05T16:19:48.842Z",
       "images": [
         "https://images.craigslist.org/00Z0Z_4x43LcYiPq_0ak07K_600x450.jpg",
         "https://images.craigslist.org/00Z0Z_4x43LcYiPq_0ak07K_50x50c.jpg",
@@ -1549,7 +1549,7 @@
       "targetArea": true,
       "active": true,
       "postedOrUpdatedAt": "2026-11-03T16:45:04.000Z",
-      "checkedAt": "2026-11-05T16:07:21.893Z",
+      "checkedAt": "2026-11-05T16:19:48.842Z",
       "images": [
         "https://images.craigslist.org/01515_1YpLBpbxkNt_0kE0rx_600x450.jpg",
         "https://images.craigslist.org/01515_1YpLBpbxkNt_0kE0rx_50x50c.jpg",
@@ -1600,7 +1600,7 @@
       "targetArea": true,
       "active": true,
       "postedOrUpdatedAt": "2026-11-03T16:24:37.000Z",
-      "checkedAt": "2026-11-05T16:07:21.893Z",
+      "checkedAt": "2026-11-05T16:19:48.842Z",
       "images": [
         "https://images.craigslist.org/01616_7X9W9tesC97_05a03S_600x450.jpg",
         "https://images.craigslist.org/01616_7X9W9tesC97_05a03S_50x50c.jpg",
@@ -1652,7 +1652,7 @@
       "targetArea": true,
       "active": true,
       "postedOrUpdatedAt": "2026-11-03T07:44:16.000Z",
-      "checkedAt": "2026-11-05T16:07:21.893Z",
+      "checkedAt": "2026-11-05T16:19:48.842Z",
       "images": [
         "https://images.craigslist.org/00K0K_kdzIDVyBxyN_0li0dN_600x450.jpg",
         "https://images.craigslist.org/00K0K_kdzIDVyBxyN_0li0dN_50x50c.jpg",
@@ -1704,7 +1704,7 @@
       "targetArea": true,
       "active": true,
       "postedOrUpdatedAt": "2026-11-03T02:16:47.000Z",
-      "checkedAt": "2026-11-05T16:07:21.893Z",
+      "checkedAt": "2026-11-05T16:19:48.842Z",
       "images": [
         "https://images.craigslist.org/00x0x_5ilDlfO5o3N_0gw0co_600x450.jpg",
         "https://images.craigslist.org/00x0x_5ilDlfO5o3N_0gw0co_50x50c.jpg",
@@ -1756,7 +1756,7 @@
       "targetArea": true,
       "active": true,
       "postedOrUpdatedAt": "2026-11-03T00:59:45.000Z",
-      "checkedAt": "2026-11-05T16:07:21.893Z",
+      "checkedAt": "2026-11-05T16:19:48.842Z",
       "images": [
         "https://images.craigslist.org/00A0A_lTFPGoyLKYQ_0oM0gw_600x450.jpg",
         "https://images.craigslist.org/00A0A_lTFPGoyLKYQ_0oM0gw_50x50c.jpg",
@@ -1808,7 +1808,7 @@
       "targetArea": true,
       "active": true,
       "postedOrUpdatedAt": "2026-11-02T22:30:15.000Z",
-      "checkedAt": "2026-11-05T16:07:21.893Z",
+      "checkedAt": "2026-11-05T16:19:48.842Z",
       "images": [
         "https://images.craigslist.org/00j0j_lG1C3UJy4lr_0jm0ew_600x450.jpg",
         "https://images.craigslist.org/00j0j_lG1C3UJy4lr_0jm0ew_50x50c.jpg",
@@ -1860,7 +1860,7 @@
       "targetArea": true,
       "active": true,
       "postedOrUpdatedAt": "2026-11-02T22:17:09.000Z",
-      "checkedAt": "2026-11-05T16:07:21.893Z",
+      "checkedAt": "2026-11-05T16:19:48.842Z",
       "images": [
         "https://images.craigslist.org/00c0c_jI6maH6Pk5V_08g05v_600x450.jpg",
         "https://images.craigslist.org/00c0c_jI6maH6Pk5V_08g05v_50x50c.jpg",
@@ -1912,7 +1912,7 @@
       "targetArea": true,
       "active": true,
       "postedOrUpdatedAt": "2026-11-02T21:46:20.000Z",
-      "checkedAt": "2026-11-05T16:07:21.893Z",
+      "checkedAt": "2026-11-05T16:19:48.842Z",
       "images": [
         "https://images.craigslist.org/00I0I_kuF3HyT2Czo_0fu0bC_600x450.jpg",
         "https://images.craigslist.org/00I0I_kuF3HyT2Czo_0fu0bC_50x50c.jpg",
@@ -1961,7 +1961,7 @@
       "targetArea": true,
       "active": true,
       "postedOrUpdatedAt": "2026-11-02T21:45:26.000Z",
-      "checkedAt": "2026-11-05T16:07:21.893Z",
+      "checkedAt": "2026-11-05T16:19:48.842Z",
       "images": [
         "https://images.craigslist.org/00505_cu5yrd6iHow_0uY0kE_600x450.jpg",
         "https://images.craigslist.org/00505_cu5yrd6iHow_0uY0kE_50x50c.jpg",
@@ -2013,7 +2013,7 @@
       "targetArea": true,
       "active": true,
       "postedOrUpdatedAt": "2026-11-02T19:47:37.000Z",
-      "checkedAt": "2026-11-05T16:07:21.893Z",
+      "checkedAt": "2026-11-05T16:19:48.842Z",
       "images": [
         "https://images.craigslist.org/00606_eskZcYETWmV_0p10gm_600x450.jpg",
         "https://images.craigslist.org/00606_eskZcYETWmV_0p10gm_50x50c.jpg",
@@ -2065,7 +2065,7 @@
       "targetArea": true,
       "active": true,
       "postedOrUpdatedAt": "2026-11-02T19:19:42.000Z",
-      "checkedAt": "2026-11-05T16:07:21.893Z",
+      "checkedAt": "2026-11-05T16:19:48.842Z",
       "images": [
         "https://images.craigslist.org/00c0c_ic7KmAkBKno_0wg0lv_600x450.jpg",
         "https://images.craigslist.org/00c0c_ic7KmAkBKno_0wg0lv_50x50c.jpg",
@@ -2117,7 +2117,7 @@
       "targetArea": true,
       "active": true,
       "postedOrUpdatedAt": "2026-11-02T18:46:54.000Z",
-      "checkedAt": "2026-11-05T16:07:21.893Z",
+      "checkedAt": "2026-11-05T16:19:48.842Z",
       "images": [
         "https://images.craigslist.org/00y0y_j3nOzyNzqIw_0CI0t2_600x450.jpg",
         "https://images.craigslist.org/00y0y_j3nOzyNzqIw_0CI0t2_50x50c.jpg",
@@ -2167,7 +2167,7 @@
       "targetArea": true,
       "active": true,
       "postedOrUpdatedAt": "2026-11-02T15:31:51.000Z",
-      "checkedAt": "2026-11-05T16:07:21.893Z",
+      "checkedAt": "2026-11-05T16:19:48.842Z",
       "images": [
         "https://images.craigslist.org/00q0q_7FUhr8CALlC_0CI0pO_600x450.jpg",
         "https://images.craigslist.org/00q0q_7FUhr8CALlC_0CI0pO_50x50c.jpg",
@@ -2219,7 +2219,7 @@
       "targetArea": true,
       "active": true,
       "postedOrUpdatedAt": "2026-11-02T05:05:22.000Z",
-      "checkedAt": "2026-11-05T16:07:21.893Z",
+      "checkedAt": "2026-11-05T16:19:48.842Z",
       "images": [
         "https://images.craigslist.org/00U0U_68QRzBC0Ejb_0CI0t2_600x450.jpg",
         "https://images.craigslist.org/00U0U_68QRzBC0Ejb_0CI0t2_50x50c.jpg",
@@ -2271,7 +2271,7 @@
       "targetArea": true,
       "active": true,
       "postedOrUpdatedAt": "2026-11-01T15:32:21.000Z",
-      "checkedAt": "2026-11-05T16:07:21.893Z",
+      "checkedAt": "2026-11-05T16:19:48.842Z",
       "images": [
         "https://images.craigslist.org/00n0n_atGTapipNzX_0wc0oS_600x450.jpg",
         "https://images.craigslist.org/00n0n_atGTapipNzX_0wc0oS_50x50c.jpg",
@@ -2323,7 +2323,7 @@
       "targetArea": true,
       "active": true,
       "postedOrUpdatedAt": "2026-10-31T07:14:15.000Z",
-      "checkedAt": "2026-11-05T16:07:21.893Z",
+      "checkedAt": "2026-11-05T16:19:48.842Z",
       "images": [
         "https://images.craigslist.org/01414_7qC7A8U0fS6_0nm0hw_600x450.jpg",
         "https://images.craigslist.org/01414_7qC7A8U0fS6_0nm0hw_50x50c.jpg",
@@ -2375,7 +2375,7 @@
       "targetArea": true,
       "active": true,
       "postedOrUpdatedAt": "2026-10-30T23:28:52.000Z",
-      "checkedAt": "2026-11-05T16:07:21.893Z",
+      "checkedAt": "2026-11-05T16:19:48.842Z",
       "images": [
         "https://images.craigslist.org/00W0W_chpL0x5FDCh_0Fi0v2_600x450.jpg",
         "https://images.craigslist.org/00W0W_chpL0x5FDCh_0Fi0v2_50x50c.jpg",
@@ -2427,7 +2427,7 @@
       "targetArea": true,
       "active": true,
       "postedOrUpdatedAt": "2026-10-30T23:24:28.000Z",
-      "checkedAt": "2026-11-05T16:07:21.893Z",
+      "checkedAt": "2026-11-05T16:19:48.842Z",
       "images": [
         "https://images.craigslist.org/01616_dWh1mBHAs4p_0i60c7_600x450.jpg",
         "https://images.craigslist.org/01616_dWh1mBHAs4p_0i60c7_50x50c.jpg",
@@ -2479,7 +2479,7 @@
       "targetArea": true,
       "active": true,
       "postedOrUpdatedAt": "2026-10-30T22:31:55.000Z",
-      "checkedAt": "2026-11-05T16:07:21.893Z",
+      "checkedAt": "2026-11-05T16:19:48.842Z",
       "images": [
         "https://images.craigslist.org/00t0t_Purk2iyYiC_0uY0kw_600x450.jpg",
         "https://images.craigslist.org/00t0t_Purk2iyYiC_0uY0kw_50x50c.jpg",
@@ -2531,7 +2531,7 @@
       "targetArea": true,
       "active": true,
       "postedOrUpdatedAt": "2026-10-30T22:29:32.000Z",
-      "checkedAt": "2026-11-05T16:07:21.893Z",
+      "checkedAt": "2026-11-05T16:19:48.842Z",
       "images": [
         "https://images.craigslist.org/00R0R_fLYTPBFngom_0uY0kE_600x450.jpg",
         "https://images.craigslist.org/00R0R_fLYTPBFngom_0uY0kE_50x50c.jpg",
@@ -2583,7 +2583,7 @@
       "targetArea": true,
       "active": true,
       "postedOrUpdatedAt": "2026-10-30T19:16:01.000Z",
-      "checkedAt": "2026-11-05T16:07:21.893Z",
+      "checkedAt": "2026-11-05T16:19:48.842Z",
       "images": [
         "https://images.craigslist.org/00m0m_21amZvCBIBy_0CI0hK_600x450.jpg",
         "https://images.craigslist.org/00m0m_21amZvCBIBy_0CI0hK_50x50c.jpg",
@@ -2635,7 +2635,7 @@
       "targetArea": true,
       "active": true,
       "postedOrUpdatedAt": "2026-10-30T01:01:21.000Z",
-      "checkedAt": "2026-11-05T16:07:21.893Z",
+      "checkedAt": "2026-11-05T16:19:48.842Z",
       "images": [
         "https://images.craigslist.org/00r0r_9zZyRV8bClr_0q60hi_600x450.jpg",
         "https://images.craigslist.org/00r0r_9zZyRV8bClr_0q60hi_50x50c.jpg",
@@ -2687,7 +2687,7 @@
       "targetArea": true,
       "active": true,
       "postedOrUpdatedAt": "2026-10-29T07:35:42.000Z",
-      "checkedAt": "2026-11-05T16:07:21.893Z",
+      "checkedAt": "2026-11-05T16:19:48.842Z",
       "images": [
         "https://images.craigslist.org/00X0X_84rFFqAN323_0CI0t2_600x450.jpg",
         "https://images.craigslist.org/00X0X_84rFFqAN323_0CI0t2_50x50c.jpg",
@@ -2739,7 +2739,7 @@
       "targetArea": true,
       "active": true,
       "postedOrUpdatedAt": "2026-10-28T17:33:53.000Z",
-      "checkedAt": "2026-11-05T16:07:21.893Z",
+      "checkedAt": "2026-11-05T16:19:48.842Z",
       "images": [
         "https://images.craigslist.org/00y0y_8p5bvUxzLUS_0CI0t2_600x450.jpg",
         "https://images.craigslist.org/00y0y_8p5bvUxzLUS_0CI0t2_50x50c.jpg",
@@ -2791,7 +2791,7 @@
       "targetArea": true,
       "active": true,
       "postedOrUpdatedAt": "2026-10-27T20:14:17.000Z",
-      "checkedAt": "2026-11-05T16:07:21.893Z",
+      "checkedAt": "2026-11-05T16:19:48.842Z",
       "images": [
         "https://images.craigslist.org/00j0j_5Ckmc7aqIvf_0CI0pO_600x450.jpg",
         "https://images.craigslist.org/00j0j_5Ckmc7aqIvf_0CI0pO_50x50c.jpg",
@@ -2840,7 +2840,7 @@
       "targetArea": true,
       "active": true,
       "postedOrUpdatedAt": "2026-10-27T19:58:14.000Z",
-      "checkedAt": "2026-11-05T16:07:21.893Z",
+      "checkedAt": "2026-11-05T16:19:48.842Z",
       "images": [
         "https://images.craigslist.org/00t0t_5wZliSsqM4m_0CI0pO_600x450.jpg",
         "https://images.craigslist.org/00t0t_5wZliSsqM4m_0CI0pO_50x50c.jpg",
@@ -2892,7 +2892,7 @@
       "targetArea": true,
       "active": true,
       "postedOrUpdatedAt": "2026-10-26T18:33:39.000Z",
-      "checkedAt": "2026-11-05T16:07:21.893Z",
+      "checkedAt": "2026-11-05T16:19:48.842Z",
       "images": [
         "https://images.craigslist.org/00I0I_7DIuj2A2i7A_0kE0dN_600x450.jpg",
         "https://images.craigslist.org/00I0I_7DIuj2A2i7A_0kE0dN_50x50c.jpg",
@@ -2944,7 +2944,7 @@
       "targetArea": true,
       "active": true,
       "postedOrUpdatedAt": "2026-10-21T23:27:21.000Z",
-      "checkedAt": "2026-11-05T16:07:21.893Z",
+      "checkedAt": "2026-11-05T16:19:48.842Z",
       "images": [
         "https://images.craigslist.org/00n0n_jXO3RMGlnqb_0pO0g9_600x450.jpg",
         "https://images.craigslist.org/00n0n_jXO3RMGlnqb_0pO0g9_50x50c.jpg",
@@ -2996,7 +2996,7 @@
       "targetArea": true,
       "active": true,
       "postedOrUpdatedAt": "2026-10-14T19:18:29.000Z",
-      "checkedAt": "2026-11-05T16:07:21.893Z",
+      "checkedAt": "2026-11-05T16:19:48.842Z",
       "images": [
         "https://images.craigslist.org/00A0A_ive1vfBAsf6_0CI0ne_600x450.jpg",
         "https://images.craigslist.org/00A0A_ive1vfBAsf6_0CI0ne_50x50c.jpg",
@@ -3048,7 +3048,7 @@
       "targetArea": true,
       "active": true,
       "postedOrUpdatedAt": "2026-10-07T12:29:52.000Z",
-      "checkedAt": "2026-11-05T16:07:21.893Z",
+      "checkedAt": "2026-11-05T16:19:48.842Z",
       "images": [
         "https://images.craigslist.org/00u0u_1lKl2PJH7lt_0ak06S_600x450.jpg",
         "https://images.craigslist.org/00u0u_1lKl2PJH7lt_0ak06S_50x50c.jpg",
@@ -3100,7 +3100,7 @@
       "targetArea": true,
       "active": true,
       "postedOrUpdatedAt": "2026-10-07T12:28:50.000Z",
-      "checkedAt": "2026-11-05T16:07:21.893Z",
+      "checkedAt": "2026-11-05T16:19:48.842Z",
       "images": [
         "https://images.craigslist.org/00i0i_ai4L4iKruen_0CI0pO_600x450.jpg",
         "https://images.craigslist.org/00i0i_ai4L4iKruen_0CI0pO_50x50c.jpg",
@@ -3152,7 +3152,7 @@
       "targetArea": true,
       "active": true,
       "postedOrUpdatedAt": "2026-10-07T11:29:03.000Z",
-      "checkedAt": "2026-11-05T16:07:21.893Z",
+      "checkedAt": "2026-11-05T16:19:48.842Z",
       "images": [
         "https://images.craigslist.org/00f0f_iVN9JuSTfW_0t20jm_600x450.jpg",
         "https://images.craigslist.org/00f0f_iVN9JuSTfW_0t20jm_50x50c.jpg",
@@ -3204,7 +3204,7 @@
       "targetArea": true,
       "active": true,
       "postedOrUpdatedAt": "2026-10-05T20:46:36.000Z",
-      "checkedAt": "2026-11-05T16:07:21.893Z",
+      "checkedAt": "2026-11-05T16:19:48.842Z",
       "images": [
         "https://images.craigslist.org/00I0I_dZ4RxUec20e_0fr0ae_600x450.jpg",
         "https://images.craigslist.org/00I0I_dZ4RxUec20e_0fr0ae_50x50c.jpg",
@@ -3256,7 +3256,7 @@
       "targetArea": true,
       "active": true,
       "postedOrUpdatedAt": "2026-09-22T01:13:11.000Z",
-      "checkedAt": "2026-11-05T16:07:21.893Z",
+      "checkedAt": "2026-11-05T16:19:48.842Z",
       "images": [
         "https://images.craigslist.org/00B0B_3IX9iEbtZep_0hc0pO_600x450.jpg",
         "https://images.craigslist.org/00B0B_3IX9iEbtZep_0hc0pO_50x50c.jpg",

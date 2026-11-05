@@ -1,129 +1,175 @@
 {
-  "refreshedAt": "2026-11-05T16:07:12.209Z",
+  "refreshedAt": "2026-11-05T16:19:40.070Z",
   "mode": "candidate-only",
   "sourceHealth": {
     "rentalsca-kitsilano-2br": {
-      "checkedAt": "2026-11-05T16:07:12.209Z",
+      "checkedAt": "2026-11-05T16:19:40.070Z",
       "status": 403,
       "ok": false,
-      "finalUrl": "https://rentals.ca/vancouver/kitsilano/all-apartments-all-houses?__cf_chl_rt_tk=7YSi_zPz0Iq0aXbSY.HMr3GvcM2XWoGq6R_cQynQcCQ-1793894832-1.0.1.1-ws1PuHq8Hg0_YBkFcG6WFb5llBWyO2fXsQ9ABYL5GIE"
+      "finalUrl": "https://rentals.ca/vancouver/kitsilano/all-apartments-all-houses?__cf_chl_rt_tk=iM8NwZxyZl225dCb2RwVWtGpplffPPgLAh5V2GIXKn0-1793895580-1.0.1.1-VjuEFqAHeC.d5hwoq05c3cVrlExs8.e65aluugUDZV0"
     },
     "rentalsca-point-grey-2br": {
-      "checkedAt": "2026-11-05T16:07:12.209Z",
-      "status": 200,
-      "ok": true,
-      "finalUrl": "https://rentals.ca/vancouver/west-point-grey",
-      "detailLinkCount": 12,
-      "title": "Rentals.ca West Point Grey Vancouver Apartments, Condos and Houses For Rent",
-      "observedListingCount": 11,
-      "challengeDetected": false,
-      "searchLeadCount": 8,
-      "addressLineCount": 8,
-      "detailUrlCount": 14
+      "checkedAt": "2026-11-05T16:19:40.070Z",
+      "status": 403,
+      "ok": false,
+      "finalUrl": "https://rentals.ca/vancouver/west-point-grey?__cf_chl_rt_tk=8G_bLH3ACGJ9X52X_BD2vXeOd86i88jSY1UITkvuksM-1793895580-1.0.1.1-eT_.ALLTnn_k_BBH96GtR4oEc_etwU2nN7BWEyClomw"
     },
     "rentalsca-arbutus-2br": {
-      "checkedAt": "2026-11-05T16:07:12.209Z",
+      "checkedAt": "2026-11-05T16:19:40.070Z",
       "status": 403,
       "ok": false,
-      "finalUrl": "https://rentals.ca/vancouver/arbutus-ridge?__cf_chl_rt_tk=Q2O9xI96jw9anU9GXVue90vMTW4zpJIShMOZFamrIpY-1793894836-1.0.1.1-9qX5YEOfD4N5ujHBq1wqHGfFAcdFFUPgn_ffb9BH0q8"
+      "finalUrl": "https://rentals.ca/vancouver/arbutus-ridge?__cf_chl_rt_tk=1KhuGej2nZchp0cJCNCe8h8NjcKqgpimlWz3ax_WSmA-1793895580-1.0.1.1-CcTBUpl.sNS4QCwcrkJYfXhcXaZ25yMycs8A07t2lzQ"
     },
     "rentalsca-dunbar-2br": {
-      "checkedAt": "2026-11-05T16:07:12.209Z",
-      "status": 403,
-      "ok": false,
-      "finalUrl": "https://rentals.ca/vancouver/dunbar-southlands?__cf_chl_rt_tk=3L5gTenhwl6fsIrkyZe70I0RjwyiJNhxu0AiV_lCFgg-1793894836-1.0.1.1-ikOtLNJNldmuqy8RJlIkS3hGgakNNMMhS5rinMayis0"
-    },
-    "rentalsca-vancouver-all": {
-      "checkedAt": "2026-11-05T16:07:12.209Z",
-      "status": 403,
-      "ok": false,
-      "finalUrl": "https://rentals.ca/vancouver?__cf_chl_rt_tk=c3PZvrDgAmcoieOKK.UTIJ9xZcafIMWk_pOO4HUk0bM-1793894836-1.0.1.1-_ApK6CRcgA3dnc.6rdWwt0aD5FC7QxPsXC._tHZKHOk"
-    },
-    "rentalsca-kitsilano-3br": {
-      "checkedAt": "2026-11-05T16:07:12.209Z",
-      "status": 403,
-      "ok": false,
-      "finalUrl": "https://rentals.ca/vancouver/kitsilano/3-bedrooms?__cf_chl_rt_tk=1I4TcKNj48tB7lPWqLKxjdLdFIuGa_jtNKKmaF8AElA-1793894836-1.0.1.1-5rtH6XxRZT2z55pGr8bCEyvFZXau47RZlOz8.R.eKEc"
-    },
-    "rentalsca-kitsilano-4br": {
-      "checkedAt": "2026-11-05T16:07:12.209Z",
+      "checkedAt": "2026-11-05T16:19:40.070Z",
       "status": 200,
       "ok": true,
-      "finalUrl": "https://rentals.ca/vancouver/kitsilano/4-bedrooms",
-      "detailLinkCount": 2,
-      "title": "Kitsilano Vancouver 4 Bedroom Apartments Condos and Houses for Rent",
-      "observedListingCount": 2,
+      "finalUrl": "https://rentals.ca/vancouver/dunbar-southlands",
+      "detailLinkCount": 10,
+      "title": "Rentals.ca Dunbar-Southlands Vancouver Apartments, Condos and Houses For Rent",
+      "observedListingCount": 10,
       "challengeDetected": false,
       "searchLeadCount": 1,
       "addressLineCount": 1,
-      "detailUrlCount": 2
+      "detailUrlCount": 11
+    },
+    "rentalsca-vancouver-all": {
+      "checkedAt": "2026-11-05T16:19:40.070Z",
+      "status": 200,
+      "ok": true,
+      "finalUrl": "https://rentals.ca/vancouver",
+      "detailLinkCount": 52,
+      "title": "Apartments for Rent in Vancouver, BC | Rentals.ca",
+      "observedListingCount": 543,
+      "challengeDetected": false,
+      "searchLeadCount": 19,
+      "addressLineCount": 19,
+      "detailUrlCount": 67
+    },
+    "rentalsca-kitsilano-3br": {
+      "checkedAt": "2026-11-05T16:19:40.070Z",
+      "status": 429,
+      "ok": false,
+      "finalUrl": "https://rentals.ca/vancouver/kitsilano/3-bedrooms?__cf_chl_rt_tk=WCFD7_0dzsiFzcXQhjqbsu.qgP4jAoY913PKdZE9Ubw-1793895587-1.0.1.1-OGftSZ4DIdvetSFNrEbbPaN9xSfhfSnijwx6e7Ac6rI"
+    },
+    "rentalsca-kitsilano-4br": {
+      "checkedAt": "2026-11-05T16:19:40.070Z",
+      "status": 429,
+      "ok": false,
+      "finalUrl": "https://rentals.ca/vancouver/kitsilano/4-bedrooms?__cf_chl_rt_tk=OFCaEVBu0PyFUsR4hqSliKGAvS0HQh3cAHlvEhbjC8w-1793895587-1.0.1.1-_FADt5Tp4M4YnjeF4v2Fzf1SFhj3NRZjQFbXC9hOz7Q"
     },
     "rentalsca-vancouver-3br": {
-      "checkedAt": "2026-11-05T16:07:12.209Z",
+      "checkedAt": "2026-11-05T16:19:40.070Z",
       "status": 429,
       "ok": false,
-      "finalUrl": "https://rentals.ca/vancouver/3-bedrooms?__cf_chl_rt_tk=38hz.9vTFpftky4AYFA.bdid9cF3hB6B5CGQh4rPeSw-1793894840-1.0.1.1-6NWG_UoiBOGHTwbaRw3eVS0FMJjBZd3h9oQV18WA54k"
+      "finalUrl": "https://rentals.ca/vancouver/3-bedrooms?__cf_chl_rt_tk=zcXkxQoD7AxsE1iNQbKbM1KT11pC_0Yhqxgda4P4Qno-1793895587-1.0.1.1-MzUbsTL152rnrDshnpLvlyFJb4YfxI3m7.7moZLxRLQ"
     },
     "rentalsca-vancouver-4br": {
-      "checkedAt": "2026-11-05T16:07:12.209Z",
+      "checkedAt": "2026-11-05T16:19:40.070Z",
       "status": 429,
       "ok": false,
-      "finalUrl": "https://rentals.ca/vancouver/4-bedrooms?__cf_chl_rt_tk=kZfZMJdDBtawlfMKB_C8H7BUXZeM2TIXXHH_Z5sDOIw-1793894840-1.0.1.1-es8q7l7ZgZJYRm8jNR_7XfFlSTdex3u.lBJryDtukMs"
+      "finalUrl": "https://rentals.ca/vancouver/4-bedrooms?__cf_chl_rt_tk=TE8juoRF48ie6NNje0sgTIfxusXnx2B1dm9Q0yT2BiI-1793895587-1.0.1.1-GFdO2lrVhh28xYAinC9Jq_yJIp.J_Smmptv8CSDvqW8"
     },
     "rentalsca-downtown-2br": {
-      "checkedAt": "2026-11-05T16:07:12.209Z",
+      "checkedAt": "2026-11-05T16:19:40.070Z",
       "status": 429,
       "ok": false,
-      "finalUrl": "https://rentals.ca/vancouver/downtown?__cf_chl_rt_tk=K9mjlimRqza4EwDmLj_DWykV02pG2wj7sDpL2og518M-1793894840-1.0.1.1-33L9pBXtEP6kW_cUoiIQZd1gxXV2DiTHLDRbX2KyPq8"
+      "finalUrl": "https://rentals.ca/vancouver/downtown?__cf_chl_rt_tk=dmgRa.xQLqvXAwe1bx9v0OaB20RBA.kHkq3pG29225M-1793895587-1.0.1.1-8S.3jILhL_WBPjjDRGEY41frM11rhq841yGtdu36anw"
     },
     "rentalsca-yaletown-2br": {
-      "checkedAt": "2026-11-05T16:07:12.209Z",
+      "checkedAt": "2026-11-05T16:19:40.070Z",
       "status": 429,
       "ok": false,
-      "finalUrl": "https://rentals.ca/vancouver/yaletown?__cf_chl_rt_tk=HH9Y.32sXKBLjNywQ6u5R_U4EhoynRMOFVLopAPLiIM-1793894840-1.0.1.1-ZKW_NlXGBOoN1f3IBPnOw56KBoUbBn077THCuTXvmA4"
+      "finalUrl": "https://rentals.ca/vancouver/yaletown?__cf_chl_rt_tk=8FonW.eG13ApkuYqUqnJMzVhJmiCgP2zph9xbxtJ_xw-1793895587-1.0.1.1-44cpZPu6_3mNFSUab7r9.rlJ7dzjMxWUjUiOSk52SNI"
     },
     "rentalsca-coal-harbour-2br": {
-      "checkedAt": "2026-11-05T16:07:12.209Z",
+      "checkedAt": "2026-11-05T16:19:40.070Z",
       "status": 429,
       "ok": false,
-      "finalUrl": "https://rentals.ca/vancouver/coal-harbour?__cf_chl_rt_tk=OBh5ot3pBcxsqhxZTimfA69CmjsqYW2hJnYN6aEA0xw-1793894840-1.0.1.1-B3dXxe22mcCTby1BudkBCjEJ8QXPmUMWkxA6nKV_l2w"
+      "finalUrl": "https://rentals.ca/vancouver/coal-harbour?__cf_chl_rt_tk=t0eJtJ7XkSzxotmVxfg5Yaa6zr1NxU95_zP0KR87cc8-1793895587-1.0.1.1-3vsPBZ02wirRSkQgP5EZYtAkhqiFOOUiuO65WX.OXok"
     }
   },
   "diagnostics": {
-    "searchResultCount": 13,
-    "searchAddressLines": 9,
-    "searchDetailLinks": 14,
-    "searchLeadCount": 1,
-    "searchLeadOutOfArea": 0,
-    "newSearchLeadCount": 1,
+    "searchResultCount": 553,
+    "searchAddressLines": 20,
+    "searchDetailLinks": 62,
+    "searchLeadCount": 3,
+    "searchLeadOutOfArea": 3,
+    "newSearchLeadCount": 3,
     "representedSearchLeadCount": 0,
     "revalidationSearchLeadCount": 0,
-    "detailUrls": 16,
+    "detailUrls": 78,
     "detailChecked": 3,
     "detailBlocked": 3,
     "detailNotFound": 0,
     "detailErrors": 0,
     "detailParsed": 0,
-    "detailSuppressed": 13,
+    "detailSuppressed": 75,
     "detailCircuitOpen": true
   },
   "searchLeads": [
     {
-      "identityKey": "2261 waterloo street, vancouver, bc::5000::5000::4::4",
-      "address": "2261 Waterloo Street, Vancouver, BC",
-      "rentMin": 5000,
-      "rentMax": 5000,
-      "bedroomMin": 4,
-      "bedroomMax": 4,
+      "identityKey": "1661 davie street, vancouver, bc::2215::5200::0::3",
+      "address": "1661 Davie Street, Vancouver, BC",
+      "rentMin": 2215,
+      "rentMax": 5200,
+      "bedroomMin": 0,
+      "bedroomMax": 3,
       "bathrooms": 2,
-      "rentalType": "House",
+      "rentalType": "Apartment",
       "source": "Rentals.ca search",
-      "searchUrl": "https://rentals.ca/vancouver/kitsilano/4-bedrooms",
-      "checkedAt": "2026-11-05T16:07:12.209Z",
+      "searchUrl": "https://rentals.ca/vancouver",
+      "checkedAt": "2026-11-05T16:19:40.070Z",
       "publishable": false,
       "evidenceKind": "search_result_lead_only",
       "availabilityVerified": false,
-      "url": "https://rentals.ca/vancouver/2261-waterloo-street",
+      "url": "https://rentals.ca/vancouver/1661-davie-street",
+      "leadStatus": "new_unverified_address",
+      "addressMatchOnly": false,
+      "matchingListingCount": 0,
+      "matchedListingIds": [],
+      "matchedListingId": null,
+      "matchedAvailabilityStatus": null
+    },
+    {
+      "identityKey": "1717 lorne street, vancouver, bc::2500::4025::1::2",
+      "address": "1717 Lorne Street, Vancouver, BC",
+      "rentMin": 2500,
+      "rentMax": 4025,
+      "bedroomMin": 1,
+      "bedroomMax": 2,
+      "bathrooms": 2,
+      "rentalType": "Apartment",
+      "source": "Rentals.ca search",
+      "searchUrl": "https://rentals.ca/vancouver",
+      "checkedAt": "2026-11-05T16:19:40.070Z",
+      "publishable": false,
+      "evidenceKind": "search_result_lead_only",
+      "availabilityVerified": false,
+      "url": "https://rentals.ca/vancouver/1717-lorne-street",
+      "leadStatus": "new_unverified_address",
+      "addressMatchOnly": false,
+      "matchingListingCount": 0,
+      "matchedListingIds": [],
+      "matchedListingId": null,
+      "matchedAvailabilityStatus": null
+    },
+    {
+      "identityKey": "825 nicola street, vancouver, bc::2497::4063::0.5::2.5",
+      "address": "825 Nicola Street, Vancouver, BC",
+      "rentMin": 2497,
+      "rentMax": 4063,
+      "bedroomMin": 0.5,
+      "bedroomMax": 2.5,
+      "bathrooms": 2,
+      "rentalType": "Apartment",
+      "source": "Rentals.ca search",
+      "searchUrl": "https://rentals.ca/vancouver",
+      "checkedAt": "2026-11-05T16:19:40.070Z",
+      "publishable": false,
+      "evidenceKind": "search_result_lead_only",
+      "availabilityVerified": false,
+      "url": "https://rentals.ca/vancouver/825-nicola-street",
       "leadStatus": "new_unverified_address",
       "addressMatchOnly": false,
       "matchingListingCount": 0,
