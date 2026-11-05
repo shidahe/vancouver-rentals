@@ -1,10 +1,10 @@
 {
-  "refreshedAt": "2026-11-05T06:57:54.710Z",
+  "refreshedAt": "2026-11-05T16:10:17.281Z",
   "listings": {
     "kits-maple-2565-penthouse": {
       "cached": 3,
-      "preserved": 0,
-      "downloaded": 3,
+      "preserved": 3,
+      "downloaded": 0,
       "failures": [
         {
           "url": "https://images.craigslist.org/00A0A_aQXNvS54lVv_01C01d_600x450.jpg",
@@ -31,8 +31,8 @@
     },
     "mls-r3167681": {
       "cached": 5,
-      "preserved": 0,
-      "downloaded": 5,
+      "preserved": 5,
+      "downloaded": 0,
       "failures": [],
       "photoPageUrl": "https://www.craigslist.org/view/d/vancouver-beautiful-modern-bed-bath/qdWUcw41Nhag6DNxkm2346"
     }
@@ -40,11 +40,11 @@
   "totals": {
     "sourceListings": 2,
     "cachedListings": 2,
-    "downloaded": 8,
+    "downloaded": 0,
     "failed": 9,
-    "preserved": 0,
-    "prunedListings": 95,
-    "prunedIndexImages": 602,
+    "preserved": 8,
+    "prunedListings": 0,
+    "prunedIndexImages": 0,
     "prunedOrphanFiles": 0
   }
 }

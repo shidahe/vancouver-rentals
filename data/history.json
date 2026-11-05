@@ -4214,6 +4214,11 @@
       "date": "2026-11-05",
       "rent": 4595,
       "note": "EXCLUDED: fewer than two verified bathrooms."
+    },
+    {
+      "date": "2026-11-05",
+      "rent": 4595,
+      "note": "RELISTED: exact current Zumper detail again shows active availability."
     }
   ],
   "mls-r3165947": [
@@ -4261,6 +4266,61 @@
     {
       "date": "2026-11-05",
       "rent": 4150,
+      "note": "EXCLUDED: direct sunlight or non-north exposure not verified."
+    }
+  ],
+  "mls-r3169921": [
+    {
+      "date": "2026-11-05",
+      "rent": 4850,
+      "note": "AUTO-REMOVED after direct live verification found explicit unavailable evidence."
+    }
+  ],
+  "mls-r3181005": [
+    {
+      "date": "2026-11-05",
+      "rent": 4200,
+      "note": "NEW: live Realtylink MLS R3181005 auto-published."
+    },
+    {
+      "date": "2026-11-05",
+      "rent": 4200,
+      "note": "EXCLUDED: direct sunlight or non-north exposure not verified."
+    }
+  ],
+  "mls-r3076892": [
+    {
+      "date": "2026-11-05",
+      "rent": 4950,
+      "note": "NEW: live Realtylink MLS R3076892 auto-published."
+    },
+    {
+      "date": "2026-11-05",
+      "rent": 4950,
+      "note": "EXCLUDED: fewer than two verified bathrooms."
+    }
+  ],
+  "mls-r3175118": [
+    {
+      "date": "2026-11-05",
+      "rent": 5500,
+      "note": "NEW: live Realtylink MLS R3175118 auto-published."
+    },
+    {
+      "date": "2026-11-05",
+      "rent": 5500,
+      "note": "EXCLUDED: air conditioning not confirmed."
+    }
+  ],
+  "mls-r3178905": [
+    {
+      "date": "2026-11-05",
+      "rent": 4350,
+      "note": "NEW: live Realtylink MLS R3178905 auto-published."
+    },
+    {
+      "date": "2026-11-05",
+      "rent": 4350,
       "note": "EXCLUDED: direct sunlight or non-north exposure not verified."
     }
   ]

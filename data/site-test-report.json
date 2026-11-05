@@ -1,17 +1,16 @@
 {
-  "checkedAt": "2026-11-05T06:58:40.916Z",
+  "checkedAt": "2026-11-05T16:10:23.244Z",
   "ok": true,
   "checkpoints": {
     "render": {
       "title": "Kitsilano & Downtown Vancouver Rentals",
-      "cards": 3,
-      "shown": 3
+      "cards": 2,
+      "shown": 2
     },
     "hardScope": {
       "visibleIds": [
         "kits-maple-2565-penthouse",
-        "mls-r3167681",
-        "mls-r3169921"
+        "mls-r3167681"
       ],
       "bad": [],
       "hasDowntown": true
@@ -25,30 +24,29 @@
         "Last refreshed"
       ],
       "values": [
-        "3",
-        "3",
+        "2",
+        "2",
         "0",
         "0",
-        "Nov 4, 10:49 p.m. PST"
+        "Nov 5, 8:01 a.m. PST"
       ],
-      "html": "<div class=\"stat\"><strong>3</strong><span>Active</span></div><div class=\"stat\"><strong>3</strong><span>New 7d</span></div><div class=\"stat\"><strong>0</strong><span>Price drops</span></div><div class=\"stat\"><strong>0</strong><span>To verify</span></div><div class=\"stat\"><strong>Nov 4, 10:49 p.m. PST</strong><span>Last refreshed</span></div>",
+      "html": "<div class=\"stat\"><strong>2</strong><span>Active</span></div><div class=\"stat\"><strong>2</strong><span>New 7d</span></div><div class=\"stat\"><strong>0</strong><span>Price drops</span></div><div class=\"stat\"><strong>0</strong><span>To verify</span></div><div class=\"stat\"><strong>Nov 5, 8:01 a.m. PST</strong><span>Last refreshed</span></div>",
       "refreshedAt": {
-        "displayed": "Nov 4, 10:49 p.m. PST",
-        "expected": "Nov 4, 10:49 p.m. PST",
+        "displayed": "Nov 5, 8:01 a.m. PST",
+        "expected": "Nov 5, 8:01 a.m. PST",
         "timezone": "America/Vancouver"
       },
       "newSevenDays": {
-        "expectedCount": 3,
+        "expectedCount": 2,
         "badgeIds": [
           "kits-maple-2565-penthouse",
-          "mls-r3167681",
-          "mls-r3169921"
+          "mls-r3167681"
         ],
         "staleBadgeIds": []
       }
     },
     "map": {
-      "markers": 3,
+      "markers": 2,
       "desktopMapVisible": true
     },
     "filters": "ok",
@@ -59,14 +57,14 @@
     },
     "sourceLink": "https://www.craigslist.org/view/d/vancouver-rare-penthouse-with-private/h5bh2hpcqoXSPVRz7zvtLg",
     "photos": {
-      "total": 3,
+      "total": 2,
       "loaded": 2,
-      "fallbacks": 1,
+      "fallbacks": 0,
       "bad": []
     },
     "markerPositions": {
-      "total": 3,
-      "unique": 3
+      "total": 2,
+      "unique": 2
     },
     "dataEndpoints": "ok",
     "mobile": "ok",
