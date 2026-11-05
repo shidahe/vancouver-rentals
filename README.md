@@ -1,6 +1,6 @@
-# Vancouver Westside Rental Radar
+# Vancouver Rental Radar
 
-A zero-backend static rental tracker for Kitsilano, Arbutus Ridge, Point Grey and nearby Vancouver Westside neighbourhoods.
+A zero-backend static rental tracker for Kitsilano, the Vancouver Westside, Downtown, Yaletown, the West End and Coal Harbour.
 
 ## Architecture
 
@@ -20,7 +20,7 @@ Favorite, hidden/not-interested, contacted and notes are stored in `localStorage
 
 On each refresh:
 
-1. Recheck public listing aggregators and priority purpose-built rental sites.
+1. Recheck public listing aggregators, MLS/IDX, classifieds and priority purpose-built rental sites across the Westside and Downtown peninsula.
 2. Normalize listings and deduplicate by building/address/unit/floorplan.
 3. Preserve stable `id` values for existing listings.
 4. Compare rent against `data/history.json`; append only meaningful observations/changes.
@@ -31,7 +31,7 @@ On each refresh:
 
 ## Match score
 
-The client-side score currently emphasizes 800+ sqft, 2BR+, 2BA, AC, newer construction, south/SE/SW exposure, parking, large windows and modern interiors, while penalizing confirmed north-facing units and confirmed lack of AC. It is deliberately transparent in `score()` in `app.js` and can be tuned over time.
+The client-side score emphasizes 800+ sqft, 2BR+, 2BA, AC, newer construction, south/SE/SW exposure, parking, large windows and modern interiors, while penalizing confirmed north-facing units and confirmed lack of AC. Two bathrooms and roughly 800 sqft are ranking preferences, not discovery gates: every adapter must retain qualifying 2–4BR whole-home candidates even when either field is lower or unknown. It is deliberately transparent in `score()` in `app.js` and can be tuned over time.
 
 ## GitHub Pages
 

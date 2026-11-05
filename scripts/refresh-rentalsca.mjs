@@ -71,7 +71,7 @@ for(const s of (sources.discovery||[]).filter(x=>x.adapter==='rentalsca-search')
     const searchLeads=parseRentalsCaSearchLeads(bodyText);
     const neighborhoodSearch=/rentalsca-(?:kitsilano|point-grey|arbutus|dunbar|quilchena)-/i.test(s.id);
     for(const lead of searchLeads){
-      if(lead.rentMax<4000||lead.rentMin>6000||lead.bedroomMax<2||lead.bedroomMin>4||(lead.bathrooms!=null&&lead.bathrooms<2))continue;
+      if(lead.rentMax<4000||lead.rentMin>6000||lead.bedroomMax<2||lead.bedroomMin>4)continue;
       if(!rentalsCaSearchLeadScopeEligible(lead))continue;
       if(!neighborhoodSearch&&!isTargetRentalSearchAddress(lead.address)){diagnostics.searchLeadOutOfArea++;continue;}
       searchLeadMap.set(lead.identityKey,{...lead,source:'Rentals.ca search',searchUrl:s.url,checkedAt:iso,publishable:false,evidenceKind:'search_result_lead_only',availabilityVerified:false});
