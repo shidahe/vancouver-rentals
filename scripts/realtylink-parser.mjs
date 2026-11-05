@@ -28,7 +28,7 @@ export function isTargetRentalCoordinate(coordinate) {
 }
 
 export function parseRealtylinkRoomCount(text, label) {
-  const match=String(text||'').match(new RegExp(`\\b([1-9]\\d?(?:\\.5)?)\\s+${label}s?\\b`,'i'));
+  const match=String(text||'').match(new RegExp(`\\b([1-9](?:\\.5)?)\\s+${label}s?\\b`,'i'));
   return match?Number(match[1]):null;
 }
 
