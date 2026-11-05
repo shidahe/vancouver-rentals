@@ -5,6 +5,7 @@ import { firstLikelyRent, parseFacts } from './listing-parser.mjs';
 import { findExistingSeedListing } from './inventory-identity.mjs';
 import { verifiedPhotoCandidates } from './listing-photo-candidates.mjs';
 import { isRealtylinkListingNotFoundRedirect, parseRealtylinkFloorArea, parseRealtylinkRoomCount } from './realtylink-parser.mjs';
+import { isTargetRentalCoordinate } from './realtylink-parser.mjs';
 import { exactPurposeBuiltFloorplanEvidence } from './purposebuilt-floorplan-evidence.mjs';
 import { isAuxiliaryNegativeForMls, softNegativeDisposition, softUnavailablePrompt } from './listing-availability.mjs';
 import { craigslistStructuredFacts } from './craigslist-parser.mjs';
@@ -365,7 +366,8 @@ for (const seed of sources.seedCandidates || []) {
   const canPublish = !!seed.autoPublish && result.ok && cls?.identityMatch && cls?.explicitPositive && !cls?.explicitNegative && bedOK && priceOK;
 
   if (canPublish) {
-    const geo = existing?.lat && existing?.lng ? { lat: existing.lat, lng: existing.lng } : await geocodeVancouver(seed.address);
+    const geo = existing?.lat && existing?.lng ? { lat: existing.lat, lng: existing.lng } :
+      isTargetRentalCoordinate(seed.geo) ? seed.geo : await geocodeVancouver(seed.address);
     if (geo) {
       if (existing) {
         if (seed.mls) {
@@ -385,6 +387,10 @@ for (const seed of sources.seedCandidates || []) {
         existing.parking = facts.parking ?? existing.parking;
         existing.petFriendly = facts.petFriendly ?? existing.petFriendly;
         existing.orientation = facts.orientation ?? existing.orientation;
+        existing.sunlightVerified = facts.sunlightVerified ?? existing.sunlightVerified;
+        existing.sunlightEvidence = facts.sunlightEvidence ?? existing.sunlightEvidence;
+        existing.orientationEvidence = facts.orientationEvidence ?? existing.orientationEvidence;
+        existing.viewQuality = facts.viewQuality ?? existing.viewQuality;
         existing.balcony = facts.balcony ?? existing.balcony;
         existing.buildingYear = facts.buildingYear ?? existing.buildingYear;
         existing.largeWindows = facts.largeWindows ?? existing.largeWindows;
@@ -423,6 +429,10 @@ for (const seed of sources.seedCandidates || []) {
           petFriendly: facts.petFriendly ?? null,
           buildingYear: facts.buildingYear ?? null,
           orientation: facts.orientation ?? null,
+          sunlightVerified: facts.sunlightVerified ?? false,
+          sunlightEvidence: facts.sunlightEvidence ?? null,
+          orientationEvidence: facts.orientationEvidence ?? null,
+          viewQuality: facts.viewQuality ?? null,
           balcony: facts.balcony ?? null,
           largeWindows: facts.largeWindows ?? null,
           modernInterior: facts.modernInterior ?? null,

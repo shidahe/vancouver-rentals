@@ -178,6 +178,11 @@
       "date": "2026-08-19",
       "rent": 3500,
       "note": "Primary Homax property-manager page still explicitly FOR RENT / Available Now"
+    },
+    {
+      "date": "2026-11-05",
+      "rent": 3500,
+      "note": "EXCLUDED: monthly rent outside CAD $4,000–$6,000."
     }
   ],
   "tribeca-type-2d-2111-w11": [
@@ -345,6 +350,11 @@
       "date": "2026-10-20",
       "rent": 3800,
       "note": "CORRECTED from exact current Zumper advertiser facts: bathrooms 1 → 2."
+    },
+    {
+      "date": "2026-11-05",
+      "rent": 3800,
+      "note": "EXCLUDED: monthly rent outside CAD $4,000–$6,000."
     }
   ],
   "zumper-6e03d092610a": [
@@ -374,6 +384,11 @@
       "date": "2026-10-20",
       "rent": 4500,
       "note": "CORRECTED from exact current Zumper advertiser facts: bathrooms 1 → 2."
+    },
+    {
+      "date": "2026-11-05",
+      "rent": 4500,
+      "note": "EXCLUDED: air conditioning not confirmed."
     }
   ],
   "zumper-40e7a81ead7b": [
@@ -448,6 +463,11 @@
       "date": "2026-10-31",
       "rent": 3690,
       "note": "AUTO Zumper live price update $3688 → $3690."
+    },
+    {
+      "date": "2026-11-05",
+      "rent": 3690,
+      "note": "EXCLUDED: monthly rent outside CAD $4,000–$6,000."
     }
   ],
   "zumper-adc0623c7c44": [
@@ -1063,6 +1083,11 @@
       "date": "2026-10-20",
       "rent": 4300,
       "note": "MLS price update $4500 → $4300."
+    },
+    {
+      "date": "2026-11-05",
+      "rent": 4300,
+      "note": "EXCLUDED: air conditioning not confirmed."
     }
   ],
   "mls-r3160936": [
@@ -1906,6 +1931,11 @@
       "date": "2026-10-28",
       "rent": 4800,
       "note": "CORRECTED: restored after exact current MLS detail matched identity, explicit availability and rent."
+    },
+    {
+      "date": "2026-11-05",
+      "rent": 4800,
+      "note": "EXCLUDED: direct sunlight or non-north exposure not verified."
     }
   ],
   "mls-r3158179": [
@@ -2146,6 +2176,11 @@
       "date": "2026-11-03",
       "rent": 3675,
       "note": "NEEDS CONFIRMATION: latest purpose-built fallback sources did not confirm the exact configured rent + sqft inventory row."
+    },
+    {
+      "date": "2026-11-05",
+      "rent": 3675,
+      "note": "EXCLUDED: monthly rent outside CAD $4,000–$6,000."
     }
   ],
   "mls-r3160879": [
@@ -2621,6 +2656,11 @@
       "date": "2026-11-02",
       "rent": 15000,
       "note": "AUTO-HIDDEN: auxiliary marketplace link became unavailable; MLS R3179104 requires authoritative confirmation before removal."
+    },
+    {
+      "date": "2026-11-05",
+      "rent": 15000,
+      "note": "EXCLUDED: monthly rent outside CAD $4,000–$6,000."
     }
   ],
   "mls-r3149267": [
@@ -2805,6 +2845,11 @@
       "date": "2026-11-02",
       "rent": 5800,
       "note": "CORRECTED: restored after exact current MLS detail matched identity, explicit availability and rent."
+    },
+    {
+      "date": "2026-11-05",
+      "rent": 5800,
+      "note": "EXCLUDED: direct sunlight or non-north exposure not verified."
     }
   ],
   "mls-r3164628": [
@@ -3103,6 +3148,11 @@
       "date": "2026-11-01",
       "rent": 6750,
       "note": "CORRECTED: restored after exact current MLS detail matched identity, explicit availability and rent."
+    },
+    {
+      "date": "2026-11-05",
+      "rent": 6750,
+      "note": "EXCLUDED: monthly rent outside CAD $4,000–$6,000."
     }
   ],
   "zumper-6f8b3ff2b9fd": [
@@ -3120,6 +3170,11 @@
       "date": "2026-10-31",
       "rent": 4400,
       "note": "CORRECTED: unverified free-text token was incorrectly stored as a unit; restored URL-level identity pending a structured address unit."
+    },
+    {
+      "date": "2026-11-05",
+      "rent": 4400,
+      "note": "EXCLUDED: air conditioning not confirmed."
     }
   ],
   "mls-r3167237": [
@@ -3323,6 +3378,11 @@
       "date": "2026-10-11",
       "rent": 3595,
       "note": "Live purpose-built inventory price update from 3675"
+    },
+    {
+      "date": "2026-11-05",
+      "rent": 3595,
+      "note": "EXCLUDED: monthly rent outside CAD $4,000–$6,000."
     }
   ],
   "mls-r3170701": [
@@ -3409,6 +3469,11 @@
       "date": "2026-10-05",
       "rent": 6300,
       "note": "NEW: live Realtylink MLS R3172212 auto-published."
+    },
+    {
+      "date": "2026-11-05",
+      "rent": 6300,
+      "note": "EXCLUDED: monthly rent outside CAD $4,000–$6,000."
     }
   ],
   "zumper-86435797c322": [
@@ -3473,6 +3538,11 @@
       "date": "2026-11-03",
       "rent": 4595,
       "note": "AUTO Zumper live price update $5695 → $4595."
+    },
+    {
+      "date": "2026-11-05",
+      "rent": 4595,
+      "note": "EXCLUDED: fewer than two verified bathrooms."
     }
   ],
   "mls-r3169522": [
@@ -3527,6 +3597,11 @@
       "date": "2026-10-28",
       "rent": 4500,
       "note": "MLS price update $4800 → $4500."
+    },
+    {
+      "date": "2026-11-05",
+      "rent": 4500,
+      "note": "EXCLUDED: air conditioning not confirmed."
     }
   ],
   "mls-r3173479": [
@@ -3724,6 +3799,11 @@
       "date": "2026-10-29",
       "rent": 14500,
       "note": "CORRECTED: restored after exact current MLS detail matched identity, explicit availability and rent."
+    },
+    {
+      "date": "2026-11-05",
+      "rent": 14500,
+      "note": "EXCLUDED: monthly rent outside CAD $4,000–$6,000."
     }
   ],
   "mls-r3175848": [
@@ -3823,6 +3903,11 @@
       "date": "2026-11-02",
       "rent": 4000,
       "note": "CORRECTED: restored after exact current MLS detail matched identity, explicit availability and rent."
+    },
+    {
+      "date": "2026-11-05",
+      "rent": 4000,
+      "note": "EXCLUDED: air conditioning not confirmed."
     }
   ],
   "mls-r3176251": [
@@ -3852,6 +3937,11 @@
       "date": "2026-10-30",
       "rent": 5000,
       "note": "AUTO Zumper live price update $5250 → $5000."
+    },
+    {
+      "date": "2026-11-05",
+      "rent": 5000,
+      "note": "EXCLUDED: fewer than two verified bathrooms."
     }
   ],
   "mls-r3172081": [
@@ -3896,6 +3986,11 @@
       "date": "2026-11-01",
       "rent": 6000,
       "note": "RELISTED: exact current Zumper detail again shows active availability."
+    },
+    {
+      "date": "2026-11-05",
+      "rent": 6000,
+      "note": "EXCLUDED: air conditioning not confirmed."
     }
   ],
   "mls-r3175865": [
@@ -3955,6 +4050,11 @@
       "date": "2026-10-30",
       "rent": 8500,
       "note": "CORRECTED: restored after exact current MLS detail matched identity, explicit availability and rent."
+    },
+    {
+      "date": "2026-11-05",
+      "rent": 8500,
+      "note": "EXCLUDED: monthly rent outside CAD $4,000–$6,000."
     }
   ],
   "westward-unit-104": [
@@ -3972,6 +4072,11 @@
       "date": "2026-10-27",
       "rent": 4995,
       "note": "NEEDS CONFIRMATION: latest purpose-built fallback sources did not confirm the exact configured rent + sqft inventory row."
+    },
+    {
+      "date": "2026-11-05",
+      "rent": 4995,
+      "note": "EXCLUDED: direct sunlight or non-north exposure not verified."
     }
   ],
   "the-raven-unit-101": [
@@ -3989,6 +4094,11 @@
       "date": "2026-10-31",
       "rent": 6995,
       "note": "NEEDS CONFIRMATION: latest purpose-built fallback sources did not confirm the exact configured rent + sqft inventory row."
+    },
+    {
+      "date": "2026-11-05",
+      "rent": 6995,
+      "note": "EXCLUDED: monthly rent outside CAD $4,000–$6,000."
     }
   ],
   "mls-r3175899": [
@@ -3996,6 +4106,11 @@
       "date": "2026-10-28",
       "rent": 3500,
       "note": "AUTO-PUBLISHED after strict live detail-page verification."
+    },
+    {
+      "date": "2026-11-05",
+      "rent": 3500,
+      "note": "EXCLUDED: monthly rent outside CAD $4,000–$6,000."
     }
   ],
   "zumper-0116ae25a82f": [
@@ -4013,6 +4128,11 @@
       "date": "2026-11-01",
       "rent": 3600,
       "note": "AUTO live price update from 2700 to 3600."
+    },
+    {
+      "date": "2026-11-05",
+      "rent": 3600,
+      "note": "EXCLUDED: monthly rent outside CAD $4,000–$6,000."
     }
   ],
   "mls-r3179518": [
@@ -4020,6 +4140,11 @@
       "date": "2026-11-01",
       "rent": 7000,
       "note": "NEW: live Realtylink MLS R3179518 auto-published."
+    },
+    {
+      "date": "2026-11-05",
+      "rent": 7000,
+      "note": "EXCLUDED: monthly rent outside CAD $4,000–$6,000."
     }
   ],
   "the-ridge-unit-202": [
@@ -4027,6 +4152,11 @@
       "date": "2026-11-03",
       "rent": 4800,
       "note": "AUTO-PUBLISHED after strict live detail-page verification."
+    },
+    {
+      "date": "2026-11-05",
+      "rent": 4800,
+      "note": "EXCLUDED: direct sunlight or non-north exposure not verified."
     }
   ]
 }

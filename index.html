@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="color-scheme" content="light" />
-  <title>Vancouver Westside Rentals</title>
+  <title>Kitsilano &amp; Downtown Vancouver Rentals</title>
   <link rel="preconnect" href="https://unpkg.com" />
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="" />
   <link rel="stylesheet" href="style.css" />
@@ -12,9 +12,9 @@
 <body>
   <header class="topbar">
     <div class="brand">
-      <p class="eyebrow">VANCOUVER WESTSIDE</p>
+      <p class="eyebrow">KITSILANO + DOWNTOWN VANCOUVER</p>
       <h1>Rental Radar</h1>
-      <p class="subtitle">Kitsilano · Arbutus Ridge · Point Grey</p>
+      <p class="subtitle">Kitsilano · Point Grey · Downtown · West End · Yaletown · Coal Harbour · $4,000–$6,000 · 2BR/2BA+ · AC · Sunlight required</p>
     </div>
     <div id="stats" class="stats"></div>
   </header>
@@ -32,15 +32,15 @@
       <div class="filter-row primary-filters">
         <label><span>Min sqft</span><input id="minSqft" type="number" placeholder="800 preferred" min="0" step="50" /></label>
         <label><span>Bedrooms</span><select id="beds"><option value="0">Any</option><option value="1">1+</option><option value="2" selected>2+</option><option value="3">3+</option></select></label>
-        <label><span>Bathrooms</span><select id="baths"><option value="0">Any</option><option value="1">1+</option><option value="2">2+</option></select></label>
-        <label><span>Min rent</span><input id="minPrice" type="number" placeholder="$0" min="0" step="100" /></label>
-        <label><span>Max rent</span><input id="maxPrice" type="number" placeholder="No max" min="0" step="100" /></label>
+        <label><span>Bathrooms</span><select id="baths"><option value="0">Any</option><option value="1">1+</option><option value="2" selected>2+</option></select></label>
+        <label><span>Min rent</span><input id="minPrice" type="number" value="4000" min="4000" max="6000" step="100" /></label>
+        <label><span>Max rent</span><input id="maxPrice" type="number" value="6000" min="4000" max="6000" step="100" /></label>
         <label><span>Building year ≥</span><input id="minYear" type="number" placeholder="Any" min="1900" max="2030" /></label>
       </div>
       <div class="filter-row toggles">
-        <label class="check"><input id="acOnly" type="checkbox" /> AC</label>
+        <label class="check"><input id="acOnly" type="checkbox" checked /> AC required</label>
         <label class="check"><input id="parkingOnly" type="checkbox" /> Parking</label>
-        <label class="check"><input id="hideNorth" type="checkbox" checked /> Avoid north-facing</label>
+        <label class="check"><input id="hideNorth" type="checkbox" checked /> Sunlight verified / not north-only</label>
         <label class="check"><input id="purposeOnly" type="checkbox" /> Purpose-built only</label>
         <label class="check"><input id="favoritesOnly" type="checkbox" /> Favorites</label>
         <label class="check"><input id="showHidden" type="checkbox" /> Show hidden</label>

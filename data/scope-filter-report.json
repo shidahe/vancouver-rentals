@@ -1,129 +1,232 @@
 {
-  "generatedAt": "2026-11-03T16:08:44.700Z",
-  "policy": "Only CAD $3,500+ entire-home rentals with 2–4 bedrooms in the Vancouver Westside target area are eligible. Fairview, False Creek, West End, Downtown, Yaletown, Mount Pleasant, Riley Park, Olympic Village and South Cambie are excluded, as are house shares and separately rented portions of houses.",
-  "activeCount": 26,
-  "excludedCount": 46,
-  "exclusionEventsToday": 0,
+  "generatedAt": "2026-11-05T06:28:59.636Z",
+  "policy": "Only CAD $4,000–$6,000 entire-home rentals with 2–4 bedrooms, at least 2 bathrooms, confirmed AC, and verified sunlight or a non-north exposure in Kitsilano / Vancouver Westside / Downtown are published. Unknown sun exposure and exclusively north-facing units are excluded pending verification.",
+  "activeCount": 2,
+  "excludedCount": 119,
+  "exclusionEventsToday": 26,
   "countsByReason": {
-    "monthly rent below CAD $3,500": 24,
-    "house share or separately rented portion of a house": 11,
-    "five or more bedrooms": 8,
-    "outside the Vancouver Westside target area": 3
+    "direct sunlight or non-north exposure not verified": 8,
+    "monthly rent outside CAD $4,000–$6,000": 68,
+    "air conditioning not confirmed": 30,
+    "fewer than two verified bathrooms": 7,
+    "five or more bedrooms": 1,
+    "outside Kitsilano / Vancouver Westside / Downtown target area": 2,
+    "house share or separately rented portion of a house": 3
   },
   "excluded": [
     {
+      "id": "arbutus-residences-315-2den-900",
+      "reason": "direct sunlight or non-north exposure not verified",
+      "wasActive": false
+    },
+    {
+      "id": "arbutus-terrace-unit6-2den",
+      "reason": "monthly rent outside CAD $4,000–$6,000",
+      "wasActive": false
+    },
+    {
+      "id": "treo-2688-vine-r3142696",
+      "reason": "monthly rent outside CAD $4,000–$6,000",
+      "wasActive": false
+    },
+    {
+      "id": "york-103-2535-r3137446",
+      "reason": "air conditioning not confirmed",
+      "wasActive": false
+    },
+    {
+      "id": "solo-2228-marstrand",
+      "reason": "monthly rent outside CAD $4,000–$6,000",
+      "wasActive": true
+    },
+    {
+      "id": "19-greenway-c1-405-3619",
+      "reason": "direct sunlight or non-north exposure not verified",
+      "wasActive": false
+    },
+    {
+      "id": "2268-w-broadway-312-r3153999",
+      "reason": "monthly rent outside CAD $4,000–$6,000",
+      "wasActive": false
+    },
+    {
+      "id": "tribeca-type-2d-2111-w11",
+      "reason": "monthly rent outside CAD $4,000–$6,000",
+      "wasActive": false
+    },
+    {
       "id": "kits-walk-2br-flex-616",
-      "reason": "monthly rent below CAD $3,500",
+      "reason": "monthly rent outside CAD $4,000–$6,000",
+      "wasActive": false
+    },
+    {
+      "id": "cypress-1070-r3129917",
+      "reason": "air conditioning not confirmed",
+      "wasActive": false
+    },
+    {
+      "id": "raphael-301-3668-w10",
+      "reason": "air conditioning not confirmed",
+      "wasActive": false
+    },
+    {
+      "id": "raven-410-3709-wbroadway",
+      "reason": "monthly rent outside CAD $4,000–$6,000",
+      "wasActive": false
+    },
+    {
+      "id": "raven-705-3709-wbroadway",
+      "reason": "air conditioning not confirmed",
       "wasActive": false
     },
     {
       "id": "zumper-cd96ddf129b5",
-      "reason": "monthly rent below CAD $3,500",
+      "reason": "monthly rent outside CAD $4,000–$6,000",
       "wasActive": false
     },
     {
       "id": "zumper-c047dd62c7b5",
-      "reason": "monthly rent below CAD $3,500",
+      "reason": "monthly rent outside CAD $4,000–$6,000",
+      "wasActive": false
+    },
+    {
+      "id": "zumper-24e8f41077bf",
+      "reason": "monthly rent outside CAD $4,000–$6,000",
       "wasActive": false
     },
     {
       "id": "zumper-118592c0411f",
-      "reason": "monthly rent below CAD $3,500",
+      "reason": "monthly rent outside CAD $4,000–$6,000",
       "wasActive": false
+    },
+    {
+      "id": "zumper-9157c4798023",
+      "reason": "monthly rent outside CAD $4,000–$6,000",
+      "wasActive": true
     },
     {
       "id": "zumper-6e03d092610a",
-      "reason": "house share or separately rented portion of a house",
+      "reason": "monthly rent outside CAD $4,000–$6,000",
       "wasActive": false
+    },
+    {
+      "id": "zumper-976e340c66a7",
+      "reason": "air conditioning not confirmed",
+      "wasActive": true
     },
     {
       "id": "zumper-40e7a81ead7b",
-      "reason": "monthly rent below CAD $3,500",
+      "reason": "monthly rent outside CAD $4,000–$6,000",
       "wasActive": false
     },
     {
+      "id": "zumper-2e85ffb3f678",
+      "reason": "monthly rent outside CAD $4,000–$6,000",
+      "wasActive": true
+    },
+    {
       "id": "zumper-adc0623c7c44",
-      "reason": "monthly rent below CAD $3,500",
+      "reason": "monthly rent outside CAD $4,000–$6,000",
       "wasActive": false
     },
     {
       "id": "zumper-75ff287e7a72",
-      "reason": "house share or separately rented portion of a house",
+      "reason": "monthly rent outside CAD $4,000–$6,000",
       "wasActive": false
     },
     {
       "id": "zumper-a0bd98e76c8f",
-      "reason": "monthly rent below CAD $3,500",
+      "reason": "monthly rent outside CAD $4,000–$6,000",
       "wasActive": false
     },
     {
       "id": "zumper-a4de373229e1",
-      "reason": "monthly rent below CAD $3,500",
+      "reason": "monthly rent outside CAD $4,000–$6,000",
       "wasActive": false
     },
     {
       "id": "zumper-4dfebec53d29",
-      "reason": "monthly rent below CAD $3,500",
+      "reason": "monthly rent outside CAD $4,000–$6,000",
       "wasActive": false
     },
     {
       "id": "zumper-5f1919a8a4cb",
-      "reason": "monthly rent below CAD $3,500",
+      "reason": "monthly rent outside CAD $4,000–$6,000",
       "wasActive": false
     },
     {
       "id": "zumper-e353962d7737",
-      "reason": "monthly rent below CAD $3,500",
+      "reason": "monthly rent outside CAD $4,000–$6,000",
+      "wasActive": false
+    },
+    {
+      "id": "arbutus-residences-floorplan-2-bedroom-townhouse-den-1340",
+      "reason": "direct sunlight or non-north exposure not verified",
       "wasActive": false
     },
     {
       "id": "zumper-2fde865f7e2c",
-      "reason": "monthly rent below CAD $3,500",
+      "reason": "monthly rent outside CAD $4,000–$6,000",
       "wasActive": false
     },
     {
       "id": "zumper-3d00038ec8dc",
-      "reason": "monthly rent below CAD $3,500",
+      "reason": "monthly rent outside CAD $4,000–$6,000",
       "wasActive": false
     },
     {
       "id": "zumper-f9e9614ca8fb",
-      "reason": "monthly rent below CAD $3,500",
+      "reason": "monthly rent outside CAD $4,000–$6,000",
+      "wasActive": false
+    },
+    {
+      "id": "zumper-ecd4e868f79c",
+      "reason": "air conditioning not confirmed",
       "wasActive": false
     },
     {
       "id": "zumper-289dc426c15b",
-      "reason": "monthly rent below CAD $3,500",
+      "reason": "monthly rent outside CAD $4,000–$6,000",
       "wasActive": false
     },
     {
       "id": "zumper-1441677a9e59",
-      "reason": "house share or separately rented portion of a house",
+      "reason": "fewer than two verified bathrooms",
+      "wasActive": false
+    },
+    {
+      "id": "zumper-717a57c1ea78",
+      "reason": "air conditioning not confirmed",
+      "wasActive": false
+    },
+    {
+      "id": "zumper-e3fb92a991a6",
+      "reason": "monthly rent outside CAD $4,000–$6,000",
       "wasActive": false
     },
     {
       "id": "zumper-c0c663d5d7eb",
-      "reason": "monthly rent below CAD $3,500",
+      "reason": "monthly rent outside CAD $4,000–$6,000",
       "wasActive": false
     },
     {
       "id": "zumper-284446d281ee",
-      "reason": "house share or separately rented portion of a house",
+      "reason": "air conditioning not confirmed",
       "wasActive": false
     },
     {
       "id": "zumper-03c32d9886e3",
-      "reason": "house share or separately rented portion of a house",
+      "reason": "fewer than two verified bathrooms",
       "wasActive": false
     },
     {
       "id": "zumper-9bc484458739",
-      "reason": "five or more bedrooms",
+      "reason": "monthly rent outside CAD $4,000–$6,000",
       "wasActive": false
     },
     {
       "id": "zumper-bed681f0506a",
-      "reason": "five or more bedrooms",
+      "reason": "monthly rent outside CAD $4,000–$6,000",
       "wasActive": false
     },
     {
@@ -132,88 +235,288 @@
       "wasActive": false
     },
     {
+      "id": "zumper-3b3c85746b5c",
+      "reason": "air conditioning not confirmed",
+      "wasActive": false
+    },
+    {
+      "id": "kits-walk-unit-605",
+      "reason": "monthly rent outside CAD $4,000–$6,000",
+      "wasActive": false
+    },
+    {
+      "id": "zumper-16e9ae17cd91",
+      "reason": "air conditioning not confirmed",
+      "wasActive": true
+    },
+    {
       "id": "mls-r3160936",
-      "reason": "monthly rent below CAD $3,500",
+      "reason": "monthly rent outside CAD $4,000–$6,000",
       "wasActive": false
     },
     {
       "id": "mls-r3159471",
-      "reason": "outside the Vancouver Westside target area",
+      "reason": "outside Kitsilano / Vancouver Westside / Downtown target area",
       "wasActive": false
     },
     {
       "id": "mls-r3141972",
-      "reason": "monthly rent below CAD $3,500",
+      "reason": "monthly rent outside CAD $4,000–$6,000",
       "wasActive": false
     },
     {
       "id": "mls-r3150730",
-      "reason": "monthly rent below CAD $3,500",
+      "reason": "monthly rent outside CAD $4,000–$6,000",
+      "wasActive": false
+    },
+    {
+      "id": "mls-r3151022",
+      "reason": "monthly rent outside CAD $4,000–$6,000",
+      "wasActive": false
+    },
+    {
+      "id": "mls-r3150923",
+      "reason": "air conditioning not confirmed",
       "wasActive": false
     },
     {
       "id": "mls-r3145335",
-      "reason": "monthly rent below CAD $3,500",
+      "reason": "monthly rent outside CAD $4,000–$6,000",
+      "wasActive": false
+    },
+    {
+      "id": "mls-r3129974",
+      "reason": "fewer than two verified bathrooms",
+      "wasActive": false
+    },
+    {
+      "id": "mls-r3146085",
+      "reason": "monthly rent outside CAD $4,000–$6,000",
       "wasActive": false
     },
     {
       "id": "mls-r3146956",
-      "reason": "five or more bedrooms",
+      "reason": "monthly rent outside CAD $4,000–$6,000",
       "wasActive": false
     },
     {
       "id": "mls-r3158299",
-      "reason": "monthly rent below CAD $3,500",
+      "reason": "monthly rent outside CAD $4,000–$6,000",
       "wasActive": false
     },
     {
       "id": "mls-r3151352",
-      "reason": "monthly rent below CAD $3,500",
+      "reason": "monthly rent outside CAD $4,000–$6,000",
       "wasActive": false
     },
     {
       "id": "mls-r3158149",
-      "reason": "house share or separately rented portion of a house",
+      "reason": "monthly rent outside CAD $4,000–$6,000",
       "wasActive": false
     },
     {
       "id": "mls-r3133139",
-      "reason": "five or more bedrooms",
+      "reason": "monthly rent outside CAD $4,000–$6,000",
+      "wasActive": false
+    },
+    {
+      "id": "mls-r3158036",
+      "reason": "air conditioning not confirmed",
       "wasActive": false
     },
     {
       "id": "mls-r3134535",
-      "reason": "five or more bedrooms",
+      "reason": "monthly rent outside CAD $4,000–$6,000",
       "wasActive": false
     },
     {
       "id": "mls-r3158552",
-      "reason": "monthly rent below CAD $3,500",
+      "reason": "monthly rent outside CAD $4,000–$6,000",
+      "wasActive": false
+    },
+    {
+      "id": "mls-r3148298",
+      "reason": "air conditioning not confirmed",
+      "wasActive": false
+    },
+    {
+      "id": "mls-r3151372",
+      "reason": "direct sunlight or non-north exposure not verified",
+      "wasActive": true
+    },
+    {
+      "id": "mls-r3158179",
+      "reason": "air conditioning not confirmed",
       "wasActive": false
     },
     {
       "id": "mls-r2907080",
-      "reason": "five or more bedrooms",
+      "reason": "monthly rent outside CAD $4,000–$6,000",
       "wasActive": false
     },
     {
       "id": "mls-r3159579",
-      "reason": "five or more bedrooms",
+      "reason": "monthly rent outside CAD $4,000–$6,000",
       "wasActive": false
     },
     {
       "id": "mls-r3159353",
-      "reason": "monthly rent below CAD $3,500",
+      "reason": "monthly rent outside CAD $4,000–$6,000",
+      "wasActive": false
+    },
+    {
+      "id": "kits-walk-floorplan-2-bedroom-741-3600",
+      "reason": "monthly rent outside CAD $4,000–$6,000",
+      "wasActive": true
+    },
+    {
+      "id": "mls-r3160879",
+      "reason": "monthly rent outside CAD $4,000–$6,000",
       "wasActive": false
     },
     {
       "id": "mls-r3161908",
-      "reason": "outside the Vancouver Westside target area",
+      "reason": "air conditioning not confirmed",
       "wasActive": false
     },
     {
       "id": "mls-r3161880",
-      "reason": "house share or separately rented portion of a house",
+      "reason": "monthly rent outside CAD $4,000–$6,000",
+      "wasActive": false
+    },
+    {
+      "id": "mls-r3161950",
+      "reason": "air conditioning not confirmed",
+      "wasActive": false
+    },
+    {
+      "id": "mls-r3159060",
+      "reason": "monthly rent outside CAD $4,000–$6,000",
+      "wasActive": true
+    },
+    {
+      "id": "mls-r3149267",
+      "reason": "monthly rent outside CAD $4,000–$6,000",
+      "wasActive": false
+    },
+    {
+      "id": "mls-r3163709",
+      "reason": "direct sunlight or non-north exposure not verified",
+      "wasActive": true
+    },
+    {
+      "id": "mls-r3164628",
+      "reason": "air conditioning not confirmed",
+      "wasActive": false
+    },
+    {
+      "id": "fourth-mac-floorplan-2-bedroom-2-bath-801-4350",
+      "reason": "direct sunlight or non-north exposure not verified",
+      "wasActive": false
+    },
+    {
+      "id": "tennyson-mews-b6",
+      "reason": "monthly rent outside CAD $4,000–$6,000",
+      "wasActive": false
+    },
+    {
+      "id": "yorkville-north-2br-den-979",
+      "reason": "air conditioning not confirmed",
+      "wasActive": false
+    },
+    {
+      "id": "mls-r3164604",
+      "reason": "air conditioning not confirmed",
+      "wasActive": false
+    },
+    {
+      "id": "mls-r3166264",
+      "reason": "air conditioning not confirmed",
+      "wasActive": false
+    },
+    {
+      "id": "w16-coach-house-850",
+      "reason": "fewer than two verified bathrooms",
+      "wasActive": false
+    },
+    {
+      "id": "mls-r3149612",
+      "reason": "monthly rent outside CAD $4,000–$6,000",
+      "wasActive": false
+    },
+    {
+      "id": "mls-r3167417",
+      "reason": "monthly rent outside CAD $4,000–$6,000",
+      "wasActive": true
+    },
+    {
+      "id": "zumper-6f8b3ff2b9fd",
+      "reason": "air conditioning not confirmed",
+      "wasActive": true
+    },
+    {
+      "id": "mls-r3167237",
+      "reason": "monthly rent outside CAD $4,000–$6,000",
+      "wasActive": false
+    },
+    {
+      "id": "mls-r3165327",
+      "reason": "air conditioning not confirmed",
+      "wasActive": false
+    },
+    {
+      "id": "mls-r3162880",
+      "reason": "air conditioning not confirmed",
+      "wasActive": false
+    },
+    {
+      "id": "kits-walk-floorplan-2-bedroom-811-3675",
+      "reason": "monthly rent outside CAD $4,000–$6,000",
+      "wasActive": true
+    },
+    {
+      "id": "mls-r3170701",
+      "reason": "air conditioning not confirmed",
+      "wasActive": false
+    },
+    {
+      "id": "zumper-f3c25cb7e83b",
+      "reason": "monthly rent outside CAD $4,000–$6,000",
+      "wasActive": false
+    },
+    {
+      "id": "mls-r3172212",
+      "reason": "monthly rent outside CAD $4,000–$6,000",
+      "wasActive": true
+    },
+    {
+      "id": "zumper-86435797c322",
+      "reason": "air conditioning not confirmed",
+      "wasActive": false
+    },
+    {
+      "id": "zumper-8a4ac6a75244",
+      "reason": "fewer than two verified bathrooms",
+      "wasActive": true
+    },
+    {
+      "id": "mls-r3169522",
+      "reason": "air conditioning not confirmed",
+      "wasActive": false
+    },
+    {
+      "id": "zumper-dd642aebb4f6",
+      "reason": "air conditioning not confirmed",
+      "wasActive": true
+    },
+    {
+      "id": "mls-r3173479",
+      "reason": "monthly rent outside CAD $4,000–$6,000",
+      "wasActive": false
+    },
+    {
+      "id": "mls-r3173233",
+      "reason": "air conditioning not confirmed",
       "wasActive": false
     },
     {
@@ -227,19 +530,84 @@
       "wasActive": false
     },
     {
+      "id": "kits-walk-floorplan-2-bedroom-811-3595",
+      "reason": "monthly rent outside CAD $4,000–$6,000",
+      "wasActive": false
+    },
+    {
+      "id": "mls-r3174425",
+      "reason": "monthly rent outside CAD $4,000–$6,000",
+      "wasActive": true
+    },
+    {
       "id": "mls-r3175848",
       "reason": "house share or separately rented portion of a house",
       "wasActive": false
     },
     {
+      "id": "mls-r3175318",
+      "reason": "air conditioning not confirmed",
+      "wasActive": true
+    },
+    {
       "id": "mls-r3176251",
-      "reason": "outside the Vancouver Westside target area",
+      "reason": "outside Kitsilano / Vancouver Westside / Downtown target area",
       "wasActive": false
     },
     {
-      "id": "mls-r3175865",
-      "reason": "house share or separately rented portion of a house",
+      "id": "zumper-3d502587bbc4",
+      "reason": "fewer than two verified bathrooms",
+      "wasActive": true
+    },
+    {
+      "id": "mls-r3172081",
+      "reason": "monthly rent outside CAD $4,000–$6,000",
       "wasActive": false
+    },
+    {
+      "id": "zumper-1754927f090e",
+      "reason": "air conditioning not confirmed",
+      "wasActive": true
+    },
+    {
+      "id": "mls-r3175865",
+      "reason": "fewer than two verified bathrooms",
+      "wasActive": false
+    },
+    {
+      "id": "mls-r3177685",
+      "reason": "monthly rent outside CAD $4,000–$6,000",
+      "wasActive": true
+    },
+    {
+      "id": "westward-unit-104",
+      "reason": "direct sunlight or non-north exposure not verified",
+      "wasActive": true
+    },
+    {
+      "id": "the-raven-unit-101",
+      "reason": "monthly rent outside CAD $4,000–$6,000",
+      "wasActive": true
+    },
+    {
+      "id": "mls-r3175899",
+      "reason": "monthly rent outside CAD $4,000–$6,000",
+      "wasActive": true
+    },
+    {
+      "id": "zumper-0116ae25a82f",
+      "reason": "monthly rent outside CAD $4,000–$6,000",
+      "wasActive": true
+    },
+    {
+      "id": "mls-r3179518",
+      "reason": "monthly rent outside CAD $4,000–$6,000",
+      "wasActive": true
+    },
+    {
+      "id": "the-ridge-unit-202",
+      "reason": "direct sunlight or non-north exposure not verified",
+      "wasActive": true
     }
   ]
 }

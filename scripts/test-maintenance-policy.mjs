@@ -94,8 +94,9 @@ if (!realtylinkSearchDeclaration ||
     !realtylinkSearchDeclaration.includes('apartment~for-rent~vancouver-west') ||
     !realtylinkSearchDeclaration.includes('townhouse~for-rent~vancouver-west') ||
     !realtylinkSearchDeclaration.includes('house~for-rent~vancouver-west') ||
-    !listingScopeEligible({rent:6250,bedrooms:4,address:'1955 W 1st Avenue'}, 'Entire top-floor unfurnished character triplex in Kitsilano')) {
-  failures.push('R3142789 / 1955 W 1st regression: executable Westside Realtylink search or 4BR scope can hide an eligible rental.');
+    listingScopeEligible({rent:6250,bedrooms:4,address:'1955 W 1st Avenue'}, 'Entire top-floor unfurnished character triplex in Kitsilano') ||
+    !listingScopeEligible({rent:5500,bedrooms:4,address:'1955 W 1st Avenue'}, 'Entire top-floor unfurnished character triplex in Kitsilano')) {
+  failures.push('R3142789 / 1955 W 1st regression: Realtylink search or upper rent bound is incorrect.');
 }
 const w13UpperPortion={rent:4000,bedrooms:4,address:'2485 West 13th Avenue #Upper, Vancouver, BC V6K 2S7'};
 if (listingScopeEligible(w13UpperPortion, 'House close to UBC with lots of rooms') ||
@@ -279,10 +280,10 @@ const rentalscaSearchLeads=parseRentalsCaSearchLeads('$3,600 – $3,650\n2 Bed\n
 if(rentalscaSearchLeads.length!==2||rentalscaSearchLeads[0].rentMin!==3600||rentalscaSearchLeads[0].rentMax!==3650||rentalscaSearchLeads[0].bedroomMin!==2||rentalscaSearchLeads[0].bedroomMax!==2||rentalscaSearchLeads[0].bathrooms!==2||rentalscaSearchLeads[1].bedroomMin!==0||rentalscaSearchLeads[1].bedroomMax!==2)failures.push('Rentals.ca visible search-result rent/bed/bath/address leads do not parse safely.');
 const rentalscaScopeFixture=parseRentalsCaSearchLeads('$1,275\nRoom\n3 BED\n2 BATH\nWest 22nd Avenue, Vancouver, BC\n$8,900\nHouse\n5 BED\n7 BATH\n4425 FT²\n4888 Trafalgar Street, Vancouver, BC\n$3,650\nBasement\n2 BED\n2 BATH\n1000 FT²\n2008 Quilchena Place, Vancouver, BC');
 if(rentalscaScopeFixture[0]?.bedroomMin!==5||rentalscaScopeFixture[0]?.bedroomMax!==5||rentalscaScopeFixture[0]?.bathrooms!==7||rentalscaScopeFixture[0]?.rentalType!=='House'||rentalsCaSearchLeadScopeEligible(rentalscaScopeFixture[1]))failures.push('Rentals.ca high-bedroom cards can inherit adjacent facts or basement/room search leads can enter the whole-home review queue.');
-for(const address of ['4769 Belmont, Vancouver, BC','2008 Quilchena Place, Vancouver, BC','2319 Dunbar Street, Vancouver, BC','2800 West 3rd Avenue, Vancouver, BC','3709 West Broadway, Vancouver, BC','2355 W 49th Avenue, Vancouver, BC']){
+for(const address of ['4769 Belmont, Vancouver, BC','2008 Quilchena Place, Vancouver, BC','2319 Dunbar Street, Vancouver, BC','2800 West 3rd Avenue, Vancouver, BC','3709 West Broadway, Vancouver, BC','2355 W 49th Avenue, Vancouver, BC','1661 Davie Street, Vancouver, BC','1770 Pendrell Street, Vancouver, BC']){
   if(!isTargetRentalSearchAddress(address))failures.push(`Westside Rentals.ca search lead was discarded: ${address}`);
 }
-for(const address of ['807 East 33rd Avenue, Vancouver, BC','5083 Joyce Street, Vancouver, BC','3350 Prince Albert Street, Vancouver, BC','2488 Granville Street, Vancouver, BC','1661 Davie Street, Vancouver, BC','1770 Pendrell Street, Vancouver, BC','135 West 12th Avenue, Vancouver, BC']){
+for(const address of ['807 East 33rd Avenue, Vancouver, BC','5083 Joyce Street, Vancouver, BC','3350 Prince Albert Street, Vancouver, BC','2488 Granville Street, Vancouver, BC','135 West 12th Avenue, Vancouver, BC']){
   if(isTargetRentalSearchAddress(address))failures.push(`Obvious out-of-area Rentals.ca search lead was retained: ${address}`);
 }
 const rentalscaNewLead=classifyRentalsCaSearchLead({address:'1960 Macdonald Street, Vancouver, BC'},[{id:'other',address:'2083 W 33rd Ave, Vancouver, BC',availabilityStatus:'active'}]);
@@ -345,14 +346,14 @@ const duplicateMlsResult=dedupeMlsRecords([
 if(duplicateMlsResult.listings.length!==1||duplicateMlsResult.listings[0].id!=='canonical'||duplicateMlsResult.merged[0]?.removed!=='legacy'||duplicateMlsHistory.legacy||duplicateMlsHistory.canonical.length!==3||duplicateMlsImages.legacy){
   failures.push('MLS-first deduplication does not retain the strongest canonical record and merge its history.');
 }
-if(rentEligible(3499)||!rentEligible(3500))failures.push('CAD $3,500 minimum rent scope is not enforced.');
+if(rentEligible(3999)||!rentEligible(4000)||!rentEligible(6000)||rentEligible(6001))failures.push('CAD $4,000–$6,000 inclusive rent scope is not enforced.');
 if(!bedroomEligible(4)||bedroomEligible(5))failures.push('2–4 bedroom scope is not enforced.');
 if(!isHouseShareText('Furnished 3-bedroom basement suite with private entrance')||!isHouseShareText('upper and lower levels are available for rent separately')||!isHouseShareText('AVAILABLE basement 2 Beds 1 Bath')||!isHouseShareText('House for rent\nMain Floor 3546 W 39 Avenue, Dunbar, Vancouver')||isHouseShareText('Entire detached house with basement storage')||isHouseShareText('No roommate sharing; one family only'))failures.push('House-share classifier does not distinguish clear split-house evidence.');
 if(listingScopeEligible({rent:4500,bedrooms:3},'Main floor unit in a house')||!listingScopeEligible({rent:4500,bedrooms:3},'Entire family home'))failures.push('Unified listing scope policy is incorrect.');
 if(listingScopeEligible({rent:6500,bedrooms:3,address:'Main Floor 3546 W 39 Avenue'},'Available now'))failures.push('Address-labeled house portions can bypass the entire-home scope.');
-if(isTargetRentalAreaText('1365 Se Davie Street, West End VW')||isTargetRentalAreaText('1405 W 7th Avenue, Fairview VW')||isTargetRentalAreaText('1427 W 6th Avenue, False Creek')||!isTargetRentalAreaText('2788 W 1st Avenue, Kitsilano'))failures.push('Explicit out-of-area MLS labels are not distinguished from the target Westside.');
+if(!isTargetRentalAreaText('1365 Se Davie Street, West End VW')||isTargetRentalAreaText('1405 W 7th Avenue, Fairview VW')||isTargetRentalAreaText('1427 W 6th Avenue, False Creek')||!isTargetRentalAreaText('2788 W 1st Avenue, Kitsilano'))failures.push('Downtown, Kits and explicitly out-of-area MLS labels are not distinguished correctly.');
 if(listingScopeEligible({mls:'R3176251',rent:4250,bedrooms:2,address:'1427 W 6th Avenue, False Creek',neighborhood:'Vancouver West'},'Available now'))failures.push('R3176251 / 1427 W 6th regression: False Creek inventory can bypass the target-area scope.');
-if(listingScopeEligible({rent:5500,bedrooms:2,address:'1365 Se Davie Street',neighborhood:'West End VW'},'Available now'))failures.push('West End inventory can bypass the shared geographic scope.');
+if(!listingScopeEligible({rent:5500,bedrooms:2,address:'1365 Se Davie Street',neighborhood:'West End VW'},'Available now'))failures.push('West End inventory is incorrectly excluded from the expanded target area.');
 if(!scopeSource.includes("availabilityStatus='excluded'")||!scopeSource.includes('scope-filter-report.json'))failures.push('Out-of-scope listings are not persistently excluded and reported.');
 const scopedListings=JSON.parse(await read('data/listings.json')).listings||[];
 if(scopedListings.some(x=>x.availabilityStatus==='active'&&!listingScopeEligible(x)))failures.push('An active listing remains outside the rent/bedroom scope.');
@@ -386,25 +387,25 @@ if(!LISTING_SCOPE_VERSION||!source.includes('scopeVersion:LISTING_SCOPE_VERSION'
 const aggregateFixture=[{'@type':'ApartmentComplex',containsPlace:[{'@type':'Apartment'},{'@type':'Apartment'}]}];
 if(aggregateUnitCount(aggregateFixture)!==2) failures.push('Structured priority-building inventory count is not parsed.');
 const kitsWalkStructuredFixture=[{'@type':'ApartmentComplex',containsPlace:[
-  {'@type':'Apartment',name:'2 Bedroom',potentialAction:{priceSpecification:{price:3600}},floorSize:{value:'741.0'}},
-  {'@type':'Apartment',name:'2 Bedroom',potentialAction:{priceSpecification:{price:3650}},floorSize:{value:'741.0'}}
+  {'@type':'Apartment',name:'2 Bedroom',potentialAction:{priceSpecification:{price:4600}},floorSize:{value:'741.0'}},
+  {'@type':'Apartment',name:'2 Bedroom',potentialAction:{priceSpecification:{price:4650}},floorSize:{value:'741.0'}}
 ]}];
 const structuredKitsWalk=structuredRentalInventories(kitsWalkStructuredFixture);
-if(structuredKitsWalk.length!==2||!structuredKitsWalk.some(x=>x.rent===3600&&x.bedrooms===2&&x.sqft===741)) failures.push('Exact structured Kits Walk floorplan inventory is not parsed.');
+if(structuredKitsWalk.length!==2||!structuredKitsWalk.some(x=>x.rent===4600&&x.bedrooms===2&&x.sqft===741)) failures.push('Exact structured Kits Walk floorplan inventory is not parsed.');
 const discoveredKitsWalk=discoveredStructuredInventories(kitsWalkStructuredFixture,{bathrooms:2,availabilitySignals:['move-in ready']});
-if(discoveredKitsWalk.length!==2||!discoveredKitsWalk.some(x=>x.key==='2-bedroom-741-3650'&&x.bathrooms===2&&x.dynamicallyDiscovered&&x.availabilitySignals.includes('move-in ready'))) failures.push('Structured Kits Walk inventory cannot become tracked dynamic floorplans.');
+if(discoveredKitsWalk.length!==2||!discoveredKitsWalk.some(x=>x.key==='2-bedroom-741-4650'&&x.bathrooms===2&&x.dynamicallyDiscovered&&x.availabilitySignals.includes('move-in ready'))) failures.push('Structured Kits Walk inventory cannot become tracked dynamic floorplans.');
 const rentFasterApartmentFixture=[{
   '@type':'ItemPage',
   mainEntity:{containsPlace:[{
     '@type':'Apartment',name:'Unit  101',description:'3 Bedroom TownHome',numberOfBedrooms:3,
     numberOfFullBathrooms:3,numberOfPartialBathrooms:0,
-    floorSize:{value:1200,unitCode:'FTK'},potentialAction:{'@type':'RentAction',price:'6995.00',priceCurrency:'CAD'},
+    floorSize:{value:1200,unitCode:'FTK'},potentialAction:{'@type':'RentAction',price:'5995.00',priceCurrency:'CAD'},
     additionalProperty:[{name:'Square Feet',value:'1200'},{name:'Availability Date',value:'Immediate'}]
   }]}
 }];
 const rentFasterRows=structuredRentalInventories(rentFasterApartmentFixture);
 const discoveredRaven=discoveredStructuredInventories(rentFasterApartmentFixture,{availabilitySignals:['Immediate']});
-if(rentFasterRows.length!==1||rentFasterRows[0].unit!=='101'||rentFasterRows[0].bedrooms!==3||rentFasterRows[0].bathrooms!==3||rentFasterRows[0].rent!==6995||rentFasterRows[0].sqft!==1200||rentFasterRows[0].availability!=='Immediate'||discoveredRaven[0]?.unit!=='101')failures.push('RentFaster RentAction JSON-LD cannot recover exact unit, rent, bedroom, bathroom, area and availability fields.');
+if(rentFasterRows.length!==1||rentFasterRows[0].unit!=='101'||rentFasterRows[0].bedrooms!==3||rentFasterRows[0].bathrooms!==3||rentFasterRows[0].rent!==5995||rentFasterRows[0].sqft!==1200||rentFasterRows[0].availability!=='Immediate'||discoveredRaven[0]?.unit!=='101')failures.push('RentFaster RentAction JSON-LD cannot recover exact unit, rent, bedroom, bathroom, area and availability fields.');
 const staleFixture = { availabilityStatus: 'active', source: 'REW / Rent Sync', verificationMethod: 'Automated live browser check matched listing identity and current availability wording.' };
 if (!isAutoManagedListing(staleFixture)) failures.push('Non-Zumper exact-detail inventory bypasses stale expiry.');
 if (isAutoManagedListing({ ...staleFixture, mlsInventoryManaged: true })) failures.push('Authoritative MLS-feed inventory is incorrectly handled by generic stale expiry.');
@@ -689,7 +690,7 @@ if (!appSource.includes('function scheduleMarkerCollisionRepair()') ||
     !appSource.includes('setTimeout(resolveRenderedMarkerCollisions,120)') ||
     !appSource.includes("document.querySelectorAll('.leaflet-marker-icon.price-marker')") ||
     !appSource.includes("element.style.transform.replace(/ translate\\(-?\\d+px, -?\\d+px\\)$/,'')") ||
-    !appSource.includes('element.style.transform=`${base} translate(') ||
+    !appSource.includes('final=`${base} translate(') ||
     !appSource.includes('resolveRenderedMarkerCollisions();scheduleMarkerCollisionRepair()}')) {
   failures.push('Map markers do not idempotently repair every rendered Leaflet marker after layout settles.');
 }
@@ -736,12 +737,12 @@ if (!imageCacheWorkflow.includes('group: rental-refresh') || !imageCacheWorkflow
 
 // Regression fixture: the reported Kitsilano 4BR must pass the global discovery gate.
 const r3160272 = { mls: 'R3160272', bedrooms: 4, rent: 6950, address: '2788 W 1st Avenue, Vancouver, BC' };
-if (mlsIdentity(r3160272.mls) !== 'mls:r3160272' || !listingScopeEligible(r3160272, 'Entire townhouse')) {
-  failures.push('R3160272 regression fixture is rejected by the 2–4BR entire-home scope.');
+if (mlsIdentity(r3160272.mls) !== 'mls:r3160272' || listingScopeEligible(r3160272, 'Entire townhouse')) {
+  failures.push('R3160272 regression: a $6,950 listing bypasses the rent maximum.');
 }
 const r3159060 = { mls: 'R3159060', bedrooms: 4, rent: 15000, address: '4588 W 2nd Avenue, Point Grey, Vancouver, BC' };
-if (!listingScopeEligible(r3159060, 'Entire detached house for rent')) {
-  failures.push('R3159060 regression fixture is rejected solely because of its CAD $15,000 rent.');
+if (listingScopeEligible(r3159060, 'Entire detached house for rent')) {
+  failures.push('R3159060 regression: a $15,000 listing bypasses the $6,000 rent maximum.');
 }
 
 // Realtylink embeds coordinates at ten decimal places. This real York Avenue

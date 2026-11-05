@@ -1,6 +1,7 @@
 import fs from 'node:fs/promises';
 import path from 'node:path';
-import { bedroomEligible, rentEligible } from './discovery-policy.mjs';
+import { bathroomEligible, bedroomEligible, rentEligible, sunlightEligible } from './discovery-policy.mjs';
+import { isTargetRentalCoordinate } from './realtylink-parser.mjs';
 import { listingMls } from './inventory-identity.mjs';
 import { activeListingContradictedByFreshEvidence } from './evidence-consistency.mjs';
 const DATA=path.join(process.cwd(),'data');
@@ -13,11 +14,10 @@ const issues=[];
 const keyMap=new Map();
 const floorplanMap=new Map();
 const mlsMap=new Map();
-const EAST_BOUNDARY=-123.145;
 const canon=s=>String(s||'').toLowerCase().replace(/\bwest\b/g,'w').replace(/\beast\b/g,'e').replace(/\bstreet\b/g,'st').replace(/\bavenue\b/g,'ave').replace(/[^a-z0-9]+/g,' ').trim();
 const postalFsa=s=>String(s||'').toUpperCase().match(/\b([A-Z]\d[A-Z])\s?\d[A-Z]\d\b/)?.[1]||null;
 const isAutoZumper=l=>l?.source==='Zumper live detail'||(/zumper\.com/i.test(l?.url||'')&&/^zumper-/i.test(l?.id||''));
-const explicitlyOutOfScope=l=>/\b(?:Fairview|Downtown Vancouver|Yaletown|Mount Pleasant|Riley Park|Olympic Village|South Cambie)\b/i.test(String(l?.neighborhood||''));
+const explicitlyOutOfScope=l=>/\b(?:Fairview|False Creek|Mount Pleasant|Riley Park|Olympic Village|South Cambie|Downtown Eastside)\b/i.test(String(l?.neighborhood||''));
 // Unit labels in the UI can include descriptive suffixes, e.g. "315 · 2 Bedroom + Den".
 // Extract the concrete leading unit token so duplicate-unit protection remains exact even when display labels are richer.
 const concreteUnit=s=>{
@@ -45,12 +45,15 @@ for(const l of active){
   const fsa=postalFsa(l.address);
   if(fsa&&!/^V[56][A-Z]$/.test(fsa))issues.push({severity:'high',id:l.id,issue:'non-vancouver-postal-code',detail:`postalFsa=${fsa}`});
   if(isAutoZumper(l)&&explicitlyOutOfScope(l))issues.push({severity:'high',id:l.id,issue:'auto-listing-out-of-scope-neighborhood',detail:l.neighborhood});
-  if(isAutoZumper(l)&&Number.isFinite(Number(l.lng))&&Number(l.lng)>EAST_BOUNDARY)issues.push({severity:'high',id:l.id,issue:'auto-listing-east-of-target-boundary',detail:`lng=${l.lng} > ${EAST_BOUNDARY}`});
+  if(isAutoZumper(l)&&Number.isFinite(Number(l.lat))&&Number.isFinite(Number(l.lng))&&!isTargetRentalCoordinate({lat:Number(l.lat),lng:Number(l.lng)}))issues.push({severity:'high',id:l.id,issue:'auto-listing-outside-target-bounds',detail:`lat=${l.lat},lng=${l.lng}`});
   if(l.bedrooms==null||l.bathrooms==null)issues.push({severity:'medium',id:l.id,issue:'missing-core-fields'});
   if(l.sqft==null)issues.push({severity:'info',id:l.id,issue:'unknown-sqft'});
   else if(!Number.isFinite(Number(l.sqft))||Number(l.sqft)<200||Number(l.sqft)>15000)issues.push({severity:'high',id:l.id,issue:'implausible-sqft',detail:l.sqft});
   if(!bedroomEligible(l.bedrooms))issues.push({severity:'high',id:l.id,issue:'outside-2-to-4-bedroom-scope',detail:`bedrooms=${l.bedrooms}`});
-  if(!rentEligible(l.rent))issues.push({severity:'high',id:l.id,issue:'below-rent-scope-minimum',detail:`rent=${l.rent}`});
+  if(!bathroomEligible(l.bathrooms))issues.push({severity:'high',id:l.id,issue:'below-2-bathroom-minimum',detail:`bathrooms=${l.bathrooms}`});
+  if(!rentEligible(l.rent))issues.push({severity:'high',id:l.id,issue:'outside-rent-scope',detail:`rent=${l.rent}`});
+  if(l.ac!==true)issues.push({severity:'high',id:l.id,issue:'ac-unverified-or-absent'});
+  if(!sunlightEligible(l))issues.push({severity:'high',id:l.id,issue:'sunlight-unverified-or-north-only'});
   if(strongOfficialNegative(l.officialStatus))issues.push({severity:'high',id:l.id,issue:'active-despite-official-negative',detail:`officialStatus=${l.officialStatus}${l.officialStatusAuthority?` (${l.officialStatusAuthority})`:''}`});
   if(String(l.verificationLevel||'').toLowerCase()==='unverified')issues.push({severity:'high',id:l.id,issue:'active-but-unverified'});
   if(l.ac==null)issues.push({severity:'info',id:l.id,issue:'unknown-ac'});

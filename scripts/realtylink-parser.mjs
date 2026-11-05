@@ -18,6 +18,15 @@ export function isTargetWestsideCoordinate(coordinate) {
     coordinate.lng >= -123.215 && coordinate.lng <= -123.135;
 }
 
+export function isTargetRentalCoordinate(coordinate) {
+  if (isTargetWestsideCoordinate(coordinate)) return true;
+  if (!coordinate) return false;
+  // Downtown peninsula: West End / Coal Harbour / Downtown / Yaletown.
+  // This box is intentionally bounded on the east to avoid East Vancouver.
+  return coordinate.lat >= 49.269 && coordinate.lat <= 49.302 &&
+    coordinate.lng >= -123.15 && coordinate.lng <= -123.103;
+}
+
 export function parseRealtylinkRoomCount(text, label) {
   const match=String(text||'').match(new RegExp(`\\b([1-9]\\d?(?:\\.5)?)\\s+${label}s?\\b`,'i'));
   return match?Number(match[1]):null;

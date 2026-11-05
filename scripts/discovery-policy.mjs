@@ -1,9 +1,11 @@
 export const MIN_DISCOVERY_BEDROOMS = 2;
 export const MAX_DISCOVERY_BEDROOMS = 4;
-export const MIN_DISCOVERY_RENT = 3500;
-export const LISTING_SCOPE_VERSION = 'rent-3500-beds-2-4-whole-home-westside-v3';
+export const MIN_DISCOVERY_BATHROOMS = 2;
+export const MIN_DISCOVERY_RENT = 4000;
+export const MAX_DISCOVERY_RENT = 6000;
+export const LISTING_SCOPE_VERSION = 'rent-4000-6000-beds-2-4-baths-2-sunlight-kits-downtown-v4';
 
-const OUT_OF_SCOPE_AREA = /\b(?:Fairview(?:\s+VW)?|False\s+Creek|West\s+End(?:\s+VW)?|Downtown(?:\s+Vancouver)?|Yaletown|Mount\s+Pleasant|Riley\s+Park|Olympic\s+Village|South\s+Cambie)\b/i;
+const OUT_OF_SCOPE_AREA = /\b(?:Fairview(?:\s+VW)?|False\s+Creek|Mount\s+Pleasant|Riley\s+Park|Olympic\s+Village|South\s+Cambie|Downtown\s+Eastside)\b/i;
 
 export function bedroomEligible(value) {
   const bedrooms = Number(value);
@@ -12,7 +14,27 @@ export function bedroomEligible(value) {
 
 export function rentEligible(value) {
   const rent = Number(value);
-  return Number.isFinite(rent) && rent >= MIN_DISCOVERY_RENT;
+  return Number.isFinite(rent) && rent >= MIN_DISCOVERY_RENT && rent <= MAX_DISCOVERY_RENT;
+}
+
+export function bathroomEligible(value) {
+  const bathrooms = Number(value);
+  return Number.isFinite(bathrooms) && bathrooms >= MIN_DISCOVERY_BATHROOMS;
+}
+
+// An exposure is a directional clue, not proof of unblocked direct sunlight.
+// Manually verified sun (for example an in-person showing) is also accepted.
+// Unknown exposure must stay out of the published inventory until checked.
+export function sunlightEligible(listing) {
+  if (listing?.sunlightBlocked === true) return false;
+  if (listing?.sunlightVerified === true) return true;
+  const o = String(listing?.orientation || '').trim().toLowerCase().replace(/[\s_-]/g, '');
+  return ['e', 'east', 'w', 'west', 's', 'south', 'ne', 'northeast', 'nw', 'northwest', 'se', 'southeast', 'sw', 'southwest'].includes(o);
+}
+
+export function publicationScopeEligible(listing) {
+  return listingScopeEligible(listing) && bathroomEligible(listing?.bathrooms ?? listing?.baths) &&
+    listing?.ac === true && sunlightEligible(listing);
 }
 
 export function isHouseShareText(value = '') {
@@ -38,16 +60,16 @@ export function isTargetRentalAreaText(value = '') {
 }
 
 // Broad Vancouver search pages sometimes expose only a civic address, without
-// a neighbourhood or coordinates. Keep Westside recall high while preventing
-// obviously out-of-scope East Vancouver and central-city cards from filling
+// a neighbourhood or coordinates. Include the Downtown peninsula while preventing
+// obviously out-of-scope East Vancouver cards from filling
 // the manual revalidation queue. Exact detail pages still use coordinates and
 // remain authoritative.
 export function isTargetRentalSearchAddress(value = '') {
   const address = String(value).replace(/\s+/g, ' ').trim();
   if (!address || !isTargetRentalAreaText(address)) return false;
   if (/\b(?:east|e)\s+\d+(?:st|nd|rd|th)?\s+(?:avenue|ave)\b/i.test(address)) return false;
-  if (/\b(?:Joyce|Davie|Pendrell|Prince\s+Albert)\s+(?:Street|St)\b/i.test(address)) return false;
-  if (/\bGranville\s+(?:Street|St)\b/i.test(address)) return false;
+  if (/\b(?:Joyce|Prince\s+Albert)\s+(?:Street|St)\b/i.test(address)) return false;
+  if (/^\s*2488\s+Granville\s+(?:Street|St)\b/i.test(address)) return false;
   const westAvenue = address.match(/^\s*(\d{1,5})\s+(?:west|w)\s+\d+(?:st|nd|rd|th)?\s+(?:avenue|ave)\b/i);
   if (westAvenue && Number(westAvenue[1]) < 1800) return false;
   return true;

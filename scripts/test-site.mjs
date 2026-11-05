@@ -39,7 +39,7 @@ try {
   await page.goto(BASE, { waitUntil: 'networkidle', timeout: 60000 });
   await page.waitForFunction(() => document.querySelectorAll('.listing-card').length > 0, null, { timeout: 30000 });
   const title = await page.title();
-  assert(title.includes('Vancouver Westside Rentals'), `Unexpected title: ${title}`);
+  assert(title.includes('Kitsilano & Downtown Vancouver Rentals'), `Unexpected title: ${title}`);
 
   const cards = await page.locator('.listing-card').count();
   const shown = Number(await page.locator('#resultCount').innerText());
@@ -47,6 +47,19 @@ try {
   assert(cards === shown, `Card count ${cards} != resultCount ${shown}`);
   assert(cards > 0, 'No listings rendered with default filters');
   assert(await page.locator('#minSqft').inputValue() === '', 'The 800 sqft preference became a default display gate');
+  const hardScope = await page.evaluate(async () => {
+    const { listings } = await (await fetch('data/listings.json')).json();
+    const byId = new Map(listings.map(l => [l.id, l]));
+    const visibleIds = [...document.querySelectorAll('.listing-card')].map(c => c.dataset.id);
+    const validSun = l => l.sunlightBlocked !== true && (l.sunlightVerified === true || /^(?:e|east|w|west|s|south|ne|northeast|nw|northwest|se|southeast|sw|southwest)$/i.test(String(l.orientation || '').replace(/[\s_-]/g, '')));
+    const bad = visibleIds.filter(id => { const l = byId.get(id); return !l || l.rent < 4000 || l.rent > 6000 || l.bedrooms < 2 || l.bedrooms >= 5 || l.bathrooms < 2 || l.ac !== true || !validSun(l); });
+    return { visibleIds, bad, hasDowntown: visibleIds.some(id => /downtown|west end|yaletown|coal harbour/i.test(byId.get(id)?.neighborhood || '')) };
+  });
+  assert(hardScope.bad.length === 0, `Published cards violate hard sun/rent/bed/bath/AC scope: ${JSON.stringify(hardScope.bad)}`);
+  assert(hardScope.hasDowntown, 'Downtown inventory is missing from newly expanded discovery scope');
+  assert(await page.locator('#baths').inputValue() === '2', 'Minimum 2 bathrooms must be the default');
+  assert(await page.locator('#minPrice').inputValue() === '4000' && await page.locator('#maxPrice').inputValue() === '6000', 'CAD $4,000–$6,000 must be the default');
+  report.checkpoints.hardScope = hardScope;
 
   const statLabels = await page.locator('#stats .stat span').allTextContents();
   const statValues = await page.locator('#stats .stat strong').allTextContents();

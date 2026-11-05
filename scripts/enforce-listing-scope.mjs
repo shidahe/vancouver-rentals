@@ -1,6 +1,6 @@
 import fs from 'node:fs/promises';
 import path from 'node:path';
-import { bedroomEligible, isHouseShareText, isTargetRentalAreaText, matchingCrossSourceHousePortionEvidence, matchingPartitionedHousePropertyEvidence, rentEligible } from './discovery-policy.mjs';
+import { bathroomEligible, bedroomEligible, isHouseShareText, isTargetRentalAreaText, matchingCrossSourceHousePortionEvidence, matchingPartitionedHousePropertyEvidence, rentEligible, sunlightEligible } from './discovery-policy.mjs';
 
 const DATA=path.join(process.cwd(),'data');
 const EVIDENCE=path.join(DATA,'evidence');
@@ -52,10 +52,13 @@ for(const listing of db.listings||[]){
   const crossSourceText=persistedScopeText||matchingCrossSourceHousePortionEvidence(listing,craigslist.candidates||[]);
   const text=[directText,crossSourceText].filter(Boolean).join('\n');
   let reason=null;
-  if(!rentEligible(listing.rent))reason='monthly rent below CAD $3,500';
+  if(!rentEligible(listing.rent))reason='monthly rent outside CAD $4,000–$6,000';
   else if(!bedroomEligible(listing.bedrooms))reason=Number(listing.bedrooms)>=5?'five or more bedrooms':'outside the 2–4 bedroom scope';
-  else if(!isTargetRentalAreaText([listing.address,listing.neighborhood].filter(Boolean).join('\n')))reason='outside the Vancouver Westside target area';
+  else if(!bathroomEligible(listing.bathrooms))reason='fewer than two verified bathrooms';
+  else if(!isTargetRentalAreaText([listing.address,listing.neighborhood].filter(Boolean).join('\n')))reason='outside Kitsilano / Vancouver Westside / Downtown target area';
   else if(listing.rentalScope==='shared_house'||isHouseShareText([listing.address,listing.unit,text].filter(Boolean).join('\n')))reason='house share or separately rented portion of a house';
+  else if(listing.ac!==true)reason='air conditioning not confirmed';
+  else if(!sunlightEligible(listing))reason='direct sunlight or non-north exposure not verified';
   if(!reason){
     // A listing can move back into scope after an exact-unit parser corrects a
     // stale aggregate rent or bedroom count. Do not leave exclusion metadata
@@ -88,7 +91,8 @@ for(const listing of db.listings||[]){
 }
 
 db.meta||={};
-db.meta.searchScope='Only CAD $3,500+ entire-home rentals with 2–4 bedrooms in the Vancouver Westside target area are eligible. Fairview, False Creek, West End, Downtown, Yaletown, Mount Pleasant, Riley Park, Olympic Village and South Cambie are excluded, as are house shares and separately rented portions of houses.';
+db.meta.coverage=['Kitsilano','Arbutus Ridge','Point Grey','Downtown','Yaletown','West End','Coal Harbour'];
+db.meta.searchScope='Only CAD $4,000–$6,000 entire-home rentals with 2–4 bedrooms, at least 2 bathrooms, confirmed AC, and verified sunlight or a non-north exposure in Kitsilano / Vancouver Westside / Downtown are published. Unknown sun exposure and exclusively north-facing units are excluded pending verification.';
 await write(path.join(DATA,'listings.json'),db);
 await write(path.join(DATA,'history.json'),history);
 const countsByReason={};

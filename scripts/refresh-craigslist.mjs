@@ -4,6 +4,7 @@ import crypto from 'node:crypto';
 import { chromium } from 'playwright';
 import { craigslistDetailEvidence, dedupeCraigslistRelistings, extractCraigslistDetailUrls, normalizeCraigslistDetailUrl, parseCraigslistSearchCard } from './craigslist-parser.mjs';
 import { isTargetRentalAreaText, listingScopeEligible } from './discovery-policy.mjs';
+import { isTargetRentalCoordinate } from './realtylink-parser.mjs';
 
 const DATA=path.join(process.cwd(),'data');
 const EVIDENCE=path.join(DATA,'evidence');
@@ -11,14 +12,18 @@ const iso=new Date().toISOString();
 const read=async(p,d)=>{try{return JSON.parse(await fs.readFile(p,'utf8'))}catch{return d}};
 const write=async(p,x)=>{await fs.mkdir(path.dirname(p),{recursive:true});await fs.writeFile(p,JSON.stringify(x,null,2)+'\n')};
 const hash=s=>crypto.createHash('sha1').update(s).digest('hex').slice(0,12);
-const targetGeo=g=>!!g&&g.lat>=49.225&&g.lat<=49.286&&g.lng>=-123.215&&g.lng<=-123.135;
-const targetAreaText=s=>isTargetRentalAreaText(s)&&/\b(?:kitsilano|arbutus|point\s+grey|dunbar|west\s+point\s+grey|mackenzie\s+heights|shaughnessy|kerrisdale|southlands|quilchena|musqueam|university\s+endowment\s+lands|(?:w|west)\s+\d+(?:st|nd|rd|th)?\s+(?:ave|avenue|street|st))\b/i.test(String(s||''));
+const targetGeo=g=>isTargetRentalCoordinate(g);
+const targetAreaText=s=>isTargetRentalAreaText(s)&&/\b(?:kitsilano|arbutus|point\s+grey|dunbar|west\s+point\s+grey|mackenzie\s+heights|shaughnessy|kerrisdale|southlands|quilchena|musqueam|university\s+endowment\s+lands|downtown|yaletown|west\s+end|coal\s+harbour|robson|alberni|nelson|howe|hornby|davie|burrard|georgia|(?:w|west)\s+\d+(?:st|nd|rd|th)?\s+(?:ave|avenue|street|st))\b/i.test(String(s||''));
 
 const searches=[
   ['kitsilano','https://vancouver.craigslist.org/search/van/apa?min_bedrooms=2&query=kitsilano'],
   ['arbutus','https://vancouver.craigslist.org/search/van/apa?min_bedrooms=2&query=arbutus'],
   ['point-grey','https://vancouver.craigslist.org/search/van/apa?min_bedrooms=2&query=point%20grey'],
-  ['dunbar','https://vancouver.craigslist.org/search/van/apa?min_bedrooms=2&query=dunbar']
+  ['dunbar','https://vancouver.craigslist.org/search/van/apa?min_bedrooms=2&query=dunbar'],
+  ['downtown','https://vancouver.craigslist.org/search/van/apa?min_bedrooms=2&query=downtown'],
+  ['west-end','https://vancouver.craigslist.org/search/van/apa?min_bedrooms=2&query=west%20end'],
+  ['yaletown','https://vancouver.craigslist.org/search/van/apa?min_bedrooms=2&query=yaletown'],
+  ['coal-harbour','https://vancouver.craigslist.org/search/van/apa?min_bedrooms=2&query=coal%20harbour']
 ];
 
 const browser=await chromium.launch({headless:true});

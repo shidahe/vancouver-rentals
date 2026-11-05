@@ -4,6 +4,7 @@ import crypto from 'node:crypto';
 import { chromium } from 'playwright';
 import { isTargetRentalSearchAddress, listingScopeEligible } from './discovery-policy.mjs';
 import { classifyRentalsCaSearchLead, parseRentalsCaSearchLeads, rentalsCaSearchLeadScopeEligible } from './rentalsca-search-parser.mjs';
+import { isTargetRentalCoordinate } from './realtylink-parser.mjs';
 
 const DATA=path.join(process.cwd(),'data');
 const EVIDENCE=path.join(DATA,'evidence');
@@ -21,7 +22,7 @@ function detailUrlFromAddress(line=''){let s=String(line).replace(/,\s*Vancouver
 function flat(ld){const out=[];const walk=x=>{if(!x)return;if(Array.isArray(x))return x.forEach(walk);if(typeof x!=='object')return;out.push(x);if(x['@graph'])walk(x['@graph'])};ld.forEach(walk);return out;}
 function structuredAddress(ld){for(const x of flat(ld)){const a=x.address;if(a&&typeof a==='object'&&a.streetAddress){const sp=splitAddr(a.streetAddress);return{address:`${sp.street}, ${a.addressLocality||'Vancouver'}, ${a.addressRegion||'BC'}${a.postalCode?` ${a.postalCode}`:''}`,unit:sp.unit};}}return null;}
 function geoFromLd(ld){for(const x of flat(ld)){const g=x.geo;if(g){const lat=Number(g.latitude),lng=Number(g.longitude);if(Number.isFinite(lat)&&Number.isFinite(lng))return{lat,lng};}}return null;}
-function target(g){return !!g&&g.lat>=49.225&&g.lat<=49.286&&g.lng>=-123.215&&g.lng<=-123.135;}
+function target(g){return isTargetRentalCoordinate(g);}
 function firstAddress(text){const lines=text.split('\n').map(x=>x.trim()).filter(Boolean);const s=lines.find(x=>/\d{3,5}.*(?:street|st\b|avenue|ave\b|broadway|road|rd\b|drive|dr\b|place|pl\b).*,\s*Vancouver,\s*(?:BC|British Columbia)/i.test(x));if(!s)return null;const first=s.split(',')[0],sp=splitAddr(first);return{address:`${sp.street}, Vancouver, BC`,unit:sp.unit};}
 function money(s){const m=String(s||'').match(/\$\s*([2-9][0-9](?:,[0-9]{3}|[0-9]{2}))/);return m?Number(m[1].replace(',','')):null;}
 function parseFloorplans(text){
@@ -70,7 +71,7 @@ for(const s of (sources.discovery||[]).filter(x=>x.adapter==='rentalsca-search')
     const searchLeads=parseRentalsCaSearchLeads(bodyText);
     const neighborhoodSearch=/rentalsca-(?:kitsilano|point-grey|arbutus|dunbar|quilchena)-/i.test(s.id);
     for(const lead of searchLeads){
-      if(lead.rentMin<3500||lead.bedroomMax<2||lead.bedroomMin>4)continue;
+      if(lead.rentMax<4000||lead.rentMin>6000||lead.bedroomMax<2||lead.bedroomMin>4||(lead.bathrooms!=null&&lead.bathrooms<2))continue;
       if(!rentalsCaSearchLeadScopeEligible(lead))continue;
       if(!neighborhoodSearch&&!isTargetRentalSearchAddress(lead.address)){diagnostics.searchLeadOutOfArea++;continue;}
       searchLeadMap.set(lead.identityKey,{...lead,source:'Rentals.ca search',searchUrl:s.url,checkedAt:iso,publishable:false,evidenceKind:'search_result_lead_only',availabilityVerified:false});
