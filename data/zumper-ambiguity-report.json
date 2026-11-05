@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-11-05T16:19:39.547Z",
-  "checkedCount": 5,
+  "generatedAt": "2026-11-05T21:10:35.082Z",
+  "checkedCount": 4,
   "quarantinedCount": 0,
   "checked": [
     {
@@ -25,18 +25,11 @@
       "highPrice": 5000
     },
     {
-      "identityKey": "3000 w 44th ave::url:e02801d5a772",
-      "url": "https://www.zumper.com/address/3000-w-44th-ave-vancouver-bc-v6n-3k6-can",
+      "identityKey": "2261 waterloo st::url:6d7cdb732175",
+      "url": "https://www.zumper.com/address/2261-waterloo-st-vancouver-bc-v6r-3h2-can",
       "ambiguous": false,
-      "lowPrice": 6000,
-      "highPrice": 6000
-    },
-    {
-      "identityKey": "2000 w 43rd ave::url:daba7b758265",
-      "url": "https://www.zumper.com/address/2000-w-43rd-ave-vancouver-bc-v6m-2c9-can",
-      "ambiguous": false,
-      "lowPrice": 4500,
-      "highPrice": 4500
+      "lowPrice": 4800,
+      "highPrice": 4800
     }
   ],
   "quarantined": []

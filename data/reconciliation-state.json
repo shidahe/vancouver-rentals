@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-11-05T16:21:52.183Z",
+  "refreshedAt": "2026-11-05T21:12:44.240Z",
   "groups": [
     {
       "identityKey": "3349 dunbar st::url:fa963040c813",
@@ -50,24 +50,60 @@
       "result": "candidate_only"
     },
     {
-      "identityKey": "3000 w 44th ave::url:e02801d5a772",
+      "identityKey": "2261 waterloo st::url:6d7cdb732175",
       "sources": [
         "zumper"
       ],
       "rents": [
-        6000
+        4800
       ],
       "exactUnit": false,
-      "matchedListingId": "zumper-1754927f090e",
+      "matchedListingId": "zumper-747feecf761d",
       "result": "candidate_only"
     },
     {
-      "identityKey": "2000 w 43rd ave::url:daba7b758265",
+      "identityKey": "1289 hornby st::url:9bfb77ff2d82",
       "sources": [
-        "zumper"
+        "craigslist"
       ],
       "rents": [
         4500
+      ],
+      "exactUnit": false,
+      "matchedListingId": null,
+      "result": "candidate_only"
+    },
+    {
+      "identityKey": "1238 homer st::url:c9aa14850833",
+      "sources": [
+        "craigslist"
+      ],
+      "rents": [
+        5500
+      ],
+      "exactUnit": false,
+      "matchedListingId": null,
+      "result": "candidate_only"
+    },
+    {
+      "identityKey": "1055 homer st::unit:504",
+      "sources": [
+        "craigslist"
+      ],
+      "rents": [
+        5500
+      ],
+      "exactUnit": true,
+      "matchedListingId": null,
+      "result": "candidate_only"
+    },
+    {
+      "identityKey": "2118 w 15 ave 2f::url:db2aacb5d467",
+      "sources": [
+        "craigslist"
+      ],
+      "rents": [
+        4800
       ],
       "exactUnit": false,
       "matchedListingId": null,
@@ -278,48 +314,12 @@
       "result": "candidate_only"
     },
     {
-      "identityKey": "2118 w 15 ave 2f::url:058dade452c9",
-      "sources": [
-        "craigslist"
-      ],
-      "rents": [
-        4800
-      ],
-      "exactUnit": false,
-      "matchedListingId": null,
-      "result": "candidate_only"
-    },
-    {
-      "identityKey": "1055 homer st::unit:504",
-      "sources": [
-        "craigslist"
-      ],
-      "rents": [
-        5800
-      ],
-      "exactUnit": true,
-      "matchedListingId": null,
-      "result": "candidate_only"
-    },
-    {
       "identityKey": "1351 continental st 31xx::url:72a6a113665e",
       "sources": [
         "craigslist"
       ],
       "rents": [
         5800
-      ],
-      "exactUnit": false,
-      "matchedListingId": null,
-      "result": "candidate_only"
-    },
-    {
-      "identityKey": "1238 homer st::url:c9aa14850833",
-      "sources": [
-        "craigslist"
-      ],
-      "rents": [
-        5500
       ],
       "exactUnit": false,
       "matchedListingId": null,
@@ -356,18 +356,6 @@
       ],
       "rents": [
         4680
-      ],
-      "exactUnit": false,
-      "matchedListingId": null,
-      "result": "candidate_only"
-    },
-    {
-      "identityKey": "1289 hornby st::url:9bfb77ff2d82",
-      "sources": [
-        "craigslist"
-      ],
-      "rents": [
-        4800
       ],
       "exactUnit": false,
       "matchedListingId": null,
@@ -518,12 +506,36 @@
       "result": "candidate_only"
     },
     {
-      "identityKey": "mls:r3175047",
+      "identityKey": "mls:r3171043",
       "sources": [
         "realtylink mls"
       ],
       "rents": [
-        4995
+        4400
+      ],
+      "exactUnit": true,
+      "matchedListingId": null,
+      "result": "auto_published_authoritative_mls"
+    },
+    {
+      "identityKey": "mls:r3107028",
+      "sources": [
+        "realtylink mls"
+      ],
+      "rents": [
+        4990
+      ],
+      "exactUnit": true,
+      "matchedListingId": null,
+      "result": "auto_published_authoritative_mls"
+    },
+    {
+      "identityKey": "mls:r3170765",
+      "sources": [
+        "realtylink mls"
+      ],
+      "rents": [
+        4200
       ],
       "exactUnit": true,
       "matchedListingId": null,
@@ -554,27 +566,15 @@
       "result": "authoritative_mls_reverified"
     },
     {
-      "identityKey": "mls:r3163709",
+      "identityKey": "mls:r3175865",
       "sources": [
         "realtylink mls"
       ],
       "rents": [
-        5600
+        4000
       ],
       "exactUnit": false,
-      "matchedListingId": "mls-r3163709",
-      "result": "authoritative_mls_reverified"
-    },
-    {
-      "identityKey": "mls:r3151372",
-      "sources": [
-        "realtylink mls"
-      ],
-      "rents": [
-        4800
-      ],
-      "exactUnit": false,
-      "matchedListingId": "mls-r3151372",
+      "matchedListingId": "mls-r3175865",
       "result": "authoritative_mls_reverified"
     },
     {
@@ -586,19 +586,20 @@
         6000
       ],
       "exactUnit": true,
-      "matchedListingId": null,
-      "result": "auto_published_authoritative_mls"
+      "matchedListingId": "mls-r3175906",
+      "result": "authoritative_mls_reverified"
     }
   ],
   "promoted": [
-    "mls-r3175047",
-    "mls-r3175906"
+    "mls-r3171043",
+    "mls-r3107028",
+    "mls-r3170765"
   ],
   "crossVerified": [
     "zumper-16e9ae17cd91",
     "mls-r3180739",
-    "mls-r3163709",
-    "mls-r3151372"
+    "mls-r3175865",
+    "mls-r3175906"
   ],
   "fingerprintCrossVerified": [],
   "craigslistRelistingsRecovered": [],
@@ -610,25 +611,22 @@
   "detailReactivated": [
     "mls-r3151372",
     "mls-r3163709",
-    "mls-r3165327",
-    "mls-r3165947",
-    "mls-r3179217",
     "mls-r3180739",
-    "mls-r3175898",
     "mls-r3181005",
     "mls-r3076892",
     "mls-r3175118",
-    "mls-r3178905"
+    "mls-r3178905",
+    "mls-r3175047",
+    "mls-r3175906"
   ],
   "auxiliaryMlsRemovalsRolledBack": [],
   "mlsMissing": {},
   "mlsRemoved": [],
   "mlsStaleHidden": [],
-  "realtylinkSnapshotCount": 6,
+  "realtylinkSnapshotCount": 7,
   "realtylinkSnapshotHighWaterMark": 9,
   "realtylinkSnapshotScope": "rent-4000-6000-beds-2-4-baths-2-sunlight-kits-downtown-v4",
-  "realtylinkRemovalEligible": false,
-  "mlsRemovalSuppressed": "Partial Realtylink snapshot (6 candidates versus previous complete 9); disappearance signals ignored.",
+  "realtylinkRemovalEligible": true,
   "mlsDuplicatesMerged": [],
   "canonicalFieldRepairsApplied": []
 }

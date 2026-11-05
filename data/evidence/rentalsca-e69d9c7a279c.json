@@ -1,0 +1,247 @@
+{
+  "checkedAt": "2026-11-05T21:10:35.421Z",
+  "page": {
+    "source": "Rentals.ca",
+    "url": "https://rentals.ca/vancouver/bellevue-towers-apartments",
+    "address": "4639 W 10th Ave, Vancouver, British Columbia V6R 2J3",
+    "addressUnit": null,
+    "geo": {
+      "lat": 49.26421999999999,
+      "lng": -123.2133342
+    },
+    "targetArea": true,
+    "active": true,
+    "floorplans": [],
+    "single": {
+      "rent": 2000,
+      "beds": 1,
+      "baths": null,
+      "sqft": null
+    },
+    "checkedAt": "2026-11-05T21:10:35.421Z"
+  },
+  "jsonLd": [
+    {
+      "@context": "http://schema.org",
+      "@type": "ApartmentComplex",
+      "url": "https://rentals.ca/vancouver/bellevue-towers-apartments",
+      "name": "Bellevue Towers Apartments",
+      "description": "About\n**About **\nBellevue Towers Apartments is a beautifully maintained eight-storey building comprising 44 spacious one- and two-bedroom suites. Each bright, generously sized unit offers stunning views, thoughtfully restored and modernized kitchens and bathrooms, and includes heat and hot water for your comfort.\nIdeally situated at 4639 West 10th Avenue in Vancouver’s desirable West Point Grey neighbourhood, Bellevue Towers Apartments provides residents with convenient access to major transit routes, ensuring quick and easy commutes to the vibrant downtown core.\nCommunity Amenities\n**Community Amenities **\nElevatorsLaundry facilitiesFitness roomParks nearbyResident StorageLaundry RoomOn-Site ManagerFitness CenterResident StorageProfessionally ManagedClose Proximity to ParkHot Water IncludedHeat IncludedNon Smoking\nElevators\nLaundry facilities\nFitness room\nParks nearby\nResident Storage\nLaundry Room\nOn-Site Manager\nFitness Center\nResident Storage\nProfessionally Managed\nClose Proximity to Park\nHot Water Included\nHeat Included\nNon Smoking\nSuite Amenities\n**Suite Amenities **\nStoveDishwasher availableBalconiesWindow coveringsLarge Windows\nStove\nDishwasher available\nBalconies\nWindow coverings\nLarge Windows\nAdditional Information:\n**Additional Information: **\nResident StorageOn-Site ManagerResident StorageClose Proximity to ParkHot Water IncludedHeat IncludedNon SmokingLarge Windows\nResident Storage\nOn-Site Manager\nResident Storage\nClose Proximity to Park\nHot Water Included\nHeat Included\nNon Smoking\nLarge Windows",
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 49.26421999999999,
+        "longitude": -123.2133342
+      },
+      "containedInPlace": {
+        "@type": "City",
+        "url": "",
+        "name": "",
+        "address": {
+          "@type": "PostalAddress",
+          "addressCountry": "CA",
+          "addressRegion": ""
+        }
+      },
+      "containsPlace": [
+        {
+          "@context": "http://schema.org",
+          "@type": "Apartment",
+          "name": "0 Bedroom",
+          "potentialAction": {
+            "@type": "RentAction",
+            "priceSpecification": {
+              "@type": "PriceSpecification",
+              "price": 1984,
+              "priceCurrency": "CAD"
+            }
+          },
+          "floorSize": {
+            "@type": "QuantitativeValue",
+            "unitCode": "FTK",
+            "value": "437.0"
+          }
+        },
+        {
+          "@context": "http://schema.org",
+          "@type": "Apartment",
+          "name": "1 Bedroom",
+          "potentialAction": {
+            "@type": "RentAction",
+            "priceSpecification": {
+              "@type": "PriceSpecification",
+              "price": 2215,
+              "priceCurrency": "CAD"
+            }
+          },
+          "floorSize": {
+            "@type": "QuantitativeValue",
+            "unitCode": "FTK",
+            "value": "617.0"
+          }
+        }
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "addressCountry": "CA",
+        "addressLocality": "Vancouver",
+        "addressRegion": "British Columbia",
+        "postalCode": "V6R 2J3",
+        "streetAddress": "4639 W 10th Ave"
+      },
+      "telephone": "(778) 200-6914",
+      "photo": [
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/1110961/apartment-2118085078.jpg",
+          "caption": "Exterior view of a tall residential building surrounded by trees and bushes under a blue sky.",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/1110961/apartment-2118085078.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/1110961/apartment-2118085080.jpg",
+          "caption": "Brick apartment building with several balconies and multiple floors under a blue sky with clouds.",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/1110961/apartment-2118085080.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/1110961/apartment-2118085081.jpg",
+          "caption": "White kitchen with cabinets, stove, sink, and a dining table with chairs near a window.",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/1110961/apartment-2118085081.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/1110961/apartment-2118085082.jpg",
+          "caption": "Bedroom with bed, pillows, large window, hardwood floor, dresser, and modern decor.",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/1110961/apartment-2118085082.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://assets.rentsync.com/devon/images/gallery/1152/1757042204_2021-4-2615196-2400405-1024x683.jpg",
+          "caption": "Well-lit kitchen with white cabinetry, gray countertops, electric stove, sink, and small round dining table with four chairs.",
+          "image": "https://assets.rentsync.com/devon/images/gallery/1152/1757042204_2021-4-2615196-2400405-1024x683.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/1110961/apartment-2241193661.jpg",
+          "caption": "Well-lit kitchen with white cabinetry, gray countertops, electric stove, sink, and small round dining table with four chairs.",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/1110961/apartment-2241193661.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/1110961/apartment-2118085083.jpg",
+          "caption": "Modern kitchen with white cabinets, gray countertops, refrigerator, stove, and sink under bright lighting.",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/1110961/apartment-2118085083.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://assets.rentsync.com/devon/images/gallery/1152/1764189442_2021-4-26151828-2400405-1024x683.jpg",
+          "caption": "Modern living room with three beige sofas, large windows, abstract wall art, and wooden floors.",
+          "image": "https://assets.rentsync.com/devon/images/gallery/1152/1764189442_2021-4-26151828-2400405-1024x683.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/1110961/apartment-2241193662.jpg",
+          "caption": "Modern living room with three beige sofas, large windows, abstract wall art, and wooden floors.",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/1110961/apartment-2241193662.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/1110961/apartment-2118085084.jpg",
+          "caption": "Living room with gray sofa, armchair, coffee table, and large window showing trees outside.",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/1110961/apartment-2118085084.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://assets.rentsync.com/devon/images/gallery/1152/1764189443_2021-4-26151835-2400405-1024x683.jpg",
+          "caption": "Furnished living room with sofa, armchair, coffee table, large windows, and view of trees outside.",
+          "image": "https://assets.rentsync.com/devon/images/gallery/1152/1764189443_2021-4-26151835-2400405-1024x683.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/1110961/apartment-2241193663.jpg",
+          "caption": "Furnished living room with sofa, armchair, coffee table, large windows, and view of trees outside.",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/1110961/apartment-2241193663.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/1110961/apartment-2118085085.jpg",
+          "caption": "Modern living room with gray sofas, round white coffee table, large windows, and wooden floor.",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/1110961/apartment-2118085085.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://assets.rentsync.com/devon/images/gallery/1152/1764189445_2021-4-26151857-2400405-1024x683.jpg",
+          "caption": "Interior view of a small kitchen with white cabinets, an electric stove, refrigerator, and sink.",
+          "image": "https://assets.rentsync.com/devon/images/gallery/1152/1764189445_2021-4-26151857-2400405-1024x683.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/1110961/apartment-2241193664.jpg",
+          "caption": "Interior view of a small kitchen with white cabinets, an electric stove, refrigerator, and sink.",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/1110961/apartment-2241193664.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/1110961/apartment-2118085086.jpg",
+          "caption": "Bathroom with white sink, gray countertop, mirrored cabinet, white bathtub and beige-patterned shower curtain.",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/1110961/apartment-2118085086.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://assets.rentsync.com/devon/images/gallery/1152/1764189446_2021-4-26151914-2400405-1024x683.jpg",
+          "caption": "Furnished bedroom with a large window, hardwood flooring, nightstands, and a dresser with plants.",
+          "image": "https://assets.rentsync.com/devon/images/gallery/1152/1764189446_2021-4-26151914-2400405-1024x683.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/1110961/apartment-2241193665.jpg",
+          "caption": "Furnished bedroom with a large window, hardwood flooring, nightstands, and a dresser with plants.",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/1110961/apartment-2241193665.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/1110961/apartment-2118085087.jpg",
+          "caption": "Balcony with glass railing overlooking a street and trees with apartment buildings in background.",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/1110961/apartment-2118085087.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://assets.rentsync.com/devon/images/gallery/1152/1764189447_2021-4-26151927-2400405-1024x683.jpg",
+          "caption": "Balcony railing with glass and white frame overlooking street, trees, and apartment buildings.",
+          "image": "https://assets.rentsync.com/devon/images/gallery/1152/1764189447_2021-4-26151927-2400405-1024x683.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/1110961/apartment-2241193666.jpg",
+          "caption": "Balcony railing with glass and white frame overlooking street, trees, and apartment buildings.",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/1110961/apartment-2241193666.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/1110961/apartment-2118085088.jpg",
+          "caption": "Exterior view of building entrance with lamp posts and landscaped bushes along pathway.",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/1110961/apartment-2118085088.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://assets.rentsync.com/devon/images/gallery/1152/1764189449_BELLEVUE-TOWERS-1-Bedroom-10-1024x567.jpg",
+          "caption": "Bathroom interior featuring a bathtub with tiled walls, a sink with countertop, and a shower curtain with geometric patterns.",
+          "image": "https://assets.rentsync.com/devon/images/gallery/1152/1764189449_BELLEVUE-TOWERS-1-Bedroom-10-1024x567.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/1110961/apartment-2241193667.jpg",
+          "caption": "Bathroom interior featuring a bathtub with tiled walls, a sink with countertop, and a shower curtain with geometric patterns.",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/1110961/apartment-2241193667.jpg"
+        },
+        {
+          "@type": "Photograph",
+          "thumbnailUrl": "https://images.rentals.ca/property-pictures/small/vancouver-bc/1110961/apartment-2118085089.jpg",
+          "caption": "Multi-story residential building exterior with surrounding greenery and sunlight shadows.",
+          "image": "https://images.rentals.ca/property-pictures/large/vancouver-bc/1110961/apartment-2118085089.jpg"
+        }
+      ]
+    }
+  ],
+  "textSample": "Alert\nContact Property Contact\nSave Alert\n\nSimilar listings in\n\nCreate an Alert\nParking Information\nFeatures & Amenities\nUtilities Included\nAbout Bellevue Towers Apartments\n\nAbout\n\nBellevue Towers Apartments is a beautifully maintained eight-storey building comprising 44 spacious one- and two-bedroom suites. Each bright, generously sized unit offers stunning views, thoughtfully restored and modernized kitchens and bathrooms, and includes heat and hot water for your comfort.\n\nIdeally situated at 4639 West 10th Avenue in Vancouver’s desirable West Point Grey neighbourhood, Bellevue Towers Apartments provides residents with convenient access to major transit routes, ensuring quick and easy commutes to the vibrant downtown core.\n\nCommunity Amenities\n\nElevators\nLaundry facilities\nFitness room\nParks nearby\nResident Storage\nLaundry Room\nOn-Site Manager\nFitness Center\nResident Storage\nProfessionally Managed\nClose Proximity to Park\nHot Water Included\nHeat Included\nNon Smoking\n\nSuite Amenities\n\nStove\nDishwasher available\nBalconies\nWindow coverings\nLarge Windows\n\nAdditional Information:\nResident Storage\nOn-Site Manager\nResident Storage\nClose Proximity to Park\nHot Water Included\nHeat Included\nNon Smoking\nLarge Windows\n\nAbout\n\nBellevue Towers Apartments is a beautifully maintained eight-storey building comprising 44 spacious one- and two-bedroom suites. Each bright, generously sized unit offers stunning views, thoughtfully restored and modernized kitchens and bathrooms, and includes heat and hot water for your comfort.\n\nIdeally situated at 4639 West 10th Avenue in Vancouver’s desirable West Point Grey neighbourhood, Bellevue Towers Apartments provides residents with convenient access to major transit routes, ensuring quick and easy commutes to the vibrant downtown core.\n\nCommunity Amenities\n\nElevators\nLaundry facilities\nFitness room\nParks nearby\nResident Storage\nLaundry Room\nOn-Site Manager\nFitness Center\nResident Storage\nProfessionally Managed\nClose Proximity to Park\nHot Water Included\nHeat Included\nNon Smoking\n\nSuite Amenities\n\nStove\nDishwasher available\nBalconies\nWindow coverings\nLarge Windows\n\nAdditional Information:\nResident Storage\nOn-Site Manager\nResident Storage\nClose Proximity to Park\nHot Water Included\nHeat Included\nNon Smoking\nLarge Windows\nNeighbourhood Score\nOpen House Dates\nSave Alert\n\nSimilar listings in\n\nCreate an Alert\nSummary\n\nReport Listing\n\nExplore Similar Rentals\nPopular Rent Searches In Vancouver\nSearch by Amenities\nPet Friendly Apartments In Vancouver\nApartments With A/C In Vancouver\nApartments With Ensuite Laundry In Vancouver\nApartments With Dishwasher In Vancouver\nSearch by Bedrooms\n1 Bedroom Apartments In Vancouver\n2 Bedroom Apartments In Vancouver\n3 Bedroom Apartments In Vancouver\n4 Bedroom Apartments In Vancouver\nSearch by Budget\nApartments Under $1000 In Vancouver\nApartments Under $1250 In Vancouver\nApartments Under $2000 In Vancouver\nApartments Under $2500 In Vancouver\nSee All Rentals in Vancouver\nThis website uses cookies to ensure you get the best experience on our website. By clicking \"Allow All\", you consent to our use of cookies. Privacy Policy ↗\nManage Cookies\nDecline\nAllow All"
+}

@@ -1,14 +1,14 @@
 {
-  "generatedAt": "2026-11-05T16:22:33.544Z",
+  "generatedAt": "2026-11-05T21:13:23.256Z",
   "policy": "Only CAD $4,000–$6,000 entire-home rentals with 2–4 bedrooms, at least 2 bathrooms, confirmed AC, and verified sunlight or a non-north exposure in Kitsilano / Vancouver Westside / Downtown are published. Unknown sun exposure and exclusively north-facing units are excluded pending verification.",
   "activeCount": 2,
-  "excludedCount": 130,
-  "exclusionEventsToday": 40,
+  "excludedCount": 134,
+  "exclusionEventsToday": 45,
   "countsByReason": {
-    "direct sunlight or non-north exposure not verified": 12,
+    "direct sunlight or non-north exposure not verified": 14,
     "monthly rent outside CAD $4,000–$6,000": 68,
-    "air conditioning not confirmed": 33,
-    "fewer than two verified bathrooms": 10,
+    "air conditioning not confirmed": 34,
+    "fewer than two verified bathrooms": 11,
     "house share or separately rented portion of a house": 4,
     "five or more bedrooms": 1,
     "outside Kitsilano / Vancouver Westside / Downtown target area": 2
@@ -462,7 +462,7 @@
     {
       "id": "mls-r3165327",
       "reason": "air conditioning not confirmed",
-      "wasActive": true
+      "wasActive": false
     },
     {
       "id": "mls-r3162880",
@@ -507,7 +507,7 @@
     {
       "id": "zumper-dd642aebb4f6",
       "reason": "air conditioning not confirmed",
-      "wasActive": true
+      "wasActive": false
     },
     {
       "id": "mls-r3173479",
@@ -567,12 +567,12 @@
     {
       "id": "zumper-1754927f090e",
       "reason": "air conditioning not confirmed",
-      "wasActive": true
+      "wasActive": false
     },
     {
       "id": "mls-r3175865",
       "reason": "fewer than two verified bathrooms",
-      "wasActive": false
+      "wasActive": true
     },
     {
       "id": "mls-r3177685",
@@ -617,12 +617,12 @@
     {
       "id": "mls-r3165947",
       "reason": "air conditioning not confirmed",
-      "wasActive": true
+      "wasActive": false
     },
     {
       "id": "mls-r3179217",
       "reason": "direct sunlight or non-north exposure not verified",
-      "wasActive": true
+      "wasActive": false
     },
     {
       "id": "mls-r3180739",
@@ -632,7 +632,7 @@
     {
       "id": "mls-r3175898",
       "reason": "direct sunlight or non-north exposure not verified",
-      "wasActive": true
+      "wasActive": false
     },
     {
       "id": "mls-r3181005",
@@ -662,6 +662,26 @@
     {
       "id": "mls-r3175906",
       "reason": "air conditioning not confirmed",
+      "wasActive": true
+    },
+    {
+      "id": "zumper-747feecf761d",
+      "reason": "air conditioning not confirmed",
+      "wasActive": true
+    },
+    {
+      "id": "mls-r3171043",
+      "reason": "direct sunlight or non-north exposure not verified",
+      "wasActive": true
+    },
+    {
+      "id": "mls-r3107028",
+      "reason": "fewer than two verified bathrooms",
+      "wasActive": true
+    },
+    {
+      "id": "mls-r3170765",
+      "reason": "direct sunlight or non-north exposure not verified",
       "wasActive": true
     }
   ]
