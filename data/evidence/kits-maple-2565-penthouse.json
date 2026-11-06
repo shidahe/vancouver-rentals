@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-11-06T15:57:22.838Z",
+  "checkedAt": "2026-11-06T16:10:34.704Z",
   "listingId": "kits-maple-2565-penthouse",
   "sourceUrl": "https://www.craigslist.org/view/d/vancouver-rare-penthouse-with-private/h5bh2hpcqoXSPVRz7zvtLg",
   "ok": true,
@@ -223,58 +223,58 @@
   ],
   "jsonLd": [
     {
+      "@type": "BreadcrumbList",
+      "@context": "https://schema.org",
       "itemListElement": [
         {
-          "position": 1,
-          "@type": "ListItem",
           "name": "craigslist: vancouver, BC",
-          "item": "https://www.craigslist.org/area/vancouver"
+          "item": "https://www.craigslist.org/area/vancouver",
+          "@type": "ListItem",
+          "position": 1
         },
         {
-          "item": "https://www.craigslist.org/subarea/van",
-          "name": "vancouver",
           "position": 2,
-          "@type": "ListItem"
+          "name": "vancouver",
+          "@type": "ListItem",
+          "item": "https://www.craigslist.org/subarea/van"
         },
         {
-          "item": "https://www.craigslist.org/search/subarea/van?cat=hhh",
           "name": "housing",
+          "item": "https://www.craigslist.org/search/subarea/van?cat=hhh",
           "@type": "ListItem",
           "position": 3
         },
         {
-          "item": "https://www.craigslist.org/search/subarea/van?cat=apa",
-          "name": "apartments / housing for rent",
           "position": 4,
-          "@type": "ListItem"
+          "@type": "ListItem",
+          "item": "https://www.craigslist.org/search/subarea/van?cat=apa",
+          "name": "apartments / housing for rent"
         },
         {
-          "item": "https://www.craigslist.org/view/d/vancouver-rare-penthouse-with-private/h5bh2hpcqoXSPVRz7zvtLg",
           "position": 5,
+          "item": "https://www.craigslist.org/view/d/vancouver-rare-penthouse-with-private/h5bh2hpcqoXSPVRz7zvtLg",
           "@type": "ListItem",
           "name": "Rare Penthouse with Private Rooftop patio - 2Bed, 2Bath and Den"
         }
-      ],
-      "@context": "https://schema.org",
-      "@type": "BreadcrumbList"
+      ]
     },
     {
-      "name": "Rare Penthouse with Private Rooftop patio - 2Bed, 2Bath and Den",
-      "smokingAllowed": false,
       "latitude": "49.267216",
-      "@type": "Apartment",
-      "longitude": "-123.150419",
-      "address": {
-        "addressCountry": "CA",
-        "postalCode": "V6J1P9",
-        "addressLocality": "Vancouver",
-        "@type": "PostalAddress",
-        "addressRegion": "BC",
-        "streetAddress": "2565 Maple Street"
-      },
       "numberOfBedrooms": "2",
+      "smokingAllowed": false,
+      "name": "Rare Penthouse with Private Rooftop patio - 2Bed, 2Bath and Den",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Vancouver",
+        "addressCountry": "CA",
+        "streetAddress": "2565 Maple Street",
+        "addressRegion": "BC",
+        "postalCode": "V6J1P9"
+      },
       "@context": "http://schema.org",
-      "numberOfBathroomsTotal": 2
+      "longitude": "-123.150419",
+      "numberOfBathroomsTotal": 2,
+      "@type": "Apartment"
     }
   ],
   "images": [
@@ -299,7 +299,7 @@
     "https://images.craigslist.org/00k0k_jNO4qhVKHNu_01C01d_50x50c.jpg",
     "https://map6.craigslist.org/t09/13/1293/2803.png"
   ],
-  "elapsedMs": 3522,
+  "elapsedMs": 3525,
   "identityMatch": true,
   "explicitNegative": false,
   "negativePhrase": null,

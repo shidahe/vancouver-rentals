@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-06T16:07:25.678Z",
+  "generatedAt": "2026-11-06T16:20:53.726Z",
   "activeCount": 2,
   "decisionReady": true,
   "readinessStatus": "finalized",
@@ -16,8 +16,8 @@
   "readinessChecks": {
     "smokeOk": true,
     "smokeFresh": true,
-    "smokeCheckedAt": "2026-11-06T16:07:30.410Z",
-    "latestDataAt": "2026-11-06T16:06:44.313Z",
+    "smokeCheckedAt": "2026-11-06T16:20:58.387Z",
+    "latestDataAt": "2026-11-06T16:20:17.134Z",
     "coverageReady": true,
     "healthyDiscoveryLanes": 3,
     "coverageWarnings": [
@@ -48,5 +48,5 @@
     ]
   },
   "readinessIssues": [],
-  "finalizedAt": "2026-11-06T16:07:30.507Z"
+  "finalizedAt": "2026-11-06T16:20:58.487Z"
 }

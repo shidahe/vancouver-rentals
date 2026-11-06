@@ -3406,6 +3406,16 @@
       "date": "2026-10-31",
       "rent": 4650,
       "note": "CORRECTED: restored after exact current MLS detail matched identity, explicit availability and rent."
+    },
+    {
+      "date": "2026-11-06",
+      "rent": 4650,
+      "note": "CORRECTED: restored after exact current MLS detail matched identity, explicit availability and rent."
+    },
+    {
+      "date": "2026-11-06",
+      "rent": 4650,
+      "note": "EXCLUDED: air conditioning not confirmed."
     }
   ],
   "kits-walk-floorplan-2-bedroom-811-3675": [
@@ -4416,6 +4426,11 @@
       "date": "2026-11-05",
       "rent": 6000,
       "note": "EXCLUDED: air conditioning not confirmed."
+    },
+    {
+      "date": "2026-11-06",
+      "rent": 6000,
+      "note": "EXCLUDED: air conditioning not confirmed."
     }
   ],
   "zumper-747feecf761d": [
@@ -4438,6 +4453,11 @@
     },
     {
       "date": "2026-11-05",
+      "rent": 4400,
+      "note": "EXCLUDED: direct sunlight or non-north exposure not verified."
+    },
+    {
+      "date": "2026-11-06",
       "rent": 4400,
       "note": "EXCLUDED: direct sunlight or non-north exposure not verified."
     }
