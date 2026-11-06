@@ -5,7 +5,7 @@ import { civicAddressMatch, exactAddressUnitIdentity, listingMls, mlsIdentity } 
 import { dedupeMlsRecords } from './mls-dedupe.mjs';
 import { verifiedPhotoCandidates } from './listing-photo-candidates.mjs';
 import { parseRealtylinkAirConditioning, parseRealtylinkFloorArea, parseRealtylinkPetFriendly, parseRealtylinkRoomCount } from './realtylink-parser.mjs';
-import { LISTING_SCOPE_VERSION, listingScopeEligible } from './discovery-policy.mjs';
+import { LISTING_SCOPE_VERSION, listingScopeEligible, scopeExcludedListingCanReactivate } from './discovery-policy.mjs';
 import { realtylinkSnapshotBaseline, realtylinkSnapshotComplete } from './coverage-policy.mjs';
 import { craigslistSeedRelistingMatch } from './craigslist-seed-relisting.mjs';
 import { craigslistCrossSourcePriceMatch } from './craigslist-cross-source-match.mjs';
@@ -311,20 +311,29 @@ for(const [k,items] of groups){
 
   if(listing&&authoritativeMls){
     const oldRent=Number(listing.rent),newRent=Number(authoritativeMls.rent);
-    listing.availabilityStatus='active';listing.verificationLevel='verified';listing.lastChecked=today;listing.verifiedAt=iso;
-    listing.verificationMethod=`Reverified in current authoritative Realtylink MLS inventory ${authoritativeMls.mls}.`;
+    listing.lastChecked=today;listing.verifiedAt=iso;
     listing.bedrooms=Number(authoritativeMls.bedrooms);listing.bathrooms=baths(authoritativeMls);listing.sqft=sqft(authoritativeMls);if(authoritativeMls.petFriendly!=null)listing.petFriendly=authoritativeMls.petFriendly;
     listing.unit=unitToken(authoritativeMls.unit)||listing.unit||null;
     if(listing.source==='Realtylink MLS')listing.address=authoritativeMls.address;
     attachCandidateImages(imageSources,listing,authoritativeMls);
     if(Number.isFinite(newRent)&&newRent!==oldRent){listing.rent=newRent;listing.status=newRent<oldRent?'price_drop':'unchanged';listing.priceDrop=newRent<oldRent;(history[listing.id]||=[]).push({date:today,rent:newRent,note:`MLS price update $${oldRent} → $${newRent}.`});}
+    if(!scopeExcludedListingCanReactivate(listing)){
+      listing.availabilityStatus='excluded';listing.status='excluded';listing.verificationLevel='excluded_by_scope';
+      state.groups.push({...summary,result:'authoritative_mls_reverified_scope_excluded'});continue;
+    }
+    listing.availabilityStatus='active';listing.verificationLevel='verified';delete listing.scopeExclusionReason;
+    listing.verificationMethod=`Reverified in current authoritative Realtylink MLS inventory ${authoritativeMls.mls}.`;
     state.crossVerified.push(listing.id);state.groups.push({...summary,result:'authoritative_mls_reverified'});continue;
   }
 
   if(listing&&families.length>=2&&rentSpread<=500){
-    listing.availabilityStatus='active';listing.verificationLevel='verified';listing.lastChecked=today;listing.verifiedAt=iso;
+    listing.lastChecked=today;listing.verifiedAt=iso;listing.evidenceSources=families;
+    if(!scopeExcludedListingCanReactivate(listing)){
+      listing.availabilityStatus='excluded';listing.status='excluded';listing.verificationLevel='excluded_by_scope';
+      state.groups.push({...summary,result:'cross_verified_existing_scope_excluded'});continue;
+    }
+    listing.availabilityStatus='active';listing.verificationLevel='verified';delete listing.scopeExclusionReason;
     listing.verificationMethod=`Cross-verified by independent live sources: ${families.join(', ')}.`;
-    listing.evidenceSources=families;
     state.crossVerified.push(listing.id);state.groups.push({...summary,result:'cross_verified_existing'});continue;
   }
 

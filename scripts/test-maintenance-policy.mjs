@@ -688,6 +688,11 @@ if (vine111Repair?.bathrooms !== 2.5 || vine111Repair?.type !== 'townhouse') {
 if (!source.includes('state.canonicalFieldRepairsApplied=[]') || !source.includes('automationPolicy.canonicalFieldRepairs')) {
   failures.push('Reviewed canonical unit facts are not reapplied after all live discovery and reconciliation adapters.');
 }
+if (!source.includes('authoritative_mls_reverified_scope_excluded') ||
+    !source.includes('cross_verified_existing_scope_excluded') ||
+    !source.includes('scopeExcludedListingCanReactivate(listing)')) {
+  failures.push('Late authoritative MLS or multi-source reconciliation can reactivate a listing that still fails publication scope.');
+}
 if (!automationPolicy.autoPriceListingIds?.includes('w16-coach-house-850')) {
   failures.push('The exact single-unit Coach House source cannot publish its current verified price.');
 }
