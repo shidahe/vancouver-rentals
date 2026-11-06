@@ -38,7 +38,10 @@ export function publicationScopeEligible(listing) {
 }
 
 export function scopeExcludedListingCanReactivate(listing) {
-  return listing?.availabilityStatus !== 'excluded' || publicationScopeEligible(listing);
+  const wasScopeExcluded = listing?.availabilityStatus === 'excluded' ||
+    listing?.verificationLevel === 'excluded_by_scope' ||
+    Boolean(listing?.scopeExclusionReason);
+  return !wasScopeExcluded || publicationScopeEligible(listing);
 }
 
 export function isHouseShareText(value = '') {

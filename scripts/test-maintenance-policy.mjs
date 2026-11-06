@@ -41,9 +41,16 @@ const failures = [];
 const excludedOneBath = { availabilityStatus: 'excluded', bedrooms: 2, bathrooms: 1, rent: 4500, address: '1000 W 10th Avenue, Vancouver, BC', ac: true, orientation: 'S' };
 const excludedEligible = { ...excludedOneBath, bathrooms: 2 };
 const availabilityPendingOneBath = { ...excludedOneBath, availabilityStatus: 'needs_confirmation' };
+const prematurelyActiveScopeExcluded = {
+  ...excludedOneBath,
+  availabilityStatus: 'active',
+  verificationLevel: 'excluded_by_scope',
+  scopeExclusionReason: 'fewer than two verified bathrooms'
+};
 if (scopeExcludedListingCanReactivate(excludedOneBath) ||
     !scopeExcludedListingCanReactivate(excludedEligible) ||
     !scopeExcludedListingCanReactivate(availabilityPendingOneBath) ||
+    scopeExcludedListingCanReactivate(prematurelyActiveScopeExcluded) ||
     !source.includes('scopeExcludedListingCanReactivate(x)')) {
   failures.push('Current Zumper evidence can repeatedly reactivate a scope-excluded listing or block an eligible recovery.');
 }
