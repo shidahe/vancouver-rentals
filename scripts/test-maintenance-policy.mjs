@@ -2,7 +2,7 @@ import fs from 'node:fs/promises';
 import { civicAddressMatch, exactAddressUnitIdentity, findExistingSeedListing, listingMls, maskedCivicAddressMatch, mlsIdentity } from './inventory-identity.mjs';
 import { firstLikelyRent, parseFacts } from './listing-parser.mjs';
 import { isAutoManagedListing, isStalePendingAutoListing } from './stale-auto-policy.mjs';
-import { bedroomEligible, isHouseShareText, isTargetRentalAreaText, isTargetRentalSearchAddress, LISTING_SCOPE_VERSION, listingScopeEligible, matchingCrossSourceHousePortionEvidence, matchingPartitionedHousePropertyEvidence, rentEligible } from './discovery-policy.mjs';
+import { bedroomEligible, isHouseShareText, isTargetRentalAreaText, isTargetRentalSearchAddress, LISTING_SCOPE_VERSION, listingScopeEligible, matchingCrossSourceHousePortionEvidence, matchingPartitionedHousePropertyEvidence, rentEligible, scopeExcludedListingCanReactivate } from './discovery-policy.mjs';
 import { aggregateUnitCount, discoveredStructuredInventories, priorityInventoryEvidenceHealthy, rentCafeExactUnits, rentCafeUnpricedUnits, structuredRentalInventories } from './priority-inventory-policy.mjs';
 import { dedupeHistoryEvents, pruneExcludedScopeChurn } from './history-policy.mjs';
 import { verifiedPhotoCandidates } from './listing-photo-candidates.mjs';
@@ -38,6 +38,15 @@ const imageCacheWorkflow = await read('.github/workflows/cache-listing-images.ym
 const refreshWorkflow = await read('.github/workflows/refresh-listings.yml');
 const catalog = JSON.parse(await read('data/live-sources.json'));
 const failures = [];
+const excludedOneBath = { availabilityStatus: 'excluded', bedrooms: 2, bathrooms: 1, rent: 4500, address: '1000 W 10th Avenue, Vancouver, BC', ac: true, orientation: 'S' };
+const excludedEligible = { ...excludedOneBath, bathrooms: 2 };
+const availabilityPendingOneBath = { ...excludedOneBath, availabilityStatus: 'needs_confirmation' };
+if (scopeExcludedListingCanReactivate(excludedOneBath) ||
+    !scopeExcludedListingCanReactivate(excludedEligible) ||
+    !scopeExcludedListingCanReactivate(availabilityPendingOneBath) ||
+    !source.includes('scopeExcludedListingCanReactivate(x)')) {
+  failures.push('Current Zumper evidence can repeatedly reactivate a scope-excluded listing or block an eligible recovery.');
+}
 const highbury203 = catalog.seedCandidates?.find(x => x.id === 'realtor-highbury-place-203-r3175899');
 if (highbury203?.listingId !== 'mls-r3175899' || highbury203?.mls !== 'R3175899' || highbury203?.unit !== '203' ||
     highbury203?.expectedBeds !== 2 || highbury203?.hints?.bathrooms !== 2 || highbury203?.hints?.sqft !== 1046 || !highbury203?.autoPublish ||

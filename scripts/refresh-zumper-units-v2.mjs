@@ -2,7 +2,7 @@ import fs from 'node:fs/promises';
 import path from 'node:path';
 import crypto from 'node:crypto';
 import { chromium } from 'playwright';
-import { listingScopeEligible } from './discovery-policy.mjs';
+import { listingScopeEligible, scopeExcludedListingCanReactivate } from './discovery-policy.mjs';
 import { isTargetRentalCoordinate } from './realtylink-parser.mjs';
 import { hasCurrentMarketplaceAvailability } from './listing-availability.mjs';
 import { zumperPetFriendly, zumperPropertyType, zumperRoomCount, zumperUnitCards, zumperUnitRent, zumperUnitToken } from './zumper-pet-policy.mjs';
@@ -190,12 +190,14 @@ for(const c of found){
       x.dataNotes='MLS number and unit are durable identity facts; current availability is independently verified on the marketplace detail page.';
     }
     const old=x.rent;
-    x.lastChecked=today; x.verifiedAt=iso; x.availabilityStatus='active'; x.removedAt=null; x.verificationLevel='verified'; x.lat=c.exactGeo.lat; x.lng=c.exactGeo.lng;
+    x.lastChecked=today; x.verifiedAt=iso; x.lat=c.exactGeo.lat; x.lng=c.exactGeo.lng;
     x.dataNotes=String(x.dataNotes||'').replace(/\s*AUTO-REMOVED \d{4}-\d{2}-\d{2}:[^.]*\.?/gi,'').trim();
-    if(wasInactive){x.status='corrected';x.removedAt=null;(history[x.id]||=[]).push({date:today,rent:c.rent,note:'RELISTED: exact current Zumper detail again shows active availability.'});}
     if (!x.unit && c.unit) x.unit=c.unit;
     if (c.petFriendly !== null) x.petFriendly=c.petFriendly;
     if (c.type) x.type=c.type;
+    for (const field of ['ac','orientation']) {
+      if (c[field] !== null && c[field] !== undefined) x[field]=c[field];
+    }
     if (x.source === 'Zumper live detail') {
       const correctedFacts=[];
       for (const field of ['bedrooms','bathrooms','sqft']) {
@@ -208,9 +210,16 @@ for(const c of found){
       }
     }
     if(old!==c.rent && (x.source==='Zumper live detail' || x.rent==null)) {x.rent=c.rent;x.status=c.rent<old?'price_drop':'unchanged';x.priceDrop=c.rent<old;(history[x.id]||=[]).push({date:today,rent:c.rent,note:`AUTO Zumper live price update $${old} → $${c.rent}.`});}
-    x.verificationMethod = wasInactive
-      ? `Reactivated from exact current Zumper detail with current rent and availability on ${today}.`
-      : `${x.verificationMethod || ''} Cross-verified by live Zumper detail on ${today}.`.trim();
+    const canReactivate=scopeExcludedListingCanReactivate(x);
+    if (canReactivate) {
+      x.availabilityStatus='active'; x.removedAt=null; x.verificationLevel='verified'; delete x.scopeExclusionReason;
+      if(wasInactive){x.status='corrected';x.removedAt=null;(history[x.id]||=[]).push({date:today,rent:c.rent,note:'RELISTED: exact current Zumper detail again shows active availability.'});}
+      x.verificationMethod = wasInactive
+        ? `Reactivated from exact current Zumper detail with current rent and availability on ${today}.`
+        : `${x.verificationMethod || ''} Cross-verified by live Zumper detail on ${today}.`.trim();
+    } else {
+      x.availabilityStatus='excluded'; x.status='excluded'; x.verificationLevel='excluded_by_scope';
+    }
   }
   if(c.images.length) imageSources[x.id]={referer:c.url,photoPageUrl:c.url,candidates:c.images.slice(0,8)};
 }

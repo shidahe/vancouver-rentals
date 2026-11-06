@@ -37,6 +37,10 @@ export function publicationScopeEligible(listing) {
     listing?.ac === true && sunlightEligible(listing);
 }
 
+export function scopeExcludedListingCanReactivate(listing) {
+  return listing?.availabilityStatus !== 'excluded' || publicationScopeEligible(listing);
+}
+
 export function isHouseShareText(value = '') {
   const text = String(value);
   if (/(?:#|\bunit\s+)(?:upper|lower|main|basement)\b/i.test(text)) return true;
