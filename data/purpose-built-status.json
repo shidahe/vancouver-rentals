@@ -1,9 +1,9 @@
 {
-  "refreshedAt": "2026-11-06T16:20:15.332Z",
+  "refreshedAt": "2026-11-06T16:33:21.127Z",
   "buildings": [
     {
       "building": "The Raven",
-      "checkedAt": "2026-11-06T16:20:15.332Z",
+      "checkedAt": "2026-11-06T16:33:21.127Z",
       "observations": [
         {
           "url": "https://www.rentfaster.ca/properties/3709-west-broadway-vancouver-688597",
@@ -69,7 +69,7 @@
     },
     {
       "building": "Westward",
-      "checkedAt": "2026-11-06T16:20:15.332Z",
+      "checkedAt": "2026-11-06T16:33:21.127Z",
       "observations": [
         {
           "url": "https://www.rentfaster.ca/properties/2355-w-49th-avenue-vancouver-bc-v6m-0g1-vancouver-755998",
@@ -135,14 +135,14 @@
     },
     {
       "building": "Kits Walk",
-      "checkedAt": "2026-11-06T16:20:15.332Z",
+      "checkedAt": "2026-11-06T16:33:21.127Z",
       "observations": [
         {
           "url": "https://rentals.ca/vancouver/kits-walk-by-strand",
-          "httpStatus": 200,
-          "usable": true,
+          "httpStatus": 403,
+          "usable": false,
           "error": null,
-          "reusedEvidence": true
+          "reusedEvidence": false
         }
       ],
       "inventories": [
@@ -167,11 +167,11 @@
           "sourceMatches": [
             {
               "url": "https://rentals.ca/vancouver/kits-walk-by-strand",
-              "httpStatus": 200,
-              "usable": true,
+              "httpStatus": 403,
+              "usable": false,
               "structuredMatch": false,
               "requiredMatched": false,
-              "availabilityMatched": true,
+              "availabilityMatched": false,
               "fullyLeased": false,
               "verified": false
             }
@@ -181,7 +181,7 @@
     },
     {
       "building": "Arbutus Residences",
-      "checkedAt": "2026-11-06T16:20:15.332Z",
+      "checkedAt": "2026-11-06T16:33:21.127Z",
       "observations": [
         {
           "url": "https://www.rentfaster.ca/properties/2139-lahb-ave-vancouver-454186",
@@ -199,8 +199,8 @@
         },
         {
           "url": "https://www.zumper.com/apartment-buildings/p1117150/arbutus-residences-quilchena-vancouver-bc",
-          "httpStatus": 429,
-          "usable": false,
+          "httpStatus": 200,
+          "usable": true,
           "error": null,
           "reusedEvidence": false
         }
@@ -249,11 +249,11 @@
             },
             {
               "url": "https://www.zumper.com/apartment-buildings/p1117150/arbutus-residences-quilchena-vancouver-bc",
-              "httpStatus": 429,
-              "usable": false,
+              "httpStatus": 200,
+              "usable": true,
               "structuredMatch": false,
               "requiredMatched": false,
-              "availabilityMatched": false,
+              "availabilityMatched": true,
               "fullyLeased": false,
               "verified": false
             }
@@ -277,8 +277,8 @@
             "Available",
             "1 unit available"
           ],
-          "verified": false,
-          "verifiedSource": null,
+          "verified": true,
+          "verifiedSource": "https://www.zumper.com/apartment-buildings/p1117150/arbutus-residences-quilchena-vancouver-bc",
           "sourceMatches": [
             {
               "url": "https://www.rentfaster.ca/properties/2139-lahb-ave-vancouver-454186",
@@ -302,13 +302,13 @@
             },
             {
               "url": "https://www.zumper.com/apartment-buildings/p1117150/arbutus-residences-quilchena-vancouver-bc",
-              "httpStatus": 429,
-              "usable": false,
+              "httpStatus": 200,
+              "usable": true,
               "structuredMatch": false,
-              "requiredMatched": false,
-              "availabilityMatched": false,
+              "requiredMatched": true,
+              "availabilityMatched": true,
               "fullyLeased": false,
-              "verified": false
+              "verified": true
             }
           ]
         }
@@ -316,7 +316,7 @@
     },
     {
       "building": "Fourth + Mac",
-      "checkedAt": "2026-11-06T16:20:15.332Z",
+      "checkedAt": "2026-11-06T16:33:21.127Z",
       "observations": [
         {
           "url": "https://www.craigslist.org/view/d/vancouver-bed-bath-fourth-mac-kitsilano/eiSLCKTVqsrtPUWpUpJyDN",

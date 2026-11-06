@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-11-06T16:10:34.704Z",
+  "checkedAt": "2026-11-06T16:23:23.970Z",
   "listingId": "mls-r3167681",
   "sourceUrl": "https://www.craigslist.org/view/d/vancouver-beautiful-modern-bed-bath/qdWUcw41Nhag6DNxkm2346",
   "ok": true,
@@ -265,57 +265,57 @@
     {
       "itemListElement": [
         {
-          "position": 1,
           "item": "https://www.craigslist.org/area/vancouver",
-          "name": "craigslist: vancouver, BC",
-          "@type": "ListItem"
+          "@type": "ListItem",
+          "position": 1,
+          "name": "craigslist: vancouver, BC"
         },
         {
-          "@type": "ListItem",
+          "item": "https://www.craigslist.org/subarea/van",
           "name": "vancouver",
           "position": 2,
-          "item": "https://www.craigslist.org/subarea/van"
-        },
-        {
-          "@type": "ListItem",
-          "position": 3,
-          "item": "https://www.craigslist.org/search/subarea/van?cat=hhh",
-          "name": "housing"
-        },
-        {
-          "position": 4,
-          "item": "https://www.craigslist.org/search/subarea/van?cat=apa",
-          "name": "apartments / housing for rent",
           "@type": "ListItem"
         },
         {
-          "position": 5,
+          "name": "housing",
+          "position": 3,
+          "@type": "ListItem",
+          "item": "https://www.craigslist.org/search/subarea/van?cat=hhh"
+        },
+        {
+          "item": "https://www.craigslist.org/search/subarea/van?cat=apa",
+          "@type": "ListItem",
+          "position": 4,
+          "name": "apartments / housing for rent"
+        },
+        {
           "item": "https://www.craigslist.org/view/d/vancouver-beautiful-modern-bed-bath/qdWUcw41Nhag6DNxkm2346",
+          "position": 5,
           "name": "Beautiful Modern 2 bed 2 bath unit at the Butterfly!!",
           "@type": "ListItem"
         }
       ],
-      "@context": "https://schema.org",
-      "@type": "BreadcrumbList"
+      "@type": "BreadcrumbList",
+      "@context": "https://schema.org"
     },
     {
-      "petsAllowed": true,
-      "smokingAllowed": false,
       "numberOfBathroomsTotal": 2,
+      "@context": "http://schema.org",
       "address": {
-        "@type": "PostalAddress",
+        "streetAddress": "",
+        "addressRegion": "BC",
         "addressLocality": "Vancouver",
         "addressCountry": "CA",
         "postalCode": "V6E4S7",
-        "streetAddress": "",
-        "addressRegion": "BC"
+        "@type": "PostalAddress"
       },
-      "@type": "Apartment",
-      "name": "Beautiful Modern 2 bed 2 bath unit at the Butterfly!!",
+      "petsAllowed": true,
       "longitude": "-123.126698",
-      "@context": "http://schema.org",
-      "numberOfBedrooms": "2",
-      "latitude": "49.281999"
+      "smokingAllowed": false,
+      "name": "Beautiful Modern 2 bed 2 bath unit at the Butterfly!!",
+      "@type": "Apartment",
+      "latitude": "49.281999",
+      "numberOfBedrooms": "2"
     }
   ],
   "images": [
@@ -340,7 +340,7 @@
     "https://images.craigslist.org/01212_bcybO31FEKW_0uY0kE_50x50c.jpg",
     "https://images.craigslist.org/00808_8o87Kw26jxA_0uY0kE_50x50c.jpg"
   ],
-  "elapsedMs": 3104,
+  "elapsedMs": 3139,
   "identityMatch": true,
   "explicitNegative": false,
   "negativePhrase": null,

@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-11-06T16:20:52.920Z",
+  "generatedAt": "2026-11-06T16:34:03.118Z",
   "policy": "Only CAD $4,000–$6,000 entire-home rentals with 2–4 bedrooms, at least 2 bathrooms, confirmed AC, and verified sunlight or a non-north exposure in Kitsilano / Vancouver Westside / Downtown are published. Unknown sun exposure and exclusively north-facing units are excluded pending verification.",
   "activeCount": 2,
-  "excludedCount": 137,
-  "exclusionEventsToday": 17,
+  "excludedCount": 140,
+  "exclusionEventsToday": 21,
   "countsByReason": {
-    "direct sunlight or non-north exposure not verified": 14,
+    "direct sunlight or non-north exposure not verified": 16,
     "monthly rent outside CAD $4,000–$6,000": 68,
-    "air conditioning not confirmed": 36,
+    "air conditioning not confirmed": 37,
     "fewer than two verified bathrooms": 12,
     "house share or separately rented portion of a house": 4,
     "five or more bedrooms": 1,
@@ -162,7 +162,7 @@
     {
       "id": "arbutus-residences-floorplan-2-bedroom-townhouse-den-1340",
       "reason": "direct sunlight or non-north exposure not verified",
-      "wasActive": false
+      "wasActive": true
     },
     {
       "id": "zumper-2fde865f7e2c",
@@ -247,7 +247,7 @@
     {
       "id": "zumper-16e9ae17cd91",
       "reason": "air conditioning not confirmed",
-      "wasActive": true
+      "wasActive": false
     },
     {
       "id": "mls-r3160936",
@@ -542,7 +542,7 @@
     {
       "id": "mls-r3175848",
       "reason": "house share or separately rented portion of a house",
-      "wasActive": true
+      "wasActive": false
     },
     {
       "id": "mls-r3175318",
@@ -627,7 +627,7 @@
     {
       "id": "mls-r3180739",
       "reason": "fewer than two verified bathrooms",
-      "wasActive": true
+      "wasActive": false
     },
     {
       "id": "mls-r3175898",
@@ -647,7 +647,7 @@
     {
       "id": "mls-r3175118",
       "reason": "air conditioning not confirmed",
-      "wasActive": true
+      "wasActive": false
     },
     {
       "id": "mls-r3178905",
@@ -697,6 +697,21 @@
     {
       "id": "mls-r3107034",
       "reason": "fewer than two verified bathrooms",
+      "wasActive": true
+    },
+    {
+      "id": "mls-r3155678",
+      "reason": "direct sunlight or non-north exposure not verified",
+      "wasActive": true
+    },
+    {
+      "id": "mls-r3107068",
+      "reason": "air conditioning not confirmed",
+      "wasActive": true
+    },
+    {
+      "id": "mls-r3149566",
+      "reason": "direct sunlight or non-north exposure not verified",
       "wasActive": true
     }
   ]

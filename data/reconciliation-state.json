@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-11-06T16:20:14.815Z",
+  "refreshedAt": "2026-11-06T16:33:20.627Z",
   "groups": [
     {
       "identityKey": "3349 dunbar st::url:fa963040c813",
@@ -542,28 +542,16 @@
       "result": "candidate_only"
     },
     {
-      "identityKey": "mls:r3175906",
+      "identityKey": "mls:r3155678",
       "sources": [
         "realtylink mls"
       ],
       "rents": [
-        6000
+        4700
       ],
       "exactUnit": true,
-      "matchedListingId": "mls-r3175906",
-      "result": "authoritative_mls_reverified"
-    },
-    {
-      "identityKey": "mls:r3160689",
-      "sources": [
-        "realtylink mls"
-      ],
-      "rents": [
-        4300
-      ],
-      "exactUnit": true,
-      "matchedListingId": "zumper-16e9ae17cd91",
-      "result": "authoritative_mls_reverified"
+      "matchedListingId": null,
+      "result": "auto_published_authoritative_mls"
     },
     {
       "identityKey": "mls:r3175118",
@@ -575,7 +563,7 @@
       ],
       "exactUnit": true,
       "matchedListingId": "mls-r3175118",
-      "result": "authoritative_mls_reverified"
+      "result": "authoritative_mls_reverified_scope_excluded"
     },
     {
       "identityKey": "mls:r3180739",
@@ -587,19 +575,19 @@
       ],
       "exactUnit": false,
       "matchedListingId": "mls-r3180739",
-      "result": "authoritative_mls_reverified"
+      "result": "authoritative_mls_reverified_scope_excluded"
     },
     {
-      "identityKey": "mls:r3175318",
+      "identityKey": "mls:r3160689",
       "sources": [
         "realtylink mls"
       ],
       "rents": [
-        4000
+        4300
       ],
-      "exactUnit": false,
-      "matchedListingId": "mls-r3175318",
-      "result": "authoritative_mls_reverified"
+      "exactUnit": true,
+      "matchedListingId": "zumper-16e9ae17cd91",
+      "result": "authoritative_mls_reverified_scope_excluded"
     },
     {
       "identityKey": "mls:r3175848",
@@ -611,44 +599,51 @@
       ],
       "exactUnit": false,
       "matchedListingId": "mls-r3175848",
-      "result": "authoritative_mls_reverified"
+      "result": "authoritative_mls_reverified_scope_excluded"
     },
     {
-      "identityKey": "mls:r3162880",
+      "identityKey": "mls:r3151372",
       "sources": [
         "realtylink mls"
       ],
       "rents": [
-        4650
+        4800
       ],
-      "exactUnit": true,
-      "matchedListingId": "mls-r3162880",
-      "result": "authoritative_mls_reverified"
+      "exactUnit": false,
+      "matchedListingId": "mls-r3151372",
+      "result": "authoritative_mls_reverified_scope_excluded"
     },
     {
-      "identityKey": "mls:r3171043",
+      "identityKey": "mls:r3107068",
       "sources": [
         "realtylink mls"
       ],
       "rents": [
-        4400
+        5200
       ],
       "exactUnit": true,
-      "matchedListingId": "mls-r3171043",
-      "result": "authoritative_mls_reverified"
+      "matchedListingId": null,
+      "result": "auto_published_authoritative_mls"
+    },
+    {
+      "identityKey": "mls:r3149566",
+      "sources": [
+        "realtylink mls"
+      ],
+      "rents": [
+        5290
+      ],
+      "exactUnit": true,
+      "matchedListingId": null,
+      "result": "auto_published_authoritative_mls"
     }
   ],
-  "promoted": [],
-  "crossVerified": [
-    "mls-r3175906",
-    "zumper-16e9ae17cd91",
-    "mls-r3175118",
-    "mls-r3180739",
-    "mls-r3175318",
-    "mls-r3175848",
-    "mls-r3162880",
-    "mls-r3171043"
+  "promoted": [
+    "mls-r3155678",
+    "mls-r3107068",
+    "mls-r3149566"
   ],
+  "crossVerified": [],
   "fingerprintCrossVerified": [],
   "craigslistRelistingsRecovered": [],
   "crossSourcePriceUpdates": [],
@@ -657,6 +652,7 @@
   "wholeHomeMlsRelistsMerged": [],
   "negativeMatches": [],
   "detailReactivated": [
+    "mls-r3151372",
     "mls-r3162880",
     "mls-r3175318",
     "mls-r3180739",

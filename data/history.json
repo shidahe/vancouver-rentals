@@ -804,6 +804,11 @@
       "date": "2026-11-03",
       "rent": 5390,
       "note": "NEEDS CONFIRMATION: latest purpose-built fallback sources did not confirm the exact configured rent + sqft inventory row."
+    },
+    {
+      "date": "2026-11-06",
+      "rent": 5390,
+      "note": "EXCLUDED: direct sunlight or non-north exposure not verified."
     }
   ],
   "zumper-2fde865f7e2c": [
@@ -4525,6 +4530,42 @@
       "date": "2026-11-06",
       "rent": 4200,
       "note": "EXCLUDED: fewer than two verified bathrooms."
+    }
+  ],
+  "mls-r3155678": [
+    {
+      "date": "2026-11-06",
+      "rent": 4700,
+      "note": "NEW: live Realtylink MLS R3155678 auto-published."
+    },
+    {
+      "date": "2026-11-06",
+      "rent": 4700,
+      "note": "EXCLUDED: direct sunlight or non-north exposure not verified."
+    }
+  ],
+  "mls-r3107068": [
+    {
+      "date": "2026-11-06",
+      "rent": 5200,
+      "note": "NEW: live Realtylink MLS R3107068 auto-published."
+    },
+    {
+      "date": "2026-11-06",
+      "rent": 5200,
+      "note": "EXCLUDED: air conditioning not confirmed."
+    }
+  ],
+  "mls-r3149566": [
+    {
+      "date": "2026-11-06",
+      "rent": 5290,
+      "note": "NEW: live Realtylink MLS R3149566 auto-published."
+    },
+    {
+      "date": "2026-11-06",
+      "rent": 5290,
+      "note": "EXCLUDED: direct sunlight or non-north exposure not verified."
     }
   ]
 }
