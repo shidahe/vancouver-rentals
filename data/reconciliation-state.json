@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-11-05T21:12:44.240Z",
+  "refreshedAt": "2026-11-06T16:06:41.522Z",
   "groups": [
     {
       "identityKey": "3349 dunbar st::url:fa963040c813",
@@ -19,7 +19,7 @@
         "zumper"
       ],
       "rents": [
-        4400
+        4300
       ],
       "exactUnit": false,
       "matchedListingId": "zumper-6f8b3ff2b9fd",
@@ -62,6 +62,138 @@
       "result": "candidate_only"
     },
     {
+      "identityKey": "3000 w 44th ave::url:e02801d5a772",
+      "sources": [
+        "zumper"
+      ],
+      "rents": [
+        6000
+      ],
+      "exactUnit": false,
+      "matchedListingId": "zumper-1754927f090e",
+      "result": "candidate_only"
+    },
+    {
+      "identityKey": "2000 w 43rd ave::url:daba7b758265",
+      "sources": [
+        "zumper"
+      ],
+      "rents": [
+        4500
+      ],
+      "exactUnit": false,
+      "matchedListingId": null,
+      "result": "candidate_only"
+    },
+    {
+      "identityKey": "1408 strathmore mews::url:e37012ca45ca",
+      "sources": [
+        "zumper"
+      ],
+      "rents": [
+        4200
+      ],
+      "exactUnit": false,
+      "matchedListingId": "zumper-63cc916bfc3b",
+      "result": "candidate_only"
+    },
+    {
+      "identityKey": "1455 howe st::url:a2e9a0ba4b5c",
+      "sources": [
+        "zumper"
+      ],
+      "rents": [
+        5250
+      ],
+      "exactUnit": false,
+      "matchedListingId": "zumper-9a2c9b41c7e9",
+      "result": "candidate_only"
+    },
+    {
+      "identityKey": "535 nicola st::url:09b9f7189a6e",
+      "sources": [
+        "craigslist"
+      ],
+      "rents": [
+        4680
+      ],
+      "exactUnit": false,
+      "matchedListingId": null,
+      "result": "candidate_only"
+    },
+    {
+      "identityKey": "2777 kitsilano diversion near macdonald st::url:696aba3da2c8",
+      "sources": [
+        "craigslist"
+      ],
+      "rents": [
+        4300
+      ],
+      "exactUnit": false,
+      "matchedListingId": null,
+      "result": "candidate_only"
+    },
+    {
+      "identityKey": "1351 continental st 31xx::url:72a6a113665e",
+      "sources": [
+        "craigslist"
+      ],
+      "rents": [
+        5800
+      ],
+      "exactUnit": false,
+      "matchedListingId": null,
+      "result": "candidate_only"
+    },
+    {
+      "identityKey": "1350 broughton st::url:43e61e137d85",
+      "sources": [
+        "craigslist"
+      ],
+      "rents": [
+        4500
+      ],
+      "exactUnit": false,
+      "matchedListingId": null,
+      "result": "candidate_only"
+    },
+    {
+      "identityKey": "388 drake st::unit:805",
+      "sources": [
+        "craigslist"
+      ],
+      "rents": [
+        4599
+      ],
+      "exactUnit": true,
+      "matchedListingId": null,
+      "result": "candidate_only"
+    },
+    {
+      "identityKey": "938 smithe st near hornby st::url:d155d97f4765",
+      "sources": [
+        "craigslist"
+      ],
+      "rents": [
+        5300
+      ],
+      "exactUnit": false,
+      "matchedListingId": null,
+      "result": "candidate_only"
+    },
+    {
+      "identityKey": "699 cardero st near w georgia st::url:5da1b4bb4ab1",
+      "sources": [
+        "craigslist"
+      ],
+      "rents": [
+        4050
+      ],
+      "exactUnit": false,
+      "matchedListingId": null,
+      "result": "candidate_only"
+    },
+    {
       "identityKey": "1289 hornby st::url:9bfb77ff2d82",
       "sources": [
         "craigslist"
@@ -98,18 +230,6 @@
       "result": "candidate_only"
     },
     {
-      "identityKey": "2118 w 15 ave 2f::url:db2aacb5d467",
-      "sources": [
-        "craigslist"
-      ],
-      "rents": [
-        4800
-      ],
-      "exactUnit": false,
-      "matchedListingId": null,
-      "result": "candidate_only"
-    },
-    {
       "identityKey": "89 nelson st unit 2810::url:4242ff309531",
       "sources": [
         "craigslist"
@@ -128,18 +248,6 @@
       ],
       "rents": [
         4295
-      ],
-      "exactUnit": false,
-      "matchedListingId": null,
-      "result": "candidate_only"
-    },
-    {
-      "identityKey": "1350 broughton st::url:43e61e137d85",
-      "sources": [
-        "craigslist"
-      ],
-      "rents": [
-        4500
       ],
       "exactUnit": false,
       "matchedListingId": null,
@@ -254,18 +362,6 @@
       "result": "candidate_only"
     },
     {
-      "identityKey": "10th floor 1860 near robson st::url:f89427214a63",
-      "sources": [
-        "craigslist"
-      ],
-      "rents": [
-        5400
-      ],
-      "exactUnit": false,
-      "matchedListingId": null,
-      "result": "candidate_only"
-    },
-    {
       "identityKey": "1000 beach ave::url:2c71056f3e25",
       "sources": [
         "craigslist"
@@ -290,36 +386,12 @@
       "result": "candidate_only"
     },
     {
-      "identityKey": "388 drake st::unit:805",
-      "sources": [
-        "craigslist"
-      ],
-      "rents": [
-        4599
-      ],
-      "exactUnit": true,
-      "matchedListingId": null,
-      "result": "candidate_only"
-    },
-    {
       "identityKey": "838 w hastings st::url:5a87c3cb0703",
       "sources": [
         "craigslist"
       ],
       "rents": [
         5300
-      ],
-      "exactUnit": false,
-      "matchedListingId": null,
-      "result": "candidate_only"
-    },
-    {
-      "identityKey": "1351 continental st 31xx::url:72a6a113665e",
-      "sources": [
-        "craigslist"
-      ],
-      "rents": [
-        5800
       ],
       "exactUnit": false,
       "matchedListingId": null,
@@ -347,18 +419,6 @@
       ],
       "exactUnit": false,
       "matchedListingId": "kits-maple-2565-penthouse",
-      "result": "candidate_only"
-    },
-    {
-      "identityKey": "535 nicola st::url:09b9f7189a6e",
-      "sources": [
-        "craigslist"
-      ],
-      "rents": [
-        4680
-      ],
-      "exactUnit": false,
-      "matchedListingId": null,
       "result": "candidate_only"
     },
     {
@@ -410,36 +470,12 @@
       "result": "candidate_only"
     },
     {
-      "identityKey": "699 cardero st near w georgia st::url:5da1b4bb4ab1",
-      "sources": [
-        "craigslist"
-      ],
-      "rents": [
-        4050
-      ],
-      "exactUnit": false,
-      "matchedListingId": null,
-      "result": "candidate_only"
-    },
-    {
       "identityKey": "1616 bayshore dr::url:95544a1ec05d",
       "sources": [
         "craigslist"
       ],
       "rents": [
         4900
-      ],
-      "exactUnit": false,
-      "matchedListingId": null,
-      "result": "candidate_only"
-    },
-    {
-      "identityKey": "1107 richards st::url:d21979bcb05b",
-      "sources": [
-        "craigslist"
-      ],
-      "rents": [
-        5695
       ],
       "exactUnit": false,
       "matchedListingId": null,
@@ -506,38 +542,14 @@
       "result": "candidate_only"
     },
     {
-      "identityKey": "mls:r3171043",
-      "sources": [
-        "realtylink mls"
-      ],
-      "rents": [
-        4400
-      ],
-      "exactUnit": true,
-      "matchedListingId": null,
-      "result": "auto_published_authoritative_mls"
-    },
-    {
-      "identityKey": "mls:r3107028",
-      "sources": [
-        "realtylink mls"
-      ],
-      "rents": [
-        4990
-      ],
-      "exactUnit": true,
-      "matchedListingId": null,
-      "result": "auto_published_authoritative_mls"
-    },
-    {
-      "identityKey": "mls:r3170765",
+      "identityKey": "mls:r3107034",
       "sources": [
         "realtylink mls"
       ],
       "rents": [
         4200
       ],
-      "exactUnit": true,
+      "exactUnit": false,
       "matchedListingId": null,
       "result": "auto_published_authoritative_mls"
     },
@@ -554,6 +566,18 @@
       "result": "authoritative_mls_reverified"
     },
     {
+      "identityKey": "mls:r3175118",
+      "sources": [
+        "realtylink mls"
+      ],
+      "rents": [
+        5500
+      ],
+      "exactUnit": true,
+      "matchedListingId": "mls-r3175118",
+      "result": "authoritative_mls_reverified"
+    },
+    {
       "identityKey": "mls:r3180739",
       "sources": [
         "realtylink mls"
@@ -566,7 +590,7 @@
       "result": "authoritative_mls_reverified"
     },
     {
-      "identityKey": "mls:r3175865",
+      "identityKey": "mls:r3175318",
       "sources": [
         "realtylink mls"
       ],
@@ -574,32 +598,57 @@
         4000
       ],
       "exactUnit": false,
-      "matchedListingId": "mls-r3175865",
+      "matchedListingId": "mls-r3175318",
       "result": "authoritative_mls_reverified"
     },
     {
-      "identityKey": "mls:r3175906",
+      "identityKey": "mls:r3175848",
       "sources": [
         "realtylink mls"
       ],
       "rents": [
-        6000
+        5500
+      ],
+      "exactUnit": false,
+      "matchedListingId": "mls-r3175848",
+      "result": "authoritative_mls_reverified"
+    },
+    {
+      "identityKey": "mls:r3175898",
+      "sources": [
+        "realtylink mls"
+      ],
+      "rents": [
+        4150
       ],
       "exactUnit": true,
-      "matchedListingId": "mls-r3175906",
+      "matchedListingId": "mls-r3175898",
+      "result": "authoritative_mls_reverified"
+    },
+    {
+      "identityKey": "mls:r3107028",
+      "sources": [
+        "realtylink mls"
+      ],
+      "rents": [
+        4990
+      ],
+      "exactUnit": true,
+      "matchedListingId": "mls-r3107028",
       "result": "authoritative_mls_reverified"
     }
   ],
   "promoted": [
-    "mls-r3171043",
-    "mls-r3107028",
-    "mls-r3170765"
+    "mls-r3107034"
   ],
   "crossVerified": [
     "zumper-16e9ae17cd91",
+    "mls-r3175118",
     "mls-r3180739",
-    "mls-r3175865",
-    "mls-r3175906"
+    "mls-r3175318",
+    "mls-r3175848",
+    "mls-r3175898",
+    "mls-r3107028"
   ],
   "fingerprintCrossVerified": [],
   "craigslistRelistingsRecovered": [],
@@ -609,21 +658,17 @@
   "wholeHomeMlsRelistsMerged": [],
   "negativeMatches": [],
   "detailReactivated": [
-    "mls-r3151372",
-    "mls-r3163709",
+    "mls-r3175318",
     "mls-r3180739",
-    "mls-r3181005",
-    "mls-r3076892",
+    "mls-r3175898",
     "mls-r3175118",
-    "mls-r3178905",
-    "mls-r3175047",
-    "mls-r3175906"
+    "mls-r3107028"
   ],
   "auxiliaryMlsRemovalsRolledBack": [],
   "mlsMissing": {},
   "mlsRemoved": [],
   "mlsStaleHidden": [],
-  "realtylinkSnapshotCount": 7,
+  "realtylinkSnapshotCount": 8,
   "realtylinkSnapshotHighWaterMark": 9,
   "realtylinkSnapshotScope": "rent-4000-6000-beds-2-4-baths-2-sunlight-kits-downtown-v4",
   "realtylinkRemovalEligible": true,
