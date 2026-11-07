@@ -1,18 +1,11 @@
 {
-  "generatedAt": "2026-11-06T16:31:01.194Z",
-  "checkedCount": 8,
+  "generatedAt": "2026-11-07T16:07:49.210Z",
+  "checkedCount": 7,
   "quarantinedCount": 0,
   "checked": [
     {
       "identityKey": "3349 dunbar st::url:fa963040c813",
       "url": "https://www.zumper.com/address/3349-dunbar-st-vancouver-bc-v6s-2b9-can",
-      "ambiguous": false,
-      "lowPrice": 4300,
-      "highPrice": 4300
-    },
-    {
-      "identityKey": "4101 yew st::url:7af73c32128d",
-      "url": "https://www.zumper.com/address/4101-yew-st-vancouver-bc-v6l-3b7-can",
       "ambiguous": false,
       "lowPrice": 4300,
       "highPrice": 4300
@@ -25,18 +18,18 @@
       "highPrice": 5000
     },
     {
-      "identityKey": "2261 waterloo st::url:6d7cdb732175",
-      "url": "https://www.zumper.com/address/2261-waterloo-st-vancouver-bc-v6r-3h2-can",
-      "ambiguous": false,
-      "lowPrice": 4800,
-      "highPrice": 4800
-    },
-    {
       "identityKey": "3000 w 44th ave::url:e02801d5a772",
       "url": "https://www.zumper.com/address/3000-w-44th-ave-vancouver-bc-v6n-3k6-can",
       "ambiguous": false,
       "lowPrice": 6000,
       "highPrice": 6000
+    },
+    {
+      "identityKey": "2261 waterloo st::url:6d7cdb732175",
+      "url": "https://www.zumper.com/address/2261-waterloo-st-vancouver-bc-v6r-3h2-can",
+      "ambiguous": false,
+      "lowPrice": 4800,
+      "highPrice": 4800
     },
     {
       "identityKey": "2000 w 43rd ave::url:daba7b758265",

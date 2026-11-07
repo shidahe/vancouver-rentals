@@ -244,6 +244,11 @@
       "date": "2026-11-06",
       "rent": 4500,
       "note": "OFFICIAL STATUS: Raphael marked fully leased; removed from active inventory. Official page contains a strong negative leasing signal."
+    },
+    {
+      "date": "2026-11-07",
+      "rent": 4500,
+      "note": "OFFICIAL STATUS: Raphael marked fully leased; removed from active inventory. Official page contains a strong negative leasing signal."
     }
   ],
   "raven-410-3709-wbroadway": [
@@ -3421,6 +3426,11 @@
       "date": "2026-11-06",
       "rent": 4650,
       "note": "EXCLUDED: air conditioning not confirmed."
+    },
+    {
+      "date": "2026-11-07",
+      "rent": 4650,
+      "note": "RELISTED: exact current Zumper detail again shows active availability."
     }
   ],
   "kits-walk-floorplan-2-bedroom-811-3675": [
@@ -4172,6 +4182,11 @@
       "date": "2026-11-06",
       "rent": 4995,
       "note": "EXCLUDED: direct sunlight or non-north exposure not verified."
+    },
+    {
+      "date": "2026-11-07",
+      "rent": 4995,
+      "note": "EXCLUDED: direct sunlight or non-north exposure not verified."
     }
   ],
   "the-raven-unit-101": [
@@ -4211,6 +4226,11 @@
       "date": "2026-11-06",
       "rent": 3500,
       "note": "EXCLUDED: monthly rent outside CAD $4,000–$6,000."
+    },
+    {
+      "date": "2026-11-07",
+      "rent": 3500,
+      "note": "EXCLUDED: monthly rent outside CAD $4,000–$6,000."
     }
   ],
   "zumper-0116ae25a82f": [
@@ -4236,6 +4256,11 @@
     },
     {
       "date": "2026-11-06",
+      "rent": 3600,
+      "note": "EXCLUDED: monthly rent outside CAD $4,000–$6,000."
+    },
+    {
+      "date": "2026-11-07",
       "rent": 3600,
       "note": "EXCLUDED: monthly rent outside CAD $4,000–$6,000."
     }
@@ -4566,6 +4591,42 @@
       "date": "2026-11-06",
       "rent": 5290,
       "note": "EXCLUDED: direct sunlight or non-north exposure not verified."
+    }
+  ],
+  "zumper-a00a00bd4c98": [
+    {
+      "date": "2026-11-07",
+      "rent": 4350,
+      "note": "NEW: live Zumper detail auto-published as independent inventory."
+    },
+    {
+      "date": "2026-11-07",
+      "rent": 4350,
+      "note": "EXCLUDED: fewer than two verified bathrooms."
+    }
+  ],
+  "mls-r3178418": [
+    {
+      "date": "2026-11-07",
+      "rent": 4200,
+      "note": "NEW: live Realtylink MLS R3178418 auto-published."
+    },
+    {
+      "date": "2026-11-07",
+      "rent": 4200,
+      "note": "EXCLUDED: direct sunlight or non-north exposure not verified."
+    }
+  ],
+  "mls-r3179332": [
+    {
+      "date": "2026-11-07",
+      "rent": 4550,
+      "note": "NEW: live Realtylink MLS R3179332 auto-published."
+    },
+    {
+      "date": "2026-11-07",
+      "rent": 4550,
+      "note": "EXCLUDED: air conditioning not confirmed."
     }
   ]
 }

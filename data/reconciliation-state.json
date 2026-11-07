@@ -1,6 +1,18 @@
 {
-  "refreshedAt": "2026-11-06T16:33:20.627Z",
+  "refreshedAt": "2026-11-07T16:09:51.368Z",
   "groups": [
+    {
+      "identityKey": "3440 w broadway::unit:126",
+      "sources": [
+        "zumper"
+      ],
+      "rents": [
+        4650
+      ],
+      "exactUnit": true,
+      "matchedListingId": null,
+      "result": "candidate_only"
+    },
     {
       "identityKey": "3349 dunbar st::url:fa963040c813",
       "sources": [
@@ -14,18 +26,6 @@
       "result": "candidate_only"
     },
     {
-      "identityKey": "4101 yew st::url:7af73c32128d",
-      "sources": [
-        "zumper"
-      ],
-      "rents": [
-        4300
-      ],
-      "exactUnit": false,
-      "matchedListingId": "zumper-6f8b3ff2b9fd",
-      "result": "candidate_only"
-    },
-    {
       "identityKey": "1969 w 43rd ave::url:13871f2f9c28",
       "sources": [
         "zumper"
@@ -35,6 +35,18 @@
       ],
       "exactUnit": false,
       "matchedListingId": "zumper-3d502587bbc4",
+      "result": "candidate_only"
+    },
+    {
+      "identityKey": "3000 w 44th ave::url:e02801d5a772",
+      "sources": [
+        "zumper"
+      ],
+      "rents": [
+        6000
+      ],
+      "exactUnit": false,
+      "matchedListingId": "zumper-1754927f090e",
       "result": "candidate_only"
     },
     {
@@ -59,18 +71,6 @@
       ],
       "exactUnit": false,
       "matchedListingId": "zumper-747feecf761d",
-      "result": "candidate_only"
-    },
-    {
-      "identityKey": "3000 w 44th ave::url:e02801d5a772",
-      "sources": [
-        "zumper"
-      ],
-      "rents": [
-        6000
-      ],
-      "exactUnit": false,
-      "matchedListingId": "zumper-1754927f090e",
       "result": "candidate_only"
     },
     {
@@ -107,6 +107,78 @@
       ],
       "exactUnit": false,
       "matchedListingId": "zumper-9a2c9b41c7e9",
+      "result": "candidate_only"
+    },
+    {
+      "identityKey": "1238 seymour st::unit:306",
+      "sources": [
+        "zumper"
+      ],
+      "rents": [
+        4350
+      ],
+      "exactUnit": true,
+      "matchedListingId": "zumper-a00a00bd4c98",
+      "result": "candidate_only"
+    },
+    {
+      "identityKey": "1151 w georgia st::url:06aed025dbb6",
+      "sources": [
+        "craigslist"
+      ],
+      "rents": [
+        4950
+      ],
+      "exactUnit": false,
+      "matchedListingId": null,
+      "result": "candidate_only"
+    },
+    {
+      "identityKey": "1151 w georgia st::url:c4b0f209bbc7",
+      "sources": [
+        "craigslist"
+      ],
+      "rents": [
+        4990
+      ],
+      "exactUnit": false,
+      "matchedListingId": null,
+      "result": "candidate_only"
+    },
+    {
+      "identityKey": "38 smithe st::url:f7ac1a9502d6",
+      "sources": [
+        "craigslist"
+      ],
+      "rents": [
+        4300
+      ],
+      "exactUnit": false,
+      "matchedListingId": null,
+      "result": "candidate_only"
+    },
+    {
+      "identityKey": "1067 marinaside crescent::url:735b025cae42",
+      "sources": [
+        "craigslist"
+      ],
+      "rents": [
+        4495
+      ],
+      "exactUnit": false,
+      "matchedListingId": null,
+      "result": "candidate_only"
+    },
+    {
+      "identityKey": "1128 alberni st near thurlow st::url:3e056d067924",
+      "sources": [
+        "craigslist"
+      ],
+      "rents": [
+        4200
+      ],
+      "exactUnit": false,
+      "matchedListingId": null,
       "result": "candidate_only"
     },
     {
@@ -166,18 +238,6 @@
         4599
       ],
       "exactUnit": true,
-      "matchedListingId": null,
-      "result": "candidate_only"
-    },
-    {
-      "identityKey": "938 smithe st near hornby st::url:d155d97f4765",
-      "sources": [
-        "craigslist"
-      ],
-      "rents": [
-        5300
-      ],
-      "exactUnit": false,
       "matchedListingId": null,
       "result": "candidate_only"
     },
@@ -326,18 +386,6 @@
       "result": "candidate_only"
     },
     {
-      "identityKey": "1067 marinaside crescent::url:735b025cae42",
-      "sources": [
-        "craigslist"
-      ],
-      "rents": [
-        4495
-      ],
-      "exactUnit": false,
-      "matchedListingId": null,
-      "result": "candidate_only"
-    },
-    {
       "identityKey": "1050 burrard st::url:bb8a6bfaf46a",
       "sources": [
         "craigslist"
@@ -368,18 +416,6 @@
       ],
       "rents": [
         4550
-      ],
-      "exactUnit": false,
-      "matchedListingId": null,
-      "result": "candidate_only"
-    },
-    {
-      "identityKey": "1128 alberni st near thurlow st::url:3e056d067924",
-      "sources": [
-        "craigslist"
-      ],
-      "rents": [
-        4200
       ],
       "exactUnit": false,
       "matchedListingId": null,
@@ -506,30 +542,6 @@
       "result": "candidate_only"
     },
     {
-      "identityKey": "1151 w georgia st::url:293b405076a6",
-      "sources": [
-        "craigslist"
-      ],
-      "rents": [
-        4990
-      ],
-      "exactUnit": false,
-      "matchedListingId": null,
-      "result": "candidate_only"
-    },
-    {
-      "identityKey": "1151 w georgia st::url:3414c187755a",
-      "sources": [
-        "craigslist"
-      ],
-      "rents": [
-        4950
-      ],
-      "exactUnit": false,
-      "matchedListingId": null,
-      "result": "candidate_only"
-    },
-    {
       "identityKey": "1425 haro st::url:646bd80c0f42",
       "sources": [
         "craigslist"
@@ -542,16 +554,16 @@
       "result": "candidate_only"
     },
     {
-      "identityKey": "mls:r3155678",
+      "identityKey": "mls:r3160689",
       "sources": [
         "realtylink mls"
       ],
       "rents": [
-        4700
+        4300
       ],
       "exactUnit": true,
-      "matchedListingId": null,
-      "result": "auto_published_authoritative_mls"
+      "matchedListingId": "zumper-16e9ae17cd91",
+      "result": "authoritative_mls_reverified_scope_excluded"
     },
     {
       "identityKey": "mls:r3175118",
@@ -578,18 +590,6 @@
       "result": "authoritative_mls_reverified_scope_excluded"
     },
     {
-      "identityKey": "mls:r3160689",
-      "sources": [
-        "realtylink mls"
-      ],
-      "rents": [
-        4300
-      ],
-      "exactUnit": true,
-      "matchedListingId": "zumper-16e9ae17cd91",
-      "result": "authoritative_mls_reverified_scope_excluded"
-    },
-    {
       "identityKey": "mls:r3175848",
       "sources": [
         "realtylink mls"
@@ -602,36 +602,48 @@
       "result": "authoritative_mls_reverified_scope_excluded"
     },
     {
-      "identityKey": "mls:r3151372",
+      "identityKey": "mls:r3175318",
       "sources": [
         "realtylink mls"
       ],
       "rents": [
-        4800
+        4000
       ],
       "exactUnit": false,
-      "matchedListingId": "mls-r3151372",
+      "matchedListingId": "mls-r3175318",
       "result": "authoritative_mls_reverified_scope_excluded"
     },
     {
-      "identityKey": "mls:r3107068",
+      "identityKey": "mls:r3175599",
       "sources": [
         "realtylink mls"
       ],
       "rents": [
-        5200
+        4500
+      ],
+      "exactUnit": false,
+      "matchedListingId": "zumper-dd642aebb4f6",
+      "result": "authoritative_mls_reverified_scope_excluded"
+    },
+    {
+      "identityKey": "mls:r3178418",
+      "sources": [
+        "realtylink mls"
+      ],
+      "rents": [
+        4200
       ],
       "exactUnit": true,
       "matchedListingId": null,
       "result": "auto_published_authoritative_mls"
     },
     {
-      "identityKey": "mls:r3149566",
+      "identityKey": "mls:r3179332",
       "sources": [
         "realtylink mls"
       ],
       "rents": [
-        5290
+        4550
       ],
       "exactUnit": true,
       "matchedListingId": null,
@@ -639,9 +651,8 @@
     }
   ],
   "promoted": [
-    "mls-r3155678",
-    "mls-r3107068",
-    "mls-r3149566"
+    "mls-r3178418",
+    "mls-r3179332"
   ],
   "crossVerified": [],
   "fingerprintCrossVerified": [],
@@ -652,19 +663,18 @@
   "wholeHomeMlsRelistsMerged": [],
   "negativeMatches": [],
   "detailReactivated": [
-    "mls-r3151372",
-    "mls-r3162880",
     "mls-r3175318",
     "mls-r3180739",
-    "mls-r3175898",
-    "mls-r3175118",
-    "mls-r3175906",
-    "mls-r3171043",
-    "mls-r3107028",
-    "mls-r3107034"
+    "mls-r3175118"
   ],
   "auxiliaryMlsRemovalsRolledBack": [],
-  "mlsMissing": {},
+  "mlsMissing": {
+    "R3162880": {
+      "firstMissingAt": "2026-11-07T16:09:51.368Z",
+      "lastMissingAt": "2026-11-07T16:09:51.368Z",
+      "listingId": "mls-r3162880"
+    }
+  },
   "mlsRemoved": [],
   "mlsStaleHidden": [],
   "realtylinkSnapshotCount": 8,
