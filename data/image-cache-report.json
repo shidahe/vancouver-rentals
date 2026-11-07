@@ -1,34 +1,6 @@
 {
-  "refreshedAt": "2026-11-07T16:10:32.488Z",
+  "refreshedAt": "2026-11-07T18:57:07.858Z",
   "listings": {
-    "kits-maple-2565-penthouse": {
-      "cached": 3,
-      "preserved": 3,
-      "downloaded": 0,
-      "failures": [
-        {
-          "url": "https://images.craigslist.org/00A0A_aQXNvS54lVv_01C01d_600x450.jpg",
-          "error": "not a usable image (image/jpeg, 1557 bytes)"
-        },
-        {
-          "url": "https://images.craigslist.org/00T0T_eLSAimMvAgt_01C01d_600x450.jpg",
-          "error": "not a usable image (image/jpeg, 1499 bytes)"
-        },
-        {
-          "url": "https://images.craigslist.org/00E0E_3Xw7fxYkaJy_01C01d_600x450.jpg",
-          "error": "not a usable image (image/jpeg, 1439 bytes)"
-        },
-        {
-          "url": "https://images.craigslist.org/00r0r_9HrCniNzqBd_01C01d_600x450.jpg",
-          "error": "not a usable image (image/jpeg, 1263 bytes)"
-        },
-        {
-          "url": "https://images.craigslist.org/00L0L_fKKQu5N4uJJ_01C01d_600x450.jpg",
-          "error": "not a usable image (image/jpeg, 1188 bytes)"
-        }
-      ],
-      "photoPageUrl": "https://www.craigslist.org/view/d/vancouver-rare-penthouse-with-private/h5bh2hpcqoXSPVRz7zvtLg"
-    },
     "mls-r3167681": {
       "cached": 5,
       "preserved": 5,
@@ -38,13 +10,13 @@
     }
   },
   "totals": {
-    "sourceListings": 2,
-    "cachedListings": 2,
+    "sourceListings": 1,
+    "cachedListings": 1,
     "downloaded": 0,
-    "failed": 9,
-    "preserved": 8,
-    "prunedListings": 0,
-    "prunedIndexImages": 0,
+    "failed": 0,
+    "preserved": 5,
+    "prunedListings": 1,
+    "prunedIndexImages": 3,
     "prunedOrphanFiles": 0
   }
 }

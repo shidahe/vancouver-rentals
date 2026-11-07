@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-11-07T16:00:31.328Z",
+  "checkedAt": "2026-11-07T18:46:28.913Z",
   "source": {
     "id": "zumper-downtown-2br",
     "name": "Zumper Downtown Vancouver 2BR+",
@@ -1089,17 +1089,12 @@
                   },
                   {
                     "@type": "LocationFeatureSpecification",
-                    "name": "Storage",
-                    "value": true
-                  },
-                  {
-                    "@type": "LocationFeatureSpecification",
                     "name": "Swimming Pool",
                     "value": true
                   },
                   {
                     "@type": "LocationFeatureSpecification",
-                    "name": "Residents Lounge",
+                    "name": "Concierge Service",
                     "value": true
                   },
                   {
@@ -1109,7 +1104,7 @@
                   },
                   {
                     "@type": "LocationFeatureSpecification",
-                    "name": "On-Site Management",
+                    "name": "Storage",
                     "value": true
                   },
                   {
@@ -1119,7 +1114,12 @@
                   },
                   {
                     "@type": "LocationFeatureSpecification",
-                    "name": "Concierge Service",
+                    "name": "On-Site Management",
+                    "value": true
+                  },
+                  {
+                    "@type": "LocationFeatureSpecification",
+                    "name": "Residents Lounge",
                     "value": true
                   },
                   {
@@ -2886,5 +2886,5 @@
     "https://img.zumpercdn.com/882566881/1280x960?fit=crop&h=208&w=329&dpr=1&q=76",
     "https://img.zumpercdn.com/882566882/1280x960?fit=crop&h=208&w=329&dpr=1&q=76"
   ],
-  "elapsedMs": 3528
+  "elapsedMs": 3372
 }

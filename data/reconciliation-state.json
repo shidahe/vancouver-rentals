@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-11-07T16:09:51.368Z",
+  "refreshedAt": "2026-11-07T18:56:26.731Z",
   "groups": [
     {
       "identityKey": "3440 w broadway::unit:126",
@@ -38,18 +38,6 @@
       "result": "candidate_only"
     },
     {
-      "identityKey": "3000 w 44th ave::url:e02801d5a772",
-      "sources": [
-        "zumper"
-      ],
-      "rents": [
-        6000
-      ],
-      "exactUnit": false,
-      "matchedListingId": "zumper-1754927f090e",
-      "result": "candidate_only"
-    },
-    {
       "identityKey": "2814 w 3rd ave::unit:5",
       "sources": [
         "zumper"
@@ -71,6 +59,18 @@
       ],
       "exactUnit": false,
       "matchedListingId": "zumper-747feecf761d",
+      "result": "candidate_only"
+    },
+    {
+      "identityKey": "3000 w 44th ave::url:e02801d5a772",
+      "sources": [
+        "zumper"
+      ],
+      "rents": [
+        6000
+      ],
+      "exactUnit": false,
+      "matchedListingId": "zumper-1754927f090e",
       "result": "candidate_only"
     },
     {
@@ -212,18 +212,6 @@
       ],
       "rents": [
         5800
-      ],
-      "exactUnit": false,
-      "matchedListingId": null,
-      "result": "candidate_only"
-    },
-    {
-      "identityKey": "1350 broughton st::url:43e61e137d85",
-      "sources": [
-        "craigslist"
-      ],
-      "rents": [
-        4500
       ],
       "exactUnit": false,
       "matchedListingId": null,
@@ -446,18 +434,6 @@
       "result": "candidate_only"
     },
     {
-      "identityKey": "2565 maple st::url:0e7c34c6cc33",
-      "sources": [
-        "craigslist"
-      ],
-      "rents": [
-        4800
-      ],
-      "exactUnit": false,
-      "matchedListingId": "kits-maple-2565-penthouse",
-      "result": "candidate_only"
-    },
-    {
       "identityKey": "1925 alberni st 501::url:688eb0fb3ccf",
       "sources": [
         "craigslist"
@@ -554,18 +530,6 @@
       "result": "candidate_only"
     },
     {
-      "identityKey": "mls:r3160689",
-      "sources": [
-        "realtylink mls"
-      ],
-      "rents": [
-        4300
-      ],
-      "exactUnit": true,
-      "matchedListingId": "zumper-16e9ae17cd91",
-      "result": "authoritative_mls_reverified_scope_excluded"
-    },
-    {
       "identityKey": "mls:r3175118",
       "sources": [
         "realtylink mls"
@@ -578,82 +542,19 @@
       "result": "authoritative_mls_reverified_scope_excluded"
     },
     {
-      "identityKey": "mls:r3180739",
+      "identityKey": "mls:r3160689",
       "sources": [
         "realtylink mls"
       ],
       "rents": [
-        4800
-      ],
-      "exactUnit": false,
-      "matchedListingId": "mls-r3180739",
-      "result": "authoritative_mls_reverified_scope_excluded"
-    },
-    {
-      "identityKey": "mls:r3175848",
-      "sources": [
-        "realtylink mls"
-      ],
-      "rents": [
-        5500
-      ],
-      "exactUnit": false,
-      "matchedListingId": "mls-r3175848",
-      "result": "authoritative_mls_reverified_scope_excluded"
-    },
-    {
-      "identityKey": "mls:r3175318",
-      "sources": [
-        "realtylink mls"
-      ],
-      "rents": [
-        4000
-      ],
-      "exactUnit": false,
-      "matchedListingId": "mls-r3175318",
-      "result": "authoritative_mls_reverified_scope_excluded"
-    },
-    {
-      "identityKey": "mls:r3175599",
-      "sources": [
-        "realtylink mls"
-      ],
-      "rents": [
-        4500
-      ],
-      "exactUnit": false,
-      "matchedListingId": "zumper-dd642aebb4f6",
-      "result": "authoritative_mls_reverified_scope_excluded"
-    },
-    {
-      "identityKey": "mls:r3178418",
-      "sources": [
-        "realtylink mls"
-      ],
-      "rents": [
-        4200
+        4300
       ],
       "exactUnit": true,
-      "matchedListingId": null,
-      "result": "auto_published_authoritative_mls"
-    },
-    {
-      "identityKey": "mls:r3179332",
-      "sources": [
-        "realtylink mls"
-      ],
-      "rents": [
-        4550
-      ],
-      "exactUnit": true,
-      "matchedListingId": null,
-      "result": "auto_published_authoritative_mls"
+      "matchedListingId": "zumper-16e9ae17cd91",
+      "result": "authoritative_mls_reverified_scope_excluded"
     }
   ],
-  "promoted": [
-    "mls-r3178418",
-    "mls-r3179332"
-  ],
+  "promoted": [],
   "crossVerified": [],
   "fingerprintCrossVerified": [],
   "craigslistRelistingsRecovered": [],
@@ -665,22 +566,19 @@
   "detailReactivated": [
     "mls-r3175318",
     "mls-r3180739",
-    "mls-r3175118"
+    "mls-r3175118",
+    "mls-r3178418",
+    "mls-r3179332"
   ],
   "auxiliaryMlsRemovalsRolledBack": [],
-  "mlsMissing": {
-    "R3162880": {
-      "firstMissingAt": "2026-11-07T16:09:51.368Z",
-      "lastMissingAt": "2026-11-07T16:09:51.368Z",
-      "listingId": "mls-r3162880"
-    }
-  },
+  "mlsMissing": {},
   "mlsRemoved": [],
   "mlsStaleHidden": [],
-  "realtylinkSnapshotCount": 8,
+  "realtylinkSnapshotCount": 2,
   "realtylinkSnapshotHighWaterMark": 9,
   "realtylinkSnapshotScope": "rent-4000-6000-beds-2-4-baths-2-sunlight-kits-downtown-v4",
-  "realtylinkRemovalEligible": true,
+  "realtylinkRemovalEligible": false,
+  "mlsRemovalSuppressed": "Partial Realtylink snapshot (2 candidates versus previous complete 9); disappearance signals ignored.",
   "mlsDuplicatesMerged": [],
   "canonicalFieldRepairsApplied": []
 }

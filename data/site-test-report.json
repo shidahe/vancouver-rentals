@@ -1,15 +1,14 @@
 {
-  "checkedAt": "2026-11-07T16:10:39.435Z",
+  "checkedAt": "2026-11-07T18:57:12.735Z",
   "ok": true,
   "checkpoints": {
     "render": {
       "title": "Kitsilano & Downtown Vancouver Rentals",
-      "cards": 2,
-      "shown": 2
+      "cards": 1,
+      "shown": 1
     },
     "hardScope": {
       "visibleIds": [
-        "kits-maple-2565-penthouse",
         "mls-r3167681"
       ],
       "bad": [],
@@ -24,47 +23,46 @@
         "Last refreshed"
       ],
       "values": [
-        "2",
-        "2",
-        "0",
         "1",
-        "Nov 7, 8:00 a.m. PST"
+        "1",
+        "0",
+        "0",
+        "Nov 7, 10:46 a.m. PST"
       ],
-      "html": "<div class=\"stat\"><strong>2</strong><span>Active</span></div><div class=\"stat\"><strong>2</strong><span>New 7d</span></div><div class=\"stat\"><strong>0</strong><span>Price drops</span></div><div class=\"stat\"><strong>1</strong><span>To verify</span></div><div class=\"stat\"><strong>Nov 7, 8:00 a.m. PST</strong><span>Last refreshed</span></div>",
+      "html": "<div class=\"stat\"><strong>1</strong><span>Active</span></div><div class=\"stat\"><strong>1</strong><span>New 7d</span></div><div class=\"stat\"><strong>0</strong><span>Price drops</span></div><div class=\"stat\"><strong>0</strong><span>To verify</span></div><div class=\"stat\"><strong>Nov 7, 10:46 a.m. PST</strong><span>Last refreshed</span></div>",
       "refreshedAt": {
-        "displayed": "Nov 7, 8:00 a.m. PST",
-        "expected": "Nov 7, 8:00 a.m. PST",
+        "displayed": "Nov 7, 10:46 a.m. PST",
+        "expected": "Nov 7, 10:46 a.m. PST",
         "timezone": "America/Vancouver"
       },
       "newSevenDays": {
-        "expectedCount": 2,
+        "expectedCount": 1,
         "badgeIds": [
-          "kits-maple-2565-penthouse",
           "mls-r3167681"
         ],
         "staleBadgeIds": []
       }
     },
     "map": {
-      "markers": 2,
+      "markers": 1,
       "desktopMapVisible": true
     },
     "filters": "ok",
     "localStorage": {
       "favorite": true,
       "notes": true,
-      "firstId": "kits-maple-2565-penthouse"
+      "firstId": "mls-r3167681"
     },
-    "sourceLink": "https://www.craigslist.org/view/d/vancouver-rare-penthouse-with-private/h5bh2hpcqoXSPVRz7zvtLg",
+    "sourceLink": "https://www.craigslist.org/view/d/vancouver-beautiful-modern-bed-bath/qdWUcw41Nhag6DNxkm2346",
     "photos": {
-      "total": 2,
-      "loaded": 2,
+      "total": 1,
+      "loaded": 1,
       "fallbacks": 0,
       "bad": []
     },
     "markerPositions": {
-      "total": 2,
-      "unique": 2
+      "total": 1,
+      "unique": 1
     },
     "dataEndpoints": "ok",
     "mobile": "ok",
