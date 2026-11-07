@@ -38,6 +38,12 @@ const imageCacheWorkflow = await read('.github/workflows/cache-listing-images.ym
 const refreshWorkflow = await read('.github/workflows/refresh-listings.yml');
 const catalog = JSON.parse(await read('data/live-sources.json'));
 const failures = [];
+
+if (!source.includes('function listingUnit(x = {})') ||
+    !source.includes('const exactUrlMatch=!urlMatch||!c.unit||')) {
+  failures.push('A current Zumper unit with no prior URL match can crash identity reconciliation.');
+}
+
 const excludedOneBath = { availabilityStatus: 'excluded', bedrooms: 2, bathrooms: 1, rent: 4500, address: '1000 W 10th Avenue, Vancouver, BC', ac: true, orientation: 'S' };
 const excludedEligible = { ...excludedOneBath, bathrooms: 2 };
 const availabilityPendingOneBath = { ...excludedOneBath, availabilityStatus: 'needs_confirmation' };

@@ -45,7 +45,7 @@ function canonicalAddressKey(address = '') {
   return canonicalStreet(street);
 }
 
-function listingUnit(x) {
+function listingUnit(x = {}) {
   const explicit = unitToken(String(x.unit || '').match(/(?:^|\b)(?:unit|suite|apt|#)?\s*([A-Za-z0-9-]*\d[A-Za-z0-9-]*)/i)?.[1]);
   if (explicit) return explicit;
   return splitStreetAndUnit(String(x.address || '').split(',')[0]).unit;
@@ -169,7 +169,7 @@ for(const c of found){
   // URL-only marketplace listing. Keep matching the same exact detail URL so a
   // later Zumper refresh cannot recreate the old ID and discard stronger facts.
   const urlMatch=byUrl.get(c.url);
-  const exactUrlMatch=!c.unit||!listingUnit(urlMatch)||listingUnit(urlMatch)===c.unit ? urlMatch : null;
+  const exactUrlMatch=!urlMatch||!c.unit||!listingUnit(urlMatch)||listingUnit(urlMatch)===c.unit ? urlMatch : null;
   let x=byKey.get(c.identityKey)||exactUrlMatch;
   const id=x?.id||`zumper-${hash(c.identityKey)}`;
   if(!x){
