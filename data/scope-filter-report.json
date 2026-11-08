@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-11-08T16:08:29.079Z",
+  "generatedAt": "2026-11-08T16:20:54.751Z",
   "policy": "Only CAD $4,000–$6,000 entire-home rentals with 2–4 bedrooms, at least 2 bathrooms, confirmed AC, and verified sunlight or a non-north exposure in Kitsilano / Vancouver Westside / Downtown are published. Unknown sun exposure and exclusively north-facing units are excluded pending verification.",
   "activeCount": 1,
-  "excludedCount": 145,
-  "exclusionEventsToday": 6,
+  "excludedCount": 147,
+  "exclusionEventsToday": 10,
   "countsByReason": {
     "direct sunlight or non-north exposure not verified": 19,
     "monthly rent outside CAD $4,000–$6,000": 68,
-    "air conditioning not confirmed": 38,
+    "air conditioning not confirmed": 40,
     "fewer than two verified bathrooms": 13,
     "house share or separately rented portion of a house": 4,
     "five or more bedrooms": 1,
@@ -462,7 +462,12 @@
     {
       "id": "mls-r3165327",
       "reason": "air conditioning not confirmed",
-      "wasActive": false
+      "wasActive": true
+    },
+    {
+      "id": "mls-r3162880",
+      "reason": "air conditioning not confirmed",
+      "wasActive": true
     },
     {
       "id": "kits-walk-floorplan-2-bedroom-811-3675",
@@ -642,7 +647,7 @@
     {
       "id": "mls-r3175118",
       "reason": "air conditioning not confirmed",
-      "wasActive": false
+      "wasActive": true
     },
     {
       "id": "mls-r3178905",
@@ -727,7 +732,7 @@
     {
       "id": "zumper-d53972f224ce",
       "reason": "direct sunlight or non-north exposure not verified",
-      "wasActive": true
+      "wasActive": false
     },
     {
       "id": "mls-r3177602",
@@ -737,6 +742,11 @@
     {
       "id": "mls-r3170731",
       "reason": "direct sunlight or non-north exposure not verified",
+      "wasActive": true
+    },
+    {
+      "id": "mls-r3173381",
+      "reason": "air conditioning not confirmed",
       "wasActive": true
     }
   ]
