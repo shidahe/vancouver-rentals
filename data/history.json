@@ -4410,6 +4410,11 @@
       "date": "2026-11-07",
       "rent": 4800,
       "note": "EXCLUDED: fewer than two verified bathrooms."
+    },
+    {
+      "date": "2026-11-08",
+      "rent": 4800,
+      "note": "EXCLUDED: fewer than two verified bathrooms."
     }
   ],
   "mls-r3175898": [
@@ -4548,6 +4553,11 @@
     },
     {
       "date": "2026-11-06",
+      "rent": 4400,
+      "note": "EXCLUDED: direct sunlight or non-north exposure not verified."
+    },
+    {
+      "date": "2026-11-08",
       "rent": 4400,
       "note": "EXCLUDED: direct sunlight or non-north exposure not verified."
     }
@@ -4780,6 +4790,18 @@
     {
       "date": "2026-11-08",
       "rent": 5900,
+      "note": "EXCLUDED: air conditioning not confirmed."
+    }
+  ],
+  "mls-r3177687": [
+    {
+      "date": "2026-11-08",
+      "rent": 4800,
+      "note": "NEW: live Realtylink MLS R3177687 auto-published."
+    },
+    {
+      "date": "2026-11-08",
+      "rent": 4800,
       "note": "EXCLUDED: air conditioning not confirmed."
     }
   ]

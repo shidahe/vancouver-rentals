@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-11-08T16:48:50.081Z",
+  "refreshedAt": "2026-11-08T17:08:59.247Z",
   "groups": [
     {
       "identityKey": "3440 w broadway::unit:126",
@@ -59,42 +59,6 @@
       ],
       "exactUnit": false,
       "matchedListingId": "zumper-747feecf761d",
-      "result": "candidate_only"
-    },
-    {
-      "identityKey": "3000 w 44th ave::url:e02801d5a772",
-      "sources": [
-        "zumper"
-      ],
-      "rents": [
-        6000
-      ],
-      "exactUnit": false,
-      "matchedListingId": "zumper-1754927f090e",
-      "result": "candidate_only"
-    },
-    {
-      "identityKey": "2000 w 43rd ave::url:daba7b758265",
-      "sources": [
-        "zumper"
-      ],
-      "rents": [
-        4500
-      ],
-      "exactUnit": false,
-      "matchedListingId": null,
-      "result": "candidate_only"
-    },
-    {
-      "identityKey": "1408 strathmore mews::url:e37012ca45ca",
-      "sources": [
-        "zumper"
-      ],
-      "rents": [
-        4200
-      ],
-      "exactUnit": false,
-      "matchedListingId": "zumper-63cc916bfc3b",
       "result": "candidate_only"
     },
     {
@@ -506,6 +470,42 @@
       "result": "candidate_only"
     },
     {
+      "identityKey": "mls:r3181005",
+      "sources": [
+        "realtylink mls"
+      ],
+      "rents": [
+        4200
+      ],
+      "exactUnit": true,
+      "matchedListingId": "mls-r3181005",
+      "result": "authoritative_mls_reverified_scope_excluded"
+    },
+    {
+      "identityKey": "mls:r3149566",
+      "sources": [
+        "realtylink mls"
+      ],
+      "rents": [
+        5290
+      ],
+      "exactUnit": true,
+      "matchedListingId": "mls-r3149566",
+      "result": "authoritative_mls_reverified_scope_excluded"
+    },
+    {
+      "identityKey": "mls:r3167681",
+      "sources": [
+        "realtylink mls"
+      ],
+      "rents": [
+        5400
+      ],
+      "exactUnit": true,
+      "matchedListingId": "mls-r3167681",
+      "result": "authoritative_mls_reverified"
+    },
+    {
       "identityKey": "mls:r3160689",
       "sources": [
         "realtylink mls"
@@ -515,18 +515,6 @@
       ],
       "exactUnit": true,
       "matchedListingId": "zumper-16e9ae17cd91",
-      "result": "authoritative_mls_reverified_scope_excluded"
-    },
-    {
-      "identityKey": "mls:r3180739",
-      "sources": [
-        "realtylink mls"
-      ],
-      "rents": [
-        4800
-      ],
-      "exactUnit": false,
-      "matchedListingId": "mls-r3180739",
       "result": "authoritative_mls_reverified_scope_excluded"
     },
     {
@@ -542,32 +530,48 @@
       "result": "authoritative_mls_reverified_scope_excluded"
     },
     {
-      "identityKey": "mls:r3175848",
+      "identityKey": "mls:r3175599",
       "sources": [
         "realtylink mls"
       ],
       "rents": [
-        5500
+        4500
       ],
       "exactUnit": false,
-      "matchedListingId": "mls-r3175848",
+      "matchedListingId": "zumper-dd642aebb4f6",
       "result": "authoritative_mls_reverified_scope_excluded"
     },
     {
-      "identityKey": "mls:r3171043",
+      "identityKey": "mls:r3155678",
       "sources": [
         "realtylink mls"
       ],
       "rents": [
-        4400
+        4700
       ],
       "exactUnit": true,
-      "matchedListingId": "mls-r3171043",
+      "matchedListingId": "mls-r3155678",
       "result": "authoritative_mls_reverified_scope_excluded"
+    },
+    {
+      "identityKey": "mls:r3177687",
+      "sources": [
+        "realtylink mls"
+      ],
+      "rents": [
+        4800
+      ],
+      "exactUnit": true,
+      "matchedListingId": null,
+      "result": "auto_published_authoritative_mls"
     }
   ],
-  "promoted": [],
-  "crossVerified": [],
+  "promoted": [
+    "mls-r3177687"
+  ],
+  "crossVerified": [
+    "mls-r3167681"
+  ],
   "fingerprintCrossVerified": [],
   "craigslistRelistingsRecovered": [],
   "crossSourcePriceUpdates": [],
@@ -579,9 +583,12 @@
     "mls-r3151372",
     "mls-r3165327",
     "mls-r3180739",
+    "mls-r3181005",
     "mls-r3175118",
     "mls-r3171043",
     "mls-r3170765",
+    "mls-r3155678",
+    "mls-r3149566",
     "mls-r3177602",
     "mls-r3170731",
     "mls-r3173381",
@@ -592,11 +599,10 @@
   "mlsMissing": {},
   "mlsRemoved": [],
   "mlsStaleHidden": [],
-  "realtylinkSnapshotCount": 5,
+  "realtylinkSnapshotCount": 8,
   "realtylinkSnapshotHighWaterMark": 9,
   "realtylinkSnapshotScope": "rent-4000-6000-beds-2-4-baths-2-sunlight-kits-downtown-v4",
-  "realtylinkRemovalEligible": false,
-  "mlsRemovalSuppressed": "Partial Realtylink snapshot (5 candidates versus previous complete 9); disappearance signals ignored.",
+  "realtylinkRemovalEligible": true,
   "mlsDuplicatesMerged": [],
   "canonicalFieldRepairsApplied": []
 }
