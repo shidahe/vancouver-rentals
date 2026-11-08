@@ -1971,6 +1971,11 @@
       "date": "2026-11-05",
       "rent": 4800,
       "note": "EXCLUDED: direct sunlight or non-north exposure not verified."
+    },
+    {
+      "date": "2026-11-08",
+      "rent": 4800,
+      "note": "EXCLUDED: direct sunlight or non-north exposure not verified."
     }
   ],
   "mls-r3158179": [
@@ -4701,6 +4706,11 @@
       "date": "2026-11-08",
       "rent": 4190,
       "note": "EXCLUDED: direct sunlight or non-north exposure not verified."
+    },
+    {
+      "date": "2026-11-08",
+      "rent": 4190,
+      "note": "CORRECTED: duplicated civic number was incorrectly stored as a Zumper unit; restored URL-level identity."
     }
   ],
   "mls-r3177602": [
@@ -4736,6 +4746,30 @@
     {
       "date": "2026-11-08",
       "rent": 4495,
+      "note": "EXCLUDED: air conditioning not confirmed."
+    }
+  ],
+  "mls-r3180990": [
+    {
+      "date": "2026-11-08",
+      "rent": 5900,
+      "note": "NEW: live Realtylink MLS R3180990 auto-published."
+    },
+    {
+      "date": "2026-11-08",
+      "rent": 5900,
+      "note": "EXCLUDED: direct sunlight or non-north exposure not verified."
+    }
+  ],
+  "mls-r3177323": [
+    {
+      "date": "2026-11-08",
+      "rent": 5900,
+      "note": "NEW: live Realtylink MLS R3177323 auto-published."
+    },
+    {
+      "date": "2026-11-08",
+      "rent": 5900,
       "note": "EXCLUDED: air conditioning not confirmed."
     }
   ]

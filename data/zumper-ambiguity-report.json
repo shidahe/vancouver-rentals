@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-11-08T16:18:05.411Z",
-  "checkedCount": 4,
+  "generatedAt": "2026-11-08T16:31:50.126Z",
+  "checkedCount": 8,
   "quarantinedCount": 0,
   "checked": [
     {
@@ -30,6 +30,34 @@
       "ambiguous": false,
       "lowPrice": 4800,
       "highPrice": 4800
+    },
+    {
+      "identityKey": "3000 w 44th ave::url:e02801d5a772",
+      "url": "https://www.zumper.com/address/3000-w-44th-ave-vancouver-bc-v6n-3k6-can",
+      "ambiguous": false,
+      "lowPrice": 6000,
+      "highPrice": 6000
+    },
+    {
+      "identityKey": "2000 w 43rd ave::url:daba7b758265",
+      "url": "https://www.zumper.com/address/2000-w-43rd-ave-vancouver-bc-v6m-2c9-can",
+      "ambiguous": false,
+      "lowPrice": 4500,
+      "highPrice": 4500
+    },
+    {
+      "identityKey": "1408 strathmore mews::url:e37012ca45ca",
+      "url": "https://www.zumper.com/address/1408-strathmore-mw-vancouver-bc-v6z-3a9-can",
+      "ambiguous": false,
+      "lowPrice": 4200,
+      "highPrice": 4200
+    },
+    {
+      "identityKey": "1455 howe st::url:a2e9a0ba4b5c",
+      "url": "https://www.zumper.com/address/1455-howe-st-vancouver-bc-v6z-1r8-can",
+      "ambiguous": false,
+      "lowPrice": 5250,
+      "highPrice": 5250
     }
   ],
   "quarantined": []
