@@ -184,6 +184,8 @@ if(zumperRoomCount('Fully renovated suite in a 12-suite apartment building.',w10
    zumperUnitToken('Fully-Renovated Spacious 1950s Suite4326 West 10th Avenue','4326 West 10th Avenue')!==null||
    zumperUnitToken('Excellent transit via #99 B-Line and #14.','4326 West 10th Avenue')!==null||
    zumperUnitToken('Apartment, Suite 101, at 4326 West 10th Avenue','4326 West 10th Avenue')!=='101'||
+   zumperUnitToken('Reference unit 901No smokingMinimum 1-year lease','1277 Hornby St')!=='901'||
+   zumperUnitToken('Reference unit 70X. No smoking.','1050 Burrard St')!=='70X'||
    !source.includes("unit not public")||!source.includes('RELISTED: exact current Zumper detail'))failures.push('4326 W 10th regression: nearby-card bathrooms, civic-number unit parsing, apartment type or clean relisting evidence can regress.');
 if(!source.includes("x.availabilityStatus='active'; x.removedAt=null")||
    !purposeBuiltSource.includes("availabilityStatus:'active',removedAt:null")||

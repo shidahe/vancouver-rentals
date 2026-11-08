@@ -87,7 +87,13 @@ export function zumperUnitToken(description = '', street = '') {
   // unit. Hash-only unit identifiers are accepted from the structured street
   // address by splitStreetAndUnit; free text must include an explicit label.
   const match = text.match(/\b(?:unit|suite|apt)\s+(?:#\s*)?([A-Za-z0-9-]*\d[A-Za-z0-9-]*)\b/i);
-  const token = match?.[1]?.toUpperCase() || null;
+  let token = match?.[1]?.toUpperCase() || null;
+  // Some Zumper descriptions collapse sentence boundaries, e.g.
+  // "Reference unit 901No smoking". "No" starts the policy sentence; it is
+  // not part of unit 901. Keep legitimate alphanumeric units such as 70X.
+  if (token && /^\d{1,4}NO$/.test(token) && /^\s*smoking/i.test(text.slice((match?.index || 0) + match[0].length))) {
+    token = token.slice(0, -2);
+  }
   const civic = String(street || '').trim().match(/^(\d{2,5})\b/)?.[1] || null;
   return token && token !== civic ? token : null;
 }

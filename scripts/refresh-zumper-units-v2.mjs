@@ -187,7 +187,10 @@ for(const c of found){
     const old=x.rent;
     x.lastChecked=today; x.verifiedAt=iso; x.lat=c.exactGeo.lat; x.lng=c.exactGeo.lng;
     x.dataNotes=String(x.dataNotes||'').replace(/\s*AUTO-REMOVED \d{4}-\d{2}-\d{2}:[^.]*\.?/gi,'').trim();
-    if (!x.unit && c.unit) x.unit=c.unit;
+    if (!x.unit && c.unit) {
+      x.unit=c.unit;
+      x.dataNotes='Independent unit identity: canonical address + unit.';
+    }
     if (c.petFriendly !== null) x.petFriendly=c.petFriendly;
     if (c.type) x.type=c.type;
     for (const field of ['ac','orientation']) {
