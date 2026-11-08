@@ -5,7 +5,7 @@ import { chromium } from 'playwright';
 import { listingScopeEligible, scopeExcludedListingCanReactivate } from './discovery-policy.mjs';
 import { isTargetRentalCoordinate } from './realtylink-parser.mjs';
 import { hasCurrentMarketplaceAvailability } from './listing-availability.mjs';
-import { zumperPetFriendly, zumperPropertyType, zumperRoomCount, zumperStructuredStreetAndUnit, zumperUnitCards, zumperUnitRent, zumperUnitToken } from './zumper-pet-policy.mjs';
+import { zumperPetFriendly, zumperPropertyType, zumperRoomCount, zumperStructuredStreetAndUnit, zumperUnitCards, zumperUnitIsDuplicatedCivic, zumperUnitRent, zumperUnitToken } from './zumper-pet-policy.mjs';
 
 const DATA = path.join(process.cwd(), 'data');
 const EVIDENCE = path.join(DATA, 'evidence');
@@ -108,6 +108,11 @@ for (let i = payload.listings.length - 1; i >= 0; i--) {
     delete history[x.id]; delete imageSources[x.id]; payload.listings.splice(i,1); continue;
   }
   const split = splitStreetAndUnit(String(x.address || '').split(',')[0]);
+  if (zumperUnitIsDuplicatedCivic(x.unit, String(x.address || '').split(',')[0], x.url)) {
+    x.unit = null;
+    x.dataNotes = 'Independent inventory identity: canonical address + exact detail URL (unit not public).';
+    (history[x.id] ||= []).push({date:today,rent:x.rent??null,note:'CORRECTED: duplicated civic number was incorrectly stored as a Zumper unit; restored URL-level identity.'});
+  }
   if (x.unit && /unit not public/i.test(String(x.dataNotes || ''))) {
     x.unit = null;
     (history[x.id] ||= []).push({date:today,rent:x.rent??null,note:'CORRECTED: unverified free-text token was incorrectly stored as a unit; restored URL-level identity pending a structured address unit.'});

@@ -16,7 +16,7 @@ import { craigslistAddressPrecision, craigslistDescriptionCivicAddress, craigsli
 import { classifyRentalsCaSearchLead, parseRentalsCaSearchLeads, rentalsCaSearchLeadScopeEligible } from './rentalsca-search-parser.mjs';
 import { craigslistSeedRelistingMatch } from './craigslist-seed-relisting.mjs';
 import { craigslistCrossSourcePriceMatch } from './craigslist-cross-source-match.mjs';
-import { zumperPetFriendly, zumperPropertyType, zumperRoomCount, zumperStructuredStreetAndUnit, zumperUnitCards, zumperUnitRent, zumperUnitToken } from './zumper-pet-policy.mjs';
+import { zumperPetFriendly, zumperPropertyType, zumperRoomCount, zumperStructuredStreetAndUnit, zumperUnitCards, zumperUnitIsDuplicatedCivic, zumperUnitRent, zumperUnitToken } from './zumper-pet-policy.mjs';
 import { wholeHomeMlsRelistMatch } from './mls-relisting.mjs';
 
 const read = p => fs.readFile(p, 'utf8');
@@ -660,7 +660,9 @@ if(craigslistPhotos.length!==2||craigslistPhotos.some(url=>!/_600x450\.jpg$/.tes
 const duplicatedCivic = zumperStructuredStreetAndUnit('1277-1277 Hornby St');
 const explicitZumperUnit = zumperStructuredStreetAndUnit('306-1238 Seymour St');
 if (duplicatedCivic.street !== '1277 Hornby St' || duplicatedCivic.unit !== null ||
-    explicitZumperUnit.street !== '1238 Seymour St' || explicitZumperUnit.unit !== '306') {
+    explicitZumperUnit.street !== '1238 Seymour St' || explicitZumperUnit.unit !== '306' ||
+    !zumperUnitIsDuplicatedCivic('1277', '1277 Hornby St', 'https://www.zumper.com/address/1277-1277-hornby-st-vancouver-bc-v6z-can') ||
+    zumperUnitIsDuplicatedCivic('306', '1238 Seymour St', 'https://www.zumper.com/address/1238-seymour-st-vancouver-bc-v6b-can')) {
   failures.push('A duplicated Zumper civic number can still be stored as a false unit identity.');
 }
 

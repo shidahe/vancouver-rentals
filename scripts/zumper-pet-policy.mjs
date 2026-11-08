@@ -1,3 +1,11 @@
+export function zumperUnitIsDuplicatedCivic(unit = '', street = '', url = '') {
+  const token = String(unit || '').trim().replace(/^#/, '').toUpperCase();
+  const civic = String(street || '').trim().match(/^(\d{2,5})\b/)?.[1] || null;
+  if (!token || !civic || token !== civic) return false;
+  return new RegExp('/address/' + civic + '-' + civic + '(?:-|$)', 'i').test(String(url || '')) ||
+    new RegExp('^' + civic + '\\s*[-–]\\s*' + civic + '\\b', 'i').test(String(street || ''));
+}
+
 export function zumperStructuredStreetAndUnit(street = '') {
   let value = String(street || '').trim();
   let unit = null;
@@ -12,7 +20,7 @@ export function zumperStructuredStreetAndUnit(street = '') {
     // Zumper occasionally duplicates the civic number in structured addresses,
     // e.g. "1277-1277 Hornby St". That is an address artefact, not unit 1277.
     const civic = value.match(/^(\d{2,5})\b/)?.[1] || null;
-    if (unit === civic) unit = null;
+    if (zumperUnitIsDuplicatedCivic(unit, String(street || ''))) unit = null;
   }
   if (!unit) {
     match = value.match(/^(.*?)(?:\s+|,\s*)(?:unit|suite|apt|#)\s*([A-Za-z0-9-]*\d[A-Za-z0-9-]*)\s*$/i);
