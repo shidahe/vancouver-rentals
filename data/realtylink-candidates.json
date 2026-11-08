@@ -1,101 +1,65 @@
 {
-  "refreshedAt": "2026-11-08T16:32:55.585Z",
+  "refreshedAt": "2026-11-08T16:47:29.455Z",
   "mode": "candidate-only",
   "scopeVersion": "rent-4000-6000-beds-2-4-baths-2-sunlight-kits-downtown-v4",
   "health": [
     {
       "url": "https://realtylink.org/en/apartment~for-rent~vancouver-west",
       "status": 200,
-      "checkedAt": "2026-11-08T16:32:55.585Z"
+      "checkedAt": "2026-11-08T16:47:29.455Z"
     },
     {
       "url": "https://realtylink.org/en/townhouse~for-rent~vancouver-west",
       "status": 200,
-      "checkedAt": "2026-11-08T16:32:55.585Z"
+      "checkedAt": "2026-11-08T16:47:29.455Z"
     },
     {
       "url": "https://realtylink.org/en/house~for-rent~vancouver-west",
       "status": 200,
-      "checkedAt": "2026-11-08T16:32:55.585Z"
+      "checkedAt": "2026-11-08T16:47:29.455Z"
     },
     {
       "url": "https://realtylink.org/en/apartment~for-rent~vancouver",
       "status": 200,
-      "checkedAt": "2026-11-08T16:32:55.585Z"
+      "checkedAt": "2026-11-08T16:47:29.455Z"
     }
   ],
   "candidates": [
     {
       "source": "Realtylink MLS",
-      "url": "https://realtylink.org/en/apartment~for-rent~vancouver/263192392",
-      "mls": "R3170765",
-      "address": "838 W Hastings Street",
-      "unit": "2802",
-      "type": "condo",
-      "rent": 4000,
-      "bedrooms": 2,
+      "url": "https://realtylink.org/en/townhouse~for-rent~vancouver/263182316",
+      "mls": "R3160689",
+      "address": "3349 Dunbar Street",
+      "unit": "102",
+      "type": "townhouse",
+      "rent": 4300,
+      "bedrooms": 3,
       "bathrooms": 2,
-      "sqft": 917,
-      "lat": 49.28621,
-      "lng": -123.11572,
+      "sqft": 1271,
+      "lat": 49.25688,
+      "lng": -123.18537,
       "geo": {
-        "lat": 49.28621,
-        "lng": -123.11572
+        "lat": 49.25688,
+        "lng": -123.18537
       },
       "images": [
-        "https://media.realtylink.org/images/consumersite/property/263192392/264996e6ae254779953f544b8d81db9e.jpeg?width=640&height=480&fit=cover",
-        "https://media.realtylink.org/images/consumersite/property/263192392/15c00d14adaa4f2a9c79d65ed61abb3c.jpeg?width=320&height=240&fit=cover",
-        "https://media.realtylink.org/images/consumersite/property/263192392/971199b8579548b6a0440a43853dc1f4.jpeg?width=320&height=240&fit=cover",
-        "https://media.realtylink.org/images/consumersite/property/263192392/704a09dbe1c34134afce323c8a043caf.jpeg?width=320&height=240&fit=cover",
-        "https://media.realtylink.org/images/consumersite/property/263192392/3665d4c96759419cb5f67bc40fdf41fe.jpeg?width=320&height=240&fit=cover",
-        "https://media.realtylink.org/images/consumersite/property/263192392/264996e6ae254779953f544b8d81db9e.jpeg?width=480&height=360&fit=cover"
+        "https://media.realtylink.org/images/consumersite/property/263182316/00c50dbb1e294023bf398ae25ce0d515.jpeg?width=640&height=480&fit=cover",
+        "https://media.realtylink.org/images/consumersite/property/263182316/72286793647f47cd9a695cfbe3d304d4.jpeg?width=320&height=240&fit=cover",
+        "https://media.realtylink.org/images/consumersite/property/263182316/9ff90dbf374c4802a4347969a0cae1e6.jpeg?width=320&height=240&fit=cover",
+        "https://media.realtylink.org/images/consumersite/property/263182316/8498975986b343ffa866148eaa08fc91.jpeg?width=320&height=240&fit=cover",
+        "https://media.realtylink.org/images/consumersite/property/263182316/015a649b6fb945cf8bde7a706fdb80c7.jpeg?width=320&height=240&fit=cover",
+        "https://media.realtylink.org/images/consumersite/property/263182316/00c50dbb1e294023bf398ae25ce0d515.jpeg?width=480&height=360&fit=cover"
       ],
       "targetArea": true,
       "active": true,
       "parking": true,
-      "ac": true,
+      "ac": null,
       "petFriendly": null,
-      "balcony": true,
-      "checkedAt": "2026-11-08T16:32:55.585Z",
+      "balcony": false,
+      "checkedAt": "2026-11-08T16:47:29.455Z",
       "publishable": false,
       "httpStatus": 200,
-      "bodyText": "Search\nBuy\nSell\nMy REALTOR®\nMarket tools\nLog in\nApartment for rent\n2802 838 W Hastings Street, Downtown VW, Vancouver\nGoogle Maps\nStreet View\n$4,000\n/month\n25\nFeatures\n 2 bedrooms\n 2 bathrooms\nFloor area\n917 sqft\nInterior features\nElevator\nLaundry features\nIn Unit\nAppliances\nDishwasher, Microwave, Refrigerator, Stove\nCooling features\nAir Conditioning\nExterior features\nBalcony\nAccessibility features\nWheelchair Access\nParking spaces\n1\nBylaws restriction\nSmoking Restrictions\nDescription\nLuxurious urban living at iconic Jameson House by Norman Foster. This apartment is located on the 28th floor facing East and provides amazing city, mountain and water views. Spacious open floor plan with premium finishes throughout. 9 ft ceilings, infloor radiant heating & cooling, contemporary kitchens by Dada Cucina of Italy, Gaggeneau & Sub Zero appliances. Includes 1 parking spot with auto-valet parking system & 24 hour concierge for your convenience. Min 1 year lease required.\nMLS® No.  R3170765\nSold Price History\nDATE\tPRICE\nApr 11, 2022\t$1,210,000\nOct 03, 2014\t$792,000\nLocation\nWalk Score\n98\nChoose location criteria\nIn accordance with our Terms of Use, location data are provided to you “as-is”, without warranty. Any liability arising from location data is expressly excluded.\nListing REALTOR®\nFarid Hosseini\nREALTOR®, Personal Real Estate Corporation\neXp Realty\nContact REALTOR®\nShowing with the listing REALTOR®\n\nBook an appointment with the listing REALTOR® to tour the property at your own pace, in person.\n\nRequest a showing\nCalculators\nMortgage payments\nSelling price\n$\nDown payment\n$\n%\nMortgage amount\n$0.00\nInterest rate\n%\nAmortization\nyears\nPayment frequency\nMonthly\nCalculate\nPayment amount\n$0.00\nSee monthly payment chart\nProperty transfer tax\nFair Market Value\n$\nCalculate\n1% of $200,000\n$0.00\n2% of remaining value up to and including $2,000,000\n$0.00\n3% of remaining portion over $2,000,000\n$0.00\nEstimated property transfer tax\n$0.00\nBorrowing capacity\nPayment amount\n$\nPayment frequency\nMonthly\nInterest rate\n%\nAmortization\nyears\nCalculate\nMortgage amount\n$0.00\nThe amounts shown above are for information purposes only and do not include taxes, if applicable.\nYou must purchase mortgage default insurance if your down payment is less than 20 per cent of the purchase price of the property.\nThis calculator doesn't calculate the further 2% tax on residential property greater than $3,000,000 or the additional property transfer tax on residential property transfers to foreign entities or taxable trustees. Learn more about property transfer tax.\nThere are additional costs to buying a home. Speak with your REALTOR® for more information.\nDISCOVER REALTYLINK.ORG\n\nRealtylink.org is a property search website hosted by REALTORS® at Greater Vancouver REALTORS®, Fraser Valley Real Estate Board, Vancouver Island Real Estate Board, BC Northern Real Estate Board, and Chilliwack and District Real Estate Board.\n\nDiscover Realtylink.org\nWORKING WITH A REALTOR®\n\nWhether you’re buying or selling a home, it’s important to understand from the outset how professional representation can help you at every step of the process.\n\nHow Realtors help\nCONTACT REALTYLINK.ORG\n\nDo you have any questions or comments for us?\n\nContact Realtylink.org\nView regions\n\nThe trademarks REALTOR®, REALTORS®, and the REALTOR® logo are controlled by The Canadian Real Estate Association (CREA) and identify real estate professionals who are members of CREA. The trademarks MLS®, Multiple Listing Service® and the associated logos are owned by CREA and identify the quality of services provided by real estate professionals who are members of CREA.\n\n© Centris 2026. All rights reserved.\nSite privacy policy and terms of use"
-    },
-    {
-      "source": "Realtylink MLS",
-      "url": "https://realtylink.org/en/apartment~for-rent~vancouver/263202617",
-      "mls": "R3180990",
-      "address": "1616 Bayshore Drive",
-      "unit": "1602",
-      "type": "condo",
-      "rent": 5900,
-      "bedrooms": 2,
-      "bathrooms": 2,
-      "sqft": 1500,
-      "lat": 49.29146,
-      "lng": -123.12982,
-      "geo": {
-        "lat": 49.29146,
-        "lng": -123.12982
-      },
-      "images": [
-        "https://media.realtylink.org/images/consumersite/property/263202617/64eb340442e04bfbaba482c6b6ec4957.jpeg?width=640&height=480&fit=cover",
-        "https://media.realtylink.org/images/consumersite/property/263202617/450103a018854766997e231d3e280d5d.jpeg?width=320&height=240&fit=cover",
-        "https://media.realtylink.org/images/consumersite/property/263202617/bb96528a90284e448c25d00199665743.jpeg?width=320&height=240&fit=cover",
-        "https://media.realtylink.org/images/consumersite/property/263202617/11cd7daef2e742b792ae0ce2d2ce1b95.jpeg?width=320&height=240&fit=cover",
-        "https://media.realtylink.org/images/consumersite/property/263202617/bb8370d5beb84ed1ab347df37139ae40.jpeg?width=320&height=240&fit=cover",
-        "https://media.realtylink.org/images/consumersite/property/263202617/64eb340442e04bfbaba482c6b6ec4957.jpeg?width=480&height=360&fit=cover"
-      ],
-      "targetArea": true,
-      "active": true,
-      "parking": true,
-      "ac": true,
-      "petFriendly": null,
-      "balcony": true,
-      "checkedAt": "2026-11-08T16:32:55.585Z",
-      "publishable": false,
-      "httpStatus": 200,
-      "bodyText": "Search\nBuy\nSell\nMy REALTOR®\nMarket tools\nLog in\nApartment for rent\n1602 1616 Bayshore Drive, Coal Harbour, Vancouver\nGoogle Maps\nStreet View\n$5,900\n/month\n34\nFeatures\n 2 bedrooms\n 2 bathrooms\nFloor area\n1,500 sqft\nLaundry features\nIn Unit\nAppliances\nDishwasher, Microwave, Refrigerator, Stove\nCooling features\nAir Conditioning\nExterior features\nBalcony\nParking spaces\n2\nAmenities\nExercise Centre\nBylaws restriction\nSmoking Restrictions\nDescription\nNext to Stanley Park with unobstructed views of Coal Harbour, Marina, park and Mountains at Bayshore Gardens. Bright corner unit has 2 bedrooms plus large den with window & huge balcony featuring top quality finishing throughout with floor to ceiling wrap windows. Unit features include A/C, Electric Blinds for all blinds in the unit, Beautiful high end Appliances and much more. Definitely a must see ! BONUS: This unit includes 2 EV equipped parking stalls & a large storage locker !\nMLS® No.  R3180990\nLocation\nWalk Score\n95\nChoose location criteria\nIn accordance with our Terms of Use, location data are provided to you “as-is”, without warranty. Any liability arising from location data is expressly excluded.\nListing REALTOR®\nSean Rafati\nREALTOR®\nEasyRent Real Estate Services\nContact REALTOR®\nShowing with the listing REALTOR®\n\nBook an appointment with the listing REALTOR® to tour the property at your own pace, in person.\n\nRequest a showing\nCalculators\nMortgage payments\nSelling price\n$\nDown payment\n$\n%\nMortgage amount\n$0.00\nInterest rate\n%\nAmortization\nyears\nPayment frequency\nMonthly\nCalculate\nPayment amount\n$0.00\nSee monthly payment chart\nProperty transfer tax\nFair Market Value\n$\nCalculate\n1% of $200,000\n$0.00\n2% of remaining value up to and including $2,000,000\n$0.00\n3% of remaining portion over $2,000,000\n$0.00\nEstimated property transfer tax\n$0.00\nBorrowing capacity\nPayment amount\n$\nPayment frequency\nMonthly\nInterest rate\n%\nAmortization\nyears\nCalculate\nMortgage amount\n$0.00\nThe amounts shown above are for information purposes only and do not include taxes, if applicable.\nYou must purchase mortgage default insurance if your down payment is less than 20 per cent of the purchase price of the property.\nThis calculator doesn't calculate the further 2% tax on residential property greater than $3,000,000 or the additional property transfer tax on residential property transfers to foreign entities or taxable trustees. Learn more about property transfer tax.\nThere are additional costs to buying a home. Speak with your REALTOR® for more information.\nDISCOVER REALTYLINK.ORG\n\nRealtylink.org is a property search website hosted by REALTORS® at Greater Vancouver REALTORS®, Fraser Valley Real Estate Board, Vancouver Island Real Estate Board, BC Northern Real Estate Board, and Chilliwack and District Real Estate Board.\n\nDiscover Realtylink.org\nWORKING WITH A REALTOR®\n\nWhether you’re buying or selling a home, it’s important to understand from the outset how professional representation can help you at every step of the process.\n\nHow Realtors help\nCONTACT REALTYLINK.ORG\n\nDo you have any questions or comments for us?\n\nContact Realtylink.org\nView regions\n\nThe trademarks REALTOR®, REALTORS®, and the REALTOR® logo are controlled by The Canadian Real Estate Association (CREA) and identify real estate professionals who are members of CREA. The trademarks MLS®, Multiple Listing Service® and the associated logos are owned by CREA and identify the quality of services provided by real estate professionals who are members of CREA.\n\n© Centris 2026. All rights reserved.\nSite privacy policy and terms of use"
+      "bodyText": "Search\nBuy\nSell\nMy REALTOR®\nMarket tools\nLog in\nTownhouse for rent\n102 3349 Dunbar Street, Dunbar, Vancouver\nGoogle Maps\nStreet View\n$4,300\n/month\n23\nFeatures\n 3 bedrooms\n 2 bathrooms\nFloor area\n1,271 sqft\nAppliances\nDishwasher, Refrigerator, Stove\nParking spaces\n1\nDescription\nElevate your lifestyle with this exceptional townhome situated in an exclusive, upscale neighbourhood. Immerse yourself in the serene beauty of an expansive rooftop deck, perfect for entertaining or simply savouring the picturesque vistas where breathtaking water, city, and mountain views await. Step into the private master suite offers a retreat-like ambiance with its spacious layout, walk-in closet, and lavish bathroom featuring a soaker tub and separate shower. Maple hardwood floors and stylish glass railings enhance the home's elegance, while the gourmet kitchen, equipped with high-end appliances, ensures a seamless culinary experience.\nMLS® No.  R3160689\nSold Price History\nDATE\tPRICE\nDec 28, 2021\t$1,209,000\nJul 23, 2005\t$535,000\nLocation\nWalk Score\n91\nChoose location criteria\nIn accordance with our Terms of Use, location data are provided to you “as-is”, without warranty. Any liability arising from location data is expressly excluded.\nListing REALTOR®\nPetr Vokoun\nREALTOR®\nOrca Realty Inc.\nContact REALTOR®\nShowing with the listing REALTOR®\n\nBook an appointment with the listing REALTOR® to tour the property at your own pace, in person.\n\nRequest a showing\nCalculators\nMortgage payments\nSelling price\n$\nDown payment\n$\n%\nMortgage amount\n$0.00\nInterest rate\n%\nAmortization\nyears\nPayment frequency\nMonthly\nCalculate\nPayment amount\n$0.00\nSee monthly payment chart\nProperty transfer tax\nFair Market Value\n$\nCalculate\n1% of $200,000\n$0.00\n2% of remaining value up to and including $2,000,000\n$0.00\n3% of remaining portion over $2,000,000\n$0.00\nEstimated property transfer tax\n$0.00\nBorrowing capacity\nPayment amount\n$\nPayment frequency\nMonthly\nInterest rate\n%\nAmortization\nyears\nCalculate\nMortgage amount\n$0.00\nThe amounts shown above are for information purposes only and do not include taxes, if applicable.\nYou must purchase mortgage default insurance if your down payment is less than 20 per cent of the purchase price of the property.\nThis calculator doesn't calculate the further 2% tax on residential property greater than $3,000,000 or the additional property transfer tax on residential property transfers to foreign entities or taxable trustees. Learn more about property transfer tax.\nThere are additional costs to buying a home. Speak with your REALTOR® for more information.\nDISCOVER REALTYLINK.ORG\n\nRealtylink.org is a property search website hosted by REALTORS® at Greater Vancouver REALTORS®, Fraser Valley Real Estate Board, Vancouver Island Real Estate Board, BC Northern Real Estate Board, and Chilliwack and District Real Estate Board.\n\nDiscover Realtylink.org\nWORKING WITH A REALTOR®\n\nWhether you’re buying or selling a home, it’s important to understand from the outset how professional representation can help you at every step of the process.\n\nHow Realtors help\nCONTACT REALTYLINK.ORG\n\nDo you have any questions or comments for us?\n\nContact Realtylink.org\nView regions\n\nThe trademarks REALTOR®, REALTORS®, and the REALTOR® logo are controlled by The Canadian Real Estate Association (CREA) and identify real estate professionals who are members of CREA. The trademarks MLS®, Multiple Listing Service® and the associated logos are owned by CREA and identify the quality of services provided by real estate professionals who are members of CREA.\n\n© Centris 2026. All rights reserved.\nSite privacy policy and terms of use"
     },
     {
       "source": "Realtylink MLS",
@@ -128,46 +92,10 @@
       "ac": null,
       "petFriendly": null,
       "balcony": true,
-      "checkedAt": "2026-11-08T16:32:55.585Z",
+      "checkedAt": "2026-11-08T16:47:29.455Z",
       "publishable": false,
       "httpStatus": 200,
       "bodyText": "Search\nBuy\nSell\nMy REALTOR®\nMarket tools\nLog in\nTownhouse for rent\n2912 W 33rd Avenue, MacKenzie Heights, Vancouver\nGoogle Maps\nStreet View\n$4,800\n/month\n31\nFeatures\n 2 bedrooms\n 25 bathrooms\nFloor area\n1,394 sqft\nLaundry features\nIn Unit\nAppliances\nDishwasher, Microwave, Refrigerator, Stove\nExterior features\nBalcony\nParking spaces\n1\nBylaws restriction\nSmoking Restrictions\nDescription\nWelcome to the Mackenzie Green, these low-rise Vancouver townhomes were built in 2012 by Pantheon Developments Ltd. The location and the neighbouring community of Mackenzie Heights is a top notch. Exclusive collection of boutique Townhomes features include Inform European custom cabinets, Wolf stainless gas range, Integrated appliances, wide-plank engineered walnut flooring, Quartzite countertops, overheight ceilings, frameless glass shower enclosures, contemporary bathrooms, and high-ceiling spacious bedrooms. The ground floor also has an exclusive outdoor patio and the indoor has an office den area and a in-suite storage. This home is perfect for a small family. 1 parking is included in the rent, utilities are not included. This home does not have AC.\nMLS® No.  R3180739\nLocation\nWalk Score\n68\nChoose location criteria\nIn accordance with our Terms of Use, location data are provided to you “as-is”, without warranty. Any liability arising from location data is expressly excluded.\nListing REALTOR®\nHayley Crofts\nREALTOR®\nVancouver Luxury Realty\nContact REALTOR®\nShowing with the listing REALTOR®\n\nBook an appointment with the listing REALTOR® to tour the property at your own pace, in person.\n\nRequest a showing\nCalculators\nMortgage payments\nSelling price\n$\nDown payment\n$\n%\nMortgage amount\n$0.00\nInterest rate\n%\nAmortization\nyears\nPayment frequency\nMonthly\nCalculate\nPayment amount\n$0.00\nSee monthly payment chart\nProperty transfer tax\nFair Market Value\n$\nCalculate\n1% of $200,000\n$0.00\n2% of remaining value up to and including $2,000,000\n$0.00\n3% of remaining portion over $2,000,000\n$0.00\nEstimated property transfer tax\n$0.00\nBorrowing capacity\nPayment amount\n$\nPayment frequency\nMonthly\nInterest rate\n%\nAmortization\nyears\nCalculate\nMortgage amount\n$0.00\nThe amounts shown above are for information purposes only and do not include taxes, if applicable.\nYou must purchase mortgage default insurance if your down payment is less than 20 per cent of the purchase price of the property.\nThis calculator doesn't calculate the further 2% tax on residential property greater than $3,000,000 or the additional property transfer tax on residential property transfers to foreign entities or taxable trustees. Learn more about property transfer tax.\nThere are additional costs to buying a home. Speak with your REALTOR® for more information.\nDISCOVER REALTYLINK.ORG\n\nRealtylink.org is a property search website hosted by REALTORS® at Greater Vancouver REALTORS®, Fraser Valley Real Estate Board, Vancouver Island Real Estate Board, BC Northern Real Estate Board, and Chilliwack and District Real Estate Board.\n\nDiscover Realtylink.org\nWORKING WITH A REALTOR®\n\nWhether you’re buying or selling a home, it’s important to understand from the outset how professional representation can help you at every step of the process.\n\nHow Realtors help\nCONTACT REALTYLINK.ORG\n\nDo you have any questions or comments for us?\n\nContact Realtylink.org\nView regions\n\nThe trademarks REALTOR®, REALTORS®, and the REALTOR® logo are controlled by The Canadian Real Estate Association (CREA) and identify real estate professionals who are members of CREA. The trademarks MLS®, Multiple Listing Service® and the associated logos are owned by CREA and identify the quality of services provided by real estate professionals who are members of CREA.\n\n© Centris 2026. All rights reserved.\nSite privacy policy and terms of use"
-    },
-    {
-      "source": "Realtylink MLS",
-      "url": "https://realtylink.org/en/townhouse~for-rent~vancouver/263182316",
-      "mls": "R3160689",
-      "address": "3349 Dunbar Street",
-      "unit": "102",
-      "type": "townhouse",
-      "rent": 4300,
-      "bedrooms": 3,
-      "bathrooms": 2,
-      "sqft": 1271,
-      "lat": 49.25688,
-      "lng": -123.18537,
-      "geo": {
-        "lat": 49.25688,
-        "lng": -123.18537
-      },
-      "images": [
-        "https://media.realtylink.org/images/consumersite/property/263182316/00c50dbb1e294023bf398ae25ce0d515.jpeg?width=640&height=480&fit=cover",
-        "https://media.realtylink.org/images/consumersite/property/263182316/72286793647f47cd9a695cfbe3d304d4.jpeg?width=320&height=240&fit=cover",
-        "https://media.realtylink.org/images/consumersite/property/263182316/9ff90dbf374c4802a4347969a0cae1e6.jpeg?width=320&height=240&fit=cover",
-        "https://media.realtylink.org/images/consumersite/property/263182316/8498975986b343ffa866148eaa08fc91.jpeg?width=320&height=240&fit=cover",
-        "https://media.realtylink.org/images/consumersite/property/263182316/015a649b6fb945cf8bde7a706fdb80c7.jpeg?width=320&height=240&fit=cover",
-        "https://media.realtylink.org/images/consumersite/property/263182316/00c50dbb1e294023bf398ae25ce0d515.jpeg?width=480&height=360&fit=cover"
-      ],
-      "targetArea": true,
-      "active": true,
-      "parking": true,
-      "ac": null,
-      "petFriendly": null,
-      "balcony": false,
-      "checkedAt": "2026-11-08T16:32:55.585Z",
-      "publishable": false,
-      "httpStatus": 200,
-      "bodyText": "Search\nBuy\nSell\nMy REALTOR®\nMarket tools\nLog in\nTownhouse for rent\n102 3349 Dunbar Street, Dunbar, Vancouver\nGoogle Maps\nStreet View\n$4,300\n/month\n23\nFeatures\n 3 bedrooms\n 2 bathrooms\nFloor area\n1,271 sqft\nAppliances\nDishwasher, Refrigerator, Stove\nParking spaces\n1\nDescription\nElevate your lifestyle with this exceptional townhome situated in an exclusive, upscale neighbourhood. Immerse yourself in the serene beauty of an expansive rooftop deck, perfect for entertaining or simply savouring the picturesque vistas where breathtaking water, city, and mountain views await. Step into the private master suite offers a retreat-like ambiance with its spacious layout, walk-in closet, and lavish bathroom featuring a soaker tub and separate shower. Maple hardwood floors and stylish glass railings enhance the home's elegance, while the gourmet kitchen, equipped with high-end appliances, ensures a seamless culinary experience.\nMLS® No.  R3160689\nSold Price History\nDATE\tPRICE\nDec 28, 2021\t$1,209,000\nJul 23, 2005\t$535,000\nLocation\nWalk Score\n91\nChoose location criteria\nIn accordance with our Terms of Use, location data are provided to you “as-is”, without warranty. Any liability arising from location data is expressly excluded.\nListing REALTOR®\nPetr Vokoun\nREALTOR®\nOrca Realty Inc.\nContact REALTOR®\nShowing with the listing REALTOR®\n\nBook an appointment with the listing REALTOR® to tour the property at your own pace, in person.\n\nRequest a showing\nCalculators\nMortgage payments\nSelling price\n$\nDown payment\n$\n%\nMortgage amount\n$0.00\nInterest rate\n%\nAmortization\nyears\nPayment frequency\nMonthly\nCalculate\nPayment amount\n$0.00\nSee monthly payment chart\nProperty transfer tax\nFair Market Value\n$\nCalculate\n1% of $200,000\n$0.00\n2% of remaining value up to and including $2,000,000\n$0.00\n3% of remaining portion over $2,000,000\n$0.00\nEstimated property transfer tax\n$0.00\nBorrowing capacity\nPayment amount\n$\nPayment frequency\nMonthly\nInterest rate\n%\nAmortization\nyears\nCalculate\nMortgage amount\n$0.00\nThe amounts shown above are for information purposes only and do not include taxes, if applicable.\nYou must purchase mortgage default insurance if your down payment is less than 20 per cent of the purchase price of the property.\nThis calculator doesn't calculate the further 2% tax on residential property greater than $3,000,000 or the additional property transfer tax on residential property transfers to foreign entities or taxable trustees. Learn more about property transfer tax.\nThere are additional costs to buying a home. Speak with your REALTOR® for more information.\nDISCOVER REALTYLINK.ORG\n\nRealtylink.org is a property search website hosted by REALTORS® at Greater Vancouver REALTORS®, Fraser Valley Real Estate Board, Vancouver Island Real Estate Board, BC Northern Real Estate Board, and Chilliwack and District Real Estate Board.\n\nDiscover Realtylink.org\nWORKING WITH A REALTOR®\n\nWhether you’re buying or selling a home, it’s important to understand from the outset how professional representation can help you at every step of the process.\n\nHow Realtors help\nCONTACT REALTYLINK.ORG\n\nDo you have any questions or comments for us?\n\nContact Realtylink.org\nView regions\n\nThe trademarks REALTOR®, REALTORS®, and the REALTOR® logo are controlled by The Canadian Real Estate Association (CREA) and identify real estate professionals who are members of CREA. The trademarks MLS®, Multiple Listing Service® and the associated logos are owned by CREA and identify the quality of services provided by real estate professionals who are members of CREA.\n\n© Centris 2026. All rights reserved.\nSite privacy policy and terms of use"
     },
     {
       "source": "Realtylink MLS",
@@ -200,7 +128,7 @@
       "ac": null,
       "petFriendly": true,
       "balcony": true,
-      "checkedAt": "2026-11-08T16:32:55.585Z",
+      "checkedAt": "2026-11-08T16:47:29.455Z",
       "publishable": false,
       "httpStatus": 200,
       "bodyText": "Search\nBuy\nSell\nMy REALTOR®\nMarket tools\nLog in\nTownhouse for rent\n1 1137 Barclay Street, West End VW, Vancouver\nGoogle Maps\nStreet View\n$5,500\n/month\n22\nFeatures\n 2 bedrooms\n 3 bathrooms\nFloor area\n1,192 sqft\nLaundry features\nIn Unit\nAppliances\nDishwasher, Refrigerator, Stove\nExterior features\nBalcony, Garden\nParking spaces\n1\nBylaws restriction\nSmoking Restrictions\nDescription\nMake yourself at home in Vancouver's West End. This two-level townhouse pairs a garden patio and private rooftop terrace with a living room, gas fireplace and hardwood floors. Enjoy Robson Street shops and restaurants, Davie Village, and weekend plans at English Bay or Stanley Park. Approx. 1,192 sq. ft., 2 bedrooms, 2 full bathrooms plus a powder room, quartz kitchen counters, maple cabinetry, stainless steel appliances, gas range, dishwasher and in-suite laundry. $5,500/month; available December 1, 2026. Unfurnished; minimum one-year lease; utilities extra. One off-street parking space included; no storage. Pets considered case-by-case. Some photos digitally decluttered. Contact David Siccia, Licensed Property Manager, Heller Murch Realty, 236-998-5841. https://davidsicciaproperties.ca\nMLS® No.  R3175118\nSold Price History\nDATE\tPRICE\nMar 29, 2016\t$950,999\nJan 18, 2006\t$582,000\nLocation\nWalk Score\n99\nChoose location criteria\nIn accordance with our Terms of Use, location data are provided to you “as-is”, without warranty. Any liability arising from location data is expressly excluded.\nListing REALTOR®\nDavid Siccia\nREALTOR®\nHeller Murch Realty\nContact REALTOR®\nShowing with the listing REALTOR®\n\nBook an appointment with the listing REALTOR® to tour the property at your own pace, in person.\n\nRequest a showing\nCalculators\nMortgage payments\nSelling price\n$\nDown payment\n$\n%\nMortgage amount\n$0.00\nInterest rate\n%\nAmortization\nyears\nPayment frequency\nMonthly\nCalculate\nPayment amount\n$0.00\nSee monthly payment chart\nProperty transfer tax\nFair Market Value\n$\nCalculate\n1% of $200,000\n$0.00\n2% of remaining value up to and including $2,000,000\n$0.00\n3% of remaining portion over $2,000,000\n$0.00\nEstimated property transfer tax\n$0.00\nBorrowing capacity\nPayment amount\n$\nPayment frequency\nMonthly\nInterest rate\n%\nAmortization\nyears\nCalculate\nMortgage amount\n$0.00\nThe amounts shown above are for information purposes only and do not include taxes, if applicable.\nYou must purchase mortgage default insurance if your down payment is less than 20 per cent of the purchase price of the property.\nThis calculator doesn't calculate the further 2% tax on residential property greater than $3,000,000 or the additional property transfer tax on residential property transfers to foreign entities or taxable trustees. Learn more about property transfer tax.\nThere are additional costs to buying a home. Speak with your REALTOR® for more information.\nDISCOVER REALTYLINK.ORG\n\nRealtylink.org is a property search website hosted by REALTORS® at Greater Vancouver REALTORS®, Fraser Valley Real Estate Board, Vancouver Island Real Estate Board, BC Northern Real Estate Board, and Chilliwack and District Real Estate Board.\n\nDiscover Realtylink.org\nWORKING WITH A REALTOR®\n\nWhether you’re buying or selling a home, it’s important to understand from the outset how professional representation can help you at every step of the process.\n\nHow Realtors help\nCONTACT REALTYLINK.ORG\n\nDo you have any questions or comments for us?\n\nContact Realtylink.org\nView regions\n\nThe trademarks REALTOR®, REALTORS®, and the REALTOR® logo are controlled by The Canadian Real Estate Association (CREA) and identify real estate professionals who are members of CREA. The trademarks MLS®, Multiple Listing Service® and the associated logos are owned by CREA and identify the quality of services provided by real estate professionals who are members of CREA.\n\n© Centris 2026. All rights reserved.\nSite privacy policy and terms of use"
@@ -236,82 +164,46 @@
       "ac": null,
       "petFriendly": null,
       "balcony": false,
-      "checkedAt": "2026-11-08T16:32:55.585Z",
+      "checkedAt": "2026-11-08T16:47:29.455Z",
       "publishable": false,
       "httpStatus": 200,
       "bodyText": "Search\nBuy\nSell\nMy REALTOR®\nMarket tools\nLog in\nHouse for rent\n2945 W 12 Avenue, Kitsilano, Vancouver\nGoogle Maps\nStreet View\n$5,500\n/month\n15\nFeatures\n 4 bedrooms\n 2 bathrooms\nFloor area\n1,753 sqft\nDescription\nThis stunning Kitsilano gem is an absolute must see! 4 bedrooms, 2.5 bathroom main level features a perfect layout for your family. Main floor contains a spacious living/dining area with cozy gas fireplace, natural hard wood flooring, large windows for plenty of natural light, clean neutral wall tones. A chef's dream of a kitchen! Plenty of storage within the wood cabinetry, large center island with stone countertops, stainless steel appliances, and surrounding windows. Primary and secondary bedrooms are located on the main level with one bathroom and a ensuite to the primary. Downstairs holds the third bedroom, full bathroom, private laundry, and a large 4th bedroom (no closet) /could also be used as a rec room/office/ kids play area- the options are endless!\nMLS® No.  R3175848\nLocation\nWalk Score\n94\nChoose location criteria\nIn accordance with our Terms of Use, location data are provided to you “as-is”, without warranty. Any liability arising from location data is expressly excluded.\nListing REALTOR®\nKevin Axford\nREALTOR®, Personal Real Estate Corporation\nAxford Real Estate\nContact REALTOR®\nShowing with the listing REALTOR®\n\nBook an appointment with the listing REALTOR® to tour the property at your own pace, in person.\n\nRequest a showing\nCalculators\nMortgage payments\nSelling price\n$\nDown payment\n$\n%\nMortgage amount\n$0.00\nInterest rate\n%\nAmortization\nyears\nPayment frequency\nMonthly\nCalculate\nPayment amount\n$0.00\nSee monthly payment chart\nProperty transfer tax\nFair Market Value\n$\nCalculate\n1% of $200,000\n$0.00\n2% of remaining value up to and including $2,000,000\n$0.00\n3% of remaining portion over $2,000,000\n$0.00\nEstimated property transfer tax\n$0.00\nBorrowing capacity\nPayment amount\n$\nPayment frequency\nMonthly\nInterest rate\n%\nAmortization\nyears\nCalculate\nMortgage amount\n$0.00\nThe amounts shown above are for information purposes only and do not include taxes, if applicable.\nYou must purchase mortgage default insurance if your down payment is less than 20 per cent of the purchase price of the property.\nThis calculator doesn't calculate the further 2% tax on residential property greater than $3,000,000 or the additional property transfer tax on residential property transfers to foreign entities or taxable trustees. Learn more about property transfer tax.\nThere are additional costs to buying a home. Speak with your REALTOR® for more information.\nDISCOVER REALTYLINK.ORG\n\nRealtylink.org is a property search website hosted by REALTORS® at Greater Vancouver REALTORS®, Fraser Valley Real Estate Board, Vancouver Island Real Estate Board, BC Northern Real Estate Board, and Chilliwack and District Real Estate Board.\n\nDiscover Realtylink.org\nWORKING WITH A REALTOR®\n\nWhether you’re buying or selling a home, it’s important to understand from the outset how professional representation can help you at every step of the process.\n\nHow Realtors help\nCONTACT REALTYLINK.ORG\n\nDo you have any questions or comments for us?\n\nContact Realtylink.org\nView regions\n\nThe trademarks REALTOR®, REALTORS®, and the REALTOR® logo are controlled by The Canadian Real Estate Association (CREA) and identify real estate professionals who are members of CREA. The trademarks MLS®, Multiple Listing Service® and the associated logos are owned by CREA and identify the quality of services provided by real estate professionals who are members of CREA.\n\n© Centris 2026. All rights reserved.\nSite privacy policy and terms of use"
     },
     {
       "source": "Realtylink MLS",
-      "url": "https://realtylink.org/en/apartment~for-rent~vancouver/263198950",
-      "mls": "R3177323",
-      "address": "1177 Pacific Boulevard",
-      "unit": "602",
+      "url": "https://realtylink.org/en/apartment~for-rent~vancouver/263192670",
+      "mls": "R3171043",
+      "address": "1483 Homer Street",
+      "unit": "220X",
       "type": "condo",
-      "rent": 5900,
-      "bedrooms": 3,
+      "rent": 4400,
+      "bedrooms": 2,
       "bathrooms": 2,
-      "sqft": 1240,
-      "lat": 49.27452,
-      "lng": -123.12074,
+      "sqft": 1100,
+      "lat": 49.27233,
+      "lng": -123.12675,
       "geo": {
-        "lat": 49.27452,
-        "lng": -123.12074
+        "lat": 49.27233,
+        "lng": -123.12675
       },
       "images": [
-        "https://media.realtylink.org/images/consumersite/property/263198950/c31e314c141e4cd282694698fb4fca43.jpeg?width=640&height=480&fit=cover",
-        "https://media.realtylink.org/images/consumersite/property/263198950/12100f6091754f799bc3b7b9e11ad687.jpeg?width=320&height=240&fit=cover",
-        "https://media.realtylink.org/images/consumersite/property/263198950/618856c441f94bf9b4927dd0a7f0139c.jpeg?width=320&height=240&fit=cover",
-        "https://media.realtylink.org/images/consumersite/property/263198950/cfa56086440243778623ec8104edd45e.jpeg?width=320&height=240&fit=cover",
-        "https://media.realtylink.org/images/consumersite/property/263198950/b2d9f4d17a214d0a89c9c8ca18d3a73b.jpeg?width=320&height=240&fit=cover",
-        "https://media.realtylink.org/images/consumersite/property/263198950/c31e314c141e4cd282694698fb4fca43.jpeg?width=480&height=360&fit=cover"
+        "https://media.realtylink.org/images/consumersite/property/263192670/55e02895411d40ab96feb37819a4628f.jpeg?width=640&height=480&fit=cover",
+        "https://media.realtylink.org/images/consumersite/property/263192670/5670dbd2379842dc8cdbfea240a86fe8.jpeg?width=320&height=240&fit=cover",
+        "https://media.realtylink.org/images/consumersite/property/263192670/48afc6d990e6418ba2f79172e704822d.jpeg?width=320&height=240&fit=cover",
+        "https://media.realtylink.org/images/consumersite/property/263192670/cf21abb734c34270b905644e18585a93.jpeg?width=320&height=240&fit=cover",
+        "https://media.realtylink.org/images/consumersite/property/263192670/8c0f4902a3f8448baa2c30c0c027f1ec.jpeg?width=320&height=240&fit=cover",
+        "https://media.realtylink.org/images/consumersite/property/263192670/55e02895411d40ab96feb37819a4628f.jpeg?width=480&height=360&fit=cover"
       ],
       "targetArea": true,
       "active": true,
       "parking": true,
-      "ac": null,
+      "ac": true,
       "petFriendly": null,
-      "balcony": false,
-      "checkedAt": "2026-11-08T16:32:55.585Z",
-      "publishable": false,
-      "httpStatus": 200,
-      "bodyText": "Search\nBuy\nSell\nMy REALTOR®\nMarket tools\nLog in\nApartment for rent\n602 1177 Pacific Boulevard, Yaletown, Vancouver\nGoogle Maps\nStreet View\n$5,900\n/month\n35\nFeatures\n 3 bedrooms\n 2 bathrooms\nFloor area\n1,240 sqft\nInterior features\nElevator\nLaundry features\nIn Unit\nAppliances\nDishwasher, Microwave, Refrigerator, Stove\nSpa features\nSwirlpool/Hot Tub\nParking spaces\n1\nAmenities\nClubhouse, Exercise Centre, Sauna/Steam Room\nBylaws restriction\nSmoking Restrictions\nDescription\nAvailable November 1 for a minimum 6-month lease. Spacious, fully furnished 3 bedroom, 2-bathroom condo at Pacific Plaza in the heart of Yaletown. This beautifully updated 1,240 sq. ft. home offers a thoughtful layout with ample storage, modern finishes, comfortable furnishings, and a move-in-ready setup. Enjoy stunning False Creek views and unbeatable convenience just steps from the Canada Line, parks, grocery stores, restaurants, cafés, and shops. Residents can enjoy well-maintained amenities including an indoor pool, jacuzzi, and fitness centre. Includes 1 parking stall, in-suite laundry, and all utilities for added comfort and value. A perfect home for anyone looking for space, convenience, and vibrant downtown living with everything right at their doorstep. Nader (604) 786 - 5884\nMLS® No.  R3177323\nSold Price History\nDATE\tPRICE\nDec 02, 2019\t$980,000\nMay 14, 2010\t$580,000\nAug 04, 2006\t$550,000\nOct 20, 2003\t$356,000\nLocation\nWalk Score\n99\nChoose location criteria\nIn accordance with our Terms of Use, location data are provided to you “as-is”, without warranty. Any liability arising from location data is expressly excluded.\nListing REALTOR®\nNader Rafii\nREALTOR®\nOakwyn Realty Ltd.\nContact REALTOR®\nShowing with the listing REALTOR®\n\nBook an appointment with the listing REALTOR® to tour the property at your own pace, in person.\n\nRequest a showing\nCalculators\nMortgage payments\nSelling price\n$\nDown payment\n$\n%\nMortgage amount\n$0.00\nInterest rate\n%\nAmortization\nyears\nPayment frequency\nMonthly\nCalculate\nPayment amount\n$0.00\nSee monthly payment chart\nProperty transfer tax\nFair Market Value\n$\nCalculate\n1% of $200,000\n$0.00\n2% of remaining value up to and including $2,000,000\n$0.00\n3% of remaining portion over $2,000,000\n$0.00\nEstimated property transfer tax\n$0.00\nBorrowing capacity\nPayment amount\n$\nPayment frequency\nMonthly\nInterest rate\n%\nAmortization\nyears\nCalculate\nMortgage amount\n$0.00\nThe amounts shown above are for information purposes only and do not include taxes, if applicable.\nYou must purchase mortgage default insurance if your down payment is less than 20 per cent of the purchase price of the property.\nThis calculator doesn't calculate the further 2% tax on residential property greater than $3,000,000 or the additional property transfer tax on residential property transfers to foreign entities or taxable trustees. Learn more about property transfer tax.\nThere are additional costs to buying a home. Speak with your REALTOR® for more information.\nDISCOVER REALTYLINK.ORG\n\nRealtylink.org is a property search website hosted by REALTORS® at Greater Vancouver REALTORS®, Fraser Valley Real Estate Board, Vancouver Island Real Estate Board, BC Northern Real Estate Board, and Chilliwack and District Real Estate Board.\n\nDiscover Realtylink.org\nWORKING WITH A REALTOR®\n\nWhether you’re buying or selling a home, it’s important to understand from the outset how professional representation can help you at every step of the process.\n\nHow Realtors help\nCONTACT REALTYLINK.ORG\n\nDo you have any questions or comments for us?\n\nContact Realtylink.org\nView regions\n\nThe trademarks REALTOR®, REALTORS®, and the REALTOR® logo are controlled by The Canadian Real Estate Association (CREA) and identify real estate professionals who are members of CREA. The trademarks MLS®, Multiple Listing Service® and the associated logos are owned by CREA and identify the quality of services provided by real estate professionals who are members of CREA.\n\n© Centris 2026. All rights reserved.\nSite privacy policy and terms of use"
-    },
-    {
-      "source": "Realtylink MLS",
-      "url": "https://realtylink.org/en/apartment~for-rent~vancouver/263184507",
-      "mls": "R3162880",
-      "address": "3440 W Broadway",
-      "unit": "126",
-      "type": "condo",
-      "rent": 4550,
-      "bedrooms": 3,
-      "bathrooms": 2,
-      "sqft": 1266,
-      "lat": 49.2641,
-      "lng": -123.18076,
-      "geo": {
-        "lat": 49.2641,
-        "lng": -123.18076
-      },
-      "images": [
-        "https://media.realtylink.org/images/consumersite/property/263184507/aba376ea8140419483de6c704ddd2b47.jpeg?width=640&height=480&fit=cover",
-        "https://media.realtylink.org/images/consumersite/property/263184507/47f03ade82294f868085964379827e6c.jpeg?width=320&height=240&fit=cover",
-        "https://media.realtylink.org/images/consumersite/property/263184507/9ecc99ef62f74cfda5acf5c8e5294037.jpeg?width=320&height=240&fit=cover",
-        "https://media.realtylink.org/images/consumersite/property/263184507/cfe110630c5343b69800753a1a248c63.jpeg?width=320&height=240&fit=cover",
-        "https://media.realtylink.org/images/consumersite/property/263184507/0a003f22cf44451fb71d0bdd5f566962.jpeg?width=320&height=240&fit=cover",
-        "https://media.realtylink.org/images/consumersite/property/263184507/aba376ea8140419483de6c704ddd2b47.jpeg?width=480&height=360&fit=cover"
-      ],
-      "targetArea": true,
-      "active": true,
-      "parking": true,
-      "ac": null,
-      "petFriendly": true,
       "balcony": true,
-      "checkedAt": "2026-11-08T16:32:55.585Z",
+      "checkedAt": "2026-11-08T16:47:29.455Z",
       "publishable": false,
       "httpStatus": 200,
-      "bodyText": "Search\nBuy\nSell\nMy REALTOR®\nMarket tools\nLog in\nApartment for rent\n126 3440 W Broadway, Kitsilano, Vancouver\nGoogle Maps\nStreet View\n$4,550\n/month\n29\nFeatures\n 3 bedrooms\n 2 bathrooms\nFloor area\n1,266 sqft\nLaundry features\nIn Unit\nAppliances\nDishwasher, Microwave, Refrigerator, Stove\nExterior features\nBalcony\nParking spaces\n1\nBylaws restriction\nSmoking Restrictions\nDescription\nBeautifully updated, unfurnished 2-story townhouse-style condo in sought-after Kitsilano. This bright, south-facing home offers 3 bedrooms, 2 bathrooms, a private fenced yard and patio, spacious laundry room and ample storage. Modern kitchen with granite countertops, stainless steel appliances and gas stove. Open-concept living and dining area with a cozy electric fireplace. Gas and in-floor heating included, plus 2 portable AC units and 1 underground parking stall. Building amenities include rooftop access, children's playroom, secure bike storage and workshop. Steps to transit, shops, cafes and restaurants. Close to UBC, Downtown, Bayview Elementary and parks. Pets allowed. Minimum 1-year lease.\nMLS® No.  R3162880\nLocation\nWalk Score\n98\nChoose location criteria\nIn accordance with our Terms of Use, location data are provided to you “as-is”, without warranty. Any liability arising from location data is expressly excluded.\nListing REALTOR®\nChristopher Casado\nREALTOR®, Personal Real Estate Corporation\nRE/MAX Heights Realty\nContact REALTOR®\nShowing with the listing REALTOR®\n\nBook an appointment with the listing REALTOR® to tour the property at your own pace, in person.\n\nRequest a showing\nCalculators\nMortgage payments\nSelling price\n$\nDown payment\n$\n%\nMortgage amount\n$0.00\nInterest rate\n%\nAmortization\nyears\nPayment frequency\nMonthly\nCalculate\nPayment amount\n$0.00\nSee monthly payment chart\nProperty transfer tax\nFair Market Value\n$\nCalculate\n1% of $200,000\n$0.00\n2% of remaining value up to and including $2,000,000\n$0.00\n3% of remaining portion over $2,000,000\n$0.00\nEstimated property transfer tax\n$0.00\nBorrowing capacity\nPayment amount\n$\nPayment frequency\nMonthly\nInterest rate\n%\nAmortization\nyears\nCalculate\nMortgage amount\n$0.00\nThe amounts shown above are for information purposes only and do not include taxes, if applicable.\nYou must purchase mortgage default insurance if your down payment is less than 20 per cent of the purchase price of the property.\nThis calculator doesn't calculate the further 2% tax on residential property greater than $3,000,000 or the additional property transfer tax on residential property transfers to foreign entities or taxable trustees. Learn more about property transfer tax.\nThere are additional costs to buying a home. Speak with your REALTOR® for more information.\nDISCOVER REALTYLINK.ORG\n\nRealtylink.org is a property search website hosted by REALTORS® at Greater Vancouver REALTORS®, Fraser Valley Real Estate Board, Vancouver Island Real Estate Board, BC Northern Real Estate Board, and Chilliwack and District Real Estate Board.\n\nDiscover Realtylink.org\nWORKING WITH A REALTOR®\n\nWhether you’re buying or selling a home, it’s important to understand from the outset how professional representation can help you at every step of the process.\n\nHow Realtors help\nCONTACT REALTYLINK.ORG\n\nDo you have any questions or comments for us?\n\nContact Realtylink.org\nView regions\n\nThe trademarks REALTOR®, REALTORS®, and the REALTOR® logo are controlled by The Canadian Real Estate Association (CREA) and identify real estate professionals who are members of CREA. The trademarks MLS®, Multiple Listing Service® and the associated logos are owned by CREA and identify the quality of services provided by real estate professionals who are members of CREA.\n\n© Centris 2026. All rights reserved.\nSite privacy policy and terms of use"
+      "bodyText": "Search\nBuy\nSell\nMy REALTOR®\nMarket tools\nLog in\nApartment for rent\n220X 1483 Homer Street, Yaletown, Vancouver\nGoogle Maps\nStreet View\n$4,400\n/month\n14\nFeatures\n 2 bedrooms\n 2 bathrooms\nFloor area\n1,100 sqft\nInterior features\nStorage, Elevator\nLaundry features\nIn Unit\nAppliances\nDishwasher, Microwave, Refrigerator, Stove\nCooling features\nAir Conditioning\nExterior features\nBalcony\nParking spaces\n1\nAmenities\nBike Room, Clubhouse, Exercise Centre\nBylaws restriction\nSmoking Restrictions\nDescription\nWelcome to The Waterford, a highly sought-after luxury tower in Yaletown, ideally located along the waterfront, seawall and David Lam Park. This high-floor 2-bedroom, 2-bathroom corner residence offers approximately 1,110 sq. ft. of spacious living with beautiful water, park and city views. The home features an expansive floor plan, oversized floor-to-ceiling windows, air conditioning, laminate flooring, gas fireplace, granite countertops, stainless steel gas appliances, dedicated dining area and generous living space. A west-facing solarium provides an ideal home office or flex space, while the beautifully appointed bathrooms feature soaker tubs. Residents enjoy Club Viva amenities including an approximately 80-ft indoor pool, fitness centre, sauna and steam room. Unit is UNFURNISHED.\nMLS® No.  R3171043\nLocation\nWalk Score\n95\nChoose location criteria\nIn accordance with our Terms of Use, location data are provided to you “as-is”, without warranty. Any liability arising from location data is expressly excluded.\nListing REALTOR®\nEvan Tong\nREALTOR®, Personal Real Estate Corporation\nSutton Group-West Coast Realty\nContact REALTOR®\nShowing with the listing REALTOR®\n\nBook an appointment with the listing REALTOR® to tour the property at your own pace, in person.\n\nRequest a showing\nCalculators\nMortgage payments\nSelling price\n$\nDown payment\n$\n%\nMortgage amount\n$0.00\nInterest rate\n%\nAmortization\nyears\nPayment frequency\nMonthly\nCalculate\nPayment amount\n$0.00\nSee monthly payment chart\nProperty transfer tax\nFair Market Value\n$\nCalculate\n1% of $200,000\n$0.00\n2% of remaining value up to and including $2,000,000\n$0.00\n3% of remaining portion over $2,000,000\n$0.00\nEstimated property transfer tax\n$0.00\nBorrowing capacity\nPayment amount\n$\nPayment frequency\nMonthly\nInterest rate\n%\nAmortization\nyears\nCalculate\nMortgage amount\n$0.00\nThe amounts shown above are for information purposes only and do not include taxes, if applicable.\nYou must purchase mortgage default insurance if your down payment is less than 20 per cent of the purchase price of the property.\nThis calculator doesn't calculate the further 2% tax on residential property greater than $3,000,000 or the additional property transfer tax on residential property transfers to foreign entities or taxable trustees. Learn more about property transfer tax.\nThere are additional costs to buying a home. Speak with your REALTOR® for more information.\nDISCOVER REALTYLINK.ORG\n\nRealtylink.org is a property search website hosted by REALTORS® at Greater Vancouver REALTORS®, Fraser Valley Real Estate Board, Vancouver Island Real Estate Board, BC Northern Real Estate Board, and Chilliwack and District Real Estate Board.\n\nDiscover Realtylink.org\nWORKING WITH A REALTOR®\n\nWhether you’re buying or selling a home, it’s important to understand from the outset how professional representation can help you at every step of the process.\n\nHow Realtors help\nCONTACT REALTYLINK.ORG\n\nDo you have any questions or comments for us?\n\nContact Realtylink.org\nView regions\n\nThe trademarks REALTOR®, REALTORS®, and the REALTOR® logo are controlled by The Canadian Real Estate Association (CREA) and identify real estate professionals who are members of CREA. The trademarks MLS®, Multiple Listing Service® and the associated logos are owned by CREA and identify the quality of services provided by real estate professionals who are members of CREA.\n\n© Centris 2026. All rights reserved.\nSite privacy policy and terms of use"
     }
   ]
 }

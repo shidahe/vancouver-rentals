@@ -1,5 +1,5 @@
 {
-  "refreshedAt": "2026-11-08T16:34:11.415Z",
+  "refreshedAt": "2026-11-08T16:48:50.081Z",
   "groups": [
     {
       "identityKey": "3440 w broadway::unit:126",
@@ -95,42 +95,6 @@
       ],
       "exactUnit": false,
       "matchedListingId": "zumper-63cc916bfc3b",
-      "result": "candidate_only"
-    },
-    {
-      "identityKey": "1455 howe st::url:a2e9a0ba4b5c",
-      "sources": [
-        "zumper"
-      ],
-      "rents": [
-        5250
-      ],
-      "exactUnit": false,
-      "matchedListingId": "zumper-9a2c9b41c7e9",
-      "result": "candidate_only"
-    },
-    {
-      "identityKey": "1238 seymour st::unit:306",
-      "sources": [
-        "zumper"
-      ],
-      "rents": [
-        4350
-      ],
-      "exactUnit": true,
-      "matchedListingId": "zumper-a00a00bd4c98",
-      "result": "candidate_only"
-    },
-    {
-      "identityKey": "1277 hornby st::unit:901no",
-      "sources": [
-        "zumper"
-      ],
-      "rents": [
-        4190
-      ],
-      "exactUnit": true,
-      "matchedListingId": "zumper-d53972f224ce",
       "result": "candidate_only"
     },
     {
@@ -542,28 +506,16 @@
       "result": "candidate_only"
     },
     {
-      "identityKey": "mls:r3170765",
+      "identityKey": "mls:r3160689",
       "sources": [
         "realtylink mls"
       ],
       "rents": [
-        4000
+        4300
       ],
       "exactUnit": true,
-      "matchedListingId": "mls-r3170765",
+      "matchedListingId": "zumper-16e9ae17cd91",
       "result": "authoritative_mls_reverified_scope_excluded"
-    },
-    {
-      "identityKey": "mls:r3180990",
-      "sources": [
-        "realtylink mls"
-      ],
-      "rents": [
-        5900
-      ],
-      "exactUnit": true,
-      "matchedListingId": null,
-      "result": "auto_published_authoritative_mls"
     },
     {
       "identityKey": "mls:r3180739",
@@ -575,18 +527,6 @@
       ],
       "exactUnit": false,
       "matchedListingId": "mls-r3180739",
-      "result": "authoritative_mls_reverified_scope_excluded"
-    },
-    {
-      "identityKey": "mls:r3160689",
-      "sources": [
-        "realtylink mls"
-      ],
-      "rents": [
-        4300
-      ],
-      "exactUnit": true,
-      "matchedListingId": "zumper-16e9ae17cd91",
       "result": "authoritative_mls_reverified_scope_excluded"
     },
     {
@@ -614,37 +554,20 @@
       "result": "authoritative_mls_reverified_scope_excluded"
     },
     {
-      "identityKey": "mls:r3177323",
+      "identityKey": "mls:r3171043",
       "sources": [
         "realtylink mls"
       ],
       "rents": [
-        5900
+        4400
       ],
       "exactUnit": true,
-      "matchedListingId": null,
-      "result": "auto_published_authoritative_mls"
-    },
-    {
-      "identityKey": "mls:r3162880",
-      "sources": [
-        "realtylink mls"
-      ],
-      "rents": [
-        4550
-      ],
-      "exactUnit": true,
-      "matchedListingId": "mls-r3162880",
-      "result": "authoritative_mls_reverified"
+      "matchedListingId": "mls-r3171043",
+      "result": "authoritative_mls_reverified_scope_excluded"
     }
   ],
-  "promoted": [
-    "mls-r3180990",
-    "mls-r3177323"
-  ],
-  "crossVerified": [
-    "mls-r3162880"
-  ],
+  "promoted": [],
+  "crossVerified": [],
   "fingerprintCrossVerified": [],
   "craigslistRelistingsRecovered": [],
   "crossSourcePriceUpdates": [],
@@ -657,19 +580,23 @@
     "mls-r3165327",
     "mls-r3180739",
     "mls-r3175118",
+    "mls-r3171043",
     "mls-r3170765",
     "mls-r3177602",
     "mls-r3170731",
-    "mls-r3173381"
+    "mls-r3173381",
+    "mls-r3180990",
+    "mls-r3177323"
   ],
   "auxiliaryMlsRemovalsRolledBack": [],
   "mlsMissing": {},
   "mlsRemoved": [],
   "mlsStaleHidden": [],
-  "realtylinkSnapshotCount": 8,
+  "realtylinkSnapshotCount": 5,
   "realtylinkSnapshotHighWaterMark": 9,
   "realtylinkSnapshotScope": "rent-4000-6000-beds-2-4-baths-2-sunlight-kits-downtown-v4",
-  "realtylinkRemovalEligible": true,
+  "realtylinkRemovalEligible": false,
+  "mlsRemovalSuppressed": "Partial Realtylink snapshot (5 candidates versus previous complete 9); disappearance signals ignored.",
   "mlsDuplicatesMerged": [],
   "canonicalFieldRepairsApplied": []
 }

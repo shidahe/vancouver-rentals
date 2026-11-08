@@ -4579,6 +4579,11 @@
       "date": "2026-11-05",
       "rent": 4200,
       "note": "EXCLUDED: direct sunlight or non-north exposure not verified."
+    },
+    {
+      "date": "2026-11-08",
+      "rent": 4000,
+      "note": "EXCLUDED: direct sunlight or non-north exposure not verified."
     }
   ],
   "zumper-63cc916bfc3b": [
@@ -4711,6 +4716,11 @@
       "date": "2026-11-08",
       "rent": 4190,
       "note": "CORRECTED: duplicated civic number was incorrectly stored as a Zumper unit; restored URL-level identity."
+    },
+    {
+      "date": "2026-11-08",
+      "rent": 4190,
+      "note": "CORRECTED: unverified free-text token was incorrectly stored as a unit; restored URL-level identity pending a structured address unit."
     }
   ],
   "mls-r3177602": [

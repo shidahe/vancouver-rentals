@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-08T16:34:51.696Z",
+  "generatedAt": "2026-11-08T16:49:34.381Z",
   "activeCount": 1,
   "decisionReady": true,
   "readinessStatus": "finalized",
@@ -10,8 +10,8 @@
   "readinessChecks": {
     "smokeOk": true,
     "smokeFresh": true,
-    "smokeCheckedAt": "2026-11-08T16:34:56.215Z",
-    "latestDataAt": "2026-11-08T16:34:13.947Z",
+    "smokeCheckedAt": "2026-11-08T16:49:38.955Z",
+    "latestDataAt": "2026-11-08T16:48:52.255Z",
     "coverageReady": true,
     "healthyDiscoveryLanes": 3,
     "coverageWarnings": [
@@ -19,13 +19,19 @@
         "severity": "warning",
         "lane": "rentalsca",
         "status": "degraded",
-        "detail": "8/12 regional searches reachable; 0 qualifying candidates parsed; 9 scoped search-only leads retained (5 new, 0 already active, 4 need revalidation); 5 obvious out-of-area search leads rejected; 3 detail pages blocked after 132 discovered URLs; 129 further detail checks suppressed after repeated 403/429"
+        "detail": "5/12 regional searches reachable; 0 qualifying candidates parsed; 6 scoped search-only leads retained (4 new, 0 already active, 2 need revalidation); 2 obvious out-of-area search leads rejected; 3 detail pages blocked after 107 discovered URLs; 104 further detail checks suppressed after repeated 403/429"
       },
       {
         "severity": "warning",
         "lane": "livrent",
         "status": "unhealthy",
         "detail": "0/5 searches healthy; 3 blocked searches opened circuit; 2 further checks suppressed"
+      },
+      {
+        "severity": "warning",
+        "lane": "realtylink",
+        "status": "degraded",
+        "detail": "4/4 searches reachable; 5 current live candidates parsed from a partial snapshot versus complete baseline 9; positive discovery usable, removals suppressed"
       },
       {
         "severity": "warning",
@@ -36,5 +42,5 @@
     ]
   },
   "readinessIssues": [],
-  "finalizedAt": "2026-11-08T16:34:56.295Z"
+  "finalizedAt": "2026-11-08T16:49:39.049Z"
 }
