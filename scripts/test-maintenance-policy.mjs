@@ -413,6 +413,13 @@ if(greenwayEvidence?.rent!==4050||greenwayEvidence?.sqft!==840||exactPurposeBuil
 if(!LISTING_SCOPE_VERSION||!source.includes('scopeVersion:LISTING_SCOPE_VERSION')||!source.includes('previousReconciliation.realtylinkSnapshotScope===realtylinkScope')) failures.push('Realtylink completeness baseline is not reset when listing scope changes.');
 const aggregateFixture=[{'@type':'ApartmentComplex',containsPlace:[{'@type':'Apartment'},{'@type':'Apartment'}]}];
 if(aggregateUnitCount(aggregateFixture)!==2) failures.push('Structured priority-building inventory count is not parsed.');
+const kitsWalkScopeFixture=[{'@type':'ApartmentComplex',containsPlace:[
+  {'@type':'Apartment',name:'1 Bedroom',potentialAction:{priceSpecification:{price:2450}},floorSize:{value:'532.0'}},
+  {'@type':'Apartment',name:'2 Bedroom',potentialAction:{priceSpecification:{price:3675}},floorSize:{value:'741.0'}},
+  {'@type':'Apartment',name:'3 Bedroom',potentialAction:{priceSpecification:{price:4495}},floorSize:{value:'1145.0'}}
+]}];
+const kitsWalkTargetRows=structuredRentalInventories(kitsWalkScopeFixture);
+if(aggregateUnitCount(kitsWalkScopeFixture)!==3||kitsWalkTargetRows.length!==1||kitsWalkTargetRows[0].bedrooms!==3||kitsWalkTargetRows[0].rent!==4495) failures.push('Kits Walk aggregate rows outside the target scope can create false gaps, or a qualifying 3BR can be discarded.');
 const kitsWalkStructuredFixture=[{'@type':'ApartmentComplex',containsPlace:[
   {'@type':'Apartment',name:'2 Bedroom',potentialAction:{priceSpecification:{price:4600}},floorSize:{value:'741.0'}},
   {'@type':'Apartment',name:'2 Bedroom',potentialAction:{priceSpecification:{price:4650}},floorSize:{value:'741.0'}}
@@ -488,8 +495,10 @@ if(!coverageSource.includes('rentalsca.inventories.filter(x=>listingScopeEligibl
 if (!catalog.discovery.some(x=>x.id==='kits-walk-rentalsca'&&/kits-walk-by-strand/.test(x.url))) {
   failures.push('Kits Walk aggregate inventory source is missing.');
 }
-if (!coverageSource.includes('aggregateCount>verifiedKitsWalkCount') || !coverageSource.includes('inventoryGaps')) {
-  failures.push('Aggregate priority inventory is not compared with exact verified units.');
+if (!coverageSource.includes('targetKitsWalkCount>verifiedKitsWalkCount') ||
+    !coverageSource.includes('targetStructuredInventoryCount:targetKitsWalkCount') ||
+    coverageSource.includes('aggregateCount>verifiedKitsWalkCount')) {
+  failures.push('Out-of-scope aggregate priority rows can still create false target-inventory gaps.');
 }
 const purposeBuiltWatch = JSON.parse(await read('data/purpose-built-watch.json'));
 const fourthAndMac=purposeBuiltWatch.buildings.find(x=>x.id==='fourth-and-mac');

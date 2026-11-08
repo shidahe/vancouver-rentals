@@ -1,6 +1,6 @@
 import fs from 'node:fs/promises';
 import path from 'node:path';
-import { aggregateUnitCount, priorityInventoryEvidenceHealthy, rentCafeExactUnits } from './priority-inventory-policy.mjs';
+import { aggregateUnitCount, priorityInventoryEvidenceHealthy, rentCafeExactUnits, structuredRentalInventories } from './priority-inventory-policy.mjs';
 import { craigslistLaneHealth, rentalscaLaneHealth, realtylinkLaneHealth } from './coverage-policy.mjs';
 import { listingScopeEligible } from './discovery-policy.mjs';
 
@@ -84,6 +84,11 @@ const warnings=lanes.filter(x=>x.status!=='healthy').map(x=>({severity:'warning'
 const aggregateText=String(kitsWalkAggregate.bodyText||'');
 const textCount=Number(aggregateText.match(/(?:listing|property|it)\s+has\s+(\d+)\s+units?/i)?.[1]||0);
 const aggregateCount=Math.max(textCount,aggregateUnitCount(kitsWalkAggregate.jsonLd));
+// Aggregate building counts can include 1BR homes and rows outside the target
+// rent range. Only exact structured 2–4BR rows inside the discovery scope may
+// create a "missing target inventory" warning.
+const targetKitsWalkInventories=structuredRentalInventories(kitsWalkAggregate.jsonLd);
+const targetKitsWalkCount=targetKitsWalkInventories.length;
 const exactKitsWalkCount=(listings.listings||[]).filter(x=>
   x.availabilityStatus==='active' && /kits walk/i.test(String(x.buildingName||'')) && /^\d+[A-Za-z]?$/.test(String(x.unit||''))
 ).length;
@@ -103,10 +108,10 @@ if(viridianOfficial.ok===true && fresh(viridianOfficial.checkedAt)){
     }
   }
 }
-if(aggregateCount>verifiedKitsWalkCount){
-  const gap={severity:'warning',lane:'priority-kits-walk-inventory',status:'incomplete',detail:`Aggregate inventory reports ${aggregateCount} units; ${verifiedKitsWalkCount} exact unit/floorplan inventories are verified`};
+if(targetKitsWalkCount>verifiedKitsWalkCount){
+  const gap={severity:'warning',lane:'priority-kits-walk-inventory',status:'incomplete',detail:`Structured inventory reports ${targetKitsWalkCount} target-scope 2–4BR units; ${verifiedKitsWalkCount} exact target unit/floorplan inventories are verified`};
   warnings.push(gap);
-  inventoryGaps.push({building:'kits-walk',aggregateCount,verifiedInventoryCount:verifiedKitsWalkCount,exactVerifiedCount:exactKitsWalkCount,missingVerifiedInventories:aggregateCount-verifiedKitsWalkCount,evidenceUrl:kitsWalkAggregate.source?.url||null});
+  inventoryGaps.push({building:'kits-walk',aggregateCount,targetStructuredInventoryCount:targetKitsWalkCount,verifiedInventoryCount:verifiedKitsWalkCount,exactVerifiedCount:exactKitsWalkCount,missingVerifiedInventories:targetKitsWalkCount-verifiedKitsWalkCount,evidenceUrl:kitsWalkAggregate.source?.url||null});
 }
 const blockers=[];
 if(!broadHealthy)blockers.push({severity:'high',issue:'no-healthy-broad-marketplace-discovery-lane'});
@@ -119,6 +124,6 @@ for(const source of priorityInventorySources.filter(x=>!x.healthy)){
   blockers.push({severity:'high',issue:'priority-building-inventory-source-unhealthy',building:source.building,checkedAt:source.checkedAt,evidenceUrl:source.evidenceUrl});
 }
 
-const report={generatedAt:new Date().toISOString(),coverageReady,healthyLaneCount:healthyDiscovery.length,freshLaneCount:freshLanes.length,priorityOfficialReady:priorityHealthy,priorityInventoryReady,priorityInventorySources,inventoryGaps,lanes,warnings,blockers,policy:'Coverage is ready when at least two fresh independent discovery families have current positive candidate yield, including one broad marketplace and one independent classifieds/MLS family, every priority building has at least one fresh usable official source, and each priority building has a fresh semantically valid inventory-page snapshot. A partial MLS snapshot may contribute exact positive discovery rows but never disappearance or removal evidence. Aggregate counts alone never publish inventory; structured rows with exact rent, bedroom and sqft anchors may be tracked as verified floorplans when the page also has current availability language.'};
+const report={generatedAt:new Date().toISOString(),coverageReady,healthyLaneCount:healthyDiscovery.length,freshLaneCount:freshLanes.length,priorityOfficialReady:priorityHealthy,priorityInventoryReady,priorityInventorySources,inventoryDiagnostics:[{building:'kits-walk',aggregateCount,targetStructuredInventoryCount:targetKitsWalkCount,verifiedTargetInventoryCount:verifiedKitsWalkCount,exactVerifiedCount:exactKitsWalkCount}],inventoryGaps,lanes,warnings,blockers,policy:'Coverage is ready when at least two fresh independent discovery families have current positive candidate yield, including one broad marketplace and one independent classifieds/MLS family, every priority building has at least one fresh usable official source, and each priority building has a fresh semantically valid inventory-page snapshot. A partial MLS snapshot may contribute exact positive discovery rows but never disappearance or removal evidence. Aggregate counts alone never publish inventory or create target-scope gaps; only structured 2–4BR rows inside the configured rent scope do. Structured rows with exact rent, bedroom and sqft anchors may be tracked as verified floorplans when the page also has current availability language.'};
 await write(path.join(DATA,'coverage-report.json'),report);
 console.log(`Coverage audit: coverageReady=${coverageReady}, healthy=${healthy.length}/${lanes.length}`);
