@@ -1,3 +1,29 @@
+export function zumperStructuredStreetAndUnit(street = '') {
+  let value = String(street || '').trim();
+  let unit = null;
+  const token = raw => {
+    const normalized = String(raw || '').trim().replace(/^#/, '');
+    return /^(?=[A-Za-z0-9-]*\d)[A-Za-z0-9-]{1,12}$/.test(normalized) ? normalized.toUpperCase() : null;
+  };
+  let match = value.match(/^#?([A-Za-z0-9-]*\d[A-Za-z0-9-]*)\s*[-–]\s*(\d{3,5}\b.*)$/i);
+  if (match && token(match[1])) {
+    unit = token(match[1]);
+    value = match[2].trim();
+    // Zumper occasionally duplicates the civic number in structured addresses,
+    // e.g. "1277-1277 Hornby St". That is an address artefact, not unit 1277.
+    const civic = value.match(/^(\d{2,5})\b/)?.[1] || null;
+    if (unit === civic) unit = null;
+  }
+  if (!unit) {
+    match = value.match(/^(.*?)(?:\s+|,\s*)(?:unit|suite|apt|#)\s*([A-Za-z0-9-]*\d[A-Za-z0-9-]*)\s*$/i);
+    if (match && token(match[2])) {
+      value = match[1].trim();
+      unit = token(match[2]);
+    }
+  }
+  return { street: value, unit };
+}
+
 const NEGATIVE_PET_POLICY = /\b(?:no\s+(?:cats?|dogs?|pets?)|pets?\s+(?:are\s+)?not\s+(?:allowed|permitted)|no[- ]pet)\b/i;
 const POSITIVE_PET_POLICY = /\b(?:pet friendly|pets? allowed|dogs? (?:are )?ok|cats? (?:are )?ok)\b/i;
 

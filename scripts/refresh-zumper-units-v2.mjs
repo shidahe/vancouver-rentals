@@ -5,7 +5,7 @@ import { chromium } from 'playwright';
 import { listingScopeEligible, scopeExcludedListingCanReactivate } from './discovery-policy.mjs';
 import { isTargetRentalCoordinate } from './realtylink-parser.mjs';
 import { hasCurrentMarketplaceAvailability } from './listing-availability.mjs';
-import { zumperPetFriendly, zumperPropertyType, zumperRoomCount, zumperUnitCards, zumperUnitRent, zumperUnitToken } from './zumper-pet-policy.mjs';
+import { zumperPetFriendly, zumperPropertyType, zumperRoomCount, zumperStructuredStreetAndUnit, zumperUnitCards, zumperUnitRent, zumperUnitToken } from './zumper-pet-policy.mjs';
 
 const DATA = path.join(process.cwd(), 'data');
 const EVIDENCE = path.join(DATA, 'evidence');
@@ -27,17 +27,7 @@ function canonicalStreet(s = '') {
     .replace(/\bparkway\b/g, 'pky').replace(/\bdrive\b/g, 'dr').replace(/\bboulevard\b/g, 'blvd');
 }
 
-function splitStreetAndUnit(street = '') {
-  let s = String(street).trim();
-  let unit = null;
-  let m = s.match(/^#?([A-Za-z0-9-]*\d[A-Za-z0-9-]*)\s*[-–]\s*(\d{3,5}\b.*)$/i);
-  if (m && unitToken(m[1])) { unit = unitToken(m[1]); s = m[2].trim(); }
-  if (!unit) {
-    m = s.match(/^(.*?)(?:\s+|,\s*)(?:unit|suite|apt|#)\s*([A-Za-z0-9-]*\d[A-Za-z0-9-]*)\s*$/i);
-    if (m && unitToken(m[2])) { s = m[1].trim(); unit = unitToken(m[2]); }
-  }
-  return { street: s, unit };
-}
+const splitStreetAndUnit = zumperStructuredStreetAndUnit;
 
 function canonicalAddressKey(address = '') {
   const first = String(address).split(',')[0].trim();

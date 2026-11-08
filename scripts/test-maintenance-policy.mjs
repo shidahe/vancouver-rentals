@@ -16,7 +16,7 @@ import { craigslistAddressPrecision, craigslistDescriptionCivicAddress, craigsli
 import { classifyRentalsCaSearchLead, parseRentalsCaSearchLeads, rentalsCaSearchLeadScopeEligible } from './rentalsca-search-parser.mjs';
 import { craigslistSeedRelistingMatch } from './craigslist-seed-relisting.mjs';
 import { craigslistCrossSourcePriceMatch } from './craigslist-cross-source-match.mjs';
-import { zumperPetFriendly, zumperPropertyType, zumperRoomCount, zumperUnitCards, zumperUnitRent, zumperUnitToken } from './zumper-pet-policy.mjs';
+import { zumperPetFriendly, zumperPropertyType, zumperRoomCount, zumperStructuredStreetAndUnit, zumperUnitCards, zumperUnitRent, zumperUnitToken } from './zumper-pet-policy.mjs';
 import { wholeHomeMlsRelistMatch } from './mls-relisting.mjs';
 
 const read = p => fs.readFile(p, 'utf8');
@@ -655,6 +655,13 @@ const craigslistPhotos=verifiedPhotoCandidates([
 ]);
 if(craigslistPhotos.length!==2||craigslistPhotos.some(url=>!/_600x450\.jpg$/.test(url)||/map\d*\.craigslist\.org/.test(url))){
   failures.push(`Craigslist photo extraction retained thumbnails or map tiles: ${JSON.stringify(craigslistPhotos)}`);
+}
+
+const duplicatedCivic = zumperStructuredStreetAndUnit('1277-1277 Hornby St');
+const explicitZumperUnit = zumperStructuredStreetAndUnit('306-1238 Seymour St');
+if (duplicatedCivic.street !== '1277 Hornby St' || duplicatedCivic.unit !== null ||
+    explicitZumperUnit.street !== '1238 Seymour St' || explicitZumperUnit.unit !== '306') {
+  failures.push('A duplicated Zumper civic number can still be stored as a false unit identity.');
 }
 
 const legacyMlsListing = { id: '2268-w-broadway-312-r3153999', unit: '312 · MLS R3153999' };
