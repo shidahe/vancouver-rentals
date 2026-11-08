@@ -1,5 +1,5 @@
 {
-  "checkedAt": "2026-11-08T17:09:44.406Z",
+  "checkedAt": "2026-11-08T19:00:05.794Z",
   "ok": true,
   "checkpoints": {
     "render": {
@@ -27,12 +27,12 @@
         "1",
         "0",
         "0",
-        "Nov 8, 9:00 a.m. PST"
+        "Nov 8, 10:50 a.m. PST"
       ],
-      "html": "<div class=\"stat\"><strong>1</strong><span>Active</span></div><div class=\"stat\"><strong>1</strong><span>New 7d</span></div><div class=\"stat\"><strong>0</strong><span>Price drops</span></div><div class=\"stat\"><strong>0</strong><span>To verify</span></div><div class=\"stat\"><strong>Nov 8, 9:00 a.m. PST</strong><span>Last refreshed</span></div>",
+      "html": "<div class=\"stat\"><strong>1</strong><span>Active</span></div><div class=\"stat\"><strong>1</strong><span>New 7d</span></div><div class=\"stat\"><strong>0</strong><span>Price drops</span></div><div class=\"stat\"><strong>0</strong><span>To verify</span></div><div class=\"stat\"><strong>Nov 8, 10:50 a.m. PST</strong><span>Last refreshed</span></div>",
       "refreshedAt": {
-        "displayed": "Nov 8, 9:00 a.m. PST",
-        "expected": "Nov 8, 9:00 a.m. PST",
+        "displayed": "Nov 8, 10:50 a.m. PST",
+        "expected": "Nov 8, 10:50 a.m. PST",
         "timezone": "America/Vancouver"
       },
       "newSevenDays": {

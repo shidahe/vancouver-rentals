@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-08T17:09:39.877Z",
+  "generatedAt": "2026-11-08T19:00:01.476Z",
   "activeCount": 1,
   "decisionReady": true,
   "readinessStatus": "finalized",
@@ -10,8 +10,8 @@
   "readinessChecks": {
     "smokeOk": true,
     "smokeFresh": true,
-    "smokeCheckedAt": "2026-11-08T17:09:44.406Z",
-    "latestDataAt": "2026-11-08T17:09:01.439Z",
+    "smokeCheckedAt": "2026-11-08T19:00:05.794Z",
+    "latestDataAt": "2026-11-08T18:59:28.631Z",
     "coverageReady": true,
     "healthyDiscoveryLanes": 3,
     "coverageWarnings": [
@@ -19,7 +19,7 @@
         "severity": "warning",
         "lane": "rentalsca",
         "status": "degraded",
-        "detail": "5/12 regional searches reachable; 0 qualifying candidates parsed; 5 scoped search-only leads retained (3 new, 0 already active, 2 need revalidation); 3 obvious out-of-area search leads rejected; 3 detail pages blocked after 75 discovered URLs; 72 further detail checks suppressed after repeated 403/429"
+        "detail": "5/12 regional searches reachable; 0 qualifying candidates parsed; 8 scoped search-only leads retained (5 new, 0 already active, 3 need revalidation); 2 obvious out-of-area search leads rejected; 3 detail pages blocked after 105 discovered URLs; 102 further detail checks suppressed after repeated 403/429"
       },
       {
         "severity": "warning",
@@ -30,5 +30,5 @@
     ]
   },
   "readinessIssues": [],
-  "finalizedAt": "2026-11-08T17:09:44.509Z"
+  "finalizedAt": "2026-11-08T19:00:05.872Z"
 }
