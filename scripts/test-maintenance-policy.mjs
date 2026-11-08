@@ -670,6 +670,16 @@ if (!civicAddressMatch('102 3349 Dunbar Street', '3349 Dunbar St, Vancouver, BC'
     civicAddressMatch('102 3349 Dunbar Street', '3359 Dunbar St, Vancouver, BC')) {
   failures.push('Realtylink unit-prefixed addresses are not matched conservatively to exact marketplace addresses.');
 }
+const broadwayLeadMatch = classifyRentalsCaSearchLead(
+  {address:'3709 West Broadway, Vancouver, BC'},
+  [{id:'the-raven-unit-101', address:'3709 W Broadway, Vancouver, BC V6R 2B9', availabilityStatus:'excluded'}]
+);
+if (!civicAddressMatch('3709 West Broadway, Vancouver, BC', '3709 W Broadway, Vancouver, BC V6R 2B9') ||
+    civicAddressMatch('3709 West Broadway, Vancouver, BC', '3719 W Broadway, Vancouver, BC') ||
+    broadwayLeadMatch.leadStatus !== 'needs_detail_revalidation' ||
+    broadwayLeadMatch.matchedListingId !== 'the-raven-unit-101') {
+  failures.push('Broadway marketplace spellings can split an existing inventory address into a duplicate new lead.');
+}
 if (!exactAddressUnitIdentity(
   {address:'3333 W 4th Ave, Vancouver, BC',unit:'204',mls:'R3149612'},
   {address:'3333 W 4th Avenue',unit:'204',mls:'R3149267'}

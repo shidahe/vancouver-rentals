@@ -25,6 +25,11 @@ function civicStreet(value) {
     .replace(/\broad\b/g, 'rd').replace(/\bdrive\b/g, 'dr')
     .replace(/\bboulevard\b/g, 'blvd').replace(/\bplace\b/g, 'pl')
     .replace(/[^a-z0-9]+/g, ' ');
+  // Broadway is a complete Vancouver street name and has no Ave/St/Rd suffix.
+  // Normalize it explicitly so marketplace spelling ("West Broadway") and
+  // catalog spelling ("W Broadway") resolve to the same civic identity.
+  const broadway = normalized.match(/\b(\d{2,5}x?)\s+(?:(w|e|n|s)\s+)?broadway(?:\s+(w|e|n|s))?\b/);
+  if (broadway) return { civic: broadway[1], direction: broadway[2] || broadway[3] || '', street: 'broadway', type: 'broadway' };
   const match = normalized.match(/\b(\d{2,5}x?)\s+(?:(w|e|n|s)\s+)?([a-z0-9]+)\s+(ave|st|rd|dr|blvd|pl)(?:\s+(w|e|n|s))?\b/);
   return match ? { civic: match[1], direction: match[2] || match[5] || '', street: match[3].replace(/(?:st|nd|rd|th)$/,''), type: match[4] } : null;
 }
