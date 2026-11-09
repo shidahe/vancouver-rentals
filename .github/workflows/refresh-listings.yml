@@ -1,58 +1,7 @@
 name: Refresh rental inventory
 
 on:
-  schedule:
-    - cron: '17 14 * * *'
   workflow_dispatch:
-  push:
-    branches: [main]
-    paths:
-      - 'scripts/refresh-listings.mjs'
-      - 'scripts/purposebuilt-floorplan-evidence.mjs'
-      - 'scripts/listing-parser.mjs'
-      - 'scripts/listing-photo-candidates.mjs'
-      - 'scripts/refresh-safe.mjs'
-      - 'scripts/prune-invalid-geography.mjs'
-      - 'scripts/refresh-zumper-units-v2.mjs'
-      - 'scripts/quarantine-ambiguous-zumper-multiunit.mjs'
-      - 'scripts/expire-stale-auto-listings.mjs'
-      - 'scripts/stale-auto-policy.mjs'
-      - 'scripts/cleanup-verification-methods.mjs'
-      - 'scripts/refresh-rentalsca.mjs'
-      - 'scripts/refresh-livrent.mjs'
-      - 'scripts/refresh-craigslist.mjs'
-      - 'scripts/craigslist-parser.mjs'
-      - 'scripts/refresh-realtylink.mjs'
-      - 'scripts/realtylink-parser.mjs'
-      - 'scripts/reconcile-candidates.mjs'
-      - 'scripts/mls-dedupe.mjs'
-      - 'scripts/inventory-identity.mjs'
-      - 'scripts/refresh-purposebuilt.mjs'
-      - 'scripts/refresh-official-status.mjs'
-      - 'scripts/apply-official-status.mjs'
-      - 'scripts/cache-listing-images.mjs'
-      - 'scripts/audit-data-quality.mjs'
-      - 'scripts/evidence-consistency.mjs'
-      - 'scripts/audit-coverage.mjs'
-      - 'scripts/coverage-policy.mjs'
-      - 'scripts/priority-inventory-policy.mjs'
-      - 'scripts/discovery-policy.mjs'
-      - 'scripts/enforce-listing-scope.mjs'
-      - 'scripts/test-site.mjs'
-      - 'scripts/test-freshness-guard.mjs'
-      - 'scripts/test-maintenance-policy.mjs'
-      - 'scripts/finalize-readiness.mjs'
-      - 'freshness-guard.js'
-      - 'app.js'
-      - 'index.html'
-      - 'data/live-sources.json'
-      - 'data/purpose-built-watch.json'
-      - 'data/automation-policy.json'
-      - 'data/manual-overrides.json'
-      - 'data/scope-cross-source-evidence.json'
-      - 'data/official-watch.json'
-      - 'package.json'
-      - '.github/workflows/refresh-listings.yml'
 
 permissions:
   contents: write
